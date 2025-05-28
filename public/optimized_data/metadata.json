@@ -1,0 +1,30 @@
+{
+  "chains": {
+    "akash": 0,
+    "axelar": 1,
+    "cosmos": 2,
+    "dydx": 3,
+    "evmos": 4,
+    "finschia": 5,
+    "gravity-bridge": 6,
+    "injective": 7,
+    "iris": 8,
+    "juno": 9,
+    "kava": 10,
+    "kyve": 11,
+    "osmosis": 12,
+    "secret": 13,
+    "sentinel": 14,
+    "stargaze": 15,
+    "terra": 16
+  },
+  "vote_options": {
+    "0": "ABSTAIN",
+    "1": "NO",
+    "2": "NO_VOTE",
+    "3": "NO_WITH_VETO",
+    "4": "WEIGHTED_VOTE",
+    "5": "YES"
+  },
+  "structure_version": "1.1"
+}

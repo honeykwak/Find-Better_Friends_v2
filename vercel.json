@@ -1,0 +1,18 @@
+{
+  "buildCommand": "npm run build",
+  "outputDirectory": ".next",
+  "framework": "nextjs",
+  "functions": {
+    "app/api/**/*.js": {
+      "runtime": "nodejs18.x"
+    }
+  },
+  "routes": [
+    {
+      "src": "/processed_data/(.*)",
+      "headers": {
+        "Cache-Control": "public, max-age=86400"
+      }
+    }
+  ]
+} 

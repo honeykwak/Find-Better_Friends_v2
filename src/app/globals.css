@@ -10,6 +10,33 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+  
+  /* Typography Scale - 일관된 폰트 크기 시스템 */
+  --font-size-xs: 0.75rem;      /* 12px - 작은 라벨, 메타데이터 */
+  --font-size-sm: 0.875rem;     /* 14px - 보조 텍스트, 설명 */
+  --font-size-base: 1rem;       /* 16px - 기본 본문 텍스트 */
+  --font-size-lg: 1.125rem;     /* 18px - 중요한 텍스트 */
+  --font-size-xl: 1.25rem;      /* 20px - 소제목 */
+  --font-size-2xl: 1.5rem;      /* 24px - 제목 */
+  --font-size-3xl: 1.875rem;    /* 30px - 큰 제목 */
+  --font-size-4xl: 2.25rem;     /* 36px - 메인 제목 */
+  
+  /* Line Heights - 가독성을 위한 줄 간격 */
+  --line-height-tight: 1.25;    /* 제목용 */
+  --line-height-snug: 1.375;    /* 부제목용 */
+  --line-height-normal: 1.5;    /* 본문용 */
+  --line-height-relaxed: 1.625; /* 긴 텍스트용 */
+  
+  /* Font Weights - 의미론적 폰트 굵기 */
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  
+  /* Letter Spacing - 텍스트 간격 */
+  --letter-spacing-tight: -0.025em;
+  --letter-spacing-normal: 0em;
+  --letter-spacing-wide: 0.025em;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -22,5 +49,103 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans), system-ui, -apple-system, sans-serif;
+  font-size: var(--font-size-base);
+  line-height: var(--line-height-normal);
+}
+
+/* Typography Utility Classes - 의미론적 클래스 */
+.text-caption {
+  font-size: var(--font-size-xs);
+  line-height: var(--line-height-normal);
+  color: rgb(55 65 81); /* text-gray-700 */
+}
+
+.text-body-small {
+  font-size: var(--font-size-sm);
+  line-height: var(--line-height-normal);
+}
+
+.text-body {
+  font-size: var(--font-size-base);
+  line-height: var(--line-height-normal);
+}
+
+.text-body-large {
+  font-size: var(--font-size-lg);
+  line-height: var(--line-height-normal);
+}
+
+.text-subtitle {
+  font-size: var(--font-size-xl);
+  line-height: var(--line-height-snug);
+  font-weight: var(--font-weight-semibold);
+}
+
+.text-title {
+  font-size: var(--font-size-2xl);
+  line-height: var(--line-height-tight);
+  font-weight: var(--font-weight-bold);
+}
+
+.text-heading {
+  font-size: var(--font-size-3xl);
+  line-height: var(--line-height-tight);
+  font-weight: var(--font-weight-bold);
+}
+
+.text-display {
+  font-size: var(--font-size-4xl);
+  line-height: var(--line-height-tight);
+  font-weight: var(--font-weight-bold);
+}
+
+/* Component-specific Typography */
+.text-label {
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-medium);
+  color: rgb(55 65 81); /* text-gray-700 */
+}
+
+.text-button {
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-medium);
+}
+
+.text-badge {
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-medium);
+}
+
+.text-stat-value {
+  font-size: var(--font-size-2xl);
+  font-weight: var(--font-weight-bold);
+  line-height: var(--line-height-tight);
+}
+
+.text-stat-label {
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-medium);
+  color: rgb(75 85 99); /* text-gray-600 */
+}
+
+.text-error {
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-medium);
+  color: rgb(239 68 68); /* text-red-500 */
+}
+
+/* Responsive Typography */
+@media (max-width: 640px) {
+  .text-title {
+    font-size: var(--font-size-xl);
+  }
+  
+  .text-heading {
+    font-size: var(--font-size-2xl);
+  }
+  
+  .text-display {
+    font-size: var(--font-size-3xl);
+  }
 }

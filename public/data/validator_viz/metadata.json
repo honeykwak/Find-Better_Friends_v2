@@ -1,0 +1,20 @@
+{
+  "generated_at": "2025-05-27T23:33:21.359369",
+  "data_version": "1.0",
+  "files": {
+    "gantt_data.json": "Gantt chart visualization data",
+    "heatmap_data.json": "Heatmap visualization data",
+    "similarity_index.json": "Validator similarity matrix",
+    "chain_summaries.json": "Chain-level summary statistics"
+  },
+  "statistics": {
+    "total_proposals": 3594,
+    "total_validators": 3421,
+    "total_votes": 412744,
+    "chains": 17,
+    "date_range": {
+      "start": "1970-01-01T00:25:53.064087040",
+      "end": "1970-01-01T00:28:51.347133113"
+    }
+  }
+}
