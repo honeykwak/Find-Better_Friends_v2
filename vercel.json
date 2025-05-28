@@ -1,18 +1,27 @@
 {
-  "buildCommand": "npm run build",
-  "outputDirectory": ".next",
   "framework": "nextjs",
-  "functions": {
-    "app/api/**/*.js": {
-      "runtime": "nodejs18.x"
-    }
-  },
-  "routes": [
+  "headers": [
     {
-      "src": "/processed_data/(.*)",
-      "headers": {
-        "Cache-Control": "public, max-age=86400"
-      }
+      "source": "/processed_data/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=86400"
+        }
+      ]
+    },
+    {
+      "source": "/optimized_data/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=86400"
+        },
+        {
+          "key": "X-Data-Optimized",
+          "value": "true"
+        }
+      ]
     }
   ]
 } 
