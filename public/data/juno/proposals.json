@@ -1,0 +1,1933 @@
+[
+  {
+    "proposal_id": "357",
+    "chain_id": "juno",
+    "title": "Juno Treasury Housekeeping",
+    "type": "SmartContract",
+    "topic": "Contract Deployment",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 56,
+      "abstain_count": 4,
+      "no_vote_count": 73
+    }
+  },
+  {
+    "proposal_id": "356",
+    "chain_id": "juno",
+    "title": "Reactivate expired IBC client for Oraichain",
+    "type": "IBCRelated",
+    "topic": "IBC Security",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 67,
+      "abstain_count": 1,
+      "no_vote_count": 60
+    }
+  },
+  {
+    "proposal_id": "355",
+    "chain_id": "juno",
+    "title": "Juno Upgrade v25",
+    "type": "SoftwareUpgrade",
+    "topic": "Major Release",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 74,
+      "no_with_veto_count": 1,
+      "no_vote_count": 59
+    }
+  },
+  {
+    "proposal_id": "354",
+    "chain_id": "juno",
+    "title": "Juno Upgrade v24",
+    "type": "SoftwareUpgrade",
+    "topic": "Major Release",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 78,
+      "no_vote_count": 62
+    }
+  },
+  {
+    "proposal_id": "353",
+    "chain_id": "juno",
+    "title": "Juno Communications SubDAO Funding Proposal 3 months",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 35,
+      "abstain_count": 25,
+      "no_count": 4,
+      "no_vote_count": 79
+    }
+  },
+  {
+    "proposal_id": "352",
+    "chain_id": "juno",
+    "title": "Juno Upgrade v23",
+    "type": "SoftwareUpgrade",
+    "topic": "Major Release",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 78,
+      "no_vote_count": 64
+    }
+  },
+  {
+    "proposal_id": "351",
+    "chain_id": "juno",
+    "title": "Hexxagon Proposal for Validator and Chain Upgrade Support",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "REJECTED",
+    "final_tally_result": {
+      "no_count": 52,
+      "no_with_veto_count": 5,
+      "abstain_count": 7,
+      "yes_count": 4,
+      "no_vote_count": 76
+    }
+  },
+  {
+    "proposal_id": "350",
+    "chain_id": "juno",
+    "title": "Proposal to end the Juno Charter and return Juno tokens to community pool",
+    "type": "Unknown",
+    "topic": "Unclassified",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 66,
+      "no_count": 4,
+      "abstain_count": 7,
+      "no_with_veto_count": 1,
+      "no_vote_count": 64
+    }
+  },
+  {
+    "proposal_id": "349",
+    "chain_id": "juno",
+    "title": "Signal proposal for the council to put dapps as the first priority",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "REJECTED",
+    "final_tally_result": {
+      "yes_count": 19,
+      "abstain_count": 59,
+      "no_count": 9,
+      "no_with_veto_count": 1,
+      "no_vote_count": 62
+    }
+  },
+  {
+    "proposal_id": "348",
+    "chain_id": "juno",
+    "title": "Liquidity SubDAO Withdraw Community Funds from WYND",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 82,
+      "no_with_veto_count": 1,
+      "abstain_count": 1,
+      "no_vote_count": 66
+    }
+  },
+  {
+    "proposal_id": "347",
+    "chain_id": "juno",
+    "title": "Juno Upgrade v22",
+    "type": "SoftwareUpgrade",
+    "topic": "Major Release",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 101,
+      "no_vote_count": 49
+    }
+  },
+  {
+    "proposal_id": "346",
+    "chain_id": "juno",
+    "title": "Namada x Cosmos airdrop",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "REJECTED",
+    "final_tally_result": {
+      "no_with_veto_count": 65,
+      "yes_count": 3,
+      "no_count": 1,
+      "no_vote_count": 81
+    }
+  },
+  {
+    "proposal_id": "345",
+    "chain_id": "juno",
+    "title": "Migration control plan of 3 million Juno in Osmosis stJUNOJUNO POL  ",
+    "type": "Unknown",
+    "topic": "Unclassified",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 77,
+      "abstain_count": 2,
+      "no_vote_count": 71
+    }
+  },
+  {
+    "proposal_id": "344",
+    "chain_id": "juno",
+    "title": "Reactivate expired IBC client for Oraichain",
+    "type": "IBCRelated",
+    "topic": "IBC Security",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 86,
+      "no_count": 1,
+      "no_vote_count": 63
+    }
+  },
+  {
+    "proposal_id": "343",
+    "chain_id": "juno",
+    "title": "Migrate control of Juno liquidity in Prop 61 ",
+    "type": "Unknown",
+    "topic": "Unclassified",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 65,
+      "abstain_count": 3,
+      "no_vote_count": 82
+    }
+  },
+  {
+    "proposal_id": "342",
+    "chain_id": "juno",
+    "title": "Reactivate expired IBC client for Planq",
+    "type": "IBCRelated",
+    "topic": "IBC Security",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 88,
+      "no_vote_count": 62
+    }
+  },
+  {
+    "proposal_id": "341",
+    "chain_id": "juno",
+    "title": "Migrate Control For Wynd Juno",
+    "type": "Unknown",
+    "topic": "Unclassified",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 81,
+      "abstain_count": 4,
+      "no_vote_count": 65
+    }
+  },
+  {
+    "proposal_id": "340",
+    "chain_id": "juno",
+    "title": "Juno Upgrade Mandrake Patch v21",
+    "type": "SoftwareUpgrade",
+    "topic": "Major Release",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 106,
+      "no_vote_count": 44
+    }
+  },
+  {
+    "proposal_id": "339",
+    "chain_id": "juno",
+    "title": "Development Election Kopeboy",
+    "type": "SmartContract",
+    "topic": "Contract Deployment",
+    "status": "FAILED",
+    "final_tally_result": {
+      "abstain_count": 58,
+      "yes_count": 23,
+      "no_count": 5,
+      "no_vote_count": 64
+    }
+  },
+  {
+    "proposal_id": "338",
+    "chain_id": "juno",
+    "title": "Development Election Andr",
+    "type": "SmartContract",
+    "topic": "Contract Deployment",
+    "status": "FAILED",
+    "final_tally_result": {
+      "abstain_count": 57,
+      "yes_count": 25,
+      "no_count": 4,
+      "no_vote_count": 64
+    }
+  },
+  {
+    "proposal_id": "337",
+    "chain_id": "juno",
+    "title": "Development Election Ray Raspberry",
+    "type": "SmartContract",
+    "topic": "Contract Deployment",
+    "status": "FAILED",
+    "final_tally_result": {
+      "abstain_count": 51,
+      "yes_count": 29,
+      "no_count": 4,
+      "no_vote_count": 66
+    }
+  },
+  {
+    "proposal_id": "336",
+    "chain_id": "juno",
+    "title": "Operations Election Ninjaxan",
+    "type": "Unknown",
+    "topic": "Unclassified",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 31,
+      "abstain_count": 53,
+      "no_count": 3,
+      "no_vote_count": 63
+    }
+  },
+  {
+    "proposal_id": "335",
+    "chain_id": "juno",
+    "title": "Operations Election Lil D",
+    "type": "Unknown",
+    "topic": "Unclassified",
+    "status": "REJECTED",
+    "final_tally_result": {
+      "yes_count": 15,
+      "abstain_count": 58,
+      "no_count": 13,
+      "no_vote_count": 64
+    }
+  },
+  {
+    "proposal_id": "333",
+    "chain_id": "juno",
+    "title": "Juno Upgrade Rhea v19",
+    "type": "SoftwareUpgrade",
+    "topic": "Major Release",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 93,
+      "no_vote_count": 57
+    }
+  },
+  {
+    "proposal_id": "332",
+    "chain_id": "juno",
+    "title": "Reactivate expired IBC client for Teritori",
+    "type": "IBCRelated",
+    "topic": "IBC Security",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 84,
+      "no_vote_count": 66
+    }
+  },
+  {
+    "proposal_id": "331",
+    "chain_id": "juno",
+    "title": "Shift focus from feature upgrades to finishing dApps and dev onboarding",
+    "type": "Unknown",
+    "topic": "Unclassified",
+    "status": "REJECTED",
+    "final_tally_result": {
+      "yes_count": 32,
+      "no_count": 31,
+      "abstain_count": 26,
+      "no_with_veto_count": 8,
+      "no_vote_count": 53
+    }
+  },
+  {
+    "proposal_id": "330",
+    "chain_id": "juno",
+    "title": "Remove BlockCreators from Core1  Cancel Vesting",
+    "type": "Unknown",
+    "topic": "Unclassified",
+    "status": "REJECTED",
+    "final_tally_result": {
+      "abstain_count": 54,
+      "yes_count": 15,
+      "no_with_veto_count": 5,
+      "no_count": 5,
+      "no_vote_count": 71
+    }
+  },
+  {
+    "proposal_id": "329",
+    "chain_id": "juno",
+    "title": "Community Relations Elections 22 Tonyler",
+    "type": "Unknown",
+    "topic": "Unclassified",
+    "status": "PASSED",
+    "final_tally_result": {
+      "abstain_count": 51,
+      "yes_count": 30,
+      "no_count": 4,
+      "no_vote_count": 65
+    }
+  },
+  {
+    "proposal_id": "328",
+    "chain_id": "juno",
+    "title": "Community Relations Election 12 DragonMonk111",
+    "type": "Unknown",
+    "topic": "Unclassified",
+    "status": "REJECTED",
+    "final_tally_result": {
+      "abstain_count": 54,
+      "no_count": 16,
+      "yes_count": 15,
+      "no_with_veto_count": 1,
+      "no_vote_count": 64
+    }
+  },
+  {
+    "proposal_id": "327",
+    "chain_id": "juno",
+    "title": "Enable MEV Frontrunning protection",
+    "type": "ParameterChange",
+    "topic": "Protocol Configuration",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 95,
+      "abstain_count": 1,
+      "no_vote_count": 54
+    }
+  },
+  {
+    "proposal_id": "326",
+    "chain_id": "juno",
+    "title": "Development Election 11 Poroburu",
+    "type": "SmartContract",
+    "topic": "Contract Deployment",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 77,
+      "abstain_count": 23,
+      "no_vote_count": 50
+    }
+  },
+  {
+    "proposal_id": "325",
+    "chain_id": "juno",
+    "title": "Juno Upgrade Epona v18",
+    "type": "SoftwareUpgrade",
+    "topic": "Major Release",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 106,
+      "abstain_count": 1,
+      "no_vote_count": 43
+    }
+  },
+  {
+    "proposal_id": "324",
+    "chain_id": "juno",
+    "title": "Operations Election 44 Panos",
+    "type": "SmartContract",
+    "topic": "Contract Deployment",
+    "status": "REJECTED",
+    "final_tally_result": {
+      "abstain_count": 52,
+      "yes_count": 24,
+      "no_count": 22,
+      "no_vote_count": 52
+    }
+  },
+  {
+    "proposal_id": "323",
+    "chain_id": "juno",
+    "title": "Operations Election 34 Macks Wolfard",
+    "type": "SmartContract",
+    "topic": "Contract Deployment",
+    "status": "PASSED",
+    "final_tally_result": {
+      "abstain_count": 49,
+      "yes_count": 27,
+      "no_count": 22,
+      "no_vote_count": 52
+    }
+  },
+  {
+    "proposal_id": "322",
+    "chain_id": "juno",
+    "title": "Operations Election 24 Schweinebacke Cristiano",
+    "type": "SmartContract",
+    "topic": "Contract Deployment",
+    "status": "PASSED",
+    "final_tally_result": {
+      "abstain_count": 43,
+      "yes_count": 34,
+      "no_count": 19,
+      "no_with_veto_count": 1,
+      "no_vote_count": 53
+    }
+  },
+  {
+    "proposal_id": "321",
+    "chain_id": "juno",
+    "title": "Operations Election 14 CryptoTank",
+    "type": "SmartContract",
+    "topic": "Contract Deployment",
+    "status": "PASSED",
+    "final_tally_result": {
+      "abstain_count": 49,
+      "yes_count": 33,
+      "no_count": 15,
+      "no_with_veto_count": 2,
+      "no_vote_count": 51
+    }
+  },
+  {
+    "proposal_id": "320",
+    "chain_id": "juno",
+    "title": "Add Noble  Axelar USDC to Allowed Fees  FeeShare",
+    "type": "ParameterChange",
+    "topic": "Fee Adjustment",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 90,
+      "no_count": 1,
+      "no_vote_count": 59
+    }
+  },
+  {
+    "proposal_id": "319",
+    "chain_id": "juno",
+    "title": "Juno Charter",
+    "type": "Unknown",
+    "topic": "Unclassified",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 85,
+      "abstain_count": 7,
+      "no_vote_count": 58
+    }
+  },
+  {
+    "proposal_id": "318",
+    "chain_id": "juno",
+    "title": "OverTheCounter OTC Funding Proposal",
+    "type": "Unknown",
+    "topic": "Unclassified",
+    "status": "REJECTED",
+    "final_tally_result": {
+      "no_count": 34,
+      "abstain_count": 22,
+      "yes_count": 20,
+      "no_vote_count": 74
+    }
+  },
+  {
+    "proposal_id": "317",
+    "chain_id": "juno",
+    "title": "Juno Upgrade Vesta v17",
+    "type": "SoftwareUpgrade",
+    "topic": "Security Enhancement",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 100,
+      "no_count": 2,
+      "no_vote_count": 48
+    }
+  },
+  {
+    "proposal_id": "316",
+    "chain_id": "juno",
+    "title": "Signal Validators Max 24 Hour Change Rate To 5",
+    "type": "Unknown",
+    "topic": "Unclassified",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 70,
+      "abstain_count": 15,
+      "no_count": 5,
+      "no_with_veto_count": 1,
+      "no_vote_count": 59
+    }
+  },
+  {
+    "proposal_id": "315",
+    "chain_id": "juno",
+    "title": "Cancel WYND Foundation Vesting contract",
+    "type": "SmartContract",
+    "topic": "Contract Deployment",
+    "status": "FAILED",
+    "final_tally_result": {
+      "yes_count": 82,
+      "abstain_count": 8,
+      "no_count": 1,
+      "no_vote_count": 59
+    }
+  },
+  {
+    "proposal_id": "314",
+    "chain_id": "juno",
+    "title": "Sail with the Whale",
+    "type": "CommunityPoolSpend",
+    "topic": "Ecosystem Growth",
+    "status": "REJECTED",
+    "final_tally_result": {
+      "abstain_count": 24,
+      "no_count": 36,
+      "yes_count": 34,
+      "no_vote_count": 56
+    }
+  },
+  {
+    "proposal_id": "313",
+    "chain_id": "juno",
+    "title": "Deploy 2M Additional JUNO to the stJUNOJUNO pool on Osmosis",
+    "type": "Unknown",
+    "topic": "Unclassified",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 61,
+      "no_with_veto_count": 5,
+      "abstain_count": 15,
+      "no_count": 8,
+      "no_vote_count": 61
+    }
+  },
+  {
+    "proposal_id": "312",
+    "chain_id": "juno",
+    "title": "Deploy 2M Additional JUNO to the stJUNOJUNO pool on Osmosis",
+    "type": "Unknown",
+    "topic": "Unclassified",
+    "status": "REJECTED",
+    "final_tally_result": {
+      "no_count": 58,
+      "abstain_count": 11,
+      "no_with_veto_count": 3,
+      "yes_count": 7,
+      "no_vote_count": 71
+    }
+  },
+  {
+    "proposal_id": "311",
+    "chain_id": "juno",
+    "title": "Juno Upgrade Invictus v16",
+    "type": "SoftwareUpgrade",
+    "topic": "Major Release",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 112,
+      "abstain_count": 1,
+      "no_vote_count": 37
+    }
+  },
+  {
+    "proposal_id": "310",
+    "chain_id": "juno",
+    "title": "Revise Open Source Funding Policy",
+    "type": "TextProposal",
+    "topic": "Project Funding",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 93,
+      "abstain_count": 16,
+      "no_vote_count": 41
+    }
+  },
+  {
+    "proposal_id": "309",
+    "chain_id": "juno",
+    "title": "Community Spend Proposal to Support Juno Communications SubDAO",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 79,
+      "abstain_count": 18,
+      "no_count": 1,
+      "no_vote_count": 52
+    }
+  },
+  {
+    "proposal_id": "308",
+    "chain_id": "juno",
+    "title": "Recover Carbon IBC transfer channel",
+    "type": "IBCRelated",
+    "topic": "IBC Transfer",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 93,
+      "no_count": 2,
+      "abstain_count": 3,
+      "no_vote_count": 52
+    }
+  },
+  {
+    "proposal_id": "307",
+    "chain_id": "juno",
+    "title": "Reduce Network Fees in JUNO to 10 of current level",
+    "type": "ParameterChange",
+    "topic": "Fee Adjustment",
+    "status": "REJECTED",
+    "final_tally_result": {
+      "abstain_count": 35,
+      "no_count": 39,
+      "yes_count": 34,
+      "no_vote_count": 42
+    }
+  },
+  {
+    "proposal_id": "306",
+    "chain_id": "juno",
+    "title": "Waive Fees for Ojo Network Oracle",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "REJECTED",
+    "final_tally_result": {
+      "no_count": 31,
+      "abstain_count": 20,
+      "yes_count": 50,
+      "no_with_veto_count": 2,
+      "no_vote_count": 47
+    }
+  },
+  {
+    "proposal_id": "305",
+    "chain_id": "juno",
+    "title": "ATOM airdrop",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "REJECTED",
+    "final_tally_result": {
+      "no_with_veto_count": 73,
+      "no_count": 3,
+      "no_vote_count": 74
+    }
+  },
+  {
+    "proposal_id": "304",
+    "chain_id": "juno",
+    "title": "Increase governance deposit to 5000JUNO",
+    "type": "ParameterChange",
+    "topic": "Fee Adjustment",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 97,
+      "no_with_veto_count": 2,
+      "no_vote_count": 51
+    }
+  },
+  {
+    "proposal_id": "303",
+    "chain_id": "juno",
+    "title": "JUNO Airdrop ",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "REJECTED",
+    "final_tally_result": {
+      "no_with_veto_count": 87,
+      "no_vote_count": 63
+    }
+  },
+  {
+    "proposal_id": "302",
+    "chain_id": "juno",
+    "title": "ATOM airdrop",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "REJECTED",
+    "final_tally_result": {
+      "no_with_veto_count": 86,
+      "no_vote_count": 64
+    }
+  },
+  {
+    "proposal_id": "301",
+    "chain_id": "juno",
+    "title": "Juno Airdrop ",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "REJECTED",
+    "final_tally_result": {
+      "no_with_veto_count": 86,
+      "no_vote_count": 64
+    }
+  },
+  {
+    "proposal_id": "300",
+    "chain_id": "juno",
+    "title": "Layerzero x Cosmos airdrop",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "REJECTED",
+    "final_tally_result": {
+      "no_with_veto_count": 92,
+      "no_vote_count": 58
+    }
+  },
+  {
+    "proposal_id": "299",
+    "chain_id": "juno",
+    "title": "Juno Airdrop ",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "REJECTED",
+    "final_tally_result": {
+      "no_with_veto_count": 86,
+      "no_vote_count": 64
+    }
+  },
+  {
+    "proposal_id": "298",
+    "chain_id": "juno",
+    "title": "Layerzero airdrop",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "REJECTED",
+    "final_tally_result": {
+      "no_with_veto_count": 92,
+      "no_count": 1,
+      "no_vote_count": 57
+    }
+  },
+  {
+    "proposal_id": "297",
+    "chain_id": "juno",
+    "title": "Increase Network Fees",
+    "type": "ParameterChange",
+    "topic": "Fee Adjustment",
+    "status": "PASSED",
+    "final_tally_result": {
+      "abstain_count": 3,
+      "yes_count": 103,
+      "no_count": 2,
+      "no_vote_count": 42
+    }
+  },
+  {
+    "proposal_id": "296",
+    "chain_id": "juno",
+    "title": "Juno Airdrop ",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "REJECTED",
+    "final_tally_result": {
+      "no_with_veto_count": 94,
+      "no_count": 2,
+      "no_vote_count": 54
+    }
+  },
+  {
+    "proposal_id": "295",
+    "chain_id": "juno",
+    "title": "Juno Upgrade v15",
+    "type": "SoftwareUpgrade",
+    "topic": "Major Release",
+    "status": "PASSED",
+    "final_tally_result": {
+      "abstain_count": 1,
+      "yes_count": 123,
+      "no_vote_count": 26
+    }
+  },
+  {
+    "proposal_id": "294",
+    "chain_id": "juno",
+    "title": "Deploy 1M JUNO to the stJUNOJUNO pool on Osmosis",
+    "type": "CommunityPoolSpend",
+    "topic": "Ecosystem Growth",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 96,
+      "abstain_count": 9,
+      "no_vote_count": 45
+    }
+  },
+  {
+    "proposal_id": "293",
+    "chain_id": "juno",
+    "title": "66 Conferences budget  AfterCosmoverse Hackathon",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 86,
+      "abstain_count": 17,
+      "no_count": 4,
+      "no_vote_count": 43
+    }
+  },
+  {
+    "proposal_id": "292",
+    "chain_id": "juno",
+    "title": "56 Conferences budget  HackWasm Italy",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 82,
+      "no_count": 5,
+      "abstain_count": 21,
+      "no_vote_count": 42
+    }
+  },
+  {
+    "proposal_id": "291",
+    "chain_id": "juno",
+    "title": "46 Conferences budget  Nebular",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 93,
+      "no_count": 2,
+      "abstain_count": 13,
+      "no_vote_count": 42
+    }
+  },
+  {
+    "proposal_id": "290",
+    "chain_id": "juno",
+    "title": "36 Conferences budget  OsmoCon",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 91,
+      "abstain_count": 14,
+      "no_count": 4,
+      "no_vote_count": 41
+    }
+  },
+  {
+    "proposal_id": "289",
+    "chain_id": "juno",
+    "title": "26 Conferences budget  AwesomWasm",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 98,
+      "no_count": 1,
+      "abstain_count": 10,
+      "no_vote_count": 41
+    }
+  },
+  {
+    "proposal_id": "287",
+    "chain_id": "juno",
+    "title": "16 Communications SubDAO conferences budget",
+    "type": "TextProposal",
+    "topic": "Network Policy",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 93,
+      "no_count": 2,
+      "abstain_count": 13,
+      "no_vote_count": 42
+    }
+  },
+  {
+    "proposal_id": "286",
+    "chain_id": "juno",
+    "title": "Remove Lobo from Core1",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "REJECTED",
+    "final_tally_result": {
+      "no_count": 48,
+      "abstain_count": 44,
+      "no_with_veto_count": 12,
+      "weighted_vote_count": 1,
+      "yes_count": 1,
+      "no_vote_count": 44
+    }
+  },
+  {
+    "proposal_id": "285",
+    "chain_id": "juno",
+    "title": "Juno  DAO DAO Token Swap",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 103,
+      "abstain_count": 11,
+      "no_count": 1,
+      "no_vote_count": 35
+    }
+  },
+  {
+    "proposal_id": "284",
+    "chain_id": "juno",
+    "title": "WYND DEX External Incentives for WYNDJUNO Pool",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 53,
+      "abstain_count": 36,
+      "no_count": 19,
+      "no_vote_count": 42
+    }
+  },
+  {
+    "proposal_id": "283",
+    "chain_id": "juno",
+    "title": "WYND DEX External Incentives for WYNDJUNO Pool",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "REJECTED",
+    "final_tally_result": {
+      "no_count": 86,
+      "abstain_count": 11,
+      "yes_count": 4,
+      "no_vote_count": 49
+    }
+  },
+  {
+    "proposal_id": "282",
+    "chain_id": "juno",
+    "title": "Juno Upgrade Aurora v14",
+    "type": "SoftwareUpgrade",
+    "topic": "Major Release",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 117,
+      "no_vote_count": 33
+    }
+  },
+  {
+    "proposal_id": "280",
+    "chain_id": "juno",
+    "title": "Increase Validator Set to 160",
+    "type": "ParameterChange",
+    "topic": "Staking Parameters",
+    "status": "REJECTED",
+    "final_tally_result": {
+      "no_count": 53,
+      "yes_count": 32,
+      "abstain_count": 20,
+      "no_vote_count": 45
+    }
+  },
+  {
+    "proposal_id": "279",
+    "chain_id": "juno",
+    "title": "Protocol owned liquidity seJUNOJUNO on Wynd DEX",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "REJECTED",
+    "final_tally_result": {
+      "yes_count": 20,
+      "abstain_count": 60,
+      "no_count": 26,
+      "no_vote_count": 44
+    }
+  },
+  {
+    "proposal_id": "278",
+    "chain_id": "juno",
+    "title": "ARBITRUM ARB Airdrop claim",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "REJECTED",
+    "final_tally_result": {
+      "no_with_veto_count": 78,
+      "no_count": 2,
+      "no_vote_count": 70
+    }
+  },
+  {
+    "proposal_id": "277",
+    "chain_id": "juno",
+    "title": "Protocol Owned Liquidity wyJUNOJUNO Staking Swap Pool",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 94,
+      "abstain_count": 13,
+      "no_count": 3,
+      "no_vote_count": 40
+    }
+  },
+  {
+    "proposal_id": "276",
+    "chain_id": "juno",
+    "title": "WYND DEX External Incentives for JUNOUSDC Pool",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 108,
+      "abstain_count": 10,
+      "no_count": 3,
+      "no_vote_count": 29
+    }
+  },
+  {
+    "proposal_id": "275",
+    "chain_id": "juno",
+    "title": "Use Skip Tendermint By Default",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 93,
+      "abstain_count": 17,
+      "no_count": 8,
+      "no_vote_count": 32
+    }
+  },
+  {
+    "proposal_id": "274",
+    "chain_id": "juno",
+    "title": "Increase maximum per block gas to 100 million",
+    "type": "ParameterChange",
+    "topic": "Fee Adjustment",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 119,
+      "abstain_count": 1,
+      "no_vote_count": 30
+    }
+  },
+  {
+    "proposal_id": "271",
+    "chain_id": "juno",
+    "title": "Juno v13 Upgrade",
+    "type": "SoftwareUpgrade",
+    "topic": "Major Release",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 116,
+      "abstain_count": 2,
+      "no_vote_count": 32
+    }
+  },
+  {
+    "proposal_id": "249",
+    "chain_id": "juno",
+    "title": "Juno v12 Upgrade Stop Governance Spam",
+    "type": "SoftwareUpgrade",
+    "topic": "Security Enhancement",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 104,
+      "abstain_count": 1,
+      "no_vote_count": 45
+    }
+  },
+  {
+    "proposal_id": "144",
+    "chain_id": "juno",
+    "title": "Convert Core 1 to an Official SubDAO",
+    "type": "SmartContract",
+    "topic": "Contract Upgrade",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 98,
+      "abstain_count": 6,
+      "no_vote_count": 46
+    }
+  },
+  {
+    "proposal_id": "141",
+    "chain_id": "juno",
+    "title": "Protocol Owned Liquidity proposal on WYND DEX",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "PASSED",
+    "final_tally_result": {
+      "abstain_count": 25,
+      "yes_count": 82,
+      "no_count": 1,
+      "no_vote_count": 42
+    }
+  },
+  {
+    "proposal_id": "125",
+    "chain_id": "juno",
+    "title": "Fair and Equitable Distribution of Remaining Funds corrected",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "REJECTED",
+    "final_tally_result": {
+      "no_count": 80,
+      "abstain_count": 22,
+      "yes_count": 5,
+      "no_vote_count": 43
+    }
+  },
+  {
+    "proposal_id": "124",
+    "chain_id": "juno",
+    "title": "Fair and Equitable Distribution of Remaining Funds",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "REJECTED",
+    "final_tally_result": {
+      "no_count": 98,
+      "abstain_count": 10,
+      "no_vote_count": 42
+    }
+  },
+  {
+    "proposal_id": "93",
+    "chain_id": "juno",
+    "title": "Community Spend Proposal for AmigoSound Project",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "REJECTED",
+    "final_tally_result": {
+      "abstain_count": 12,
+      "no_count": 93,
+      "yes_count": 3,
+      "no_vote_count": 42
+    }
+  },
+  {
+    "proposal_id": "89",
+    "chain_id": "juno",
+    "title": "Cosmos Option Vaults by CzarDAO",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "REJECTED",
+    "final_tally_result": {
+      "abstain_count": 47,
+      "yes_count": 31,
+      "no_count": 26,
+      "no_vote_count": 46
+    }
+  },
+  {
+    "proposal_id": "87",
+    "chain_id": "juno",
+    "title": "Hack Juno Turkey",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 89,
+      "no_count": 4,
+      "abstain_count": 9,
+      "no_vote_count": 48
+    }
+  },
+  {
+    "proposal_id": "85",
+    "chain_id": "juno",
+    "title": "CORRECTED Make JUNO Carbon Neutral by Purchasing EcoCredits",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "REJECTED",
+    "final_tally_result": {
+      "yes_count": 24,
+      "no_count": 59,
+      "abstain_count": 16,
+      "no_vote_count": 51
+    }
+  },
+  {
+    "proposal_id": "83",
+    "chain_id": "juno",
+    "title": "Make JUNO Carbon Neutral by Purchasing EcoCredits",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "REJECTED",
+    "final_tally_result": {
+      "no_count": 78,
+      "yes_count": 5,
+      "abstain_count": 16,
+      "no_vote_count": 51
+    }
+  },
+  {
+    "proposal_id": "79",
+    "chain_id": "juno",
+    "title": "Revive Terra classic IBC Client",
+    "type": "IBCRelated",
+    "topic": "IBC Security",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 80,
+      "abstain_count": 15,
+      "no_vote_count": 55
+    }
+  },
+  {
+    "proposal_id": "77",
+    "chain_id": "juno",
+    "title": "Launch Sauce SubDAO",
+    "type": "SmartContract",
+    "topic": "Contract Upgrade",
+    "status": "PASSED",
+    "final_tally_result": {
+      "abstain_count": 13,
+      "yes_count": 77,
+      "no_vote_count": 60
+    }
+  },
+  {
+    "proposal_id": "72",
+    "chain_id": "juno",
+    "title": "Community consent Cosmos Pay supporting JUNO",
+    "type": "TextProposal",
+    "topic": "Project Funding",
+    "status": "PASSED",
+    "final_tally_result": {
+      "abstain_count": 29,
+      "yes_count": 47,
+      "no_count": 3,
+      "no_with_veto_count": 5,
+      "no_vote_count": 66
+    }
+  },
+  {
+    "proposal_id": "68",
+    "chain_id": "juno",
+    "title": "Enable Global Fees on Juno",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 87,
+      "abstain_count": 4,
+      "no_count": 1,
+      "no_vote_count": 58
+    }
+  },
+  {
+    "proposal_id": "67",
+    "chain_id": "juno",
+    "title": "Increase Community Tax",
+    "type": "ParameterChange",
+    "topic": "Protocol Configuration",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 94,
+      "no_count": 2,
+      "abstain_count": 7,
+      "no_vote_count": 47
+    }
+  },
+  {
+    "proposal_id": "64",
+    "chain_id": "juno",
+    "title": "Juno Open Source Funding Policy",
+    "type": "TextProposal",
+    "topic": "Project Funding",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 90,
+      "abstain_count": 16,
+      "no_count": 1,
+      "no_vote_count": 43
+    }
+  },
+  {
+    "proposal_id": "63",
+    "chain_id": "juno",
+    "title": "Formalise usage of Commonwealth for governance",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 95,
+      "abstain_count": 11,
+      "no_count": 4,
+      "no_vote_count": 40
+    }
+  },
+  {
+    "proposal_id": "61",
+    "chain_id": "juno",
+    "title": "Sunset Liquditiy Incentives for JunoSwap",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "PASSED",
+    "final_tally_result": {
+      "abstain_count": 8,
+      "yes_count": 103,
+      "no_vote_count": 39
+    }
+  },
+  {
+    "proposal_id": "60",
+    "chain_id": "juno",
+    "title": "Loop Finance  Juno Terra Developer Grant Final Tranche Payment",
+    "type": "TextProposal",
+    "topic": "Project Funding",
+    "status": "PASSED",
+    "final_tally_result": {
+      "abstain_count": 55,
+      "yes_count": 41,
+      "no_count": 14,
+      "no_vote_count": 40
+    }
+  },
+  {
+    "proposal_id": "59",
+    "chain_id": "juno",
+    "title": "Fund only open source software",
+    "type": "TextProposal",
+    "topic": "Project Funding",
+    "status": "PASSED",
+    "final_tally_result": {
+      "abstain_count": 25,
+      "yes_count": 47,
+      "weighted_vote_count": 1,
+      "no_count": 38,
+      "no_with_veto_count": 2,
+      "no_vote_count": 37
+    }
+  },
+  {
+    "proposal_id": "57",
+    "chain_id": "juno",
+    "title": "Implement Price Oracle on Juno",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 99,
+      "abstain_count": 10,
+      "no_count": 1,
+      "no_vote_count": 40
+    }
+  },
+  {
+    "proposal_id": "55",
+    "chain_id": "juno",
+    "title": "Launch Communications SubDAO",
+    "type": "SmartContract",
+    "topic": "Contract Upgrade",
+    "status": "PASSED",
+    "final_tally_result": {
+      "abstain_count": 7,
+      "yes_count": 100,
+      "no_count": 1,
+      "no_vote_count": 42
+    }
+  },
+  {
+    "proposal_id": "51",
+    "chain_id": "juno",
+    "title": "Implement a feesharing mechanism",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 119,
+      "no_count": 1,
+      "abstain_count": 5,
+      "no_vote_count": 25
+    }
+  },
+  {
+    "proposal_id": "50",
+    "chain_id": "juno",
+    "title": "Launch Delegations SubDAO",
+    "type": "SmartContract",
+    "topic": "Contract Upgrade",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 121,
+      "abstain_count": 3,
+      "no_vote_count": 26
+    }
+  },
+  {
+    "proposal_id": "49",
+    "chain_id": "juno",
+    "title": "Creation of the Grow Juno SubDAO",
+    "type": "SmartContract",
+    "topic": "Contract Upgrade",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 117,
+      "abstain_count": 4,
+      "no_vote_count": 29
+    }
+  },
+  {
+    "proposal_id": "47",
+    "chain_id": "juno",
+    "title": "Juno v11 Upgrade",
+    "type": "SoftwareUpgrade",
+    "topic": "Major Release",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 116,
+      "abstain_count": 3,
+      "no_vote_count": 31
+    }
+  },
+  {
+    "proposal_id": "44",
+    "chain_id": "juno",
+    "title": "Decrease per block gas limit",
+    "type": "ParameterChange",
+    "topic": "Fee Adjustment",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 121,
+      "abstain_count": 1,
+      "no_vote_count": 28
+    }
+  },
+  {
+    "proposal_id": "40",
+    "chain_id": "juno",
+    "title": "Juno V10 Upgrade",
+    "type": "SoftwareUpgrade",
+    "topic": "Major Release",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 127,
+      "abstain_count": 3,
+      "no_vote_count": 20
+    }
+  },
+  {
+    "proposal_id": "39",
+    "chain_id": "juno",
+    "title": "Komple Framework KompleJS  Marketplace Builder Proposal",
+    "type": "CommunityPoolSpend",
+    "topic": "Development Fund",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 68,
+      "abstain_count": 39,
+      "no_count": 6,
+      "no_vote_count": 37
+    }
+  },
+  {
+    "proposal_id": "32",
+    "chain_id": "juno",
+    "title": "Increase Validator Set to 150",
+    "type": "ParameterChange",
+    "topic": "Staking Parameters",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 108,
+      "abstain_count": 6,
+      "no_count": 2,
+      "no_vote_count": 34
+    }
+  },
+  {
+    "proposal_id": "31",
+    "chain_id": "juno",
+    "title": "Increase Governance Proposal Minimum Deposit",
+    "type": "ParameterChange",
+    "topic": "Governance Settings",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 97,
+      "no_count": 2,
+      "no_vote_count": 51
+    }
+  },
+  {
+    "proposal_id": "30",
+    "chain_id": "juno",
+    "title": "Gift to Cosmos stakeholders",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "REJECTED",
+    "final_tally_result": {
+      "no_count": 15,
+      "no_with_veto_count": 67,
+      "abstain_count": 4,
+      "yes_count": 5,
+      "no_vote_count": 59
+    }
+  },
+  {
+    "proposal_id": "29",
+    "chain_id": "juno",
+    "title": "Recover EVMOS channel by upgrading to new client",
+    "type": "IBCRelated",
+    "topic": "Client Update",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 91,
+      "no_vote_count": 59
+    }
+  },
+  {
+    "proposal_id": "28",
+    "chain_id": "juno",
+    "title": "Juno Multiverse Upgrade",
+    "type": "SoftwareUpgrade",
+    "topic": "Major Release",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 114,
+      "abstain_count": 2,
+      "no_vote_count": 34
+    }
+  },
+  {
+    "proposal_id": "27",
+    "chain_id": "juno",
+    "title": "Launch Hack Juno SubDAO",
+    "type": "SmartContract",
+    "topic": "Contract Upgrade",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 96,
+      "abstain_count": 1,
+      "no_vote_count": 53
+    }
+  },
+  {
+    "proposal_id": "26",
+    "chain_id": "juno",
+    "title": "Cosmoverse 2022 Sponsorship  Hackers Lounge",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 73,
+      "abstain_count": 8,
+      "no_count": 6,
+      "no_vote_count": 63
+    }
+  },
+  {
+    "proposal_id": "25",
+    "chain_id": "juno",
+    "title": "Juno SubDAO Principles",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 88,
+      "abstain_count": 8,
+      "no_vote_count": 54
+    }
+  },
+  {
+    "proposal_id": "24",
+    "chain_id": "juno",
+    "title": "Redirect interchain DEX liquidity rewards from UST to USDC",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 87,
+      "no_count": 1,
+      "abstain_count": 3,
+      "no_vote_count": 59
+    }
+  },
+  {
+    "proposal_id": "23",
+    "chain_id": "juno",
+    "title": "Community Spend Proposal for Creation of Terra Developer Fund",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 96,
+      "abstain_count": 2,
+      "no_count": 3,
+      "no_vote_count": 49
+    }
+  },
+  {
+    "proposal_id": "22",
+    "chain_id": "juno",
+    "title": "Increase Validator Set to 135",
+    "type": "ParameterChange",
+    "topic": "Staking Parameters",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 85,
+      "no_count": 1,
+      "abstain_count": 4,
+      "no_vote_count": 60
+    }
+  },
+  {
+    "proposal_id": "21",
+    "chain_id": "juno",
+    "title": "Vertias Proposal Upgrade",
+    "type": "SoftwareUpgrade",
+    "topic": "Major Release",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 96,
+      "abstain_count": 6,
+      "no_vote_count": 48
+    }
+  },
+  {
+    "proposal_id": "20",
+    "chain_id": "juno",
+    "title": "Unity Proposal",
+    "type": "SoftwareUpgrade",
+    "topic": "Major Release",
+    "status": "PASSED",
+    "final_tally_result": {
+      "abstain_count": 15,
+      "no_count": 17,
+      "weighted_vote_count": 1,
+      "yes_count": 82,
+      "no_vote_count": 35
+    }
+  },
+  {
+    "proposal_id": "19",
+    "chain_id": "juno",
+    "title": "Confirmation by CCN to agree to Unity Prop",
+    "type": "TextProposal",
+    "topic": "Project Funding",
+    "status": "REJECTED",
+    "final_tally_result": {
+      "no_count": 51,
+      "abstain_count": 23,
+      "yes_count": 2,
+      "no_with_veto_count": 9,
+      "no_vote_count": 65
+    }
+  },
+  {
+    "proposal_id": "18",
+    "chain_id": "juno",
+    "title": "Harmony Proposal to end FUD",
+    "type": "TextProposal",
+    "topic": "Project Funding",
+    "status": "REJECTED",
+    "final_tally_result": {
+      "no_count": 40,
+      "no_with_veto_count": 38,
+      "abstain_count": 21,
+      "yes_count": 1,
+      "no_vote_count": 50
+    }
+  },
+  {
+    "proposal_id": "17",
+    "chain_id": "juno",
+    "title": "Juno Lupercalia Phase 1",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 102,
+      "abstain_count": 3,
+      "no_vote_count": 45
+    }
+  },
+  {
+    "proposal_id": "16",
+    "chain_id": "juno",
+    "title": "Correcting the gamed stakedrop",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "PASSED",
+    "final_tally_result": {
+      "abstain_count": 27,
+      "no_count": 51,
+      "no_with_veto_count": 5,
+      "yes_count": 42,
+      "no_vote_count": 25
+    }
+  },
+  {
+    "proposal_id": "15",
+    "chain_id": "juno",
+    "title": "JunoSwap Signaling Proposal Allow permissionless listing of bridged assets from Sifchains Peggy bridge",
+    "type": "TextProposal",
+    "topic": "Community Decision",
+    "status": "REJECTED",
+    "final_tally_result": {
+      "no_count": 40,
+      "abstain_count": 30,
+      "yes_count": 14,
+      "no_with_veto_count": 1,
+      "no_vote_count": 65
+    }
+  },
+  {
+    "proposal_id": "14",
+    "chain_id": "juno",
+    "title": "Interchain DEX liquidity kickstarter",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 91,
+      "abstain_count": 3,
+      "no_vote_count": 56
+    }
+  },
+  {
+    "proposal_id": "13",
+    "chain_id": "juno",
+    "title": "Proposal to adjust blocks per year param",
+    "type": "ParameterChange",
+    "topic": "Fee Adjustment",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 77,
+      "no_vote_count": 73
+    }
+  },
+  {
+    "proposal_id": "12",
+    "chain_id": "juno",
+    "title": "Signaling proposal  JunoSwap DAO",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 77,
+      "abstain_count": 1,
+      "no_vote_count": 72
+    }
+  },
+  {
+    "proposal_id": "11",
+    "chain_id": "juno",
+    "title": "Juno  Keplr Wallet Native Integration",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 85,
+      "no_with_veto_count": 1,
+      "no_count": 7,
+      "abstain_count": 6,
+      "no_vote_count": 51
+    }
+  },
+  {
+    "proposal_id": "10",
+    "chain_id": "juno",
+    "title": "Juno Security Upgrade CWA2021003",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 80,
+      "no_count": 2,
+      "no_vote_count": 68
+    }
+  },
+  {
+    "proposal_id": "9",
+    "chain_id": "juno",
+    "title": "Moneta Patch",
+    "type": "SoftwareUpgrade",
+    "topic": "Security Enhancement",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 75,
+      "no_vote_count": 75
+    }
+  },
+  {
+    "proposal_id": "8",
+    "chain_id": "juno",
+    "title": "Juno Moneta Upgrade",
+    "type": "SoftwareUpgrade",
+    "topic": "Major Release",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 77,
+      "no_vote_count": 73
+    }
+  },
+  {
+    "proposal_id": "7",
+    "chain_id": "juno",
+    "title": "Community Spend Proposal for Liquidity Funding on JUNOXKI Incentivized Pool",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "REJECTED",
+    "final_tally_result": {
+      "abstain_count": 10,
+      "yes_count": 20,
+      "no_count": 19,
+      "no_vote_count": 101
+    }
+  },
+  {
+    "proposal_id": "6",
+    "chain_id": "juno",
+    "title": "Governance Proposal to set maximum per block gas",
+    "type": "ParameterChange",
+    "topic": "Fee Adjustment",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 58,
+      "no_vote_count": 92
+    }
+  },
+  {
+    "proposal_id": "5",
+    "chain_id": "juno",
+    "title": "Increase Validator Set to 125",
+    "type": "ParameterChange",
+    "topic": "Staking Parameters",
+    "status": "PASSED",
+    "final_tally_result": {
+      "abstain_count": 5,
+      "yes_count": 47,
+      "no_count": 1,
+      "no_vote_count": 97
+    }
+  },
+  {
+    "proposal_id": "4",
+    "chain_id": "juno",
+    "title": "Fixing Centralization From Gamed Stakedrop",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "REJECTED",
+    "final_tally_result": {
+      "no_count": 26,
+      "yes_count": 5,
+      "abstain_count": 12,
+      "no_vote_count": 107
+    }
+  },
+  {
+    "proposal_id": "3",
+    "chain_id": "juno",
+    "title": "Increase minimum commission rate to 5",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 50,
+      "no_with_veto_count": 1,
+      "abstain_count": 5,
+      "no_count": 1,
+      "no_vote_count": 93
+    }
+  },
+  {
+    "proposal_id": "1",
+    "chain_id": "juno",
+    "title": "Juno on Osmosis  Early pool incentives to mitigate slippage and boost liquidity",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 65,
+      "no_vote_count": 85
+    }
+  }
+]
