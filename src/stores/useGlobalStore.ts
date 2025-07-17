@@ -18,6 +18,8 @@ export interface TopicNode {
   voteDistribution: Record<string, number>
 }
 
+export type ValidatorSortKey = 'voteCount' | 'name';
+
 // 전역 상태 인터페이스
 interface GlobalStore {
   proposals: Proposal[]
@@ -29,6 +31,7 @@ interface GlobalStore {
   selectedTopics: string[]
   searchTerm: string
   approvalRateRange: [number, number]
+  validatorSortKey: ValidatorSortKey;
   
   categoryVisualizationMode: 'passRate' | 'voteCount'
   
@@ -47,6 +50,7 @@ interface GlobalStore {
   setApprovalRateRange: (range: [number, number]) => void
   setCategoryVisualizationMode: (mode: 'passRate' | 'voteCount') => void
   setWindowSize: (size: { width: number; height: number }) => void
+  setValidatorSortKey: (key: ValidatorSortKey) => void;
   
   // Selectors
   getProposalsFilteredByRate: () => Proposal[]
@@ -67,6 +71,7 @@ export const useGlobalStore = create<GlobalStore>((set, get) => ({
   searchTerm: '',
   approvalRateRange: [0, 100],
   categoryVisualizationMode: 'passRate',
+  validatorSortKey: 'voteCount',
   loading: true,
   error: null,
   windowSize: { width: 0, height: 0 },
@@ -96,7 +101,8 @@ export const useGlobalStore = create<GlobalStore>((set, get) => ({
       selectedChain: chain, 
       selectedCategories: [], 
       selectedTopics: [],
-      approvalRateRange: [0, 100]
+      approvalRateRange: [0, 100],
+      validatorSortKey: 'voteCount',
     })
     get().loadData(chain).catch(console.error)
   },
@@ -129,6 +135,7 @@ export const useGlobalStore = create<GlobalStore>((set, get) => ({
   setApprovalRateRange: (range: [number, number]) => set({ approvalRateRange: range }),
   setCategoryVisualizationMode: (mode) => set({ categoryVisualizationMode: mode }),
   setWindowSize: (size) => set({ windowSize: size }),
+  setValidatorSortKey: (key: ValidatorSortKey) => set({ validatorSortKey: key }),
 
   // Selectors
   getProposalsFilteredByRate: () => {

@@ -2,8 +2,8 @@
 
 import { useEffect, useRef, useState, useMemo } from 'react'
 import * as d3 from 'd3'
-import { useGlobalStore } from '@/stores/useGlobalStore'
-import { Loader2, ZoomIn, ZoomOut, RotateCcw, Palette } from 'lucide-react'
+import { useGlobalStore, type ValidatorSortKey } from '@/stores/useGlobalStore'
+import { Loader2, ZoomIn, ZoomOut, RotateCcw, Palette, ArrowDownUp, CaseSensitive } from 'lucide-react'
 
 // ... (interfaces and config remain the same)
 
@@ -71,9 +71,9 @@ export default function ValidatorHeatmap() {
     getFilteredValidators,
     selectedChain,
     loading,
-    selectedTopics,
-    searchTerm,
     approvalRateRange,
+    validatorSortKey,
+    setValidatorSortKey,
   } = useGlobalStore()
 
   // 데이터 전처리 및 메모이제이션
@@ -85,13 +85,25 @@ export default function ValidatorHeatmap() {
       return { validators: [], proposals: [], votes: [] }
     }
 
-    const validatorSet = new Set(filteredValidators.map(v => v.validator_address))
     const proposalSet = new Set(filteredProposals.map(p => p.proposal_id))
+    
+    // Calculate vote counts for each validator based on filtered proposals
+    const validatorVoteCounts = new Map<string, number>()
+    for (const vote of rawVotes) {
+      if (proposalSet.has(vote.proposal_id)) {
+        validatorVoteCounts.set(vote.validator_address, (validatorVoteCounts.get(vote.validator_address) || 0) + 1)
+      }
+    }
 
     const validators = filteredValidators
+      .slice() // Create a shallow copy to avoid mutating the original array
       .sort((a, b) => {
-        const aVotes = rawVotes.filter(v => v.validator_address === a.validator_address).length
-        const bVotes = rawVotes.filter(v => v.validator_address === b.validator_address).length
+        if (validatorSortKey === 'name') {
+          return (a.moniker || '').localeCompare(b.moniker || '')
+        }
+        // Default to 'voteCount'
+        const aVotes = validatorVoteCounts.get(a.validator_address) || 0
+        const bVotes = validatorVoteCounts.get(b.validator_address) || 0
         return bVotes - aVotes
       })
       .map((v, index) => ({
@@ -102,9 +114,7 @@ export default function ValidatorHeatmap() {
 
     const proposals = filteredProposals
       .sort((a, b) => {
-        const proposalA = rawProposals.find(p => p.proposal_id === a.proposal_id)
-        const proposalB = rawProposals.find(p => p.proposal_id === b.proposal_id)
-        return new Date(proposalB?.submit_time || 0).getTime() - new Date(proposalA?.submit_time || 0).getTime()
+        return new Date(b.submit_time).getTime() - new Date(a.submit_time).getTime()
       })
       .map((p, index) => ({
         id: p.proposal_id,
@@ -128,7 +138,7 @@ export default function ValidatorHeatmap() {
       }))
 
     return { validators, proposals, votes }
-  }, [rawProposals, rawValidators, rawVotes, selectedTopics, searchTerm, approvalRateRange, getFilteredProposals, getFilteredValidators])
+  }, [getFilteredProposals, getFilteredValidators, rawVotes, validatorSortKey])
 
   // D3.js 히트맵 렌더링
   useEffect(() => {
@@ -248,7 +258,7 @@ export default function ValidatorHeatmap() {
 
     setIsLoading(false)
 
-  }, [heatmapData, config, zoom, loading, rawProposals])
+  }, [heatmapData, config, zoom, loading])
 
   const handleZoomIn = () => setZoom(prev => Math.min(prev * 1.2, 5))
   const handleZoomOut = () => setZoom(prev => Math.max(prev / 1.2, 0.2))
@@ -277,7 +287,25 @@ export default function ValidatorHeatmap() {
           )}
         </div>
 
-        <div className="flex items-center gap-2">
+        <div className="flex items-center gap-4">
+          <div className="flex items-center bg-gray-100 rounded-lg p-1">
+            <button 
+              onClick={() => setValidatorSortKey('voteCount')} 
+              className={`flex items-center gap-1 px-3 py-2 text-xs font-medium rounded-md ${validatorSortKey === 'voteCount' ? 'bg-white text-gray-900 shadow-sm' : 'text-gray-600'}`}
+              title="Sort by vote participation"
+            >
+              <ArrowDownUp className="w-3 h-3" />
+              <span>Vote Count</span>
+            </button>
+            <button 
+              onClick={() => setValidatorSortKey('name')} 
+              className={`flex items-center gap-1 px-3 py-2 text-xs font-medium rounded-md ${validatorSortKey === 'name' ? 'bg-white text-gray-900 shadow-sm' : 'text-gray-600'}`}
+              title="Sort by name"
+            >
+              <CaseSensitive className="w-3 h-3" />
+              <span>Name</span>
+            </button>
+          </div>
           <div className="flex items-center gap-1 border border-gray-300 rounded-lg">
             <button onClick={handleZoomOut} className="p-2 hover:bg-gray-100" title="Zoom Out"><ZoomOut className="w-4 h-4" /></button>
             <span className="px-3 py-2 text-sm font-mono border-x">{Math.round(zoom * 100)}%</span>
