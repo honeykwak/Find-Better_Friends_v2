@@ -1,0 +1,3377 @@
+[
+  {
+    "proposal_id": "971",
+    "chain_id": "cosmos",
+    "title": "Gaia v21 Software Upgrade",
+    "type": "SoftwareUpgrade",
+    "topic": "Major Release",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 101,
+      "abstain_count": 1,
+      "no_count": 1,
+      "no_vote_count": 97
+    }
+  },
+  {
+    "proposal_id": "970",
+    "chain_id": "cosmos",
+    "title": "Update consensus and feemarket params",
+    "type": "ParameterChange",
+    "topic": "Fee Adjustment",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 100,
+      "abstain_count": 4,
+      "no_vote_count": 96
+    }
+  },
+  {
+    "proposal_id": "969",
+    "chain_id": "cosmos",
+    "title": "Gateway to the Interchain  Ethereum ecosystem",
+    "type": "Unknown",
+    "topic": "Unclassified",
+    "status": "REJECTED",
+    "final_tally_result": {
+      "no_with_veto_count": 91,
+      "no_count": 2,
+      "abstain_count": 1,
+      "yes_count": 1,
+      "no_vote_count": 105
+    }
+  },
+  {
+    "proposal_id": "968",
+    "chain_id": "cosmos",
+    "title": "ATOM Airdrop   Cosmo Hub New Version ",
+    "type": "Unknown",
+    "topic": "Unclassified",
+    "status": "REJECTED",
+    "final_tally_result": {
+      "no_with_veto_count": 83,
+      "abstain_count": 1,
+      "no_count": 1,
+      "yes_count": 1,
+      "no_vote_count": 114
+    }
+  },
+  {
+    "proposal_id": "966",
+    "chain_id": "cosmos",
+    "title": "Gaia v20 Software Upgrade",
+    "type": "SoftwareUpgrade",
+    "topic": "Major Release",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 106,
+      "abstain_count": 1,
+      "no_vote_count": 73
+    }
+  },
+  {
+    "proposal_id": "965",
+    "chain_id": "cosmos",
+    "title": "Layerzero x Cosmos airdrop",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "REJECTED",
+    "final_tally_result": {
+      "no_with_veto_count": 93,
+      "abstain_count": 1,
+      "no_count": 1,
+      "no_vote_count": 105
+    }
+  },
+  {
+    "proposal_id": "964",
+    "chain_id": "cosmos",
+    "title": " ATOM Airdrop  Weekend Airdrop  48 Hours Left ",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "REJECTED",
+    "final_tally_result": {
+      "no_with_veto_count": 94,
+      "abstain_count": 1,
+      "no_count": 1,
+      "no_vote_count": 84
+    }
+  },
+  {
+    "proposal_id": "963",
+    "chain_id": "cosmos",
+    "title": "Layerzero x Cosmos airdrop",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "REJECTED",
+    "final_tally_result": {
+      "no_with_veto_count": 94,
+      "no_count": 2,
+      "abstain_count": 1,
+      "no_vote_count": 83
+    }
+  },
+  {
+    "proposal_id": "961",
+    "chain_id": "cosmos",
+    "title": "ATOM Airdrop   GET  Liquid Staking ",
+    "type": "Unknown",
+    "topic": "Unclassified",
+    "status": "REJECTED",
+    "final_tally_result": {
+      "no_with_veto_count": 93,
+      "abstain_count": 1,
+      "no_count": 1,
+      "no_vote_count": 85
+    }
+  },
+  {
+    "proposal_id": "960",
+    "chain_id": "cosmos",
+    "title": "ATOM Airdrop     New Airdrop  September 2024 ",
+    "type": "Unknown",
+    "topic": "Unclassified",
+    "status": "REJECTED",
+    "final_tally_result": {
+      "no_with_veto_count": 95,
+      "no_count": 1,
+      "abstain_count": 1,
+      "no_vote_count": 83
+    }
+  },
+  {
+    "proposal_id": "959",
+    "chain_id": "cosmos",
+    "title": " Atom SURPRISE Proposal  RePayment 201",
+    "type": "Unknown",
+    "topic": "Unclassified",
+    "status": "REJECTED",
+    "final_tally_result": {
+      "no_with_veto_count": 93,
+      "abstain_count": 3,
+      "no_count": 1,
+      "no_vote_count": 83
+    }
+  },
+  {
+    "proposal_id": "958",
+    "chain_id": "cosmos",
+    "title": "ATOM Airdrop   AMENDMENT TO 956  Airdrop",
+    "type": "Unknown",
+    "topic": "Unclassified",
+    "status": "REJECTED",
+    "final_tally_result": {
+      "no_with_veto_count": 93,
+      "abstain_count": 2,
+      "no_count": 1,
+      "no_vote_count": 84
+    }
+  },
+  {
+    "proposal_id": "957",
+    "chain_id": "cosmos",
+    "title": "AMENDMENT TO 956  Update the Hubs stATOMATOM POL on Osmosis",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 99,
+      "weighted_vote_count": 1,
+      "abstain_count": 6,
+      "no_with_veto_count": 1,
+      "no_vote_count": 73
+    }
+  },
+  {
+    "proposal_id": "956",
+    "chain_id": "cosmos",
+    "title": "Update the Hubs stATOMATOM POL position on Osmosis",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "REJECTED",
+    "final_tally_result": {
+      "no_count": 68,
+      "abstain_count": 23,
+      "weighted_vote_count": 1,
+      "no_with_veto_count": 7,
+      "yes_count": 7,
+      "no_vote_count": 74
+    }
+  },
+  {
+    "proposal_id": "955",
+    "chain_id": "cosmos",
+    "title": "Signaling Proposal Reroute Cosmos Hub PoL Deployments to Hydro",
+    "type": "Unknown",
+    "topic": "Unclassified",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 94,
+      "abstain_count": 13,
+      "no_count": 1,
+      "no_with_veto_count": 1,
+      "no_vote_count": 71
+    }
+  },
+  {
+    "proposal_id": "954",
+    "chain_id": "cosmos",
+    "title": "Permissionless ICS 3rd Party Audit",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 70,
+      "abstain_count": 31,
+      "no_count": 10,
+      "no_vote_count": 69
+    }
+  },
+  {
+    "proposal_id": "953",
+    "chain_id": "cosmos",
+    "title": "ATOM Airdrop    Hot Airdrop   New Version 2024",
+    "type": "Unknown",
+    "topic": "Unclassified",
+    "status": "REJECTED",
+    "final_tally_result": {
+      "no_with_veto_count": 96,
+      "no_count": 3,
+      "yes_count": 1,
+      "abstain_count": 1,
+      "no_vote_count": 79
+    }
+  },
+  {
+    "proposal_id": "952",
+    "chain_id": "cosmos",
+    "title": "Declaration of No Confidence in the Interchain Foundation ICF Leadership A Call to Action",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "PASSED",
+    "final_tally_result": {
+      "abstain_count": 52,
+      "no_count": 20,
+      "yes_count": 30,
+      "weighted_vote_count": 3,
+      "no_with_veto_count": 9,
+      "no_vote_count": 66
+    }
+  },
+  {
+    "proposal_id": "951",
+    "chain_id": "cosmos",
+    "title": "ATOM Airdrop   Drop Liquid Staking ",
+    "type": "Unknown",
+    "topic": "Unclassified",
+    "status": "REJECTED",
+    "final_tally_result": {
+      "no_with_veto_count": 91,
+      "no_count": 4,
+      "abstain_count": 1,
+      "no_vote_count": 84
+    }
+  },
+  {
+    "proposal_id": "950",
+    "chain_id": "cosmos",
+    "title": "Signaling Proposal Migrate Prop 800 Funds from AADAO Multisig to a Valence Covenant Controlled by ATOM Governance",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 104,
+      "abstain_count": 5,
+      "no_vote_count": 71
+    }
+  },
+  {
+    "proposal_id": "948",
+    "chain_id": "cosmos",
+    "title": "Gaia v19 Software Upgrade",
+    "type": "SoftwareUpgrade",
+    "topic": "Major Release",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 106,
+      "abstain_count": 1,
+      "no_vote_count": 73
+    }
+  },
+  {
+    "proposal_id": "947",
+    "chain_id": "cosmos",
+    "title": "Signaling Proposal  Permissionless ICS Frontend",
+    "type": "Unknown",
+    "topic": "Unclassified",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 99,
+      "no_count": 5,
+      "abstain_count": 7,
+      "no_vote_count": 69
+    }
+  },
+  {
+    "proposal_id": "946",
+    "chain_id": "cosmos",
+    "title": "Lend ATOM on Mars v2 on Neutron",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "PASSED",
+    "final_tally_result": {
+      "no_count": 33,
+      "yes_count": 41,
+      "abstain_count": 35,
+      "no_vote_count": 71
+    }
+  },
+  {
+    "proposal_id": "945",
+    "chain_id": "cosmos",
+    "title": "Signaling Proposal  Permissionless ICS",
+    "type": "Unknown",
+    "topic": "Unclassified",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 90,
+      "no_count": 9,
+      "abstain_count": 8,
+      "no_vote_count": 73
+    }
+  },
+  {
+    "proposal_id": "944",
+    "chain_id": "cosmos",
+    "title": "Authorize DAO DAO Deployment",
+    "type": "ParameterChange",
+    "topic": "Protocol Configuration",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 99,
+      "abstain_count": 6,
+      "no_vote_count": 75
+    }
+  },
+  {
+    "proposal_id": "943",
+    "chain_id": "cosmos",
+    "title": "Funding ICS with Inactive Validators 3rd Party Audit",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 82,
+      "abstain_count": 18,
+      "no_count": 2,
+      "no_vote_count": 78
+    }
+  },
+  {
+    "proposal_id": "942",
+    "chain_id": "cosmos",
+    "title": " New Atom Airdrop  New Update Cosmos Hub  ",
+    "type": "Unknown",
+    "topic": "Unclassified",
+    "status": "REJECTED",
+    "final_tally_result": {
+      "no_with_veto_count": 85,
+      "no_count": 1,
+      "abstain_count": 2,
+      "no_vote_count": 92
+    }
+  },
+  {
+    "proposal_id": "941",
+    "chain_id": "cosmos",
+    "title": "ATOM Airdrop   Layerzero Airdrop ",
+    "type": "Unknown",
+    "topic": "Unclassified",
+    "status": "REJECTED",
+    "final_tally_result": {
+      "no_with_veto_count": 96,
+      "no_count": 3,
+      "no_vote_count": 81
+    }
+  },
+  {
+    "proposal_id": "940",
+    "chain_id": "cosmos",
+    "title": "Update expired IBC Client tendermint388 for cosmoshub4 vs sentinelhub2 chain",
+    "type": "IBCRelated",
+    "topic": "Client Update",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 106,
+      "abstain_count": 3,
+      "no_vote_count": 71
+    }
+  },
+  {
+    "proposal_id": "939",
+    "chain_id": "cosmos",
+    "title": "Layerzero ZRO x Cosmos airdrop",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "REJECTED",
+    "final_tally_result": {
+      "no_with_veto_count": 97,
+      "no_count": 2,
+      "no_vote_count": 81
+    }
+  },
+  {
+    "proposal_id": "938",
+    "chain_id": "cosmos",
+    "title": "New Atom Airdrop    Built by Mintscan Team ",
+    "type": "Unknown",
+    "topic": "Unclassified",
+    "status": "REJECTED",
+    "final_tally_result": {
+      "no_with_veto_count": 98,
+      "abstain_count": 1,
+      "no_count": 2,
+      "no_vote_count": 79
+    }
+  },
+  {
+    "proposal_id": "937",
+    "chain_id": "cosmos",
+    "title": "Gaia v18 Software Upgrade",
+    "type": "SoftwareUpgrade",
+    "topic": "Major Release",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 116,
+      "no_vote_count": 64
+    }
+  },
+  {
+    "proposal_id": "936",
+    "chain_id": "cosmos",
+    "title": "ATOM AirDrop   New AirDrop Checker ",
+    "type": "Unknown",
+    "topic": "Unclassified",
+    "status": "REJECTED",
+    "final_tally_result": {
+      "no_with_veto_count": 102,
+      "no_count": 1,
+      "no_vote_count": 77
+    }
+  },
+  {
+    "proposal_id": "935",
+    "chain_id": "cosmos",
+    "title": "Create the Cosmos Hubs GovernanceControlled Interchain Account on Neutron",
+    "type": "IBCRelated",
+    "topic": "IBC Security",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 106,
+      "abstain_count": 3,
+      "no_count": 1,
+      "no_vote_count": 70
+    }
+  },
+  {
+    "proposal_id": "934",
+    "chain_id": "cosmos",
+    "title": "ATOM Airdrop  Cosmo Hub New Version  ",
+    "type": "Unknown",
+    "topic": "Unclassified",
+    "status": "REJECTED",
+    "final_tally_result": {
+      "no_with_veto_count": 97,
+      "no_count": 1,
+      "no_vote_count": 82
+    }
+  },
+  {
+    "proposal_id": "933",
+    "chain_id": "cosmos",
+    "title": " Atom Airdrop   2024 Cosmos airdrop  ",
+    "type": "Unknown",
+    "topic": "Unclassified",
+    "status": "REJECTED",
+    "final_tally_result": {
+      "no_with_veto_count": 93,
+      "no_count": 1,
+      "no_vote_count": 86
+    }
+  },
+  {
+    "proposal_id": "932",
+    "chain_id": "cosmos",
+    "title": "Namada x Cosmos airdrop",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "REJECTED",
+    "final_tally_result": {
+      "no_count": 5,
+      "no_with_veto_count": 94,
+      "no_vote_count": 81
+    }
+  },
+  {
+    "proposal_id": "931",
+    "chain_id": "cosmos",
+    "title": "Slinky Beta Incentives Proposal",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 95,
+      "abstain_count": 14,
+      "no_count": 1,
+      "no_vote_count": 70
+    }
+  },
+  {
+    "proposal_id": "930",
+    "chain_id": "cosmos",
+    "title": "Signaling Proposal  ICS with Inactive Hub Validators",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 84,
+      "no_count": 13,
+      "abstain_count": 12,
+      "no_vote_count": 71
+    }
+  },
+  {
+    "proposal_id": "929",
+    "chain_id": "cosmos",
+    "title": " Atom Airdrop Available    Try New Version ",
+    "type": "Unknown",
+    "topic": "Unclassified",
+    "status": "REJECTED",
+    "final_tally_result": {
+      "no_with_veto_count": 87,
+      "no_count": 1,
+      "no_vote_count": 92
+    }
+  },
+  {
+    "proposal_id": "927",
+    "chain_id": "cosmos",
+    "title": "Funding 3rdParty Audit of ATOM Wars  Hydro Platform ",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 92,
+      "abstain_count": 14,
+      "no_vote_count": 74
+    }
+  },
+  {
+    "proposal_id": "926",
+    "chain_id": "cosmos",
+    "title": "Signaling Proposal  Expedited Software Upgrade Proposals",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 106,
+      "no_vote_count": 74
+    }
+  },
+  {
+    "proposal_id": "924",
+    "chain_id": "cosmos",
+    "title": "Gaia v17 Software Upgrade",
+    "type": "SoftwareUpgrade",
+    "topic": "Major Release",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 126,
+      "no_vote_count": 54
+    }
+  },
+  {
+    "proposal_id": "923",
+    "chain_id": "cosmos",
+    "title": "New Atom Airdrop ",
+    "type": "Unknown",
+    "topic": "Unclassified",
+    "status": "REJECTED",
+    "final_tally_result": {
+      "no_with_veto_count": 95,
+      "no_count": 4,
+      "no_vote_count": 81
+    }
+  },
+  {
+    "proposal_id": "922",
+    "chain_id": "cosmos",
+    "title": "AADAO Oversight Election Vote for Clyde Carver",
+    "type": "TextProposal",
+    "topic": "Community Decision",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 32,
+      "abstain_count": 76,
+      "weighted_vote_count": 1,
+      "no_count": 5,
+      "no_with_veto_count": 1,
+      "no_vote_count": 65
+    }
+  },
+  {
+    "proposal_id": "921",
+    "chain_id": "cosmos",
+    "title": "AADAO Oversight Election Vote for Matt Brown",
+    "type": "TextProposal",
+    "topic": "Community Decision",
+    "status": "REJECTED",
+    "final_tally_result": {
+      "abstain_count": 90,
+      "weighted_vote_count": 1,
+      "no_count": 12,
+      "yes_count": 8,
+      "no_with_veto_count": 1,
+      "no_vote_count": 68
+    }
+  },
+  {
+    "proposal_id": "920",
+    "chain_id": "cosmos",
+    "title": "AADAO Oversight Election Vote for Grace Cosmos Nanny",
+    "type": "TextProposal",
+    "topic": "Community Decision",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 45,
+      "weighted_vote_count": 1,
+      "no_count": 8,
+      "abstain_count": 60,
+      "no_with_veto_count": 1,
+      "no_vote_count": 65
+    }
+  },
+  {
+    "proposal_id": "919",
+    "chain_id": "cosmos",
+    "title": " Avail x Cosmos airdrop",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "REJECTED",
+    "final_tally_result": {
+      "no_with_veto_count": 99,
+      "no_count": 3,
+      "abstain_count": 2,
+      "no_vote_count": 76
+    }
+  },
+  {
+    "proposal_id": "917",
+    "chain_id": "cosmos",
+    "title": "CORRECTED DoraHacks AEZ Quadratic Funding Program",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "PASSED",
+    "final_tally_result": {
+      "abstain_count": 23,
+      "yes_count": 86,
+      "no_count": 1,
+      "no_vote_count": 70
+    }
+  },
+  {
+    "proposal_id": "916",
+    "chain_id": "cosmos",
+    "title": "DoraHacks AEZ Quadratic Funding Program",
+    "type": "Unknown",
+    "topic": "Unclassified",
+    "status": "REJECTED",
+    "final_tally_result": {
+      "no_count": 58,
+      "abstain_count": 23,
+      "yes_count": 26,
+      "no_vote_count": 73
+    }
+  },
+  {
+    "proposal_id": "915",
+    "chain_id": "cosmos",
+    "title": " SEDA x Cosmos airdrop",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "REJECTED",
+    "final_tally_result": {
+      "no_with_veto_count": 99,
+      "no_count": 3,
+      "no_vote_count": 78
+    }
+  },
+  {
+    "proposal_id": "914",
+    "chain_id": "cosmos",
+    "title": "Gaia v16 Software Upgrade",
+    "type": "SoftwareUpgrade",
+    "topic": "Major Release",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 119,
+      "no_vote_count": 61
+    }
+  },
+  {
+    "proposal_id": "912",
+    "chain_id": "cosmos",
+    "title": "DCF  Agoric Community Spend Proposal",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 82,
+      "no_count": 11,
+      "abstain_count": 23,
+      "no_vote_count": 64
+    }
+  },
+  {
+    "proposal_id": "911",
+    "chain_id": "cosmos",
+    "title": "New dApps on Atom   Try New Version 40 ",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "REJECTED",
+    "final_tally_result": {
+      "no_with_veto_count": 105,
+      "no_count": 1,
+      "no_vote_count": 74
+    }
+  },
+  {
+    "proposal_id": "910",
+    "chain_id": "cosmos",
+    "title": "Namada x Cosmos airdrop",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "REJECTED",
+    "final_tally_result": {
+      "no_with_veto_count": 106,
+      "no_count": 2,
+      "no_vote_count": 72
+    }
+  },
+  {
+    "proposal_id": "909",
+    "chain_id": "cosmos",
+    "title": "Atom Airdrop    Expires in 24 hours ",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "REJECTED",
+    "final_tally_result": {
+      "no_with_veto_count": 106,
+      "no_count": 2,
+      "no_vote_count": 72
+    }
+  },
+  {
+    "proposal_id": "908",
+    "chain_id": "cosmos",
+    "title": "ATOM Airdrop   Cosmos Hub Proposal ",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "REJECTED",
+    "final_tally_result": {
+      "no_with_veto_count": 105,
+      "no_count": 1,
+      "no_vote_count": 74
+    }
+  },
+  {
+    "proposal_id": "907",
+    "chain_id": "cosmos",
+    "title": "Namada x Cosmos airdrop",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "REJECTED",
+    "final_tally_result": {
+      "no_with_veto_count": 106,
+      "no_count": 2,
+      "no_vote_count": 72
+    }
+  },
+  {
+    "proposal_id": "906",
+    "chain_id": "cosmos",
+    "title": "ATOM Airdrop   Cosmos Hub Proposal ",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "REJECTED",
+    "final_tally_result": {
+      "no_with_veto_count": 107,
+      "no_count": 3,
+      "no_vote_count": 70
+    }
+  },
+  {
+    "proposal_id": "905",
+    "chain_id": "cosmos",
+    "title": "SAGA x Cosmos airdrop",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "REJECTED",
+    "final_tally_result": {
+      "no_with_veto_count": 107,
+      "no_count": 1,
+      "no_vote_count": 72
+    }
+  },
+  {
+    "proposal_id": "904",
+    "chain_id": "cosmos",
+    "title": "ATOM Airdrop   Cosmos Hub Proposal ",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "REJECTED",
+    "final_tally_result": {
+      "no_with_veto_count": 105,
+      "no_count": 2,
+      "no_vote_count": 73
+    }
+  },
+  {
+    "proposal_id": "903",
+    "chain_id": "cosmos",
+    "title": "SAGA x Cosmos airdrop",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "REJECTED",
+    "final_tally_result": {
+      "no_with_veto_count": 106,
+      "no_count": 2,
+      "no_vote_count": 72
+    }
+  },
+  {
+    "proposal_id": "902",
+    "chain_id": "cosmos",
+    "title": "ATOM Airdrop   Cosmos Hub Proposal ",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "REJECTED",
+    "final_tally_result": {
+      "no_with_veto_count": 106,
+      "no_count": 2,
+      "no_vote_count": 72
+    }
+  },
+  {
+    "proposal_id": "901",
+    "chain_id": "cosmos",
+    "title": "Namada x Cosmos airdrop",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "REJECTED",
+    "final_tally_result": {
+      "no_with_veto_count": 109,
+      "abstain_count": 1,
+      "no_count": 1,
+      "no_vote_count": 69
+    }
+  },
+  {
+    "proposal_id": "900",
+    "chain_id": "cosmos",
+    "title": "ATOM Airdrop   Cosmos Hub Proposal  ",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "REJECTED",
+    "final_tally_result": {
+      "no_with_veto_count": 108,
+      "no_count": 2,
+      "no_vote_count": 70
+    }
+  },
+  {
+    "proposal_id": "899",
+    "chain_id": "cosmos",
+    "title": "DCF   Agoric Cosmos Hub Proposal",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "PASSED",
+    "final_tally_result": {
+      "abstain_count": 25,
+      "no_count": 12,
+      "yes_count": 74,
+      "no_with_veto_count": 1,
+      "no_vote_count": 68
+    }
+  },
+  {
+    "proposal_id": "898",
+    "chain_id": "cosmos",
+    "title": "Dogecoin on Atom   New dApps on Atom ",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "REJECTED",
+    "final_tally_result": {
+      "no_with_veto_count": 103,
+      "no_count": 3,
+      "no_vote_count": 74
+    }
+  },
+  {
+    "proposal_id": "897",
+    "chain_id": "cosmos",
+    "title": "Signaling Proposal  ICS 20 Partial Set Security",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 122,
+      "abstain_count": 2,
+      "no_vote_count": 56
+    }
+  },
+  {
+    "proposal_id": "896",
+    "chain_id": "cosmos",
+    "title": "2024 New Version   New dApps on Atom ",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "REJECTED",
+    "final_tally_result": {
+      "no_with_veto_count": 104,
+      "no_count": 4,
+      "no_vote_count": 72
+    }
+  },
+  {
+    "proposal_id": "895",
+    "chain_id": "cosmos",
+    "title": "Signaling Proposal Permissioned CosmWasm",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 56,
+      "no_count": 27,
+      "abstain_count": 41,
+      "weighted_vote_count": 1,
+      "no_vote_count": 55
+    }
+  },
+  {
+    "proposal_id": "894",
+    "chain_id": "cosmos",
+    "title": "Atom Halving 20 Rewards ",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "REJECTED",
+    "final_tally_result": {
+      "no_with_veto_count": 99,
+      "no_count": 3,
+      "no_vote_count": 78
+    }
+  },
+  {
+    "proposal_id": "893",
+    "chain_id": "cosmos",
+    "title": "Permissioned CosmWasm for better tooling",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "REJECTED",
+    "final_tally_result": {
+      "no_count": 99,
+      "abstain_count": 7,
+      "no_with_veto_count": 10,
+      "yes_count": 1,
+      "no_vote_count": 63
+    }
+  },
+  {
+    "proposal_id": "892",
+    "chain_id": "cosmos",
+    "title": "ATOM Airdrop   2024 New Version  ",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "REJECTED",
+    "final_tally_result": {
+      "no_with_veto_count": 96,
+      "no_count": 2,
+      "no_vote_count": 82
+    }
+  },
+  {
+    "proposal_id": "891",
+    "chain_id": "cosmos",
+    "title": "Allocate 900k ATOM for The Next  Atom Airdrop ",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "REJECTED",
+    "final_tally_result": {
+      "no_with_veto_count": 103,
+      "no_count": 2,
+      "yes_count": 1,
+      "no_vote_count": 74
+    }
+  },
+  {
+    "proposal_id": "890",
+    "chain_id": "cosmos",
+    "title": "Signaling Proposal IBC Rate Limiting",
+    "type": "TextProposal",
+    "topic": "Community Decision",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 119,
+      "abstain_count": 5,
+      "no_vote_count": 56
+    }
+  },
+  {
+    "proposal_id": "889",
+    "chain_id": "cosmos",
+    "title": "Atom to 1000   Price Prediction 2024  ",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "REJECTED",
+    "final_tally_result": {
+      "no_with_veto_count": 105,
+      "no_count": 2,
+      "no_vote_count": 73
+    }
+  },
+  {
+    "proposal_id": "888",
+    "chain_id": "cosmos",
+    "title": "2024 New Version    New dApps on Atom ",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "REJECTED",
+    "final_tally_result": {
+      "no_with_veto_count": 101,
+      "no_count": 1,
+      "yes_count": 1,
+      "no_vote_count": 77
+    }
+  },
+  {
+    "proposal_id": "887",
+    "chain_id": "cosmos",
+    "title": "ATOM Airdrop   New dApps on Atom ",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "REJECTED",
+    "final_tally_result": {
+      "no_with_veto_count": 101,
+      "no_count": 3,
+      "no_vote_count": 76
+    }
+  },
+  {
+    "proposal_id": "886",
+    "chain_id": "cosmos",
+    "title": "New Cosmos ATOM Fork   AtomOne is READY ",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "REJECTED",
+    "final_tally_result": {
+      "no_count": 5,
+      "no_with_veto_count": 100,
+      "no_vote_count": 75
+    }
+  },
+  {
+    "proposal_id": "885",
+    "chain_id": "cosmos",
+    "title": "Gaia v15 Software Upgrade ",
+    "type": "SoftwareUpgrade",
+    "topic": "Major Release",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 133,
+      "abstain_count": 1,
+      "no_vote_count": 46
+    }
+  },
+  {
+    "proposal_id": "884",
+    "chain_id": "cosmos",
+    "title": "ATOM Airdrop   New Cosmos ATOM Fork is ready ",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "REJECTED",
+    "final_tally_result": {
+      "no_with_veto_count": 98,
+      "no_count": 4,
+      "yes_count": 1,
+      "no_vote_count": 77
+    }
+  },
+  {
+    "proposal_id": "883",
+    "chain_id": "cosmos",
+    "title": "New Cosmos ATOM Fork   AtomOne is READY ",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "REJECTED",
+    "final_tally_result": {
+      "no_with_veto_count": 100,
+      "no_count": 4,
+      "yes_count": 1,
+      "no_vote_count": 75
+    }
+  },
+  {
+    "proposal_id": "882",
+    "chain_id": "cosmos",
+    "title": "ATOM Airdrop   New dApps on Atom ",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "REJECTED",
+    "final_tally_result": {
+      "no_with_veto_count": 100,
+      "no_count": 4,
+      "yes_count": 1,
+      "no_vote_count": 75
+    }
+  },
+  {
+    "proposal_id": "881",
+    "chain_id": "cosmos",
+    "title": " Bitcoin Meets Atom   Enter Security Aggregation ",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "REJECTED",
+    "final_tally_result": {
+      "no_with_veto_count": 100,
+      "no_count": 4,
+      "yes_count": 1,
+      "no_vote_count": 75
+    }
+  },
+  {
+    "proposal_id": "880",
+    "chain_id": "cosmos",
+    "title": "Signaling Proposal Update instructions for ATOM POL 3",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 123,
+      "abstain_count": 4,
+      "no_with_veto_count": 1,
+      "no_count": 1,
+      "no_vote_count": 51
+    }
+  },
+  {
+    "proposal_id": "879",
+    "chain_id": "cosmos",
+    "title": "New Atom Liquidity   ATOM Airdrop ",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "REJECTED",
+    "final_tally_result": {
+      "no_with_veto_count": 101,
+      "no_count": 3,
+      "yes_count": 1,
+      "no_vote_count": 75
+    }
+  },
+  {
+    "proposal_id": "878",
+    "chain_id": "cosmos",
+    "title": "New dApps on Atom   Get Atom Airdrop ",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "REJECTED",
+    "final_tally_result": {
+      "no_count": 4,
+      "no_with_veto_count": 103,
+      "yes_count": 1,
+      "no_vote_count": 72
+    }
+  },
+  {
+    "proposal_id": "877",
+    "chain_id": "cosmos",
+    "title": "Substitute IBC light client for doravota",
+    "type": "IBCRelated",
+    "topic": "IBC Security",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 125,
+      "abstain_count": 3,
+      "no_vote_count": 52
+    }
+  },
+  {
+    "proposal_id": "876",
+    "chain_id": "cosmos",
+    "title": "New dApps on Atom    Stay up to date ",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "REJECTED",
+    "final_tally_result": {
+      "no_with_veto_count": 106,
+      "no_count": 4,
+      "yes_count": 1,
+      "no_vote_count": 69
+    }
+  },
+  {
+    "proposal_id": "875",
+    "chain_id": "cosmos",
+    "title": "ATOM Airdrop  New Deluxe version",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "REJECTED",
+    "final_tally_result": {
+      "no_with_veto_count": 102,
+      "no_count": 5,
+      "yes_count": 1,
+      "no_vote_count": 72
+    }
+  },
+  {
+    "proposal_id": "874",
+    "chain_id": "cosmos",
+    "title": "ATOM Airdrop  2024 New Update ",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "REJECTED",
+    "final_tally_result": {
+      "no_with_veto_count": 100,
+      "no_count": 5,
+      "yes_count": 1,
+      "no_vote_count": 74
+    }
+  },
+  {
+    "proposal_id": "873",
+    "chain_id": "cosmos",
+    "title": "ATOM Airdrop  2024 New Version ",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "REJECTED",
+    "final_tally_result": {
+      "no_with_veto_count": 100,
+      "no_count": 6,
+      "weighted_vote_count": 1,
+      "yes_count": 1,
+      "no_vote_count": 72
+    }
+  },
+  {
+    "proposal_id": "872",
+    "chain_id": "cosmos",
+    "title": "ATOM Airdrop  2024 New Version ",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "REJECTED",
+    "final_tally_result": {
+      "no_with_veto_count": 104,
+      "no_count": 5,
+      "weighted_vote_count": 1,
+      "yes_count": 1,
+      "no_vote_count": 69
+    }
+  },
+  {
+    "proposal_id": "871",
+    "chain_id": "cosmos",
+    "title": "Update Client Revive client to Realio",
+    "type": "IBCRelated",
+    "topic": "Client Update",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 125,
+      "weighted_vote_count": 1,
+      "abstain_count": 7,
+      "no_vote_count": 47
+    }
+  },
+  {
+    "proposal_id": "870",
+    "chain_id": "cosmos",
+    "title": "ATOM Airdrop   2024 New Version ",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "REJECTED",
+    "final_tally_result": {
+      "no_with_veto_count": 111,
+      "weighted_vote_count": 1,
+      "no_count": 4,
+      "yes_count": 1,
+      "no_vote_count": 63
+    }
+  },
+  {
+    "proposal_id": "868",
+    "chain_id": "cosmos",
+    "title": "Decrease InflationMin parameter to 0",
+    "type": "ParameterChange",
+    "topic": "Economic Parameters",
+    "status": "REJECTED",
+    "final_tally_result": {
+      "no_count": 73,
+      "yes_count": 55,
+      "abstain_count": 23,
+      "weighted_vote_count": 1,
+      "no_vote_count": 28
+    }
+  },
+  {
+    "proposal_id": "867",
+    "chain_id": "cosmos",
+    "title": "Validator incentivization",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 140,
+      "abstain_count": 11,
+      "weighted_vote_count": 1,
+      "no_vote_count": 28
+    }
+  },
+  {
+    "proposal_id": "865",
+    "chain_id": "cosmos",
+    "title": "Funding ATOM Accelerator DAO AADAO renewal proposal",
+    "type": "CommunityPoolSpend",
+    "topic": "Development Fund",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 109,
+      "abstain_count": 22,
+      "no_count": 5,
+      "no_with_veto_count": 1,
+      "no_vote_count": 43
+    }
+  },
+  {
+    "proposal_id": "864",
+    "chain_id": "cosmos",
+    "title": "Development Approval Request for the ATOM Alignment Treasury",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 131,
+      "abstain_count": 5,
+      "no_with_veto_count": 1,
+      "no_vote_count": 43
+    }
+  },
+  {
+    "proposal_id": "862",
+    "chain_id": "cosmos",
+    "title": "Cosmos Hub IBC relayer gas cost restitution using FeeGrants",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 131,
+      "abstain_count": 7,
+      "no_vote_count": 42
+    }
+  },
+  {
+    "proposal_id": "861",
+    "chain_id": "cosmos",
+    "title": "Increase Active Set of Validators from 180 to 190",
+    "type": "ParameterChange",
+    "topic": "Staking Parameters",
+    "status": "REJECTED",
+    "final_tally_result": {
+      "no_count": 79,
+      "yes_count": 31,
+      "abstain_count": 34,
+      "no_vote_count": 36
+    }
+  },
+  {
+    "proposal_id": "860",
+    "chain_id": "cosmos",
+    "title": "Signaling Proposal  Claw back unvested funds from Proposal 104",
+    "type": "TextProposal",
+    "topic": "Project Funding",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 143,
+      "abstain_count": 6,
+      "no_count": 1,
+      "no_vote_count": 30
+    }
+  },
+  {
+    "proposal_id": "858",
+    "chain_id": "cosmos",
+    "title": "Allocate 900k ATOM as Cosmos Hub Protocol Owned Liquidity in the Osmosis stATOMATOM pool",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 114,
+      "abstain_count": 20,
+      "no_count": 14,
+      "no_vote_count": 32
+    }
+  },
+  {
+    "proposal_id": "856",
+    "chain_id": "cosmos",
+    "title": "Funding the first inscription COSS on Cosmos",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "REJECTED",
+    "final_tally_result": {
+      "no_count": 127,
+      "abstain_count": 6,
+      "no_with_veto_count": 14,
+      "yes_count": 2,
+      "no_vote_count": 31
+    }
+  },
+  {
+    "proposal_id": "855",
+    "chain_id": "cosmos",
+    "title": "IBC Client Update Expired Client to Realio Chain",
+    "type": "IBCRelated",
+    "topic": "Client Update",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 138,
+      "abstain_count": 6,
+      "no_count": 1,
+      "no_vote_count": 35
+    }
+  },
+  {
+    "proposal_id": "854",
+    "chain_id": "cosmos",
+    "title": "Gaia v14 Software Upgrade",
+    "type": "SoftwareUpgrade",
+    "topic": "Major Release",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 164,
+      "no_count": 1,
+      "no_vote_count": 15
+    }
+  },
+  {
+    "proposal_id": "853",
+    "chain_id": "cosmos",
+    "title": "Allocate 600k ATOM for liquid staking growth to pSTAKE",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "PASSED",
+    "final_tally_result": {
+      "abstain_count": 43,
+      "yes_count": 74,
+      "weighted_vote_count": 1,
+      "no_count": 35,
+      "no_vote_count": 27
+    }
+  },
+  {
+    "proposal_id": "852",
+    "chain_id": "cosmos",
+    "title": "Celestia Airdrop TIA  Revote this ATOM Proposal",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "REJECTED",
+    "final_tally_result": {
+      "no_with_veto_count": 117,
+      "no_count": 6,
+      "yes_count": 1,
+      "no_vote_count": 56
+    }
+  },
+  {
+    "proposal_id": "851",
+    "chain_id": "cosmos",
+    "title": "Resolution of Proposal 72 Funding Distribution",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 128,
+      "abstain_count": 27,
+      "no_count": 2,
+      "no_vote_count": 23
+    }
+  },
+  {
+    "proposal_id": "849",
+    "chain_id": "cosmos",
+    "title": "Atom Airdrop   Discover The Premium Network",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "REJECTED",
+    "final_tally_result": {
+      "no_with_veto_count": 119,
+      "no_count": 4,
+      "yes_count": 1,
+      "no_vote_count": 56
+    }
+  },
+  {
+    "proposal_id": "848",
+    "chain_id": "cosmos",
+    "title": "ATOM Halving Set the max Inflation Rate to 10",
+    "type": "ParameterChange",
+    "topic": "Economic Parameters",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 103,
+      "weighted_vote_count": 4,
+      "no_count": 41,
+      "abstain_count": 23,
+      "no_with_veto_count": 2,
+      "no_vote_count": 7
+    }
+  },
+  {
+    "proposal_id": "847",
+    "chain_id": "cosmos",
+    "title": "Atom Airdrop   New Lightning Network ",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "REJECTED",
+    "final_tally_result": {
+      "no_with_veto_count": 116,
+      "yes_count": 2,
+      "no_count": 3,
+      "no_vote_count": 59
+    }
+  },
+  {
+    "proposal_id": "845",
+    "chain_id": "cosmos",
+    "title": "Proposal to increase MaxBlockSize",
+    "type": "ParameterChange",
+    "topic": "Fee Adjustment",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 147,
+      "abstain_count": 9,
+      "no_vote_count": 24
+    }
+  },
+  {
+    "proposal_id": "844",
+    "chain_id": "cosmos",
+    "title": "Update Global Fee Parameters",
+    "type": "ParameterChange",
+    "topic": "Fee Adjustment",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 151,
+      "abstain_count": 4,
+      "no_count": 1,
+      "no_vote_count": 24
+    }
+  },
+  {
+    "proposal_id": "843",
+    "chain_id": "cosmos",
+    "title": "Increase Global Fee minimum gas prices",
+    "type": "ParameterChange",
+    "topic": "Fee Adjustment",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 148,
+      "abstain_count": 8,
+      "no_count": 2,
+      "no_vote_count": 22
+    }
+  },
+  {
+    "proposal_id": "842",
+    "chain_id": "cosmos",
+    "title": "Cosmos Hub adopt the Skip Block SDK",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 131,
+      "no_with_veto_count": 1,
+      "abstain_count": 24,
+      "no_count": 3,
+      "no_vote_count": 21
+    }
+  },
+  {
+    "proposal_id": "841",
+    "chain_id": "cosmos",
+    "title": "ATOM Airdrop    DYDX Migration  nBTC New Feature",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "REJECTED",
+    "final_tally_result": {
+      "no_with_veto_count": 112,
+      "no_count": 3,
+      "yes_count": 1,
+      "no_vote_count": 64
+    }
+  },
+  {
+    "proposal_id": "839",
+    "chain_id": "cosmos",
+    "title": "Fund 2024 Hub development by Informal Systems and Hypha Worker Coop",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "PASSED",
+    "final_tally_result": {
+      "no_count": 32,
+      "yes_count": 75,
+      "abstain_count": 41,
+      "no_with_veto_count": 4,
+      "no_vote_count": 28
+    }
+  },
+  {
+    "proposal_id": "838",
+    "chain_id": "cosmos",
+    "title": "ATOM Airdrop   New Version 21",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "REJECTED",
+    "final_tally_result": {
+      "no_with_veto_count": 109,
+      "no_count": 4,
+      "yes_count": 1,
+      "no_vote_count": 66
+    }
+  },
+  {
+    "proposal_id": "837",
+    "chain_id": "cosmos",
+    "title": "Stake and Get ATOM Airdrop   Earn More Yield",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "REJECTED",
+    "final_tally_result": {
+      "no_with_veto_count": 105,
+      "no_count": 4,
+      "yes_count": 1,
+      "no_vote_count": 70
+    }
+  },
+  {
+    "proposal_id": "836",
+    "chain_id": "cosmos",
+    "title": "Vitwits Funding Proposal Support Resolute",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "REJECTED",
+    "final_tally_result": {
+      "no_count": 52,
+      "abstain_count": 37,
+      "yes_count": 52,
+      "no_with_veto_count": 2,
+      "no_vote_count": 37
+    }
+  },
+  {
+    "proposal_id": "835",
+    "chain_id": "cosmos",
+    "title": "Transfer unclaimed NTRN airdrop tokens to Cosmos Hub",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 151,
+      "abstain_count": 2,
+      "no_vote_count": 27
+    }
+  },
+  {
+    "proposal_id": "834",
+    "chain_id": "cosmos",
+    "title": "ATOM Airdrop ",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "REJECTED",
+    "final_tally_result": {
+      "no_with_veto_count": 106,
+      "no_count": 4,
+      "yes_count": 2,
+      "abstain_count": 1,
+      "no_vote_count": 67
+    }
+  },
+  {
+    "proposal_id": "833",
+    "chain_id": "cosmos",
+    "title": "Param Change Set ValidatorLiquidStakingCap to 100",
+    "type": "ParameterChange",
+    "topic": "Staking Parameters",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 127,
+      "no_count": 9,
+      "abstain_count": 14,
+      "no_with_veto_count": 1,
+      "no_vote_count": 29
+    }
+  },
+  {
+    "proposal_id": "832",
+    "chain_id": "cosmos",
+    "title": "Cosmos Hub X Celestia TIA Airdrop ",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "REJECTED",
+    "final_tally_result": {
+      "no_with_veto_count": 108,
+      "no_count": 5,
+      "yes_count": 2,
+      "no_vote_count": 65
+    }
+  },
+  {
+    "proposal_id": "831",
+    "chain_id": "cosmos",
+    "title": "ATOM  Celestia Airdrop ",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "REJECTED",
+    "final_tally_result": {
+      "no_with_veto_count": 113,
+      "no_count": 4,
+      "yes_count": 1,
+      "no_vote_count": 62
+    }
+  },
+  {
+    "proposal_id": "830",
+    "chain_id": "cosmos",
+    "title": "Cosmos x Celestia Airdrop ",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "REJECTED",
+    "final_tally_result": {
+      "no_with_veto_count": 114,
+      "no_count": 5,
+      "yes_count": 1,
+      "no_vote_count": 60
+    }
+  },
+  {
+    "proposal_id": "829",
+    "chain_id": "cosmos",
+    "title": "ParamChange Increase Max Block Gas Limit",
+    "type": "ParameterChange",
+    "topic": "Fee Adjustment",
+    "status": "PASSED",
+    "final_tally_result": {
+      "abstain_count": 4,
+      "yes_count": 146,
+      "no_count": 1,
+      "no_vote_count": 29
+    }
+  },
+  {
+    "proposal_id": "828",
+    "chain_id": "cosmos",
+    "title": "ATOM Airdrop ",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "REJECTED",
+    "final_tally_result": {
+      "no_with_veto_count": 111,
+      "no_count": 4,
+      "yes_count": 1,
+      "no_vote_count": 64
+    }
+  },
+  {
+    "proposal_id": "827",
+    "chain_id": "cosmos",
+    "title": "Reduce Maximum Block Size",
+    "type": "ParameterChange",
+    "topic": "Fee Adjustment",
+    "status": "REJECTED",
+    "final_tally_result": {
+      "no_count": 71,
+      "abstain_count": 29,
+      "yes_count": 47,
+      "weighted_vote_count": 1,
+      "no_vote_count": 32
+    }
+  },
+  {
+    "proposal_id": "826",
+    "chain_id": "cosmos",
+    "title": "Set Minimum Commission to 5",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 117,
+      "abstain_count": 17,
+      "no_count": 15,
+      "weighted_vote_count": 1,
+      "no_vote_count": 30
+    }
+  },
+  {
+    "proposal_id": "825",
+    "chain_id": "cosmos",
+    "title": "v13 Software Upgrade",
+    "type": "SoftwareUpgrade",
+    "topic": "Major Release",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 153,
+      "abstain_count": 1,
+      "weighted_vote_count": 1,
+      "no_vote_count": 25
+    }
+  },
+  {
+    "proposal_id": "824",
+    "chain_id": "cosmos",
+    "title": "ATOM Airdrop  ",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "REJECTED",
+    "final_tally_result": {
+      "no_with_veto_count": 104,
+      "no_count": 6,
+      "weighted_vote_count": 1,
+      "no_vote_count": 69
+    }
+  },
+  {
+    "proposal_id": "823",
+    "chain_id": "cosmos",
+    "title": "Signaling Proposal Update instructions for ATOM POL 2",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 145,
+      "abstain_count": 4,
+      "no_count": 1,
+      "weighted_vote_count": 1,
+      "no_vote_count": 29
+    }
+  },
+  {
+    "proposal_id": "821",
+    "chain_id": "cosmos",
+    "title": "v12 Software Upgrade",
+    "type": "SoftwareUpgrade",
+    "topic": "Major Release",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 147,
+      "no_count": 1,
+      "no_vote_count": 32
+    }
+  },
+  {
+    "proposal_id": "819",
+    "chain_id": "cosmos",
+    "title": "Reallocate Prop 72 funding from P2P to Neutron",
+    "type": "TextProposal",
+    "topic": "Project Funding",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 143,
+      "abstain_count": 5,
+      "no_vote_count": 32
+    }
+  },
+  {
+    "proposal_id": "818",
+    "chain_id": "cosmos",
+    "title": "Punish Equivocation on Neutron by Pupmos and Citizen Cosmos",
+    "type": "Unknown",
+    "topic": "Miscellaneous",
+    "status": "REJECTED",
+    "final_tally_result": {
+      "no_count": 95,
+      "abstain_count": 16,
+      "yes_count": 33,
+      "no_with_veto_count": 5,
+      "weighted_vote_count": 1,
+      "no_vote_count": 30
+    }
+  },
+  {
+    "proposal_id": "817",
+    "chain_id": "cosmos",
+    "title": "Signaling Proposal Approve the Stride Delegation Process Cosmos Hub Advisory Council",
+    "type": "TextProposal",
+    "topic": "Community Decision",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 138,
+      "no_count": 1,
+      "abstain_count": 3,
+      "no_with_veto_count": 1,
+      "no_vote_count": 37
+    }
+  },
+  {
+    "proposal_id": "814",
+    "chain_id": "cosmos",
+    "title": "Funding Proposal Supporting Public Goods  Ping Dashboard",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 136,
+      "abstain_count": 12,
+      "no_with_veto_count": 1,
+      "no_vote_count": 31
+    }
+  },
+  {
+    "proposal_id": "812",
+    "chain_id": "cosmos",
+    "title": "ATOM Airdrop for COSMOS stakers ",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "REJECTED",
+    "final_tally_result": {
+      "no_with_veto_count": 91,
+      "abstain_count": 1,
+      "no_count": 7,
+      "yes_count": 3,
+      "no_vote_count": 78
+    }
+  },
+  {
+    "proposal_id": "811",
+    "chain_id": "cosmos",
+    "title": "Enable permissioned WASM applications on the Cosmos Hub",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "REJECTED",
+    "final_tally_result": {
+      "no_count": 107,
+      "yes_count": 25,
+      "no_with_veto_count": 11,
+      "abstain_count": 8,
+      "no_vote_count": 29
+    }
+  },
+  {
+    "proposal_id": "810",
+    "chain_id": "cosmos",
+    "title": "Signaling Proposal Add The Fee Abstraction Module to the Cosmos Hub",
+    "type": "TextProposal",
+    "topic": "Project Funding",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 142,
+      "no_count": 2,
+      "abstain_count": 2,
+      "no_vote_count": 34
+    }
+  },
+  {
+    "proposal_id": "805",
+    "chain_id": "cosmos",
+    "title": "Update instructions for ATOM POL granted in Strides ICS proposal ",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 150,
+      "no_count": 1,
+      "abstain_count": 1,
+      "no_vote_count": 28
+    }
+  },
+  {
+    "proposal_id": "804",
+    "chain_id": "cosmos",
+    "title": "v11 Software Upgrade",
+    "type": "SoftwareUpgrade",
+    "topic": "Major Release",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 157,
+      "no_vote_count": 23
+    }
+  },
+  {
+    "proposal_id": "801",
+    "chain_id": "cosmos",
+    "title": "Signalling Proposal  Gravity Dex Liquidity Module Removal",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 130,
+      "no_count": 2,
+      "abstain_count": 1,
+      "no_vote_count": 47
+    }
+  },
+  {
+    "proposal_id": "800",
+    "chain_id": "cosmos",
+    "title": "Provide 450K ATOM to Strides stATOM liquidity pool",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 117,
+      "abstain_count": 16,
+      "no_count": 3,
+      "no_vote_count": 44
+    }
+  },
+  {
+    "proposal_id": "799",
+    "chain_id": "cosmos",
+    "title": "Onboard the Stride blockchain for ICS",
+    "type": "Unknown",
+    "topic": "Miscellaneous",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 134,
+      "no_count": 1,
+      "abstain_count": 3,
+      "no_vote_count": 42
+    }
+  },
+  {
+    "proposal_id": "798",
+    "chain_id": "cosmos",
+    "title": "v10",
+    "type": "SoftwareUpgrade",
+    "topic": "Major Release",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 138,
+      "no_count": 1,
+      "no_vote_count": 41
+    }
+  },
+  {
+    "proposal_id": "797",
+    "chain_id": "cosmos",
+    "title": "Increase the validator set of Cosmos Hub to 180 from 175",
+    "type": "ParameterChange",
+    "topic": "Staking Parameters",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 115,
+      "no_count": 8,
+      "abstain_count": 15,
+      "no_vote_count": 42
+    }
+  },
+  {
+    "proposal_id": "796",
+    "chain_id": "cosmos",
+    "title": "Nullify proposal 75",
+    "type": "TextProposal",
+    "topic": "Project Funding",
+    "status": "REJECTED",
+    "final_tally_result": {
+      "no_count": 28,
+      "abstain_count": 45,
+      "yes_count": 46,
+      "no_vote_count": 61
+    }
+  },
+  {
+    "proposal_id": "795",
+    "chain_id": "cosmos",
+    "title": "  ATOM Airdrop ",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "REJECTED",
+    "final_tally_result": {
+      "no_with_veto_count": 84,
+      "no_count": 3,
+      "yes_count": 2,
+      "abstain_count": 2,
+      "no_vote_count": 89
+    }
+  },
+  {
+    "proposal_id": "794",
+    "chain_id": "cosmos",
+    "title": "Stride to join ATOM Economic Zone and adopt ICS",
+    "type": "TextProposal",
+    "topic": "Ecosystem Growth",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 134,
+      "abstain_count": 3,
+      "no_count": 1,
+      "no_vote_count": 42
+    }
+  },
+  {
+    "proposal_id": "793",
+    "chain_id": "cosmos",
+    "title": "Request to Drop the Lawsuit All in Bits Inc vs Grace Yu",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 71,
+      "abstain_count": 51,
+      "no_with_veto_count": 9,
+      "no_count": 3,
+      "no_vote_count": 46
+    }
+  },
+  {
+    "proposal_id": "792",
+    "chain_id": "cosmos",
+    "title": "Launch Neutron on Replicated Security",
+    "type": "Unknown",
+    "topic": "Miscellaneous",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 139,
+      "abstain_count": 4,
+      "no_count": 2,
+      "no_vote_count": 35
+    }
+  },
+  {
+    "proposal_id": "791",
+    "chain_id": "cosmos",
+    "title": "Legal Defense Fund Proposal",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "REJECTED",
+    "final_tally_result": {
+      "abstain_count": 26,
+      "no_count": 75,
+      "no_with_veto_count": 20,
+      "yes_count": 15,
+      "weighted_vote_count": 1,
+      "no_vote_count": 43
+    }
+  },
+  {
+    "proposal_id": "790",
+    "chain_id": "cosmos",
+    "title": "Liquid staking module Regulated and efficient liquid staking",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 140,
+      "abstain_count": 4,
+      "no_count": 1,
+      "no_vote_count": 35
+    }
+  },
+  {
+    "proposal_id": "787",
+    "chain_id": "cosmos",
+    "title": "Formally request full financial transparency from the Interchain Foundation",
+    "type": "TextProposal",
+    "topic": "Project Funding",
+    "status": "PASSED",
+    "final_tally_result": {
+      "abstain_count": 61,
+      "yes_count": 62,
+      "no_count": 7,
+      "no_vote_count": 50
+    }
+  },
+  {
+    "proposal_id": "717",
+    "chain_id": "cosmos",
+    "title": "Make Cosmos Hub the Sponsor of Game of NFTs Phase 2 Hackathon",
+    "type": "CommunityPoolSpend",
+    "topic": "Ecosystem Growth",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 115,
+      "abstain_count": 16,
+      "no_count": 6,
+      "no_vote_count": 43
+    }
+  },
+  {
+    "proposal_id": "704",
+    "chain_id": "cosmos",
+    "title": "ARBITRUM Airdrop",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "REJECTED",
+    "final_tally_result": {
+      "no_with_veto_count": 87,
+      "no_vote_count": 93
+    }
+  },
+  {
+    "proposal_id": "703",
+    "chain_id": "cosmos",
+    "title": "Atom Airdrop ",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "REJECTED",
+    "final_tally_result": {
+      "no_with_veto_count": 89,
+      "no_count": 3,
+      "no_vote_count": 88
+    }
+  },
+  {
+    "proposal_id": "687",
+    "chain_id": "cosmos",
+    "title": "Replicated Security Third Party Audit",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 131,
+      "no_count": 1,
+      "abstain_count": 3,
+      "no_vote_count": 45
+    }
+  },
+  {
+    "proposal_id": "647",
+    "chain_id": "cosmos",
+    "title": "ATOM Airdrop for COSMOS stakers ",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "REJECTED",
+    "final_tally_result": {
+      "no_with_veto_count": 95,
+      "abstain_count": 1,
+      "no_vote_count": 84
+    }
+  },
+  {
+    "proposal_id": "646",
+    "chain_id": "cosmos",
+    "title": "ATOM Airdrop for COSMOS stakers",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "REJECTED",
+    "final_tally_result": {
+      "no_with_veto_count": 100,
+      "no_vote_count": 80
+    }
+  },
+  {
+    "proposal_id": "640",
+    "chain_id": "cosmos",
+    "title": "ATOM Airdrop ",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "REJECTED",
+    "final_tally_result": {
+      "no_with_veto_count": 101,
+      "no_count": 1,
+      "no_vote_count": 78
+    }
+  },
+  {
+    "proposal_id": "202",
+    "chain_id": "cosmos",
+    "title": "Interchain Info Funding",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "PASSED",
+    "final_tally_result": {
+      "no_count": 26,
+      "abstain_count": 42,
+      "yes_count": 61,
+      "no_vote_count": 51
+    }
+  },
+  {
+    "proposal_id": "187",
+    "chain_id": "cosmos",
+    "title": "v9Lambda",
+    "type": "SoftwareUpgrade",
+    "topic": "Major Release",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 146,
+      "abstain_count": 2,
+      "no_vote_count": 32
+    }
+  },
+  {
+    "proposal_id": "155",
+    "chain_id": "cosmos",
+    "title": "Spacebox  Tool for chain Indexation and Storage in the Cosmos Hub",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "PASSED",
+    "final_tally_result": {
+      "no_count": 43,
+      "yes_count": 33,
+      "abstain_count": 48,
+      "no_vote_count": 56
+    }
+  },
+  {
+    "proposal_id": "104",
+    "chain_id": "cosmos",
+    "title": "Fund notional to work on the Cosmos Hub",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "PASSED",
+    "final_tally_result": {
+      "abstain_count": 35,
+      "no_count": 22,
+      "yes_count": 77,
+      "no_vote_count": 46
+    }
+  },
+  {
+    "proposal_id": "103",
+    "chain_id": "cosmos",
+    "title": "Confio Public Goods Funding  Tranche One",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 120,
+      "no_count": 4,
+      "abstain_count": 15,
+      "no_vote_count": 41
+    }
+  },
+  {
+    "proposal_id": "101",
+    "chain_id": "cosmos",
+    "title": "Aid Proposal for Earthquake Survivors in Trkiye",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "PASSED",
+    "final_tally_result": {
+      "abstain_count": 54,
+      "no_count": 37,
+      "yes_count": 38,
+      "no_vote_count": 51
+    }
+  },
+  {
+    "proposal_id": "99",
+    "chain_id": "cosmos",
+    "title": "Censure allnodes for insecure VaaS practices",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "PASSED",
+    "final_tally_result": {
+      "no_count": 15,
+      "abstain_count": 71,
+      "yes_count": 35,
+      "no_vote_count": 59
+    }
+  },
+  {
+    "proposal_id": "98",
+    "chain_id": "cosmos",
+    "title": "ATOM GROWTH DAO Growth  Developer Acquisition 2023",
+    "type": "CommunityPoolSpend",
+    "topic": "Ecosystem Growth",
+    "status": "REJECTED",
+    "final_tally_result": {
+      "yes_count": 3,
+      "no_count": 94,
+      "abstain_count": 35,
+      "no_vote_count": 48
+    }
+  },
+  {
+    "proposal_id": "97",
+    "chain_id": "cosmos",
+    "title": "v8Rho",
+    "type": "SoftwareUpgrade",
+    "topic": "Major Release",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 153,
+      "abstain_count": 2,
+      "no_vote_count": 25
+    }
+  },
+  {
+    "proposal_id": "96",
+    "chain_id": "cosmos",
+    "title": "Update the Impacthub3 client with Ixo4 client to recover channel between Cosmos and Ixo",
+    "type": "IBCRelated",
+    "topic": "Client Update",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 110,
+      "abstain_count": 6,
+      "no_vote_count": 64
+    }
+  },
+  {
+    "proposal_id": "95",
+    "chain_id": "cosmos",
+    "title": "A Grant Program for the Cosmos Hub Funding the ATOM Accelerator DAO",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "PASSED",
+    "final_tally_result": {
+      "abstain_count": 22,
+      "yes_count": 102,
+      "no_count": 18,
+      "weighted_vote_count": 3,
+      "no_vote_count": 35
+    }
+  },
+  {
+    "proposal_id": "94",
+    "chain_id": "cosmos",
+    "title": "Fund Incentives for the Interchain NFTs Public Incentivized Testnets of Game of NFTs",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 118,
+      "no_count": 3,
+      "abstain_count": 22,
+      "no_vote_count": 37
+    }
+  },
+  {
+    "proposal_id": "93",
+    "chain_id": "cosmos",
+    "title": "Cosmos Hub Open Source Funding Policy",
+    "type": "TextProposal",
+    "topic": "Project Funding",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 101,
+      "no_count": 10,
+      "abstain_count": 19,
+      "no_with_veto_count": 1,
+      "no_vote_count": 49
+    }
+  },
+  {
+    "proposal_id": "90",
+    "chain_id": "cosmos",
+    "title": "Community Health research analytics and benchmarking",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "REJECTED",
+    "final_tally_result": {
+      "no_count": 67,
+      "abstain_count": 36,
+      "yes_count": 18,
+      "no_vote_count": 59
+    }
+  },
+  {
+    "proposal_id": "89",
+    "chain_id": "cosmos",
+    "title": "Cosmos Ecosystem News Videos",
+    "type": "CommunityPoolSpend",
+    "topic": "Ecosystem Growth",
+    "status": "PASSED",
+    "final_tally_result": {
+      "weighted_vote_count": 1,
+      "yes_count": 25,
+      "abstain_count": 51,
+      "no_count": 58,
+      "no_vote_count": 45
+    }
+  },
+  {
+    "proposal_id": "88",
+    "chain_id": "cosmos",
+    "title": "Increase the Community Pool Tax on the Cosmos Hub  Parameter Change",
+    "type": "ParameterChange",
+    "topic": "Protocol Configuration",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 136,
+      "abstain_count": 6,
+      "no_count": 4,
+      "no_vote_count": 34
+    }
+  },
+  {
+    "proposal_id": "87",
+    "chain_id": "cosmos",
+    "title": "Parameter Change Increase Deposit Amount for Cosmos Hub Governance",
+    "type": "ParameterChange",
+    "topic": "Fee Adjustment",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 113,
+      "no_count": 16,
+      "abstain_count": 7,
+      "no_with_veto_count": 1,
+      "no_vote_count": 43
+    }
+  },
+  {
+    "proposal_id": "86",
+    "chain_id": "cosmos",
+    "title": "ATOM20 will split the community in half",
+    "type": "TextProposal",
+    "topic": "Community Decision",
+    "status": "REJECTED",
+    "final_tally_result": {
+      "abstain_count": 56,
+      "no_count": 30,
+      "no_with_veto_count": 25,
+      "yes_count": 5,
+      "no_vote_count": 64
+    }
+  },
+  {
+    "proposal_id": "84",
+    "chain_id": "cosmos",
+    "title": "Terra Classic IBC Reactivation via Client Unfreeze",
+    "type": "IBCRelated",
+    "topic": "Client Update",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 109,
+      "abstain_count": 8,
+      "no_count": 1,
+      "no_vote_count": 62
+    }
+  },
+  {
+    "proposal_id": "83",
+    "chain_id": "cosmos",
+    "title": "Atom One Constitution sentiment proposal",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "REJECTED",
+    "final_tally_result": {
+      "abstain_count": 39,
+      "yes_count": 7,
+      "no_count": 104,
+      "no_with_veto_count": 9,
+      "no_vote_count": 21
+    }
+  },
+  {
+    "proposal_id": "82",
+    "chain_id": "cosmos",
+    "title": "ATOM 20 A new vision for Cosmos Hub",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "REJECTED",
+    "final_tally_result": {
+      "no_with_veto_count": 46,
+      "abstain_count": 16,
+      "weighted_vote_count": 1,
+      "yes_count": 97,
+      "no_count": 12,
+      "no_vote_count": 8
+    }
+  },
+  {
+    "proposal_id": "81",
+    "chain_id": "cosmos",
+    "title": "Atom Zero Constitution",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "REJECTED",
+    "final_tally_result": {
+      "no_count": 114,
+      "abstain_count": 16,
+      "no_with_veto_count": 16,
+      "yes_count": 8,
+      "no_vote_count": 26
+    }
+  },
+  {
+    "proposal_id": "80",
+    "chain_id": "cosmos",
+    "title": "Risk and financial analysis of ATOM20",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "REJECTED",
+    "final_tally_result": {
+      "no_count": 80,
+      "abstain_count": 40,
+      "no_with_veto_count": 21,
+      "yes_count": 8,
+      "no_vote_count": 31
+    }
+  },
+  {
+    "proposal_id": "79",
+    "chain_id": "cosmos",
+    "title": "Adan nonprofit fighting for sound crypto regulation",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "PASSED",
+    "final_tally_result": {
+      "abstain_count": 37,
+      "yes_count": 96,
+      "no_count": 18,
+      "weighted_vote_count": 1,
+      "no_vote_count": 28
+    }
+  },
+  {
+    "proposal_id": "78",
+    "chain_id": "cosmos",
+    "title": "Letter from many Cosmos maximalists to the hub",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "REJECTED",
+    "final_tally_result": {
+      "abstain_count": 44,
+      "yes_count": 4,
+      "no_count": 51,
+      "no_with_veto_count": 18,
+      "no_vote_count": 63
+    }
+  },
+  {
+    "proposal_id": "77",
+    "chain_id": "cosmos",
+    "title": "Fund incentives for the Interchain Security Incentivized testnet  Game of Chains  from the Community Pool",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 129,
+      "abstain_count": 1,
+      "no_vote_count": 50
+    }
+  },
+  {
+    "proposal_id": "76",
+    "chain_id": "cosmos",
+    "title": " Require a minimum 5 commission for all validator nodes",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "REJECTED",
+    "final_tally_result": {
+      "no_count": 45,
+      "abstain_count": 14,
+      "yes_count": 54,
+      "no_vote_count": 67
+    }
+  },
+  {
+    "proposal_id": "75",
+    "chain_id": "cosmos",
+    "title": "Establishing a definition of NoWithVeto",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "PASSED",
+    "final_tally_result": {
+      "no_count": 24,
+      "yes_count": 45,
+      "abstain_count": 43,
+      "no_with_veto_count": 1,
+      "no_vote_count": 67
+    }
+  },
+  {
+    "proposal_id": "74",
+    "chain_id": "cosmos",
+    "title": "Make the Cosmos Hub the main sponsor of HackATOM Seoul 2022",
+    "type": "CommunityPoolSpend",
+    "topic": "Ecosystem Growth",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 106,
+      "abstain_count": 5,
+      "no_vote_count": 69
+    }
+  },
+  {
+    "proposal_id": "73",
+    "chain_id": "cosmos",
+    "title": "Gift to Cosmos stakeholders",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "REJECTED",
+    "final_tally_result": {
+      "no_with_veto_count": 70,
+      "no_count": 23,
+      "abstain_count": 13,
+      "yes_count": 1,
+      "no_vote_count": 73
+    }
+  },
+  {
+    "proposal_id": "72",
+    "chain_id": "cosmos",
+    "title": "Bringing Liquid Staking and DeFi to the Cosmos Hub with Interchain Security",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 91,
+      "no_count": 14,
+      "abstain_count": 13,
+      "no_with_veto_count": 1,
+      "no_vote_count": 61
+    }
+  },
+  {
+    "proposal_id": "71",
+    "chain_id": "cosmos",
+    "title": "Recover EVMOS channel by upgrading to new client",
+    "type": "IBCRelated",
+    "topic": "Client Update",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 111,
+      "abstain_count": 1,
+      "no_count": 1,
+      "no_vote_count": 67
+    }
+  },
+  {
+    "proposal_id": "70",
+    "chain_id": "cosmos",
+    "title": "Recover EVMOS channel by upgrading to new client",
+    "type": "IBCRelated",
+    "topic": "Client Update",
+    "status": "FAILED",
+    "final_tally_result": {
+      "yes_count": 108,
+      "abstain_count": 3,
+      "no_count": 1,
+      "no_vote_count": 68
+    }
+  },
+  {
+    "proposal_id": "69",
+    "chain_id": "cosmos",
+    "title": "Include CosmWasm in Rho Upgrade",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "REJECTED",
+    "final_tally_result": {
+      "yes_count": 28,
+      "no_count": 71,
+      "no_with_veto_count": 8,
+      "abstain_count": 14,
+      "no_vote_count": 59
+    }
+  },
+  {
+    "proposal_id": "68",
+    "chain_id": "cosmos",
+    "title": "Make Cosmos Hub the Lead Sponsor of Cosmoverse 2022",
+    "type": "CommunityPoolSpend",
+    "topic": "Ecosystem Growth",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 100,
+      "abstain_count": 12,
+      "no_vote_count": 68
+    }
+  },
+  {
+    "proposal_id": "67",
+    "chain_id": "cosmos",
+    "title": "Parameter change Enable liquidity module circuit breaker",
+    "type": "ParameterChange",
+    "topic": "Fee Adjustment",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 106,
+      "abstain_count": 2,
+      "no_vote_count": 72
+    }
+  },
+  {
+    "proposal_id": "66",
+    "chain_id": "cosmos",
+    "title": "Staking Param Change",
+    "type": "ParameterChange",
+    "topic": "Staking Parameters",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 98,
+      "abstain_count": 15,
+      "no_count": 1,
+      "no_vote_count": 66
+    }
+  },
+  {
+    "proposal_id": "65",
+    "chain_id": "cosmos",
+    "title": "v7Theta",
+    "type": "SoftwareUpgrade",
+    "topic": "Major Release",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 116,
+      "abstain_count": 1,
+      "no_vote_count": 63
+    }
+  },
+  {
+    "proposal_id": "64",
+    "chain_id": "cosmos",
+    "title": "Update expired client between Cosmoshub and Bostrom",
+    "type": "IBCRelated",
+    "topic": "Client Update",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 102,
+      "abstain_count": 8,
+      "no_vote_count": 70
+    }
+  },
+  {
+    "proposal_id": "63",
+    "chain_id": "cosmos",
+    "title": "Activate governance discussions on the Discourse forum using community pool funds",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 66,
+      "abstain_count": 28,
+      "no_count": 4,
+      "no_vote_count": 82
+    }
+  },
+  {
+    "proposal_id": "62",
+    "chain_id": "cosmos",
+    "title": "Signal Proposal Migration of Gravity DEX to a Separate Cosmos Chain",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 85,
+      "abstain_count": 6,
+      "no_vote_count": 89
+    }
+  },
+  {
+    "proposal_id": "60",
+    "chain_id": "cosmos",
+    "title": "Use EVM instead of EVMOS as the symbol for Evmos native coin",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "REJECTED",
+    "final_tally_result": {
+      "yes_count": 24,
+      "abstain_count": 29,
+      "no_count": 13,
+      "no_vote_count": 114
+    }
+  },
+  {
+    "proposal_id": "59",
+    "chain_id": "cosmos",
+    "title": "Vega",
+    "type": "SoftwareUpgrade",
+    "topic": "Major Release",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 94,
+      "no_vote_count": 86
+    }
+  },
+  {
+    "proposal_id": "58",
+    "chain_id": "cosmos",
+    "title": "Signal Proposal Adopting the Budget and Farming Modules on Cosmos Hub",
+    "type": "TextProposal",
+    "topic": "Network Policy",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 69,
+      "no_vote_count": 111
+    }
+  },
+  {
+    "proposal_id": "57",
+    "chain_id": "cosmos",
+    "title": "Lowering Liquidity Pool Creation Fee",
+    "type": "ParameterChange",
+    "topic": "Fee Adjustment",
+    "status": "REJECTED",
+    "final_tally_result": {
+      "yes_count": 20,
+      "no_vote_count": 160
+    }
+  },
+  {
+    "proposal_id": "56",
+    "chain_id": "cosmos",
+    "title": "  Add IBC Router to Hub ",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 71,
+      "no_vote_count": 109
+    }
+  },
+  {
+    "proposal_id": "54",
+    "chain_id": "cosmos",
+    "title": "Increase MaxValidators value",
+    "type": "ParameterChange",
+    "topic": "Staking Parameters",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 66,
+      "no_vote_count": 114
+    }
+  },
+  {
+    "proposal_id": "52",
+    "chain_id": "cosmos",
+    "title": "ATOM  Osmosis  Allocate Community Pool to ATOM Liquidity Incentives",
+    "type": "CommunityPoolSpend",
+    "topic": "Ecosystem Growth",
+    "status": "REJECTED",
+    "final_tally_result": {
+      "no_count": 18,
+      "abstain_count": 4,
+      "yes_count": 25,
+      "no_vote_count": 133
+    }
+  },
+  {
+    "proposal_id": "51",
+    "chain_id": "cosmos",
+    "title": "Governance Proposal for Gravity DEX Adoption to the Cosmos Hub",
+    "type": "SoftwareUpgrade",
+    "topic": "Security Enhancement",
+    "status": "PASSED",
+    "final_tally_result": {
+      "abstain_count": 1,
+      "yes_count": 75,
+      "no_count": 1,
+      "no_vote_count": 103
+    }
+  },
+  {
+    "proposal_id": "50",
+    "chain_id": "cosmos",
+    "title": "Governance Proposal for Block Parameter Changes",
+    "type": "ParameterChange",
+    "topic": "Fee Adjustment",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 71,
+      "no_vote_count": 109
+    }
+  },
+  {
+    "proposal_id": "49",
+    "chain_id": "cosmos",
+    "title": "Signaling Proposal  Deployment of Gravity Bridge on the Cosmos Hub",
+    "type": "TextProposal",
+    "topic": "Community Decision",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 72,
+      "abstain_count": 1,
+      "no_vote_count": 107
+    }
+  },
+  {
+    "proposal_id": "48",
+    "chain_id": "cosmos",
+    "title": "Inflation Rate Change Correction",
+    "type": "ParameterChange",
+    "topic": "Fee Adjustment",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 63,
+      "no_vote_count": 117
+    }
+  },
+  {
+    "proposal_id": "47",
+    "chain_id": "cosmos",
+    "title": "Parameter change lower minimum proposal deposit amount",
+    "type": "ParameterChange",
+    "topic": "Staking Parameters",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 50,
+      "no_count": 4,
+      "no_vote_count": 126
+    }
+  },
+  {
+    "proposal_id": "46",
+    "chain_id": "cosmos",
+    "title": "Prop 34 Continuation Proposal",
+    "type": "TextProposal",
+    "topic": "Project Funding",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 58,
+      "abstain_count": 4,
+      "no_vote_count": 118
+    }
+  },
+  {
+    "proposal_id": "45",
+    "chain_id": "cosmos",
+    "title": "Community Fund Governance Proposal For Gravity DEX Incentivized Testnet Prize Pool",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 54,
+      "no_vote_count": 126
+    }
+  },
+  {
+    "proposal_id": "44",
+    "chain_id": "cosmos",
+    "title": "Advancing Ethermint GTM and Engineering Plan for the Ethermint Chain",
+    "type": "CommunityPoolSpend",
+    "topic": "Development Fund",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 53,
+      "no_count": 2,
+      "abstain_count": 1,
+      "no_vote_count": 124
+    }
+  },
+  {
+    "proposal_id": "42",
+    "chain_id": "cosmos",
+    "title": "ZKValidator Community Spend Proposal",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 34,
+      "no_count": 8,
+      "abstain_count": 2,
+      "no_vote_count": 136
+    }
+  },
+  {
+    "proposal_id": "41",
+    "chain_id": "cosmos",
+    "title": "Enable IBC transfers",
+    "type": "ParameterChange",
+    "topic": "Protocol Configuration",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 63,
+      "no_vote_count": 117
+    }
+  },
+  {
+    "proposal_id": "38",
+    "chain_id": "cosmos",
+    "title": "Signal Proposal to Adopt the Liquidity Module onto the Cosmos Hub",
+    "type": "SoftwareUpgrade",
+    "topic": "Major Release",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 53,
+      "abstain_count": 5,
+      "no_vote_count": 122
+    }
+  },
+  {
+    "proposal_id": "37",
+    "chain_id": "cosmos",
+    "title": "Stargate Upgrade Second time is a charm",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "PASSED",
+    "final_tally_result": {
+      "no_vote_count": 180
+    }
+  },
+  {
+    "proposal_id": "36",
+    "chain_id": "cosmos",
+    "title": "Delay of Hub Stargate Upgrade for approximately 2 weeks",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "PASSED",
+    "final_tally_result": {
+      "no_vote_count": 180
+    }
+  },
+  {
+    "proposal_id": "35",
+    "chain_id": "cosmos",
+    "title": "Cosmos Stargate Hub Upgrade Proposal 2 Time to Upgrade",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "PASSED",
+    "final_tally_result": {
+      "no_vote_count": 180
+    }
+  },
+  {
+    "proposal_id": "34",
+    "chain_id": "cosmos",
+    "title": "Luna Mission  Funding ATOM",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "PASSED",
+    "final_tally_result": {
+      "no_vote_count": 180
+    }
+  },
+  {
+    "proposal_id": "32",
+    "chain_id": "cosmos",
+    "title": "Funding for Development of Governance Split Votes",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "PASSED",
+    "final_tally_result": {
+      "no_vote_count": 180
+    }
+  },
+  {
+    "proposal_id": "31",
+    "chain_id": "cosmos",
+    "title": "Governance Split Votes",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "PASSED",
+    "final_tally_result": {
+      "no_vote_count": 180
+    }
+  },
+  {
+    "proposal_id": "30",
+    "chain_id": "cosmos",
+    "title": "Adjust Blocks Per Year to 436M",
+    "type": "ParameterChange",
+    "topic": "Fee Adjustment",
+    "status": "PASSED",
+    "final_tally_result": {
+      "no_vote_count": 180
+    }
+  },
+  {
+    "proposal_id": "29",
+    "chain_id": "cosmos",
+    "title": "Genesis fund recovery proposal on behalf of fundraiser participants unable to access their ATOMs",
+    "type": "TextProposal",
+    "topic": "Project Funding",
+    "status": "PASSED",
+    "final_tally_result": {
+      "no_vote_count": 180
+    }
+  },
+  {
+    "proposal_id": "27",
+    "chain_id": "cosmos",
+    "title": "Stargate Upgrade Proposal 1",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "PASSED",
+    "final_tally_result": {
+      "no_vote_count": 180
+    }
+  },
+  {
+    "proposal_id": "26",
+    "chain_id": "cosmos",
+    "title": "Takeoff Proposal from Cyber to Cosmos",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "REJECTED",
+    "final_tally_result": {
+      "no_vote_count": 180
+    }
+  },
+  {
+    "proposal_id": "25",
+    "chain_id": "cosmos",
+    "title": "CosmWasm Integration 1  Permissions and Upgrades",
+    "type": "CommunityPoolSpend",
+    "topic": "Development Fund",
+    "status": "PASSED",
+    "final_tally_result": {
+      "no_vote_count": 180
+    }
+  },
+  {
+    "proposal_id": "23",
+    "chain_id": "cosmos",
+    "title": "Cosmos Governance Working Group  Q1 2020",
+    "type": "CommunityPoolSpend",
+    "topic": "Ecosystem Growth",
+    "status": "PASSED",
+    "final_tally_result": {
+      "no_vote_count": 180
+    }
+  },
+  {
+    "proposal_id": "19",
+    "chain_id": "cosmos",
+    "title": "Cosmos Hub 3 Upgrade Proposal E",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "PASSED",
+    "final_tally_result": {
+      "no_vote_count": 180
+    }
+  },
+  {
+    "proposal_id": "16",
+    "chain_id": "cosmos",
+    "title": "Cosmos Hub 3 Upgrade Proposal D",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "PASSED",
+    "final_tally_result": {
+      "no_vote_count": 180
+    }
+  },
+  {
+    "proposal_id": "14",
+    "chain_id": "cosmos",
+    "title": "Cosmos Hub 3 Upgrade Proposal B",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "REJECTED",
+    "final_tally_result": {
+      "no_vote_count": 180
+    }
+  },
+  {
+    "proposal_id": "13",
+    "chain_id": "cosmos",
+    "title": "Cosmos Hub 3 Upgrade Proposal A",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "PASSED",
+    "final_tally_result": {
+      "no_vote_count": 180
+    }
+  },
+  {
+    "proposal_id": "12",
+    "chain_id": "cosmos",
+    "title": "Are Validators Charging 0 Commission Harmful to the Success of the Cosmos Hub",
+    "type": "TextProposal",
+    "topic": "Network Policy",
+    "status": "PASSED",
+    "final_tally_result": {
+      "no_vote_count": 180
+    }
+  },
+  {
+    "proposal_id": "10",
+    "chain_id": "cosmos",
+    "title": "Increase Max Validator Set Size to 125",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "PASSED",
+    "final_tally_result": {
+      "no_vote_count": 180
+    }
+  },
+  {
+    "proposal_id": "8",
+    "chain_id": "cosmos",
+    "title": "Notification for Security Critical Hard Fork at Block 482100",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "PASSED",
+    "final_tally_result": {
+      "no_vote_count": 180
+    }
+  },
+  {
+    "proposal_id": "7",
+    "chain_id": "cosmos",
+    "title": "Activate the Community Pool",
+    "type": "TextProposal",
+    "topic": "Community Decision",
+    "status": "PASSED",
+    "final_tally_result": {
+      "no_vote_count": 180
+    }
+  },
+  {
+    "proposal_id": "6",
+    "chain_id": "cosmos",
+    "title": "Dont Burn Deposits for Rejected Governance Proposals Unless Vetoed",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "PASSED",
+    "final_tally_result": {
+      "no_vote_count": 180
+    }
+  },
+  {
+    "proposal_id": "5",
+    "chain_id": "cosmos",
+    "title": "Expedited Cosmos Upgrade Proposal",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "PASSED",
+    "final_tally_result": {
+      "no_vote_count": 180
+    }
+  },
+  {
+    "proposal_id": "4",
+    "chain_id": "cosmos",
+    "title": "Proposal for issuance of fungible tokens directly on the Cosmos Hub",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "REJECTED",
+    "final_tally_result": {
+      "no_vote_count": 180
+    }
+  },
+  {
+    "proposal_id": "3",
+    "chain_id": "cosmos",
+    "title": "ATOM Transfer Enablement v2",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "PASSED",
+    "final_tally_result": {
+      "no_vote_count": 180
+    }
+  },
+  {
+    "proposal_id": "2",
+    "chain_id": "cosmos",
+    "title": "ATOM Transfer Enablement",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "REJECTED",
+    "final_tally_result": {
+      "no_vote_count": 180
+    }
+  },
+  {
+    "proposal_id": "1",
+    "chain_id": "cosmos",
+    "title": "Adjustment of blocksperyear to come aligned with actual block time",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "PASSED",
+    "final_tally_result": {
+      "no_vote_count": 180
+    }
+  }
+]

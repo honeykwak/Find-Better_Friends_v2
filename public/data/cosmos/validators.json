@@ -1,0 +1,1952 @@
+[
+  {
+    "validator_address": "cosmosvaloper16k579jk6yt2cwmqx9dz5xvq9fug2tekvlu9qdv",
+    "moniker": "Informal Systems",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper1k2d9ed9vgfuk2m58a2d80q9u6qljkh4vfaqjfq",
+    "moniker": "Stakecito",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper1ff0dw8kawsnxkrgj7p65kvw7jxxakyf8n583gx",
+    "moniker": "Compass",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper1gf4wlkutql95j7wwsxz490s6fahlvk2s9xpwax",
+    "moniker": "Stakewollecom 100 Insurance",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper1g48268mu5vfp4wk7dk89r0wdrakm9p5xk0q50k",
+    "moniker": "Provalidator",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper1ul2me6vukg2vac2p6ltxmqlaa7jywdgt8q76ag",
+    "moniker": "HyperblocksPro",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper13sduv92y3xdhy3rpmhakrc3v7t37e7ps9l0kpv",
+    "moniker": "nyliranet",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper1nuhls0wyf8slhmuasha5pz0u89jrf9nnugq8ak",
+    "moniker": "Golden Ratio Staking",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper1jxv0u20scum4trha72c7ltfgfqef6nsch7q6cu",
+    "moniker": "Ping",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper1wwcp3ath738qcy3panwqxtva3w28kvqdjw5hee",
+    "moniker": "BigBrainStaking",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper17w8wc8y2jg2fjnkfxfw8z7a84qtuvyrgd89hm4",
+    "moniker": "Dora Factory PGS",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper1xsgse9yump2j35nfut2tkwh7mdtca5llcgr79d",
+    "moniker": "cosmos Af",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper1gpx52r9h3zeul45amvcy2pysgvcwddxrgx6cnv",
+    "moniker": "StakeLabzone",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper1kgddca7qj96z0qcxr2c45z73cfl0c75p7f3s2e",
+    "moniker": "ChainLayer",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper12xx74t5sx3vgyew7es9h8e9py4ttts6zcg3vxk",
+    "moniker": "BlueStake ",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper1nlfrwx5t3mm3cuqqkvjv6jv24m7s2z5utzfe8s",
+    "moniker": "CroutonDigital",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper19j2hd230c3hw6ds843yu8akc0xgvdvyuz9v02v",
+    "moniker": "vidoinfo",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper15r4tc0m6hc7z8drq3dzlrtcs6rq2q9l2nvwher",
+    "moniker": "DragonStake",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper124maqmcqv8tquy764ktz7cu0gxnzfw54n3vww8",
+    "moniker": "Simply Staking",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper1am8wmhwta4swx8f4quvffu7hqw48aujwypp0ew",
+    "moniker": "Huginn",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper106yp7zw35wftheyyv9f9pe69t8rteumjrx52jg",
+    "moniker": "BronBro",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper1ukpah0340rx7k3x2njnavwyjv6pfpvn632df9q",
+    "moniker": "IcyCRO ",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper13p5ckpmc9g2v8ez5qsxs00wadqvcc7q0qheh26",
+    "moniker": "Cosmos Spaces",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper1yw5s259jkcg0jzmh7sce29uk0lqqw2ump7578p",
+    "moniker": "CEXIO Validator",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper15urq2dtp9qce4fyc85m6upwm9xul3049e02707",
+    "moniker": "Chorus One",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper1tflk30mq5vgqjdly92kkhhq3raev2hnz6eete3",
+    "moniker": "Everstake",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper1gf3dm2mvqhymts6ksrstlyuu2m8pw6dhfp9md2",
+    "moniker": "Keplr",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper1zgqal5almcs35eftsgtmls3ahakej6jmnn2wfj",
+    "moniker": "Inu X",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper140e7u946a2nqqkvcnjpjm83d0ynsqem8dnp684",
+    "moniker": "Coinage x DAIC",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper157v7tczs40axfgejp2m43kwuzqe0wsy0rv8puv",
+    "moniker": "POSTHUMAN  StakeDrop",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper1x3mkgqpshvpq87d33ndsleu7gd7w47dl4ve0yy",
+    "moniker": "CrowdControl",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper1fun809ksxh87nzf88yashp9ynjz6xkscrtvzvw",
+    "moniker": "Tessellated",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper130mdu9a0etmeuw52qfxk73pn0ga6gawkxsrlwf",
+    "moniker": "strangelove",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper1cunqeg5ydl0zvg5jm748xpc90hsz4ufuaw029z",
+    "moniker": "Somatic Labs",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper1hkqejlyrj9h8knms9hwvrnp9xhqvjqlseh06vq",
+    "moniker": "cosmosrescue",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper1gxju9ky3hwxvqqagrl3dxtl49kjpxq6wlqe6m5",
+    "moniker": " Vortexlive ",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper1nesedjyngslkvgg8jxy6nuy6r4g6ty0fdk3yky",
+    "moniker": "Leap Wallet",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper14qazscc80zgzx3m0m0aa30ths0p9hg8vdglqrc",
+    "moniker": " CryptoCrew Validators  Winner GameOfChains",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper18sqvyf4ss84qree7gndph5chmm82fglsqfylwn",
+    "moniker": "PRO Delegators",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper16qnr6snzq49l6grkyu39lzchnfv3ajfdvejx55",
+    "moniker": "StakeRelax ",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper13x77yexvf6qexfjg9czp6jhpv7vpjdwwkyhe4p",
+    "moniker": "blockscape",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper16s96n9k9zztdgjy8q4qcxp4hn7ww98qkrka4zk",
+    "moniker": "Oni   Stake for BoostDrop ",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper19qv67gvevp4xw64kmhd6ff6ta2l2ywgfm74xtz",
+    "moniker": "OWALLET",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper15w6ra6m68c63t0sv2hzmkngwr9t88e23r8vtg5",
+    "moniker": "w3coins",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper10jm8fvdyqlj78w0j5nawc76wsn4pqmdxl683c7",
+    "moniker": "NosNode",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper1d0aup392g3enru7eash83sedqclaxvp7fzh6gk",
+    "moniker": "Stir",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper1wlagucxdxvsmvj6330864x8q3vxz4x02rmvmsu",
+    "moniker": "DSRV",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper16yupepagywvlk7uhpfchtwa0stu5f8cyhh54f2",
+    "moniker": "Stakelyio",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper199mlc7fr6ll5t54w7tts7f4s0cvnqgc59nmuxf",
+    "moniker": "ShapeShift DAO",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper1ehkfl7palwrh6w2hhr2yfrgrq8jetgucudztfe",
+    "moniker": "KalpaTech",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper1am80fauk3gnzcr76ylg0yju4f0chen5xke6pwk",
+    "moniker": "windpowerstake",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper102ruvpv2srmunfffxavttxnhezln6fnc54at8c",
+    "moniker": "Ztakeorg",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper1uhnsxv6m83jj3328mhrql7yax3nge5svrv6t6c",
+    "moniker": "S16 Research Ventures",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper1jst8q8flpn94u9uvkpae8mrkk3a5pjhxx529z2",
+    "moniker": "Node Guardians",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper1e0plfg475phrsvrlzw8gwppeva0zk5yg9fgg8c",
+    "moniker": "Easy 2 Stake",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper1yfnaup5wa3vdzx3wx9auhvzl85saqj37tqxqnu",
+    "moniker": "Moonlet",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper1a37ze3yrr2y9nn98l6frhjskmufvd40cpyd0gq",
+    "moniker": "ECO Stake ",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper1rxvkwfw3467nxgs6r7yav6cnygkjzkkc2defr6",
+    "moniker": "Cryptostakecom ",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper1ej2es5fjztqjcd4pwa0zyvaevtjd2y5wxxp9gd",
+    "moniker": "Frens ",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper1wqy2s6nwnxj57l0l5rdjxxr646p3al6y70435m",
+    "moniker": "Klub Staking",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper1fs0vl7jem78pmhladkludtkun3cgkrwkt8czur",
+    "moniker": "Bunkerstakeio",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper1nz3c4q40j8jyvg2hcljkwhe69872mnllf7v9xh",
+    "moniker": "Interstellar Lounge ",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper10u5uewa85d7vq05d2seanz26pyrc4pp3k6tpku",
+    "moniker": "Amplifier",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper17r0cp9zrtkvzlz7a2r09gmdxwqfyje98l3k9h6",
+    "moniker": "Kahuna",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper17h2x3j7u44qkrq0sk8ul0r2qr440rwgjkfg0gh",
+    "moniker": "FreshSTAKING",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper1v78emy9d2xe3tj974l7tmn2whca2nh9zp7s0u9",
+    "moniker": "a41",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper17yn0psnms2djwnw2x8pcy4uqs2ccrtczl2jp88",
+    "moniker": "NodesGuru",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper1qaa9zej9a0ge3ugpx3pxyx602lxh3ztqgfnp42",
+    "moniker": "GAME",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper1clpqr4nrk4khgkxj78fcwwh6dl3uw4epsluffn",
+    "moniker": "Cosmostation",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper1n3mhyp9fvcmuu8l0q8qvjy07x0rql8q46fe2xk",
+    "moniker": "0basevc",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper1m73mgwn3cm2e8x9a9axa0kw8nqz8a492ms63vn",
+    "moniker": "decentralizehk  DHK dao",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper19f0w9svr905fhefusyx4z8sf83j6et0g9l5yhl",
+    "moniker": "NodeStake  LottoDrop",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper1hvhyunq7qvykzvrcnhjj4xnkcla58xus6pzml7",
+    "moniker": "Architect Nodes",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper1gn4ugadhkdwse6ayt7q8ekh0d0p2spw7duwlua",
+    "moniker": "White Whale",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper1y0us8xvsvfvqkk9c6nt5cfyu5au5tww2ztve7q",
+    "moniker": "Swiss Staking",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper1lzhlnpahvznwfv4jmay2tgaha5kmz5qxerarrl",
+    "moniker": "Citadelone",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper1lrzxwu4dmy8030waevcpft7rpxjjz26cpzvumd",
+    "moniker": "node101",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper13x4pynlp86prhcmtns742kgsgu7pjtzj4djh7s",
+    "moniker": "CryptoDungeon",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper1n229vhepft6wnkt5tjpwmxdmcnfz55jv3vp77d",
+    "moniker": "Allnodes",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper1pjmngrwcsatsuyy8m3qrunaun67sr9x7z5r2qs",
+    "moniker": "Cypher Core",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper1de7qx00pz2j6gn9k88ntxxylelkazfk3g8fgh9",
+    "moniker": "Cosmic Validator  100 Uptime  Autocompound",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper1ualhu3fjgg77g485gmyswkq3w0dp7gys6qzwrv",
+    "moniker": "stakesystems  autocompound",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper1jmykcq8gylmy5tgqtel4xj4q62fdt49sl584xd",
+    "moniker": "Blocks United  blocksunitedcom",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper1rcp29q3hpd246n6qak7jluqep4v006cdsc2kkl",
+    "moniker": "in3scom",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper160794m2vw5yu2dvmsw8lcjh33ur26myjxurm4n",
+    "moniker": "biglazycatcom",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper1k6e7l0lz497l8njqjxpd3g4wlkdfwe93uqf03k",
+    "moniker": "Trust Nodes",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper1uxlf7mvr8nep3gm7udf2u9remms2jyjqvwdul2",
+    "moniker": "Kiln",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper1fhr7e04ct0zslmkzqt9smakg3sxrdve6ulclj2",
+    "moniker": "Stakin",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper1ptyzewnns2kn37ewtmv6ppsvhdnmeapvtfc9y5",
+    "moniker": "WeStaking",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper19ecn7ljwp6el2pc5lldyauwv05ufwut9mm38r5",
+    "moniker": "WhisperNode ",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper17mggn4znyeyg25wd7498qxl7r2jhgue8u4qjcq",
+    "moniker": "01node",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper10unx6s0cdqntvrumd5hs07rgd5ytcztqh8etw6",
+    "moniker": "GATA HUB",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper1vvwtk805lxehwle9l4yudmq6mn0g32px9xtkhc",
+    "moniker": "Imperatorco",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper18extdhzzl5c8tr6453e5hzaj3exrdlea90fj3y",
+    "moniker": "Smart Stake ",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper12syxdn3qs7fxua3khvewsvdvrx6xw8cjlsknnm",
+    "moniker": "Quasar ",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper1mnjg9xhraxljrccyw9y6u22ws0fa5asa38nd2q",
+    "moniker": " kjnodescom ",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper1gp957czryfgyvxwn3tfnyy2f0t9g2p4pqeemx8",
+    "moniker": " polkachucom",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper1v69lzl909kje64k8vae24uytpxcnpxgullz2dx",
+    "moniker": "TerraBitcoin Club",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper14m0n559xdj00qwvp6ck0xesprrq26kgp4q6ac9",
+    "moniker": "Oneiric Stake",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper1xqz9pemz5e5zycaa89kys5aw6m8rhgsvw4328e",
+    "moniker": " Quokka Stake",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper1wdrypwex63geqswmcy5qynv4w3z3dyef2qmyna",
+    "moniker": "Stakeflow",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper1wrx0x9m9ykdhw9sg04v7uljme53wuj03aa5d4f",
+    "moniker": "Meria",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper17uvf0rvjt68v0k9he33djvxg8v9kyaf57zl9cg",
+    "moniker": "cosmoshubmainnetsk",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper1tpxs9gf9gg74mdu7ya4gxhr5560jsxnp4zq979",
+    "moniker": "CosmosValidatorcom",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper1gjtvly9lel6zskvwtvlg5vhwpu9c9waw7sxzwx",
+    "moniker": "EZ Staking",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper139nknw98s8wqmzfqt9fs3jvv9sz2perqndmfat",
+    "moniker": "NFTSwitchxyz  Delegate for SOUL Claim Drop",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper1vjqault583hwktfj63k2hh7r02sj2a66fmvzqz",
+    "moniker": "Simply VC Genesis",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper1qa8jpt4kuqq73vgen2w7julkelgursygqx4y69",
+    "moniker": "suyuuuuuuu",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper1qa6x6sl9lsw9neceqccndwnnnm50ldq800x4dq",
+    "moniker": "bitszn",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper19yn9qg7gffzdj8t2zxfhwqdcjj8fzxt2ztzgzu",
+    "moniker": "tester",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper19ggkjc5slg5gphf92yrvusr3jc702h4tfz6nvn",
+    "moniker": "IZONE",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper1pp82zzdgf4cvgwkkutkwnfu9vzcm6rpryn2wcc",
+    "moniker": "Nodeist",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper19kwwdw0j64xhrmgkz49l0lmu5uyujjayxakwsn",
+    "moniker": "Firmamint",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper1vc47299zq0tftav39an4wx7cnmcv6ljvp8nvcr",
+    "moniker": "blah2",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper1tzp2tz0w2eld69jhmyvlalcrjez3tw9g3hzd00",
+    "moniker": "KiKi Finance",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper1ttfytaf43nkytzp8hkfjfgjc693ky4t3y2n2ku",
+    "moniker": "StarCluster",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper1t00q7dp0wslx34kee4elz496ts2uqlwphz860l",
+    "moniker": "Public Payments",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper1ma02nlc7lchu7caufyrrqt4r6v2mpsj90y9wzd",
+    "moniker": "hashtower",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper1kklgg82gucprep2epn6f5e09nzjce6vq3eeqrj",
+    "moniker": "blah",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper10nzaaeh2kq28t3nqsh5m8kmyv90vx7ym5mpakx",
+    "moniker": "Blockdaemon",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper1t3x2vutaan59q0jf55yyc24fmae9gljlalrldg",
+    "moniker": "Matterhorn",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper1yvvkkmzh8zs4z4v7gzn0ux8ag0me79ec58pw35",
+    "moniker": "Valid8r",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper1t2ljwdvkuecrkxwftpftnh54j5wez5jg9uphqr",
+    "moniker": "Stigga",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper19vgwu99fdawejnedgsfx8dmxuc0z4emj0eaf8p",
+    "moniker": "test",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper10f9wkd6vdspac05djyfwfx0uxcqxapnqhnkcg8",
+    "moniker": "Shutting down please redelegate",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper1qr6sk28w4r6kqsg0737wzgu05505t4glezetwn",
+    "moniker": "Equinox",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper1xm5er75n3ctd5kxs5lt8ac9gzlmjmenk0a3jn3",
+    "moniker": "seattlevalidatorxyz",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper1xl0cv0gnngl3jk3s6jt35tpglspzry6d8zpxmr",
+    "moniker": "ARIGATOxyz",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper10g9dqqnaskpy0c06r9ejyx9g0k2hyv0sljl2qw",
+    "moniker": "Nodiums",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper10wz6lfhmqfw6egg0062ytnawaj6vr89ly5g4yg",
+    "moniker": "BitMax Staking",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper1skhguug7ffln3wekpmjmnnneu8wqfg3yk2uchv",
+    "moniker": "Gentarium Validator",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper1qgju44qz5e2y2v9azkqfs8n7d97lg97008qgjz",
+    "moniker": "nysanetwork",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper1qdxmyqkvt8jsxpn5pp45a38ngs36mn2604cqk9",
+    "moniker": "IOSG",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper14kn0kk33szpwus9nh8n87fjel8djx0y070ymmj",
+    "moniker": "Forbole",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper1qmr8acxu0d9ytase8v9mza6k96y479getstqn2",
+    "moniker": "CryptoGoose",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper18kannwa9p5kgxj8xtf9yl9ys5hvt3wptlj87nc",
+    "moniker": "SenseiNode",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper1fypv7c7z3auv7w48qn76538w55jdk66xt5a3lk",
+    "moniker": "1ED471CB34E3",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper134935fp2av3d9h09rxq2j3ct8qzf4vzpw90gtw",
+    "moniker": "genznodes",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper13e0scpzvzjvx8d2fgevch67gc7zqs3sgt6nwqk",
+    "moniker": "CommunityStaking",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper1jjstwduq89rzkw4qcsk0q7d4ycq5ktmqd7nrmg",
+    "moniker": "LiebiPool",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper1jknayw5aejl5l2lctpxw8uy7x0xmc5vmu4q2zr",
+    "moniker": "Please Redelegate",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper1pz0lfq40sa63n0wany3v95x3yvznc5gyf8u28w",
+    "moniker": "Cobo",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper15xl8lrtz65dm7yqtnpntmmv7asl0jqk8xc5jd0",
+    "moniker": "Station8",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper1402ggxz5u6vm29sqztwqq8vxs3ke6dmwl2z5dk",
+    "moniker": "Cosmoon",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper1ptz7xq0fanh4kfvp6fdhevkx90axaq7drwcwjl",
+    "moniker": "Cobak",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper14srf00pdyykxscu8dp0csdluclvkkwltnn4c4r",
+    "moniker": "HelionCosmosValidator",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper19cjcgjxmqffrekeh2cfzw34v2rkqlt0tq7ragz",
+    "moniker": "bithome03",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper1pexrxk6s9aznl8ap2g8jr87ktc3a7dd8xf0etj",
+    "moniker": "CosmosOne",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper18cphtqx7c6kmjuwvtfvge0dtf8nxm8j9x6p4kz",
+    "moniker": "touzicosmos",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper1hg4wpfzr70d9vjzlwfeel555f6plwj2jqpx9sh",
+    "moniker": " The Chicken Coop   NFT Airdrops",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper18er5376et00utmnqzjhgkl5v9chq68s42twyke",
+    "moniker": "Restake",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper18l2tf0m2wsp28r6q4l8clnlfw664c5vey37pmu",
+    "moniker": "MatrixedLink",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper1hvsdf03tl6w5pnfvfv5g8uphjd4wfw2h4gvnl7",
+    "moniker": "chainnode",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper1zhunuh23rvhm95j0cwe8dhx3ka4chpz93vl8ep",
+    "moniker": "raullenchaix",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper1j7fgj7v9nqjg6wfda9paldcxezd8yv4qmhftye",
+    "moniker": "Gelotto  Slash Protected",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper1g948uu7qj6djhn50fwf20q4z763zk7g0xqxc8a",
+    "moniker": "hello its a me",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper106kt5cmued596rqusmthfnh39h38k64e73fxce",
+    "moniker": "SGNODE",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper1ju455e78y7p4sgj08qwwnrn5ffwhcv54sd7l2c",
+    "moniker": "alphabai",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper1eez6ks7upkjf8w3eaz0vah7x3d8zkade0mwn3f",
+    "moniker": "FreeValidator",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper1grgelyng2v6v3t8z87wu3sxgt9m5s03xfytvz7",
+    "moniker": "iqlusion",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper1emw2f9auxyy532klzc5rkkfampgmn5ywftnv7l",
+    "moniker": "Darth Validator",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper1qphf0ferqcch0jca9hlqfm3x0eds3dpkcvpafp",
+    "moniker": "test kim",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper1zxphhzuweenrq3vvgsgj6g25axdpghtglg0veq",
+    "moniker": "XStake",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper1xxjvzwjpsf6ktuffkcpx29ut9qfrn0my8xdtqd",
+    "moniker": "paostest",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper12r4rsw7s2vnccwealt5zu0kukdxgwamyltmrud",
+    "moniker": "Laomedeia",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper1ncp4h8ckha4c6lel5wktclt4yrz4t896qawm7z",
+    "moniker": "Comdex",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper12w2qkvxp7udd29t2wrz5uhffuuns4ds6c6p2aj",
+    "moniker": "SenseiNodeStake",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper16j5uk7zt8kha0w4637h36kuxrmlarrg0qfwlgz",
+    "moniker": "cosmoshubcom",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper122j3zmqdl6d2g64qmjuqzj65gfejsvjp07yljn",
+    "moniker": "COSValidator",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper1xnrth5rku3z3msm9prxe3l0p2yec3d9mzxz9ka",
+    "moniker": "coinhallorg ",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper1ddle9tczl87gsvmeva3c48nenyng4n56nghmjk",
+    "moniker": "Vitwit Previously Witval",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper1q2v728c5g8ggvrr7dgc4madt9px2hlpdxpfmug",
+    "moniker": "ContributionDAO",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper16n2587cgz46nn5d0c5mcqlsnx8pvg566gt2a2p",
+    "moniker": "Tedcryptoio   TedLotto",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper1zdzerwr2jh2ngmlfvrn480yw6krxnyewls7v0j",
+    "moniker": "Disperze",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper1gthj23tp74rcfr4rhjrspvgy4vt4zxfew5jlxe",
+    "moniker": "jecovalidator",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper1qtxec3ggeuwnca9mmngw7vf6ctw54cppey02fs",
+    "moniker": "tokenpocket",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper1q9p73lx07tjqc34vs8jrsu5pg3q4ha534uqv4w",
+    "moniker": "Unstake as we will shut down",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper1zc3gqnw9z9vvayunepazm8r40alfn2djscn4pc",
+    "moniker": "0xDEADBEEF",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper1zccyq99s2pcu3tjrpmlhyfcr0fpekpz2yggk66",
+    "moniker": "SB Wallet",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper1zmr5mglwkkru7m3q8sxcg66gxr508v6h6lv8fg",
+    "moniker": " Fee  Mpress ",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper1p2mc677uxl8qfn5a9j3n9q67ja9ue3nq2zk43s",
+    "moniker": "quichxh",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper1zp6kg7qlmztyw2km2af4z5ruz5vn04cp9npe79",
+    "moniker": "piggycoincom ",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper1zmgj4wx0ddgktmg9332f3szjsqlm4yk9pwdccl",
+    "moniker": "Sr20de",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper1mvhrxhtsjynl62p7rs8jeumtqwtvww3m0vas2y",
+    "moniker": "figo",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper1uyt0yuv7cz7ppwefl9ths336ln7ysvg2jlj76t",
+    "moniker": "Sanka Network",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper1rjujxmsdk3n7hj07q54huh4esf4v0ts8mezqam",
+    "moniker": "DELIGHT",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper1cm9mkmwaheq8l06zrdhudn4g5tkq36dd9p07zj",
+    "moniker": "tester0122",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper1fsg635n5vgc7jazz9sx5725wnc3xqgr7awxaag",
+    "moniker": "Crosnest",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper1zc0z44e42qhzltqc8qpj5qrzn836d3lftnqmgw",
+    "moniker": "Virtual Hive",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper132juzk0gdmwuxvx4phug7m3ymyatxlh9734g4w",
+    "moniker": "P2PORG  P2P Validator",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper140l6y2gp3gxvay6qtn70re7z2s0gn57zfd832j",
+    "moniker": " LavenderFive Nodes ",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper1jx7uhnrg8pylqydtxwykc288mzh24866emytpa",
+    "moniker": "Sygnum",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper1gah0q9gqypnr7ufzg0dcda3k6v8qp4ceddn8fs",
+    "moniker": "Enigma",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper1lktjhnzkpkz3ehrg8psvmwhafg56kfss3q3t8m",
+    "moniker": "Umbrella ",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper1e859xaue4k2jzqw20cv6l7p3tmc378pc3k8g2u",
+    "moniker": "Citizen Web3",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper1aewyh4gtvayx6v7w592jdfylawk4rsu9tfvfgm",
+    "moniker": "Silk Nodes",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper1uxh465053nq3at4dn0jywgwq3s9sme3la3drx6",
+    "moniker": "Bison Trails",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper1j0vaeh27t4rll7zhmarwcuq8xtrmvqhudrgcky",
+    "moniker": "Chainflow",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper18s3k8dt73e28rraqk70u9xwtv9wlav83n5mqjx",
+    "moniker": "Colossus",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper1ssm0d433seakyak8kcf93yefhknjleeds4y3em",
+    "moniker": "IRISNET",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper1sdz4rc95vnzh2f54sacec50vjxnmwdakfym4vh",
+    "moniker": "Chill Validation",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper1q6d3d089hg59x6gcx92uumx70s5y5wadklue8s",
+    "moniker": "Ubik Capital",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper1qwl879nx9t6kef4supyazayf7vjhennyh568ys",
+    "moniker": "Certus One",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper1pmdxquuver2aj60rac8efqc87yk6tu0usuwar6",
+    "moniker": "walletapibeta",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper1rrlevagmm7lv0kcysnf8v95pxjtt4fjhh8jz5k",
+    "moniker": "hulk",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper1yqkg0cnkc2s6ml08eh682ud0qet8au5e7jvwcn",
+    "moniker": "NODERSTEAM",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper1998928nfs697ep5d825y5jah0nq9zrtd00yyj7",
+    "moniker": "HLT",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper1pxsmjzan4u833l5s72pzamlurcgk2g5m65xjlj",
+    "moniker": "MyCointainer",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper1pffsadvlewevatmf6kpy0mtdkre2mzzre3zhe6",
+    "moniker": "Pathrocknetwork",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper1ps7dmygt4wm72t8l9kdjetelhggsv8w77mdh33",
+    "moniker": "CosmosPoolorg",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper1rfg7q868r8x04y4pnacdcs8hpec6sqrkfs7q6c",
+    "moniker": "oneUatom",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper1lt7f9u99mlfv5ysxjtvn3ql9k5nxcl97k9rqqf",
+    "moniker": "oneUatom2",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper1rn4gt0kphuqsdk7lu7m65gylv75q3ml4y6ns0j",
+    "moniker": "etherone",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper1l034wm5h2hktkdq75fd6p099kwzhljn7q7sqnr",
+    "moniker": "Andromaverse Labs",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper1r50v53ua3mgfczlgf6jclycx2edcsaaftfjzs6",
+    "moniker": "SIGN Capital",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper1y2w0t3t7qx3u7w2qwfw8zm66tj9jdxysrv8kwj",
+    "moniker": "authztestvalidator",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper1l5rgg6k87m6x5hl50xg5q7t680d672z87gzd7a",
+    "moniker": "hoocom",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper19rmlxkqjt950fxl849l49x0me56u9tkd5n5j62",
+    "moniker": "Post Road",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper1r9lxkpqre6j4487ut882xchgr7rdtx3x76gtdp",
+    "moniker": "terraformstaging03",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper103agss48504gkk3la5xcg5kxplaf6ttnuv234h",
+    "moniker": "MANTRA",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper16pp7hn3auelgc8z9tcax5jj8q490288cp53t0d",
+    "moniker": "XPRV",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper1mykn77lkynl8fkwvl9tqg369u0zajzzcdhkptq",
+    "moniker": "BlockPI",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper1usvshtypjw57edkwxq3tagme665398f0hf4wuc",
+    "moniker": "Kintsugi Nodes",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper1vygmh344ldv9qefss9ek7ggsnxparljlmj56q5",
+    "moniker": "PUPMS",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper1hmd535f69t3x262m6s9wc6jd0dmel2zevhyuhm",
+    "moniker": "PRYZM  StakeDrop",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper196ax4vc0lwpxndu9dyhvca7jhxp70rmcvrj90c",
+    "moniker": "SG1",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper1j78gfl4ml9h2xdduhw2cpgheu3hdalkpuvk7m5",
+    "moniker": "TeeNode",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper1wvt5zugk97mrl5rm9c3m573f9gj03w2gyh8m5v",
+    "moniker": "CloudByte",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper14lultfckehtszvzw4ehu0apvsr77afvyju5zzy",
+    "moniker": "DokiaCapital",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper1jlr62guqwrwkdt4m3y00zh2rrsamhjf9num5xr",
+    "moniker": "StakeWithUs",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper10jzj3jjd3frna0ay08sh4zu4fpy957s49jkk7m",
+    "moniker": "Onbloc Node",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper1hdrlqvyjfy5sdrseecjrutyws9khtxxaux62l7",
+    "moniker": "SmartNodes",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper1kyfce0nvluyhgfsdzz8hwrsf5336gsc95pyy4u",
+    "moniker": "StakeSeeker by BTCS",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper1xwazl8ftks4gn00y5x3c47auquc62ssuqlj02r",
+    "moniker": "jabbey",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper1rwh0cxa72d3yle3r4l8gd7vyphrmjy2kpe4x72",
+    "moniker": "Factor",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper1vf44d85es37hwl9f4h9gv0e064m0lla60j9luj",
+    "moniker": "MultiChain ventures",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper1cgh5ksjwy2sd407lyre4l3uj2fdrqhpkzp06e6",
+    "moniker": "HashKey Cloud",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper13ql36flc4cdjhx08hke5vpr4dyv03aafnmvtnc",
+    "moniker": "TTT ",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper1v5y0tg0jllvxf5c3afml8s3awue0ymju89frut",
+    "moniker": "Zero Knowledge Validator ZKV",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper18al7yt9q5a7n7aqje9dat36efyxssyahmx2gzs",
+    "moniker": "Alessandro Mazza",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper1symf474wnypes2d3mecllqk6l26rwz8mfjqdus",
+    "moniker": "BlockHunters ",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper1ec3p6a75mqwkv33zt543n6cnxqwun37rr5xlqv",
+    "moniker": "lunamint",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper174tvh2dty7vsvwn2cfsmkwq8tplqgr5fh2nlvp",
+    "moniker": "Regenerator  Green Validator ",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper1cc99d3xcukhedg4wcw53j7a9q68uza707vpfe7",
+    "moniker": "dForce",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper1rpgtz9pskr5geavkjz02caqmeep7cwwpv73axj",
+    "moniker": "Blockpower",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper1a4qlael79p76my9pml6thwhnnzsxyy4ajrvd9s",
+    "moniker": "Multiplex",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper10e4vsut6suau8tk9m6dnrm0slgd6npe3jx5xpv",
+    "moniker": "BHarvest",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper1yh089p0cre4nhpdqw35uzde5amg3qzexkeggdn",
+    "moniker": "HighStakesch  Stake for Airdrop",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper1e4vye322gkjx8n85jgcclnc7nvdvu82axnr5ll",
+    "moniker": "Binary Holdings",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper1dqp325was50l7ut2lnx6s8xhmtwj3wrtx06gzu",
+    "moniker": "Nocturnal Labs",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper1z96p06tf6pqeca9gatv8h9hp83z2ng4l6erxj4",
+    "moniker": "interchainFM",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper1ey69r37gfxvxg62sh4r0ktpuc46pzjrm873ae8",
+    "moniker": "Sikka",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper1et77usu8q2hargvyusl4qzryev8x8t9wwqkxfs",
+    "moniker": "Stargaze",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper1esh5lm53ew3cpscy3nmm20xfvm8dlygadrpkmp",
+    "moniker": "bitlabs",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper1udpsgkgyutgsglauk9vk9rs03a3skc62gup9ny",
+    "moniker": "SHUTTING DOWN AUDITone",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper1uepjmgfuk6rnd0djsglu88w7d0t49lmljdpae2",
+    "moniker": "STAKE FRITES    DO NOT DELEGATE",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper16lhapna7nfm0j3pnwt7tn4lxtx3q7hs4sf66t8",
+    "moniker": "Crypto Lion",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper146kwpzhmleafmhtaxulfptyhnvwxzlvm87hwnm",
+    "moniker": " KysenPool Sky  ",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper1lkujuk2004p3w42tgvuvqnsdmsq8u6jqkwf9wj",
+    "moniker": "BitValidator",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper1fqzqejwkk898fcslw4z4eeqjzesynvrdfr5hte",
+    "moniker": "commercionetwork",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper1e7uaw3sdrfz7lt04qtwg09jwadlt806jvhwj0j",
+    "moniker": "openbitlab",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper1m902jrk0pn4yc47zfvauqwvtq0e03nen5xgzte",
+    "moniker": "Luganodes",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper1urxrvt5dmkqpe50gwrerjly2z6nvk9exjz2j3h",
+    "moniker": "zoomerlabs",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper1ed5a27kfyu0yljmna00vtr8mgzp6rwh9zn77zz",
+    "moniker": "CROSSTECH",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper1z66j0z75a9flwnez7sa8jxx46cqu4rfhd9q82w",
+    "moniker": "deboREDELEGATE FROM US",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper13maqgtlklmereflvg3lq3e8zrp0jsqhr8ef3kk",
+    "moniker": "ChainUp  NewHuo",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper10wljxpl03053h9690apmyeakly3ylhejrucvtm",
+    "moniker": "Ledger",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper16fnz0v4cnv5dpnj0p3gaft2q2kzx8z5hfrx6v5",
+    "moniker": "decomm",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper1ehlmvdvgkpfcx8f07l929udjerc9mtyhl07ynp",
+    "moniker": "Commons Hub",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper15ytx6mflyrxynjerqlud6w646v6u3qvtjtfane",
+    "moniker": "securesecrets",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper1g65tuw43wndkmp5m8qfcnq06uc02z4wdsq7aj3",
+    "moniker": "Yieldera",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper1nths3ruxgdthfxx3y8d4a9wfq5a2mkwhvc3k8g",
+    "moniker": "redelegateplease",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper14l0fp639yudfl46zauvv8rkzjgd4u0zk2aseys",
+    "moniker": "Atomic power node",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper1r2dthxctqzhwg299e7aaeqwfkgcc9hg8k3yd7m",
+    "moniker": "Sunflower",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper1dzv2cfhynf9xqgz9xae4y94ychxy4gus6rhw8u",
+    "moniker": "Active Nodes",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper1xym2qygmr9vanpa0m7ndk3n0qxgey3ffzcyd5c",
+    "moniker": "grantfish",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper1sjllsnramtg3ewxqwwrwjxfgc4n4ef9u2lcnj0",
+    "moniker": "stakefish",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper13fjm3anwze4gnkzv7r44pp0lnkr755xmdu37ct",
+    "moniker": "Altiplanic",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper1zsxpuj84nwspn6q0qp4ec6tqdzqu400tdrj9my",
+    "moniker": "end",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper1083svrca4t350mphfv9x45wq9asrs60cdmrflj",
+    "moniker": "Notional",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper18624s66va2yh3fhf3tamnexdy69m460zzcdchd",
+    "moniker": "LOA Labs",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper1wlpz5hau2ezu0gmuxav63m53d8s77az9wfzlt6",
+    "moniker": " uGaenn ",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper14k4pzckkre6uxxyd2lnhnpp8sngys9m6hl6ml7",
+    "moniker": "decommissioned",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper1my5hjhl3gv47jndnfhj6l726ppjtszza94l320",
+    "moniker": "Defi Wallet",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper1s05va5d09xlq3et8mapsesqh6r5lqy7mkhwshm",
+    "moniker": "Wetez",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper13zenl68sgz2fg9r5a59f3f2cdd4zwq8kupgn9k",
+    "moniker": "Ivaldi Labs",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper1thl5syhmscgnj7whdyrydw3w6vy80044hjpnxh",
+    "moniker": "UNSTAKEREDELEGATE",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper18n80khkgu2z093cqtdatnx3gn0f7fjuvl2s72d",
+    "moniker": "DOUBLETOP",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper1rj6324uq904z5zr96zg6ew9qjyau9u6h5nflg6",
+    "moniker": "Don Cryptonium",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper1cz6q5nys0tgupq2mt99amsltepglxqgwfs6fum",
+    "moniker": "melange",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper1eh5mwu044gd5ntkkc2xgfg8247mgc56fz4sdg3",
+    "moniker": "BouBouNode",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper1sxx9mszve0gaedz5ld7qdkjkfv8z992ax69k08",
+    "moniker": "validatornetwork",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper1ktecz4dr56j9tsfh7nwg8s9suvhfu70qykhu5s",
+    "moniker": "Dawnsworld",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper12w6tynmjzq4l8zdla3v4x0jt8lt4rcz5gk7zg2",
+    "moniker": "Huobi1",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper1kn3wugetjuy4zetlq6wadchfhvu3x740ae6z6x",
+    "moniker": "Huobi",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper125umsz3fws7gepn5ccsh0sv4gre9r6a3tccz4r",
+    "moniker": "Moonstake",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper1000ya26q2cmh399q4c5aaacd9lmmdqp90kw2jn",
+    "moniker": "Staking Fund",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper1uutuwrwt3z2a5z8z3uasml3rftlpmu25aga5c6",
+    "moniker": "DelegaNetworks ",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper1udcqs46htn89kzvq9wjnul2k8lw89s37xcavva",
+    "moniker": "CLOSED DOWN",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper1hlwku8r5h34zayle405tlesvrg5svu7ugkld20",
+    "moniker": "The Node will soon cease operating",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper12lfqufkk2h3w2ycp50czme6nj3ln5tdv7nj3hx",
+    "moniker": "Fanfury  furyfan  Stake to Win",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper1crqm3598z6qmyn2kkcl9dz7uqs4qdqnr6s8jdn",
+    "moniker": "Coinbase Cloud",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper1n3nll7yl3lcv932s2r7l6jzvkjtjk0qppp3rls",
+    "moniker": "RoundTable21 by WildSage Labs",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper1v0g7guekttkdmerz5z8hjj8u8j68c6p00zqgf5",
+    "moniker": " JADE DAO ",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper1hpgj9ncum96xp4llwkgl5a9as0nyzmxnp7fxgv",
+    "moniker": "Flipside",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper1vwweykn96nk2d2c7r60cd3ym5pt643z627t9jy",
+    "moniker": "sleepykitten",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper1wtv0kp6ydt03edd8kyr5arr4f3yc52vp3u2x3u",
+    "moniker": "kytzu",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper1ha8d55747h8hsaluvz8ld88n24nfaw68rx4x92",
+    "moniker": "Lightning Capital  Decommissioning May 2  Please Unbond",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper14ts0j42qkpr43a3tgxr7zz6l6zdf7hde8va8km",
+    "moniker": "Inactive",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper1sd4tl9aljmmezzudugs7zlaya7pg2895ws8tfs",
+    "moniker": "InfStones",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper1mt6mf0ny6cstytjz00kz3h7cyyrh9m5s6tduks",
+    "moniker": " Earthstar ",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper1keltez56g3zm9w8wr8gcmmulze48g2q3usuw8c",
+    "moniker": "DO NOT DELEGATE  Defi Wallet",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper14r7kzdf6gfh3t9v2c7efdp2fn5apsl93qga2ed",
+    "moniker": "Shutting down redelegate",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper134z30285xhayem22zqrsvnujdlxfpvr7h724l5",
+    "moniker": "anythings",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper17eqvq9h0jyd8mxtj2xrn6ksfu54qzw4llud7z6",
+    "moniker": "MyCosmosValidator",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper1uvtjhqfqawhf4xzsjczw72qq9vsueewdm0jpuv",
+    "moniker": "King Hugo",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper1485u80fdxjan4sd3esrvyw6cyurpvddvzuh48y",
+    "moniker": "AIR DROP STATION",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper1s0lankh33kprer2l22nank5rvsuh9ksam8l32u",
+    "moniker": "KingSuper",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper1n5epesmpcyx9x643aa3m9qw2fk3tf0myesv9zw",
+    "moniker": "MMS",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper1gtpvyenddt7uq7nccndn3pz9smurt3xt6pmx8u",
+    "moniker": "anything",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper1xhhquwctvwm40qn3nmmqq067pc2gw22eqkwgt0",
+    "moniker": "stake2earn",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper1we6knm8qartmmh2r0qfpsz6pq0s7emv3e0meuw",
+    "moniker": "Staked",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper16qme5yxucnaj6snx35nmwze0wyxr8wfgqxsqfw",
+    "moniker": "KEK",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper1hjct6q7npsspsg3dgvzk3sdf89spmlpfdn6m9d",
+    "moniker": "Figment",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper1s6x9fy4wc49wj9jx4jv6czredqsmp46h7vnk2q",
+    "moniker": "SNZPool",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper18kz84x6fv7ep7xvme8x2e4254t404efvhjqst8",
+    "moniker": "inactive validator Do NOT delegate",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper1l634uf3kmyrtg6pl2dpfar9fdkjgtcmqjscd86",
+    "moniker": "ChainTools",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper1zqgheeawp7cmqk27dgyctd80rd8ryhqs6la9wc",
+    "moniker": "NO Fee to 2025   meleaxyz",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper157qezau9xnzypse3vu2vhs7r4ee83fdecew0fz",
+    "moniker": "KuCoin",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper19lss6zgdh5vvcpjhfftdghrpsw7a4434elpwpu",
+    "moniker": "Paradigm",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper1armvgtd477axezdsql30s4cah03xzcrlykvc2x",
+    "moniker": "nakanodoxyz",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper1x065cjlgejk2p2la0029akfvdy52gtq9mm58ta",
+    "moniker": "MathWallet",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper179luvthvww4t0cawrcsv3t7a8amr4n7gjxuhpx",
+    "moniker": "Crypto Plant",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper1emaa7mwgpnpmc7yptm728ytp9quamsvu837nc0",
+    "moniker": "kochacolaj",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper1tk2xujvwtn0q60u8xelh50u9xzqvrnpk4d00qj",
+    "moniker": "NASDAQBTCS",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper1fwnw7km7sqwyfdr0lq2n0nzpa3f7zd7p6r44k8",
+    "moniker": "PumpkinFarms",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper1kqld7f3tu3ha5ht3qv2rq9ac9683d3xf356rc9",
+    "moniker": "airdropdao",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper1cv6hnl6sq4srccnzveqe8ggc2tepvvx45vwcwz",
+    "moniker": "Sunshine Validation solarpower",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper1uyccnks6gn6g62fqmahf8eafkedq6xq400rjxr",
+    "moniker": "Inactive Validator",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper14jlpmqquh0gste6nzf4dn43kc8h50l6fmx6dfs",
+    "moniker": "Liqee",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper1up3slj4nr5y23gxkvqn8h5ra9mv0pj2vrh0djk",
+    "moniker": "SpacePotato",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper1vh3mytf5mahtqkdzg76v6j6xtu7wks9dejqlhe",
+    "moniker": "Numenorone",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper1sgcfa5z7dmhekhf79m040natu37unyuek54tp7",
+    "moniker": "Kleomedes",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper1w024sqzpvj5g57maxmvnlzellzwapwsv42360d",
+    "moniker": " Earn Stash",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper1gxgyhqagmvyg8sgwgpa79scrwqp4wn4hw4e3cl",
+    "moniker": " AutoStake  Slash Protected",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper1wp9jne5t3e4au7u8gfep90g59j0qdhpeqvlg7n",
+    "moniker": "Newroad Network",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper1dm6n0u6l7vwn7nyy87gzmfjryg5jsg9kzn6kng",
+    "moniker": " Consensus One",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper1s6t3wzx6mcv3pjg5fp2ddzplm3gj4pg6d330wg",
+    "moniker": "omega3",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper1r8kyvg4me2upnvlk26n2ay0zd5t4jktna8hhxp",
+    "moniker": "noma",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper1x88j7vp2xnw3zec8ur3g4waxycyz7m0mahdv3p",
+    "moniker": "Staking Facilities",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper1rfpar0qx3umnhu0f6wjp4hvnr3x6u5389e094j",
+    "moniker": "DECOMMISSIONED",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper1fghgwhgtxtcshj4a9alp7u2qv6n2wffqhpxcnk",
+    "moniker": "cephalopod equipment coop",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper19tfkpy26wpdanzjqwag8yyxsygsxgwzsqxmnuw",
+    "moniker": "msstage",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper1svwt2mr4x2mx0hcmty0mxsa4rmlfau4lwx2l69",
+    "moniker": "Twinstake",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper19wrdj9k875s49p6zpxcf627tjsw4p5tzrq78la",
+    "moniker": "AuraStake",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper193qmr3zvz0s6g4ngez5euja7ynwrwx8amer9qt",
+    "moniker": "Dudes Node Abides",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper1xqtqptyvjksqx8pvvm6r0uamuddxvrkh4ge2gf",
+    "moniker": "Tombstoned",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper1vu8ygkp3jvqy3a6s8d7f9lepppr063fqn9mapd",
+    "moniker": "Supernova",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper1v78qrdl7680h7rv007rd7aq6dmx9xf9de63egw",
+    "moniker": "BitHome",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper1dt4h3hn9zpxvm2t26erf96aaszp3va2wkq28ez",
+    "moniker": "deleteme",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper1k4mtqv0y964set0ayr8e09r54mpqs4xfw0ysew",
+    "moniker": "DLINODESCOM",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper1lcwxu50rvvgf9v6jy6q5mrzyhlszwtjxhtscmp",
+    "moniker": "stakezone",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper1u6ddcsjueax884l3tfrs66497c7g86skn7pa0u",
+    "moniker": "Sentinel",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper1yat0v9mqt88m2x3uew0zrpzn7tjzas6eplz6s2",
+    "moniker": "LikeCoin by Liker Land",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper1te8nxpc2myjfrhaty0dnzdhs5ahdh5agzuym9v",
+    "moniker": "CoinoneNode",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper1x8rr4hcf54nz6hfckyy2n05sxss54h8wz9puzg",
+    "moniker": "cosmosgbt",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper1xsum5hdkcckumzx8ajf3j8upr8w0vs8gcvw0dc",
+    "moniker": "PeopleNode",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper188z55862zckmn7kuwg94sl3nw9ta9pqt3xectq",
+    "moniker": "OG",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper1wrxkqna8w5ldl3twgmyne6fvt9hsfgmksrjwlj",
+    "moniker": "discontinued",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper1p7n5agmrptr43t9te27tz7c4tnpw2dj3s4p6jm",
+    "moniker": "SlowMistZone",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper187kxrmex8ltkjgfapk04ctlwsywnxem4649xgv",
+    "moniker": "  ",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper102zp2v3ysn8nhuk5q7lvxzsthg8usmw2c0s405",
+    "moniker": "Validatriumcom  0 fee",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper1w7xcxu92mrw6tp8tx7y7hy5t832v4mx5e6j7ss",
+    "moniker": "Interbloc",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper10rnghuzfntag7dxhqwfeamhuzyymcd3kqpewzh",
+    "moniker": "BasBlock",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper1gw0gnf3wlca97qhxynja5xg68652366vl0vpwt",
+    "moniker": "Cactus",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper1zgw8kzwl9na7egn7l9u8d6e2vtf0tvs896relx",
+    "moniker": "AgoraNodes",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper1ffze90x7qy67fzprfh8uaarnclpac0ylqz6urv",
+    "moniker": "huoyuyan",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper1nf0hr6a34wz9dpcz27qn7rm2v04azlxqu8wkmc",
+    "moniker": "bithomevalidatormainnet01",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper1zwrav6vq7a9g37vwt6nl8ra63hhc20emsmvyp5",
+    "moniker": "Spacebot",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper1z3xngnvpyt33dlhrsmcz6pwd4fp47uem9545ed",
+    "moniker": "unicornethermat1",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper1zk49r55txl9a7nttjcsqjrg5lus8hckkhgzez7",
+    "moniker": "BitStack0",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper1prvhg36trh0y7dajrlny6h9qhp0cpwh0nl3p7k",
+    "moniker": "liwei",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper1pgsjyvkg3y2m7qas534zzdhsqsxqyph2jh3uck",
+    "moniker": "OneSixtyTwo",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper1ky5k0305lm4t4xa72a2g5ahfdzqxnwx358agra",
+    "moniker": "Valnodes  Carbon Neutral Staking",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper1s7jnk7t6yqzensdgpvkvkag022udk842qdjdtd",
+    "moniker": "Blockscale",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper16m93gjfqvnjajzrfyszml8qm92a0w67nwxrca7",
+    "moniker": "Deprecated",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper1kzzxf55puvdncekx8ln2jfzrklm72qn46uez7l",
+    "moniker": "Leonoors Cryptoman",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper1cjhz8st5409k2nzfcpcnexehjxh7k2fgn8kf3w",
+    "moniker": "NodeValidator VN",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper1c5n3z6ju8e07pqmmxcn4hkqn69d8kmvq5nxnxa",
+    "moniker": "anonymninja",
+    "chain_id": "cosmos"
+  },
+  {
+    "validator_address": "cosmosvaloper1vrg6ruw00lhszl4sjgwt5ldvl8z0f7pfp5va85",
+    "moniker": "SSSnodes",
+    "chain_id": "cosmos"
+  }
+]
