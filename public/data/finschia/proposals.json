@@ -1,0 +1,411 @@
+[
+  {
+    "proposal_id": "36",
+    "chain_id": "finschia",
+    "title": "Transfer of the Remaining Service Contribution Reward from the Finschia Mainnet",
+    "type": "CommunityPoolSpend",
+    "topic": "Ecosystem Growth",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 4,
+      "no_vote_count": 3
+    }
+  },
+  {
+    "proposal_id": "35",
+    "chain_id": "finschia",
+    "title": "v4Marigold Software Upgrade",
+    "type": "SoftwareUpgrade",
+    "topic": "Major Release",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 7,
+      "no_vote_count": 4
+    }
+  },
+  {
+    "proposal_id": "34",
+    "chain_id": "finschia",
+    "title": "Change parameters for v4Marigold upgrade",
+    "type": "ParameterChange",
+    "topic": "Protocol Configuration",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 14,
+      "no_vote_count": 1
+    }
+  },
+  {
+    "proposal_id": "33",
+    "chain_id": "finschia",
+    "title": "Change parameters for v4Marigold upgrade",
+    "type": "ParameterChange",
+    "topic": "Protocol Configuration",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 14,
+      "no_vote_count": 1
+    }
+  },
+  {
+    "proposal_id": "32",
+    "chain_id": "finschia",
+    "title": "Service Contribution Reward June 2024",
+    "type": "CommunityPoolSpend",
+    "topic": "Ecosystem Growth",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 10,
+      "no_count": 1,
+      "abstain_count": 1,
+      "no_vote_count": 3
+    }
+  },
+  {
+    "proposal_id": "30",
+    "chain_id": "finschia",
+    "title": "Service Contribution Reward May 2024",
+    "type": "CommunityPoolSpend",
+    "topic": "Ecosystem Growth",
+    "status": "REJECTED",
+    "final_tally_result": {
+      "yes_count": 11,
+      "no_count": 2,
+      "no_vote_count": 2
+    }
+  },
+  {
+    "proposal_id": "29",
+    "chain_id": "finschia",
+    "title": "Service Contribution Reward April 2024",
+    "type": "CommunityPoolSpend",
+    "topic": "Ecosystem Growth",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 8,
+      "no_count": 1,
+      "no_vote_count": 6
+    }
+  },
+  {
+    "proposal_id": "28",
+    "chain_id": "finschia",
+    "title": "Service Contribution Reward March 2024",
+    "type": "CommunityPoolSpend",
+    "topic": "Ecosystem Growth",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 10,
+      "no_count": 1,
+      "no_vote_count": 4
+    }
+  },
+  {
+    "proposal_id": "26",
+    "chain_id": "finschia",
+    "title": "Service Contribution Reward February 2024",
+    "type": "CommunityPoolSpend",
+    "topic": "Ecosystem Growth",
+    "status": "PASSED",
+    "final_tally_result": {
+      "no_count": 2,
+      "yes_count": 9,
+      "no_vote_count": 4
+    }
+  },
+  {
+    "proposal_id": "25",
+    "chain_id": "finschia",
+    "title": "Service Contribution Reward January 2024",
+    "type": "CommunityPoolSpend",
+    "topic": "Ecosystem Growth",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 12,
+      "no_vote_count": 3
+    }
+  },
+  {
+    "proposal_id": "24",
+    "chain_id": "finschia",
+    "title": "Service Contribution Reward December 2023",
+    "type": "CommunityPoolSpend",
+    "topic": "Ecosystem Growth",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 12,
+      "no_vote_count": 3
+    }
+  },
+  {
+    "proposal_id": "23",
+    "chain_id": "finschia",
+    "title": "Finschia x Klaytn Mainnet Merge",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 13,
+      "weighted_vote_count": 1,
+      "no_count": 1
+    }
+  },
+  {
+    "proposal_id": "22",
+    "chain_id": "finschia",
+    "title": "Finschia x Klaytn Mainnet Merge",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "REJECTED",
+    "final_tally_result": {
+      "no_with_veto_count": 2,
+      "yes_count": 1,
+      "no_vote_count": 12
+    }
+  },
+  {
+    "proposal_id": "21",
+    "chain_id": "finschia",
+    "title": "Service Contribution Reward November 2023",
+    "type": "CommunityPoolSpend",
+    "topic": "Ecosystem Growth",
+    "status": "PASSED",
+    "final_tally_result": {
+      "no_count": 1,
+      "yes_count": 10,
+      "no_vote_count": 4
+    }
+  },
+  {
+    "proposal_id": "20",
+    "chain_id": "finschia",
+    "title": "Change the unbondingtime parameter from 1day to 7days",
+    "type": "ParameterChange",
+    "topic": "Governance Settings",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 10,
+      "no_count": 1,
+      "no_vote_count": 4
+    }
+  },
+  {
+    "proposal_id": "19",
+    "chain_id": "finschia",
+    "title": "Finschia v2 Policy Upgrade",
+    "type": "TextProposal",
+    "topic": "Network Policy",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 10,
+      "no_count": 1,
+      "no_vote_count": 4
+    }
+  },
+  {
+    "proposal_id": "18",
+    "chain_id": "finschia",
+    "title": "Service Contribution Reward October 2023",
+    "type": "CommunityPoolSpend",
+    "topic": "Ecosystem Growth",
+    "status": "PASSED",
+    "final_tally_result": {
+      "no_count": 2,
+      "yes_count": 8,
+      "abstain_count": 1,
+      "no_vote_count": 4
+    }
+  },
+  {
+    "proposal_id": "17",
+    "chain_id": "finschia",
+    "title": "Finschia v2Daisy Software Upgrade",
+    "type": "SoftwareUpgrade",
+    "topic": "Major Release",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 10,
+      "no_vote_count": 5
+    }
+  },
+  {
+    "proposal_id": "16",
+    "chain_id": "finschia",
+    "title": "Finschia v1 Policy Upgrade",
+    "type": "TextProposal",
+    "topic": "Network Policy",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 9,
+      "no_vote_count": 6
+    }
+  },
+  {
+    "proposal_id": "15",
+    "chain_id": "finschia",
+    "title": "Service Contribution Reward September 2023",
+    "type": "CommunityPoolSpend",
+    "topic": "Ecosystem Growth",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 8,
+      "no_count": 1,
+      "no_vote_count": 6
+    }
+  },
+  {
+    "proposal_id": "14",
+    "chain_id": "finschia",
+    "title": "Service Contribution Reward August 2023",
+    "type": "CommunityPoolSpend",
+    "topic": "Ecosystem Growth",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 10,
+      "no_vote_count": 5
+    }
+  },
+  {
+    "proposal_id": "13",
+    "chain_id": "finschia",
+    "title": "Service Contribution Reward 2307",
+    "type": "CommunityPoolSpend",
+    "topic": "Ecosystem Growth",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 11,
+      "no_vote_count": 4
+    }
+  },
+  {
+    "proposal_id": "12",
+    "chain_id": "finschia",
+    "title": "Service Contribution Reward 2306",
+    "type": "CommunityPoolSpend",
+    "topic": "Ecosystem Growth",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 15
+    }
+  },
+  {
+    "proposal_id": "11",
+    "chain_id": "finschia",
+    "title": "Change parameters for starting Consortium phase1",
+    "type": "ParameterChange",
+    "topic": "Protocol Configuration",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 2,
+      "no_vote_count": 13
+    }
+  },
+  {
+    "proposal_id": "10",
+    "chain_id": "finschia",
+    "title": "Change maxvalidators for Consortium transition",
+    "type": "ParameterChange",
+    "topic": "Staking Parameters",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 2,
+      "no_vote_count": 13
+    }
+  },
+  {
+    "proposal_id": "9",
+    "chain_id": "finschia",
+    "title": "Service contribution reward May",
+    "type": "CommunityPoolSpend",
+    "topic": "Ecosystem Growth",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 2,
+      "no_vote_count": 13
+    }
+  },
+  {
+    "proposal_id": "8",
+    "chain_id": "finschia",
+    "title": "Service contribution reward April",
+    "type": "CommunityPoolSpend",
+    "topic": "Ecosystem Growth",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 2,
+      "no_vote_count": 13
+    }
+  },
+  {
+    "proposal_id": "7",
+    "chain_id": "finschia",
+    "title": "Announcement on Finschia Mainnet Upgrade From Daphne to Finschia",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 2,
+      "no_vote_count": 13
+    }
+  },
+  {
+    "proposal_id": "6",
+    "chain_id": "finschia",
+    "title": "Params change for adjusting BlocksPerYear",
+    "type": "ParameterChange",
+    "topic": "Fee Adjustment",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 2,
+      "no_vote_count": 13
+    }
+  },
+  {
+    "proposal_id": "5",
+    "chain_id": "finschia",
+    "title": "Params change for updating InflationMin",
+    "type": "ParameterChange",
+    "topic": "Economic Parameters",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 2,
+      "no_vote_count": 13
+    }
+  },
+  {
+    "proposal_id": "4",
+    "chain_id": "finschia",
+    "title": "Params change for starting Token Economy 20",
+    "type": "ParameterChange",
+    "topic": "Fee Adjustment",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 6,
+      "no_vote_count": 9
+    }
+  },
+  {
+    "proposal_id": "3",
+    "chain_id": "finschia",
+    "title": "LRC16 instantiation permission change",
+    "type": "Unknown",
+    "topic": "Miscellaneous",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 3,
+      "no_vote_count": 12
+    }
+  },
+  {
+    "proposal_id": "1",
+    "chain_id": "finschia",
+    "title": "LINK Migration Result Announcement",
+    "type": "TextProposal",
+    "topic": "Network Policy",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 2,
+      "no_vote_count": 13
+    }
+  }
+]

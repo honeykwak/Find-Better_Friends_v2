@@ -1,0 +1,157 @@
+[
+  {
+    "validator_address": "linkvaloper109p4jqfhz9z9z9tykcvwcd3szt67xp4nd0eujz",
+    "moniker": "Finschia002",
+    "chain_id": "finschia"
+  },
+  {
+    "validator_address": "linkvaloper1m753az7gfap3jg0qc2s49esjvrjnx8gfxet597",
+    "moniker": "Finschia004",
+    "chain_id": "finschia"
+  },
+  {
+    "validator_address": "linkvaloper1gp8kj6ejsh408az78hwj7cdfyq6d4gprxdcs0y",
+    "moniker": "Finschia001",
+    "chain_id": "finschia"
+  },
+  {
+    "validator_address": "linkvaloper1r9qc4mvpp4kalufgfhkceg4kna59x0xu2cujk0",
+    "moniker": "Finschia006",
+    "chain_id": "finschia"
+  },
+  {
+    "validator_address": "linkvaloper12qsj3afwrgmdce2afaxqe4vadchksu28952aat",
+    "moniker": "Illuminate",
+    "chain_id": "finschia"
+  },
+  {
+    "validator_address": "linkvaloper19fwat3aevlp9r8wphnfp9ywu7usw8yc0dqqlww",
+    "moniker": "SEGA Singapore",
+    "chain_id": "finschia"
+  },
+  {
+    "validator_address": "linkvaloper18yfxtxscxjmxlfmhllga77pp5vdt9q67g3kfj8",
+    "moniker": "Finschia003",
+    "chain_id": "finschia"
+  },
+  {
+    "validator_address": "linkvaloper19zla8dek63yr4q5lmrrp5tmt0vd097cmejgfas",
+    "moniker": "Finschia005",
+    "chain_id": "finschia"
+  },
+  {
+    "validator_address": "linkvaloper18xc48dp08ypuw0qjgvf6mkv6kctahu4vvpk426",
+    "moniker": "Finschia007",
+    "chain_id": "finschia"
+  },
+  {
+    "validator_address": "linkvaloper19xclj0zl70fvkh8g84ludphk0x34d90qn3p5tf",
+    "moniker": "Artificial",
+    "chain_id": "finschia"
+  },
+  {
+    "validator_address": "linkvaloper1w7efq4znyzxp4lh07hzhzr95xzqhchymswwsh4",
+    "moniker": "LINE Xenesis",
+    "chain_id": "finschia"
+  },
+  {
+    "validator_address": "linkvaloper1nddwnkc47p9v9apruhp9xtq4rquf2y495vv8ss",
+    "moniker": "NEOPIN",
+    "chain_id": "finschia"
+  },
+  {
+    "validator_address": "linkvaloper1dmn3u709328klcyjyf4w2yw4l9gs02vpmyjhdm",
+    "moniker": "SoftBank Corp",
+    "chain_id": "finschia"
+  },
+  {
+    "validator_address": "linkvaloper1mwmxgnpk0k3cv58qeas6fgkgu20qazvxynqdtf",
+    "moniker": "Amadeus",
+    "chain_id": "finschia"
+  },
+  {
+    "validator_address": "linkvaloper1as0hfqv66rvdcpqca3fayhantc5cwr6mwfa4qu",
+    "moniker": "DOSI",
+    "chain_id": "finschia"
+  },
+  {
+    "validator_address": "linkvaloper1l9cnan2pu3qs2wv4dad06d5ldq2ngeehdp3gjp",
+    "moniker": "LINENEXT",
+    "chain_id": "finschia"
+  },
+  {
+    "validator_address": "linkvaloper17se38rc4q9wvm6nmm6fx6pqfdylnm7n2vc0vh8",
+    "moniker": "GoodGang Labs",
+    "chain_id": "finschia"
+  },
+  {
+    "validator_address": "linkvaloper1wq9u888uxjyuayacadjc6qdlgswh8e79vn98at",
+    "moniker": "BUGHOLE",
+    "chain_id": "finschia"
+  },
+  {
+    "validator_address": "linkvaloper1w9003ln4t044dmzzhaxh84an0z8rru2wjtup0y",
+    "moniker": "MARBLEX",
+    "chain_id": "finschia"
+  },
+  {
+    "validator_address": "linkvaloper1qqp5gdrslenvdn0tg5z9rypn8qpezfvee872mh",
+    "moniker": "Presto Labs",
+    "chain_id": "finschia"
+  },
+  {
+    "validator_address": "linkvaloper163ehzt05jhyfu5takr5s9h9el9vtg490w8tj5m",
+    "moniker": "AhnLab Blockchain Company",
+    "chain_id": "finschia"
+  },
+  {
+    "validator_address": "linkvaloper1g45cex772j9v0rgygrg8nm4p00hqkj84fkls0c",
+    "moniker": "Cosmostation",
+    "chain_id": "finschia"
+  },
+  {
+    "validator_address": "linkvaloper1x9pt0sjn3jvjr4ps2uxr5zx2t2szgd9sj589dz",
+    "moniker": "DELIGHT",
+    "chain_id": "finschia"
+  },
+  {
+    "validator_address": "linkvaloper1rcd5vrmy2cln0znt4davcxhz3npkcl7x4a9h5t",
+    "moniker": "A41  will be deprecated on 240329",
+    "chain_id": "finschia"
+  },
+  {
+    "validator_address": "linkvaloper1r5d08efymnzpxcyfmxp2nr2780jf89gggyxuaf",
+    "moniker": "Inspire",
+    "chain_id": "finschia"
+  },
+  {
+    "validator_address": "linkvaloper1rtwtgwuerq2tnduqt6q79m3t908slxal297205",
+    "moniker": "History",
+    "chain_id": "finschia"
+  },
+  {
+    "validator_address": "linkvaloper1k4zt4wv9ztvzevw2x2hzfwc3x3zwnr47vjtf2v",
+    "moniker": "Certik",
+    "chain_id": "finschia"
+  },
+  {
+    "validator_address": "linkvaloper1kdqf45jsffe7tgdq6eqp6tgtddy6n23pmfeuuc",
+    "moniker": "Spirit",
+    "chain_id": "finschia"
+  },
+  {
+    "validator_address": "linkvaloper1en30qde5us6m6l325dr2lm2f67c68ghpuh3us8",
+    "moniker": "Nature",
+    "chain_id": "finschia"
+  },
+  {
+    "validator_address": "linkvaloper1gg660hmnm4aw9vv40vp2h5u4zzfw8np2z0vjjz",
+    "moniker": "Flourish",
+    "chain_id": "finschia"
+  },
+  {
+    "validator_address": "linkvaloper1kmq9aphmawz9l38zely9rj68m9hc5smlg2474g",
+    "moniker": "Confidence",
+    "chain_id": "finschia"
+  }
+]
