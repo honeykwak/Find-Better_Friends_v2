@@ -313,8 +313,8 @@ export default function FilterPanel() {
     <div className="w-80 h-full bg-white border-r border-gray-200 flex flex-col">
       <div className="p-4 border-b border-gray-200 bg-gray-50">
         <div className="flex items-center justify-between mb-3">
-          <h2 className="text-lg font-semibold text-gray-900 flex items-center gap-2"><Filter className="w-5 h-5" />Filters</h2>
-          {activeFiltersCount > 0 && <button onClick={resetFilters} className="flex items-center gap-1 px-2 py-1 text-xs text-gray-600 hover:text-gray-900 hover:bg-gray-100 rounded"><RotateCcw className="w-3 h-3" />Reset ({activeFiltersCount})</button>}
+          <h2 className="text-lg font-semibold text-gray-900 flex items-center gap-2">Filters</h2>
+          <button onClick={resetFilters} className="flex items-center gap-1 px-2 py-1 text-xs text-gray-600 hover:text-gray-900 hover:bg-gray-100 rounded"><RotateCcw className="w-3 h-3" />Reset</button>
         </div>
         <div className="mb-4">
           <label className="block text-sm font-medium text-gray-700 mb-2">Visualization Mode</label>

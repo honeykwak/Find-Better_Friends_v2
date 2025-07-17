@@ -101,26 +101,7 @@ export default function ResearchLayout() {
             Governance Research Platform
           </h1>
           
-          <div className="flex items-center gap-3 mx-4">
-            {/* 현재 필터 상태 표시 */}
-            <div className="flex items-center gap-2">
-              {selectedChain && (
-                <span className="px-2 py-1 bg-green-100 text-green-700 rounded text-xs font-medium">
-                  {selectedChain}
-                </span>
-              )}
-              {selectedCategories.length > 0 && (
-                <span className="px-2 py-1 bg-blue-100 text-blue-700 rounded text-xs font-medium">
-                  {selectedCategories.length} categories
-                </span>
-              )}
-              {selectedTopics.length > 0 && (
-                <span className="px-2 py-1 bg-purple-100 text-purple-700 rounded text-xs font-medium">
-                  {selectedTopics.length} topics
-                </span>
-              )}
-            </div>
-          </div>
+          
         </div>
       </div>
 
