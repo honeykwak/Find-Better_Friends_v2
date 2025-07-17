@@ -1,0 +1,912 @@
+[
+  {
+    "validator_address": "kavavaloper1j4tymd9r3au3vm508l4jugdg7l892l2lmh4jry",
+    "moniker": "0 Fee  Stakewollecom",
+    "chain_id": "kava"
+  },
+  {
+    "validator_address": "kavavaloper1w3ltam9t798e0f4pf4jhdy3qjajvacxfd2ukdk",
+    "moniker": "POSTHUMAN",
+    "chain_id": "kava"
+  },
+  {
+    "validator_address": "kavavaloper12pwqhuhdpcq0gs9mq0wuhmkt9r5zwu7t4fnanx",
+    "moniker": "Stakebg",
+    "chain_id": "kava"
+  },
+  {
+    "validator_address": "kavavaloper15urq2dtp9qce4fyc85m6upwm9xul3049dcs7da",
+    "moniker": "Chorus One",
+    "chain_id": "kava"
+  },
+  {
+    "validator_address": "kavavaloper1mw3l6anmw0g8yj2u39tfr5uzcw7nltspj2xdzx",
+    "moniker": "Frens ",
+    "chain_id": "kava"
+  },
+  {
+    "validator_address": "kavavaloper1fwru9at8hsu7hmhu0zypdn3863xvdcg80nm5dv",
+    "moniker": "OtterSync",
+    "chain_id": "kava"
+  },
+  {
+    "validator_address": "kavavaloper14vk3997r4ea4m7eej7ugmr503ru768fxwynsmq",
+    "moniker": "Allnodes",
+    "chain_id": "kava"
+  },
+  {
+    "validator_address": "kavavaloper1t787gjxtyswnncltluwaefg0dfgvwrm87d3g9d",
+    "moniker": "Trust Nodes",
+    "chain_id": "kava"
+  },
+  {
+    "validator_address": "kavavaloper1ptyzewnns2kn37ewtmv6ppsvhdnmeapvl7z9xh",
+    "moniker": "WeStaking",
+    "chain_id": "kava"
+  },
+  {
+    "validator_address": "kavavaloper1esyc9s7n782hw4xktzvrcf609st6emml5tnluu",
+    "moniker": " CryptoCrew Validators IBCgang",
+    "chain_id": "kava"
+  },
+  {
+    "validator_address": "kavavaloper1hztgl202pvetspxch0pcchaqzrduw4qq64q08u",
+    "moniker": " AutoStake  Slash Protected",
+    "chain_id": "kava"
+  },
+  {
+    "validator_address": "kavavaloper1rpwemvmt3sex4d8qt4menglfx9rhl0x3py69wj",
+    "moniker": " KysenPool",
+    "chain_id": "kava"
+  },
+  {
+    "validator_address": "kavavaloper1vyzk2va7lyy0atamll5537x25az5klja83j25k",
+    "moniker": "BitNordic",
+    "chain_id": "kava"
+  },
+  {
+    "validator_address": "kavavaloper1jyuv7z9at27elvmnmzh2v39dc06r9kjcy59xkr",
+    "moniker": "DACM",
+    "chain_id": "kava"
+  },
+  {
+    "validator_address": "kavavaloper140g8fnnl46mlvfhygj3zvjqlku6x0fwu6lgey7",
+    "moniker": "Cosmostation",
+    "chain_id": "kava"
+  },
+  {
+    "validator_address": "kavavaloper1gmkyef7fwnsa94mjced97ge7lp54zue6fsc69r",
+    "moniker": "PoS Node",
+    "chain_id": "kava"
+  },
+  {
+    "validator_address": "kavavaloper1gjr2v3vktq4966ed3pju7e4xy33vx7dmh6hm2x",
+    "moniker": "d3akashcloud",
+    "chain_id": "kava"
+  },
+  {
+    "validator_address": "kavavaloper1f94frmnhd9wfa7jg26egnqmymc4cpamlw5ezq7",
+    "moniker": "Everstake",
+    "chain_id": "kava"
+  },
+  {
+    "validator_address": "kavavaloper108emy97pv2pc4sq3u6wfpk2a7aehzphu0xqslu",
+    "moniker": "CEXIO Validator",
+    "chain_id": "kava"
+  },
+  {
+    "validator_address": "kavavaloper1dede4flaq24j2g9u8f83vkqrqxe6cwzrxt5zsu",
+    "moniker": "Stakincom ",
+    "chain_id": "kava"
+  },
+  {
+    "validator_address": "kavavaloper1g20mhvcpjxp6gzlwhtfcphjehwcl2njqydgu7q",
+    "moniker": "openstakenet",
+    "chain_id": "kava"
+  },
+  {
+    "validator_address": "kavavaloper17u9s2fx5htqdsuk78hkfskw9s5g06tzqyl2m8j",
+    "moniker": "Citadelone",
+    "chain_id": "kava"
+  },
+  {
+    "validator_address": "kavavaloper1ph6ze7v9594xunz0p9gtfcfhteln56m0c9d0hr",
+    "moniker": "ChainTools",
+    "chain_id": "kava"
+  },
+  {
+    "validator_address": "kavavaloper1w2f95dx7p35ye6mzaanxkpwadye0vr7375avdk",
+    "moniker": "Inter Blockchain Services",
+    "chain_id": "kava"
+  },
+  {
+    "validator_address": "kavavaloper17jr6wyhm2twyph6d88l5ux945gwmf8vfkhckda",
+    "moniker": "Crosnest",
+    "chain_id": "kava"
+  },
+  {
+    "validator_address": "kavavaloper1dvjjqvkned0n7cx0ytsj8wt85xv3nnj9rkftx5",
+    "moniker": "Kleomedes",
+    "chain_id": "kava"
+  },
+  {
+    "validator_address": "kavavaloper16l4cn6tzqm8ll7t3t8zkwd0ut3lny7dttrk0dk",
+    "moniker": "Meria",
+    "chain_id": "kava"
+  },
+  {
+    "validator_address": "kavavaloper1djqecw6nn5tydxq0shan7srv8j65clsf79myt8",
+    "moniker": "Kiln",
+    "chain_id": "kava"
+  },
+  {
+    "validator_address": "kavavaloper1uzs9qqpqfavfnntzf28ww84tnkac8e5s3ekwgn",
+    "moniker": "KJINCio",
+    "chain_id": "kava"
+  },
+  {
+    "validator_address": "kavavaloper13rzkukgxsae26tn2h6vuhlrdxap6rzrc29uhmq",
+    "moniker": "0 Fee MPress",
+    "chain_id": "kava"
+  },
+  {
+    "validator_address": "kavavaloper125s8t5c6ypwee7ytun90lnhgpls2zl3vta43aj",
+    "moniker": "polkachucom",
+    "chain_id": "kava"
+  },
+  {
+    "validator_address": "kavavaloper1c55g0akwr59sn9ylr76sqzrmy59g068akefkdx",
+    "moniker": "CLOSED",
+    "chain_id": "kava"
+  },
+  {
+    "validator_address": "kavavaloper1q8srckh50n0hygw8ntylkvrtfzgexvf364yule",
+    "moniker": " Stakepile",
+    "chain_id": "kava"
+  },
+  {
+    "validator_address": "kavavaloper1jn44xtw3z5p5pjpv42wd7mpd9r9pztm54c7rj3",
+    "moniker": "TRGC By Liquify",
+    "chain_id": "kava"
+  },
+  {
+    "validator_address": "kavavaloper1z5gx09hhvhkdkessuj0g9qyx0a78jajcgsmupd",
+    "moniker": " block pane ",
+    "chain_id": "kava"
+  },
+  {
+    "validator_address": "kavavaloper1qjt07srs2x7ss3kkn28ywuvz7e62geuzrtce50",
+    "moniker": "Winter Validator",
+    "chain_id": "kava"
+  },
+  {
+    "validator_address": "kavavaloper1phd8jz25lumudc7ac7rhmupvcqcv7lg3c8dprc",
+    "moniker": "thevaliator",
+    "chain_id": "kava"
+  },
+  {
+    "validator_address": "kavavaloper1pceqe8we7drpfqrutchwy3f99800hhzuw6cc84",
+    "moniker": "Galaxy",
+    "chain_id": "kava"
+  },
+  {
+    "validator_address": "kavavaloper1dntlhrw3jrej6ssdp64yfmkkz08ykyx4n7hphh",
+    "moniker": "Staked",
+    "chain_id": "kava"
+  },
+  {
+    "validator_address": "kavavaloper1q3y9qga5hf360dmzta67vp54qz25tmv4hhkk4t",
+    "moniker": "funky",
+    "chain_id": "kava"
+  },
+  {
+    "validator_address": "kavavaloper1zuxjdvgvkk4jrwr4hh99spxxkg77nwgnu0qzmy",
+    "moniker": "Kiki Finance",
+    "chain_id": "kava"
+  },
+  {
+    "validator_address": "kavavaloper1rfgp69veksq3mgv2rh4qfs3lgydan9jwt93sfr",
+    "moniker": "Ecostakedev",
+    "chain_id": "kava"
+  },
+  {
+    "validator_address": "kavavaloper19a86mhv9nnxx9uqw33czduu2say6wkq5gyjqwe",
+    "moniker": "Bitference",
+    "chain_id": "kava"
+  },
+  {
+    "validator_address": "kavavaloper168g9nn9vnamhsnjkm7uqqee9f3v07flgwwddf9",
+    "moniker": "sebytza05",
+    "chain_id": "kava"
+  },
+  {
+    "validator_address": "kavavaloper1lvlvv4mllg768ay479h79e2wpv9wjm24gpukcs",
+    "moniker": "Inactive  Please Redelegate",
+    "chain_id": "kava"
+  },
+  {
+    "validator_address": "kavavaloper1qk0pta4ga5t8p5vv7me8dz32lvcrv2rp098cas",
+    "moniker": "silver",
+    "chain_id": "kava"
+  },
+  {
+    "validator_address": "kavavaloper1qcgjg8vw0llh8ht86ncckjep092zhe363ghnk4",
+    "moniker": "hbnl",
+    "chain_id": "kava"
+  },
+  {
+    "validator_address": "kavavaloper1rgcgqmnkeffks7enrv6hk5u4wg3nzfkmqlzjqd",
+    "moniker": "closedvalidator",
+    "chain_id": "kava"
+  },
+  {
+    "validator_address": "kavavaloper16vx97tsnu09r3u8nms7j8ghlkpwf0p0g7dkdpq",
+    "moniker": "Karpos Staking",
+    "chain_id": "kava"
+  },
+  {
+    "validator_address": "kavavaloper1yfkn8xy4wenrsjjgl67d40xu3lvdzjjsjwc9le",
+    "moniker": "dualsystems",
+    "chain_id": "kava"
+  },
+  {
+    "validator_address": "kavavaloper1pjd09vjvy5trdmydqn9k36mhee3vtejchagj7n",
+    "moniker": "CertiK",
+    "chain_id": "kava"
+  },
+  {
+    "validator_address": "kavavaloper1ydddm83ky9h2px35jp58ld8vhveq5ahulwr668",
+    "moniker": " Zingaat 0 Fee",
+    "chain_id": "kava"
+  },
+  {
+    "validator_address": "kavavaloper127f37zfhg9acnja0cwt74gl7g7lu0pnd3jz3w4",
+    "moniker": "CaronteStaking",
+    "chain_id": "kava"
+  },
+  {
+    "validator_address": "kavavaloper1vdleu3dvr283kffdmlmv0u8enkr8stc4k4994x",
+    "moniker": "Insight Finance",
+    "chain_id": "kava"
+  },
+  {
+    "validator_address": "kavavaloper1pn5k9c5pxmg5f0rycpl9rrx6k6mk85scxf06zx",
+    "moniker": "Stir",
+    "chain_id": "kava"
+  },
+  {
+    "validator_address": "kavavaloper1rtudpu3yv73edwcy82qsl9w970tkxf769ktcla",
+    "moniker": "mclabs",
+    "chain_id": "kava"
+  },
+  {
+    "validator_address": "kavavaloper1yrm63pqvld8uyzkavz55p2cktpm2gm8jd8xxlu",
+    "moniker": "Nodeasycom",
+    "chain_id": "kava"
+  },
+  {
+    "validator_address": "kavavaloper1znmdu4de2djx8agc0m9rsw6d6rvcsk2he53gns",
+    "moniker": "AbanTether Test",
+    "chain_id": "kava"
+  },
+  {
+    "validator_address": "kavavaloper1yjj2wfers947l6n5pynpgsqlz7svc5n8ssl6ye",
+    "moniker": "StakingHub",
+    "chain_id": "kava"
+  },
+  {
+    "validator_address": "kavavaloper1yna6lete8nwwwctsalzdg04ldqaz73gtn33ydq",
+    "moniker": "ChainodeTech",
+    "chain_id": "kava"
+  },
+  {
+    "validator_address": "kavavaloper19fhkzvj83l4sdteh3eh48a695ak2mn5pn92c2w",
+    "moniker": "block42",
+    "chain_id": "kava"
+  },
+  {
+    "validator_address": "kavavaloper1vze5p4n0uj6h6fakczsj3e0npr8ud93lnffge3",
+    "moniker": "Please Delegate Away",
+    "chain_id": "kava"
+  },
+  {
+    "validator_address": "kavavaloper1xzud24na9tucauc7lf6pjk84kqsgq3eq747ta7",
+    "moniker": "goose",
+    "chain_id": "kava"
+  },
+  {
+    "validator_address": "kavavaloper1x9hq3rjc48t5upcsr3c209ycgekfasne3l5nkc",
+    "moniker": "Masternode24de",
+    "chain_id": "kava"
+  },
+  {
+    "validator_address": "kavavaloper1xftqdxvq0xkv2mu8c5y0jrsc578tak4m9u0s44",
+    "moniker": "Please Redelegate",
+    "chain_id": "kava"
+  },
+  {
+    "validator_address": "kavavaloper1xfev36675f5fl2fy38n49d2rmfgv5027200qtn",
+    "moniker": "0 Binnostake",
+    "chain_id": "kava"
+  },
+  {
+    "validator_address": "kavavaloper1833z5hhtgmjfjfw88cpujf4e5lame9qxg6xclc",
+    "moniker": "Dos Patatas",
+    "chain_id": "kava"
+  },
+  {
+    "validator_address": "kavavaloper1xvj57zdanpaare3dds449t35v9vq7xa9w4gmzp",
+    "moniker": "SpiderNode",
+    "chain_id": "kava"
+  },
+  {
+    "validator_address": "kavavaloper1dj63l3z0smqa8au5yek37nmj0xd60zs9dwmdh0",
+    "moniker": "Yn",
+    "chain_id": "kava"
+  },
+  {
+    "validator_address": "kavavaloper1xwlf6kzaju9vnaakzmjyjtvz7rs8p2jhv4ftra",
+    "moniker": "choose moniker",
+    "chain_id": "kava"
+  },
+  {
+    "validator_address": "kavavaloper1xjtwwy4pyxph3n70hse0ew6f904e62m0x2g0yx",
+    "moniker": "DataCquence",
+    "chain_id": "kava"
+  },
+  {
+    "validator_address": "kavavaloper1xka27j0jvmq97yunj5wp8fv242lycmax8ejlaf",
+    "moniker": "page2",
+    "chain_id": "kava"
+  },
+  {
+    "validator_address": "kavavaloper1xhxzmj8fvkqn76knay9x2chfra826369dhdu2c",
+    "moniker": "Figment",
+    "chain_id": "kava"
+  },
+  {
+    "validator_address": "kavavaloper1xu5qa755vu8mctjk970c98gxahtrjfw0jk9kj6",
+    "moniker": "Sphincs Plus",
+    "chain_id": "kava"
+  },
+  {
+    "validator_address": "kavavaloper1gjtvly9lel6zskvwtvlg5vhwpu9c9waw28uzv9",
+    "moniker": "EZStakingio 100 Slash Protected",
+    "chain_id": "kava"
+  },
+  {
+    "validator_address": "kavavaloper1f0zswnged9xq9ev3vv3jd8ugqd7hv82hjccv7p",
+    "moniker": "VIP Stake",
+    "chain_id": "kava"
+  },
+  {
+    "validator_address": "kavavaloper12r77hhj6ylvvl4etjm0fmpzh07jum8u7qqd695",
+    "moniker": "stefansky",
+    "chain_id": "kava"
+  },
+  {
+    "validator_address": "kavavaloper1vyx7wt8s8dwcspdt7dy49sq4l3jwyhxyndakmm",
+    "moniker": "InfStones",
+    "chain_id": "kava"
+  },
+  {
+    "validator_address": "kavavaloper1vw35vclatlrcmzuaxf2fleyuk38xa7xf4vdaq2",
+    "moniker": "hashquark",
+    "chain_id": "kava"
+  },
+  {
+    "validator_address": "kavavaloper1d5dsuxkked2lyn9lk0gsua39tg2dxvj6hjchf4",
+    "moniker": "Cryptostakecom ",
+    "chain_id": "kava"
+  },
+  {
+    "validator_address": "kavavaloper1g292xf8tfec92qc9zykhkltm0kmvscjdgjdedv",
+    "moniker": "Bitget  0 Fee",
+    "chain_id": "kava"
+  },
+  {
+    "validator_address": "kavavaloper1vh56v6zjd2kkzxzecn4znlump48rmkzu6dskk5",
+    "moniker": "kavagermanynode",
+    "chain_id": "kava"
+  },
+  {
+    "validator_address": "kavavaloper1vupske6ksgmhrh2anl5zx836et527mpeq440nr",
+    "moniker": "JNode",
+    "chain_id": "kava"
+  },
+  {
+    "validator_address": "kavavaloper18zxhj6f8lm988mfzzvmrmlp47yys0fmcllmscg",
+    "moniker": "MKVone",
+    "chain_id": "kava"
+  },
+  {
+    "validator_address": "kavavaloper18zksjhrefqew0zahmts894p8asscufxvdfq702",
+    "moniker": "Consulnode",
+    "chain_id": "kava"
+  },
+  {
+    "validator_address": "kavavaloper1xfyyvg9v66yef6cea5ruw8kaqw5a84kjd86r75",
+    "moniker": "NBG",
+    "chain_id": "kava"
+  },
+  {
+    "validator_address": "kavavaloper18cf35l7req0k6ulqapeyv830mrrucn9xj87plr",
+    "moniker": "mxcpospool",
+    "chain_id": "kava"
+  },
+  {
+    "validator_address": "kavavaloper15kwwzz908wl0qv4w66a5ee70kytpmfc9khvah6",
+    "moniker": "Staking4All",
+    "chain_id": "kava"
+  },
+  {
+    "validator_address": "kavavaloper122lg7yuwc9p9uwkfqef7wrh5uydp7q6juulfrw",
+    "moniker": "Colossus",
+    "chain_id": "kava"
+  },
+  {
+    "validator_address": "kavavaloper1nxgg4grsc0fwh893mks62d3x3r6uazgpj3m3cr",
+    "moniker": "Easy 2 Stake",
+    "chain_id": "kava"
+  },
+  {
+    "validator_address": "kavavaloper18qaqcev8m7vgkktw256hp74c87mq7mxzje3zkw",
+    "moniker": "Coinage x DAIC",
+    "chain_id": "kava"
+  },
+  {
+    "validator_address": "kavavaloper1dkz3pv624mfp3ql07cwt7mmg79z0ru6w0attfc",
+    "moniker": "kavamainnetsk",
+    "chain_id": "kava"
+  },
+  {
+    "validator_address": "kavavaloper1zw8ce44kdqzfu0r2t9qwr75gqdcarclf9fj9lt",
+    "moniker": "Luganodes",
+    "chain_id": "kava"
+  },
+  {
+    "validator_address": "kavavaloper18ajx4lt6s34xd4mtrgzgf5qewlmy00ntev42ns",
+    "moniker": "swKAVA  Mind Heart Soul",
+    "chain_id": "kava"
+  },
+  {
+    "validator_address": "kavavaloper1uvz0vus7ktxt47cermscwe3k9gs7h9ag05sh6g",
+    "moniker": "Stakeflow",
+    "chain_id": "kava"
+  },
+  {
+    "validator_address": "kavavaloper1zg3uqvqpnygquw7gpu7zdw3xkp7dmx3c9rxe73",
+    "moniker": "0 Fee  ACI69  Airdrops",
+    "chain_id": "kava"
+  },
+  {
+    "validator_address": "kavavaloper1c9ye54e3pzwm3e0zpdlel6pnavrj9qqvh0atdq",
+    "moniker": "StakeWithUs",
+    "chain_id": "kava"
+  },
+  {
+    "validator_address": "kavavaloper1kgddca7qj96z0qcxr2c45z73cfl0c75p27tsg6",
+    "moniker": "ChainLayer",
+    "chain_id": "kava"
+  },
+  {
+    "validator_address": "kavavaloper12g40q2parn5z9ewh5xpltmayv6y0q3zs6ddmdg",
+    "moniker": "P2PORG  P2P Validator",
+    "chain_id": "kava"
+  },
+  {
+    "validator_address": "kavavaloper1k760ypy9tzhp6l2rmg06sq4n74z0d3rejwwaa0",
+    "moniker": "StakeCraft",
+    "chain_id": "kava"
+  },
+  {
+    "validator_address": "kavavaloper196w5nuha6u2ucwr65cqwnqrzxuemsyhv2c0lq8",
+    "moniker": "Sunflower",
+    "chain_id": "kava"
+  },
+  {
+    "validator_address": "kavavaloper14kn0kk33szpwus9nh8n87fjel8djx0y02c7me3",
+    "moniker": "Forbole",
+    "chain_id": "kava"
+  },
+  {
+    "validator_address": "kavavaloper13fjugx5fjvwk4vtsvdrlsalzgswusws60lls9y",
+    "moniker": "Quebec",
+    "chain_id": "kava"
+  },
+  {
+    "validator_address": "kavavaloper1g5egkvqqgp6wv304ph0laftc7jdf3dt39rwugu",
+    "moniker": "SmartNodes",
+    "chain_id": "kava"
+  },
+  {
+    "validator_address": "kavavaloper1cp97dnq2r739avudn74x87a7luu09kpyk2vg55",
+    "moniker": "AlphaNodes",
+    "chain_id": "kava"
+  },
+  {
+    "validator_address": "kavavaloper1gtd040dmljyaty9tkhq0mlqz7saer48v4d608x",
+    "moniker": "Bi23 Labs",
+    "chain_id": "kava"
+  },
+  {
+    "validator_address": "kavavaloper1n4w58yg0v67r7ucg6dt0u2xv7wewyha9knnu28",
+    "moniker": "Share Staker  Airdrop  Check Web",
+    "chain_id": "kava"
+  },
+  {
+    "validator_address": "kavavaloper1akfnl69lug7w9anxpphag2yyjw5s7ceaa39av7",
+    "moniker": "Validatriumcom",
+    "chain_id": "kava"
+  },
+  {
+    "validator_address": "kavavaloper13vstf6ecmfe4p0gaufumk569sdawhtrf8gu56h",
+    "moniker": "000CryptoCrazy",
+    "chain_id": "kava"
+  },
+  {
+    "validator_address": "kavavaloper1ffcujj05v6220ccxa6qdnpz3j48ng024ykh2df",
+    "moniker": "stakefish",
+    "chain_id": "kava"
+  },
+  {
+    "validator_address": "kavavaloper1gd4w585dmm3sfyvx53zwy8tstwzdazdmf87mgd",
+    "moniker": "beething",
+    "chain_id": "kava"
+  },
+  {
+    "validator_address": "kavavaloper1g4qpetrj59a29e4wxpe74x93q4df2czjh8r9ak",
+    "moniker": "IOSG",
+    "chain_id": "kava"
+  },
+  {
+    "validator_address": "kavavaloper1jl42l225565y3hm9dm4my33hjgdzleucqryhlx",
+    "moniker": "0 Fee to TOP 1   meleaxyz ",
+    "chain_id": "kava"
+  },
+  {
+    "validator_address": "kavavaloper1lrvumc58wz2ww8wevqnj7ndxz03amfkcxjzcgj",
+    "moniker": "HbStaking",
+    "chain_id": "kava"
+  },
+  {
+    "validator_address": "kavavaloper1r2ea4069j7rfemtt2k6ej5glctg9qe3y86rltf",
+    "moniker": "SUNREN  0 Fee",
+    "chain_id": "kava"
+  },
+  {
+    "validator_address": "kavavaloper1wezeynt54vsmmclh6xr0l25t2ufrz5hg67yxrm",
+    "moniker": "StakeSeeker by BTCS",
+    "chain_id": "kava"
+  },
+  {
+    "validator_address": "kavavaloper1m9y0c7j7wxyu3nqtmeevyfzzpga8jhdyqw42wx",
+    "moniker": "BHarvest",
+    "chain_id": "kava"
+  },
+  {
+    "validator_address": "kavavaloper1dg3g54c4a76dtfqpt06ksqez60hxjne5kwf3fm",
+    "moniker": "KAVAxAiden  High Staking Reward",
+    "chain_id": "kava"
+  },
+  {
+    "validator_address": "kavavaloper1jf7rmj9nh9xw6f5acdyaksslv4uzlqe2x7kdgd",
+    "moniker": "OasisNodescom  Kava",
+    "chain_id": "kava"
+  },
+  {
+    "validator_address": "kavavaloper1ppj7c8tqt2e3rzqtmztsmd6ea6u3nz6qggcp5e",
+    "moniker": "SG1",
+    "chain_id": "kava"
+  },
+  {
+    "validator_address": "kavavaloper173l244hzxae6552769k2s3lfy4ue7whxwtkyq4",
+    "moniker": "Validator Deprecated and Merged Please redelagate to AtlasStaking",
+    "chain_id": "kava"
+  },
+  {
+    "validator_address": "kavavaloper1ua2yqfjck23vsmynltcgrvvg5rhfkm4cy78vmq",
+    "moniker": "Atlas Staking  Auto compound rewards ",
+    "chain_id": "kava"
+  },
+  {
+    "validator_address": "kavavaloper1nm9vrvg2q2sep0lg373r3nce0d5hsnz0yncqm5",
+    "moniker": "Oldcat",
+    "chain_id": "kava"
+  },
+  {
+    "validator_address": "kavavaloper1fwdy235qqx8e6zttfq8uz0mkkx2eawjf528lhk",
+    "moniker": "CLOSED decentralizehk  DHK dao",
+    "chain_id": "kava"
+  },
+  {
+    "validator_address": "kavavaloper1dvsaq9vdzh8skt9y39hxmmx3sqagw8qgxp26t7",
+    "moniker": "REDELEGATEPrometey",
+    "chain_id": "kava"
+  },
+  {
+    "validator_address": "kavavaloper1k4kxxfkhhwvyzxxxgksefkzpxahp9wfc572esl",
+    "moniker": "MrK",
+    "chain_id": "kava"
+  },
+  {
+    "validator_address": "kavavaloper1j2cxaxc8eqq6vccduq6m3x3hl34xz7xj0a7g5m",
+    "moniker": "Ystad",
+    "chain_id": "kava"
+  },
+  {
+    "validator_address": "kavavaloper1qrelefx0ae447c5l2a7je694y96g5xg5zx86g3",
+    "moniker": "0 Fee  NymbusNode",
+    "chain_id": "kava"
+  },
+  {
+    "validator_address": "kavavaloper13jyqfhak8mu4c7pydjm3eu4qla7g06a9u6xf8g",
+    "moniker": "Notional",
+    "chain_id": "kava"
+  },
+  {
+    "validator_address": "kavavaloper1udg4pal8c9gffv4l7zhvza027z0y345gd6esa6",
+    "moniker": "vinividivici",
+    "chain_id": "kava"
+  },
+  {
+    "validator_address": "kavavaloper1nnwwu4km0alut2q8vhg7zjt45wyehddpwlfrmj",
+    "moniker": "Wetez",
+    "chain_id": "kava"
+  },
+  {
+    "validator_address": "kavavaloper1mrd5kqtq28p39wcrkm8tk8avtn57arrurxfah0",
+    "moniker": "Decloud Nodes Lab",
+    "chain_id": "kava"
+  },
+  {
+    "validator_address": "kavavaloper1kea3x3vtjtjela7rnnur9zs24cu8hu4a6aaqmx",
+    "moniker": "europlots",
+    "chain_id": "kava"
+  },
+  {
+    "validator_address": "kavavaloper1u40msw59jm0r2hh2uzcsjddrrxej2vc450z632",
+    "moniker": "BoxedCloudnet  0 until 2024",
+    "chain_id": "kava"
+  },
+  {
+    "validator_address": "kavavaloper1gkxc5x584g8jfrn7fkn79qhggfu3fs5ls2xdva",
+    "moniker": " uGaenn ",
+    "chain_id": "kava"
+  },
+  {
+    "validator_address": "kavavaloper1eatqak3wnu3p6udskrtgj4sexp5yuprzwfcmwn",
+    "moniker": "Redelegate",
+    "chain_id": "kava"
+  },
+  {
+    "validator_address": "kavavaloper1e336qdhyfghwglz9rvf3pmn7gc5xvls2mpmdxs",
+    "moniker": "coaction",
+    "chain_id": "kava"
+  },
+  {
+    "validator_address": "kavavaloper1gd5hf545caremavv28apr9mzf7f7ns395c27mq",
+    "moniker": "StakeLab",
+    "chain_id": "kava"
+  },
+  {
+    "validator_address": "kavavaloper1m8428ygqwa4yahjtc9ulp9n7eqwt7dn37n8vas",
+    "moniker": "Consensus One",
+    "chain_id": "kava"
+  },
+  {
+    "validator_address": "kavavaloper14wpf5hk5zrq6hk5wq2304wjlm7ll6pkr63cnf2",
+    "moniker": "Moonshinecc Validation  CM1",
+    "chain_id": "kava"
+  },
+  {
+    "validator_address": "kavavaloper1qfy0e2w62g6j4jg5djcqd4py3zsaeqexjplj2d",
+    "moniker": "DragonStake",
+    "chain_id": "kava"
+  },
+  {
+    "validator_address": "kavavaloper158jyczpns9p6sz3fq7uvym556a06e4lq2yuuyf",
+    "moniker": "101",
+    "chain_id": "kava"
+  },
+  {
+    "validator_address": "kavavaloper14fkp35j5nkvtztmxmsxh88jks6p3w8u7p76zs9",
+    "moniker": "Bit Cat",
+    "chain_id": "kava"
+  },
+  {
+    "validator_address": "kavavaloper12kz3rd47mpljfzqc9ygrpelj5kp6tx0d26r7xq",
+    "moniker": "Psycho Node",
+    "chain_id": "kava"
+  },
+  {
+    "validator_address": "kavavaloper1a7xflafgxct35xhncmat33hp3v58kr3dfly48x",
+    "moniker": "NQ4NET",
+    "chain_id": "kava"
+  },
+  {
+    "validator_address": "kavavaloper16wmsum8eaf6sqmj97k9ayvh3c28u00nuuyt9xt",
+    "moniker": "DeCrypto",
+    "chain_id": "kava"
+  },
+  {
+    "validator_address": "kavavaloper1h9ulmhqv5e2373khk6s9n0wtrfc5qavre09fxl",
+    "moniker": "stake2earn",
+    "chain_id": "kava"
+  },
+  {
+    "validator_address": "kavavaloper1h04nz9kjqdj3z40u2x54fwldphx0xmt3s7ycgq",
+    "moniker": " EarnStash",
+    "chain_id": "kava"
+  },
+  {
+    "validator_address": "kavavaloper1a7703nxwp9khu2z9vdeh240wlfvyftpm5unaa4",
+    "moniker": "offline",
+    "chain_id": "kava"
+  },
+  {
+    "validator_address": "kavavaloper14gfgngrgg0pj494euuuvhygrhfptzf2hxllsev",
+    "moniker": "DECOMMISSIONED AUDITone",
+    "chain_id": "kava"
+  },
+  {
+    "validator_address": "kavavaloper1u3365ccza6eefzsx8t3mlp2txufj6dksjdw9nl",
+    "moniker": "AGNodeK",
+    "chain_id": "kava"
+  },
+  {
+    "validator_address": "kavavaloper1mqsd85lut69zwclmeurj3ve5tarm56hzzkt8fq",
+    "moniker": "MANTRA DAO",
+    "chain_id": "kava"
+  },
+  {
+    "validator_address": "kavavaloper12hfc3h60fwzu8l4t2matg5a6sprnqwkeuxjvsu",
+    "moniker": "Redelegate before 10072022",
+    "chain_id": "kava"
+  },
+  {
+    "validator_address": "kavavaloper1spkjjtwks5zt0dqexj8rv8ljwmwxe8ufkraukq",
+    "moniker": "JupiterIAM",
+    "chain_id": "kava"
+  },
+  {
+    "validator_address": "kavavaloper1s8akp0nq7z7vuf5g9agdswcwq7vm9uwudk0han",
+    "moniker": "IvoryTower",
+    "chain_id": "kava"
+  },
+  {
+    "validator_address": "kavavaloper1ceun2qqw65qce5la33j8zv8ltyyaqqfctl35n4",
+    "moniker": "sikka",
+    "chain_id": "kava"
+  },
+  {
+    "validator_address": "kavavaloper12d7jze5luqkljtygstuaeax0ztur3p2t6pf9l3",
+    "moniker": "Fck VCs and top validators",
+    "chain_id": "kava"
+  },
+  {
+    "validator_address": "kavavaloper1u3jf6c2f85kmjldxsncnhsdp44nac7v5j7vzpc",
+    "moniker": "Huobi",
+    "chain_id": "kava"
+  },
+  {
+    "validator_address": "kavavaloper16lnfpgn6llvn4fstg5nfrljj6aaxyee9z59jqd",
+    "moniker": "strangeloveventures",
+    "chain_id": "kava"
+  },
+  {
+    "validator_address": "kavavaloper1maa34q0gfmw44tayr6r287z9ngrucaw770qu34",
+    "moniker": "Asteroid",
+    "chain_id": "kava"
+  },
+  {
+    "validator_address": "kavavaloper12qn7y04wzr5s3h4dmdtre4q9f4nvc03a9a9qsz",
+    "moniker": "DEXhybrid",
+    "chain_id": "kava"
+  },
+  {
+    "validator_address": "kavavaloper1h62d5y0ctmg82qrll78gh5dccarwzcdqd8pxw5",
+    "moniker": "validator closing  please redelgate",
+    "chain_id": "kava"
+  },
+  {
+    "validator_address": "kavavaloper1nhcvgj0j7mrvrat3dfhudpypaqn00eaf2dh0gp",
+    "moniker": "BNB48Club",
+    "chain_id": "kava"
+  },
+  {
+    "validator_address": "kavavaloper195j72kgpuel75kwfpeu0kt7nc7rgzm47tytl7p",
+    "moniker": "Anchor Staking",
+    "chain_id": "kava"
+  },
+  {
+    "validator_address": "kavavaloper1aj9r9ll8m72xr5pmxr9fmum88k864tqg39nkfu",
+    "moniker": "kytzu",
+    "chain_id": "kava"
+  },
+  {
+    "validator_address": "kavavaloper1m4maus4725x5x4xzu9ac2rk5eu7thld4g0whvc",
+    "moniker": "Kraken",
+    "chain_id": "kava"
+  },
+  {
+    "validator_address": "kavavaloper1am6zyqxc362qv9xvglfncztttv0nq5lgclp6qp",
+    "moniker": "0 Fee to 2023  Avaultocom",
+    "chain_id": "kava"
+  },
+  {
+    "validator_address": "kavavaloper1egnpl0w8safs3a0h4c26f2pj8emz5l5c0wnmcj",
+    "moniker": "clubwfh",
+    "chain_id": "kava"
+  },
+  {
+    "validator_address": "kavavaloper1leujfugjvuhxqdwlmc7hezra6j5fugk75ttlaa",
+    "moniker": "DelosNode",
+    "chain_id": "kava"
+  },
+  {
+    "validator_address": "kavavaloper10lv5rqtfvfvmmygrrd2dxawzphhwlq9pyjf0u2",
+    "moniker": "cyberp3810",
+    "chain_id": "kava"
+  },
+  {
+    "validator_address": "kavavaloper1tcrl5lygkuk7tptyjfj7zccqumr8uz87utq508",
+    "moniker": "GreenStake One",
+    "chain_id": "kava"
+  },
+  {
+    "validator_address": "kavavaloper1wdsl3uv8v3x4uzu8c7m3y26rq5v829f8n2uec0",
+    "moniker": "dead",
+    "chain_id": "kava"
+  },
+  {
+    "validator_address": "kavavaloper1ws0gjutd0qlwt3uv3tuk86q48ltq7xc798cm9v",
+    "moniker": "mojmoniker",
+    "chain_id": "kava"
+  },
+  {
+    "validator_address": "kavavaloper1srhded4xw0krcwlvddtcyycuh70fp5ry9yvp86",
+    "moniker": "TRGCapital",
+    "chain_id": "kava"
+  },
+  {
+    "validator_address": "kavavaloper129kkennsm7na34lu6sn4kwxp7ewes58y4fx6y9",
+    "moniker": "stakezone",
+    "chain_id": "kava"
+  },
+  {
+    "validator_address": "kavavaloper1fw7vjc3fphahqxpdjypddlulnltxws8g0mrds7",
+    "moniker": "BasBlock",
+    "chain_id": "kava"
+  },
+  {
+    "validator_address": "kavavaloper1fmyuf3xc3quwga9k33ddcyx55wwf4jv6kxms63",
+    "moniker": "StakeBenefit",
+    "chain_id": "kava"
+  },
+  {
+    "validator_address": "kavavaloper1fmas0qlsucg4qwf8mqyrylcg3uluz2ffg8952q",
+    "moniker": "mintonium",
+    "chain_id": "kava"
+  },
+  {
+    "validator_address": "kavavaloper1247z92srsrr6249p2adyhm93atk89mnjdhs8mt",
+    "moniker": "wangTest",
+    "chain_id": "kava"
+  },
+  {
+    "validator_address": "kavavaloper13dfu6et0m8zm4hachudvn62w0c2zvcmrqn8cs3",
+    "moniker": "Sunshine",
+    "chain_id": "kava"
+  },
+  {
+    "validator_address": "kavavaloper134a6p5dxf207fh3qfvnryeu7lehhkh2kgku28w",
+    "moniker": "milktoast",
+    "chain_id": "kava"
+  },
+  {
+    "validator_address": "kavavaloper1jq88anufz9620jrhqangzln8q8nyyye86yfyju",
+    "moniker": "ksd",
+    "chain_id": "kava"
+  }
+]
