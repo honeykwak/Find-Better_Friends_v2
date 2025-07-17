@@ -126,16 +126,13 @@ export const useGlobalStore = create<GlobalStore>((set, get) => ({
 
   // Selectors
   getFilteredProposals: () => {
-    const { proposals, selectedCategories, selectedTopics } = get()
-    if (selectedCategories.length === 0 && selectedTopics.length === 0) {
+    const { proposals, selectedTopics } = get();
+    // If no topics are selected, return all proposals.
+    if (selectedTopics.length === 0) {
       return proposals;
     }
-
-    return proposals.filter(p => {
-      const inCategory = selectedCategories.length > 0 && selectedCategories.includes(p.type);
-      const inTopic = selectedTopics.length > 0 && selectedTopics.includes(p.topic);
-      return inCategory || inTopic;
-    });
+    // Filter proposals based ONLY on the selected topics for precision.
+    return proposals.filter(p => selectedTopics.includes(p.topic));
   },
 
   getFilteredValidators: () => {

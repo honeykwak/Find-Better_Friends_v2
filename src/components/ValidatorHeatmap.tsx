@@ -65,58 +65,60 @@ export default function ValidatorHeatmap() {
 
   const {
     proposals: rawProposals,
-    validators: rawValidators, 
+    validators: rawValidators,
     votes: rawVotes,
     getFilteredProposals,
     getFilteredValidators,
     selectedChain,
-    loading
+    loading,
+    selectedTopics,
+    searchTerm,
   } = useGlobalStore()
 
   // 데이터 전처리 및 메모이제이션
   const heatmapData = useMemo((): ProcessedHeatmapData => {
-    const filteredProposals = getFilteredProposals();
-    const filteredValidators = getFilteredValidators();
+    const filteredProposals = getFilteredProposals()
+    const filteredValidators = getFilteredValidators()
 
     if (!filteredProposals.length || !filteredValidators.length) {
       return { validators: [], proposals: [], votes: [] }
     }
 
-    const validatorSet = new Set(filteredValidators.map(v => v.validator_address));
-    const proposalSet = new Set(filteredProposals.map(p => p.proposal_id));
+    const validatorSet = new Set(filteredValidators.map(v => v.validator_address))
+    const proposalSet = new Set(filteredProposals.map(p => p.proposal_id))
 
     const validators = filteredValidators
       .sort((a, b) => {
-        const aVotes = rawVotes.filter(v => v.validator_address === a.validator_address).length;
-        const bVotes = rawVotes.filter(v => v.validator_address === b.validator_address).length;
-        return bVotes - aVotes;
+        const aVotes = rawVotes.filter(v => v.validator_address === a.validator_address).length
+        const bVotes = rawVotes.filter(v => v.validator_address === b.validator_address).length
+        return bVotes - aVotes
       })
       .map((v, index) => ({
         address: v.validator_address,
         name: v.moniker || 'Unknown',
-        index
-      }));
+        index,
+      }))
 
     const proposals = filteredProposals
       .sort((a, b) => {
-        const proposalA = rawProposals.find(p => p.proposal_id === a.proposal_id);
-        const proposalB = rawProposals.find(p => p.proposal_id === b.proposal_id);
-        return new Date(proposalB?.submit_time || 0).getTime() - new Date(proposalA?.submit_time || 0).getTime();
+        const proposalA = rawProposals.find(p => p.proposal_id === a.proposal_id)
+        const proposalB = rawProposals.find(p => p.proposal_id === b.proposal_id)
+        return new Date(proposalB?.submit_time || 0).getTime() - new Date(proposalA?.submit_time || 0).getTime()
       })
       .map((p, index) => ({
         id: p.proposal_id,
         title: p.title,
         index,
-        status: p.status
-      }));
+        status: p.status,
+      }))
 
-    const validatorAddressToIndex = new Map(validators.map(v => [v.address, v.index]));
-    const proposalIdToIndex = new Map(proposals.map(p => [p.id, p.index]));
+    const validatorAddressToIndex = new Map(validators.map(v => [v.address, v.index]))
+    const proposalIdToIndex = new Map(proposals.map(p => [p.id, p.index]))
 
     const votes = rawVotes
-      .filter(vote => 
-        validatorAddressToIndex.has(vote.validator_address) && 
-        proposalIdToIndex.has(vote.proposal_id)
+      .filter(
+        vote =>
+          validatorAddressToIndex.has(vote.validator_address) && proposalIdToIndex.has(vote.proposal_id),
       )
       .map(vote => ({
         validatorIndex: validatorAddressToIndex.get(vote.validator_address)!,
@@ -125,7 +127,7 @@ export default function ValidatorHeatmap() {
       }))
 
     return { validators, proposals, votes }
-  }, [getFilteredProposals, getFilteredValidators, rawVotes, rawProposals])
+  }, [rawProposals, rawValidators, rawVotes, selectedTopics, searchTerm, getFilteredProposals, getFilteredValidators])
 
   // D3.js 히트맵 렌더링
   useEffect(() => {
