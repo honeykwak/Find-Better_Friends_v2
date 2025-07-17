@@ -1,0 +1,1007 @@
+[
+  {
+    "validator_address": "iva1ycumtcdd6u2f2m2ar5u3szty524xmz6eac6lrh",
+    "moniker": "Stakewollecom  100 insurance",
+    "chain_id": "iris"
+  },
+  {
+    "validator_address": "iva177aauu7fr6l7xw0k3m06lu9h5xenxrlj9cshp9",
+    "moniker": "SpaceStake",
+    "chain_id": "iris"
+  },
+  {
+    "validator_address": "iva1muxh5wllk627klssx2w305lz8mdar5ne4ve9dc",
+    "moniker": "Allnodes  0 fee",
+    "chain_id": "iris"
+  },
+  {
+    "validator_address": "iva18x27mzk6xchwynyqa35hrknfwxet82ass5987a",
+    "moniker": "w3coins",
+    "chain_id": "iris"
+  },
+  {
+    "validator_address": "iva1jmf7n6rpnqfse2xakdumw2mn5c2s9gmkysnmdn",
+    "moniker": "Monterey",
+    "chain_id": "iris"
+  },
+  {
+    "validator_address": "iva139qzyvac90z4j5xk7nqy8t2jmrlt9qns2q39rw",
+    "moniker": "flyfly",
+    "chain_id": "iris"
+  },
+  {
+    "validator_address": "iva1skjr0036xduecjtd8pxg97lu25dy5kerxqtsfs",
+    "moniker": "BigWave",
+    "chain_id": "iris"
+  },
+  {
+    "validator_address": "iva1w2jqw9ae937xq3jlf6c47rze2qt6r8ske2v8ec",
+    "moniker": "NEOPLY",
+    "chain_id": "iris"
+  },
+  {
+    "validator_address": "iva1s3xdes2kd5ua66kw43vrks83hjngh6dxnrhu48",
+    "moniker": "im",
+    "chain_id": "iris"
+  },
+  {
+    "validator_address": "iva1dyd5paevzllfp973kll3zum8xlm95zcl58mz6p",
+    "moniker": "Chaintor",
+    "chain_id": "iris"
+  },
+  {
+    "validator_address": "iva1c2qe8779j9n6gyxk45r4nnkh6hjtrhyz7myve6",
+    "moniker": "BTC",
+    "chain_id": "iris"
+  },
+  {
+    "validator_address": "iva122n4gkawquc446c36p3g83ulgy5lj0d3wppt68",
+    "moniker": "Nodeasy",
+    "chain_id": "iris"
+  },
+  {
+    "validator_address": "iva1n753ssrvw3gtw5jdejl2a3h4nyxzku7dy3alrf",
+    "moniker": "BrightRoad",
+    "chain_id": "iris"
+  },
+  {
+    "validator_address": "iva1nefyrlvc6lu03rxn9lcsdz6uah6qepu9298xzv",
+    "moniker": "tiantian",
+    "chain_id": "iris"
+  },
+  {
+    "validator_address": "iva1ju53yjddkncsuvav6n4pchyhz3h8plj03ym6q0",
+    "moniker": "Ant",
+    "chain_id": "iris"
+  },
+  {
+    "validator_address": "iva1egtqqszvfl38knxuj37x76e2m3av8p8az5z87e",
+    "moniker": "david",
+    "chain_id": "iris"
+  },
+  {
+    "validator_address": "iva1w46u0xw75x7t4pwd3fyjt43f779tkcaapyf98t",
+    "moniker": "SuperColle",
+    "chain_id": "iris"
+  },
+  {
+    "validator_address": "iva15pzhk2scgmw6w97ftg20nw0ltyguyx88dry5dr",
+    "moniker": "wukong",
+    "chain_id": "iris"
+  },
+  {
+    "validator_address": "iva1dtmqlu032rus4j5u4650qte48eytccpsy0amrf",
+    "moniker": "VITALITY",
+    "chain_id": "iris"
+  },
+  {
+    "validator_address": "iva1ugjh8pn5sgvc8w45qgqrdkq4y74staqy2njps3",
+    "moniker": "Heimdallr",
+    "chain_id": "iris"
+  },
+  {
+    "validator_address": "iva18pva3yzzzaxj7l5a9uk66a0q7lflscyw966jud",
+    "moniker": "Cosmostation",
+    "chain_id": "iris"
+  },
+  {
+    "validator_address": "iva1qtq8dwpdth5nwmyw60rm4texdnznk9ld9dewky",
+    "moniker": "PXN",
+    "chain_id": "iris"
+  },
+  {
+    "validator_address": "iva18ejxngnecgrhymnp7gtuvs2eu99eunaw6k3v37",
+    "moniker": "itokenpool",
+    "chain_id": "iris"
+  },
+  {
+    "validator_address": "iva1zufrul2hvesqx5hrarvfcw34qnlq9yl8utease",
+    "moniker": "NodeRunner",
+    "chain_id": "iris"
+  },
+  {
+    "validator_address": "iva1axd5c473vh6df4r0jevtzudhfk6k09s4sgz75n",
+    "moniker": "Anna",
+    "chain_id": "iris"
+  },
+  {
+    "validator_address": "iva1p6xvurfhykcxy54jzdr5ckygjgzhhtuge5zd3g",
+    "moniker": "TienMaHoa",
+    "chain_id": "iris"
+  },
+  {
+    "validator_address": "iva1zfhnnv9ehhvf4lqf0yvrd99aqj2apduz0qxp42",
+    "moniker": "bajiute",
+    "chain_id": "iris"
+  },
+  {
+    "validator_address": "iva1kpxrphe7yky20wmnk9qqggrxayu2n2wrayw8e4",
+    "moniker": "Boy",
+    "chain_id": "iris"
+  },
+  {
+    "validator_address": "iva1sqa0ky65j6s4m2e6nmvr0z8dcav5x3qvh3amdq",
+    "moniker": "SpacePotato",
+    "chain_id": "iris"
+  },
+  {
+    "validator_address": "iva1m3qk6esmz9vsr2krxgvhrcwmzq4g3u7gtw0waa",
+    "moniker": "Heaven",
+    "chain_id": "iris"
+  },
+  {
+    "validator_address": "iva1f5e7uq0zk3f487vn52vjqqwm7xude54ugulg64",
+    "moniker": "HashFuture",
+    "chain_id": "iris"
+  },
+  {
+    "validator_address": "iva1s2qs4rzk0fa7tcmvqu2zy5kkzt96vhud0w9at5",
+    "moniker": "BRUCE",
+    "chain_id": "iris"
+  },
+  {
+    "validator_address": "iva1ualhu3fjgg77g485gmyswkq3w0dp7gysl8u9sf",
+    "moniker": "stakesystems",
+    "chain_id": "iris"
+  },
+  {
+    "validator_address": "iva164rl7yaxznzv2dqfqg04wqypdgpyy2c9kjtp8p",
+    "moniker": "Any Labs",
+    "chain_id": "iris"
+  },
+  {
+    "validator_address": "iva1q3a0whgx72u8dtrrz7qngm2nt4ullhvgwqkgyp",
+    "moniker": "DokiaCapital",
+    "chain_id": "iris"
+  },
+  {
+    "validator_address": "iva14y25fl3xa85lsul4cqfpcmtc36vf5qyshjj5dk",
+    "moniker": "HongkongNode",
+    "chain_id": "iris"
+  },
+  {
+    "validator_address": "iva1p09p2tu3q726pk7u4kqzww7q2rt5navpgw6wyd",
+    "moniker": "Lavenderfive Staking",
+    "chain_id": "iris"
+  },
+  {
+    "validator_address": "iva1aez6kj3t59qs64p97yhgv7ug6307jkd9wzs26q",
+    "moniker": "Made In Block",
+    "chain_id": "iris"
+  },
+  {
+    "validator_address": "iva16elrxvvh2y6hhp0x6prcelly9kzczw5g4gz3rv",
+    "moniker": "IRIRNO1",
+    "chain_id": "iris"
+  },
+  {
+    "validator_address": "iva1qdq3wcsju2zuhttc0l7wxuna4fvdwa7qpmkwwa",
+    "moniker": "DFM",
+    "chain_id": "iris"
+  },
+  {
+    "validator_address": "iva1yr8w8shqlqz5ygravqwymydh4j6a9lmzr7svxd",
+    "moniker": "Tower",
+    "chain_id": "iris"
+  },
+  {
+    "validator_address": "iva1yx4cqhag8ehe35jx0xyh0kgdlxhjp4a6h6vhgy",
+    "moniker": "Light",
+    "chain_id": "iris"
+  },
+  {
+    "validator_address": "iva1qq93sapmdcx36uz64vvw5gzuevtxsc7lcfxsat",
+    "moniker": "FreshIriser",
+    "chain_id": "iris"
+  },
+  {
+    "validator_address": "iva12f8cfz4qqtk3qxym94xme5qyqjl3gpw0hv2hs0",
+    "moniker": "Citadelone",
+    "chain_id": "iris"
+  },
+  {
+    "validator_address": "iva1tp3rtyl8fhat9tkv5ufspz2zpdgdgunsa8cr4p",
+    "moniker": "Cestbon",
+    "chain_id": "iris"
+  },
+  {
+    "validator_address": "iva1e0v9ql2hk9fy49kpns2jq5pgqwt99zddm89vdw",
+    "moniker": "Tanya",
+    "chain_id": "iris"
+  },
+  {
+    "validator_address": "iva1vx6xf59dhjg98pppsn4y3n4rltxpg2rppl0etk",
+    "moniker": "Leo",
+    "chain_id": "iris"
+  },
+  {
+    "validator_address": "iva1aj6frfd5g0a5d88j6mjpvy0ql5afd5crt90uqx",
+    "moniker": "Stakin",
+    "chain_id": "iris"
+  },
+  {
+    "validator_address": "iva10aqwu23l54u8vfg473jzj5vnvxtly444syzsdv",
+    "moniker": "PoS Node",
+    "chain_id": "iris"
+  },
+  {
+    "validator_address": "iva13hzqsv4e28syzhal7xwqm44saljs05l6khvdts",
+    "moniker": "dolphintwo",
+    "chain_id": "iris"
+  },
+  {
+    "validator_address": "iva13r5w8ts0370curm095uk57n89z26uen0uekw7j",
+    "moniker": "ZRL",
+    "chain_id": "iris"
+  },
+  {
+    "validator_address": "iva1xv2pxceuvww4fvaq39hln7wjyljjm29aysy4w6",
+    "moniker": "SKY",
+    "chain_id": "iris"
+  },
+  {
+    "validator_address": "iva1hslxk7km5z6srvmr993hsgcdxnezg8a5lh27p6",
+    "moniker": "KJINCio",
+    "chain_id": "iris"
+  },
+  {
+    "validator_address": "iva1lrzxwu4dmy8030waevcpft7rpxjjz26cy9jhgg",
+    "moniker": "node101",
+    "chain_id": "iris"
+  },
+  {
+    "validator_address": "iva1pp0m39rq37mtcgddy9slpn0s32rww6q6nvdkk9",
+    "moniker": "Meria",
+    "chain_id": "iris"
+  },
+  {
+    "validator_address": "iva1hlytpagdettxeem0g5kd5xakpqd2pls4kxe77q",
+    "moniker": "KonsorTech",
+    "chain_id": "iris"
+  },
+  {
+    "validator_address": "iva16lhapna7nfm0j3pnwt7tn4lxtx3q7hs44wy3cz",
+    "moniker": "Crypto Lion ",
+    "chain_id": "iris"
+  },
+  {
+    "validator_address": "iva12lxl0frycw3jfv073ctqx4s0vzchzs32sm48yt",
+    "moniker": "Imperatorco",
+    "chain_id": "iris"
+  },
+  {
+    "validator_address": "iva1sd0eevawxns6nfuav8v7ldqd5k7dnrsh35qvhf",
+    "moniker": "minminnet",
+    "chain_id": "iris"
+  },
+  {
+    "validator_address": "iva1nzgvvfam8n4lskkcqmhes07td6wkum9cffvkkx",
+    "moniker": "01node",
+    "chain_id": "iris"
+  },
+  {
+    "validator_address": "iva1uvkmmjtvzxtn9cjhd2c9kdncjfslnql8w7plzc",
+    "moniker": "Trivium  TriviumNetwork",
+    "chain_id": "iris"
+  },
+  {
+    "validator_address": "iva1y8rgddpwlcmf3h2zpq9aq9qdmuvcscg08laxdf",
+    "moniker": "Koinsortium",
+    "chain_id": "iris"
+  },
+  {
+    "validator_address": "iva1f3lapzxe7ugfex8358ufp5k8xg2yym5tpp2xje",
+    "moniker": "Cryptium Labs",
+    "chain_id": "iris"
+  },
+  {
+    "validator_address": "iva12s6tqnj7dcvt4na2ynrus3sz88m7gj5gr35g6h",
+    "moniker": "OWALLET",
+    "chain_id": "iris"
+  },
+  {
+    "validator_address": "iva17a8eag0z08sv57m7r6q5227p65ysnyg3xha3ju",
+    "moniker": "OldCat",
+    "chain_id": "iris"
+  },
+  {
+    "validator_address": "iva1qt9c6l4cmex68qmctxttv97vxgxs2t6p0pcf69",
+    "moniker": "bigonepool",
+    "chain_id": "iris"
+  },
+  {
+    "validator_address": "iva1lye4nr7twuhh8wp98fs7xsxs9weut55r2twtca",
+    "moniker": "Yvonne",
+    "chain_id": "iris"
+  },
+  {
+    "validator_address": "iva1p3fqnk4uthua3z5c6l0ujrlfqvagtly2np0xmy",
+    "moniker": "Wendy",
+    "chain_id": "iris"
+  },
+  {
+    "validator_address": "iva15m9z8thvmkyf70v33z9yfev0u7v4t8e5j5uvcv",
+    "moniker": "IRIS ONLY CAUSES LOSSES",
+    "chain_id": "iris"
+  },
+  {
+    "validator_address": "iva1p380frw2n0f8m2gwzpdsq00l3y6h2mn9sqgnvg",
+    "moniker": "Devalis",
+    "chain_id": "iris"
+  },
+  {
+    "validator_address": "iva1pc5tegww8cke2ltejhzwpynw43dpd0c5pqapu9",
+    "moniker": "SummerMoney",
+    "chain_id": "iris"
+  },
+  {
+    "validator_address": "iva1r9zz6ntwqhs2n63dww425rlc8ux2f06xdnqalr",
+    "moniker": "DO NOT DELEGATE",
+    "chain_id": "iris"
+  },
+  {
+    "validator_address": "iva1q6zpsa3j8452d6q7tkmndkjfgzrmzwmsml7fyg",
+    "moniker": "Moonstake",
+    "chain_id": "iris"
+  },
+  {
+    "validator_address": "iva1r2dthxctqzhwg299e7aaeqwfkgcc9hg8nk6xd7",
+    "moniker": "85vbshuk",
+    "chain_id": "iris"
+  },
+  {
+    "validator_address": "iva1tjsag7r0v5v0yyufkzfanaph9d3ku46fv2eehc",
+    "moniker": "Neutrino",
+    "chain_id": "iris"
+  },
+  {
+    "validator_address": "iva129tz4cy0wkgqwrxdphyt8khy5z4df2grms748s",
+    "moniker": "BlueBlock",
+    "chain_id": "iris"
+  },
+  {
+    "validator_address": "iva1zxwfsr2et8m3qt0y4gkhaa288vk87pqc659hhk",
+    "moniker": "Sven",
+    "chain_id": "iris"
+  },
+  {
+    "validator_address": "iva18fu6cu6gu62ugt5aungkyh3e6agzh5nt5skuk2",
+    "moniker": "test",
+    "chain_id": "iris"
+  },
+  {
+    "validator_address": "iva1p4nuaghhkyzf257y2almjyd9pr3g6aed29nagd",
+    "moniker": "ApolloPool",
+    "chain_id": "iris"
+  },
+  {
+    "validator_address": "iva1phjg854ar9wd9r0hqqwzfg270k5nm9cnw4tv5s",
+    "moniker": "iris Fans",
+    "chain_id": "iris"
+  },
+  {
+    "validator_address": "iva1z8wrnv35mmezpseym0jy7lngvsan2alwn5z9zn",
+    "moniker": "Bi23 Labs",
+    "chain_id": "iris"
+  },
+  {
+    "validator_address": "iva1z8l7rvwuepfh5ffsh60wm4cq05ztqdvukjmyaq",
+    "moniker": "0",
+    "chain_id": "iris"
+  },
+  {
+    "validator_address": "iva1z2qmf5ez0flk2c9dhy6rcn3t4h62vv5k8gp9jc",
+    "moniker": "0 LunaMint",
+    "chain_id": "iris"
+  },
+  {
+    "validator_address": "iva1t7pfdl06p4dh0awh7sp9cmy9j2nga4v46zey93",
+    "moniker": "openbitlab",
+    "chain_id": "iris"
+  },
+  {
+    "validator_address": "iva1zvznhw0sx7n9xup23f99gq09ylfa844s6r6ph9",
+    "moniker": "Sunshine",
+    "chain_id": "iris"
+  },
+  {
+    "validator_address": "iva1zw0uesp2uew8ht74w8pkmkgd2aex4d7mwtpsuu",
+    "moniker": "INKER",
+    "chain_id": "iris"
+  },
+  {
+    "validator_address": "iva1vyzdceh9umfzq0k6x24jnkdujaa7d2s63zrvym",
+    "moniker": "Leinlawun 1",
+    "chain_id": "iris"
+  },
+  {
+    "validator_address": "iva1v2srqzaqku25pdndegz3flhez6umfehpcpv03v",
+    "moniker": "CosmicNode",
+    "chain_id": "iris"
+  },
+  {
+    "validator_address": "iva1slyar3csww860q3qsw8jlk6njt47nn2xze6dg9",
+    "moniker": "ok",
+    "chain_id": "iris"
+  },
+  {
+    "validator_address": "iva1z4t4q9dcrplc8p6jf6u0d486qwwmsvf9y3plc0",
+    "moniker": "testtest",
+    "chain_id": "iris"
+  },
+  {
+    "validator_address": "iva1zhawznhasq6jea2w3n0g3wlrksmcpptnlxw5g0",
+    "moniker": "Blockval  0 fees  Restake",
+    "chain_id": "iris"
+  },
+  {
+    "validator_address": "iva1ze9pyj7wls5at8zga6dz6dzr0yj5hwdc8v2uew",
+    "moniker": "Sparkpool irisnet mainnet",
+    "chain_id": "iris"
+  },
+  {
+    "validator_address": "iva1d7seqr6tkn2rgpjemexzx865se9zml5srp5t00",
+    "moniker": "Uptick",
+    "chain_id": "iris"
+  },
+  {
+    "validator_address": "iva1y7dvlp6xn02j48fswmmfcu99ms0zlxtws26qzx",
+    "moniker": "Unicorn",
+    "chain_id": "iris"
+  },
+  {
+    "validator_address": "iva1zuz922qeqga0ns7nf8gv4454y57pnmngr3th68",
+    "moniker": "TieTouJiuCai",
+    "chain_id": "iris"
+  },
+  {
+    "validator_address": "iva1yf8r909vrzzwyuard2l6qz7ge8z3md93h39znw",
+    "moniker": "NINZACODE",
+    "chain_id": "iris"
+  },
+  {
+    "validator_address": "iva18quwdhtd2uu06xc4g7wm6l37qr24agk82a39n6",
+    "moniker": "IRISPOOL",
+    "chain_id": "iris"
+  },
+  {
+    "validator_address": "iva1symf474wnypes2d3mecllqk6l26rwz8mv47x04",
+    "moniker": "BlockHunters ",
+    "chain_id": "iris"
+  },
+  {
+    "validator_address": "iva18cjeeagwu6v2yx3ujv5452kdhget0w93ss9e6h",
+    "moniker": "Staked",
+    "chain_id": "iris"
+  },
+  {
+    "validator_address": "iva1n3hnhva22tykxxekrdq6zup4qcznsr9qc00fp6",
+    "moniker": "Stakeflow",
+    "chain_id": "iris"
+  },
+  {
+    "validator_address": "iva1rpdy7eepceewlykfehtal7h5dyz8c90zfwpqf0",
+    "moniker": "LycheeDao",
+    "chain_id": "iris"
+  },
+  {
+    "validator_address": "iva184499gxhcr8a0l80jwntry6faz7t4qs5rz2qlt",
+    "moniker": "QOSGroup",
+    "chain_id": "iris"
+  },
+  {
+    "validator_address": "iva1crd9lvmzgmwdptn5kgwnynlrkex3pv9steexmr",
+    "moniker": "Terrarium ",
+    "chain_id": "iris"
+  },
+  {
+    "validator_address": "iva19f0w9svr905fhefusyx4z8sf83j6et0gqc20y6",
+    "moniker": "NodeStake",
+    "chain_id": "iris"
+  },
+  {
+    "validator_address": "iva1wtv0kp6ydt03edd8kyr5arr4f3yc52vp5m5dze",
+    "moniker": "kytzu",
+    "chain_id": "iris"
+  },
+  {
+    "validator_address": "iva1kfhee2nqrg64krqa97q3ufw9d0phzp3jjq3c4j",
+    "moniker": "Cypher Core",
+    "chain_id": "iris"
+  },
+  {
+    "validator_address": "iva17y95w75m4q4j6293qza3kq2vsfgqlpj3vl2grv",
+    "moniker": "Coinstaking",
+    "chain_id": "iris"
+  },
+  {
+    "validator_address": "iva13th3pfkmjqpdegvz9c569y0ashwmyp3c5ms9y7",
+    "moniker": "kooltek68",
+    "chain_id": "iris"
+  },
+  {
+    "validator_address": "iva16plp8cmfkjssp222taq6pv6mkm8c5pa9lcktta",
+    "moniker": "Ping",
+    "chain_id": "iris"
+  },
+  {
+    "validator_address": "iva1fz225d9n8y8ha7slrdc6qfn4vpndwl8gzsr9f6",
+    "moniker": "Binnostake",
+    "chain_id": "iris"
+  },
+  {
+    "validator_address": "iva1j8er22jnq767x5pfq6cda8duw4y4a09jyl63y3",
+    "moniker": "EZ Staking",
+    "chain_id": "iris"
+  },
+  {
+    "validator_address": "iva18a8vzrdwmvkjn4ctla6x7quzxdzlmpvjrctmdm",
+    "moniker": "Perseverance Staking",
+    "chain_id": "iris"
+  },
+  {
+    "validator_address": "iva1zllq6vzwwy6nq2ht88x64salkscf8uj3rhhgts",
+    "moniker": "irispacific",
+    "chain_id": "iris"
+  },
+  {
+    "validator_address": "iva1l298f43qqznry4y3m37r5hu0skhl95tz682wrc",
+    "moniker": "BEPAL",
+    "chain_id": "iris"
+  },
+  {
+    "validator_address": "iva1ls72r7w7kel5fvfmxwv0ptn72mdwyeyrexdnhd",
+    "moniker": "qingtianboy",
+    "chain_id": "iris"
+  },
+  {
+    "validator_address": "iva1lkla9p0umwk6cx26q30nr4nzgsfnjhg4xvmnpd",
+    "moniker": "Hashgard",
+    "chain_id": "iris"
+  },
+  {
+    "validator_address": "iva1w33376ss0z4lvs4ar4r8gtkplsfa2v303eurkd",
+    "moniker": "Cosmos Spaces",
+    "chain_id": "iris"
+  },
+  {
+    "validator_address": "iva1rv9dpusyph9ecm38wqh4pa9hhga33rxqetuuse",
+    "moniker": "BlueNode",
+    "chain_id": "iris"
+  },
+  {
+    "validator_address": "iva1kkm6m9ky7gawzumlecs7r4ky7rg87kdstdr39z",
+    "moniker": "blockpool",
+    "chain_id": "iris"
+  },
+  {
+    "validator_address": "iva10ql855yg43826066j4n9urwfa0e3vjlztexud6",
+    "moniker": "AIG",
+    "chain_id": "iris"
+  },
+  {
+    "validator_address": "iva1snhqews6p0z5y90p2jlxu4yq6ammmpx08aa6qx",
+    "moniker": "ETS20",
+    "chain_id": "iris"
+  },
+  {
+    "validator_address": "iva1q28p6sh8mx4vwtl8nt0tczgewv8fcguhd4kmrl",
+    "moniker": "Winter Validator",
+    "chain_id": "iris"
+  },
+  {
+    "validator_address": "iva1grutkrs7dpyhx8s5u4a2ch0gx2mwgjvrmz6rjk",
+    "moniker": "Certus One",
+    "chain_id": "iris"
+  },
+  {
+    "validator_address": "iva18clrjdxeg3ule5aprt85mt7h4q3zj0ecn77qvz",
+    "moniker": "Interstake One prev BTCSecure",
+    "chain_id": "iris"
+  },
+  {
+    "validator_address": "iva1az3y7j3ncfxude5t9n9sry39acgn7dpejds8gf",
+    "moniker": "Masternode24de",
+    "chain_id": "iris"
+  },
+  {
+    "validator_address": "iva13gj50af4d2j3edvfdn9pxujepts3jxu03xzk7m",
+    "moniker": "Earn Network",
+    "chain_id": "iris"
+  },
+  {
+    "validator_address": "iva1nl4d9p95enqg8tjn8fy946fs072e5d2ux0e8gl",
+    "moniker": "matpool",
+    "chain_id": "iris"
+  },
+  {
+    "validator_address": "iva1hgh0pgpjmvcfsyl3qg7axux0fx4q469mw0x4vj",
+    "moniker": "HEXXAGON",
+    "chain_id": "iris"
+  },
+  {
+    "validator_address": "iva1563p28q6qthzsq86jnywd5a8y8put33tqukl8d",
+    "moniker": "HighStakesch  Stake for Airdrop",
+    "chain_id": "iris"
+  },
+  {
+    "validator_address": "iva13y3fd2ej9aa3s9sfx93kkc6p8vghwr08s4280e",
+    "moniker": "Stake5 Labs",
+    "chain_id": "iris"
+  },
+  {
+    "validator_address": "iva186cqesc4m9l9lghucr07cum4tpccuu0atku3r2",
+    "moniker": "Bit Cat",
+    "chain_id": "iris"
+  },
+  {
+    "validator_address": "iva1vgh452242vwa6pjmklafwhvjjl48l4v32vthsx",
+    "moniker": "DCC Capital",
+    "chain_id": "iris"
+  },
+  {
+    "validator_address": "iva19z6f4d70szp0hxl2prrhgyxt20fsy3zay2fnvg",
+    "moniker": "Meganode",
+    "chain_id": "iris"
+  },
+  {
+    "validator_address": "iva1gvq24a5vn7twjupf3l2t7pnd9l4fm7uwm2ln0x",
+    "moniker": "HLT",
+    "chain_id": "iris"
+  },
+  {
+    "validator_address": "iva1rnk3uacrhmuf0efwjtkwycnr3egg87lvxsmlen",
+    "moniker": "jetlife",
+    "chain_id": "iris"
+  },
+  {
+    "validator_address": "iva1e2jjr7pfjm7lrkuh7tamecgf6jgsxntz0xjt9q",
+    "moniker": "PTStudio",
+    "chain_id": "iris"
+  },
+  {
+    "validator_address": "iva1y96ps86gyjduuqmz7kcm7xnywjq7r69lqsd7qr",
+    "moniker": "HuobiPool",
+    "chain_id": "iris"
+  },
+  {
+    "validator_address": "iva1s0lankh33kprer2l22nank5rvsuh9ksa7qp6ee",
+    "moniker": "KingSuper",
+    "chain_id": "iris"
+  },
+  {
+    "validator_address": "iva16p62m90vyyha72ak9xg94atc3njhwk5rgch3g5",
+    "moniker": "IRISNETVALIDATOr",
+    "chain_id": "iris"
+  },
+  {
+    "validator_address": "iva1ygdplnsq2ewpprd3z0hzhjv2hrvj2ac72mkvya",
+    "moniker": "Peaceofworld",
+    "chain_id": "iris"
+  },
+  {
+    "validator_address": "iva1y2n5j444n0jlarts86yqqx7zh2mu5ef6kvs05r",
+    "moniker": "Cosec",
+    "chain_id": "iris"
+  },
+  {
+    "validator_address": "iva1dqcp5lu00ls2sz69au2h33s7d84f2q2h5rau7w",
+    "moniker": "Node",
+    "chain_id": "iris"
+  },
+  {
+    "validator_address": "iva1dtgqp4vuvhznnkq4xdgqw37rueslnpg956y7z2",
+    "moniker": "Block100",
+    "chain_id": "iris"
+  },
+  {
+    "validator_address": "iva1s5pk52wjkya6f3un95t0cjepwelwxqfhqted5f",
+    "moniker": "NRdecommissioned",
+    "chain_id": "iris"
+  },
+  {
+    "validator_address": "iva1y0tc7py9kr5m5amczkpfr55qkumdex8cvhaj3z",
+    "moniker": "Testtwo",
+    "chain_id": "iris"
+  },
+  {
+    "validator_address": "iva1lmjugnqrl0hy60yxq02z5u0le0njfuay7wjgl6",
+    "moniker": "InfStones",
+    "chain_id": "iris"
+  },
+  {
+    "validator_address": "iva1w2dakpuvh9mglcs54wayta5dyv8vj853y6jz9e",
+    "moniker": "Atomic power node",
+    "chain_id": "iris"
+  },
+  {
+    "validator_address": "iva1nsw2xxcpqcl4d3xzt8nh8vzsnaljl44j9dt562",
+    "moniker": "gdex",
+    "chain_id": "iris"
+  },
+  {
+    "validator_address": "iva16lwqm6ruakd4k776ga3pzl8sf2mqja9n2ftqdk",
+    "moniker": "stakemachine",
+    "chain_id": "iris"
+  },
+  {
+    "validator_address": "iva1lcd58eghzxdev9hk2k6px0yyamzdmyknf0zg7s",
+    "moniker": "DUALsystems",
+    "chain_id": "iris"
+  },
+  {
+    "validator_address": "iva1lc4uyheys8xhmhulv02ccc9nsvm9y3apvjxa52",
+    "moniker": "L0vdcom",
+    "chain_id": "iris"
+  },
+  {
+    "validator_address": "iva1d3z30ndxuqas8vr3mrc7028ykvfaukal0tnj0p",
+    "moniker": "StakeLab",
+    "chain_id": "iris"
+  },
+  {
+    "validator_address": "iva1d5ka5clme02s0sqs96pf3lzhz8ejtjs0emep93",
+    "moniker": "Easy 2 Stake",
+    "chain_id": "iris"
+  },
+  {
+    "validator_address": "iva14ffz956stez2kgqlvz0g342fkts25hndqcaaqf",
+    "moniker": "PLEASE REDELEGATE  Stakelyio",
+    "chain_id": "iris"
+  },
+  {
+    "validator_address": "iva1scp6svdvet7qmn9gqyq5u3ehwkgujm34yrgzsk",
+    "moniker": "Temperstake",
+    "chain_id": "iris"
+  },
+  {
+    "validator_address": "iva1dcqv69vqsdcc5lnmup6vkpv370fmqxgdptwqu7",
+    "moniker": "Wetez",
+    "chain_id": "iris"
+  },
+  {
+    "validator_address": "iva1rp9tua35zku2ldy3rgty68x89ncqjwq3ndn2rg",
+    "moniker": "REDELEGATEPLEASE",
+    "chain_id": "iris"
+  },
+  {
+    "validator_address": "iva1fhzvh5fmu3d8tyvncnc6w3mw4h3n4svpmqgcxu",
+    "moniker": "PlatON",
+    "chain_id": "iris"
+  },
+  {
+    "validator_address": "iva194s9c46x6vr9drynsm5dupkeleqzejtszmxdnx",
+    "moniker": "Terminet",
+    "chain_id": "iris"
+  },
+  {
+    "validator_address": "iva19ul0uva3fgtm6cd6tceprre4ghsfh6h3u29lcg",
+    "moniker": "TuretskiyI",
+    "chain_id": "iris"
+  },
+  {
+    "validator_address": "iva14ll2p8xxgp0pkz5rcc5dczg4928txvy70349u7",
+    "moniker": "Martian Forest",
+    "chain_id": "iris"
+  },
+  {
+    "validator_address": "iva1y22svyrxgjllyyn3zftfza48lnzxey93jxqd4a",
+    "moniker": "umbrella",
+    "chain_id": "iris"
+  },
+  {
+    "validator_address": "iva1mazj7agts0ajtkpzwk3cktru6hwqq9aqkzqsls",
+    "moniker": "ppx",
+    "chain_id": "iris"
+  },
+  {
+    "validator_address": "iva10f9wkd6vdspac05djyfwfx0uxcqxapnqj5gnmz",
+    "moniker": "Tavis Digital",
+    "chain_id": "iris"
+  },
+  {
+    "validator_address": "iva1gjxysf5x2qnht2jy3teeenez842w8j2hqfu7tq",
+    "moniker": "Anchor Staking",
+    "chain_id": "iris"
+  },
+  {
+    "validator_address": "iva1hmfjyaygehcpc8dvz6g3g9m4d33fa3ge5wyggz",
+    "moniker": "Stakernode",
+    "chain_id": "iris"
+  },
+  {
+    "validator_address": "iva19prg9sga9vqqhn65w62ny9mqknazl3lqpqrxu8",
+    "moniker": "ByteVariety",
+    "chain_id": "iris"
+  },
+  {
+    "validator_address": "iva1jlfgmu0n3z9qhch2sxk723et7edwr8cmunw8n9",
+    "moniker": " Crypteloid",
+    "chain_id": "iris"
+  },
+  {
+    "validator_address": "iva1ktw6xf887336lck334ylanfy56nkr30ylel0pr",
+    "moniker": "LOL",
+    "chain_id": "iris"
+  },
+  {
+    "validator_address": "iva1hguh57kwwvv56k5kw8x3ll5kna9r3js4wnz2qu",
+    "moniker": "melea StakingPool",
+    "chain_id": "iris"
+  },
+  {
+    "validator_address": "iva16l7v9zmk4w4wj7rdff24ddazvqftdkzlxda5k2",
+    "moniker": "TendermintFans",
+    "chain_id": "iris"
+  },
+  {
+    "validator_address": "iva1865dpq4hg27d2d3wj2keptapvdjy37js9lmhqe",
+    "moniker": "Stable",
+    "chain_id": "iris"
+  },
+  {
+    "validator_address": "iva1k4l7jnkfj6nfzxd3su94s0kauhcsx2gzl43spu",
+    "moniker": "MathWallet",
+    "chain_id": "iris"
+  },
+  {
+    "validator_address": "iva1un33829laxrygnrvj5sa2mz6u5n9wwhwmc7duj",
+    "moniker": "Cat Boss",
+    "chain_id": "iris"
+  },
+  {
+    "validator_address": "iva1hntgkgnje2el4wfkd2j6s3y0yysq266r2074l0",
+    "moniker": "Leonoors Cryptoman",
+    "chain_id": "iris"
+  },
+  {
+    "validator_address": "iva1vk4kps6gala40ue4nltghym0vdq8z5epy7dy37",
+    "moniker": "stakefish",
+    "chain_id": "iris"
+  },
+  {
+    "validator_address": "iva1gmhhr2gn0uek735ccryss3uaqaxu77xltt7s37",
+    "moniker": "Haetae",
+    "chain_id": "iris"
+  },
+  {
+    "validator_address": "iva1mm4v28m7sfw4emm05d9sk8d3l9al3ffjyuz0y9",
+    "moniker": "Please redelegate  shutting down on 30th Dec",
+    "chain_id": "iris"
+  },
+  {
+    "validator_address": "iva1gyhapedd7l0jaxe35hnwxc2tmjcdrvzx52sv0u",
+    "moniker": "syncnode",
+    "chain_id": "iris"
+  },
+  {
+    "validator_address": "iva13tut6l4d63c9zpyflt25uw4dtdpdqm9aupmhxc",
+    "moniker": "Crazybee",
+    "chain_id": "iris"
+  },
+  {
+    "validator_address": "iva1hhktf7e4dpxw9ddvx779udcsrh48srhhrf4n24",
+    "moniker": "Decommissioned  AUDITone redelegate your stakes",
+    "chain_id": "iris"
+  },
+  {
+    "validator_address": "iva15cc2zv2cmfh06rrfnpm8q7guaze6q9rnzz4f92",
+    "moniker": "irisval",
+    "chain_id": "iris"
+  },
+  {
+    "validator_address": "iva1mdct4znkw7p9xcykzdv4gu2yrfpjyauljwcky6",
+    "moniker": "iriser",
+    "chain_id": "iris"
+  },
+  {
+    "validator_address": "iva1xf5jaw09klqg9hzxfks3ycjvqgnpyjcm64fepv",
+    "moniker": "InChainWorks",
+    "chain_id": "iris"
+  },
+  {
+    "validator_address": "iva1msqqkd3v0gmullzwm56c4frevyczzxfeczvjru",
+    "moniker": "Forbole ",
+    "chain_id": "iris"
+  },
+  {
+    "validator_address": "iva17qzmm930ea3fhc2jmgaa02rm4cfxexc9fn0dgt",
+    "moniker": "Falcon",
+    "chain_id": "iris"
+  },
+  {
+    "validator_address": "iva17qagse93see38j44cqv4q0nx0zd2yrzcpagugq",
+    "moniker": "Tokyo",
+    "chain_id": "iris"
+  },
+  {
+    "validator_address": "iva19wztuq7klrj2hgl4cqyvfajc6qnf24ad7dv9t9",
+    "moniker": "Huobi Research",
+    "chain_id": "iris"
+  },
+  {
+    "validator_address": "iva1x5plalrqws0rjz7dlsudrfdpd8r9pymc0ggfsp",
+    "moniker": "MTNode",
+    "chain_id": "iris"
+  },
+  {
+    "validator_address": "iva1543nj4z07vjqztvu3358fr2z2hcp0qtmceank5",
+    "moniker": "Binance Validator",
+    "chain_id": "iris"
+  },
+  {
+    "validator_address": "iva16v7g4a790t6qrrxr4scl5s652a6ha3g8ta0z7c",
+    "moniker": "luckybean",
+    "chain_id": "iris"
+  },
+  {
+    "validator_address": "iva1dgj05neyp7tlz92y7crdc9g8wple3p2ukmkese",
+    "moniker": "interBlockchain",
+    "chain_id": "iris"
+  },
+  {
+    "validator_address": "iva1mjqef3jkgksk59rtnz3ljz94easln6cmsjcmks",
+    "moniker": "mooniris",
+    "chain_id": "iris"
+  },
+  {
+    "validator_address": "iva148wlggzzzpw03q7hdaceg94km7vhtw5dqjttvv",
+    "moniker": "Decommissioned unbond or redelegate",
+    "chain_id": "iris"
+  },
+  {
+    "validator_address": "iva15nfd80kckck2rqu2kyx6w67752prky32klwx82",
+    "moniker": "MrZhang",
+    "chain_id": "iris"
+  },
+  {
+    "validator_address": "iva1s8w9c8gxu0u8ws4gpc5lzaqq77mwqlle9dp87r",
+    "moniker": "Umbrella ",
+    "chain_id": "iris"
+  },
+  {
+    "validator_address": "iva10geyjxnjptjqyvc2fqq3s9nz0w9d4cqk9suspa",
+    "moniker": "SSSNode",
+    "chain_id": "iris"
+  },
+  {
+    "validator_address": "iva1schh494g0n9l8x3hax7d7qwcehv54euw6cyt5u",
+    "moniker": "Sentinel",
+    "chain_id": "iris"
+  },
+  {
+    "validator_address": "iva1g9ydd2wdgsszq3y60d5meq8mfrz9u6m9zwfn4t",
+    "moniker": "Huobi",
+    "chain_id": "iris"
+  },
+  {
+    "validator_address": "iva15gyr8x527htlnq7nxm3v9kj82a2pw3jlrj4g9y",
+    "moniker": "HashQuark",
+    "chain_id": "iris"
+  },
+  {
+    "validator_address": "iva1fyxjf70lcmcu7fe3nzc4hq8glc30fq0ra0arsq",
+    "moniker": "Castlenode",
+    "chain_id": "iris"
+  }
+]
