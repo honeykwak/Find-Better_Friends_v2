@@ -18,7 +18,7 @@ export interface TopicNode {
   voteDistribution: Record<string, number>
 }
 
-export type ValidatorSortKey = 'voteCount' | 'name';
+export type ValidatorSortKey = 'voteCount' | 'name' | 'votingPower';
 
 // 전역 상태 인터페이스
 interface GlobalStore {

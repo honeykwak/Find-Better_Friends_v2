@@ -76,6 +76,7 @@ async function processAllData() {
           proposal_id: proposal.id,
           validator_address: vote.validatorAddress,
           vote_option: vote.option,
+          voting_power: vote.votingPower,
         });
       }
 

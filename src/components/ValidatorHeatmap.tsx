@@ -3,7 +3,7 @@
 import { useEffect, useRef, useState, useMemo } from 'react'
 import * as d3 from 'd3'
 import { useGlobalStore, type ValidatorSortKey } from '@/stores/useGlobalStore'
-import { Loader2, ZoomIn, ZoomOut, RotateCcw, Palette, ArrowDownUp, CaseSensitive } from 'lucide-react'
+import { Loader2, ZoomIn, ZoomOut, RotateCcw, Palette, ArrowDownUp, CaseSensitive, Signal } from 'lucide-react'
 
 // ... (interfaces and config remain the same)
 
@@ -72,6 +72,8 @@ export default function ValidatorHeatmap() {
     selectedChain,
     loading,
     approvalRateRange,
+    selectedTopics,
+    searchTerm,
     validatorSortKey,
     setValidatorSortKey,
   } = useGlobalStore()
@@ -87,21 +89,50 @@ export default function ValidatorHeatmap() {
 
     const proposalSet = new Set(filteredProposals.map(p => p.proposal_id))
     
-    // Calculate vote counts for each validator based on filtered proposals
-    const validatorVoteCounts = new Map<string, number>()
-    for (const vote of rawVotes) {
-      if (proposalSet.has(vote.proposal_id)) {
-        validatorVoteCounts.set(vote.validator_address, (validatorVoteCounts.get(vote.validator_address) || 0) + 1)
-      }
-    }
-
     const validators = filteredValidators
       .slice() // Create a shallow copy to avoid mutating the original array
       .sort((a, b) => {
         if (validatorSortKey === 'name') {
           return (a.moniker || '').localeCompare(b.moniker || '')
         }
+
+        if (validatorSortKey === 'votingPower') {
+          const validatorPowerSum = new Map<string, number>()
+          const validatorVoteCount = new Map<string, number>()
+          for (const vote of rawVotes) {
+            if (proposalSet.has(vote.proposal_id)) {
+              validatorVoteCount.set(
+                vote.validator_address,
+                (validatorVoteCount.get(vote.validator_address) || 0) + 1,
+              )
+              if (vote.voting_power) {
+                const power = parseFloat(vote.voting_power)
+                if (!isNaN(power)) {
+                  validatorPowerSum.set(
+                    vote.validator_address,
+                    (validatorPowerSum.get(vote.validator_address) || 0) + power,
+                  )
+                }
+              }
+            }
+          }
+          const getAveragePower = (address: string) => {
+            const sum = validatorPowerSum.get(address) || 0
+            const count = validatorVoteCount.get(address) || 0
+            return count > 0 ? sum / count : 0
+          }
+          const aAvgPower = getAveragePower(a.validator_address)
+          const bAvgPower = getAveragePower(b.validator_address)
+          return bAvgPower - aAvgPower
+        }
+        
         // Default to 'voteCount'
+        const validatorVoteCounts = new Map<string, number>()
+        for (const vote of rawVotes) {
+          if (proposalSet.has(vote.proposal_id)) {
+            validatorVoteCounts.set(vote.validator_address, (validatorVoteCounts.get(vote.validator_address) || 0) + 1)
+          }
+        }
         const aVotes = validatorVoteCounts.get(a.validator_address) || 0
         const bVotes = validatorVoteCounts.get(b.validator_address) || 0
         return bVotes - aVotes
@@ -138,7 +169,15 @@ export default function ValidatorHeatmap() {
       }))
 
     return { validators, proposals, votes }
-  }, [getFilteredProposals, getFilteredValidators, rawVotes, validatorSortKey])
+  }, [
+    getFilteredProposals, 
+    getFilteredValidators, 
+    rawVotes, 
+    validatorSortKey, 
+    approvalRateRange, 
+    selectedTopics, 
+    searchTerm
+  ])
 
   // D3.js 히트맵 렌더링
   useEffect(() => {
@@ -304,6 +343,14 @@ export default function ValidatorHeatmap() {
             >
               <CaseSensitive className="w-3 h-3" />
               <span>Name</span>
+            </button>
+            <button 
+              onClick={() => setValidatorSortKey('votingPower')} 
+              className={`flex items-center gap-1 px-3 py-2 text-xs font-medium rounded-md ${validatorSortKey === 'votingPower' ? 'bg-white text-gray-900 shadow-sm' : 'text-gray-600'}`}
+              title="Sort by voting power"
+            >
+              <Signal className="w-3 h-3" />
+              <span>Voting Power</span>
             </button>
           </div>
           <div className="flex items-center gap-1 border border-gray-300 rounded-lg">
