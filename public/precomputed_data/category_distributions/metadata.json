@@ -1,0 +1,29 @@
+{
+  "generatedAt": "2025-07-06T10:03:05.435Z",
+  "totalProposals": 3374,
+  "processedProposals": 3374,
+  "totalVotes": 390117,
+  "totalCategories": 12,
+  "totalTopics": 39,
+  "chains": 17,
+  "chainList": [
+    "akash",
+    "axelar",
+    "cosmos",
+    "dydx",
+    "evmos",
+    "finschia",
+    "gravity-bridge",
+    "injective",
+    "iris",
+    "juno",
+    "kava",
+    "kyve",
+    "osmosis",
+    "secret",
+    "sentinel",
+    "stargaze",
+    "terra"
+  ],
+  "version": "2.0"
+}

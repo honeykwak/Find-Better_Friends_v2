@@ -99,118 +99,32 @@ async function loadOptimizedCSV<T>(url: string): Promise<T[]> {
   }
 }
 
-// 모든 최적화된 데이터 로드
-export async function loadOptimizedData(): Promise<OptimizedData> {
-  try {
-    console.log('optimizedDataLoader: Loading optimized data...')
-    
-    // 메타데이터 로드
-    console.log('optimizedDataLoader: Loading metadata...')
-    const metadata = await loadMetadata()
-    console.log('optimizedDataLoader: Metadata loaded:', metadata)
-    
-    // 매핑 데이터 로드
-    console.log('optimizedDataLoader: Loading mapping data...')
-    const [validatorMapping, proposalMapping] = await Promise.all([
-      loadJSON('/optimized_data/validators.json'),
-      loadJSON('/optimized_data/proposals.json')
-    ])
-    console.log('optimizedDataLoader: Mapping data loaded:', {
-      validators: Object.keys(validatorMapping).length,
-      proposals: Object.keys(proposalMapping).length
-    })
-    
-    // 체인별 votes 로드
-    const chainNames = Object.keys(metadata.chains)
-    console.log('optimizedDataLoader: Loading votes for chains:', chainNames)
-    const allVotes: OptimizedVote[] = []
-    
-    for (const chainName of chainNames) {
-      try {
-        // 체인명을 파일명에 맞게 변환
-        const fileName = chainName.toLowerCase().replace(' ', '_').replace('-', '_')
-        console.log(`optimizedDataLoader: Loading votes for ${chainName} (${fileName})...`)
-        const chainVotes = await loadOptimizedCSV<OptimizedVote>(
-          `/optimized_data/votes/${fileName}_votes.csv`
-        )
-        
-        // 체인 정보를 votes에 추가 (필요시)
-        chainVotes.forEach(vote => {
-          vote.chain = chainName
-        })
-        
-        allVotes.push(...chainVotes)
-        console.log(`optimizedDataLoader: Loaded ${chainVotes.length} votes for ${chainName}`)
-      } catch (error) {
-        console.warn(`optimizedDataLoader: Failed to load votes for ${chainName}:`, error)
-      }
-    }
-    
-    console.log('optimizedDataLoader: Converting mapping data to arrays...')
-    // 매핑 데이터를 배열로 변환
-    const proposals: OptimizedProposal[] = Object.entries(proposalMapping).map(([id, data]: [string, any]) => ({
-      id,
-      chain: data.chain,
-      title: data.title,
-      type: data.type,
-      passed: data.passed,
-      timestamp: data.timestamp,
-      voting_start: data.voting_start,
-      voting_end: data.voting_end,
-      proposer: data.proposer,
-      category: data.category,
-      topic: data.topic
-    }))
-    
-    const validators: OptimizedValidator[] = Object.entries(validatorMapping).map(([id, data]: [string, any]) => ({
-      id,
-      chain: data.chain,
-      address: data.address,
-      name: data.name
-    }))
-    
-    console.log('optimizedDataLoader: Optimized data loaded:', {
-      proposals: proposals.length,
-      validators: validators.length,
-      votes: allVotes.length,
-      chains: chainNames.length
-    })
-    
-    return {
-      proposals,
-      validators,
-      votes: allVotes,
-      metadata
-    }
-    
-  } catch (error) {
-    console.error('optimizedDataLoader: Failed to load optimized data:', error)
-    throw error
-  }
-}
+// 전체 데이터 로딩 함수 제거됨 - 개별 체인만 지원
 
 // 특정 체인의 데이터만 로드 (성능 최적화)
-export async function loadChainData(chainName: string): Promise<{
+export async function loadChainDataOnDemand(chainName: string): Promise<{
   proposals: OptimizedProposal[]
   validators: OptimizedValidator[]
   votes: OptimizedVote[]
 }> {
   try {
+    console.log(`optimizedDataLoader: Loading data for chain: ${chainName}`)
+    
     const [metadata, validatorMapping, proposalMapping] = await Promise.all([
       loadMetadata(),
       loadJSON('/optimized_data/validators.json'),
       loadJSON('/optimized_data/proposals.json')
     ])
-    
-    // 해당 체인의 votes만 로드
+
+    // 체인별 votes 로드
     const fileName = chainName.toLowerCase().replace(' ', '_').replace('-', '_')
     const chainVotes = await loadOptimizedCSV<OptimizedVote>(
       `/optimized_data/votes/${fileName}_votes.csv`
     )
     
-    // 해당 체인의 proposals와 validators 필터링
-    const chainProposals = Object.entries(proposalMapping)
-      .filter(([_, data]: [string, any]) => data.chain === chainName)
+    // 해당 체인의 데이터만 필터링
+    const chainProposals: OptimizedProposal[] = Object.entries(proposalMapping)
+      .filter(([, data]: [string, any]) => data.chain.toLowerCase() === chainName.toLowerCase())
       .map(([id, data]: [string, any]) => ({
         id,
         chain: data.chain,
@@ -224,16 +138,27 @@ export async function loadChainData(chainName: string): Promise<{
         category: data.category,
         topic: data.topic
       }))
-    
-    const chainValidators = Object.entries(validatorMapping)
-      .filter(([_, data]: [string, any]) => data.chain === chainName)
+
+    const chainValidators: OptimizedValidator[] = Object.entries(validatorMapping)
+      .filter(([, data]: [string, any]) => data.chain.toLowerCase() === chainName.toLowerCase())
       .map(([id, data]: [string, any]) => ({
         id,
         chain: data.chain,
         address: data.address,
         name: data.name
       }))
-    
+
+    // 체인 정보를 votes에 추가
+    chainVotes.forEach(vote => {
+      vote.chain = chainName
+    })
+
+    console.log(`optimizedDataLoader: Loaded ${chainName} data:`, {
+      proposals: chainProposals.length,
+      validators: chainValidators.length,
+      votes: chainVotes.length
+    })
+
     return {
       proposals: chainProposals,
       validators: chainValidators,
@@ -241,10 +166,12 @@ export async function loadChainData(chainName: string): Promise<{
     }
     
   } catch (error) {
-    console.error(`Failed to load data for chain ${chainName}:`, error)
+    console.error(`optimizedDataLoader: Failed to load data for ${chainName}:`, error)
     throw error
   }
 }
+
+// 다중 체인 데이터 로딩 함수 제거됨 - 단일 체인만 지원
 
 // 투표 옵션 디코딩
 export function decodeVoteOption(voteCode: number, metadata: any): string {
@@ -258,17 +185,23 @@ export function decodeChainName(chainId: number, metadata: any): string {
 }
 
 // 기존 dataLoader와 호환성을 위한 변환 함수
-export function convertToLegacyFormat(optimizedData: OptimizedData) {
-  console.log('convertToLegacyFormat: Starting conversion...')
-  
-  // 체인명을 체인 ID로 매핑
-  const chainToId = optimizedData.metadata.chains
-  
-  return {
-    proposals: optimizedData.proposals.map(p => ({
-      proposal_id: p.id,
+export function convertToLegacyFormat(optimizedData: OptimizedData): {
+  proposals: any[];
+  validators: any[];
+  votes: any[];
+} {
+  console.log('convertToLegacyFormat: Starting conversion...');
+
+  const { proposals, validators, votes, metadata } = optimizedData;
+  const chainToId = metadata.chains;
+
+  const legacyProposals = proposals.map(p => {
+    const chainId = chainToId[p.chain];
+    const shortId = p.id.includes('_') ? p.id.split('_')[1] : p.id;
+    return {
+      proposal_id: `${chainId}_${shortId}`,
       chain: p.chain,
-      original_id: p.id.split('_')[1],
+      original_id: p.id,
       title: p.title,
       type: p.type,
       status: p.passed ? 'PASSED' : 'FAILED',
@@ -280,40 +213,39 @@ export function convertToLegacyFormat(optimizedData: OptimizedData) {
       high_level_category: p.category,
       topic_subject: p.topic,
       passed: p.passed
-    })),
-    validators: optimizedData.validators.map(v => ({
-      validator_id: v.id,
+    };
+  });
+
+  const legacyValidators = validators.map(v => {
+    const chainId = chainToId[v.chain];
+    const shortId = v.id.includes('_') ? v.id.split('_')[1] : v.id;
+    return {
+      validator_id: `${chainId}_${shortId}`,
       chain: v.chain,
       validator_address: v.address,
       voter_name: v.name
-    })),
-    votes: optimizedData.votes.map(v => {
-      // 체인 정보가 없으면 스킵
-      if (!v.chain) {
-        return null
-      }
-      
-      // 체인 ID 가져오기
-      const chainId = chainToId[v.chain]
-      if (chainId === undefined) {
-        console.warn(`Unknown chain: ${v.chain}`)
-        return null
-      }
-      
-      // 전역 ID 생성: chainId_shortId 형식
-      const globalValidatorId = `${chainId}_${v.validator_short_id}`
-      const globalProposalId = `${chainId}_${v.proposal_short_id}`
-      
-      return {
-        proposal_id: globalProposalId,
-        validator_id: globalValidatorId,
-        vote_option: decodeVoteOption(v.vote_code, optimizedData.metadata),
-        voting_power: v.voting_power,
-        timestamp: v.timestamp,
-        tx_hash: ''
-      }
-    }).filter(v => v !== null) // null 값 제거
-  }
+    };
+  });
+
+  const legacyVotes = votes.map(v => {
+    if (!v.chain) return null;
+    const chainId = chainToId[v.chain];
+    if (chainId === undefined) return null;
+
+    const globalValidatorId = `${chainId}_${v.validator_short_id}`;
+    const globalProposalId = `${chainId}_${v.proposal_short_id}`;
+
+    return {
+      proposal_id: globalProposalId,
+      validator_id: globalValidatorId,
+      vote_code: v.vote_code,
+      voting_power: v.voting_power,
+      timestamp: v.timestamp,
+      tx_hash: ''
+    };
+  }).filter(v => v !== null);
+
+  return { proposals: legacyProposals, validators: legacyValidators, votes: legacyVotes };
 }
 
 // 성능 통계

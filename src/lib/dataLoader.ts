@@ -1,4 +1,4 @@
-import { loadOptimizedData, convertToLegacyFormat } from './optimizedDataLoader'
+import { loadChainDataOnDemand, convertToLegacyFormat } from './optimizedDataLoader'
 
 export interface Proposal {
   proposal_id: string
@@ -27,7 +27,7 @@ export interface Validator {
 export interface Vote {
   proposal_id: string
   validator_id: string
-  vote_option: string
+  vote_code: number
   voting_power: number
   timestamp: number
   tx_hash: string
@@ -39,29 +39,37 @@ export interface ProcessedData {
   votes: Vote[]
 }
 
-// 모든 데이터 로드 (최적화된 구조만 사용)
-export async function loadAllData(): Promise<ProcessedData> {
+// 체인별 온디맨드 데이터 로드 (메인 로딩 함수)
+export async function loadChainData(chainName: string): Promise<ProcessedData> {
   try {
-    console.log('dataLoader: Loading optimized data...')
+    console.log(`dataLoader: Loading data for chain: ${chainName}`)
     
-    // 최적화된 데이터 로드
-    const optimizedData = await loadOptimizedData()
-    console.log('dataLoader: Optimized data loaded successfully')
+    // 체인별 최적화된 데이터 로드
+    const chainData = await loadChainDataOnDemand(chainName)
     
     // 기존 형식으로 변환하여 호환성 유지
-    console.log('dataLoader: Converting to legacy format...')
-    const legacyData = convertToLegacyFormat(optimizedData)
+    console.log(`dataLoader: Converting ${chainName} data to legacy format...`)
+    const legacyData = convertToLegacyFormat({
+      proposals: chainData.proposals,
+      validators: chainData.validators,
+      votes: chainData.votes,
+      metadata: {
+        chains: { [chainName]: 1 },
+        vote_options: {},
+        structure_version: "2.0"
+      }
+    })
     
-    console.log('dataLoader: Optimized data loaded and converted:', {
+    console.log(`dataLoader: Chain data loaded for ${chainName}:`, {
       proposals: legacyData.proposals.length,
       validators: legacyData.validators.length,
       votes: legacyData.votes.length,
-      savings: '79% smaller files'
+      performance: 'Chain-specific data loading optimized'
     })
 
     return legacyData
   } catch (error) {
-    console.error('dataLoader: Failed to load optimized data:', error)
+    console.error(`dataLoader: Failed to load data for chain ${chainName}:`, error)
     throw error
   }
 }

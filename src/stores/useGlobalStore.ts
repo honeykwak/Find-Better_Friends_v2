@@ -1,18 +1,29 @@
 import { create } from 'zustand'
-import { loadAllData, processProposalData, processValidatorData, type Proposal, type Vote, type Validator } from '@/lib/dataLoader'
+import { processProposalData, processValidatorData, calculateSimilarity, loadChainData, type Proposal, type Vote, type Validator } from '@/lib/dataLoader'
+import PrecomputedDataLoader from '@/lib/precomputedDataLoader'
+
+// 투표 유형 분포 타입
+interface VoteDistribution {
+  YES: number
+  NO: number
+  ABSTAIN: number
+  NO_WITH_VETO: number
+  NO_VOTE: number
+}
 
 // 카테고리 계층 구조 타입
 interface CategoryHierarchy {
   name: string
   count: number
   passRate: number
-  topics: { name: string; count: number; passRate: number }[]
+  voteDistribution: VoteDistribution
+  votingPowerDistribution: VoteDistribution // 🔥 투표력 분포 추가
+  topics: { name: string; count: number; passRate: number; voteDistribution: VoteDistribution; votingPowerDistribution: VoteDistribution }[] // 🔥 토픽에도 투표력 분포 추가
 }
 
 // 프로포절 관련 데이터 타입
 interface ProposalData {
   categories: { name: string; passRate: number; count: number }[]
-  categoryHierarchy: CategoryHierarchy[]
   chains: { name: string; proposals: number; passRate: number }[]
   trends: { year: number; count: number; passRate: number }[]
 }
@@ -60,28 +71,38 @@ interface GlobalStore {
   selectedTopics: string[] // 다중 상세 카테고리 선택
   searchTerm: string
   
+  // 시각화 모드 상태
+  categoryVisualizationMode: 'passRate' | 'voteCount' | 'votingPower' // 3가지 모드 지원
+  
+  // 메모이제이션 캐시
+  categoryHierarchyCache: Map<string, CategoryHierarchy[]>
+  
+  // 사전 계산된 데이터 상태
+  precomputedCategoryData: CategoryHierarchy[] | null
+  
   // UI 상태
   loading: boolean
   error: string | null
   windowSize: { width: number; height: number }
   showInfo: boolean
-  splitRatio: number // 프로포절:검증인 분할 비율 (0.3 = 30%:70%)
   
   // 검증인 특화 상태
   selectedValidator: ProcessedValidator | null
   
   // 액션들
   loadData: () => Promise<void>
+  loadChainDataOnDemand: (chainName: string) => Promise<void> // 새로 추가
+  loadPrecomputedCategoryData: (chain: string) => Promise<void>
   setSelectedChain: (chain: string) => void
   setSelectedCategories: (categories: string[]) => void
   setSelectedTopics: (topics: string[]) => void
   toggleCategory: (category: string) => void
   toggleTopic: (topic: string) => void
   setSearchTerm: (term: string) => void
+  setCategoryVisualizationMode: (mode: 'passRate' | 'voteCount' | 'votingPower') => void
   setWindowSize: (size: { width: number; height: number }) => void
   setShowInfo: (show: boolean) => void
   setSelectedValidator: (validator: ProcessedValidator | null) => void
-  setSplitRatio: (ratio: number) => void
   
   // 필터링된 데이터 가져오기
   getFilteredProposals: () => Proposal[]
@@ -128,25 +149,28 @@ export const useGlobalStore = create<GlobalStore>((set, get) => ({
     selectedValidator: null,
     similarValidators: []
   },
-  selectedChain: 'all',
+  selectedChain: 'cosmos', // 기본값을 Cosmos Hub로 설정
   selectedCategories: [],
   selectedTopics: [],
   searchTerm: '',
+  categoryVisualizationMode: 'passRate', // 기본값은 통과율 모드
+  categoryHierarchyCache: new Map(),
+  precomputedCategoryData: null,
   loading: true,
   error: null,
   windowSize: { width: 0, height: 0 },
   showInfo: false,
   selectedValidator: null,
-  splitRatio: 0.3, // 기본값: 30%:70%
 
   // 데이터 로딩
   loadData: async () => {
     try {
       set({ loading: true, error: null })
-      console.log('GlobalStore: Starting data load...')
+      console.log('GlobalStore: Starting initial data load...')
       
-      const { proposals, validators, votes } = await loadAllData()
-      console.log('GlobalStore: Data loaded successfully:', {
+      // 기본 체인(Cosmos Hub) 데이터 로드
+      const { proposals, validators, votes } = await loadChainData('cosmos')
+      console.log('GlobalStore: Initial data loaded successfully:', {
         proposals: proposals.length,
         validators: validators.length,
         votes: votes.length
@@ -163,12 +187,53 @@ export const useGlobalStore = create<GlobalStore>((set, get) => ({
       const filteredValidators = processedValidators.filter(v => v !== null) as ProcessedValidator[]
       console.log('GlobalStore: Filtered validators count:', filteredValidators.length)
       
-      // 체인별 검증인 수 확인
-      const validatorsByChain = filteredValidators.reduce((acc, v) => {
-        acc[v.chain] = (acc[v.chain] || 0) + 1
-        return acc
-      }, {} as Record<string, number>)
-      console.log('GlobalStore: Validators by chain:', validatorsByChain)
+      set({
+        rawProposals: proposals,
+        rawValidators: validators,
+        rawVotes: votes,
+        proposalData: processedProposalData,
+        validatorData: {
+          validators: filteredValidators,
+          selectedValidator: null,
+          similarValidators: []
+        },
+        loading: false
+      })
+      
+      // 초기 사전 계산된 데이터 로드 (기본 체인) - 비동기 처리로 오류 방지
+      get().loadPrecomputedCategoryData('cosmos').catch(error => {
+        console.error('Failed to load initial precomputed category data:', error)
+      })
+      
+      console.log('GlobalStore: Initial data processing complete')
+    } catch (err: any) {
+      console.error('GlobalStore: Failed to load data:', err)
+      set({ 
+        error: `Failed to load data: ${err?.message || 'Unknown error'}`,
+        loading: false 
+      })
+    }
+  },
+
+  // 🔥 새로운 기능: 체인별 온디맨드 데이터 로딩
+  loadChainDataOnDemand: async (chainName: string) => {
+    try {
+      set({ loading: true, error: null })
+      console.log(`GlobalStore: Loading data on-demand for chain: ${chainName}`)
+      
+      // 특정 체인 데이터 로드
+      const data = await loadChainData(chainName)
+      console.log(`GlobalStore: Chain-specific data loaded for ${chainName}`)
+      
+      const { proposals, validators, votes } = data
+      
+      // 프로포절 데이터 처리
+      const processedProposalData = processProposalData(proposals)
+      
+      // 검증인 데이터 처리
+      console.log('GlobalStore: Processing validator data for selected chain...')
+      const processedValidators = processValidatorData(validators, votes, proposals)
+      const filteredValidators = processedValidators.filter(v => v !== null) as ProcessedValidator[]
       
       set({
         rawProposals: proposals,
@@ -183,25 +248,94 @@ export const useGlobalStore = create<GlobalStore>((set, get) => ({
         loading: false
       })
       
-      console.log('GlobalStore: Data processing complete')
+      // 사전 계산된 데이터 로드
+      get().loadPrecomputedCategoryData(chainName).catch(error => {
+        console.error('Failed to load precomputed category data for chain:', error)
+      })
+      
+      const performanceInfo = chainName === 'all' 
+        ? 'Full dataset loaded' 
+        : `~90% data reduction vs loading all chains`
+      
+      console.log(`GlobalStore: Chain data loaded successfully for ${chainName}:`, {
+        proposals: proposals.length,
+        validators: validators.length,
+        votes: votes.length,
+        performance: performanceInfo
+      })
+      
     } catch (err: any) {
-      console.error('GlobalStore: Failed to load data:', err)
+      console.error(`GlobalStore: Failed to load data for chain ${chainName}:`, err)
       set({ 
-        error: `Failed to load data: ${err?.message || 'Unknown error'}`,
+        error: `Failed to load data for ${chainName}: ${err?.message || 'Unknown error'}`,
         loading: false 
       })
     }
   },
 
+  // 사전 계산된 카테고리 데이터 로드
+  loadPrecomputedCategoryData: async (chain: string) => {
+    try {
+      const precomputedLoader = PrecomputedDataLoader.getInstance()
+      const categoryData = await precomputedLoader.loadCategoryDistributions(
+        chain === 'all' ? [] : [chain]
+      )
+      
+      // 데이터 구조 변환: PrecomputedAllData -> CategoryHierarchy[]
+      const categoryHierarchy: CategoryHierarchy[] = Object.entries(categoryData.categories).map(([name, data]) => {
+        // 해당 카테고리의 토픽들 찾기
+        const topics = Object.entries(categoryData.topics)
+          .filter(([, topicData]) => topicData.category === name)
+          .map(([topicName, topicData]) => ({
+            name: topicName,
+            count: topicData.count,
+            passRate: topicData.passRate,
+            voteDistribution: topicData.voteDistribution,
+            votingPowerDistribution: topicData.votingPowerDistribution // 🔥 누락된 투표력 분포 추가
+          }))
+          .sort((a, b) => b.count - a.count)
+        
+        return {
+          name,
+          count: data.count,
+          passRate: data.passRate,
+          voteDistribution: data.voteDistribution,
+          votingPowerDistribution: data.votingPowerDistribution, // 🔥 누락된 투표력 분포 추가
+          topics
+        }
+      }).sort((a, b) => b.count - a.count)
+      
+      set({ precomputedCategoryData: categoryHierarchy })
+      console.log('GlobalStore: Precomputed category data loaded for chain:', chain)
+    } catch (error) {
+      console.error('GlobalStore: Failed to load precomputed category data:', error)
+      set({ precomputedCategoryData: null })
+    }
+  },
+
   // 필터 액션들
   setSelectedChain: (chain: string) => {
-    // 체인 변경 시 카테고리와 토픽 선택 초기화 (계층적 필터링)
+    const { categoryHierarchyCache, loadChainDataOnDemand, selectedChain } = get()
+    
+    // 같은 체인이면 아무것도 하지 않음 (무한 루프 방지)
+    if (selectedChain === chain) {
+      return
+    }
+    
+    categoryHierarchyCache.clear() // 캐시 무효화
+    
     set({ 
       selectedChain: chain,
       selectedCategories: [],
       selectedTopics: []
     })
-    console.log('GlobalStore: Chain filter changed to:', chain, '- Categories and topics reset')
+    
+    // 🔥 성능 최적화: 체인별 온디맨드 로딩
+    loadChainDataOnDemand(chain).catch(error => {
+      console.error('Failed to load chain data on demand:', error)
+    })
+    
+    console.log(`GlobalStore: Chain filter changed to: ${chain} - Loading data on demand...`)
   },
 
   setSelectedCategories: (categories: string[]) => {
@@ -234,6 +368,17 @@ export const useGlobalStore = create<GlobalStore>((set, get) => ({
     set({ searchTerm: term })
   },
 
+  setCategoryVisualizationMode: (mode: 'passRate' | 'voteCount' | 'votingPower') => {
+    // 🔥 성능 최적화: 동일한 모드일 때 불필요한 상태 업데이트 방지
+    const { categoryVisualizationMode } = get()
+    if (categoryVisualizationMode === mode) {
+      return // 이미 같은 모드인 경우 상태 업데이트 방지
+    }
+    
+    set({ categoryVisualizationMode: mode })
+    console.log('GlobalStore: Category visualization mode changed to:', mode)
+  },
+
   // UI 상태 액션들
   setWindowSize: (size: { width: number; height: number }) => {
     set({ windowSize: size })
@@ -264,11 +409,7 @@ export const useGlobalStore = create<GlobalStore>((set, get) => ({
     }
   },
 
-  setSplitRatio: (ratio: number) => {
-    // 비율을 0.1 ~ 0.9 사이로 제한
-    const clampedRatio = Math.max(0.1, Math.min(0.9, ratio))
-    set({ splitRatio: clampedRatio })
-  },
+
 
   // 필터링된 데이터 가져오기 (계층적 필터링)
   getFilteredProposals: () => {
@@ -276,9 +417,8 @@ export const useGlobalStore = create<GlobalStore>((set, get) => ({
     let filtered = rawProposals
 
     // 1단계: 체인 필터링 (최우선)
-    if (selectedChain !== 'all') {
-      filtered = filtered.filter(p => p.chain === selectedChain)
-    }
+    // 선택된 체인의 프로포절만 필터링
+    filtered = filtered.filter(p => p.chain === selectedChain)
 
     // 2단계: 카테고리 필터링 (체인 필터링 후)
     if (selectedCategories.length > 0) {
@@ -301,11 +441,10 @@ export const useGlobalStore = create<GlobalStore>((set, get) => ({
     console.log('getFilteredValidators: Selected chain:', selectedChain)
     console.log('getFilteredValidators: Search term:', searchTerm)
 
-    if (selectedChain !== 'all') {
-      const beforeFilter = filtered.length
-      filtered = filtered.filter(v => v.chain === selectedChain)
-      console.log(`getFilteredValidators: Chain filter - before: ${beforeFilter}, after: ${filtered.length}`)
-    }
+    // 선택된 체인의 검증자만 필터링
+    const beforeFilter = filtered.length
+    filtered = filtered.filter(v => v.chain === selectedChain)
+    console.log(`getFilteredValidators: Chain filter - before: ${beforeFilter}, after: ${filtered.length}`)
 
     if (searchTerm) {
       const term = searchTerm.toLowerCase()
@@ -329,8 +468,26 @@ export const useGlobalStore = create<GlobalStore>((set, get) => ({
   },
 
   getChains: () => {
-    const { rawProposals } = get()
-    return ['all', ...Array.from(new Set(rawProposals.map(p => p.chain)))]
+    // 사용 가능한 모든 체인 목록 (메타데이터 기반)
+    return [
+      'akash',
+      'axelar', 
+      'cosmos',
+      'dydx',
+      'evmos',
+      'finschia',
+      'gravity-bridge',
+      'injective',
+      'iris',
+      'juno',
+      'kava',
+      'kyve',
+      'osmosis',
+      'secret',
+      'sentinel',
+      'stargaze',
+      'terra'
+    ]
   },
 
   getCategories: () => {
@@ -338,63 +495,18 @@ export const useGlobalStore = create<GlobalStore>((set, get) => ({
     return proposalData ? proposalData.categories.map(c => c.name) : []
   },
 
-  // 선택된 체인에 따른 필터링된 카테고리 계층 구조
+  // 선택된 체인에 따른 필터링된 카테고리 계층 구조 (사전 계산된 데이터 사용)
   getFilteredCategoryHierarchy: () => {
-    const { rawProposals, selectedChain } = get()
+    const { precomputedCategoryData } = get()
     
-    // 체인 필터링
-    let filteredProposals = rawProposals
-    if (selectedChain !== 'all') {
-      filteredProposals = filteredProposals.filter(p => p.chain === selectedChain)
+    // 사전 계산된 데이터가 있으면 반환
+    if (precomputedCategoryData) {
+      return precomputedCategoryData
     }
-
-    // 카테고리별 통계 계산
-    const categoryStats = filteredProposals.reduce((acc, proposal) => {
-      const category = proposal.high_level_category || 'Unknown'
-      if (!acc[category]) {
-        acc[category] = { total: 0, passed: 0 }
-      }
-      acc[category].total++
-      if (proposal.passed) {
-        acc[category].passed++
-      }
-      return acc
-    }, {} as Record<string, { total: number; passed: number }>)
-
-    // 카테고리 계층 구조 생성
-    const categoryHierarchy = Object.entries(categoryStats).map(([categoryName, categoryStats]) => {
-      // 해당 카테고리의 모든 토픽 수집
-      const topicStats = filteredProposals
-        .filter(p => p.high_level_category === categoryName)
-        .reduce((acc, proposal) => {
-          const topic = proposal.topic_subject || 'Unknown'
-          if (!acc[topic]) {
-            acc[topic] = { total: 0, passed: 0 }
-          }
-          acc[topic].total++
-          if (proposal.passed) {
-            acc[topic].passed++
-          }
-          return acc
-        }, {} as Record<string, { total: number; passed: number }>)
-
-      const topics = Object.entries(topicStats)
-        .map(([name, stats]) => ({
-          name,
-          count: stats.total,
-          passRate: (stats.passed / stats.total) * 100
-        }))
-        .sort((a, b) => b.count - a.count)
-
-      return {
-        name: categoryName,
-        count: categoryStats.total,
-        passRate: (categoryStats.passed / categoryStats.total) * 100,
-        topics
-      }
-    }).sort((a, b) => b.count - a.count)
-
-    return categoryHierarchy
+    
+    // 사전 계산된 데이터가 없으면 빈 배열 반환
+    console.warn('GlobalStore: No precomputed category data available')
+    return []
   },
 
   // 동적 검증인 통계 계산 (참여율/영향력은 필터 기준, 투표력 트렌드는 체인 전체 기준)
@@ -406,8 +518,7 @@ export const useGlobalStore = create<GlobalStore>((set, get) => ({
     const filteredProposalIds = new Set(filteredProposals.map(p => p.proposal_id))
     
     // 체인 전체 프로포절들 (투표력 트렌드용)
-    const chainProposals = selectedChain === 'all' ? rawProposals : 
-      rawProposals.filter(p => p.chain === selectedChain)
+    const chainProposals = rawProposals.filter(p => p.chain === selectedChain)
     const chainProposalIds = new Set(chainProposals.map(p => p.proposal_id))
     
     // 검증인 정보 가져오기
