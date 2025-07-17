@@ -1,0 +1,1233 @@
+[
+  {
+    "proposal_id": "273",
+    "chain_id": "akash",
+    "title": "Akash Network Provider Incentives Pilot 02",
+    "type": "CommunityPoolSpend",
+    "topic": "Development Fund",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 62,
+      "abstain_count": 6,
+      "no_vote_count": 32
+    }
+  },
+  {
+    "proposal_id": "272",
+    "chain_id": "akash",
+    "title": "2024 Q4 Events Resourcing Proposal",
+    "type": "CommunityPoolSpend",
+    "topic": "Development Fund",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 56,
+      "abstain_count": 11,
+      "no_vote_count": 33
+    }
+  },
+  {
+    "proposal_id": "271",
+    "chain_id": "akash",
+    "title": "FINAL PAYMENT FOR COMPLETED MILESTONES Revised Adding Full Akash Support  Features to the Cosmos Metamask Snap",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 51,
+      "abstain_count": 16,
+      "no_vote_count": 33
+    }
+  },
+  {
+    "proposal_id": "270",
+    "chain_id": "akash",
+    "title": "Akash Payments Console 20 Funding Request",
+    "type": "CommunityPoolSpend",
+    "topic": "Development Fund",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 55,
+      "abstain_count": 6,
+      "no_vote_count": 39
+    }
+  },
+  {
+    "proposal_id": "269",
+    "chain_id": "akash",
+    "title": "2024 Q4 Community Support Proposal",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 58,
+      "abstain_count": 5,
+      "no_vote_count": 37
+    }
+  },
+  {
+    "proposal_id": "268",
+    "chain_id": "akash",
+    "title": "Upgrading to COSMOS v047",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 73,
+      "no_vote_count": 27
+    }
+  },
+  {
+    "proposal_id": "267",
+    "chain_id": "akash",
+    "title": "Reduce Take Rate for uAKT and axlUSDC denoms",
+    "type": "ParameterChange",
+    "topic": "Staking Parameters",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 75,
+      "no_vote_count": 25
+    }
+  },
+  {
+    "proposal_id": "266",
+    "chain_id": "akash",
+    "title": "FINAL PAYMENT FOR COMPLETED MILESTONES Adding Full Akash Support  Features to the Cosmos Metamask Snap",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "REJECTED",
+    "final_tally_result": {
+      "no_count": 50,
+      "abstain_count": 9,
+      "yes_count": 8,
+      "no_vote_count": 33
+    }
+  },
+  {
+    "proposal_id": "265",
+    "chain_id": "akash",
+    "title": "August 2024 Inflation Update Proposal",
+    "type": "ParameterChange",
+    "topic": "Fee Adjustment",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 69,
+      "abstain_count": 4,
+      "no_count": 2,
+      "no_vote_count": 25
+    }
+  },
+  {
+    "proposal_id": "263",
+    "chain_id": "akash",
+    "title": "Developer Onboarding Funding Proposal 2 Zealy",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "PASSED",
+    "final_tally_result": {
+      "no_count": 1,
+      "yes_count": 66,
+      "abstain_count": 9,
+      "no_vote_count": 24
+    }
+  },
+  {
+    "proposal_id": "262",
+    "chain_id": "akash",
+    "title": "Revive AkashComdex IBC client",
+    "type": "IBCRelated",
+    "topic": "Client Update",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 69,
+      "no_count": 1,
+      "abstain_count": 2,
+      "no_vote_count": 28
+    }
+  },
+  {
+    "proposal_id": "261",
+    "chain_id": "akash",
+    "title": "Verifiable Compute for Akash Network",
+    "type": "CommunityPoolSpend",
+    "topic": "Infrastructure",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 57,
+      "abstain_count": 10,
+      "no_count": 7,
+      "no_vote_count": 26
+    }
+  },
+  {
+    "proposal_id": "260",
+    "chain_id": "akash",
+    "title": "2024 Q3 Events Resourcing Proposal",
+    "type": "CommunityPoolSpend",
+    "topic": "Development Fund",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 66,
+      "abstain_count": 4,
+      "no_vote_count": 30
+    }
+  },
+  {
+    "proposal_id": "259",
+    "chain_id": "akash",
+    "title": "2024 Q3 Community Support Proposal",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 66,
+      "abstain_count": 4,
+      "no_vote_count": 30
+    }
+  },
+  {
+    "proposal_id": "258",
+    "chain_id": "akash",
+    "title": "Effortless Deployment from GitHubGitLabBitbucket to the Akash Network on Akash Console",
+    "type": "CommunityPoolSpend",
+    "topic": "Development Fund",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 67,
+      "abstain_count": 4,
+      "no_vote_count": 29
+    }
+  },
+  {
+    "proposal_id": "257",
+    "chain_id": "akash",
+    "title": "v0360",
+    "type": "SoftwareUpgrade",
+    "topic": "Major Release",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 73,
+      "no_vote_count": 27
+    }
+  },
+  {
+    "proposal_id": "256",
+    "chain_id": "akash",
+    "title": "v0340",
+    "type": "SoftwareUpgrade",
+    "topic": "Major Release",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 80,
+      "no_vote_count": 20
+    }
+  },
+  {
+    "proposal_id": "255",
+    "chain_id": "akash",
+    "title": "Community Funding for Praetor Acquisition",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 59,
+      "abstain_count": 6,
+      "no_vote_count": 35
+    }
+  },
+  {
+    "proposal_id": "254",
+    "chain_id": "akash",
+    "title": "2024 Q2 Akash Events Resourcing Proposal",
+    "type": "CommunityPoolSpend",
+    "topic": "Development Fund",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 63,
+      "abstain_count": 5,
+      "no_vote_count": 32
+    }
+  },
+  {
+    "proposal_id": "253",
+    "chain_id": "akash",
+    "title": "Streamline OpenSource LLMs Deployment from HuggingFace onto Akash",
+    "type": "CommunityPoolSpend",
+    "topic": "Development Fund",
+    "status": "REJECTED",
+    "final_tally_result": {
+      "no_count": 58,
+      "abstain_count": 12,
+      "yes_count": 5,
+      "no_vote_count": 25
+    }
+  },
+  {
+    "proposal_id": "252",
+    "chain_id": "akash",
+    "title": "Coinbase Learning Rewards and Quests",
+    "type": "CommunityPoolSpend",
+    "topic": "Ecosystem Growth",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 61,
+      "no_count": 5,
+      "abstain_count": 12,
+      "no_vote_count": 22
+    }
+  },
+  {
+    "proposal_id": "251",
+    "chain_id": "akash",
+    "title": "Revive Expired OmniFlix IBC Channel channel61",
+    "type": "IBCRelated",
+    "topic": "Client Update",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 69,
+      "abstain_count": 1,
+      "no_vote_count": 30
+    }
+  },
+  {
+    "proposal_id": "250",
+    "chain_id": "akash",
+    "title": "Akash Accelerate 2024",
+    "type": "CommunityPoolSpend",
+    "topic": "Ecosystem Growth",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 70,
+      "abstain_count": 3,
+      "no_vote_count": 27
+    }
+  },
+  {
+    "proposal_id": "249",
+    "chain_id": "akash",
+    "title": "v0320",
+    "type": "SoftwareUpgrade",
+    "topic": "Major Release",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 78,
+      "no_vote_count": 22
+    }
+  },
+  {
+    "proposal_id": "248",
+    "chain_id": "akash",
+    "title": "Decrease the minimum deposit amount for deployment and bid transactions",
+    "type": "ParameterChange",
+    "topic": "Staking Parameters",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 76,
+      "abstain_count": 1,
+      "no_vote_count": 23
+    }
+  },
+  {
+    "proposal_id": "247",
+    "chain_id": "akash",
+    "title": "Developer Onboarding Funding Proposal Zealy",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 64,
+      "abstain_count": 4,
+      "no_vote_count": 32
+    }
+  },
+  {
+    "proposal_id": "246",
+    "chain_id": "akash",
+    "title": "Akash Network Provider Incentive Pilot",
+    "type": "CommunityPoolSpend",
+    "topic": "Development Fund",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 77,
+      "abstain_count": 2,
+      "no_vote_count": 21
+    }
+  },
+  {
+    "proposal_id": "245",
+    "chain_id": "akash",
+    "title": "2024 Q1 Community Support Proposal",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 67,
+      "abstain_count": 1,
+      "no_vote_count": 32
+    }
+  },
+  {
+    "proposal_id": "244",
+    "chain_id": "akash",
+    "title": "2024 Q1 Akash Events Resourcing Proposal",
+    "type": "CommunityPoolSpend",
+    "topic": "Development Fund",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 61,
+      "abstain_count": 14,
+      "no_vote_count": 25
+    }
+  },
+  {
+    "proposal_id": "243",
+    "chain_id": "akash",
+    "title": "2024 Q1 Community Support Proposal",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 70,
+      "abstain_count": 5,
+      "no_vote_count": 25
+    }
+  },
+  {
+    "proposal_id": "242",
+    "chain_id": "akash",
+    "title": "Creating an automated auditor with opensource tooling  misc contributions to Cloudmos",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 72,
+      "abstain_count": 5,
+      "no_count": 1,
+      "no_vote_count": 22
+    }
+  },
+  {
+    "proposal_id": "241",
+    "chain_id": "akash",
+    "title": "December 2023 Akash Community Pool  Inflation Proposal  Supplemental",
+    "type": "ParameterChange",
+    "topic": "Economic Parameters",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 72,
+      "abstain_count": 2,
+      "no_vote_count": 26
+    }
+  },
+  {
+    "proposal_id": "240",
+    "chain_id": "akash",
+    "title": "December 2023 Akash Community Pool  Inflation Proposal",
+    "type": "ParameterChange",
+    "topic": "Economic Parameters",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 65,
+      "abstain_count": 3,
+      "no_vote_count": 32
+    }
+  },
+  {
+    "proposal_id": "239",
+    "chain_id": "akash",
+    "title": "2024 Akash Events Resourcing Signaling Proposal",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 59,
+      "abstain_count": 3,
+      "no_vote_count": 38
+    }
+  },
+  {
+    "proposal_id": "238",
+    "chain_id": "akash",
+    "title": "v0300",
+    "type": "SoftwareUpgrade",
+    "topic": "Major Release",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 77,
+      "no_vote_count": 23
+    }
+  },
+  {
+    "proposal_id": "237",
+    "chain_id": "akash",
+    "title": "v0280",
+    "type": "SoftwareUpgrade",
+    "topic": "Major Release",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 76,
+      "abstain_count": 1,
+      "no_vote_count": 23
+    }
+  },
+  {
+    "proposal_id": "236",
+    "chain_id": "akash",
+    "title": "AI Assisted Deployment Tool on AkashCloudmos",
+    "type": "CommunityPoolSpend",
+    "topic": "Infrastructure",
+    "status": "REJECTED",
+    "final_tally_result": {
+      "no_count": 26,
+      "yes_count": 38,
+      "abstain_count": 4,
+      "no_vote_count": 32
+    }
+  },
+  {
+    "proposal_id": "235",
+    "chain_id": "akash",
+    "title": "Incentivized AKT Lending Pool on Nitron",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "REJECTED",
+    "final_tally_result": {
+      "no_count": 28,
+      "yes_count": 3,
+      "abstain_count": 25,
+      "no_vote_count": 44
+    }
+  },
+  {
+    "proposal_id": "234",
+    "chain_id": "akash",
+    "title": "Akash  Thumper  AI Foundational Model",
+    "type": "CommunityPoolSpend",
+    "topic": "Development Fund",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 56,
+      "abstain_count": 14,
+      "no_vote_count": 30
+    }
+  },
+  {
+    "proposal_id": "233",
+    "chain_id": "akash",
+    "title": "Reduce Maximum Block Size",
+    "type": "ParameterChange",
+    "topic": "Fee Adjustment",
+    "status": "REJECTED",
+    "final_tally_result": {
+      "no_count": 47,
+      "yes_count": 17,
+      "abstain_count": 5,
+      "no_with_veto_count": 1,
+      "no_vote_count": 30
+    }
+  },
+  {
+    "proposal_id": "232",
+    "chain_id": "akash",
+    "title": "2023 Q4 Community Support Proposal",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 61,
+      "abstain_count": 4,
+      "no_vote_count": 35
+    }
+  },
+  {
+    "proposal_id": "231",
+    "chain_id": "akash",
+    "title": "v0260",
+    "type": "SoftwareUpgrade",
+    "topic": "Major Release",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 70,
+      "no_vote_count": 30
+    }
+  },
+  {
+    "proposal_id": "230",
+    "chain_id": "akash",
+    "title": "AkashNetwork comprehensive website Revamp Proposal",
+    "type": "CommunityPoolSpend",
+    "topic": "Development Fund",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 57,
+      "abstain_count": 7,
+      "no_vote_count": 36
+    }
+  },
+  {
+    "proposal_id": "229",
+    "chain_id": "akash",
+    "title": "Adding Full Akash Support  Features to the Cosmos Metamask Snap",
+    "type": "CommunityPoolSpend",
+    "topic": "Ecosystem Growth",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 69,
+      "abstain_count": 4,
+      "no_vote_count": 27
+    }
+  },
+  {
+    "proposal_id": "228",
+    "chain_id": "akash",
+    "title": "Introduce Take Rate and deployment deposit for axlUSDC",
+    "type": "ParameterChange",
+    "topic": "Staking Parameters",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 70,
+      "abstain_count": 1,
+      "no_vote_count": 29
+    }
+  },
+  {
+    "proposal_id": "224",
+    "chain_id": "akash",
+    "title": "v0240",
+    "type": "SoftwareUpgrade",
+    "topic": "Major Release",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 84,
+      "no_vote_count": 16
+    }
+  },
+  {
+    "proposal_id": "222",
+    "chain_id": "akash",
+    "title": "v0240",
+    "type": "SoftwareUpgrade",
+    "topic": "Major Release",
+    "status": "REJECTED",
+    "final_tally_result": {
+      "no_count": 63,
+      "no_with_veto_count": 5,
+      "yes_count": 4,
+      "no_vote_count": 28
+    }
+  },
+  {
+    "proposal_id": "216",
+    "chain_id": "akash",
+    "title": "Community Funding for Cloudmos Acquisition",
+    "type": "CommunityPoolSpend",
+    "topic": "Ecosystem Growth",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 70,
+      "abstain_count": 4,
+      "no_vote_count": 26
+    }
+  },
+  {
+    "proposal_id": "211",
+    "chain_id": "akash",
+    "title": "Akash Community Pool  Inflation Proposal",
+    "type": "ParameterChange",
+    "topic": "Staking Parameters",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 63,
+      "abstain_count": 5,
+      "no_vote_count": 32
+    }
+  },
+  {
+    "proposal_id": "208",
+    "chain_id": "akash",
+    "title": "2023 Q3 Community Support Proposal",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 55,
+      "abstain_count": 5,
+      "no_vote_count": 40
+    }
+  },
+  {
+    "proposal_id": "207",
+    "chain_id": "akash",
+    "title": "2023 Q3 Akash Events Resourcing Proposal",
+    "type": "CommunityPoolSpend",
+    "topic": "Development Fund",
+    "status": "PASSED",
+    "final_tally_result": {
+      "abstain_count": 6,
+      "yes_count": 48,
+      "no_vote_count": 46
+    }
+  },
+  {
+    "proposal_id": "206",
+    "chain_id": "akash",
+    "title": " ATOM Airdrop ",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "REJECTED",
+    "final_tally_result": {
+      "no_with_veto_count": 36,
+      "no_vote_count": 64
+    }
+  },
+  {
+    "proposal_id": "200",
+    "chain_id": "akash",
+    "title": "2023 Akash Events Resourcing Proposal",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "PASSED",
+    "final_tally_result": {
+      "no_count": 6,
+      "yes_count": 50,
+      "abstain_count": 7,
+      "no_vote_count": 37
+    }
+  },
+  {
+    "proposal_id": "199",
+    "chain_id": "akash",
+    "title": "Akash Hackathon Proposal",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 59,
+      "no_count": 1,
+      "abstain_count": 5,
+      "no_vote_count": 35
+    }
+  },
+  {
+    "proposal_id": "197",
+    "chain_id": "akash",
+    "title": "Proposal for increasing OrderMaxBids param",
+    "type": "ParameterChange",
+    "topic": "Fee Adjustment",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 60,
+      "abstain_count": 3,
+      "no_vote_count": 37
+    }
+  },
+  {
+    "proposal_id": "192",
+    "chain_id": "akash",
+    "title": " Akash Airdrop ",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "REJECTED",
+    "final_tally_result": {
+      "no_with_veto_count": 30,
+      "no_vote_count": 70
+    }
+  },
+  {
+    "proposal_id": "187",
+    "chain_id": "akash",
+    "title": "2023 Akash Events Resourcing Proposal",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 50,
+      "no_count": 6,
+      "abstain_count": 8,
+      "no_vote_count": 36
+    }
+  },
+  {
+    "proposal_id": "186",
+    "chain_id": "akash",
+    "title": "Akash Hackathon Proposal",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 60,
+      "abstain_count": 5,
+      "no_vote_count": 35
+    }
+  },
+  {
+    "proposal_id": "185",
+    "chain_id": "akash",
+    "title": "Community Funding request for Cloudmos",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "REJECTED",
+    "final_tally_result": {
+      "no_count": 32,
+      "yes_count": 12,
+      "abstain_count": 24,
+      "no_vote_count": 32
+    }
+  },
+  {
+    "proposal_id": "182",
+    "chain_id": "akash",
+    "title": "Community Funding request for Praetor",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 55,
+      "abstain_count": 7,
+      "no_vote_count": 38
+    }
+  },
+  {
+    "proposal_id": "180",
+    "chain_id": "akash",
+    "title": "ARBITRUM Airdrop",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "REJECTED",
+    "final_tally_result": {
+      "no_with_veto_count": 36,
+      "no_vote_count": 64
+    }
+  },
+  {
+    "proposal_id": "179",
+    "chain_id": "akash",
+    "title": "AKASH  LUNA Airdrop ",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "REJECTED",
+    "final_tally_result": {
+      "no_with_veto_count": 34,
+      "no_vote_count": 66
+    }
+  },
+  {
+    "proposal_id": "175",
+    "chain_id": "akash",
+    "title": "Akash New Version ",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "REJECTED",
+    "final_tally_result": {
+      "no_with_veto_count": 31,
+      "no_vote_count": 69
+    }
+  },
+  {
+    "proposal_id": "63",
+    "chain_id": "akash",
+    "title": "censure allnodes for insecure VaaS practices",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "PASSED",
+    "final_tally_result": {
+      "abstain_count": 9,
+      "yes_count": 35,
+      "no_count": 2,
+      "no_vote_count": 54
+    }
+  },
+  {
+    "proposal_id": "52",
+    "chain_id": "akash",
+    "title": "Community Funding request for Luna part 2",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 58,
+      "abstain_count": 4,
+      "no_vote_count": 38
+    }
+  },
+  {
+    "proposal_id": "31",
+    "chain_id": "akash",
+    "title": "Akash Cosmos Zero Offset Akash Validator Set Signaling proposal",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "REJECTED",
+    "final_tally_result": {
+      "no_count": 39,
+      "yes_count": 14,
+      "abstain_count": 15,
+      "no_with_veto_count": 1,
+      "no_vote_count": 31
+    }
+  },
+  {
+    "proposal_id": "30",
+    "chain_id": "akash",
+    "title": "Increase Community Tax",
+    "type": "ParameterChange",
+    "topic": "Protocol Configuration",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 55,
+      "no_count": 1,
+      "no_vote_count": 44
+    }
+  },
+  {
+    "proposal_id": "29",
+    "chain_id": "akash",
+    "title": "v0200",
+    "type": "SoftwareUpgrade",
+    "topic": "Major Release",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 72,
+      "no_vote_count": 28
+    }
+  },
+  {
+    "proposal_id": "28",
+    "chain_id": "akash",
+    "title": "Community Funding request for Luna",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 51,
+      "abstain_count": 2,
+      "no_vote_count": 47
+    }
+  },
+  {
+    "proposal_id": "27",
+    "chain_id": "akash",
+    "title": "v0180",
+    "type": "SoftwareUpgrade",
+    "topic": "Major Release",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 72,
+      "no_vote_count": 28
+    }
+  },
+  {
+    "proposal_id": "26",
+    "chain_id": "akash",
+    "title": "Increase the minimum commission rate to 5",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 34,
+      "abstain_count": 7,
+      "no_count": 7,
+      "no_vote_count": 52
+    }
+  },
+  {
+    "proposal_id": "25",
+    "chain_id": "akash",
+    "title": "Cloudmos Formerly Akashlytics CAB Funding",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "PASSED",
+    "final_tally_result": {
+      "abstain_count": 6,
+      "yes_count": 44,
+      "no_vote_count": 50
+    }
+  },
+  {
+    "proposal_id": "24",
+    "chain_id": "akash",
+    "title": "Akash CAB funding 3",
+    "type": "CommunityPoolSpend",
+    "topic": "Development Fund",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 59,
+      "no_vote_count": 41
+    }
+  },
+  {
+    "proposal_id": "23",
+    "chain_id": "akash",
+    "title": "Proposal to transition the CAB into the Akash Accelerator",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 43,
+      "abstain_count": 9,
+      "no_count": 3,
+      "no_vote_count": 45
+    }
+  },
+  {
+    "proposal_id": "22",
+    "chain_id": "akash",
+    "title": "Fund Moultrie Audits",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "PASSED",
+    "final_tally_result": {
+      "abstain_count": 19,
+      "yes_count": 32,
+      "no_count": 1,
+      "no_vote_count": 48
+    }
+  },
+  {
+    "proposal_id": "21",
+    "chain_id": "akash",
+    "title": "Infaltion Update 40",
+    "type": "ParameterChange",
+    "topic": "Fee Adjustment",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 52,
+      "abstain_count": 1,
+      "no_vote_count": 47
+    }
+  },
+  {
+    "proposal_id": "20",
+    "chain_id": "akash",
+    "title": "Convert CAB wallet to multisig",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 50,
+      "abstain_count": 4,
+      "no_count": 3,
+      "no_vote_count": 43
+    }
+  },
+  {
+    "proposal_id": "19",
+    "chain_id": "akash",
+    "title": "Akash Network  mainnet upgrade proposal",
+    "type": "SoftwareUpgrade",
+    "topic": "Feature Addition",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 71,
+      "abstain_count": 1,
+      "no_vote_count": 28
+    }
+  },
+  {
+    "proposal_id": "17",
+    "chain_id": "akash",
+    "title": "Voting Period Change",
+    "type": "ParameterChange",
+    "topic": "Governance Settings",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 63,
+      "no_vote_count": 37
+    }
+  },
+  {
+    "proposal_id": "16",
+    "chain_id": "akash",
+    "title": "Akash CAB funding 2",
+    "type": "CommunityPoolSpend",
+    "topic": "Development Fund",
+    "status": "PASSED",
+    "final_tally_result": {
+      "abstain_count": 5,
+      "yes_count": 46,
+      "no_vote_count": 49
+    }
+  },
+  {
+    "proposal_id": "15",
+    "chain_id": "akash",
+    "title": "Inflation Update 30",
+    "type": "ParameterChange",
+    "topic": "Economic Parameters",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 75,
+      "abstain_count": 1,
+      "no_vote_count": 24
+    }
+  },
+  {
+    "proposal_id": "14",
+    "chain_id": "akash",
+    "title": "Increase MaxValidators value",
+    "type": "ParameterChange",
+    "topic": "Staking Parameters",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 32,
+      "no_count": 12,
+      "no_vote_count": 56
+    }
+  },
+  {
+    "proposal_id": "13",
+    "chain_id": "akash",
+    "title": "Increase MaxValidators to 85",
+    "type": "ParameterChange",
+    "topic": "Fee Adjustment",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 44,
+      "no_vote_count": 56
+    }
+  },
+  {
+    "proposal_id": "12",
+    "chain_id": "akash",
+    "title": "Updated proposal for BidMinDeposit Param Change",
+    "type": "ParameterChange",
+    "topic": "Fee Adjustment",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 50,
+      "no_vote_count": 50
+    }
+  },
+  {
+    "proposal_id": "11",
+    "chain_id": "akash",
+    "title": "BidMinDeposit Param Change",
+    "type": "ParameterChange",
+    "topic": "Fee Adjustment",
+    "status": "REJECTED",
+    "final_tally_result": {
+      "abstain_count": 1,
+      "no_count": 26,
+      "yes_count": 4,
+      "no_vote_count": 69
+    }
+  },
+  {
+    "proposal_id": "10",
+    "chain_id": "akash",
+    "title": "Increase MaxValidators to 80",
+    "type": "ParameterChange",
+    "topic": "Fee Adjustment",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 54,
+      "no_vote_count": 46
+    }
+  },
+  {
+    "proposal_id": "9",
+    "chain_id": "akash",
+    "title": "Developer Program and Community Awards",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 34,
+      "no_count": 19,
+      "abstain_count": 1,
+      "no_vote_count": 46
+    }
+  },
+  {
+    "proposal_id": "8",
+    "chain_id": "akash",
+    "title": "Inflation Update 20",
+    "type": "ParameterChange",
+    "topic": "Economic Parameters",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 66,
+      "no_vote_count": 34
+    }
+  },
+  {
+    "proposal_id": "7",
+    "chain_id": "akash",
+    "title": "Increase maxvalidator cap to 75",
+    "type": "ParameterChange",
+    "topic": "Fee Adjustment",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 63,
+      "abstain_count": 1,
+      "no_vote_count": 36
+    }
+  },
+  {
+    "proposal_id": "6",
+    "chain_id": "akash",
+    "title": "Enable IBC transfers",
+    "type": "ParameterChange",
+    "topic": "Protocol Configuration",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 62,
+      "no_vote_count": 38
+    }
+  },
+  {
+    "proposal_id": "5",
+    "chain_id": "akash",
+    "title": "Akash Netwok Software Upgrade Proposal",
+    "type": "SoftwareUpgrade",
+    "topic": "Feature Addition",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 64,
+      "no_vote_count": 36
+    }
+  },
+  {
+    "proposal_id": "4",
+    "chain_id": "akash",
+    "title": "Enable IBC Clients",
+    "type": "ParameterChange",
+    "topic": "Staking Parameters",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 59,
+      "no_vote_count": 41
+    }
+  },
+  {
+    "proposal_id": "3",
+    "chain_id": "akash",
+    "title": "Akash Network  Mainnet Upgrade Proposal  2",
+    "type": "TextProposal",
+    "topic": "Network Policy",
+    "status": "PASSED",
+    "final_tally_result": {
+      "no_vote_count": 100
+    }
+  },
+  {
+    "proposal_id": "2",
+    "chain_id": "akash",
+    "title": "Akash Network Upgrade Proposal 1",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "PASSED",
+    "final_tally_result": {
+      "no_vote_count": 100
+    }
+  },
+  {
+    "proposal_id": "1",
+    "chain_id": "akash",
+    "title": "Decrease target inflation rate to 47",
+    "type": "ParameterChange",
+    "topic": "Fee Adjustment",
+    "status": "PASSED",
+    "final_tally_result": {
+      "no_vote_count": 100
+    }
+  }
+]
