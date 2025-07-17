@@ -1,0 +1,727 @@
+[
+  {
+    "validator_address": "sentvaloper1hms0qpe27uulkllw96tmeqnl4hvxsf4vwp729v",
+    "moniker": "Stakewollecom  full insurance",
+    "chain_id": "sentinel"
+  },
+  {
+    "validator_address": "sentvaloper1xvls4wglr22q6st9x54hn7dyd24yyahayvzjrw",
+    "moniker": "Komikuri",
+    "chain_id": "sentinel"
+  },
+  {
+    "validator_address": "sentvaloper1w8cs54tjx5yc9hzp0e2pfmde905pr670ltp3qn",
+    "moniker": "KalpaTech",
+    "chain_id": "sentinel"
+  },
+  {
+    "validator_address": "sentvaloper12w34cjj3swmzfcl0pmt3xud58z835h3w9xacpr",
+    "moniker": "Cosmic Validator",
+    "chain_id": "sentinel"
+  },
+  {
+    "validator_address": "sentvaloper15pfdlwkue3xlpzzemxtq9aunynjzy9kewkvlz0",
+    "moniker": "Allnodes",
+    "chain_id": "sentinel"
+  },
+  {
+    "validator_address": "sentvaloper13r9n2lmyc8wget854p8czeh09ct442jfejqgek",
+    "moniker": "openstakenet",
+    "chain_id": "sentinel"
+  },
+  {
+    "validator_address": "sentvaloper102x2f86rx0zvma9glz2rdc9u5fjp44u55djaxl",
+    "moniker": "ValidatorNode",
+    "chain_id": "sentinel"
+  },
+  {
+    "validator_address": "sentvaloper1xk0zwa3nhd78zuxg3a8u2xncc69vhe6auxej20",
+    "moniker": "zeroserviceseu",
+    "chain_id": "sentinel"
+  },
+  {
+    "validator_address": "sentvaloper1mn3eeyrhf3chnsvm6d7jpwzunjd5h4ns2xddc7",
+    "moniker": "Liquify",
+    "chain_id": "sentinel"
+  },
+  {
+    "validator_address": "sentvaloper1ugq6sm227z50qsuvhjawfc95mngaka9xluk78k",
+    "moniker": "TRGC By Liquify",
+    "chain_id": "sentinel"
+  },
+  {
+    "validator_address": "sentvaloper10unne9aclcdwfysj6ya5vzh7xwj3xht6jhfxn6",
+    "moniker": "TkdAlex",
+    "chain_id": "sentinel"
+  },
+  {
+    "validator_address": "sentvaloper13ypu2s4kfstzs62v70muakk42dmlpv5u6vz2pd",
+    "moniker": "CryptoNet",
+    "chain_id": "sentinel"
+  },
+  {
+    "validator_address": "sentvaloper1wpltp2dcjv3qucsrs449tz3cpm8a60gfjp9nq2",
+    "moniker": "Nous Host",
+    "chain_id": "sentinel"
+  },
+  {
+    "validator_address": "sentvaloper1qe8uuf5x69c526h4nzxwv4ltftr73v7qytddn2",
+    "moniker": "Stakecito",
+    "chain_id": "sentinel"
+  },
+  {
+    "validator_address": "sentvaloper1wmeez9g4tepgfnt66989tf4j2zzfwckfhgy0gh",
+    "moniker": "Citadelone",
+    "chain_id": "sentinel"
+  },
+  {
+    "validator_address": "sentvaloper1ax4c40gn3s74xxm75g6cmts3fw7rq64grgugsr",
+    "moniker": "Decloud Nodes Lab",
+    "chain_id": "sentinel"
+  },
+  {
+    "validator_address": "sentvaloper1vwtr4k00w936uutgpek57vl90vp88vmzdfv0n5",
+    "moniker": "MathNodes",
+    "chain_id": "sentinel"
+  },
+  {
+    "validator_address": "sentvaloper1x8maghsc8358eap6tdlq6qcr2hc9g9zg3037gm",
+    "moniker": "Mandragora",
+    "chain_id": "sentinel"
+  },
+  {
+    "validator_address": "sentvaloper1mn8zkzxh37szsymj9zfdvf49wy5pp5xustd77m",
+    "moniker": "Easy2Stake",
+    "chain_id": "sentinel"
+  },
+  {
+    "validator_address": "sentvaloper18tmu0lrfsdvke8e3a3jsd7fq2rs29krf43yj25",
+    "moniker": "Cosmostation",
+    "chain_id": "sentinel"
+  },
+  {
+    "validator_address": "sentvaloper1j93nklg62ttxr2c9g2u25wvyw0rjj9d9rdu92k",
+    "moniker": "PoS Node",
+    "chain_id": "sentinel"
+  },
+  {
+    "validator_address": "sentvaloper1tt53juuu8g2ux67vgqzu9lkhfn9w6z73x4rfrk",
+    "moniker": "Dwebnet",
+    "chain_id": "sentinel"
+  },
+  {
+    "validator_address": "sentvaloper1mptjw3xkqwrmyy3wpsue32wewwvn8e8zqwxfq4",
+    "moniker": "exnihilovalidator",
+    "chain_id": "sentinel"
+  },
+  {
+    "validator_address": "sentvaloper1e7mvqlz50ch6gw4yjfemsc069wfre4qwmw53kq",
+    "moniker": "NorthCap",
+    "chain_id": "sentinel"
+  },
+  {
+    "validator_address": "sentvaloper1xa256aeh8ar6afucpvekyqnuttpjutwxpwep87",
+    "moniker": "Winter Validator",
+    "chain_id": "sentinel"
+  },
+  {
+    "validator_address": "sentvaloper1506qa59lutp5ue0trtmpf5hdzjls6ewnju7yzl",
+    "moniker": "AntMan",
+    "chain_id": "sentinel"
+  },
+  {
+    "validator_address": "sentvaloper1jh4a3vsa2svk2y004gjhcgnrdqx7c24gqsvayr",
+    "moniker": "Noderunners",
+    "chain_id": "sentinel"
+  },
+  {
+    "validator_address": "sentvaloper14m0n559xdj00qwvp6ck0xesprrq26kgp528uls",
+    "moniker": "Oneiric Stake",
+    "chain_id": "sentinel"
+  },
+  {
+    "validator_address": "sentvaloper1rw9wtyhsus7jvx55v3qv5nzun054ma6kz4237k",
+    "moniker": " Quokka Stake",
+    "chain_id": "sentinel"
+  },
+  {
+    "validator_address": "sentvaloper1ewmujlakdstee65lp6p30g0n6ul62aux7a9fk8",
+    "moniker": "Foxinodes",
+    "chain_id": "sentinel"
+  },
+  {
+    "validator_address": "sentvaloper1az99tqlzvsrdhuhau7f79u808wkmrtusmq9x42",
+    "moniker": "Kleomedes",
+    "chain_id": "sentinel"
+  },
+  {
+    "validator_address": "sentvaloper1wjsuwrx4nee33yquw0nws6mkfcgfza4d23x9lt",
+    "moniker": "Avril14th",
+    "chain_id": "sentinel"
+  },
+  {
+    "validator_address": "sentvaloper1xmc6yzr95v0w5pcx7k8qx97w69rhc4caclfy9h",
+    "moniker": "Bitveil",
+    "chain_id": "sentinel"
+  },
+  {
+    "validator_address": "sentvaloper1qksz3uscxvjyv8jdxw7lu26xqksddxwjwf7tvh",
+    "moniker": "AtmosferMuda  REStakeapp ",
+    "chain_id": "sentinel"
+  },
+  {
+    "validator_address": "sentvaloper10wq46f8du234aqtlucv7h9jtrfuxmcntgw06ju",
+    "moniker": "chainvibes",
+    "chain_id": "sentinel"
+  },
+  {
+    "validator_address": "sentvaloper10y0044zsacejntznk6eatvz7mcekqv357fhl7q",
+    "moniker": "CommunityStaking",
+    "chain_id": "sentinel"
+  },
+  {
+    "validator_address": "sentvaloper1zys59g4hh8g26jg4a0pl6f2c6rngfm89ktx3pz",
+    "moniker": "polkachucom",
+    "chain_id": "sentinel"
+  },
+  {
+    "validator_address": "sentvaloper1eqzvw4zmgvw7x9laak2q0mmsnmcdkhz68xzeye",
+    "moniker": "dvMiku Validator",
+    "chain_id": "sentinel"
+  },
+  {
+    "validator_address": "sentvaloper16yg44hae44lcdexmmk7wpaphny0ahmqf6zevq5",
+    "moniker": "BadgerBite",
+    "chain_id": "sentinel"
+  },
+  {
+    "validator_address": "sentvaloper1n32fp8kshh45rsry48f7q24sr7g326kq9uey82",
+    "moniker": "Busurnode",
+    "chain_id": "sentinel"
+  },
+  {
+    "validator_address": "sentvaloper1rfv04w5dy0j5m0ry2yrn87gjd8xd2xyl388d3c",
+    "moniker": "Andrew38",
+    "chain_id": "sentinel"
+  },
+  {
+    "validator_address": "sentvaloper140ux8srhzle045cx5h3fy7jgqc3egdvkauc6rz",
+    "moniker": "Tesla Full Node",
+    "chain_id": "sentinel"
+  },
+  {
+    "validator_address": "sentvaloper1zvuyw9utsdp3w0mnrructw87p8sy8a3s7frwwg",
+    "moniker": "closed",
+    "chain_id": "sentinel"
+  },
+  {
+    "validator_address": "sentvaloper1v2srqzaqku25pdndegz3flhez6umfehpuv099u",
+    "moniker": "CosmicNode",
+    "chain_id": "sentinel"
+  },
+  {
+    "validator_address": "sentvaloper1p3u583ms39yrz7dkcetxdkn4sj66sjau4250pu",
+    "moniker": "ChainTools",
+    "chain_id": "sentinel"
+  },
+  {
+    "validator_address": "sentvaloper1pvtesmlrfdk6lrqzpyhrpgm0yl6jxz07l9aych",
+    "moniker": "Perfect Stake ",
+    "chain_id": "sentinel"
+  },
+  {
+    "validator_address": "sentvaloper1qz2ytxg4pjna69dskzlg7kn2ge87rxryy8yntd",
+    "moniker": "Decommissioned",
+    "chain_id": "sentinel"
+  },
+  {
+    "validator_address": "sentvaloper1gncpxvjgeh7ktpww43kc4kpjeg2gelre7ju49p",
+    "moniker": "OmniFlix Network",
+    "chain_id": "sentinel"
+  },
+  {
+    "validator_address": "sentvaloper1cgeat3kmk22k8n5kj5cvuh7ksf72urfjdwc85f",
+    "moniker": "basblock",
+    "chain_id": "sentinel"
+  },
+  {
+    "validator_address": "sentvaloper1q6683y2vzla52geg9sx9y5edr4ngkhqsr2v042",
+    "moniker": "Zenscape",
+    "chain_id": "sentinel"
+  },
+  {
+    "validator_address": "sentvaloper1c53el6jh90cu99wyc5rx60zymqd8svxf4trlr2",
+    "moniker": "Chihuahua",
+    "chain_id": "sentinel"
+  },
+  {
+    "validator_address": "sentvaloper1w0vryf9rrktwehp30ny4lf8lpmfa9q22zzgh2n",
+    "moniker": "Dominator",
+    "chain_id": "sentinel"
+  },
+  {
+    "validator_address": "sentvaloper1c7a5dhhusvwsws676afnay7z9p72sqft8j7xym",
+    "moniker": "EthicalNode",
+    "chain_id": "sentinel"
+  },
+  {
+    "validator_address": "sentvaloper18rpzrpd6wjtwvdkarnszjvlazkxevctrkew7jf",
+    "moniker": "clockworkorangeio",
+    "chain_id": "sentinel"
+  },
+  {
+    "validator_address": "sentvaloper1wpmlgxdsj55dprn2m550ednstczsxjlhh82f4h",
+    "moniker": "Sarvodaya Validators",
+    "chain_id": "sentinel"
+  },
+  {
+    "validator_address": "sentvaloper1wvytqs59mjhf0r6xes43xujg4txrnxcpzwj0pr",
+    "moniker": "Bit Cat",
+    "chain_id": "sentinel"
+  },
+  {
+    "validator_address": "sentvaloper1044wcvehvseane9xm0wg444udjgsr0arhcanyy",
+    "moniker": "UNBONDING",
+    "chain_id": "sentinel"
+  },
+  {
+    "validator_address": "sentvaloper1n00fcnszy0qymnw392tw2awmf3q687xqau5mzh",
+    "moniker": "MedasDigital",
+    "chain_id": "sentinel"
+  },
+  {
+    "validator_address": "sentvaloper1p5uwz3x0g2jk9y4cnx6d5lzwhduy4lv68xygep",
+    "moniker": "UNSTAKE NOW",
+    "chain_id": "sentinel"
+  },
+  {
+    "validator_address": "sentvaloper1pa4j89w658swyeufpsa4g5u95xje97frtjgfzu",
+    "moniker": "closing please redelegate",
+    "chain_id": "sentinel"
+  },
+  {
+    "validator_address": "sentvaloper106mf0tlavffljy5rv7l2xqt5sjjlyjskfj4772",
+    "moniker": "Global Edge Sentinel",
+    "chain_id": "sentinel"
+  },
+  {
+    "validator_address": "sentvaloper1008ynqk7wzh8xz2523q7w39tjmq7m2c259xxeh",
+    "moniker": "Amphibious ",
+    "chain_id": "sentinel"
+  },
+  {
+    "validator_address": "sentvaloper1rhjvcesshc833dqwdlwskwcjz08gcnxqgrl52t",
+    "moniker": "artifact",
+    "chain_id": "sentinel"
+  },
+  {
+    "validator_address": "sentvaloper1ll3wwqdgqvcvcllza3zgq7qz2dfnnecgh8ncth",
+    "moniker": "GG Bond",
+    "chain_id": "sentinel"
+  },
+  {
+    "validator_address": "sentvaloper1s88cq7g7geukqccwrw7t6kaq8csq00nawrpzgz",
+    "moniker": "Woodstock Fund",
+    "chain_id": "sentinel"
+  },
+  {
+    "validator_address": "sentvaloper1z9zssf9p5we70l8wx3rafklna9zjk5qhkravap",
+    "moniker": "Pajeet",
+    "chain_id": "sentinel"
+  },
+  {
+    "validator_address": "sentvaloper1rtvhr2jexk3glhzeuyf93fll02pzjsjjxcjp8j",
+    "moniker": "Shima Capital",
+    "chain_id": "sentinel"
+  },
+  {
+    "validator_address": "sentvaloper1tc35afn4xpem9cp97rc5lfu22efnx0y8fa7hlr",
+    "moniker": "TrustedNode",
+    "chain_id": "sentinel"
+  },
+  {
+    "validator_address": "sentvaloper1vrt9zgl3u6yz55hssy8a2zu8u0c822u6v5ej9v",
+    "moniker": "StrongBlock Pangea",
+    "chain_id": "sentinel"
+  },
+  {
+    "validator_address": "sentvaloper1vw60jkrl5keyw9qa2cdwtrrytpq3c8f6q7hyrl",
+    "moniker": "WeStaking",
+    "chain_id": "sentinel"
+  },
+  {
+    "validator_address": "sentvaloper1ycar32azurr6zfnts4j3v8crscjz3u8p7s2uap",
+    "moniker": "Anonymity Network",
+    "chain_id": "sentinel"
+  },
+  {
+    "validator_address": "sentvaloper1wd944at7mn6eqm7c7m5lfd9ej3g6astqawjnqn",
+    "moniker": "BlueStake   100 insurance",
+    "chain_id": "sentinel"
+  },
+  {
+    "validator_address": "sentvaloper138dhtmfslt0ls4ec0jumj8tyajry4dfuv27jay",
+    "moniker": " AutoStake  Slash Protected",
+    "chain_id": "sentinel"
+  },
+  {
+    "validator_address": "sentvaloper19p8frvqh8qq6ayjg40ew4tg0l364efmzy7sspw",
+    "moniker": "Tavis Digital",
+    "chain_id": "sentinel"
+  },
+  {
+    "validator_address": "sentvaloper13ze8nksst79p79dfseruqhww4zuatp0jqxvqa7",
+    "moniker": "Stopping Please redelegate to New Witner",
+    "chain_id": "sentinel"
+  },
+  {
+    "validator_address": "sentvaloper13vrf9z9d2mfuwss9jrkud3v3q8hu3cp0ngpsrz",
+    "moniker": "DECOMMISSIONED",
+    "chain_id": "sentinel"
+  },
+  {
+    "validator_address": "sentvaloper13gmgxsxdvmytnr75uscuw350n6f0qfrvgdacw4",
+    "moniker": "Stakin Discontinued Redelegate",
+    "chain_id": "sentinel"
+  },
+  {
+    "validator_address": "sentvaloper14xtpvapsx2kek5yn45xx9ccmuuyvgj77cxt5k0",
+    "moniker": "stakefish",
+    "chain_id": "sentinel"
+  },
+  {
+    "validator_address": "sentvaloper1r73x3up50gxr52ve4d2j72qexf3w7w9s0g9vdf",
+    "moniker": "Ubik Capital",
+    "chain_id": "sentinel"
+  },
+  {
+    "validator_address": "sentvaloper15mz836np5tv898wcshpy7wt4lr5v5rkwv4vkhu",
+    "moniker": "Norse Labs",
+    "chain_id": "sentinel"
+  },
+  {
+    "validator_address": "sentvaloper1sazxkmhym0zcg9tmzvc4qxesqegs3q4u66tpmf",
+    "moniker": "SOLAR Labs",
+    "chain_id": "sentinel"
+  },
+  {
+    "validator_address": "sentvaloper1uvkmmjtvzxtn9cjhd2c9kdncjfslnql82nz4kg",
+    "moniker": "Trivium  TriviumNetwork",
+    "chain_id": "sentinel"
+  },
+  {
+    "validator_address": "sentvaloper1vws267q9huy9m4xea5kxnpmfeu068cfekw0tam",
+    "moniker": "50 Validator  Airdrop",
+    "chain_id": "sentinel"
+  },
+  {
+    "validator_address": "sentvaloper1lhenngdge40r5thghzxqpsryn4x084m9mn976k",
+    "moniker": "strangelove",
+    "chain_id": "sentinel"
+  },
+  {
+    "validator_address": "sentvaloper1mcwvu4vpvfcnxduzpelehmgga282wtc0xux7se",
+    "moniker": "Trinity Validator",
+    "chain_id": "sentinel"
+  },
+  {
+    "validator_address": "sentvaloper1tjgec0ssfrlldmut69xsp8vzljugg0g306aae2",
+    "moniker": "WhisperNode ",
+    "chain_id": "sentinel"
+  },
+  {
+    "validator_address": "sentvaloper1pyn04fth38t9tvpa3fvfnn4xng06zsymthu6ua",
+    "moniker": "RoomIT",
+    "chain_id": "sentinel"
+  },
+  {
+    "validator_address": "sentvaloper19x3s23x9hvp98rdgrl6mnec8h5hy7zmnhygzv3",
+    "moniker": "Summit Nodes",
+    "chain_id": "sentinel"
+  },
+  {
+    "validator_address": "sentvaloper1fcwhweq2qtd5aj702v4pj0apfxt8nrgpapme6g",
+    "moniker": "Crypto Lab Tech",
+    "chain_id": "sentinel"
+  },
+  {
+    "validator_address": "sentvaloper1mhd932nfryqkfafdqt7qta0dgc4kr56yts5e56",
+    "moniker": "BridgeTower",
+    "chain_id": "sentinel"
+  },
+  {
+    "validator_address": "sentvaloper13ce8734a8vstdplk79dg4jemdsm8048t0hjplm",
+    "moniker": "Active Nodes  Please Redelegate before 3 June",
+    "chain_id": "sentinel"
+  },
+  {
+    "validator_address": "sentvaloper1wl6z270360m5rh6uwsgz0vyteccf29zk7jztlt",
+    "moniker": "ChainLayer",
+    "chain_id": "sentinel"
+  },
+  {
+    "validator_address": "sentvaloper1k39fnsry5hyclhc9mndyaugdqjdx43ghyex5nt",
+    "moniker": "A4ADAO",
+    "chain_id": "sentinel"
+  },
+  {
+    "validator_address": "sentvaloper1ujhrkt8gl7fqfplmg3w3p7y39grm6n87tnw7vt",
+    "moniker": "BlueFrenDAO",
+    "chain_id": "sentinel"
+  },
+  {
+    "validator_address": "sentvaloper109yg6yhcyy5mfyteqmcn3pjca9nu9s392spdr9",
+    "moniker": "Strata One",
+    "chain_id": "sentinel"
+  },
+  {
+    "validator_address": "sentvaloper14kn0kk33szpwus9nh8n87fjel8djx0y0l9e6u8",
+    "moniker": "Forbole",
+    "chain_id": "sentinel"
+  },
+  {
+    "validator_address": "sentvaloper1q3j92zfnw9y94l9cghwzud2sdumlwszsr9kqdv",
+    "moniker": "ChronoBitEnterprise",
+    "chain_id": "sentinel"
+  },
+  {
+    "validator_address": "sentvaloper1wcyvemaw8m4fxwnsljghe5wtd9t6q0smaq64ef",
+    "moniker": "Stake Frites  ",
+    "chain_id": "sentinel"
+  },
+  {
+    "validator_address": "sentvaloper1nygcr5p33plzq4akfxnl3nr7nf59gnshnwf0ln",
+    "moniker": "Sentinel Growth DAO",
+    "chain_id": "sentinel"
+  },
+  {
+    "validator_address": "sentvaloper1083svrca4t350mphfv9x45wq9asrs60cv37gc8",
+    "moniker": "Notional",
+    "chain_id": "sentinel"
+  },
+  {
+    "validator_address": "sentvaloper1gwqt4jzhtvms8u57gpl4tzxjxqq8fss2j3hx48",
+    "moniker": "StakeLabzone",
+    "chain_id": "sentinel"
+  },
+  {
+    "validator_address": "sentvaloper1uzg36c70cfgqygprpmm335kymdaa30m05e2qs2",
+    "moniker": "Secret LLC",
+    "chain_id": "sentinel"
+  },
+  {
+    "validator_address": "sentvaloper1vfs42t5vp9r6pejjx7fsgf4d4pz8rh4ee8jwqc",
+    "moniker": "0xbas3d",
+    "chain_id": "sentinel"
+  },
+  {
+    "validator_address": "sentvaloper1fndu9l83a2ceuznerxp0nc8rkwm4sjcvdrley4",
+    "moniker": "Autonomy  Formerly PrithviDevs ",
+    "chain_id": "sentinel"
+  },
+  {
+    "validator_address": "sentvaloper18zajaq6vw4uxj4cl084nm890wn24uftqvr9tvs",
+    "moniker": "Alex Bambarello Validator",
+    "chain_id": "sentinel"
+  },
+  {
+    "validator_address": "sentvaloper1t4dqww9r5rdne79uxk8ytpcfkermsd0vvukue8",
+    "moniker": "Redelegateyourfunds",
+    "chain_id": "sentinel"
+  },
+  {
+    "validator_address": "sentvaloper18mtspwzngrtvtg0l7vuls3dhwp96jsf2t4zcd5",
+    "moniker": "SpacePotato",
+    "chain_id": "sentinel"
+  },
+  {
+    "validator_address": "sentvaloper1wn6tfn2nxxugv98rl5k8tpnj3cdddlejm3sa6j",
+    "moniker": "lux8net",
+    "chain_id": "sentinel"
+  },
+  {
+    "validator_address": "sentvaloper1v57vmu2w4tvc48acmqeqe3hkat6dk4v8enr0hc",
+    "moniker": "Mortys node  shutting down please redelegate",
+    "chain_id": "sentinel"
+  },
+  {
+    "validator_address": "sentvaloper1xtsgq69zdqxr6rumv2skedujvuvuu3few3980k",
+    "moniker": "REDELEGATEPLEASE",
+    "chain_id": "sentinel"
+  },
+  {
+    "validator_address": "sentvaloper16ja8llaa3lq8zaag4cgp0enqhpf2yhhme5w3zu",
+    "moniker": "Klub Staking",
+    "chain_id": "sentinel"
+  },
+  {
+    "validator_address": "sentvaloper1m0yanq0g40yamxj2y93f3hvtvmj9v7ntuaqhzx",
+    "moniker": "Wanderer Staking",
+    "chain_id": "sentinel"
+  },
+  {
+    "validator_address": "sentvaloper1p96zfghgdcs6yv920qfhwn3wnzh9srewffkt5c",
+    "moniker": "Swiss Staking  Discontinued please redelegate",
+    "chain_id": "sentinel"
+  },
+  {
+    "validator_address": "sentvaloper1652j9a730n59055exyr830w0z0pyg7xu3jczwh",
+    "moniker": "SmartNodes  Slash Protected",
+    "chain_id": "sentinel"
+  },
+  {
+    "validator_address": "sentvaloper1em47hyec6g6jcmywp5mpqvs66h7wdnj6kd5t6p",
+    "moniker": "Shutting down soon",
+    "chain_id": "sentinel"
+  },
+  {
+    "validator_address": "sentvaloper1am0pe8lujuxk7ty72ee3gzfa9rzaqqgatk0xsu",
+    "moniker": "Daksha Validator",
+    "chain_id": "sentinel"
+  },
+  {
+    "validator_address": "sentvaloper1gcx3cq450dgmyha7s3x5mhjqcnxxn40tqykq20",
+    "moniker": "01node",
+    "chain_id": "sentinel"
+  },
+  {
+    "validator_address": "sentvaloper1fzgp7yypmeguqf8r927g2g89kvc69rs80z0wg7",
+    "moniker": "GreyWolfCo",
+    "chain_id": "sentinel"
+  },
+  {
+    "validator_address": "sentvaloper1zh66emq9l3qxj4ezhevl8wxd9qzkprqgyud5xl",
+    "moniker": "Low FEES sustainability and profits  Stakers Hub",
+    "chain_id": "sentinel"
+  },
+  {
+    "validator_address": "sentvaloper12kz3rd47mpljfzqc9ygrpelj5kp6tx0dl8ylrk",
+    "moniker": "Psycho Node",
+    "chain_id": "sentinel"
+  },
+  {
+    "validator_address": "sentvaloper1t5az4whp9q0akhtepav52gs76mt8utpva0ge4t",
+    "moniker": "DECOMISSIONED AUDITone",
+    "chain_id": "sentinel"
+  },
+  {
+    "validator_address": "sentvaloper1c9ye54e3pzwm3e0zpdlel6pnavrj9qqvzj62gk",
+    "moniker": "StakeWithUs",
+    "chain_id": "sentinel"
+  },
+  {
+    "validator_address": "sentvaloper1z2qgaj3flw2r2gdn7yq22623p7adykwg8fw93z",
+    "moniker": "ZakNode",
+    "chain_id": "sentinel"
+  },
+  {
+    "validator_address": "sentvaloper19a4vxxd390xuvddhqamqm3yxyvwdgstmzyg9ag",
+    "moniker": "DragonStake ",
+    "chain_id": "sentinel"
+  },
+  {
+    "validator_address": "sentvaloper1hssnyrsc9yngpnqxqaup4gfhh8t2p5s62w9dfh",
+    "moniker": "Stakyio",
+    "chain_id": "sentinel"
+  },
+  {
+    "validator_address": "sentvaloper1s33zct2zhhaf60x4a90cpe9yquw99jj0s4egd3",
+    "moniker": "dimi",
+    "chain_id": "sentinel"
+  },
+  {
+    "validator_address": "sentvaloper15kzy7ep24z7tzc7dcy6yy2g0etfvk43sa3qpmf",
+    "moniker": "simocsdk",
+    "chain_id": "sentinel"
+  },
+  {
+    "validator_address": "sentvaloper13tacwnxjvemh72aduex4846mmr3pdm0t75vmnh",
+    "moniker": "Messi",
+    "chain_id": "sentinel"
+  },
+  {
+    "validator_address": "sentvaloper1drx3vul2u3xnphgs46yuma6dngkz4qhx4aw2r4",
+    "moniker": "DelegaNetworks",
+    "chain_id": "sentinel"
+  },
+  {
+    "validator_address": "sentvaloper1y8rgddpwlcmf3h2zpq9aq9qdmuvcscg0rj7vee",
+    "moniker": "Koinsortium",
+    "chain_id": "sentinel"
+  },
+  {
+    "validator_address": "sentvaloper1kfv74tggqukm5w9ezv9xnjf85mmja4qk8m04e5",
+    "moniker": "BlackTurtleNodeTurtleNetwork",
+    "chain_id": "sentinel"
+  },
+  {
+    "validator_address": "sentvaloper1j4aqhtj3wac8mn9w3q97lswj3psszj6yl6m96l",
+    "moniker": "NOT USE THIS",
+    "chain_id": "sentinel"
+  },
+  {
+    "validator_address": "sentvaloper1lxh0u07haj646pt9e0l2l4qc3d8htfx543ss9m",
+    "moniker": "Chandra Station",
+    "chain_id": "sentinel"
+  },
+  {
+    "validator_address": "sentvaloper1j837nj0gs5z8quk0xxdnsesaaerpay435p55hd",
+    "moniker": "FooChain",
+    "chain_id": "sentinel"
+  },
+  {
+    "validator_address": "sentvaloper1reeywehc76ndcd3gkzaz3yasdk7nfxc09evq0w",
+    "moniker": "AGE Network",
+    "chain_id": "sentinel"
+  },
+  {
+    "validator_address": "sentvaloper1hzxq7rtjv9f92gdmv6n220jrytfj9ghkd8mvyx",
+    "moniker": "Witval",
+    "chain_id": "sentinel"
+  },
+  {
+    "validator_address": "sentvaloper1x8wpf9gz8ckf7ry9jyjln5g6qajh22sl7828g9",
+    "moniker": "Del",
+    "chain_id": "sentinel"
+  },
+  {
+    "validator_address": "sentvaloper1x8u832e45gkg7404rcxgpt5vzxp7l6zmqe7tlu",
+    "moniker": "Invalid",
+    "chain_id": "sentinel"
+  },
+  {
+    "validator_address": "sentvaloper1fe7shd9eprs9366v6pw0pwdhkfufr59dkv6tsw",
+    "moniker": "MMS",
+    "chain_id": "sentinel"
+  },
+  {
+    "validator_address": "sentvaloper12shx6mcced36gkvd8dn7xy2gq3wfudn7lxv22u",
+    "moniker": "NodesHub",
+    "chain_id": "sentinel"
+  },
+  {
+    "validator_address": "sentvaloper1t3hcz2xv4f0kwrlcumgry6hl86vvpq25853gxu",
+    "moniker": "cosmosstaking",
+    "chain_id": "sentinel"
+  },
+  {
+    "validator_address": "sentvaloper1taywkszzngnu5vydg7t7nnd9047x57qm7909l9",
+    "moniker": "DONOTUSEME",
+    "chain_id": "sentinel"
+  },
+  {
+    "validator_address": "sentvaloper1dyjnt80altqqjjzkxyknp2uaghfjd9ufvdkx7g",
+    "moniker": "SentinelNoda",
+    "chain_id": "sentinel"
+  },
+  {
+    "validator_address": "sentvaloper1grtc60fuk2yz8av3xt0f70w5800jmrkx6e07yg",
+    "moniker": "VOL",
+    "chain_id": "sentinel"
+  },
+  {
+    "validator_address": "sentvaloper1g24mdzh279ues8p4t3ctzs9f2ccuua87zlflht",
+    "moniker": "nodtech",
+    "chain_id": "sentinel"
+  }
+]

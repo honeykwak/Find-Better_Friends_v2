@@ -1,0 +1,601 @@
+[
+  {
+    "proposal_id": "54",
+    "chain_id": "sentinel",
+    "title": "Growth DAO requests additional funds from the community pool",
+    "type": "CommunityPoolSpend",
+    "topic": "Ecosystem Growth",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 38,
+      "abstain_count": 2,
+      "no_vote_count": 39
+    }
+  },
+  {
+    "proposal_id": "53",
+    "chain_id": "sentinel",
+    "title": "Update expired IBC Client tendermint58 for sentinelhub2 chain",
+    "type": "IBCRelated",
+    "topic": "Client Update",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 44,
+      "no_vote_count": 36
+    }
+  },
+  {
+    "proposal_id": "52",
+    "chain_id": "sentinel",
+    "title": "Increase TxSizeCostPerByte 15x",
+    "type": "ParameterChange",
+    "topic": "Fee Adjustment",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 40,
+      "abstain_count": 3,
+      "no_vote_count": 37
+    }
+  },
+  {
+    "proposal_id": "51",
+    "chain_id": "sentinel",
+    "title": "Reduce Maximum Block Size",
+    "type": "ParameterChange",
+    "topic": "Fee Adjustment",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 39,
+      "abstain_count": 3,
+      "no_vote_count": 38
+    }
+  },
+  {
+    "proposal_id": "49",
+    "chain_id": "sentinel",
+    "title": "Growth DAO requests additional funds from the community pool",
+    "type": "CommunityPoolSpend",
+    "topic": "Ecosystem Growth",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 42,
+      "abstain_count": 5,
+      "no_vote_count": 33
+    }
+  },
+  {
+    "proposal_id": "48",
+    "chain_id": "sentinel",
+    "title": "Growth DAO proposes Community Fund allocation for ADV Campaign and Sentinel Explorer",
+    "type": "CommunityPoolSpend",
+    "topic": "Ecosystem Growth",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 35,
+      "abstain_count": 13,
+      "no_count": 3,
+      "no_vote_count": 29
+    }
+  },
+  {
+    "proposal_id": "47",
+    "chain_id": "sentinel",
+    "title": "Removal of manual minimum node pricing",
+    "type": "ParameterChange",
+    "topic": "Fee Adjustment",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 44,
+      "abstain_count": 3,
+      "no_vote_count": 33
+    }
+  },
+  {
+    "proposal_id": "46",
+    "chain_id": "sentinel",
+    "title": "Growth DAO requests to allocate funds currently in the community fund and take them under DAO control",
+    "type": "CommunityPoolSpend",
+    "topic": "Ecosystem Growth",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 50,
+      "abstain_count": 2,
+      "no_vote_count": 28
+    }
+  },
+  {
+    "proposal_id": "45",
+    "chain_id": "sentinel",
+    "title": "Growth DAO requests to allocate funds currently in the community fund and take them under DAO control",
+    "type": "CommunityPoolSpend",
+    "topic": "Ecosystem Growth",
+    "status": "REJECTED",
+    "final_tally_result": {
+      "no_count": 47,
+      "abstain_count": 2,
+      "no_with_veto_count": 1,
+      "no_vote_count": 30
+    }
+  },
+  {
+    "proposal_id": "44",
+    "chain_id": "sentinel",
+    "title": "IBC price adjustment for minimum pricing hourly and per GB VOTE NO ON PROP 43 small error in that proposal",
+    "type": "ParameterChange",
+    "topic": "Fee Adjustment",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 45,
+      "no_vote_count": 35
+    }
+  },
+  {
+    "proposal_id": "43",
+    "chain_id": "sentinel",
+    "title": "IBC price adjustment for minimum pricing hourly and per GB",
+    "type": "ParameterChange",
+    "topic": "Fee Adjustment",
+    "status": "REJECTED",
+    "final_tally_result": {
+      "no_count": 41,
+      "no_with_veto_count": 2,
+      "no_vote_count": 37
+    }
+  },
+  {
+    "proposal_id": "42",
+    "chain_id": "sentinel",
+    "title": "Periodic price adjustment for node bandwidth pricing  4",
+    "type": "ParameterChange",
+    "topic": "Fee Adjustment",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 44,
+      "abstain_count": 1,
+      "no_vote_count": 35
+    }
+  },
+  {
+    "proposal_id": "41",
+    "chain_id": "sentinel",
+    "title": "Periodic price adjustment for hourly node bandwidth pricing  2",
+    "type": "ParameterChange",
+    "topic": "Fee Adjustment",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 43,
+      "abstain_count": 3,
+      "no_vote_count": 34
+    }
+  },
+  {
+    "proposal_id": "40",
+    "chain_id": "sentinel",
+    "title": "Update expired IBC Client tendermint103 for mainnet3 chain",
+    "type": "IBCRelated",
+    "topic": "Client Update",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 40,
+      "no_vote_count": 40
+    }
+  },
+  {
+    "proposal_id": "39",
+    "chain_id": "sentinel",
+    "title": "Reduce inflation by removing base and bonus proposer rewards",
+    "type": "ParameterChange",
+    "topic": "Economic Parameters",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 23,
+      "abstain_count": 18,
+      "no_count": 11,
+      "no_vote_count": 28
+    }
+  },
+  {
+    "proposal_id": "38",
+    "chain_id": "sentinel",
+    "title": "Periodic price adjustment for hourly node bandwidth pricing  1",
+    "type": "ParameterChange",
+    "topic": "Fee Adjustment",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 48,
+      "abstain_count": 1,
+      "no_vote_count": 31
+    }
+  },
+  {
+    "proposal_id": "37",
+    "chain_id": "sentinel",
+    "title": "Periodic price adjustment for node bandwidth pricing  3",
+    "type": "ParameterChange",
+    "topic": "Fee Adjustment",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 48,
+      "abstain_count": 1,
+      "no_vote_count": 31
+    }
+  },
+  {
+    "proposal_id": "36",
+    "chain_id": "sentinel",
+    "title": "Update expired IBC Client tendermint110 for medasdigital1 chain",
+    "type": "IBCRelated",
+    "topic": "Client Update",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 42,
+      "no_vote_count": 38
+    }
+  },
+  {
+    "proposal_id": "35",
+    "chain_id": "sentinel",
+    "title": "Establish Growth Dao for Sentinel",
+    "type": "CommunityPoolSpend",
+    "topic": "Ecosystem Growth",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 45,
+      "abstain_count": 5,
+      "no_vote_count": 30
+    }
+  },
+  {
+    "proposal_id": "31",
+    "chain_id": "sentinel",
+    "title": "Reduce unbonding time to 14 days",
+    "type": "ParameterChange",
+    "topic": "Governance Settings",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 49,
+      "abstain_count": 1,
+      "no_vote_count": 30
+    }
+  },
+  {
+    "proposal_id": "30",
+    "chain_id": "sentinel",
+    "title": "Sentinel Hub Software Upgrade  5",
+    "type": "SoftwareUpgrade",
+    "topic": "Major Release",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 45,
+      "no_vote_count": 35
+    }
+  },
+  {
+    "proposal_id": "29",
+    "chain_id": "sentinel",
+    "title": "Implementing a Tiered Governance Discussion Period",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 29,
+      "abstain_count": 10,
+      "no_vote_count": 41
+    }
+  },
+  {
+    "proposal_id": "28",
+    "chain_id": "sentinel",
+    "title": "Inflation adjustment proposal  3",
+    "type": "ParameterChange",
+    "topic": "Fee Adjustment",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 49,
+      "abstain_count": 1,
+      "no_count": 1,
+      "no_vote_count": 29
+    }
+  },
+  {
+    "proposal_id": "27",
+    "chain_id": "sentinel",
+    "title": "Reducing onchain governance time",
+    "type": "ParameterChange",
+    "topic": "Governance Settings",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 36,
+      "abstain_count": 10,
+      "no_count": 7,
+      "no_vote_count": 27
+    }
+  },
+  {
+    "proposal_id": "26",
+    "chain_id": "sentinel",
+    "title": "Periodic price adjustment for node bandwidth pricing  2",
+    "type": "ParameterChange",
+    "topic": "Fee Adjustment",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 51,
+      "abstain_count": 2,
+      "no_vote_count": 27
+    }
+  },
+  {
+    "proposal_id": "24",
+    "chain_id": "sentinel",
+    "title": "Listing DVPN on KUJIRA EMERGENCY PROPOSAL",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 42,
+      "abstain_count": 14,
+      "no_vote_count": 24
+    }
+  },
+  {
+    "proposal_id": "22",
+    "chain_id": "sentinel",
+    "title": "Use of Community tokens to fund V2Ray Sentinel nodes deployed on the Akash Network",
+    "type": "CommunityPoolSpend",
+    "topic": "Ecosystem Growth",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 48,
+      "no_count": 1,
+      "abstain_count": 3,
+      "no_vote_count": 28
+    }
+  },
+  {
+    "proposal_id": "21",
+    "chain_id": "sentinel",
+    "title": "Periodic price adjustment for node bandwidth pricing  1",
+    "type": "ParameterChange",
+    "topic": "Fee Adjustment",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 48,
+      "abstain_count": 4,
+      "no_count": 1,
+      "no_vote_count": 27
+    }
+  },
+  {
+    "proposal_id": "20",
+    "chain_id": "sentinel",
+    "title": "Make the Sentinel Community the Lead Sponsor of a Decentralized VPN Bot",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "REJECTED",
+    "final_tally_result": {
+      "no_count": 28,
+      "abstain_count": 9,
+      "yes_count": 8,
+      "no_vote_count": 35
+    }
+  },
+  {
+    "proposal_id": "19",
+    "chain_id": "sentinel",
+    "title": "Sentinel Hub Software Upgrade  4",
+    "type": "SoftwareUpgrade",
+    "topic": "Major Release",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 51,
+      "abstain_count": 1,
+      "no_vote_count": 28
+    }
+  },
+  {
+    "proposal_id": "18",
+    "chain_id": "sentinel",
+    "title": "Inflation adjustment proposal",
+    "type": "ParameterChange",
+    "topic": "Fee Adjustment",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 48,
+      "abstain_count": 1,
+      "no_vote_count": 31
+    }
+  },
+  {
+    "proposal_id": "17",
+    "chain_id": "sentinel",
+    "title": "Publish a detailed token release schedule and increase transparency",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 47,
+      "abstain_count": 5,
+      "no_vote_count": 28
+    }
+  },
+  {
+    "proposal_id": "16",
+    "chain_id": "sentinel",
+    "title": "Staking contract proposal  5 years duration",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "PASSED",
+    "final_tally_result": {
+      "abstain_count": 8,
+      "yes_count": 3,
+      "no_count": 34,
+      "no_with_veto_count": 4,
+      "no_vote_count": 31
+    }
+  },
+  {
+    "proposal_id": "15",
+    "chain_id": "sentinel",
+    "title": "Staking contract proposal  25 years duration",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "REJECTED",
+    "final_tally_result": {
+      "abstain_count": 8,
+      "no_count": 34,
+      "yes_count": 2,
+      "no_with_veto_count": 3,
+      "no_vote_count": 33
+    }
+  },
+  {
+    "proposal_id": "14",
+    "chain_id": "sentinel",
+    "title": "Staking contract proposal  125 years duration",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "REJECTED",
+    "final_tally_result": {
+      "abstain_count": 8,
+      "no_count": 35,
+      "yes_count": 2,
+      "no_with_veto_count": 3,
+      "no_vote_count": 32
+    }
+  },
+  {
+    "proposal_id": "13",
+    "chain_id": "sentinel",
+    "title": "Signaling proposal for Sentinel Hub upgrade  4",
+    "type": "TextProposal",
+    "topic": "Community Decision",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 52,
+      "no_vote_count": 28
+    }
+  },
+  {
+    "proposal_id": "12",
+    "chain_id": "sentinel",
+    "title": "Establishing governance procedure on Sentinel",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 48,
+      "no_count": 1,
+      "no_vote_count": 31
+    }
+  },
+  {
+    "proposal_id": "10",
+    "chain_id": "sentinel",
+    "title": "SIP10 Inflation reduction to promote sustainability",
+    "type": "ParameterChange",
+    "topic": "Economic Parameters",
+    "status": "REJECTED",
+    "final_tally_result": {
+      "no_count": 22,
+      "yes_count": 28,
+      "abstain_count": 4,
+      "no_with_veto_count": 1,
+      "no_vote_count": 25
+    }
+  },
+  {
+    "proposal_id": "9",
+    "chain_id": "sentinel",
+    "title": "Sentinel Hub Software Upgrade  3 height corrected",
+    "type": "SoftwareUpgrade",
+    "topic": "Major Release",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 48,
+      "abstain_count": 2,
+      "no_vote_count": 30
+    }
+  },
+  {
+    "proposal_id": "7",
+    "chain_id": "sentinel",
+    "title": " Change of vesting unlock timeline",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 44,
+      "no_vote_count": 36
+    }
+  },
+  {
+    "proposal_id": "6",
+    "chain_id": "sentinel",
+    "title": "Inflation parameter changes according to Sentinel token economics model",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 42,
+      "no_vote_count": 38
+    }
+  },
+  {
+    "proposal_id": "5",
+    "chain_id": "sentinel",
+    "title": "Sentinel Hub Software Upgrade  2",
+    "type": "SoftwareUpgrade",
+    "topic": "Major Release",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 43,
+      "no_vote_count": 37
+    }
+  },
+  {
+    "proposal_id": "4",
+    "chain_id": "sentinel",
+    "title": "Staking Param Change",
+    "type": "ParameterChange",
+    "topic": "Staking Parameters",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 39,
+      "no_vote_count": 41
+    }
+  },
+  {
+    "proposal_id": "3",
+    "chain_id": "sentinel",
+    "title": "Sentinel Hub Software Upgrade  1",
+    "type": "SoftwareUpgrade",
+    "topic": "Major Release",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 49,
+      "no_vote_count": 31
+    }
+  },
+  {
+    "proposal_id": "2",
+    "chain_id": "sentinel",
+    "title": "Sentinel Hub IBC and Bandwidth Upgrade",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "PASSED",
+    "final_tally_result": {
+      "no_vote_count": 80
+    }
+  },
+  {
+    "proposal_id": "1",
+    "chain_id": "sentinel",
+    "title": "Staking Param Change",
+    "type": "ParameterChange",
+    "topic": "Staking Parameters",
+    "status": "PASSED",
+    "final_tally_result": {
+      "no_vote_count": 80
+    }
+  }
+]
