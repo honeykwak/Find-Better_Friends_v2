@@ -1,0 +1,1406 @@
+[
+  {
+    "proposal_id": "4823",
+    "chain_id": "terra",
+    "title": "Phoenix Directive  Alliance Reform and Ecosystem Growth Initiative",
+    "type": "Unknown",
+    "topic": "Miscellaneous",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 30,
+      "no_count": 8,
+      "abstain_count": 26,
+      "weighted_vote_count": 1,
+      "no_vote_count": 64
+    }
+  },
+  {
+    "proposal_id": "4822",
+    "chain_id": "terra",
+    "title": "Launching the Phoenix Directive Treasury",
+    "type": "Unknown",
+    "topic": "Miscellaneous",
+    "status": "PASSED",
+    "final_tally_result": {
+      "abstain_count": 16,
+      "yes_count": 50,
+      "no_vote_count": 63
+    }
+  },
+  {
+    "proposal_id": "4820",
+    "chain_id": "terra",
+    "title": "USDC Airdrop  48 Hours Left LUNA Airdrop  ",
+    "type": "Unknown",
+    "topic": "Unclassified",
+    "status": "REJECTED",
+    "final_tally_result": {
+      "no_with_veto_count": 47,
+      "no_count": 1,
+      "no_vote_count": 81
+    }
+  },
+  {
+    "proposal_id": "4819",
+    "chain_id": "terra",
+    "title": "Phoenix Directive  Terra Recovery Proposal",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 67,
+      "abstain_count": 10,
+      "no_count": 3,
+      "no_vote_count": 43
+    }
+  },
+  {
+    "proposal_id": "4818",
+    "chain_id": "terra",
+    "title": "Chain Upgrade v212",
+    "type": "SoftwareUpgrade",
+    "topic": "Major Release",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 75,
+      "abstain_count": 1,
+      "no_vote_count": 51
+    }
+  },
+  {
+    "proposal_id": "4817",
+    "chain_id": "terra",
+    "title": "Launching Terra Liquidity Alliance",
+    "type": "Unknown",
+    "topic": "Miscellaneous",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 55,
+      "abstain_count": 12,
+      "no_vote_count": 60
+    }
+  },
+  {
+    "proposal_id": "4816",
+    "chain_id": "terra",
+    "title": "The Phoenix Directive  A Path Forward",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "PASSED",
+    "final_tally_result": {
+      "abstain_count": 17,
+      "no_count": 19,
+      "yes_count": 29,
+      "no_vote_count": 65
+    }
+  },
+  {
+    "proposal_id": "4814",
+    "chain_id": "terra",
+    "title": "Sayve Protocol Community Grant",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "REJECTED",
+    "final_tally_result": {
+      "no_count": 42,
+      "abstain_count": 24,
+      "yes_count": 3,
+      "no_vote_count": 61
+    }
+  },
+  {
+    "proposal_id": "4813",
+    "chain_id": "terra",
+    "title": "Terra Liquidity Alliance Proposal",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 53,
+      "abstain_count": 16,
+      "no_vote_count": 61
+    }
+  },
+  {
+    "proposal_id": "4812",
+    "chain_id": "terra",
+    "title": "Whitelisting ATOM  LUNA LP Token as an Alliance Asset",
+    "type": "Unknown",
+    "topic": "Miscellaneous",
+    "status": "REJECTED",
+    "final_tally_result": {
+      "no_count": 52,
+      "abstain_count": 11,
+      "yes_count": 10,
+      "no_vote_count": 57
+    }
+  },
+  {
+    "proposal_id": "4811",
+    "chain_id": "terra",
+    "title": "Whitelisting LUNA  USDT Liquidity Pool as an Alliance Asset VOTE ON THIS PROPOSAL IGNORE 4810",
+    "type": "Unknown",
+    "topic": "Miscellaneous",
+    "status": "REJECTED",
+    "final_tally_result": {
+      "yes_count": 4,
+      "no_count": 52,
+      "abstain_count": 18,
+      "no_vote_count": 56
+    }
+  },
+  {
+    "proposal_id": "4810",
+    "chain_id": "terra",
+    "title": "Whitelisting LUNA  USDT Liquidity Pool as an Alliance Asset",
+    "type": "Unknown",
+    "topic": "Miscellaneous",
+    "status": "REJECTED",
+    "final_tally_result": {
+      "no_count": 61,
+      "abstain_count": 13,
+      "no_vote_count": 56
+    }
+  },
+  {
+    "proposal_id": "4809",
+    "chain_id": "terra",
+    "title": " LUNA AIRDROP Funding Program ",
+    "type": "Unknown",
+    "topic": "Unclassified",
+    "status": "REJECTED",
+    "final_tally_result": {
+      "no_with_veto_count": 62,
+      "no_vote_count": 68
+    }
+  },
+  {
+    "proposal_id": "4807",
+    "chain_id": "terra",
+    "title": "v2110",
+    "type": "SoftwareUpgrade",
+    "topic": "Major Release",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 80,
+      "abstain_count": 1,
+      "no_vote_count": 49
+    }
+  },
+  {
+    "proposal_id": "4805",
+    "chain_id": "terra",
+    "title": "Phoenix upgrade to v2102",
+    "type": "SoftwareUpgrade",
+    "topic": "Security Enhancement",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 93,
+      "no_vote_count": 37
+    }
+  },
+  {
+    "proposal_id": "4803",
+    "chain_id": "terra",
+    "title": "A 5 Global Minimum Commission for Validators",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "PASSED",
+    "final_tally_result": {
+      "abstain_count": 19,
+      "yes_count": 51,
+      "no_count": 12,
+      "no_with_veto_count": 2,
+      "no_vote_count": 46
+    }
+  },
+  {
+    "proposal_id": "4802",
+    "chain_id": "terra",
+    "title": "ampROAR Alliance Asset Proposal",
+    "type": "Unknown",
+    "topic": "Miscellaneous",
+    "status": "PASSED",
+    "final_tally_result": {
+      "abstain_count": 8,
+      "yes_count": 78,
+      "no_count": 3,
+      "no_vote_count": 41
+    }
+  },
+  {
+    "proposal_id": "4801",
+    "chain_id": "terra",
+    "title": "ALLY Alliance Asset Proposal",
+    "type": "Unknown",
+    "topic": "Miscellaneous",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 89,
+      "abstain_count": 3,
+      "no_count": 1,
+      "no_vote_count": 37
+    }
+  },
+  {
+    "proposal_id": "4799",
+    "chain_id": "terra",
+    "title": "ATOM Airdrop   2024 New Version ",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "REJECTED",
+    "final_tally_result": {
+      "no_with_veto_count": 65,
+      "no_count": 1,
+      "no_vote_count": 64
+    }
+  },
+  {
+    "proposal_id": "4798",
+    "chain_id": "terra",
+    "title": "Phoenix upgrade v291",
+    "type": "SoftwareUpgrade",
+    "topic": "Major Release",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 100,
+      "no_vote_count": 30
+    }
+  },
+  {
+    "proposal_id": "4797",
+    "chain_id": "terra",
+    "title": "TFL Delegation Equal Amount Delegation for Fairness",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "REJECTED",
+    "final_tally_result": {
+      "abstain_count": 28,
+      "no_count": 44,
+      "yes_count": 25,
+      "no_vote_count": 33
+    }
+  },
+  {
+    "proposal_id": "4792",
+    "chain_id": "terra",
+    "title": "v260",
+    "type": "SoftwareUpgrade",
+    "topic": "Major Release",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 71,
+      "no_vote_count": 59
+    }
+  },
+  {
+    "proposal_id": "4790",
+    "chain_id": "terra",
+    "title": "TFL Community Grant",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 64,
+      "abstain_count": 4,
+      "no_vote_count": 62
+    }
+  },
+  {
+    "proposal_id": "4787",
+    "chain_id": "terra",
+    "title": "Cosmos x Celestia Airdrop ",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "REJECTED",
+    "final_tally_result": {
+      "no_with_veto_count": 64,
+      "no_count": 3,
+      "no_vote_count": 63
+    }
+  },
+  {
+    "proposal_id": "4785",
+    "chain_id": "terra",
+    "title": "Phoenix Upgrade to 251",
+    "type": "SoftwareUpgrade",
+    "topic": "Major Release",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 75,
+      "abstain_count": 1,
+      "no_vote_count": 54
+    }
+  },
+  {
+    "proposal_id": "4775",
+    "chain_id": "terra",
+    "title": "Orneio  Legal audit  Grant Proposal",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "REJECTED",
+    "final_tally_result": {
+      "abstain_count": 25,
+      "no_count": 36,
+      "yes_count": 11,
+      "weighted_vote_count": 1,
+      "no_vote_count": 57
+    }
+  },
+  {
+    "proposal_id": "4770",
+    "chain_id": "terra",
+    "title": "test",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "REJECTED",
+    "final_tally_result": {
+      "yes_count": 1,
+      "no_count": 44,
+      "no_with_veto_count": 5,
+      "abstain_count": 5,
+      "no_vote_count": 75
+    }
+  },
+  {
+    "proposal_id": "4765",
+    "chain_id": "terra",
+    "title": "Airdrop for Missed Protocols",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "PASSED",
+    "final_tally_result": {
+      "abstain_count": 22,
+      "yes_count": 41,
+      "no_count": 3,
+      "weighted_vote_count": 1,
+      "no_vote_count": 63
+    }
+  },
+  {
+    "proposal_id": "4746",
+    "chain_id": "terra",
+    "title": "Alliance Followon Proposal Whitelist VT as an Alliance Asset",
+    "type": "Unknown",
+    "topic": "Miscellaneous",
+    "status": "PASSED",
+    "final_tally_result": {
+      "abstain_count": 6,
+      "yes_count": 54,
+      "no_count": 1,
+      "no_vote_count": 69
+    }
+  },
+  {
+    "proposal_id": "4745",
+    "chain_id": "terra",
+    "title": "Alliance Followon Proposal Whitelist rSWTH bWHALE and ampWHALE as Virtual Alliance assets",
+    "type": "SmartContract",
+    "topic": "Contract Integration",
+    "status": "PASSED",
+    "final_tally_result": {
+      "abstain_count": 9,
+      "yes_count": 54,
+      "no_count": 1,
+      "no_vote_count": 66
+    }
+  },
+  {
+    "proposal_id": "4744",
+    "chain_id": "terra",
+    "title": "YFoundry LUNA Integration into YFoundry Governance",
+    "type": "CommunityPoolSpend",
+    "topic": "Ecosystem Growth",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 37,
+      "abstain_count": 30,
+      "no_count": 7,
+      "no_vote_count": 56
+    }
+  },
+  {
+    "proposal_id": "4743",
+    "chain_id": "terra",
+    "title": "Confio Funding Halt",
+    "type": "TextProposal",
+    "topic": "Project Funding",
+    "status": "PASSED",
+    "final_tally_result": {
+      "abstain_count": 31,
+      "yes_count": 30,
+      "no_count": 9,
+      "no_with_veto_count": 1,
+      "no_vote_count": 59
+    }
+  },
+  {
+    "proposal_id": "4742",
+    "chain_id": "terra",
+    "title": "Chainscope Grant",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 29,
+      "no_count": 20,
+      "abstain_count": 23,
+      "no_vote_count": 58
+    }
+  },
+  {
+    "proposal_id": "4739",
+    "chain_id": "terra",
+    "title": "Deploy LUNA to the stLUNA liquidity pool",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "REJECTED",
+    "final_tally_result": {
+      "no_count": 26,
+      "yes_count": 20,
+      "abstain_count": 19,
+      "weighted_vote_count": 1,
+      "no_vote_count": 64
+    }
+  },
+  {
+    "proposal_id": "4738",
+    "chain_id": "terra",
+    "title": "The Gate Contract",
+    "type": "CommunityPoolSpend",
+    "topic": "Development Fund",
+    "status": "REJECTED",
+    "final_tally_result": {
+      "no_count": 19,
+      "abstain_count": 29,
+      "yes_count": 18,
+      "weighted_vote_count": 1,
+      "no_vote_count": 63
+    }
+  },
+  {
+    "proposal_id": "4737",
+    "chain_id": "terra",
+    "title": "Phoenix Software Upgrade v24",
+    "type": "SoftwareUpgrade",
+    "topic": "Major Release",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 71,
+      "no_count": 1,
+      "no_vote_count": 58
+    }
+  },
+  {
+    "proposal_id": "4736",
+    "chain_id": "terra",
+    "title": "OFFICIAL Revitalizing Terra A Backbone Labs and Eris Protocol Collaboration Not a Grant",
+    "type": "CommunityPoolSpend",
+    "topic": "Ecosystem Growth",
+    "status": "PASSED",
+    "final_tally_result": {
+      "abstain_count": 23,
+      "yes_count": 33,
+      "no_count": 7,
+      "weighted_vote_count": 1,
+      "no_vote_count": 66
+    }
+  },
+  {
+    "proposal_id": "4735",
+    "chain_id": "terra",
+    "title": "Revitalizing Terra A Backbone Labs and Eris Protocol Collaboration Not a Grant",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "REJECTED",
+    "final_tally_result": {
+      "no_count": 56,
+      "abstain_count": 4,
+      "no_vote_count": 70
+    }
+  },
+  {
+    "proposal_id": "4730",
+    "chain_id": "terra",
+    "title": "LUNA Airdrop ",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "REJECTED",
+    "final_tally_result": {
+      "no_with_veto_count": 55,
+      "no_count": 2,
+      "no_vote_count": 73
+    }
+  },
+  {
+    "proposal_id": "4729",
+    "chain_id": "terra",
+    "title": "Reenable IBC Client to Kujira",
+    "type": "IBCRelated",
+    "topic": "IBC Security",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 63,
+      "abstain_count": 3,
+      "no_count": 1,
+      "no_vote_count": 63
+    }
+  },
+  {
+    "proposal_id": "4728",
+    "chain_id": "terra",
+    "title": "TERRANONE Grant Proposal",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 51,
+      "abstain_count": 8,
+      "no_count": 1,
+      "no_vote_count": 70
+    }
+  },
+  {
+    "proposal_id": "4726",
+    "chain_id": "terra",
+    "title": "Alliance Signaling Proposal",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 64,
+      "abstain_count": 5,
+      "no_count": 1,
+      "no_vote_count": 60
+    }
+  },
+  {
+    "proposal_id": "4725",
+    "chain_id": "terra",
+    "title": "Neptune Finance Audit Reimbursement",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 53,
+      "abstain_count": 8,
+      "no_count": 2,
+      "weighted_vote_count": 1,
+      "no_vote_count": 66
+    }
+  },
+  {
+    "proposal_id": "4723",
+    "chain_id": "terra",
+    "title": "Terra  Confio CosmWasm Grant",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 46,
+      "abstain_count": 8,
+      "no_count": 4,
+      "no_vote_count": 72
+    }
+  },
+  {
+    "proposal_id": "4722",
+    "chain_id": "terra",
+    "title": "Community Funding for TerraSpaces",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 45,
+      "abstain_count": 17,
+      "no_count": 7,
+      "no_vote_count": 61
+    }
+  },
+  {
+    "proposal_id": "4717",
+    "chain_id": "terra",
+    "title": "Phoenix Software Upgrade 230",
+    "type": "SoftwareUpgrade",
+    "topic": "Major Release",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 87,
+      "no_vote_count": 43
+    }
+  },
+  {
+    "proposal_id": "4716",
+    "chain_id": "terra",
+    "title": "Lion DAO Treasury Grant",
+    "type": "CommunityPoolSpend",
+    "topic": "Ecosystem Growth",
+    "status": "PASSED",
+    "final_tally_result": {
+      "abstain_count": 31,
+      "yes_count": 41,
+      "weighted_vote_count": 1,
+      "no_vote_count": 57
+    }
+  },
+  {
+    "proposal_id": "4715",
+    "chain_id": "terra",
+    "title": "Backbone Labs  Audit Request",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 53,
+      "abstain_count": 18,
+      "no_count": 3,
+      "no_vote_count": 56
+    }
+  },
+  {
+    "proposal_id": "4714",
+    "chain_id": "terra",
+    "title": "Revised Redacted Grant Proposal",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "REJECTED",
+    "final_tally_result": {
+      "abstain_count": 23,
+      "no_count": 47,
+      "weighted_vote_count": 1,
+      "yes_count": 9,
+      "no_vote_count": 50
+    }
+  },
+  {
+    "proposal_id": "4713",
+    "chain_id": "terra",
+    "title": "ARBITRUM ARB Airdrop claim",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "REJECTED",
+    "final_tally_result": {
+      "no_with_veto_count": 46,
+      "no_count": 2,
+      "no_vote_count": 82
+    }
+  },
+  {
+    "proposal_id": "4706",
+    "chain_id": "terra",
+    "title": "io multiplayer 2D shooter Grant Proposal",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "REJECTED",
+    "final_tally_result": {
+      "no_count": 51,
+      "abstain_count": 5,
+      "yes_count": 4,
+      "no_vote_count": 70
+    }
+  },
+  {
+    "proposal_id": "4596",
+    "chain_id": "terra",
+    "title": "Incentivize the LUNAUSK Pool on Kujiras BOW",
+    "type": "CommunityPoolSpend",
+    "topic": "Ecosystem Growth",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 54,
+      "abstain_count": 6,
+      "no_count": 2,
+      "no_vote_count": 68
+    }
+  },
+  {
+    "proposal_id": "4593",
+    "chain_id": "terra",
+    "title": "dUST Games Grant Proposal",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "REJECTED",
+    "final_tally_result": {
+      "abstain_count": 16,
+      "no_count": 48,
+      "yes_count": 2,
+      "no_vote_count": 64
+    }
+  },
+  {
+    "proposal_id": "4592",
+    "chain_id": "terra",
+    "title": "Cavern Protocol Audit",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "PASSED",
+    "final_tally_result": {
+      "abstain_count": 11,
+      "yes_count": 49,
+      "no_count": 6,
+      "no_vote_count": 64
+    }
+  },
+  {
+    "proposal_id": "4591",
+    "chain_id": "terra",
+    "title": "Hermes Protocol  Community Grant for public goods development",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "REJECTED",
+    "final_tally_result": {
+      "abstain_count": 21,
+      "no_count": 33,
+      "yes_count": 7,
+      "weighted_vote_count": 1,
+      "no_vote_count": 68
+    }
+  },
+  {
+    "proposal_id": "3796",
+    "chain_id": "terra",
+    "title": "ERIS Protocol Revised Grant Proposal",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 46,
+      "abstain_count": 13,
+      "no_count": 18,
+      "no_vote_count": 53
+    }
+  },
+  {
+    "proposal_id": "3795",
+    "chain_id": "terra",
+    "title": "Terra Poker Grant Proposal Updated",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "REJECTED",
+    "final_tally_result": {
+      "no_count": 53,
+      "abstain_count": 6,
+      "yes_count": 5,
+      "no_vote_count": 66
+    }
+  },
+  {
+    "proposal_id": "3794",
+    "chain_id": "terra",
+    "title": "Terra Poker  Grant Proposal",
+    "type": "TextProposal",
+    "topic": "Project Funding",
+    "status": "REJECTED",
+    "final_tally_result": {
+      "no_count": 45,
+      "abstain_count": 15,
+      "yes_count": 1,
+      "no_vote_count": 69
+    }
+  },
+  {
+    "proposal_id": "3665",
+    "chain_id": "terra",
+    "title": "Contro Protocol Grant Proposal",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "PASSED",
+    "final_tally_result": {
+      "abstain_count": 28,
+      "yes_count": 44,
+      "no_count": 4,
+      "no_vote_count": 54
+    }
+  },
+  {
+    "proposal_id": "3619",
+    "chain_id": "terra",
+    "title": "Phoenix Software Upgrade 220",
+    "type": "SoftwareUpgrade",
+    "topic": "Major Release",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 93,
+      "abstain_count": 1,
+      "no_vote_count": 36
+    }
+  },
+  {
+    "proposal_id": "3612",
+    "chain_id": "terra",
+    "title": "TFM Grant Proposal",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 63,
+      "no_count": 6,
+      "abstain_count": 20,
+      "no_vote_count": 41
+    }
+  },
+  {
+    "proposal_id": "3547",
+    "chain_id": "terra",
+    "title": "Increase Terras Governance Quorum from 10 to 30",
+    "type": "ParameterChange",
+    "topic": "Governance Settings",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 47,
+      "abstain_count": 3,
+      "no_with_veto_count": 5,
+      "no_count": 8,
+      "no_vote_count": 67
+    }
+  },
+  {
+    "proposal_id": "3535",
+    "chain_id": "terra",
+    "title": "Get USDC  LUNA Airdrop ",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "REJECTED",
+    "final_tally_result": {
+      "no_with_veto_count": 61,
+      "no_vote_count": 69
+    }
+  },
+  {
+    "proposal_id": "3534",
+    "chain_id": "terra",
+    "title": "SCV  Terra Security Expansion Program Proposal",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 55,
+      "abstain_count": 20,
+      "no_count": 1,
+      "no_vote_count": 54
+    }
+  },
+  {
+    "proposal_id": "3533",
+    "chain_id": "terra",
+    "title": "KnowhereSoil Protocol Grant Prosposal",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "REJECTED",
+    "final_tally_result": {
+      "yes_count": 12,
+      "no_count": 40,
+      "abstain_count": 21,
+      "no_with_veto_count": 1,
+      "no_vote_count": 56
+    }
+  },
+  {
+    "proposal_id": "3460",
+    "chain_id": "terra",
+    "title": "ERIS Protocol Grant Proposal",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "REJECTED",
+    "final_tally_result": {
+      "no_count": 30,
+      "yes_count": 35,
+      "abstain_count": 10,
+      "no_with_veto_count": 1,
+      "no_vote_count": 54
+    }
+  },
+  {
+    "proposal_id": "3186",
+    "chain_id": "terra",
+    "title": "Redacted Grant Proposal",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "REJECTED",
+    "final_tally_result": {
+      "no_count": 34,
+      "abstain_count": 23,
+      "no_with_veto_count": 4,
+      "yes_count": 9,
+      "no_vote_count": 60
+    }
+  },
+  {
+    "proposal_id": "2616",
+    "chain_id": "terra",
+    "title": "Capapult Grant Proposal",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "PASSED",
+    "final_tally_result": {
+      "abstain_count": 16,
+      "yes_count": 30,
+      "no_with_veto_count": 9,
+      "no_count": 31,
+      "no_vote_count": 44
+    }
+  },
+  {
+    "proposal_id": "2460",
+    "chain_id": "terra",
+    "title": "Enable the option to SWAP LUNA 20 to LUNC",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "REJECTED",
+    "final_tally_result": {
+      "no_with_veto_count": 33,
+      "no_count": 1,
+      "no_vote_count": 96
+    }
+  },
+  {
+    "proposal_id": "1844",
+    "chain_id": "terra",
+    "title": " FINAL LAST TERRA PHOENIX AIRDROP   CLAIM NOW",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "REJECTED",
+    "final_tally_result": {
+      "no_with_veto_count": 50,
+      "no_vote_count": 80
+    }
+  },
+  {
+    "proposal_id": "1797",
+    "chain_id": "terra",
+    "title": "New Terra 30 Version   LUNA Airdrop ",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "REJECTED",
+    "final_tally_result": {
+      "no_with_veto_count": 50,
+      "no_count": 1,
+      "no_vote_count": 79
+    }
+  },
+  {
+    "proposal_id": "1612",
+    "chain_id": "terra",
+    "title": "Final versionCLAIM NOW  Genie Rewards Distribution Platform Airdrop ",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "REJECTED",
+    "final_tally_result": {
+      "no_with_veto_count": 52,
+      "no_vote_count": 78
+    }
+  },
+  {
+    "proposal_id": "1611",
+    "chain_id": "terra",
+    "title": "CLAIM NOW  Genie Rewards Distribution Platform Airdrop ",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "REJECTED",
+    "final_tally_result": {
+      "no_with_veto_count": 54,
+      "no_vote_count": 76
+    }
+  },
+  {
+    "proposal_id": "1593",
+    "chain_id": "terra",
+    "title": " Genie New Luna Airdrop ",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "REJECTED",
+    "final_tally_result": {
+      "no_with_veto_count": 56,
+      "no_count": 1,
+      "no_vote_count": 73
+    }
+  },
+  {
+    "proposal_id": "1550",
+    "chain_id": "terra",
+    "title": " Genie Rewards Distribution Platform Community Grant by Coinhall CLAIM NOW",
+    "type": "TextProposal",
+    "topic": "Project Funding",
+    "status": "REJECTED",
+    "final_tally_result": {
+      "no_with_veto_count": 54,
+      "no_vote_count": 76
+    }
+  },
+  {
+    "proposal_id": "1525",
+    "chain_id": "terra",
+    "title": "Genie Rewards Distribution Platform Community Grant by Coinhall",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "PASSED",
+    "final_tally_result": {
+      "abstain_count": 5,
+      "yes_count": 57,
+      "no_count": 1,
+      "no_with_veto_count": 2,
+      "no_vote_count": 65
+    }
+  },
+  {
+    "proposal_id": "1502",
+    "chain_id": "terra",
+    "title": "Social KYC oracle TYC",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "PASSED",
+    "final_tally_result": {
+      "no_count": 13,
+      "abstain_count": 20,
+      "yes_count": 30,
+      "no_vote_count": 67
+    }
+  },
+  {
+    "proposal_id": "1467",
+    "chain_id": "terra",
+    "title": "Enable funding to Incentivise Devs by changing the reward weight of tax and channel 02 to the community pool",
+    "type": "TextProposal",
+    "topic": "Project Funding",
+    "status": "REJECTED",
+    "final_tally_result": {
+      "no_with_veto_count": 52,
+      "no_count": 1,
+      "no_vote_count": 77
+    }
+  },
+  {
+    "proposal_id": "1462",
+    "chain_id": "terra",
+    "title": " CLAIM NOW Terra Phoenix airdrop  ",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "REJECTED",
+    "final_tally_result": {
+      "no_with_veto_count": 49,
+      "no_count": 1,
+      "no_vote_count": 80
+    }
+  },
+  {
+    "proposal_id": "1460",
+    "chain_id": "terra",
+    "title": "Terra Binance Airdrop",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "REJECTED",
+    "final_tally_result": {
+      "no_with_veto_count": 48,
+      "no_vote_count": 82
+    }
+  },
+  {
+    "proposal_id": "1438",
+    "chain_id": "terra",
+    "title": "New Features 20 ",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "REJECTED",
+    "final_tally_result": {
+      "no_with_veto_count": 57,
+      "no_count": 2,
+      "no_vote_count": 71
+    }
+  },
+  {
+    "proposal_id": "1437",
+    "chain_id": "terra",
+    "title": "Terra Phoenix airdrop Claim from Sept 4th 2022 to Oct 4th 2022 Final version",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "REJECTED",
+    "final_tally_result": {
+      "no_with_veto_count": 59,
+      "no_count": 3,
+      "no_vote_count": 68
+    }
+  },
+  {
+    "proposal_id": "1419",
+    "chain_id": "terra",
+    "title": "Terra Phoenix airdrop Claim from Sept 4th 2022 to Oct 4th 2022",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "REJECTED",
+    "final_tally_result": {
+      "no_with_veto_count": 58,
+      "no_count": 3,
+      "no_vote_count": 69
+    }
+  },
+  {
+    "proposal_id": "1415",
+    "chain_id": "terra",
+    "title": "Terra Phoenix airdrop Claim from Sept 4th 2022 to Oct 4th 2022 ",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "REJECTED",
+    "final_tally_result": {
+      "no_with_veto_count": 56,
+      "no_count": 3,
+      "no_vote_count": 71
+    }
+  },
+  {
+    "proposal_id": "1402",
+    "chain_id": "terra",
+    "title": "Terra 20 Airdrop ",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "REJECTED",
+    "final_tally_result": {
+      "no_with_veto_count": 55,
+      "no_count": 2,
+      "no_vote_count": 73
+    }
+  },
+  {
+    "proposal_id": "1396",
+    "chain_id": "terra",
+    "title": "Terra Phoenix airdrop Claim from Sept 4th 2022 to Oct 4th 2022",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "REJECTED",
+    "final_tally_result": {
+      "no_with_veto_count": 65,
+      "no_count": 5,
+      "no_vote_count": 60
+    }
+  },
+  {
+    "proposal_id": "1382",
+    "chain_id": "terra",
+    "title": "UST 20 in Progress ",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "REJECTED",
+    "final_tally_result": {
+      "no_with_veto_count": 70,
+      "no_count": 7,
+      "abstain_count": 1,
+      "no_vote_count": 52
+    }
+  },
+  {
+    "proposal_id": "1354",
+    "chain_id": "terra",
+    "title": "Terra Stablecoin Infrastructure Proposal by Stably",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "REJECTED",
+    "final_tally_result": {
+      "no_count": 34,
+      "yes_count": 25,
+      "abstain_count": 25,
+      "no_vote_count": 46
+    }
+  },
+  {
+    "proposal_id": "1139",
+    "chain_id": "terra",
+    "title": "Luna Foundation Guard BURN UST and AIRDROP for the holders LUNALUNCUSTC",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "REJECTED",
+    "final_tally_result": {
+      "no_with_veto_count": 56,
+      "no_count": 13,
+      "no_vote_count": 61
+    }
+  },
+  {
+    "proposal_id": "1120",
+    "chain_id": "terra",
+    "title": "LUNA Airdrop ",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "REJECTED",
+    "final_tally_result": {
+      "no_with_veto_count": 59,
+      "no_count": 12,
+      "no_vote_count": 59
+    }
+  },
+  {
+    "proposal_id": "1110",
+    "chain_id": "terra",
+    "title": "Airdrop LUNC",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "REJECTED",
+    "final_tally_result": {
+      "no_with_veto_count": 60,
+      "no_count": 10,
+      "no_vote_count": 60
+    }
+  },
+  {
+    "proposal_id": "986",
+    "chain_id": "terra",
+    "title": "Terra Phoenix Airdrop",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 82,
+      "no_vote_count": 48
+    }
+  },
+  {
+    "proposal_id": "979",
+    "chain_id": "terra",
+    "title": "Entropy Beacon Community Funding Grant",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "PASSED",
+    "final_tally_result": {
+      "abstain_count": 24,
+      "yes_count": 45,
+      "no_count": 1,
+      "no_vote_count": 60
+    }
+  },
+  {
+    "proposal_id": "929",
+    "chain_id": "terra",
+    "title": "Emergency Builder Allocation for Hurricane Protocol",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "REJECTED",
+    "final_tally_result": {
+      "no_count": 16,
+      "abstain_count": 41,
+      "no_vote_count": 73
+    }
+  },
+  {
+    "proposal_id": "902",
+    "chain_id": "terra",
+    "title": "MetricsDAO OnChain Data Curation Grant",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 49,
+      "abstain_count": 27,
+      "no_count": 3,
+      "no_vote_count": 51
+    }
+  },
+  {
+    "proposal_id": "894",
+    "chain_id": "terra",
+    "title": "210",
+    "type": "SoftwareUpgrade",
+    "topic": "Major Release",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 90,
+      "abstain_count": 1,
+      "no_vote_count": 39
+    }
+  },
+  {
+    "proposal_id": "887",
+    "chain_id": "terra",
+    "title": "Executing the passed Prop 880",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 73,
+      "no_count": 2,
+      "abstain_count": 5,
+      "no_vote_count": 50
+    }
+  },
+  {
+    "proposal_id": "883",
+    "chain_id": "terra",
+    "title": "Gift to Terra stakeholders",
+    "type": "TextProposal",
+    "topic": "Project Funding",
+    "status": "REJECTED",
+    "final_tally_result": {
+      "no_with_veto_count": 57,
+      "no_count": 7,
+      "abstain_count": 1,
+      "no_vote_count": 65
+    }
+  },
+  {
+    "proposal_id": "880",
+    "chain_id": "terra",
+    "title": "Emergency Allocation for Momentum One  Hermes Protocol",
+    "type": "TextProposal",
+    "topic": "Project Funding",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 52,
+      "abstain_count": 17,
+      "no_count": 3,
+      "no_vote_count": 58
+    }
+  },
+  {
+    "proposal_id": "874",
+    "chain_id": "terra",
+    "title": "Reduced validator minimum commission update 5 instead of 10",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "REJECTED",
+    "final_tally_result": {
+      "abstain_count": 34,
+      "no_count": 20,
+      "no_with_veto_count": 5,
+      "yes_count": 26,
+      "no_vote_count": 45
+    }
+  },
+  {
+    "proposal_id": "870",
+    "chain_id": "terra",
+    "title": "Validator minimum commission update",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "REJECTED",
+    "final_tally_result": {
+      "abstain_count": 30,
+      "yes_count": 27,
+      "no_count": 34,
+      "no_with_veto_count": 10,
+      "no_vote_count": 29
+    }
+  },
+  {
+    "proposal_id": "446",
+    "chain_id": "terra",
+    "title": "Establish Emergency Allocation Distribution Method",
+    "type": "TextProposal",
+    "topic": "Project Funding",
+    "status": "PASSED",
+    "final_tally_result": {
+      "abstain_count": 8,
+      "yes_count": 74,
+      "no_vote_count": 48
+    }
+  },
+  {
+    "proposal_id": "349",
+    "chain_id": "terra",
+    "title": "Upgrade Terra Classic To Reenable IBC",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "PASSED",
+    "final_tally_result": {
+      "abstain_count": 58,
+      "yes_count": 34,
+      "no_vote_count": 38
+    }
+  }
+]

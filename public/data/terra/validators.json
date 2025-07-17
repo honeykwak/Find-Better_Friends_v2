@@ -1,0 +1,967 @@
+[
+  {
+    "validator_address": "terravaloper14yeuqqg2e2fc2mcrghuqxh0w43xshpzrhnhz86",
+    "moniker": "dacm",
+    "chain_id": "terra"
+  },
+  {
+    "validator_address": "terravaloper1l9mchtvqgvpyskgtemsrkjn0e57a7wm6c863uj",
+    "moniker": "moonshot",
+    "chain_id": "terra"
+  },
+  {
+    "validator_address": "terravaloper1plxp55happ379eevsnk2xeuwzsrldsmqduyu36",
+    "moniker": "0basevc",
+    "chain_id": "terra"
+  },
+  {
+    "validator_address": "terravaloper1ulwqct0df2xuuaqzcq4yax3msdqgew6ehhcl7r",
+    "moniker": "AuraStake",
+    "chain_id": "terra"
+  },
+  {
+    "validator_address": "terravaloper1pgyelqv0hwjavgf6vhdm4e4pt766wfxxczu20l",
+    "moniker": "HighStakesch  Stake for Airdrop",
+    "chain_id": "terra"
+  },
+  {
+    "validator_address": "terravaloper19kg9ncvkuk08pxz0rnnywh65h5tvux9mlj7tc3",
+    "moniker": "LUNAStaker",
+    "chain_id": "terra"
+  },
+  {
+    "validator_address": "terravaloper1kgn6zznfq2xwrw3hrh7qtqjwu98es7vt8azjl3",
+    "moniker": "Easy 2 Stake",
+    "chain_id": "terra"
+  },
+  {
+    "validator_address": "terravaloper1f6wuq93320s6w7vvnkc0576g9mtqfmz9a8wqxk",
+    "moniker": "DELIGHT",
+    "chain_id": "terra"
+  },
+  {
+    "validator_address": "terravaloper1j732suztf853vu24pkft2rjct8f55g7vw2w3kd",
+    "moniker": "Leviathan",
+    "chain_id": "terra"
+  },
+  {
+    "validator_address": "terravaloper1q8w4u2wyhx574m70gwe8km5za2ptanny9mnqy3",
+    "moniker": "Ceres Ventures",
+    "chain_id": "terra"
+  },
+  {
+    "validator_address": "terravaloper1lnlasdy5r2hdjz3ta2r86ufkz309zdjvqshec4",
+    "moniker": "KK Validator",
+    "chain_id": "terra"
+  },
+  {
+    "validator_address": "terravaloper1kmgayukw7an8nthaj8qnh9cdwv7pp0rekpjefv",
+    "moniker": "Uranus",
+    "chain_id": "terra"
+  },
+  {
+    "validator_address": "terravaloper1chzrxuuajgp4huaanpwuz63xtc2wyq3mfzpk5f",
+    "moniker": "Goliath",
+    "chain_id": "terra"
+  },
+  {
+    "validator_address": "terravaloper1pervlaqpwmyh6t5dnly34t6d6wptstwt66tu20",
+    "moniker": "Craig",
+    "chain_id": "terra"
+  },
+  {
+    "validator_address": "terravaloper1pqxfwenlg3pjsl8zfsyu5lrln7x2cgh5w49uxp",
+    "moniker": "Robo Staking",
+    "chain_id": "terra"
+  },
+  {
+    "validator_address": "terravaloper14ane45ue9c3v46gdxz4555jlph9zkw9ncxfw74",
+    "moniker": "Chaos Protocol",
+    "chain_id": "terra"
+  },
+  {
+    "validator_address": "terravaloper1a4us48c6q5tnew0an0283j3zz8pvqry993wzxm",
+    "moniker": "Sarah Kerrigan",
+    "chain_id": "terra"
+  },
+  {
+    "validator_address": "terravaloper1s6j9wxyprdsxmdf6mvsegsldvmtk0p92pa7aey",
+    "moniker": "TERRAFIRMA",
+    "chain_id": "terra"
+  },
+  {
+    "validator_address": "terravaloper1r9rnj28lyl788sp2uaw53a5p4j95dc9gvynzh6",
+    "moniker": "Phoenix",
+    "chain_id": "terra"
+  },
+  {
+    "validator_address": "terravaloper1a98g7kjemhgvmu4zyddnrv8fgccd4keac0w38t",
+    "moniker": "Top Shelf",
+    "chain_id": "terra"
+  },
+  {
+    "validator_address": "terravaloper14q4vvp2vtmfcaejx4qy8nw9autudx0zjt30r24",
+    "moniker": "BlockFoundry",
+    "chain_id": "terra"
+  },
+  {
+    "validator_address": "terravaloper1j4cc2p4f4t4m3z37gumr6cr64vm605aa4wmcyf",
+    "moniker": "Moon Platoon",
+    "chain_id": "terra"
+  },
+  {
+    "validator_address": "terravaloper1j5k9jank9kkwwjwce0ljy723xfppnpunv959l0",
+    "moniker": "Spica Nova",
+    "chain_id": "terra"
+  },
+  {
+    "validator_address": "terravaloper1ltn4ah8k5a2alm9ekgf0e90zmt26kq6nztzatm",
+    "moniker": "Nexus Event",
+    "chain_id": "terra"
+  },
+  {
+    "validator_address": "terravaloper1xy9c3fw8am0z942qa73e6gq89fhqzvyfv4qq6f",
+    "moniker": "Stake N Shake",
+    "chain_id": "terra"
+  },
+  {
+    "validator_address": "terravaloper1qlgyrmaadru03rd9j0w9nr5p2quhthlrhujknq",
+    "moniker": "Interdimensional Cable",
+    "chain_id": "terra"
+  },
+  {
+    "validator_address": "terravaloper1axr9pdaf5u0jryrlzhs4twvyaj4rr49mmvywn8",
+    "moniker": "TerraDactyl",
+    "chain_id": "terra"
+  },
+  {
+    "validator_address": "terravaloper1ygmjw8f34uadvspjfeu7vhptqmp8j925adyusw",
+    "moniker": "Moon Dog",
+    "chain_id": "terra"
+  },
+  {
+    "validator_address": "terravaloper1a9zv7n6pmkzlm3wj6c23qyejqlmyxsl5faanrv",
+    "moniker": "Active Nodes",
+    "chain_id": "terra"
+  },
+  {
+    "validator_address": "terravaloper17kh8ngu3s74epwympaxrp4ukahm5rvtf5zc8ma",
+    "moniker": "Coinage x DAIC",
+    "chain_id": "terra"
+  },
+  {
+    "validator_address": "terravaloper1564j3fq8p8np4yhh4lytnftz33japc03wn40kg",
+    "moniker": "Cosmostation",
+    "chain_id": "terra"
+  },
+  {
+    "validator_address": "terravaloper1vh9m0jpuznh00t05c66yqqpsgqzudrg258q6ch",
+    "moniker": "r93AX Nodes",
+    "chain_id": "terra"
+  },
+  {
+    "validator_address": "terravaloper1wzu2j73nvccghywtghku5ch59f67jykw58na64",
+    "moniker": "Secure Secrets",
+    "chain_id": "terra"
+  },
+  {
+    "validator_address": "terravaloper1dvl464gpzxwru4a97q6pzqv7n7rcnxwlyspnau",
+    "moniker": "Orion  AutoCompound",
+    "chain_id": "terra"
+  },
+  {
+    "validator_address": "terravaloper199fjq4rnfvz24cktl8cervx8h8e90rukmgdv5x",
+    "moniker": " CryptoCrew  100 MEV revenue to LUNA stakers IBCgang REstake",
+    "chain_id": "terra"
+  },
+  {
+    "validator_address": "terravaloper13n2fsvfvj28eqvkjejhqlxf3pch3muxkxudacc",
+    "moniker": "StakeBin",
+    "chain_id": "terra"
+  },
+  {
+    "validator_address": "terravaloper10c04ysz9uznx2mkenuk3j3esjczyqh0j783nzt",
+    "moniker": "SCVSecurity",
+    "chain_id": "terra"
+  },
+  {
+    "validator_address": "terravaloper1vjr8z6g38f39j23y55pdektc3l2uqc9y02f9k5",
+    "moniker": "Talis Protocol",
+    "chain_id": "terra"
+  },
+  {
+    "validator_address": "terravaloper188e99yz54744uhr8xjfxmmplhnuw75xea55zfp",
+    "moniker": "Smart Stake ",
+    "chain_id": "terra"
+  },
+  {
+    "validator_address": "terravaloper13qjxhnw98lm36rxc9yjakkmulhpv7zctdhcl03",
+    "moniker": "4719",
+    "chain_id": "terra"
+  },
+  {
+    "validator_address": "terravaloper1sl97x54v0u3extuj2zrf7h0qrrtpgpslmahxau",
+    "moniker": "strangelove",
+    "chain_id": "terra"
+  },
+  {
+    "validator_address": "terravaloper14rftkw37eltf74degzajq4s5phg23vjlu9h9as",
+    "moniker": "Spacehall prev Setten",
+    "chain_id": "terra"
+  },
+  {
+    "validator_address": "terravaloper1tm0xkark2ufecmdhgaaw7gqsycyt4qag6py8x6",
+    "moniker": "Synergy Nodes",
+    "chain_id": "terra"
+  },
+  {
+    "validator_address": "terravaloper1kepapcnh78hsk8nx2u9nv05rn7vjwwf4fr59zu",
+    "moniker": "Interstellar Lounge ",
+    "chain_id": "terra"
+  },
+  {
+    "validator_address": "terravaloper1rr2g4z2ch4cqwl8s70yj94a5l2vakg0v36nmjh",
+    "moniker": " polkachucom",
+    "chain_id": "terra"
+  },
+  {
+    "validator_address": "terravaloper16vc0num5aaq4mqdh4vjhs02s3ypd0j8c7ujxpm",
+    "moniker": "Stakelyio",
+    "chain_id": "terra"
+  },
+  {
+    "validator_address": "terravaloper1cs0dspacdhym4cwcm3f7suurfszvl6k5s9p06a",
+    "moniker": "TdrSys",
+    "chain_id": "terra"
+  },
+  {
+    "validator_address": "terravaloper1jveyrzquwrt0txanmhg7jdhf2q4ry28k2esps4",
+    "moniker": "stakingcabin",
+    "chain_id": "terra"
+  },
+  {
+    "validator_address": "terravaloper1wr0p7dzss74wfmzfqm8r65mk26efg5zhzpm77s",
+    "moniker": "White Whale",
+    "chain_id": "terra"
+  },
+  {
+    "validator_address": "terravaloper17utc33x2x8qxqxhynch45lfa8ecwhawjugsuw5",
+    "moniker": "Noderunners",
+    "chain_id": "terra"
+  },
+  {
+    "validator_address": "terravaloper10mmhvx5nrnuye2x9zhe02jcg0hfzzzjlwc0sxw",
+    "moniker": "Autism Staking",
+    "chain_id": "terra"
+  },
+  {
+    "validator_address": "terravaloper1hr7svdp2rga9vf3ry95sx7g5wyspgwmg96vqg5",
+    "moniker": "PFC  Stake for SOUL airdrop",
+    "chain_id": "terra"
+  },
+  {
+    "validator_address": "terravaloper15lsftv92eyssjwkh2393s0nhjc07kryqen2fqf",
+    "moniker": "Galactic Punks Validator",
+    "chain_id": "terra"
+  },
+  {
+    "validator_address": "terravaloper1vrkzjujfds9p8t5g0xety3e3ft4dep02etv9le",
+    "moniker": "NFTSwitchxyz  Delegate for SOUL Claim Drop",
+    "chain_id": "terra"
+  },
+  {
+    "validator_address": "terravaloper1u53qwdgafryksqnzq3k7e5eyph7jlh8kgc3va4",
+    "moniker": "Imperatorco",
+    "chain_id": "terra"
+  },
+  {
+    "validator_address": "terravaloper1puzp2yjqps43x7nse33svljc550xjz35jxg432",
+    "moniker": "ProNodes75",
+    "chain_id": "terra"
+  },
+  {
+    "validator_address": "terravaloper1xgejf5yvc2ff4ddrd4nuvcmexx5sn94aaz84tc",
+    "moniker": "Monster Node",
+    "chain_id": "terra"
+  },
+  {
+    "validator_address": "terravaloper1lelhxdzwn9ddecv6sv0kcxj5tguurxnzcfs5wf",
+    "moniker": "Orbital Command",
+    "chain_id": "terra"
+  },
+  {
+    "validator_address": "terravaloper1cqc26lnatzxvu0z5nd4yx8m4ecllkm7jlakwrw",
+    "moniker": "Solid  solidonline",
+    "chain_id": "terra"
+  },
+  {
+    "validator_address": "terravaloper1wdymftapg5pcvf2aqw4pd0yuuh5w9m6yqdnukv",
+    "moniker": "01node",
+    "chain_id": "terra"
+  },
+  {
+    "validator_address": "terravaloper1ge3vqn6cjkk2xkfwpg5ussjwxvahs2f6at87yp",
+    "moniker": "coinhallorg",
+    "chain_id": "terra"
+  },
+  {
+    "validator_address": "terravaloper1vm5azhvaxeanc7auxh02y8jmxrk8tj93f43e7j",
+    "moniker": "ERIS  Delegate for claimdrop",
+    "chain_id": "terra"
+  },
+  {
+    "validator_address": "terravaloper1pet430t7ykswxuyhh56d4gk6rt7qgu9as6a5r0",
+    "moniker": " The Lion DAO",
+    "chain_id": "terra"
+  },
+  {
+    "validator_address": "terravaloper1yy5379nk24xffpq4egw7ue4ad3j7l79ma2enmz",
+    "moniker": " AutoStake  Slash Protected",
+    "chain_id": "terra"
+  },
+  {
+    "validator_address": "terravaloper1htey4gcdcass29vn4dwjcuq58mrvv8ra5pjz4k",
+    "moniker": "cosmosrescue",
+    "chain_id": "terra"
+  },
+  {
+    "validator_address": "terravaloper1jncrqd24wtcdpes9y89qsh0jn5c8sayn92302l",
+    "moniker": "Staker Space",
+    "chain_id": "terra"
+  },
+  {
+    "validator_address": "terravaloper1vcd42qfvlvnjwaw7hvl6y32wrzqxvas653yus9",
+    "moniker": " LavenderFive Nodes ",
+    "chain_id": "terra"
+  },
+  {
+    "validator_address": "terravaloper15389y60f0rk596tm38qewqycr8ztt8hshsf2mk",
+    "moniker": "Interstake One prev BTCSecure",
+    "chain_id": "terra"
+  },
+  {
+    "validator_address": "terravaloper1ktu7a6wqlk6vlywf4rt6wfcxuphc0es27p0qvx",
+    "moniker": "Crosnest",
+    "chain_id": "terra"
+  },
+  {
+    "validator_address": "terravaloper1cl8j3r09vmlxf5zsq4xms7td8x2qcfml8637yf",
+    "moniker": " uGaenn ",
+    "chain_id": "terra"
+  },
+  {
+    "validator_address": "terravaloper1mgpgp53tynj4djmckxdjhufa7q8lqqjuwnrlqm",
+    "moniker": "Stakin",
+    "chain_id": "terra"
+  },
+  {
+    "validator_address": "terravaloper1mnfavz2tcq6shdfph5azt7gwt6va2s6weqdnkq",
+    "moniker": "BIG Labs",
+    "chain_id": "terra"
+  },
+  {
+    "validator_address": "terravaloper1cn632uud65sk0csh00uygdj2llyppcl66thr7d",
+    "moniker": "CosmoStake1",
+    "chain_id": "terra"
+  },
+  {
+    "validator_address": "terravaloper1yt7hhu4xpwe2dqg6euda5t3pvx0mhsmvap548h",
+    "moniker": "OneStar",
+    "chain_id": "terra"
+  },
+  {
+    "validator_address": "terravaloper1qydjryxqkz9n7x8kcrl3c0w0yckwswgjmu0qd8",
+    "moniker": "chainon",
+    "chain_id": "terra"
+  },
+  {
+    "validator_address": "terravaloper1gfajnv0ud3r6kecvzzqm5acd2adntvgwmzzr72",
+    "moniker": "farewell",
+    "chain_id": "terra"
+  },
+  {
+    "validator_address": "terravaloper1qdspntsxzna8l8sp4ma8x0dyk0q7cgzvfj9vgc",
+    "moniker": "Red Herring  0 Commission  100 Uptime",
+    "chain_id": "terra"
+  },
+  {
+    "validator_address": "terravaloper1p84hlkya983t2nugr8z6v9upceq4unjja2hfju",
+    "moniker": "0xDEADBEEF",
+    "chain_id": "terra"
+  },
+  {
+    "validator_address": "terravaloper1zq2zstc4f6n7xcr343f9dgqun3dd07kycefdfr",
+    "moniker": "Crypto Plant",
+    "chain_id": "terra"
+  },
+  {
+    "validator_address": "terravaloper1288f4sy7a0vn07ntpdgh3xl3ae94wcntvptlk5",
+    "moniker": "bobspc",
+    "chain_id": "terra"
+  },
+  {
+    "validator_address": "terravaloper1zwwxp2fjhzylj7cnh07085ktqj2fm7qwfy5qvg",
+    "moniker": "Selfsame Turk Shape",
+    "chain_id": "terra"
+  },
+  {
+    "validator_address": "terravaloper1zan8943qgnkdnrxcpg3krhagpsll7acdpr7kqj",
+    "moniker": "VegasNode",
+    "chain_id": "terra"
+  },
+  {
+    "validator_address": "terravaloper1rx8es8n64979ttp23w2hvssm5m0qfdp3a6ayj4",
+    "moniker": "NodeZombie  0 Commission and 1 MAX commission",
+    "chain_id": "terra"
+  },
+  {
+    "validator_address": "terravaloper1rgsr8ks5lj5lcrrnlarmcwxlgtwn8mkyrz6unf",
+    "moniker": "coreweave",
+    "chain_id": "terra"
+  },
+  {
+    "validator_address": "terravaloper1r09u7wn4nujsscqwc2p87dly0nasvdyxaj5m7h",
+    "moniker": "abitration",
+    "chain_id": "terra"
+  },
+  {
+    "validator_address": "terravaloper1znh6eq79l3z5l7ctnrjr2d8ksaght25lku6mlw",
+    "moniker": "Luna Whale",
+    "chain_id": "terra"
+  },
+  {
+    "validator_address": "terravaloper1r5np29ppsh7l3zq2qjsegwak7t6y0h97l79dr2",
+    "moniker": "Anchor Staking",
+    "chain_id": "terra"
+  },
+  {
+    "validator_address": "terravaloper1yp9hzs5j7kuc99x0uude57zmvxf89w2ykvpy80",
+    "moniker": "Zero",
+    "chain_id": "terra"
+  },
+  {
+    "validator_address": "terravaloper1yw20fl3fg0hlsq4xkd8w9wfzddpqzuyd74j25r",
+    "moniker": "RockawayX Infra",
+    "chain_id": "terra"
+  },
+  {
+    "validator_address": "terravaloper1ysc3qzsqac2tunsmz9uy4gmtjqevvmtxpn0g6l",
+    "moniker": "jesselstake",
+    "chain_id": "terra"
+  },
+  {
+    "validator_address": "terravaloper1y3f6zzad5efn4m9xl7cfpapa9y49kc5l3s8v76",
+    "moniker": "Intern Capital 0 Fee  2025",
+    "chain_id": "terra"
+  },
+  {
+    "validator_address": "terravaloper1yejn4qj9uy7xw9e2z5328uxxm5jzgu3etm9v4q",
+    "moniker": "Electron Labs",
+    "chain_id": "terra"
+  },
+  {
+    "validator_address": "terravaloper19qg4kyw7cltfaw5m7yh7cqsygvjgtu35rxr4t6",
+    "moniker": "Moonlet",
+    "chain_id": "terra"
+  },
+  {
+    "validator_address": "terravaloper183kevvgrqvav9sa0lwzhr54jngxw6sac90jvs2",
+    "moniker": "KuCoin",
+    "chain_id": "terra"
+  },
+  {
+    "validator_address": "terravaloper1fnrw6z8ff00h5ucev2qvp45pzd430s6crtncga",
+    "moniker": "Ginkou",
+    "chain_id": "terra"
+  },
+  {
+    "validator_address": "terravaloper12qqr5crucyzfxduu2a9glqsuvvadw9828uw9nj",
+    "moniker": "managocloud",
+    "chain_id": "terra"
+  },
+  {
+    "validator_address": "terravaloper12qvrr6j7u3z5el5uuwg99ftx3jru5py6027gfx",
+    "moniker": "Nodeasy",
+    "chain_id": "terra"
+  },
+  {
+    "validator_address": "terravaloper12y453v20w2dlv2y0vlepf88ng0r6sfsz6k7qm4",
+    "moniker": "Sapient Nodes",
+    "chain_id": "terra"
+  },
+  {
+    "validator_address": "terravaloper19tuccjztpgq75dg4766dz9e7lsmy5gtu2c6u3w",
+    "moniker": "The Mafia Wins Redelegate",
+    "chain_id": "terra"
+  },
+  {
+    "validator_address": "terravaloper1xvcllwusyx7pf539es7f8dsdnffmur6xz32lm7",
+    "moniker": "ShapeShift DAO",
+    "chain_id": "terra"
+  },
+  {
+    "validator_address": "terravaloper120amfsh6mpk8hkpwj3eml8rejdme8c75vnantl",
+    "moniker": "Pixy",
+    "chain_id": "terra"
+  },
+  {
+    "validator_address": "terravaloper1tjywsl9vf34rh4exer4mhxsrqqh9hy9j9t6gkr",
+    "moniker": "North Star",
+    "chain_id": "terra"
+  },
+  {
+    "validator_address": "terravaloper1vjthkeksxrc4hl806y2kktr5xzvfqfaysgam70",
+    "moniker": "TaiPanich",
+    "chain_id": "terra"
+  },
+  {
+    "validator_address": "terravaloper1v6pfkm0nxpudgantwxwhz786l8me0wfs4lnpuw",
+    "moniker": "Forbole",
+    "chain_id": "terra"
+  },
+  {
+    "validator_address": "terravaloper1d2hyv233pl8l62zn2zs3c8wc2skkphssc6vuyy",
+    "moniker": "Citadelone Shut down starting July 5th",
+    "chain_id": "terra"
+  },
+  {
+    "validator_address": "terravaloper1gdvfugy7vt9vk8evntwe54knsqyncmpjzyhljt",
+    "moniker": "KuCoin LUNA Node",
+    "chain_id": "terra"
+  },
+  {
+    "validator_address": "terravaloper1dmkdw7q23acc72knqv9yu46pz2m363705cnt27",
+    "moniker": "AthensProject",
+    "chain_id": "terra"
+  },
+  {
+    "validator_address": "terravaloper1wyycam5xm0hdfe8ekeddwue72fcz4gnjggpgnh",
+    "moniker": "Hex Trust",
+    "chain_id": "terra"
+  },
+  {
+    "validator_address": "terravaloper10q8xdprmkefzuxkr8lms7frga7ww7c8kmpdw3q",
+    "moniker": "Terra Rebirth 0",
+    "chain_id": "terra"
+  },
+  {
+    "validator_address": "terravaloper10443zhx9hjt63ha92492qw3e7l7q2pnjd9ft8z",
+    "moniker": "Tezro",
+    "chain_id": "terra"
+  },
+  {
+    "validator_address": "terravaloper1j7drdl93x47ah0krr30f9xxmgcvv7kkyvw760c",
+    "moniker": "huobi",
+    "chain_id": "terra"
+  },
+  {
+    "validator_address": "terravaloper10ahmn0ucd9selcv77rwysx5pvd607z04zde7uh",
+    "moniker": "StakeLab",
+    "chain_id": "terra"
+  },
+  {
+    "validator_address": "terravaloper1s2xpff7mj6jpxfyhr7pe25vt8puvgj4wy0tzjx",
+    "moniker": "Asnodes",
+    "chain_id": "terra"
+  },
+  {
+    "validator_address": "terravaloper1s3q7rzhnkhrhf2fn6c8026sm6hexnhu6cx22x7",
+    "moniker": "Luna Burn Club",
+    "chain_id": "terra"
+  },
+  {
+    "validator_address": "terravaloper1n5xv9980mswe0va7dhhmxr42dvlerlhz7062zp",
+    "moniker": "NodesGuru",
+    "chain_id": "terra"
+  },
+  {
+    "validator_address": "terravaloper1n40n2f4uvd5tgw4wv8zk95lfmsgnjc5c4e52k0",
+    "moniker": "Arcana Bast Pastille",
+    "chain_id": "terra"
+  },
+  {
+    "validator_address": "terravaloper1nk0rv2aa8n5hlyd8s9pj73mvn6kpryfnhwq9h9",
+    "moniker": "0 Fee to 2025  Stakewollecom",
+    "chain_id": "terra"
+  },
+  {
+    "validator_address": "terravaloper13qm5xdmvnexxjplw0dvmxcvqmxqscpavtpm2nn",
+    "moniker": "Vixello",
+    "chain_id": "terra"
+  },
+  {
+    "validator_address": "terravaloper13g7z3qq6f00qww3u4mpcs3xw5jhqwraswraapc",
+    "moniker": "Everstake",
+    "chain_id": "terra"
+  },
+  {
+    "validator_address": "terravaloper13fkxypqa0e3lvzu2fay7mslc2xsghv26a3a7jl",
+    "moniker": "Shut down",
+    "chain_id": "terra"
+  },
+  {
+    "validator_address": "terravaloper1jjacfews36euh6apk0w2e432vflyw4rapvlxv6",
+    "moniker": "The Charity Block",
+    "chain_id": "terra"
+  },
+  {
+    "validator_address": "terravaloper1jxlfmwux3veu62n5dl8njqvplajr5ek4xdnv6d",
+    "moniker": "Shigeo808  Shutting down validator please redelegate",
+    "chain_id": "terra"
+  },
+  {
+    "validator_address": "terravaloper1j2ee3ykhae8na9gq8u4lsamff3armts204eyaq",
+    "moniker": " Dabu Dabu  0 fee",
+    "chain_id": "terra"
+  },
+  {
+    "validator_address": "terravaloper1pwum4swah9t5mjynalk3f334v4ztxc66k29v25",
+    "moniker": "WhisperNode ",
+    "chain_id": "terra"
+  },
+  {
+    "validator_address": "terravaloper15gs5cy87n5jxddf4vq94efre9uwkrt9xaaw9z7",
+    "moniker": " USTC Buyback   TerraAventura ",
+    "chain_id": "terra"
+  },
+  {
+    "validator_address": "terravaloper15ky0w3rglcxgvpmkcvcdcd3ml4v7yuut5mk0q3",
+    "moniker": "0 Ratify  Supercharged delegation rewards",
+    "chain_id": "terra"
+  },
+  {
+    "validator_address": "terravaloper1dssjvxrvf06mw34jj965c5ca3a45my9yz5dgk8",
+    "moniker": "LegendX",
+    "chain_id": "terra"
+  },
+  {
+    "validator_address": "terravaloper1ltegerwren4tcaxpwxpkgs94ztnrcu0sk9cajz",
+    "moniker": "TheNFTProject",
+    "chain_id": "terra"
+  },
+  {
+    "validator_address": "terravaloper1src9wvawtfl6ztxss8zu45zuxnwj4ytpnr30jn",
+    "moniker": "Obi Formerly Terra Bites",
+    "chain_id": "terra"
+  },
+  {
+    "validator_address": "terravaloper1urzdtmrl3sg3zt65jzr9mw70tsen578w2yfjl4",
+    "moniker": "kytzu",
+    "chain_id": "terra"
+  },
+  {
+    "validator_address": "terravaloper1tfy452kxfcsa2353nenltade9esj7ffrc38gwn",
+    "moniker": "Stakeflow",
+    "chain_id": "terra"
+  },
+  {
+    "validator_address": "terravaloper1aa6f2qeu0hrqpsxe4rggz0k7e43jfce43arz82",
+    "moniker": "HEXXAGON",
+    "chain_id": "terra"
+  },
+  {
+    "validator_address": "terravaloper1t3zvwaz7v3epg3f33waxajv4nj95mt8ma9yc7g",
+    "moniker": "Futura Meridian",
+    "chain_id": "terra"
+  },
+  {
+    "validator_address": "terravaloper1jt8pcx4sesgztjkjsvjjqtvyfgcehqx09u4exq",
+    "moniker": "Terrascope",
+    "chain_id": "terra"
+  },
+  {
+    "validator_address": "terravaloper1mh6zgqltndg3jq2unqh4nldgameavpm6pzdk8v",
+    "moniker": "HappyLunatic",
+    "chain_id": "terra"
+  },
+  {
+    "validator_address": "terravaloper1kcsunyhnhmnc0afrrynd7qfzykmhm3w5ely6fh",
+    "moniker": "Kiki Finance",
+    "chain_id": "terra"
+  },
+  {
+    "validator_address": "terravaloper1hy99h5xn44jtn76dla93wsps8h2eqsxqah4zhj",
+    "moniker": "HEX TRUST",
+    "chain_id": "terra"
+  },
+  {
+    "validator_address": "terravaloper1h0z9l64y6alk2kzk8c6z5hq2c40peuhvjg2g0k",
+    "moniker": "Zeus Staking",
+    "chain_id": "terra"
+  },
+  {
+    "validator_address": "terravaloper1cehw6u08tyxyyygy04eftqnswd0f2c2zsprc9t",
+    "moniker": "Clorophilla",
+    "chain_id": "terra"
+  },
+  {
+    "validator_address": "terravaloper1ettjrqla8cpmx0wvdurjynn7776gurx5yp9pe4",
+    "moniker": "RuneTerra",
+    "chain_id": "terra"
+  },
+  {
+    "validator_address": "terravaloper1ekq8xuypdxtf3nfmffmydnhny59pjuy0p8wpn7",
+    "moniker": "ChainofSecretsorg",
+    "chain_id": "terra"
+  },
+  {
+    "validator_address": "terravaloper1rgdps79da300t87twwkcly6ec3vlpgpfgnsel5",
+    "moniker": "Mario",
+    "chain_id": "terra"
+  },
+  {
+    "validator_address": "terravaloper166xvgcq8m9jwwp9wm8gcgmcenmqtc55y856dpu",
+    "moniker": "Test Validator1",
+    "chain_id": "terra"
+  },
+  {
+    "validator_address": "terravaloper1mt9vkj2qwwkzam9mqp5huys4u4yl5u99ny4tw8",
+    "moniker": "Kalia Network",
+    "chain_id": "terra"
+  },
+  {
+    "validator_address": "terravaloper1mh0zq89rggupayas2jlfffcyshaf4ep2j09jyv",
+    "moniker": "Flipside",
+    "chain_id": "terra"
+  },
+  {
+    "validator_address": "terravaloper1uqk5g0yyza95reyujg9fjydah8pxps6uu549uj",
+    "moniker": "Skip Labs",
+    "chain_id": "terra"
+  },
+  {
+    "validator_address": "terravaloper150pqxd0j27mjg4yy4fafhkm7gfhsk8xvyfft0y",
+    "moniker": "NITAWA",
+    "chain_id": "terra"
+  },
+  {
+    "validator_address": "terravaloper120ppepaj2lh5vreadx42wnjjznh55vvktp78wk",
+    "moniker": "Allnodes  0 fee",
+    "chain_id": "terra"
+  },
+  {
+    "validator_address": "terravaloper1r98p8xdrn68fxslfv3fey5sfuqfs8tuth0m67l",
+    "moniker": "PigCash",
+    "chain_id": "terra"
+  },
+  {
+    "validator_address": "terravaloper1jpe3dnvjhvtyhhgwtvycfrcfdtee6nneg4m8lu",
+    "moniker": "Morph Nato Prophet",
+    "chain_id": "terra"
+  },
+  {
+    "validator_address": "terravaloper1wwq9mfkkqfta334d4hcjrjau9y50a4hw37zhdl",
+    "moniker": "StakeWithUs",
+    "chain_id": "terra"
+  },
+  {
+    "validator_address": "terravaloper18vnm040mwk0d6plc60v5m9h2376gkcphknuwzs",
+    "moniker": "PRYZM  StakeDrop",
+    "chain_id": "terra"
+  },
+  {
+    "validator_address": "terravaloper1l920a79akuc98hz4389axf9ctcymrf5ays578x",
+    "moniker": "WildSage  0 fee",
+    "chain_id": "terra"
+  },
+  {
+    "validator_address": "terravaloper1hy8lzd38kp0t8662r2vnxsc4ezs3l74506jx02",
+    "moniker": "Luna Rewards",
+    "chain_id": "terra"
+  },
+  {
+    "validator_address": "terravaloper145celszsx43p8rumldtp6qjqrj07ysmsfyfe4t",
+    "moniker": "Cosmos Spaces",
+    "chain_id": "terra"
+  },
+  {
+    "validator_address": "terravaloper1tz203ptlsfs8c63f2j0d0872pt5frjrvtfg0vd",
+    "moniker": " LUNC DAO ",
+    "chain_id": "terra"
+  },
+  {
+    "validator_address": "terravaloper1sextn6xd46edrc02tf6d2fysmqw62qu7ng3kkm",
+    "moniker": "MissionControl",
+    "chain_id": "terra"
+  },
+  {
+    "validator_address": "terravaloper1rj6xj0lfrksr4uecp7n26l4rzmhqcqcaq3z656",
+    "moniker": "Humble Beginnings",
+    "chain_id": "terra"
+  },
+  {
+    "validator_address": "terravaloper13e2s6ka2jcm6a0hueplhzyq2fxqrkgeyqpusda",
+    "moniker": "Eclipse",
+    "chain_id": "terra"
+  },
+  {
+    "validator_address": "terravaloper1gtw2uxdkdt3tvq790ckjz8jm8qgwkdw3uptstn",
+    "moniker": "Terran One",
+    "chain_id": "terra"
+  },
+  {
+    "validator_address": "terravaloper1u8lglu36g5x6shp2xyd35hcs45x9cvmj6tmvd8",
+    "moniker": "Enigma",
+    "chain_id": "terra"
+  },
+  {
+    "validator_address": "terravaloper1w6pd8at32vh8r2kz8me8c6535sfwhjzkuennrf",
+    "moniker": "Defi Suffrage",
+    "chain_id": "terra"
+  },
+  {
+    "validator_address": "terravaloper1ccwgk6gvgtm556gxe0v79p48nrgsey05w3fle4",
+    "moniker": "Luna Station 88",
+    "chain_id": "terra"
+  },
+  {
+    "validator_address": "terravaloper1d4p6vrzhppnlv2nxs6wz5agssm6558k808ykr8",
+    "moniker": "URA   Delegate for Claimdrop",
+    "chain_id": "terra"
+  },
+  {
+    "validator_address": "terravaloper1uv45luc5fzq66u9enmnv44k8c7j2zuge5kr60r",
+    "moniker": "8moon",
+    "chain_id": "terra"
+  },
+  {
+    "validator_address": "terravaloper1yh4u76y405t3ff9lyrzhhe8legjx9k3as5mujs",
+    "moniker": "KingSuper",
+    "chain_id": "terra"
+  },
+  {
+    "validator_address": "terravaloper18pmvpy25zc7x0u8ppefuyyl2zaafe2wut0nm5e",
+    "moniker": "Y",
+    "chain_id": "terra"
+  },
+  {
+    "validator_address": "terravaloper1ygwhuksjq3nymd9n8kmceaxd3vxv97u7ja33aj",
+    "moniker": "FreshSTAKING",
+    "chain_id": "terra"
+  },
+  {
+    "validator_address": "terravaloper1uy69jhptztw02z03qnh430d2vsmh937gy55pkm",
+    "moniker": "MCF",
+    "chain_id": "terra"
+  },
+  {
+    "validator_address": "terravaloper16a0x4us8x6yg2xj5upx88hcum2cymknekepvgs",
+    "moniker": "MrK",
+    "chain_id": "terra"
+  },
+  {
+    "validator_address": "terravaloper1g6pwngzfj73wnxm7y5gae0thylphugumc96gh3",
+    "moniker": "Hermes Protocol  Earn airdrops  more",
+    "chain_id": "terra"
+  },
+  {
+    "validator_address": "terravaloper1dlfuk6z3f37rn0srs3r2tea7kzcj6aqr6k5vzr",
+    "moniker": "Shutting Down May 1st 2024",
+    "chain_id": "terra"
+  },
+  {
+    "validator_address": "terravaloper1g0deaesmwy2qg9zupynx6ychspe60lquu3eyze",
+    "moniker": "StakeSabai",
+    "chain_id": "terra"
+  },
+  {
+    "validator_address": "terravaloper1aprcgxpt7zynnklu5sp2q0f0l3xh8d6lcq4f2f",
+    "moniker": "Un Fuego",
+    "chain_id": "terra"
+  },
+  {
+    "validator_address": "terravaloper1e4sju9ya52l8ndjcneut4hg52y228360j0w86r",
+    "moniker": "syncnode",
+    "chain_id": "terra"
+  },
+  {
+    "validator_address": "terravaloper10qz4hfudfnllkgvhnm7k40dewg27nhxz3yn895",
+    "moniker": "Inotel",
+    "chain_id": "terra"
+  },
+  {
+    "validator_address": "terravaloper14rw9dq3tj9y0k9pg2jquh922fdv5nupr0nn7k8",
+    "moniker": "SeltonStakecom",
+    "chain_id": "terra"
+  },
+  {
+    "validator_address": "terravaloper10ge6t62gzesz378e09kkgqvx9ev7tf6xcsrqqu",
+    "moniker": "Angel Protocol",
+    "chain_id": "terra"
+  },
+  {
+    "validator_address": "terravaloper1kxyzu575tex8dv6d5uk26t4q8x5lusw082w3t8",
+    "moniker": "TCB THORmaximalist",
+    "chain_id": "terra"
+  },
+  {
+    "validator_address": "terravaloper1yej82e2zursn2f56vgxfvmydwj9f2awluhusqh",
+    "moniker": "MANTRA DAO",
+    "chain_id": "terra"
+  },
+  {
+    "validator_address": "terravaloper18kele3jy20uu8ezm8ylcp9tcsqhaup0rt25uu5",
+    "moniker": "StakeMachine",
+    "chain_id": "terra"
+  },
+  {
+    "validator_address": "terravaloper1k4ef8m95t7eq522evmmuzvfkpla04pezmu4j7k",
+    "moniker": "Bit Cat",
+    "chain_id": "terra"
+  },
+  {
+    "validator_address": "terravaloper1d3dgxxsxmlp6txfjegzjqh7tmf9wrlzwqswkz3",
+    "moniker": "WeStaking",
+    "chain_id": "terra"
+  },
+  {
+    "validator_address": "terravaloper1arm3fzjp7qv8e5gyhraeykcpjte6wh562yre97",
+    "moniker": "Long Live Luna",
+    "chain_id": "terra"
+  },
+  {
+    "validator_address": "terravaloper1a6n088fsjxp7e63zrh7dvllhelksu6g0wzqal5",
+    "moniker": "waltsoftmoney",
+    "chain_id": "terra"
+  },
+  {
+    "validator_address": "terravaloper1wuqf6xq54n5n4hus2wn849ttx02xznvj0ewmxp",
+    "moniker": "SafePoint",
+    "chain_id": "terra"
+  },
+  {
+    "validator_address": "terravaloper1net6ytfaamgcrlrjgnkyjp6zkjxrsgg5vrnxlz",
+    "moniker": "TerRarityio",
+    "chain_id": "terra"
+  },
+  {
+    "validator_address": "terravaloper1tthd0d5t6xksag3qp5cwvmyj7d6k9sktujnjrk",
+    "moniker": "Mosaic",
+    "chain_id": "terra"
+  },
+  {
+    "validator_address": "terravaloper1luyy5c5346gfy5kn0u9j03782clx9mplch7cew",
+    "moniker": "OWNR Wallet",
+    "chain_id": "terra"
+  },
+  {
+    "validator_address": "terravaloper1wzvgc8j840qtsfsa55kuf9cypqwa2tqnkrduqx",
+    "moniker": "Aardvark",
+    "chain_id": "terra"
+  },
+  {
+    "validator_address": "terravaloper1g50t9cxzhu0edk2r5lagmujupt722mhefxvzzy",
+    "moniker": "Wave",
+    "chain_id": "terra"
+  },
+  {
+    "validator_address": "terravaloper1e69j0asssglm4nccrw2hk9vzl9mrqq8jrwxwlu",
+    "moniker": "UST Zone  powered by FatMan",
+    "chain_id": "terra"
+  },
+  {
+    "validator_address": "terravaloper17846saa8hspkt2wgqdycd3arxk8ykrusg6h5aa",
+    "moniker": "RockX",
+    "chain_id": "terra"
+  }
+]
