@@ -1,0 +1,5234 @@
+[
+  {
+    "proposal_id": "459",
+    "chain_id": "injective",
+    "title": "Adjust Binary Options Market Instant Listing Fee to 05 INJ",
+    "type": "ParameterChange",
+    "topic": "Fee Adjustment",
+    "status": "PASSED",
+    "final_tally_result": {
+      "abstain_count": 13,
+      "yes_count": 29,
+      "no_vote_count": 18
+    }
+  },
+  {
+    "proposal_id": "458",
+    "chain_id": "injective",
+    "title": "Remove relayers for Frontrunner provider oracle",
+    "type": "MarketRelated",
+    "topic": "Oracle Update",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 27,
+      "abstain_count": 15,
+      "no_vote_count": 18
+    }
+  },
+  {
+    "proposal_id": "457",
+    "chain_id": "injective",
+    "title": "Settle 2024ELECTIONUSDT PERP and QUNTUSDT PERP markets",
+    "type": "MarketRelated",
+    "topic": "Market Addition",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 23,
+      "abstain_count": 19,
+      "no_vote_count": 18
+    }
+  },
+  {
+    "proposal_id": "456",
+    "chain_id": "injective",
+    "title": "Decrease default exchange maker fee rebate to 05 bps",
+    "type": "ParameterChange",
+    "topic": "Fee Adjustment",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 30,
+      "abstain_count": 11,
+      "no_vote_count": 19
+    }
+  },
+  {
+    "proposal_id": "455",
+    "chain_id": "injective",
+    "title": "Decrease maker fee rebate to 05 bps",
+    "type": "MarketRelated",
+    "topic": "Oracle Update",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 30,
+      "abstain_count": 11,
+      "no_vote_count": 19
+    }
+  },
+  {
+    "proposal_id": "454",
+    "chain_id": "injective",
+    "title": "Disbursement of OLP rewards for epoch ended on 28 October 2024",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 32,
+      "abstain_count": 9,
+      "no_vote_count": 19
+    }
+  },
+  {
+    "proposal_id": "453",
+    "chain_id": "injective",
+    "title": "Whitelist Address for Wasm Upload",
+    "type": "ParameterChange",
+    "topic": "Protocol Configuration",
+    "status": "PASSED",
+    "final_tally_result": {
+      "abstain_count": 14,
+      "yes_count": 23,
+      "no_count": 1,
+      "no_vote_count": 22
+    }
+  },
+  {
+    "proposal_id": "452",
+    "chain_id": "injective",
+    "title": "Update Kira Liquidity Pool Locker",
+    "type": "SmartContract",
+    "topic": "Contract Deployment",
+    "status": "PASSED",
+    "final_tally_result": {
+      "abstain_count": 27,
+      "yes_count": 13,
+      "no_count": 1,
+      "no_vote_count": 19
+    }
+  },
+  {
+    "proposal_id": "451",
+    "chain_id": "injective",
+    "title": "Paradyze Mainnet Provider Oracle",
+    "type": "MarketRelated",
+    "topic": "Oracle Update",
+    "status": "PASSED",
+    "final_tally_result": {
+      "abstain_count": 26,
+      "yes_count": 15,
+      "no_count": 1,
+      "no_vote_count": 18
+    }
+  },
+  {
+    "proposal_id": "449",
+    "chain_id": "injective",
+    "title": "Reduce Peggy Slashing Percentage",
+    "type": "ParameterChange",
+    "topic": "Staking Parameters",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 33,
+      "abstain_count": 7,
+      "no_vote_count": 20
+    }
+  },
+  {
+    "proposal_id": "448",
+    "chain_id": "injective",
+    "title": "Kira Liquidity Pool Locker to be deployed on the injective mainnet",
+    "type": "SmartContract",
+    "topic": "Contract Deployment",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 16,
+      "abstain_count": 18,
+      "no_count": 5,
+      "no_vote_count": 21
+    }
+  },
+  {
+    "proposal_id": "447",
+    "chain_id": "injective",
+    "title": "Disbursement of OLP rewards for epoch ended on 30 September 2024",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 34,
+      "abstain_count": 10,
+      "no_vote_count": 16
+    }
+  },
+  {
+    "proposal_id": "446",
+    "chain_id": "injective",
+    "title": "Upload Injex Finance Vesting Contract Wasm Code",
+    "type": "SmartContract",
+    "topic": "Contract Deployment",
+    "status": "PASSED",
+    "final_tally_result": {
+      "abstain_count": 23,
+      "yes_count": 12,
+      "no_count": 1,
+      "no_vote_count": 24
+    }
+  },
+  {
+    "proposal_id": "445",
+    "chain_id": "injective",
+    "title": "Funding Proposal Support Development of Apello Corrected Proposal",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "REJECTED",
+    "final_tally_result": {
+      "no_count": 24,
+      "abstain_count": 20,
+      "no_vote_count": 16
+    }
+  },
+  {
+    "proposal_id": "444",
+    "chain_id": "injective",
+    "title": "FUNDING PROPOSAL Fund development of Apello",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "REJECTED",
+    "final_tally_result": {
+      "no_count": 29,
+      "abstain_count": 15,
+      "no_vote_count": 16
+    }
+  },
+  {
+    "proposal_id": "443",
+    "chain_id": "injective",
+    "title": "INJ 30 Inflation Parameters Update 24Q3",
+    "type": "ParameterChange",
+    "topic": "Economic Parameters",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 33,
+      "abstain_count": 9,
+      "no_vote_count": 18
+    }
+  },
+  {
+    "proposal_id": "442",
+    "chain_id": "injective",
+    "title": "Increase max trading leverage to 20x for INJUSDT PERP BNBUSDT PERP and XRPUSDT PERP markets",
+    "type": "MarketRelated",
+    "topic": "Trading Parameters",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 34,
+      "abstain_count": 9,
+      "no_vote_count": 17
+    }
+  },
+  {
+    "proposal_id": "441",
+    "chain_id": "injective",
+    "title": "Whitelist Ark Protocol Dev Wallet Address for Wasm Upload InterChain NFT Contracts",
+    "type": "ParameterChange",
+    "topic": "Protocol Configuration",
+    "status": "PASSED",
+    "final_tally_result": {
+      "abstain_count": 23,
+      "yes_count": 20,
+      "no_vote_count": 17
+    }
+  },
+  {
+    "proposal_id": "440",
+    "chain_id": "injective",
+    "title": "Add ICONBalanced Network deployment wallet to Injective whitelist",
+    "type": "ParameterChange",
+    "topic": "Protocol Configuration",
+    "status": "PASSED",
+    "final_tally_result": {
+      "abstain_count": 26,
+      "no_count": 5,
+      "yes_count": 12,
+      "no_vote_count": 17
+    }
+  },
+  {
+    "proposal_id": "439",
+    "chain_id": "injective",
+    "title": "Whitelist Black Panther Developer Address for Wasm Upload",
+    "type": "ParameterChange",
+    "topic": "Protocol Configuration",
+    "status": "PASSED",
+    "final_tally_result": {
+      "abstain_count": 28,
+      "no_count": 2,
+      "yes_count": 12,
+      "no_vote_count": 18
+    }
+  },
+  {
+    "proposal_id": "438",
+    "chain_id": "injective",
+    "title": "Add MsgSubmitProposal to ICA host allow messages",
+    "type": "ParameterChange",
+    "topic": "Protocol Configuration",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 37,
+      "abstain_count": 7,
+      "no_vote_count": 16
+    }
+  },
+  {
+    "proposal_id": "437",
+    "chain_id": "injective",
+    "title": "Whitelist Ninja Blaze Developer Address for Wasm Upload",
+    "type": "ParameterChange",
+    "topic": "Protocol Configuration",
+    "status": "PASSED",
+    "final_tally_result": {
+      "abstain_count": 27,
+      "yes_count": 16,
+      "no_count": 1,
+      "no_vote_count": 16
+    }
+  },
+  {
+    "proposal_id": "436",
+    "chain_id": "injective",
+    "title": "Settle BODENUSDT PERP and BONKUSDT PERP markets",
+    "type": "MarketRelated",
+    "topic": "Market Addition",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 26,
+      "abstain_count": 14,
+      "no_vote_count": 20
+    }
+  },
+  {
+    "proposal_id": "435",
+    "chain_id": "injective",
+    "title": "Disbursement of OLP rewards for epoch ended on 02 September 2024",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "PASSED",
+    "final_tally_result": {
+      "abstain_count": 9,
+      "yes_count": 30,
+      "no_count": 1,
+      "no_vote_count": 20
+    }
+  },
+  {
+    "proposal_id": "434",
+    "chain_id": "injective",
+    "title": "Disbursement of OLP rewards for epoch ended on 05 August 2024",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "REJECTED",
+    "final_tally_result": {
+      "no_count": 36,
+      "abstain_count": 6,
+      "yes_count": 1,
+      "no_vote_count": 17
+    }
+  },
+  {
+    "proposal_id": "432",
+    "chain_id": "injective",
+    "title": "Deploy injinterchainpersona Contract on Injective Mainnet",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "PASSED",
+    "final_tally_result": {
+      "abstain_count": 29,
+      "no_count": 2,
+      "yes_count": 13,
+      "no_vote_count": 16
+    }
+  },
+  {
+    "proposal_id": "431",
+    "chain_id": "injective",
+    "title": "Whitelist Neptune Developer Address for Wasm Upload",
+    "type": "ParameterChange",
+    "topic": "Protocol Configuration",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 34,
+      "abstain_count": 8,
+      "no_vote_count": 18
+    }
+  },
+  {
+    "proposal_id": "430",
+    "chain_id": "injective",
+    "title": "Upload Injex Finance Staking Contract Wasm Code",
+    "type": "SmartContract",
+    "topic": "Contract Deployment",
+    "status": "PASSED",
+    "final_tally_result": {
+      "abstain_count": 18,
+      "yes_count": 23,
+      "no_count": 1,
+      "no_vote_count": 18
+    }
+  },
+  {
+    "proposal_id": "429",
+    "chain_id": "injective",
+    "title": "INJ 30 Tokenomics Upgrade  August",
+    "type": "ParameterChange",
+    "topic": "Economic Parameters",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 36,
+      "abstain_count": 8,
+      "no_vote_count": 16
+    }
+  },
+  {
+    "proposal_id": "428",
+    "chain_id": "injective",
+    "title": "Enable instant derivative markets launch",
+    "type": "ParameterChange",
+    "topic": "Economic Parameters",
+    "status": "PASSED",
+    "final_tally_result": {
+      "abstain_count": 11,
+      "yes_count": 33,
+      "no_vote_count": 16
+    }
+  },
+  {
+    "proposal_id": "427",
+    "chain_id": "injective",
+    "title": "Upload Injex Finance Staking Contract Wasm Code",
+    "type": "SmartContract",
+    "topic": "Contract Deployment",
+    "status": "REJECTED",
+    "final_tally_result": {
+      "abstain_count": 28,
+      "yes_count": 7,
+      "no_count": 10,
+      "no_vote_count": 15
+    }
+  },
+  {
+    "proposal_id": "426",
+    "chain_id": "injective",
+    "title": "Whitelist Gelotto Developer Wallet for Wasm Upload PampIT",
+    "type": "ParameterChange",
+    "topic": "Protocol Configuration",
+    "status": "PASSED",
+    "final_tally_result": {
+      "abstain_count": 28,
+      "yes_count": 11,
+      "no_count": 2,
+      "no_vote_count": 19
+    }
+  },
+  {
+    "proposal_id": "425",
+    "chain_id": "injective",
+    "title": "Disbursement of OLP rewards for epoch ended on 05 August 2024",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 34,
+      "abstain_count": 10,
+      "no_vote_count": 16
+    }
+  },
+  {
+    "proposal_id": "424",
+    "chain_id": "injective",
+    "title": "Injective Mainnet Upgrade v1132",
+    "type": "SoftwareUpgrade",
+    "topic": "Major Release",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 38,
+      "abstain_count": 5,
+      "no_vote_count": 17
+    }
+  },
+  {
+    "proposal_id": "423",
+    "chain_id": "injective",
+    "title": "Deployment of Volta Circuits Multisig Smart Contracts on Injective",
+    "type": "SmartContract",
+    "topic": "Contract Integration",
+    "status": "PASSED",
+    "final_tally_result": {
+      "abstain_count": 19,
+      "yes_count": 21,
+      "no_count": 2,
+      "no_vote_count": 18
+    }
+  },
+  {
+    "proposal_id": "422",
+    "chain_id": "injective",
+    "title": "Update minnotional for all spot and derivative markets with known quote assets",
+    "type": "MarketRelated",
+    "topic": "Trading Parameters",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 36,
+      "abstain_count": 7,
+      "no_vote_count": 17
+    }
+  },
+  {
+    "proposal_id": "421",
+    "chain_id": "injective",
+    "title": "Upload Injex Finance Router and Limit Contract Wasm Code",
+    "type": "SmartContract",
+    "topic": "Contract Deployment",
+    "status": "PASSED",
+    "final_tally_result": {
+      "abstain_count": 25,
+      "yes_count": 10,
+      "no_count": 4,
+      "no_vote_count": 21
+    }
+  },
+  {
+    "proposal_id": "420",
+    "chain_id": "injective",
+    "title": "Injective Altaris Mainnet Upgrade",
+    "type": "SoftwareUpgrade",
+    "topic": "Security Enhancement",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 49,
+      "abstain_count": 4,
+      "no_vote_count": 7
+    }
+  },
+  {
+    "proposal_id": "419",
+    "chain_id": "injective",
+    "title": "Disbursement of OLP rewards for epoch ended on 08 July 2024",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 38,
+      "abstain_count": 9,
+      "no_vote_count": 13
+    }
+  },
+  {
+    "proposal_id": "418",
+    "chain_id": "injective",
+    "title": "Pause BTCwUSDM PERP market",
+    "type": "MarketRelated",
+    "topic": "Market Addition",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 39,
+      "abstain_count": 8,
+      "no_vote_count": 13
+    }
+  },
+  {
+    "proposal_id": "417",
+    "chain_id": "injective",
+    "title": "Disbursement of OLP rewards for epoch ended on 8 July 2024",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "REJECTED",
+    "final_tally_result": {
+      "no_count": 39,
+      "abstain_count": 4,
+      "yes_count": 6,
+      "no_vote_count": 11
+    }
+  },
+  {
+    "proposal_id": "416",
+    "chain_id": "injective",
+    "title": "Upload Exotic Escrow Contract Wasm Code",
+    "type": "SmartContract",
+    "topic": "Contract Deployment",
+    "status": "PASSED",
+    "final_tally_result": {
+      "abstain_count": 27,
+      "yes_count": 15,
+      "no_count": 4,
+      "no_vote_count": 14
+    }
+  },
+  {
+    "proposal_id": "415",
+    "chain_id": "injective",
+    "title": "Upload Exotic Staking Contract Wasm Code",
+    "type": "SmartContract",
+    "topic": "Contract Deployment",
+    "status": "PASSED",
+    "final_tally_result": {
+      "abstain_count": 27,
+      "yes_count": 15,
+      "no_count": 4,
+      "no_vote_count": 14
+    }
+  },
+  {
+    "proposal_id": "414",
+    "chain_id": "injective",
+    "title": "Upload Exotic Vanilla Contract Wasm Code",
+    "type": "SmartContract",
+    "topic": "Contract Deployment",
+    "status": "PASSED",
+    "final_tally_result": {
+      "abstain_count": 27,
+      "yes_count": 15,
+      "no_count": 4,
+      "no_vote_count": 14
+    }
+  },
+  {
+    "proposal_id": "413",
+    "chain_id": "injective",
+    "title": "Deployment of StreamSwap Protocol contracts on Injective Hub",
+    "type": "SmartContract",
+    "topic": "Contract Integration",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 28,
+      "abstain_count": 15,
+      "no_vote_count": 17
+    }
+  },
+  {
+    "proposal_id": "412",
+    "chain_id": "injective",
+    "title": "New Quant in Town",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "PASSED",
+    "final_tally_result": {
+      "abstain_count": 32,
+      "yes_count": 10,
+      "no_count": 3,
+      "no_with_veto_count": 1,
+      "no_vote_count": 14
+    }
+  },
+  {
+    "proposal_id": "411",
+    "chain_id": "injective",
+    "title": "Disbursement of OLP rewards for epoch ended on 10 June 2024",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 33,
+      "abstain_count": 9,
+      "no_vote_count": 18
+    }
+  },
+  {
+    "proposal_id": "410",
+    "chain_id": "injective",
+    "title": "Upload ChainFactory Contract Wasm Code 22 Token",
+    "type": "SmartContract",
+    "topic": "Contract Deployment",
+    "status": "PASSED",
+    "final_tally_result": {
+      "abstain_count": 24,
+      "yes_count": 18,
+      "no_count": 1,
+      "no_vote_count": 17
+    }
+  },
+  {
+    "proposal_id": "409",
+    "chain_id": "injective",
+    "title": "INJ 30 Inflation Parameters Update 24Q2",
+    "type": "ParameterChange",
+    "topic": "Economic Parameters",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 37,
+      "abstain_count": 7,
+      "no_vote_count": 16
+    }
+  },
+  {
+    "proposal_id": "408",
+    "chain_id": "injective",
+    "title": "Upload ChainFactory Contract Wasm Code 12 Factory",
+    "type": "SmartContract",
+    "topic": "Contract Deployment",
+    "status": "PASSED",
+    "final_tally_result": {
+      "abstain_count": 29,
+      "yes_count": 17,
+      "no_count": 3,
+      "no_vote_count": 11
+    }
+  },
+  {
+    "proposal_id": "407",
+    "chain_id": "injective",
+    "title": "Upload QTUM token contract",
+    "type": "SmartContract",
+    "topic": "Contract Deployment",
+    "status": "PASSED",
+    "final_tally_result": {
+      "abstain_count": 31,
+      "yes_count": 19,
+      "no_vote_count": 10
+    }
+  },
+  {
+    "proposal_id": "406",
+    "chain_id": "injective",
+    "title": "Increase max trading leverage for GBPUSDT PERP and EURUSDT PERP Markets",
+    "type": "MarketRelated",
+    "topic": "Trading Parameters",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 41,
+      "abstain_count": 11,
+      "no_vote_count": 8
+    }
+  },
+  {
+    "proposal_id": "405",
+    "chain_id": "injective",
+    "title": "Disbursement of OLP rewards for epoch ended on 13 May 2024",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 33,
+      "abstain_count": 12,
+      "no_vote_count": 15
+    }
+  },
+  {
+    "proposal_id": "404",
+    "chain_id": "injective",
+    "title": "StartCooking Upload Factory Contract",
+    "type": "SmartContract",
+    "topic": "Contract Deployment",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 24,
+      "abstain_count": 16,
+      "no_count": 2,
+      "no_vote_count": 18
+    }
+  },
+  {
+    "proposal_id": "403",
+    "chain_id": "injective",
+    "title": "StartCooking Upload Contract",
+    "type": "SmartContract",
+    "topic": "Contract Deployment",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 24,
+      "abstain_count": 16,
+      "no_count": 2,
+      "no_vote_count": 18
+    }
+  },
+  {
+    "proposal_id": "402",
+    "chain_id": "injective",
+    "title": "Upload DEGA Minter Contract Wasm Code",
+    "type": "SmartContract",
+    "topic": "Contract Deployment",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 16,
+      "abstain_count": 27,
+      "no_count": 2,
+      "no_vote_count": 15
+    }
+  },
+  {
+    "proposal_id": "401",
+    "chain_id": "injective",
+    "title": "Upload DEGA Collection Contract Wasm Code",
+    "type": "SmartContract",
+    "topic": "Contract Deployment",
+    "status": "PASSED",
+    "final_tally_result": {
+      "abstain_count": 26,
+      "yes_count": 16,
+      "no_count": 2,
+      "no_vote_count": 16
+    }
+  },
+  {
+    "proposal_id": "400",
+    "chain_id": "injective",
+    "title": "Upload NFT Injstaking Contract",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 14,
+      "abstain_count": 29,
+      "no_count": 2,
+      "no_vote_count": 15
+    }
+  },
+  {
+    "proposal_id": "399",
+    "chain_id": "injective",
+    "title": "Upload Exotic Escrow Contract Wasm Code",
+    "type": "SmartContract",
+    "topic": "Contract Deployment",
+    "status": "PASSED",
+    "final_tally_result": {
+      "abstain_count": 29,
+      "yes_count": 18,
+      "no_count": 3,
+      "no_vote_count": 10
+    }
+  },
+  {
+    "proposal_id": "398",
+    "chain_id": "injective",
+    "title": "UPLOAD Discoverinj 404 Reroll",
+    "type": "SmartContract",
+    "topic": "Contract Deployment",
+    "status": "PASSED",
+    "final_tally_result": {
+      "abstain_count": 32,
+      "yes_count": 18,
+      "no_count": 1,
+      "no_vote_count": 9
+    }
+  },
+  {
+    "proposal_id": "397",
+    "chain_id": "injective",
+    "title": "Gravedigger 22  staking contract",
+    "type": "SmartContract",
+    "topic": "Contract Deployment",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 35,
+      "abstain_count": 19,
+      "no_vote_count": 6
+    }
+  },
+  {
+    "proposal_id": "396",
+    "chain_id": "injective",
+    "title": "Gravedigger 12  feesplit",
+    "type": "SmartContract",
+    "topic": "Contract Deployment",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 36,
+      "abstain_count": 17,
+      "no_vote_count": 7
+    }
+  },
+  {
+    "proposal_id": "395",
+    "chain_id": "injective",
+    "title": "Disbursement of OLP rewards for epoch ended on 15 April 2024",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 41,
+      "abstain_count": 10,
+      "no_vote_count": 9
+    }
+  },
+  {
+    "proposal_id": "394",
+    "chain_id": "injective",
+    "title": "Upload Ninja Blaze Contract  Jackpot",
+    "type": "SmartContract",
+    "topic": "Contract Deployment",
+    "status": "PASSED",
+    "final_tally_result": {
+      "abstain_count": 30,
+      "yes_count": 19,
+      "no_count": 1,
+      "no_vote_count": 10
+    }
+  },
+  {
+    "proposal_id": "393",
+    "chain_id": "injective",
+    "title": "Upload Ninja Blaze Contract  Double",
+    "type": "SmartContract",
+    "topic": "Contract Deployment",
+    "status": "PASSED",
+    "final_tally_result": {
+      "abstain_count": 31,
+      "yes_count": 18,
+      "no_count": 1,
+      "no_vote_count": 10
+    }
+  },
+  {
+    "proposal_id": "392",
+    "chain_id": "injective",
+    "title": "INJ 30 The Ultimate Injective Tokenomics Upgrade",
+    "type": "ParameterChange",
+    "topic": "Economic Parameters",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 50,
+      "abstain_count": 6,
+      "no_vote_count": 4
+    }
+  },
+  {
+    "proposal_id": "391",
+    "chain_id": "injective",
+    "title": "Add wasm instantiate and execute ICA host allow messages",
+    "type": "ParameterChange",
+    "topic": "Protocol Configuration",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 48,
+      "abstain_count": 8,
+      "no_vote_count": 4
+    }
+  },
+  {
+    "proposal_id": "390",
+    "chain_id": "injective",
+    "title": "UPLOAD Discoverinj 404 Mintpad",
+    "type": "SmartContract",
+    "topic": "Contract Deployment",
+    "status": "PASSED",
+    "final_tally_result": {
+      "abstain_count": 33,
+      "no_count": 4,
+      "yes_count": 12,
+      "no_vote_count": 11
+    }
+  },
+  {
+    "proposal_id": "389",
+    "chain_id": "injective",
+    "title": "Upload Stride Redemption Rate Oracle Contract",
+    "type": "SmartContract",
+    "topic": "Contract Deployment",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 39,
+      "abstain_count": 9,
+      "no_vote_count": 12
+    }
+  },
+  {
+    "proposal_id": "388",
+    "chain_id": "injective",
+    "title": "Balanced Contracts 2",
+    "type": "SmartContract",
+    "topic": "Contract Deployment",
+    "status": "PASSED",
+    "final_tally_result": {
+      "abstain_count": 34,
+      "yes_count": 8,
+      "no_count": 6,
+      "no_vote_count": 12
+    }
+  },
+  {
+    "proposal_id": "387",
+    "chain_id": "injective",
+    "title": "Balanced Contracts 1",
+    "type": "SmartContract",
+    "topic": "Contract Deployment",
+    "status": "PASSED",
+    "final_tally_result": {
+      "abstain_count": 34,
+      "no_count": 7,
+      "yes_count": 8,
+      "no_vote_count": 11
+    }
+  },
+  {
+    "proposal_id": "386",
+    "chain_id": "injective",
+    "title": "Upload Exotic Holding Contract Wasm Code",
+    "type": "SmartContract",
+    "topic": "Contract Deployment",
+    "status": "PASSED",
+    "final_tally_result": {
+      "abstain_count": 28,
+      "no_count": 4,
+      "yes_count": 18,
+      "no_vote_count": 10
+    }
+  },
+  {
+    "proposal_id": "385",
+    "chain_id": "injective",
+    "title": "Upload Exotic RFQ Contract Wasm Code",
+    "type": "SmartContract",
+    "topic": "Contract Deployment",
+    "status": "PASSED",
+    "final_tally_result": {
+      "abstain_count": 28,
+      "no_count": 4,
+      "yes_count": 18,
+      "no_vote_count": 10
+    }
+  },
+  {
+    "proposal_id": "384",
+    "chain_id": "injective",
+    "title": "Upload Exotic Vanilla Contract Wasm Code",
+    "type": "SmartContract",
+    "topic": "Contract Deployment",
+    "status": "PASSED",
+    "final_tally_result": {
+      "abstain_count": 29,
+      "yes_count": 18,
+      "no_count": 3,
+      "no_vote_count": 10
+    }
+  },
+  {
+    "proposal_id": "383",
+    "chain_id": "injective",
+    "title": "Relaunch WUSDT Perp Market on Injective Exchange dApps",
+    "type": "ParameterChange",
+    "topic": "Fee Adjustment",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 43,
+      "abstain_count": 8,
+      "no_vote_count": 9
+    }
+  },
+  {
+    "proposal_id": "382",
+    "chain_id": "injective",
+    "title": "INJBOYS STAKING PLATFORM  Upload Contract",
+    "type": "SmartContract",
+    "topic": "Contract Deployment",
+    "status": "PASSED",
+    "final_tally_result": {
+      "abstain_count": 36,
+      "no_count": 6,
+      "yes_count": 9,
+      "no_vote_count": 9
+    }
+  },
+  {
+    "proposal_id": "381",
+    "chain_id": "injective",
+    "title": "Upload Ninza Contract  Game",
+    "type": "SmartContract",
+    "topic": "Contract Deployment",
+    "status": "PASSED",
+    "final_tally_result": {
+      "abstain_count": 35,
+      "yes_count": 15,
+      "no_count": 3,
+      "no_vote_count": 7
+    }
+  },
+  {
+    "proposal_id": "380",
+    "chain_id": "injective",
+    "title": "Blocksmith Labs Presale  Instantiate Contract",
+    "type": "SmartContract",
+    "topic": "Contract Deployment",
+    "status": "FAILED",
+    "final_tally_result": {
+      "abstain_count": 30,
+      "yes_count": 15,
+      "no_count": 6,
+      "no_vote_count": 9
+    }
+  },
+  {
+    "proposal_id": "379",
+    "chain_id": "injective",
+    "title": "Proposal Title",
+    "type": "SmartContract",
+    "topic": "Contract Deployment",
+    "status": "REJECTED",
+    "final_tally_result": {
+      "no_count": 39,
+      "no_with_veto_count": 7,
+      "abstain_count": 6,
+      "yes_count": 3,
+      "no_vote_count": 5
+    }
+  },
+  {
+    "proposal_id": "378",
+    "chain_id": "injective",
+    "title": "UPLOAD A5TOUND Playland Plaza Contract",
+    "type": "SmartContract",
+    "topic": "Contract Deployment",
+    "status": "PASSED",
+    "final_tally_result": {
+      "no_count": 6,
+      "abstain_count": 36,
+      "yes_count": 10,
+      "no_vote_count": 8
+    }
+  },
+  {
+    "proposal_id": "377",
+    "chain_id": "injective",
+    "title": "Upload Ninja Labs  Pepe PvP Contract Wasm Code",
+    "type": "SmartContract",
+    "topic": "Contract Deployment",
+    "status": "PASSED",
+    "final_tally_result": {
+      "abstain_count": 36,
+      "no_count": 4,
+      "yes_count": 11,
+      "no_vote_count": 9
+    }
+  },
+  {
+    "proposal_id": "376",
+    "chain_id": "injective",
+    "title": "Blocksmith Labs Presale  Upload Contract",
+    "type": "SmartContract",
+    "topic": "Contract Deployment",
+    "status": "PASSED",
+    "final_tally_result": {
+      "no_count": 7,
+      "abstain_count": 30,
+      "yes_count": 10,
+      "no_vote_count": 13
+    }
+  },
+  {
+    "proposal_id": "375",
+    "chain_id": "injective",
+    "title": "Upload Ninja Labs  Chads Draw Contract Wasm Code",
+    "type": "SmartContract",
+    "topic": "Contract Deployment",
+    "status": "PASSED",
+    "final_tally_result": {
+      "abstain_count": 30,
+      "yes_count": 9,
+      "no_count": 7,
+      "no_vote_count": 14
+    }
+  },
+  {
+    "proposal_id": "374",
+    "chain_id": "injective",
+    "title": "Moon App Staking  Staking contract upgrade v110",
+    "type": "SmartContract",
+    "topic": "Contract Upgrade",
+    "status": "PASSED",
+    "final_tally_result": {
+      "abstain_count": 28,
+      "yes_count": 13,
+      "no_count": 5,
+      "no_vote_count": 14
+    }
+  },
+  {
+    "proposal_id": "373",
+    "chain_id": "injective",
+    "title": "Upload Ninza Contract  Referral",
+    "type": "SmartContract",
+    "topic": "Contract Deployment",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 17,
+      "no_count": 6,
+      "abstain_count": 29,
+      "no_vote_count": 8
+    }
+  },
+  {
+    "proposal_id": "372",
+    "chain_id": "injective",
+    "title": "Upload Ninza Contract  Multicall",
+    "type": "SmartContract",
+    "topic": "Contract Deployment",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 16,
+      "abstain_count": 30,
+      "no_count": 6,
+      "no_vote_count": 8
+    }
+  },
+  {
+    "proposal_id": "371",
+    "chain_id": "injective",
+    "title": "Upload Ninza Contract  Token InGame",
+    "type": "SmartContract",
+    "topic": "Contract Deployment",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 16,
+      "abstain_count": 30,
+      "no_count": 6,
+      "no_vote_count": 8
+    }
+  },
+  {
+    "proposal_id": "370",
+    "chain_id": "injective",
+    "title": "Upload Ninza Contract  Game",
+    "type": "SmartContract",
+    "topic": "Contract Deployment",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 16,
+      "abstain_count": 30,
+      "no_count": 6,
+      "no_vote_count": 8
+    }
+  },
+  {
+    "proposal_id": "369",
+    "chain_id": "injective",
+    "title": "Disbursement of OLP rewards for epoch ended on 18 March 2024",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 38,
+      "abstain_count": 13,
+      "no_count": 1,
+      "no_vote_count": 8
+    }
+  },
+  {
+    "proposal_id": "368",
+    "chain_id": "injective",
+    "title": "Upload Ninja Blaze Contract  Double",
+    "type": "SmartContract",
+    "topic": "Contract Deployment",
+    "status": "PASSED",
+    "final_tally_result": {
+      "no_count": 9,
+      "yes_count": 19,
+      "abstain_count": 24,
+      "no_vote_count": 8
+    }
+  },
+  {
+    "proposal_id": "367",
+    "chain_id": "injective",
+    "title": "Upload Ninja Blaze Contract  User profile  Fee collector",
+    "type": "SmartContract",
+    "topic": "Contract Deployment",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 18,
+      "no_count": 9,
+      "abstain_count": 25,
+      "no_vote_count": 8
+    }
+  },
+  {
+    "proposal_id": "366",
+    "chain_id": "injective",
+    "title": "Upload Ninja Blaze Contract  User profile  Fee collector",
+    "type": "SmartContract",
+    "topic": "Contract Deployment",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 17,
+      "no_count": 9,
+      "abstain_count": 26,
+      "no_vote_count": 8
+    }
+  },
+  {
+    "proposal_id": "365",
+    "chain_id": "injective",
+    "title": "Upload Ninja Blaze Contract  Jackpot",
+    "type": "SmartContract",
+    "topic": "Contract Deployment",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 16,
+      "no_count": 9,
+      "abstain_count": 26,
+      "no_vote_count": 9
+    }
+  },
+  {
+    "proposal_id": "364",
+    "chain_id": "injective",
+    "title": "Upload Ninja Labs  Ninja Coin Flip Contract Wasm Code",
+    "type": "SmartContract",
+    "topic": "Contract Deployment",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 17,
+      "abstain_count": 31,
+      "no_count": 6,
+      "no_vote_count": 6
+    }
+  },
+  {
+    "proposal_id": "363",
+    "chain_id": "injective",
+    "title": "Upload Ninja Labs  Kira Lottery Contract Wasm Code",
+    "type": "SmartContract",
+    "topic": "Contract Deployment",
+    "status": "PASSED",
+    "final_tally_result": {
+      "abstain_count": 31,
+      "yes_count": 15,
+      "no_count": 7,
+      "no_vote_count": 7
+    }
+  },
+  {
+    "proposal_id": "362",
+    "chain_id": "injective",
+    "title": "Upload Aeroscraper Lending  Borrowing Protocol Contract  Wasm Code to Injective",
+    "type": "SmartContract",
+    "topic": "Contract Deployment",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 36,
+      "abstain_count": 16,
+      "no_vote_count": 8
+    }
+  },
+  {
+    "proposal_id": "361",
+    "chain_id": "injective",
+    "title": "Increase maximum trading leverage for BTC Perp and ETH Perp to 20x",
+    "type": "MarketRelated",
+    "topic": "Trading Parameters",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 50,
+      "abstain_count": 8,
+      "no_vote_count": 2
+    }
+  },
+  {
+    "proposal_id": "360",
+    "chain_id": "injective",
+    "title": "Update minimum quantity for QUNTINJ market on Injective Exchange dApps",
+    "type": "ParameterChange",
+    "topic": "Economic Parameters",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 51,
+      "abstain_count": 7,
+      "no_vote_count": 2
+    }
+  },
+  {
+    "proposal_id": "359",
+    "chain_id": "injective",
+    "title": "Upload Aeroscraper Lending  Borrowing Oracle Helper Contract  Wasm Code to Injective",
+    "type": "SmartContract",
+    "topic": "Contract Deployment",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 44,
+      "abstain_count": 10,
+      "no_vote_count": 6
+    }
+  },
+  {
+    "proposal_id": "358",
+    "chain_id": "injective",
+    "title": "NFT Injstaking  Upload contract",
+    "type": "SmartContract",
+    "topic": "Contract Deployment",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 37,
+      "abstain_count": 15,
+      "no_count": 2,
+      "no_vote_count": 6
+    }
+  },
+  {
+    "proposal_id": "357",
+    "chain_id": "injective",
+    "title": "Change maxderivativeordersidecount for exchange module",
+    "type": "ParameterChange",
+    "topic": "Fee Adjustment",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 49,
+      "abstain_count": 7,
+      "no_vote_count": 4
+    }
+  },
+  {
+    "proposal_id": "356",
+    "chain_id": "injective",
+    "title": "DegenFlips dApp  Upload Contract",
+    "type": "SmartContract",
+    "topic": "Contract Deployment",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 28,
+      "abstain_count": 24,
+      "no_count": 3,
+      "no_vote_count": 5
+    }
+  },
+  {
+    "proposal_id": "355",
+    "chain_id": "injective",
+    "title": "Increase Peggy slashing window",
+    "type": "ParameterChange",
+    "topic": "Staking Parameters",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 51,
+      "abstain_count": 5,
+      "no_vote_count": 4
+    }
+  },
+  {
+    "proposal_id": "354",
+    "chain_id": "injective",
+    "title": "Upload Injex Finance Contract Wasm Code",
+    "type": "SmartContract",
+    "topic": "Contract Deployment",
+    "status": "PASSED",
+    "final_tally_result": {
+      "abstain_count": 27,
+      "yes_count": 24,
+      "no_count": 2,
+      "no_vote_count": 7
+    }
+  },
+  {
+    "proposal_id": "353",
+    "chain_id": "injective",
+    "title": "Update min price tick and min quantity tick for USDeUSDT market on Injective Exchange dApps",
+    "type": "ParameterChange",
+    "topic": "Economic Parameters",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 47,
+      "abstain_count": 8,
+      "no_vote_count": 5
+    }
+  },
+  {
+    "proposal_id": "352",
+    "chain_id": "injective",
+    "title": "Adjust Queue System and FCFS Mechanism for Rewards conversion",
+    "type": "SmartContract",
+    "topic": "Contract Deployment",
+    "status": "PASSED",
+    "final_tally_result": {
+      "abstain_count": 11,
+      "yes_count": 42,
+      "no_vote_count": 7
+    }
+  },
+  {
+    "proposal_id": "351",
+    "chain_id": "injective",
+    "title": "Disbursement of OLP rewards for epoch ended on 19 February 2024",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 48,
+      "abstain_count": 7,
+      "no_vote_count": 5
+    }
+  },
+  {
+    "proposal_id": "350",
+    "chain_id": "injective",
+    "title": "Upload NFT Injstaking Contract",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 40,
+      "no_count": 3,
+      "abstain_count": 14,
+      "no_vote_count": 3
+    }
+  },
+  {
+    "proposal_id": "349",
+    "chain_id": "injective",
+    "title": "Adjust Trade and Earn Reward Points for Epoch Ended Feb 14 2024",
+    "type": "MarketRelated",
+    "topic": "Oracle Update",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 48,
+      "abstain_count": 8,
+      "no_vote_count": 4
+    }
+  },
+  {
+    "proposal_id": "348",
+    "chain_id": "injective",
+    "title": "Trade  Earn Multiplier Updates on Injective Exchange dApps",
+    "type": "MarketRelated",
+    "topic": "Market Addition",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 52,
+      "abstain_count": 6,
+      "no_vote_count": 2
+    }
+  },
+  {
+    "proposal_id": "347",
+    "chain_id": "injective",
+    "title": "iLend v13 smart contract upgrade for LST assets",
+    "type": "SmartContract",
+    "topic": "Contract Upgrade",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 44,
+      "abstain_count": 14,
+      "no_vote_count": 2
+    }
+  },
+  {
+    "proposal_id": "346",
+    "chain_id": "injective",
+    "title": "Upload xNinjaTech Controller Contract Wasm Code",
+    "type": "SmartContract",
+    "topic": "Contract Deployment",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 42,
+      "abstain_count": 13,
+      "no_vote_count": 5
+    }
+  },
+  {
+    "proposal_id": "345",
+    "chain_id": "injective",
+    "title": "Pin Helix Grid Trading Strategy Code ID 462",
+    "type": "SmartContract",
+    "topic": "Contract Deployment",
+    "status": "PASSED",
+    "final_tally_result": {
+      "abstain_count": 6,
+      "yes_count": 50,
+      "no_vote_count": 4
+    }
+  },
+  {
+    "proposal_id": "344",
+    "chain_id": "injective",
+    "title": "Moon App Staking  Upload staking contract",
+    "type": "SmartContract",
+    "topic": "Contract Deployment",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 34,
+      "abstain_count": 21,
+      "no_vote_count": 5
+    }
+  },
+  {
+    "proposal_id": "343",
+    "chain_id": "injective",
+    "title": "xNinja  The first SocialFi 20 on Injective  Deployment Proposal to Deploy Contract",
+    "type": "TextProposal",
+    "topic": "Network Policy",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 43,
+      "abstain_count": 12,
+      "no_vote_count": 5
+    }
+  },
+  {
+    "proposal_id": "342",
+    "chain_id": "injective",
+    "title": "Adjust Trade and Earn Reward Points for Epoch Ended Jan 31 2024",
+    "type": "MarketRelated",
+    "topic": "Oracle Update",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 46,
+      "abstain_count": 8,
+      "no_vote_count": 6
+    }
+  },
+  {
+    "proposal_id": "341",
+    "chain_id": "injective",
+    "title": "Upload Injective Native Quadratic Funding Smart Contract",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 41,
+      "abstain_count": 13,
+      "no_vote_count": 6
+    }
+  },
+  {
+    "proposal_id": "340",
+    "chain_id": "injective",
+    "title": "Launch LINKUSDT PERP and DOGEUSDT PERP Markets Relaunch BONKUSDT PERP Market for Injective Exchange dApps",
+    "type": "MarketRelated",
+    "topic": "Market Addition",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 47,
+      "abstain_count": 6,
+      "no_vote_count": 7
+    }
+  },
+  {
+    "proposal_id": "339",
+    "chain_id": "injective",
+    "title": "Update JUPUSDT PERP Oracle on Injective Exchange dApps",
+    "type": "ParameterChange",
+    "topic": "Economic Parameters",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 52,
+      "abstain_count": 7,
+      "no_vote_count": 1
+    }
+  },
+  {
+    "proposal_id": "338",
+    "chain_id": "injective",
+    "title": "Upload Ninja Blaze NFT Contract",
+    "type": "SmartContract",
+    "topic": "Contract Deployment",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 26,
+      "abstain_count": 30,
+      "no_count": 2,
+      "no_vote_count": 2
+    }
+  },
+  {
+    "proposal_id": "337",
+    "chain_id": "injective",
+    "title": "Upload Exotic Holding Contract Wasm Code",
+    "type": "SmartContract",
+    "topic": "Contract Deployment",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 18,
+      "abstain_count": 35,
+      "no_count": 4,
+      "no_vote_count": 3
+    }
+  },
+  {
+    "proposal_id": "336",
+    "chain_id": "injective",
+    "title": "Upload Exotic RFQ Contract Wasm Code",
+    "type": "SmartContract",
+    "topic": "Contract Deployment",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 18,
+      "abstain_count": 35,
+      "no_count": 4,
+      "no_vote_count": 3
+    }
+  },
+  {
+    "proposal_id": "335",
+    "chain_id": "injective",
+    "title": "Upload Exotic Vanilla Contract Wasm Code",
+    "type": "SmartContract",
+    "topic": "Contract Deployment",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 19,
+      "abstain_count": 35,
+      "no_count": 3,
+      "no_vote_count": 3
+    }
+  },
+  {
+    "proposal_id": "334",
+    "chain_id": "injective",
+    "title": "Launch OPUSDT PERP and ARBUSDT PERP Markets Relaunch OSMOUSDT PERP Market for Injective Exchange dApps",
+    "type": "MarketRelated",
+    "topic": "Market Addition",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 48,
+      "abstain_count": 10,
+      "no_vote_count": 2
+    }
+  },
+  {
+    "proposal_id": "333",
+    "chain_id": "injective",
+    "title": "NinjaVault Deployment",
+    "type": "SmartContract",
+    "topic": "Contract Deployment",
+    "status": "PASSED",
+    "final_tally_result": {
+      "abstain_count": 29,
+      "yes_count": 15,
+      "no_count": 11,
+      "no_vote_count": 5
+    }
+  },
+  {
+    "proposal_id": "332",
+    "chain_id": "injective",
+    "title": "Upload Stax Coinflip Contract Wasm Code",
+    "type": "SmartContract",
+    "topic": "Contract Deployment",
+    "status": "PASSED",
+    "final_tally_result": {
+      "abstain_count": 36,
+      "yes_count": 14,
+      "no_count": 5,
+      "no_vote_count": 5
+    }
+  },
+  {
+    "proposal_id": "331",
+    "chain_id": "injective",
+    "title": "Parameter Updates for Markets on Injective Exchange dApps",
+    "type": "MarketRelated",
+    "topic": "Market Addition",
+    "status": "PASSED",
+    "final_tally_result": {
+      "abstain_count": 7,
+      "yes_count": 48,
+      "no_vote_count": 5
+    }
+  },
+  {
+    "proposal_id": "330",
+    "chain_id": "injective",
+    "title": "Upload Outapp Vouching System Contract Wasm Code",
+    "type": "SmartContract",
+    "topic": "Contract Deployment",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 30,
+      "abstain_count": 25,
+      "no_vote_count": 5
+    }
+  },
+  {
+    "proposal_id": "329",
+    "chain_id": "injective",
+    "title": "DOJOINJ Spot Market Launch",
+    "type": "MarketRelated",
+    "topic": "Market Addition",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 52,
+      "abstain_count": 5,
+      "no_vote_count": 3
+    }
+  },
+  {
+    "proposal_id": "328",
+    "chain_id": "injective",
+    "title": "Disbursement of OLP rewards for epoch ended on 22 January 2024",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 50,
+      "abstain_count": 7,
+      "no_vote_count": 3
+    }
+  },
+  {
+    "proposal_id": "327",
+    "chain_id": "injective",
+    "title": "Upload Stax NFT and Splitter Contract Wasm Code",
+    "type": "SmartContract",
+    "topic": "Contract Deployment",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 38,
+      "abstain_count": 14,
+      "no_count": 1,
+      "no_vote_count": 7
+    }
+  },
+  {
+    "proposal_id": "326",
+    "chain_id": "injective",
+    "title": "Trade  Earn Multiplier Updates on Injective Exchange dApps",
+    "type": "MarketRelated",
+    "topic": "Market Addition",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 47,
+      "abstain_count": 7,
+      "no_vote_count": 6
+    }
+  },
+  {
+    "proposal_id": "325",
+    "chain_id": "injective",
+    "title": "Disbursement of OLP rewards for epoch ended on 25 December 2023",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 46,
+      "abstain_count": 9,
+      "no_vote_count": 5
+    }
+  },
+  {
+    "proposal_id": "324",
+    "chain_id": "injective",
+    "title": "Adjust Trade  Earn reward points",
+    "type": "MarketRelated",
+    "topic": "Trading Parameters",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 47,
+      "no_count": 1,
+      "abstain_count": 6,
+      "no_vote_count": 6
+    }
+  },
+  {
+    "proposal_id": "323",
+    "chain_id": "injective",
+    "title": "Moon App Launchpad  Upload contract",
+    "type": "SmartContract",
+    "topic": "Contract Deployment",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 43,
+      "no_count": 1,
+      "abstain_count": 10,
+      "no_vote_count": 6
+    }
+  },
+  {
+    "proposal_id": "322",
+    "chain_id": "injective",
+    "title": "Proposal Hinata Contract Upload",
+    "type": "SmartContract",
+    "topic": "Contract Deployment",
+    "status": "REJECTED",
+    "final_tally_result": {
+      "no_count": 38,
+      "yes_count": 4,
+      "abstain_count": 13,
+      "no_vote_count": 5
+    }
+  },
+  {
+    "proposal_id": "321",
+    "chain_id": "injective",
+    "title": "NinjaRoll Deployment",
+    "type": "SmartContract",
+    "topic": "Contract Deployment",
+    "status": "PASSED",
+    "final_tally_result": {
+      "abstain_count": 17,
+      "yes_count": 35,
+      "no_vote_count": 8
+    }
+  },
+  {
+    "proposal_id": "320",
+    "chain_id": "injective",
+    "title": "Whitelist address for new provider oracle",
+    "type": "MarketRelated",
+    "topic": "Oracle Update",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 45,
+      "abstain_count": 5,
+      "no_vote_count": 10
+    }
+  },
+  {
+    "proposal_id": "319",
+    "chain_id": "injective",
+    "title": "iLend contract upgrade admin functions for markets management",
+    "type": "SmartContract",
+    "topic": "Contract Upgrade",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 39,
+      "abstain_count": 11,
+      "no_vote_count": 10
+    }
+  },
+  {
+    "proposal_id": "318",
+    "chain_id": "injective",
+    "title": "Update min price tick and min quantity tick for GINGERINJ on Injective Exchange dApps",
+    "type": "ParameterChange",
+    "topic": "Economic Parameters",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 46,
+      "abstain_count": 4,
+      "no_vote_count": 10
+    }
+  },
+  {
+    "proposal_id": "315",
+    "chain_id": "injective",
+    "title": "Upload the iLend Protocol contract",
+    "type": "SmartContract",
+    "topic": "Contract Deployment",
+    "status": "PASSED",
+    "final_tally_result": {
+      "abstain_count": 28,
+      "yes_count": 21,
+      "no_count": 3,
+      "no_vote_count": 8
+    }
+  },
+  {
+    "proposal_id": "314",
+    "chain_id": "injective",
+    "title": "Injective Volan Mainnet Upgrade 1120",
+    "type": "SoftwareUpgrade",
+    "topic": "Major Release",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 55,
+      "abstain_count": 4,
+      "no_vote_count": 1
+    }
+  },
+  {
+    "proposal_id": "313",
+    "chain_id": "injective",
+    "title": "CryptoGopniks NFT Staking Platform Staking Platform Contract v131",
+    "type": "SmartContract",
+    "topic": "Contract Deployment",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 17,
+      "no_count": 20,
+      "abstain_count": 20,
+      "no_vote_count": 3
+    }
+  },
+  {
+    "proposal_id": "310",
+    "chain_id": "injective",
+    "title": "Moon Pad Claim  Upload contract",
+    "type": "SmartContract",
+    "topic": "Contract Deployment",
+    "status": "REJECTED",
+    "final_tally_result": {
+      "no_count": 31,
+      "abstain_count": 15,
+      "yes_count": 11,
+      "no_vote_count": 3
+    }
+  },
+  {
+    "proposal_id": "309",
+    "chain_id": "injective",
+    "title": "Moon Pad Sale  Upload contract",
+    "type": "SmartContract",
+    "topic": "Contract Deployment",
+    "status": "REJECTED",
+    "final_tally_result": {
+      "no_count": 32,
+      "abstain_count": 16,
+      "yes_count": 9,
+      "no_vote_count": 3
+    }
+  },
+  {
+    "proposal_id": "308",
+    "chain_id": "injective",
+    "title": "Trade and Earn Epochs 112119 Rewards Pool Update for Injective Exchange dApps ",
+    "type": "MarketRelated",
+    "topic": "Trading Parameters",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 50,
+      "abstain_count": 7,
+      "no_vote_count": 3
+    }
+  },
+  {
+    "proposal_id": "307",
+    "chain_id": "injective",
+    "title": "Update min price tick and min quantity tick for 4 markets on Injective Exchange dApps",
+    "type": "MarketRelated",
+    "topic": "Market Addition",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 49,
+      "abstain_count": 7,
+      "no_vote_count": 4
+    }
+  },
+  {
+    "proposal_id": "306",
+    "chain_id": "injective",
+    "title": "Adjust funding rate limit for perpetual markets on Injective Exchange dApps",
+    "type": "MarketRelated",
+    "topic": "Market Addition",
+    "status": "PASSED",
+    "final_tally_result": {
+      "no_count": 1,
+      "yes_count": 43,
+      "abstain_count": 12,
+      "no_vote_count": 4
+    }
+  },
+  {
+    "proposal_id": "302",
+    "chain_id": "injective",
+    "title": "Burn INJ Domain Name Revenue",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "PASSED",
+    "final_tally_result": {
+      "abstain_count": 5,
+      "yes_count": 46,
+      "no_vote_count": 9
+    }
+  },
+  {
+    "proposal_id": "301",
+    "chain_id": "injective",
+    "title": "Settle ETHUSDTkv perp market",
+    "type": "MarketRelated",
+    "topic": "Market Addition",
+    "status": "PASSED",
+    "final_tally_result": {
+      "abstain_count": 5,
+      "yes_count": 46,
+      "no_vote_count": 9
+    }
+  },
+  {
+    "proposal_id": "300",
+    "chain_id": "injective",
+    "title": "Settle BTCUSDTkv perp market",
+    "type": "MarketRelated",
+    "topic": "Market Addition",
+    "status": "PASSED",
+    "final_tally_result": {
+      "abstain_count": 5,
+      "yes_count": 46,
+      "no_vote_count": 9
+    }
+  },
+  {
+    "proposal_id": "298",
+    "chain_id": "injective",
+    "title": "Add SNOWYINJ Spot Market Trading Pair",
+    "type": "MarketRelated",
+    "topic": "Market Addition",
+    "status": "PASSED",
+    "final_tally_result": {
+      "abstain_count": 4,
+      "yes_count": 43,
+      "no_vote_count": 13
+    }
+  },
+  {
+    "proposal_id": "295",
+    "chain_id": "injective",
+    "title": "Change in Staking Thresholds for Trading Fee Discounts",
+    "type": "MarketRelated",
+    "topic": "Trading Parameters",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 52,
+      "no_vote_count": 8
+    }
+  },
+  {
+    "proposal_id": "294",
+    "chain_id": "injective",
+    "title": "Disbursement of OLP rewards for epoch ended on 27 November 2023",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 46,
+      "abstain_count": 2,
+      "no_vote_count": 12
+    }
+  },
+  {
+    "proposal_id": "293",
+    "chain_id": "injective",
+    "title": "Changes to Certain Markets on Exchange dApps on Injective",
+    "type": "MarketRelated",
+    "topic": "Market Addition",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 50,
+      "abstain_count": 1,
+      "no_vote_count": 9
+    }
+  },
+  {
+    "proposal_id": "291",
+    "chain_id": "injective",
+    "title": "Nois proxy beacon price change",
+    "type": "SmartContract",
+    "topic": "Contract Upgrade",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 45,
+      "abstain_count": 2,
+      "no_vote_count": 13
+    }
+  },
+  {
+    "proposal_id": "289",
+    "chain_id": "injective",
+    "title": "Upgrade expired IBC client",
+    "type": "IBCRelated",
+    "topic": "IBC Security",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 52,
+      "no_vote_count": 8
+    }
+  },
+  {
+    "proposal_id": "288",
+    "chain_id": "injective",
+    "title": "PYTHUSDT Prelaunch Perpetual Futures Market Launch and Trade  Earn Multiplier Updates",
+    "type": "MarketRelated",
+    "topic": "Oracle Update",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 53,
+      "no_vote_count": 7
+    }
+  },
+  {
+    "proposal_id": "287",
+    "chain_id": "injective",
+    "title": "The Injective Oracle module will add a new feed from the Injective Ecosystem",
+    "type": "MarketRelated",
+    "topic": "Oracle Update",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 50,
+      "abstain_count": 2,
+      "no_vote_count": 8
+    }
+  },
+  {
+    "proposal_id": "286",
+    "chain_id": "injective",
+    "title": "Upload Ojo Oracle Contract Wasm Code",
+    "type": "SmartContract",
+    "topic": "Contract Deployment",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 49,
+      "abstain_count": 4,
+      "no_vote_count": 7
+    }
+  },
+  {
+    "proposal_id": "285",
+    "chain_id": "injective",
+    "title": "Add USDTkv and USDCnb Quoted Markets to Trade  Earn TE",
+    "type": "MarketRelated",
+    "topic": "Market Addition",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 50,
+      "abstain_count": 3,
+      "no_vote_count": 7
+    }
+  },
+  {
+    "proposal_id": "284",
+    "chain_id": "injective",
+    "title": "Make USDTkv and USDCnb Quoted Markets Eligible for Fee Discounts",
+    "type": "MarketRelated",
+    "topic": "Trading Parameters",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 50,
+      "abstain_count": 3,
+      "no_vote_count": 7
+    }
+  },
+  {
+    "proposal_id": "282",
+    "chain_id": "injective",
+    "title": "Disbursement of OLP rewards for epoch ended on 30 October 2023",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 46,
+      "abstain_count": 2,
+      "no_vote_count": 12
+    }
+  },
+  {
+    "proposal_id": "280",
+    "chain_id": "injective",
+    "title": "Trade and Earn Rewards Pool Update Epochs 104111",
+    "type": "MarketRelated",
+    "topic": "Oracle Update",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 50,
+      "abstain_count": 2,
+      "no_vote_count": 8
+    }
+  },
+  {
+    "proposal_id": "279",
+    "chain_id": "injective",
+    "title": "Adjust Trade  Earn reward points",
+    "type": "MarketRelated",
+    "topic": "Trading Parameters",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 50,
+      "abstain_count": 2,
+      "no_vote_count": 8
+    }
+  },
+  {
+    "proposal_id": "278",
+    "chain_id": "injective",
+    "title": "Trade  Earn Multiplier Updates",
+    "type": "MarketRelated",
+    "topic": "Trading Parameters",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 50,
+      "abstain_count": 2,
+      "no_vote_count": 8
+    }
+  },
+  {
+    "proposal_id": "277",
+    "chain_id": "injective",
+    "title": "Adjust Trade  Earn reward points",
+    "type": "MarketRelated",
+    "topic": "Trading Parameters",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 51,
+      "abstain_count": 2,
+      "no_vote_count": 7
+    }
+  },
+  {
+    "proposal_id": "276",
+    "chain_id": "injective",
+    "title": "Trade  Earn Multiplier Updates",
+    "type": "MarketRelated",
+    "topic": "Trading Parameters",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 52,
+      "abstain_count": 1,
+      "no_vote_count": 7
+    }
+  },
+  {
+    "proposal_id": "274",
+    "chain_id": "injective",
+    "title": "Adjust Trade  Earn reward points",
+    "type": "MarketRelated",
+    "topic": "Trading Parameters",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 50,
+      "abstain_count": 1,
+      "no_vote_count": 9
+    }
+  },
+  {
+    "proposal_id": "273",
+    "chain_id": "injective",
+    "title": "Decrease Max Block Size",
+    "type": "ParameterChange",
+    "topic": "Fee Adjustment",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 45,
+      "abstain_count": 1,
+      "no_vote_count": 14
+    }
+  },
+  {
+    "proposal_id": "271",
+    "chain_id": "injective",
+    "title": "Adjust Trade  Earn reward points",
+    "type": "MarketRelated",
+    "topic": "Trading Parameters",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 53,
+      "abstain_count": 1,
+      "no_vote_count": 6
+    }
+  },
+  {
+    "proposal_id": "262",
+    "chain_id": "injective",
+    "title": "TIAUSDT30NOV23 Expiry Futures Market Launch",
+    "type": "MarketRelated",
+    "topic": "Market Addition",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 47,
+      "abstain_count": 9,
+      "no_vote_count": 4
+    }
+  },
+  {
+    "proposal_id": "261",
+    "chain_id": "injective",
+    "title": "Trade  Earn 20 Multiplier Updates",
+    "type": "MarketRelated",
+    "topic": "Trading Parameters",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 49,
+      "abstain_count": 4,
+      "no_vote_count": 7
+    }
+  },
+  {
+    "proposal_id": "260",
+    "chain_id": "injective",
+    "title": "Disbursement of OLP rewards for epoch ended on 02 October 2023",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 50,
+      "abstain_count": 3,
+      "no_vote_count": 7
+    }
+  },
+  {
+    "proposal_id": "259",
+    "chain_id": "injective",
+    "title": "Adjust Trade  Earn reward points",
+    "type": "MarketRelated",
+    "topic": "Trading Parameters",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 51,
+      "abstain_count": 2,
+      "no_vote_count": 7
+    }
+  },
+  {
+    "proposal_id": "258",
+    "chain_id": "injective",
+    "title": "AXLUSDT PERP Launch",
+    "type": "MarketRelated",
+    "topic": "DEX Configuration",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 49,
+      "abstain_count": 6,
+      "no_vote_count": 5
+    }
+  },
+  {
+    "proposal_id": "257",
+    "chain_id": "injective",
+    "title": "TIAUSDT30NOV23 Expiry Futures Market Launch",
+    "type": "MarketRelated",
+    "topic": "Market Addition",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 48,
+      "abstain_count": 7,
+      "no_vote_count": 5
+    }
+  },
+  {
+    "proposal_id": "256",
+    "chain_id": "injective",
+    "title": "Kava Assets and USDT Launch on Injective",
+    "type": "MarketRelated",
+    "topic": "Market Addition",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 52,
+      "abstain_count": 3,
+      "no_vote_count": 5
+    }
+  },
+  {
+    "proposal_id": "254",
+    "chain_id": "injective",
+    "title": "Price Feed Oracle Integration",
+    "type": "MarketRelated",
+    "topic": "Oracle Update",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 52,
+      "abstain_count": 1,
+      "no_vote_count": 7
+    }
+  },
+  {
+    "proposal_id": "253",
+    "chain_id": "injective",
+    "title": "Trade  Earn 20",
+    "type": "MarketRelated",
+    "topic": "Trading Parameters",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 52,
+      "abstain_count": 2,
+      "no_vote_count": 6
+    }
+  },
+  {
+    "proposal_id": "252",
+    "chain_id": "injective",
+    "title": "Adjust Trade  Earn reward points",
+    "type": "MarketRelated",
+    "topic": "Trading Parameters",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 54,
+      "abstain_count": 2,
+      "no_vote_count": 4
+    }
+  },
+  {
+    "proposal_id": "251",
+    "chain_id": "injective",
+    "title": "Adjust Trade  Earn reward points",
+    "type": "MarketRelated",
+    "topic": "Trading Parameters",
+    "status": "PASSED",
+    "final_tally_result": {
+      "abstain_count": 2,
+      "yes_count": 50,
+      "no_vote_count": 8
+    }
+  },
+  {
+    "proposal_id": "250",
+    "chain_id": "injective",
+    "title": "Trade and Earn Rewards Pool Update Epochs 96103",
+    "type": "MarketRelated",
+    "topic": "DEX Configuration",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 48,
+      "abstain_count": 4,
+      "no_vote_count": 8
+    }
+  },
+  {
+    "proposal_id": "249",
+    "chain_id": "injective",
+    "title": "Adjust Trade  Earn reward points",
+    "type": "MarketRelated",
+    "topic": "Trading Parameters",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 49,
+      "abstain_count": 2,
+      "no_vote_count": 9
+    }
+  },
+  {
+    "proposal_id": "248",
+    "chain_id": "injective",
+    "title": "Disbursement of OLP rewards for epoch ended on 5 September 2023",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 52,
+      "abstain_count": 1,
+      "no_vote_count": 7
+    }
+  },
+  {
+    "proposal_id": "247",
+    "chain_id": "injective",
+    "title": "Adjust Trade  Earn reward points",
+    "type": "MarketRelated",
+    "topic": "Trading Parameters",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 51,
+      "no_vote_count": 9
+    }
+  },
+  {
+    "proposal_id": "246",
+    "chain_id": "injective",
+    "title": "VIP Fee Discount Program 20",
+    "type": "MarketRelated",
+    "topic": "DEX Configuration",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 45,
+      "abstain_count": 3,
+      "no_vote_count": 12
+    }
+  },
+  {
+    "proposal_id": "245",
+    "chain_id": "injective",
+    "title": "Disbursement of OLP rewards for epoch ended on 08 August 2023",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 45,
+      "abstain_count": 3,
+      "no_vote_count": 12
+    }
+  },
+  {
+    "proposal_id": "244",
+    "chain_id": "injective",
+    "title": "SEI PERP Launch",
+    "type": "MarketRelated",
+    "topic": "Market Addition",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 47,
+      "abstain_count": 2,
+      "no_vote_count": 11
+    }
+  },
+  {
+    "proposal_id": "243",
+    "chain_id": "injective",
+    "title": "Update USDCUSDT Fees",
+    "type": "ParameterChange",
+    "topic": "Fee Adjustment",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 49,
+      "abstain_count": 2,
+      "no_vote_count": 9
+    }
+  },
+  {
+    "proposal_id": "242",
+    "chain_id": "injective",
+    "title": "Price Feed Oracle Integration",
+    "type": "MarketRelated",
+    "topic": "Oracle Update",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 47,
+      "abstain_count": 1,
+      "no_vote_count": 12
+    }
+  },
+  {
+    "proposal_id": "241",
+    "chain_id": "injective",
+    "title": "Adjust Trade  Earn reward points",
+    "type": "MarketRelated",
+    "topic": "Trading Parameters",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 48,
+      "abstain_count": 2,
+      "no_vote_count": 10
+    }
+  },
+  {
+    "proposal_id": "240",
+    "chain_id": "injective",
+    "title": "Trade and Earn Rewards Allocation",
+    "type": "MarketRelated",
+    "topic": "Trading Parameters",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 48,
+      "abstain_count": 1,
+      "no_vote_count": 11
+    }
+  },
+  {
+    "proposal_id": "239",
+    "chain_id": "injective",
+    "title": "Disbursement of OLP rewards for epoch ended on 11 July 2023",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 48,
+      "abstain_count": 2,
+      "no_vote_count": 10
+    }
+  },
+  {
+    "proposal_id": "238",
+    "chain_id": "injective",
+    "title": "Launch XRPUSDT PERP",
+    "type": "MarketRelated",
+    "topic": "Market Addition",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 48,
+      "abstain_count": 2,
+      "no_vote_count": 10
+    }
+  },
+  {
+    "proposal_id": "237",
+    "chain_id": "injective",
+    "title": "Enable Wasmx",
+    "type": "ParameterChange",
+    "topic": "Protocol Configuration",
+    "status": "PASSED",
+    "final_tally_result": {
+      "abstain_count": 2,
+      "yes_count": 56,
+      "no_vote_count": 2
+    }
+  },
+  {
+    "proposal_id": "236",
+    "chain_id": "injective",
+    "title": "Settle LUNAUST perp market",
+    "type": "MarketRelated",
+    "topic": "Market Addition",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 36,
+      "abstain_count": 9,
+      "no_vote_count": 15
+    }
+  },
+  {
+    "proposal_id": "235",
+    "chain_id": "injective",
+    "title": "Settle STXUSDT perp market",
+    "type": "MarketRelated",
+    "topic": "Market Addition",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 39,
+      "abstain_count": 6,
+      "no_vote_count": 15
+    }
+  },
+  {
+    "proposal_id": "234",
+    "chain_id": "injective",
+    "title": "Disbursement of DMM and OLP rewards for epoch ended on 12 June 2023",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 52,
+      "abstain_count": 1,
+      "no_vote_count": 7
+    }
+  },
+  {
+    "proposal_id": "233",
+    "chain_id": "injective",
+    "title": "Nois  Store the noisproxy contract",
+    "type": "SmartContract",
+    "topic": "Contract Deployment",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 52,
+      "abstain_count": 1,
+      "no_vote_count": 7
+    }
+  },
+  {
+    "proposal_id": "232",
+    "chain_id": "injective",
+    "title": "Frontunner Mainnet Provider Oracle",
+    "type": "MarketRelated",
+    "topic": "Oracle Update",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 52,
+      "no_vote_count": 8
+    }
+  },
+  {
+    "proposal_id": "231",
+    "chain_id": "injective",
+    "title": "Injective Avalon Upgrade v111",
+    "type": "SoftwareUpgrade",
+    "topic": "Major Release",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 55,
+      "abstain_count": 1,
+      "no_vote_count": 4
+    }
+  },
+  {
+    "proposal_id": "230",
+    "chain_id": "injective",
+    "title": "Trade and Earn rewards allocation",
+    "type": "MarketRelated",
+    "topic": "DEX Configuration",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 50,
+      "abstain_count": 3,
+      "no_vote_count": 7
+    }
+  },
+  {
+    "proposal_id": "229",
+    "chain_id": "injective",
+    "title": "Injective Exchange dApp Update Launch 1MPEPEUSDT Perp",
+    "type": "MarketRelated",
+    "topic": "Market Addition",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 46,
+      "abstain_count": 10,
+      "no_vote_count": 4
+    }
+  },
+  {
+    "proposal_id": "228",
+    "chain_id": "injective",
+    "title": "Injective Exchange dApp Update Settle 1000PEPEUSDT Perp",
+    "type": "MarketRelated",
+    "topic": "Market Addition",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 46,
+      "abstain_count": 10,
+      "no_vote_count": 4
+    }
+  },
+  {
+    "proposal_id": "227",
+    "chain_id": "injective",
+    "title": "Disbursement of DMM rewards for epoch ended on 16 May 2023",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 48,
+      "abstain_count": 2,
+      "no_vote_count": 10
+    }
+  },
+  {
+    "proposal_id": "226",
+    "chain_id": "injective",
+    "title": "Injective Exchange dApp Update Launch 1000PEPEUSDT Perp",
+    "type": "MarketRelated",
+    "topic": "Market Addition",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 38,
+      "abstain_count": 10,
+      "no_vote_count": 12
+    }
+  },
+  {
+    "proposal_id": "225",
+    "chain_id": "injective",
+    "title": "Injective Exchange dApp Update Market Parameter Changes",
+    "type": "MarketRelated",
+    "topic": "Market Addition",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 51,
+      "no_count": 1,
+      "no_vote_count": 8
+    }
+  },
+  {
+    "proposal_id": "224",
+    "chain_id": "injective",
+    "title": "Talis The First NFT Marketplace on Injective",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 51,
+      "no_vote_count": 9
+    }
+  },
+  {
+    "proposal_id": "223",
+    "chain_id": "injective",
+    "title": "Disbursement of DMM rewards for epoch ended on 17 April 2023",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 47,
+      "abstain_count": 2,
+      "no_vote_count": 11
+    }
+  },
+  {
+    "proposal_id": "222",
+    "chain_id": "injective",
+    "title": "ERIS Upload Amplifier 170TF",
+    "type": "SmartContract",
+    "topic": "Contract Integration",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 44,
+      "abstain_count": 4,
+      "no_vote_count": 12
+    }
+  },
+  {
+    "proposal_id": "221",
+    "chain_id": "injective",
+    "title": "Injective Exchange dApp Update Market Parameter Changes",
+    "type": "MarketRelated",
+    "topic": "Market Addition",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 45,
+      "abstain_count": 6,
+      "no_vote_count": 9
+    }
+  },
+  {
+    "proposal_id": "220",
+    "chain_id": "injective",
+    "title": "Liquid Staking Incentives for INJ",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 41,
+      "abstain_count": 6,
+      "no_vote_count": 13
+    }
+  },
+  {
+    "proposal_id": "219",
+    "chain_id": "injective",
+    "title": "Pyth Oracle Mainnet Deployment",
+    "type": "ParameterChange",
+    "topic": "Protocol Configuration",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 51,
+      "abstain_count": 1,
+      "no_vote_count": 8
+    }
+  },
+  {
+    "proposal_id": "218",
+    "chain_id": "injective",
+    "title": "Upgrade expired IBC client",
+    "type": "IBCRelated",
+    "topic": "IBC Security",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 49,
+      "abstain_count": 2,
+      "no_vote_count": 9
+    }
+  },
+  {
+    "proposal_id": "217",
+    "chain_id": "injective",
+    "title": "Trade and Earn rewards allocation",
+    "type": "MarketRelated",
+    "topic": "DEX Configuration",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 45,
+      "abstain_count": 1,
+      "no_vote_count": 14
+    }
+  },
+  {
+    "proposal_id": "216",
+    "chain_id": "injective",
+    "title": "Exchange Module Upgrade Min tick size and margin ratio update for specific markets",
+    "type": "MarketRelated",
+    "topic": "Market Addition",
+    "status": "PASSED",
+    "final_tally_result": {
+      "abstain_count": 4,
+      "yes_count": 45,
+      "no_vote_count": 11
+    }
+  },
+  {
+    "proposal_id": "215",
+    "chain_id": "injective",
+    "title": "Disbursement of DMM rewards for epoch ended on 21 March 2023",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 47,
+      "abstain_count": 1,
+      "no_vote_count": 12
+    }
+  },
+  {
+    "proposal_id": "214",
+    "chain_id": "injective",
+    "title": "Deprecate legacy oracle requests",
+    "type": "MarketRelated",
+    "topic": "Oracle Update",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 47,
+      "no_vote_count": 13
+    }
+  },
+  {
+    "proposal_id": "213",
+    "chain_id": "injective",
+    "title": "Celer Bridge Contract",
+    "type": "SmartContract",
+    "topic": "Contract Integration",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 45,
+      "abstain_count": 3,
+      "no_vote_count": 12
+    }
+  },
+  {
+    "proposal_id": "212",
+    "chain_id": "injective",
+    "title": "Oracle Script Upgrade",
+    "type": "MarketRelated",
+    "topic": "Oracle Update",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 47,
+      "no_vote_count": 13
+    }
+  },
+  {
+    "proposal_id": "210",
+    "chain_id": "injective",
+    "title": "PUGUSDT Spot Market Launch",
+    "type": "MarketRelated",
+    "topic": "Market Addition",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 40,
+      "no_count": 1,
+      "abstain_count": 8,
+      "no_vote_count": 11
+    }
+  },
+  {
+    "proposal_id": "208",
+    "chain_id": "injective",
+    "title": "Dual Incentives for Astroport Genesis Pools",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 45,
+      "abstain_count": 3,
+      "no_vote_count": 12
+    }
+  },
+  {
+    "proposal_id": "207",
+    "chain_id": "injective",
+    "title": "Injective Mainnet Upgrade v110",
+    "type": "SoftwareUpgrade",
+    "topic": "Major Release",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 54,
+      "no_vote_count": 6
+    }
+  },
+  {
+    "proposal_id": "206",
+    "chain_id": "injective",
+    "title": "Trade and Earn rewards allocation",
+    "type": "MarketRelated",
+    "topic": "DEX Configuration",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 49,
+      "abstain_count": 3,
+      "no_vote_count": 8
+    }
+  },
+  {
+    "proposal_id": "205",
+    "chain_id": "injective",
+    "title": "Disbursement of DMM rewards for epoch ended on 21 Feb 2023",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 41,
+      "abstain_count": 3,
+      "no_vote_count": 16
+    }
+  },
+  {
+    "proposal_id": "204",
+    "chain_id": "injective",
+    "title": "Upgrade expired IBC client",
+    "type": "IBCRelated",
+    "topic": "IBC Security",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 45,
+      "no_vote_count": 15
+    }
+  },
+  {
+    "proposal_id": "203",
+    "chain_id": "injective",
+    "title": "Increase the Validator Set to 60",
+    "type": "ParameterChange",
+    "topic": "Staking Parameters",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 41,
+      "no_count": 1,
+      "abstain_count": 1,
+      "no_vote_count": 17
+    }
+  },
+  {
+    "proposal_id": "201",
+    "chain_id": "injective",
+    "title": "Trade and Earn rewards allocation",
+    "type": "MarketRelated",
+    "topic": "DEX Configuration",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 36,
+      "abstain_count": 4,
+      "no_vote_count": 20
+    }
+  },
+  {
+    "proposal_id": "200",
+    "chain_id": "injective",
+    "title": "Disbursement of DMM rewards for epoch ended on 27 December 2022 and 24 Jan 2023",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "PASSED",
+    "final_tally_result": {
+      "abstain_count": 5,
+      "yes_count": 30,
+      "no_vote_count": 25
+    }
+  },
+  {
+    "proposal_id": "199",
+    "chain_id": "injective",
+    "title": "Increase the Validator Set to 50",
+    "type": "ParameterChange",
+    "topic": "Staking Parameters",
+    "status": "PASSED",
+    "final_tally_result": {
+      "weighted_vote_count": 1,
+      "yes_count": 36,
+      "abstain_count": 4,
+      "no_vote_count": 19
+    }
+  },
+  {
+    "proposal_id": "198",
+    "chain_id": "injective",
+    "title": "Injective Mainnet Upgrade",
+    "type": "SoftwareUpgrade",
+    "topic": "Security Enhancement",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 34,
+      "abstain_count": 1,
+      "no_vote_count": 25
+    }
+  },
+  {
+    "proposal_id": "197",
+    "chain_id": "injective",
+    "title": "BONK Price Feed Oracle Integration",
+    "type": "MarketRelated",
+    "topic": "Oracle Update",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 30,
+      "abstain_count": 3,
+      "no_vote_count": 27
+    }
+  },
+  {
+    "proposal_id": "196",
+    "chain_id": "injective",
+    "title": "Trade and Earn rewards allocation",
+    "type": "MarketRelated",
+    "topic": "DEX Configuration",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 27,
+      "abstain_count": 4,
+      "no_vote_count": 29
+    }
+  },
+  {
+    "proposal_id": "195",
+    "chain_id": "injective",
+    "title": "Disbursement of DMM rewards for epochs ended on 1 November 2022 and 29 November 2022",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 23,
+      "abstain_count": 3,
+      "no_vote_count": 34
+    }
+  },
+  {
+    "proposal_id": "194",
+    "chain_id": "injective",
+    "title": "Trade and Earn rewards allocation",
+    "type": "MarketRelated",
+    "topic": "DEX Configuration",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 24,
+      "abstain_count": 3,
+      "no_vote_count": 33
+    }
+  },
+  {
+    "proposal_id": "193",
+    "chain_id": "injective",
+    "title": "Trade  Earn rewards points adjustment for epoch ended Dec 7 2022 UTC",
+    "type": "MarketRelated",
+    "topic": "Oracle Update",
+    "status": "REJECTED",
+    "final_tally_result": {
+      "abstain_count": 3,
+      "no_count": 16,
+      "yes_count": 7,
+      "no_vote_count": 34
+    }
+  },
+  {
+    "proposal_id": "192",
+    "chain_id": "injective",
+    "title": "Whitelist address for wasm upload",
+    "type": "ParameterChange",
+    "topic": "Protocol Configuration",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 26,
+      "abstain_count": 4,
+      "no_vote_count": 30
+    }
+  },
+  {
+    "proposal_id": "191",
+    "chain_id": "injective",
+    "title": "Trade  Earn rewards points adjustment for epoch ended Nov 30 2022 UTC",
+    "type": "MarketRelated",
+    "topic": "Trading Parameters",
+    "status": "FAILED",
+    "final_tally_result": {
+      "yes_count": 22,
+      "abstain_count": 2,
+      "no_vote_count": 36
+    }
+  },
+  {
+    "proposal_id": "190",
+    "chain_id": "injective",
+    "title": "Trade and Earn rewards allocation",
+    "type": "MarketRelated",
+    "topic": "DEX Configuration",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 24,
+      "abstain_count": 3,
+      "no_vote_count": 33
+    }
+  },
+  {
+    "proposal_id": "189",
+    "chain_id": "injective",
+    "title": "Upload Injective Adapter Contract",
+    "type": "SmartContract",
+    "topic": "Contract Deployment",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 26,
+      "abstain_count": 1,
+      "no_vote_count": 33
+    }
+  },
+  {
+    "proposal_id": "188",
+    "chain_id": "injective",
+    "title": "Wormhole  Upload Token Bridge Shutdown Contract",
+    "type": "SmartContract",
+    "topic": "Contract Deployment",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 27,
+      "abstain_count": 2,
+      "no_vote_count": 31
+    }
+  },
+  {
+    "proposal_id": "187",
+    "chain_id": "injective",
+    "title": "Wormhole  Upload Core Bridge Shutdown Contract",
+    "type": "SmartContract",
+    "topic": "Contract Deployment",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 28,
+      "abstain_count": 1,
+      "no_vote_count": 31
+    }
+  },
+  {
+    "proposal_id": "186",
+    "chain_id": "injective",
+    "title": "Wormhole  Upload CW20 Wrapped Contract",
+    "type": "SmartContract",
+    "topic": "Contract Deployment",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 29,
+      "abstain_count": 1,
+      "no_vote_count": 30
+    }
+  },
+  {
+    "proposal_id": "185",
+    "chain_id": "injective",
+    "title": "Wormhole  Upload Token Bridge Contract",
+    "type": "SmartContract",
+    "topic": "Contract Deployment",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 25,
+      "abstain_count": 1,
+      "no_vote_count": 34
+    }
+  },
+  {
+    "proposal_id": "184",
+    "chain_id": "injective",
+    "title": "Wormhole  Upload Core Contract",
+    "type": "SmartContract",
+    "topic": "Contract Deployment",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 28,
+      "abstain_count": 1,
+      "no_vote_count": 31
+    }
+  },
+  {
+    "proposal_id": "183",
+    "chain_id": "injective",
+    "title": "Injective x Crescent Listing Proposal to List Native CREUSDT Spot Pair",
+    "type": "MarketRelated",
+    "topic": "Market Addition",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 22,
+      "abstain_count": 1,
+      "no_vote_count": 37
+    }
+  },
+  {
+    "proposal_id": "182",
+    "chain_id": "injective",
+    "title": "Injective Mainnet Upgrade v18",
+    "type": "SoftwareUpgrade",
+    "topic": "Major Release",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 31,
+      "no_vote_count": 29
+    }
+  },
+  {
+    "proposal_id": "181",
+    "chain_id": "injective",
+    "title": "Trade  Earn rewards points adjustment for epoch ended Nov 2 2022 UTC",
+    "type": "MarketRelated",
+    "topic": "Trading Parameters",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 31,
+      "abstain_count": 1,
+      "no_vote_count": 28
+    }
+  },
+  {
+    "proposal_id": "180",
+    "chain_id": "injective",
+    "title": "Trade  Earn rewards points adjustment for epoch ended Oct 26 2022 UTC",
+    "type": "MarketRelated",
+    "topic": "Oracle Update",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 23,
+      "abstain_count": 2,
+      "no_vote_count": 35
+    }
+  },
+  {
+    "proposal_id": "179",
+    "chain_id": "injective",
+    "title": "Trade  Earn rewards points adjustment for epoch ended Oct 19 2022 UTC",
+    "type": "MarketRelated",
+    "topic": "Oracle Update",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 22,
+      "abstain_count": 3,
+      "no_vote_count": 35
+    }
+  },
+  {
+    "proposal_id": "178",
+    "chain_id": "injective",
+    "title": "Trade  Earn program for exchange",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 21,
+      "abstain_count": 1,
+      "no_vote_count": 38
+    }
+  },
+  {
+    "proposal_id": "177",
+    "chain_id": "injective",
+    "title": "Trade  Earn rewards points adjustment for epoch ended Oct 12 2022 UTC",
+    "type": "MarketRelated",
+    "topic": "Oracle Update",
+    "status": "PASSED",
+    "final_tally_result": {
+      "abstain_count": 3,
+      "yes_count": 22,
+      "no_vote_count": 35
+    }
+  },
+  {
+    "proposal_id": "176",
+    "chain_id": "injective",
+    "title": "Disbursement of DMM rewards for epoch ended on 4 October 2022",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 20,
+      "abstain_count": 5,
+      "no_vote_count": 35
+    }
+  },
+  {
+    "proposal_id": "175",
+    "chain_id": "injective",
+    "title": "White Whale on Injective",
+    "type": "SmartContract",
+    "topic": "Contract Deployment",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 18,
+      "abstain_count": 1,
+      "no_vote_count": 41
+    }
+  },
+  {
+    "proposal_id": "174",
+    "chain_id": "injective",
+    "title": "Trade  Earn Rewards Adjustment",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 4,
+      "abstain_count": 10,
+      "no_count": 4,
+      "no_vote_count": 42
+    }
+  },
+  {
+    "proposal_id": "173",
+    "chain_id": "injective",
+    "title": "Disbursement of DMM rewards for epoch ended on 9 September 2022",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 16,
+      "abstain_count": 5,
+      "no_vote_count": 39
+    }
+  },
+  {
+    "proposal_id": "172",
+    "chain_id": "injective",
+    "title": "Trade  Earn Program Reward Multiplier Changes",
+    "type": "MarketRelated",
+    "topic": "Trading Parameters",
+    "status": "PASSED",
+    "final_tally_result": {
+      "abstain_count": 2,
+      "yes_count": 19,
+      "no_vote_count": 39
+    }
+  },
+  {
+    "proposal_id": "171",
+    "chain_id": "injective",
+    "title": "Increase Peggy TargetBatchTimeout",
+    "type": "ParameterChange",
+    "topic": "Protocol Configuration",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 12,
+      "abstain_count": 7,
+      "no_vote_count": 41
+    }
+  },
+  {
+    "proposal_id": "170",
+    "chain_id": "injective",
+    "title": "Injective Mainnet Upgrade",
+    "type": "SoftwareUpgrade",
+    "topic": "Security Enhancement",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 25,
+      "no_vote_count": 35
+    }
+  },
+  {
+    "proposal_id": "169",
+    "chain_id": "injective",
+    "title": "Disbursement of DMM rewards for epochs ended on 12 July 2022 and 9 August 2022",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "PASSED",
+    "final_tally_result": {
+      "abstain_count": 5,
+      "yes_count": 17,
+      "no_vote_count": 38
+    }
+  },
+  {
+    "proposal_id": "168",
+    "chain_id": "injective",
+    "title": "Upload CW3 Fixed Multisig",
+    "type": "SmartContract",
+    "topic": "Contract Deployment",
+    "status": "PASSED",
+    "final_tally_result": {
+      "abstain_count": 2,
+      "yes_count": 15,
+      "no_vote_count": 43
+    }
+  },
+  {
+    "proposal_id": "167",
+    "chain_id": "injective",
+    "title": "Increase Max Validator Set to 40",
+    "type": "ParameterChange",
+    "topic": "Staking Parameters",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 14,
+      "no_vote_count": 46
+    }
+  },
+  {
+    "proposal_id": "166",
+    "chain_id": "injective",
+    "title": "USDCUSDT Spot Market Launch",
+    "type": "MarketRelated",
+    "topic": "Market Addition",
+    "status": "PASSED",
+    "final_tally_result": {
+      "abstain_count": 2,
+      "yes_count": 9,
+      "no_vote_count": 49
+    }
+  },
+  {
+    "proposal_id": "165",
+    "chain_id": "injective",
+    "title": "Disbursement of DMM rewards for epochs ended on 17 May 2022 and 14 June 2022",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "PASSED",
+    "final_tally_result": {
+      "abstain_count": 4,
+      "yes_count": 8,
+      "no_vote_count": 48
+    }
+  },
+  {
+    "proposal_id": "164",
+    "chain_id": "injective",
+    "title": "Adjust Fee Discount Tiers Threshold And Maker Discount",
+    "type": "MarketRelated",
+    "topic": "Trading Parameters",
+    "status": "PASSED",
+    "final_tally_result": {
+      "abstain_count": 4,
+      "yes_count": 7,
+      "no_vote_count": 49
+    }
+  },
+  {
+    "proposal_id": "163",
+    "chain_id": "injective",
+    "title": "AXSUSDT Update",
+    "type": "ParameterChange",
+    "topic": "Economic Parameters",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 9,
+      "abstain_count": 2,
+      "no_vote_count": 49
+    }
+  },
+  {
+    "proposal_id": "162",
+    "chain_id": "injective",
+    "title": "Trading fee and Trade  Earn multiplier changes",
+    "type": "MarketRelated",
+    "topic": "Trading Parameters",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 10,
+      "abstain_count": 2,
+      "no_vote_count": 48
+    }
+  },
+  {
+    "proposal_id": "161",
+    "chain_id": "injective",
+    "title": "Dexterium grant proposal",
+    "type": "TextProposal",
+    "topic": "Project Funding",
+    "status": "REJECTED",
+    "final_tally_result": {
+      "abstain_count": 5,
+      "no_count": 5,
+      "yes_count": 5,
+      "no_vote_count": 45
+    }
+  },
+  {
+    "proposal_id": "160",
+    "chain_id": "injective",
+    "title": "Trade  Earn rewards points adjustment for epoch ended June 22 2022 UTC",
+    "type": "MarketRelated",
+    "topic": "Oracle Update",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 11,
+      "abstain_count": 4,
+      "no_vote_count": 45
+    }
+  },
+  {
+    "proposal_id": "159",
+    "chain_id": "injective",
+    "title": "Injective Mainnet Upgrade",
+    "type": "SoftwareUpgrade",
+    "topic": "Security Enhancement",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 16,
+      "no_vote_count": 44
+    }
+  },
+  {
+    "proposal_id": "158",
+    "chain_id": "injective",
+    "title": "Disbursement of DMM rewards for epochs ended on 17 May 2022 and 14 June 2022",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "PASSED",
+    "final_tally_result": {
+      "abstain_count": 4,
+      "yes_count": 7,
+      "no_vote_count": 49
+    }
+  },
+  {
+    "proposal_id": "157",
+    "chain_id": "injective",
+    "title": "Trade  Earn rewards points adjustment for epoch ended June 15 2022 UTC",
+    "type": "MarketRelated",
+    "topic": "Oracle Update",
+    "status": "REJECTED",
+    "final_tally_result": {
+      "yes_count": 9,
+      "abstain_count": 3,
+      "no_vote_count": 48
+    }
+  },
+  {
+    "proposal_id": "156",
+    "chain_id": "injective",
+    "title": "Injective Join Cosmoverse 2022 as a CoLead Sponsor",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 10,
+      "abstain_count": 1,
+      "no_vote_count": 49
+    }
+  },
+  {
+    "proposal_id": "155",
+    "chain_id": "injective",
+    "title": "Trade  Earn rewards points adjustment for epoch ended June 8 2022 UTC",
+    "type": "MarketRelated",
+    "topic": "Oracle Update",
+    "status": "PASSED",
+    "final_tally_result": {
+      "abstain_count": 3,
+      "yes_count": 8,
+      "no_vote_count": 49
+    }
+  },
+  {
+    "proposal_id": "154",
+    "chain_id": "injective",
+    "title": "Trade  Earn rewards points adjustment for epoch ended June 1 2022 UTC",
+    "type": "MarketRelated",
+    "topic": "Oracle Update",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 9,
+      "abstain_count": 5,
+      "no_vote_count": 46
+    }
+  },
+  {
+    "proposal_id": "153",
+    "chain_id": "injective",
+    "title": "Disbursement of DMM rewards for epochs ended on 22 Feb 2022 and 17 May 2022",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 9,
+      "abstain_count": 5,
+      "no_vote_count": 46
+    }
+  },
+  {
+    "proposal_id": "152",
+    "chain_id": "injective",
+    "title": "Trade  Earn rewards points adjustment for epoch ended May 25 2022 UTC",
+    "type": "MarketRelated",
+    "topic": "Oracle Update",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 7,
+      "abstain_count": 4,
+      "no_vote_count": 49
+    }
+  },
+  {
+    "proposal_id": "151",
+    "chain_id": "injective",
+    "title": "Trade  Earn rewards points adjustment for epoch ended May 18 2022 UTC",
+    "type": "MarketRelated",
+    "topic": "Oracle Update",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 7,
+      "abstain_count": 3,
+      "no_vote_count": 50
+    }
+  },
+  {
+    "proposal_id": "150",
+    "chain_id": "injective",
+    "title": "Trade  Earn rewards points adjustment for epoch ended May 11 2022 UTC",
+    "type": "MarketRelated",
+    "topic": "Oracle Update",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 8,
+      "abstain_count": 4,
+      "no_vote_count": 48
+    }
+  },
+  {
+    "proposal_id": "149",
+    "chain_id": "injective",
+    "title": "Update LUNA trading pairs tick size",
+    "type": "MarketRelated",
+    "topic": "Market Addition",
+    "status": "PASSED",
+    "final_tally_result": {
+      "abstain_count": 3,
+      "yes_count": 10,
+      "no_vote_count": 47
+    }
+  },
+  {
+    "proposal_id": "148",
+    "chain_id": "injective",
+    "title": "Trade  Earn rewards points adjustment for epoch ended May 4 2022 UTC",
+    "type": "MarketRelated",
+    "topic": "Oracle Update",
+    "status": "PASSED",
+    "final_tally_result": {
+      "abstain_count": 2,
+      "yes_count": 9,
+      "no_vote_count": 49
+    }
+  },
+  {
+    "proposal_id": "147",
+    "chain_id": "injective",
+    "title": "Trade and Earn Reward Restructure for Terra and Injective Ecosystem Builders",
+    "type": "MarketRelated",
+    "topic": "Oracle Update",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 9,
+      "abstain_count": 2,
+      "no_count": 1,
+      "no_vote_count": 48
+    }
+  },
+  {
+    "proposal_id": "146",
+    "chain_id": "injective",
+    "title": "Launch SOLUSDT PERP",
+    "type": "MarketRelated",
+    "topic": "DEX Configuration",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 8,
+      "abstain_count": 2,
+      "no_vote_count": 50
+    }
+  },
+  {
+    "proposal_id": "145",
+    "chain_id": "injective",
+    "title": "Trade  Earn rewards points adjustment for epoch ended April 27 2022 UTC",
+    "type": "MarketRelated",
+    "topic": "Oracle Update",
+    "status": "PASSED",
+    "final_tally_result": {
+      "abstain_count": 3,
+      "yes_count": 5,
+      "no_vote_count": 52
+    }
+  },
+  {
+    "proposal_id": "144",
+    "chain_id": "injective",
+    "title": "Launch OSMOUST PERP",
+    "type": "MarketRelated",
+    "topic": "DEX Configuration",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 10,
+      "abstain_count": 2,
+      "no_vote_count": 48
+    }
+  },
+  {
+    "proposal_id": "143",
+    "chain_id": "injective",
+    "title": "Update Band IBC Price Feed Oracle",
+    "type": "MarketRelated",
+    "topic": "Oracle Update",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 10,
+      "abstain_count": 2,
+      "no_vote_count": 48
+    }
+  },
+  {
+    "proposal_id": "142",
+    "chain_id": "injective",
+    "title": "Launch XPRTUSDT",
+    "type": "MarketRelated",
+    "topic": "DEX Configuration",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 11,
+      "abstain_count": 2,
+      "no_vote_count": 47
+    }
+  },
+  {
+    "proposal_id": "141",
+    "chain_id": "injective",
+    "title": "Trade  Earn rewards points adjustment for epoch ended April 20 2022 UTC",
+    "type": "MarketRelated",
+    "topic": "Oracle Update",
+    "status": "PASSED",
+    "final_tally_result": {
+      "abstain_count": 4,
+      "yes_count": 8,
+      "no_vote_count": 48
+    }
+  },
+  {
+    "proposal_id": "140",
+    "chain_id": "injective",
+    "title": "Update Band IBC Price Feed Oracle",
+    "type": "MarketRelated",
+    "topic": "Oracle Update",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 10,
+      "abstain_count": 2,
+      "no_vote_count": 48
+    }
+  },
+  {
+    "proposal_id": "139",
+    "chain_id": "injective",
+    "title": "Disbursement of DMM rewards for epochs ended on 25 Jan 2022 and 19 April 2022",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "PASSED",
+    "final_tally_result": {
+      "abstain_count": 4,
+      "yes_count": 7,
+      "no_vote_count": 49
+    }
+  },
+  {
+    "proposal_id": "138",
+    "chain_id": "injective",
+    "title": "Trade  Earn rewards points adjustment for epoch ended April 13 2022 UTC",
+    "type": "MarketRelated",
+    "topic": "Oracle Update",
+    "status": "PASSED",
+    "final_tally_result": {
+      "abstain_count": 2,
+      "yes_count": 9,
+      "no_vote_count": 49
+    }
+  },
+  {
+    "proposal_id": "137",
+    "chain_id": "injective",
+    "title": "Adjust Fee Discounts",
+    "type": "MarketRelated",
+    "topic": "Trading Parameters",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 10,
+      "abstain_count": 2,
+      "no_vote_count": 48
+    }
+  },
+  {
+    "proposal_id": "136",
+    "chain_id": "injective",
+    "title": "Disbursement of DMM rewards for epochs ended on 28 Dec 2021 and 22 March 2022",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 10,
+      "abstain_count": 1,
+      "no_vote_count": 49
+    }
+  },
+  {
+    "proposal_id": "135",
+    "chain_id": "injective",
+    "title": "Trade  Earn rewards points adjustment for epoch ended April 6 2022 UTC",
+    "type": "MarketRelated",
+    "topic": "Oracle Update",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 9,
+      "abstain_count": 1,
+      "no_vote_count": 50
+    }
+  },
+  {
+    "proposal_id": "134",
+    "chain_id": "injective",
+    "title": "BAYCWETH PERP Market Launch",
+    "type": "MarketRelated",
+    "topic": "Market Addition",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 7,
+      "abstain_count": 2,
+      "no_vote_count": 51
+    }
+  },
+  {
+    "proposal_id": "133",
+    "chain_id": "injective",
+    "title": "Injective Protocol Mainnet Upgrade",
+    "type": "SoftwareUpgrade",
+    "topic": "Security Enhancement",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 16,
+      "abstain_count": 1,
+      "no_vote_count": 43
+    }
+  },
+  {
+    "proposal_id": "132",
+    "chain_id": "injective",
+    "title": "Trade  Earn rewards points adjustment for epoch ended March 30 2022 UTC",
+    "type": "MarketRelated",
+    "topic": "Oracle Update",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 13,
+      "abstain_count": 2,
+      "no_vote_count": 45
+    }
+  },
+  {
+    "proposal_id": "130",
+    "chain_id": "injective",
+    "title": "Trade  Earn rewards points adjustment for epoch ended March 23 2022 UTC",
+    "type": "MarketRelated",
+    "topic": "Oracle Update",
+    "status": "PASSED",
+    "final_tally_result": {
+      "abstain_count": 2,
+      "yes_count": 10,
+      "no_vote_count": 48
+    }
+  },
+  {
+    "proposal_id": "129",
+    "chain_id": "injective",
+    "title": "Launch STXUSDT PERP",
+    "type": "MarketRelated",
+    "topic": "DEX Configuration",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 12,
+      "no_vote_count": 48
+    }
+  },
+  {
+    "proposal_id": "128",
+    "chain_id": "injective",
+    "title": "Trade  Earn Rewards Rate and APEUSDT market adjustment",
+    "type": "MarketRelated",
+    "topic": "Trading Parameters",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 10,
+      "abstain_count": 2,
+      "no_vote_count": 48
+    }
+  },
+  {
+    "proposal_id": "127",
+    "chain_id": "injective",
+    "title": "Adjust Chain Parameters",
+    "type": "ParameterChange",
+    "topic": "Protocol Configuration",
+    "status": "PASSED",
+    "final_tally_result": {
+      "abstain_count": 1,
+      "yes_count": 8,
+      "no_count": 1,
+      "no_vote_count": 50
+    }
+  },
+  {
+    "proposal_id": "126",
+    "chain_id": "injective",
+    "title": "Adjust funding rate limit",
+    "type": "MarketRelated",
+    "topic": "Trading Parameters",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 10,
+      "abstain_count": 1,
+      "no_vote_count": 49
+    }
+  },
+  {
+    "proposal_id": "125",
+    "chain_id": "injective",
+    "title": "Disbursement of DMM rewards for epochs ended on 25 Jan 2022 and 22 Feb 2022",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 11,
+      "abstain_count": 1,
+      "no_vote_count": 48
+    }
+  },
+  {
+    "proposal_id": "124",
+    "chain_id": "injective",
+    "title": "Trade  Earn rewards points adjustment for epoch ended March 16 2022 UTC",
+    "type": "MarketRelated",
+    "topic": "Oracle Update",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 9,
+      "abstain_count": 1,
+      "no_vote_count": 50
+    }
+  },
+  {
+    "proposal_id": "123",
+    "chain_id": "injective",
+    "title": "Disbursement of DMM rewards for epochs ended on 25 Jan 2022 and 22 Feb 2022",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "REJECTED",
+    "final_tally_result": {
+      "yes_count": 5,
+      "no_vote_count": 55
+    }
+  },
+  {
+    "proposal_id": "122",
+    "chain_id": "injective",
+    "title": "Trade and Earn epoch 15 rewards disbursement",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "PASSED",
+    "final_tally_result": {
+      "abstain_count": 2,
+      "yes_count": 8,
+      "no_vote_count": 50
+    }
+  },
+  {
+    "proposal_id": "121",
+    "chain_id": "injective",
+    "title": "Trade  Earn rewards points adjustment for epoch ended March 9 2022 UTC",
+    "type": "MarketRelated",
+    "topic": "Oracle Update",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 9,
+      "abstain_count": 1,
+      "no_vote_count": 50
+    }
+  },
+  {
+    "proposal_id": "120",
+    "chain_id": "injective",
+    "title": "Trade  Earn rewards points adjustment for epoch ended March 2 2022 UTC",
+    "type": "MarketRelated",
+    "topic": "Oracle Update",
+    "status": "REJECTED",
+    "final_tally_result": {
+      "yes_count": 7,
+      "no_vote_count": 53
+    }
+  },
+  {
+    "proposal_id": "119",
+    "chain_id": "injective",
+    "title": "Injective Astro Program Restructure",
+    "type": "MarketRelated",
+    "topic": "DEX Configuration",
+    "status": "PASSED",
+    "final_tally_result": {
+      "abstain_count": 1,
+      "yes_count": 5,
+      "no_vote_count": 54
+    }
+  },
+  {
+    "proposal_id": "118",
+    "chain_id": "injective",
+    "title": "BAYC NFT Price Feed Oracle Integration from Burnt Finance",
+    "type": "MarketRelated",
+    "topic": "Oracle Update",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 8,
+      "abstain_count": 1,
+      "no_count": 1,
+      "no_vote_count": 50
+    }
+  },
+  {
+    "proposal_id": "117",
+    "chain_id": "injective",
+    "title": "Staking Param Change",
+    "type": "ParameterChange",
+    "topic": "Staking Parameters",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 9,
+      "no_vote_count": 51
+    }
+  },
+  {
+    "proposal_id": "116",
+    "chain_id": "injective",
+    "title": "Trade  Earn rewards points adjustment for epoch ended February 16 2022 UTC",
+    "type": "MarketRelated",
+    "topic": "Oracle Update",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 5,
+      "abstain_count": 3,
+      "no_vote_count": 52
+    }
+  },
+  {
+    "proposal_id": "115",
+    "chain_id": "injective",
+    "title": "Trade  Earn rewards points adjustment for epoch ended February 9 2022 UTC",
+    "type": "MarketRelated",
+    "topic": "Oracle Update",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 5,
+      "abstain_count": 1,
+      "no_vote_count": 54
+    }
+  },
+  {
+    "proposal_id": "114",
+    "chain_id": "injective",
+    "title": "Trade  Earn rewards points adjustment for epoch ended February 2 2022 UTC",
+    "type": "MarketRelated",
+    "topic": "Oracle Update",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 6,
+      "abstain_count": 1,
+      "no_vote_count": 53
+    }
+  },
+  {
+    "proposal_id": "113",
+    "chain_id": "injective",
+    "title": "ATOMUSDT PERP Market Launch",
+    "type": "MarketRelated",
+    "topic": "Market Addition",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 7,
+      "no_vote_count": 53
+    }
+  },
+  {
+    "proposal_id": "112",
+    "chain_id": "injective",
+    "title": "Injective x Chihuahua Listing Proposal to List Native HUAHUAUSDT Spot pair",
+    "type": "MarketRelated",
+    "topic": "Market Addition",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 7,
+      "no_count": 1,
+      "no_vote_count": 52
+    }
+  },
+  {
+    "proposal_id": "110",
+    "chain_id": "injective",
+    "title": "Trade  Earn rewards points adjustment for epoch ended January 26 2022 UTC",
+    "type": "MarketRelated",
+    "topic": "Oracle Update",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 4,
+      "abstain_count": 1,
+      "no_vote_count": 55
+    }
+  },
+  {
+    "proposal_id": "109",
+    "chain_id": "injective",
+    "title": "Update Band IBC price feed oracle request for SCRT  STX",
+    "type": "MarketRelated",
+    "topic": "Oracle Update",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 9,
+      "no_vote_count": 51
+    }
+  },
+  {
+    "proposal_id": "108",
+    "chain_id": "injective",
+    "title": "Exclude market makers from Trade and Earn rewards",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "REJECTED",
+    "final_tally_result": {
+      "no_count": 2,
+      "yes_count": 7,
+      "no_vote_count": 51
+    }
+  },
+  {
+    "proposal_id": "106",
+    "chain_id": "injective",
+    "title": "Injective Protocol Mainnet Upgrade",
+    "type": "SoftwareUpgrade",
+    "topic": "Security Enhancement",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 9,
+      "no_vote_count": 51
+    }
+  },
+  {
+    "proposal_id": "105",
+    "chain_id": "injective",
+    "title": "Reenable the ETHUSDT PERP Market",
+    "type": "ParameterChange",
+    "topic": "Economic Parameters",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 7,
+      "no_vote_count": 53
+    }
+  },
+  {
+    "proposal_id": "103",
+    "chain_id": "injective",
+    "title": "Proposal to refund burned INJ of proposal 94",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 4,
+      "no_vote_count": 56
+    }
+  },
+  {
+    "proposal_id": "102",
+    "chain_id": "injective",
+    "title": "INJUSDT PERP Market Parameters Update",
+    "type": "ParameterChange",
+    "topic": "Economic Parameters",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 4,
+      "no_vote_count": 56
+    }
+  },
+  {
+    "proposal_id": "101",
+    "chain_id": "injective",
+    "title": "Update Fee Discounts VIP Tiers",
+    "type": "MarketRelated",
+    "topic": "Oracle Update",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 4,
+      "abstain_count": 2,
+      "no_vote_count": 54
+    }
+  },
+  {
+    "proposal_id": "100",
+    "chain_id": "injective",
+    "title": "Update staking requirement for Trade  Earn rewards",
+    "type": "ParameterChange",
+    "topic": "Staking Parameters",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 4,
+      "abstain_count": 2,
+      "no_vote_count": 54
+    }
+  },
+  {
+    "proposal_id": "99",
+    "chain_id": "injective",
+    "title": "Trading Reward Campaign Boost Update",
+    "type": "MarketRelated",
+    "topic": "Trading Parameters",
+    "status": "PASSED",
+    "final_tally_result": {
+      "abstain_count": 2,
+      "yes_count": 3,
+      "no_vote_count": 55
+    }
+  },
+  {
+    "proposal_id": "98",
+    "chain_id": "injective",
+    "title": "INJUSDT PERP Market Parameters Update",
+    "type": "ParameterChange",
+    "topic": "Economic Parameters",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 5,
+      "no_vote_count": 55
+    }
+  },
+  {
+    "proposal_id": "97",
+    "chain_id": "injective",
+    "title": "Disbursement of DMM rewards as at 28 Dec 2021",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 2,
+      "abstain_count": 1,
+      "no_vote_count": 57
+    }
+  },
+  {
+    "proposal_id": "96",
+    "chain_id": "injective",
+    "title": "Instant Listing Spot Fee Update",
+    "type": "ParameterChange",
+    "topic": "Fee Adjustment",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 3,
+      "no_vote_count": 57
+    }
+  },
+  {
+    "proposal_id": "95",
+    "chain_id": "injective",
+    "title": "Band Oracle Incident Grants Part 2",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "PASSED",
+    "final_tally_result": {
+      "abstain_count": 2,
+      "yes_count": 1,
+      "no_vote_count": 57
+    }
+  },
+  {
+    "proposal_id": "94",
+    "chain_id": "injective",
+    "title": "Add Circulating Supply and Total Supply Max Supply Details in the Injective DEX",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "REJECTED",
+    "final_tally_result": {
+      "yes_count": 1,
+      "no_vote_count": 59
+    }
+  },
+  {
+    "proposal_id": "93",
+    "chain_id": "injective",
+    "title": "Injective Protocol Canonical Chain Enhancement",
+    "type": "SoftwareUpgrade",
+    "topic": "Security Enhancement",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 7,
+      "no_vote_count": 53
+    }
+  },
+  {
+    "proposal_id": "92",
+    "chain_id": "injective",
+    "title": "INJUST",
+    "type": "MarketRelated",
+    "topic": "Market Addition",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 2,
+      "no_vote_count": 58
+    }
+  },
+  {
+    "proposal_id": "91",
+    "chain_id": "injective",
+    "title": "Instant Listing Spot Fee Update",
+    "type": "ParameterChange",
+    "topic": "Fee Adjustment",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 6,
+      "no_vote_count": 54
+    }
+  },
+  {
+    "proposal_id": "90",
+    "chain_id": "injective",
+    "title": "Trading Reward Campaign Boost Update",
+    "type": "MarketRelated",
+    "topic": "Trading Parameters",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 6,
+      "no_vote_count": 54
+    }
+  },
+  {
+    "proposal_id": "89",
+    "chain_id": "injective",
+    "title": "USTUSDT quantity tick size update",
+    "type": "ParameterChange",
+    "topic": "Economic Parameters",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 4,
+      "no_vote_count": 56
+    }
+  },
+  {
+    "proposal_id": "88",
+    "chain_id": "injective",
+    "title": "Band Oracle Incident Grants Part 1",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 1,
+      "no_vote_count": 59
+    }
+  },
+  {
+    "proposal_id": "87",
+    "chain_id": "injective",
+    "title": "Reenable and Update ETHUSDT PERP Market",
+    "type": "ParameterChange",
+    "topic": "Economic Parameters",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 2,
+      "no_vote_count": 58
+    }
+  },
+  {
+    "proposal_id": "85",
+    "chain_id": "injective",
+    "title": "Trading Reward Campaign Boost Update",
+    "type": "MarketRelated",
+    "topic": "Trading Parameters",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 2,
+      "no_vote_count": 58
+    }
+  },
+  {
+    "proposal_id": "83",
+    "chain_id": "injective",
+    "title": "Injective x Terra Listing Proposal to List Native LUNAUST Spot USTUSDT Spot and LUNAUST Perpetual Pairs",
+    "type": "MarketRelated",
+    "topic": "Market Addition",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 3,
+      "no_vote_count": 57
+    }
+  },
+  {
+    "proposal_id": "82",
+    "chain_id": "injective",
+    "title": "BTCUSDT PERP Oracle Price Feed Update",
+    "type": "ParameterChange",
+    "topic": "Fee Adjustment",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 2,
+      "no_vote_count": 58
+    }
+  },
+  {
+    "proposal_id": "81",
+    "chain_id": "injective",
+    "title": "ETHUSDT PERP Market Status Update",
+    "type": "ParameterChange",
+    "topic": "Economic Parameters",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 2,
+      "no_vote_count": 58
+    }
+  },
+  {
+    "proposal_id": "80",
+    "chain_id": "injective",
+    "title": "Trading Reward Campaign Boost Update",
+    "type": "MarketRelated",
+    "topic": "Trading Parameters",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 2,
+      "no_vote_count": 58
+    }
+  },
+  {
+    "proposal_id": "79",
+    "chain_id": "injective",
+    "title": "Add Terra Ecosystem Price Feeds",
+    "type": "MarketRelated",
+    "topic": "Oracle Update",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 4,
+      "no_vote_count": 56
+    }
+  },
+  {
+    "proposal_id": "76",
+    "chain_id": "injective",
+    "title": "INJUSDT PERP Market Proposal",
+    "type": "MarketRelated",
+    "topic": "Market Addition",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 5,
+      "no_vote_count": 55
+    }
+  },
+  {
+    "proposal_id": "74",
+    "chain_id": "injective",
+    "title": "ETHUSDT PERP Launch BNBUSDT PERP Launch and Rewards Rate Update",
+    "type": "MarketRelated",
+    "topic": "Oracle Update",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 3,
+      "no_vote_count": 57
+    }
+  },
+  {
+    "proposal_id": "73",
+    "chain_id": "injective",
+    "title": "ATOMUSDT Spot Market Proposal ",
+    "type": "MarketRelated",
+    "topic": "Market Addition",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 4,
+      "no_vote_count": 56
+    }
+  },
+  {
+    "proposal_id": "72",
+    "chain_id": "injective",
+    "title": "ATOMUSDT Sport Market Launch",
+    "type": "MarketRelated",
+    "topic": "Market Addition",
+    "status": "REJECTED",
+    "final_tally_result": {
+      "yes_count": 3,
+      "no_vote_count": 57
+    }
+  },
+  {
+    "proposal_id": "71",
+    "chain_id": "injective",
+    "title": "Injective Astro Liquidity Incentive Program",
+    "type": "MarketRelated",
+    "topic": "Trading Parameters",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 2,
+      "no_vote_count": 58
+    }
+  },
+  {
+    "proposal_id": "70",
+    "chain_id": "injective",
+    "title": "Injective Protocol Canonical Chain Enhancement",
+    "type": "SoftwareUpgrade",
+    "topic": "Security Enhancement",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 4,
+      "no_vote_count": 56
+    }
+  },
+  {
+    "proposal_id": "69",
+    "chain_id": "injective",
+    "title": "Injective VIP Fee Discount Program",
+    "type": "MarketRelated",
+    "topic": "DEX Configuration",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 3,
+      "no_vote_count": 57
+    }
+  },
+  {
+    "proposal_id": "68",
+    "chain_id": "injective",
+    "title": "Launch of The Dedicated Market Making Program",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 4,
+      "no_vote_count": 56
+    }
+  },
+  {
+    "proposal_id": "67",
+    "chain_id": "injective",
+    "title": "Enable Band IBC with a request interval of 10 blocks",
+    "type": "IBCRelated",
+    "topic": "IBC Transfer",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 4,
+      "no_vote_count": 56
+    }
+  },
+  {
+    "proposal_id": "66",
+    "chain_id": "injective",
+    "title": "Authorize Band IBC Oracle Request",
+    "type": "MarketRelated",
+    "topic": "Oracle Update",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 3,
+      "no_vote_count": 57
+    }
+  },
+  {
+    "proposal_id": "65",
+    "chain_id": "injective",
+    "title": "Injective Protocol Canonical Chain Upgrade",
+    "type": "SoftwareUpgrade",
+    "topic": "Security Enhancement",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 5,
+      "no_vote_count": 55
+    }
+  },
+  {
+    "proposal_id": "64",
+    "chain_id": "injective",
+    "title": "IBC Connection Param Change",
+    "type": "ParameterChange",
+    "topic": "Protocol Configuration",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 2,
+      "no_vote_count": 58
+    }
+  },
+  {
+    "proposal_id": "63",
+    "chain_id": "injective",
+    "title": "Stargazers Ambassador Program Launch",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 1,
+      "no_count": 1,
+      "no_vote_count": 58
+    }
+  },
+  {
+    "proposal_id": "60",
+    "chain_id": "injective",
+    "title": "IBC Transfer Param Change",
+    "type": "ParameterChange",
+    "topic": "Protocol Configuration",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 2,
+      "no_vote_count": 58
+    }
+  },
+  {
+    "proposal_id": "59",
+    "chain_id": "injective",
+    "title": "Update Mint and Distribution Module Params",
+    "type": "ParameterChange",
+    "topic": "Economic Parameters",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 3,
+      "no_vote_count": 57
+    }
+  },
+  {
+    "proposal_id": "58",
+    "chain_id": "injective",
+    "title": "Update AXSUSDT spot market trading fee",
+    "type": "ParameterChange",
+    "topic": "Fee Adjustment",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 1,
+      "no_vote_count": 59
+    }
+  },
+  {
+    "proposal_id": "57",
+    "chain_id": "injective",
+    "title": "AXSUSDT Spot Market Launch",
+    "type": "MarketRelated",
+    "topic": "Market Addition",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 4,
+      "no_vote_count": 56
+    }
+  },
+  {
+    "proposal_id": "56",
+    "chain_id": "injective",
+    "title": "Enable Derivatives Exchange",
+    "type": "MarketRelated",
+    "topic": "Market Addition",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 5,
+      "no_vote_count": 55
+    }
+  },
+  {
+    "proposal_id": "55",
+    "chain_id": "injective",
+    "title": "Launch the Injective Stargazers Ambassador Program",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 2,
+      "no_vote_count": 58
+    }
+  },
+  {
+    "proposal_id": "54",
+    "chain_id": "injective",
+    "title": "Launch the Injective Stargazers Ambassador Program",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "REJECTED",
+    "final_tally_result": {
+      "yes_count": 1,
+      "no_vote_count": 59
+    }
+  },
+  {
+    "proposal_id": "53",
+    "chain_id": "injective",
+    "title": "WBTCUSDC spot market params update",
+    "type": "ParameterChange",
+    "topic": "Economic Parameters",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 2,
+      "no_vote_count": 58
+    }
+  },
+  {
+    "proposal_id": "52",
+    "chain_id": "injective",
+    "title": "WBTCUSDC Spot Market Proposal ",
+    "type": "MarketRelated",
+    "topic": "Market Addition",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 2,
+      "no_vote_count": 58
+    }
+  },
+  {
+    "proposal_id": "51",
+    "chain_id": "injective",
+    "title": "BTCUSDT PERP market proposal",
+    "type": "MarketRelated",
+    "topic": "Market Addition",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 6,
+      "no_vote_count": 54
+    }
+  },
+  {
+    "proposal_id": "50",
+    "chain_id": "injective",
+    "title": "QNTUSDT Spot Market Proposal",
+    "type": "MarketRelated",
+    "topic": "Market Addition",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 3,
+      "no_vote_count": 57
+    }
+  },
+  {
+    "proposal_id": "48",
+    "chain_id": "injective",
+    "title": "SNX  USDT Spot Market Proposal",
+    "type": "MarketRelated",
+    "topic": "Market Addition",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 3,
+      "no_vote_count": 57
+    }
+  },
+  {
+    "proposal_id": "47",
+    "chain_id": "injective",
+    "title": "BUSDUSDC Spot Market",
+    "type": "MarketRelated",
+    "topic": "Market Addition",
+    "status": "REJECTED",
+    "final_tally_result": {
+      "no_vote_count": 60
+    }
+  },
+  {
+    "proposal_id": "44",
+    "chain_id": "injective",
+    "title": "Pause QNTUSDC spot market",
+    "type": "ParameterChange",
+    "topic": "Fee Adjustment",
+    "status": "PASSED",
+    "final_tally_result": {
+      "no_vote_count": 60
+    }
+  },
+  {
+    "proposal_id": "43",
+    "chain_id": "injective",
+    "title": "Enable Spot Exchange",
+    "type": "MarketRelated",
+    "topic": "Market Addition",
+    "status": "PASSED",
+    "final_tally_result": {
+      "yes_count": 1,
+      "no_vote_count": 59
+    }
+  },
+  {
+    "proposal_id": "42",
+    "chain_id": "injective",
+    "title": "LINKUSDT Spot Market",
+    "type": "MarketRelated",
+    "topic": "Market Addition",
+    "status": "PASSED",
+    "final_tally_result": {
+      "no_vote_count": 60
+    }
+  },
+  {
+    "proposal_id": "41",
+    "chain_id": "injective",
+    "title": "GRTUSDT Spot Market",
+    "type": "MarketRelated",
+    "topic": "Market Addition",
+    "status": "PASSED",
+    "final_tally_result": {
+      "no_vote_count": 60
+    }
+  },
+  {
+    "proposal_id": "40",
+    "chain_id": "injective",
+    "title": "SUSHIUSDT Spot Market",
+    "type": "MarketRelated",
+    "topic": "Market Addition",
+    "status": "PASSED",
+    "final_tally_result": {
+      "no_vote_count": 60
+    }
+  },
+  {
+    "proposal_id": "39",
+    "chain_id": "injective",
+    "title": "QNTUSDT Spot Market",
+    "type": "MarketRelated",
+    "topic": "Market Addition",
+    "status": "REJECTED",
+    "final_tally_result": {
+      "no_vote_count": 60
+    }
+  },
+  {
+    "proposal_id": "37",
+    "chain_id": "injective",
+    "title": "AAVEUSDT Spot Market",
+    "type": "MarketRelated",
+    "topic": "Market Addition",
+    "status": "PASSED",
+    "final_tally_result": {
+      "no_vote_count": 60
+    }
+  },
+  {
+    "proposal_id": "36",
+    "chain_id": "injective",
+    "title": "WETHUSDT Spot Market",
+    "type": "MarketRelated",
+    "topic": "Market Addition",
+    "status": "PASSED",
+    "final_tally_result": {
+      "no_vote_count": 60
+    }
+  },
+  {
+    "proposal_id": "35",
+    "chain_id": "injective",
+    "title": "UNI  USDC Spot Market Proposal",
+    "type": "MarketRelated",
+    "topic": "Market Addition",
+    "status": "PASSED",
+    "final_tally_result": {
+      "no_vote_count": 60
+    }
+  },
+  {
+    "proposal_id": "34",
+    "chain_id": "injective",
+    "title": "MATIC  USDT Spot Market Proposal",
+    "type": "MarketRelated",
+    "topic": "Market Addition",
+    "status": "PASSED",
+    "final_tally_result": {
+      "no_vote_count": 60
+    }
+  },
+  {
+    "proposal_id": "31",
+    "chain_id": "injective",
+    "title": "INJ  USDT Spot Market Proposal",
+    "type": "MarketRelated",
+    "topic": "Market Addition",
+    "status": "PASSED",
+    "final_tally_result": {
+      "no_vote_count": 60
+    }
+  },
+  {
+    "proposal_id": "30",
+    "chain_id": "injective",
+    "title": "CHZ  USDC Spot Market Proposal",
+    "type": "MarketRelated",
+    "topic": "Market Addition",
+    "status": "REJECTED",
+    "final_tally_result": {
+      "no_vote_count": 60
+    }
+  },
+  {
+    "proposal_id": "29",
+    "chain_id": "injective",
+    "title": "GRT USDC Spot Market Proposal",
+    "type": "MarketRelated",
+    "topic": "Market Addition",
+    "status": "PASSED",
+    "final_tally_result": {
+      "no_vote_count": 60
+    }
+  },
+  {
+    "proposal_id": "28",
+    "chain_id": "injective",
+    "title": "DEFI5  USDC Spot Market Proposal",
+    "type": "MarketRelated",
+    "topic": "Market Addition",
+    "status": "REJECTED",
+    "final_tally_result": {
+      "no_vote_count": 60
+    }
+  },
+  {
+    "proposal_id": "27",
+    "chain_id": "injective",
+    "title": "STARSUSDC Spot Market",
+    "type": "MarketRelated",
+    "topic": "Market Addition",
+    "status": "REJECTED",
+    "final_tally_result": {
+      "no_vote_count": 60
+    }
+  },
+  {
+    "proposal_id": "26",
+    "chain_id": "injective",
+    "title": "OCEAN USDC Spot Market Proposal",
+    "type": "MarketRelated",
+    "topic": "Market Addition",
+    "status": "REJECTED",
+    "final_tally_result": {
+      "no_vote_count": 60
+    }
+  },
+  {
+    "proposal_id": "25",
+    "chain_id": "injective",
+    "title": "UTK  USDC Spot Market",
+    "type": "MarketRelated",
+    "topic": "Market Addition",
+    "status": "REJECTED",
+    "final_tally_result": {
+      "no_vote_count": 60
+    }
+  },
+  {
+    "proposal_id": "23",
+    "chain_id": "injective",
+    "title": "RUNE  USDC Spot Market Proposal",
+    "type": "MarketRelated",
+    "topic": "Market Addition",
+    "status": "REJECTED",
+    "final_tally_result": {
+      "no_vote_count": 60
+    }
+  },
+  {
+    "proposal_id": "22",
+    "chain_id": "injective",
+    "title": "SWAP  USDC Spot Market",
+    "type": "MarketRelated",
+    "topic": "Market Addition",
+    "status": "REJECTED",
+    "final_tally_result": {
+      "no_vote_count": 60
+    }
+  },
+  {
+    "proposal_id": "21",
+    "chain_id": "injective",
+    "title": "1 INCH  USDC Spot Market Proposal",
+    "type": "MarketRelated",
+    "topic": "Market Addition",
+    "status": "REJECTED",
+    "final_tally_result": {
+      "no_vote_count": 60
+    }
+  },
+  {
+    "proposal_id": "20",
+    "chain_id": "injective",
+    "title": "ENJIN  USDC Spot Market",
+    "type": "MarketRelated",
+    "topic": "Market Addition",
+    "status": "REJECTED",
+    "final_tally_result": {
+      "no_vote_count": 60
+    }
+  },
+  {
+    "proposal_id": "19",
+    "chain_id": "injective",
+    "title": "FTM USDC Spot Market Proposal",
+    "type": "MarketRelated",
+    "topic": "Market Addition",
+    "status": "REJECTED",
+    "final_tally_result": {
+      "yes_count": 1,
+      "no_vote_count": 59
+    }
+  },
+  {
+    "proposal_id": "18",
+    "chain_id": "injective",
+    "title": "PAXG  USDC Spot Market",
+    "type": "MarketRelated",
+    "topic": "Market Addition",
+    "status": "REJECTED",
+    "final_tally_result": {
+      "no_vote_count": 60
+    }
+  },
+  {
+    "proposal_id": "17",
+    "chain_id": "injective",
+    "title": "SUSHIUSDC Spot Market",
+    "type": "MarketRelated",
+    "topic": "Market Addition",
+    "status": "PASSED",
+    "final_tally_result": {
+      "no_vote_count": 60
+    }
+  },
+  {
+    "proposal_id": "16",
+    "chain_id": "injective",
+    "title": "QNT USDC Spot Market Proposal",
+    "type": "MarketRelated",
+    "topic": "Market Addition",
+    "status": "PASSED",
+    "final_tally_result": {
+      "no_vote_count": 60
+    }
+  },
+  {
+    "proposal_id": "15",
+    "chain_id": "injective",
+    "title": "LINK USDC Spot Market",
+    "type": "MarketRelated",
+    "topic": "Market Addition",
+    "status": "PASSED",
+    "final_tally_result": {
+      "no_vote_count": 60
+    }
+  },
+  {
+    "proposal_id": "12",
+    "chain_id": "injective",
+    "title": "AAVE USDC Spot Market",
+    "type": "MarketRelated",
+    "topic": "Market Addition",
+    "status": "PASSED",
+    "final_tally_result": {
+      "no_vote_count": 60
+    }
+  },
+  {
+    "proposal_id": "11",
+    "chain_id": "injective",
+    "title": "MATIC USDC Spot Market",
+    "type": "MarketRelated",
+    "topic": "Market Addition",
+    "status": "PASSED",
+    "final_tally_result": {
+      "no_vote_count": 60
+    }
+  },
+  {
+    "proposal_id": "10",
+    "chain_id": "injective",
+    "title": "UNIUSDT Spot Market",
+    "type": "MarketRelated",
+    "topic": "Market Addition",
+    "status": "PASSED",
+    "final_tally_result": {
+      "no_vote_count": 60
+    }
+  },
+  {
+    "proposal_id": "9",
+    "chain_id": "injective",
+    "title": "USDTUSDC Spot Market",
+    "type": "MarketRelated",
+    "topic": "Market Addition",
+    "status": "PASSED",
+    "final_tally_result": {
+      "no_vote_count": 60
+    }
+  },
+  {
+    "proposal_id": "8",
+    "chain_id": "injective",
+    "title": "LINKUSDC Spot Proposal",
+    "type": "MarketRelated",
+    "topic": "Market Addition",
+    "status": "REJECTED",
+    "final_tally_result": {
+      "no_vote_count": 60
+    }
+  },
+  {
+    "proposal_id": "7",
+    "chain_id": "injective",
+    "title": "USDTUSDC spot market",
+    "type": "MarketRelated",
+    "topic": "Market Addition",
+    "status": "REJECTED",
+    "final_tally_result": {
+      "no_vote_count": 60
+    }
+  },
+  {
+    "proposal_id": "6",
+    "chain_id": "injective",
+    "title": "INJUSDC",
+    "type": "MarketRelated",
+    "topic": "Market Addition",
+    "status": "PASSED",
+    "final_tally_result": {
+      "no_vote_count": 60
+    }
+  },
+  {
+    "proposal_id": "5",
+    "chain_id": "injective",
+    "title": "WETH USDC Spot Market",
+    "type": "MarketRelated",
+    "topic": "Market Addition",
+    "status": "PASSED",
+    "final_tally_result": {
+      "no_vote_count": 60
+    }
+  },
+  {
+    "proposal_id": "1",
+    "chain_id": "injective",
+    "title": "wETHUSDC Spot Market Proposal",
+    "type": "MarketRelated",
+    "topic": "Market Addition",
+    "status": "REJECTED",
+    "final_tally_result": {
+      "no_vote_count": 60
+    }
+  }
+]
