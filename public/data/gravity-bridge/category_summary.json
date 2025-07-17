@@ -1,0 +1,506 @@
+{
+  "categories": {
+    "SoftwareUpgrade": {
+      "count": 14,
+      "passCount": 11,
+      "voteDistribution": {
+        "YES": 1048,
+        "NO_VOTE": 174,
+        "NO": 268,
+        "ABSTAIN": 3,
+        "NO_WITH_VETO": 1
+      },
+      "votingPowerDistribution": {
+        "YES": 8.141545000000002,
+        "NO_VOTE": 0.5515920000000001,
+        "NO": 1.8065320000000002,
+        "ABSTAIN": 0.000695,
+        "NO_WITH_VETO": 0.028421
+      },
+      "passRate": 78.57142857142857
+    },
+    "ParameterChange": {
+      "count": 26,
+      "passCount": 26,
+      "voteDistribution": {
+        "YES": 2148,
+        "NO_VOTE": 538,
+        "ABSTAIN": 67,
+        "NO": 30,
+        "NO_WITH_VETO": 3
+      },
+      "votingPowerDistribution": {
+        "YES": 17.097231999999988,
+        "NO_VOTE": 1.6128539999999991,
+        "ABSTAIN": 0.7205329999999999,
+        "NO": 0.09372500000000003,
+        "NO_WITH_VETO": 0.004344000000000001
+      },
+      "passRate": 100
+    },
+    "IBCRelated": {
+      "count": 74,
+      "passCount": 65,
+      "voteDistribution": {
+        "YES": 6288,
+        "NO_VOTE": 834,
+        "NO": 607,
+        "ABSTAIN": 222,
+        "NO_WITH_VETO": 7
+      },
+      "votingPowerDistribution": {
+        "YES": 46.48872900000025,
+        "NO_VOTE": 2.0412849999999993,
+        "NO": 3.8890939999999943,
+        "ABSTAIN": 2.603767999999997,
+        "NO_WITH_VETO": 0.08313899999999999
+      },
+      "passRate": 87.83783783783784
+    },
+    "TextProposal": {
+      "count": 41,
+      "passCount": 18,
+      "voteDistribution": {
+        "NO_WITH_VETO": 1825,
+        "NO": 171,
+        "NO_VOTE": 824,
+        "YES": 1490,
+        "ABSTAIN": 117,
+        "WEIGHTED_VOTE": 1
+      },
+      "votingPowerDistribution": {
+        "NO_WITH_VETO": 13.552557,
+        "NO": 0.9488719999999999,
+        "NO_VOTE": 2.328192999999996,
+        "YES": 11.633336999999981,
+        "ABSTAIN": 1.179506,
+        "WEIGHTED_VOTE": 0.04205
+      },
+      "passRate": 43.90243902439025
+    },
+    "CommunityPoolSpend": {
+      "count": 27,
+      "passCount": 27,
+      "voteDistribution": {
+        "YES": 2301,
+        "ABSTAIN": 171,
+        "NO_VOTE": 334,
+        "NO": 108,
+        "WEIGHTED_VOTE": 1,
+        "NO_WITH_VETO": 1
+      },
+      "votingPowerDistribution": {
+        "YES": 16.90344099999997,
+        "ABSTAIN": 1.9393630000000004,
+        "NO_VOTE": 0.7533189999999998,
+        "NO": 0.43564799999999987,
+        "WEIGHTED_VOTE": 0.006801,
+        "NO_WITH_VETO": 0.007254
+      },
+      "passRate": 100
+    },
+    "Unknown": {
+      "count": 4,
+      "passCount": 3,
+      "voteDistribution": {
+        "NO": 59,
+        "YES": 298,
+        "NO_WITH_VETO": 26,
+        "ABSTAIN": 14,
+        "NO_VOTE": 35
+      },
+      "votingPowerDistribution": {
+        "NO": 0.4295619999999998,
+        "YES": 2.2407829999999986,
+        "NO_WITH_VETO": 0.20371800000000004,
+        "ABSTAIN": 0.072761,
+        "NO_VOTE": 0.152993
+      },
+      "passRate": 75
+    }
+  },
+  "topics": {
+    "Major Release": {
+      "category": "SoftwareUpgrade",
+      "count": 9,
+      "passCount": 7,
+      "voteDistribution": {
+        "YES": 714,
+        "NO_VOTE": 40,
+        "NO": 198,
+        "ABSTAIN": 2
+      },
+      "votingPowerDistribution": {
+        "YES": 5.412973000000003,
+        "NO_VOTE": 0.08243000000000002,
+        "NO": 1.2679779999999996,
+        "ABSTAIN": 0.000695
+      },
+      "passRate": 77.77777777777779
+    },
+    "Staking Parameters": {
+      "category": "ParameterChange",
+      "count": 10,
+      "passCount": 10,
+      "voteDistribution": {
+        "YES": 769,
+        "NO_VOTE": 268,
+        "ABSTAIN": 16,
+        "NO": 5
+      },
+      "votingPowerDistribution": {
+        "YES": 6.540185000000002,
+        "NO_VOTE": 1.0009460000000003,
+        "ABSTAIN": 0.12440900000000002,
+        "NO": 0.004562
+      },
+      "passRate": 100
+    },
+    "Cross-Chain Integration": {
+      "category": "IBCRelated",
+      "count": 19,
+      "passCount": 15,
+      "voteDistribution": {
+        "YES": 1432,
+        "NO_VOTE": 288,
+        "ABSTAIN": 55,
+        "NO": 260
+      },
+      "votingPowerDistribution": {
+        "YES": 11.465127999999993,
+        "NO_VOTE": 0.7575239999999999,
+        "ABSTAIN": 0.532826,
+        "NO": 1.8671929999999997
+      },
+      "passRate": 78.94736842105263
+    },
+    "IBC Security": {
+      "category": "IBCRelated",
+      "count": 46,
+      "passCount": 42,
+      "voteDistribution": {
+        "YES": 3981,
+        "NO_VOTE": 472,
+        "NO": 340,
+        "ABSTAIN": 152,
+        "NO_WITH_VETO": 6
+      },
+      "votingPowerDistribution": {
+        "YES": 28.769912999999743,
+        "NO_VOTE": 1.1397700000000002,
+        "NO": 2.017531,
+        "ABSTAIN": 1.9175909999999994,
+        "NO_WITH_VETO": 0.061905999999999996
+      },
+      "passRate": 91.30434782608695
+    },
+    "Governance Process": {
+      "category": "TextProposal",
+      "count": 33,
+      "passCount": 10,
+      "voteDistribution": {
+        "NO_WITH_VETO": 1825,
+        "NO": 165,
+        "NO_VOTE": 674,
+        "YES": 839,
+        "ABSTAIN": 61
+      },
+      "votingPowerDistribution": {
+        "NO_WITH_VETO": 13.552557,
+        "NO": 0.9320179999999999,
+        "NO_VOTE": 1.8310839999999984,
+        "YES": 6.390425,
+        "ABSTAIN": 0.665909
+      },
+      "passRate": 30.303030303030305
+    },
+    "Community Support": {
+      "category": "CommunityPoolSpend",
+      "count": 10,
+      "passCount": 10,
+      "voteDistribution": {
+        "YES": 807,
+        "ABSTAIN": 71,
+        "NO_VOTE": 164,
+        "NO": 38
+      },
+      "votingPowerDistribution": {
+        "YES": 5.968069000000007,
+        "ABSTAIN": 0.6741570000000001,
+        "NO_VOTE": 0.438827,
+        "NO": 0.17822600000000005
+      },
+      "passRate": 100
+    },
+    "Ecosystem Growth": {
+      "category": "CommunityPoolSpend",
+      "count": 15,
+      "passCount": 15,
+      "voteDistribution": {
+        "YES": 1297,
+        "ABSTAIN": 97,
+        "NO_VOTE": 155,
+        "NO": 69,
+        "WEIGHTED_VOTE": 1,
+        "NO_WITH_VETO": 1
+      },
+      "votingPowerDistribution": {
+        "YES": 9.557714999999996,
+        "ABSTAIN": 1.2451760000000005,
+        "NO_VOTE": 0.30818700000000004,
+        "NO": 0.25742,
+        "WEIGHTED_VOTE": 0.006801,
+        "NO_WITH_VETO": 0.007254
+      },
+      "passRate": 100
+    },
+    "Economic Parameters": {
+      "category": "ParameterChange",
+      "count": 10,
+      "passCount": 10,
+      "voteDistribution": {
+        "YES": 866,
+        "ABSTAIN": 42,
+        "NO": 17,
+        "NO_VOTE": 152,
+        "NO_WITH_VETO": 3
+      },
+      "votingPowerDistribution": {
+        "YES": 6.462056,
+        "ABSTAIN": 0.5083189999999999,
+        "NO": 0.074188,
+        "NO_VOTE": 0.3171640000000001,
+        "NO_WITH_VETO": 0.004344000000000001
+      },
+      "passRate": 100
+    },
+    "Fee Adjustment": {
+      "category": "ParameterChange",
+      "count": 3,
+      "passCount": 3,
+      "voteDistribution": {
+        "YES": 222,
+        "ABSTAIN": 4,
+        "NO_VOTE": 98
+      },
+      "votingPowerDistribution": {
+        "YES": 1.9681669999999996,
+        "ABSTAIN": 0.04511,
+        "NO_VOTE": 0.260592
+      },
+      "passRate": 100
+    },
+    "Security Enhancement": {
+      "category": "SoftwareUpgrade",
+      "count": 2,
+      "passCount": 1,
+      "voteDistribution": {
+        "YES": 87,
+        "NO_VOTE": 58,
+        "NO": 69,
+        "ABSTAIN": 1,
+        "NO_WITH_VETO": 1
+      },
+      "votingPowerDistribution": {
+        "YES": 0.8659890000000003,
+        "NO_VOTE": 0.18197499999999997,
+        "NO": 0.536053,
+        "ABSTAIN": 0,
+        "NO_WITH_VETO": 0.028421
+      },
+      "passRate": 50
+    },
+    "Community Decision": {
+      "category": "TextProposal",
+      "count": 2,
+      "passCount": 2,
+      "voteDistribution": {
+        "YES": 159,
+        "ABSTAIN": 2,
+        "NO_VOTE": 51,
+        "NO": 4
+      },
+      "votingPowerDistribution": {
+        "YES": 1.2768360000000007,
+        "ABSTAIN": 0.038788,
+        "NO_VOTE": 0.252717,
+        "NO": 0.016704
+      },
+      "passRate": 100
+    },
+    "Project Funding": {
+      "category": "TextProposal",
+      "count": 5,
+      "passCount": 5,
+      "voteDistribution": {
+        "YES": 414,
+        "ABSTAIN": 52,
+        "NO": 2,
+        "NO_VOTE": 71,
+        "WEIGHTED_VOTE": 1
+      },
+      "votingPowerDistribution": {
+        "YES": 3.260936999999997,
+        "ABSTAIN": 0.45546399999999987,
+        "NO": 0.00015000000000000001,
+        "NO_VOTE": 0.12344600000000001,
+        "WEIGHTED_VOTE": 0.04205
+      },
+      "passRate": 100
+    },
+    "Network Policy": {
+      "category": "TextProposal",
+      "count": 1,
+      "passCount": 1,
+      "voteDistribution": {
+        "YES": 78,
+        "ABSTAIN": 2,
+        "NO_VOTE": 28
+      },
+      "votingPowerDistribution": {
+        "YES": 0.705139,
+        "ABSTAIN": 0.019344999999999998,
+        "NO_VOTE": 0.12094600000000001
+      },
+      "passRate": 100
+    },
+    "IBC Transfer": {
+      "category": "IBCRelated",
+      "count": 5,
+      "passCount": 4,
+      "voteDistribution": {
+        "YES": 478,
+        "ABSTAIN": 11,
+        "NO": 6,
+        "NO_VOTE": 44,
+        "NO_WITH_VETO": 1
+      },
+      "votingPowerDistribution": {
+        "YES": 3.3911139999999977,
+        "ABSTAIN": 0.09208899999999999,
+        "NO": 0.00363,
+        "NO_VOTE": 0.065168,
+        "NO_WITH_VETO": 0.021233
+      },
+      "passRate": 80
+    },
+    "Client Update": {
+      "category": "IBCRelated",
+      "count": 4,
+      "passCount": 4,
+      "voteDistribution": {
+        "YES": 397,
+        "ABSTAIN": 4,
+        "NO_VOTE": 30,
+        "NO": 1
+      },
+      "votingPowerDistribution": {
+        "YES": 2.8625739999999964,
+        "ABSTAIN": 0.061262,
+        "NO_VOTE": 0.078823,
+        "NO": 0.00074
+      },
+      "passRate": 100
+    },
+    "Governance Settings": {
+      "category": "ParameterChange",
+      "count": 2,
+      "passCount": 2,
+      "voteDistribution": {
+        "YES": 184,
+        "ABSTAIN": 5,
+        "NO_VOTE": 20,
+        "NO": 7
+      },
+      "votingPowerDistribution": {
+        "YES": 1.3825749999999997,
+        "ABSTAIN": 0.042695,
+        "NO_VOTE": 0.034152,
+        "NO": 0.014974999999999999
+      },
+      "passRate": 100
+    },
+    "Protocol Configuration": {
+      "category": "ParameterChange",
+      "count": 1,
+      "passCount": 1,
+      "voteDistribution": {
+        "YES": 107,
+        "NO": 1
+      },
+      "votingPowerDistribution": {
+        "YES": 0.744249,
+        "NO": 0
+      },
+      "passRate": 100
+    },
+    "Development Fund": {
+      "category": "CommunityPoolSpend",
+      "count": 1,
+      "passCount": 1,
+      "voteDistribution": {
+        "YES": 105,
+        "NO": 1,
+        "ABSTAIN": 2
+      },
+      "votingPowerDistribution": {
+        "YES": 0.6853810000000001,
+        "NO": 0.000002,
+        "ABSTAIN": 0.019292
+      },
+      "passRate": 100
+    },
+    "Infrastructure": {
+      "category": "CommunityPoolSpend",
+      "count": 1,
+      "passCount": 1,
+      "voteDistribution": {
+        "YES": 92,
+        "ABSTAIN": 1,
+        "NO_VOTE": 15
+      },
+      "votingPowerDistribution": {
+        "YES": 0.6922760000000002,
+        "ABSTAIN": 0.000738,
+        "NO_VOTE": 0.006305
+      },
+      "passRate": 100
+    },
+    "Feature Addition": {
+      "category": "SoftwareUpgrade",
+      "count": 3,
+      "passCount": 3,
+      "voteDistribution": {
+        "YES": 247,
+        "NO": 1,
+        "NO_VOTE": 76
+      },
+      "votingPowerDistribution": {
+        "YES": 1.8625829999999997,
+        "NO": 0.002501,
+        "NO_VOTE": 0.2871870000000001
+      },
+      "passRate": 100
+    },
+    "Miscellaneous": {
+      "category": "Unknown",
+      "count": 4,
+      "passCount": 3,
+      "voteDistribution": {
+        "NO": 59,
+        "YES": 298,
+        "NO_WITH_VETO": 26,
+        "ABSTAIN": 14,
+        "NO_VOTE": 35
+      },
+      "votingPowerDistribution": {
+        "NO": 0.4295619999999998,
+        "YES": 2.2407829999999986,
+        "NO_WITH_VETO": 0.20371800000000004,
+        "ABSTAIN": 0.072761,
+        "NO_VOTE": 0.152993
+      },
+      "passRate": 75
+    }
+  }
+}
