@@ -183,14 +183,14 @@ const PassRateBackground = React.memo(({ passRate }: { passRate: number }) => {
   return <div className={`absolute left-0 top-0 h-full rounded-l-lg opacity-50 ${backgroundClass}`} style={{ width: `${passRate}%` }} />
 })
 
-const CategoryItem = React.memo(({ category, isHovered, isCategorySelected, selectedTopicsInCategory, hasSelectedTopics, allTopicsSelected, categoryVisualizationMode, onCategoryMouseEnter, onCategoryMouseLeave, onToggleCategoryWithTopics, onTopicToggle }: { category: CategoryHierarchyNode; isHovered: boolean; isCategorySelected: boolean; selectedTopicsInCategory: string[]; hasSelectedTopics: boolean; allTopicsSelected: boolean; categoryVisualizationMode: 'passRate' | 'voteCount' | 'votingPower'; onCategoryMouseEnter: (name: string) => void; onCategoryMouseLeave: () => void; onToggleCategoryWithTopics: (categoryName: string, topicNames: string[]) => void; onTopicToggle: (topicName: string, categoryName: string) => void; }) => {
+const CategoryItem = React.memo(({ category, isHovered, isCategorySelected, selectedTopicsInCategory, hasSelectedTopics, allTopicsSelected, categoryVisualizationMode, onCategoryMouseEnter, onCategoryMouseLeave, onToggleCategoryWithTopics, onTopicToggle }: { category: CategoryHierarchyNode; isHovered: boolean; isCategorySelected: boolean; selectedTopicsInCategory: string[]; hasSelectedTopics: boolean; allTopicsSelected: boolean; categoryVisualizationMode: 'passRate' | 'voteCount'; onCategoryMouseEnter: (name: string) => void; onCategoryMouseLeave: () => void; onToggleCategoryWithTopics: (categoryName: string, topicNames: string[]) => void; onTopicToggle: (topicName: string, categoryName: string) => void; }) => {
   const shouldExpand = isHovered || hasSelectedTopics
   const checkboxState = allTopicsSelected && isCategorySelected ? 'checked' : hasSelectedTopics ? 'indeterminate' : 'unchecked'
 
   return (
     <div className="border border-gray-200 rounded-lg" onMouseEnter={() => onCategoryMouseEnter(category.name)} onMouseLeave={onCategoryMouseLeave}>
       <div className="flex items-center p-3 hover:bg-gray-50 relative">
-        {categoryVisualizationMode === 'passRate' ? <PassRateBackground passRate={category.passRate} /> : categoryVisualizationMode === 'votingPower' ? <VotingPowerBackground votingPowerDistribution={category.votingPowerDistribution} /> : <VoteCountBackground voteDistribution={category.voteDistribution} />}
+        {categoryVisualizationMode === 'passRate' ? <PassRateBackground passRate={category.passRate} /> : <VoteCountBackground voteDistribution={category.voteDistribution} />}
         <input type="checkbox" checked={checkboxState === 'checked'} ref={el => el && (el.indeterminate = checkboxState === 'indeterminate')} onChange={() => onToggleCategoryWithTopics(category.name, category.topics.map(t => t.name))} className="w-4 h-4 text-blue-600 border-gray-300 rounded focus:ring-blue-500 relative z-10 mr-2" />
         <div className="flex items-center justify-between flex-1 relative z-10">
           <span className="text-sm font-medium text-gray-700">{category.name}</span>
@@ -209,10 +209,10 @@ const CategoryItem = React.memo(({ category, isHovered, isCategorySelected, sele
   )
 })
 
-const TopicItem = React.memo(({ topic, isSelected, categoryVisualizationMode, categoryName, onToggle }: { topic: TopicNode; isSelected: boolean; categoryVisualizationMode: 'passRate' | 'voteCount' | 'votingPower'; categoryName: string; onToggle: (topicName: string, categoryName: string) => void; }) => {
+const TopicItem = React.memo(({ topic, isSelected, categoryVisualizationMode, categoryName, onToggle }: { topic: TopicNode; isSelected: boolean; categoryVisualizationMode: 'passRate' | 'voteCount'; categoryName: string; onToggle: (topicName: string, categoryName: string) => void; }) => {
   return (
     <label className="flex items-center gap-2 p-2 hover:bg-white rounded cursor-pointer relative">
-      {categoryVisualizationMode === 'passRate' ? <PassRateBackground passRate={topic.passRate} /> : categoryVisualizationMode === 'votingPower' ? <VotingPowerBackground votingPowerDistribution={topic.votingPowerDistribution} /> : <VoteCountBackground voteDistribution={topic.voteDistribution} />}
+      {categoryVisualizationMode === 'passRate' ? <PassRateBackground passRate={topic.passRate} /> : <VoteCountBackground voteDistribution={topic.voteDistribution} />}
       <input type="checkbox" checked={isSelected} onChange={() => onToggle(topic.name, categoryName)} className="w-3 h-3 text-blue-600 border-gray-300 rounded focus:ring-blue-500 relative z-10" />
       <div className="flex items-center justify-between flex-1 relative z-10">
         <span className="text-xs text-gray-600">{topic.name}</span>
@@ -241,13 +241,14 @@ export default function FilterPanel() {
     setCategoryVisualizationMode,
     getChains,
     getFilteredCategoryHierarchy,
+    proposals, // Get proposals for dependency array
   } = useGlobalStore()
 
   const [hoveredCategory, setHoveredCategory] = useState<string | null>(null)
   const [showChainDropdown, setShowChainDropdown] = useState(false)
   const chainDropdownRef = useRef<HTMLDivElement>(null)
 
-  const handleVisualizationModeChange = useCallback((mode: 'passRate' | 'voteCount' | 'votingPower') => {
+  const handleVisualizationModeChange = useCallback((mode: 'passRate' | 'voteCount') => {
     setCategoryVisualizationMode(mode)
   }, [setCategoryVisualizationMode])
 
@@ -266,7 +267,8 @@ export default function FilterPanel() {
   ].filter(Boolean).length, [selectedCategories.length, selectedTopics.length, searchTerm.length, approvalRateRange])
 
   const chains = useMemo(() => getChains(), [getChains])
-  const filteredCategoryHierarchy = useMemo(() => getFilteredCategoryHierarchy(), [getFilteredCategoryHierarchy])
+  const filteredCategoryHierarchy = useMemo(() => getFilteredCategoryHierarchy(), [proposals, approvalRateRange, getFilteredCategoryHierarchy]);
+
 
   const handleCategoryMouseEnter = useCallback((categoryName: string) => setHoveredCategory(categoryName), [])
   const handleCategoryMouseLeave = useCallback(() => setHoveredCategory(null), [])
@@ -319,7 +321,6 @@ export default function FilterPanel() {
           <div className="flex bg-gray-100 rounded-lg p-1">
             <button onClick={() => handleVisualizationModeChange('passRate')} className={`flex-1 px-3 py-2 text-xs font-medium rounded-md ${categoryVisualizationMode === 'passRate' ? 'bg-white text-gray-900 shadow-sm' : 'text-gray-600'}`}>Pass Rate</button>
             <button onClick={() => handleVisualizationModeChange('voteCount')} className={`flex-1 px-3 py-2 text-xs font-medium rounded-md ${categoryVisualizationMode === 'voteCount' ? 'bg-white text-gray-900 shadow-sm' : 'text-gray-600'}`}>Vote Count</button>
-            <button onClick={() => handleVisualizationModeChange('votingPower')} className={`flex-1 px-3 py-2 text-xs font-medium rounded-md ${categoryVisualizationMode === 'votingPower' ? 'bg-white text-gray-900 shadow-sm' : 'text-gray-600'}`}>Vote Power</button>
           </div>
         </div>
         <div className="mb-4">

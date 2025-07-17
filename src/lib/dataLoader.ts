@@ -23,29 +23,10 @@ export interface Vote {
   vote_option: string;
 }
 
-export interface CategorySummary {
-  categories: Record<string, {
-    count: number;
-    passCount: number;
-    passRate: number;
-    voteDistribution: Record<string, number>;
-    votingPowerDistribution: Record<string, number>;
-  }>;
-  topics: Record<string, {
-    category: string;
-    count: number;
-    passCount: number;
-    passRate: number;
-    voteDistribution: Record<string, number>;
-    votingPowerDistribution: Record<string, number>;
-  }>;
-}
-
 export interface ProcessedData {
   proposals: Proposal[];
   validators: Validator[];
   votes: Vote[];
-  categorySummary: CategorySummary;
 }
 
 const API_BASE_URL = '/api';
@@ -59,33 +40,28 @@ export async function loadChainData(chainName: string): Promise<ProcessedData> {
   try {
     console.log(`dataLoader: Loading data for chain: ${chainName} from optimized APIs`);
 
-    const proposalsPromise = fetch(`${API_BASE_URL}/proposals?chain=${chainName}`).then(res => res.json());
-    const validatorsPromise = fetch(`${API_BASE_URL}/validators?chain=${chainName}`).then(res => res.json());
-    const votesPromise = fetch(`${API_BASE_URL}/votes?chain=${chainName}`).then(res => res.json());
-    const categorySummaryPromise = fetch(`${API_BASE_URL}/category-summary?chain=${chainName}`).then(res => res.json());
+    const proposalsPromise = fetch(`/data/${chainName}/proposals.json`).then(res => res.json());
+    const validatorsPromise = fetch(`/data/${chainName}/validators.json`).then(res => res.json());
+    const votesPromise = fetch(`/data/${chainName}/votes.json`).then(res => res.json());
 
-    const [proposals, validators, votes, categorySummary] = await Promise.all([
+    const [proposals, validators, votes] = await Promise.all([
       proposalsPromise,
       validatorsPromise,
       votesPromise,
-      categorySummaryPromise,
     ]);
 
     // Handle cases where an API might fail gracefully
     if (!proposals || proposals.message) throw new Error(`Failed to load proposals: ${proposals.message || 'Unknown error'}`);
     if (!validators || validators.message) throw new Error(`Failed to load validators: ${validators.message || 'Unknown error'}`);
     if (!votes || votes.message) throw new Error(`Failed to load votes: ${votes.message || 'Unknown error'}`);
-    if (!categorySummary || categorySummary.message) throw new Error(`Failed to load category summary: ${categorySummary.message || 'Unknown error'}`);
-
 
     console.log(`dataLoader: Chain data loaded for ${chainName} from API:`, {
       proposals: proposals.length,
       validators: validators.length,
       votes: votes.length,
-      categorySummary: categorySummary ? 'Loaded' : 'Failed',
     });
 
-    return { proposals, validators, votes, categorySummary };
+    return { proposals, validators, votes };
   } catch (error) {
     console.error(`dataLoader: Failed to load data for chain ${chainName} from API:`, error);
     // Return empty data structure on failure to prevent app crash
@@ -93,7 +69,6 @@ export async function loadChainData(chainName: string): Promise<ProcessedData> {
       proposals: [],
       validators: [],
       votes: [],
-      categorySummary: { categories: {}, topics: {} },
     };
   }
 }

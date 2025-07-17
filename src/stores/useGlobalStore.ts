@@ -1,5 +1,5 @@
 import { create } from 'zustand'
-import { loadChainData, type Proposal, type Vote, type Validator, type CategorySummary } from '@/lib/dataLoader'
+import { loadChainData, type Proposal, type Vote, type Validator } from '@/lib/dataLoader'
 
 // 카테고리 계층 구조 타입 (FilterPanel에서 사용)
 export interface CategoryHierarchyNode {
@@ -7,7 +7,7 @@ export interface CategoryHierarchyNode {
   count: number
   passRate: number
   voteDistribution: Record<string, number>
-  votingPowerDistribution: Record<string, number>
+  // votingPowerDistribution is removed as it cannot be calculated dynamically
   topics: TopicNode[]
 }
 
@@ -16,7 +16,6 @@ export interface TopicNode {
   count: number
   passRate: number
   voteDistribution: Record<string, number>
-  votingPowerDistribution: Record<string, number>
 }
 
 // 전역 상태 인터페이스
@@ -24,15 +23,14 @@ interface GlobalStore {
   proposals: Proposal[]
   validators: Validator[]
   votes: Vote[]
-  categorySummary: CategorySummary | null
   
   selectedChain: string
   selectedCategories: string[]
   selectedTopics: string[]
   searchTerm: string
-  approvalRateRange: [number, number] // 찬성 비율 범위 상태 추가
+  approvalRateRange: [number, number]
   
-  categoryVisualizationMode: 'passRate' | 'voteCount' | 'votingPower'
+  categoryVisualizationMode: 'passRate' | 'voteCount'
   
   loading: boolean
   error: string | null
@@ -46,11 +44,12 @@ interface GlobalStore {
   toggleCategory: (category: string) => void
   toggleTopic: (topic: string) => void
   setSearchTerm: (term: string) => void
-  setApprovalRateRange: (range: [number, number]) => void // 액션 추가
-  setCategoryVisualizationMode: (mode: 'passRate' | 'voteCount' | 'votingPower') => void
+  setApprovalRateRange: (range: [number, number]) => void
+  setCategoryVisualizationMode: (mode: 'passRate' | 'voteCount') => void
   setWindowSize: (size: { width: number; height: number }) => void
   
   // Selectors
+  getProposalsFilteredByRate: () => Proposal[]
   getFilteredProposals: () => Proposal[]
   getFilteredValidators: () => Validator[]
   getChains: () => string[]
@@ -62,12 +61,11 @@ export const useGlobalStore = create<GlobalStore>((set, get) => ({
   proposals: [],
   validators: [],
   votes: [],
-  categorySummary: null,
   selectedChain: 'cosmos',
   selectedCategories: [],
   selectedTopics: [],
   searchTerm: '',
-  approvalRateRange: [0, 100], // 초기값 설정
+  approvalRateRange: [0, 100],
   categoryVisualizationMode: 'passRate',
   loading: true,
   error: null,
@@ -77,13 +75,13 @@ export const useGlobalStore = create<GlobalStore>((set, get) => ({
   loadData: async (chainName: string) => {
     try {
       set({ loading: true, error: null });
-      const { proposals, validators, votes, categorySummary } = await loadChainData(chainName);
+      // dataLoader will be modified to not return categorySummary
+      const { proposals, validators, votes } = await loadChainData(chainName);
       
       set({
         proposals,
         validators,
         votes,
-        categorySummary,
         loading: false,
       });
     } catch (err: any) {
@@ -98,7 +96,7 @@ export const useGlobalStore = create<GlobalStore>((set, get) => ({
       selectedChain: chain, 
       selectedCategories: [], 
       selectedTopics: [],
-      approvalRateRange: [0, 100] // 체인 변경 시 필터 초기화
+      approvalRateRange: [0, 100]
     })
     get().loadData(chain).catch(console.error)
   },
@@ -111,7 +109,6 @@ export const useGlobalStore = create<GlobalStore>((set, get) => ({
       ? selectedCategories.filter(c => c !== category)
       : [...selectedCategories, category];
     
-    // When a category is selected, ensure all its topics are also selected for filter logic
     const categoryNode = getFilteredCategoryHierarchy().find(c => c.name === category);
     if (categoryNode && !selectedCategories.includes(category)) {
       const topicNames = categoryNode.topics.map(t => t.name);
@@ -129,21 +126,16 @@ export const useGlobalStore = create<GlobalStore>((set, get) => ({
     set({ selectedTopics: newTopics })
   },
   setSearchTerm: (term: string) => set({ searchTerm: term }),
-  setApprovalRateRange: (range: [number, number]) => set({ approvalRateRange: range }), // 액션 구현
+  setApprovalRateRange: (range: [number, number]) => set({ approvalRateRange: range }),
   setCategoryVisualizationMode: (mode) => set({ categoryVisualizationMode: mode }),
   setWindowSize: (size) => set({ windowSize: size }),
 
   // Selectors
-  getFilteredProposals: () => {
-    const { proposals, selectedTopics, approvalRateRange } = get();
-    
+  getProposalsFilteredByRate: () => {
+    const { proposals, approvalRateRange } = get();
     const [minRate, maxRate] = approvalRateRange;
 
-    const filteredByTopic = selectedTopics.length === 0
-      ? proposals
-      : proposals.filter(p => selectedTopics.includes(p.topic));
-
-    return filteredByTopic.filter(p => {
+    return proposals.filter(p => {
       const {
         yes_count = 0,
         no_count = 0,
@@ -154,8 +146,6 @@ export const useGlobalStore = create<GlobalStore>((set, get) => ({
       const totalVotes = yes_count + no_count + abstain_count + no_with_veto_count;
       
       if (totalVotes === 0) {
-        // Handle proposals with no votes. Include them if the range is 0-100, or based on specific requirements.
-        // Here, we'll include them if minRate is 0.
         return minRate === 0;
       }
       
@@ -163,6 +153,16 @@ export const useGlobalStore = create<GlobalStore>((set, get) => ({
       
       return approvalRate >= minRate && approvalRate <= maxRate;
     });
+  },
+
+  getFilteredProposals: () => {
+    const { getProposalsFilteredByRate, selectedTopics } = get();
+    const proposalsFilteredByRate = getProposalsFilteredByRate();
+
+    if (selectedTopics.length === 0) {
+      return proposalsFilteredByRate;
+    }
+    return proposalsFilteredByRate.filter(p => selectedTopics.includes(p.topic));
   },
 
   getFilteredValidators: () => {
@@ -180,29 +180,63 @@ export const useGlobalStore = create<GlobalStore>((set, get) => ({
   ],
 
   getFilteredCategoryHierarchy: () => {
-    const summary = get().categorySummary;
-    if (!summary) return [];
+    const { getProposalsFilteredByRate } = get();
+    const proposalsFilteredByRate = getProposalsFilteredByRate();
 
-    const hierarchy: CategoryHierarchyNode[] = Object.entries(summary.categories).map(([name, data]) => {
-      const topicsForCategory = Object.entries(summary.topics)
-        .filter(([, topicData]) => topicData.category === name)
-        .map(([topicName, topicData]) => ({
-          name: topicName,
-          count: topicData.count,
-          passRate: topicData.passRate,
-          voteDistribution: topicData.voteDistribution,
-          votingPowerDistribution: topicData.votingPowerDistribution,
-        }))
-        .sort((a, b) => b.count - a.count);
-      
-      return {
-        name,
-        count: data.count,
-        passRate: data.passRate,
-        voteDistribution: data.voteDistribution,
-        votingPowerDistribution: data.votingPowerDistribution,
-        topics: topicsForCategory,
-      };
+    const categoryStats: { [name: string]: {
+        count: number;
+        passed: number;
+        voteDistribution: { [key: string]: number };
+        topics: { [name: string]: {
+            count: number;
+            passed: number;
+            voteDistribution: { [key: string]: number };
+        } };
+    } } = {};
+
+    for (const p of proposalsFilteredByRate) {
+        const categoryName = p.type;
+        const topicName = p.topic;
+
+        if (!categoryStats[categoryName]) {
+            categoryStats[categoryName] = { count: 0, passed: 0, voteDistribution: {}, topics: {} };
+        }
+        if (!categoryStats[categoryName].topics[topicName]) {
+            categoryStats[categoryName].topics[topicName] = { count: 0, passed: 0, voteDistribution: {} };
+        }
+
+        categoryStats[categoryName].count++;
+        categoryStats[categoryName].topics[topicName].count++;
+        if (p.status === 'PASSED') {
+            categoryStats[categoryName].passed++;
+            categoryStats[categoryName].topics[topicName].passed++;
+        }
+
+        const tally = p.final_tally_result || {};
+        for (const voteOption in tally) {
+            const key = voteOption.replace('_count', '').toUpperCase();
+            const voteCount = tally[voteOption as keyof typeof tally] || 0;
+            
+            categoryStats[categoryName].voteDistribution[key] = (categoryStats[categoryName].voteDistribution[key] || 0) + voteCount;
+            categoryStats[categoryName].topics[topicName].voteDistribution[key] = (categoryStats[categoryName].topics[topicName].voteDistribution[key] || 0) + voteCount;
+        }
+    }
+
+    const hierarchy: CategoryHierarchyNode[] = Object.entries(categoryStats).map(([name, data]) => {
+        const topicsForCategory: TopicNode[] = Object.entries(data.topics).map(([topicName, topicData]) => ({
+            name: topicName,
+            count: topicData.count,
+            passRate: topicData.count > 0 ? (topicData.passed / topicData.count) * 100 : 0,
+            voteDistribution: topicData.voteDistribution,
+        }));
+
+        return {
+            name,
+            count: data.count,
+            passRate: data.count > 0 ? (data.passed / data.count) * 100 : 0,
+            voteDistribution: data.voteDistribution,
+            topics: topicsForCategory.sort((a, b) => b.count - a.count),
+        };
     }).sort((a, b) => b.count - a.count);
 
     return hierarchy;
