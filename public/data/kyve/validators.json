@@ -1,0 +1,807 @@
+[
+  {
+    "validator_address": "kyvevaloper1ylw9fy3m7c503t4u6t3kt2qafh6crxkvflmvxv",
+    "moniker": "Validatriumcom",
+    "chain_id": "kyve"
+  },
+  {
+    "validator_address": "kyvevaloper139ta8rgvzfs57fx9u7dedgpt79pkr388j93z5v",
+    "moniker": "AlxVoy  ANODETEAM",
+    "chain_id": "kyve"
+  },
+  {
+    "validator_address": "kyvevaloper1lrzxwu4dmy8030waevcpft7rpxjjz26cpg4ljc",
+    "moniker": "node101",
+    "chain_id": "kyve"
+  },
+  {
+    "validator_address": "kyvevaloper16pj5gljqnqs0ajxakccfjhu05yczp987rv492n",
+    "moniker": "Chorus One",
+    "chain_id": "kyve"
+  },
+  {
+    "validator_address": "kyvevaloper1ax4c40gn3s74xxm75g6cmts3fw7rq64gzgc27r",
+    "moniker": "Decloud Nodes Lab",
+    "chain_id": "kyve"
+  },
+  {
+    "validator_address": "kyvevaloper19f0w9svr905fhefusyx4z8sf83j6et0g94d872",
+    "moniker": "NodeStake",
+    "chain_id": "kyve"
+  },
+  {
+    "validator_address": "kyvevaloper1h4kmxv56unpz9sa4hkmhf52kf75tlle89pg57r",
+    "moniker": "ChainTools",
+    "chain_id": "kyve"
+  },
+  {
+    "validator_address": "kyvevaloper18tjtnapg85exzkqzt7l8l7hfmka4ann9c3mv5v",
+    "moniker": "Hypersphere",
+    "chain_id": "kyve"
+  },
+  {
+    "validator_address": "kyvevaloper1mwh26fcmuz8hsfjlujvn86366d8j3ter6yvxs3",
+    "moniker": "Node Guardians",
+    "chain_id": "kyve"
+  },
+  {
+    "validator_address": "kyvevaloper1egqphd8yjdfv84fl825grwgna0pf2emagdmnz8",
+    "moniker": "ECO Stake ",
+    "chain_id": "kyve"
+  },
+  {
+    "validator_address": "kyvevaloper17xuyhz7s5hkwglmkf3qsrlyr3wk9qvqz5c4mul",
+    "moniker": "Cosmostation",
+    "chain_id": "kyve"
+  },
+  {
+    "validator_address": "kyvevaloper140l6y2gp3gxvay6qtn70re7z2s0gn57zf87jr8",
+    "moniker": " LavenderFive Nodes ",
+    "chain_id": "kyve"
+  },
+  {
+    "validator_address": "kyvevaloper1rauqk7v8lyg4xc8l0scp85lf9rrpr46zmjn47u",
+    "moniker": "COSMSTAKE",
+    "chain_id": "kyve"
+  },
+  {
+    "validator_address": "kyvevaloper1vjllk2dfr8sc0xtylav8z33ggqlmgvz97l8h6s",
+    "moniker": "Oldcat",
+    "chain_id": "kyve"
+  },
+  {
+    "validator_address": "kyvevaloper1qcnfttryvf370q2y37w9tjdq54j46mkcwjrdas",
+    "moniker": "NodesGuru",
+    "chain_id": "kyve"
+  },
+  {
+    "validator_address": "kyvevaloper1dr8kxh8ltycr322xnepyzm75v8rze8f2ywk02s",
+    "moniker": "Kleomedes",
+    "chain_id": "kyve"
+  },
+  {
+    "validator_address": "kyvevaloper1hy44ra3hv8vf294fs49zqzykt9hpzegrse4epk",
+    "moniker": "Meria",
+    "chain_id": "kyve"
+  },
+  {
+    "validator_address": "kyvevaloper1aqum9jkv9yptslm4czvjpzyt29kj6w4fq88k4k",
+    "moniker": "a41",
+    "chain_id": "kyve"
+  },
+  {
+    "validator_address": "kyvevaloper16qwtkeadppy3u9z6pu9tuy8zq02u3vecun3s0d",
+    "moniker": "STAVR REStake ON",
+    "chain_id": "kyve"
+  },
+  {
+    "validator_address": "kyvevaloper199403h5jgfr64r9ewv83zx7q4xphhc4wku8mer",
+    "moniker": "Crosnest",
+    "chain_id": "kyve"
+  },
+  {
+    "validator_address": "kyvevaloper1wfjg58p85w6f0ax2qndkvphqu28sq7ajhk8l3n",
+    "moniker": "Imperatorco",
+    "chain_id": "kyve"
+  },
+  {
+    "validator_address": "kyvevaloper1ej2es5fjztqjcd4pwa0zyvaevtjd2y5wxvcxpc",
+    "moniker": "Frens ",
+    "chain_id": "kyve"
+  },
+  {
+    "validator_address": "kyvevaloper16wslvlsn60n2nmfg9fkm8ecrswj20497qrptvg",
+    "moniker": "F5 Nodes",
+    "chain_id": "kyve"
+  },
+  {
+    "validator_address": "kyvevaloper1wna5mpsje840nz9hewdhajnu7v4347awtchru2",
+    "moniker": "SpaceStake",
+    "chain_id": "kyve"
+  },
+  {
+    "validator_address": "kyvevaloper13eduhc6ds4fvcatt8vj472rwkr5vvup79wnz2y",
+    "moniker": "LiveRaveN",
+    "chain_id": "kyve"
+  },
+  {
+    "validator_address": "kyvevaloper1awxv4js9aumf6kp2803vxx3lgckt5cxwanutal",
+    "moniker": "Inter Blockchain Services",
+    "chain_id": "kyve"
+  },
+  {
+    "validator_address": "kyvevaloper1sfwfat9p9k7datgy0kzge7pv0szcd5ycc0jxre",
+    "moniker": "NODERS",
+    "chain_id": "kyve"
+  },
+  {
+    "validator_address": "kyvevaloper1w3etlejq78tn4vwmqhepzcl2a6zyth0wg4ae02",
+    "moniker": "Lefey",
+    "chain_id": "kyve"
+  },
+  {
+    "validator_address": "kyvevaloper164z4me7s0wsp4949lk5s5c7q0f98cg72tw2z5m",
+    "moniker": "polkachucom",
+    "chain_id": "kyve"
+  },
+  {
+    "validator_address": "kyvevaloper18y8xcyecmuffkhexvqdpnqc3y7urh02u83ctx4",
+    "moniker": "ProNodes75",
+    "chain_id": "kyve"
+  },
+  {
+    "validator_address": "kyvevaloper1n38xc4rgkg3gusf0k4kpktlure498ynrcw6a36",
+    "moniker": "nodemeister",
+    "chain_id": "kyve"
+  },
+  {
+    "validator_address": "kyvevaloper1z8tdjnwzysqaad37gzym055x04s97q6nymfmjx",
+    "moniker": "Dora Factory PGS",
+    "chain_id": "kyve"
+  },
+  {
+    "validator_address": "kyvevaloper1ytlms83e2qjan94y0nxl6vlm2gjgxp44qvmznp",
+    "moniker": "BlackNodes",
+    "chain_id": "kyve"
+  },
+  {
+    "validator_address": "kyvevaloper1ygelv7l5zaxqkg0pwws6fxkm3xqmppnshpkjny",
+    "moniker": "4SV",
+    "chain_id": "kyve"
+  },
+  {
+    "validator_address": "kyvevaloper1q9w5hlqnmj7rhsrd83chq32h5dgzt4mz7fukvh",
+    "moniker": "Tufted",
+    "chain_id": "kyve"
+  },
+  {
+    "validator_address": "kyvevaloper1pvyk0sptgvcmr9578xzpnfl6kksl8ne8c042gj",
+    "moniker": "Meowbored",
+    "chain_id": "kyve"
+  },
+  {
+    "validator_address": "kyvevaloper1z8z4lrhccnl0gm4c502fgv5390pt3yhkqrkjjz",
+    "moniker": "DarkWing",
+    "chain_id": "kyve"
+  },
+  {
+    "validator_address": "kyvevaloper1zttnm2cl60m5ffsrfeqtzkmtvepl4hwnaasm59",
+    "moniker": "DSRV",
+    "chain_id": "kyve"
+  },
+  {
+    "validator_address": "kyvevaloper16924cazyqqza87ppjpucs5ny7ttst2y06gqe5g",
+    "moniker": "Provalidator",
+    "chain_id": "kyve"
+  },
+  {
+    "validator_address": "kyvevaloper1fw2gp573jlkyadmtyryhgy67un35gqp56h8nvd",
+    "moniker": "Explayy",
+    "chain_id": "kyve"
+  },
+  {
+    "validator_address": "kyvevaloper1d5zlkckaw7w35xq3xxyujc9a9mcx4hgkexvjus",
+    "moniker": "voidvalid",
+    "chain_id": "kyve"
+  },
+  {
+    "validator_address": "kyvevaloper1q9h86v50l436yt8yc7evgfy3e65808aa737ja4",
+    "moniker": "NymbusNode",
+    "chain_id": "kyve"
+  },
+  {
+    "validator_address": "kyvevaloper1uyvmf9uw4cu5yzz9hmmq89cpz8ytepxx55tnnu",
+    "moniker": "Permanent Ventures",
+    "chain_id": "kyve"
+  },
+  {
+    "validator_address": "kyvevaloper17tv98skj0zdtfcu5ww7h2s5z7qk25zetj3v8av",
+    "moniker": "DustCatValidator",
+    "chain_id": "kyve"
+  },
+  {
+    "validator_address": "kyvevaloper1qxjkuqcctavfg9tdgkggk5j2j0la7dgzw459xx",
+    "moniker": "ConsensusGuards",
+    "chain_id": "kyve"
+  },
+  {
+    "validator_address": "kyvevaloper1pzyajrk0p94kyp22swausmslvlpjz99wqts7mn",
+    "moniker": "alphabone",
+    "chain_id": "kyve"
+  },
+  {
+    "validator_address": "kyvevaloper1fw07a7x6qwrm0ewlnm9474krs4s6afwl3jqcua",
+    "moniker": "Easy Node",
+    "chain_id": "kyve"
+  },
+  {
+    "validator_address": "kyvevaloper1ztr9jgwes7jynxf76m5h93ej48l9q6vm7mlc6d",
+    "moniker": " AutoStake  Slash Protected",
+    "chain_id": "kyve"
+  },
+  {
+    "validator_address": "kyvevaloper1qt2dl4ys89zl0ae7s2areav08fqht0z7468w9g",
+    "moniker": "Panatia",
+    "chain_id": "kyve"
+  },
+  {
+    "validator_address": "kyvevaloper1pj8kt48w36nm09zptvw6gl5t6atusx4msdyrxl",
+    "moniker": "Swanky",
+    "chain_id": "kyve"
+  },
+  {
+    "validator_address": "kyvevaloper1pjv6qujxkaqec5w3vxajl0qeqevmcpjswt4zc9",
+    "moniker": "Alchemist",
+    "chain_id": "kyve"
+  },
+  {
+    "validator_address": "kyvevaloper1qexyl06t8rklwg2624qgwtkwg7ztmz050mwe70",
+    "moniker": "off",
+    "chain_id": "kyve"
+  },
+  {
+    "validator_address": "kyvevaloper1yrvt5f8amefqzzzu9nhar2enl54afq4vpdxz7h",
+    "moniker": "Finoa Consensus Services",
+    "chain_id": "kyve"
+  },
+  {
+    "validator_address": "kyvevaloper1peqt4y6g5dyw9grvgax7pgexu04emgxsqazpzf",
+    "moniker": "CybernodesHigh Yield",
+    "chain_id": "kyve"
+  },
+  {
+    "validator_address": "kyvevaloper1zs9j3fxw2ud8fq7n8xkggfp0lfy0glhvjjkjz5",
+    "moniker": "CravingforKnowledge  reStake enabled",
+    "chain_id": "kyve"
+  },
+  {
+    "validator_address": "kyvevaloper1mzxv3clre7v345jtrxvvadgccufmfff8q39k2e",
+    "moniker": "4t2capital",
+    "chain_id": "kyve"
+  },
+  {
+    "validator_address": "kyvevaloper1fmu8eac4m8usvyyp57et0ttq53w6xgzmutdc90",
+    "moniker": "ChainOps",
+    "chain_id": "kyve"
+  },
+  {
+    "validator_address": "kyvevaloper10r3er48wsevth2yq4kyants5lp2u6tjux6mx6t",
+    "moniker": "Vistra",
+    "chain_id": "kyve"
+  },
+  {
+    "validator_address": "kyvevaloper109yg6yhcyy5mfyteqmcn3pjca9nu9s39ts90d9",
+    "moniker": "Strata One",
+    "chain_id": "kyve"
+  },
+  {
+    "validator_address": "kyvevaloper1yy3a3pks5s846lzhswpuq4m4qylc9h7nkmunt9",
+    "moniker": "shlifstake",
+    "chain_id": "kyve"
+  },
+  {
+    "validator_address": "kyvevaloper1l0tjdytcdkjwtrmtdjdf3aunssc68evxy7thqm",
+    "moniker": "AstraNodes",
+    "chain_id": "kyve"
+  },
+  {
+    "validator_address": "kyvevaloper1l37fx8re9mmdxq55z3wfhx4ylyujnuu5hssh96",
+    "moniker": "Mytsai",
+    "chain_id": "kyve"
+  },
+  {
+    "validator_address": "kyvevaloper1p85vaaa0h7lrc4n5ezp9squesd7vnw7wnl6ctw",
+    "moniker": "MMS",
+    "chain_id": "kyve"
+  },
+  {
+    "validator_address": "kyvevaloper1rwsen5q9tvhfr7763s9lynpnvyjugzcpp68kc8",
+    "moniker": "CTValidator",
+    "chain_id": "kyve"
+  },
+  {
+    "validator_address": "kyvevaloper19fyaqaf37hr7449xqrg9fqqcwv4pzzgekc0fpm",
+    "moniker": "liveevilll",
+    "chain_id": "kyve"
+  },
+  {
+    "validator_address": "kyvevaloper185a0cuhnh3zsh33w9pv9pa8av7lf0h42eg9e8q",
+    "moniker": "GrandCanyon",
+    "chain_id": "kyve"
+  },
+  {
+    "validator_address": "kyvevaloper1gvcxzmrkawmsu4y7967m64aq733hc7w6v9l0mn",
+    "moniker": "DOUBLETOP",
+    "chain_id": "kyve"
+  },
+  {
+    "validator_address": "kyvevaloper1g8qwg2vln92w5uprsj54hsv4ydxclxt53rrvhm",
+    "moniker": "UNBONDE",
+    "chain_id": "kyve"
+  },
+  {
+    "validator_address": "kyvevaloper12lq0cr4yxq8sxt2wf5dwpfwkl7mf56u7zsfrd0",
+    "moniker": "Shutdown  please redelegate",
+    "chain_id": "kyve"
+  },
+  {
+    "validator_address": "kyvevaloper1tr5nae52u7pd8cn24de7clkr5suggl0ac37cc3",
+    "moniker": "Web3Core",
+    "chain_id": "kyve"
+  },
+  {
+    "validator_address": "kyvevaloper1tyul9577vqekhytq95syrfavqn2r6unmsjxtxm",
+    "moniker": "Chainbase Staking",
+    "chain_id": "kyve"
+  },
+  {
+    "validator_address": "kyvevaloper1tkfrlcsusvt2x3spey9qxz76vu8cnfyspzyn3r",
+    "moniker": "SeeYouLater",
+    "chain_id": "kyve"
+  },
+  {
+    "validator_address": "kyvevaloper1gwrhgrlpzkpcx06fkwhd6swuy688xjca38xmsw",
+    "moniker": "   ",
+    "chain_id": "kyve"
+  },
+  {
+    "validator_address": "kyvevaloper19jwgmz5xuyqprftvhajfesqjeygkecldr5qssq",
+    "moniker": "Specok",
+    "chain_id": "kyve"
+  },
+  {
+    "validator_address": "kyvevaloper1gn0cf6vd9uxxgq9qpd4m5zkhncx0hd9cev37gh",
+    "moniker": "BimaSaktiValidator",
+    "chain_id": "kyve"
+  },
+  {
+    "validator_address": "kyvevaloper195q57cq6s93q52yt8vew2efutzhd30z0jn7nnt",
+    "moniker": "SUDOworkplace",
+    "chain_id": "kyve"
+  },
+  {
+    "validator_address": "kyvevaloper1f57jfu55pxykywqe57rnapf3px0l7ds4qu06s0",
+    "moniker": "R1M",
+    "chain_id": "kyve"
+  },
+  {
+    "validator_address": "kyvevaloper1fkm6cskfz6s0dyeet0pmmt2tyf2mrjdf9hhvgs",
+    "moniker": "LOA Labs",
+    "chain_id": "kyve"
+  },
+  {
+    "validator_address": "kyvevaloper1fmzw5rqdjca2alv5weggwzgphqyxm6xscwhdw0",
+    "moniker": "xaochuk",
+    "chain_id": "kyve"
+  },
+  {
+    "validator_address": "kyvevaloper1sht2lty5qcev3nhdnvef32kf9c5lq0ghne5a27",
+    "moniker": "Cryptolife",
+    "chain_id": "kyve"
+  },
+  {
+    "validator_address": "kyvevaloper1sapu8hte0054zt5xlqe0g38rknmjx76dns8z04",
+    "moniker": "gladiknode",
+    "chain_id": "kyve"
+  },
+  {
+    "validator_address": "kyvevaloper1xjg36qdmv2a9qg5rnf22v9q87wpx5rekapnf0t",
+    "moniker": "cmsrare",
+    "chain_id": "kyve"
+  },
+  {
+    "validator_address": "kyvevaloper1x6ugpgw5kpd9nn9n247856xpt2amkwyz500pk6",
+    "moniker": "XMen",
+    "chain_id": "kyve"
+  },
+  {
+    "validator_address": "kyvevaloper18w58pl0s8tvg5wqct37xs9yflhqh6egg9ndu5z",
+    "moniker": "ErkanD",
+    "chain_id": "kyve"
+  },
+  {
+    "validator_address": "kyvevaloper186n5up4j80j02vpfrr9tq8cml3h2ju5uara3ye",
+    "moniker": "IONode Vietnam",
+    "chain_id": "kyve"
+  },
+  {
+    "validator_address": "kyvevaloper1ggc4uf8qnk7fq3j7eywctq6437sjxum0r29ras",
+    "moniker": "nerdmop",
+    "chain_id": "kyve"
+  },
+  {
+    "validator_address": "kyvevaloper1hd6wzs2v5xvzjdfhy3py98pvfvp97thum94l4l",
+    "moniker": "none",
+    "chain_id": "kyve"
+  },
+  {
+    "validator_address": "kyvevaloper1e6z8q86vujhcmjet0ncfmv7xh50gncgfygetvf",
+    "moniker": "Stakin",
+    "chain_id": "kyve"
+  },
+  {
+    "validator_address": "kyvevaloper1kslrzlrjw25e9c48ck2j4777m6cqqkcrkrtful",
+    "moniker": "cryptonodes",
+    "chain_id": "kyve"
+  },
+  {
+    "validator_address": "kyvevaloper16q0gx4yyqjk9lweu6xc3cq79u2ktnwvqa945p4",
+    "moniker": " WHEN MOON  WHEN LAMBO ",
+    "chain_id": "kyve"
+  },
+  {
+    "validator_address": "kyvevaloper1as7aujh4qhh0qhxxgefvtzzqfrzlraty6ths99",
+    "moniker": "ChartGuru ",
+    "chain_id": "kyve"
+  },
+  {
+    "validator_address": "kyvevaloper1sjq3sxz55eqs4jfvmgaw4p5j5xzwwdwvhm9zyp",
+    "moniker": "Interstellr",
+    "chain_id": "kyve"
+  },
+  {
+    "validator_address": "kyvevaloper1uz88cuxs3mhyznynkzr0zn9y787rfkrr098r5u",
+    "moniker": "WellNode ",
+    "chain_id": "kyve"
+  },
+  {
+    "validator_address": "kyvevaloper13avlae309439fgrhafsr9n73fpwxgh9mzq78ml",
+    "moniker": "Shoni",
+    "chain_id": "kyve"
+  },
+  {
+    "validator_address": "kyvevaloper16hnse4c852xg4vxjnqhx648e02z32n72l66nv7",
+    "moniker": "POSTHUMAN  StakeDrop",
+    "chain_id": "kyve"
+  },
+  {
+    "validator_address": "kyvevaloper1vhv82akhjgxelgx7gcpwzdj39s7tsukmepahxx",
+    "moniker": "starnodes",
+    "chain_id": "kyve"
+  },
+  {
+    "validator_address": "kyvevaloper1thq72z46gwk9rx8k42ra7c5z229xur46d406c2",
+    "moniker": "Forbole",
+    "chain_id": "kyve"
+  },
+  {
+    "validator_address": "kyvevaloper16ckxpm5sksz7vgjjeqprmy98mp8ntjt2hnefud",
+    "moniker": "SkySkipper",
+    "chain_id": "kyve"
+  },
+  {
+    "validator_address": "kyvevaloper10rldat6hkt80nnvthnfteeedcyt79r38c8zmtv",
+    "moniker": "Enigma",
+    "chain_id": "kyve"
+  },
+  {
+    "validator_address": "kyvevaloper1vh78lyzyfdd596d7asxkcsxeegf6cl7rqfa0x3",
+    "moniker": "Apollo",
+    "chain_id": "kyve"
+  },
+  {
+    "validator_address": "kyvevaloper1gjtvly9lel6zskvwtvlg5vhwpu9c9waw76lp8n",
+    "moniker": "EZ Staking",
+    "chain_id": "kyve"
+  },
+  {
+    "validator_address": "kyvevaloper1jclhedk8fst3qfdx04xgfynjs6dguk2haks7su",
+    "moniker": "Chesapeake",
+    "chain_id": "kyve"
+  },
+  {
+    "validator_address": "kyvevaloper1trmnr6hqu5v50xr0s8e3wu4xqkl68yrs5j3tzn",
+    "moniker": "NexuSecurus",
+    "chain_id": "kyve"
+  },
+  {
+    "validator_address": "kyvevaloper18dwc24a3xpna5gp2slnyx382exnr5c9845nept",
+    "moniker": "Cosmos Spaces    ",
+    "chain_id": "kyve"
+  },
+  {
+    "validator_address": "kyvevaloper12a8dvltvfh96dvad628vss582fjw0y0r324q95",
+    "moniker": "Stakemeio",
+    "chain_id": "kyve"
+  },
+  {
+    "validator_address": "kyvevaloper1fmhx7rzl6dcrpq2vnw4ggtlh6ssu0ejrzxxtsy",
+    "moniker": "TukuDev Borr",
+    "chain_id": "kyve"
+  },
+  {
+    "validator_address": "kyvevaloper1629dmzdr5dkdtezf3m9cm603j63gn0pj8z8aaq",
+    "moniker": "ZKValidator",
+    "chain_id": "kyve"
+  },
+  {
+    "validator_address": "kyvevaloper12gm2lkan86euy7r3kylsv4gjpx5nyye3z0435s",
+    "moniker": "Airnodes",
+    "chain_id": "kyve"
+  },
+  {
+    "validator_address": "kyvevaloper1fxh88ayzp4zghxcdh8la0kxwhx0v9w4e7nj60c",
+    "moniker": "cyberG",
+    "chain_id": "kyve"
+  },
+  {
+    "validator_address": "kyvevaloper1t3d8065y2gdqjwdegqf4ezgzykuwgenpcnv2la",
+    "moniker": "kokos",
+    "chain_id": "kyve"
+  },
+  {
+    "validator_address": "kyvevaloper1etduu5zlu4k20ph6uyyldw29ydua3ym0urmq0r",
+    "moniker": "P2PORG Validator",
+    "chain_id": "kyve"
+  },
+  {
+    "validator_address": "kyvevaloper1nprnzg0d7rmympgt3eld38rxp60rlfc22guj6p",
+    "moniker": "Sr20de  Restake enabled",
+    "chain_id": "kyve"
+  },
+  {
+    "validator_address": "kyvevaloper17m94afav2tzafmckf55caav4j6ew9sup834j4q",
+    "moniker": "Earn Network",
+    "chain_id": "kyve"
+  },
+  {
+    "validator_address": "kyvevaloper1jtgsltwsj902uf942pp7t7xqk9qadsrqnv4rhr",
+    "moniker": "HoodRun",
+    "chain_id": "kyve"
+  },
+  {
+    "validator_address": "kyvevaloper14xfs4arg360jg3339d5fhztmw80hu89n3f7w60",
+    "moniker": "FIVETECH",
+    "chain_id": "kyve"
+  },
+  {
+    "validator_address": "kyvevaloper1hxm6wl99gv7yt25jesge3v4e78hp3deucq4x0f",
+    "moniker": "KonsorTech",
+    "chain_id": "kyve"
+  },
+  {
+    "validator_address": "kyvevaloper104hetrwd96sgj9tjdwpf6wkwflxtmq7nggfpsm",
+    "moniker": "Kolot",
+    "chain_id": "kyve"
+  },
+  {
+    "validator_address": "kyvevaloper1fk6f64v3s3jrq3wh92uw50j2k595s6skelx7ch",
+    "moniker": "bitdealer91",
+    "chain_id": "kyve"
+  },
+  {
+    "validator_address": "kyvevaloper1lzkwjxrfwaysf8k40casmd8u8rh9rv8vffncc9",
+    "moniker": "bulevar",
+    "chain_id": "kyve"
+  },
+  {
+    "validator_address": "kyvevaloper1n48jy4ztg53qlcjjxxn2x2kw46zge3sst2madw",
+    "moniker": "Nodes Helpers",
+    "chain_id": "kyve"
+  },
+  {
+    "validator_address": "kyvevaloper1md6mg0d03yjczfc0azcw4em7tgur8tu27xk3gt",
+    "moniker": "StolenKrown",
+    "chain_id": "kyve"
+  },
+  {
+    "validator_address": "kyvevaloper13h8qfyz7kjjvlcd0przhgj60uneedx5nh3tnew",
+    "moniker": "Agaming",
+    "chain_id": "kyve"
+  },
+  {
+    "validator_address": "kyvevaloper1sfapp26q9jxeha6nnw6luhuclx8dnrj6wmvw7g",
+    "moniker": "TukuDev Freyja",
+    "chain_id": "kyve"
+  },
+  {
+    "validator_address": "kyvevaloper1tgc0d7gzc3r9f0gqwf4zewanxqwjddp2hhrz6a",
+    "moniker": "StakeShuttlecom",
+    "chain_id": "kyve"
+  },
+  {
+    "validator_address": "kyvevaloper1s26mkhm970sgs3n72nj03rsnaknazt7g8muled",
+    "moniker": "CroutonDigital",
+    "chain_id": "kyve"
+  },
+  {
+    "validator_address": "kyvevaloper1nxzvmxgwg93gswv3nc5sl3lgsg24jeysqy5cpk",
+    "moniker": "Mitchell Ventures",
+    "chain_id": "kyve"
+  },
+  {
+    "validator_address": "kyvevaloper16xm3a5uxp97fvsgkh6nvqlnm4k62v33t0sstvx",
+    "moniker": "bitszn",
+    "chain_id": "kyve"
+  },
+  {
+    "validator_address": "kyvevaloper1k2ndmgtaqx3uch59ujcfa6rj4jud88hu8dd8xx",
+    "moniker": "moodman",
+    "chain_id": "kyve"
+  },
+  {
+    "validator_address": "kyvevaloper1tjdzgkj8mprcm2t32rzdtrcgtpums5j8xyh8x2",
+    "moniker": "Mirs",
+    "chain_id": "kyve"
+  },
+  {
+    "validator_address": "kyvevaloper1cfy6pr66ny7wlcfs57kq5scmkwtr504jvzn8xg",
+    "moniker": "Permanent Ventures 2",
+    "chain_id": "kyve"
+  },
+  {
+    "validator_address": "kyvevaloper1vldmxd37y9afvfg4v92m7lgh6lpx27v6xhnz7t",
+    "moniker": "IsodayI",
+    "chain_id": "kyve"
+  },
+  {
+    "validator_address": "kyvevaloper14d8v9hw2ev43gffkuk5d3wk4gpfu9vdtvyv3gs",
+    "moniker": "MCB  mcbnode",
+    "chain_id": "kyve"
+  },
+  {
+    "validator_address": "kyvevaloper1kr0flj8lm6x3xkwz0k37j7mknhs4375vtxqfsk",
+    "moniker": "cyberomanov",
+    "chain_id": "kyve"
+  },
+  {
+    "validator_address": "kyvevaloper1c46znvma4554husxsmvml034wtg0w9ssrrgl7l",
+    "moniker": "PleaseUndelegate",
+    "chain_id": "kyve"
+  },
+  {
+    "validator_address": "kyvevaloper17axjwh2jd9tatvx42n4v22degd7nma7aquhvpe",
+    "moniker": "Jaha",
+    "chain_id": "kyve"
+  },
+  {
+    "validator_address": "kyvevaloper1u3pduq6uk4pe49f407c8xuh0dtqttxeshujydd",
+    "moniker": "cryptech",
+    "chain_id": "kyve"
+  },
+  {
+    "validator_address": "kyvevaloper1t9pdehdfa5p026u03s68ceknpx36xg4py0ps5r",
+    "moniker": "Injective Labs",
+    "chain_id": "kyve"
+  },
+  {
+    "validator_address": "kyvevaloper1vfjs8rvst79x3zhkc2a0m66t5tksdw7jtyafr9",
+    "moniker": "Dozorkenig",
+    "chain_id": "kyve"
+  },
+  {
+    "validator_address": "kyvevaloper1v7l3znt0ynf7ppp7gaw8d8vlkpfhrnypawg6vr",
+    "moniker": "StakeLabzone",
+    "chain_id": "kyve"
+  },
+  {
+    "validator_address": "kyvevaloper1kf32u3kquw5j4n0wmwar5trcf44xtzjavcvudf",
+    "moniker": "Dora Factory Unbond",
+    "chain_id": "kyve"
+  },
+  {
+    "validator_address": "kyvevaloper10dxzd7ajnxpyrg4zsju9p3njpk50tnu4n6q8er",
+    "moniker": "StingRay",
+    "chain_id": "kyve"
+  },
+  {
+    "validator_address": "kyvevaloper1ke8zl7qztj7a55kgwmt9m9apxl9s4znqaefwnr",
+    "moniker": "kallen",
+    "chain_id": "kyve"
+  },
+  {
+    "validator_address": "kyvevaloper160rp4z97ng990qf7mt4kgw6h924lf6ztwssw6t",
+    "moniker": "cagie",
+    "chain_id": "kyve"
+  },
+  {
+    "validator_address": "kyvevaloper1v936nx74qq7vvpvg0gluewdrk9g2nm7dgfpyzh",
+    "moniker": "Node  Decommissioned",
+    "chain_id": "kyve"
+  },
+  {
+    "validator_address": "kyvevaloper15ead6y9v9t2zy387ex5d6vf0gqphmz7jq64evn",
+    "moniker": "Sudo",
+    "chain_id": "kyve"
+  },
+  {
+    "validator_address": "kyvevaloper1sfe3y305r6h59974wws87t80x6rgcvkxv4qjur",
+    "moniker": "SUDO",
+    "chain_id": "kyve"
+  },
+  {
+    "validator_address": "kyvevaloper1qys627nvus9fpzl9qr2j75aq80jlffg2zwpnld",
+    "moniker": "Madness",
+    "chain_id": "kyve"
+  },
+  {
+    "validator_address": "kyvevaloper1mtf3mjpvhw83c6cctdsdurq47wdueqyk9nt0zk",
+    "moniker": "INOTHERLIFE",
+    "chain_id": "kyve"
+  },
+  {
+    "validator_address": "kyvevaloper14l4a4f4tsth8r9jchs5xk590sxg6mx29nmua9x",
+    "moniker": "ShvakinNode",
+    "chain_id": "kyve"
+  },
+  {
+    "validator_address": "kyvevaloper1evekq47tuxf5u6jw0n4z5fuf23dydk0j8nsp8e",
+    "moniker": "MantiCore",
+    "chain_id": "kyve"
+  },
+  {
+    "validator_address": "kyvevaloper13hqh77g4u58kps4jkzan7ntqksp6euzql0apau",
+    "moniker": "JARVANES",
+    "chain_id": "kyve"
+  },
+  {
+    "validator_address": "kyvevaloper1nak6d0sc63pq6ugu8l972w9ktznqz2kvr86qgg",
+    "moniker": "RedelegatetonewStakinnode",
+    "chain_id": "kyve"
+  },
+  {
+    "validator_address": "kyvevaloper16zayhypaxapljpccategzzrdwh83v865r8dmq5",
+    "moniker": "mrjw777",
+    "chain_id": "kyve"
+  },
+  {
+    "validator_address": "kyvevaloper10mzn7cxulg7krtqe30zl5dtauncwn427z59s6r",
+    "moniker": "RuValidator",
+    "chain_id": "kyve"
+  },
+  {
+    "validator_address": "kyvevaloper1kh780yxwc8mnvpl9fkqq9xz960hv22g533h848",
+    "moniker": "USUCH",
+    "chain_id": "kyve"
+  },
+  {
+    "validator_address": "kyvevaloper1c9c0su2ml43r2q6etsusc9dr7qumdt7s2ja99k",
+    "moniker": "Colinka",
+    "chain_id": "kyve"
+  },
+  {
+    "validator_address": "kyvevaloper14yrlpnrwfhtu6u4kux2k8gem04rehulyq0dz4l",
+    "moniker": "Munris",
+    "chain_id": "kyve"
+  },
+  {
+    "validator_address": "kyvevaloper17qncaqfgyj5rldhx0ef5a8p9q3lm9ghg0qpmsl",
+    "moniker": "SOLID POINT",
+    "chain_id": "kyve"
+  },
+  {
+    "validator_address": "kyvevaloper1cvu2eqpdyqpz8fp9vll90xsath9tfaarn7wxua",
+    "moniker": "VikNov",
+    "chain_id": "kyve"
+  },
+  {
+    "validator_address": "kyvevaloper17nlmwdmsphnaeepyq0qgkc44vgwcqk7qm0000f",
+    "moniker": "Yeksin",
+    "chain_id": "kyve"
+  },
+  {
+    "validator_address": "kyvevaloper1j29ecm5krk0mj5xq6shsjw4vqqx0vhwj9xgz8w",
+    "moniker": "node4all",
+    "chain_id": "kyve"
+  }
+]
