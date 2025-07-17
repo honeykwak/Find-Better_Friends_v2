@@ -7,6 +7,128 @@ import { VOTE_COLORS, VOTE_ORDER } from '@/constants/voteColors'
 import Image from 'next/image'
 import React from 'react'
 
+// A custom hook for the range slider, corrected for smooth dragging
+const useRangeSlider = (
+  min: number,
+  max: number,
+  initialValues: [number, number],
+  onChangeComplete: (values: [number, number]) => void
+) => {
+  const [values, setValues] = useState<[number, number]>(initialValues)
+  const sliderRef = useRef<HTMLDivElement>(null)
+  const minThumbRef = useRef<HTMLDivElement>(null)
+  const maxThumbRef = useRef<HTMLDivElement>(null)
+  const draggingRef = useRef<'min' | 'max' | null>(null)
+
+  // Use refs to store the latest callbacks and values to avoid stale closures
+  const onChangeCompleteRef = useRef(onChangeComplete)
+  onChangeCompleteRef.current = onChangeComplete
+
+  const valuesRef = useRef(values)
+  valuesRef.current = values
+
+  useEffect(() => {
+    setValues(initialValues)
+  }, [initialValues[0], initialValues[1]])
+
+  useEffect(() => {
+    const handleMouseMove = (e: MouseEvent) => {
+      if (!draggingRef.current || !sliderRef.current) return
+
+      const rect = sliderRef.current.getBoundingClientRect()
+      const percent = Math.max(0, Math.min(100, ((e.clientX - rect.left) / rect.width) * 100))
+      const newValue = Math.round((percent / 100) * (max - min) + min)
+
+      setValues(currentValues => {
+        let [currentMin, currentMax] = currentValues
+        if (draggingRef.current === 'min') {
+          currentMin = Math.min(newValue, currentMax)
+        } else {
+          currentMax = Math.max(newValue, currentMin)
+        }
+        return [currentMin, currentMax]
+      })
+    }
+
+    const handleMouseUp = () => {
+      if (draggingRef.current) {
+        onChangeCompleteRef.current(valuesRef.current)
+        draggingRef.current = null
+      }
+      window.removeEventListener('mousemove', handleMouseMove)
+      window.removeEventListener('mouseup', handleMouseUp)
+    }
+
+    const handleMouseDown = (thumb: 'min' | 'max') => {
+      draggingRef.current = thumb
+      window.addEventListener('mousemove', handleMouseMove)
+      window.addEventListener('mouseup', handleMouseUp)
+    }
+
+    const minThumb = minThumbRef.current
+    const maxThumb = maxThumbRef.current
+
+    const handleMinMouseDown = () => handleMouseDown('min')
+    const handleMaxMouseDown = () => handleMouseDown('max')
+
+    minThumb?.addEventListener('mousedown', handleMinMouseDown)
+    maxThumb?.addEventListener('mousedown', handleMaxMouseDown)
+
+    return () => {
+      minThumb?.removeEventListener('mousedown', handleMinMouseDown)
+      maxThumb?.removeEventListener('mousedown', handleMaxMouseDown)
+      window.removeEventListener('mousemove', handleMouseMove)
+      window.removeEventListener('mouseup', handleMouseUp)
+    }
+  }, [min, max]) // Effect only re-runs if min/max change, which they don't
+
+  const minPercent = ((values[0] - min) / (max - min)) * 100
+  const maxPercent = ((values[1] - min) / (max - min)) * 100
+
+  return { sliderRef, minThumbRef, maxThumbRef, values, minPercent, maxPercent }
+}
+
+const ApprovalRateSlider = () => {
+  const approvalRateRange = useGlobalStore(state => state.approvalRateRange)
+  const setApprovalRateRange = useGlobalStore(state => state.setApprovalRateRange)
+
+  const { sliderRef, minThumbRef, maxThumbRef, values, minPercent, maxPercent } = useRangeSlider(
+    0,
+    100,
+    approvalRateRange,
+    setApprovalRateRange
+  )
+
+  return (
+    <div>
+      <label className="block text-sm font-medium text-gray-700 mb-2">Approval Rate</label>
+      <div className="relative h-8" ref={sliderRef}>
+        <div className="absolute top-1/2 -translate-y-1/2 w-full h-1 bg-gray-200 rounded-full">
+          <div
+            className="absolute h-full bg-blue-500"
+            style={{ left: `${minPercent}%`, right: `${100 - maxPercent}%` }}
+          />
+        </div>
+        <div
+          ref={minThumbRef}
+          className="absolute top-1/2 -translate-y-1/2 w-4 h-4 bg-white border-2 border-blue-500 rounded-full cursor-pointer"
+          style={{ left: `${minPercent}%`, transform: 'translate(-50%, -50%)' }}
+        />
+        <div
+          ref={maxThumbRef}
+          className="absolute top-1/2 -translate-y-1/2 w-4 h-4 bg-white border-2 border-blue-500 rounded-full cursor-pointer"
+          style={{ left: `${maxPercent}%`, transform: 'translate(-50%, -50%)' }}
+        />
+      </div>
+      <div className="flex justify-between text-xs text-gray-500 mt-1">
+        <span>{values[0]}%</span>
+        <span>{values[1]}%</span>
+      </div>
+    </div>
+  )
+}
+
+
 const getChainLogo = (chainName: string) => {
   const logoName = chainName.toLowerCase().replace(/\s+/g, '-')
   return `/chain-logos/${logoName}.png`
@@ -109,10 +231,11 @@ export default function FilterPanel() {
     selectedTopics,
     selectedChain,
     searchTerm,
+    approvalRateRange,
     categoryVisualizationMode,
     setSelectedCategories,
     setSelectedTopics,
-    toggleTopic,
+    setApprovalRateRange,
     setSelectedChain,
     setSearchTerm,
     setCategoryVisualizationMode,
@@ -132,13 +255,15 @@ export default function FilterPanel() {
     setSelectedCategories([])
     setSelectedTopics([])
     setSearchTerm('')
-  }, [setSelectedCategories, setSelectedTopics, setSearchTerm])
+    setApprovalRateRange([0, 100])
+  }, [setSelectedCategories, setSelectedTopics, setSearchTerm, setApprovalRateRange])
 
   const activeFiltersCount = useMemo(() => [
     selectedCategories.length > 0,
     selectedTopics.length > 0,
-    searchTerm.length > 0
-  ].filter(Boolean).length, [selectedCategories.length, selectedTopics.length, searchTerm.length])
+    searchTerm.length > 0,
+    approvalRateRange[0] > 0 || approvalRateRange[1] < 100
+  ].filter(Boolean).length, [selectedCategories.length, selectedTopics.length, searchTerm.length, approvalRateRange])
 
   const chains = useMemo(() => getChains(), [getChains])
   const filteredCategoryHierarchy = useMemo(() => getFilteredCategoryHierarchy(), [getFilteredCategoryHierarchy])
@@ -208,6 +333,9 @@ export default function FilterPanel() {
             </button>
             {showChainDropdown && <div className="absolute top-full left-0 right-0 mt-1 bg-white border rounded-md shadow-lg z-50 max-h-48 overflow-y-auto">{chains.map(chain => <button key={chain} onClick={() => { setSelectedChain(chain); setShowChainDropdown(false); }} className="w-full flex items-center gap-2 px-3 py-2 text-sm text-left hover:bg-gray-50"><Image src={getChainLogo(chain)} alt={chain} width={16} height={16} className="rounded-full" /><span className="capitalize">{chain}</span></button>)}</div>}
           </div>
+        </div>
+        <div className="mb-4">
+          <ApprovalRateSlider />
         </div>
         <div>
           <label className="block text-sm font-medium text-gray-700 mb-2">Search Validator</label>

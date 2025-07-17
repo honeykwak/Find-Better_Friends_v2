@@ -73,6 +73,7 @@ export default function ValidatorHeatmap() {
     loading,
     selectedTopics,
     searchTerm,
+    approvalRateRange,
   } = useGlobalStore()
 
   // 데이터 전처리 및 메모이제이션
@@ -127,7 +128,7 @@ export default function ValidatorHeatmap() {
       }))
 
     return { validators, proposals, votes }
-  }, [rawProposals, rawValidators, rawVotes, selectedTopics, searchTerm, getFilteredProposals, getFilteredValidators])
+  }, [rawProposals, rawValidators, rawVotes, selectedTopics, searchTerm, approvalRateRange, getFilteredProposals, getFilteredValidators])
 
   // D3.js 히트맵 렌더링
   useEffect(() => {

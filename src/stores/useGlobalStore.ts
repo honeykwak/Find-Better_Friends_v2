@@ -30,6 +30,7 @@ interface GlobalStore {
   selectedCategories: string[]
   selectedTopics: string[]
   searchTerm: string
+  approvalRateRange: [number, number] // 찬성 비율 범위 상태 추가
   
   categoryVisualizationMode: 'passRate' | 'voteCount' | 'votingPower'
   
@@ -45,6 +46,7 @@ interface GlobalStore {
   toggleCategory: (category: string) => void
   toggleTopic: (topic: string) => void
   setSearchTerm: (term: string) => void
+  setApprovalRateRange: (range: [number, number]) => void // 액션 추가
   setCategoryVisualizationMode: (mode: 'passRate' | 'voteCount' | 'votingPower') => void
   setWindowSize: (size: { width: number; height: number }) => void
   
@@ -65,6 +67,7 @@ export const useGlobalStore = create<GlobalStore>((set, get) => ({
   selectedCategories: [],
   selectedTopics: [],
   searchTerm: '',
+  approvalRateRange: [0, 100], // 초기값 설정
   categoryVisualizationMode: 'passRate',
   loading: true,
   error: null,
@@ -91,7 +94,12 @@ export const useGlobalStore = create<GlobalStore>((set, get) => ({
   setSelectedChain: (chain: string) => {
     if (get().selectedChain === chain) return
     
-    set({ selectedChain: chain, selectedCategories: [], selectedTopics: [] })
+    set({ 
+      selectedChain: chain, 
+      selectedCategories: [], 
+      selectedTopics: [],
+      approvalRateRange: [0, 100] // 체인 변경 시 필터 초기화
+    })
     get().loadData(chain).catch(console.error)
   },
 
@@ -121,18 +129,40 @@ export const useGlobalStore = create<GlobalStore>((set, get) => ({
     set({ selectedTopics: newTopics })
   },
   setSearchTerm: (term: string) => set({ searchTerm: term }),
+  setApprovalRateRange: (range: [number, number]) => set({ approvalRateRange: range }), // 액션 구현
   setCategoryVisualizationMode: (mode) => set({ categoryVisualizationMode: mode }),
   setWindowSize: (size) => set({ windowSize: size }),
 
   // Selectors
   getFilteredProposals: () => {
-    const { proposals, selectedTopics } = get();
-    // If no topics are selected, return all proposals.
-    if (selectedTopics.length === 0) {
-      return proposals;
-    }
-    // Filter proposals based ONLY on the selected topics for precision.
-    return proposals.filter(p => selectedTopics.includes(p.topic));
+    const { proposals, selectedTopics, approvalRateRange } = get();
+    
+    const [minRate, maxRate] = approvalRateRange;
+
+    const filteredByTopic = selectedTopics.length === 0
+      ? proposals
+      : proposals.filter(p => selectedTopics.includes(p.topic));
+
+    return filteredByTopic.filter(p => {
+      const {
+        yes_count = 0,
+        no_count = 0,
+        abstain_count = 0,
+        no_with_veto_count = 0,
+      } = p.final_tally_result || {};
+      
+      const totalVotes = yes_count + no_count + abstain_count + no_with_veto_count;
+      
+      if (totalVotes === 0) {
+        // Handle proposals with no votes. Include them if the range is 0-100, or based on specific requirements.
+        // Here, we'll include them if minRate is 0.
+        return minRate === 0;
+      }
+      
+      const approvalRate = (yes_count / totalVotes) * 100;
+      
+      return approvalRate >= minRate && approvalRate <= maxRate;
+    });
   },
 
   getFilteredValidators: () => {
