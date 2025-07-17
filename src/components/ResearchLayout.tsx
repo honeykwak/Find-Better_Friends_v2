@@ -1,7 +1,7 @@
 'use client'
 
 import { useEffect, useState, useCallback, Suspense } from 'react'
-import { Info, Loader2, BarChart3, Activity } from 'lucide-react'
+import { Loader2, BarChart3, Activity } from 'lucide-react'
 import dynamic from 'next/dynamic'
 import { useGlobalStore } from '@/stores/useGlobalStore'
 
@@ -32,22 +32,14 @@ const ValidatorHeatmap = dynamic(() => import('@/components/ValidatorHeatmap'), 
   ssr: false
 })
 
-const InfoModal = dynamic(() => import('@/components/InfoModal'), {
-  ssr: false
-})
-
 export default function ResearchLayout() {
   const { 
     windowSize, 
-    showInfo, 
     loading,
-    proposalData,
     selectedCategories,
     selectedTopics,
     selectedChain,
-    searchTerm,
     setWindowSize, 
-    setShowInfo, 
     loadData
   } = useGlobalStore()
 
@@ -58,17 +50,17 @@ export default function ResearchLayout() {
 
   // 컴포넌트 로딩 (단순화됨)
   useEffect(() => {
-    if (!loading && proposalData) {
+    if (!loading) {
       setTimeout(() => {
         setComponentsLoaded(prev => ({ ...prev, filterPanel: true }))
       }, 100)
     }
-  }, [loading, proposalData])
+  }, [loading])
 
   // Data loading - 한 번만 실행
   useEffect(() => {
-    loadData()
-  }, [])
+    loadData('cosmos')
+  }, [loadData])
 
   // Window size tracking
   useEffect(() => {
@@ -129,14 +121,6 @@ export default function ResearchLayout() {
               )}
             </div>
           </div>
-          
-          <button
-            onClick={() => setShowInfo(true)}
-            className="flex items-center space-x-2 px-3 py-2 bg-blue-50 text-blue-700 rounded-lg hover:bg-blue-100 transition-colors flex-shrink-0"
-          >
-            <Info className="w-4 h-4" />
-            <span className="text-sm font-medium">Info</span>
-          </button>
         </div>
       </div>
 
@@ -165,11 +149,7 @@ export default function ResearchLayout() {
           </div>
         </div>
       </div>
-
-      {/* Info Modal */}
-      <Suspense fallback={null}>
-        {showInfo && <InfoModal onClose={() => setShowInfo(false)} />}
-      </Suspense>
     </div>
   )
-} 
+}
+ 
