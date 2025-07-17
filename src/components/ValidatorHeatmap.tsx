@@ -319,7 +319,7 @@ export default function ValidatorHeatmap() {
       <div className="flex items-center justify-between p-4 border-b border-gray-200 bg-gray-50">
         <div className="flex items-center gap-4">
           <h3 className="text-lg font-semibold text-gray-900">
-            Validator-Proposal Heatmap ({selectedChain})
+            Validator-Proposal Heatmap
           </h3>
           {isLoading && (
             <Loader2 className="w-4 h-4 animate-spin text-blue-600" />
