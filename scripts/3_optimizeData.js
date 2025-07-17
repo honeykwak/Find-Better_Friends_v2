@@ -43,10 +43,6 @@ async function processAllData() {
       proposals: [],
       validators: new Map(),
       votes: [],
-      categorySummary: {
-        categories: {},
-        topics: {},
-      },
     };
 
     const proposalsFromCsv = await readCsv(path.join(SOURCE_DIR, fileName));
@@ -99,41 +95,6 @@ async function processAllData() {
         submit_time: proposal.submit_time,
         final_tally_result,
       });
-
-      const category = mappedCategory.high_level_category;
-      const topic = mappedCategory.topic_subject;
-      const isPassed = proposal.status.includes('PASSED');
-
-      if (!chainData.categorySummary.categories[category]) {
-        chainData.categorySummary.categories[category] = { count: 0, passCount: 0, voteDistribution: {}, votingPowerDistribution: {} };
-      }
-      if (!chainData.categorySummary.topics[topic]) {
-        chainData.categorySummary.topics[topic] = { category, count: 0, passCount: 0, voteDistribution: {}, votingPowerDistribution: {} };
-      }
-
-      const categoryStats = chainData.categorySummary.categories[category];
-      const topicStats = chainData.categorySummary.topics[topic];
-
-      categoryStats.count++;
-      topicStats.count++;
-      if (isPassed) {
-        categoryStats.passCount++;
-        topicStats.passCount++;
-      }
-      
-      for (const vote of votesData) {
-          const option = vote.option.replace('VOTE_OPTION_', '');
-          // FINAL BUG FIX: Use 'voting_power_ratio' and ensure it's a valid number.
-          const power = parseFloat(vote.votingPower);
-
-          categoryStats.voteDistribution[option] = (categoryStats.voteDistribution[option] || 0) + 1;
-          topicStats.voteDistribution[option] = (topicStats.voteDistribution[option] || 0) + 1;
-          
-          if (!isNaN(power)) {
-            categoryStats.votingPowerDistribution[option] = (categoryStats.votingPowerDistribution[option] || 0) + power;
-            topicStats.votingPowerDistribution[option] = (topicStats.votingPowerDistribution[option] || 0) + power;
-          }
-      }
     }
 
     const outputChainDir = path.join(OUTPUT_DIR, chainName);
@@ -141,19 +102,9 @@ async function processAllData() {
 
     const validatorsArray = Array.from(chainData.validators.values());
 
-    for (const cat in chainData.categorySummary.categories) {
-        const stats = chainData.categorySummary.categories[cat];
-        stats.passRate = stats.count > 0 ? (stats.passCount / stats.count) * 100 : 0;
-    }
-    for (const top in chainData.categorySummary.topics) {
-        const stats = chainData.categorySummary.topics[top];
-        stats.passRate = stats.count > 0 ? (stats.passCount / stats.count) * 100 : 0;
-    }
-
     await fs.writeFile(path.join(outputChainDir, 'proposals.json'), JSON.stringify(chainData.proposals, null, 2));
     await fs.writeFile(path.join(outputChainDir, 'validators.json'), JSON.stringify(validatorsArray, null, 2));
     await fs.writeFile(path.join(outputChainDir, 'votes.json'), JSON.stringify(chainData.votes, null, 2));
-    await fs.writeFile(path.join(outputChainDir, 'category_summary.json'), JSON.stringify(chainData.categorySummary, null, 2));
 
     console.log(`Successfully generated optimized data for ${chainName}.`);
   }
