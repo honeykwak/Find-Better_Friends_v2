@@ -1,0 +1,567 @@
+[
+  {
+    "validator_address": "axelarvaloper19ysyq74gkf8lv3l4suu3rlqadg4txp3sqxkhss",
+    "moniker": "Stakewollecom  Autocompound",
+    "chain_id": "axelar"
+  },
+  {
+    "validator_address": "axelarvaloper1jmuwxehr35zducyv2er7duwk467j2mhmk3wry0",
+    "moniker": "rodion",
+    "chain_id": "axelar"
+  },
+  {
+    "validator_address": "axelarvaloper137nzwehjcjxddsanmsmg29p729cm4dghj08clr",
+    "moniker": "DSRV",
+    "chain_id": "axelar"
+  },
+  {
+    "validator_address": "axelarvaloper1wu5gmssvu00suz3wclpxwwk5pzw4dqgywaudjg",
+    "moniker": "anvel",
+    "chain_id": "axelar"
+  },
+  {
+    "validator_address": "axelarvaloper16pj5gljqnqs0ajxakccfjhu05yczp987zac7km",
+    "moniker": "Chorus One",
+    "chain_id": "axelar"
+  },
+  {
+    "validator_address": "axelarvaloper1et2clgngcx9s534akvk9p94p70jteas4vavakq",
+    "moniker": "Contribution DAO",
+    "chain_id": "axelar"
+  },
+  {
+    "validator_address": "axelarvaloper1r7ppsrmzpslqu3d3yf344kzjv32n9dn4xyt0sw",
+    "moniker": "Forbole",
+    "chain_id": "axelar"
+  },
+  {
+    "validator_address": "axelarvaloper1u3asfwr2q0xhshj88sq4yvh89qluunefh270lz",
+    "moniker": "Provalidator",
+    "chain_id": "axelar"
+  },
+  {
+    "validator_address": "axelarvaloper1kkrp9ulfea5klffr7yjk0lat2yuxystgfzg6zu",
+    "moniker": "Brightlystake",
+    "chain_id": "axelar"
+  },
+  {
+    "validator_address": "axelarvaloper17q4fqv86dxkes384tnmrvjr9ljp2slunr6k00w",
+    "moniker": "Citadelone",
+    "chain_id": "axelar"
+  },
+  {
+    "validator_address": "axelarvaloper1f9laxzwy8u73jlutkg6qrj7yzkkwcjhvw6cf2v",
+    "moniker": "BlockHunters ",
+    "chain_id": "axelar"
+  },
+  {
+    "validator_address": "axelarvaloper1x20lytyf6zkcrv5edpkfkn8sz578qg5s3j2wke",
+    "moniker": "Informal Systems",
+    "chain_id": "axelar"
+  },
+  {
+    "validator_address": "axelarvaloper1meu58wwjmz2whjahmr5pgrvdv7z0wmkkq7lmum",
+    "moniker": "Squid",
+    "chain_id": "axelar"
+  },
+  {
+    "validator_address": "axelarvaloper1n3mhyp9fvcmuu8l0q8qvjy07x0rql8q4mjdjnt",
+    "moniker": "0basevc",
+    "chain_id": "axelar"
+  },
+  {
+    "validator_address": "axelarvaloper1t58spqe28a7d8s2902ss90tet7q7e0rxzcyf63",
+    "moniker": "Lets Node  1package",
+    "chain_id": "axelar"
+  },
+  {
+    "validator_address": "axelarvaloper1ypwzuhaffvr06ktu0ne6lnm69gxj32qwf94dg4",
+    "moniker": "KalpaTech",
+    "chain_id": "axelar"
+  },
+  {
+    "validator_address": "axelarvaloper1n56swda49evz92zhcw2xc8esx6kzt8qmvfvgp6",
+    "moniker": "Tessellated",
+    "chain_id": "axelar"
+  },
+  {
+    "validator_address": "axelarvaloper1zcsv9jp24nl0e4vha36l8dzypy363sw3rgq0zy",
+    "moniker": "ChainodeTech",
+    "chain_id": "axelar"
+  },
+  {
+    "validator_address": "axelarvaloper16nx30ear9ewsd9xuzy9wrlpp94vmdzlvq5jfdx",
+    "moniker": "Crosnest",
+    "chain_id": "axelar"
+  },
+  {
+    "validator_address": "axelarvaloper17l9xc68m6stccpnj7d8dgy8ck62hqnzv9jfyg9",
+    "moniker": "Enigma",
+    "chain_id": "axelar"
+  },
+  {
+    "validator_address": "axelarvaloper1uqe7c0d7uwdkslvv75nccxx74p09aqzhm7xs7c",
+    "moniker": "CryptoSailors",
+    "chain_id": "axelar"
+  },
+  {
+    "validator_address": "axelarvaloper1rqp7vvl9cjmdan44dny56qadwg590uxv8hamux",
+    "moniker": "Everstake",
+    "chain_id": "axelar"
+  },
+  {
+    "validator_address": "axelarvaloper1nvsl9utkv0duhuvudjckvrtyfeyju0ygx3npw4",
+    "moniker": "Imperatorco",
+    "chain_id": "axelar"
+  },
+  {
+    "validator_address": "axelarvaloper19dx6vywgr62jtsxhhlhlgh7ug5vmgjnz6dkeud",
+    "moniker": "StakeLabzone",
+    "chain_id": "axelar"
+  },
+  {
+    "validator_address": "axelarvaloper13877kqxl4gftkpjavd2kjjd0d9rfxcu53sq3z3",
+    "moniker": "ChainLayer",
+    "chain_id": "axelar"
+  },
+  {
+    "validator_address": "axelarvaloper1xesqr8vjvy34jhu027zd70ypl0nnev5ezjg5h9",
+    "moniker": "Synergy Nodes",
+    "chain_id": "axelar"
+  },
+  {
+    "validator_address": "axelarvaloper1uf7s2v44qqpe9lpnsjy6cfjueqytakuzayfg0h",
+    "moniker": "Stakin",
+    "chain_id": "axelar"
+  },
+  {
+    "validator_address": "axelarvaloper14fpqu7kpvlhlhyefsmus6strrz4kwselc5caah",
+    "moniker": "CoinMetrika",
+    "chain_id": "axelar"
+  },
+  {
+    "validator_address": "axelarvaloper1xy97mfxvm2qwtw7vt9e3m850eknxfwxd9l5ate",
+    "moniker": "Validatriumcom",
+    "chain_id": "axelar"
+  },
+  {
+    "validator_address": "axelarvaloper18qydpumkn244ska4xw8890nc67l9e5qqm7c36r",
+    "moniker": "HoodRun",
+    "chain_id": "axelar"
+  },
+  {
+    "validator_address": "axelarvaloper12048f0g2qvm4xdru9knh7qqq4srr5lqxk53hfn",
+    "moniker": "LunaNova",
+    "chain_id": "axelar"
+  },
+  {
+    "validator_address": "axelarvaloper1q2nyv5mwsu5r07x6djpgvm0jl9l9a5v88qllcd",
+    "moniker": "BwareLabs",
+    "chain_id": "axelar"
+  },
+  {
+    "validator_address": "axelarvaloper1aqhvg88ghtdv7du6kqlc9eccukpu8l7mhtauk5",
+    "moniker": "Meria",
+    "chain_id": "axelar"
+  },
+  {
+    "validator_address": "axelarvaloper1kafxdlrq8svz68j2tn8qtqk74j4yhylyf364pt",
+    "moniker": " AutoStake  Slash Protected",
+    "chain_id": "axelar"
+  },
+  {
+    "validator_address": "axelarvaloper1ftqma496np33y054x6gjeh2maxy00e00p2nl9l",
+    "moniker": "POSTHUMAN  StakeDrop",
+    "chain_id": "axelar"
+  },
+  {
+    "validator_address": "axelarvaloper1gp957czryfgyvxwn3tfnyy2f0t9g2p4ppzdrn6",
+    "moniker": "polkachucom",
+    "chain_id": "axelar"
+  },
+  {
+    "validator_address": "axelarvaloper1gsdk6eed465n0arjekwruwsfwyugasu55fdg7a",
+    "moniker": "Node Guardians",
+    "chain_id": "axelar"
+  },
+  {
+    "validator_address": "axelarvaloper1kj8j6hkmgfvtxpgfuskj602sxs5dsfkm6ewm4l",
+    "moniker": "Cosmostation",
+    "chain_id": "axelar"
+  },
+  {
+    "validator_address": "axelarvaloper1l954fcz7hu9sedc7fd4ltjs4ucs7af6csqsxlw",
+    "moniker": "BHarvest",
+    "chain_id": "axelar"
+  },
+  {
+    "validator_address": "axelarvaloper1gswfh889avkccdt5adqvglel9ttjglhdl0atqr",
+    "moniker": "POPS Team",
+    "chain_id": "axelar"
+  },
+  {
+    "validator_address": "axelarvaloper19wz0kfzj2czmjg9052h69wk6kgxc848hxs8rhl",
+    "moniker": "Qubelabs",
+    "chain_id": "axelar"
+  },
+  {
+    "validator_address": "axelarvaloper1sm3mh5pxqlzx6swmf2dspcvnz3zw3ptycqtg3s",
+    "moniker": "ushakov",
+    "chain_id": "axelar"
+  },
+  {
+    "validator_address": "axelarvaloper1vq6rn6ph9hg3kf0l5lrvdnud9s46lp04mhhsk9",
+    "moniker": "AlexZ",
+    "chain_id": "axelar"
+  },
+  {
+    "validator_address": "axelarvaloper126yfkvn7lx280ccg2lnxty0n2ldzz6xnve3smx",
+    "moniker": "Inter Blockchain Services",
+    "chain_id": "axelar"
+  },
+  {
+    "validator_address": "axelarvaloper1z9cz08mlfp6qz456zyzkw6epsjlzvr043m4rzz",
+    "moniker": "NodeMonster",
+    "chain_id": "axelar"
+  },
+  {
+    "validator_address": "axelarvaloper13j0vglkah4c302pm9y0fr9qrue87d400tv7v57",
+    "moniker": "Redbooker",
+    "chain_id": "axelar"
+  },
+  {
+    "validator_address": "axelarvaloper1nqe0ggecgsyaegl4t6m6k4786cd29xjt4znsf5",
+    "moniker": "Coinbase",
+    "chain_id": "axelar"
+  },
+  {
+    "validator_address": "axelarvaloper1p7mwnz6s834ym4w6c8rdsgqysyklygdm8dfylq",
+    "moniker": "Trebuchet Operated by Imperatorco",
+    "chain_id": "axelar"
+  },
+  {
+    "validator_address": "axelarvaloper1sch60qun55fkzu2n84pvlsmktm7yg8er85sa9z",
+    "moniker": "Validation Cloud",
+    "chain_id": "axelar"
+  },
+  {
+    "validator_address": "axelarvaloper15mvc8ydpdvg5rwsruz46649sqz8y69lxwp0awt",
+    "moniker": "stevenaxelar",
+    "chain_id": "axelar"
+  },
+  {
+    "validator_address": "axelarvaloper1fj2p25kgvaqc8nk0ayqfledn3ps4ta3t2p2wj4",
+    "moniker": "axelarcorealpha",
+    "chain_id": "axelar"
+  },
+  {
+    "validator_address": "axelarvaloper1p0wy6wdnw05h33rfeavqt3ueh7274hcl07sv36",
+    "moniker": "AsGuard",
+    "chain_id": "axelar"
+  },
+  {
+    "validator_address": "axelarvaloper1uvx854yjzn9re8vu74067u68r4ar70tywgpcwg",
+    "moniker": "Figment",
+    "chain_id": "axelar"
+  },
+  {
+    "validator_address": "axelarvaloper1z8jzq3fmhc5e5h23qc6fvqp6szt5h9fsfhl0yh",
+    "moniker": "Anonstake",
+    "chain_id": "axelar"
+  },
+  {
+    "validator_address": "axelarvaloper1aatl2sl2ng5eygzjxx7ysn3jqd7dpr9n5shmmn",
+    "moniker": "CoinHippo",
+    "chain_id": "axelar"
+  },
+  {
+    "validator_address": "axelarvaloper1zg3g70xsxc28jw7ed36nxh7x70s22ufrw4urnk",
+    "moniker": " CryptoCrew Validators IBCgang",
+    "chain_id": "axelar"
+  },
+  {
+    "validator_address": "axelarvaloper1ge6g4tvutvr5ae6rhrh9sapqsyvyp3tku36p96",
+    "moniker": "Nodiums",
+    "chain_id": "axelar"
+  },
+  {
+    "validator_address": "axelarvaloper1gkjzwwk2jgqelgphu3fs5x7nd4sr08m5y78sse",
+    "moniker": "bitszn",
+    "chain_id": "axelar"
+  },
+  {
+    "validator_address": "axelarvaloper1genlxk9gxgfdsv8tg8yu3js0pa4jhh2x7rar8d",
+    "moniker": "StakewithJenni",
+    "chain_id": "axelar"
+  },
+  {
+    "validator_address": "axelarvaloper1ds9z59d9szmxlzt6f8f6l6sgaenxdyd6095gcg",
+    "moniker": "Lemniscap",
+    "chain_id": "axelar"
+  },
+  {
+    "validator_address": "axelarvaloper1qy9uq03rkpqkzwsa4fz7xxetkxttdcj6tf09pg",
+    "moniker": "axelarcore0",
+    "chain_id": "axelar"
+  },
+  {
+    "validator_address": "axelarvaloper17eysfn7h36xlvl0kpe6c95f4w4hejr57raak27",
+    "moniker": "DO NOT DELEGATE",
+    "chain_id": "axelar"
+  },
+  {
+    "validator_address": "axelarvaloper1tee73c83k2vqky9gt59jd3ztwxhqjm27l588q6",
+    "moniker": "Titan",
+    "chain_id": "axelar"
+  },
+  {
+    "validator_address": "axelarvaloper1yd7nfrv4rkeelqs9g5nn62ze8wuevka9tj5d5a",
+    "moniker": "TombstonedUnstake",
+    "chain_id": "axelar"
+  },
+  {
+    "validator_address": "axelarvaloper19h758tqq36yjn9hnw4xfztl829zg0ypzk2nsv4",
+    "moniker": "Kiln",
+    "chain_id": "axelar"
+  },
+  {
+    "validator_address": "axelarvaloper18nvftqkam74w39lrh4r3n0xagh7j632r0n4hsf",
+    "moniker": "Dora Factory Unbond",
+    "chain_id": "axelar"
+  },
+  {
+    "validator_address": "axelarvaloper1f4esxrr8hnj557w4zjcxy8vrclykepgmp99lwd",
+    "moniker": "MantiCore",
+    "chain_id": "axelar"
+  },
+  {
+    "validator_address": "axelarvaloper1vqry05pl7ezfujtx52qjnsljc6sxx38030hpa4",
+    "moniker": "3venturesio  autocompound via reStake",
+    "chain_id": "axelar"
+  },
+  {
+    "validator_address": "axelarvaloper1szyhj4z7h6mgvd5p6dqzmywvltuvmzkjptdcej",
+    "moniker": "Swiss Staking",
+    "chain_id": "axelar"
+  },
+  {
+    "validator_address": "axelarvaloper18q7zct93jczw8eh7euwys56lsudm8tp67g65uf",
+    "moniker": "Spotonchainai",
+    "chain_id": "axelar"
+  },
+  {
+    "validator_address": "axelarvaloper186rt9fg3l6m9x2w9qxuvq80uapzhuezapyqser",
+    "moniker": "Rumcajs",
+    "chain_id": "axelar"
+  },
+  {
+    "validator_address": "axelarvaloper1gktvcgrvmap66r7echsw6hhwfgresqy0cyuf8y",
+    "moniker": "Node X",
+    "chain_id": "axelar"
+  },
+  {
+    "validator_address": "axelarvaloper1sn4v8rp9j587uvrex4z9jw9frplv05vnxk92zs",
+    "moniker": "QuantNode",
+    "chain_id": "axelar"
+  },
+  {
+    "validator_address": "axelarvaloper1fgklp9hemczlwtqp9jqzq3xahh38hznx7vd805",
+    "moniker": "Ledger by Chorus One",
+    "chain_id": "axelar"
+  },
+  {
+    "validator_address": "axelarvaloper130hgs2pxl52mkcc0zf45fdj89cw0x5s95rh9kz",
+    "moniker": "Onboarding",
+    "chain_id": "axelar"
+  },
+  {
+    "validator_address": "axelarvaloper14ztrec8v98s7fqw665xqqqj5ntfajfuc7zc4y4",
+    "moniker": "0 feeComing Soon",
+    "chain_id": "axelar"
+  },
+  {
+    "validator_address": "axelarvaloper1fs69lv72gq2a5ujd7szfmnl9qp6zgmk3mjwq2j",
+    "moniker": "anon001",
+    "chain_id": "axelar"
+  },
+  {
+    "validator_address": "axelarvaloper1thl5syhmscgnj7whdyrydw3w6vy80044kf4tn2",
+    "moniker": "RockawayX Infra",
+    "chain_id": "axelar"
+  },
+  {
+    "validator_address": "axelarvaloper1xtawcxuvh3vtt6zht9pku3ltc0a76u209jl63x",
+    "moniker": "Staketab",
+    "chain_id": "axelar"
+  },
+  {
+    "validator_address": "axelarvaloper1zh9wrak6ke4n6fclj5e8yk397czv430ygs5jz7",
+    "moniker": "ValidatoREX",
+    "chain_id": "axelar"
+  },
+  {
+    "validator_address": "axelarvaloper1d8j4hv0cd7sdgmta7l66g7hjuzu3f29chfkcvq",
+    "moniker": "FinoaConsensusServices",
+    "chain_id": "axelar"
+  },
+  {
+    "validator_address": "axelarvaloper1j5vxzfx74xlml73e2mz9nn2ultz9jhzxjsakxw",
+    "moniker": "WhisperNode ",
+    "chain_id": "axelar"
+  },
+  {
+    "validator_address": "axelarvaloper1jy0mcnlf45dswzwyapty02et56fr0agqpazm4l",
+    "moniker": "ValiDAO",
+    "chain_id": "axelar"
+  },
+  {
+    "validator_address": "axelarvaloper1u4zhjlm2ajxs0q0nxwcarp00mcn6geh2gvdjhh",
+    "moniker": "Softhouse",
+    "chain_id": "axelar"
+  },
+  {
+    "validator_address": "axelarvaloper143f687gmeg2xjg2vr4lm9n796mt53eplv4qxgv",
+    "moniker": "Flipside",
+    "chain_id": "axelar"
+  },
+  {
+    "validator_address": "axelarvaloper148skr4d5vy6c9728zkf7cff9e5eykgwka3rvm7",
+    "moniker": "4SV",
+    "chain_id": "axelar"
+  },
+  {
+    "validator_address": "axelarvaloper1tvywc4axf4dzcj35sd70s0xhmpqgw66687y9gs",
+    "moniker": "DarkForest1",
+    "chain_id": "axelar"
+  },
+  {
+    "validator_address": "axelarvaloper13s44uvtzf578zjze9eqeh0mnemj60pwn83frcp",
+    "moniker": "P2PORG Validator",
+    "chain_id": "axelar"
+  },
+  {
+    "validator_address": "axelarvaloper1wfgf6kpydg97fg20tj0y2ycfthu9ltjsrypawp",
+    "moniker": "SwigsStaking",
+    "chain_id": "axelar"
+  },
+  {
+    "validator_address": "axelarvaloper1xqrg4kn3nvvplxguqwzvy4zmzjzyjm4nafgjw8",
+    "moniker": "TTT ",
+    "chain_id": "axelar"
+  },
+  {
+    "validator_address": "axelarvaloper1dkfwpeusuwya3lx7cayrlz5pr57r095w0t0674",
+    "moniker": "Terminet",
+    "chain_id": "axelar"
+  },
+  {
+    "validator_address": "axelarvaloper1s0lankh33kprer2l22nank5rvsuh9ksa6utflp",
+    "moniker": "KingSuper",
+    "chain_id": "axelar"
+  },
+  {
+    "validator_address": "axelarvaloper1zv35xpyfzpkyts0vauy3sdtsmacq2t0xgrsmt2",
+    "moniker": "Dora Factory",
+    "chain_id": "axelar"
+  },
+  {
+    "validator_address": "axelarvaloper1v2n7lleh4gn8gjfjhrrelvl4v2saqqlf48rwf5",
+    "moniker": "Simply Staking",
+    "chain_id": "axelar"
+  },
+  {
+    "validator_address": "axelarvaloper108328ue3hazv28cfmwu07d2jdxcu0rymu6vsyf",
+    "moniker": "50 Validator  Airdrop",
+    "chain_id": "axelar"
+  },
+  {
+    "validator_address": "axelarvaloper17t3kpvgz9rkm66l9fqr60uy87flhyz2mwhr80c",
+    "moniker": "JuliF0x",
+    "chain_id": "axelar"
+  },
+  {
+    "validator_address": "axelarvaloper16lhapna7nfm0j3pnwt7tn4lxtx3q7hs43jwz76",
+    "moniker": "Crypto Lion",
+    "chain_id": "axelar"
+  },
+  {
+    "validator_address": "axelarvaloper1ul27g47whcdtemrgyv80cxez7xw5xleg249wkt",
+    "moniker": "ForestStaking",
+    "chain_id": "axelar"
+  },
+  {
+    "validator_address": "axelarvaloper1vrp9yum9pkdc4dr0n8c47trtx8hwwq8j3wxn5e",
+    "moniker": "ARCHIVE VAL",
+    "chain_id": "axelar"
+  },
+  {
+    "validator_address": "axelarvaloper1u75dnmc097wnnxwkzk2dcwvu9ev8e5taagnn2v",
+    "moniker": "Rekt",
+    "chain_id": "axelar"
+  },
+  {
+    "validator_address": "axelarvaloper17jve5zq7pl737kwaksgtuzmarttn7nsjk3x6sn",
+    "moniker": " carbonZERO",
+    "chain_id": "axelar"
+  },
+  {
+    "validator_address": "axelarvaloper1dqhaep5xfk6c60e74ej6jga2fndslcu86mrhtj",
+    "moniker": "OLDMONIKER",
+    "chain_id": "axelar"
+  },
+  {
+    "validator_address": "axelarvaloper14lhu8r0kaufm8qqv4ajwwqlt3narf6mpe6nvjw",
+    "moniker": "Stakemeio",
+    "chain_id": "axelar"
+  },
+  {
+    "validator_address": "axelarvaloper1dalfq0hsp0u4ewaa4gq0zuz7f565xjlwwfagjk",
+    "moniker": "POSTCAPITALIST",
+    "chain_id": "axelar"
+  },
+  {
+    "validator_address": "axelarvaloper1an774ggca4xlmneh45dmet734mn4r0xt5sehwu",
+    "moniker": "MMS",
+    "chain_id": "axelar"
+  },
+  {
+    "validator_address": "axelarvaloper1kzqywfe4duuhdkq2ltd97jrcxn8cgk88msduek",
+    "moniker": "Medium Power",
+    "chain_id": "axelar"
+  },
+  {
+    "validator_address": "axelarvaloper1e2fmzeuagw0d57ku0chm3gs4x9mdhjc5r2xucs",
+    "moniker": "TaiPanich",
+    "chain_id": "axelar"
+  },
+  {
+    "validator_address": "axelarvaloper14zw77sr7su90aunzyjugvx205j6hs5f9uzmrd8",
+    "moniker": "axelarcore1",
+    "chain_id": "axelar"
+  },
+  {
+    "validator_address": "axelarvaloper1xx85yw39q60wwq8uy0nrgvx43dp77myk728pyl",
+    "moniker": "axelarcore4",
+    "chain_id": "axelar"
+  },
+  {
+    "validator_address": "axelarvaloper1wdn07wmxxtyppw6sru5ctwllvx64fgl33l7hpm",
+    "moniker": "axelarcore3",
+    "chain_id": "axelar"
+  },
+  {
+    "validator_address": "axelarvaloper15rr67h55l3qfdsw8gmz6rjrt6t2a84nty2yg74",
+    "moniker": "axelarcore2",
+    "chain_id": "axelar"
+  },
+  {
+    "validator_address": "axelarvaloper1w2pkh5p8a7kznxz97tpdmur48hagavmgjp4z5c",
+    "moniker": "Provenance",
+    "chain_id": "axelar"
+  },
+  {
+    "validator_address": "axelarvaloper1s2dnkgn4fg76esnkkpm08ac49j5zfl37f54vtr",
+    "moniker": "Foundry USA",
+    "chain_id": "axelar"
+  }
+]
