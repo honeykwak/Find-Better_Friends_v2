@@ -1,0 +1,642 @@
+[
+  {
+    "validator_address": "dydxvaloper1y6ncfxx8x9sqec97pehjw0k32slw63850ltjrn",
+    "moniker": "Crosnest",
+    "chain_id": "dydx"
+  },
+  {
+    "validator_address": "dydxvaloper1hv2jdxyfdkfk4vja52dj0p80mk85nmuaklx55e",
+    "moniker": "Nocturnal Labs",
+    "chain_id": "dydx"
+  },
+  {
+    "validator_address": "dydxvaloper1d0t0up9q0xgstdj3ef04tt0hnhpzwgjv5v4ymg",
+    "moniker": "CEXIO Validator",
+    "chain_id": "dydx"
+  },
+  {
+    "validator_address": "dydxvaloper1a9lm6t9qalz53jrp0q6p50q2cxeqnwsh48g3tt",
+    "moniker": "Provalidator",
+    "chain_id": "dydx"
+  },
+  {
+    "validator_address": "dydxvaloper16pj5gljqnqs0ajxakccfjhu05yczp98724qpyn",
+    "moniker": "Chorus One",
+    "chain_id": "dydx"
+  },
+  {
+    "validator_address": "dydxvaloper1tle46v89xuxaggrq7zvun5ye66c580fzhayma3",
+    "moniker": "Allnodes",
+    "chain_id": "dydx"
+  },
+  {
+    "validator_address": "dydxvaloper1mnj3vlwgud7fvfx7tgawmx8k2gd40fy2amarjg",
+    "moniker": "DELIGHT",
+    "chain_id": "dydx"
+  },
+  {
+    "validator_address": "dydxvaloper19f0w9svr905fhefusyx4z8sf83j6et0gvvcrs2",
+    "moniker": "NodeStake",
+    "chain_id": "dydx"
+  },
+  {
+    "validator_address": "dydxvaloper14hz2lp7t8nrzl8esfg3hnj4efj0a53cdz0lzc9",
+    "moniker": "Validation Cloud",
+    "chain_id": "dydx"
+  },
+  {
+    "validator_address": "dydxvaloper1ct3qfgmx74fzkgzehun7ayusjaqv0dyc3ah8y7",
+    "moniker": "Coinage x DAIC",
+    "chain_id": "dydx"
+  },
+  {
+    "validator_address": "dydxvaloper154u397hzffmpk6xyt2fnrx6l0fzwzmplgws2fs",
+    "moniker": "Crypto Learning Club  dYdX Validator",
+    "chain_id": "dydx"
+  },
+  {
+    "validator_address": "dydxvaloper1x20lytyf6zkcrv5edpkfkn8sz578qg5se6j3y3",
+    "moniker": "Informal Systems",
+    "chain_id": "dydx"
+  },
+  {
+    "validator_address": "dydxvaloper199fjq4rnfvz24cktl8cervx8h8e90ruk3yrrdn",
+    "moniker": "CryptoCrew X Defi Dojo",
+    "chain_id": "dydx"
+  },
+  {
+    "validator_address": "dydxvaloper1u0exa7dqlsgvfje9sg0emxrmtdmvakp7d0f697",
+    "moniker": "Interstellar Lounge ",
+    "chain_id": "dydx"
+  },
+  {
+    "validator_address": "dydxvaloper1w44vfk3jzh69p7yawwqcaazuxz944ve95qpaf8",
+    "moniker": " Silk Nodes",
+    "chain_id": "dydx"
+  },
+  {
+    "validator_address": "dydxvaloper1u3lzafmew5w99829r6cnvf2s5yevpwy226f088",
+    "moniker": "Citadelone",
+    "chain_id": "dydx"
+  },
+  {
+    "validator_address": "dydxvaloper15wphegl8esn7r2rgj9j3xf870v78lxg8yfjn95",
+    "moniker": "ECO Stake ",
+    "chain_id": "dydx"
+  },
+  {
+    "validator_address": "dydxvaloper1rqhxemv6e5x43uny8qdyq78zneuk49pe5gkltz",
+    "moniker": "PRO Delegators",
+    "chain_id": "dydx"
+  },
+  {
+    "validator_address": "dydxvaloper1ml44cenapnawcn4xy3w36jce0rg78dm8ajvypn",
+    "moniker": "Meria",
+    "chain_id": "dydx"
+  },
+  {
+    "validator_address": "dydxvaloper1gffkd68xcnfpzcsplf0fsuetxkysunud6a900w",
+    "moniker": "Ledger by Meria",
+    "chain_id": "dydx"
+  },
+  {
+    "validator_address": "dydxvaloper1jvct2ck9hptwyzrr0umfvwxed7n9nhhj0wfmdf",
+    "moniker": "Keplr",
+    "chain_id": "dydx"
+  },
+  {
+    "validator_address": "dydxvaloper1u9xeaqdjz3kky2ymdhdsn0ra5uy9tc3elj2jte",
+    "moniker": "Kiln",
+    "chain_id": "dydx"
+  },
+  {
+    "validator_address": "dydxvaloper1vl5ty47uwpfv4mcutwv4zam09mvvvdgy09n0l5",
+    "moniker": "Cosmostation",
+    "chain_id": "dydx"
+  },
+  {
+    "validator_address": "dydxvaloper1fs0t34g628xdqc8alfefnadq2x3qawt8g88mav",
+    "moniker": "Luganodes",
+    "chain_id": "dydx"
+  },
+  {
+    "validator_address": "dydxvaloper1kmt4qun5wj6qays8hpkp3ea2anvq3m704pffcl",
+    "moniker": "P2PORG  P2P Validator",
+    "chain_id": "dydx"
+  },
+  {
+    "validator_address": "dydxvaloper1mklf4k26dff0vueyqy2rvqhgjjkvdzam6p4na0",
+    "moniker": "InfStones",
+    "chain_id": "dydx"
+  },
+  {
+    "validator_address": "dydxvaloper1zts523wqvtrhd2a9mznfc83msgs6mgwczvj7kw",
+    "moniker": "strangelove",
+    "chain_id": "dydx"
+  },
+  {
+    "validator_address": "dydxvaloper1rlz9vehk0e6d72u4gvghtfee0274lmuwumlvj8",
+    "moniker": "Dora Factory",
+    "chain_id": "dydx"
+  },
+  {
+    "validator_address": "dydxvaloper160n4rwm854v06ppkly2pt0zc9rpwlm5y2gjyqf",
+    "moniker": "Enigma",
+    "chain_id": "dydx"
+  },
+  {
+    "validator_address": "dydxvaloper1j4ljutnh66r55a29jydgca7pfmhd40e3nlcfa4",
+    "moniker": "    Kingnodes ",
+    "chain_id": "dydx"
+  },
+  {
+    "validator_address": "dydxvaloper1qe8uuf5x69c526h4nzxwv4ltftr73v7qvjutn2",
+    "moniker": "Stakecito",
+    "chain_id": "dydx"
+  },
+  {
+    "validator_address": "dydxvaloper19ylcqyrgsejrghujsf6utrgw69nukw9q0xe0sj",
+    "moniker": "NodesGuru",
+    "chain_id": "dydx"
+  },
+  {
+    "validator_address": "dydxvaloper1luw8ynup92yp6cn8ktdegct7ptf3d64807vwvx",
+    "moniker": "Skycatcher",
+    "chain_id": "dydx"
+  },
+  {
+    "validator_address": "dydxvaloper1mlzzahnvpc8cr7hk4l00ed5c3rvsjsd3aspyc7",
+    "moniker": "Nodeplus",
+    "chain_id": "dydx"
+  },
+  {
+    "validator_address": "dydxvaloper1ej2es5fjztqjcd4pwa0zyvaevtjd2y5w04dz0c",
+    "moniker": "Frens ",
+    "chain_id": "dydx"
+  },
+  {
+    "validator_address": "dydxvaloper1a4mcl5d6h2ak4hn6nj8vg8vtew6t3mnwzd4sqn",
+    "moniker": "coinhallorg ",
+    "chain_id": "dydx"
+  },
+  {
+    "validator_address": "dydxvaloper1fhyl2gpql00jgv798tyfjq8x2zdedaxcuaan8t",
+    "moniker": "XMG Capital",
+    "chain_id": "dydx"
+  },
+  {
+    "validator_address": "dydxvaloper1kuyezvy89hcr96q597ftuc4z03hrcftu5jy2pv",
+    "moniker": "OWALLET",
+    "chain_id": "dydx"
+  },
+  {
+    "validator_address": "dydxvaloper1cpz0jtj6rkezzs7z8k5gy6py05sxdkmyvggvvh",
+    "moniker": "  RHINO",
+    "chain_id": "dydx"
+  },
+  {
+    "validator_address": "dydxvaloper1mwhwf9rqh64ktr8t8xnz37nhg7vvy42ec56jwe",
+    "moniker": "Imperatorco",
+    "chain_id": "dydx"
+  },
+  {
+    "validator_address": "dydxvaloper1he9yn4jhuq50vtf95ncv9rvplnqug8w9yw8dwc",
+    "moniker": "DragonStake ",
+    "chain_id": "dydx"
+  },
+  {
+    "validator_address": "dydxvaloper15xgxv2j45uc4er8z9tfz5m0f0e74ymv6xj9l9d",
+    "moniker": "polkachucom",
+    "chain_id": "dydx"
+  },
+  {
+    "validator_address": "dydxvaloper1psha7k07meue9arj0u03n8zl2vxlgm2mugd56w",
+    "moniker": "UNSTAKEDisablingValidator",
+    "chain_id": "dydx"
+  },
+  {
+    "validator_address": "dydxvaloper1ynz8v474ghzhl5ms86mzw0r5mcga3klh2tdw5l",
+    "moniker": "Blockdaemon",
+    "chain_id": "dydx"
+  },
+  {
+    "validator_address": "dydxvaloper1zzk3xy5cpxp9cewn2kgf2y9fp9pcwul9mhs05f",
+    "moniker": "BHarvest",
+    "chain_id": "dydx"
+  },
+  {
+    "validator_address": "dydxvaloper16cwntnlgc9ks0vvhukv86e7cfy9tu39wpps3sj",
+    "moniker": " ",
+    "chain_id": "dydx"
+  },
+  {
+    "validator_address": "dydxvaloper1ywm48fet6n4jgrenl6dsuzprrgxv3pd89n97zt",
+    "moniker": "Pareto",
+    "chain_id": "dydx"
+  },
+  {
+    "validator_address": "dydxvaloper1pzawntqfr4j82wzkwsm5y3ypzyk3hsswkss4cd",
+    "moniker": "Bit Cat",
+    "chain_id": "dydx"
+  },
+  {
+    "validator_address": "dydxvaloper1c9nyje8pncg5jfxp5n0fnmz5secznz9h6ng0cx",
+    "moniker": "Tan",
+    "chain_id": "dydx"
+  },
+  {
+    "validator_address": "dydxvaloper1ppvlzjdjqkhc3fltxdfg9ey5gzrw0za070gr5j",
+    "moniker": "Sunsetting please redelegate Forbole",
+    "chain_id": "dydx"
+  },
+  {
+    "validator_address": "dydxvaloper168qpgpg6srrflnsz860gqpdyw9jdztl6aury5u",
+    "moniker": "NodeProviders",
+    "chain_id": "dydx"
+  },
+  {
+    "validator_address": "dydxvaloper1z29qzgp9pxt69462mk26gyc82k2sdxg2aac4wu",
+    "moniker": "Neuler",
+    "chain_id": "dydx"
+  },
+  {
+    "validator_address": "dydxvaloper1zhyan2t9w5z7yw20l9e97zc030d2ddq4awdyys",
+    "moniker": "Cosmic Nexus",
+    "chain_id": "dydx"
+  },
+  {
+    "validator_address": "dydxvaloper1grmf25yqqurzsewdazamxy885r5r6rrmt22y0v",
+    "moniker": "Staker Space",
+    "chain_id": "dydx"
+  },
+  {
+    "validator_address": "dydxvaloper1zwa2fq7lygw9hsh50l4glp9f53uv6rg5kt0duv",
+    "moniker": "NODERSTEAM",
+    "chain_id": "dydx"
+  },
+  {
+    "validator_address": "dydxvaloper1yksg84vkux8ex37s6e24ac66x4k432jrr5et9c",
+    "moniker": "SpotOnChainai",
+    "chain_id": "dydx"
+  },
+  {
+    "validator_address": "dydxvaloper180pv8mahh2yk4kzxmnvcx7l9f3es4a5n6x7c8s",
+    "moniker": "BinanceNode",
+    "chain_id": "dydx"
+  },
+  {
+    "validator_address": "dydxvaloper1rrpx7eneqe5jewkrz8sp9kg8pfsq2a9gl6pqcw",
+    "moniker": "F5 Nodes",
+    "chain_id": "dydx"
+  },
+  {
+    "validator_address": "dydxvaloper1r8srurperks9cgwy0untta4cl6xhu6swrxpv7w",
+    "moniker": "AUDITone",
+    "chain_id": "dydx"
+  },
+  {
+    "validator_address": "dydxvaloper1fjmazadgdl3u9jmkkvd2pdsfxddey9dgtgm2wy",
+    "moniker": "backup03 Operated by Imperatorco",
+    "chain_id": "dydx"
+  },
+  {
+    "validator_address": "dydxvaloper1y29mkku4zqz8phrxc8zgu7jfnw504leqdwvzzg",
+    "moniker": "Ex Machina",
+    "chain_id": "dydx"
+  },
+  {
+    "validator_address": "dydxvaloper1et2kxktzr6tav65uhrxsyr8gx82xvan6gl78xd",
+    "moniker": "Polychain",
+    "chain_id": "dydx"
+  },
+  {
+    "validator_address": "dydxvaloper1jgy6tqa9nrmhl52xrelpvwnupgzehjr7rjnp33",
+    "moniker": "Kalia Network",
+    "chain_id": "dydx"
+  },
+  {
+    "validator_address": "dydxvaloper1n3mhyp9fvcmuu8l0q8qvjy07x0rql8q4n64dpr",
+    "moniker": "0basevc",
+    "chain_id": "dydx"
+  },
+  {
+    "validator_address": "dydxvaloper140l6y2gp3gxvay6qtn70re7z2s0gn57zq7tkd8",
+    "moniker": " LavenderFive Nodes ",
+    "chain_id": "dydx"
+  },
+  {
+    "validator_address": "dydxvaloper1dhjg0k9zc2gualfzlmp395tvq2y706z7kryxgg",
+    "moniker": "HashKey Cloud",
+    "chain_id": "dydx"
+  },
+  {
+    "validator_address": "dydxvaloper1m7cz0m5mmrc9j5crxjjk5p39nv4kyednjz8c7e",
+    "moniker": "DACM",
+    "chain_id": "dydx"
+  },
+  {
+    "validator_address": "dydxvaloper1tl75dqhdgm0akll92aaq8cufez0hn4kqrn4zpl",
+    "moniker": "santorini",
+    "chain_id": "dydx"
+  },
+  {
+    "validator_address": "dydxvaloper1lzyfjgmj68zdu7ujydte4qlmj9wq5dr38pyx3x",
+    "moniker": "btcap",
+    "chain_id": "dydx"
+  },
+  {
+    "validator_address": "dydxvaloper1z97qlmmxhgraspwwgx7h7mppm9mhg0wkcl20qd",
+    "moniker": "QuantNode",
+    "chain_id": "dydx"
+  },
+  {
+    "validator_address": "dydxvaloper1yp0fhymycmu3vpj6z402r3v6yvjc3j49q20vfz",
+    "moniker": "Shutting down Goodbye for now",
+    "chain_id": "dydx"
+  },
+  {
+    "validator_address": "dydxvaloper1fdrmapvpckl3jeeleyjykxfznmv5hy6gq93pk5",
+    "moniker": "juba",
+    "chain_id": "dydx"
+  },
+  {
+    "validator_address": "dydxvaloper122weztvqllpd4vzqshj7k8sadmkylva7yf8zme",
+    "moniker": "Golden Ratio Staking",
+    "chain_id": "dydx"
+  },
+  {
+    "validator_address": "dydxvaloper17r0cp9zrtkvzlz7a2r09gmdxwqfyje98kz6zs0",
+    "moniker": "Kahuna",
+    "chain_id": "dydx"
+  },
+  {
+    "validator_address": "dydxvaloper1gf9yvztyvnc3aqrkjd8hfnaf8pk56sl7mzfage",
+    "moniker": "  AutoStake  StakeDrops",
+    "chain_id": "dydx"
+  },
+  {
+    "validator_address": "dydxvaloper1d9e68e7glce5pehh8qk0gcx9l06tjeh0naz0r0",
+    "moniker": "Figment",
+    "chain_id": "dydx"
+  },
+  {
+    "validator_address": "dydxvaloper1k2mlt4akhddh8gz9r3227ruuaestgdczx60vqk",
+    "moniker": "0 Fee until 2025  Cosmic Validator",
+    "chain_id": "dydx"
+  },
+  {
+    "validator_address": "dydxvaloper1c9ye54e3pzwm3e0zpdlel6pnavrj9qqv2ttvgk",
+    "moniker": "StakeWithUs",
+    "chain_id": "dydx"
+  },
+  {
+    "validator_address": "dydxvaloper1r227t4qx8muzshsl862n4cgdswsesyd0pp42un",
+    "moniker": "TTT ",
+    "chain_id": "dydx"
+  },
+  {
+    "validator_address": "dydxvaloper1s7zqmy708qhy4m7j3vrmydj2d0zr4wdf9u9kq0",
+    "moniker": "BwareLabs",
+    "chain_id": "dydx"
+  },
+  {
+    "validator_address": "dydxvaloper1jxv0u20scum4trha72c7ltfgfqef6nsc7dvalf",
+    "moniker": "Ping",
+    "chain_id": "dydx"
+  },
+  {
+    "validator_address": "dydxvaloper1sstrskpg70tumvwsaldwym2dgs0flj67vsfx4r",
+    "moniker": "StableLab",
+    "chain_id": "dydx"
+  },
+  {
+    "validator_address": "dydxvaloper1ql40pjftdwl6qtmgk0fn0r02spvss96enayy3q",
+    "moniker": "purple fog",
+    "chain_id": "dydx"
+  },
+  {
+    "validator_address": "dydxvaloper1t8hjjca8kecjtuhs2qy83maurj78fq2z5c44z5",
+    "moniker": "Smart Stake   5 max",
+    "chain_id": "dydx"
+  },
+  {
+    "validator_address": "dydxvaloper1dm25afltds6v8te6m2lt6p0t3m4ygah307p7qn",
+    "moniker": "Everstake",
+    "chain_id": "dydx"
+  },
+  {
+    "validator_address": "dydxvaloper1s0lankh33kprer2l22nank5rvsuh9ksaj5nkdf",
+    "moniker": "KingSuper",
+    "chain_id": "dydx"
+  },
+  {
+    "validator_address": "dydxvaloper1z0sjs7vr8s7gy7je3dzyn8hngdkdd9g322d5cp",
+    "moniker": "DSRV",
+    "chain_id": "dydx"
+  },
+  {
+    "validator_address": "dydxvaloper1v67nld0mc6ll2y66cttls2qpuwnx5704yu43l9",
+    "moniker": "Coinbase",
+    "chain_id": "dydx"
+  },
+  {
+    "validator_address": "dydxvaloper15682szf3cmznkg824cm8kqtxedgazjdqlkyyt0",
+    "moniker": "Validatriumcom",
+    "chain_id": "dydx"
+  },
+  {
+    "validator_address": "dydxvaloper15fk46zc7w0rape5f52up04jntg8jrvgezh3xzg",
+    "moniker": "LTP",
+    "chain_id": "dydx"
+  },
+  {
+    "validator_address": "dydxvaloper1ujey02m63n5hnyj2shrd2c4ak64jxcsnxrsexm",
+    "moniker": "StakeCraft",
+    "chain_id": "dydx"
+  },
+  {
+    "validator_address": "dydxvaloper1c4u24hycep9mzp6498ra9j2lm58v2y047s3za9",
+    "moniker": "01node",
+    "chain_id": "dydx"
+  },
+  {
+    "validator_address": "dydxvaloper19wsh3g3d2vnx68zym4wpw0et2xnfwagzj5454u",
+    "moniker": "Swiss Staking",
+    "chain_id": "dydx"
+  },
+  {
+    "validator_address": "dydxvaloper1et3h08wt6y9h0zjkp6jxpr42hm58avcdq9wh26",
+    "moniker": "A41",
+    "chain_id": "dydx"
+  },
+  {
+    "validator_address": "dydxvaloper1lmly4sre7jkwt2dsshfqfvx9c9424pdqwptx3y",
+    "moniker": "KubikStaking",
+    "chain_id": "dydx"
+  },
+  {
+    "validator_address": "dydxvaloper14859mvsex7xk36je47acwf3cu4cv5jfgkvuc50",
+    "moniker": "Multiplex",
+    "chain_id": "dydx"
+  },
+  {
+    "validator_address": "dydxvaloper1ddle9tczl87gsvmeva3c48nenyng4n566mmu4r",
+    "moniker": "DO NOT DELEGATE",
+    "chain_id": "dydx"
+  },
+  {
+    "validator_address": "dydxvaloper1u6t30wly7kffm0kjtt9p963zcm73zccsxudh20",
+    "moniker": "AiC DAO",
+    "chain_id": "dydx"
+  },
+  {
+    "validator_address": "dydxvaloper1grjeh0c5vy6g4fk63tkc7wsux44rzzpx3etmca",
+    "moniker": "blockscape",
+    "chain_id": "dydx"
+  },
+  {
+    "validator_address": "dydxvaloper1ku0vt2rzcdecqcf703vv8665sanz798p6j6zj0",
+    "moniker": "Decommissioned  Delegate Away",
+    "chain_id": "dydx"
+  },
+  {
+    "validator_address": "dydxvaloper17krtmh9jm32glkcavr8vmthwv6wlkd2cxnskk9",
+    "moniker": "Orbital Command",
+    "chain_id": "dydx"
+  },
+  {
+    "validator_address": "dydxvaloper14mf09ghphuygft6xwzet0tnclcjypxuw7d0jl4",
+    "moniker": "Leap Wallet",
+    "chain_id": "dydx"
+  },
+  {
+    "validator_address": "dydxvaloper1xwk95hxuude0zz4syvymlkrhjmjkqga7qx6w2r",
+    "moniker": "Decommissioned",
+    "chain_id": "dydx"
+  },
+  {
+    "validator_address": "dydxvaloper17h2x3j7u44qkrq0sk8ul0r2qr440rwgjl6yg0z",
+    "moniker": "FreshSTAKING",
+    "chain_id": "dydx"
+  },
+  {
+    "validator_address": "dydxvaloper1mynf0gkmkzscq39d9et4hcrxmec7levgf6tex0",
+    "moniker": "Wave",
+    "chain_id": "dydx"
+  },
+  {
+    "validator_address": "dydxvaloper103708l5d6fd5vpwpjl59t36mkzs84pz8c27l29",
+    "moniker": "REDELEGATE",
+    "chain_id": "dydx"
+  },
+  {
+    "validator_address": "dydxvaloper1u390jhcr6skw6uxfjlm5ccupy3kwg973wz0u8c",
+    "moniker": "StakingCabin",
+    "chain_id": "dydx"
+  },
+  {
+    "validator_address": "dydxvaloper1vlyy766sy57w7p43whav3fkgmwqzkspxft9gy6",
+    "moniker": "Stakin",
+    "chain_id": "dydx"
+  },
+  {
+    "validator_address": "dydxvaloper156rvfa7e557j8427mhzjhflf9aakmt35jd4f6m",
+    "moniker": "genznodes",
+    "chain_id": "dydx"
+  },
+  {
+    "validator_address": "dydxvaloper15004ysvmqnqzkvt7x6s4cd53flmmvgfvyqk90h",
+    "moniker": "Interbloc",
+    "chain_id": "dydx"
+  },
+  {
+    "validator_address": "dydxvaloper1670dvuv348eynr9lsmdrhqu3g7vpmzx9xjq7n4",
+    "moniker": "redelegate",
+    "chain_id": "dydx"
+  },
+  {
+    "validator_address": "dydxvaloper1uljla4879wfk5p3f23ll4ptgxldvlv7rn06ntp",
+    "moniker": "Ztakeorg  decommissioned",
+    "chain_id": "dydx"
+  },
+  {
+    "validator_address": "dydxvaloper1hap454jxj4g6w5y99twfj9nqy42zvjmhdkqy3l",
+    "moniker": "Lydia Labs",
+    "chain_id": "dydx"
+  },
+  {
+    "validator_address": "dydxvaloper10ud7hu7p0cckgxf5x3zg46eqz4uuhxf09h3pe2",
+    "moniker": "StakeLab",
+    "chain_id": "dydx"
+  },
+  {
+    "validator_address": "dydxvaloper1n56zk7kmv40g5zrz5psx7yysa0gk86mfjggmvx",
+    "moniker": "Tan Old",
+    "chain_id": "dydx"
+  },
+  {
+    "validator_address": "dydxvaloper1symf474wnypes2d3mecllqk6l26rwz8mqpv2m9",
+    "moniker": "BlockHunters ",
+    "chain_id": "dydx"
+  },
+  {
+    "validator_address": "dydxvaloper1w7zmxnra5ckhzs3xhrxyneu0d8cutxhym2cqql",
+    "moniker": "Tessellated",
+    "chain_id": "dydx"
+  },
+  {
+    "validator_address": "dydxvaloper1hus2224xn6a7zhwhdy7eudcralqw7lvdczjpz5",
+    "moniker": "ByteBee",
+    "chain_id": "dydx"
+  },
+  {
+    "validator_address": "dydxvaloper1g6aehvj8yq406h7a7eqgxjnlp5em46mknk3ufg",
+    "moniker": " kjnodescom ",
+    "chain_id": "dydx"
+  },
+  {
+    "validator_address": "dydxvaloper1j6wqgnzyslwwhqv3ylceavk0kx4kk50jrdmt34",
+    "moniker": "Notional",
+    "chain_id": "dydx"
+  },
+  {
+    "validator_address": "dydxvaloper1xjkn8tns3ku8zke8d976qlhux5x9rppv0dj2n3",
+    "moniker": "NodeValidator  DYDX",
+    "chain_id": "dydx"
+  },
+  {
+    "validator_address": "dydxvaloper1f4gntzm5cygqtc988syynfyqjfyz5vf4g32xp0",
+    "moniker": "POSTHUMANDVS",
+    "chain_id": "dydx"
+  },
+  {
+    "validator_address": "dydxvaloper1rt0wwylfqtkq3dsx82u6gkn4tkugsfkt20qvmy",
+    "moniker": "silent",
+    "chain_id": "dydx"
+  },
+  {
+    "validator_address": "dydxvaloper1d8lt7ddnhq9aqjj399e29d275m4vkgcwrnmwua",
+    "moniker": "Futura Meridian",
+    "chain_id": "dydx"
+  },
+  {
+    "validator_address": "dydxvaloper1v56llmcc3xsy63amwv77t7asyr6dnsrfq08a0c",
+    "moniker": "Vault Staking",
+    "chain_id": "dydx"
+  },
+  {
+    "validator_address": "dydxvaloper145e2gf0waxds2aq78rt5f4w9lak3dsgw5sdwvn",
+    "moniker": "Stake Frites  ",
+    "chain_id": "dydx"
+  },
+  {
+    "validator_address": "dydxvaloper14f2h05uy7kjxn7lu0h48anyfuz6jkdx8nqtxq2",
+    "moniker": "Cosmos Spaces",
+    "chain_id": "dydx"
+  },
+  {
+    "validator_address": "dydxvaloper1m5df04g2alkn6qe6cxkgnesv7qx8q9rcwxfv2g",
+    "moniker": "Blockshard",
+    "chain_id": "dydx"
+  }
+]
