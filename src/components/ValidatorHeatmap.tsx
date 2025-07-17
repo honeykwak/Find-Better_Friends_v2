@@ -330,7 +330,7 @@ export default function ValidatorHeatmap() {
           <div className="flex items-center bg-gray-100 rounded-lg p-1">
             <button 
               onClick={() => setValidatorSortKey('voteCount')} 
-              className={`flex items-center gap-1 px-3 py-2 text-xs font-medium rounded-md ${validatorSortKey === 'voteCount' ? 'bg-white text-gray-900 shadow-sm' : 'text-gray-600'}`}
+              className={`flex items-center gap-1 px-3 py-2 text-xs font-medium rounded-md whitespace-nowrap ${validatorSortKey === 'voteCount' ? 'bg-white text-gray-900 shadow-sm' : 'text-gray-600'}`}
               title="Sort by vote participation"
             >
               <ArrowDownUp className="w-3 h-3" />
@@ -338,7 +338,7 @@ export default function ValidatorHeatmap() {
             </button>
             <button 
               onClick={() => setValidatorSortKey('name')} 
-              className={`flex items-center gap-1 px-3 py-2 text-xs font-medium rounded-md ${validatorSortKey === 'name' ? 'bg-white text-gray-900 shadow-sm' : 'text-gray-600'}`}
+              className={`flex items-center gap-1 px-3 py-2 text-xs font-medium rounded-md whitespace-nowrap ${validatorSortKey === 'name' ? 'bg-white text-gray-900 shadow-sm' : 'text-gray-600'}`}
               title="Sort by name"
             >
               <CaseSensitive className="w-3 h-3" />
@@ -346,7 +346,7 @@ export default function ValidatorHeatmap() {
             </button>
             <button 
               onClick={() => setValidatorSortKey('votingPower')} 
-              className={`flex items-center gap-1 px-3 py-2 text-xs font-medium rounded-md ${validatorSortKey === 'votingPower' ? 'bg-white text-gray-900 shadow-sm' : 'text-gray-600'}`}
+              className={`flex items-center gap-1 px-3 py-2 text-xs font-medium rounded-md whitespace-nowrap ${validatorSortKey === 'votingPower' ? 'bg-white text-gray-900 shadow-sm' : 'text-gray-600'}`}
               title="Sort by voting power"
             >
               <Signal className="w-3 h-3" />

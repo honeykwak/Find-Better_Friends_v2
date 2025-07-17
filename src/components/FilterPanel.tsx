@@ -101,7 +101,7 @@ const ApprovalRateSlider = () => {
 
   return (
     <div>
-      <label className="block text-sm font-medium text-gray-700 mb-2">Approval Rate</label>
+      <label className="block text-sm font-medium text-gray-700 mb-2">Yes Rate</label>
       <div className="relative h-8" ref={sliderRef}>
         <div className="absolute top-1/2 -translate-y-1/2 w-full h-1 bg-gray-200 rounded-full">
           <div
@@ -311,14 +311,15 @@ export default function FilterPanel() {
 
   return (
     <div className="w-80 h-full bg-white border-r border-gray-200 flex flex-col">
-      <div className="flex-1 overflow-y-auto p-4 space-y-3">
-        <div className="flex items-center justify-between mb-3">
-          <h2 className="text-lg font-semibold text-gray-900 flex items-center gap-2">Filters</h2>
-          <button onClick={resetFilters} className="flex items-center gap-1 px-2 py-1 text-xs text-gray-600 hover:text-gray-900 hover:bg-gray-100 rounded"><RotateCcw className="w-3 h-3" />Reset</button>
-        </div>
-        <div className="mb-4">
-          <label className="block text-sm font-medium text-gray-700 mb-2">Chain</label>
-          <div className="relative" ref={chainDropdownRef}>
+      <div className="flex-1 overflow-y-auto p-4 space-y-6"> {/* Increased space-y for better separation */}
+
+        {/* Chain Section */}
+        <div>
+          <div className="flex items-center justify-between mb-3">
+            <h3 className="text-lg font-semibold text-gray-900">Chain</h3>
+            <button onClick={resetFilters} className="flex items-center gap-1 px-2 py-1 text-xs text-gray-600 hover:text-gray-900 hover:bg-gray-100 rounded"><RotateCcw className="w-3 h-3" />Reset</button>
+          </div>
+          <div className="relative mb-4" ref={chainDropdownRef}>
             <button onClick={() => setShowChainDropdown(!showChainDropdown)} className="w-full flex items-center justify-between px-3 py-2 text-sm bg-white border border-gray-300 rounded-md">
               <div className="flex items-center gap-2">
                 {selectedChain !== 'all' && <Image src={getChainLogo(selectedChain)} alt={selectedChain} width={16} height={16} className="rounded-full" />}
@@ -328,34 +329,42 @@ export default function FilterPanel() {
             {showChainDropdown && <div className="absolute top-full left-0 right-0 mt-1 bg-white border rounded-md shadow-lg z-50 max-h-48 overflow-y-auto">{chains.map(chain => <button key={chain} onClick={() => { setSelectedChain(chain); setShowChainDropdown(false); }} className="w-full flex items-center gap-2 px-3 py-2 text-sm text-left hover:bg-gray-50"><Image src={getChainLogo(chain)} alt={chain} width={16} height={16} className="rounded-full" /><span className="capitalize">{chain}</span></button>)}</div>}
           </div>
         </div>
-        <div className="mb-4">
-          <ApprovalRateSlider />
-        </div>
-        <div className="mb-4">
-          <label className="block text-sm font-medium text-gray-700 mb-2">Visualization Mode</label>
-          <div className="flex bg-gray-100 rounded-lg p-1">
-            <button onClick={() => handleVisualizationModeChange('passRate')} className={`flex-1 px-3 py-2 text-xs font-medium rounded-md ${categoryVisualizationMode === 'passRate' ? 'bg-white text-gray-900 shadow-sm' : 'text-gray-600'}`}>Pass Rate</button>
-            <button onClick={() => handleVisualizationModeChange('voteCount')} className={`flex-1 px-3 py-2 text-xs font-medium rounded-md ${categoryVisualizationMode === 'voteCount' ? 'bg-white text-gray-900 shadow-sm' : 'text-gray-600'}`}>Vote Count</button>
-          </div>
-        </div>
-        <div className="mb-4">
-          <h3 className="text-sm font-medium text-gray-900 mb-2">Categories</h3>
-          <div className="space-y-3">
-            {filteredCategoryHierarchy.map(category => {
-              const isHovered = hoveredCategory === category.name
-              const isCategorySelected = selectedCategories.includes(category.name)
-              const selectedTopicsInCategory = selectedTopics.filter(topic => category.topics.some(t => t.name === topic))
-              const hasSelectedTopics = selectedTopicsInCategory.length > 0
-              const allTopicsSelected = selectedTopicsInCategory.length === category.topics.length
-              return <CategoryItem key={category.name} category={category} isHovered={isHovered} isCategorySelected={isCategorySelected} selectedTopicsInCategory={selectedTopicsInCategory} hasSelectedTopics={hasSelectedTopics} allTopicsSelected={allTopicsSelected} categoryVisualizationMode={categoryVisualizationMode} onCategoryMouseEnter={handleCategoryMouseEnter} onCategoryMouseLeave={handleCategoryMouseLeave} onToggleCategoryWithTopics={toggleCategoryWithTopics} onTopicToggle={handleTopicToggle} />
-            })}
-          </div>
-        </div>
+
+        {/* Proposal Section */}
         <div>
-          <label className="block text-sm font-medium text-gray-700 mb-2">Search Validator</label>
-          <div className="relative">
-            <Search className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400 w-4 h-4" />
-            <input type="text" placeholder="Type validator name..." value={searchTerm} onChange={e => setSearchTerm(e.target.value)} className="w-full pl-10 pr-4 py-2 text-sm border border-gray-300 rounded-md" />
+          <h3 className="text-lg font-semibold text-gray-900 mb-3">Proposal</h3>
+          <div className="mb-4">
+            <ApprovalRateSlider />
+          </div>
+          <div>
+            <div className="flex items-center justify-between mb-2">
+              <h3 className="text-sm font-medium text-gray-900">Categories</h3>
+              <div className="flex bg-gray-100 rounded-lg p-0.5"> {/* Reduced padding */}
+                <button onClick={() => handleVisualizationModeChange('passRate')} className={`flex-1 px-2 py-1 text-xs font-medium rounded-md whitespace-nowrap ${categoryVisualizationMode === 'passRate' ? 'bg-white text-gray-900 shadow-sm' : 'text-gray-600'}`}>Pass Rate</button>
+                <button onClick={() => handleVisualizationModeChange('voteCount')} className={`flex-1 px-2 py-1 text-xs font-medium rounded-md whitespace-nowrap ${categoryVisualizationMode === 'voteCount' ? 'bg-white text-gray-900 shadow-sm' : 'text-gray-600'}`}>Vote Count</button>
+              </div>
+            </div>
+            <div className="space-y-3">
+              {filteredCategoryHierarchy.map(category => {
+                const isHovered = hoveredCategory === category.name
+                const isCategorySelected = selectedCategories.includes(category.name)
+                const selectedTopicsInCategory = selectedTopics.filter(topic => category.topics.some(t => t.name === topic))
+                const hasSelectedTopics = selectedTopicsInCategory.length > 0
+                const allTopicsSelected = selectedTopicsInCategory.length === category.topics.length
+                return <CategoryItem key={category.name} category={category} isHovered={isHovered} isCategorySelected={isCategorySelected} selectedTopicsInCategory={selectedTopicsInCategory} hasSelectedTopics={hasSelectedTopics} allTopicsSelected={allTopicsSelected} categoryVisualizationMode={categoryVisualizationMode} onCategoryMouseEnter={handleCategoryMouseEnter} onCategoryMouseLeave={handleCategoryMouseLeave} onToggleCategoryWithTopics={toggleCategoryWithTopics} onTopicToggle={handleTopicToggle} />
+              })}
+            </div>
+          </div>
+        </div>
+
+        {/* Validator Section */}
+        <div>
+          <h3 className="text-lg font-semibold text-gray-900 mb-3">Validator</h3>
+          <div className="mb-4">
+            <div className="relative">
+              <Search className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400 w-4 h-4" />
+              <input type="text" placeholder="Type validator name..." value={searchTerm} onChange={e => setSearchTerm(e.target.value)} className="w-full pl-10 pr-4 py-2 text-sm border border-gray-300 rounded-md" />
+            </div>
           </div>
         </div>
       </div>
