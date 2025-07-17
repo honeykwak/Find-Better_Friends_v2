@@ -1,0 +1,1562 @@
+[
+  {
+    "validator_address": "osmovaloper1fhqe8f7ej77xnev0gvljkl2lm95hlzgd6pky70",
+    "moniker": "Kalia Network",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper14uazph6xq6etsmz5wncz0l5hruualapm06jh8g",
+    "moniker": "NodesGuru",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper1et4d3he94fs5u98kzms7s0fjhpaf5hx7q6fuy5",
+    "moniker": "Margined Protocol",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper122yaxffys6rmv03nwwkmn3rvr5skzxl9lry2a5",
+    "moniker": "Stakewollecom 100 Insurance",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper1ek7jzycywst6uxact9l4r8wq5pnt5xcdduj5x9",
+    "moniker": "BlueStake   100 insurance",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper1ehkfl7palwrh6w2hhr2yfrgrq8jetguct4ddyl",
+    "moniker": "KalpaTech",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper1ej2es5fjztqjcd4pwa0zyvaevtjd2y5w37wr9t",
+    "moniker": "Frens ",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper1uxn3xw4xzyvu3xka0fr7krsfzyp8af3eyyurzh",
+    "moniker": "S16 Research Ventures",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper1yp8qwkfs964pkg3rge3k6ree2e6lrttgc8aqzn",
+    "moniker": "coinhallorg",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper1e20nfplac6cp5mga25a3ujvcgly3mfu73e6scn",
+    "moniker": "Mendel",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper1ddle9tczl87gsvmeva3c48nenyng4n56yscals",
+    "moniker": "Vitwit Previously Witval",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper1mt33s7d3mdshunkt37tkugumq3uxfw2wcvrspk",
+    "moniker": "DELIGHT",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper1n56swda49evz92zhcw2xc8esx6kzt8qm62hkep",
+    "moniker": "Tessellated",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper10jm8fvdyqlj78w0j5nawc76wsn4pqmdxgzgh4c",
+    "moniker": "NosNode",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper14fpkylq7y7eenakv0h56yu8jh922p9uvyeugty",
+    "moniker": "Dora Factory",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper1japz8jxqcd7zlrcavd53l8vs2w6ukufrju7lyk",
+    "moniker": "HFA X Defi Dojo",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper13tk45jkxgf7w0nxquup3suwaz2tx483xe832ge",
+    "moniker": "BronBro",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper16s96n9k9zztdgjy8q4qcxp4hn7ww98qk5wjn0s",
+    "moniker": "Oni ",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper1md9f5524vtmrn64lyv2pdfn7cnkjkklf44vtjz",
+    "moniker": "WhisperNode ",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper1u5v0m74mql5nzfx2yh43s2tke4mvzghr6m2n5t",
+    "moniker": "ECO Stake ",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper1gy0nyn2hscxxayj2pdyu8axmfvv75nnvhc079s",
+    "moniker": "Provalidator",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper1wgmdcxzp49vjgrqusgcagq6qefk4mtjv5c0k7q",
+    "moniker": "Everstake",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper19v94c3z7ckarwsum76kaagma0wqsqhh54xucdk",
+    "moniker": "Validatus",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper1z5xyynz9ewuf044uaweswldut34z34z3cwpt7y",
+    "moniker": "Stakelyio",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper1wlagucxdxvsmvj6330864x8q3vxz4x025rraa6",
+    "moniker": "DSRV",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper1d5ada26tcd24wltfakqkkdu3656k6n4chnyz8h",
+    "moniker": "GATA HUB",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper1e9ucjn5fjmetky5wezzcsccp7hqcwzrrdulz7n",
+    "moniker": "Allnodes",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper1n3mhyp9fvcmuu8l0q8qvjy07x0rql8q4d3kvts",
+    "moniker": "0basevc",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper1c0hr48wkpfcmdljz0xjdxqak4a09ngs366wp8x",
+    "moniker": "StakeRelax ",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper12rzd5qr2wmpseypvkjl0spusts0eruw2g35lkn",
+    "moniker": "Stakecito",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper1glmy88g0uf6vmw29pyxu3yq0pxpjqtzqr5e57n",
+    "moniker": " LavenderFive Nodes ",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper15urq2dtp9qce4fyc85m6upwm9xul3049wh9czc",
+    "moniker": "Chorus One",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper1e8238v24qccht9mqc2w0r4luq462yxttfpaeam",
+    "moniker": "POSTHUMAN  StakeDrop",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper1h2c47vd943scjlfum6yc5frvu2l279lwjep5d6",
+    "moniker": "CryptoCrew Validators ",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper1juczud9nep06t0khghvm643hf9usw45r3jxhxn",
+    "moniker": "Kintsugi Nodes",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper13x77yexvf6qexfjg9czp6jhpv7vpjdwwpuclc8",
+    "moniker": "blockscape",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper1tj76vuaqu23eex2v6vlqc93ytsselvama69re6",
+    "moniker": "Interstellar Lounge ",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper106yua27d3dg4er6w2fkq68s5svd9hngu35nxqr",
+    "moniker": "Oldcat",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper1n3xtg6dpk8wvusank9s2h9j39l2taac88els9n",
+    "moniker": "PoS Node",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper1cwurrzatev9lfkn3ak6hh59t6yc0zy00rzp8yd",
+    "moniker": "Coinage x DAIC",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper14ts0j42qkpr43a3tgxr7zz6l6zdf7hdes5jpma",
+    "moniker": "Obi",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper1y0us8xvsvfvqkk9c6nt5cfyu5au5tww24nrlnx",
+    "moniker": "Swiss Staking",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper1mmzazkl47l9e7aqrygp5kks9n30gcc730qlmwe",
+    "moniker": "Kleomedes",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper1xf9zpq5kpxks49cg606tzd8qstaykxgt2vs0d5",
+    "moniker": "ShapeShift DAO",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper17mggn4znyeyg25wd7498qxl7r2jhgue8td054x",
+    "moniker": "01node",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper1pjmngrwcsatsuyy8m3qrunaun67sr9x74vvvdk",
+    "moniker": "Cypher Core",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper1s29zkm444lr8u4jjfkrycl9wh8gttwfze230hj",
+    "moniker": "Silk Nodes",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper146mj09yzu3mvz7pmy4dvs4z9wr2mst7rq8p8gy",
+    "moniker": "Interop",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper1f7jtv9sd3g9jay64zrydfqh7l3eqdzgs289m8u",
+    "moniker": "Trust Nodes",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper1rcp29q3hpd246n6qak7jluqep4v006cd8q9sme",
+    "moniker": "in3scom",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper15xstrgzpwhduklvyhy9g7gu774lm8cjjxdvlw6",
+    "moniker": "Node Guardians",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper19j2hd230c3hw6ds843yu8akc0xgvdvyu4arf82",
+    "moniker": "vidoinfo",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper1m73mgwn3cm2e8x9a9axa0kw8nqz8a492vg4hp4",
+    "moniker": "decentralizehk  DHK dao",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper1r7spsjagrmcfv96w5dxtttajvnxczhcpgfk74g",
+    "moniker": "PRO Delegators",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper135p8cjwa3hnnnksjxchda0a6339z9zm7cudyxn",
+    "moniker": "White Whale",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper10w06wvmdd4xn7hr76gzrv570f7q5uweem5jcd7",
+    "moniker": "TheCybernetics",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper15knxwwzq38lwe3e3rul8cpcew9n6u0gq7x38cj",
+    "moniker": "Chihuahua",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper17h2x3j7u44qkrq0sk8ul0r2qr440rwgjp38f93",
+    "moniker": "FreshSTAKING",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper1r2u5q6t6w0wssrk6l66n3t2q3dw2uqny4gj2e3",
+    "moniker": "strangelove",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper1lzhlnpahvznwfv4jmay2tgaha5kmz5qxwmj9we",
+    "moniker": "Citadelone",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper10rsjwrcj7maz4f0l8dh3smjd022n9ya8ycuyg7",
+    "moniker": "Active Nodes",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper130r77dtdgz3yjyyskhrr3j2c90aqezugkhr3rs",
+    "moniker": "Keplr",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper1clpqr4nrk4khgkxj78fcwwh6dl3uw4ep88n0y4",
+    "moniker": "Cosmostation",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper1l7hln0l79erqaw6jdfdwx0hkfmj3dp27gr77ja",
+    "moniker": "Smart Stake ",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper13x4pynlp86prhcmtns742kgsgu7pjtzjz4a3nk",
+    "moniker": "CryptoDungeon",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper19fezsaqahsp9ysjqjklghw3cj02lsnwkrp5h3y",
+    "moniker": "d3akashcloud",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper1j7euyj85fv2jugejrktj540emh9353ltnz0lvc",
+    "moniker": "Komikuri",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper1yxg83zcuwfwvyagdzh3a8p45cgqxtrsg2segqf",
+    "moniker": "SpectrumX",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper1t8qckan2yrygq7kl9apwhzfalwzgc2429p8f0s",
+    "moniker": "Imperatorco",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper1dnmz4yzv73lr3lmauuaa0wpwn8zm8s20lg3pg9",
+    "moniker": "defiantlabs",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper1tf7wjthwt9mgywqvjdkj974rp5awzzm43ddhlp",
+    "moniker": "Booga Beras",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper1pxphtfhqnx9ny27d53z4052e3r76e7qq495ehm",
+    "moniker": " AutoStake  Slash Protected",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper1gp957czryfgyvxwn3tfnyy2f0t9g2p4phpkatp",
+    "moniker": "polkachucom",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper19fec46jadzr4y6gd596kkf8sskm7eyq32kkwc7",
+    "moniker": " Vortexlive ",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper1q5xvvmf03dx8amz66ku6z0x4u39f0aphqf42wc",
+    "moniker": "Meria",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper1qyksxgv03ngylanwzh2mx6k768frgjc0em6800",
+    "moniker": "stakebeast",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper1cunqeg5ydl0zvg5jm748xpc90hsz4ufu2kqvgy",
+    "moniker": "Somatic Labs",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper1qhsk23sgycvyrp0tey7slfhen5kxk0p8pp3qwy",
+    "moniker": "StarCluster",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper1z424aqrtmletkpakgt67kl4fq68tewg22pz06a",
+    "moniker": "Sr20de",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper19t675t42lzrpdvae0rcrlxngenzknnxvx4eh2z",
+    "moniker": "Onboarding",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper1fe2wte2cg0fl5w6vkslhru0qmqyvfe73szece5",
+    "moniker": "eXion",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper1jzmy0lajexev4y96zmn5h8zeeqqcamzs54n0z6",
+    "moniker": "test",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper1309wx2zv74yqhr2a760ezdl6e0gz28xz945atx",
+    "moniker": "KAMALMAQUINA",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper1z0sh4s80u99l6y9d3vfy582p8jejeeu6tcucs2",
+    "moniker": " block pane ",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper1pfh243e50apq0zut00vyhd3sqek0jthc8wvxws",
+    "moniker": "Bi23 Labs",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper1qylzyxxz8x358670tpuqnf2kjezacahcztgg8f",
+    "moniker": "Redline Validation",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper1anyeq0uugchhd7s92z44nkkku4ws52f5avm074",
+    "moniker": "DSFDF",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper1q20f8vpqnn5d6hf3wzyqfpcgmhtr4t2q2xruvv",
+    "moniker": "Test validator xxx",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper1qjwtfqzpf0tw28fau943tnx8hqq4ag0hrc3lmc",
+    "moniker": "ContributionDAO",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper195tnlu5r72ug2qnd98fklh48z0elkp7m3xxpcp",
+    "moniker": "MCB",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper19hkeendgqz3ddhkq7djw264cftkl82sfcc2h86",
+    "moniker": "High Stakes ",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper1qcc7x96zaleuccufutpuh6dxrhphaakn4t7qzx",
+    "moniker": "openbitlab",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper1ldu6ew0cff400qmn0trkad38gx250zny45q9au",
+    "moniker": " Consensus One",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper1prmsfrgvla0u8x3kwc8k0mcqqve3h8y73d37nm",
+    "moniker": "Parakeet",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper1adm6z5krjhu527v8y9umvye9vf04efgya5f2wk",
+    "moniker": "Four Moons",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper19v9lwgzamp60h8wj73n9q3tqmkp7p0x4wfjh80",
+    "moniker": "METAONE",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper1z8wth6xqd0wuz5fmzapeyh7tp02f7rm4gcfz8d",
+    "moniker": "Blockzilla  Staking ",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper1s33zct2zhhaf60x4a90cpe9yquw99jj0x8t08z",
+    "moniker": "REDELEGATE",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper1slwwlax7xgssa25a2upj0yvlz6qpsdelvwv4hy",
+    "moniker": "Terra Nodes",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper13qrpp886n475z2jcs552w80fwnz8zp97ajg2q9",
+    "moniker": "fscosmosis1",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper1pn2qy65dt4j8u67k2ds69dwsm0n0qmn5zy4xhw",
+    "moniker": "StakeTown",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper1zxavllftfx3a3y5ldfyze7jnu5uyuktsfx2jcc",
+    "moniker": "MultiChain Ventures",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper1y43ue2slm002myeafmd5rndedgv4ltfumcnsjj",
+    "moniker": "MediBloc",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper1996wwt532s7nlq08h66f0j5amedqv46qh88w5w",
+    "moniker": "Haetaeone",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper1z0ge5lpxjavv9p8k5u63upyfa644djcdm2t0ar",
+    "moniker": "StakeHubnet",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper1zsxpuj84nwspn6q0qp4ec6tqdzqu400t6markz",
+    "moniker": "DPOSelec",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper1qx6kgrla69wmz90tn379p4kaux5prdkucgvfuf",
+    "moniker": "Hathor Node",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper1zla6q7rhrtzqyyulw86ajq9qvectddjxclc3x9",
+    "moniker": "testvalidator",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper1r7z7tv8xgm4uhm7zueff6dsmnzeq4js6rx2d7x",
+    "moniker": "fiercingsnow",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper1yx3lkqy2zv4za3ymq2efwfwga4yl4xavpg9e8e",
+    "moniker": "Nodeist",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper12xh4ccusdp8ye9p5z53laln6a70al6kdwn050t",
+    "moniker": "MatrixCJ",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper10ymws40tepmjcu3a2wuy266ddna4ktas0zuzm4",
+    "moniker": "Chandra Station ",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper1xe9sm5c8yp56hdxc65cmnrvztdrhhk0v70lpac",
+    "moniker": "Inter Blockchain Services former 3Tekos",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper1tck3jdnu5vdasykf50t89mdlnlj8xdnc4ze0hw",
+    "moniker": "skillzbeta",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper1vpqqry2dfrrrh33wrnxjj9k9xg928z646w97p6",
+    "moniker": "Nodejumper ",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper1v9zs755yujms23v653q5v6488cywequnsre77l",
+    "moniker": "onboardingtest2",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper1sjllsnramtg3ewxqwwrwjxfgc4n4ef9ua8h4lf",
+    "moniker": "stakefish",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper1fdratlcgy56etxd07n03vcfm20m4mff8qzn2p3",
+    "moniker": "Ethereal Ventures",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper1v0slxgd0cne8mets4ya3yx9cd6vdcvtuaytuf4",
+    "moniker": "HBMETAONE",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper13e2ale5hzxx2ca70eg50psd894hn7gkkn6w6ly",
+    "moniker": "DEFUNCT",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper1v63dkhqluvkk0fsugrjp63m79556qf32r4lfgw",
+    "moniker": "Hugo test",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper1dp978zq2ef5cc7fszjtvzlnqgccjtvnqxn6ymg",
+    "moniker": "DexTrac",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper1de86y3vdphqe904xyh6eh0fftw0283tnezqmug",
+    "moniker": "Alex Bambarello Validator",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper1jdy2urxw76zeqtr2qyau2d8h9pzavzhkmgnxgf",
+    "moniker": "Axol",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper13t30u88ehaq3dlp5uzkxmn9u98nrskjyrutvvs",
+    "moniker": "Go",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper1yjfur07vnfw74w4jjcr7hsp0lchu5p30er592x",
+    "moniker": "XYZ",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper19yvvl0cz068qu4sg7v2pxln0cqm8nt7756fa6m",
+    "moniker": "Noderunners",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper19gag2ayqzl45jwtquq84clysswgjdhk2aavu92",
+    "moniker": "Stakeland",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper19f0w9svr905fhefusyx4z8sf83j6et0gj8mz6e",
+    "moniker": "NodeStake",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper1v35y8zxrcj0esar4a8a7v2qytm3vvf05xsangk",
+    "moniker": "anything",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper1dvpxxkksf5hrhnycsgyyjnal79lp7gp3n59t0d",
+    "moniker": "Chill Validation",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper1jxv0u20scum4trha72c7ltfgfqef6nscqx0u46",
+    "moniker": "Ping",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper1hjct6q7npsspsg3dgvzk3sdf89spmlpf6t4agt",
+    "moniker": "Figment",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper1zfcmwh56kmz4wqqg2t8pxrm228dx2c6hhzhtx7",
+    "moniker": "DO NOT DELEGATE HERE",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper18m4wkxw865cmxu7wv43pk9wgssw022kjyxz6wz",
+    "moniker": "a41",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper1gr73xk8gmn3gdyx4cqf5s4hmkxwcgkq8lx8xwv",
+    "moniker": "Chainscope",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper1rmdzkje2eh34fgerdq75lwgzy44u43erqdnnh3",
+    "moniker": "Stakyio",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper150722lyxdh25vhhwp89qxp3574lv4tx8j6u0ge",
+    "moniker": "CrowdControl",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper1kls9ca0h980sqfmt0497jj8kad3lcws6g08mld",
+    "moniker": "Merkan",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper1yv3qpx72p9jfd7l6c60m8d053yntnwmrd8ekce",
+    "moniker": "alphabai",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper1l38793cjjks9k70wkxdq7w3auhjmqu9s9l4njy",
+    "moniker": "Manythings",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper1xnx52yzhxjupznqxapgzfsfwq0lsxep5ad0wsq",
+    "moniker": "Sigma",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper1wetykh70f2cxyr3yhjqvh9em5pe0j9hdsfsren",
+    "moniker": "BccNodes",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper1ualhu3fjgg77g485gmyswkq3w0dp7gysdcdgw2",
+    "moniker": "stakesystems  autocompound",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper1u6jr0pztvsjpvx77rfzmtw49xwzu9kas05lk04",
+    "moniker": "Crosnest",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper16vnsrhxsyamf4f4eln6g587qwwd39fte2m2ysc",
+    "moniker": "Klub Staking",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper1ux0wrpy2gpeteahn8r95xjketyf0nn800ztng4",
+    "moniker": "AlphaNodes",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper1f6wx6r7567wu5j4ysskshkmsrk29sme97x25ca",
+    "moniker": "Crypto Assassin",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper1969qjenvrjxrypynv36j9hjmlxrqgmy0xq3dg2",
+    "moniker": "Nocturnal Labs",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper1t3v9clrvqeudph4gf9fthcn4csalahfuq3nhme",
+    "moniker": "Quebec",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper102ruvpv2srmunfffxavttxnhezln6fncrdjd27",
+    "moniker": "ztakeorg",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper14amduhjazqhwtkhm6kutdcy4ux5zazf5k803tq",
+    "moniker": "Leonoors Cryptoman",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper1kgddca7qj96z0qcxr2c45z73cfl0c75pf37k8l",
+    "moniker": "ChainLayer",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper1cqdhr7arcezmkhy32qzsqsjvq2rheuhxw9uq8w",
+    "moniker": "Gelotto  Slash Protected",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper16n0t7lmy4wnhjytzkncjdkxrsu9yfjm3ex7hxr",
+    "moniker": "Golden Ratio Staking",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper10rzr3ph6q022qznms8788wrqvtt0u84v7z9jhr",
+    "moniker": "Lumina",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper1nna7k5lywn99cd63elcfqm6p8c5c4qcu6ex2gp",
+    "moniker": "IcyCRO ",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper1xk23a255qm4kn6gdezr6jm7zmupn23t3pqjjn6",
+    "moniker": "Tedcryptoio   TedLotto",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper15smzx92y5ce92fqc8x079c7me9py3s09h0pva9",
+    "moniker": "CommunityStaking",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper15004ysvmqnqzkvt7x6s4cd53flmmvgfv6t4y9y",
+    "moniker": "Interbloc",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper17r0cp9zrtkvzlz7a2r09gmdxwqfyje98gfer6u",
+    "moniker": "Kahuna",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper1ls4kmz5v7ytwcqmmchkex970565j8q3d5s6gdw",
+    "moniker": "Uncle Ed",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper1feh2keupglep6mvxf5c96eulh3puujjryj2h8v",
+    "moniker": "Simply Staking",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper1x20lytyf6zkcrv5edpkfkn8sz578qg5s833swz",
+    "moniker": "Informal Systems",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper14537vk6xr9qfptpw2090c589w7a8cm0e0wyv3u",
+    "moniker": "Blockdaemon",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper1zqevmn000unnjj709akc8p86f9jc4xevf8f8g3",
+    "moniker": "OWALLET",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper1u2wsa88eh738mk35a3cncgu7lc6cqf74jdl50x",
+    "moniker": "NFTSwitchxyz  Delegate for SOUL Claim Drop",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper1h6pv6eymyf40w0xjuuacj3vnu9lxwq8u0nm7uj",
+    "moniker": "CroutonDigital",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper1xvl4vrlh3epl7desfnqydt4tvexl380ue86syc",
+    "moniker": "Mad Scientists",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper16rnhjchh7fgcm37c52vuqxhv0hvdsmls3f8aw9",
+    "moniker": "Stakeflow",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper1xaunn3pnvnkkue5unpxgucme5n0fqyzxqwfghe",
+    "moniker": "BeehiveOfficial",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper14kn0kk33szpwus9nh8n87fjel8djx0y0fhtak5",
+    "moniker": "Forbole",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper1tv9wnreg9z5qlxyte8526n7p3tjasndede2kj9",
+    "moniker": "Electric",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper12zwq8pcmmgwsl95rueqsf65avfg5zcj047ucw6",
+    "moniker": "OmniFlix Network",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper16q8xd335y38xk2ul67mjg27vdnrcnklt4wx6kt",
+    "moniker": "StakeLabzone",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper1273zsxhxd5dlgcr2zjf5x25275hjcp3udgkz9z",
+    "moniker": "Coverlet",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper125kjmvuv5sv7qct2t6wc99h3mp7hpyxw37dcgg",
+    "moniker": "interchainFM",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper1xwazl8ftks4gn00y5x3c47auquc62ssuh8af89",
+    "moniker": "jabbey",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper1c9ye54e3pzwm3e0zpdlel6pnavrj9qqv5qgdz9",
+    "moniker": "StakeWithUs",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper16x4vlh65q5yqa3ghyxs3d9f3mgdz8t2z20ap0r",
+    "moniker": "NotionalVentures",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper183psjr4y05kwtpfew073q6hm84xdhp9tcn8ne7",
+    "moniker": "COSMSTAKE",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper18wkkhsrsw7gwl3z9gn6e25ag3sn0crzp2tp9t0",
+    "moniker": "White Marlin Staking",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper1pgl5usqpelz3a4c04g6t3yyvlrc9yseylmtcnt",
+    "moniker": "Secure Secrets",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper196ax4vc0lwpxndu9dyhvca7jhxp70rmcmmarz7",
+    "moniker": "SG1",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper1jvqv650snr7gaee2wsvkx9nf9gwuj946zxa7z4",
+    "moniker": "Cosmology",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper1j0vaeh27t4rll7zhmarwcuq8xtrmvqhu6m87mz",
+    "moniker": "Chainflow",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper13xfu3eeux3u80fxh9w4lpdg6fd34723cfgxnlv",
+    "moniker": "Zenscape",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper1s0lankh33kprer2l22nank5rvsuh9ksavlsh86",
+    "moniker": "KingSuper",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper14n8pf9uxhuyxqnqryvjdr8g68na98wn5amq3e5",
+    "moniker": "PRYZM  StakeDrop",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper1q6xc9x054z9y7ll7k740j2cvdsllsfhs5rxyaj",
+    "moniker": "DACM",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper14lzvt4gdwh2q4ymyjqma0p4j4aykpn92l4warr",
+    "moniker": "reynisfjara",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper1grgelyng2v6v3t8z87wu3sxgt9m5s03x7uy20c",
+    "moniker": "iqlusion",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper1v5y0tg0jllvxf5c3afml8s3awue0ymjusax93d",
+    "moniker": "Zero Knowledge Validator ZKV",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper1symf474wnypes2d3mecllqk6l26rwz8m720t3k",
+    "moniker": "BlockHunters ",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper123nfq6m8f88m4g3sky570unsnk4zng4u6mkmvq",
+    "moniker": "BHarvest",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper1z89utvygweg5l56fsk8ak7t6hh88fd0axx2fya",
+    "moniker": "Inotel",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper1crg24mgm8l3qe7ej9l8t7tsttp40aaas4xmkhx",
+    "moniker": "ushakov",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper15czt5nhlnvayqq37xun9s9yus0d6y26d5jws45",
+    "moniker": "binaryholdings",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper1pz8wre7clpym5cz9ufpt6nvcayvspqqh7yw4y7",
+    "moniker": "Beehive",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper1vkfmegxrsveefn2wmudh7apxuzu2n77654ad62",
+    "moniker": "Please redelegate  Decommissioning",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper1w4x44ek799hvg97x0mfwu6gg5dww2r8fdpqql4",
+    "moniker": "SHUTTING DOWN AUDITone",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper182d2cjt4al2qxkrgx2kp3v8rvm2jc50ft8wz57",
+    "moniker": "Multiplex",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper12p4k84atxs7h8jcltgg4637h7x0ynexm3lfswm",
+    "moniker": "TienThuatToan",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper1s5q5ty5qhnwtt3wvy65tlm7yz7ca2430yde7sq",
+    "moniker": "edenTest",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper1k5mws9tqgflx6rvhq6x0tnsdw0ddfkptwf3ch9",
+    "moniker": "Levana  Powered by Cros Nest",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper1t48236ajss9wswamwll4nj7up2gqdns52gvyaa",
+    "moniker": "Cosmos Spaces ",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper17z6mxxmkk5vykq6m4c2vexqjs6eq0zqualtqu3",
+    "moniker": "Bored Ape Server",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper1knn0dpjfukmq97yz09uqt80896gwg0rfv6jtvp",
+    "moniker": "VALIDATRIUM",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper1sxx9mszve0gaedz5ld7qdkjkfv8z992a3z2szp",
+    "moniker": "validatornetwork",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper1cyepvt5kayjzsa76ft98ud8mrpvh3acxv83pwv",
+    "moniker": "deprecated",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper1cyw4vw20el8e7ez8080md0r8psg25n0cq98a9n",
+    "moniker": "Sentinel dVPN",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper13th3pfkmjqpdegvz9c569y0ashwmyp3cxypg6a",
+    "moniker": "kooltek68",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper1lrzxwu4dmy8030waevcpft7rpxjjz26ck6r6kt",
+    "moniker": "node101",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper1hk64xxqufcdyh627s29mruep8yfmxpuuclacer",
+    "moniker": "Peregrine",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper103s29j7dyc3utljce802m38p2kk89taj0r2hxa",
+    "moniker": "commercionetwork",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper14k7rhl7atuha3peawjcysj3zdj7026acwzd6f9",
+    "moniker": " The Chicken Coop  Homestead",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper1083svrca4t350mphfv9x45wq9asrs60c6rv0j5",
+    "moniker": "Notional",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper1cru42kjcqcrdf6lgs8tesfqrvya35jzdy4ee26",
+    "moniker": "DOUBLETOP",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper1zlymlax05tg9km9jyw496jx60v86m454a3xf3m",
+    "moniker": "Larry Engineer",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper1cm83xqns9sqhv9a8vd6fggt6mvuu8mmzszknae",
+    "moniker": "NodesByGirls ",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper1gw6z2kn7z7cg747czxq98yczcmauk29uzqfuw4",
+    "moniker": "PLEASE REDELEGATE  Flipside",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper1udp8gef365zcqhlxuepewrxuep9thjanuhxcaw",
+    "moniker": "Astroquirks",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper1fr62zx24gapdul0gze8lt3y9fmtt7h6mqq0amd",
+    "moniker": "LikeCoin by Liker Land",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper1cmqh34lt9d457ajk9g94eg2pswrpr08rxqwsyy",
+    "moniker": "nonce classic",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper1lfn5ywlunadd3fl8lcem05ew7vezns2kx06pf0",
+    "moniker": "nonce community",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper1thsw3n94lzxy0knhss9n554zqp4dnfzx78j7sq",
+    "moniker": "wosmongton",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper1eh5mwu044gd5ntkkc2xgfg8247mgc56f4dlt9h",
+    "moniker": "BouBouNode",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper1hlrccqnq464jak85rh6973n2hqnrlyj0lrpghl",
+    "moniker": "ANONSTAKER",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper1gwmw0w4gul7885f9ce84ersp5thdnqceesr052",
+    "moniker": "16psyche",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper1000ya26q2cmh399q4c5aaacd9lmmdqp9cwpvl4",
+    "moniker": "Staking Fund",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper1csd98hm0tp79a9x7ehv2gtluua83gff4y34f6a",
+    "moniker": "SCVSecurity",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper16j5hsdrcaa6950ks0rf944rgmncukl74cs7yw6",
+    "moniker": "SmartNodes",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper1eprd0gn8s9y82kvyejggefqxkq4v7s54eal5r5",
+    "moniker": "TR3B ASTRA",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper1p5m9xvddrlpe9rqu85wz5wy4uau7fq55w5frnv",
+    "moniker": "CLOSED",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper1et77usu8q2hargvyusl4qzryev8x8t9weceqyk",
+    "moniker": "Stargazezone ",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper10kn8nhlchp3qxdvsvte4zepfkpvlfarp8nk8pf",
+    "moniker": "PLEASE REDELEGATE SUNSETTING",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper184xde3nyl7suqrqutf6l90qn76yfg5zxcdrcy6",
+    "moniker": "Hugo",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper10valuxrrt5guceq5eu8tcf566vkegylksajxdk",
+    "moniker": "Ubik Capital",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper1xxarc6are7zrmwvmmxkezaycepa6ttyn2gnysv",
+    "moniker": "50 Validator",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper104v85kxgw4zkuzf8wg836zpnhzqm4qksg3xlmq",
+    "moniker": "ascendex",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper1gxlsy3jmt5aevkmlfh7rnnxrtqzqe4a65vr776",
+    "moniker": "PLEASE REDELEGATE",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper1f47n59vs3rplykscl8kge6swqqw8dt43tx2f93",
+    "moniker": "Vali Dancer",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper1xgqr7pn80g6w398wzdmye3lu6wsgk32sw670ec",
+    "moniker": "Inactive   Mercury",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper16gm3cvhluf9xfurkx9qgxq7pldvd479l0j6zms",
+    "moniker": "SpacePotato",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper1w6xwce25z0l5y420xnlzkxljkyxm2c4cuych7e",
+    "moniker": "Redelegate",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper179fv09z9lhsyduf5xkgyc3ytelljtddxst2c48",
+    "moniker": "Blockpower",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper13rfuft69m3swst4ay7rugdy6pqg2un3tm0tn4g",
+    "moniker": "Zenith  REDELEGATE to Interbloc",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper18ezay2q3qsgz8ccr56gv7eklz8ka0apauca90x",
+    "moniker": "trustednode",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper1ge9w66f7as34naxf4r85ulgvunqju5nwrcd6n3",
+    "moniker": "TritiumResearch",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper15ft5d3dp9e9u4c3jxpxaqfmucnnrmgqtt454my",
+    "moniker": " BK Stakehouse ",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper186hs3a9qyxjznkkszp4xlm726hp8729pgdgq8u",
+    "moniker": "L0vdcom",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper158shr4dsdmvpm60g8kz6d8ts7knxkmjtzfxde8",
+    "moniker": "Gidorah",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper13eq5c99ym05jn02e78l8cac2fagzgdhh4294zk",
+    "moniker": "Frog OSMO",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper1kf57pzfwdx5v4cwyq6at0p62vchel9pwukjvud",
+    "moniker": "coaction",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper1l034wm5h2hktkdq75fd6p099kwzhljn7hxlx79",
+    "moniker": "Androma DAO",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper1wtv0kp6ydt03edd8kyr5arr4f3yc52vpxy9qu6",
+    "moniker": "kytzu",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper1g239l2skjnz3dszek5s5npquza5gvypdma48gz",
+    "moniker": "REDELEGATE  CLOSING 010723",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper1ceurjtrgxf0hfd4r0hez6fenevazenfhym7s4q",
+    "moniker": "Mandragora",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper1cc99d3xcukhedg4wcw53j7a9q68uza70f5w05c",
+    "moniker": "dForce",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper1u3czw59ysyu94lgr2cmhm06vc9ttz64whr90w6",
+    "moniker": "abcdosmo",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper1q4mlwtw3ncve72na65xacck557wcknc8j0lmke",
+    "moniker": "Coinbase",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper108sv7r3tplqp3hduq7s0tgy6ut732xee7kmfel",
+    "moniker": "Validators United",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper16sk79nlv8jkvq3gnhgm758uhfqjmwtmkcrl80f",
+    "moniker": "MMS",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper1wrkm99xhcqwq4v0q7lcf8wujvy6qjhenddxhp6",
+    "moniker": "Blockwavelabs",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper1s0zwex6pxh3tzlvgwejparpfakh02r2atqln5e",
+    "moniker": "Not enough token to be active please redelegate",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper1kx0gda86dlywg07083gn3dkulduuc0dr38ylk0",
+    "moniker": "Thanosone  I am inevitable",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper14suzzfw7rkz7uke8w9lhttnvewku7sd06djndg",
+    "moniker": "StakeThat  autorestake",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper1cv4leeaavx5lu5n7jgrdklt76rgx2xtdnmvwnu",
+    "moniker": "MrK",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper1vzcxcv9v4cymknqyj8a7qqp45apt7kyrvuwhxr",
+    "moniker": "BasBlock",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper1uvl2g9nd8qttjjyxjs30x7fj878d3wt4y3y0jq",
+    "moniker": "AstraVoyage",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper1d5hmn9es40tlmdaljepz8xwxh83sypxclkmyyg",
+    "moniker": "DeFi100iCosmosDAO ",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper1yyc7vmzy9w2g79gswz9cx845hh7l275cg26tvq",
+    "moniker": "Extra Rewards  NodeOf Cosmonauts  OSMOSIS",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper17sa3mpwsq7hpfzrgmzzrefyslwqsz8jnzkpppg",
+    "moniker": "CosmosPug ",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper1drnr926hplptfa6u9wqw5ryz5dlrxv0erzkwcn",
+    "moniker": "AIR DROP STATION",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper1h3rgv70cp2uapm5066l38u468udxkx3ecdpv04",
+    "moniker": "treefrog",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper1nskmzc8cqf8m9vwrxvnggtw4vw9cwx54jtfmuj",
+    "moniker": "REDELEGATE  Inactive",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper1rhjvcesshc833dqwdlwskwcjz08gcnxq73dnqc",
+    "moniker": "artifact",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper1mwg6lt5eumhpnyx6gzwxaesj7lymyh8erj3xqq",
+    "moniker": "hydrogen18",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper1qe009rqk5jkvfma84a6dzsy3heuafrzdqyelvq",
+    "moniker": "Dystopia Labs Validator ",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper1sz4vscgjuqqntt2pjs65u96mhy5tu5qwm8mug9",
+    "moniker": "AnotherSoftware  ASVT Airdrops to delegators",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper13sckm5ahl6p7a30hq9xaf2aeur0cw3dxnagumn",
+    "moniker": "Analytic Dynamix",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper1vmkt6ysppk8m4rhlq78tpqyh429lhlsah4mn3y",
+    "moniker": "Sunshine Validation solarpower",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper1f6taewxze2sxang7293dff6qju4r4uwg7znp6j",
+    "moniker": "Inactive Validator",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper16yg44hae44lcdexmmk7wpaphny0ahmqfvstt28",
+    "moniker": "BadgerBite",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper1t29pjdugzyetxaehf62a8x7hhq4u0v4un9mxg5",
+    "moniker": "Staketab",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper1whdjuaspv2y3v02pjywncs7xmzpeudkfg9ukjw",
+    "moniker": "mp20",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper1f3p3aakrx5z53cqha8utaw8hvjsq36yn7kg234",
+    "moniker": "AiRTX  0xV",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper1f5p0kyvf9s03rvnsevgk3vm65tptwt5l5h6pgj",
+    "moniker": "StakeHaus Labs",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper14syzusqsh8gp7evd0gcqxjjywljgdtdurn79r3",
+    "moniker": " Stakepile",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper17cp6fxccqxrpj4zc00w2c7u6y0umc2jajsyc5t",
+    "moniker": "Ledger by Figment",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper1f6yd74a39u8v5yurgvf2vrsf7ehv4y9yrf0a5h",
+    "moniker": "IBCC DAO",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper1vrw2c99yvu5t9gugzuj38w35vmhmazzgx7dckk",
+    "moniker": "Valnodes  Carbon Neutral Staking",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper14567tgdx64ww5mtajs6pa9sz2wegay3ujtlhl8",
+    "moniker": "NGValidator",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper1dpwecca283m0c20dmsfzztp4mma8h9ajxwvx52",
+    "moniker": "samurai",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper1d7vvatc4rqwqf99z90rqf6dlc484p02q9pc0em",
+    "moniker": "c29r3",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper1wke3ev9ja6rxsngld75r3vppcpet94xxwcmk4v",
+    "moniker": "Cat Boss",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper1ukpah0340rx7k3x2njnavwyjv6pfpvn6xjz0gx",
+    "moniker": "Jerrys Pool",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper1adqkveahfnsx88r47zwtpfec6cwfu83jgpy6rz",
+    "moniker": "SASSouth Atlantic Staking",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper1j8s87w3fctz7nlcqtkl5clnc805r24042x0zgf",
+    "moniker": "ovrclk",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper1n24z8k7w8lxej8xe7uvpn3qc654n43c05unug6",
+    "moniker": "SolidStake",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper1y6y38g5pxcu3ca2v8merufs9eagnqd9u2yf5ng",
+    "moniker": "fissionlabs",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper1de7qx00pz2j6gn9k88ntxxylelkazfk3llxw6r",
+    "moniker": "Cosmic Validator",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper14g9r3rwutmpc80e8kqnnq8uvdcptdusc0nm3gc",
+    "moniker": "Tuzem",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper16jn3383fn4v4vuuvgclr3q7rumeglw8kdq6e48",
+    "moniker": "SOLAR Labs",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper1vqsuaspxzvefgdy80pc6up2hk7k7xujxvpzz73",
+    "moniker": "Long Street Technologies LLC",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper1z2q6gse6fafvdju6zvgx7r7sj6zjtg75xu6cg0",
+    "moniker": "Earth shutting down pls redelegate ",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper1ff875h5plrnyumhm3cezn85dj4hzjzjqs972w3",
+    "moniker": "Pickaxeit",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper1u2wnjkl6g4v4wcyw4nzdt03zjpz5uxc63u3anh",
+    "moniker": " Cryptobzh",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper1ltch7uamdats4lphq6r6gl8ftyzhwzgvlnd38v",
+    "moniker": "Delicious",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper1mjh302e4r4wdw4whx8z67n8s6cmw0ga7rmzxaa",
+    "moniker": "DegenStaking",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper13gvqalusnmapjgp3e6gnk9q832qv3g3ug7lcuh",
+    "moniker": "SRUOSMO",
+    "chain_id": "osmosis"
+  },
+  {
+    "validator_address": "osmovaloper1s05va5d09xlq3et8mapsesqh6r5lqy7mp0pk6a",
+    "moniker": "Wetez",
+    "chain_id": "osmosis"
+  }
+]
