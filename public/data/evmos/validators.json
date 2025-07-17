@@ -1,0 +1,1627 @@
+[
+  {
+    "validator_address": "evmosvaloper1492mycgzlzw2htuwqdny0r55s5t0zype4m9pzl",
+    "moniker": "Kalia Network",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper10pcga9su5me3dp5g4jln49uxjq7c9s2u9qy9zu",
+    "moniker": "Vitwit Previously Witval",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper1qgzmsvu7n96u006kne6w0u4jqxdj52u9yjxn7w",
+    "moniker": "Oldcat",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper1tdss4m3x7jy9mlepm2dwy8820l7uv6m2vx6z88",
+    "moniker": "Provalidator",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper1vrruadnv4glvjze923m9rjaq96fyzks6egmspz",
+    "moniker": " RHINO  10 to Wildlife",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper1vw76ju5rwt9us7kz8tg42t6yfmq2jftydu74u6",
+    "moniker": "Swiss Staking",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper174jlcery04j6r7wgvequeysruyjlhtcmlhnhy2",
+    "moniker": "Smart Stake ",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper147hzfg34xumd2aplfhx39hweqsem8v0zxqtehx",
+    "moniker": "StakeTown",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper1ce4vh0e5kanlgc7z0rhcemvd8erjnfzcyfecl7",
+    "moniker": "BronBro",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper1f35jtt5m68zlxkpxn75403vv82cchahqvfsrup",
+    "moniker": "Cosmostation",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper1cn3mdzauql5af585mq0xksn26lmlh7naplgs6c",
+    "moniker": "pronodes75",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper1w9m6p7ctu4gkdsr8plle997h25rzsa96xlzfat",
+    "moniker": "GATA HUB",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper1t4j6njtzq9chhcp2qzmr8r5gj7zjyc0hnnc9gv",
+    "moniker": "StakeRelax ",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper1p5k54qk9jdamvw4r756g7dxsjarf6p0l3huk84",
+    "moniker": "Citadelone",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper13h9qxch4r8ep2x8ynwlmcvcl6h902zg5elznhq",
+    "moniker": "alkadeta",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper1hyytyjxr02j72cx0cgjl24s3nn2yrdqqaslk84",
+    "moniker": "Oni ",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper1k875gxzhegt59na74z5a8ejhen2thhvejk4r2e",
+    "moniker": "Trust Nodes",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper1kualgrr9qup0983gj44fczyvcda8ea47y494mz",
+    "moniker": "Coverlet",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper19fv2gwkgv3x53lau3um6tzg7qxvq96grvg97zr",
+    "moniker": "Tedcryptoio   TedLotto",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper1c55g6u7q2uzgks9gjp80sle8n6qcyg64vk64g2",
+    "moniker": "Allnodes",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper1shvcjzhcxau6qtlz9w82a646ecwp4hq7ayqt0w",
+    "moniker": " AutoStake  Slash Protected",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper1rh9uz23gmhr6q92a45qrath4fr9ffefz4eas0z",
+    "moniker": "0basevc",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper1gzycxekfxq2hvu9jt255aajvlakay9nvz4p5jf",
+    "moniker": "Architect Nodes",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper14zatq4jagqtm9ejgvglnv0t364d88u80futp65",
+    "moniker": "Frens ",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper1umk407eed7af6anvut6llg2zevnf0dn0feqqny",
+    "moniker": "ECO Stake ",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper1mtwvpdd57gpkyejd566s24afr9zm5ryq8gwpvj",
+    "moniker": "Citizen Web3",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper125fkz3mq6qxxpkmphdl3ep92t0d3y969xmt8hz",
+    "moniker": "polkachucom",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper19fxanpnjlggzuur3m3x0puk5ez7j9lrttexwsw",
+    "moniker": "Stakelyio",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper1vw7k3z99swlv7svjmnrrqvu6zdmatqhvzuz7lu",
+    "moniker": "NodesGuru",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper1g3jy2wdjus4gka7e5dud7etz0u3mcnfs9vt5cr",
+    "moniker": "ShutdownREDELEGATE",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper1v3q2kuups8gzjk2930haevwn08gl9vfld69m9g",
+    "moniker": "STAVR REStake ON",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper1yujr2clwszfmt65myeq2lp6jnjv364hjjln5ua",
+    "moniker": "Stakecito",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper148hpdcvge7jgjr4xxjufcq56w5k4rr0pnnqxla",
+    "moniker": "Interbloc",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper1lldjhjnn32e8vek7cxe9g05nf8j74y0xs5zmsu",
+    "moniker": "Jerrys Pool",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper1fqeezech7r9mr20aggde4a36qf4zy57r5qm0dm",
+    "moniker": "Imperatorco",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper1qhazu8zleyn5chrkxymewx3xw5guq2vm6q7zl0",
+    "moniker": " CryptoCrew  100 MEV revenue to Evmos stakers IBCgang REstake",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper1hn8u6x03mklzdy69r9khsd9q4yft7gmrkz8qkj",
+    "moniker": "Meria",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper18smfdr4zqavhs080cjtf9c0s4x9nzfwx4k02q5",
+    "moniker": "LiveRaveN",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper1w2j20fj2a4wfmvqnhfhv4mfxkw5xxt09x8esyj",
+    "moniker": "Please Redelegate Closing Down",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper17z0xyw6vwjn6gqj86s3axs7mjsngdl6sncdwga",
+    "moniker": "Cosmos Spaces",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper1vvjw4652wfnkn596va77ltewe02mkf7qlj7n3l",
+    "moniker": "Lets Node",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper1cxpkev44hfqx2pcyx0zl80f9skfdcym02j5krm",
+    "moniker": "SecorD",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper1cw8035q5dh9yc5gmk9zzt6k2ven0w292uuk96v",
+    "moniker": "Lets Node  Expandingspaceio",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper14yeq3lkajldaggj28hmq8xng9xux7x5g86tx29",
+    "moniker": "Chorus One",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper1sp9frqwep52chwavv3xd776myy8gyyvkv5uysl",
+    "moniker": "Disperze",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper1juhvrddz4ch74tnvqrdn46t2fy78hg70mjspt6",
+    "moniker": "DELIGHT",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper1lr7tdf32qchnw6dmwrv6n88g48epkhchq4m29q",
+    "moniker": "wb3addctd",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper1wvgslxyxtg798cwsjj9epjcxxj8xqhj4a4pfzq",
+    "moniker": "Interop",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper1kdtl3gqzd69r5uw06aa09lnqunjz23zymxhcan",
+    "moniker": "Ztakeorg",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper133p2ksvmtlnj3e30ekrdkqgj25eaahncuj27wm",
+    "moniker": "Alphabet",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper1qmpmzdesg9gr5wpyzkssayldnhk3pa8x2nwlwp",
+    "moniker": "windpowerstake",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper1y08xd8cswkxkefgsh0yzpcav337mhd9800t3z3",
+    "moniker": "CryptoDungeon",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper1mfu6uer0zatrqaz6435m2zk40ls25tt38r4t8t",
+    "moniker": "Tessellated",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper1d74wdckw5vyn6gwqt4r0ruemp9n8vmwtudw848",
+    "moniker": "decentralizehk  DHK dao",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper1zk0sx2e677293wfmhxngpexu50vps3sdwyef92",
+    "moniker": "MZONDER",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper1aep37tvd5yh4ydeya2a88g2tkjz6f2lcrfjumh",
+    "moniker": "Crosnest",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper1fn9ldnvd5mt2fcn5prq2lhvcga6tmtlhugv8x3",
+    "moniker": "Validatriumcom",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper1jkqgnx9y8jm9gu6r56686f5s4hjmuvkau8w6zt",
+    "moniker": "Cosmos Cats",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper15d2qqhqxvde0yp9wvewv095ln5yl44spvdmfc5",
+    "moniker": "Kleomedes",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper1mhgczywyrngjudmskrmhhtehlq4yccu00ck2er",
+    "moniker": "Validatus",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper10qpycc2egucukw8afcz4us7xlxxmfwh6rscvjz",
+    "moniker": "DragonStake ",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper139gzv3nvlkp4ylrywsnj8eurm6qwp8t3l9a2gy",
+    "moniker": "NacionCrypto  Parceros",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper1tjm6jya5wh65ha55c6279glcsa3mcs9srscytj",
+    "moniker": "BitNordic",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper1nfx47fqnqpcarqwt7qn4fk0llc57vvh3wgg35c",
+    "moniker": "Beehive",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper1rw4nendrehkr5tkhjswzy8ts97dvwg7rc0u0kp",
+    "moniker": "Cypher Core",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper1psf28krr9muve6w0qzgjlrju5mamlsac96l85q",
+    "moniker": "silent",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper1fmfhpcc00r6ejuclv2fje3egruruk9upe7tl4s",
+    "moniker": "Chill Validation",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper1uc2v23g8cha0m6kd2ghwn766fyccf0nmfw3prt",
+    "moniker": "Legion Nodes",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper1uenrqlgva4k84en7cvp0cac50vwsdx9nrnxl4c",
+    "moniker": "StayWithEvmos",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper1lwfuc2lc27mk8yys2zcd0qttcwmnd6x7gks5m5",
+    "moniker": "sleepykitten",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper1qx7u07f2tv5j8677r3ttt97prkc2dgcyp2km24",
+    "moniker": "AM Solutions ",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper1xaxg47uw046uw8vgpp3da367ctw9aguqjuyyyx",
+    "moniker": "NodeStake",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper1dwezh5d2d79te83u63cr9h8gce02c84t6srxz9",
+    "moniker": "Crypto Lion ",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper1zwqsh4vwmcvmff200suc28ln2du9ypzwyj4wve",
+    "moniker": "SpaceStake",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper1q3aejvmwj9dxturgk00jv7hkwxld7ny7642tr8",
+    "moniker": "heisenbug",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper1teve9jdzedzu64mty72qc2888kh7t9hjchp5y2",
+    "moniker": "Coinage x DAIC",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper1f08fffp8zz42jj0f6wh3gyu7he4hf6zzs6mn8j",
+    "moniker": "Qubelabs",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper1ratv3lvtg3vz9ravf25cqr8mp2lsdn4vuucudm",
+    "moniker": "  oldDeFi100iCosmosDAO",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper1jjukyfxfusatfjpx99cekxyvms95ergafme8l0",
+    "moniker": "BabyScope",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper192gu3czvj3x6rp5fe6vl6vsaw95g86uqlsayla",
+    "moniker": "Summit Nodes",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper1qzyw0ckm8apl7ktl90whuqn6yfdgjs6p4fgxs2",
+    "moniker": "Moneto",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper13xdlszy07spnkqguavn4rkdntjszx6pkglpaf9",
+    "moniker": "Planetarium Validator",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper1vwvv3y7k797zpkfnq97z65egmpsexqsc43awvx",
+    "moniker": "MoveMove",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper1txjps3yasu4vk8wglwhsmfwgglsvn80v26mhyy",
+    "moniker": "Apple juice ",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper1qnezlwhpjhhev6wmvul8w93f66mdetdayeg2t9",
+    "moniker": "Hdmiimdh",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper1qp49y6vh8vvv5yf8ule8fwx6sss82ncz39tunl",
+    "moniker": "evmosius ",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper1dgepvcm7mqdqmzz9lng8kh88ykd298esn8qya5",
+    "moniker": "SG1",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper1qq95x6dhrdnrfunlth5uh24tkrfphzl9crd3xr",
+    "moniker": "bailey",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper1rv94jqhlhx6makfwl6qs390e4shg32m6w6dxzy",
+    "moniker": "Notional",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper1zd9n9lcwm9nq2m35perm0z5r7afnqyu5kprdyl",
+    "moniker": "Kitkat",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper1qx28xgfqvmt9yc3twd6mlfaltqef3thyluc2xn",
+    "moniker": "GoBlue",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper1p0p304c2n9xulzlwgrd2u9nv7w35yg939k7rgu",
+    "moniker": "nysanetwork",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper1svnq0p23hal3llc86jp484hqac8l3as929wqf2",
+    "moniker": "Numenorone Please redelegate away",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper1xu3vxzyszxmf6rh4kcv7htup25az84yl7pk673",
+    "moniker": "Pulsar lowest fee",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper1seaqw0e4ut9d989mptnlpwqpmkpqecpsmsg96y",
+    "moniker": "ONLY1",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper1n4kuugnh2z5dsug7egamma7chnjcdfu4jwhq76",
+    "moniker": "EZ Staking",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper1p3krr2vet7khftlfhxhp47wu4ce7at0adqnt34",
+    "moniker": "Synthex",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper107mlv7f87ckvg6rg7mhrhlqylv35pq6kv8fme2",
+    "moniker": "Knowable",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper1dgpv4leszpeg2jusx2xgyfnhdzghf3rf0qq22v",
+    "moniker": "Hanchonlive",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper1jxruqmfurgxrem4phvaqxkvprxa6fr0ncg3t88",
+    "moniker": "DONOTDELEGATE",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper13h6mnzt6ld8vzwdc2dtn69c8dltuhvypnkc7h2",
+    "moniker": "OracleGen",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper1mx9nqk5agvlsvt2yc8259nwztmxq7zjqep5khu",
+    "moniker": "OrbitalApescom",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper1jytln8383q09vgfmd54jzh4dk496mvjzy33kwr",
+    "moniker": "artifact",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper1pmrxm04m5f320hrrtutjmys74l89xn5x3n6fqv",
+    "moniker": "EthermintMikhail",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper1plda7hy5z989fhsulmr7wtve3wxrax9yuwmg9e",
+    "moniker": "StartStakingcc",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper1x5y65hgngh77sxta6s2vpjnfjep3ltllyhf2hs",
+    "moniker": "CLOSING 20240331 REDELEGATE",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper1qn4nakz5mj8g8drcfz5mway89fwkyf5rpj8dfg",
+    "moniker": "PLEASE REDELEGATE",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper1fpjf8aywxg9qxexfwu9lanlgw58f5fhqfu348k",
+    "moniker": "Jackal",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper1v4crs2adgcu2cdm2jxq07mw7ugzx0z4x6alxeg",
+    "moniker": "Gelotto  Slash Protected",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper1fwtfcx8qqrflm2kuhn9sq6gx5cqe4g539906q5",
+    "moniker": "RRUONE",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper1rychv980zc64hj9r484prj9etd79enegmzrwnf",
+    "moniker": "Forza ",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper1pz3mcahcrglf3md4lggax5r95gvmppc6x5w7hw",
+    "moniker": "Stake Frites  ",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper1sx5qerxjzthnjzne7wz4x6ml4envjehvwtx8c7",
+    "moniker": "blockscape",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper15ksyw7t5t9e7w9n3d2jqqmv7y334mfrhfvvnge",
+    "moniker": "ericet",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper16d9wa7uzahhmr9ekahyaejr9sdpmj9glg4vurm",
+    "moniker": "Impulse",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper1x322q9d7dvm0xw9966c8730pn083rv3q6ddtyx",
+    "moniker": "Regenerator  Green Validator ",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper1ny0dzf3wkutdfgxkk6us0xwal7gpuj4hnecw23",
+    "moniker": "BartestneT",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper1p5650lhupzf9wllenm5nwpl4mycj9p4dceg7g6",
+    "moniker": "Staketab",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper1pmtjcxek9xsejzh3g9pngmxkv5g7zhu8l4pnv0",
+    "moniker": "Uplink",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper1d50xeftm2drujqxec2dua7a3c7lj024u9qvz4a",
+    "moniker": "ALTER  pathrocknetwork",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper146luw8xaes2pkvhurgd8wdlun4d337z2mspw6a",
+    "moniker": "Evmos DAO",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper1tczjwjrr36e0l5jjqnwrp95kv8mk57zdmxse4m",
+    "moniker": "AlphaNodes",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper1mh2lvhy0clzlx645yet4340ra0p5hh2zjyptj9",
+    "moniker": "w3coins",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper1yw3uzauqx3lywnttftjr728e3j6e9ptfk7h406",
+    "moniker": "TC Network",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper1t3rfzrxeslmtz62mydyf2xmmxehwk7xzaaucjd",
+    "moniker": "Golden Ratio Staking",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper1plnlrha4r7ujjghv6dj9fghqdlg6h6ypyetw44",
+    "moniker": "davich",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper1res70qjq47e2acmgfc909n373y3r2my4mxzxs4",
+    "moniker": "StakeBenefit",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper1fah2lu8wew6avm9ve037n92dkvzjggjza5y80c",
+    "moniker": "Kintsugi Nodes",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper1wxllvjqmha2p437dpczat82wzpr8gem04jkwmz",
+    "moniker": "Validavia",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper108z94rdyxa2a3qtrpq6zl9zkzxw2555w3lfday",
+    "moniker": "Validators United",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper1wvcavhfkww5ccyl6a3fme0tpmucz6n5hxc0xzw",
+    "moniker": "SkySkipper",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper1jk7umxyky5m5dul46t8nxneavlg7eysjr6lfj7",
+    "moniker": "POSTHUMAN  DVS",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper1xsc2lnpf9jwem8kujlqan44ywet3trj2sezfhg",
+    "moniker": "Quebec",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper1qh3vayfp3fwl8cx84fytwpzpzfdg8rcnc2q6uf",
+    "moniker": "CryptoPlaza",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper1zqkrqsvrn4hskeywd56gx2dcy50mnyp6wq7txc",
+    "moniker": "Mandragora",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper1zqf4s6t0r4elu07krs5kquf6meme2qm54hzhsf",
+    "moniker": "Darvin",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper1y96y6awujpq8sz4vd2rvejxs25mhrs6fqt0lkv",
+    "moniker": "Noderunners",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper10666nk6c845g295h9y77eprzpepdv82gnrrs4c",
+    "moniker": "ChainTools",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper1q0e82hv8glx8nfqnwu4pyk8gdps0zezhp3verj",
+    "moniker": "Antrix Validators",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper1z2k72z646zng4eh6cxvpwqk95a7wz96acadu98",
+    "moniker": "Paranormal Brothers",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper1zha88aa7m2uc793avhpe6qukfxnrf2jgwjje9c",
+    "moniker": "cyberG",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper1ykfvkw7srrdm4vcwwuxuhj6ycvt7mdyadenaf5",
+    "moniker": "UniverseDAO",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper1y6yvdg2xdltzr0v5hvf8zvxk373xwas4jwgvkp",
+    "moniker": "Blockchain at Berkeley",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper1t5expl5j0wdvs7x9njp2x8t7a224wrlpe825u3",
+    "moniker": "Ubik Capital",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper1ze0k4fhrmnmhax3md3dqc9g4f72l5f5rvnce9a",
+    "moniker": "Evmos Testserv",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper1zwr06uz8vrwkcnd05e5yddamvghn93a4hsyewa",
+    "moniker": "Polychain",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper1zmdezgf0mcs08tj24xskdgkzhnknzdfmx5nnuq",
+    "moniker": "GGSYSTEMS",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper1rq0r53s3wg4854n05tg0hrw5u3jaqlw483z0pg",
+    "moniker": "web34ever",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper1g57n4k08sk5z6ramzsgzrapgpsjsyh4t5tldw5",
+    "moniker": "01node",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper1s5sckwx0h02xw7qkdyu6auj8vq0a5gcr2u98kc",
+    "moniker": "KingSuper",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper1vy0e576hp54yr7kmmyxw0546ttx6y83pyferh6",
+    "moniker": "bashibozuk",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper1eqyslur6vku64v4r30hfchmr90awt5p96cumdv",
+    "moniker": "DOUBLETOP",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper10xhy8xurfwts9ckjkq0ga92mrjz9txyy6y8l2g",
+    "moniker": "Informal Systems",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper1tk9m4drzupjpsdfr99t5pkhtl0w57ykpvvsvcm",
+    "moniker": "Arctic",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper12a6wa97lsv8wm62j07tz0xeqvfxddzyfg72d45",
+    "moniker": "HashKey Cloud",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper1j5nfqc0pa3575t8pz3t2huqpcauj96tyxdkuhs",
+    "moniker": "openbitlab",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper16xfg4dtls7ysxyvc4swycz2k80p3qkesx88nss",
+    "moniker": "kokos",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper1kgrgr602emu8nc2rhfvt7pzxf33jfu4fgd204r",
+    "moniker": "Stake Village",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper1pj3c7q7tj888h4ms9uq2qql2hf84pndx3zvleu",
+    "moniker": "P2P Validator",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper1kw03prf96w5rrj53pvhdnmsnr469dn9gqmsqwg",
+    "moniker": "stakesystems",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper1xllzrq629yrrs8k3rwf38pracha940f2e7lz9q",
+    "moniker": "9cValidator",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper1chx7v975g72xuw8kdpjt94dh35daqqfyc37kys",
+    "moniker": "   WhisperNode",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper16ywlfq3ansuh70tjtenazpdwcn6rg279gjadep",
+    "moniker": "KalpaTech",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper1ufg2a3vc4vmsmxtjmckjzltqvz83ste98mr6x5",
+    "moniker": "Active Nodes  Please Redelegate before 3 June",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper1rwy29t3eup0tnaph08rezdjsmckzqemkxh535w",
+    "moniker": "Sentinel dVPN",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper1sq9ggymzx02vcp7kf6yyar83scfm4r22swu673",
+    "moniker": "Stakin  Discontinued",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper1sw4hs8x4yrwguhfst82t8lr0pv77x5hj0pryrf",
+    "moniker": "ProtofireDAO",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper1rd3acdgvspcwr62696nnnfrge9yw5wcm8wya6f",
+    "moniker": "Gabijke",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper1rvsmc4k7ay8hc6nlz50lw8hskygvdptmwr3rdl",
+    "moniker": "Klub Staking  SHUTTING DOWN  Redelegate to Meria",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper1d6c097pmd6avh0x3spfwc0cagc690e2mmkpx4h",
+    "moniker": "GalaxyStakingspace  DISCONTINUE",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper1t2qca5lssa3vzcvacfeck0wrtq5sqq6upz2h07",
+    "moniker": "Evmosis",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper1rhddecqpwfjdkwmu6lmfzekh936kcu6wxs7jxa",
+    "moniker": "MMS",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper1r0q7zg2kxehn5aw9l3dntgtt5mh7j727h7fnuz",
+    "moniker": "stakingcare",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper123j6k47xqfj7xp8ayut4s60e90vwjrtn60fuxj",
+    "moniker": "Earn Network",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper1gyxqlahz6g9ws5cu0tk3gccgryzja7558f069r",
+    "moniker": "BwareLabs",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper1k96y0w5wf089nuvvym3s324c8umd3vvm4yh578",
+    "moniker": "a41",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper1vhuyfr9l7ytd0w9mtdx2033qrc0s6vjj8w37j6",
+    "moniker": "binaryholdings",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper1gj8uu6pxcncdtav707a86v3sqva2svn45sx62g",
+    "moniker": "SHUTTING DOWN AUDITone",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper199pa5qse6j24efpwejh4f5dp5p4gtp4a9mwkux",
+    "moniker": "Dora Factory",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper1k5hcl0cjprzewwvzhz3um589kx8skzlrneuepu",
+    "moniker": "Vault Staking  Slash Protected",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper1dj0mysdn05447p9ncsq9g424fv2ynaxryhpjkc",
+    "moniker": "Multiplex",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper15n2ms99yx2lycwk0msmtlj9yxhtlmqeymtg4c3",
+    "moniker": "BlockHunters ",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper1f6m9d94lkenw9fy5wmytatt76l849kx6ugdz70",
+    "moniker": "StakeLabzone",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper19e53dt5r9w2mstt32jnj43xrxlyprnc085tl30",
+    "moniker": "Deprecated Validator",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper1d4d8cgds89t9a9uph9hr9wp7vzkdcvn9hlkh7w",
+    "moniker": "AgoraNodes",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper1454caan87y0828wkpwrp77zs59jhddx9pchcqy",
+    "moniker": "Airfoil Labs",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper1mj7hacrfuemmkt7mcjkgps9d7revrk6ylfus3n",
+    "moniker": "Maxxroot",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper10ygr8es32ydjkg3zeufvxu526zn8q65acatw6r",
+    "moniker": "DECALIio",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper18zhvafj8jcezdut6z9u0pcsnqy978ya9d25du5",
+    "moniker": "Pls ReDegelate shut down on 20240520",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper1k9lay7ec328u2cmmtp8m8309msztt5hz7euvcc",
+    "moniker": "DeFi100iCosmosDAO ",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper10q09k0flvffqzcmy2nx20nhxzs78nnesrv60ad",
+    "moniker": "CosmosPug ",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper1g376mzt2kcszpf7y3ee7r8jpseq2zv9hshf5g3",
+    "moniker": "Cosmoshield",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper1xskpkvmc8chtvgy5zv4wzf3mkrjnmke8ddgftk",
+    "moniker": "Kynraze",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper1ugdc7s6rpf99x0y30h3ygrr5xy0aus63dpqqhz",
+    "moniker": "redelegateplease",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper17vze0tk7q7gwpd6jt69p4m5svrty40yw9a88e3",
+    "moniker": "jabbey",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper1d7uejj7he40g6g999dlpfg5egeq9jvkmlzvsjn",
+    "moniker": "0 Fee  NodeOf Cosmonauts",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper155yk4wfn0xqye80exlsr6hu4qdfsvsgw63w87l",
+    "moniker": " LavenderFive Nodes ",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper17aplkq60nqqnawztjlxyk0wwtc9l2uv955003h",
+    "moniker": "HoodRun",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper17ucx8wx9mz9f2a4ccum536gthydprcum3kcuc2",
+    "moniker": "evmos4volunteers",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper1m2h0neyc2zjep2072cqhakmt5qsxwvppsuhll3",
+    "moniker": "terlia",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper1taksrncag8zudrzg8uz8n0hld5galarzzzdapy",
+    "moniker": "Keplr Shutting down on Nov 30",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper1ak9t7kwk44azu6cefqdydqmy3hen28nvdjjvz0",
+    "moniker": "Sunsetting please redelegate Forbole",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper1vs0vvzpudrattan5pqs9caa38uavj4679rt5pn",
+    "moniker": "i1off",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper17hd4fyhqkgply6klljx3ugqemhdgqhe8xu2yu6",
+    "moniker": "Node is being decommissioned",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper1fy7l4avx0laq5w7me3kt4vlwlha8zwzgdjcvv0",
+    "moniker": "decommissioned",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper1can8lfdushdmp8z9zm82dmpt6gz3r2rsxrs8gw",
+    "moniker": "Vanlee",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper1jd6w3lm4y22680fkwvykx5h8tjzftd9z0mdcqm",
+    "moniker": "Wetez",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper1ulkhal0g0fmgsjlf8q7mdd46m6t9sqkhmpfvfd",
+    "moniker": " carbonZERO",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper1wdmrn8tsk57r9qds3g77hqmr8vejnhky9de6u8",
+    "moniker": "Crypto Assassin",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper1a22spreqspsh9s3v67ctsuzaf9n4kallj7wuzf",
+    "moniker": "Please Redelegate",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper1suvf29zmvlmgg92zngez946nj8jrtu4hmxpwqv",
+    "moniker": "Perseverance Staking",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper16jr6ewgp0ypu39z80lywgzwjrx99vxcq4sdfzf",
+    "moniker": " uGaenn ",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper1myawyc7skexkafq43sdj8n4wah3fdgt9lhkmeh",
+    "moniker": "PLEASE REDELEGATE  Flipside",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper1wzx5g45x7reftxzl3ss0lgk0wh08egmyrg0uhy",
+    "moniker": "rxpwnz   Genesis Validator",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper1fpwl3fqr40hq9wzkmdthq7mfy8m7xp6t38ud3x",
+    "moniker": "StakeSeeker by BTCS",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper1l840d9sse36j9cvzgq98vennrzuu5l70l5shhc",
+    "moniker": "Blockwavelabs",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper1aaldzsaw0rv4qk2587hy3uyg25qpmgd43w38er",
+    "moniker": "LuckyFridayio",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper1hay4kqak5h9zvp0r43y6nggprug4uc2qs0pn0j",
+    "moniker": "kallen",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper1hdslyd0vwj8ym368tqc5jdpu6hxrqvx9zex5yz",
+    "moniker": "ZKValidator",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper10w68lsj5avr354xssl3dlu5c8gfclamuexjfzf",
+    "moniker": "TR3B ASTRA",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper1fhfkklmv764r3u6kqkeflmddr6rlzhf4r9lae6",
+    "moniker": "DefierEvmos",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper17zaf6jk6gupa0mgnyyt7e4u8y783k6u3wz6avj",
+    "moniker": "SHUTTING DOWN PLEASE REDELEGATE",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper1ae6cgh398k7axy6a8jgsv3sw82tckt9202w38y",
+    "moniker": "Please REDELEGATE",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper18fdznufds7xcgthx00jmpvf6pplt7g4n7hc5ah",
+    "moniker": "RedelegatetonewStakecitoNode",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper1hff5hzynl9vqp8pza50hf7u9yafmwlmd8v6e5a",
+    "moniker": "Element",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper146mfv59nypacvs5l9h0takrcv8jtlk90wr0ggp",
+    "moniker": "Shutting Down  Please Redelegate",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper1gwteu8vxjfale96smn7vgd06kwc22yt6qpjdc0",
+    "moniker": "Blockwave Labs",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper1cpa5rlkxt8x7nu8rnqm9q4wc8qan5ve5cvd8e5",
+    "moniker": "airdropdao",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper18ukxy5rl8w8wjkwlm029v05mz5pa6yj893427x",
+    "moniker": "BlockBlimp",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper1kplw4kngrepaclp8570ampuqxuuuugkg2wsxaw",
+    "moniker": "votes4volunteers",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper1dk4ste222kp256ky00553nexna0rh38hx2ur6c",
+    "moniker": "REDELEGATE  CLOSING 060623",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper1jkn3w5rm7lp0pn07qxc4d3rxdxre7h23xty2v9",
+    "moniker": " Mercury",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper1f45kvvy80gzcfccgvmg5gjzelwxeuk2k26xelm",
+    "moniker": "qwoyn",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper1ur0zjltn3qs5xzx4rn8ekr828f4tglyhu50c0w",
+    "moniker": "2xStakecom",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper1aqjfvunjprdhs660e9yfa8wdulc7rxlzz43hn3",
+    "moniker": "Please Redelegate Shutting down",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper1ewy85dtectk68z6cnpt6vmkgsqwkwttgtpejzh",
+    "moniker": "BAT",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper1gp3smgnl92elvknutdz4jvc0yfjfhz9gs8c8yd",
+    "moniker": "MCB  mcbnode",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper1tppfkc7qtf7jmz3kat9za09d50yftjlr8rhdkr",
+    "moniker": "Please redelegate to the new spacefiio validator  Old spacefiio",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper12lg2v2whm9p0yxrqsfss269njnthcs3ljk6aev",
+    "moniker": "LexPrime",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper197ahcv2x9jj0nmvnen4sqqfffhygjga7rk3shu",
+    "moniker": "First Foundry",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper13xc78t8vte4ta4p5jg9gcxq6w376qfd7lg70jp",
+    "moniker": "STAKE MARS",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper1g9rcsa8sr6utp073pdtvqg5xvynv00vshrh5gu",
+    "moniker": "redelegate",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper1vm5fvg57aeqp7xwl3umev7z0364jzvcfzlnfew",
+    "moniker": " SpacePepe Labs ",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper1h62qm8qcctvcdd8t3jwm9jcc9cwleqjgnsn7ry",
+    "moniker": "Coinbase Cloud  Shutting Down Nov 17 Please Redelegate",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper1x956sa74evkx4tma64s7hxaa3lrsrfmvqnvhrv",
+    "moniker": "Out of active set please redelegate your tokens",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper16ahga2u3q6ueer5me26g7ws2ckjdrx4qcgdzwn",
+    "moniker": "Goooodnes",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper1lfywrrzgt0dmhuhxfn0ahn6909x0pgwuxgnwcz",
+    "moniker": "AGNodeEvmos",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper16p42g8ej2wxn7ss83jnd8ssk27jz3fs2n6nmav",
+    "moniker": "Pepe Federation",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper1n9f25qr9hkt4alsq3d3jmrc6x246nmc7ghujrh",
+    "moniker": "DO NOT DELEGATE TURNING OFF 210",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper13rh82yhf4zzf9n44e32e7r30ackggkvu6ps426",
+    "moniker": "Illuminati",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper1862ed57tg9vrjm34r03n0l427ufzj3z8nmqwp7",
+    "moniker": "SweepStake",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper1tuup69wz94u62g9tjuphj3vuvqyh3t006h4l0n",
+    "moniker": "Old Validator",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper13kx2jlq8p8ntl225wxf83ef89900jzm43kcdkq",
+    "moniker": "IBCC DAO",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper1aw4gm8z8x5wcuk72xxvxgt0ukljul4wex9v9lt",
+    "moniker": "Meduza",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper182d5yfc5wwaphwjm5wqj9xmsf0vmp30qrtjllu",
+    "moniker": "Psycho Node",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper1vdvflras2n3h7fjhe95h86wsy0z2nlsktngrp8",
+    "moniker": "DO NOT DELEGATE",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper1y7g476f5ysk3pu24whcqxt0l6z2sdfhf5usfr3",
+    "moniker": "16psyche",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper1y48avyjalxpnd3kt9pneralmp4fj8j04umtq7n",
+    "moniker": "Wave",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper13nujml9r2dg85nucffe82xq3yg8f35qxmfal7p",
+    "moniker": "SmartNodesFamily  Slash Protected",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper1hm5elxdjfx4pltn00e0tde0avhpj03tynuhkk3",
+    "moniker": "NODEJUMPER",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper18lgy886ruwkuaefm2c0sn0gt9kgnj0de3kt6pv",
+    "moniker": "Consensus One",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper1aafywn5c85v2m06wr9famd0p4wp8grt0pcsfsy",
+    "moniker": "OZMAGE  REDELEGATE TO ZENITH STATION",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper1tcty2k97cdv5sc6xcdf2atrrxq0zg7vvjyfsmr",
+    "moniker": "stakefish",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper1awacjk9kskd9qdyrfgy45jc4zs65j083syng9g",
+    "moniker": "AureusTrading",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper1mxeqxy6v9wqgfqljw6af44ygcgrya7wv04jeur",
+    "moniker": "stake2earn",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper1f02m4jkx2p9r9ps50j87e0kmjaggru07lldfwy",
+    "moniker": "Orbital Command",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper1cxv3qjqch9dntx8dzddkrq6stwf6xu07xlm8st",
+    "moniker": "Do NOT delegate  inactive validator",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper1v6ack3xwvnktwkq00kw4ld5xxlw55r5zmh26k0",
+    "moniker": "Bored Ape Server",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper1ng8a20k4th6654ac0exq9fvq0pfrr3ruz2n09d",
+    "moniker": "CLOSING REDELEGATE",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper1u77wfdmv0gj30z0y3wcmdja026vtwjlcsx8mrn",
+    "moniker": "SkyNet  Validators",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper1j6zuz54sum48ylpzjqt4jugjmr4lw6srudv7c4",
+    "moniker": "cryptobtcbuyer",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper1jhe4gfgl7wv3s99h3d9tz4g833j8265e7cjqyw",
+    "moniker": "Shutting Down on August 03 2023  Please Redelegate",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper187860d5xukeksge9jz3wwff7h68asdafxdxh4r",
+    "moniker": "Please Redelegate Elsewhere",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper15zgjlh6aqrc36nuvwwnpvmgq8vjqkvsydmun5u",
+    "moniker": "NITAWA",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper12snku970xte58lx9xngewmmsc9kv039wg5hdsz",
+    "moniker": "Royal Validator ",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper1xvrdg707g8kug8k9zlrpqamfukzt5qnc8uj27z",
+    "moniker": "Natalia",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper1ls6387n3qnqtylkrh9pg66fq2c24ermf3uexhs",
+    "moniker": "NewNatalia",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper1n4zajqylnmk7kmnymq4ceynzlkq68j9l6qrxmg",
+    "moniker": "Reality Flux  NFTSwitchxyz",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper1a36r4jvcprvewxnr2qhfs0h4spec35238s2h7t",
+    "moniker": "Deactivated",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper1ffvhfte7wgc3sxy2msp423xlgj9ja4mfatusy0",
+    "moniker": "undelegate",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper1gk9cqangsfrd8dd92fyplmpqhft0zk0fa5ctjk",
+    "moniker": "stakemachinecom",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper1ksdaejzyj2jm3zcf92kxgvrl6z457wg2g7mlmr",
+    "moniker": "Bi23 Labs",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper18zt355ccyxd3kj23mz5hdz00qqn5lk5kjnj74m",
+    "moniker": "Chandra Station",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper152644qg2h4qmqutftr9fnug0ypxw2apmjgk6rp",
+    "moniker": "WeStaking",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper1m9h4m6d8nw8fjewsqjtkv9zzk7jc5cxhpn73up",
+    "moniker": "Do Not Delegate  Discontinued",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper1426c3rs6fkt8wt4p8w8nl48nn7zpvd0xxvjeq9",
+    "moniker": "hitr",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper1e5vafahaguws6aekhvs79nrjch0mzjzx2xjgt7",
+    "moniker": "QuantumNodeio  Token and NFT airdrops to all delegators",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper102jhnxtf9fuaclxwh2r6cg84ml8yzf2unwdl77",
+    "moniker": "stakerspace",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper195v27mgytr20804sfpmwg2n6x57u28vwsvyjpa",
+    "moniker": "x3m",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper1he7q8w8fnsdh7r6m3h53h7p8k3648hhz2vwcuy",
+    "moniker": "Four Moons",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper1kwjrhfpkhmrn97rz66d5j5s7wjswf5z0emyhgm",
+    "moniker": "Alt",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper1g42a23klcwhdmmkmq43d8awe6xdtsuk6nlaevz",
+    "moniker": "Suntzu  AZclubpro",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper1fea4zwaf04wx4m2jc9xj59zw8wsaz3qfh5ryyv",
+    "moniker": "TesseractOps",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper15w79j4pfzp9xzcsvt525gad0yusklwsm8nfnjv",
+    "moniker": "Oneplus",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper17m80vwsx8eveq78puqztz9xxvee4306spsa0xm",
+    "moniker": "Offline",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper1gmfzlmdv55xftch7y20lyk8pruxcm42lpxzlwv",
+    "moniker": "gryhail",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper1adl6xd3klu689caymhn6hhakpfues5e30n5p3m",
+    "moniker": "StakeTake",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper1k35wzk4slyz2ly9wycjqjs5ed7mwjl2y7msgdz",
+    "moniker": "Merakrun",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper1yqj0hqaw7694nwa2cumusrqqqhnsemdgutns7p",
+    "moniker": "Validape x GT Capital",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper1hygh3ferns6tnu0kg03aspc8yrlm6593rkru6c",
+    "moniker": "PLEASE REDELEGATE ASAP",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper1kf44guytqa49v0d5wr6933xwap7kdkdcw3892n",
+    "moniker": "PosPool",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper1y56smujn0dr4k8nm9zc844jx2v7gzxeq6cvued",
+    "moniker": "z",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper1h5zzeup9a3qznt3vjfs6lks2duq7te43rux0xm",
+    "moniker": "JAILEDNODE",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper1emlluf3tym8scj4aeer5470qp22mw3r9slkma8",
+    "moniker": "Gordian Staking",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper102qhm689yg9g0z8eucmylfdel69ja6mmfvrjxh",
+    "moniker": "Do Not Delegate Here  SN",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper12ecxrqsppsltlaktqagqw6zyapmwkrsra40dh3",
+    "moniker": "Enigma",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper13xh50decza8q4ud97ts2epvmtcxnug0tjl532z",
+    "moniker": "Inactive Validator",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper10g7hsnzht9vxetpz274nmw79txn3pa0sgm49nu",
+    "moniker": "PLEASEREDELEGATE",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper1r4egnngxqudu7nsxa6uygcygn36j30v7w3luh6",
+    "moniker": "azstake",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper1glfl3hd0tpqyu6fa23qsspyqya99kh0juhhhqq",
+    "moniker": "Validating Chaos   NFTs to delegators",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper129qy4mr22azrp3vhxyw72zmth5t75fk4xx2p6k",
+    "moniker": "Valli",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper1xj60gs9l3y5lv80jhruy20ztmkrnkh9uh8t6mv",
+    "moniker": "3venturesio",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper15hmhnl5h3e248ms0vz2p7ax2e422a2zezjzk38",
+    "moniker": "BouBouNode",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper12wx5xq7jx5d2vweh8qk7hkchamv20hzjv5s29e",
+    "moniker": "Zion",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper132z5p9vl4rqa0smxw0t8xmdr3uwteqqyayn0a4",
+    "moniker": "moulatech ",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper16zn0p3e7l0mk9c0edquys9yt98g6l4ydmrhank",
+    "moniker": "Salvage",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper1ypulj5qlwhrd2f82ewsf3cvp28rd68vungurfp",
+    "moniker": "spellbookstech ",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper1m8dmmkxcarg0r65k5znev4utv5nzy049sk009n",
+    "moniker": "Messi",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper17y54dsn8hs6sv9n4z9dm77mwe79kav4eyeqher",
+    "moniker": "Easy 2 Stake",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper193smnhwr3u6f8p6rjwfp8gsqzynt0wz004nf4t",
+    "moniker": "StakeThat",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper1kxlk7uea4eewqgcynkwmgzgqetmyqtme0c9txw",
+    "moniker": " Stakepile",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper1el42w8xtf33ae6mv2h9g2xug6mll4vx7xgc900",
+    "moniker": "DokiaCapital",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper1326mc8893qqaac394x7j42hfr00unvffglz37t",
+    "moniker": "Fesh",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper19ukysy0y8vftenua47390kmg82t8explqkj4gy",
+    "moniker": "Expandingspace",
+    "chain_id": "evmos"
+  },
+  {
+    "validator_address": "evmosvaloper1az0eeqw5222en0enxz9ect3s8xy4kayznccgjh",
+    "moniker": "UNSTAKEFROMME",
+    "chain_id": "evmos"
+  }
+]
