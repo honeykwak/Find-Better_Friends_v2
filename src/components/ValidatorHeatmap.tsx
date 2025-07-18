@@ -299,13 +299,27 @@ export default function ValidatorHeatmap() {
   return (
     <div className="h-full flex flex-col bg-white">
       <div className="flex items-center justify-between p-4 border-b border-gray-200 bg-gray-50">
-        <div className="flex items-center gap-4">
-          <h3 className="text-lg font-semibold text-gray-900">
-            Validator-Proposal Heatmap
-          </h3>
-          {isLoading && (
-            <Loader2 className="w-4 h-4 animate-spin text-blue-600" />
-          )}
+        <div className="flex items-center gap-6">
+          <div className="flex items-center gap-4">
+            <h3 className="text-lg font-semibold text-gray-900">
+              Validator-Proposal Heatmap
+            </h3>
+            {isLoading && (
+              <Loader2 className="w-4 h-4 animate-spin text-blue-600" />
+            )}
+          </div>
+          <div className="flex items-center gap-4 text-xs">
+            {Object.entries(config.colors).filter(([key]) => key !== 'background' && key !== 'NO_VOTE').map(([key, color]) => (
+              <span key={key} className="flex items-center gap-1.5">
+                <div className="w-3 h-3 rounded-sm" style={{ backgroundColor: color }}></div>
+                <span className="text-gray-600">{key.replace('_', ' ')}</span>
+              </span>
+            ))}
+             <span className="flex items-center gap-1.5">
+                <div className="w-3 h-3 rounded-sm" style={{ backgroundColor: config.colors.NO_VOTE }}></div>
+                <span className="text-gray-600">NO VOTE</span>
+              </span>
+          </div>
         </div>
         <div className="flex items-center gap-4">
           <div className="flex items-center bg-gray-100 rounded-lg p-1">
@@ -350,23 +364,6 @@ export default function ValidatorHeatmap() {
             <button onClick={handleResetZoom} className="p-2 hover:bg-gray-100 border-l" title="Reset Zoom"><RotateCcw className="w-4 h-4" /></button>
           </div>
           <button className="p-2 border rounded-lg hover:bg-gray-100" title="Customize Colors"><Palette className="w-4 h-4" /></button>
-        </div>
-      </div>
-      <div className="px-4 py-2 bg-blue-50 text-sm">
-        <div className="flex items-center gap-6">
-          <span>📊 {heatmapData.validators.length} validators × {heatmapData.proposals.length} proposals</span>
-          <div className="flex items-center gap-4">
-            {Object.entries(config.colors).filter(([key]) => key !== 'background' && key !== 'NO_VOTE').map(([key, color]) => (
-              <span key={key} className="flex items-center gap-1">
-                <div className="w-3 h-3 rounded" style={{ backgroundColor: color }}></div>
-                {key}
-              </span>
-            ))}
-             <span className="flex items-center gap-1">
-                <div className="w-3 h-3 rounded" style={{ backgroundColor: config.colors.NO_VOTE }}></div>
-                NO VOTE
-              </span>
-          </div>
         </div>
       </div>
       <div ref={containerRef} className="flex-1 overflow-auto">
