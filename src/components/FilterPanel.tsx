@@ -395,8 +395,8 @@ export default function FilterPanel() {
             <div className="flex items-center justify-between mb-2">
               <h3 className="text-sm font-medium text-gray-900">Categories</h3>
               <div className="flex bg-gray-100 rounded-lg p-0.5">
-                <button onClick={() => handleVisualizationModeChange('passRate')} className={`flex-1 px-2 py-1 text-xs font-medium rounded-md whitespace-nowrap ${categoryVisualizationMode === 'passRate' ? 'bg-white text-gray-900 shadow-sm' : 'text-gray-600'}`}>Pass Rate</button>
                 <button onClick={() => handleVisualizationModeChange('voteCount')} className={`flex-1 px-2 py-1 text-xs font-medium rounded-md whitespace-nowrap ${categoryVisualizationMode === 'voteCount' ? 'bg-white text-gray-900 shadow-sm' : 'text-gray-600'}`}>Vote Count</button>
+                <button onClick={() => handleVisualizationModeChange('passRate')} className={`flex-1 px-2 py-1 text-xs font-medium rounded-md whitespace-nowrap ${categoryVisualizationMode === 'passRate' ? 'bg-white text-gray-900 shadow-sm' : 'text-gray-600'}`}>Pass Rate</button>
               </div>
             </div>
             <div className="space-y-3">

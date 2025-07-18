@@ -72,8 +72,8 @@ export const useGlobalStore = create<GlobalStore>((set, get) => ({
   selectedTopics: [],
   searchTerm: '',
   approvalRateRange: [0, 100],
-  categoryVisualizationMode: 'passRate',
-  validatorSortKey: 'voteCount',
+  categoryVisualizationMode: 'voteCount',
+  validatorSortKey: 'votingPower',
   loading: true,
   error: null,
   windowSize: { width: 0, height: 0 },
@@ -103,8 +103,9 @@ export const useGlobalStore = create<GlobalStore>((set, get) => ({
       selectedChain: chain, 
       selectedCategories: [], 
       selectedTopics: [],
+      searchTerm: '', // Reset search term on chain change
       approvalRateRange: [0, 100],
-      validatorSortKey: 'voteCount',
+      validatorSortKey: 'votingPower', // Set to new default on chain change
     })
     get().loadData(chain).catch(console.error)
   },
@@ -133,7 +134,13 @@ export const useGlobalStore = create<GlobalStore>((set, get) => ({
       : [...selectedTopics, topic]
     set({ selectedTopics: newTopics })
   },
-  setSearchTerm: (term: string) => set({ searchTerm: term }),
+  setSearchTerm: (term: string) => {
+    if (term) {
+      set({ searchTerm: term, validatorSortKey: 'similarity' });
+    } else {
+      set({ searchTerm: term, validatorSortKey: 'votingPower' }); // Revert to new default
+    }
+  },
   setApprovalRateRange: (range: [number, number]) => set({ approvalRateRange: range }),
   setCategoryVisualizationMode: (mode) => set({ categoryVisualizationMode: mode }),
   setWindowSize: (size) => set({ windowSize: size }),
