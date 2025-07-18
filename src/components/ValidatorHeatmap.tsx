@@ -5,7 +5,7 @@ import * as d3 from 'd3'
 import { useGlobalStore, type ValidatorSortKey } from '@/stores/useGlobalStore'
 import { Loader2, ZoomIn, ZoomOut, RotateCcw, Palette } from 'lucide-react'
 import { calculateSimilarity } from '@/lib/similarity'
-import type { Vote } from '@/lib/dataLoader'
+import type { Vote, Validator } from '@/lib/dataLoader'
 
 interface HeatmapConfig {
   cellWidth: number
@@ -42,7 +42,7 @@ interface ProcessedHeatmapData {
     index: number
   }>
   proposals: Array<{
-    id: string
+    id:string
     title: string
     index: number
     status: string
@@ -53,6 +53,11 @@ interface ProcessedHeatmapData {
     voteOption: string
   }>
 }
+
+interface ValidatorWithAvgPower extends Validator {
+  avgPower: number;
+}
+
 
 export default function ValidatorHeatmap() {
   const svgRef = useRef<SVGSVGElement>(null)
@@ -69,26 +74,99 @@ export default function ValidatorHeatmap() {
     getFilteredProposals,
     getFilteredValidators,
     loading,
-    approvalRateRange,
-    selectedTopics,
     searchTerm,
     setSearchTerm,
     validatorSortKey,
     setValidatorSortKey,
+    votingPowerFilterMode,
+    votingPowerRange,
+    setVotingPowerDynamicRange,
+    setVotingPowerRange,
   } = useGlobalStore()
 
-  // Use a ref to track the current searchTerm to avoid stale closures in D3 event handlers
   const searchTermRef = useRef(searchTerm);
   useEffect(() => {
     searchTermRef.current = searchTerm;
   }, [searchTerm]);
 
+  const validatorsWithAvgPower = useMemo((): ValidatorWithAvgPower[] => {
+    const filteredProposals = getFilteredProposals();
+    const validatorsForProcessing = getFilteredValidators();
+
+    if (!filteredProposals.length || !validatorsForProcessing.length) {
+      return [];
+    }
+
+    const proposalSet = new Set(filteredProposals.map(p => p.proposal_id));
+    const validatorPowerSum = new Map<string, number>();
+    const validatorVoteCount = new Map<string, number>();
+
+    for (const vote of rawVotes) {
+      if (proposalSet.has(vote.proposal_id)) {
+        const power = typeof vote.voting_power === 'string' ? parseFloat(vote.voting_power) : vote.voting_power;
+        if (power && !isNaN(power)) {
+          const address = vote.validator_address;
+          validatorVoteCount.set(address, (validatorVoteCount.get(address) || 0) + 1);
+          validatorPowerSum.set(address, (validatorPowerSum.get(address) || 0) + power);
+        }
+      }
+    }
+
+    const getAveragePower = (address: string) => {
+      const sum = validatorPowerSum.get(address) || 0;
+      const count = validatorVoteCount.get(address) || 0;
+      return count > 0 ? sum / count : 0;
+    };
+
+    return validatorsForProcessing.map(v => ({
+      ...v,
+      avgPower: getAveragePower(v.validator_address)
+    }));
+  }, [getFilteredProposals, getFilteredValidators, rawVotes]);
+
+  useEffect(() => {
+    if (!validatorsWithAvgPower.length) {
+      setVotingPowerDynamicRange([0, 100]);
+      setVotingPowerRange([0, 100]);
+      return;
+    }
+
+    if (votingPowerFilterMode === 'ratio') {
+      const powers = validatorsWithAvgPower.map(v => v.avgPower);
+      const minPower = Math.min(...powers);
+      const maxPower = Math.max(...powers);
+      // Floor the min and ceil the max to ensure the range includes the exact values.
+      const newRange: [number, number] = [
+        Math.floor(minPower * 10000) / 100, 
+        Math.ceil(maxPower * 10000) / 100
+      ];
+      setVotingPowerDynamicRange(newRange);
+      setVotingPowerRange(newRange);
+    } else { // 'rank'
+      const newRange: [number, number] = [1, validatorsWithAvgPower.length];
+      setVotingPowerDynamicRange(newRange);
+      setVotingPowerRange(newRange);
+    }
+  }, [validatorsWithAvgPower, votingPowerFilterMode, setVotingPowerDynamicRange, setVotingPowerRange]);
+
+
   const heatmapData = useMemo((): ProcessedHeatmapData => {
     const filteredProposals = getFilteredProposals()
-    const filteredValidators = getFilteredValidators()
-
-    if (!filteredProposals.length || !filteredValidators.length) {
+    if (!filteredProposals.length || !validatorsWithAvgPower.length) {
       return { validators: [], proposals: [], votes: [] }
+    }
+
+    let finalFilteredValidators: ValidatorWithAvgPower[];
+
+    if (votingPowerFilterMode === 'ratio') {
+      const [minPower, maxPower] = votingPowerRange;
+      const minRatio = minPower / 100;
+      const maxRatio = maxPower / 100;
+      finalFilteredValidators = validatorsWithAvgPower.filter(v => v.avgPower >= minRatio && v.avgPower <= maxRatio);
+    } else { // 'rank'
+      const rankedValidators = [...validatorsWithAvgPower].sort((a, b) => b.avgPower - a.avgPower);
+      const [minRank, maxRank] = votingPowerRange;
+      finalFilteredValidators = rankedValidators.slice(minRank - 1, maxRank);
     }
 
     const proposalSet = new Set(filteredProposals.map(p => p.proposal_id))
@@ -100,7 +178,7 @@ export default function ValidatorHeatmap() {
       votesByValidator.get(vote.validator_address)!.push(vote)
     }
 
-    const sortedValidators = filteredValidators.slice(); // Create a mutable copy
+    const sortedValidators = finalFilteredValidators.slice();
 
     if (validatorSortKey === 'similarity' && searchTerm) {
       const selectedValidator = rawValidators.find(v => v.moniker === searchTerm);
@@ -115,7 +193,7 @@ export default function ValidatorHeatmap() {
         }
 
         sortedValidators.sort((a, b) => {
-          const scoreA = similarityScores.get(a.validator_address) || -2; // Default to a very low score
+          const scoreA = similarityScores.get(a.validator_address) || -2;
           const scoreB = similarityScores.get(b.validator_address) || -2;
           return scoreB - scoreA;
         });
@@ -123,25 +201,7 @@ export default function ValidatorHeatmap() {
     } else if (validatorSortKey === 'name') {
       sortedValidators.sort((a, b) => (a.moniker || '').localeCompare(b.moniker || ''));
     } else if (validatorSortKey === 'votingPower') {
-      const validatorPowerSum = new Map<string, number>();
-      const validatorVoteCount = new Map<string, number>();
-      for (const vote of rawVotes) {
-        if (proposalSet.has(vote.proposal_id)) {
-          validatorVoteCount.set(vote.validator_address, (validatorVoteCount.get(vote.validator_address) || 0) + 1);
-          if (vote.voting_power) {
-            const power = parseFloat(vote.voting_power);
-            if (!isNaN(power)) {
-              validatorPowerSum.set(vote.validator_address, (validatorPowerSum.get(vote.validator_address) || 0) + power);
-            }
-          }
-        }
-      }
-      const getAveragePower = (address: string) => {
-        const sum = validatorPowerSum.get(address) || 0;
-        const count = validatorVoteCount.get(address) || 0;
-        return count > 0 ? sum / count : 0;
-      };
-      sortedValidators.sort((a, b) => getAveragePower(b.validator_address) - getAveragePower(a.validator_address));
+      sortedValidators.sort((a, b) => b.avgPower - a.avgPower);
     } else { // Default to 'voteCount'
       const validatorVoteCounts = new Map<string, number>();
       for (const vote of rawVotes) {
@@ -170,9 +230,9 @@ export default function ValidatorHeatmap() {
       }))
 
     return { validators, proposals, votes }
-  }, [getFilteredProposals, getFilteredValidators, rawVotes, validatorSortKey, approvalRateRange, selectedTopics, searchTerm, rawValidators])
+  }, [getFilteredProposals, validatorsWithAvgPower, rawVotes, validatorSortKey, searchTerm, rawValidators, votingPowerFilterMode, votingPowerRange])
 
-  // Main D3 rendering effect (runs only when data or major config changes)
+  // Main D3 rendering effect
   useEffect(() => {
     if (!svgRef.current || !heatmapData.validators.length || loading) {
       if (svgRef.current) d3.select(svgRef.current).selectAll('*').remove();
@@ -331,7 +391,7 @@ export default function ValidatorHeatmap() {
               className={`px-3 py-2 text-xs font-medium rounded-md whitespace-nowrap ${validatorSortKey === 'votingPower' ? 'bg-white text-gray-900 shadow-sm' : 'text-gray-600'}`}
               title="Sort by voting power"
             >
-              Voting Power
+              Avg. Voting Power
             </button>
             <button 
               onClick={() => setValidatorSortKey('voteCount')} 

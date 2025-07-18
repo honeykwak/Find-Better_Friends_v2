@@ -12,7 +12,8 @@ const useRangeSlider = (
   min: number,
   max: number,
   initialValues: [number, number],
-  onChangeComplete: (values: [number, number]) => void
+  onChangeComplete: (values: [number, number]) => void,
+  step: number = 1
 ) => {
   const [values, setValues] = useState<[number, number]>(initialValues)
   const [activeThumb, setActiveThumb] = useState<'min' | 'max' | null>(null)
@@ -37,7 +38,8 @@ const useRangeSlider = (
 
       const rect = sliderRef.current.getBoundingClientRect()
       const percent = Math.max(0, Math.min(100, ((e.clientX - rect.left) / rect.width) * 100))
-      const newValue = Math.round((percent / 100) * (max - min) + min)
+      const rawValue = (percent / 100) * (max - min) + min
+      const newValue = Math.round(rawValue / step) * step;
 
       setValues(currentValues => {
         let [currentMin, currentMax] = currentValues
@@ -82,10 +84,10 @@ const useRangeSlider = (
       window.removeEventListener('mousemove', handleMouseMove)
       window.removeEventListener('mouseup', handleMouseUp)
     }
-  }, [min, max])
+  }, [min, max, step])
 
-  const minPercent = ((values[0] - min) / (max - min)) * 100
-  const maxPercent = ((values[1] - min) / (max - min)) * 100
+  const minPercent = max > min ? ((values[0] - min) / (max - min)) * 100 : 0
+  const maxPercent = max > min ? ((values[1] - min) / (max - min)) * 100 : 0
 
   return { sliderRef, minThumbRef, maxThumbRef, values, minPercent, maxPercent, activeThumb }
 }
@@ -95,46 +97,79 @@ const ApprovalRateSlider = () => {
   const setApprovalRateRange = useGlobalStore(state => state.setApprovalRateRange)
 
   const { sliderRef, minThumbRef, maxThumbRef, values, minPercent, maxPercent, activeThumb } = useRangeSlider(
-    0,
-    100,
-    approvalRateRange,
-    setApprovalRateRange
+    0, 100, approvalRateRange, setApprovalRateRange, 1
   )
 
   return (
     <div>
       <div className="flex justify-between items-end mb-2">
         <label className="block text-sm font-medium text-gray-700">Yes Rate</label>
-        <span className="text-sm text-gray-500">{values[0]}% - {values[1]}%</span>
       </div>
       <div 
-        className="relative w-full h-9 border border-gray-300 rounded-md overflow-hidden flex items-center" 
+        className="relative w-full h-9 border border-gray-300 rounded-md overflow-hidden flex items-center justify-center" 
         ref={sliderRef}
       >
-        {/* Background Track */}
         <div className="absolute top-0 left-0 w-full h-full bg-gray-200" />
+        <div className="absolute top-0 h-full bg-blue-500" style={{ left: `${minPercent}%`, right: `${100 - maxPercent}%` }} />
         
-        {/* Selected Range Fill */}
-        <div
-          className="absolute top-0 h-full bg-blue-500"
-          style={{ left: `${minPercent}%`, right: `${100 - maxPercent}%` }}
-        />
+        <span className="relative z-10 text-xs font-medium text-white mix-blend-difference">
+          {values[0]}% - {values[1]}%
+        </span>
 
-        {/* Min Thumb */}
-        <div
-          ref={minThumbRef}
-          className={`absolute top-1/2 w-4 h-4 bg-white border-2 border-blue-500 rounded-full cursor-pointer ${activeThumb === 'min' ? 'z-20' : 'z-10'}`}
-          style={{ left: `${minPercent}%`, transform: 'translate(-50%, -50%)' }}
-        />
-        {/* Max Thumb */}
-        <div
-          ref={maxThumbRef}
-          className={`absolute top-1/2 w-4 h-4 bg-white border-2 border-blue-500 rounded-full cursor-pointer ${activeThumb === 'max' ? 'z-20' : 'z-10'}`}
-          style={{ left: `${maxPercent}%`, transform: 'translate(-50%, -50%)' }}
-        />
+        <div ref={minThumbRef} className={`absolute top-1/2 w-4 h-4 bg-white border-2 border-blue-500 rounded-full cursor-pointer ${activeThumb === 'min' ? 'z-20' : 'z-10'}`} style={{ left: `${minPercent}%`, transform: 'translate(-50%, -50%)' }} />
+        <div ref={maxThumbRef} className={`absolute top-1/2 w-4 h-4 bg-white border-2 border-blue-500 rounded-full cursor-pointer ${activeThumb === 'max' ? 'z-20' : 'z-10'}`} style={{ left: `${maxPercent}%`, transform: 'translate(-50%, -50%)' }} />
       </div>
     </div>
   )
+}
+
+const VotingPowerSlider = () => {
+  const {
+    votingPowerFilterMode,
+    votingPowerRange,
+    votingPowerDynamicRange,
+    setVotingPowerFilterMode,
+    setVotingPowerRange,
+  } = useGlobalStore();
+
+  const isRatio = votingPowerFilterMode === 'ratio';
+  const [min, max] = votingPowerDynamicRange;
+  const step = isRatio ? 0.01 : 1;
+
+  const { sliderRef, minThumbRef, maxThumbRef, values, minPercent, maxPercent, activeThumb } = useRangeSlider(
+    min, max, votingPowerRange, setVotingPowerRange, step
+  );
+
+  const formatValue = (val: number) => {
+    if (isRatio) return `${val.toFixed(2)}%`;
+    return `${Math.round(val)}`;
+  }
+
+  return (
+    <div>
+      <div className="flex justify-between items-center mb-2">
+        <label className="block text-sm font-medium text-gray-700">Avg. Voting Power</label>
+        <div className="flex bg-gray-100 rounded-lg p-0.5">
+          <button onClick={() => setVotingPowerFilterMode('ratio')} className={`flex-1 px-2 py-1 text-xs font-medium rounded-md whitespace-nowrap ${isRatio ? 'bg-white text-gray-900 shadow-sm' : 'text-gray-600'}`}>Ratio</button>
+          <button onClick={() => setVotingPowerFilterMode('rank')} className={`flex-1 px-2 py-1 text-xs font-medium rounded-md whitespace-nowrap ${!isRatio ? 'bg-white text-gray-900 shadow-sm' : 'text-gray-600'}`}>Rank</button>
+        </div>
+      </div>
+      <div 
+        className="relative w-full h-9 border border-gray-300 rounded-md overflow-hidden flex items-center justify-center" 
+        ref={sliderRef}
+      >
+        <div className="absolute top-0 left-0 w-full h-full bg-gray-200" />
+        <div className="absolute top-0 h-full bg-blue-500" style={{ left: `${minPercent}%`, right: `${100 - maxPercent}%` }} />
+        
+        <span className="relative z-10 text-xs font-medium text-white mix-blend-difference">
+          {formatValue(values[0])} - {formatValue(values[1])}
+        </span>
+
+        <div ref={minThumbRef} className={`absolute top-1/2 w-4 h-4 bg-white border-2 border-blue-500 rounded-full cursor-pointer ${activeThumb === 'min' ? 'z-20' : 'z-10'}`} style={{ left: `${minPercent}%`, transform: 'translate(-50%, -50%)' }} />
+        <div ref={maxThumbRef} className={`absolute top-1/2 w-4 h-4 bg-white border-2 border-blue-500 rounded-full cursor-pointer ${activeThumb === 'max' ? 'z-20' : 'z-10'}`} style={{ left: `${maxPercent}%`, transform: 'translate(-50%, -50%)' }} />
+      </div>
+    </div>
+  );
 }
 
 
@@ -246,6 +281,7 @@ export default function FilterPanel() {
     setSelectedCategories,
     setSelectedTopics,
     setApprovalRateRange,
+    setVotingPowerFilterMode,
     setSelectedChain,
     setSearchTerm,
     setCategoryVisualizationMode,
@@ -273,7 +309,9 @@ export default function FilterPanel() {
     setInputValue('')
     setSearchTerm('')
     setApprovalRateRange([0, 100])
-  }, [setSelectedCategories, setSelectedTopics, setSearchTerm, setApprovalRateRange])
+    setVotingPowerFilterMode('ratio');
+    // The dynamic range will be reset in the heatmap component effect
+  }, [setSelectedCategories, setSelectedTopics, setSearchTerm, setApprovalRateRange, setVotingPowerFilterMode])
 
   const activeFiltersCount = useMemo(() => [
     selectedCategories.length > 0,
@@ -467,6 +505,9 @@ export default function FilterPanel() {
                 </div>
               )}
             </div>
+          </div>
+          <div className="mb-4">
+            <VotingPowerSlider />
           </div>
         </div>
       </div>

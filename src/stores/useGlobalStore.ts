@@ -33,6 +33,9 @@ interface GlobalStore {
   selectedTopics: string[]
   searchTerm: string
   approvalRateRange: [number, number]
+  votingPowerFilterMode: 'ratio' | 'rank'
+  votingPowerRange: [number, number]
+  votingPowerDynamicRange: [number, number]
   validatorSortKey: ValidatorSortKey;
   
   categoryVisualizationMode: 'passRate' | 'voteCount'
@@ -50,6 +53,9 @@ interface GlobalStore {
   toggleTopic: (topic: string) => void
   setSearchTerm: (term: string) => void
   setApprovalRateRange: (range: [number, number]) => void
+  setVotingPowerFilterMode: (mode: 'ratio' | 'rank') => void
+  setVotingPowerRange: (range: [number, number]) => void
+  setVotingPowerDynamicRange: (range: [number, number]) => void
   setCategoryVisualizationMode: (mode: 'passRate' | 'voteCount') => void
   setWindowSize: (size: { width: number; height: number }) => void
   setValidatorSortKey: (key: ValidatorSortKey) => void;
@@ -72,6 +78,9 @@ export const useGlobalStore = create<GlobalStore>((set, get) => ({
   selectedTopics: [],
   searchTerm: '',
   approvalRateRange: [0, 100],
+  votingPowerFilterMode: 'ratio',
+  votingPowerRange: [0, 100],
+  votingPowerDynamicRange: [0, 100],
   categoryVisualizationMode: 'voteCount',
   validatorSortKey: 'votingPower',
   loading: true,
@@ -105,6 +114,9 @@ export const useGlobalStore = create<GlobalStore>((set, get) => ({
       selectedTopics: [],
       searchTerm: '', // Reset search term on chain change
       approvalRateRange: [0, 100],
+      votingPowerFilterMode: 'ratio',
+      votingPowerRange: [0, 100],
+      votingPowerDynamicRange: [0, 100],
       validatorSortKey: 'votingPower', // Set to new default on chain change
     })
     get().loadData(chain).catch(console.error)
@@ -142,6 +154,15 @@ export const useGlobalStore = create<GlobalStore>((set, get) => ({
     }
   },
   setApprovalRateRange: (range: [number, number]) => set({ approvalRateRange: range }),
+  setVotingPowerFilterMode: (mode) => set({ votingPowerFilterMode: mode }),
+  setVotingPowerRange: (range) => set({ votingPowerRange: range }),
+  setVotingPowerDynamicRange: (range) => {
+    // To prevent infinite loops, only update if the range has actually changed.
+    const currentRange = get().votingPowerDynamicRange;
+    if (currentRange[0] !== range[0] || currentRange[1] !== range[1]) {
+      set({ votingPowerDynamicRange: range });
+    }
+  },
   setCategoryVisualizationMode: (mode) => set({ categoryVisualizationMode: mode }),
   setWindowSize: (size) => set({ windowSize: size }),
   setValidatorSortKey: (key: ValidatorSortKey) => set({ validatorSortKey: key }),
