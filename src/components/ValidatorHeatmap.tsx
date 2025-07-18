@@ -298,11 +298,12 @@ export default function ValidatorHeatmap() {
 
   return (
     <div className="h-full flex flex-col bg-white">
-      <div className="flex items-center justify-between p-4 border-b border-gray-200 bg-gray-50">
-        <div className="flex items-center gap-6">
+      <div className="p-4 border-b border-gray-200 bg-gray-50 space-y-3">
+        {/* Row 1: Title and Legend */}
+        <div className="flex items-center justify-between">
           <div className="flex items-center gap-4">
             <h3 className="text-lg font-semibold text-gray-900">
-              Validator-Proposal Heatmap
+              Heatmap
             </h3>
             {isLoading && (
               <Loader2 className="w-4 h-4 animate-spin text-blue-600" />
@@ -321,7 +322,9 @@ export default function ValidatorHeatmap() {
               </span>
           </div>
         </div>
-        <div className="flex items-center gap-4">
+
+        {/* Row 2: Sort and Controls */}
+        <div className="flex items-center justify-between">
           <div className="flex items-center bg-gray-100 rounded-lg p-1">
             <button 
               onClick={() => setValidatorSortKey('votingPower')} 
@@ -353,13 +356,15 @@ export default function ValidatorHeatmap() {
               Similarity
             </button>
           </div>
-          <div className="flex items-center gap-1 border border-gray-300 rounded-lg">
-            <button onClick={handleZoomOut} className="p-2 hover:bg-gray-100" title="Zoom Out"><ZoomOut className="w-4 h-4" /></button>
-            <span className="px-3 py-2 text-sm font-mono border-x text-gray-800">{Math.round(zoom * 100)}%</span>
-            <button onClick={handleZoomIn} className="p-2 hover:bg-gray-100" title="Zoom In"><ZoomIn className="w-4 h-4" /></button>
-            <button onClick={handleResetZoom} className="p-2 hover:bg-gray-100 border-l" title="Reset Zoom"><RotateCcw className="w-4 h-4" /></button>
+          <div className="flex items-center gap-4">
+            <div className="flex items-center gap-1 border border-gray-300 rounded-lg">
+              <button onClick={handleZoomOut} className="p-2 hover:bg-gray-100" title="Zoom Out"><ZoomOut className="w-4 h-4" /></button>
+              <span className="px-3 py-2 text-sm font-mono border-x text-gray-800">{Math.round(zoom * 100)}%</span>
+              <button onClick={handleZoomIn} className="p-2 hover:bg-gray-100" title="Zoom In"><ZoomIn className="w-4 h-4" /></button>
+              <button onClick={handleResetZoom} className="p-2 hover:bg-gray-100 border-l" title="Reset Zoom"><RotateCcw className="w-4 h-4" /></button>
+            </div>
+            <button className="p-2 border rounded-lg hover:bg-gray-100" title="Customize Colors"><Palette className="w-4 h-4" /></button>
           </div>
-          <button className="p-2 border rounded-lg hover:bg-gray-100" title="Customize Colors"><Palette className="w-4 h-4" /></button>
         </div>
       </div>
       <div ref={containerRef} className="flex-1 overflow-auto">
