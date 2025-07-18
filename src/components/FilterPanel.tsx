@@ -15,12 +15,12 @@ const useRangeSlider = (
   onChangeComplete: (values: [number, number]) => void
 ) => {
   const [values, setValues] = useState<[number, number]>(initialValues)
+  const [activeThumb, setActiveThumb] = useState<'min' | 'max' | null>(null)
   const sliderRef = useRef<HTMLDivElement>(null)
   const minThumbRef = useRef<HTMLDivElement>(null)
   const maxThumbRef = useRef<HTMLDivElement>(null)
   const draggingRef = useRef<'min' | 'max' | null>(null)
 
-  // Use refs to store the latest callbacks and values to avoid stale closures
   const onChangeCompleteRef = useRef(onChangeComplete)
   onChangeCompleteRef.current = onChangeComplete
 
@@ -54,6 +54,7 @@ const useRangeSlider = (
       if (draggingRef.current) {
         onChangeCompleteRef.current(valuesRef.current)
         draggingRef.current = null
+        setActiveThumb(null)
       }
       window.removeEventListener('mousemove', handleMouseMove)
       window.removeEventListener('mouseup', handleMouseUp)
@@ -61,6 +62,7 @@ const useRangeSlider = (
 
     const handleMouseDown = (thumb: 'min' | 'max') => {
       draggingRef.current = thumb
+      setActiveThumb(thumb)
       window.addEventListener('mousemove', handleMouseMove)
       window.addEventListener('mouseup', handleMouseUp)
     }
@@ -80,19 +82,19 @@ const useRangeSlider = (
       window.removeEventListener('mousemove', handleMouseMove)
       window.removeEventListener('mouseup', handleMouseUp)
     }
-  }, [min, max]) // Effect only re-runs if min/max change, which they don't
+  }, [min, max])
 
   const minPercent = ((values[0] - min) / (max - min)) * 100
   const maxPercent = ((values[1] - min) / (max - min)) * 100
 
-  return { sliderRef, minThumbRef, maxThumbRef, values, minPercent, maxPercent }
+  return { sliderRef, minThumbRef, maxThumbRef, values, minPercent, maxPercent, activeThumb }
 }
 
 const ApprovalRateSlider = () => {
   const approvalRateRange = useGlobalStore(state => state.approvalRateRange)
   const setApprovalRateRange = useGlobalStore(state => state.setApprovalRateRange)
 
-  const { sliderRef, minThumbRef, maxThumbRef, values, minPercent, maxPercent } = useRangeSlider(
+  const { sliderRef, minThumbRef, maxThumbRef, values, minPercent, maxPercent, activeThumb } = useRangeSlider(
     0,
     100,
     approvalRateRange,
@@ -101,28 +103,35 @@ const ApprovalRateSlider = () => {
 
   return (
     <div>
-      <label className="block text-sm font-medium text-gray-700 mb-2">Yes Rate</label>
-      <div className="relative h-8" ref={sliderRef}>
-        <div className="absolute top-1/2 -translate-y-1/2 w-full h-1 bg-gray-200 rounded-full">
-          <div
-            className="absolute h-full bg-blue-500"
-            style={{ left: `${minPercent}%`, right: `${100 - maxPercent}%` }}
-          />
-        </div>
+      <div className="flex justify-between items-end mb-2">
+        <label className="block text-sm font-medium text-gray-700">Yes Rate</label>
+        <span className="text-sm text-gray-500">{values[0]}% - {values[1]}%</span>
+      </div>
+      <div 
+        className="relative w-full h-9 border border-gray-300 rounded-md overflow-hidden flex items-center" 
+        ref={sliderRef}
+      >
+        {/* Background Track */}
+        <div className="absolute top-0 left-0 w-full h-full bg-gray-200" />
+        
+        {/* Selected Range Fill */}
+        <div
+          className="absolute top-0 h-full bg-blue-500"
+          style={{ left: `${minPercent}%`, right: `${100 - maxPercent}%` }}
+        />
+
+        {/* Min Thumb */}
         <div
           ref={minThumbRef}
-          className="absolute top-1/2 -translate-y-1/2 w-4 h-4 bg-white border-2 border-blue-500 rounded-full cursor-pointer"
+          className={`absolute top-1/2 w-4 h-4 bg-white border-2 border-blue-500 rounded-full cursor-pointer ${activeThumb === 'min' ? 'z-20' : 'z-10'}`}
           style={{ left: `${minPercent}%`, transform: 'translate(-50%, -50%)' }}
         />
+        {/* Max Thumb */}
         <div
           ref={maxThumbRef}
-          className="absolute top-1/2 -translate-y-1/2 w-4 h-4 bg-white border-2 border-blue-500 rounded-full cursor-pointer"
+          className={`absolute top-1/2 w-4 h-4 bg-white border-2 border-blue-500 rounded-full cursor-pointer ${activeThumb === 'max' ? 'z-20' : 'z-10'}`}
           style={{ left: `${maxPercent}%`, transform: 'translate(-50%, -50%)' }}
         />
-      </div>
-      <div className="flex justify-between text-xs text-gray-500 mt-1">
-        <span>{values[0]}%</span>
-        <span>{values[1]}%</span>
       </div>
     </div>
   )
@@ -189,7 +198,7 @@ const CategoryItem = React.memo(({ category, isHovered, isCategorySelected, sele
 
   return (
     <div className="border border-gray-200 rounded-lg" onMouseEnter={() => onCategoryMouseEnter(category.name)} onMouseLeave={onCategoryMouseLeave}>
-      <div className="flex items-center p-3 hover:bg-gray-50 relative">
+      <div className="flex items-center px-3 py-2 hover:bg-gray-50 relative">
         {categoryVisualizationMode === 'passRate' ? <PassRateBackground passRate={category.passRate} /> : <VoteCountBackground voteDistribution={category.voteDistribution} />}
         <input type="checkbox" checked={checkboxState === 'checked'} ref={el => el && (el.indeterminate = checkboxState === 'indeterminate')} onChange={() => onToggleCategoryWithTopics(category.name, category.topics.map(t => t.name))} className="w-4 h-4 text-blue-600 border-gray-300 rounded focus:ring-blue-500 relative z-10 mr-2" />
         <div className="flex items-center justify-between flex-1 relative z-10">
