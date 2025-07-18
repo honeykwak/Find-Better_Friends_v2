@@ -5,8 +5,6 @@ import * as d3 from 'd3'
 import { useGlobalStore, type ValidatorSortKey } from '@/stores/useGlobalStore'
 import { Loader2, ZoomIn, ZoomOut, RotateCcw, Palette, ArrowDownUp, CaseSensitive, Signal } from 'lucide-react'
 
-// ... (interfaces and config remain the same)
-
 interface HeatmapConfig {
   cellWidth: number
   cellHeight: number
@@ -59,7 +57,6 @@ export default function ValidatorHeatmap() {
   const containerRef = useRef<HTMLDivElement>(null)
   const [config, setConfig] = useState<HeatmapConfig>(DEFAULT_CONFIG)
   const [zoom, setZoom] = useState(1)
-  const [selectedValidator, setSelectedValidator] = useState<string | null>(null)
   const [selectedProposal, setSelectedProposal] = useState<string | null>(null)
   const [isLoading, setIsLoading] = useState(true)
 
@@ -69,16 +66,21 @@ export default function ValidatorHeatmap() {
     votes: rawVotes,
     getFilteredProposals,
     getFilteredValidators,
-    selectedChain,
     loading,
     approvalRateRange,
     selectedTopics,
     searchTerm,
+    setSearchTerm,
     validatorSortKey,
     setValidatorSortKey,
   } = useGlobalStore()
 
-  // 데이터 전처리 및 메모이제이션
+  // Use a ref to track the current searchTerm to avoid stale closures in D3 event handlers
+  const searchTermRef = useRef(searchTerm);
+  useEffect(() => {
+    searchTermRef.current = searchTerm;
+  }, [searchTerm]);
+
   const heatmapData = useMemo((): ProcessedHeatmapData => {
     const filteredProposals = getFilteredProposals()
     const filteredValidators = getFilteredValidators()
@@ -90,28 +92,21 @@ export default function ValidatorHeatmap() {
     const proposalSet = new Set(filteredProposals.map(p => p.proposal_id))
     
     const validators = filteredValidators
-      .slice() // Create a shallow copy to avoid mutating the original array
+      .slice()
       .sort((a, b) => {
         if (validatorSortKey === 'name') {
           return (a.moniker || '').localeCompare(b.moniker || '')
         }
-
         if (validatorSortKey === 'votingPower') {
           const validatorPowerSum = new Map<string, number>()
           const validatorVoteCount = new Map<string, number>()
           for (const vote of rawVotes) {
             if (proposalSet.has(vote.proposal_id)) {
-              validatorVoteCount.set(
-                vote.validator_address,
-                (validatorVoteCount.get(vote.validator_address) || 0) + 1,
-              )
+              validatorVoteCount.set(vote.validator_address, (validatorVoteCount.get(vote.validator_address) || 0) + 1)
               if (vote.voting_power) {
                 const power = parseFloat(vote.voting_power)
                 if (!isNaN(power)) {
-                  validatorPowerSum.set(
-                    vote.validator_address,
-                    (validatorPowerSum.get(vote.validator_address) || 0) + power,
-                  )
+                  validatorPowerSum.set(vote.validator_address, (validatorPowerSum.get(vote.validator_address) || 0) + power)
                 }
               }
             }
@@ -121,47 +116,27 @@ export default function ValidatorHeatmap() {
             const count = validatorVoteCount.get(address) || 0
             return count > 0 ? sum / count : 0
           }
-          const aAvgPower = getAveragePower(a.validator_address)
-          const bAvgPower = getAveragePower(b.validator_address)
-          return bAvgPower - aAvgPower
+          return getAveragePower(b.validator_address) - getAveragePower(a.validator_address)
         }
-        
-        // Default to 'voteCount'
         const validatorVoteCounts = new Map<string, number>()
         for (const vote of rawVotes) {
           if (proposalSet.has(vote.proposal_id)) {
             validatorVoteCounts.set(vote.validator_address, (validatorVoteCounts.get(vote.validator_address) || 0) + 1)
           }
         }
-        const aVotes = validatorVoteCounts.get(a.validator_address) || 0
-        const bVotes = validatorVoteCounts.get(b.validator_address) || 0
-        return bVotes - aVotes
+        return (validatorVoteCounts.get(b.validator_address) || 0) - (validatorVoteCounts.get(a.validator_address) || 0)
       })
-      .map((v, index) => ({
-        address: v.validator_address,
-        name: v.moniker || 'Unknown',
-        index,
-      }))
+      .map((v, index) => ({ address: v.validator_address, name: v.moniker || 'Unknown', index }))
 
     const proposals = filteredProposals
-      .sort((a, b) => {
-        return new Date(b.submit_time).getTime() - new Date(a.submit_time).getTime()
-      })
-      .map((p, index) => ({
-        id: p.proposal_id,
-        title: p.title,
-        index,
-        status: p.status,
-      }))
+      .sort((a, b) => new Date(b.submit_time).getTime() - new Date(a.submit_time).getTime())
+      .map((p, index) => ({ id: p.proposal_id, title: p.title, index, status: p.status }))
 
     const validatorAddressToIndex = new Map(validators.map(v => [v.address, v.index]))
     const proposalIdToIndex = new Map(proposals.map(p => [p.id, p.index]))
 
     const votes = rawVotes
-      .filter(
-        vote =>
-          validatorAddressToIndex.has(vote.validator_address) && proposalIdToIndex.has(vote.proposal_id),
-      )
+      .filter(vote => validatorAddressToIndex.has(vote.validator_address) && proposalIdToIndex.has(vote.proposal_id))
       .map(vote => ({
         validatorIndex: validatorAddressToIndex.get(vote.validator_address)!,
         proposalIndex: proposalIdToIndex.get(vote.proposal_id)!,
@@ -169,26 +144,17 @@ export default function ValidatorHeatmap() {
       }))
 
     return { validators, proposals, votes }
-  }, [
-    getFilteredProposals, 
-    getFilteredValidators, 
-    rawVotes, 
-    validatorSortKey, 
-    approvalRateRange, 
-    selectedTopics, 
-    searchTerm
-  ])
+  }, [getFilteredProposals, getFilteredValidators, rawVotes, validatorSortKey, approvalRateRange, selectedTopics])
 
-  // D3.js 히트맵 렌더링
+  // Main D3 rendering effect (runs only when data or major config changes)
   useEffect(() => {
     if (!svgRef.current || !heatmapData.validators.length || loading) {
       if (svgRef.current) d3.select(svgRef.current).selectAll('*').remove();
       setIsLoading(loading);
       return;
-    };
+    }
 
     setIsLoading(true)
-
     const svg = d3.select(svgRef.current)
     svg.selectAll('*').remove()
 
@@ -200,19 +166,11 @@ export default function ValidatorHeatmap() {
     const totalWidth = chartWidth + margin.left + margin.right
     const totalHeight = chartHeight + margin.top + margin.bottom
 
-    svg
-      .attr('width', totalWidth * zoom)
-      .attr('height', totalHeight * zoom)
-      .style('background', colors.background)
+    svg.attr('width', totalWidth * zoom).attr('height', totalHeight * zoom).style('background', colors.background)
+    const g = svg.append('g').attr('transform', `translate(${margin.left * zoom}, ${margin.top * zoom}) scale(${zoom})`)
+    const getVoteColor = (option: string) => colors[option as keyof typeof colors] || colors.NO_VOTE
 
-    const g = svg.append('g')
-      .attr('transform', `translate(${margin.left * zoom}, ${margin.top * zoom}) scale(${zoom})`)
-
-    const getVoteColor = (option: string) => {
-      return colors[option as keyof typeof colors] || colors.NO_VOTE;
-    }
-
-    const cells = g.selectAll('.cell')
+    g.selectAll('.cell')
       .data(votes)
       .enter()
       .append('rect')
@@ -223,48 +181,29 @@ export default function ValidatorHeatmap() {
       .attr('height', cellHeight - 1)
       .attr('fill', d => getVoteColor(d.voteOption))
       .style('cursor', 'pointer')
-
-    cells
       .on('mouseover', function(event, d) {
         const validator = validators[d.validatorIndex]
         const proposal = proposals[d.proposalIndex]
-        
-        d3.select('body').selectAll('.heatmap-tooltip').remove();
-        const tooltip = d3.select('body')
-          .append('div')
-          .attr('class', 'heatmap-tooltip')
-          .style('position', 'absolute')
-          .style('background', 'rgba(0,0,0,0.8)')
-          .style('color', 'white')
-          .style('padding', '8px')
-          .style('border-radius', '4px')
-          .style('font-size', '12px')
-          .style('pointer-events', 'none')
-          .style('z-index', '1000')
-          .html(`
-            <strong>${validator.name}</strong><br/>
-            ${proposal.title.slice(0, 50)}...<br/>
-            Vote: ${d.voteOption}
-          `)
-
-        tooltip
-          .style('left', (event.pageX + 10) + 'px')
-          .style('top', (event.pageY - 10) + 'px')
-
-        d3.select(this)
-          .attr('stroke', '#000')
-          .attr('stroke-width', 1.5)
+        d3.select('body').selectAll('.heatmap-tooltip').remove()
+        const tooltip = d3.select('body').append('div').attr('class', 'heatmap-tooltip')
+          .style('position', 'absolute').style('background', 'rgba(0,0,0,0.8)').style('color', 'white')
+          .style('padding', '8px').style('border-radius', '4px').style('font-size', '12px')
+          .style('pointer-events', 'none').style('z-index', '1000')
+          .html(`<strong>${validator.name}</strong><br/>${proposal.title.slice(0, 50)}...<br/>Vote: ${d.voteOption}`)
+        tooltip.style('left', (event.pageX + 10) + 'px').style('top', (event.pageY - 10) + 'px')
+        d3.select(this).attr('stroke', '#000').attr('stroke-width', 1.5)
       })
       .on('mouseout', function() {
         d3.selectAll('.heatmap-tooltip').remove()
-        d3.select(this)
-          .attr('stroke', 'none')
+        d3.select(this).attr('stroke', 'none')
       })
       .on('click', function(event, d) {
         const validator = validators[d.validatorIndex]
-        const proposal = proposals[d.proposalIndex]
-        setSelectedValidator(validator.address)
-        setSelectedProposal(proposal.id)
+        if (searchTermRef.current === validator.name) {
+          setSearchTerm('');
+        } else {
+          setSearchTerm(validator.name);
+        }
       })
 
     g.selectAll('.validator-label')
@@ -279,7 +218,13 @@ export default function ValidatorHeatmap() {
       .style('font-size', `${Math.max(8, cellHeight * 0.7)}px`)
       .text(d => d.name.slice(0, 25))
       .style('cursor', 'pointer')
-      .on('click', (event, d) => setSelectedValidator(d.address))
+      .on('click', (event, d) => {
+        if (searchTermRef.current === d.name) {
+          setSearchTerm('');
+        } else {
+          setSearchTerm(d.name);
+        }
+      })
 
     g.selectAll('.proposal-label')
       .data(proposals)
@@ -296,8 +241,19 @@ export default function ValidatorHeatmap() {
       .on('click', (event, d) => setSelectedProposal(d.id))
 
     setIsLoading(false)
+  }, [heatmapData, config, zoom, loading, setSearchTerm])
 
-  }, [heatmapData, config, zoom, loading])
+  // Lightweight effect for highlighting only
+  useEffect(() => {
+    if (!svgRef.current || loading) return;
+    const svg = d3.select(svgRef.current)
+    const lowercasedSearchTerm = searchTerm.toLowerCase()
+
+    svg.selectAll('.validator-label')
+      .style('font-weight', d => ((d as { name: string }).name.toLowerCase() === lowercasedSearchTerm && searchTerm) ? 'bold' : 'normal')
+      .style('fill', d => ((d as { name: string }).name.toLowerCase() === lowercasedSearchTerm && searchTerm) ? 'blue' : 'black')
+  }, [searchTerm, loading, heatmapData.validators])
+
 
   const handleZoomIn = () => setZoom(prev => Math.min(prev * 1.2, 5))
   const handleZoomOut = () => setZoom(prev => Math.max(prev / 1.2, 0.2))
@@ -325,7 +281,6 @@ export default function ValidatorHeatmap() {
             <Loader2 className="w-4 h-4 animate-spin text-blue-600" />
           )}
         </div>
-
         <div className="flex items-center gap-4">
           <div className="flex items-center bg-gray-100 rounded-lg p-1">
             <button 
@@ -362,7 +317,6 @@ export default function ValidatorHeatmap() {
           <button className="p-2 border rounded-lg hover:bg-gray-100" title="Customize Colors"><Palette className="w-4 h-4" /></button>
         </div>
       </div>
-
       <div className="px-4 py-2 bg-blue-50 text-sm">
         <div className="flex items-center gap-6">
           <span>📊 {heatmapData.validators.length} validators × {heatmapData.proposals.length} proposals</span>
@@ -380,7 +334,6 @@ export default function ValidatorHeatmap() {
           </div>
         </div>
       </div>
-
       <div ref={containerRef} className="flex-1 overflow-auto">
         <svg ref={svgRef} className="block"></svg>
       </div>

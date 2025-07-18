@@ -1,6 +1,8 @@
 import { create } from 'zustand'
 import { loadChainData, type Proposal, type Vote, type Validator } from '@/lib/dataLoader'
 
+export type { Validator };
+
 // 카테고리 계층 구조 타입 (FilterPanel에서 사용)
 export interface CategoryHierarchyNode {
   name: string
@@ -173,11 +175,8 @@ export const useGlobalStore = create<GlobalStore>((set, get) => ({
   },
 
   getFilteredValidators: () => {
-    const { validators, searchTerm } = get()
-    if (!searchTerm) return validators
-
-    const term = searchTerm.toLowerCase()
-    return validators.filter(v => v.moniker?.toLowerCase().includes(term))
+    const { validators } = get()
+    return validators
   },
 
   getChains: () => [

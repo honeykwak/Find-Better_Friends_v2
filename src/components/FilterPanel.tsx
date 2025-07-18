@@ -1,8 +1,8 @@
 'use client'
 
 import { useState, useRef, useEffect, useMemo, useCallback } from 'react'
-import { Filter, Search, RotateCcw } from 'lucide-react'
-import { useGlobalStore, type CategoryHierarchyNode, type TopicNode } from '@/stores/useGlobalStore'
+import { Filter, Search, RotateCcw, X } from 'lucide-react'
+import { useGlobalStore, type CategoryHierarchyNode, type TopicNode, type Validator } from '@/stores/useGlobalStore'
 import { VOTE_COLORS, VOTE_ORDER } from '@/constants/voteColors'
 import Image from 'next/image'
 import React from 'react'
@@ -151,7 +151,7 @@ const VotingPowerBackground = React.memo(({ votingPowerDistribution }: { votingP
   }, [votingPowerDistribution])
 
   if (segments.length === 0) return null
-  return <div className="absolute left-0 top-0 h-full w-full rounded-lg overflow-hidden opacity-50">{segments.map(s => <div key={s.voteType} className="absolute h-full" style={{ left: `${s.startPosition}%`, width: `${s.percentage}%`, backgroundColor: s.color }} />)}</div>
+  return <div className="absolute left-0 top-0 h-full w-full rounded-lg overflow-hidden opacity-50">{segments.map((s, i) => <div key={`${s.voteType}-${i}`} className="absolute h-full" style={{ left: `${s.startPosition}%`, width: `${s.percentage}%`, backgroundColor: s.color }} />)}</div>
 })
 
 const VoteCountBackground = React.memo(({ voteDistribution }: { voteDistribution: { [key: string]: number } }) => {
@@ -171,7 +171,7 @@ const VoteCountBackground = React.memo(({ voteDistribution }: { voteDistribution
   }, [voteDistribution])
 
   if (segments.length === 0) return null
-  return <div className="absolute left-0 top-0 h-full w-full rounded-lg overflow-hidden opacity-50">{segments.map(s => <div key={s.voteType} className="absolute h-full" style={{ left: `${s.startPosition}%`, width: `${s.percentage}%`, backgroundColor: s.color }} />)}</div>
+  return <div className="absolute left-0 top-0 h-full w-full rounded-lg overflow-hidden opacity-50">{segments.map((s, i) => <div key={`${s.voteType}-${i}`} className="absolute h-full" style={{ left: `${s.startPosition}%`, width: `${s.percentage}%`, backgroundColor: s.color }} />)}</div>
 })
 
 const PassRateBackground = React.memo(({ passRate }: { passRate: number }) => {
@@ -233,6 +233,7 @@ export default function FilterPanel() {
     searchTerm,
     approvalRateRange,
     categoryVisualizationMode,
+    validators,
     setSelectedCategories,
     setSelectedTopics,
     setApprovalRateRange,
@@ -247,6 +248,11 @@ export default function FilterPanel() {
   const [hoveredCategory, setHoveredCategory] = useState<string | null>(null)
   const [showChainDropdown, setShowChainDropdown] = useState(false)
   const chainDropdownRef = useRef<HTMLDivElement>(null)
+  const [inputValue, setInputValue] = useState('')
+  const [suggestions, setSuggestions] = useState<Validator[]>([])
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false)
+  const searchRef = useRef<HTMLDivElement>(null)
+
 
   const handleVisualizationModeChange = useCallback((mode: 'passRate' | 'voteCount') => {
     setCategoryVisualizationMode(mode)
@@ -255,6 +261,7 @@ export default function FilterPanel() {
   const resetFilters = useCallback(() => {
     setSelectedCategories([])
     setSelectedTopics([])
+    setInputValue('')
     setSearchTerm('')
     setApprovalRateRange([0, 100])
   }, [setSelectedCategories, setSelectedTopics, setSearchTerm, setApprovalRateRange])
@@ -299,10 +306,47 @@ export default function FilterPanel() {
     }
   }, [])
 
+  const handleSearchChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const value = e.target.value
+    setInputValue(value)
+    if (value) {
+      const filteredSuggestions = validators
+        .filter(v => v.moniker?.toLowerCase().includes(value.toLowerCase()))
+        .slice(0, 10) // 제안 개수 제한
+      setSuggestions(filteredSuggestions)
+      setIsDropdownOpen(true)
+    } else {
+      setSuggestions([])
+      setIsDropdownOpen(false)
+    }
+  }
+
+  const handleSearchFocus = () => {
+    if (!inputValue) {
+      const initialSuggestions = validators.slice(0, 10);
+      setSuggestions(initialSuggestions);
+    }
+    setIsDropdownOpen(true);
+  };
+
+  const handleSuggestionClick = (moniker: string) => {
+    if (searchTerm === moniker) {
+      setSearchTerm('')
+    } else {
+      setSearchTerm(moniker)
+    }
+    setInputValue('')
+    setSuggestions([])
+    setIsDropdownOpen(false)
+  }
+
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
       if (chainDropdownRef.current && !chainDropdownRef.current.contains(event.target as Node)) {
         setShowChainDropdown(false)
+      }
+      if (searchRef.current && !searchRef.current.contains(event.target as Node)) {
+        setIsDropdownOpen(false)
       }
     }
     document.addEventListener('mousedown', handleClickOutside)
@@ -311,7 +355,7 @@ export default function FilterPanel() {
 
   return (
     <div className="w-80 h-full bg-white border-r border-gray-200 flex flex-col">
-      <div className="flex-1 overflow-y-auto p-4 space-y-6"> {/* Increased space-y for better separation */}
+      <div className="flex-1 overflow-y-auto p-4 space-y-6">
 
         {/* Chain Section */}
         <div>
@@ -326,7 +370,18 @@ export default function FilterPanel() {
                 <span className="capitalize">{selectedChain}</span>
               </div>
             </button>
-            {showChainDropdown && <div className="absolute top-full left-0 right-0 mt-1 bg-white border rounded-md shadow-lg z-50 max-h-48 overflow-y-auto">{chains.map(chain => <button key={chain} onClick={() => { setSelectedChain(chain); setShowChainDropdown(false); }} className="w-full flex items-center gap-2 px-3 py-2 text-sm text-left hover:bg-gray-50"><Image src={getChainLogo(chain)} alt={chain} width={16} height={16} className="rounded-full" /><span className="capitalize">{chain}</span></button>)}</div>}
+            {showChainDropdown && <div className="absolute top-full left-0 right-0 mt-1 bg-white border rounded-md shadow-lg z-50 max-h-48 overflow-y-auto">
+              {chains.map(chain => (
+                <button 
+                  key={chain} 
+                  onClick={() => { setSelectedChain(chain); setShowChainDropdown(false); }} 
+                  className="w-full flex items-center gap-2 px-3 py-2 text-sm text-left hover:bg-gray-50"
+                >
+                  <Image src={getChainLogo(chain)} alt={chain} width={16} height={16} className="rounded-full" />
+                  <span className="capitalize">{chain}</span>
+                </button>
+              ))}
+            </div>}
           </div>
         </div>
 
@@ -339,31 +394,69 @@ export default function FilterPanel() {
           <div>
             <div className="flex items-center justify-between mb-2">
               <h3 className="text-sm font-medium text-gray-900">Categories</h3>
-              <div className="flex bg-gray-100 rounded-lg p-0.5"> {/* Reduced padding */}
+              <div className="flex bg-gray-100 rounded-lg p-0.5">
                 <button onClick={() => handleVisualizationModeChange('passRate')} className={`flex-1 px-2 py-1 text-xs font-medium rounded-md whitespace-nowrap ${categoryVisualizationMode === 'passRate' ? 'bg-white text-gray-900 shadow-sm' : 'text-gray-600'}`}>Pass Rate</button>
                 <button onClick={() => handleVisualizationModeChange('voteCount')} className={`flex-1 px-2 py-1 text-xs font-medium rounded-md whitespace-nowrap ${categoryVisualizationMode === 'voteCount' ? 'bg-white text-gray-900 shadow-sm' : 'text-gray-600'}`}>Vote Count</button>
               </div>
             </div>
             <div className="space-y-3">
-              {filteredCategoryHierarchy.map(category => {
-                const isHovered = hoveredCategory === category.name
-                const isCategorySelected = selectedCategories.includes(category.name)
-                const selectedTopicsInCategory = selectedTopics.filter(topic => category.topics.some(t => t.name === topic))
-                const hasSelectedTopics = selectedTopicsInCategory.length > 0
-                const allTopicsSelected = selectedTopicsInCategory.length === category.topics.length
-                return <CategoryItem key={category.name} category={category} isHovered={isHovered} isCategorySelected={isCategorySelected} selectedTopicsInCategory={selectedTopicsInCategory} hasSelectedTopics={hasSelectedTopics} allTopicsSelected={allTopicsSelected} categoryVisualizationMode={categoryVisualizationMode} onCategoryMouseEnter={handleCategoryMouseEnter} onCategoryMouseLeave={handleCategoryMouseLeave} onToggleCategoryWithTopics={toggleCategoryWithTopics} onTopicToggle={handleTopicToggle} />
-              })}
+              {filteredCategoryHierarchy.map(category => (
+                <CategoryItem 
+                  key={category.name} 
+                  category={category} 
+                  isHovered={hoveredCategory === category.name} 
+                  isCategorySelected={selectedCategories.includes(category.name)} 
+                  selectedTopicsInCategory={selectedTopics.filter(topic => category.topics.some(t => t.name === topic))} 
+                  hasSelectedTopics={selectedTopics.filter(topic => category.topics.some(t => t.name === topic)).length > 0} 
+                  allTopicsSelected={category.topics.every(t => selectedTopics.includes(t.name))} 
+                  categoryVisualizationMode={categoryVisualizationMode} 
+                  onCategoryMouseEnter={handleCategoryMouseEnter} 
+                  onCategoryMouseLeave={handleCategoryMouseLeave} 
+                  onToggleCategoryWithTopics={toggleCategoryWithTopics} 
+                  onTopicToggle={handleTopicToggle} 
+                />
+              ))}
             </div>
           </div>
         </div>
 
         {/* Validator Section */}
         <div>
-          <h3 className="text-lg font-semibold text-gray-900 mb-3">Validator</h3>
-          <div className="mb-4">
+          <div className="flex items-center justify-between mb-3">
+            <h3 className="text-lg font-semibold text-gray-900">Validator</h3>
+            {searchTerm && (
+              <div className="text-sm text-gray-700 bg-blue-100 px-2 py-1 rounded-md flex items-center gap-2">
+                <span className="font-medium truncate max-w-32">{searchTerm}</span>
+                <button onClick={() => setSearchTerm('')} className="text-blue-600 hover:text-blue-800">
+                  <X size={16} />
+                </button>
+              </div>
+            )}
+          </div>
+          <div className="mb-4" ref={searchRef}>
             <div className="relative">
               <Search className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400 w-4 h-4" />
-              <input type="text" placeholder="Type validator name..." value={searchTerm} onChange={e => setSearchTerm(e.target.value)} className="w-full pl-10 pr-4 py-2 text-sm border border-gray-300 rounded-md" />
+              <input 
+                type="text" 
+                placeholder="Type validator name..." 
+                value={inputValue} 
+                onChange={handleSearchChange}
+                onFocus={handleSearchFocus}
+                className="w-full pl-10 pr-4 py-2 text-sm border border-gray-300 rounded-md" 
+              />
+              {isDropdownOpen && suggestions.length > 0 && (
+                <div className="absolute top-full left-0 right-0 mt-1 bg-white border rounded-md shadow-lg z-50 max-h-60 overflow-y-auto">
+                  {suggestions.map((validator, index) => (
+                    <button
+                      key={`${validator.operator_address}-${index}`}
+                      onClick={() => handleSuggestionClick(validator.moniker || '')}
+                      className="w-full text-left px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                    >
+                      {validator.moniker}
+                    </button>
+                  ))}
+                </div>
+              )}
             </div>
           </div>
         </div>
