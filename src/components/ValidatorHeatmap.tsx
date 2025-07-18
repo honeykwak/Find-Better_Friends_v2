@@ -3,7 +3,9 @@
 import { useEffect, useRef, useState, useMemo } from 'react'
 import * as d3 from 'd3'
 import { useGlobalStore, type ValidatorSortKey } from '@/stores/useGlobalStore'
-import { Loader2, ZoomIn, ZoomOut, RotateCcw, Palette, ArrowDownUp, CaseSensitive, Signal } from 'lucide-react'
+import { Loader2, ZoomIn, ZoomOut, RotateCcw, Palette, ArrowDownUp, CaseSensitive, Signal, Users } from 'lucide-react'
+import { calculateSimilarity } from '@/lib/similarity'
+import type { Vote } from '@/lib/dataLoader'
 
 interface HeatmapConfig {
   cellWidth: number
@@ -90,43 +92,67 @@ export default function ValidatorHeatmap() {
     }
 
     const proposalSet = new Set(filteredProposals.map(p => p.proposal_id))
-    
-    const validators = filteredValidators
-      .slice()
-      .sort((a, b) => {
-        if (validatorSortKey === 'name') {
-          return (a.moniker || '').localeCompare(b.moniker || '')
+    const votesByValidator = new Map<string, Vote[]>()
+    for (const vote of rawVotes) {
+      if (!votesByValidator.has(vote.validator_address)) {
+        votesByValidator.set(vote.validator_address, [])
+      }
+      votesByValidator.get(vote.validator_address)!.push(vote)
+    }
+
+    const sortedValidators = filteredValidators.slice(); // Create a mutable copy
+
+    if (validatorSortKey === 'similarity' && searchTerm) {
+      const selectedValidator = rawValidators.find(v => v.moniker === searchTerm);
+      if (selectedValidator) {
+        const similarityScores = new Map<string, number>();
+        const selectedVotes = votesByValidator.get(selectedValidator.validator_address) || [];
+        
+        for (const validator of sortedValidators) {
+          const targetVotes = votesByValidator.get(validator.validator_address) || [];
+          const score = calculateSimilarity(targetVotes, selectedVotes, proposalSet);
+          similarityScores.set(validator.validator_address, score);
         }
-        if (validatorSortKey === 'votingPower') {
-          const validatorPowerSum = new Map<string, number>()
-          const validatorVoteCount = new Map<string, number>()
-          for (const vote of rawVotes) {
-            if (proposalSet.has(vote.proposal_id)) {
-              validatorVoteCount.set(vote.validator_address, (validatorVoteCount.get(vote.validator_address) || 0) + 1)
-              if (vote.voting_power) {
-                const power = parseFloat(vote.voting_power)
-                if (!isNaN(power)) {
-                  validatorPowerSum.set(vote.validator_address, (validatorPowerSum.get(vote.validator_address) || 0) + power)
-                }
-              }
+
+        sortedValidators.sort((a, b) => {
+          const scoreA = similarityScores.get(a.validator_address) || -2; // Default to a very low score
+          const scoreB = similarityScores.get(b.validator_address) || -2;
+          return scoreB - scoreA;
+        });
+      }
+    } else if (validatorSortKey === 'name') {
+      sortedValidators.sort((a, b) => (a.moniker || '').localeCompare(b.moniker || ''));
+    } else if (validatorSortKey === 'votingPower') {
+      const validatorPowerSum = new Map<string, number>();
+      const validatorVoteCount = new Map<string, number>();
+      for (const vote of rawVotes) {
+        if (proposalSet.has(vote.proposal_id)) {
+          validatorVoteCount.set(vote.validator_address, (validatorVoteCount.get(vote.validator_address) || 0) + 1);
+          if (vote.voting_power) {
+            const power = parseFloat(vote.voting_power);
+            if (!isNaN(power)) {
+              validatorPowerSum.set(vote.validator_address, (validatorPowerSum.get(vote.validator_address) || 0) + power);
             }
           }
-          const getAveragePower = (address: string) => {
-            const sum = validatorPowerSum.get(address) || 0
-            const count = validatorVoteCount.get(address) || 0
-            return count > 0 ? sum / count : 0
-          }
-          return getAveragePower(b.validator_address) - getAveragePower(a.validator_address)
         }
-        const validatorVoteCounts = new Map<string, number>()
-        for (const vote of rawVotes) {
-          if (proposalSet.has(vote.proposal_id)) {
-            validatorVoteCounts.set(vote.validator_address, (validatorVoteCounts.get(vote.validator_address) || 0) + 1)
-          }
+      }
+      const getAveragePower = (address: string) => {
+        const sum = validatorPowerSum.get(address) || 0;
+        const count = validatorVoteCount.get(address) || 0;
+        return count > 0 ? sum / count : 0;
+      };
+      sortedValidators.sort((a, b) => getAveragePower(b.validator_address) - getAveragePower(a.validator_address));
+    } else { // Default to 'voteCount'
+      const validatorVoteCounts = new Map<string, number>();
+      for (const vote of rawVotes) {
+        if (proposalSet.has(vote.proposal_id)) {
+          validatorVoteCounts.set(vote.validator_address, (validatorVoteCounts.get(vote.validator_address) || 0) + 1);
         }
-        return (validatorVoteCounts.get(b.validator_address) || 0) - (validatorVoteCounts.get(a.validator_address) || 0)
-      })
-      .map((v, index) => ({ address: v.validator_address, name: v.moniker || 'Unknown', index }))
+      }
+      sortedValidators.sort((a, b) => (validatorVoteCounts.get(b.validator_address) || 0) - (validatorVoteCounts.get(a.validator_address) || 0));
+    }
+    
+    const validators = sortedValidators.map((v, index) => ({ address: v.validator_address, name: v.moniker || 'Unknown', index }))
 
     const proposals = filteredProposals
       .sort((a, b) => new Date(b.submit_time).getTime() - new Date(a.submit_time).getTime())
@@ -144,7 +170,7 @@ export default function ValidatorHeatmap() {
       }))
 
     return { validators, proposals, votes }
-  }, [getFilteredProposals, getFilteredValidators, rawVotes, validatorSortKey, approvalRateRange, selectedTopics])
+  }, [getFilteredProposals, getFilteredValidators, rawVotes, validatorSortKey, approvalRateRange, selectedTopics, searchTerm, rawValidators])
 
   // Main D3 rendering effect (runs only when data or major config changes)
   useEffect(() => {
@@ -306,6 +332,15 @@ export default function ValidatorHeatmap() {
             >
               <Signal className="w-3 h-3" />
               <span>Voting Power</span>
+            </button>
+            <button 
+              onClick={() => setValidatorSortKey('similarity')} 
+              className={`flex items-center gap-1 px-3 py-2 text-xs font-medium rounded-md whitespace-nowrap ${validatorSortKey === 'similarity' ? 'bg-white text-gray-900 shadow-sm' : 'text-gray-600'} disabled:opacity-50 disabled:cursor-not-allowed`}
+              title="Sort by similarity to the selected validator"
+              disabled={!searchTerm}
+            >
+              <Users className="w-3 h-3" />
+              <span>Similarity</span>
             </button>
           </div>
           <div className="flex items-center gap-1 border border-gray-300 rounded-lg">
