@@ -376,7 +376,7 @@ export default function FilterPanel() {
             <button onClick={() => setShowChainDropdown(!showChainDropdown)} className="w-full flex items-center justify-between px-3 py-2 text-sm bg-white border border-gray-300 rounded-md">
               <div className="flex items-center gap-2">
                 {selectedChain !== 'all' && <Image src={getChainLogo(selectedChain)} alt={selectedChain} width={16} height={16} className="rounded-full" />}
-                <span className="capitalize">{selectedChain}</span>
+                <span className="capitalize font-medium text-gray-800">{selectedChain}</span>
               </div>
             </button>
             {showChainDropdown && <div className="absolute top-full left-0 right-0 mt-1 bg-white border rounded-md shadow-lg z-50 max-h-48 overflow-y-auto">
@@ -444,14 +444,14 @@ export default function FilterPanel() {
           </div>
           <div className="mb-4" ref={searchRef}>
             <div className="relative">
-              <Search className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400 w-4 h-4" />
+              <Search className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-500 w-4 h-4" />
               <input 
                 type="text" 
                 placeholder="Type validator name..." 
                 value={inputValue} 
                 onChange={handleSearchChange}
                 onFocus={handleSearchFocus}
-                className="w-full pl-10 pr-4 py-2 text-sm border border-gray-300 rounded-md" 
+                className="w-full pl-10 pr-4 py-2 text-sm border border-gray-300 rounded-md text-gray-800 placeholder-gray-500" 
               />
               {isDropdownOpen && suggestions.length > 0 && (
                 <div className="absolute top-full left-0 right-0 mt-1 bg-white border rounded-md shadow-lg z-50 max-h-60 overflow-y-auto">

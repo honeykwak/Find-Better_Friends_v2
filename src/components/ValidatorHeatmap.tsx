@@ -3,7 +3,7 @@
 import { useEffect, useRef, useState, useMemo } from 'react'
 import * as d3 from 'd3'
 import { useGlobalStore, type ValidatorSortKey } from '@/stores/useGlobalStore'
-import { Loader2, ZoomIn, ZoomOut, RotateCcw, Palette, ArrowDownUp, CaseSensitive, Signal, Users } from 'lucide-react'
+import { Loader2, ZoomIn, ZoomOut, RotateCcw, Palette } from 'lucide-react'
 import { calculateSimilarity } from '@/lib/similarity'
 import type { Vote } from '@/lib/dataLoader'
 
@@ -325,41 +325,37 @@ export default function ValidatorHeatmap() {
           <div className="flex items-center bg-gray-100 rounded-lg p-1">
             <button 
               onClick={() => setValidatorSortKey('votingPower')} 
-              className={`flex items-center gap-1 px-3 py-2 text-xs font-medium rounded-md whitespace-nowrap ${validatorSortKey === 'votingPower' ? 'bg-white text-gray-900 shadow-sm' : 'text-gray-600'}`}
+              className={`px-3 py-2 text-xs font-medium rounded-md whitespace-nowrap ${validatorSortKey === 'votingPower' ? 'bg-white text-gray-900 shadow-sm' : 'text-gray-600'}`}
               title="Sort by voting power"
             >
-              <Signal className="w-3 h-3" />
-              <span>Voting Power</span>
+              Voting Power
             </button>
             <button 
               onClick={() => setValidatorSortKey('voteCount')} 
-              className={`flex items-center gap-1 px-3 py-2 text-xs font-medium rounded-md whitespace-nowrap ${validatorSortKey === 'voteCount' ? 'bg-white text-gray-900 shadow-sm' : 'text-gray-600'}`}
+              className={`px-3 py-2 text-xs font-medium rounded-md whitespace-nowrap ${validatorSortKey === 'voteCount' ? 'bg-white text-gray-900 shadow-sm' : 'text-gray-600'}`}
               title="Sort by vote participation"
             >
-              <ArrowDownUp className="w-3 h-3" />
-              <span>Vote Count</span>
+              Vote Count
             </button>
             <button 
               onClick={() => setValidatorSortKey('name')} 
-              className={`flex items-center gap-1 px-3 py-2 text-xs font-medium rounded-md whitespace-nowrap ${validatorSortKey === 'name' ? 'bg-white text-gray-900 shadow-sm' : 'text-gray-600'}`}
+              className={`px-3 py-2 text-xs font-medium rounded-md whitespace-nowrap ${validatorSortKey === 'name' ? 'bg-white text-gray-900 shadow-sm' : 'text-gray-600'}`}
               title="Sort by name"
             >
-              <CaseSensitive className="w-3 h-3" />
-              <span>Name</span>
+              Name
             </button>
             <button 
               onClick={() => setValidatorSortKey('similarity')} 
-              className={`flex items-center gap-1 px-3 py-2 text-xs font-medium rounded-md whitespace-nowrap ${validatorSortKey === 'similarity' ? 'bg-white text-gray-900 shadow-sm' : 'text-gray-600'} disabled:opacity-50 disabled:cursor-not-allowed`}
+              className={`px-3 py-2 text-xs font-medium rounded-md whitespace-nowrap ${validatorSortKey === 'similarity' ? 'bg-white text-gray-900 shadow-sm' : 'text-gray-600'} disabled:opacity-50 disabled:cursor-not-allowed`}
               title="Sort by similarity to the selected validator"
               disabled={!searchTerm}
             >
-              <Users className="w-3 h-3" />
-              <span>Similarity</span>
+              Similarity
             </button>
           </div>
           <div className="flex items-center gap-1 border border-gray-300 rounded-lg">
             <button onClick={handleZoomOut} className="p-2 hover:bg-gray-100" title="Zoom Out"><ZoomOut className="w-4 h-4" /></button>
-            <span className="px-3 py-2 text-sm font-mono border-x">{Math.round(zoom * 100)}%</span>
+            <span className="px-3 py-2 text-sm font-mono border-x text-gray-800">{Math.round(zoom * 100)}%</span>
             <button onClick={handleZoomIn} className="p-2 hover:bg-gray-100" title="Zoom In"><ZoomIn className="w-4 h-4" /></button>
             <button onClick={handleResetZoom} className="p-2 hover:bg-gray-100 border-l" title="Reset Zoom"><RotateCcw className="w-4 h-4" /></button>
           </div>
