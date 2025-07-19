@@ -1,6 +1,6 @@
 'use client'
 
-import { useRef, useState, useEffect, useCallback } from 'react'
+import { useRef, useState, useEffect } from 'react'
 
 const useRangeSlider = (
   min: number,
@@ -94,9 +94,20 @@ interface RangeSliderProps {
   formatValue: (value: number) => string;
   step?: number;
   children?: React.ReactNode;
+  color?: string;
 }
 
-export default function RangeSlider({ label, min, max, values, onChange, formatValue, step = 1, children }: RangeSliderProps) {
+export default function RangeSlider({ 
+  label, 
+  min, 
+  max, 
+  values, 
+  onChange, 
+  formatValue, 
+  step = 1, 
+  children,
+  color = '#3b82f6' // Default to blue-500
+}: RangeSliderProps) {
   const { sliderRef, minThumbRef, maxThumbRef, currentValues, minPercent, maxPercent, activeThumb } = useRangeSlider(
     min, max, values, onChange, step
   )
@@ -104,22 +115,45 @@ export default function RangeSlider({ label, min, max, values, onChange, formatV
   return (
     <div>
       <div className="flex justify-between items-center mb-2">
-        <label className="block text-sm font-medium text-gray-700">{label}</label>
+        <label className="block text-sm font-medium" style={{ color: '#111827' }}>{label}</label>
         {children}
       </div>
       <div 
-        className="relative w-full h-9 border border-gray-300 rounded-md overflow-hidden flex items-center justify-center" 
+        className="relative w-full h-9 border border-gray-300 rounded-md overflow-hidden" 
         ref={sliderRef}
       >
         <div className="absolute top-0 left-0 w-full h-full bg-gray-200" />
-        <div className="absolute top-0 h-full bg-blue-500" style={{ left: `${minPercent}%`, right: `${100 - maxPercent}%` }} />
+        <div 
+          className="absolute top-0 h-full flex items-center justify-center overflow-hidden pointer-events-none" 
+          style={{ 
+            left: `${minPercent}%`, 
+            right: `${100 - maxPercent}%`,
+            backgroundColor: color
+          }} 
+        >
+          <span className="text-xs font-medium text-white whitespace-nowrap">
+            {formatValue(currentValues[0])} - {formatValue(currentValues[1])}
+          </span>
+        </div>
         
-        <span className="relative z-10 text-xs font-medium text-white mix-blend-difference">
-          {formatValue(currentValues[0])} - {formatValue(currentValues[1])}
-        </span>
-
-        <div ref={minThumbRef} className={`absolute top-1/2 w-4 h-4 bg-white border-2 border-blue-500 rounded-full cursor-pointer ${activeThumb === 'min' ? 'z-20' : 'z-10'}`} style={{ left: `${minPercent}%`, transform: 'translate(-50%, -50%)' }} />
-        <div ref={maxThumbRef} className={`absolute top-1/2 w-4 h-4 bg-white border-2 border-blue-500 rounded-full cursor-pointer ${activeThumb === 'max' ? 'z-20' : 'z-10'}`} style={{ left: `${maxPercent}%`, transform: 'translate(-50%, -50%)' }} />
+        <div 
+          ref={minThumbRef} 
+          className={`absolute top-1/2 w-4 h-4 bg-white border-2 rounded-full cursor-pointer ${activeThumb === 'min' ? 'z-20' : 'z-10'}`} 
+          style={{ 
+            left: `${minPercent}%`, 
+            transform: 'translate(-50%, -50%)',
+            borderColor: color
+          }} 
+        />
+        <div 
+          ref={maxThumbRef} 
+          className={`absolute top-1/2 w-4 h-4 bg-white border-2 rounded-full cursor-pointer ${activeThumb === 'max' ? 'z-20' : 'z-10'}`} 
+          style={{ 
+            left: `${maxPercent}%`, 
+            transform: 'translate(-50%, -50%)',
+            borderColor: color
+          }} 
+        />
       </div>
     </div>
   )

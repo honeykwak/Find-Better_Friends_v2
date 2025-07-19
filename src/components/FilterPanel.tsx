@@ -53,11 +53,7 @@ const CategoryItem = React.memo(({ category, isHovered, isCategorySelected, sele
         {categoryVisualizationMode === 'passRate' ? <PassRateBackground passRate={category.passRate} /> : <VoteCountBackground voteDistribution={category.voteDistribution} />}
         <input type="checkbox" checked={checkboxState === 'checked'} ref={el => el && (el.indeterminate = checkboxState === 'indeterminate')} onChange={() => onToggleCategoryWithTopics(category.name, category.topics.map(t => t.name))} className="w-4 h-4 text-blue-600 border-gray-300 rounded focus:ring-blue-500 relative z-10 mr-2" />
         <div className="flex items-center justify-between flex-1 relative z-10">
-          <span className="text-sm font-medium text-gray-700">{category.name}</span>
-          <div className="flex items-center gap-2 text-xs">
-            <span>{category.count}</span>
-            <span className={`font-medium ${category.passRate >= 80 ? 'text-green-600' : category.passRate >= 60 ? 'text-yellow-600' : 'text-red-600'}`}>{category.passRate.toFixed(1)}%</span>
-          </div>
+          <span className="text-sm font-medium text-gray-700">{`${category.name} (${category.count})`}</span>
         </div>
       </div>
       <div className={`border-t border-gray-200 bg-gray-50 overflow-hidden transition-all duration-300 ease-in-out ${shouldExpand ? 'max-h-48 opacity-100' : 'max-h-0 opacity-0'}`}>
@@ -75,11 +71,7 @@ const TopicItem = React.memo(({ topic, isSelected, categoryVisualizationMode, ca
       {categoryVisualizationMode === 'passRate' ? <PassRateBackground passRate={topic.passRate} /> : <VoteCountBackground voteDistribution={topic.voteDistribution} />}
       <input type="checkbox" checked={isSelected} onChange={() => onToggle(topic.name, categoryName)} className="w-3 h-3 text-blue-600 border-gray-300 rounded focus:ring-blue-500 relative z-10" />
       <div className="flex items-center justify-between flex-1 relative z-10">
-        <span className="text-xs text-gray-600">{topic.name}</span>
-        <div className="flex items-center gap-2 text-xs">
-          <span className="text-gray-600">{topic.count}</span>
-          <span className={`font-medium ${topic.passRate >= 80 ? 'text-green-600' : topic.passRate >= 60 ? 'text-yellow-600' : 'text-red-600'}`}>{topic.passRate.toFixed(1)}%</span>
-        </div>
+        <span className="text-xs text-gray-600">{`${topic.name} (${topic.count})`}</span>
       </div>
     </label>
   )
@@ -246,6 +238,7 @@ export default function FilterPanel() {
               onChange={setApprovalRateRange}
               formatValue={(v) => `${v}%`}
               step={1}
+              color={VOTE_COLORS.YES}
             />
           </div>
           <div>

@@ -4,7 +4,7 @@ import { useEffect, useRef, useState, useMemo } from 'react'
 import * as d3 from 'd3'
 import { useGlobalStore, type ValidatorSortKey } from '@/stores/useGlobalStore'
 import { VOTE_COLORS } from '@/constants/voteColors'
-import { Loader2, ZoomIn, ZoomOut, RotateCcw, Palette } from 'lucide-react'
+import { Loader2, ZoomIn, ZoomOut, RotateCcw } from 'lucide-react'
 import { calculateSimilarity } from '@/lib/similarity'
 import type { Vote, Validator } from '@/lib/dataLoader'
 
@@ -347,7 +347,7 @@ export default function ValidatorHeatmap() {
       <div className="h-full flex items-center justify-center">
         <div className="text-center">
           <Loader2 className="w-8 h-8 animate-spin mx-auto mb-4 text-blue-600" />
-          <p className="text-gray-600">Loading chain data...</p>
+          <p className="text-gray-500">Loading chain data...</p>
         </div>
       </div>
     )
@@ -358,8 +358,8 @@ export default function ValidatorHeatmap() {
       <div className="p-4 border-b border-gray-200 bg-gray-50">
       <div className="flex items-center justify-between">
         <div className="flex items-center gap-4">
-          <h3 className="text-lg font-semibold text-gray-900">
-            Governance Research Platform
+          <h3 className="text-lg font-semibold text-gray-800">
+            Heatmap
           </h3>
           {isLoading && (
             <Loader2 className="w-4 h-4 animate-spin text-blue-600" />
@@ -369,28 +369,28 @@ export default function ValidatorHeatmap() {
           <div className="flex items-center bg-gray-100 rounded-lg p-1">
             <button 
               onClick={() => setValidatorSortKey('votingPower')} 
-              className={`px-3 py-2 text-xs font-medium rounded-md whitespace-nowrap ${validatorSortKey === 'votingPower' ? 'bg-white text-gray-900 shadow-sm' : 'text-gray-600'}`}
+              className={`px-3 py-2 text-xs font-medium rounded-md whitespace-nowrap ${validatorSortKey === 'votingPower' ? 'bg-white text-gray-800 shadow-sm' : 'text-gray-500'}`}
               title="Sort by voting power"
             >
               Avg. Voting Power
             </button>
             <button 
               onClick={() => setValidatorSortKey('voteCount')} 
-              className={`px-3 py-2 text-xs font-medium rounded-md whitespace-nowrap ${validatorSortKey === 'voteCount' ? 'bg-white text-gray-900 shadow-sm' : 'text-gray-600'}`}
+              className={`px-3 py-2 text-xs font-medium rounded-md whitespace-nowrap ${validatorSortKey === 'voteCount' ? 'bg-white text-gray-800 shadow-sm' : 'text-gray-500'}`}
               title="Sort by vote participation"
             >
               Vote Count
             </button>
             <button 
               onClick={() => setValidatorSortKey('name')} 
-              className={`px-3 py-2 text-xs font-medium rounded-md whitespace-nowrap ${validatorSortKey === 'name' ? 'bg-white text-gray-900 shadow-sm' : 'text-gray-600'}`}
+              className={`px-3 py-2 text-xs font-medium rounded-md whitespace-nowrap ${validatorSortKey === 'name' ? 'bg-white text-gray-800 shadow-sm' : 'text-gray-500'}`}
               title="Sort by name"
             >
               Name
             </button>
             <button 
               onClick={() => setValidatorSortKey('similarity')} 
-              className={`px-3 py-2 text-xs font-medium rounded-md whitespace-nowrap ${validatorSortKey === 'similarity' ? 'bg-white text-gray-900 shadow-sm' : 'text-gray-600'} disabled:opacity-50 disabled:cursor-not-allowed`}
+              className={`px-3 py-2 text-xs font-medium rounded-md whitespace-nowrap ${validatorSortKey === 'similarity' ? 'bg-white text-gray-800 shadow-sm' : 'text-gray-500'} disabled:opacity-50 disabled:cursor-not-allowed`}
               title="Sort by similarity to the selected validator"
               disabled={!searchTerm}
             >
@@ -398,10 +398,10 @@ export default function ValidatorHeatmap() {
             </button>
           </div>
           <div className="flex items-center gap-1 border border-gray-300 rounded-lg">
-            <button onClick={handleZoomOut} className="p-2 hover:bg-gray-100" title="Zoom Out"><ZoomOut className="w-4 h-4 text-gray-600" /></button>
+            <button onClick={handleZoomOut} className="p-2 hover:bg-gray-100" title="Zoom Out"><ZoomOut className="w-4 h-4 text-gray-500" /></button>
             <span className="px-3 py-2 text-sm font-mono border-x text-gray-800">{Math.round(zoom * 100)}%</span>
-            <button onClick={handleZoomIn} className="p-2 hover:bg-gray-100" title="Zoom In"><ZoomIn className="w-4 h-4 text-gray-600" /></button>
-            <button onClick={handleResetZoom} className="p-2 hover:bg-gray-100 border-l" title="Reset Zoom"><RotateCcw className="w-4 h-4 text-gray-600" /></button>
+            <button onClick={handleZoomIn} className="p-2 hover:bg-gray-100" title="Zoom In"><ZoomIn className="w-4 h-4 text-gray-500" /></button>
+            <button onClick={handleResetZoom} className="p-2 hover:bg-gray-100 border-l" title="Reset Zoom"><RotateCcw className="w-4 h-4 text-gray-500" /></button>
           </div>
         </div>
       </div>

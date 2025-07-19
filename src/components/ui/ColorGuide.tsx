@@ -9,7 +9,7 @@ export default function ColorGuide() {
       {LEGEND_ITEMS.map(item => (
         <span key={item.option} className="flex items-center gap-1.5" title={item.description}>
           <div className="w-3 h-3 rounded-sm" style={{ backgroundColor: item.color }}></div>
-          <span className="text-gray-600">{item.label.replace('_', ' ')}</span>
+          <span style={{ color: '#111827' }}>{item.label.replace('_', ' ')}</span>
         </span>
       ))}
     </div>

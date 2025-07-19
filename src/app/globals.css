@@ -3,6 +3,22 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  
+  /* Grayscale Palette */
+  --gray-50: #f9fafb;
+  --gray-100: #f3f4f6;
+  --gray-200: #e5e7eb;
+  --gray-300: #d1d5db;
+  --gray-400: #9ca3af;
+  --gray-500: #6b7280;
+  --gray-600: #4b5563;
+  --gray-700: #374151;
+  --gray-800: #1f2937;
+  --gray-900: #111827;
+
+  /* Semantic Colors */
+  --color-destructive: #dc2626; /* red-600 */
+  --color-destructive-foreground: #ffffff;
 }
 
 @theme inline {
@@ -21,7 +37,7 @@
   --font-size-3xl: 1.875rem;    /* 30px - 큰 제목 */
   --font-size-4xl: 2.25rem;     /* 36px - 메인 제목 */
   
-  /* Line Heights - 가독성을 위한 줄 간격 */
+  /* Line Heights - 가���성을 위한 줄 간격 */
   --line-height-tight: 1.25;    /* 제목용 */
   --line-height-snug: 1.375;    /* 부제목용 */
   --line-height-normal: 1.5;    /* 본문용 */
@@ -43,6 +59,22 @@
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
+
+    /* Grayscale Palette - Dark Mode */
+    --gray-50: #111827;
+    --gray-100: #1f2937;
+    --gray-200: #374151;
+    --gray-300: #4b5563;
+    --gray-400: #6b7280;
+    --gray-500: #9ca3af;
+    --gray-600: #d1d5db;
+    --gray-700: #e5e7eb;
+    --gray-800: #f3f4f6;
+    --gray-900: #f9fafb;
+
+    /* Semantic Colors - Dark Mode */
+    --color-destructive: #ef4444; /* red-500 */
+    --color-destructive-foreground: #ffffff;
   }
 }
 
@@ -58,7 +90,7 @@ body {
 .text-caption {
   font-size: var(--font-size-xs);
   line-height: var(--line-height-normal);
-  color: rgb(55 65 81); /* text-gray-700 */
+  color: var(--gray-700);
 }
 
 .text-body-small {
@@ -104,7 +136,7 @@ body {
 .text-label {
   font-size: var(--font-size-sm);
   font-weight: var(--font-weight-medium);
-  color: rgb(55 65 81); /* text-gray-700 */
+  color: var(--gray-700);
 }
 
 .text-button {
@@ -126,13 +158,13 @@ body {
 .text-stat-label {
   font-size: var(--font-size-sm);
   font-weight: var(--font-weight-medium);
-  color: rgb(75 85 99); /* text-gray-600 */
+  color: var(--gray-800);
 }
 
 .text-error {
   font-size: var(--font-size-lg);
   font-weight: var(--font-weight-medium);
-  color: rgb(239 68 68); /* text-red-500 */
+  color: var(--color-destructive);
 }
 
 /* Responsive Typography */
