@@ -54,6 +54,7 @@ interface ProcessedHeatmapData {
 interface ValidatorWithAvgPower extends Validator {
   avgPower: number;
   participationRate: number;
+  isPinnedAndFilteredOut?: boolean;
 }
 
 
@@ -89,7 +90,7 @@ export default function ValidatorHeatmap() {
     searchTermRef.current = searchTerm;
   }, [searchTerm]);
 
-  const validatorsWithAvgPower = useMemo((): ValidatorWithAvgPower[] => {
+  let validatorsWithAvgPower = useMemo((): ValidatorWithAvgPower[] => {
     const filteredProposals = getFilteredProposals();
     const validatorsForProcessing = getFilteredValidators();
 
@@ -166,29 +167,57 @@ export default function ValidatorHeatmap() {
 
 
   const heatmapData = useMemo((): ProcessedHeatmapData => {
-    const filteredProposals = getFilteredProposals()
+    const filteredProposals = getFilteredProposals();
     if (!filteredProposals.length || !validatorsWithAvgPower.length) {
-      return { validators: [], proposals: [], votes: [] }
+      return { validators: [], proposals: [], votes: [] };
     }
 
-    let finalFilteredValidators: ValidatorWithAvgPower[];
+    let currentValidators = [...validatorsWithAvgPower];
+    let pinnedValidator: ValidatorWithAvgPower | undefined;
 
+    if (validatorSortKey === 'similarity' && searchTerm) {
+      const foundValidator = currentValidators.find(v => v.moniker === searchTerm);
+      if (foundValidator) {
+        pinnedValidator = { ...foundValidator };
+        currentValidators = currentValidators.filter(v => v.validator_address !== pinnedValidator?.validator_address);
+      }
+    }
+
+    let filteredByVotingPower: ValidatorWithAvgPower[];
     if (votingPowerFilterMode === 'ratio') {
       const [minPower, maxPower] = votingPowerRange;
       const minRatio = minPower / 100;
       const maxRatio = maxPower / 100;
-      finalFilteredValidators = validatorsWithAvgPower.filter(v => v.avgPower >= minRatio && v.avgPower <= maxRatio);
+      filteredByVotingPower = currentValidators.filter(v => v.avgPower >= minRatio && v.avgPower <= maxRatio);
     } else { // 'rank'
-      const rankedValidators = [...validatorsWithAvgPower].sort((a, b) => b.avgPower - a.avgPower);
+      const rankedValidators = [...currentValidators].sort((a, b) => b.avgPower - a.avgPower);
       const [minRank, maxRank] = votingPowerRange;
-      finalFilteredValidators = rankedValidators.slice(minRank - 1, maxRank);
+      filteredByVotingPower = rankedValidators.slice(minRank - 1, maxRank);
     }
 
-    // Add participation rate filtering
     const [minParticipation, maxParticipation] = participationRateRange;
-    finalFilteredValidators = finalFilteredValidators.filter(v =>
+    let finalFilteredValidators = filteredByVotingPower.filter(v =>
       v.participationRate >= minParticipation && v.participationRate <= maxParticipation
     );
+
+    if (pinnedValidator) {
+      const meetsVotingPower = votingPowerFilterMode === 'ratio'
+        ? (pinnedValidator.avgPower * 100 >= votingPowerRange[0] && pinnedValidator.avgPower * 100 <= votingPowerRange[1])
+        : (true);
+      
+      const meetsParticipationRate = (pinnedValidator.participationRate >= participationRateRange[0] && pinnedValidator.participationRate <= participationRateRange[1]);
+
+      console.log(`[Pinned Validator Debug] Validator: ${pinnedValidator.name}, Meets VP: ${meetsVotingPower}, Meets PR: ${meetsParticipationRate}`);
+
+      if (!meetsVotingPower || !meetsParticipationRate) {
+        pinnedValidator.isPinnedAndFilteredOut = true;
+        console.log(`[Pinned Validator Debug] Setting isPinnedAndFilteredOut to TRUE`);
+      } else {
+        pinnedValidator.isPinnedAndFilteredOut = false;
+        console.log(`[Pinned Validator Debug] Setting isPinnedAndFilteredOut to FALSE`);
+      }
+      finalFilteredValidators.unshift(pinnedValidator);
+    }
 
     const proposalSet = new Set(filteredProposals.map(p => p.proposal_id))
     const votesByValidator = new Map<string, Vote[]>()
@@ -358,7 +387,15 @@ export default function ValidatorHeatmap() {
 
     svg.selectAll('.validator-label')
       .style('font-weight', d => ((d as { name: string }).name.toLowerCase() === lowercasedSearchTerm && searchTerm) ? 'bold' : 'normal')
-      .style('fill', d => ((d as { name: string }).name.toLowerCase() === lowercasedSearchTerm && searchTerm) ? 'blue' : 'black')
+      .style('fill', d => {
+        const validator = d as ValidatorWithAvgPower;
+        let fillColor = 'black';
+        if (searchTerm && validator.name.toLowerCase() === lowercasedSearchTerm) {
+          fillColor = validator.isPinnedAndFilteredOut ? 'orange' : 'blue';
+        }
+        console.log(`[D3 Label Fill] Validator: ${validator.name}, isPinnedAndFilteredOut: ${validator.isPinnedAndFilteredOut}, Final Color: ${fillColor}`);
+        return fillColor;
+      })
   }, [searchTerm, loading, heatmapData.validators])
 
 
