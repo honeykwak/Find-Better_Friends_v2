@@ -4,6 +4,7 @@ import { useEffect, useState, useCallback, Suspense } from 'react'
 import { Loader2, BarChart3, Activity } from 'lucide-react'
 import dynamic from 'next/dynamic'
 import { useGlobalStore } from '@/stores/useGlobalStore'
+import ColorGuide from './ui/ColorGuide'
 
 // 동적 임포트로 컴포넌트들을 지연 로딩
 const FilterPanel = dynamic(() => import('@/components/FilterPanel'), {
@@ -43,7 +44,7 @@ export default function ResearchLayout() {
     loadData
   } = useGlobalStore()
 
-  // 컴포넌트 로딩 상태 관리
+  // 컴��넌트 로딩 상태 관리
   const [componentsLoaded, setComponentsLoaded] = useState({
     filterPanel: false
   })
@@ -97,11 +98,12 @@ export default function ResearchLayout() {
       {/* 상단 헤더 */}
       <div className="flex-shrink-0 bg-white border-b border-gray-200 px-6 py-4">
         <div className="flex items-center justify-between">
-          <h1 className="text-2xl font-bold text-gray-900">
-            Governance Research Platform
-          </h1>
-          
-          
+          <div className="flex items-center gap-6">
+            <h1 className="text-2xl font-bold text-gray-900">
+              Governance Research Platform
+            </h1>
+            <ColorGuide />
+          </div>
         </div>
       </div>
 
@@ -133,4 +135,3 @@ export default function ResearchLayout() {
     </div>
   )
 }
- 
