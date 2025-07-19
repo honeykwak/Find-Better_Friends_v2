@@ -184,6 +184,12 @@ export default function ValidatorHeatmap() {
       finalFilteredValidators = rankedValidators.slice(minRank - 1, maxRank);
     }
 
+    // Add participation rate filtering
+    const [minParticipation, maxParticipation] = participationRateRange;
+    finalFilteredValidators = finalFilteredValidators.filter(v =>
+      v.participationRate >= minParticipation && v.participationRate <= maxParticipation
+    );
+
     const proposalSet = new Set(filteredProposals.map(p => p.proposal_id))
     const votesByValidator = new Map<string, Vote[]>()
     for (const vote of rawVotes) {
