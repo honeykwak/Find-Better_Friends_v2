@@ -203,7 +203,12 @@ export default function ValidatorHeatmap() {
     if (pinnedValidator) {
       const meetsVotingPower = votingPowerFilterMode === 'ratio'
         ? (pinnedValidator.avgPower * 100 >= votingPowerRange[0] && pinnedValidator.avgPower * 100 <= votingPowerRange[1])
-        : (true);
+        : (() => {
+            const allValidatorsSortedByPower = [...validatorsWithAvgPower, pinnedValidator].sort((a, b) => b.avgPower - a.avgPower);
+            const pinnedIndex = allValidatorsSortedByPower.findIndex(v => v.validator_address === pinnedValidator?.validator_address);
+            const pinnedRank = pinnedIndex + 1; // Ranks are 1-based
+            return pinnedRank >= votingPowerRange[0] && pinnedRank <= votingPowerRange[1];
+          })();
       
       const meetsParticipationRate = (pinnedValidator.participationRate >= participationRateRange[0] && pinnedValidator.participationRate <= participationRateRange[1]);
 
@@ -262,7 +267,7 @@ export default function ValidatorHeatmap() {
       sortedValidators.sort((a, b) => (validatorVoteCounts.get(b.validator_address) || 0) - (validatorVoteCounts.get(a.validator_address) || 0));
     }
     
-    const validators = sortedValidators.map((v, index) => ({ address: v.validator_address, name: v.moniker || 'Unknown', index }))
+    const validators = sortedValidators.map((v, index) => ({ address: v.validator_address, name: v.moniker || 'Unknown', index, isPinnedAndFilteredOut: v.isPinnedAndFilteredOut }))
 
     const proposals = filteredProposals
       .sort((a, b) => new Date(b.submit_time).getTime() - new Date(a.submit_time).getTime())
