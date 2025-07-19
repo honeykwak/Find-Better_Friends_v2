@@ -1,6 +1,8 @@
 'use client'
 
-import { useRef, useState, useEffect } from 'react'
+import { useRef, useState, useEffect, useLayoutEffect } from 'react'
+
+type DisplayMode = 'internal' | 'split' | 'combined-left' | 'combined-right'
 
 const useRangeSlider = (
   min: number,
@@ -110,10 +112,67 @@ export default function RangeSlider({
 }: RangeSliderProps) {
   const { sliderRef, minThumbRef, maxThumbRef, currentValues, minPercent, maxPercent, activeThumb } = useRangeSlider(
     min, max, values, onChange, step
-  )
+  );
+  
+  const [displayMode, setDisplayMode] = useState<DisplayMode>('internal');
+  
+  const measurementRefs = {
+    combined: useRef<HTMLSpanElement>(null),
+    min: useRef<HTMLSpanElement>(null),
+    max: useRef<HTMLSpanElement>(null),
+  };
+
+  const rangeText = {
+    combined: `${formatValue(currentValues[0])} - ${formatValue(currentValues[1])}`,
+    min: formatValue(currentValues[0]),
+    max: formatValue(currentValues[1]),
+  };
+
+  useLayoutEffect(() => {
+    const PADDING = 16;
+    const slider = sliderRef.current;
+    const combinedText = measurementRefs.combined.current;
+    const minText = measurementRefs.min.current;
+    const maxText = measurementRefs.max.current;
+
+    if (!slider || !combinedText || !minText || !maxText) return;
+
+    const sliderWidth = slider.offsetWidth;
+    const fillWidth = (maxPercent - minPercent) / 100 * sliderWidth;
+    const leftTrackWidth = (minPercent / 100) * sliderWidth;
+    const rightTrackWidth = (100 - maxPercent) / 100 * sliderWidth;
+    
+    const combinedTextWidth = combinedText.offsetWidth;
+    const minTextWidth = minText.offsetWidth;
+    const maxTextWidth = maxText.offsetWidth;
+
+    if (fillWidth >= combinedTextWidth + PADDING) {
+      setDisplayMode('internal');
+    } else if (leftTrackWidth >= minTextWidth + PADDING && rightTrackWidth >= maxTextWidth + PADDING) {
+      setDisplayMode('split');
+    } else if (leftTrackWidth > rightTrackWidth && leftTrackWidth >= combinedTextWidth + PADDING) {
+      setDisplayMode('combined-left');
+    } else if (rightTrackWidth > leftTrackWidth && rightTrackWidth >= combinedTextWidth + PADDING) {
+      setDisplayMode('combined-right');
+    } else {
+      // Fallback: if split is not possible, choose the wider side for combined text
+      if (leftTrackWidth > rightTrackWidth) {
+        setDisplayMode('combined-left');
+      } else {
+        setDisplayMode('combined-right');
+      }
+    }
+  }, [currentValues, minPercent, maxPercent, measurementRefs.combined, measurementRefs.min, measurementRefs.max, sliderRef]);
 
   return (
     <div>
+      {/* Measurement Layer (Invisible) */}
+      <div style={{ position: 'absolute', visibility: 'hidden', zIndex: -1 }}>
+        <span ref={measurementRefs.combined} className="text-xs font-medium whitespace-nowrap">{rangeText.combined}</span>
+        <span ref={measurementRefs.min} className="text-xs font-medium whitespace-nowrap">{rangeText.min}</span>
+        <span ref={measurementRefs.max} className="text-xs font-medium whitespace-nowrap">{rangeText.max}</span>
+      </div>
+
       <div className="flex justify-between items-center mb-2">
         <label className="block text-sm font-medium" style={{ color: '#111827' }}>{label}</label>
         {children}
@@ -123,19 +182,96 @@ export default function RangeSlider({
         ref={sliderRef}
       >
         <div className="absolute top-0 left-0 w-full h-full bg-gray-200" />
+        
+        {/* Fill Area */}
         <div 
-          className="absolute top-0 h-full flex items-center justify-center overflow-hidden pointer-events-none" 
+          className="absolute top-0 h-full pointer-events-none" 
           style={{ 
             left: `${minPercent}%`, 
             right: `${100 - maxPercent}%`,
             backgroundColor: color
           }} 
-        >
-          <span className="text-xs font-medium text-white whitespace-nowrap">
-            {formatValue(currentValues[0])} - {formatValue(currentValues[1])}
-          </span>
+        />
+
+        {/* Text Display Layer */}
+        <div className="absolute inset-0 flex items-center pointer-events-none">
+          {/* Internal: Centered within the fill area */}
+          {displayMode === 'internal' && (
+            <div 
+              className="absolute h-full flex items-center justify-center"
+              style={{
+                left: `${minPercent}%`,
+                width: `${maxPercent - minPercent}%`,
+              }}
+            >
+              <span className="text-xs font-medium text-white whitespace-nowrap">
+                {rangeText.combined}
+              </span>
+            </div>
+          )}
+
+          {/* Split: Min/Max values positioned next to their respective thumbs */}
+          {displayMode === 'split' && (
+            <>
+              {/* Min value, to the left of the min thumb */}
+              <div 
+                className="absolute h-full flex items-center justify-end"
+                style={{
+                  left: `0%`,
+                  width: `${minPercent}%`,
+                }}
+              >
+                <span className="pr-4 text-xs font-medium whitespace-nowrap" style={{ color: '#111827' }}>
+                  {rangeText.min}
+                </span>
+              </div>
+              {/* Max value, to the right of the max thumb */}
+              <div 
+                className="absolute h-full flex items-center justify-start"
+                style={{
+                  left: `${maxPercent}%`,
+                  right: `0%`,
+                }}
+              >
+                <span className="pl-4 text-xs font-medium whitespace-nowrap" style={{ color: '#111827' }}>
+                  {rangeText.max}
+                </span>
+              </div>
+            </>
+          )}
+
+          {/* Combined Left: Positioned to the left of the min thumb */}
+          {displayMode === 'combined-left' && (
+            <div 
+              className="absolute h-full flex items-center justify-end"
+              style={{
+                left: `0%`,
+                width: `${minPercent}%`,
+              }}
+            >
+              <span className="pr-4 text-xs font-medium whitespace-nowrap" style={{ color: '#111827' }}>
+                {rangeText.combined}
+              </span>
+            </div>
+          )}
+
+          {/* Combined Right: Positioned to the right of the max thumb */}
+          {displayMode === 'combined-right' && (
+            <div 
+              className="absolute h-full flex items-center justify-start"
+              style={{
+                left: `${maxPercent}%`,
+                right: `0%`,
+              }}
+            >
+              <span className="pl-4 text-xs font-medium whitespace-nowrap" style={{ color: '#111827' }}>
+                {rangeText.combined}
+              </span>
+            </div>
+          )}
         </div>
         
+        {/* Thumbs */}
         <div 
           ref={minThumbRef} 
           className={`absolute top-1/2 w-4 h-4 bg-white border-2 rounded-full cursor-pointer ${activeThumb === 'min' ? 'z-20' : 'z-10'}`} 
