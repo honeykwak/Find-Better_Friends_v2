@@ -3,6 +3,7 @@
 import { useEffect, useRef, useState, useMemo } from 'react'
 import * as d3 from 'd3'
 import { useGlobalStore, type ValidatorSortKey } from '@/stores/useGlobalStore'
+import { VOTE_COLORS } from '@/constants/voteColors'
 import { Loader2, ZoomIn, ZoomOut, RotateCcw, Palette } from 'lucide-react'
 import { calculateSimilarity } from '@/lib/similarity'
 import type { Vote, Validator } from '@/lib/dataLoader'
@@ -26,11 +27,7 @@ const DEFAULT_CONFIG: HeatmapConfig = {
   cellHeight: 12,
   margin: { top: 80, right: 120, bottom: 60, left: 180 },
   colors: {
-    YES: '#22c55e',      // Green
-    NO: '#ef4444',       // Red  
-    ABSTAIN: '#f59e0b',  // Orange
-    NO_WITH_VETO: '#dc2626', // Dark Red
-    NO_VOTE: '#e5e7eb',   // Light Gray
+    ...VOTE_COLORS,
     background: '#ffffff'
   }
 }

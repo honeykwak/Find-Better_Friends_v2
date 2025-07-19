@@ -31,7 +31,7 @@ const VoteCountBackground = React.memo(({ voteDistribution }: { voteDistribution
   }, [voteDistribution])
 
   if (segments.length === 0) return null
-  return <div className="absolute left-0 top-0 h-full w-full rounded-lg overflow-hidden opacity-50">{segments.map((s, i) => <div key={`${s.voteType}-${i}`} className="absolute h-full" style={{ left: `${s.startPosition}%`, width: `${s.percentage}%`, backgroundColor: s.color }} />)}</div>
+  return <div className="absolute left-0 top-0 h-full w-full rounded-lg overflow-hidden">{segments.map((s, i) => <div key={`${s.voteType}-${i}`} className="absolute h-full" style={{ left: `${s.startPosition}%`, width: `${s.percentage}%`, backgroundColor: s.color }} />)}</div>
 })
 
 const PassRateBackground = React.memo(({ passRate }: { passRate: number }) => {
@@ -40,7 +40,7 @@ const PassRateBackground = React.memo(({ passRate }: { passRate: number }) => {
     if (passRate >= 60) return 'bg-gradient-to-r from-yellow-100 to-yellow-50'
     return 'bg-gradient-to-r from-red-100 to-red-50'
   }, [passRate])
-  return <div className={`absolute left-0 top-0 h-full rounded-l-lg opacity-50 ${backgroundClass}`} style={{ width: `${passRate}%` }} />
+  return <div className={`absolute left-0 top-0 h-full rounded-l-lg ${backgroundClass}`} style={{ width: `${passRate}%` }} />
 })
 
 const CategoryItem = React.memo(({ category, isHovered, isCategorySelected, selectedTopicsInCategory, hasSelectedTopics, allTopicsSelected, categoryVisualizationMode, onCategoryMouseEnter, onCategoryMouseLeave, onToggleCategoryWithTopics, onTopicToggle }: { category: CategoryHierarchyNode; isHovered: boolean; isCategorySelected: boolean; selectedTopicsInCategory: string[]; hasSelectedTopics: boolean; allTopicsSelected: boolean; categoryVisualizationMode: 'passRate' | 'voteCount'; onCategoryMouseEnter: (name: string) => void; onCategoryMouseLeave: () => void; onToggleCategoryWithTopics: (categoryName: string, topicNames: string[]) => void; onTopicToggle: (topicName: string, categoryName: string) => void; }) => {
