@@ -100,6 +100,8 @@ export default function FilterPanel() {
     getChains,
     getFilteredCategoryHierarchy,
     proposals,
+    participationRateRange,
+    setParticipationRateRange,
   } = useGlobalStore()
 
   const [hoveredCategory, setHoveredCategory] = useState<string | null>(null)
@@ -326,6 +328,17 @@ export default function FilterPanel() {
                 onChange={(v) => setVotingPowerFilterMode(v as 'ratio' | 'rank')}
               />
             </RangeSlider>
+          </div>
+          <div className="mb-4">
+            <RangeSlider
+              label="Participation Rate"
+              min={0}
+              max={100}
+              values={participationRateRange}
+              onChange={setParticipationRateRange}
+              formatValue={(v) => `${v.toFixed(0)}%`}
+              step={1}
+            />
           </div>
         </div>
       </div>

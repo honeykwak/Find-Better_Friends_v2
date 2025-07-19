@@ -33,6 +33,7 @@ interface GlobalStore {
   selectedTopics: string[]
   searchTerm: string
   approvalRateRange: [number, number]
+  participationRateRange: [number, number]
   votingPowerFilterMode: 'ratio' | 'rank'
   votingPowerRange: [number, number]
   votingPowerDynamicRange: [number, number]
@@ -78,6 +79,7 @@ export const useGlobalStore = create<GlobalStore>((set, get) => ({
   selectedTopics: [],
   searchTerm: '',
   approvalRateRange: [0, 100],
+  participationRateRange: [0, 100],
   votingPowerFilterMode: 'ratio',
   votingPowerRange: [0, 100],
   votingPowerDynamicRange: [0, 100],
@@ -154,6 +156,7 @@ export const useGlobalStore = create<GlobalStore>((set, get) => ({
     }
   },
   setApprovalRateRange: (range: [number, number]) => set({ approvalRateRange: range }),
+  setParticipationRateRange: (range: [number, number]) => set({ participationRateRange: range }),
   setVotingPowerFilterMode: (mode) => set({ votingPowerFilterMode: mode }),
   setVotingPowerRange: (range) => set({ votingPowerRange: range }),
   setVotingPowerDynamicRange: (range) => {
@@ -172,7 +175,7 @@ export const useGlobalStore = create<GlobalStore>((set, get) => ({
     const { proposals, approvalRateRange } = get();
     const [minRate, maxRate] = approvalRateRange;
 
-    return proposals.filter(p => {
+    const filtered = proposals.filter(p => {
       const {
         yes_count = 0,
         no_count = 0,
@@ -190,6 +193,7 @@ export const useGlobalStore = create<GlobalStore>((set, get) => ({
       
       return approvalRate >= minRate && approvalRate <= maxRate;
     });
+    return filtered;
   },
 
   getFilteredProposals: () => {

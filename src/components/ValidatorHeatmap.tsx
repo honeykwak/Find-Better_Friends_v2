@@ -53,6 +53,7 @@ interface ProcessedHeatmapData {
 
 interface ValidatorWithAvgPower extends Validator {
   avgPower: number;
+  participationRate: number;
 }
 
 
@@ -79,6 +80,8 @@ export default function ValidatorHeatmap() {
     votingPowerRange,
     setVotingPowerDynamicRange,
     setVotingPowerRange,
+    participationRateRange,
+    approvalRateRange,
   } = useGlobalStore()
 
   const searchTermRef = useRef(searchTerm);
@@ -115,9 +118,24 @@ export default function ValidatorHeatmap() {
       return count > 0 ? sum / count : 0;
     };
 
+    const validatorParticipationCount = new Map<string, number>();
+    const totalFilteredProposals = filteredProposals.length;
+
+    for (const vote of rawVotes) {
+      if (proposalSet.has(vote.proposal_id)) {
+        validatorParticipationCount.set(vote.validator_address, (validatorParticipationCount.get(vote.validator_address) || 0) + 1);
+      }
+    }
+
+    const getParticipationRate = (address: string) => {
+      const count = validatorParticipationCount.get(address) || 0;
+      return totalFilteredProposals > 0 ? (count / totalFilteredProposals) * 100 : 0; // Percentage
+    };
+
     return validatorsForProcessing.map(v => ({
       ...v,
-      avgPower: getAveragePower(v.validator_address)
+      avgPower: getAveragePower(v.validator_address),
+      participationRate: getParticipationRate(v.validator_address)
     }));
   }, [getFilteredProposals, getFilteredValidators, rawVotes]);
 
@@ -227,7 +245,7 @@ export default function ValidatorHeatmap() {
       }))
 
     return { validators, proposals, votes }
-  }, [getFilteredProposals, validatorsWithAvgPower, rawVotes, validatorSortKey, searchTerm, rawValidators, votingPowerFilterMode, votingPowerRange])
+  }, [getFilteredProposals, validatorsWithAvgPower, rawVotes, validatorSortKey, searchTerm, rawValidators, votingPowerFilterMode, votingPowerRange, participationRateRange, approvalRateRange])
 
   // Main D3 rendering effect
   useEffect(() => {
