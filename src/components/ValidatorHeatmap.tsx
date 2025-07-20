@@ -3,10 +3,16 @@
 import { useEffect, useRef, useState, useMemo } from 'react'
 import * as d3 from 'd3'
 import { useGlobalStore, type ValidatorSortKey } from '@/stores/useGlobalStore'
-import { VOTE_COLORS } from '@/constants/voteColors'
+import { VOTE_COLORS, VOTE_ORDER } from '@/constants/voteColors'
 import { Loader2, ZoomIn, ZoomOut, RotateCcw } from 'lucide-react'
 import { calculateSimilarity } from '@/lib/similarity'
-import type { Vote, Validator } from '@/lib/dataLoader'
+import type { Vote, Validator, Proposal } from '@/lib/dataLoader'
+
+// Define layout constants
+const PROPOSAL_LABEL_HEIGHT = 240;
+const SUMMARY_CHART_HEIGHT = 120;
+const CHART_SPACING = 20;
+const TOP_MARGIN = PROPOSAL_LABEL_HEIGHT + SUMMARY_CHART_HEIGHT + CHART_SPACING;
 
 interface HeatmapConfig {
   cellWidth: number
@@ -25,7 +31,7 @@ interface HeatmapConfig {
 const DEFAULT_CONFIG: HeatmapConfig = {
   cellWidth: 12,
   cellHeight: 12,
-  margin: { top: 80, right: 120, bottom: 60, left: 180 },
+  margin: { top: TOP_MARGIN, right: 120, bottom: 60, left: 180 },
   colors: {
     ...VOTE_COLORS,
     background: '#ffffff'
@@ -37,12 +43,14 @@ interface ProcessedHeatmapData {
     address: string
     name: string
     index: number
+    isPinnedAndFilteredOut?: boolean
   }>
   proposals: Array<{
-    id:string
+    id: string
     title: string
     index: number
     status: string
+    tallyRatio: { [key: string]: number }
   }>
   votes: Array<{
     validatorIndex: number
@@ -106,7 +114,6 @@ export default function ValidatorHeatmap() {
       const powers = validatorsWithAvgPower.map(v => v.avgPower);
       const minPower = Math.min(...powers);
       const maxPower = Math.max(...powers);
-      // Floor the min and ceil the max to ensure the range includes the exact values.
       const newRange: [number, number] = [
         Math.floor(minPower * 10000) / 100, 
         Math.ceil(maxPower * 10000) / 100
@@ -202,11 +209,11 @@ export default function ValidatorHeatmap() {
         : (() => {
             const allValidatorsSortedByPower = [...validatorsWithAvgPower, pinnedValidator].sort((a, b) => b.avgPower - a.avgPower);
             const pinnedIndex = allValidatorsSortedByPower.findIndex(v => v.validator_address === pinnedValidator?.validator_address);
-            const pinnedRank = pinnedIndex + 1; // Ranks are 1-based
+            const pinnedRank = pinnedIndex + 1;
             return pinnedRank >= votingPowerRange[0] && pinnedRank <= votingPowerRange[1];
           })();
       
-      const meetsParticipationRate = (pinnedValidator.participationRate >= participationRateRange[0] && pinnedValidator.participationRate <= participationRateRange[1]);
+      const meetsParticipationRate = (getParticipationRate(pinnedValidator.validator_address) >= participationRateRange[0] && getParticipationRate(pinnedValidator.validator_address) <= participationRateRange[1]);
 
       if (!meetsVotingPower || !meetsParticipationRate) {
         pinnedValidator.isPinnedAndFilteredOut = true;
@@ -253,7 +260,6 @@ export default function ValidatorHeatmap() {
       const validatorVoteCounts = new Map<string, number>();
       for (const vote of rawVotes) {
         if (proposalSet.has(vote.proposal_id)) {
-          // Only count votes that are not 'NO_VOTE' if countNoVoteAsParticipation is false
           if (!countNoVoteAsParticipation && vote.vote_option === 'NO_VOTE') {
             continue;
           }
@@ -265,12 +271,28 @@ export default function ValidatorHeatmap() {
     
     const validators = sortedValidators.map((v, index) => ({ address: v.validator_address, name: v.moniker || 'Unknown', index, isPinnedAndFilteredOut: v.isPinnedAndFilteredOut }))
 
-    const proposals = filteredProposals
+    const proposalsWithTally = filteredProposals
       .sort((a, b) => new Date(b.submit_time).getTime() - new Date(a.submit_time).getTime())
-      .map((p, index) => ({ id: p.proposal_id, title: p.title, index, status: p.status }))
+      .map((p: Proposal, index: number) => {
+        const tally = p.final_tally_result || {};
+        const totalVotes = Object.values(tally).reduce((sum, count) => sum + count, 0);
+        const tallyRatio = VOTE_ORDER.reduce((acc, key) => {
+          const voteKey = `${key.toLowerCase()}_count` as keyof typeof tally;
+          acc[key] = totalVotes > 0 ? (tally[voteKey] || 0) / totalVotes : 0;
+          return acc;
+        }, {} as { [key: string]: number });
+
+        return { 
+          id: p.proposal_id, 
+          title: p.title, 
+          index, 
+          status: p.status,
+          tallyRatio
+        };
+      });
 
     const validatorAddressToIndex = new Map(validators.map(v => [v.address, v.index]))
-    const proposalIdToIndex = new Map(proposals.map(p => [p.id, p.index]))
+    const proposalIdToIndex = new Map(proposalsWithTally.map(p => [p.id, p.index]))
 
     const votes = rawVotes
       .filter(vote => validatorAddressToIndex.has(vote.validator_address) && proposalIdToIndex.has(vote.proposal_id))
@@ -280,7 +302,7 @@ export default function ValidatorHeatmap() {
         voteOption: vote.vote_option,
       }))
 
-    return { validators, proposals, votes }
+    return { validators, proposals: proposalsWithTally, votes }
   }, [getFilteredProposals, validatorsWithAvgPower, rawVotes, validatorSortKey, searchTerm, rawValidators, votingPowerFilterMode, votingPowerRange, participationRateRange, countNoVoteAsParticipation])
 
   // Main D3 rendering effect
@@ -297,7 +319,7 @@ export default function ValidatorHeatmap() {
 
     const { validators, proposals, votes } = heatmapData
     const { cellWidth, cellHeight, margin, colors } = config
-
+    
     const chartWidth = proposals.length * cellWidth
     const chartHeight = validators.length * cellHeight
     const totalWidth = chartWidth + margin.left + margin.right
@@ -306,6 +328,29 @@ export default function ValidatorHeatmap() {
     svg.attr('width', totalWidth * zoom).attr('height', totalHeight * zoom).style('background', colors.background)
     const g = svg.append('g').attr('transform', `translate(${margin.left * zoom}, ${margin.top * zoom}) scale(${zoom})`)
     const getVoteColor = (option: string) => colors[option as keyof typeof colors] || colors.NO_VOTE
+
+    // --- Stacked Bar Chart ---
+    const summaryChartYScale = d3.scaleLinear().domain([0, 1]).range([SUMMARY_CHART_HEIGHT, 0]);
+    const stack = d3.stack().keys(VOTE_ORDER);
+    const stackedData = stack(proposals.map(p => p.tallyRatio));
+
+    const summaryG = g.append('g')
+      .attr('class', 'summary-chart')
+      .attr('transform', `translate(0, ${-SUMMARY_CHART_HEIGHT - CHART_SPACING})`);
+
+    summaryG.selectAll('.bar-series')
+      .data(stackedData)
+      .enter().append('g')
+        .attr('class', 'bar-series')
+        .attr('fill', d => getVoteColor(d.key))
+      .selectAll('rect')
+      .data(d => d)
+      .enter().append('rect')
+        .attr('x', (d, i) => proposals[i].index * cellWidth)
+        .attr('y', d => summaryChartYScale(d[1]))
+        .attr('height', d => summaryChartYScale(d[0]) - summaryChartYScale(d[1]))
+        .attr('width', cellWidth - 1);
+    // --- End Stacked Bar Chart ---
 
     g.selectAll('.cell')
       .data(votes)
@@ -326,8 +371,8 @@ export default function ValidatorHeatmap() {
           .style('position', 'absolute').style('background', 'rgba(0,0,0,0.8)').style('color', 'white')
           .style('padding', '8px').style('border-radius', '4px').style('font-size', '12px')
           .style('pointer-events', 'none').style('z-index', '1000')
-          .style('max-width', '300px') // 최대 너비 설정
-          .style('white-space', 'normal') // 자동 줄바꿈
+          .style('max-width', '300px')
+          .style('white-space', 'normal')
           .html(`<strong>${validator.name}</strong><br/>${proposal.title}<br/>Vote: ${d.voteOption}`)
         tooltip.style('left', (event.pageX + 10) + 'px').style('top', (event.pageY - 10) + 'px')
         d3.select(this).attr('stroke', '#000').attr('stroke-width', 1.5)
@@ -365,23 +410,28 @@ export default function ValidatorHeatmap() {
         }
       })
 
+    const proposalLabelY = -SUMMARY_CHART_HEIGHT - CHART_SPACING - 10;
     g.selectAll('.proposal-label')
       .data(proposals)
       .enter()
       .append('text')
       .attr('class', 'proposal-label')
       .attr('x', d => d.index * cellWidth + cellWidth / 2)
-      .attr('y', -10)
+      .attr('y', proposalLabelY)
       .attr('text-anchor', 'start')
-      .attr('transform', d => `rotate(-60, ${d.index * cellWidth + cellWidth / 2}, -10)`)
+      .attr('transform', d => `rotate(-60, ${d.index * cellWidth + cellWidth / 2}, ${proposalLabelY})`)
       .style('font-size', `${Math.max(8, cellWidth * 0.7)}px`)
       .style('fill', d => d.status.includes('PASSED') ? colors.YES : colors.NO)
-      .text(d => `${d.title.slice(0, 20)}... ${d.status.includes('PASSED') ? '✓' : '✗'}`)
+      .text(d => {
+        const title = d.title;
+        const truncated = title.length > 40 ? title.slice(0, 40) + '...' : title;
+        return `${truncated} ${d.status.includes('PASSED') ? '✓' : '✗'}`;
+      })
       .style('cursor', 'pointer')
       .on('click', (event, d) => setSelectedProposal(d.id))
 
     setIsLoading(false)
-  }, [heatmapData, config, zoom, loading, setSearchTerm])
+  }, [heatmapData, config, zoom, loading, setSearchTerm, rawProposals])
 
   // Lightweight effect for highlighting only
   useEffect(() => {
@@ -397,7 +447,6 @@ export default function ValidatorHeatmap() {
         if (searchTerm && validator.name.toLowerCase() === lowercasedSearchTerm) {
           fillColor = validator.isPinnedAndFilteredOut ? 'orange' : 'blue';
         }
-        console.log(`[D3 Label Fill] Validator: ${validator.name}, isPinnedAndFilteredOut: ${validator.isPinnedAndFilteredOut}, Final Color: ${fillColor}`);
         return fillColor;
       })
   }, [searchTerm, loading, heatmapData.validators])
