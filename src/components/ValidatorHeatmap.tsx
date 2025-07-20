@@ -261,7 +261,7 @@ export default function ValidatorHeatmap() {
         
         for (const validator of sortedValidators) {
           const targetVotes = votesByValidator.get(validator.validator_address) || [];
-          const score = calculateSimilarity(targetVotes, selectedVotes, proposalSet, includeNoVoteInSimilarity);
+          const score = calculateSimilarity(targetVotes, selectedVotes, proposalSet, countNoVoteAsParticipation);
           similarityScores.set(validator.validator_address, score);
         }
 
