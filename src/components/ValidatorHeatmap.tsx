@@ -326,7 +326,9 @@ export default function ValidatorHeatmap() {
           .style('position', 'absolute').style('background', 'rgba(0,0,0,0.8)').style('color', 'white')
           .style('padding', '8px').style('border-radius', '4px').style('font-size', '12px')
           .style('pointer-events', 'none').style('z-index', '1000')
-          .html(`<strong>${validator.name}</strong><br/>${proposal.title.slice(0, 50)}...<br/>Vote: ${d.voteOption}`)
+          .style('max-width', '300px') // 최대 너비 설정
+          .style('white-space', 'normal') // 자동 줄바꿈
+          .html(`<strong>${validator.name}</strong><br/>${proposal.title}<br/>Vote: ${d.voteOption}`)
         tooltip.style('left', (event.pageX + 10) + 'px').style('top', (event.pageY - 10) + 'px')
         d3.select(this).attr('stroke', '#000').attr('stroke-width', 1.5)
       })
@@ -373,6 +375,7 @@ export default function ValidatorHeatmap() {
       .attr('text-anchor', 'start')
       .attr('transform', d => `rotate(-60, ${d.index * cellWidth + cellWidth / 2}, -10)`)
       .style('font-size', `${Math.max(8, cellWidth * 0.7)}px`)
+      .style('fill', d => d.status.includes('PASSED') ? colors.YES : colors.NO)
       .text(d => `${d.title.slice(0, 20)}... ${d.status.includes('PASSED') ? '✓' : '✗'}`)
       .style('cursor', 'pointer')
       .on('click', (event, d) => setSelectedProposal(d.id))
