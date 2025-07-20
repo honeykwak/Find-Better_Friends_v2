@@ -337,7 +337,7 @@ export default function FilterPanel() {
               onChange={setVotingPowerRange}
               formatValue={(v) => votingPowerFilterMode === 'ratio' ? `${v.toFixed(2)}%` : `${Math.round(v)}`}
               step={votingPowerFilterMode === 'ratio' ? 0.01 : 1}
-              distributionData={votingPowerDistribution}
+              distributionData={votingPowerFilterMode === 'ratio' ? votingPowerDistribution : undefined}
             >
               <ToggleButtonGroup
                 options={[{value: 'ratio', label: 'Ratio'}, {value: 'rank', label: 'Rank'}]}

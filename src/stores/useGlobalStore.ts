@@ -3,6 +3,12 @@ import { loadChainData, type Proposal, type Vote, type Validator } from '@/lib/d
 
 export type { Validator };
 
+// Validator type with added optional properties for derived data
+export interface ValidatorWithDerivedData extends Validator {
+  avgPower?: number;
+  participationRate?: number;
+}
+
 // 카테고리 계층 구조 타입 (FilterPanel에서 사용)
 export interface CategoryHierarchyNode {
   name: string
@@ -25,7 +31,8 @@ export type ValidatorSortKey = 'voteCount' | 'name' | 'votingPower' | 'similarit
 // 전역 상태 인터페이스
 interface GlobalStore {
   proposals: Proposal[]
-  validators: Validator[]
+  validators: Validator[] // Raw validator data
+  validatorsWithDerivedData: ValidatorWithDerivedData[] // Validators with calculated metrics
   votes: Vote[]
   
   selectedChain: string
@@ -48,6 +55,7 @@ interface GlobalStore {
   
   // Actions
   loadData: (chainName: string) => Promise<void>
+  recalculateValidatorMetrics: () => void;
   setSelectedChain: (chain: string) => void
   setSelectedCategories: (categories: string[]) => void
   setSelectedTopics: (topics: string[]) => void
@@ -74,6 +82,7 @@ export const useGlobalStore = create<GlobalStore>((set, get) => ({
   // Initial State
   proposals: [],
   validators: [],
+  validatorsWithDerivedData: [],
   votes: [],
   selectedChain: 'cosmos',
   selectedCategories: [],
@@ -95,7 +104,6 @@ export const useGlobalStore = create<GlobalStore>((set, get) => ({
   loadData: async (chainName: string) => {
     try {
       set({ loading: true, error: null });
-      // dataLoader will be modified to not return categorySummary
       const { proposals, validators, votes } = await loadChainData(chainName);
       
       set({
@@ -104,9 +112,79 @@ export const useGlobalStore = create<GlobalStore>((set, get) => ({
         votes,
         loading: false,
       });
+      get().recalculateValidatorMetrics(); // Calculate metrics after data is loaded
     } catch (err: any) {
       set({ error: `Failed to load data: ${err?.message || 'Unknown error'}`, loading: false });
     }
+  },
+
+  recalculateValidatorMetrics: () => {
+    const { proposals, validators, votes, getFilteredProposals, countNoVoteAsParticipation } = get();
+    if (!proposals.length || !validators.length) {
+      set({ validatorsWithDerivedData: [] });
+      return;
+    }
+
+    const filteredProposals = getFilteredProposals();
+    const proposalSet = new Set(filteredProposals.map(p => p.proposal_id));
+    const validatorPowerSum = new Map<string, number>();
+    const validatorVoteCount = new Map<string, number>();
+
+    for (const vote of votes) {
+      if (proposalSet.has(vote.proposal_id)) {
+        if (!countNoVoteAsParticipation && vote.vote_option === 'NO_VOTE') {
+          continue;
+        }
+        const power = typeof vote.voting_power === 'string' ? parseFloat(vote.voting_power) : vote.voting_power;
+        if (power && !isNaN(power)) {
+          const address = vote.validator_address;
+          validatorVoteCount.set(address, (validatorVoteCount.get(address) || 0) + 1);
+          validatorPowerSum.set(address, (validatorPowerSum.get(address) || 0) + power);
+        }
+      }
+    }
+
+    const getAveragePower = (address: string) => {
+      const sum = validatorPowerSum.get(address) || 0;
+      const count = validatorVoteCount.get(address) || 0;
+      return count > 0 ? sum / count : 0;
+    };
+
+    const validatorParticipationCount = new Map<string, number>();
+    let totalProposalsForParticipation = 0;
+
+    for (const proposal of filteredProposals) {
+      if (!countNoVoteAsParticipation) {
+        const proposalVotes = votes.filter(v => v.proposal_id === proposal.proposal_id);
+        const hasMeaningfulVoteOption = proposalVotes.some(v => v.vote_option !== 'NO_VOTE');
+        if (!hasMeaningfulVoteOption) {
+          continue;
+        }
+      }
+      totalProposalsForParticipation++;
+    }
+
+    for (const vote of votes) {
+      if (proposalSet.has(vote.proposal_id)) {
+        if (!countNoVoteAsParticipation && vote.vote_option === 'NO_VOTE') {
+          continue;
+        }
+        validatorParticipationCount.set(vote.validator_address, (validatorParticipationCount.get(vote.validator_address) || 0) + 1);
+      }
+    }
+
+    const getParticipationRate = (address: string) => {
+      const count = validatorParticipationCount.get(address) || 0;
+      return totalProposalsForParticipation > 0 ? (count / totalProposalsForParticipation) * 100 : 0;
+    };
+
+    const newValidatorsWithDerivedData = validators.map(v => ({
+      ...v,
+      avgPower: getAveragePower(v.validator_address),
+      participationRate: getParticipationRate(v.validator_address)
+    }));
+
+    set({ validatorsWithDerivedData: newValidatorsWithDerivedData });
   },
 
   setSelectedChain: (chain: string) => {
@@ -157,7 +235,10 @@ export const useGlobalStore = create<GlobalStore>((set, get) => ({
       set({ searchTerm: term, validatorSortKey: 'votingPower' }); // Revert to new default
     }
   },
-  setApprovalRateRange: (range: [number, number]) => set({ approvalRateRange: range }),
+  setApprovalRateRange: (range: [number, number]) => {
+    set({ approvalRateRange: range });
+    get().recalculateValidatorMetrics();
+  },
   setParticipationRateRange: (range: [number, number]) => set({ participationRateRange: range }),
   setVotingPowerFilterMode: (mode) => set({ votingPowerFilterMode: mode }),
   setVotingPowerRange: (range) => set({ votingPowerRange: range }),
@@ -173,6 +254,7 @@ export const useGlobalStore = create<GlobalStore>((set, get) => ({
   setValidatorSortKey: (key: ValidatorSortKey) => set({ validatorSortKey: key }),
   setCountNoVoteAsParticipation: (count: boolean) => {
     set({ countNoVoteAsParticipation: count });
+    get().recalculateValidatorMetrics();
   },
 
   // Selectors
@@ -301,13 +383,9 @@ export const getYesRateDistribution = (state: GlobalStore) => {
 };
 
 export const getVotingPowerDistribution = (state: GlobalStore) => {
-  // This selector now depends on `validators` having `avgPower`.
-  // This calculation is done in `ValidatorHeatmap`.
-  // For now, we return an empty array or a simplified version if `avgPower` is not available.
-  return state.validators.map(v => (v.avgPower || 0) * 100);
+  return state.validatorsWithDerivedData.map(v => (v.avgPower || 0) * 100);
 };
 
 export const getParticipationRateDistribution = (state: GlobalStore) => {
-  // This also depends on `participationRate` which is calculated in `ValidatorHeatmap`.
-  return state.validators.map(v => v.participationRate || 0);
+  return state.validatorsWithDerivedData.map(v => v.participationRate || 0);
 };

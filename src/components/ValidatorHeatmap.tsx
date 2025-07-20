@@ -69,9 +69,9 @@ export default function ValidatorHeatmap() {
   const {
     proposals: rawProposals,
     validators: rawValidators,
+    validatorsWithDerivedData: validatorsWithAvgPower,
     votes: rawVotes,
     getFilteredProposals,
-    getFilteredValidators,
     loading,
     searchTerm,
     setSearchTerm,
@@ -82,9 +82,8 @@ export default function ValidatorHeatmap() {
     setVotingPowerDynamicRange,
     setVotingPowerRange,
     participationRateRange,
-    approvalRateRange,
     countNoVoteAsParticipation,
-    setCountNoVoteAsParticipation,
+    recalculateValidatorMetrics,
   } = useGlobalStore()
 
   const searchTermRef = useRef(searchTerm);
@@ -92,75 +91,9 @@ export default function ValidatorHeatmap() {
     searchTermRef.current = searchTerm;
   }, [searchTerm]);
 
-  let validatorsWithAvgPower = useMemo((): ValidatorWithAvgPower[] => {
-    const filteredProposals = getFilteredProposals();
-    const validatorsForProcessing = getFilteredValidators();
-
-    if (!filteredProposals.length || !validatorsForProcessing.length) {
-      return [];
-    }
-
-    const proposalSet = new Set(filteredProposals.map(p => p.proposal_id));
-    const validatorPowerSum = new Map<string, number>();
-    const validatorVoteCount = new Map<string, number>();
-
-    for (const vote of rawVotes) {
-      if (proposalSet.has(vote.proposal_id)) {
-        // Only consider votes that are not 'NO_VOTE' if countNoVoteAsParticipation is false
-        if (!countNoVoteAsParticipation && vote.vote_option === 'NO_VOTE') {
-          continue;
-        }
-        const power = typeof vote.voting_power === 'string' ? parseFloat(vote.voting_power) : vote.voting_power;
-        if (power && !isNaN(power)) {
-          const address = vote.validator_address;
-          validatorVoteCount.set(address, (validatorVoteCount.get(address) || 0) + 1);
-          validatorPowerSum.set(address, (validatorPowerSum.get(address) || 0) + power);
-        }
-      }
-    }
-
-    const getAveragePower = (address: string) => {
-      const sum = validatorPowerSum.get(address) || 0;
-      const count = validatorVoteCount.get(address) || 0;
-      return count > 0 ? sum / count : 0;
-    };
-
-    const validatorParticipationCount = new Map<string, number>();
-    let totalProposalsForParticipation = 0;
-
-    for (const proposal of filteredProposals) {
-      // Only count proposals where a meaningful vote is expected if countNoVoteAsParticipation is false
-      if (!countNoVoteAsParticipation) {
-        const proposalVotes = rawVotes.filter(v => v.proposal_id === proposal.proposal_id);
-        const hasMeaningfulVoteOption = proposalVotes.some(v => v.vote_option !== 'NO_VOTE');
-        if (!hasMeaningfulVoteOption) {
-          continue; // Skip proposals where no validator cast a meaningful vote if excluding NO_VOTE
-        }
-      }
-      totalProposalsForParticipation++;
-    }
-
-    for (const vote of rawVotes) {
-      if (proposalSet.has(vote.proposal_id)) {
-        // Only count votes that are not 'NO_VOTE' if countNoVoteAsParticipation is false
-        if (!countNoVoteAsParticipation && vote.vote_option === 'NO_VOTE') {
-          continue;
-        }
-        validatorParticipationCount.set(vote.validator_address, (validatorParticipationCount.get(vote.validator_address) || 0) + 1);
-      }
-    }
-
-    const getParticipationRate = (address: string) => {
-      const count = validatorParticipationCount.get(address) || 0;
-      return totalProposalsForParticipation > 0 ? (count / totalProposalsForParticipation) * 100 : 0; // Percentage
-    };
-
-    return validatorsForProcessing.map(v => ({
-      ...v,
-      avgPower: getAveragePower(v.validator_address),
-      participationRate: getParticipationRate(v.validator_address)
-    }));
-  }, [getFilteredProposals, getFilteredValidators, rawVotes, countNoVoteAsParticipation]);
+  useEffect(() => {
+    recalculateValidatorMetrics();
+  }, [getFilteredProposals, countNoVoteAsParticipation, recalculateValidatorMetrics]);
 
   useEffect(() => {
     if (!validatorsWithAvgPower.length) {
@@ -217,10 +150,51 @@ export default function ValidatorHeatmap() {
       filteredByVotingPower = rankedValidators.slice(minRank - 1, maxRank);
     }
 
+    const proposalSetForParticipation = new Set(filteredProposals.map(p => p.proposal_id));
+    const validatorVoteCountsForParticipation = new Map<string, number>();
+    let totalProposalsForParticipation = filteredProposals.length;
+
+    if (!countNoVoteAsParticipation) {
+      const proposalsWithNoMeaningfulVotes = new Set<string>();
+      const proposalVoteOptions = new Map<string, Set<string>>();
+
+      for (const vote of rawVotes) {
+        if (proposalSetForParticipation.has(vote.proposal_id)) {
+          if (!proposalVoteOptions.has(vote.proposal_id)) {
+            proposalVoteOptions.set(vote.proposal_id, new Set());
+          }
+          proposalVoteOptions.get(vote.proposal_id)!.add(vote.vote_option);
+        }
+      }
+
+      for (const proposal of filteredProposals) {
+        const options = proposalVoteOptions.get(proposal.proposal_id);
+        if (!options || (options.size === 1 && options.has('NO_VOTE'))) {
+          proposalsWithNoMeaningfulVotes.add(proposal.proposal_id);
+        }
+      }
+      totalProposalsForParticipation -= proposalsWithNoMeaningfulVotes.size;
+    }
+
+    for (const vote of rawVotes) {
+      if (proposalSetForParticipation.has(vote.proposal_id)) {
+        if (!countNoVoteAsParticipation && vote.vote_option === 'NO_VOTE') {
+          continue;
+        }
+        validatorVoteCountsForParticipation.set(vote.validator_address, (validatorVoteCountsForParticipation.get(vote.validator_address) || 0) + 1);
+      }
+    }
+
+    const getParticipationRate = (address: string) => {
+      const count = validatorVoteCountsForParticipation.get(address) || 0;
+      return totalProposalsForParticipation > 0 ? (count / totalProposalsForParticipation) * 100 : 0;
+    };
+
     const [minParticipation, maxParticipation] = participationRateRange;
-    let finalFilteredValidators = filteredByVotingPower.filter(v =>
-      v.participationRate >= minParticipation && v.participationRate <= maxParticipation
-    );
+    let finalFilteredValidators = filteredByVotingPower.filter(v => {
+      const rate = getParticipationRate(v.validator_address);
+      return rate >= minParticipation && rate <= maxParticipation;
+    });
 
     if (pinnedValidator) {
       const meetsVotingPower = votingPowerFilterMode === 'ratio'
@@ -307,7 +281,7 @@ export default function ValidatorHeatmap() {
       }))
 
     return { validators, proposals, votes }
-  }, [getFilteredProposals, validatorsWithAvgPower, rawVotes, validatorSortKey, searchTerm, rawValidators, votingPowerFilterMode, votingPowerRange, participationRateRange, approvalRateRange, countNoVoteAsParticipation])
+  }, [getFilteredProposals, validatorsWithAvgPower, rawVotes, validatorSortKey, searchTerm, rawValidators, votingPowerFilterMode, votingPowerRange, participationRateRange, countNoVoteAsParticipation])
 
   // Main D3 rendering effect
   useEffect(() => {
