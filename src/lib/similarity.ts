@@ -12,7 +12,8 @@ import type { Vote } from './dataLoader';
 export function calculateSimilarity(
   validatorAVotes: Vote[],
   validatorBVotes: Vote[],
-  proposalIds: Set<string>
+  proposalIds: Set<string>,
+  countNoVoteAsParticipation: boolean
 ): number {
   if (proposalIds.size === 0) {
     return 0; // No proposals to compare
@@ -22,16 +23,28 @@ export function calculateSimilarity(
   const votesBByProposal = new Map(validatorBVotes.map(v => [v.proposal_id, v.vote_option]));
 
   let matchCount = 0;
+  let comparableProposalsCount = 0;
 
   for (const proposalId of proposalIds) {
-    // Use 'NO_VOTE' as the default if a validator did not participate in a proposal
-    const voteA = votesAByProposal.get(proposalId) || 'NO_VOTE';
-    const voteB = votesBByProposal.get(proposalId) || 'NO_VOTE';
+    const voteA = votesAByProposal.get(proposalId);
+    const voteB = votesBByProposal.get(proposalId);
 
-    if (voteA === voteB) {
-      matchCount++;
+    if (countNoVoteAsParticipation) {
+      const finalVoteA = voteA || 'NO_VOTE';
+      const finalVoteB = voteB || 'NO_VOTE';
+      if (finalVoteA === finalVoteB) {
+        matchCount++;
+      }
+      comparableProposalsCount++;
+    } else {
+      if (voteA && voteB) {
+        if (voteA === voteB) {
+          matchCount++;
+        }
+        comparableProposalsCount++;
+      }
     }
   }
 
-  return matchCount / proposalIds.size;
+  return comparableProposalsCount > 0 ? matchCount / comparableProposalsCount : 0;
 }

@@ -38,6 +38,7 @@ interface GlobalStore {
   votingPowerRange: [number, number]
   votingPowerDynamicRange: [number, number]
   validatorSortKey: ValidatorSortKey;
+  countNoVoteAsParticipation: boolean;
   
   categoryVisualizationMode: 'passRate' | 'voteCount'
   
@@ -85,6 +86,7 @@ export const useGlobalStore = create<GlobalStore>((set, get) => ({
   votingPowerDynamicRange: [0, 100],
   categoryVisualizationMode: 'voteCount',
   validatorSortKey: 'votingPower',
+  countNoVoteAsParticipation: true,
   loading: true,
   error: null,
   windowSize: { width: 0, height: 0 },
@@ -169,6 +171,9 @@ export const useGlobalStore = create<GlobalStore>((set, get) => ({
   setCategoryVisualizationMode: (mode) => set({ categoryVisualizationMode: mode }),
   setWindowSize: (size) => set({ windowSize: size }),
   setValidatorSortKey: (key: ValidatorSortKey) => set({ validatorSortKey: key }),
+  setCountNoVoteAsParticipation: (count: boolean) => {
+    set({ countNoVoteAsParticipation: count });
+  },
 
   // Selectors
   getProposalsFilteredByRate: () => {

@@ -102,6 +102,8 @@ export default function FilterPanel() {
     proposals,
     participationRateRange,
     setParticipationRateRange,
+    countNoVoteAsParticipation,
+    setCountNoVoteAsParticipation,
   } = useGlobalStore()
 
   const [hoveredCategory, setHoveredCategory] = useState<string | null>(null)
@@ -338,7 +340,17 @@ export default function FilterPanel() {
               onChange={setParticipationRateRange}
               formatValue={(v) => `${v.toFixed(0)}%`}
               step={1}
-            />
+            >
+              <label className="flex items-center space-x-2 text-xs text-gray-500">
+                <input
+                  type="checkbox"
+                  checked={countNoVoteAsParticipation}
+                  onChange={(e) => setCountNoVoteAsParticipation(e.target.checked)}
+                  className="form-checkbox h-3 w-3 text-blue-600 rounded"
+                />
+                <span>Include 'NO_VOTE'</span>
+              </label>
+            </RangeSlider>
           </div>
         </div>
       </div>

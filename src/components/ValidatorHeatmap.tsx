@@ -83,6 +83,8 @@ export default function ValidatorHeatmap() {
     setVotingPowerRange,
     participationRateRange,
     approvalRateRange,
+    countNoVoteAsParticipation,
+    setCountNoVoteAsParticipation,
   } = useGlobalStore()
 
   const searchTermRef = useRef(searchTerm);
@@ -104,6 +106,10 @@ export default function ValidatorHeatmap() {
 
     for (const vote of rawVotes) {
       if (proposalSet.has(vote.proposal_id)) {
+        // Only consider votes that are not 'NO_VOTE' if countNoVoteAsParticipation is false
+        if (!countNoVoteAsParticipation && vote.vote_option === 'NO_VOTE') {
+          continue;
+        }
         const power = typeof vote.voting_power === 'string' ? parseFloat(vote.voting_power) : vote.voting_power;
         if (power && !isNaN(power)) {
           const address = vote.validator_address;
@@ -120,17 +126,33 @@ export default function ValidatorHeatmap() {
     };
 
     const validatorParticipationCount = new Map<string, number>();
-    const totalFilteredProposals = filteredProposals.length;
+    let totalProposalsForParticipation = 0;
+
+    for (const proposal of filteredProposals) {
+      // Only count proposals where a meaningful vote is expected if countNoVoteAsParticipation is false
+      if (!countNoVoteAsParticipation) {
+        const proposalVotes = rawVotes.filter(v => v.proposal_id === proposal.proposal_id);
+        const hasMeaningfulVoteOption = proposalVotes.some(v => v.vote_option !== 'NO_VOTE');
+        if (!hasMeaningfulVoteOption) {
+          continue; // Skip proposals where no validator cast a meaningful vote if excluding NO_VOTE
+        }
+      }
+      totalProposalsForParticipation++;
+    }
 
     for (const vote of rawVotes) {
       if (proposalSet.has(vote.proposal_id)) {
+        // Only count votes that are not 'NO_VOTE' if countNoVoteAsParticipation is false
+        if (!countNoVoteAsParticipation && vote.vote_option === 'NO_VOTE') {
+          continue;
+        }
         validatorParticipationCount.set(vote.validator_address, (validatorParticipationCount.get(vote.validator_address) || 0) + 1);
       }
     }
 
     const getParticipationRate = (address: string) => {
       const count = validatorParticipationCount.get(address) || 0;
-      return totalFilteredProposals > 0 ? (count / totalFilteredProposals) * 100 : 0; // Percentage
+      return totalProposalsForParticipation > 0 ? (count / totalProposalsForParticipation) * 100 : 0; // Percentage
     };
 
     return validatorsForProcessing.map(v => ({
@@ -138,7 +160,7 @@ export default function ValidatorHeatmap() {
       avgPower: getAveragePower(v.validator_address),
       participationRate: getParticipationRate(v.validator_address)
     }));
-  }, [getFilteredProposals, getFilteredValidators, rawVotes]);
+  }, [getFilteredProposals, getFilteredValidators, rawVotes, countNoVoteAsParticipation]);
 
   useEffect(() => {
     if (!validatorsWithAvgPower.length) {
@@ -212,14 +234,10 @@ export default function ValidatorHeatmap() {
       
       const meetsParticipationRate = (pinnedValidator.participationRate >= participationRateRange[0] && pinnedValidator.participationRate <= participationRateRange[1]);
 
-      console.log(`[Pinned Validator Debug] Validator: ${pinnedValidator.name}, Meets VP: ${meetsVotingPower}, Meets PR: ${meetsParticipationRate}`);
-
       if (!meetsVotingPower || !meetsParticipationRate) {
         pinnedValidator.isPinnedAndFilteredOut = true;
-        console.log(`[Pinned Validator Debug] Setting isPinnedAndFilteredOut to TRUE`);
       } else {
         pinnedValidator.isPinnedAndFilteredOut = false;
-        console.log(`[Pinned Validator Debug] Setting isPinnedAndFilteredOut to FALSE`);
       }
       finalFilteredValidators.unshift(pinnedValidator);
     }
@@ -243,7 +261,7 @@ export default function ValidatorHeatmap() {
         
         for (const validator of sortedValidators) {
           const targetVotes = votesByValidator.get(validator.validator_address) || [];
-          const score = calculateSimilarity(targetVotes, selectedVotes, proposalSet);
+          const score = calculateSimilarity(targetVotes, selectedVotes, proposalSet, includeNoVoteInSimilarity);
           similarityScores.set(validator.validator_address, score);
         }
 
@@ -261,6 +279,10 @@ export default function ValidatorHeatmap() {
       const validatorVoteCounts = new Map<string, number>();
       for (const vote of rawVotes) {
         if (proposalSet.has(vote.proposal_id)) {
+          // Only count votes that are not 'NO_VOTE' if countNoVoteAsParticipation is false
+          if (!countNoVoteAsParticipation && vote.vote_option === 'NO_VOTE') {
+            continue;
+          }
           validatorVoteCounts.set(vote.validator_address, (validatorVoteCounts.get(vote.validator_address) || 0) + 1);
         }
       }
@@ -285,7 +307,7 @@ export default function ValidatorHeatmap() {
       }))
 
     return { validators, proposals, votes }
-  }, [getFilteredProposals, validatorsWithAvgPower, rawVotes, validatorSortKey, searchTerm, rawValidators, votingPowerFilterMode, votingPowerRange, participationRateRange, approvalRateRange])
+  }, [getFilteredProposals, validatorsWithAvgPower, rawVotes, validatorSortKey, searchTerm, rawValidators, votingPowerFilterMode, votingPowerRange, participationRateRange, approvalRateRange, countNoVoteAsParticipation])
 
   // Main D3 rendering effect
   useEffect(() => {
