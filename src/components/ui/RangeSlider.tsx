@@ -1,7 +1,6 @@
 'use client'
 
-import { useRef, useState, useEffect, useLayoutEffect, useMemo } from 'react'
-import * as d3 from 'd3'
+import { useRef, useState, useEffect, useLayoutEffect } from 'react'
 
 type DisplayMode = 'internal' | 'split' | 'combined-left' | 'combined-right'
 
@@ -98,7 +97,6 @@ interface RangeSliderProps {
   step?: number;
   children?: React.ReactNode;
   color?: string;
-  distributionData?: number[];
 }
 
 export default function RangeSlider({ 
@@ -110,57 +108,11 @@ export default function RangeSlider({
   formatValue, 
   step = 1, 
   children,
-  color = '#3b82f6', // Default to blue-500
-  distributionData
+  color = '#3b82f6' // Default to blue-500
 }: RangeSliderProps) {
   const { sliderRef, minThumbRef, maxThumbRef, currentValues, minPercent, maxPercent, activeThumb } = useRangeSlider(
     min, max, values, onChange, step
   );
-  
-  const gradientBackground = useMemo(() => {
-    if (!distributionData || distributionData.length === 0) {
-      return color; // Fallback to solid color if no distribution data
-    }
-
-    const numBins = 50; // Number of segments for the gradient
-    const binSize = (max - min) / numBins;
-    const counts = new Array(numBins).fill(0);
-
-    // Bin the data
-    for (const value of distributionData) {
-      if (value >= min && value <= max) {
-        const binIndex = Math.floor((value - min) / binSize);
-        if (binIndex >= 0 && binIndex < numBins) {
-          counts[binIndex]++;
-        }
-      }
-    }
-
-    // Normalize counts to get intensity
-    const maxCount = Math.max(...counts);
-    if (maxCount === 0) return color; // All counts are zero, fallback
-
-    const colorStops = counts.map((count, index) => {
-      const intensity = count / maxCount; // 0 to 1
-      const startPercent = (index / numBins) * 100;
-      const endPercent = ((index + 1) / numBins) * 100;
-
-      // Interpolate color based on intensity (e.g., from light to main color)
-      // Using HSL for easier interpolation: HSL(hue, saturation, lightness)
-      // Assuming 'color' is a hex or RGB. For simplicity, let's use a fixed hue/saturation
-      // and vary lightness based on intensity.
-      // A more robust solution would parse the 'color' prop to HSL.
-      // For now, let's use a simple interpolation from a lighter shade of the base color.
-      const baseColorRgb = d3.color(color);
-      if (!baseColorRgb) return `${color} ${startPercent}% ${endPercent}%`; // Fallback if color parsing fails
-
-      const interpolatedColor = d3.interpolateRgb(d3.rgb(baseColorRgb.r, baseColorRgb.g, baseColorRgb.b).brighter(2), baseColorRgb)(intensity);
-      
-      return `${interpolatedColor} ${startPercent}% ${endPercent}%`;
-    });
-
-    return `linear-gradient(to right, ${colorStops.join(', ')})`;
-  }, [min, max, color, distributionData]);
   
   const [displayMode, setDisplayMode] = useState<DisplayMode>('internal');
   
@@ -237,7 +189,7 @@ export default function RangeSlider({
           style={{ 
             left: `${minPercent}%`, 
             right: `${100 - maxPercent}%`,
-            background: gradientBackground
+            backgroundColor: color
           }} 
         />
 

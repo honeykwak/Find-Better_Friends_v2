@@ -68,9 +68,6 @@ interface GlobalStore {
   getFilteredValidators: () => Validator[]
   getChains: () => string[]
   getFilteredCategoryHierarchy: () => CategoryHierarchyNode[]
-  getVotingPowerDistribution: () => number[];
-  getParticipationRateDistribution: () => number[];
-  getYesRateDistribution: () => number[];
 }
 
 export const useGlobalStore = create<GlobalStore>((set, get) => ({
@@ -286,29 +283,5 @@ export const useGlobalStore = create<GlobalStore>((set, get) => ({
     }).sort((a, b) => b.count - a.count);
 
     return hierarchy;
-  },
-
-  getVotingPowerDistribution: () => {
-    const { validators } = get();
-    return validators.map(v => v.avgPower * 100); // Convert to percentage for consistency with slider range
-  },
-
-  getParticipationRateDistribution: () => {
-    const { validators } = get();
-    return validators.map(v => v.participationRate); // Already percentage
-  },
-
-  getYesRateDistribution: () => {
-    const { proposals } = get();
-    return proposals.map(p => {
-      const {
-        yes_count = 0,
-        no_count = 0,
-        abstain_count = 0,
-        no_with_veto_count = 0,
-      } = p.final_tally_result || {};
-      const totalVotes = yes_count + no_count + abstain_count + no_with_veto_count;
-      return totalVotes === 0 ? 0 : (yes_count / totalVotes) * 100;
-    });
   },
 }));
