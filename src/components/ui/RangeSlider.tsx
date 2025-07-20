@@ -1,6 +1,7 @@
 'use client'
 
-import { useRef, useState, useEffect, useLayoutEffect } from 'react'
+import { useRef, useState, useEffect, useLayoutEffect, useMemo } from 'react'
+import * as d3 from 'd3'
 
 type DisplayMode = 'internal' | 'split' | 'combined-left' | 'combined-right'
 
@@ -97,6 +98,7 @@ interface RangeSliderProps {
   step?: number;
   children?: React.ReactNode;
   color?: string;
+  distributionData?: number[];
 }
 
 export default function RangeSlider({ 
@@ -108,11 +110,49 @@ export default function RangeSlider({
   formatValue, 
   step = 1, 
   children,
-  color = '#3b82f6' // Default to blue-500
+  color = '#3b82f6', // Default to blue-500
+  distributionData
 }: RangeSliderProps) {
   const { sliderRef, minThumbRef, maxThumbRef, currentValues, minPercent, maxPercent, activeThumb } = useRangeSlider(
     min, max, values, onChange, step
   );
+  
+  const gradientBackground = useMemo(() => {
+    if (!distributionData || distributionData.length === 0 || min >= max) {
+      return color; // Fallback to solid color
+    }
+
+    const numBins = 50;
+    const binSize = (max - min) / numBins;
+    const counts = new Array(numBins).fill(0);
+
+    for (const value of distributionData) {
+      if (value >= min && value <= max) {
+        const binIndex = Math.floor((value - min) / binSize);
+        if (binIndex >= 0 && binIndex < numBins) {
+          counts[binIndex]++;
+        }
+      }
+    }
+
+    const maxCount = Math.max(...counts);
+    if (maxCount === 0) return color;
+
+    const colorStops = counts.map((count, index) => {
+      const intensity = count / maxCount;
+      const startPercent = (index / numBins) * 100;
+      const endPercent = ((index + 1) / numBins) * 100;
+      
+      const baseColorRgb = d3.color(color);
+      if (!baseColorRgb) return `${color} ${startPercent}% ${endPercent}%`;
+
+      const rgbaColor = `rgba(${baseColorRgb.r}, ${baseColorRgb.g}, ${baseColorRgb.b}, ${intensity})`;
+      
+      return `${rgbaColor} ${startPercent}%, ${rgbaColor} ${endPercent}%`;
+    });
+
+    return `linear-gradient(to right, ${colorStops.join(', ')})`;
+  }, [min, max, color, distributionData]);
   
   const [displayMode, setDisplayMode] = useState<DisplayMode>('internal');
   
@@ -155,7 +195,6 @@ export default function RangeSlider({
     } else if (rightTrackWidth > leftTrackWidth && rightTrackWidth >= combinedTextWidth + PADDING) {
       setDisplayMode('combined-right');
     } else {
-      // Fallback: if split is not possible, choose the wider side for combined text
       if (leftTrackWidth > rightTrackWidth) {
         setDisplayMode('combined-left');
       } else {
@@ -183,13 +222,21 @@ export default function RangeSlider({
       >
         <div className="absolute top-0 left-0 w-full h-full bg-gray-200" />
         
-        {/* Fill Area */}
+        {/* Gradient Background Layer */}
+        <div 
+          className="absolute top-0 left-0 w-full h-full pointer-events-none"
+          style={{ background: gradientBackground }}
+        />
+
+        {/* Selection Overlay */}
         <div 
           className="absolute top-0 h-full pointer-events-none" 
           style={{ 
             left: `${minPercent}%`, 
             right: `${100 - maxPercent}%`,
-            backgroundColor: color
+            backgroundColor: 'rgba(0, 0, 0, 0.1)',
+            borderLeft: '1px solid rgba(0, 0, 0, 0.2)',
+            borderRight: '1px solid rgba(0, 0, 0, 0.2)',
           }} 
         />
 

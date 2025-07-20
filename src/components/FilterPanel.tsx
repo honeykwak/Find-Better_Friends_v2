@@ -2,7 +2,15 @@
 
 import { useState, useRef, useEffect, useMemo, useCallback } from 'react'
 import { Search, RotateCcw, X } from 'lucide-react'
-import { useGlobalStore, type CategoryHierarchyNode, type TopicNode, type Validator } from '@/stores/useGlobalStore'
+import { 
+  useGlobalStore, 
+  getYesRateDistribution, 
+  getVotingPowerDistribution, 
+  getParticipationRateDistribution,
+  type CategoryHierarchyNode, 
+  type TopicNode, 
+  type Validator 
+} from '@/stores/useGlobalStore'
 import { VOTE_COLORS, VOTE_ORDER } from '@/constants/voteColors'
 import Image from 'next/image'
 import React from 'react'
@@ -78,6 +86,7 @@ const TopicItem = React.memo(({ topic, isSelected, categoryVisualizationMode, ca
 })
 
 export default function FilterPanel() {
+  const store = useGlobalStore();
   const {
     selectedCategories,
     selectedTopics,
@@ -104,7 +113,7 @@ export default function FilterPanel() {
     setParticipationRateRange,
     countNoVoteAsParticipation,
     setCountNoVoteAsParticipation,
-  } = useGlobalStore()
+  } = store;
 
   const [hoveredCategory, setHoveredCategory] = useState<string | null>(null)
   const [showChainDropdown, setShowChainDropdown] = useState(false)
@@ -113,6 +122,10 @@ export default function FilterPanel() {
   const [suggestions, setSuggestions] = useState<Validator[]>([])
   const [isDropdownOpen, setIsDropdownOpen] = useState(false)
   const searchRef = useRef<HTMLDivElement>(null)
+
+  const yesRateDistribution = useMemo(() => getYesRateDistribution(store), [store.proposals]);
+  const votingPowerDistribution = useMemo(() => getVotingPowerDistribution(store), [store.validators]);
+  const participationRateDistribution = useMemo(() => getParticipationRateDistribution(store), [store.validators]);
 
   const resetFilters = useCallback(() => {
     setSelectedCategories([])
@@ -243,6 +256,7 @@ export default function FilterPanel() {
               formatValue={(v) => `${v}%`}
               step={1}
               color={VOTE_COLORS.YES}
+              distributionData={yesRateDistribution}
             />
           </div>
           <div>
@@ -323,6 +337,7 @@ export default function FilterPanel() {
               onChange={setVotingPowerRange}
               formatValue={(v) => votingPowerFilterMode === 'ratio' ? `${v.toFixed(2)}%` : `${Math.round(v)}`}
               step={votingPowerFilterMode === 'ratio' ? 0.01 : 1}
+              distributionData={votingPowerDistribution}
             >
               <ToggleButtonGroup
                 options={[{value: 'ratio', label: 'Ratio'}, {value: 'rank', label: 'Rank'}]}
@@ -332,15 +347,8 @@ export default function FilterPanel() {
             </RangeSlider>
           </div>
           <div className="mb-4">
-            <RangeSlider
-              label="Participation Rate"
-              min={0}
-              max={100}
-              values={participationRateRange}
-              onChange={setParticipationRateRange}
-              formatValue={(v) => `${v.toFixed(0)}%`}
-              step={1}
-            >
+            <div className="flex justify-between items-center mb-2">
+              <label className="block text-sm font-medium text-gray-900">Participation Rate</label>
               <label className="flex items-center space-x-2 text-xs text-gray-500">
                 <input
                   type="checkbox"
@@ -350,7 +358,17 @@ export default function FilterPanel() {
                 />
                 <span>Include 'NO_VOTE'</span>
               </label>
-            </RangeSlider>
+            </div>
+            <RangeSlider
+              label=""
+              min={0}
+              max={100}
+              values={participationRateRange}
+              onChange={setParticipationRateRange}
+              formatValue={(v) => `${v.toFixed(0)}%`}
+              step={1}
+              distributionData={participationRateDistribution}
+            />
           </div>
         </div>
       </div>

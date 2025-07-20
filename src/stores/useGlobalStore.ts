@@ -285,3 +285,29 @@ export const useGlobalStore = create<GlobalStore>((set, get) => ({
     return hierarchy;
   },
 }));
+
+// Standalone selectors for data distribution
+export const getYesRateDistribution = (state: GlobalStore) => {
+  return state.proposals.map(p => {
+    const {
+      yes_count = 0,
+      no_count = 0,
+      abstain_count = 0,
+      no_with_veto_count = 0,
+    } = p.final_tally_result || {};
+    const totalVotes = yes_count + no_count + abstain_count + no_with_veto_count;
+    return totalVotes === 0 ? 0 : (yes_count / totalVotes) * 100;
+  });
+};
+
+export const getVotingPowerDistribution = (state: GlobalStore) => {
+  // This selector now depends on `validators` having `avgPower`.
+  // This calculation is done in `ValidatorHeatmap`.
+  // For now, we return an empty array or a simplified version if `avgPower` is not available.
+  return state.validators.map(v => (v.avgPower || 0) * 100);
+};
+
+export const getParticipationRateDistribution = (state: GlobalStore) => {
+  // This also depends on `participationRate` which is calculated in `ValidatorHeatmap`.
+  return state.validators.map(v => v.participationRate || 0);
+};
