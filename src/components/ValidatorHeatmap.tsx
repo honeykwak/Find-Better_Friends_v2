@@ -37,6 +37,8 @@ interface ProcessedHeatmapData {
     address: string
     name: string
     index: number
+    isPinnedAndFilteredOut?: boolean
+    similarity?: number
   }>
   proposals: Array<{
     id:string
@@ -252,20 +254,22 @@ export default function ValidatorHeatmap() {
     }
 
     const sortedValidators = finalFilteredValidators.slice();
+    const similarityScores = new Map<string, number>();
 
     if (validatorSortKey === 'similarity' && searchTerm) {
       const selectedValidator = rawValidators.find(v => v.moniker === searchTerm);
       if (selectedValidator) {
-        const similarityScores = new Map<string, number>();
         const selectedVotes = votesByValidator.get(selectedValidator.validator_address) || [];
         
         for (const validator of sortedValidators) {
           const targetVotes = votesByValidator.get(validator.validator_address) || [];
-          const score = calculateSimilarity(targetVotes, selectedVotes, proposalSet, includeNoVoteInSimilarity);
+          const score = calculateSimilarity(targetVotes, selectedVotes, proposalSet, countNoVoteAsParticipation);
           similarityScores.set(validator.validator_address, score);
         }
 
         sortedValidators.sort((a, b) => {
+          if (a.moniker === searchTerm) return -1;
+          if (b.moniker === searchTerm) return 1;
           const scoreA = similarityScores.get(a.validator_address) || -2;
           const scoreB = similarityScores.get(b.validator_address) || -2;
           return scoreB - scoreA;
@@ -279,7 +283,6 @@ export default function ValidatorHeatmap() {
       const validatorVoteCounts = new Map<string, number>();
       for (const vote of rawVotes) {
         if (proposalSet.has(vote.proposal_id)) {
-          // Only count votes that are not 'NO_VOTE' if countNoVoteAsParticipation is false
           if (!countNoVoteAsParticipation && vote.vote_option === 'NO_VOTE') {
             continue;
           }
@@ -289,7 +292,13 @@ export default function ValidatorHeatmap() {
       sortedValidators.sort((a, b) => (validatorVoteCounts.get(b.validator_address) || 0) - (validatorVoteCounts.get(a.validator_address) || 0));
     }
     
-    const validators = sortedValidators.map((v, index) => ({ address: v.validator_address, name: v.moniker || 'Unknown', index, isPinnedAndFilteredOut: v.isPinnedAndFilteredOut }))
+    const validators = sortedValidators.map((v, index) => ({ 
+      address: v.validator_address, 
+      name: v.moniker || 'Unknown', 
+      index, 
+      isPinnedAndFilteredOut: v.isPinnedAndFilteredOut,
+      similarity: similarityScores.get(v.validator_address)
+    }))
 
     const proposals = filteredProposals
       .sort((a, b) => new Date(b.submit_time).getTime() - new Date(a.submit_time).getTime())
@@ -379,7 +388,13 @@ export default function ValidatorHeatmap() {
       .attr('dy', '0.35em')
       .attr('text-anchor', 'end')
       .style('font-size', `${Math.max(8, cellHeight * 0.7)}px`)
-      .text(d => d.name.slice(0, 25))
+      .text(d => {
+        if (validatorSortKey === 'similarity' && typeof d.similarity === 'number' && d.similarity >= -1) {
+          const percentage = (d.similarity * 100).toFixed(0);
+          return `${d.name.slice(0, 25)} (${percentage}%)`;
+        }
+        return d.name.slice(0, 25);
+      })
       .style('cursor', 'pointer')
       .on('click', (event, d) => {
         if (searchTermRef.current === d.name) {
@@ -420,7 +435,6 @@ export default function ValidatorHeatmap() {
         if (searchTerm && validator.name.toLowerCase() === lowercasedSearchTerm) {
           fillColor = validator.isPinnedAndFilteredOut ? 'orange' : 'blue';
         }
-        console.log(`[D3 Label Fill] Validator: ${validator.name}, isPinnedAndFilteredOut: ${validator.isPinnedAndFilteredOut}, Final Color: ${fillColor}`);
         return fillColor;
       })
   }, [searchTerm, loading, heatmapData.validators])
