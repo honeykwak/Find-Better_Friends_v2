@@ -80,6 +80,7 @@ export default function ValidatorHeatmap() {
     validatorsWithDerivedData: validatorsWithAvgPower,
     votes: rawVotes,
     getFilteredProposals,
+    selectedTopics,
     loading,
     searchTerm,
     setSearchTerm,
@@ -312,7 +313,7 @@ export default function ValidatorHeatmap() {
       }))
 
     return { validators, proposals: proposalsWithTally, votes }
-  }, [getFilteredProposals, validatorsWithAvgPower, rawVotes, validatorSortKey, searchTerm, rawValidators, votingPowerFilterMode, votingPowerRange, participationRateRange, countNoVoteAsParticipation])
+  }, [getFilteredProposals, selectedTopics, validatorsWithAvgPower, rawVotes, validatorSortKey, searchTerm, rawValidators, votingPowerFilterMode, votingPowerRange, participationRateRange, countNoVoteAsParticipation])
 
   // Main D3 rendering effect
   useEffect(() => {
