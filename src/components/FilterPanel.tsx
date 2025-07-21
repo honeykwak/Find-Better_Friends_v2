@@ -39,26 +39,31 @@ const VoteCountBackground = React.memo(({ voteDistribution }: { voteDistribution
   }, [voteDistribution])
 
   if (segments.length === 0) return null
-  return <div className="absolute left-0 top-0 h-full w-full rounded-lg overflow-hidden">{segments.map((s, i) => <div key={`${s.voteType}-${i}`} className="absolute h-full" style={{ left: `${s.startPosition}%`, width: `${s.percentage}%`, backgroundColor: s.color }} />)}</div>
+  return (
+    <div className="absolute left-0 top-0 h-full w-full rounded-lg overflow-hidden">
+      {segments.map((s, i) => (
+        <div 
+          key={`${s.voteType}-${i}`} 
+          className="absolute h-full transition-all duration-300 ease-in-out"
+          style={{ 
+            left: `${s.startPosition}%`, 
+            width: `${s.percentage}%`, 
+            backgroundColor: s.color 
+          }} 
+        />
+      ))}
+    </div>
+  )
 })
 
-const PassRateBackground = React.memo(({ passRate }: { passRate: number }) => {
-  const backgroundClass = useMemo(() => {
-    if (passRate >= 80) return 'bg-gradient-to-r from-green-100 to-green-50'
-    if (passRate >= 60) return 'bg-gradient-to-r from-yellow-100 to-yellow-50'
-    return 'bg-gradient-to-r from-red-100 to-red-50'
-  }, [passRate])
-  return <div className={`absolute left-0 top-0 h-full rounded-l-lg ${backgroundClass}`} style={{ width: `${passRate}%` }} />
-})
-
-const CategoryItem = React.memo(({ category, isHovered, isCategorySelected, selectedTopicsInCategory, hasSelectedTopics, allTopicsSelected, categoryVisualizationMode, onCategoryMouseEnter, onCategoryMouseLeave, onToggleCategoryWithTopics, onTopicToggle }: { category: CategoryHierarchyNode; isHovered: boolean; isCategorySelected: boolean; selectedTopicsInCategory: string[]; hasSelectedTopics: boolean; allTopicsSelected: boolean; categoryVisualizationMode: 'passRate' | 'voteCount'; onCategoryMouseEnter: (name: string) => void; onCategoryMouseLeave: () => void; onToggleCategoryWithTopics: (categoryName: string, topicNames: string[]) => void; onTopicToggle: (topicName: string, categoryName: string) => void; }) => {
+const CategoryItem = React.memo(({ category, isHovered, isCategorySelected, selectedTopicsInCategory, hasSelectedTopics, allTopicsSelected, onCategoryMouseEnter, onCategoryMouseLeave, onToggleCategoryWithTopics, onTopicToggle }: { category: CategoryHierarchyNode; isHovered: boolean; isCategorySelected: boolean; selectedTopicsInCategory: string[]; hasSelectedTopics: boolean; allTopicsSelected: boolean; onCategoryMouseEnter: (name: string) => void; onCategoryMouseLeave: () => void; onToggleCategoryWithTopics: (categoryName: string, topicNames: string[]) => void; onTopicToggle: (topicName: string, categoryName: string) => void; }) => {
   const shouldExpand = isHovered || hasSelectedTopics
   const checkboxState = allTopicsSelected && isCategorySelected ? 'checked' : hasSelectedTopics ? 'indeterminate' : 'unchecked'
 
   return (
     <div className="border border-gray-200 rounded-lg" onMouseEnter={() => onCategoryMouseEnter(category.name)} onMouseLeave={onCategoryMouseLeave}>
       <div className="flex items-center px-3 py-2 hover:bg-gray-50 relative">
-        {categoryVisualizationMode === 'passRate' ? <PassRateBackground passRate={category.passRate} /> : <VoteCountBackground voteDistribution={category.voteDistribution} />}
+        <VoteCountBackground voteDistribution={category.voteDistribution} />
         <input type="checkbox" checked={checkboxState === 'checked'} ref={el => el && (el.indeterminate = checkboxState === 'indeterminate')} onChange={() => onToggleCategoryWithTopics(category.name, category.topics.map(t => t.name))} className="w-4 h-4 text-blue-600 border-gray-300 rounded focus:ring-blue-500 relative z-10 mr-2" />
         <div className="flex items-center justify-between flex-1 relative z-10">
           <span className="text-sm font-medium text-gray-700">{`${category.name} (${category.count})`}</span>
@@ -66,17 +71,17 @@ const CategoryItem = React.memo(({ category, isHovered, isCategorySelected, sele
       </div>
       <div className={`border-t border-gray-200 bg-gray-50 overflow-hidden transition-all duration-300 ease-in-out ${shouldExpand ? 'max-h-48 opacity-100' : 'max-h-0 opacity-0'}`}>
         <div className="p-2 space-y-1 overflow-y-auto">
-          {category.topics.map(topic => <TopicItem key={topic.name} topic={topic} isSelected={selectedTopicsInCategory.includes(topic.name)} categoryVisualizationMode={categoryVisualizationMode} categoryName={category.name} onToggle={onTopicToggle} />)}
+          {category.topics.map(topic => <TopicItem key={topic.name} topic={topic} isSelected={selectedTopicsInCategory.includes(topic.name)} categoryName={category.name} onToggle={onTopicToggle} />)}
         </div>
       </div>
     </div>
   )
 })
 
-const TopicItem = React.memo(({ topic, isSelected, categoryVisualizationMode, categoryName, onToggle }: { topic: TopicNode; isSelected: boolean; categoryVisualizationMode: 'passRate' | 'voteCount'; categoryName: string; onToggle: (topicName: string, categoryName: string) => void; }) => {
+const TopicItem = React.memo(({ topic, isSelected, categoryName, onToggle }: { topic: TopicNode; isSelected: boolean; categoryName: string; onToggle: (topicName: string, categoryName: string) => void; }) => {
   return (
     <label className="flex items-center gap-2 p-2 hover:bg-white rounded cursor-pointer relative">
-      {categoryVisualizationMode === 'passRate' ? <PassRateBackground passRate={topic.passRate} /> : <VoteCountBackground voteDistribution={topic.voteDistribution} />}
+      <VoteCountBackground voteDistribution={topic.voteDistribution} />
       <input type="checkbox" checked={isSelected} onChange={() => onToggle(topic.name, categoryName)} className="w-3 h-3 text-blue-600 border-gray-300 rounded focus:ring-blue-500 relative z-10" />
       <div className="flex items-center justify-between flex-1 relative z-10">
         <span className="text-xs text-gray-600">{`${topic.name} (${topic.count})`}</span>
@@ -125,7 +130,7 @@ export default function FilterPanel() {
 
   const yesRateDistribution = useMemo(() => getYesRateDistribution(store), [store.proposals]);
   const votingPowerDistribution = useMemo(() => getVotingPowerDistribution(store), [store.validators]);
-  const participationRateDistribution = useMemo(() => getParticipationRateDistribution(store), [store.validators]);
+  const participationRateDistribution = useMemo(() => getParticipationRateDistribution(store), [store.validatorsWithDerivedData, countNoVoteAsParticipation]);
 
   const resetFilters = useCallback(() => {
     setSelectedCategories([])
@@ -138,7 +143,7 @@ export default function FilterPanel() {
   }, [setSelectedCategories, setSelectedTopics, setSearchTerm, setApprovalRateRange, setParticipationRateRange, setVotingPowerFilterMode])
 
   const chains = useMemo(() => getChains(), [getChains])
-  const filteredCategoryHierarchy = useMemo(() => getFilteredCategoryHierarchy(), [proposals, approvalRateRange, getFilteredCategoryHierarchy]);
+  const filteredCategoryHierarchy = useMemo(() => getFilteredCategoryHierarchy(), [proposals, approvalRateRange, categoryVisualizationMode, getFilteredCategoryHierarchy]);
 
   const handleCategoryMouseEnter = useCallback((categoryName: string) => setHoveredCategory(categoryName), [])
   const handleCategoryMouseLeave = useCallback(() => setHoveredCategory(null), [])
@@ -264,9 +269,9 @@ export default function FilterPanel() {
             <div className="flex items-center justify-between mb-2">
               <h3 className="text-sm font-medium text-gray-900">Categories</h3>
               <ToggleButtonGroup
-                options={[{value: 'voteCount', label: 'Vote Count'}, {value: 'passRate', label: 'Pass Rate'}]}
+                options={[{value: 'voteCount', label: 'Vote Count'}, {value: 'votePower', label: 'Vote Power'}]}
                 selectedValue={categoryVisualizationMode}
-                onChange={(v) => setCategoryVisualizationMode(v as 'passRate' | 'voteCount')}
+                onChange={(v) => setCategoryVisualizationMode(v as 'voteCount' | 'votePower')}
               />
             </div>
             <div className="space-y-3">
@@ -279,7 +284,6 @@ export default function FilterPanel() {
                   selectedTopicsInCategory={selectedTopics.filter(topic => category.topics.some(t => t.name === topic))} 
                   hasSelectedTopics={selectedTopics.filter(topic => category.topics.some(t => t.name === topic)).length > 0} 
                   allTopicsSelected={category.topics.every(t => selectedTopics.includes(t.name))} 
-                  categoryVisualizationMode={categoryVisualizationMode} 
                   onCategoryMouseEnter={handleCategoryMouseEnter} 
                   onCategoryMouseLeave={handleCategoryMouseLeave} 
                   onToggleCategoryWithTopics={toggleCategoryWithTopics} 

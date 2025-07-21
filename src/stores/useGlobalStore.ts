@@ -47,7 +47,7 @@ interface GlobalStore {
   validatorSortKey: ValidatorSortKey;
   countNoVoteAsParticipation: boolean;
   
-  categoryVisualizationMode: 'passRate' | 'voteCount'
+  categoryVisualizationMode: 'voteCount' | 'votePower'
   
   loading: boolean
   error: string | null
@@ -66,7 +66,7 @@ interface GlobalStore {
   setVotingPowerFilterMode: (mode: 'ratio' | 'rank') => void
   setVotingPowerRange: (range: [number, number]) => void
   setVotingPowerDynamicRange: (range: [number, number]) => void
-  setCategoryVisualizationMode: (mode: 'passRate' | 'voteCount') => void
+  setCategoryVisualizationMode: (mode: 'voteCount' | 'votePower') => void
   setWindowSize: (size: { width: number; height: number }) => void
   setValidatorSortKey: (key: ValidatorSortKey) => void;
   
@@ -306,7 +306,7 @@ export const useGlobalStore = create<GlobalStore>((set, get) => ({
   ],
 
   getFilteredCategoryHierarchy: () => {
-    const { getProposalsFilteredByRate } = get();
+    const { getProposalsFilteredByRate, votes, categoryVisualizationMode } = get();
     const proposalsFilteredByRate = getProposalsFilteredByRate();
 
     const categoryStats: { [name: string]: {
@@ -319,6 +319,16 @@ export const useGlobalStore = create<GlobalStore>((set, get) => ({
             voteDistribution: { [key: string]: number };
         } };
     } } = {};
+
+    const votesByProposalId = new Map<string, Vote[]>();
+    if (categoryVisualizationMode === 'votePower') {
+        for (const vote of votes) {
+            if (!votesByProposalId.has(vote.proposal_id)) {
+                votesByProposalId.set(vote.proposal_id, []);
+            }
+            votesByProposalId.get(vote.proposal_id)!.push(vote);
+        }
+    }
 
     for (const p of proposalsFilteredByRate) {
         const categoryName = p.type;
@@ -338,13 +348,32 @@ export const useGlobalStore = create<GlobalStore>((set, get) => ({
             categoryStats[categoryName].topics[topicName].passed++;
         }
 
-        const tally = p.final_tally_result || {};
-        for (const voteOption in tally) {
-            const key = voteOption.replace('_count', '').toUpperCase();
-            const voteCount = tally[voteOption as keyof typeof tally] || 0;
-            
-            categoryStats[categoryName].voteDistribution[key] = (categoryStats[categoryName].voteDistribution[key] || 0) + voteCount;
-            categoryStats[categoryName].topics[topicName].voteDistribution[key] = (categoryStats[categoryName].topics[topicName].voteDistribution[key] || 0) + voteCount;
+        if (categoryVisualizationMode === 'votePower') {
+            const proposalVotes = votesByProposalId.get(p.proposal_id) || [];
+            for (const vote of proposalVotes) {
+                let key = vote.vote_option.toUpperCase();
+                if (key.includes('YES')) key = 'YES';
+                else if (key.includes('NO_WITH_VETO')) key = 'NO_WITH_VETO';
+                else if (key.includes('NO_VOTE')) key = 'NO_VOTE';
+                else if (key.includes('NO')) key = 'NO';
+                else if (key.includes('ABSTAIN')) key = 'ABSTAIN';
+                else continue;
+
+                const power = typeof vote.voting_power === 'string' ? parseFloat(vote.voting_power) : vote.voting_power;
+                if (!isNaN(power)) {
+                    categoryStats[categoryName].voteDistribution[key] = (categoryStats[categoryName].voteDistribution[key] || 0) + power;
+                    categoryStats[categoryName].topics[topicName].voteDistribution[key] = (categoryStats[categoryName].topics[topicName].voteDistribution[key] || 0) + power;
+                }
+            }
+        } else { // 'voteCount' mode
+            const tally = p.final_tally_result || {};
+            for (const voteOption in tally) {
+                const key = voteOption.replace('_count', '').toUpperCase();
+                const voteCount = tally[voteOption as keyof typeof tally] || 0;
+                
+                categoryStats[categoryName].voteDistribution[key] = (categoryStats[categoryName].voteDistribution[key] || 0) + voteCount;
+                categoryStats[categoryName].topics[topicName].voteDistribution[key] = (categoryStats[categoryName].topics[topicName].voteDistribution[key] || 0) + voteCount;
+            }
         }
     }
 
