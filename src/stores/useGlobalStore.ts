@@ -26,7 +26,7 @@ export interface TopicNode {
   voteDistribution: Record<string, number>
 }
 
-export type ValidatorSortKey = 'voteCount' | 'name' | 'votingPower' | 'similarity';
+export type ValidatorSortKey = 'voteCount' | 'name' | 'votingPower' | 'similarity_common' | 'similarity_base';
 
 // 전역 상태 인터페이스
 interface GlobalStore {
@@ -196,6 +196,7 @@ export const useGlobalStore = create<GlobalStore>((set, get) => ({
       selectedTopics: [],
       searchTerm: '', // Reset search term on chain change
       approvalRateRange: [0, 100],
+      participationRateRange: [0, 100], // Reset participation rate filter
       votingPowerFilterMode: 'ratio',
       votingPowerRange: [0, 100],
       votingPowerDynamicRange: [0, 100],
@@ -230,7 +231,7 @@ export const useGlobalStore = create<GlobalStore>((set, get) => ({
   },
   setSearchTerm: (term: string) => {
     if (term) {
-      set({ searchTerm: term, validatorSortKey: 'similarity' });
+      set({ searchTerm: term, validatorSortKey: 'similarity_common' });
     } else {
       set({ searchTerm: term, validatorSortKey: 'votingPower' }); // Revert to new default
     }

@@ -133,8 +133,9 @@ export default function FilterPanel() {
     setInputValue('')
     setSearchTerm('')
     setApprovalRateRange([0, 100])
+    setParticipationRateRange([0, 100]) // Reset participation rate
     setVotingPowerFilterMode('ratio');
-  }, [setSelectedCategories, setSelectedTopics, setSearchTerm, setApprovalRateRange, setVotingPowerFilterMode])
+  }, [setSelectedCategories, setSelectedTopics, setSearchTerm, setApprovalRateRange, setParticipationRateRange, setVotingPowerFilterMode])
 
   const chains = useMemo(() => getChains(), [getChains])
   const filteredCategoryHierarchy = useMemo(() => getFilteredCategoryHierarchy(), [proposals, approvalRateRange, getFilteredCategoryHierarchy]);

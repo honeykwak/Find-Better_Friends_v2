@@ -10,13 +10,14 @@ import type { Vote } from './dataLoader';
  * @returns A similarity score from 0 (no matches) to 1 (all matches).
  */
 export function calculateSimilarity(
-  validatorAVotes: Vote[],
+  validatorAVotes: Vote[], // Base validator for 'base' mode
   validatorBVotes: Vote[],
   proposalIds: Set<string>,
-  countNoVoteAsParticipation: boolean
+  countNoVoteAsParticipation: boolean,
+  mode: 'common' | 'base' = 'common'
 ): number {
   if (proposalIds.size === 0) {
-    return 0; // No proposals to compare
+    return 0;
   }
 
   const votesAByProposal = new Map(validatorAVotes.map(v => [v.proposal_id, v.vote_option]));
@@ -29,19 +30,25 @@ export function calculateSimilarity(
     const voteA = votesAByProposal.get(proposalId);
     const voteB = votesBByProposal.get(proposalId);
 
-    if (countNoVoteAsParticipation) {
+    const isAVoting = voteA && (countNoVoteAsParticipation || voteA !== 'NO_VOTE');
+    const isBVoting = voteB && (countNoVoteAsParticipation || voteB !== 'NO_VOTE');
+
+    let shouldCompare = false;
+    if (mode === 'common') {
+      // Compare only when both have voted (considering countNoVoteAsParticipation)
+      shouldCompare = isAVoting && isBVoting;
+    } else { // mode === 'base'
+      // Compare whenever the base validator (A) has voted
+      shouldCompare = isAVoting;
+    }
+
+    if (shouldCompare) {
+      comparableProposalsCount++;
+      // Use 'NO_VOTE' for comparison if countNoVoteAsParticipation is true and a vote is missing
       const finalVoteA = voteA || 'NO_VOTE';
       const finalVoteB = voteB || 'NO_VOTE';
       if (finalVoteA === finalVoteB) {
         matchCount++;
-      }
-      comparableProposalsCount++;
-    } else {
-      if (voteA && voteB) {
-        if (voteA === voteB) {
-          matchCount++;
-        }
-        comparableProposalsCount++;
       }
     }
   }

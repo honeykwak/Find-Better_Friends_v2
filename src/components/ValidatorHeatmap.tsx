@@ -234,21 +234,28 @@ export default function ValidatorHeatmap() {
 
     const sortedValidators = finalFilteredValidators.slice();
 
-    if (validatorSortKey === 'similarity' && searchTerm) {
+    if (validatorSortKey.startsWith('similarity') && searchTerm) {
       const selectedValidator = rawValidators.find(v => v.moniker === searchTerm);
       if (selectedValidator) {
         const similarityScores = new Map<string, number>();
         const selectedVotes = votesByValidator.get(selectedValidator.validator_address) || [];
         
+        const mode = validatorSortKey === 'similarity_common' ? 'common' : 'base';
+
         for (const validator of sortedValidators) {
           const targetVotes = votesByValidator.get(validator.validator_address) || [];
-          const score = calculateSimilarity(targetVotes, selectedVotes, proposalSet, countNoVoteAsParticipation);
+          // The 'selectedVotes' should be the first argument for 'base' mode calculation.
+          const score = calculateSimilarity(selectedVotes, targetVotes, proposalSet, countNoVoteAsParticipation, mode);
           similarityScores.set(validator.validator_address, score);
         }
 
         sortedValidators.sort((a, b) => {
-          const scoreA = similarityScores.get(a.validator_address) || -2;
-          const scoreB = similarityScores.get(b.validator_address) || -2;
+          // Pinned validator (the one being searched for) should always be at the top.
+          if (a.moniker === searchTerm) return -1;
+          if (b.moniker === searchTerm) return 1;
+          
+          const scoreA = similarityScores.get(a.validator_address) || -1;
+          const scoreB = similarityScores.get(b.validator_address) || -1;
           return scoreB - scoreA;
         });
       }
@@ -503,12 +510,20 @@ export default function ValidatorHeatmap() {
               Name
             </button>
             <button 
-              onClick={() => setValidatorSortKey('similarity')} 
-              className={`px-3 py-2 text-xs font-medium rounded-md whitespace-nowrap ${validatorSortKey === 'similarity' ? 'bg-white text-gray-800 shadow-sm' : 'text-gray-500'} disabled:opacity-50 disabled:cursor-not-allowed`}
-              title="Sort by similarity to the selected validator"
+              onClick={() => setValidatorSortKey('similarity_common')} 
+              className={`px-3 py-2 text-xs font-medium rounded-md whitespace-nowrap ${validatorSortKey === 'similarity_common' ? 'bg-white text-gray-800 shadow-sm' : 'text-gray-500'} disabled:opacity-50 disabled:cursor-not-allowed`}
+              title="Sort by similarity based on common votes"
               disabled={!searchTerm}
             >
-              Similarity
+              Similarity (Common)
+            </button>
+            <button 
+              onClick={() => setValidatorSortKey('similarity_base')} 
+              className={`px-3 py-2 text-xs font-medium rounded-md whitespace-nowrap ${validatorSortKey === 'similarity_base' ? 'bg-white text-gray-800 shadow-sm' : 'text-gray-500'} disabled:opacity-50 disabled:cursor-not-allowed`}
+              title="Sort by similarity based on the selected validator's votes"
+              disabled={!searchTerm}
+            >
+              Similarity (Base)
             </button>
           </div>
           <div className="flex items-center gap-1 border border-gray-300 rounded-lg">
