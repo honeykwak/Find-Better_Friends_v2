@@ -304,6 +304,8 @@ export default function ValidatorHeatmap() {
     const votes = rawVotes
       .filter(vote => validatorAddressToIndex.has(vote.validator_address) && proposalIdToIndex.has(vote.proposal_id))
       .map(vote => ({
+        validatorAddress: vote.validator_address,
+        proposalId: vote.proposal_id,
         validatorIndex: validatorAddressToIndex.get(vote.validator_address)!,
         proposalIndex: proposalIdToIndex.get(vote.proposal_id)!,
         voteOption: vote.vote_option,
@@ -314,131 +316,187 @@ export default function ValidatorHeatmap() {
 
   // Main D3 rendering effect
   useEffect(() => {
-    if (!svgRef.current || !heatmapData.validators.length || loading) {
-      if (svgRef.current) d3.select(svgRef.current).selectAll('*').remove();
+    if (!svgRef.current || loading) {
       setIsLoading(loading);
       return;
     }
+    setIsLoading(true);
 
-    setIsLoading(true)
-    const svg = d3.select(svgRef.current)
-    svg.selectAll('*').remove()
+    const DURATION = 500;
+    const svg = d3.select(svgRef.current);
+    const { validators, proposals, votes } = heatmapData;
+    const { cellWidth, cellHeight, margin, colors } = config;
 
-    const { validators, proposals, votes } = heatmapData
-    const { cellWidth, cellHeight, margin, colors } = config
-    
-    const chartWidth = proposals.length * cellWidth
-    const chartHeight = validators.length * cellHeight
-    const totalWidth = chartWidth + margin.left + margin.right
-    const totalHeight = chartHeight + margin.top + margin.bottom
+    const chartWidth = proposals.length * cellWidth;
+    const chartHeight = validators.length * cellHeight;
+    const totalWidth = chartWidth + margin.left + margin.right;
+    const totalHeight = chartHeight + margin.top + margin.bottom;
 
-    svg.attr('width', totalWidth * zoom).attr('height', totalHeight * zoom).style('background', colors.background)
-    const g = svg.append('g').attr('transform', `translate(${margin.left * zoom}, ${margin.top * zoom}) scale(${zoom})`)
-    const getVoteColor = (option: string) => colors[option as keyof typeof colors] || colors.NO_VOTE
+    svg.attr('width', totalWidth * zoom).attr('height', totalHeight * zoom);
+    const g = svg.selectAll('.main-group').data([null])
+      .join('g')
+      .attr('class', 'main-group')
+      .attr('transform', `translate(${margin.left * zoom}, ${margin.top * zoom}) scale(${zoom})`);
 
-    // --- Stacked Bar Chart ---
-    const summaryChartYScale = d3.scaleLinear().domain([0, 1]).range([SUMMARY_CHART_HEIGHT, 0]);
-    const stack = d3.stack().keys(VOTE_ORDER);
-    const stackedData = stack(proposals.map(p => p.tallyRatio));
+    const getVoteColor = (option: string) => colors[option as keyof typeof colors] || colors.NO_VOTE;
 
-    const summaryG = g.append('g')
-      .attr('class', 'summary-chart')
-      .attr('transform', `translate(0, ${-SUMMARY_CHART_HEIGHT - CHART_SPACING})`);
+    // Validator Labels
+    const validatorLabels = g.selectAll('.validator-label')
+      .data(validators, (d: any) => d.address);
 
-    summaryG.selectAll('.bar-series')
-      .data(stackedData)
-      .enter().append('g')
-        .attr('class', 'bar-series')
-        .attr('fill', d => getVoteColor(d.key))
-      .selectAll('rect')
-      .data(d => d)
-      .enter().append('rect')
-        .attr('x', (d, i) => proposals[i].index * cellWidth)
-        .attr('y', d => summaryChartYScale(d[1]))
-        .attr('height', d => summaryChartYScale(d[0]) - summaryChartYScale(d[1]))
-        .attr('width', cellWidth - 1);
-    // --- End Stacked Bar Chart ---
+    validatorLabels.exit()
+      .transition().duration(DURATION)
+      .style('opacity', 0)
+      .remove();
 
-    g.selectAll('.cell')
-      .data(votes)
-      .enter()
-      .append('rect')
-      .attr('class', 'cell')
-      .attr('x', d => d.proposalIndex * cellWidth)
-      .attr('y', d => d.validatorIndex * cellHeight)
-      .attr('width', cellWidth - 1)
-      .attr('height', cellHeight - 1)
-      .attr('fill', d => getVoteColor(d.voteOption))
-      .style('cursor', 'pointer')
-      .on('mouseover', function(event, d) {
-        const validator = validators[d.validatorIndex]
-        const proposal = proposals[d.proposalIndex]
-        d3.select('body').selectAll('.heatmap-tooltip').remove()
-        const tooltip = d3.select('body').append('div').attr('class', 'heatmap-tooltip')
-          .style('position', 'absolute').style('background', 'rgba(0,0,0,0.8)').style('color', 'white')
-          .style('padding', '8px').style('border-radius', '4px').style('font-size', '12px')
-          .style('pointer-events', 'none').style('z-index', '1000')
-          .style('max-width', '300px')
-          .style('white-space', 'normal')
-          .html(`<strong>${validator.name}</strong><br/>${proposal.title}<br/>Vote: ${d.voteOption}`)
-        tooltip.style('left', (event.pageX + 10) + 'px').style('top', (event.pageY - 10) + 'px')
-        d3.select(this).attr('stroke', '#000').attr('stroke-width', 1.5)
-      })
-      .on('mouseout', function() {
-        d3.selectAll('.heatmap-tooltip').remove()
-        d3.select(this).attr('stroke', 'none')
-      })
-      .on('click', function(event, d) {
-        const validator = validators[d.validatorIndex]
-        if (searchTermRef.current === validator.name) {
-          setSearchTerm('');
-        } else {
-          setSearchTerm(validator.name);
-        }
-      })
-
-    g.selectAll('.validator-label')
-      .data(validators)
-      .enter()
+    validatorLabels.enter()
       .append('text')
       .attr('class', 'validator-label')
       .attr('x', -10)
-      .attr('y', d => d.index * cellHeight + cellHeight / 2)
+      .attr('y', (d: any) => d.index * cellHeight + cellHeight / 2)
       .attr('dy', '0.35em')
       .attr('text-anchor', 'end')
       .style('font-size', `${Math.max(8, cellHeight * 0.7)}px`)
-      .text(d => d.name.slice(0, 25))
       .style('cursor', 'pointer')
-      .on('click', (event, d) => {
+      .on('click', (event, d: any) => {
         if (searchTermRef.current === d.name) {
           setSearchTerm('');
         } else {
           setSearchTerm(d.name);
         }
       })
+      .style('opacity', 0)
+      .text((d: any) => d.name.slice(0, 25))
+      .merge(validatorLabels as any)
+      .transition().duration(DURATION)
+      .attr('y', (d: any) => d.index * cellHeight + cellHeight / 2)
+      .style('opacity', 1);
 
+    // Cells
+    const cells = g.selectAll('.cell')
+      .data(votes, (d: any) => `${d.validatorAddress}-${d.proposalId}`);
+
+    cells.exit()
+      .transition().duration(DURATION)
+      .style('opacity', 0)
+      .remove();
+
+    cells.enter()
+      .append('rect')
+      .attr('class', 'cell')
+      .attr('x', (d: any) => d.proposalIndex * cellWidth)
+      .attr('y', (d: any) => d.validatorIndex * cellHeight)
+      .attr('width', cellWidth - 1)
+      .attr('height', cellHeight - 1)
+      .style('cursor', 'pointer')
+      .on('click', (event, d: any) => {
+        const validator = validators[d.validatorIndex];
+        if (validator) {
+          if (searchTermRef.current === validator.name) {
+            setSearchTerm('');
+          } else {
+            setSearchTerm(validator.name);
+          }
+        }
+      })
+      .style('opacity', 0)
+      .attr('fill', (d: any) => getVoteColor(d.voteOption))
+      .merge(cells as any)
+      .transition().duration(DURATION)
+      .attr('x', (d: any) => d.proposalIndex * cellWidth)
+      .attr('y', (d: any) => d.validatorIndex * cellHeight)
+      .style('opacity', 1)
+      .attr('fill', (d: any) => getVoteColor(d.voteOption));
+      
+    // Tooltip logic needs to be re-attached to the merged selection
+    g.selectAll('.cell')
+      .on('mouseover', function(event, d: any) {
+        const validator = validators[d.validatorIndex];
+        const proposal = proposals[d.proposalIndex];
+        if (!validator || !proposal) return;
+
+        d3.select('body').selectAll('.heatmap-tooltip').remove();
+        const tooltip = d3.select('body').append('div').attr('class', 'heatmap-tooltip')
+          .style('position', 'absolute').style('background', 'rgba(0,0,0,0.8)').style('color', 'white')
+          .style('padding', '8px').style('border-radius', '4px').style('font-size', '12px')
+          .style('pointer-events', 'none').style('z-index', '1000')
+          .style('max-width', '300px').style('white-space', 'normal')
+          .html(`<strong>${validator.name}</strong><br/>${proposal.title}<br/>Vote: ${d.voteOption}`);
+        tooltip.style('left', (event.pageX + 10) + 'px').style('top', (event.pageY - 10) + 'px');
+        d3.select(this).attr('stroke', '#000').attr('stroke-width', 1.5);
+      })
+      .on('mouseout', function() {
+        d3.selectAll('.heatmap-tooltip').remove();
+        d3.select(this).attr('stroke', 'none');
+      });
+
+    // Proposal Labels (with transition)
     const proposalLabelY = -SUMMARY_CHART_HEIGHT - CHART_SPACING - 10;
-    g.selectAll('.proposal-label')
-      .data(proposals)
-      .enter()
+    const proposalLabels = g.selectAll('.proposal-label')
+      .data(proposals, (d: any) => d.id);
+
+    proposalLabels.exit()
+      .transition().duration(DURATION)
+      .style('opacity', 0)
+      .remove();
+
+    proposalLabels.enter()
       .append('text')
       .attr('class', 'proposal-label')
-      .attr('x', d => d.index * cellWidth + cellWidth / 2)
-      .attr('y', proposalLabelY)
+      .style('cursor', 'pointer')
+      .on('click', (event, d: any) => setSelectedProposal(d.id))
       .attr('text-anchor', 'start')
-      .attr('transform', d => `rotate(-60, ${d.index * cellWidth + cellWidth / 2}, ${proposalLabelY})`)
+      .style('opacity', 0)
+      .merge(proposalLabels as any)
+      .transition().duration(DURATION)
+      .attr('x', (d: any) => d.index * cellWidth + cellWidth / 2)
+      .attr('y', proposalLabelY)
+      .attr('transform', (d: any) => `rotate(-60, ${d.index * cellWidth + cellWidth / 2}, ${proposalLabelY})`)
       .style('font-size', `${Math.max(8, cellWidth * 0.7)}px`)
-      .style('fill', d => d.status.includes('PASSED') ? colors.YES : colors.NO)
-      .text(d => {
+      .style('fill', (d: any) => d.status.includes('PASSED') ? colors.YES : colors.NO)
+      .text((d: any) => {
         const title = d.title;
         const truncated = title.length > 40 ? title.slice(0, 40) + '...' : title;
         return `${truncated} ${d.status.includes('PASSED') ? '✓' : '✗'}`;
       })
-      .style('cursor', 'pointer')
-      .on('click', (event, d) => setSelectedProposal(d.id))
+      .style('opacity', 1);
 
-    setIsLoading(false)
-  }, [heatmapData, config, zoom, loading, setSearchTerm, rawProposals])
+    // Summary Chart (with transition)
+    const summaryG = g.selectAll('.summary-chart').data([null])
+      .join('g')
+      .attr('class', 'summary-chart')
+      .attr('transform', `translate(0, ${-SUMMARY_CHART_HEIGHT - CHART_SPACING})`);
+
+    const summaryChartYScale = d3.scaleLinear().domain([0, 1]).range([SUMMARY_CHART_HEIGHT, 0]);
+    const stack = d3.stack().keys(VOTE_ORDER);
+    const stackedData = stack(proposals.map((p: any) => p.tallyRatio));
+
+    summaryG.selectAll('.bar-series')
+      .data(stackedData)
+      .join('g')
+      .attr('class', 'bar-series')
+      .attr('fill', (d: any) => getVoteColor(d.key))
+      .selectAll('rect')
+      .data(d => d)
+      .join(
+        enter => enter.append('rect')
+          .attr('x', (d, i) => proposals[i].index * cellWidth)
+          .attr('y', d => summaryChartYScale(d[1]))
+          .attr('height', 0)
+          .attr('width', cellWidth - 1)
+          .transition().duration(DURATION)
+          .attr('height', d => summaryChartYScale(d[0]) - summaryChartYScale(d[1])),
+        update => update
+          .transition().duration(DURATION)
+          .attr('x', (d, i) => proposals[i].index * cellWidth)
+          .attr('y', d => summaryChartYScale(d[1]))
+          .attr('height', d => summaryChartYScale(d[0]) - summaryChartYScale(d[1])),
+        exit => exit.transition().duration(DURATION).attr('height', 0).remove()
+      );
+
+    // Set loading to false after a short delay to allow transitions to start
+    setTimeout(() => setIsLoading(false), DURATION);
+  }, [heatmapData, config, zoom, loading, setSearchTerm, rawProposals, setSelectedProposal])
 
   // Lightweight effect for highlighting only
   useEffect(() => {
