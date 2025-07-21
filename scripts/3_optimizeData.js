@@ -93,7 +93,7 @@ async function processAllData() {
         type: mappedCategory.high_level_category,
         topic: mappedCategory.topic_subject,
         status: proposal.status,
-        submit_time: proposal.submit_time,
+        submit_time: proposal.timeSubmit,
         final_tally_result,
       });
     }

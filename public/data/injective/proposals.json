@@ -6,6 +6,7 @@
     "type": "ParameterChange",
     "topic": "Fee Adjustment",
     "status": "PASSED",
+    "submit_time": "1731224835082",
     "final_tally_result": {
       "abstain_count": 13,
       "yes_count": 29,
@@ -19,6 +20,7 @@
     "type": "MarketRelated",
     "topic": "Oracle Update",
     "status": "PASSED",
+    "submit_time": "1731080606928",
     "final_tally_result": {
       "yes_count": 27,
       "abstain_count": 15,
@@ -32,6 +34,7 @@
     "type": "MarketRelated",
     "topic": "Market Addition",
     "status": "PASSED",
+    "submit_time": "1730943996256",
     "final_tally_result": {
       "yes_count": 23,
       "abstain_count": 19,
@@ -45,6 +48,7 @@
     "type": "ParameterChange",
     "topic": "Fee Adjustment",
     "status": "PASSED",
+    "submit_time": "1730917382537",
     "final_tally_result": {
       "yes_count": 30,
       "abstain_count": 11,
@@ -58,6 +62,7 @@
     "type": "MarketRelated",
     "topic": "Oracle Update",
     "status": "PASSED",
+    "submit_time": "1730917184014",
     "final_tally_result": {
       "yes_count": 30,
       "abstain_count": 11,
@@ -71,6 +76,7 @@
     "type": "CommunityPoolSpend",
     "topic": "Community Support",
     "status": "PASSED",
+    "submit_time": "1730895573771",
     "final_tally_result": {
       "yes_count": 32,
       "abstain_count": 9,
@@ -84,6 +90,7 @@
     "type": "ParameterChange",
     "topic": "Protocol Configuration",
     "status": "PASSED",
+    "submit_time": "1730432107192",
     "final_tally_result": {
       "abstain_count": 14,
       "yes_count": 23,
@@ -98,6 +105,7 @@
     "type": "SmartContract",
     "topic": "Contract Deployment",
     "status": "PASSED",
+    "submit_time": "1730136413785",
     "final_tally_result": {
       "abstain_count": 27,
       "yes_count": 13,
@@ -112,6 +120,7 @@
     "type": "MarketRelated",
     "topic": "Oracle Update",
     "status": "PASSED",
+    "submit_time": "1730075175760",
     "final_tally_result": {
       "abstain_count": 26,
       "yes_count": 15,
@@ -126,6 +135,7 @@
     "type": "ParameterChange",
     "topic": "Staking Parameters",
     "status": "PASSED",
+    "submit_time": "1729083734354",
     "final_tally_result": {
       "yes_count": 33,
       "abstain_count": 7,
@@ -139,6 +149,7 @@
     "type": "SmartContract",
     "topic": "Contract Deployment",
     "status": "PASSED",
+    "submit_time": "1728498630494",
     "final_tally_result": {
       "yes_count": 16,
       "abstain_count": 18,
@@ -153,6 +164,7 @@
     "type": "CommunityPoolSpend",
     "topic": "Community Support",
     "status": "PASSED",
+    "submit_time": "1728305507006",
     "final_tally_result": {
       "yes_count": 34,
       "abstain_count": 10,
@@ -166,6 +178,7 @@
     "type": "SmartContract",
     "topic": "Contract Deployment",
     "status": "PASSED",
+    "submit_time": "1727950717151",
     "final_tally_result": {
       "abstain_count": 23,
       "yes_count": 12,
@@ -180,6 +193,7 @@
     "type": "CommunityPoolSpend",
     "topic": "Community Support",
     "status": "REJECTED",
+    "submit_time": "1727696250450",
     "final_tally_result": {
       "no_count": 24,
       "abstain_count": 20,
@@ -193,6 +207,7 @@
     "type": "CommunityPoolSpend",
     "topic": "Community Support",
     "status": "REJECTED",
+    "submit_time": "1727694598963",
     "final_tally_result": {
       "no_count": 29,
       "abstain_count": 15,
@@ -206,6 +221,7 @@
     "type": "ParameterChange",
     "topic": "Economic Parameters",
     "status": "PASSED",
+    "submit_time": "1727376394454",
     "final_tally_result": {
       "yes_count": 33,
       "abstain_count": 9,
@@ -219,6 +235,7 @@
     "type": "MarketRelated",
     "topic": "Trading Parameters",
     "status": "PASSED",
+    "submit_time": "1727096964723",
     "final_tally_result": {
       "yes_count": 34,
       "abstain_count": 9,
@@ -232,6 +249,7 @@
     "type": "ParameterChange",
     "topic": "Protocol Configuration",
     "status": "PASSED",
+    "submit_time": "1727076508402",
     "final_tally_result": {
       "abstain_count": 23,
       "yes_count": 20,
@@ -245,6 +263,7 @@
     "type": "ParameterChange",
     "topic": "Protocol Configuration",
     "status": "PASSED",
+    "submit_time": "1726729425183",
     "final_tally_result": {
       "abstain_count": 26,
       "no_count": 5,
@@ -259,6 +278,7 @@
     "type": "ParameterChange",
     "topic": "Protocol Configuration",
     "status": "PASSED",
+    "submit_time": "1726705946774",
     "final_tally_result": {
       "abstain_count": 28,
       "no_count": 2,
@@ -273,6 +293,7 @@
     "type": "ParameterChange",
     "topic": "Protocol Configuration",
     "status": "PASSED",
+    "submit_time": "1726571599930",
     "final_tally_result": {
       "yes_count": 37,
       "abstain_count": 7,
@@ -286,6 +307,7 @@
     "type": "ParameterChange",
     "topic": "Protocol Configuration",
     "status": "PASSED",
+    "submit_time": "1726570507817",
     "final_tally_result": {
       "abstain_count": 27,
       "yes_count": 16,
@@ -300,6 +322,7 @@
     "type": "MarketRelated",
     "topic": "Market Addition",
     "status": "PASSED",
+    "submit_time": "1726151502404",
     "final_tally_result": {
       "yes_count": 26,
       "abstain_count": 14,
@@ -313,6 +336,7 @@
     "type": "CommunityPoolSpend",
     "topic": "Community Support",
     "status": "PASSED",
+    "submit_time": "1725941573508",
     "final_tally_result": {
       "abstain_count": 9,
       "yes_count": 30,
@@ -327,6 +351,7 @@
     "type": "CommunityPoolSpend",
     "topic": "Community Support",
     "status": "REJECTED",
+    "submit_time": "1725902220588",
     "final_tally_result": {
       "no_count": 36,
       "abstain_count": 6,
@@ -341,6 +366,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "PASSED",
+    "submit_time": "1725662238814",
     "final_tally_result": {
       "abstain_count": 29,
       "no_count": 2,
@@ -355,6 +381,7 @@
     "type": "ParameterChange",
     "topic": "Protocol Configuration",
     "status": "PASSED",
+    "submit_time": "1725584639196",
     "final_tally_result": {
       "yes_count": 34,
       "abstain_count": 8,
@@ -368,6 +395,7 @@
     "type": "SmartContract",
     "topic": "Contract Deployment",
     "status": "PASSED",
+    "submit_time": "1725220376994",
     "final_tally_result": {
       "abstain_count": 18,
       "yes_count": 23,
@@ -382,6 +410,7 @@
     "type": "ParameterChange",
     "topic": "Economic Parameters",
     "status": "PASSED",
+    "submit_time": "1724959659201",
     "final_tally_result": {
       "yes_count": 36,
       "abstain_count": 8,
@@ -395,6 +424,7 @@
     "type": "ParameterChange",
     "topic": "Economic Parameters",
     "status": "PASSED",
+    "submit_time": "1724861931013",
     "final_tally_result": {
       "abstain_count": 11,
       "yes_count": 33,
@@ -408,6 +438,7 @@
     "type": "SmartContract",
     "topic": "Contract Deployment",
     "status": "REJECTED",
+    "submit_time": "1724674311072",
     "final_tally_result": {
       "abstain_count": 28,
       "yes_count": 7,
@@ -422,6 +453,7 @@
     "type": "ParameterChange",
     "topic": "Protocol Configuration",
     "status": "PASSED",
+    "submit_time": "1724514515735",
     "final_tally_result": {
       "abstain_count": 28,
       "yes_count": 11,
@@ -436,6 +468,7 @@
     "type": "CommunityPoolSpend",
     "topic": "Community Support",
     "status": "PASSED",
+    "submit_time": "1723810733582",
     "final_tally_result": {
       "yes_count": 34,
       "abstain_count": 10,
@@ -449,6 +482,7 @@
     "type": "SoftwareUpgrade",
     "topic": "Major Release",
     "status": "PASSED",
+    "submit_time": "1723755103386",
     "final_tally_result": {
       "yes_count": 38,
       "abstain_count": 5,
@@ -462,6 +496,7 @@
     "type": "SmartContract",
     "topic": "Contract Integration",
     "status": "PASSED",
+    "submit_time": "1723597857037",
     "final_tally_result": {
       "abstain_count": 19,
       "yes_count": 21,
@@ -476,6 +511,7 @@
     "type": "MarketRelated",
     "topic": "Trading Parameters",
     "status": "PASSED",
+    "submit_time": "1722620178351",
     "final_tally_result": {
       "yes_count": 36,
       "abstain_count": 7,
@@ -489,6 +525,7 @@
     "type": "SmartContract",
     "topic": "Contract Deployment",
     "status": "PASSED",
+    "submit_time": "1722515224181",
     "final_tally_result": {
       "abstain_count": 25,
       "yes_count": 10,
@@ -503,6 +540,7 @@
     "type": "SoftwareUpgrade",
     "topic": "Security Enhancement",
     "status": "PASSED",
+    "submit_time": "1722165257964",
     "final_tally_result": {
       "yes_count": 49,
       "abstain_count": 4,
@@ -516,6 +554,7 @@
     "type": "CommunityPoolSpend",
     "topic": "Community Support",
     "status": "PASSED",
+    "submit_time": "1721323297688",
     "final_tally_result": {
       "yes_count": 38,
       "abstain_count": 9,
@@ -529,6 +568,7 @@
     "type": "MarketRelated",
     "topic": "Market Addition",
     "status": "PASSED",
+    "submit_time": "1721243811322",
     "final_tally_result": {
       "yes_count": 39,
       "abstain_count": 8,
@@ -542,6 +582,7 @@
     "type": "CommunityPoolSpend",
     "topic": "Community Support",
     "status": "REJECTED",
+    "submit_time": "1720807198566",
     "final_tally_result": {
       "no_count": 39,
       "abstain_count": 4,
@@ -556,6 +597,7 @@
     "type": "SmartContract",
     "topic": "Contract Deployment",
     "status": "PASSED",
+    "submit_time": "1720638289284",
     "final_tally_result": {
       "abstain_count": 27,
       "yes_count": 15,
@@ -570,6 +612,7 @@
     "type": "SmartContract",
     "topic": "Contract Deployment",
     "status": "PASSED",
+    "submit_time": "1720638277196",
     "final_tally_result": {
       "abstain_count": 27,
       "yes_count": 15,
@@ -584,6 +627,7 @@
     "type": "SmartContract",
     "topic": "Contract Deployment",
     "status": "PASSED",
+    "submit_time": "1720638231488",
     "final_tally_result": {
       "abstain_count": 27,
       "yes_count": 15,
@@ -598,6 +642,7 @@
     "type": "SmartContract",
     "topic": "Contract Integration",
     "status": "PASSED",
+    "submit_time": "1720011744003",
     "final_tally_result": {
       "yes_count": 28,
       "abstain_count": 15,
@@ -611,6 +656,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "PASSED",
+    "submit_time": "1719935699678",
     "final_tally_result": {
       "abstain_count": 32,
       "yes_count": 10,
@@ -626,6 +672,7 @@
     "type": "CommunityPoolSpend",
     "topic": "Community Support",
     "status": "PASSED",
+    "submit_time": "1719578343685",
     "final_tally_result": {
       "yes_count": 33,
       "abstain_count": 9,
@@ -639,6 +686,7 @@
     "type": "SmartContract",
     "topic": "Contract Deployment",
     "status": "PASSED",
+    "submit_time": "1719520961484",
     "final_tally_result": {
       "abstain_count": 24,
       "yes_count": 18,
@@ -653,6 +701,7 @@
     "type": "ParameterChange",
     "topic": "Economic Parameters",
     "status": "PASSED",
+    "submit_time": "1719508861671",
     "final_tally_result": {
       "yes_count": 37,
       "abstain_count": 7,
@@ -666,6 +715,7 @@
     "type": "SmartContract",
     "topic": "Contract Deployment",
     "status": "PASSED",
+    "submit_time": "1719240831874",
     "final_tally_result": {
       "abstain_count": 29,
       "yes_count": 17,
@@ -680,6 +730,7 @@
     "type": "SmartContract",
     "topic": "Contract Deployment",
     "status": "PASSED",
+    "submit_time": "1718100011181",
     "final_tally_result": {
       "abstain_count": 31,
       "yes_count": 19,
@@ -693,6 +744,7 @@
     "type": "MarketRelated",
     "topic": "Trading Parameters",
     "status": "PASSED",
+    "submit_time": "1718024292859",
     "final_tally_result": {
       "yes_count": 41,
       "abstain_count": 11,
@@ -706,6 +758,7 @@
     "type": "CommunityPoolSpend",
     "topic": "Community Support",
     "status": "PASSED",
+    "submit_time": "1717798903031",
     "final_tally_result": {
       "yes_count": 33,
       "abstain_count": 12,
@@ -719,6 +772,7 @@
     "type": "SmartContract",
     "topic": "Contract Deployment",
     "status": "PASSED",
+    "submit_time": "1717580629333",
     "final_tally_result": {
       "yes_count": 24,
       "abstain_count": 16,
@@ -733,6 +787,7 @@
     "type": "SmartContract",
     "topic": "Contract Deployment",
     "status": "PASSED",
+    "submit_time": "1717580386869",
     "final_tally_result": {
       "yes_count": 24,
       "abstain_count": 16,
@@ -747,6 +802,7 @@
     "type": "SmartContract",
     "topic": "Contract Deployment",
     "status": "PASSED",
+    "submit_time": "1717206446476",
     "final_tally_result": {
       "yes_count": 16,
       "abstain_count": 27,
@@ -761,6 +817,7 @@
     "type": "SmartContract",
     "topic": "Contract Deployment",
     "status": "PASSED",
+    "submit_time": "1717205121288",
     "final_tally_result": {
       "abstain_count": 26,
       "yes_count": 16,
@@ -775,6 +832,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "PASSED",
+    "submit_time": "1716012963245",
     "final_tally_result": {
       "yes_count": 14,
       "abstain_count": 29,
@@ -789,6 +847,7 @@
     "type": "SmartContract",
     "topic": "Contract Deployment",
     "status": "PASSED",
+    "submit_time": "1715701792254",
     "final_tally_result": {
       "abstain_count": 29,
       "yes_count": 18,
@@ -803,6 +862,7 @@
     "type": "SmartContract",
     "topic": "Contract Deployment",
     "status": "PASSED",
+    "submit_time": "1715699537305",
     "final_tally_result": {
       "abstain_count": 32,
       "yes_count": 18,
@@ -817,6 +877,7 @@
     "type": "SmartContract",
     "topic": "Contract Deployment",
     "status": "PASSED",
+    "submit_time": "1715527525202",
     "final_tally_result": {
       "yes_count": 35,
       "abstain_count": 19,
@@ -830,6 +891,7 @@
     "type": "SmartContract",
     "topic": "Contract Deployment",
     "status": "PASSED",
+    "submit_time": "1715527323133",
     "final_tally_result": {
       "yes_count": 36,
       "abstain_count": 17,
@@ -843,6 +905,7 @@
     "type": "CommunityPoolSpend",
     "topic": "Community Support",
     "status": "PASSED",
+    "submit_time": "1715004405456",
     "final_tally_result": {
       "yes_count": 41,
       "abstain_count": 10,
@@ -856,6 +919,7 @@
     "type": "SmartContract",
     "topic": "Contract Deployment",
     "status": "PASSED",
+    "submit_time": "1714844973103",
     "final_tally_result": {
       "abstain_count": 30,
       "yes_count": 19,
@@ -870,6 +934,7 @@
     "type": "SmartContract",
     "topic": "Contract Deployment",
     "status": "PASSED",
+    "submit_time": "1714844934238",
     "final_tally_result": {
       "abstain_count": 31,
       "yes_count": 18,
@@ -884,6 +949,7 @@
     "type": "ParameterChange",
     "topic": "Economic Parameters",
     "status": "PASSED",
+    "submit_time": "1713532076322",
     "final_tally_result": {
       "yes_count": 50,
       "abstain_count": 6,
@@ -897,6 +963,7 @@
     "type": "ParameterChange",
     "topic": "Protocol Configuration",
     "status": "PASSED",
+    "submit_time": "1713306578690",
     "final_tally_result": {
       "yes_count": 48,
       "abstain_count": 8,
@@ -910,6 +977,7 @@
     "type": "SmartContract",
     "topic": "Contract Deployment",
     "status": "PASSED",
+    "submit_time": "1713060130059",
     "final_tally_result": {
       "abstain_count": 33,
       "no_count": 4,
@@ -924,6 +992,7 @@
     "type": "SmartContract",
     "topic": "Contract Deployment",
     "status": "PASSED",
+    "submit_time": "1712767525401",
     "final_tally_result": {
       "yes_count": 39,
       "abstain_count": 9,
@@ -937,6 +1006,7 @@
     "type": "SmartContract",
     "topic": "Contract Deployment",
     "status": "PASSED",
+    "submit_time": "1712736645416",
     "final_tally_result": {
       "abstain_count": 34,
       "yes_count": 8,
@@ -951,6 +1021,7 @@
     "type": "SmartContract",
     "topic": "Contract Deployment",
     "status": "PASSED",
+    "submit_time": "1712736406998",
     "final_tally_result": {
       "abstain_count": 34,
       "no_count": 7,
@@ -965,6 +1036,7 @@
     "type": "SmartContract",
     "topic": "Contract Deployment",
     "status": "PASSED",
+    "submit_time": "1712692512171",
     "final_tally_result": {
       "abstain_count": 28,
       "no_count": 4,
@@ -979,6 +1051,7 @@
     "type": "SmartContract",
     "topic": "Contract Deployment",
     "status": "PASSED",
+    "submit_time": "1712692119768",
     "final_tally_result": {
       "abstain_count": 28,
       "no_count": 4,
@@ -993,6 +1066,7 @@
     "type": "SmartContract",
     "topic": "Contract Deployment",
     "status": "PASSED",
+    "submit_time": "1712692066439",
     "final_tally_result": {
       "abstain_count": 29,
       "yes_count": 18,
@@ -1007,6 +1081,7 @@
     "type": "ParameterChange",
     "topic": "Fee Adjustment",
     "status": "PASSED",
+    "submit_time": "1712579640460",
     "final_tally_result": {
       "yes_count": 43,
       "abstain_count": 8,
@@ -1020,6 +1095,7 @@
     "type": "SmartContract",
     "topic": "Contract Deployment",
     "status": "PASSED",
+    "submit_time": "1712478725964",
     "final_tally_result": {
       "abstain_count": 36,
       "no_count": 6,
@@ -1034,6 +1110,7 @@
     "type": "SmartContract",
     "topic": "Contract Deployment",
     "status": "PASSED",
+    "submit_time": "1712425826132",
     "final_tally_result": {
       "abstain_count": 35,
       "yes_count": 15,
@@ -1048,6 +1125,7 @@
     "type": "SmartContract",
     "topic": "Contract Deployment",
     "status": "FAILED",
+    "submit_time": "1712006701516",
     "final_tally_result": {
       "abstain_count": 30,
       "yes_count": 15,
@@ -1062,6 +1140,7 @@
     "type": "SmartContract",
     "topic": "Contract Deployment",
     "status": "REJECTED",
+    "submit_time": "1711988772822",
     "final_tally_result": {
       "no_count": 39,
       "no_with_veto_count": 7,
@@ -1077,6 +1156,7 @@
     "type": "SmartContract",
     "topic": "Contract Deployment",
     "status": "PASSED",
+    "submit_time": "1711731385163",
     "final_tally_result": {
       "no_count": 6,
       "abstain_count": 36,
@@ -1091,6 +1171,7 @@
     "type": "SmartContract",
     "topic": "Contract Deployment",
     "status": "PASSED",
+    "submit_time": "1711718476032",
     "final_tally_result": {
       "abstain_count": 36,
       "no_count": 4,
@@ -1105,6 +1186,7 @@
     "type": "SmartContract",
     "topic": "Contract Deployment",
     "status": "PASSED",
+    "submit_time": "1711658754803",
     "final_tally_result": {
       "no_count": 7,
       "abstain_count": 30,
@@ -1119,6 +1201,7 @@
     "type": "SmartContract",
     "topic": "Contract Deployment",
     "status": "PASSED",
+    "submit_time": "1711550620340",
     "final_tally_result": {
       "abstain_count": 30,
       "yes_count": 9,
@@ -1133,6 +1216,7 @@
     "type": "SmartContract",
     "topic": "Contract Upgrade",
     "status": "PASSED",
+    "submit_time": "1711547871208",
     "final_tally_result": {
       "abstain_count": 28,
       "yes_count": 13,
@@ -1147,6 +1231,7 @@
     "type": "SmartContract",
     "topic": "Contract Deployment",
     "status": "PASSED",
+    "submit_time": "1711391140599",
     "final_tally_result": {
       "yes_count": 17,
       "no_count": 6,
@@ -1161,6 +1246,7 @@
     "type": "SmartContract",
     "topic": "Contract Deployment",
     "status": "PASSED",
+    "submit_time": "1711391055706",
     "final_tally_result": {
       "yes_count": 16,
       "abstain_count": 30,
@@ -1175,6 +1261,7 @@
     "type": "SmartContract",
     "topic": "Contract Deployment",
     "status": "PASSED",
+    "submit_time": "1711390706962",
     "final_tally_result": {
       "yes_count": 16,
       "abstain_count": 30,
@@ -1189,6 +1276,7 @@
     "type": "SmartContract",
     "topic": "Contract Deployment",
     "status": "PASSED",
+    "submit_time": "1711390252450",
     "final_tally_result": {
       "yes_count": 16,
       "abstain_count": 30,
@@ -1203,6 +1291,7 @@
     "type": "CommunityPoolSpend",
     "topic": "Community Support",
     "status": "PASSED",
+    "submit_time": "1711386983321",
     "final_tally_result": {
       "yes_count": 38,
       "abstain_count": 13,
@@ -1217,6 +1306,7 @@
     "type": "SmartContract",
     "topic": "Contract Deployment",
     "status": "PASSED",
+    "submit_time": "1711375405232",
     "final_tally_result": {
       "no_count": 9,
       "yes_count": 19,
@@ -1231,6 +1321,7 @@
     "type": "SmartContract",
     "topic": "Contract Deployment",
     "status": "PASSED",
+    "submit_time": "1711375213364",
     "final_tally_result": {
       "yes_count": 18,
       "no_count": 9,
@@ -1245,6 +1336,7 @@
     "type": "SmartContract",
     "topic": "Contract Deployment",
     "status": "PASSED",
+    "submit_time": "1711375013668",
     "final_tally_result": {
       "yes_count": 17,
       "no_count": 9,
@@ -1259,6 +1351,7 @@
     "type": "SmartContract",
     "topic": "Contract Deployment",
     "status": "PASSED",
+    "submit_time": "1711374890781",
     "final_tally_result": {
       "yes_count": 16,
       "no_count": 9,
@@ -1273,6 +1366,7 @@
     "type": "SmartContract",
     "topic": "Contract Deployment",
     "status": "PASSED",
+    "submit_time": "1711269962575",
     "final_tally_result": {
       "yes_count": 17,
       "abstain_count": 31,
@@ -1287,6 +1381,7 @@
     "type": "SmartContract",
     "topic": "Contract Deployment",
     "status": "PASSED",
+    "submit_time": "1711204583829",
     "final_tally_result": {
       "abstain_count": 31,
       "yes_count": 15,
@@ -1301,6 +1396,7 @@
     "type": "SmartContract",
     "topic": "Contract Deployment",
     "status": "PASSED",
+    "submit_time": "1711004806912",
     "final_tally_result": {
       "yes_count": 36,
       "abstain_count": 16,
@@ -1314,6 +1410,7 @@
     "type": "MarketRelated",
     "topic": "Trading Parameters",
     "status": "PASSED",
+    "submit_time": "1710779182179",
     "final_tally_result": {
       "yes_count": 50,
       "abstain_count": 8,
@@ -1327,6 +1424,7 @@
     "type": "ParameterChange",
     "topic": "Economic Parameters",
     "status": "PASSED",
+    "submit_time": "1710767336360",
     "final_tally_result": {
       "yes_count": 51,
       "abstain_count": 7,
@@ -1340,6 +1438,7 @@
     "type": "SmartContract",
     "topic": "Contract Deployment",
     "status": "PASSED",
+    "submit_time": "1710533099101",
     "final_tally_result": {
       "yes_count": 44,
       "abstain_count": 10,
@@ -1353,6 +1452,7 @@
     "type": "SmartContract",
     "topic": "Contract Deployment",
     "status": "PASSED",
+    "submit_time": "1710456233178",
     "final_tally_result": {
       "yes_count": 37,
       "abstain_count": 15,
@@ -1367,6 +1467,7 @@
     "type": "ParameterChange",
     "topic": "Fee Adjustment",
     "status": "PASSED",
+    "submit_time": "1710447053895",
     "final_tally_result": {
       "yes_count": 49,
       "abstain_count": 7,
@@ -1380,6 +1481,7 @@
     "type": "SmartContract",
     "topic": "Contract Deployment",
     "status": "PASSED",
+    "submit_time": "1710440116005",
     "final_tally_result": {
       "yes_count": 28,
       "abstain_count": 24,
@@ -1394,6 +1496,7 @@
     "type": "ParameterChange",
     "topic": "Staking Parameters",
     "status": "PASSED",
+    "submit_time": "1710162420334",
     "final_tally_result": {
       "yes_count": 51,
       "abstain_count": 5,
@@ -1407,6 +1510,7 @@
     "type": "SmartContract",
     "topic": "Contract Deployment",
     "status": "PASSED",
+    "submit_time": "1709911202700",
     "final_tally_result": {
       "abstain_count": 27,
       "yes_count": 24,
@@ -1421,6 +1525,7 @@
     "type": "ParameterChange",
     "topic": "Economic Parameters",
     "status": "PASSED",
+    "submit_time": "1709349759408",
     "final_tally_result": {
       "yes_count": 47,
       "abstain_count": 8,
@@ -1434,6 +1539,7 @@
     "type": "SmartContract",
     "topic": "Contract Deployment",
     "status": "PASSED",
+    "submit_time": "1708985941663",
     "final_tally_result": {
       "abstain_count": 11,
       "yes_count": 42,
@@ -1447,6 +1553,7 @@
     "type": "CommunityPoolSpend",
     "topic": "Community Support",
     "status": "PASSED",
+    "submit_time": "1708804464453",
     "final_tally_result": {
       "yes_count": 48,
       "abstain_count": 7,
@@ -1460,6 +1567,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "PASSED",
+    "submit_time": "1708716446545",
     "final_tally_result": {
       "yes_count": 40,
       "no_count": 3,
@@ -1474,6 +1582,7 @@
     "type": "MarketRelated",
     "topic": "Oracle Update",
     "status": "PASSED",
+    "submit_time": "1708706109292",
     "final_tally_result": {
       "yes_count": 48,
       "abstain_count": 8,
@@ -1487,6 +1596,7 @@
     "type": "MarketRelated",
     "topic": "Market Addition",
     "status": "PASSED",
+    "submit_time": "1708628187426",
     "final_tally_result": {
       "yes_count": 52,
       "abstain_count": 6,
@@ -1500,6 +1610,7 @@
     "type": "SmartContract",
     "topic": "Contract Upgrade",
     "status": "PASSED",
+    "submit_time": "1708624867237",
     "final_tally_result": {
       "yes_count": 44,
       "abstain_count": 14,
@@ -1513,6 +1624,7 @@
     "type": "SmartContract",
     "topic": "Contract Deployment",
     "status": "PASSED",
+    "submit_time": "1708138122948",
     "final_tally_result": {
       "yes_count": 42,
       "abstain_count": 13,
@@ -1526,6 +1638,7 @@
     "type": "SmartContract",
     "topic": "Contract Deployment",
     "status": "PASSED",
+    "submit_time": "1708088896995",
     "final_tally_result": {
       "abstain_count": 6,
       "yes_count": 50,
@@ -1539,6 +1652,7 @@
     "type": "SmartContract",
     "topic": "Contract Deployment",
     "status": "PASSED",
+    "submit_time": "1707986752117",
     "final_tally_result": {
       "yes_count": 34,
       "abstain_count": 21,
@@ -1552,6 +1666,7 @@
     "type": "TextProposal",
     "topic": "Network Policy",
     "status": "PASSED",
+    "submit_time": "1707749071326",
     "final_tally_result": {
       "yes_count": 43,
       "abstain_count": 12,
@@ -1565,6 +1680,7 @@
     "type": "MarketRelated",
     "topic": "Oracle Update",
     "status": "PASSED",
+    "submit_time": "1707422024231",
     "final_tally_result": {
       "yes_count": 46,
       "abstain_count": 8,
@@ -1578,6 +1694,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "PASSED",
+    "submit_time": "1707208356156",
     "final_tally_result": {
       "yes_count": 41,
       "abstain_count": 13,
@@ -1591,6 +1708,7 @@
     "type": "MarketRelated",
     "topic": "Market Addition",
     "status": "PASSED",
+    "submit_time": "1707150231235",
     "final_tally_result": {
       "yes_count": 47,
       "abstain_count": 6,
@@ -1604,6 +1722,7 @@
     "type": "ParameterChange",
     "topic": "Economic Parameters",
     "status": "PASSED",
+    "submit_time": "1706800685042",
     "final_tally_result": {
       "yes_count": 52,
       "abstain_count": 7,
@@ -1617,6 +1736,7 @@
     "type": "SmartContract",
     "topic": "Contract Deployment",
     "status": "PASSED",
+    "submit_time": "1706740466250",
     "final_tally_result": {
       "yes_count": 26,
       "abstain_count": 30,
@@ -1631,6 +1751,7 @@
     "type": "SmartContract",
     "topic": "Contract Deployment",
     "status": "PASSED",
+    "submit_time": "1706725663330",
     "final_tally_result": {
       "yes_count": 18,
       "abstain_count": 35,
@@ -1645,6 +1766,7 @@
     "type": "SmartContract",
     "topic": "Contract Deployment",
     "status": "PASSED",
+    "submit_time": "1706725509408",
     "final_tally_result": {
       "yes_count": 18,
       "abstain_count": 35,
@@ -1659,6 +1781,7 @@
     "type": "SmartContract",
     "topic": "Contract Deployment",
     "status": "PASSED",
+    "submit_time": "1706725146204",
     "final_tally_result": {
       "yes_count": 19,
       "abstain_count": 35,
@@ -1673,6 +1796,7 @@
     "type": "MarketRelated",
     "topic": "Market Addition",
     "status": "PASSED",
+    "submit_time": "1706717493332",
     "final_tally_result": {
       "yes_count": 48,
       "abstain_count": 10,
@@ -1686,6 +1810,7 @@
     "type": "SmartContract",
     "topic": "Contract Deployment",
     "status": "PASSED",
+    "submit_time": "1706683549096",
     "final_tally_result": {
       "abstain_count": 29,
       "yes_count": 15,
@@ -1700,6 +1825,7 @@
     "type": "SmartContract",
     "topic": "Contract Deployment",
     "status": "PASSED",
+    "submit_time": "1706679311348",
     "final_tally_result": {
       "abstain_count": 36,
       "yes_count": 14,
@@ -1714,6 +1840,7 @@
     "type": "MarketRelated",
     "topic": "Market Addition",
     "status": "PASSED",
+    "submit_time": "1706656812698",
     "final_tally_result": {
       "abstain_count": 7,
       "yes_count": 48,
@@ -1727,6 +1854,7 @@
     "type": "SmartContract",
     "topic": "Contract Deployment",
     "status": "PASSED",
+    "submit_time": "1706386891159",
     "final_tally_result": {
       "yes_count": 30,
       "abstain_count": 25,
@@ -1740,6 +1868,7 @@
     "type": "MarketRelated",
     "topic": "Market Addition",
     "status": "PASSED",
+    "submit_time": "1706275374552",
     "final_tally_result": {
       "yes_count": 52,
       "abstain_count": 5,
@@ -1753,6 +1882,7 @@
     "type": "CommunityPoolSpend",
     "topic": "Community Support",
     "status": "PASSED",
+    "submit_time": "1706273797411",
     "final_tally_result": {
       "yes_count": 50,
       "abstain_count": 7,
@@ -1766,6 +1896,7 @@
     "type": "SmartContract",
     "topic": "Contract Deployment",
     "status": "PASSED",
+    "submit_time": "1706168850274",
     "final_tally_result": {
       "yes_count": 38,
       "abstain_count": 14,
@@ -1780,6 +1911,7 @@
     "type": "MarketRelated",
     "topic": "Market Addition",
     "status": "PASSED",
+    "submit_time": "1706065091923",
     "final_tally_result": {
       "yes_count": 47,
       "abstain_count": 7,
@@ -1793,6 +1925,7 @@
     "type": "CommunityPoolSpend",
     "topic": "Community Support",
     "status": "PASSED",
+    "submit_time": "1705914759985",
     "final_tally_result": {
       "yes_count": 46,
       "abstain_count": 9,
@@ -1806,6 +1939,7 @@
     "type": "MarketRelated",
     "topic": "Trading Parameters",
     "status": "PASSED",
+    "submit_time": "1705680893283",
     "final_tally_result": {
       "yes_count": 47,
       "no_count": 1,
@@ -1820,6 +1954,7 @@
     "type": "SmartContract",
     "topic": "Contract Deployment",
     "status": "PASSED",
+    "submit_time": "1705667758248",
     "final_tally_result": {
       "yes_count": 43,
       "no_count": 1,
@@ -1834,6 +1969,7 @@
     "type": "SmartContract",
     "topic": "Contract Deployment",
     "status": "REJECTED",
+    "submit_time": "1705638509531",
     "final_tally_result": {
       "no_count": 38,
       "yes_count": 4,
@@ -1848,6 +1984,7 @@
     "type": "SmartContract",
     "topic": "Contract Deployment",
     "status": "PASSED",
+    "submit_time": "1705590122875",
     "final_tally_result": {
       "abstain_count": 17,
       "yes_count": 35,
@@ -1861,6 +1998,7 @@
     "type": "MarketRelated",
     "topic": "Oracle Update",
     "status": "PASSED",
+    "submit_time": "1705438292199",
     "final_tally_result": {
       "yes_count": 45,
       "abstain_count": 5,
@@ -1874,6 +2012,7 @@
     "type": "SmartContract",
     "topic": "Contract Upgrade",
     "status": "PASSED",
+    "submit_time": "1705425831026",
     "final_tally_result": {
       "yes_count": 39,
       "abstain_count": 11,
@@ -1887,6 +2026,7 @@
     "type": "ParameterChange",
     "topic": "Economic Parameters",
     "status": "PASSED",
+    "submit_time": "1705405818530",
     "final_tally_result": {
       "yes_count": 46,
       "abstain_count": 4,
@@ -1900,6 +2040,7 @@
     "type": "SmartContract",
     "topic": "Contract Deployment",
     "status": "PASSED",
+    "submit_time": "1704728269217",
     "final_tally_result": {
       "abstain_count": 28,
       "yes_count": 21,
@@ -1914,6 +2055,7 @@
     "type": "SoftwareUpgrade",
     "topic": "Major Release",
     "status": "PASSED",
+    "submit_time": "1704550916141",
     "final_tally_result": {
       "yes_count": 55,
       "abstain_count": 4,
@@ -1927,6 +2069,7 @@
     "type": "SmartContract",
     "topic": "Contract Deployment",
     "status": "PASSED",
+    "submit_time": "1704488027778",
     "final_tally_result": {
       "yes_count": 17,
       "no_count": 20,
@@ -1941,6 +2084,7 @@
     "type": "SmartContract",
     "topic": "Contract Deployment",
     "status": "REJECTED",
+    "submit_time": "1704374975888",
     "final_tally_result": {
       "no_count": 31,
       "abstain_count": 15,
@@ -1955,6 +2099,7 @@
     "type": "SmartContract",
     "topic": "Contract Deployment",
     "status": "REJECTED",
+    "submit_time": "1704300486713",
     "final_tally_result": {
       "no_count": 32,
       "abstain_count": 16,
@@ -1969,6 +2114,7 @@
     "type": "MarketRelated",
     "topic": "Trading Parameters",
     "status": "PASSED",
+    "submit_time": "1704277083001",
     "final_tally_result": {
       "yes_count": 50,
       "abstain_count": 7,
@@ -1982,6 +2128,7 @@
     "type": "MarketRelated",
     "topic": "Market Addition",
     "status": "PASSED",
+    "submit_time": "1704276967260",
     "final_tally_result": {
       "yes_count": 49,
       "abstain_count": 7,
@@ -1995,6 +2142,7 @@
     "type": "MarketRelated",
     "topic": "Market Addition",
     "status": "PASSED",
+    "submit_time": "1704276641142",
     "final_tally_result": {
       "no_count": 1,
       "yes_count": 43,
@@ -2009,6 +2157,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "PASSED",
+    "submit_time": "1703589077792",
     "final_tally_result": {
       "abstain_count": 5,
       "yes_count": 46,
@@ -2022,6 +2171,7 @@
     "type": "MarketRelated",
     "topic": "Market Addition",
     "status": "PASSED",
+    "submit_time": "1703587950838",
     "final_tally_result": {
       "abstain_count": 5,
       "yes_count": 46,
@@ -2035,6 +2185,7 @@
     "type": "MarketRelated",
     "topic": "Market Addition",
     "status": "PASSED",
+    "submit_time": "1703587831711",
     "final_tally_result": {
       "abstain_count": 5,
       "yes_count": 46,
@@ -2048,6 +2199,7 @@
     "type": "MarketRelated",
     "topic": "Market Addition",
     "status": "PASSED",
+    "submit_time": "1703243572530",
     "final_tally_result": {
       "abstain_count": 4,
       "yes_count": 43,
@@ -2061,6 +2213,7 @@
     "type": "MarketRelated",
     "topic": "Trading Parameters",
     "status": "PASSED",
+    "submit_time": "1701710090478",
     "final_tally_result": {
       "yes_count": 52,
       "no_vote_count": 8
@@ -2073,6 +2226,7 @@
     "type": "CommunityPoolSpend",
     "topic": "Community Support",
     "status": "PASSED",
+    "submit_time": "1701433145262",
     "final_tally_result": {
       "yes_count": 46,
       "abstain_count": 2,
@@ -2086,6 +2240,7 @@
     "type": "MarketRelated",
     "topic": "Market Addition",
     "status": "PASSED",
+    "submit_time": "1701426058609",
     "final_tally_result": {
       "yes_count": 50,
       "abstain_count": 1,
@@ -2099,6 +2254,7 @@
     "type": "SmartContract",
     "topic": "Contract Upgrade",
     "status": "PASSED",
+    "submit_time": "1700595972081",
     "final_tally_result": {
       "yes_count": 45,
       "abstain_count": 2,
@@ -2112,6 +2268,7 @@
     "type": "IBCRelated",
     "topic": "IBC Security",
     "status": "PASSED",
+    "submit_time": "1700251663809",
     "final_tally_result": {
       "yes_count": 52,
       "no_vote_count": 8
@@ -2124,6 +2281,7 @@
     "type": "MarketRelated",
     "topic": "Oracle Update",
     "status": "PASSED",
+    "submit_time": "1699997894378",
     "final_tally_result": {
       "yes_count": 53,
       "no_vote_count": 7
@@ -2136,6 +2294,7 @@
     "type": "MarketRelated",
     "topic": "Oracle Update",
     "status": "PASSED",
+    "submit_time": "1699648887955",
     "final_tally_result": {
       "yes_count": 50,
       "abstain_count": 2,
@@ -2149,6 +2308,7 @@
     "type": "SmartContract",
     "topic": "Contract Deployment",
     "status": "PASSED",
+    "submit_time": "1699464587455",
     "final_tally_result": {
       "yes_count": 49,
       "abstain_count": 4,
@@ -2162,6 +2322,7 @@
     "type": "MarketRelated",
     "topic": "Market Addition",
     "status": "PASSED",
+    "submit_time": "1699310756376",
     "final_tally_result": {
       "yes_count": 50,
       "abstain_count": 3,
@@ -2175,6 +2336,7 @@
     "type": "MarketRelated",
     "topic": "Trading Parameters",
     "status": "PASSED",
+    "submit_time": "1699310490243",
     "final_tally_result": {
       "yes_count": 50,
       "abstain_count": 3,
@@ -2188,6 +2350,7 @@
     "type": "CommunityPoolSpend",
     "topic": "Community Support",
     "status": "PASSED",
+    "submit_time": "1699003347748",
     "final_tally_result": {
       "yes_count": 46,
       "abstain_count": 2,
@@ -2201,6 +2364,7 @@
     "type": "MarketRelated",
     "topic": "Oracle Update",
     "status": "PASSED",
+    "submit_time": "1698831733342",
     "final_tally_result": {
       "yes_count": 50,
       "abstain_count": 2,
@@ -2214,6 +2378,7 @@
     "type": "MarketRelated",
     "topic": "Trading Parameters",
     "status": "PASSED",
+    "submit_time": "1698828373447",
     "final_tally_result": {
       "yes_count": 50,
       "abstain_count": 2,
@@ -2227,6 +2392,7 @@
     "type": "MarketRelated",
     "topic": "Trading Parameters",
     "status": "PASSED",
+    "submit_time": "1698775703607",
     "final_tally_result": {
       "yes_count": 50,
       "abstain_count": 2,
@@ -2240,6 +2406,7 @@
     "type": "MarketRelated",
     "topic": "Trading Parameters",
     "status": "PASSED",
+    "submit_time": "1698224579763",
     "final_tally_result": {
       "yes_count": 51,
       "abstain_count": 2,
@@ -2253,6 +2420,7 @@
     "type": "MarketRelated",
     "topic": "Trading Parameters",
     "status": "PASSED",
+    "submit_time": "1698172271105",
     "final_tally_result": {
       "yes_count": 52,
       "abstain_count": 1,
@@ -2266,6 +2434,7 @@
     "type": "MarketRelated",
     "topic": "Trading Parameters",
     "status": "PASSED",
+    "submit_time": "1697560968328",
     "final_tally_result": {
       "yes_count": 50,
       "abstain_count": 1,
@@ -2279,6 +2448,7 @@
     "type": "ParameterChange",
     "topic": "Fee Adjustment",
     "status": "PASSED",
+    "submit_time": "1697196087809",
     "final_tally_result": {
       "yes_count": 45,
       "abstain_count": 1,
@@ -2292,6 +2462,7 @@
     "type": "MarketRelated",
     "topic": "Trading Parameters",
     "status": "PASSED",
+    "submit_time": "1697033323125",
     "final_tally_result": {
       "yes_count": 53,
       "abstain_count": 1,
@@ -2305,6 +2476,7 @@
     "type": "MarketRelated",
     "topic": "Market Addition",
     "status": "PASSED",
+    "submit_time": "1696973216273",
     "final_tally_result": {
       "yes_count": 47,
       "abstain_count": 9,
@@ -2318,6 +2490,7 @@
     "type": "MarketRelated",
     "topic": "Trading Parameters",
     "status": "PASSED",
+    "submit_time": "1696861025873",
     "final_tally_result": {
       "yes_count": 49,
       "abstain_count": 4,
@@ -2331,6 +2504,7 @@
     "type": "CommunityPoolSpend",
     "topic": "Community Support",
     "status": "PASSED",
+    "submit_time": "1696579158450",
     "final_tally_result": {
       "yes_count": 50,
       "abstain_count": 3,
@@ -2344,6 +2518,7 @@
     "type": "MarketRelated",
     "topic": "Trading Parameters",
     "status": "PASSED",
+    "submit_time": "1696493020874",
     "final_tally_result": {
       "yes_count": 51,
       "abstain_count": 2,
@@ -2357,6 +2532,7 @@
     "type": "MarketRelated",
     "topic": "DEX Configuration",
     "status": "PASSED",
+    "submit_time": "1696367993911",
     "final_tally_result": {
       "yes_count": 49,
       "abstain_count": 6,
@@ -2370,6 +2546,7 @@
     "type": "MarketRelated",
     "topic": "Market Addition",
     "status": "PASSED",
+    "submit_time": "1696367621734",
     "final_tally_result": {
       "yes_count": 48,
       "abstain_count": 7,
@@ -2383,6 +2560,7 @@
     "type": "MarketRelated",
     "topic": "Market Addition",
     "status": "PASSED",
+    "submit_time": "1696350968479",
     "final_tally_result": {
       "yes_count": 52,
       "abstain_count": 3,
@@ -2396,6 +2574,7 @@
     "type": "MarketRelated",
     "topic": "Oracle Update",
     "status": "PASSED",
+    "submit_time": "1695939694212",
     "final_tally_result": {
       "yes_count": 52,
       "abstain_count": 1,
@@ -2409,6 +2588,7 @@
     "type": "MarketRelated",
     "topic": "Trading Parameters",
     "status": "PASSED",
+    "submit_time": "1695852374788",
     "final_tally_result": {
       "yes_count": 52,
       "abstain_count": 2,
@@ -2422,6 +2602,7 @@
     "type": "MarketRelated",
     "topic": "Trading Parameters",
     "status": "PASSED",
+    "submit_time": "1695757412332",
     "final_tally_result": {
       "yes_count": 54,
       "abstain_count": 2,
@@ -2435,6 +2616,7 @@
     "type": "MarketRelated",
     "topic": "Trading Parameters",
     "status": "PASSED",
+    "submit_time": "1695201508325",
     "final_tally_result": {
       "abstain_count": 2,
       "yes_count": 50,
@@ -2448,6 +2630,7 @@
     "type": "MarketRelated",
     "topic": "DEX Configuration",
     "status": "PASSED",
+    "submit_time": "1694699981918",
     "final_tally_result": {
       "yes_count": 48,
       "abstain_count": 4,
@@ -2461,6 +2644,7 @@
     "type": "MarketRelated",
     "topic": "Trading Parameters",
     "status": "PASSED",
+    "submit_time": "1694620360141",
     "final_tally_result": {
       "yes_count": 49,
       "abstain_count": 2,
@@ -2474,6 +2658,7 @@
     "type": "CommunityPoolSpend",
     "topic": "Community Support",
     "status": "PASSED",
+    "submit_time": "1694423449703",
     "final_tally_result": {
       "yes_count": 52,
       "abstain_count": 1,
@@ -2487,6 +2672,7 @@
     "type": "MarketRelated",
     "topic": "Trading Parameters",
     "status": "PASSED",
+    "submit_time": "1694025618429",
     "final_tally_result": {
       "yes_count": 51,
       "no_vote_count": 9
@@ -2499,6 +2685,7 @@
     "type": "MarketRelated",
     "topic": "DEX Configuration",
     "status": "PASSED",
+    "submit_time": "1691890706220",
     "final_tally_result": {
       "yes_count": 45,
       "abstain_count": 3,
@@ -2512,6 +2699,7 @@
     "type": "CommunityPoolSpend",
     "topic": "Community Support",
     "status": "PASSED",
+    "submit_time": "1691819254114",
     "final_tally_result": {
       "yes_count": 45,
       "abstain_count": 3,
@@ -2525,6 +2713,7 @@
     "type": "MarketRelated",
     "topic": "Market Addition",
     "status": "PASSED",
+    "submit_time": "1691790228835",
     "final_tally_result": {
       "yes_count": 47,
       "abstain_count": 2,
@@ -2538,6 +2727,7 @@
     "type": "ParameterChange",
     "topic": "Fee Adjustment",
     "status": "PASSED",
+    "submit_time": "1691443040895",
     "final_tally_result": {
       "yes_count": 49,
       "abstain_count": 2,
@@ -2551,6 +2741,7 @@
     "type": "MarketRelated",
     "topic": "Oracle Update",
     "status": "PASSED",
+    "submit_time": "1691441940057",
     "final_tally_result": {
       "yes_count": 47,
       "abstain_count": 1,
@@ -2564,6 +2755,7 @@
     "type": "MarketRelated",
     "topic": "Trading Parameters",
     "status": "PASSED",
+    "submit_time": "1691095143657",
     "final_tally_result": {
       "yes_count": 48,
       "abstain_count": 2,
@@ -2577,6 +2769,7 @@
     "type": "MarketRelated",
     "topic": "Trading Parameters",
     "status": "PASSED",
+    "submit_time": "1689776948098",
     "final_tally_result": {
       "yes_count": 48,
       "abstain_count": 1,
@@ -2590,6 +2783,7 @@
     "type": "CommunityPoolSpend",
     "topic": "Community Support",
     "status": "PASSED",
+    "submit_time": "1689707105725",
     "final_tally_result": {
       "yes_count": 48,
       "abstain_count": 2,
@@ -2603,6 +2797,7 @@
     "type": "MarketRelated",
     "topic": "Market Addition",
     "status": "PASSED",
+    "submit_time": "1689281795879",
     "final_tally_result": {
       "yes_count": 48,
       "abstain_count": 2,
@@ -2616,6 +2811,7 @@
     "type": "ParameterChange",
     "topic": "Protocol Configuration",
     "status": "PASSED",
+    "submit_time": "1689100646558",
     "final_tally_result": {
       "abstain_count": 2,
       "yes_count": 56,
@@ -2629,6 +2825,7 @@
     "type": "MarketRelated",
     "topic": "Market Addition",
     "status": "PASSED",
+    "submit_time": "1688156441514",
     "final_tally_result": {
       "yes_count": 36,
       "abstain_count": 9,
@@ -2642,6 +2839,7 @@
     "type": "MarketRelated",
     "topic": "Market Addition",
     "status": "PASSED",
+    "submit_time": "1688155934668",
     "final_tally_result": {
       "yes_count": 39,
       "abstain_count": 6,
@@ -2655,6 +2853,7 @@
     "type": "CommunityPoolSpend",
     "topic": "Community Support",
     "status": "PASSED",
+    "submit_time": "1687541839599",
     "final_tally_result": {
       "yes_count": 52,
       "abstain_count": 1,
@@ -2668,6 +2867,7 @@
     "type": "SmartContract",
     "topic": "Contract Deployment",
     "status": "PASSED",
+    "submit_time": "1687213664058",
     "final_tally_result": {
       "yes_count": 52,
       "abstain_count": 1,
@@ -2681,6 +2881,7 @@
     "type": "MarketRelated",
     "topic": "Oracle Update",
     "status": "PASSED",
+    "submit_time": "1685972653231",
     "final_tally_result": {
       "yes_count": 52,
       "no_vote_count": 8
@@ -2693,6 +2894,7 @@
     "type": "SoftwareUpgrade",
     "topic": "Major Release",
     "status": "PASSED",
+    "submit_time": "1685228825765",
     "final_tally_result": {
       "yes_count": 55,
       "abstain_count": 1,
@@ -2706,6 +2908,7 @@
     "type": "MarketRelated",
     "topic": "DEX Configuration",
     "status": "PASSED",
+    "submit_time": "1685136825511",
     "final_tally_result": {
       "yes_count": 50,
       "abstain_count": 3,
@@ -2719,6 +2922,7 @@
     "type": "MarketRelated",
     "topic": "Market Addition",
     "status": "PASSED",
+    "submit_time": "1684845192281",
     "final_tally_result": {
       "yes_count": 46,
       "abstain_count": 10,
@@ -2732,6 +2936,7 @@
     "type": "MarketRelated",
     "topic": "Market Addition",
     "status": "PASSED",
+    "submit_time": "1684845039787",
     "final_tally_result": {
       "yes_count": 46,
       "abstain_count": 10,
@@ -2745,6 +2950,7 @@
     "type": "CommunityPoolSpend",
     "topic": "Community Support",
     "status": "PASSED",
+    "submit_time": "1684443323554",
     "final_tally_result": {
       "yes_count": 48,
       "abstain_count": 2,
@@ -2758,6 +2964,7 @@
     "type": "MarketRelated",
     "topic": "Market Addition",
     "status": "PASSED",
+    "submit_time": "1683727807231",
     "final_tally_result": {
       "yes_count": 38,
       "abstain_count": 10,
@@ -2771,6 +2978,7 @@
     "type": "MarketRelated",
     "topic": "Market Addition",
     "status": "PASSED",
+    "submit_time": "1683584240669",
     "final_tally_result": {
       "yes_count": 51,
       "no_count": 1,
@@ -2784,6 +2992,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "PASSED",
+    "submit_time": "1682711648214",
     "final_tally_result": {
       "yes_count": 51,
       "no_vote_count": 9
@@ -2796,6 +3005,7 @@
     "type": "CommunityPoolSpend",
     "topic": "Community Support",
     "status": "PASSED",
+    "submit_time": "1682539280564",
     "final_tally_result": {
       "yes_count": 47,
       "abstain_count": 2,
@@ -2809,6 +3019,7 @@
     "type": "SmartContract",
     "topic": "Contract Integration",
     "status": "PASSED",
+    "submit_time": "1682353226798",
     "final_tally_result": {
       "yes_count": 44,
       "abstain_count": 4,
@@ -2822,6 +3033,7 @@
     "type": "MarketRelated",
     "topic": "Market Addition",
     "status": "PASSED",
+    "submit_time": "1682068064991",
     "final_tally_result": {
       "yes_count": 45,
       "abstain_count": 6,
@@ -2835,6 +3047,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "PASSED",
+    "submit_time": "1681445153221",
     "final_tally_result": {
       "yes_count": 41,
       "abstain_count": 6,
@@ -2848,6 +3061,7 @@
     "type": "ParameterChange",
     "topic": "Protocol Configuration",
     "status": "PASSED",
+    "submit_time": "1681133906391",
     "final_tally_result": {
       "yes_count": 51,
       "abstain_count": 1,
@@ -2861,6 +3075,7 @@
     "type": "IBCRelated",
     "topic": "IBC Security",
     "status": "PASSED",
+    "submit_time": "1681128984116",
     "final_tally_result": {
       "yes_count": 49,
       "abstain_count": 2,
@@ -2874,6 +3089,7 @@
     "type": "MarketRelated",
     "topic": "DEX Configuration",
     "status": "PASSED",
+    "submit_time": "1680915488982",
     "final_tally_result": {
       "yes_count": 45,
       "abstain_count": 1,
@@ -2887,6 +3103,7 @@
     "type": "MarketRelated",
     "topic": "Market Addition",
     "status": "PASSED",
+    "submit_time": "1680088588682",
     "final_tally_result": {
       "abstain_count": 4,
       "yes_count": 45,
@@ -2900,6 +3117,7 @@
     "type": "CommunityPoolSpend",
     "topic": "Community Support",
     "status": "PASSED",
+    "submit_time": "1680029127508",
     "final_tally_result": {
       "yes_count": 47,
       "abstain_count": 1,
@@ -2913,6 +3131,7 @@
     "type": "MarketRelated",
     "topic": "Oracle Update",
     "status": "PASSED",
+    "submit_time": "1680028894889",
     "final_tally_result": {
       "yes_count": 47,
       "no_vote_count": 13
@@ -2925,6 +3144,7 @@
     "type": "SmartContract",
     "topic": "Contract Integration",
     "status": "PASSED",
+    "submit_time": "1679905992653",
     "final_tally_result": {
       "yes_count": 45,
       "abstain_count": 3,
@@ -2938,6 +3158,7 @@
     "type": "MarketRelated",
     "topic": "Oracle Update",
     "status": "PASSED",
+    "submit_time": "1679350250010",
     "final_tally_result": {
       "yes_count": 47,
       "no_vote_count": 13
@@ -2950,6 +3171,7 @@
     "type": "MarketRelated",
     "topic": "Market Addition",
     "status": "PASSED",
+    "submit_time": "1679054163009",
     "final_tally_result": {
       "yes_count": 40,
       "no_count": 1,
@@ -2964,6 +3186,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "PASSED",
+    "submit_time": "1679007520295",
     "final_tally_result": {
       "yes_count": 45,
       "abstain_count": 3,
@@ -2977,6 +3200,7 @@
     "type": "SoftwareUpgrade",
     "topic": "Major Release",
     "status": "PASSED",
+    "submit_time": "1678710274247",
     "final_tally_result": {
       "yes_count": 54,
       "no_vote_count": 6
@@ -2989,6 +3213,7 @@
     "type": "MarketRelated",
     "topic": "DEX Configuration",
     "status": "PASSED",
+    "submit_time": "1678492246603",
     "final_tally_result": {
       "yes_count": 49,
       "abstain_count": 3,
@@ -3002,6 +3227,7 @@
     "type": "CommunityPoolSpend",
     "topic": "Community Support",
     "status": "PASSED",
+    "submit_time": "1678112318314",
     "final_tally_result": {
       "yes_count": 41,
       "abstain_count": 3,
@@ -3015,6 +3241,7 @@
     "type": "IBCRelated",
     "topic": "IBC Security",
     "status": "PASSED",
+    "submit_time": "1677524242192",
     "final_tally_result": {
       "yes_count": 45,
       "no_vote_count": 15
@@ -3027,6 +3254,7 @@
     "type": "ParameterChange",
     "topic": "Staking Parameters",
     "status": "PASSED",
+    "submit_time": "1677334043561",
     "final_tally_result": {
       "yes_count": 41,
       "no_count": 1,
@@ -3041,6 +3269,7 @@
     "type": "MarketRelated",
     "topic": "DEX Configuration",
     "status": "PASSED",
+    "submit_time": "1675469975689",
     "final_tally_result": {
       "yes_count": 36,
       "abstain_count": 4,
@@ -3054,6 +3283,7 @@
     "type": "CommunityPoolSpend",
     "topic": "Community Support",
     "status": "PASSED",
+    "submit_time": "1674838685588",
     "final_tally_result": {
       "abstain_count": 5,
       "yes_count": 30,
@@ -3067,6 +3297,7 @@
     "type": "ParameterChange",
     "topic": "Staking Parameters",
     "status": "PASSED",
+    "submit_time": "1673883363207",
     "final_tally_result": {
       "weighted_vote_count": 1,
       "yes_count": 36,
@@ -3081,6 +3312,7 @@
     "type": "SoftwareUpgrade",
     "topic": "Security Enhancement",
     "status": "PASSED",
+    "submit_time": "1673642815862",
     "final_tally_result": {
       "yes_count": 34,
       "abstain_count": 1,
@@ -3094,6 +3326,7 @@
     "type": "MarketRelated",
     "topic": "Oracle Update",
     "status": "PASSED",
+    "submit_time": "1672938167174",
     "final_tally_result": {
       "yes_count": 30,
       "abstain_count": 3,
@@ -3107,6 +3340,7 @@
     "type": "MarketRelated",
     "topic": "DEX Configuration",
     "status": "PASSED",
+    "submit_time": "1672857271831",
     "final_tally_result": {
       "yes_count": 27,
       "abstain_count": 4,
@@ -3120,6 +3354,7 @@
     "type": "CommunityPoolSpend",
     "topic": "Community Support",
     "status": "PASSED",
+    "submit_time": "1671621062578",
     "final_tally_result": {
       "yes_count": 23,
       "abstain_count": 3,
@@ -3133,6 +3368,7 @@
     "type": "MarketRelated",
     "topic": "DEX Configuration",
     "status": "PASSED",
+    "submit_time": "1671207368795",
     "final_tally_result": {
       "yes_count": 24,
       "abstain_count": 3,
@@ -3146,6 +3382,7 @@
     "type": "MarketRelated",
     "topic": "Oracle Update",
     "status": "REJECTED",
+    "submit_time": "1671206826397",
     "final_tally_result": {
       "abstain_count": 3,
       "no_count": 16,
@@ -3160,6 +3397,7 @@
     "type": "ParameterChange",
     "topic": "Protocol Configuration",
     "status": "PASSED",
+    "submit_time": "1671004935052",
     "final_tally_result": {
       "yes_count": 26,
       "abstain_count": 4,
@@ -3173,6 +3411,7 @@
     "type": "MarketRelated",
     "topic": "Trading Parameters",
     "status": "FAILED",
+    "submit_time": "1670667615312",
     "final_tally_result": {
       "yes_count": 22,
       "abstain_count": 2,
@@ -3186,6 +3425,7 @@
     "type": "MarketRelated",
     "topic": "DEX Configuration",
     "status": "PASSED",
+    "submit_time": "1670502630063",
     "final_tally_result": {
       "yes_count": 24,
       "abstain_count": 3,
@@ -3199,6 +3439,7 @@
     "type": "SmartContract",
     "topic": "Contract Deployment",
     "status": "PASSED",
+    "submit_time": "1669756344743",
     "final_tally_result": {
       "yes_count": 26,
       "abstain_count": 1,
@@ -3212,6 +3453,7 @@
     "type": "SmartContract",
     "topic": "Contract Deployment",
     "status": "PASSED",
+    "submit_time": "1669664158890",
     "final_tally_result": {
       "yes_count": 27,
       "abstain_count": 2,
@@ -3225,6 +3467,7 @@
     "type": "SmartContract",
     "topic": "Contract Deployment",
     "status": "PASSED",
+    "submit_time": "1669664112536",
     "final_tally_result": {
       "yes_count": 28,
       "abstain_count": 1,
@@ -3238,6 +3481,7 @@
     "type": "SmartContract",
     "topic": "Contract Deployment",
     "status": "PASSED",
+    "submit_time": "1669664061796",
     "final_tally_result": {
       "yes_count": 29,
       "abstain_count": 1,
@@ -3251,6 +3495,7 @@
     "type": "SmartContract",
     "topic": "Contract Deployment",
     "status": "PASSED",
+    "submit_time": "1669663969355",
     "final_tally_result": {
       "yes_count": 25,
       "abstain_count": 1,
@@ -3264,6 +3509,7 @@
     "type": "SmartContract",
     "topic": "Contract Deployment",
     "status": "PASSED",
+    "submit_time": "1669657865827",
     "final_tally_result": {
       "yes_count": 28,
       "abstain_count": 1,
@@ -3277,6 +3523,7 @@
     "type": "MarketRelated",
     "topic": "Market Addition",
     "status": "PASSED",
+    "submit_time": "1669188132365",
     "final_tally_result": {
       "yes_count": 22,
       "abstain_count": 1,
@@ -3290,6 +3537,7 @@
     "type": "SoftwareUpgrade",
     "topic": "Major Release",
     "status": "PASSED",
+    "submit_time": "1668680269962",
     "final_tally_result": {
       "yes_count": 31,
       "no_vote_count": 29
@@ -3302,6 +3550,7 @@
     "type": "MarketRelated",
     "topic": "Trading Parameters",
     "status": "PASSED",
+    "submit_time": "1668160207454",
     "final_tally_result": {
       "yes_count": 31,
       "abstain_count": 1,
@@ -3315,6 +3564,7 @@
     "type": "MarketRelated",
     "topic": "Oracle Update",
     "status": "PASSED",
+    "submit_time": "1667581020023",
     "final_tally_result": {
       "yes_count": 23,
       "abstain_count": 2,
@@ -3328,6 +3578,7 @@
     "type": "MarketRelated",
     "topic": "Oracle Update",
     "status": "PASSED",
+    "submit_time": "1666870297364",
     "final_tally_result": {
       "yes_count": 22,
       "abstain_count": 3,
@@ -3341,6 +3592,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "PASSED",
+    "submit_time": "1666783680441",
     "final_tally_result": {
       "yes_count": 21,
       "abstain_count": 1,
@@ -3354,6 +3606,7 @@
     "type": "MarketRelated",
     "topic": "Oracle Update",
     "status": "PASSED",
+    "submit_time": "1666204748254",
     "final_tally_result": {
       "abstain_count": 3,
       "yes_count": 22,
@@ -3367,6 +3620,7 @@
     "type": "CommunityPoolSpend",
     "topic": "Community Support",
     "status": "PASSED",
+    "submit_time": "1666022790613",
     "final_tally_result": {
       "yes_count": 20,
       "abstain_count": 5,
@@ -3380,6 +3634,7 @@
     "type": "SmartContract",
     "topic": "Contract Deployment",
     "status": "PASSED",
+    "submit_time": "1665684310148",
     "final_tally_result": {
       "yes_count": 18,
       "abstain_count": 1,
@@ -3393,6 +3648,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "PASSED",
+    "submit_time": "1665479846647",
     "final_tally_result": {
       "yes_count": 4,
       "abstain_count": 10,
@@ -3407,6 +3663,7 @@
     "type": "CommunityPoolSpend",
     "topic": "Community Support",
     "status": "PASSED",
+    "submit_time": "1664438777040",
     "final_tally_result": {
       "yes_count": 16,
       "abstain_count": 5,
@@ -3420,6 +3677,7 @@
     "type": "MarketRelated",
     "topic": "Trading Parameters",
     "status": "PASSED",
+    "submit_time": "1664177068584",
     "final_tally_result": {
       "abstain_count": 2,
       "yes_count": 19,
@@ -3433,6 +3691,7 @@
     "type": "ParameterChange",
     "topic": "Protocol Configuration",
     "status": "PASSED",
+    "submit_time": "1662632378333",
     "final_tally_result": {
       "yes_count": 12,
       "abstain_count": 7,
@@ -3446,6 +3705,7 @@
     "type": "SoftwareUpgrade",
     "topic": "Security Enhancement",
     "status": "PASSED",
+    "submit_time": "1661650138475",
     "final_tally_result": {
       "yes_count": 25,
       "no_vote_count": 35
@@ -3458,6 +3718,7 @@
     "type": "CommunityPoolSpend",
     "topic": "Community Support",
     "status": "PASSED",
+    "submit_time": "1661179862938",
     "final_tally_result": {
       "abstain_count": 5,
       "yes_count": 17,
@@ -3471,6 +3732,7 @@
     "type": "SmartContract",
     "topic": "Contract Deployment",
     "status": "PASSED",
+    "submit_time": "1660865555893",
     "final_tally_result": {
       "abstain_count": 2,
       "yes_count": 15,
@@ -3484,6 +3746,7 @@
     "type": "ParameterChange",
     "topic": "Staking Parameters",
     "status": "PASSED",
+    "submit_time": "1660663970224",
     "final_tally_result": {
       "yes_count": 14,
       "no_vote_count": 46
@@ -3496,6 +3759,7 @@
     "type": "MarketRelated",
     "topic": "Market Addition",
     "status": "PASSED",
+    "submit_time": "1660079566853",
     "final_tally_result": {
       "abstain_count": 2,
       "yes_count": 9,
@@ -3509,6 +3773,7 @@
     "type": "CommunityPoolSpend",
     "topic": "Community Support",
     "status": "PASSED",
+    "submit_time": "1658795756858",
     "final_tally_result": {
       "abstain_count": 4,
       "yes_count": 8,
@@ -3522,6 +3787,7 @@
     "type": "MarketRelated",
     "topic": "Trading Parameters",
     "status": "PASSED",
+    "submit_time": "1658136601947",
     "final_tally_result": {
       "abstain_count": 4,
       "yes_count": 7,
@@ -3535,6 +3801,7 @@
     "type": "ParameterChange",
     "topic": "Economic Parameters",
     "status": "PASSED",
+    "submit_time": "1657749799757",
     "final_tally_result": {
       "yes_count": 9,
       "abstain_count": 2,
@@ -3548,6 +3815,7 @@
     "type": "MarketRelated",
     "topic": "Trading Parameters",
     "status": "PASSED",
+    "submit_time": "1657282148274",
     "final_tally_result": {
       "yes_count": 10,
       "abstain_count": 2,
@@ -3561,6 +3829,7 @@
     "type": "TextProposal",
     "topic": "Project Funding",
     "status": "REJECTED",
+    "submit_time": "1656742270505",
     "final_tally_result": {
       "abstain_count": 5,
       "no_count": 5,
@@ -3575,6 +3844,7 @@
     "type": "MarketRelated",
     "topic": "Oracle Update",
     "status": "PASSED",
+    "submit_time": "1656709779493",
     "final_tally_result": {
       "yes_count": 11,
       "abstain_count": 4,
@@ -3588,6 +3858,7 @@
     "type": "SoftwareUpgrade",
     "topic": "Security Enhancement",
     "status": "PASSED",
+    "submit_time": "1656677779521",
     "final_tally_result": {
       "yes_count": 16,
       "no_vote_count": 44
@@ -3600,6 +3871,7 @@
     "type": "CommunityPoolSpend",
     "topic": "Community Support",
     "status": "PASSED",
+    "submit_time": "1656075770091",
     "final_tally_result": {
       "abstain_count": 4,
       "yes_count": 7,
@@ -3613,6 +3885,7 @@
     "type": "MarketRelated",
     "topic": "Oracle Update",
     "status": "REJECTED",
+    "submit_time": "1656075569913",
     "final_tally_result": {
       "yes_count": 9,
       "abstain_count": 3,
@@ -3626,6 +3899,7 @@
     "type": "CommunityPoolSpend",
     "topic": "Community Support",
     "status": "PASSED",
+    "submit_time": "1655759686047",
     "final_tally_result": {
       "yes_count": 10,
       "abstain_count": 1,
@@ -3639,6 +3913,7 @@
     "type": "MarketRelated",
     "topic": "Oracle Update",
     "status": "PASSED",
+    "submit_time": "1655492389831",
     "final_tally_result": {
       "abstain_count": 3,
       "yes_count": 8,
@@ -3652,6 +3927,7 @@
     "type": "MarketRelated",
     "topic": "Oracle Update",
     "status": "PASSED",
+    "submit_time": "1654829255468",
     "final_tally_result": {
       "yes_count": 9,
       "abstain_count": 5,
@@ -3665,6 +3941,7 @@
     "type": "CommunityPoolSpend",
     "topic": "Community Support",
     "status": "PASSED",
+    "submit_time": "1654829148156",
     "final_tally_result": {
       "yes_count": 9,
       "abstain_count": 5,
@@ -3678,6 +3955,7 @@
     "type": "MarketRelated",
     "topic": "Oracle Update",
     "status": "PASSED",
+    "submit_time": "1654263909683",
     "final_tally_result": {
       "yes_count": 7,
       "abstain_count": 4,
@@ -3691,6 +3969,7 @@
     "type": "MarketRelated",
     "topic": "Oracle Update",
     "status": "PASSED",
+    "submit_time": "1653662568981",
     "final_tally_result": {
       "yes_count": 7,
       "abstain_count": 3,
@@ -3704,6 +3983,7 @@
     "type": "MarketRelated",
     "topic": "Oracle Update",
     "status": "PASSED",
+    "submit_time": "1653034420595",
     "final_tally_result": {
       "yes_count": 8,
       "abstain_count": 4,
@@ -3717,6 +3997,7 @@
     "type": "MarketRelated",
     "topic": "Market Addition",
     "status": "PASSED",
+    "submit_time": "1652783615398",
     "final_tally_result": {
       "abstain_count": 3,
       "yes_count": 10,
@@ -3730,6 +4011,7 @@
     "type": "MarketRelated",
     "topic": "Oracle Update",
     "status": "PASSED",
+    "submit_time": "1652516676097",
     "final_tally_result": {
       "abstain_count": 2,
       "yes_count": 9,
@@ -3743,6 +4025,7 @@
     "type": "MarketRelated",
     "topic": "Oracle Update",
     "status": "PASSED",
+    "submit_time": "1652406283409",
     "final_tally_result": {
       "yes_count": 9,
       "abstain_count": 2,
@@ -3757,6 +4040,7 @@
     "type": "MarketRelated",
     "topic": "DEX Configuration",
     "status": "PASSED",
+    "submit_time": "1652196382932",
     "final_tally_result": {
       "yes_count": 8,
       "abstain_count": 2,
@@ -3770,6 +4054,7 @@
     "type": "MarketRelated",
     "topic": "Oracle Update",
     "status": "PASSED",
+    "submit_time": "1651903716258",
     "final_tally_result": {
       "abstain_count": 3,
       "yes_count": 5,
@@ -3783,6 +4068,7 @@
     "type": "MarketRelated",
     "topic": "DEX Configuration",
     "status": "PASSED",
+    "submit_time": "1651520444453",
     "final_tally_result": {
       "yes_count": 10,
       "abstain_count": 2,
@@ -3796,6 +4082,7 @@
     "type": "MarketRelated",
     "topic": "Oracle Update",
     "status": "PASSED",
+    "submit_time": "1651483670147",
     "final_tally_result": {
       "yes_count": 10,
       "abstain_count": 2,
@@ -3809,6 +4096,7 @@
     "type": "MarketRelated",
     "topic": "DEX Configuration",
     "status": "PASSED",
+    "submit_time": "1651167249425",
     "final_tally_result": {
       "yes_count": 11,
       "abstain_count": 2,
@@ -3822,6 +4110,7 @@
     "type": "MarketRelated",
     "topic": "Oracle Update",
     "status": "PASSED",
+    "submit_time": "1651135821405",
     "final_tally_result": {
       "abstain_count": 4,
       "yes_count": 8,
@@ -3835,6 +4124,7 @@
     "type": "MarketRelated",
     "topic": "Oracle Update",
     "status": "PASSED",
+    "submit_time": "1651135439751",
     "final_tally_result": {
       "yes_count": 10,
       "abstain_count": 2,
@@ -3848,6 +4138,7 @@
     "type": "CommunityPoolSpend",
     "topic": "Community Support",
     "status": "PASSED",
+    "submit_time": "1650962410671",
     "final_tally_result": {
       "abstain_count": 4,
       "yes_count": 7,
@@ -3861,6 +4152,7 @@
     "type": "MarketRelated",
     "topic": "Oracle Update",
     "status": "PASSED",
+    "submit_time": "1650646574145",
     "final_tally_result": {
       "abstain_count": 2,
       "yes_count": 9,
@@ -3874,6 +4166,7 @@
     "type": "MarketRelated",
     "topic": "Trading Parameters",
     "status": "PASSED",
+    "submit_time": "1650272007839",
     "final_tally_result": {
       "yes_count": 10,
       "abstain_count": 2,
@@ -3887,6 +4180,7 @@
     "type": "CommunityPoolSpend",
     "topic": "Community Support",
     "status": "PASSED",
+    "submit_time": "1650031123939",
     "final_tally_result": {
       "yes_count": 10,
       "abstain_count": 1,
@@ -3900,6 +4194,7 @@
     "type": "MarketRelated",
     "topic": "Oracle Update",
     "status": "PASSED",
+    "submit_time": "1650023583678",
     "final_tally_result": {
       "yes_count": 9,
       "abstain_count": 1,
@@ -3913,6 +4208,7 @@
     "type": "MarketRelated",
     "topic": "Market Addition",
     "status": "PASSED",
+    "submit_time": "1649953396847",
     "final_tally_result": {
       "yes_count": 7,
       "abstain_count": 2,
@@ -3926,6 +4222,7 @@
     "type": "SoftwareUpgrade",
     "topic": "Security Enhancement",
     "status": "PASSED",
+    "submit_time": "1649283094495",
     "final_tally_result": {
       "yes_count": 16,
       "abstain_count": 1,
@@ -3939,6 +4236,7 @@
     "type": "MarketRelated",
     "topic": "Oracle Update",
     "status": "PASSED",
+    "submit_time": "1649280950886",
     "final_tally_result": {
       "yes_count": 13,
       "abstain_count": 2,
@@ -3952,6 +4250,7 @@
     "type": "MarketRelated",
     "topic": "Oracle Update",
     "status": "PASSED",
+    "submit_time": "1648737838754",
     "final_tally_result": {
       "abstain_count": 2,
       "yes_count": 10,
@@ -3965,6 +4264,7 @@
     "type": "MarketRelated",
     "topic": "DEX Configuration",
     "status": "PASSED",
+    "submit_time": "1648638501974",
     "final_tally_result": {
       "yes_count": 12,
       "no_vote_count": 48
@@ -3977,6 +4277,7 @@
     "type": "MarketRelated",
     "topic": "Trading Parameters",
     "status": "PASSED",
+    "submit_time": "1648487485307",
     "final_tally_result": {
       "yes_count": 10,
       "abstain_count": 2,
@@ -3990,6 +4291,7 @@
     "type": "ParameterChange",
     "topic": "Protocol Configuration",
     "status": "PASSED",
+    "submit_time": "1648028013676",
     "final_tally_result": {
       "abstain_count": 1,
       "yes_count": 8,
@@ -4004,6 +4306,7 @@
     "type": "MarketRelated",
     "topic": "Trading Parameters",
     "status": "PASSED",
+    "submit_time": "1647873219143",
     "final_tally_result": {
       "yes_count": 10,
       "abstain_count": 1,
@@ -4017,6 +4320,7 @@
     "type": "CommunityPoolSpend",
     "topic": "Community Support",
     "status": "PASSED",
+    "submit_time": "1647872260152",
     "final_tally_result": {
       "yes_count": 11,
       "abstain_count": 1,
@@ -4030,6 +4334,7 @@
     "type": "MarketRelated",
     "topic": "Oracle Update",
     "status": "PASSED",
+    "submit_time": "1647796142471",
     "final_tally_result": {
       "yes_count": 9,
       "abstain_count": 1,
@@ -4043,6 +4348,7 @@
     "type": "CommunityPoolSpend",
     "topic": "Community Support",
     "status": "REJECTED",
+    "submit_time": "1647612502334",
     "final_tally_result": {
       "yes_count": 5,
       "no_vote_count": 55
@@ -4055,6 +4361,7 @@
     "type": "CommunityPoolSpend",
     "topic": "Community Support",
     "status": "PASSED",
+    "submit_time": "1647267330782",
     "final_tally_result": {
       "abstain_count": 2,
       "yes_count": 8,
@@ -4068,6 +4375,7 @@
     "type": "MarketRelated",
     "topic": "Oracle Update",
     "status": "PASSED",
+    "submit_time": "1647175066914",
     "final_tally_result": {
       "yes_count": 9,
       "abstain_count": 1,
@@ -4081,6 +4389,7 @@
     "type": "MarketRelated",
     "topic": "Oracle Update",
     "status": "REJECTED",
+    "submit_time": "1646585727602",
     "final_tally_result": {
       "yes_count": 7,
       "no_vote_count": 53
@@ -4093,6 +4402,7 @@
     "type": "MarketRelated",
     "topic": "DEX Configuration",
     "status": "PASSED",
+    "submit_time": "1646426410491",
     "final_tally_result": {
       "abstain_count": 1,
       "yes_count": 5,
@@ -4106,6 +4416,7 @@
     "type": "MarketRelated",
     "topic": "Oracle Update",
     "status": "PASSED",
+    "submit_time": "1645637518427",
     "final_tally_result": {
       "yes_count": 8,
       "abstain_count": 1,
@@ -4120,6 +4431,7 @@
     "type": "ParameterChange",
     "topic": "Staking Parameters",
     "status": "PASSED",
+    "submit_time": "1645409561934",
     "final_tally_result": {
       "yes_count": 9,
       "no_vote_count": 51
@@ -4132,6 +4444,7 @@
     "type": "MarketRelated",
     "topic": "Oracle Update",
     "status": "PASSED",
+    "submit_time": "1645381559050",
     "final_tally_result": {
       "yes_count": 5,
       "abstain_count": 3,
@@ -4145,6 +4458,7 @@
     "type": "MarketRelated",
     "topic": "Oracle Update",
     "status": "PASSED",
+    "submit_time": "1644772196218",
     "final_tally_result": {
       "yes_count": 5,
       "abstain_count": 1,
@@ -4158,6 +4472,7 @@
     "type": "MarketRelated",
     "topic": "Oracle Update",
     "status": "PASSED",
+    "submit_time": "1644180023513",
     "final_tally_result": {
       "yes_count": 6,
       "abstain_count": 1,
@@ -4171,6 +4486,7 @@
     "type": "MarketRelated",
     "topic": "Market Addition",
     "status": "PASSED",
+    "submit_time": "1644095714769",
     "final_tally_result": {
       "yes_count": 7,
       "no_vote_count": 53
@@ -4183,6 +4499,7 @@
     "type": "MarketRelated",
     "topic": "Market Addition",
     "status": "PASSED",
+    "submit_time": "1643827214754",
     "final_tally_result": {
       "yes_count": 7,
       "no_count": 1,
@@ -4196,6 +4513,7 @@
     "type": "MarketRelated",
     "topic": "Oracle Update",
     "status": "PASSED",
+    "submit_time": "1643565012531",
     "final_tally_result": {
       "yes_count": 4,
       "abstain_count": 1,
@@ -4209,6 +4527,7 @@
     "type": "MarketRelated",
     "topic": "Oracle Update",
     "status": "PASSED",
+    "submit_time": "1643384712734",
     "final_tally_result": {
       "yes_count": 9,
       "no_vote_count": 51
@@ -4221,6 +4540,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "REJECTED",
+    "submit_time": "1643298701086",
     "final_tally_result": {
       "no_count": 2,
       "yes_count": 7,
@@ -4234,6 +4554,7 @@
     "type": "SoftwareUpgrade",
     "topic": "Security Enhancement",
     "status": "PASSED",
+    "submit_time": "1642930460489",
     "final_tally_result": {
       "yes_count": 9,
       "no_vote_count": 51
@@ -4246,6 +4567,7 @@
     "type": "ParameterChange",
     "topic": "Economic Parameters",
     "status": "PASSED",
+    "submit_time": "1642888489210",
     "final_tally_result": {
       "yes_count": 7,
       "no_vote_count": 53
@@ -4258,6 +4580,7 @@
     "type": "CommunityPoolSpend",
     "topic": "Community Support",
     "status": "PASSED",
+    "submit_time": "1642594150210",
     "final_tally_result": {
       "yes_count": 4,
       "no_vote_count": 56
@@ -4270,6 +4593,7 @@
     "type": "ParameterChange",
     "topic": "Economic Parameters",
     "status": "PASSED",
+    "submit_time": "1642081362194",
     "final_tally_result": {
       "yes_count": 4,
       "no_vote_count": 56
@@ -4282,6 +4606,7 @@
     "type": "MarketRelated",
     "topic": "Oracle Update",
     "status": "PASSED",
+    "submit_time": "1641635258204",
     "final_tally_result": {
       "yes_count": 4,
       "abstain_count": 2,
@@ -4295,6 +4620,7 @@
     "type": "ParameterChange",
     "topic": "Staking Parameters",
     "status": "PASSED",
+    "submit_time": "1641552115896",
     "final_tally_result": {
       "yes_count": 4,
       "abstain_count": 2,
@@ -4308,6 +4634,7 @@
     "type": "MarketRelated",
     "topic": "Trading Parameters",
     "status": "PASSED",
+    "submit_time": "1641490509859",
     "final_tally_result": {
       "abstain_count": 2,
       "yes_count": 3,
@@ -4321,6 +4648,7 @@
     "type": "ParameterChange",
     "topic": "Economic Parameters",
     "status": "PASSED",
+    "submit_time": "1641416665443",
     "final_tally_result": {
       "yes_count": 5,
       "no_vote_count": 55
@@ -4333,6 +4661,7 @@
     "type": "CommunityPoolSpend",
     "topic": "Community Support",
     "status": "PASSED",
+    "submit_time": "1641382537413",
     "final_tally_result": {
       "yes_count": 2,
       "abstain_count": 1,
@@ -4346,6 +4675,7 @@
     "type": "ParameterChange",
     "topic": "Fee Adjustment",
     "status": "PASSED",
+    "submit_time": "1641305234082",
     "final_tally_result": {
       "yes_count": 3,
       "no_vote_count": 57
@@ -4358,6 +4688,7 @@
     "type": "CommunityPoolSpend",
     "topic": "Community Support",
     "status": "PASSED",
+    "submit_time": "1641286821934",
     "final_tally_result": {
       "abstain_count": 2,
       "yes_count": 1,
@@ -4371,6 +4702,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "REJECTED",
+    "submit_time": "1640796678186",
     "final_tally_result": {
       "yes_count": 1,
       "no_vote_count": 59
@@ -4383,6 +4715,7 @@
     "type": "SoftwareUpgrade",
     "topic": "Security Enhancement",
     "status": "PASSED",
+    "submit_time": "1640639602427",
     "final_tally_result": {
       "yes_count": 7,
       "no_vote_count": 53
@@ -4395,6 +4728,7 @@
     "type": "MarketRelated",
     "topic": "Market Addition",
     "status": "PASSED",
+    "submit_time": "1640613064062",
     "final_tally_result": {
       "yes_count": 2,
       "no_vote_count": 58
@@ -4407,6 +4741,7 @@
     "type": "ParameterChange",
     "topic": "Fee Adjustment",
     "status": "PASSED",
+    "submit_time": "1640558077904",
     "final_tally_result": {
       "yes_count": 6,
       "no_vote_count": 54
@@ -4419,6 +4754,7 @@
     "type": "MarketRelated",
     "topic": "Trading Parameters",
     "status": "PASSED",
+    "submit_time": "1640352607313",
     "final_tally_result": {
       "yes_count": 6,
       "no_vote_count": 54
@@ -4431,6 +4767,7 @@
     "type": "ParameterChange",
     "topic": "Economic Parameters",
     "status": "PASSED",
+    "submit_time": "1640029655695",
     "final_tally_result": {
       "yes_count": 4,
       "no_vote_count": 56
@@ -4443,6 +4780,7 @@
     "type": "CommunityPoolSpend",
     "topic": "Community Support",
     "status": "PASSED",
+    "submit_time": "1639806914466",
     "final_tally_result": {
       "yes_count": 1,
       "no_vote_count": 59
@@ -4455,6 +4793,7 @@
     "type": "ParameterChange",
     "topic": "Economic Parameters",
     "status": "PASSED",
+    "submit_time": "1639773443065",
     "final_tally_result": {
       "yes_count": 2,
       "no_vote_count": 58
@@ -4467,6 +4806,7 @@
     "type": "MarketRelated",
     "topic": "Trading Parameters",
     "status": "PASSED",
+    "submit_time": "1639693668932",
     "final_tally_result": {
       "yes_count": 2,
       "no_vote_count": 58
@@ -4479,6 +4819,7 @@
     "type": "MarketRelated",
     "topic": "Market Addition",
     "status": "PASSED",
+    "submit_time": "1638839117341",
     "final_tally_result": {
       "yes_count": 3,
       "no_vote_count": 57
@@ -4491,6 +4832,7 @@
     "type": "ParameterChange",
     "topic": "Fee Adjustment",
     "status": "PASSED",
+    "submit_time": "1638601517493",
     "final_tally_result": {
       "yes_count": 2,
       "no_vote_count": 58
@@ -4503,6 +4845,7 @@
     "type": "ParameterChange",
     "topic": "Economic Parameters",
     "status": "PASSED",
+    "submit_time": "1638589369817",
     "final_tally_result": {
       "yes_count": 2,
       "no_vote_count": 58
@@ -4515,6 +4858,7 @@
     "type": "MarketRelated",
     "topic": "Trading Parameters",
     "status": "PASSED",
+    "submit_time": "1638520374075",
     "final_tally_result": {
       "yes_count": 2,
       "no_vote_count": 58
@@ -4527,6 +4871,7 @@
     "type": "MarketRelated",
     "topic": "Oracle Update",
     "status": "PASSED",
+    "submit_time": "1638460937727",
     "final_tally_result": {
       "yes_count": 4,
       "no_vote_count": 56
@@ -4539,6 +4884,7 @@
     "type": "MarketRelated",
     "topic": "Market Addition",
     "status": "PASSED",
+    "submit_time": "1637780584549",
     "final_tally_result": {
       "yes_count": 5,
       "no_vote_count": 55
@@ -4551,6 +4897,7 @@
     "type": "MarketRelated",
     "topic": "Oracle Update",
     "status": "PASSED",
+    "submit_time": "1637392293296",
     "final_tally_result": {
       "yes_count": 3,
       "no_vote_count": 57
@@ -4563,6 +4910,7 @@
     "type": "MarketRelated",
     "topic": "Market Addition",
     "status": "PASSED",
+    "submit_time": "1637221671907",
     "final_tally_result": {
       "yes_count": 4,
       "no_vote_count": 56
@@ -4575,6 +4923,7 @@
     "type": "MarketRelated",
     "topic": "Market Addition",
     "status": "REJECTED",
+    "submit_time": "1637172664692",
     "final_tally_result": {
       "yes_count": 3,
       "no_vote_count": 57
@@ -4587,6 +4936,7 @@
     "type": "MarketRelated",
     "topic": "Trading Parameters",
     "status": "PASSED",
+    "submit_time": "1636963052443",
     "final_tally_result": {
       "yes_count": 2,
       "no_vote_count": 58
@@ -4599,6 +4949,7 @@
     "type": "SoftwareUpgrade",
     "topic": "Security Enhancement",
     "status": "PASSED",
+    "submit_time": "1636755796791",
     "final_tally_result": {
       "yes_count": 4,
       "no_vote_count": 56
@@ -4611,6 +4962,7 @@
     "type": "MarketRelated",
     "topic": "DEX Configuration",
     "status": "PASSED",
+    "submit_time": "1636755602960",
     "final_tally_result": {
       "yes_count": 3,
       "no_vote_count": 57
@@ -4623,6 +4975,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "PASSED",
+    "submit_time": "1636654532930",
     "final_tally_result": {
       "yes_count": 4,
       "no_vote_count": 56
@@ -4635,6 +4988,7 @@
     "type": "IBCRelated",
     "topic": "IBC Transfer",
     "status": "PASSED",
+    "submit_time": "1636651796971",
     "final_tally_result": {
       "yes_count": 4,
       "no_vote_count": 56
@@ -4647,6 +5001,7 @@
     "type": "MarketRelated",
     "topic": "Oracle Update",
     "status": "PASSED",
+    "submit_time": "1636508716207",
     "final_tally_result": {
       "yes_count": 3,
       "no_vote_count": 57
@@ -4659,6 +5014,7 @@
     "type": "SoftwareUpgrade",
     "topic": "Security Enhancement",
     "status": "PASSED",
+    "submit_time": "1636194658903",
     "final_tally_result": {
       "yes_count": 5,
       "no_vote_count": 55
@@ -4671,6 +5027,7 @@
     "type": "ParameterChange",
     "topic": "Protocol Configuration",
     "status": "PASSED",
+    "submit_time": "1635136467210",
     "final_tally_result": {
       "yes_count": 2,
       "no_vote_count": 58
@@ -4683,6 +5040,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "PASSED",
+    "submit_time": "1633989867236",
     "final_tally_result": {
       "yes_count": 1,
       "no_count": 1,
@@ -4696,6 +5054,7 @@
     "type": "ParameterChange",
     "topic": "Protocol Configuration",
     "status": "PASSED",
+    "submit_time": "1633102841048",
     "final_tally_result": {
       "yes_count": 2,
       "no_vote_count": 58
@@ -4708,6 +5067,7 @@
     "type": "ParameterChange",
     "topic": "Economic Parameters",
     "status": "PASSED",
+    "submit_time": "1631841306237",
     "final_tally_result": {
       "yes_count": 3,
       "no_vote_count": 57
@@ -4720,6 +5080,7 @@
     "type": "ParameterChange",
     "topic": "Fee Adjustment",
     "status": "PASSED",
+    "submit_time": "1631315865073",
     "final_tally_result": {
       "yes_count": 1,
       "no_vote_count": 59
@@ -4732,6 +5093,7 @@
     "type": "MarketRelated",
     "topic": "Market Addition",
     "status": "PASSED",
+    "submit_time": "1631047562878",
     "final_tally_result": {
       "yes_count": 4,
       "no_vote_count": 56
@@ -4744,6 +5106,7 @@
     "type": "MarketRelated",
     "topic": "Market Addition",
     "status": "PASSED",
+    "submit_time": "1630334516458",
     "final_tally_result": {
       "yes_count": 5,
       "no_vote_count": 55
@@ -4756,6 +5119,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "PASSED",
+    "submit_time": "1629902970690",
     "final_tally_result": {
       "yes_count": 2,
       "no_vote_count": 58
@@ -4768,6 +5132,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "REJECTED",
+    "submit_time": "1629478358674",
     "final_tally_result": {
       "yes_count": 1,
       "no_vote_count": 59
@@ -4780,6 +5145,7 @@
     "type": "ParameterChange",
     "topic": "Economic Parameters",
     "status": "PASSED",
+    "submit_time": "1628854329214",
     "final_tally_result": {
       "yes_count": 2,
       "no_vote_count": 58
@@ -4792,6 +5158,7 @@
     "type": "MarketRelated",
     "topic": "Market Addition",
     "status": "PASSED",
+    "submit_time": "1628509623735",
     "final_tally_result": {
       "yes_count": 2,
       "no_vote_count": 58
@@ -4804,6 +5171,7 @@
     "type": "MarketRelated",
     "topic": "Market Addition",
     "status": "PASSED",
+    "submit_time": "1628248687046",
     "final_tally_result": {
       "yes_count": 6,
       "no_vote_count": 54
@@ -4816,6 +5184,7 @@
     "type": "MarketRelated",
     "topic": "Market Addition",
     "status": "PASSED",
+    "submit_time": "1627467148486",
     "final_tally_result": {
       "yes_count": 3,
       "no_vote_count": 57
@@ -4828,6 +5197,7 @@
     "type": "MarketRelated",
     "topic": "Market Addition",
     "status": "PASSED",
+    "submit_time": "1627141817932",
     "final_tally_result": {
       "yes_count": 3,
       "no_vote_count": 57
@@ -4840,6 +5210,7 @@
     "type": "MarketRelated",
     "topic": "Market Addition",
     "status": "REJECTED",
+    "submit_time": "1626680820374",
     "final_tally_result": {
       "no_vote_count": 60
     }
@@ -4851,6 +5222,7 @@
     "type": "ParameterChange",
     "topic": "Fee Adjustment",
     "status": "PASSED",
+    "submit_time": "1626320399658",
     "final_tally_result": {
       "no_vote_count": 60
     }
@@ -4862,6 +5234,7 @@
     "type": "MarketRelated",
     "topic": "Market Addition",
     "status": "PASSED",
+    "submit_time": "1626290591679",
     "final_tally_result": {
       "yes_count": 1,
       "no_vote_count": 59
@@ -4874,6 +5247,7 @@
     "type": "MarketRelated",
     "topic": "Market Addition",
     "status": "PASSED",
+    "submit_time": "1626234824077",
     "final_tally_result": {
       "no_vote_count": 60
     }
@@ -4885,6 +5259,7 @@
     "type": "MarketRelated",
     "topic": "Market Addition",
     "status": "PASSED",
+    "submit_time": "1626234736899",
     "final_tally_result": {
       "no_vote_count": 60
     }
@@ -4896,6 +5271,7 @@
     "type": "MarketRelated",
     "topic": "Market Addition",
     "status": "PASSED",
+    "submit_time": "1626234627365",
     "final_tally_result": {
       "no_vote_count": 60
     }
@@ -4907,6 +5283,7 @@
     "type": "MarketRelated",
     "topic": "Market Addition",
     "status": "REJECTED",
+    "submit_time": "1626234527413",
     "final_tally_result": {
       "no_vote_count": 60
     }
@@ -4918,6 +5295,7 @@
     "type": "MarketRelated",
     "topic": "Market Addition",
     "status": "PASSED",
+    "submit_time": "1626234224266",
     "final_tally_result": {
       "no_vote_count": 60
     }
@@ -4929,6 +5307,7 @@
     "type": "MarketRelated",
     "topic": "Market Addition",
     "status": "PASSED",
+    "submit_time": "1626234132609",
     "final_tally_result": {
       "no_vote_count": 60
     }
@@ -4940,6 +5319,7 @@
     "type": "MarketRelated",
     "topic": "Market Addition",
     "status": "PASSED",
+    "submit_time": "1626101848171",
     "final_tally_result": {
       "no_vote_count": 60
     }
@@ -4951,6 +5331,7 @@
     "type": "MarketRelated",
     "topic": "Market Addition",
     "status": "PASSED",
+    "submit_time": "1626078987995",
     "final_tally_result": {
       "no_vote_count": 60
     }
@@ -4962,6 +5343,7 @@
     "type": "MarketRelated",
     "topic": "Market Addition",
     "status": "PASSED",
+    "submit_time": "1625852874051",
     "final_tally_result": {
       "no_vote_count": 60
     }
@@ -4973,6 +5355,7 @@
     "type": "MarketRelated",
     "topic": "Market Addition",
     "status": "REJECTED",
+    "submit_time": "1625851842202",
     "final_tally_result": {
       "no_vote_count": 60
     }
@@ -4984,6 +5367,7 @@
     "type": "MarketRelated",
     "topic": "Market Addition",
     "status": "PASSED",
+    "submit_time": "1625847127599",
     "final_tally_result": {
       "no_vote_count": 60
     }
@@ -4995,6 +5379,7 @@
     "type": "MarketRelated",
     "topic": "Market Addition",
     "status": "REJECTED",
+    "submit_time": "1625846915659",
     "final_tally_result": {
       "no_vote_count": 60
     }
@@ -5006,6 +5391,7 @@
     "type": "MarketRelated",
     "topic": "Market Addition",
     "status": "REJECTED",
+    "submit_time": "1625829558078",
     "final_tally_result": {
       "no_vote_count": 60
     }
@@ -5017,6 +5403,7 @@
     "type": "MarketRelated",
     "topic": "Market Addition",
     "status": "REJECTED",
+    "submit_time": "1625826429678",
     "final_tally_result": {
       "no_vote_count": 60
     }
@@ -5028,6 +5415,7 @@
     "type": "MarketRelated",
     "topic": "Market Addition",
     "status": "REJECTED",
+    "submit_time": "1625822794717",
     "final_tally_result": {
       "no_vote_count": 60
     }
@@ -5039,6 +5427,7 @@
     "type": "MarketRelated",
     "topic": "Market Addition",
     "status": "REJECTED",
+    "submit_time": "1625811198111",
     "final_tally_result": {
       "no_vote_count": 60
     }
@@ -5050,6 +5439,7 @@
     "type": "MarketRelated",
     "topic": "Market Addition",
     "status": "REJECTED",
+    "submit_time": "1625787102052",
     "final_tally_result": {
       "no_vote_count": 60
     }
@@ -5061,6 +5451,7 @@
     "type": "MarketRelated",
     "topic": "Market Addition",
     "status": "REJECTED",
+    "submit_time": "1625760104465",
     "final_tally_result": {
       "no_vote_count": 60
     }
@@ -5072,6 +5463,7 @@
     "type": "MarketRelated",
     "topic": "Market Addition",
     "status": "REJECTED",
+    "submit_time": "1625759851574",
     "final_tally_result": {
       "no_vote_count": 60
     }
@@ -5083,6 +5475,7 @@
     "type": "MarketRelated",
     "topic": "Market Addition",
     "status": "REJECTED",
+    "submit_time": "1625736603875",
     "final_tally_result": {
       "yes_count": 1,
       "no_vote_count": 59
@@ -5095,6 +5488,7 @@
     "type": "MarketRelated",
     "topic": "Market Addition",
     "status": "REJECTED",
+    "submit_time": "1625709418782",
     "final_tally_result": {
       "no_vote_count": 60
     }
@@ -5106,6 +5500,7 @@
     "type": "MarketRelated",
     "topic": "Market Addition",
     "status": "PASSED",
+    "submit_time": "1625681499132",
     "final_tally_result": {
       "no_vote_count": 60
     }
@@ -5117,6 +5512,7 @@
     "type": "MarketRelated",
     "topic": "Market Addition",
     "status": "PASSED",
+    "submit_time": "1625678535410",
     "final_tally_result": {
       "no_vote_count": 60
     }
@@ -5128,6 +5524,7 @@
     "type": "MarketRelated",
     "topic": "Market Addition",
     "status": "PASSED",
+    "submit_time": "1625650797204",
     "final_tally_result": {
       "no_vote_count": 60
     }
@@ -5139,6 +5536,7 @@
     "type": "MarketRelated",
     "topic": "Market Addition",
     "status": "PASSED",
+    "submit_time": "1625628768519",
     "final_tally_result": {
       "no_vote_count": 60
     }
@@ -5150,6 +5548,7 @@
     "type": "MarketRelated",
     "topic": "Market Addition",
     "status": "PASSED",
+    "submit_time": "1625579706916",
     "final_tally_result": {
       "no_vote_count": 60
     }
@@ -5161,6 +5560,7 @@
     "type": "MarketRelated",
     "topic": "Market Addition",
     "status": "PASSED",
+    "submit_time": "1625562067918",
     "final_tally_result": {
       "no_vote_count": 60
     }
@@ -5172,6 +5572,7 @@
     "type": "MarketRelated",
     "topic": "Market Addition",
     "status": "PASSED",
+    "submit_time": "1625554589505",
     "final_tally_result": {
       "no_vote_count": 60
     }
@@ -5183,6 +5584,7 @@
     "type": "MarketRelated",
     "topic": "Market Addition",
     "status": "REJECTED",
+    "submit_time": "1625554461781",
     "final_tally_result": {
       "no_vote_count": 60
     }
@@ -5194,6 +5596,7 @@
     "type": "MarketRelated",
     "topic": "Market Addition",
     "status": "REJECTED",
+    "submit_time": "1625488967818",
     "final_tally_result": {
       "no_vote_count": 60
     }
@@ -5205,6 +5608,7 @@
     "type": "MarketRelated",
     "topic": "Market Addition",
     "status": "PASSED",
+    "submit_time": "1625415641888",
     "final_tally_result": {
       "no_vote_count": 60
     }
@@ -5216,6 +5620,7 @@
     "type": "MarketRelated",
     "topic": "Market Addition",
     "status": "PASSED",
+    "submit_time": "1625414893507",
     "final_tally_result": {
       "no_vote_count": 60
     }
@@ -5227,6 +5632,7 @@
     "type": "MarketRelated",
     "topic": "Market Addition",
     "status": "REJECTED",
+    "submit_time": "1625217987097",
     "final_tally_result": {
       "no_vote_count": 60
     }

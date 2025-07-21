@@ -6,6 +6,7 @@
     "type": "CommunityPoolSpend",
     "topic": "Development Fund",
     "status": "PASSED",
+    "submit_time": "1730230378910",
     "final_tally_result": {
       "yes_count": 62,
       "abstain_count": 6,
@@ -19,6 +20,7 @@
     "type": "CommunityPoolSpend",
     "topic": "Development Fund",
     "status": "PASSED",
+    "submit_time": "1730150719264",
     "final_tally_result": {
       "yes_count": 56,
       "abstain_count": 11,
@@ -32,6 +34,7 @@
     "type": "CommunityPoolSpend",
     "topic": "Community Support",
     "status": "PASSED",
+    "submit_time": "1729884310482",
     "final_tally_result": {
       "yes_count": 51,
       "abstain_count": 16,
@@ -45,6 +48,7 @@
     "type": "CommunityPoolSpend",
     "topic": "Development Fund",
     "status": "PASSED",
+    "submit_time": "1729043826731",
     "final_tally_result": {
       "yes_count": 55,
       "abstain_count": 6,
@@ -58,6 +62,7 @@
     "type": "CommunityPoolSpend",
     "topic": "Community Support",
     "status": "PASSED",
+    "submit_time": "1727451658528",
     "final_tally_result": {
       "yes_count": 58,
       "abstain_count": 5,
@@ -71,6 +76,7 @@
     "type": "CommunityPoolSpend",
     "topic": "Community Support",
     "status": "PASSED",
+    "submit_time": "1726166628417",
     "final_tally_result": {
       "yes_count": 73,
       "no_vote_count": 27
@@ -83,6 +89,7 @@
     "type": "ParameterChange",
     "topic": "Staking Parameters",
     "status": "PASSED",
+    "submit_time": "1726102590166",
     "final_tally_result": {
       "yes_count": 75,
       "no_vote_count": 25
@@ -95,6 +102,7 @@
     "type": "CommunityPoolSpend",
     "topic": "Community Support",
     "status": "REJECTED",
+    "submit_time": "1725392336147",
     "final_tally_result": {
       "no_count": 50,
       "abstain_count": 9,
@@ -109,6 +117,7 @@
     "type": "ParameterChange",
     "topic": "Fee Adjustment",
     "status": "PASSED",
+    "submit_time": "1722528481771",
     "final_tally_result": {
       "yes_count": 69,
       "abstain_count": 4,
@@ -123,6 +132,7 @@
     "type": "CommunityPoolSpend",
     "topic": "Community Support",
     "status": "PASSED",
+    "submit_time": "1722524099782",
     "final_tally_result": {
       "no_count": 1,
       "yes_count": 66,
@@ -137,6 +147,7 @@
     "type": "IBCRelated",
     "topic": "Client Update",
     "status": "PASSED",
+    "submit_time": "1720684135405",
     "final_tally_result": {
       "yes_count": 69,
       "no_count": 1,
@@ -151,6 +162,7 @@
     "type": "CommunityPoolSpend",
     "topic": "Infrastructure",
     "status": "PASSED",
+    "submit_time": "1720275679201",
     "final_tally_result": {
       "yes_count": 57,
       "abstain_count": 10,
@@ -165,6 +177,7 @@
     "type": "CommunityPoolSpend",
     "topic": "Development Fund",
     "status": "PASSED",
+    "submit_time": "1719257847711",
     "final_tally_result": {
       "yes_count": 66,
       "abstain_count": 4,
@@ -178,6 +191,7 @@
     "type": "CommunityPoolSpend",
     "topic": "Community Support",
     "status": "PASSED",
+    "submit_time": "1719246466312",
     "final_tally_result": {
       "yes_count": 66,
       "abstain_count": 4,
@@ -191,6 +205,7 @@
     "type": "CommunityPoolSpend",
     "topic": "Development Fund",
     "status": "PASSED",
+    "submit_time": "1718716870601",
     "final_tally_result": {
       "yes_count": 67,
       "abstain_count": 4,
@@ -204,6 +219,7 @@
     "type": "SoftwareUpgrade",
     "topic": "Major Release",
     "status": "PASSED",
+    "submit_time": "1717420306364",
     "final_tally_result": {
       "yes_count": 73,
       "no_vote_count": 27
@@ -216,6 +232,7 @@
     "type": "SoftwareUpgrade",
     "topic": "Major Release",
     "status": "PASSED",
+    "submit_time": "1713963628520",
     "final_tally_result": {
       "yes_count": 80,
       "no_vote_count": 20
@@ -228,6 +245,7 @@
     "type": "CommunityPoolSpend",
     "topic": "Community Support",
     "status": "PASSED",
+    "submit_time": "1712338675750",
     "final_tally_result": {
       "yes_count": 59,
       "abstain_count": 6,
@@ -241,6 +259,7 @@
     "type": "CommunityPoolSpend",
     "topic": "Development Fund",
     "status": "PASSED",
+    "submit_time": "1711766909497",
     "final_tally_result": {
       "yes_count": 63,
       "abstain_count": 5,
@@ -254,6 +273,7 @@
     "type": "CommunityPoolSpend",
     "topic": "Development Fund",
     "status": "REJECTED",
+    "submit_time": "1711282007349",
     "final_tally_result": {
       "no_count": 58,
       "abstain_count": 12,
@@ -268,6 +288,7 @@
     "type": "CommunityPoolSpend",
     "topic": "Ecosystem Growth",
     "status": "PASSED",
+    "submit_time": "1711137783842",
     "final_tally_result": {
       "yes_count": 61,
       "no_count": 5,
@@ -282,6 +303,7 @@
     "type": "IBCRelated",
     "topic": "Client Update",
     "status": "PASSED",
+    "submit_time": "1710157396420",
     "final_tally_result": {
       "yes_count": 69,
       "abstain_count": 1,
@@ -295,6 +317,7 @@
     "type": "CommunityPoolSpend",
     "topic": "Ecosystem Growth",
     "status": "PASSED",
+    "submit_time": "1709908432954",
     "final_tally_result": {
       "yes_count": 70,
       "abstain_count": 3,
@@ -308,6 +331,7 @@
     "type": "SoftwareUpgrade",
     "topic": "Major Release",
     "status": "PASSED",
+    "submit_time": "1709649822916",
     "final_tally_result": {
       "yes_count": 78,
       "no_vote_count": 22
@@ -320,6 +344,7 @@
     "type": "ParameterChange",
     "topic": "Staking Parameters",
     "status": "PASSED",
+    "submit_time": "1709598711710",
     "final_tally_result": {
       "yes_count": 76,
       "abstain_count": 1,
@@ -333,6 +358,7 @@
     "type": "CommunityPoolSpend",
     "topic": "Community Support",
     "status": "PASSED",
+    "submit_time": "1708555940619",
     "final_tally_result": {
       "yes_count": 64,
       "abstain_count": 4,
@@ -346,6 +372,7 @@
     "type": "CommunityPoolSpend",
     "topic": "Development Fund",
     "status": "PASSED",
+    "submit_time": "1706899166512",
     "final_tally_result": {
       "yes_count": 77,
       "abstain_count": 2,
@@ -359,6 +386,7 @@
     "type": "CommunityPoolSpend",
     "topic": "Community Support",
     "status": "PASSED",
+    "submit_time": "1705430879340",
     "final_tally_result": {
       "yes_count": 67,
       "abstain_count": 1,
@@ -372,6 +400,7 @@
     "type": "CommunityPoolSpend",
     "topic": "Development Fund",
     "status": "PASSED",
+    "submit_time": "1704731294011",
     "final_tally_result": {
       "yes_count": 61,
       "abstain_count": 14,
@@ -385,6 +414,7 @@
     "type": "CommunityPoolSpend",
     "topic": "Community Support",
     "status": "PASSED",
+    "submit_time": "1704313723383",
     "final_tally_result": {
       "yes_count": 70,
       "abstain_count": 5,
@@ -398,6 +428,7 @@
     "type": "CommunityPoolSpend",
     "topic": "Community Support",
     "status": "PASSED",
+    "submit_time": "1704209115271",
     "final_tally_result": {
       "yes_count": 72,
       "abstain_count": 5,
@@ -412,6 +443,7 @@
     "type": "ParameterChange",
     "topic": "Economic Parameters",
     "status": "PASSED",
+    "submit_time": "1704034151805",
     "final_tally_result": {
       "yes_count": 72,
       "abstain_count": 2,
@@ -425,6 +457,7 @@
     "type": "ParameterChange",
     "topic": "Economic Parameters",
     "status": "PASSED",
+    "submit_time": "1703617065433",
     "final_tally_result": {
       "yes_count": 65,
       "abstain_count": 3,
@@ -438,6 +471,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "PASSED",
+    "submit_time": "1701207625663",
     "final_tally_result": {
       "yes_count": 59,
       "abstain_count": 3,
@@ -451,6 +485,7 @@
     "type": "SoftwareUpgrade",
     "topic": "Major Release",
     "status": "PASSED",
+    "submit_time": "1700522557151",
     "final_tally_result": {
       "yes_count": 77,
       "no_vote_count": 23
@@ -463,6 +498,7 @@
     "type": "SoftwareUpgrade",
     "topic": "Major Release",
     "status": "PASSED",
+    "submit_time": "1699581181649",
     "final_tally_result": {
       "yes_count": 76,
       "abstain_count": 1,
@@ -476,6 +512,7 @@
     "type": "CommunityPoolSpend",
     "topic": "Infrastructure",
     "status": "REJECTED",
+    "submit_time": "1698936693951",
     "final_tally_result": {
       "no_count": 26,
       "yes_count": 38,
@@ -490,6 +527,7 @@
     "type": "CommunityPoolSpend",
     "topic": "Community Support",
     "status": "REJECTED",
+    "submit_time": "1698385985908",
     "final_tally_result": {
       "no_count": 28,
       "yes_count": 3,
@@ -504,6 +542,7 @@
     "type": "CommunityPoolSpend",
     "topic": "Development Fund",
     "status": "PASSED",
+    "submit_time": "1696540041373",
     "final_tally_result": {
       "yes_count": 56,
       "abstain_count": 14,
@@ -517,6 +556,7 @@
     "type": "ParameterChange",
     "topic": "Fee Adjustment",
     "status": "REJECTED",
+    "submit_time": "1696161497633",
     "final_tally_result": {
       "no_count": 47,
       "yes_count": 17,
@@ -532,6 +572,7 @@
     "type": "CommunityPoolSpend",
     "topic": "Community Support",
     "status": "PASSED",
+    "submit_time": "1695415225833",
     "final_tally_result": {
       "yes_count": 61,
       "abstain_count": 4,
@@ -545,6 +586,7 @@
     "type": "SoftwareUpgrade",
     "topic": "Major Release",
     "status": "PASSED",
+    "submit_time": "1695162830603",
     "final_tally_result": {
       "yes_count": 70,
       "no_vote_count": 30
@@ -557,6 +599,7 @@
     "type": "CommunityPoolSpend",
     "topic": "Development Fund",
     "status": "PASSED",
+    "submit_time": "1694341902678",
     "final_tally_result": {
       "yes_count": 57,
       "abstain_count": 7,
@@ -570,6 +613,7 @@
     "type": "CommunityPoolSpend",
     "topic": "Ecosystem Growth",
     "status": "PASSED",
+    "submit_time": "1693936635835",
     "final_tally_result": {
       "yes_count": 69,
       "abstain_count": 4,
@@ -583,6 +627,7 @@
     "type": "ParameterChange",
     "topic": "Staking Parameters",
     "status": "PASSED",
+    "submit_time": "1693509208457",
     "final_tally_result": {
       "yes_count": 70,
       "abstain_count": 1,
@@ -596,6 +641,7 @@
     "type": "SoftwareUpgrade",
     "topic": "Major Release",
     "status": "PASSED",
+    "submit_time": "1692748882530",
     "final_tally_result": {
       "yes_count": 84,
       "no_vote_count": 16
@@ -608,6 +654,7 @@
     "type": "SoftwareUpgrade",
     "topic": "Major Release",
     "status": "REJECTED",
+    "submit_time": "1692746932684",
     "final_tally_result": {
       "no_count": 63,
       "no_with_veto_count": 5,
@@ -622,6 +669,7 @@
     "type": "CommunityPoolSpend",
     "topic": "Ecosystem Growth",
     "status": "PASSED",
+    "submit_time": "1691529161169",
     "final_tally_result": {
       "yes_count": 70,
       "abstain_count": 4,
@@ -635,6 +683,7 @@
     "type": "ParameterChange",
     "topic": "Staking Parameters",
     "status": "PASSED",
+    "submit_time": "1689871274244",
     "final_tally_result": {
       "yes_count": 63,
       "abstain_count": 5,
@@ -648,6 +697,7 @@
     "type": "CommunityPoolSpend",
     "topic": "Community Support",
     "status": "PASSED",
+    "submit_time": "1688749199047",
     "final_tally_result": {
       "yes_count": 55,
       "abstain_count": 5,
@@ -661,6 +711,7 @@
     "type": "CommunityPoolSpend",
     "topic": "Development Fund",
     "status": "PASSED",
+    "submit_time": "1687836257322",
     "final_tally_result": {
       "abstain_count": 6,
       "yes_count": 48,
@@ -674,6 +725,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "REJECTED",
+    "submit_time": "1683121537864",
     "final_tally_result": {
       "no_with_veto_count": 36,
       "no_vote_count": 64
@@ -686,6 +738,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "PASSED",
+    "submit_time": "1681171010946",
     "final_tally_result": {
       "no_count": 6,
       "yes_count": 50,
@@ -700,6 +753,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "PASSED",
+    "submit_time": "1681170698907",
     "final_tally_result": {
       "yes_count": 59,
       "no_count": 1,
@@ -714,6 +768,7 @@
     "type": "ParameterChange",
     "topic": "Fee Adjustment",
     "status": "PASSED",
+    "submit_time": "1680720638625",
     "final_tally_result": {
       "yes_count": 60,
       "abstain_count": 3,
@@ -727,6 +782,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "REJECTED",
+    "submit_time": "1680474417670",
     "final_tally_result": {
       "no_with_veto_count": 30,
       "no_vote_count": 70
@@ -739,6 +795,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "PASSED",
+    "submit_time": "1680043916037",
     "final_tally_result": {
       "yes_count": 50,
       "no_count": 6,
@@ -753,6 +810,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "PASSED",
+    "submit_time": "1680037609796",
     "final_tally_result": {
       "yes_count": 60,
       "abstain_count": 5,
@@ -766,6 +824,7 @@
     "type": "CommunityPoolSpend",
     "topic": "Community Support",
     "status": "REJECTED",
+    "submit_time": "1680016384198",
     "final_tally_result": {
       "no_count": 32,
       "yes_count": 12,
@@ -780,6 +839,7 @@
     "type": "CommunityPoolSpend",
     "topic": "Community Support",
     "status": "PASSED",
+    "submit_time": "1679520337105",
     "final_tally_result": {
       "yes_count": 55,
       "abstain_count": 7,
@@ -793,6 +853,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "REJECTED",
+    "submit_time": "1679266083825",
     "final_tally_result": {
       "no_with_veto_count": 36,
       "no_vote_count": 64
@@ -805,6 +866,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "REJECTED",
+    "submit_time": "1678812661226",
     "final_tally_result": {
       "no_with_veto_count": 34,
       "no_vote_count": 66
@@ -817,6 +879,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "REJECTED",
+    "submit_time": "1678502783423",
     "final_tally_result": {
       "no_with_veto_count": 31,
       "no_vote_count": 69
@@ -829,6 +892,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "PASSED",
+    "submit_time": "1675691638789",
     "final_tally_result": {
       "abstain_count": 9,
       "yes_count": 35,
@@ -843,6 +907,7 @@
     "type": "CommunityPoolSpend",
     "topic": "Community Support",
     "status": "PASSED",
+    "submit_time": "1675366436195",
     "final_tally_result": {
       "yes_count": 58,
       "abstain_count": 4,
@@ -856,6 +921,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "REJECTED",
+    "submit_time": "1672736138659",
     "final_tally_result": {
       "no_count": 39,
       "yes_count": 14,
@@ -871,6 +937,7 @@
     "type": "ParameterChange",
     "topic": "Protocol Configuration",
     "status": "PASSED",
+    "submit_time": "1671134543106",
     "final_tally_result": {
       "yes_count": 55,
       "no_count": 1,
@@ -884,6 +951,7 @@
     "type": "SoftwareUpgrade",
     "topic": "Major Release",
     "status": "PASSED",
+    "submit_time": "1670959671127",
     "final_tally_result": {
       "yes_count": 72,
       "no_vote_count": 28
@@ -896,6 +964,7 @@
     "type": "CommunityPoolSpend",
     "topic": "Community Support",
     "status": "PASSED",
+    "submit_time": "1669655664191",
     "final_tally_result": {
       "yes_count": 51,
       "abstain_count": 2,
@@ -909,6 +978,7 @@
     "type": "SoftwareUpgrade",
     "topic": "Major Release",
     "status": "PASSED",
+    "submit_time": "1667911928029",
     "final_tally_result": {
       "yes_count": 72,
       "no_vote_count": 28
@@ -921,6 +991,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "PASSED",
+    "submit_time": "1662830355906",
     "final_tally_result": {
       "yes_count": 34,
       "abstain_count": 7,
@@ -935,6 +1006,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "PASSED",
+    "submit_time": "1660688789289",
     "final_tally_result": {
       "abstain_count": 6,
       "yes_count": 44,
@@ -948,6 +1020,7 @@
     "type": "CommunityPoolSpend",
     "topic": "Development Fund",
     "status": "PASSED",
+    "submit_time": "1656963197742",
     "final_tally_result": {
       "yes_count": 59,
       "no_vote_count": 41
@@ -960,6 +1033,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "PASSED",
+    "submit_time": "1656703600525",
     "final_tally_result": {
       "yes_count": 43,
       "abstain_count": 9,
@@ -974,6 +1048,7 @@
     "type": "CommunityPoolSpend",
     "topic": "Community Support",
     "status": "PASSED",
+    "submit_time": "1656643319817",
     "final_tally_result": {
       "abstain_count": 19,
       "yes_count": 32,
@@ -988,6 +1063,7 @@
     "type": "ParameterChange",
     "topic": "Fee Adjustment",
     "status": "PASSED",
+    "submit_time": "1655530262490",
     "final_tally_result": {
       "yes_count": 52,
       "abstain_count": 1,
@@ -1001,6 +1077,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "PASSED",
+    "submit_time": "1655086901718",
     "final_tally_result": {
       "yes_count": 50,
       "abstain_count": 4,
@@ -1015,6 +1092,7 @@
     "type": "SoftwareUpgrade",
     "topic": "Feature Addition",
     "status": "PASSED",
+    "submit_time": "1650129507961",
     "final_tally_result": {
       "yes_count": 71,
       "abstain_count": 1,
@@ -1028,6 +1106,7 @@
     "type": "ParameterChange",
     "topic": "Governance Settings",
     "status": "PASSED",
+    "submit_time": "1648325329609",
     "final_tally_result": {
       "yes_count": 63,
       "no_vote_count": 37
@@ -1040,6 +1119,7 @@
     "type": "CommunityPoolSpend",
     "topic": "Development Fund",
     "status": "PASSED",
+    "submit_time": "1644964427783",
     "final_tally_result": {
       "abstain_count": 5,
       "yes_count": 46,
@@ -1053,6 +1133,7 @@
     "type": "ParameterChange",
     "topic": "Economic Parameters",
     "status": "PASSED",
+    "submit_time": "1641417666634",
     "final_tally_result": {
       "yes_count": 75,
       "abstain_count": 1,
@@ -1066,6 +1147,7 @@
     "type": "ParameterChange",
     "topic": "Staking Parameters",
     "status": "PASSED",
+    "submit_time": "1639851530744",
     "final_tally_result": {
       "yes_count": 32,
       "no_count": 12,
@@ -1079,6 +1161,7 @@
     "type": "ParameterChange",
     "topic": "Fee Adjustment",
     "status": "PASSED",
+    "submit_time": "1633527017120",
     "final_tally_result": {
       "yes_count": 44,
       "no_vote_count": 56
@@ -1091,6 +1174,7 @@
     "type": "ParameterChange",
     "topic": "Fee Adjustment",
     "status": "PASSED",
+    "submit_time": "1630346449159",
     "final_tally_result": {
       "yes_count": 50,
       "no_vote_count": 50
@@ -1103,6 +1187,7 @@
     "type": "ParameterChange",
     "topic": "Fee Adjustment",
     "status": "REJECTED",
+    "submit_time": "1630014236713",
     "final_tally_result": {
       "abstain_count": 1,
       "no_count": 26,
@@ -1117,6 +1202,7 @@
     "type": "ParameterChange",
     "topic": "Fee Adjustment",
     "status": "PASSED",
+    "submit_time": "1627990149914",
     "final_tally_result": {
       "yes_count": 54,
       "no_vote_count": 46
@@ -1129,6 +1215,7 @@
     "type": "CommunityPoolSpend",
     "topic": "Community Support",
     "status": "PASSED",
+    "submit_time": "1626734240608",
     "final_tally_result": {
       "yes_count": 34,
       "no_count": 19,
@@ -1143,6 +1230,7 @@
     "type": "ParameterChange",
     "topic": "Economic Parameters",
     "status": "PASSED",
+    "submit_time": "1625247215118",
     "final_tally_result": {
       "yes_count": 66,
       "no_vote_count": 34
@@ -1155,6 +1243,7 @@
     "type": "ParameterChange",
     "topic": "Fee Adjustment",
     "status": "PASSED",
+    "submit_time": "1623836738856",
     "final_tally_result": {
       "yes_count": 63,
       "abstain_count": 1,
@@ -1168,6 +1257,7 @@
     "type": "ParameterChange",
     "topic": "Protocol Configuration",
     "status": "PASSED",
+    "submit_time": "1618031393224",
     "final_tally_result": {
       "yes_count": 62,
       "no_vote_count": 38
@@ -1180,6 +1270,7 @@
     "type": "SoftwareUpgrade",
     "topic": "Feature Addition",
     "status": "PASSED",
+    "submit_time": "1616567585481",
     "final_tally_result": {
       "yes_count": 64,
       "no_vote_count": 36
@@ -1192,6 +1283,7 @@
     "type": "ParameterChange",
     "topic": "Staking Parameters",
     "status": "PASSED",
+    "submit_time": "1615312958483",
     "final_tally_result": {
       "yes_count": 59,
       "no_vote_count": 41
@@ -1204,6 +1296,7 @@
     "type": "TextProposal",
     "topic": "Network Policy",
     "status": "PASSED",
+    "submit_time": "1613749825910",
     "final_tally_result": {
       "no_vote_count": 100
     }
@@ -1215,6 +1308,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "PASSED",
+    "submit_time": "1612367946910",
     "final_tally_result": {
       "no_vote_count": 100
     }
@@ -1226,6 +1320,7 @@
     "type": "ParameterChange",
     "topic": "Fee Adjustment",
     "status": "PASSED",
+    "submit_time": "1605745496405",
     "final_tally_result": {
       "no_vote_count": 100
     }

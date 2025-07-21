@@ -252,13 +252,13 @@ export default function ValidatorHeatmap() {
     
     const validators = sortedValidators.map((v, index) => ({ address: v.validator_address, name: v.moniker || 'Unknown', index, isPinnedAndFilteredOut: v.isPinnedAndFilteredOut }))
 
-    if (filteredProposals.length > 0) {
-      console.log('--- FINAL PROPOSAL DEBUG ---');
-      console.log('Complete structure of the first proposal object:', filteredProposals[0]);
-    }
-
     const proposalsWithTally = filteredProposals
-      .sort((a, b) => parseInt(a.proposal_id, 10) - parseInt(b.proposal_id, 10))
+      .sort((a, b) => {
+        const timeA = a.submit_time ? new Date(Number(a.submit_time)).getTime() : 0;
+        const timeB = b.submit_time ? new Date(Number(b.submit_time)).getTime() : 0;
+        if (!timeA || !timeB) return 0;
+        return timeA - timeB;
+      })
       .map((p: Proposal, index: number) => {
         const tally = p.final_tally_result || {};
         const totalVotes = Object.values(tally).reduce((sum, count) => sum + count, 0);

@@ -6,6 +6,7 @@
     "type": "PoolData",
     "topic": "Data Protocol",
     "status": "PASSED",
+    "submit_time": "1729685503507",
     "final_tally_result": {
       "yes_count": 30,
       "abstain_count": 1,
@@ -19,6 +20,7 @@
     "type": "ParameterChange",
     "topic": "Protocol Configuration",
     "status": "PASSED",
+    "submit_time": "1722523253777",
     "final_tally_result": {
       "yes_count": 33,
       "abstain_count": 1,
@@ -32,6 +34,7 @@
     "type": "ParameterChange",
     "topic": "Protocol Configuration",
     "status": "PASSED",
+    "submit_time": "1721925183284",
     "final_tally_result": {
       "yes_count": 35,
       "abstain_count": 1,
@@ -45,6 +48,7 @@
     "type": "PoolData",
     "topic": "Data Protocol",
     "status": "PASSED",
+    "submit_time": "1721744767304",
     "final_tally_result": {
       "yes_count": 10,
       "no_count": 10,
@@ -59,6 +63,7 @@
     "type": "Unknown",
     "topic": "Unclassified",
     "status": "REJECTED",
+    "submit_time": "1721313831772",
     "final_tally_result": {
       "yes_count": 47,
       "abstain_count": 1,
@@ -72,6 +77,7 @@
     "type": "SoftwareUpgrade",
     "topic": "Major Release",
     "status": "PASSED",
+    "submit_time": "1721054095536",
     "final_tally_result": {
       "abstain_count": 19,
       "yes_count": 16,
@@ -86,6 +92,7 @@
     "type": "Unknown",
     "topic": "Unclassified",
     "status": "PASSED",
+    "submit_time": "1718957582436",
     "final_tally_result": {
       "abstain_count": 15,
       "yes_count": 24,
@@ -100,6 +107,7 @@
     "type": "Unknown",
     "topic": "Unclassified",
     "status": "PASSED",
+    "submit_time": "1718368955320",
     "final_tally_result": {
       "abstain_count": 24,
       "no_count": 10,
@@ -114,6 +122,7 @@
     "type": "Unknown",
     "topic": "Unclassified",
     "status": "REJECTED",
+    "submit_time": "1718367967822",
     "final_tally_result": {
       "no_with_veto_count": 1,
       "yes_count": 19,
@@ -129,6 +138,7 @@
     "type": "Unknown",
     "topic": "Unclassified",
     "status": "PASSED",
+    "submit_time": "1718110213191",
     "final_tally_result": {
       "abstain_count": 16,
       "yes_count": 26,
@@ -143,6 +153,7 @@
     "type": "Unknown",
     "topic": "Unclassified",
     "status": "PASSED",
+    "submit_time": "1717750292769",
     "final_tally_result": {
       "yes_count": 42,
       "abstain_count": 10,
@@ -156,6 +167,7 @@
     "type": "ParameterChange",
     "topic": "Fee Adjustment",
     "status": "PASSED",
+    "submit_time": "1715611046049",
     "final_tally_result": {
       "yes_count": 43,
       "abstain_count": 9,
@@ -169,6 +181,7 @@
     "type": "Unknown",
     "topic": "Unclassified",
     "status": "PASSED",
+    "submit_time": "1715090926849",
     "final_tally_result": {
       "yes_count": 41,
       "abstain_count": 10,
@@ -182,6 +195,7 @@
     "type": "Unknown",
     "topic": "Miscellaneous",
     "status": "PASSED",
+    "submit_time": "1712830332776",
     "final_tally_result": {
       "yes_count": 58,
       "abstain_count": 1,
@@ -195,6 +209,7 @@
     "type": "ParameterChange",
     "topic": "Fee Adjustment",
     "status": "PASSED",
+    "submit_time": "1711644134948",
     "final_tally_result": {
       "yes_count": 52,
       "abstain_count": 9,
@@ -208,6 +223,7 @@
     "type": "SoftwareUpgrade",
     "topic": "Major Release",
     "status": "PASSED",
+    "submit_time": "1711383054869",
     "final_tally_result": {
       "yes_count": 49,
       "abstain_count": 8,
@@ -221,6 +237,7 @@
     "type": "PoolData",
     "topic": "Data Protocol",
     "status": "PASSED",
+    "submit_time": "1709734427698",
     "final_tally_result": {
       "yes_count": 50,
       "abstain_count": 10,
@@ -234,6 +251,7 @@
     "type": "ParameterChange",
     "topic": "Fee Adjustment",
     "status": "PASSED",
+    "submit_time": "1709715988770",
     "final_tally_result": {
       "yes_count": 40,
       "abstain_count": 11,
@@ -247,6 +265,7 @@
     "type": "PoolData",
     "topic": "Data Protocol",
     "status": "PASSED",
+    "submit_time": "1708525163490",
     "final_tally_result": {
       "yes_count": 40,
       "abstain_count": 9,
@@ -260,6 +279,7 @@
     "type": "SoftwareUpgrade",
     "topic": "Feature Addition",
     "status": "PASSED",
+    "submit_time": "1701871584738",
     "final_tally_result": {
       "yes_count": 50,
       "abstain_count": 10,
@@ -273,6 +293,7 @@
     "type": "ParameterChange",
     "topic": "Fee Adjustment",
     "status": "PASSED",
+    "submit_time": "1701079314417",
     "final_tally_result": {
       "yes_count": 55,
       "abstain_count": 7,
@@ -286,6 +307,7 @@
     "type": "SoftwareUpgrade",
     "topic": "Major Release",
     "status": "PASSED",
+    "submit_time": "1700841185924",
     "final_tally_result": {
       "yes_count": 40,
       "abstain_count": 10,
@@ -299,6 +321,7 @@
     "type": "PoolData",
     "topic": "Data Protocol",
     "status": "PASSED",
+    "submit_time": "1700143181624",
     "final_tally_result": {
       "yes_count": 33,
       "abstain_count": 10,
@@ -312,6 +335,7 @@
     "type": "PoolData",
     "topic": "Data Protocol",
     "status": "PASSED",
+    "submit_time": "1699001737146",
     "final_tally_result": {
       "yes_count": 46,
       "abstain_count": 10,
@@ -325,6 +349,7 @@
     "type": "SoftwareUpgrade",
     "topic": "Major Release",
     "status": "PASSED",
+    "submit_time": "1698412818246",
     "final_tally_result": {
       "yes_count": 46,
       "abstain_count": 9,
@@ -338,6 +363,7 @@
     "type": "PoolData",
     "topic": "Data Protocol",
     "status": "PASSED",
+    "submit_time": "1698333921569",
     "final_tally_result": {
       "yes_count": 43,
       "abstain_count": 7,
@@ -351,6 +377,7 @@
     "type": "SoftwareUpgrade",
     "topic": "Major Release",
     "status": "PASSED",
+    "submit_time": "1697200110735",
     "final_tally_result": {
       "yes_count": 44,
       "abstain_count": 10,
@@ -364,6 +391,7 @@
     "type": "ParameterChange",
     "topic": "Fee Adjustment",
     "status": "PASSED",
+    "submit_time": "1695999144205",
     "final_tally_result": {
       "yes_count": 40,
       "abstain_count": 13,
@@ -377,6 +405,7 @@
     "type": "PoolData",
     "topic": "Data Protocol",
     "status": "PASSED",
+    "submit_time": "1695211757054",
     "final_tally_result": {
       "yes_count": 47,
       "abstain_count": 9,
@@ -390,6 +419,7 @@
     "type": "PoolData",
     "topic": "Data Protocol",
     "status": "PASSED",
+    "submit_time": "1694433904343",
     "final_tally_result": {
       "yes_count": 48,
       "abstain_count": 9,
@@ -404,6 +434,7 @@
     "type": "PoolData",
     "topic": "Data Protocol",
     "status": "PASSED",
+    "submit_time": "1693396823545",
     "final_tally_result": {
       "abstain_count": 12,
       "yes_count": 52,
@@ -418,6 +449,7 @@
     "type": "ParameterChange",
     "topic": "Protocol Configuration",
     "status": "PASSED",
+    "submit_time": "1692014746744",
     "final_tally_result": {
       "yes_count": 56,
       "abstain_count": 9,
@@ -432,6 +464,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "PASSED",
+    "submit_time": "1690897878361",
     "final_tally_result": {
       "yes_count": 46,
       "no_count": 1,
@@ -446,6 +479,7 @@
     "type": "PoolData",
     "topic": "Data Protocol",
     "status": "PASSED",
+    "submit_time": "1690283834679",
     "final_tally_result": {
       "yes_count": 50,
       "abstain_count": 6,
@@ -459,6 +493,7 @@
     "type": "SoftwareUpgrade",
     "topic": "Major Release",
     "status": "PASSED",
+    "submit_time": "1689954655265",
     "final_tally_result": {
       "yes_count": 52,
       "abstain_count": 10,
@@ -473,6 +508,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "PASSED",
+    "submit_time": "1687790872072",
     "final_tally_result": {
       "yes_count": 51,
       "abstain_count": 7,
@@ -486,6 +522,7 @@
     "type": "ParameterChange",
     "topic": "Staking Parameters",
     "status": "PASSED",
+    "submit_time": "1686310024524",
     "final_tally_result": {
       "no_count": 2,
       "yes_count": 67,
@@ -499,6 +536,7 @@
     "type": "PoolData",
     "topic": "Data Protocol",
     "status": "PASSED",
+    "submit_time": "1685537498788",
     "final_tally_result": {
       "yes_count": 66,
       "abstain_count": 2,
@@ -513,6 +551,7 @@
     "type": "SoftwareUpgrade",
     "topic": "Major Release",
     "status": "PASSED",
+    "submit_time": "1684764947433",
     "final_tally_result": {
       "yes_count": 69,
       "no_count": 2,
@@ -526,6 +565,7 @@
     "type": "SoftwareUpgrade",
     "topic": "Major Release",
     "status": "PASSED",
+    "submit_time": "1682931026859",
     "final_tally_result": {
       "yes_count": 87,
       "abstain_count": 2,
@@ -541,6 +581,7 @@
     "type": "ParameterChange",
     "topic": "Economic Parameters",
     "status": "PASSED",
+    "submit_time": "1678812147926",
     "final_tally_result": {
       "yes_count": 29,
       "no_vote_count": 71
@@ -553,6 +594,7 @@
     "type": "ParameterChange",
     "topic": "Staking Parameters",
     "status": "PASSED",
+    "submit_time": "1678807373293",
     "final_tally_result": {
       "yes_count": 28,
       "abstain_count": 5,

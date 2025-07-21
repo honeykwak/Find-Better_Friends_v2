@@ -6,6 +6,7 @@
     "type": "SmartContract",
     "topic": "Contract Deployment",
     "status": "PASSED",
+    "submit_time": "1730911046486",
     "final_tally_result": {
       "yes_count": 74,
       "abstain_count": 1,
@@ -19,6 +20,7 @@
     "type": "SmartContract",
     "topic": "Feature Enhancement",
     "status": "PASSED",
+    "submit_time": "1730397058903",
     "final_tally_result": {
       "yes_count": 73,
       "abstain_count": 1,
@@ -32,6 +34,7 @@
     "type": "IBCRelated",
     "topic": "IBC Security",
     "status": "PASSED",
+    "submit_time": "1730292386361",
     "final_tally_result": {
       "yes_count": 71,
       "abstain_count": 5,
@@ -45,6 +48,7 @@
     "type": "SmartContract",
     "topic": "Contract Deployment",
     "status": "PASSED",
+    "submit_time": "1729786286418",
     "final_tally_result": {
       "yes_count": 76,
       "abstain_count": 2,
@@ -58,6 +62,7 @@
     "type": "SmartContract",
     "topic": "Feature Enhancement",
     "status": "PASSED",
+    "submit_time": "1729785925784",
     "final_tally_result": {
       "yes_count": 77,
       "abstain_count": 2,
@@ -71,6 +76,7 @@
     "type": "SmartContract",
     "topic": "Contract Upgrade",
     "status": "PASSED",
+    "submit_time": "1729095897545",
     "final_tally_result": {
       "yes_count": 77,
       "abstain_count": 3,
@@ -84,6 +90,7 @@
     "type": "SmartContract",
     "topic": "Contract Deployment",
     "status": "PASSED",
+    "submit_time": "1728919794840",
     "final_tally_result": {
       "yes_count": 77,
       "abstain_count": 3,
@@ -97,6 +104,7 @@
     "type": "CommunityPoolSpend",
     "topic": "Community Support",
     "status": "PASSED",
+    "submit_time": "1727881298226",
     "final_tally_result": {
       "yes_count": 66,
       "abstain_count": 10,
@@ -110,6 +118,7 @@
     "type": "ParameterChange",
     "topic": "Protocol Configuration",
     "status": "PASSED",
+    "submit_time": "1727681559733",
     "final_tally_result": {
       "yes_count": 36,
       "abstain_count": 39,
@@ -124,6 +133,7 @@
     "type": "SmartContract",
     "topic": "Feature Enhancement",
     "status": "PASSED",
+    "submit_time": "1727617479762",
     "final_tally_result": {
       "yes_count": 76,
       "abstain_count": 7,
@@ -137,6 +147,7 @@
     "type": "ParameterChange",
     "topic": "Protocol Configuration",
     "status": "PASSED",
+    "submit_time": "1727457096304",
     "final_tally_result": {
       "yes_count": 82,
       "abstain_count": 4,
@@ -150,6 +161,7 @@
     "type": "CommunityPoolSpend",
     "topic": "Community Support",
     "status": "PASSED",
+    "submit_time": "1727371658529",
     "final_tally_result": {
       "yes_count": 77,
       "abstain_count": 11,
@@ -164,6 +176,7 @@
     "type": "CommunityPoolSpend",
     "topic": "Community Support",
     "status": "PASSED",
+    "submit_time": "1727371024361",
     "final_tally_result": {
       "yes_count": 78,
       "abstain_count": 10,
@@ -178,6 +191,7 @@
     "type": "Unknown",
     "topic": "Unclassified",
     "status": "PASSED",
+    "submit_time": "1727370343287",
     "final_tally_result": {
       "yes_count": 79,
       "abstain_count": 9,
@@ -192,6 +206,7 @@
     "type": "PoolIncentives",
     "topic": "Liquidity Mining",
     "status": "PASSED",
+    "submit_time": "1727272803653",
     "final_tally_result": {
       "yes_count": 80,
       "abstain_count": 8,
@@ -205,6 +220,7 @@
     "type": "CommunityPoolSpend",
     "topic": "Community Support",
     "status": "PASSED",
+    "submit_time": "1727190999190",
     "final_tally_result": {
       "abstain_count": 8,
       "yes_count": 78,
@@ -218,6 +234,7 @@
     "type": "CommunityPoolSpend",
     "topic": "Community Support",
     "status": "FAILED",
+    "submit_time": "1726659150451",
     "final_tally_result": {
       "yes_count": 73,
       "abstain_count": 8,
@@ -231,6 +248,7 @@
     "type": "CommunityPoolSpend",
     "topic": "Community Support",
     "status": "PASSED",
+    "submit_time": "1726591645190",
     "final_tally_result": {
       "abstain_count": 37,
       "yes_count": 27,
@@ -245,6 +263,7 @@
     "type": "Unknown",
     "topic": "Unclassified",
     "status": "REJECTED",
+    "submit_time": "1726461361276",
     "final_tally_result": {
       "no_with_veto_count": 73,
       "no_count": 1,
@@ -259,6 +278,7 @@
     "type": "Unknown",
     "topic": "Unclassified",
     "status": "REJECTED",
+    "submit_time": "1726308215934",
     "final_tally_result": {
       "no_with_veto_count": 74,
       "no_count": 4,
@@ -273,6 +293,7 @@
     "type": "SoftwareUpgrade",
     "topic": "Major Release",
     "status": "PASSED",
+    "submit_time": "1726220623446",
     "final_tally_result": {
       "yes_count": 91,
       "no_vote_count": 59
@@ -285,6 +306,7 @@
     "type": "Unknown",
     "topic": "Unclassified",
     "status": "PASSED",
+    "submit_time": "1725992607158",
     "final_tally_result": {
       "yes_count": 80,
       "abstain_count": 7,
@@ -298,6 +320,7 @@
     "type": "SmartContract",
     "topic": "Contract Upgrade",
     "status": "PASSED",
+    "submit_time": "1725614509431",
     "final_tally_result": {
       "yes_count": 83,
       "abstain_count": 4,
@@ -311,6 +334,7 @@
     "type": "PoolIncentives",
     "topic": "Reward Adjustment",
     "status": "REJECTED",
+    "submit_time": "1724855267068",
     "final_tally_result": {
       "no_count": 51,
       "abstain_count": 24,
@@ -326,6 +350,7 @@
     "type": "ParameterChange",
     "topic": "Protocol Configuration",
     "status": "REJECTED",
+    "submit_time": "1724854970271",
     "final_tally_result": {
       "no_count": 49,
       "abstain_count": 26,
@@ -342,6 +367,7 @@
     "type": "PoolIncentives",
     "topic": "Incentive Distribution",
     "status": "PASSED",
+    "submit_time": "1724239708873",
     "final_tally_result": {
       "yes_count": 80,
       "abstain_count": 4,
@@ -355,6 +381,7 @@
     "type": "SmartContract",
     "topic": "Feature Enhancement",
     "status": "PASSED",
+    "submit_time": "1724239334896",
     "final_tally_result": {
       "yes_count": 77,
       "abstain_count": 7,
@@ -368,6 +395,7 @@
     "type": "SmartContract",
     "topic": "Feature Enhancement",
     "status": "PASSED",
+    "submit_time": "1724238797552",
     "final_tally_result": {
       "yes_count": 76,
       "abstain_count": 7,
@@ -381,6 +409,7 @@
     "type": "SmartContract",
     "topic": "Contract Upgrade",
     "status": "PASSED",
+    "submit_time": "1723804287301",
     "final_tally_result": {
       "yes_count": 76,
       "abstain_count": 6,
@@ -394,6 +423,7 @@
     "type": "PoolIncentives",
     "topic": "Reward Adjustment",
     "status": "PASSED",
+    "submit_time": "1723647144844",
     "final_tally_result": {
       "yes_count": 78,
       "abstain_count": 7,
@@ -407,6 +437,7 @@
     "type": "Unknown",
     "topic": "Unclassified",
     "status": "PASSED",
+    "submit_time": "1723560891803",
     "final_tally_result": {
       "yes_count": 74,
       "abstain_count": 6,
@@ -420,6 +451,7 @@
     "type": "Unknown",
     "topic": "Unclassified",
     "status": "PASSED",
+    "submit_time": "1723476694047",
     "final_tally_result": {
       "yes_count": 83,
       "abstain_count": 4,
@@ -433,6 +465,7 @@
     "type": "ParameterChange",
     "topic": "Fee Adjustment",
     "status": "PASSED",
+    "submit_time": "1723216568264",
     "final_tally_result": {
       "yes_count": 72,
       "abstain_count": 12,
@@ -446,6 +479,7 @@
     "type": "PoolIncentives",
     "topic": "Reward Adjustment",
     "status": "PASSED",
+    "submit_time": "1723213700613",
     "final_tally_result": {
       "yes_count": 77,
       "abstain_count": 6,
@@ -460,6 +494,7 @@
     "type": "SmartContract",
     "topic": "Contract Deployment",
     "status": "PASSED",
+    "submit_time": "1723212815212",
     "final_tally_result": {
       "yes_count": 80,
       "abstain_count": 4,
@@ -473,6 +508,7 @@
     "type": "ParameterChange",
     "topic": "Protocol Configuration",
     "status": "PASSED",
+    "submit_time": "1723200492794",
     "final_tally_result": {
       "yes_count": 76,
       "abstain_count": 7,
@@ -487,6 +523,7 @@
     "type": "CommunityPoolSpend",
     "topic": "Community Support",
     "status": "PASSED",
+    "submit_time": "1722859664241",
     "final_tally_result": {
       "yes_count": 74,
       "abstain_count": 10,
@@ -500,6 +537,7 @@
     "type": "PoolIncentives",
     "topic": "Reward Adjustment",
     "status": "PASSED",
+    "submit_time": "1722858649581",
     "final_tally_result": {
       "yes_count": 79,
       "abstain_count": 6,
@@ -513,6 +551,7 @@
     "type": "Unknown",
     "topic": "Unclassified",
     "status": "PASSED",
+    "submit_time": "1722338688777",
     "final_tally_result": {
       "yes_count": 81,
       "abstain_count": 6,
@@ -526,6 +565,7 @@
     "type": "ParameterChange",
     "topic": "Protocol Configuration",
     "status": "PASSED",
+    "submit_time": "1722338451638",
     "final_tally_result": {
       "yes_count": 83,
       "abstain_count": 5,
@@ -539,6 +579,7 @@
     "type": "PoolIncentives",
     "topic": "Incentive Distribution",
     "status": "PASSED",
+    "submit_time": "1722338289395",
     "final_tally_result": {
       "yes_count": 83,
       "abstain_count": 5,
@@ -552,6 +593,7 @@
     "type": "SmartContract",
     "topic": "Contract Deployment",
     "status": "PASSED",
+    "submit_time": "1722337534411",
     "final_tally_result": {
       "yes_count": 83,
       "abstain_count": 5,
@@ -565,6 +607,7 @@
     "type": "SmartContract",
     "topic": "Contract Deployment",
     "status": "PASSED",
+    "submit_time": "1722261672232",
     "final_tally_result": {
       "yes_count": 83,
       "abstain_count": 7,
@@ -578,6 +621,7 @@
     "type": "PoolIncentives",
     "topic": "Incentive Distribution",
     "status": "PASSED",
+    "submit_time": "1722261602500",
     "final_tally_result": {
       "yes_count": 83,
       "abstain_count": 7,
@@ -591,6 +635,7 @@
     "type": "ParameterChange",
     "topic": "Protocol Configuration",
     "status": "PASSED",
+    "submit_time": "1722261192204",
     "final_tally_result": {
       "yes_count": 84,
       "abstain_count": 7,
@@ -604,6 +649,7 @@
     "type": "Unknown",
     "topic": "Miscellaneous",
     "status": "PASSED",
+    "submit_time": "1721248830230",
     "final_tally_result": {
       "abstain_count": 27,
       "yes_count": 58,
@@ -619,6 +665,7 @@
     "type": "ParameterChange",
     "topic": "Protocol Configuration",
     "status": "PASSED",
+    "submit_time": "1721146986984",
     "final_tally_result": {
       "yes_count": 80,
       "abstain_count": 12,
@@ -633,6 +680,7 @@
     "type": "SmartContract",
     "topic": "Contract Deployment",
     "status": "PASSED",
+    "submit_time": "1721135253690",
     "final_tally_result": {
       "yes_count": 84,
       "abstain_count": 8,
@@ -646,6 +694,7 @@
     "type": "SmartContract",
     "topic": "Contract Deployment",
     "status": "PASSED",
+    "submit_time": "1721050814345",
     "final_tally_result": {
       "yes_count": 91,
       "abstain_count": 7,
@@ -659,6 +708,7 @@
     "type": "ParameterChange",
     "topic": "Protocol Configuration",
     "status": "PASSED",
+    "submit_time": "1720776253894",
     "final_tally_result": {
       "yes_count": 79,
       "abstain_count": 2,
@@ -672,6 +722,7 @@
     "type": "ChainSpecific",
     "topic": "Chain Governance",
     "status": "PASSED",
+    "submit_time": "1720448628034",
     "final_tally_result": {
       "yes_count": 82,
       "abstain_count": 8,
@@ -686,6 +737,7 @@
     "type": "SmartContract",
     "topic": "Contract Deployment",
     "status": "PASSED",
+    "submit_time": "1720434797035",
     "final_tally_result": {
       "yes_count": 89,
       "abstain_count": 4,
@@ -699,6 +751,7 @@
     "type": "ParameterChange",
     "topic": "Protocol Configuration",
     "status": "PASSED",
+    "submit_time": "1720367077384",
     "final_tally_result": {
       "yes_count": 72,
       "no_count": 4,
@@ -713,6 +766,7 @@
     "type": "SmartContract",
     "topic": "Contract Deployment",
     "status": "PASSED",
+    "submit_time": "1720196849575",
     "final_tally_result": {
       "yes_count": 83,
       "abstain_count": 7,
@@ -726,6 +780,7 @@
     "type": "SmartContract",
     "topic": "Feature Enhancement",
     "status": "PASSED",
+    "submit_time": "1720107867720",
     "final_tally_result": {
       "abstain_count": 12,
       "yes_count": 72,
@@ -739,6 +794,7 @@
     "type": "CommunityPoolSpend",
     "topic": "Ecosystem Growth",
     "status": "PASSED",
+    "submit_time": "1719927135359",
     "final_tally_result": {
       "yes_count": 70,
       "abstain_count": 13,
@@ -753,6 +809,7 @@
     "type": "ParameterChange",
     "topic": "Protocol Configuration",
     "status": "PASSED",
+    "submit_time": "1719833567465",
     "final_tally_result": {
       "yes_count": 68,
       "abstain_count": 13,
@@ -767,6 +824,7 @@
     "type": "ParameterChange",
     "topic": "Protocol Configuration",
     "status": "PASSED",
+    "submit_time": "1719829943832",
     "final_tally_result": {
       "yes_count": 74,
       "abstain_count": 10,
@@ -781,6 +839,7 @@
     "type": "SmartContract",
     "topic": "Contract Deployment",
     "status": "PASSED",
+    "submit_time": "1719593517814",
     "final_tally_result": {
       "yes_count": 91,
       "abstain_count": 3,
@@ -794,6 +853,7 @@
     "type": "CommunityPoolSpend",
     "topic": "Community Support",
     "status": "PASSED",
+    "submit_time": "1719420518274",
     "final_tally_result": {
       "abstain_count": 38,
       "yes_count": 45,
@@ -808,6 +868,7 @@
     "type": "PoolIncentives",
     "topic": "Reward Adjustment",
     "status": "PASSED",
+    "submit_time": "1718898202634",
     "final_tally_result": {
       "yes_count": 81,
       "abstain_count": 8,
@@ -822,6 +883,7 @@
     "type": "ChainSpecific",
     "topic": "Chain Governance",
     "status": "PASSED",
+    "submit_time": "1718811402507",
     "final_tally_result": {
       "yes_count": 87,
       "abstain_count": 2,
@@ -835,6 +897,7 @@
     "type": "Unknown",
     "topic": "Unclassified",
     "status": "PASSED",
+    "submit_time": "1718578691334",
     "final_tally_result": {
       "yes_count": 90,
       "abstain_count": 9,
@@ -849,6 +912,7 @@
     "type": "PoolIncentives",
     "topic": "Incentive Distribution",
     "status": "PASSED",
+    "submit_time": "1718289295848",
     "final_tally_result": {
       "yes_count": 90,
       "abstain_count": 8,
@@ -862,6 +926,7 @@
     "type": "ParameterChange",
     "topic": "Protocol Configuration",
     "status": "PASSED",
+    "submit_time": "1718286368307",
     "final_tally_result": {
       "yes_count": 91,
       "abstain_count": 8,
@@ -875,6 +940,7 @@
     "type": "SmartContract",
     "topic": "Contract Deployment",
     "status": "PASSED",
+    "submit_time": "1718286300968",
     "final_tally_result": {
       "yes_count": 91,
       "abstain_count": 8,
@@ -888,6 +954,7 @@
     "type": "SmartContract",
     "topic": "Contract Deployment",
     "status": "PASSED",
+    "submit_time": "1718274177981",
     "final_tally_result": {
       "yes_count": 90,
       "no_count": 2,
@@ -902,6 +969,7 @@
     "type": "SmartContract",
     "topic": "Contract Deployment",
     "status": "PASSED",
+    "submit_time": "1718096088772",
     "final_tally_result": {
       "yes_count": 94,
       "abstain_count": 3,
@@ -915,6 +983,7 @@
     "type": "ParameterChange",
     "topic": "Protocol Configuration",
     "status": "PASSED",
+    "submit_time": "1717845194363",
     "final_tally_result": {
       "yes_count": 61,
       "no_count": 9,
@@ -929,6 +998,7 @@
     "type": "ParameterChange",
     "topic": "Protocol Configuration",
     "status": "PASSED",
+    "submit_time": "1717768815767",
     "final_tally_result": {
       "yes_count": 63,
       "abstain_count": 13,
@@ -943,6 +1013,7 @@
     "type": "PoolIncentives",
     "topic": "Reward Adjustment",
     "status": "PASSED",
+    "submit_time": "1717496118583",
     "final_tally_result": {
       "abstain_count": 3,
       "yes_count": 91,
@@ -956,6 +1027,7 @@
     "type": "CommunityPoolSpend",
     "topic": "Community Support",
     "status": "PASSED",
+    "submit_time": "1717002921189",
     "final_tally_result": {
       "yes_count": 25,
       "abstain_count": 53,
@@ -970,6 +1042,7 @@
     "type": "ParameterChange",
     "topic": "Protocol Configuration",
     "status": "PASSED",
+    "submit_time": "1716940510936",
     "final_tally_result": {
       "yes_count": 54,
       "abstain_count": 38,
@@ -984,6 +1057,7 @@
     "type": "ParameterChange",
     "topic": "Staking Parameters",
     "status": "PASSED",
+    "submit_time": "1716898521069",
     "final_tally_result": {
       "yes_count": 60,
       "abstain_count": 17,
@@ -998,6 +1072,7 @@
     "type": "SmartContract",
     "topic": "Contract Deployment",
     "status": "PASSED",
+    "submit_time": "1716217114485",
     "final_tally_result": {
       "yes_count": 86,
       "abstain_count": 3,
@@ -1011,6 +1086,7 @@
     "type": "SoftwareUpgrade",
     "topic": "Major Release",
     "status": "PASSED",
+    "submit_time": "1715247227820",
     "final_tally_result": {
       "yes_count": 100,
       "no_vote_count": 50
@@ -1023,6 +1099,7 @@
     "type": "ChainSpecific",
     "topic": "Chain Governance",
     "status": "PASSED",
+    "submit_time": "1715246329971",
     "final_tally_result": {
       "yes_count": 94,
       "abstain_count": 7,
@@ -1036,6 +1113,7 @@
     "type": "Unknown",
     "topic": "Unclassified",
     "status": "PASSED",
+    "submit_time": "1715106430524",
     "final_tally_result": {
       "yes_count": 59,
       "abstain_count": 17,
@@ -1050,6 +1128,7 @@
     "type": "SmartContract",
     "topic": "Contract Upgrade",
     "status": "PASSED",
+    "submit_time": "1714642084111",
     "final_tally_result": {
       "yes_count": 88,
       "abstain_count": 2,
@@ -1063,6 +1142,7 @@
     "type": "SmartContract",
     "topic": "Contract Deployment",
     "status": "PASSED",
+    "submit_time": "1714574158250",
     "final_tally_result": {
       "yes_count": 83,
       "abstain_count": 5,
@@ -1077,6 +1157,7 @@
     "type": "PoolIncentives",
     "topic": "Reward Adjustment",
     "status": "PASSED",
+    "submit_time": "1714571988378",
     "final_tally_result": {
       "yes_count": 86,
       "abstain_count": 3,
@@ -1090,6 +1171,7 @@
     "type": "ParameterChange",
     "topic": "Governance Settings",
     "status": "PASSED",
+    "submit_time": "1714149268784",
     "final_tally_result": {
       "yes_count": 83,
       "abstain_count": 9,
@@ -1104,6 +1186,7 @@
     "type": "ParameterChange",
     "topic": "Protocol Configuration",
     "status": "PASSED",
+    "submit_time": "1713965709055",
     "final_tally_result": {
       "yes_count": 95,
       "abstain_count": 4,
@@ -1117,6 +1200,7 @@
     "type": "PoolIncentives",
     "topic": "Incentive Distribution",
     "status": "PASSED",
+    "submit_time": "1713965200845",
     "final_tally_result": {
       "yes_count": 92,
       "abstain_count": 7,
@@ -1130,6 +1214,7 @@
     "type": "SmartContract",
     "topic": "Contract Deployment",
     "status": "PASSED",
+    "submit_time": "1713949817988",
     "final_tally_result": {
       "yes_count": 91,
       "abstain_count": 4,
@@ -1143,6 +1228,7 @@
     "type": "Unknown",
     "topic": "Unclassified",
     "status": "PASSED",
+    "submit_time": "1713339996921",
     "final_tally_result": {
       "yes_count": 48,
       "abstain_count": 40,
@@ -1156,6 +1242,7 @@
     "type": "TextProposal",
     "topic": "Community Decision",
     "status": "PASSED",
+    "submit_time": "1713278387678",
     "final_tally_result": {
       "yes_count": 62,
       "abstain_count": 28,
@@ -1170,6 +1257,7 @@
     "type": "TextProposal",
     "topic": "Community Decision",
     "status": "PASSED",
+    "submit_time": "1713278224588",
     "final_tally_result": {
       "yes_count": 58,
       "abstain_count": 33,
@@ -1184,6 +1272,7 @@
     "type": "CommunityPoolSpend",
     "topic": "Community Support",
     "status": "PASSED",
+    "submit_time": "1713277491412",
     "final_tally_result": {
       "yes_count": 67,
       "abstain_count": 28,
@@ -1198,6 +1287,7 @@
     "type": "SmartContract",
     "topic": "Contract Deployment",
     "status": "PASSED",
+    "submit_time": "1713272085122",
     "final_tally_result": {
       "yes_count": 91,
       "abstain_count": 7,
@@ -1211,6 +1301,7 @@
     "type": "ParameterChange",
     "topic": "Fee Adjustment",
     "status": "PASSED",
+    "submit_time": "1713186060588",
     "final_tally_result": {
       "yes_count": 75,
       "abstain_count": 15,
@@ -1226,6 +1317,7 @@
     "type": "ParameterChange",
     "topic": "Protocol Configuration",
     "status": "PASSED",
+    "submit_time": "1713182465591",
     "final_tally_result": {
       "yes_count": 79,
       "abstain_count": 11,
@@ -1240,6 +1332,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "REJECTED",
+    "submit_time": "1712745199230",
     "final_tally_result": {
       "no_with_veto_count": 75,
       "no_count": 1,
@@ -1253,6 +1346,7 @@
     "type": "SoftwareUpgrade",
     "topic": "Major Release",
     "status": "REJECTED",
+    "submit_time": "1712507094137",
     "final_tally_result": {
       "no_with_veto_count": 50,
       "no_count": 38,
@@ -1268,6 +1362,7 @@
     "type": "SoftwareUpgrade",
     "topic": "Major Release",
     "status": "PASSED",
+    "submit_time": "1712393327008",
     "final_tally_result": {
       "yes_count": 95,
       "no_vote_count": 55
@@ -1280,6 +1375,7 @@
     "type": "SmartContract",
     "topic": "Contract Upgrade",
     "status": "PASSED",
+    "submit_time": "1712220940189",
     "final_tally_result": {
       "yes_count": 94,
       "abstain_count": 2,
@@ -1293,6 +1389,7 @@
     "type": "PoolIncentives",
     "topic": "Reward Adjustment",
     "status": "PASSED",
+    "submit_time": "1712058925444",
     "final_tally_result": {
       "yes_count": 86,
       "abstain_count": 3,
@@ -1307,6 +1404,7 @@
     "type": "ParameterChange",
     "topic": "Protocol Configuration",
     "status": "PASSED",
+    "submit_time": "1711652030374",
     "final_tally_result": {
       "yes_count": 86,
       "abstain_count": 6,
@@ -1320,6 +1418,7 @@
     "type": "ParameterChange",
     "topic": "Fee Adjustment",
     "status": "PASSED",
+    "submit_time": "1711632901995",
     "final_tally_result": {
       "yes_count": 87,
       "abstain_count": 4,
@@ -1333,6 +1432,7 @@
     "type": "SmartContract",
     "topic": "Contract Deployment",
     "status": "PASSED",
+    "submit_time": "1710928616797",
     "final_tally_result": {
       "yes_count": 81,
       "abstain_count": 4,
@@ -1346,6 +1446,7 @@
     "type": "ParameterChange",
     "topic": "Protocol Configuration",
     "status": "PASSED",
+    "submit_time": "1710861945859",
     "final_tally_result": {
       "yes_count": 84,
       "abstain_count": 1,
@@ -1359,6 +1460,7 @@
     "type": "CommunityPoolSpend",
     "topic": "Community Support",
     "status": "PASSED",
+    "submit_time": "1710847230918",
     "final_tally_result": {
       "yes_count": 76,
       "no_count": 5,
@@ -1373,6 +1475,7 @@
     "type": "ParameterChange",
     "topic": "Protocol Configuration",
     "status": "PASSED",
+    "submit_time": "1710775154702",
     "final_tally_result": {
       "yes_count": 73,
       "abstain_count": 15,
@@ -1387,6 +1490,7 @@
     "type": "CommunityPoolSpend",
     "topic": "Community Support",
     "status": "PASSED",
+    "submit_time": "1710773252076",
     "final_tally_result": {
       "yes_count": 78,
       "abstain_count": 14,
@@ -1401,6 +1505,7 @@
     "type": "PoolIncentives",
     "topic": "Reward Adjustment",
     "status": "PASSED",
+    "submit_time": "1710772184948",
     "final_tally_result": {
       "yes_count": 88,
       "abstain_count": 6,
@@ -1414,6 +1519,7 @@
     "type": "PoolIncentives",
     "topic": "Incentive Distribution",
     "status": "PASSED",
+    "submit_time": "1710772061861",
     "final_tally_result": {
       "yes_count": 91,
       "abstain_count": 3,
@@ -1427,6 +1533,7 @@
     "type": "SmartContract",
     "topic": "Contract Integration",
     "status": "PASSED",
+    "submit_time": "1710499895553",
     "final_tally_result": {
       "yes_count": 96,
       "abstain_count": 3,
@@ -1440,6 +1547,7 @@
     "type": "PoolIncentives",
     "topic": "Reward Adjustment",
     "status": "PASSED",
+    "submit_time": "1709743117832",
     "final_tally_result": {
       "yes_count": 93,
       "abstain_count": 2,
@@ -1453,6 +1561,7 @@
     "type": "SmartContract",
     "topic": "Contract Deployment",
     "status": "PASSED",
+    "submit_time": "1709710938751",
     "final_tally_result": {
       "yes_count": 90,
       "abstain_count": 7,
@@ -1466,6 +1575,7 @@
     "type": "SmartContract",
     "topic": "Contract Integration",
     "status": "PASSED",
+    "submit_time": "1709664920897",
     "final_tally_result": {
       "yes_count": 88,
       "abstain_count": 5,
@@ -1479,6 +1589,7 @@
     "type": "CommunityPoolSpend",
     "topic": "Community Support",
     "status": "PASSED",
+    "submit_time": "1709659695975",
     "final_tally_result": {
       "yes_count": 79,
       "abstain_count": 13,
@@ -1492,6 +1603,7 @@
     "type": "Unknown",
     "topic": "Unclassified",
     "status": "PASSED",
+    "submit_time": "1709652831356",
     "final_tally_result": {
       "yes_count": 87,
       "abstain_count": 7,
@@ -1505,6 +1617,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "PASSED",
+    "submit_time": "1709569282160",
     "final_tally_result": {
       "yes_count": 93,
       "abstain_count": 2,
@@ -1518,6 +1631,7 @@
     "type": "IBCRelated",
     "topic": "IBC Transfer",
     "status": "PASSED",
+    "submit_time": "1709399507032",
     "final_tally_result": {
       "yes_count": 97,
       "abstain_count": 1,
@@ -1531,6 +1645,7 @@
     "type": "PoolIncentives",
     "topic": "Incentive Distribution",
     "status": "PASSED",
+    "submit_time": "1709309351172",
     "final_tally_result": {
       "yes_count": 92,
       "abstain_count": 5,
@@ -1544,6 +1659,7 @@
     "type": "SmartContract",
     "topic": "Contract Deployment",
     "status": "PASSED",
+    "submit_time": "1709139493339",
     "final_tally_result": {
       "yes_count": 66,
       "abstain_count": 13,
@@ -1558,6 +1674,7 @@
     "type": "ParameterChange",
     "topic": "Protocol Configuration",
     "status": "PASSED",
+    "submit_time": "1709012093293",
     "final_tally_result": {
       "yes_count": 61,
       "no_count": 13,
@@ -1572,6 +1689,7 @@
     "type": "PoolIncentives",
     "topic": "Incentive Distribution",
     "status": "PASSED",
+    "submit_time": "1708862508764",
     "final_tally_result": {
       "yes_count": 91,
       "abstain_count": 3,
@@ -1586,6 +1704,7 @@
     "type": "Unknown",
     "topic": "Unclassified",
     "status": "PASSED",
+    "submit_time": "1708862249720",
     "final_tally_result": {
       "yes_count": 87,
       "abstain_count": 8,
@@ -1599,6 +1718,7 @@
     "type": "SmartContract",
     "topic": "Contract Upgrade",
     "status": "PASSED",
+    "submit_time": "1708685437678",
     "final_tally_result": {
       "yes_count": 96,
       "abstain_count": 3,
@@ -1612,6 +1732,7 @@
     "type": "ParameterChange",
     "topic": "Protocol Configuration",
     "status": "PASSED",
+    "submit_time": "1708450481512",
     "final_tally_result": {
       "yes_count": 88,
       "abstain_count": 5,
@@ -1625,6 +1746,7 @@
     "type": "ChainSpecific",
     "topic": "Chain Governance",
     "status": "PASSED",
+    "submit_time": "1708448727130",
     "final_tally_result": {
       "yes_count": 89,
       "abstain_count": 5,
@@ -1638,6 +1760,7 @@
     "type": "ChainSpecific",
     "topic": "Chain Governance",
     "status": "PASSED",
+    "submit_time": "1708448661154",
     "final_tally_result": {
       "yes_count": 89,
       "abstain_count": 5,
@@ -1651,6 +1774,7 @@
     "type": "ParameterChange",
     "topic": "Protocol Configuration",
     "status": "PASSED",
+    "submit_time": "1708427095798",
     "final_tally_result": {
       "yes_count": 86,
       "abstain_count": 4,
@@ -1664,6 +1788,7 @@
     "type": "Unknown",
     "topic": "Unclassified",
     "status": "PASSED",
+    "submit_time": "1708342985903",
     "final_tally_result": {
       "yes_count": 92,
       "abstain_count": 1,
@@ -1677,6 +1802,7 @@
     "type": "ChainSpecific",
     "topic": "Chain Governance",
     "status": "PASSED",
+    "submit_time": "1708022319671",
     "final_tally_result": {
       "yes_count": 102,
       "no_vote_count": 48
@@ -1689,6 +1815,7 @@
     "type": "ChainSpecific",
     "topic": "Chain Governance",
     "status": "PASSED",
+    "submit_time": "1708021961341",
     "final_tally_result": {
       "yes_count": 102,
       "no_vote_count": 48
@@ -1701,6 +1828,7 @@
     "type": "SoftwareUpgrade",
     "topic": "Major Release",
     "status": "PASSED",
+    "submit_time": "1707993813742",
     "final_tally_result": {
       "yes_count": 104,
       "no_vote_count": 46
@@ -1713,6 +1841,7 @@
     "type": "PoolIncentives",
     "topic": "Reward Adjustment",
     "status": "PASSED",
+    "submit_time": "1707744746785",
     "final_tally_result": {
       "yes_count": 96,
       "abstain_count": 2,
@@ -1726,6 +1855,7 @@
     "type": "SmartContract",
     "topic": "Contract Deployment",
     "status": "PASSED",
+    "submit_time": "1707739539643",
     "final_tally_result": {
       "yes_count": 91,
       "abstain_count": 2,
@@ -1739,6 +1869,7 @@
     "type": "IBCRelated",
     "topic": "IBC Security",
     "status": "PASSED",
+    "submit_time": "1707391814662",
     "final_tally_result": {
       "yes_count": 95,
       "abstain_count": 1,
@@ -1752,6 +1883,7 @@
     "type": "TokenRelated",
     "topic": "Token Registration",
     "status": "PASSED",
+    "submit_time": "1707387648142",
     "final_tally_result": {
       "yes_count": 94,
       "abstain_count": 3,
@@ -1765,6 +1897,7 @@
     "type": "PoolIncentives",
     "topic": "Reward Adjustment",
     "status": "PASSED",
+    "submit_time": "1707311364511",
     "final_tally_result": {
       "yes_count": 95,
       "abstain_count": 2,
@@ -1778,6 +1911,7 @@
     "type": "PoolIncentives",
     "topic": "Incentive Distribution",
     "status": "PASSED",
+    "submit_time": "1707214186064",
     "final_tally_result": {
       "yes_count": 90,
       "abstain_count": 6,
@@ -1791,6 +1925,7 @@
     "type": "SmartContract",
     "topic": "Contract Deployment",
     "status": "PASSED",
+    "submit_time": "1707146081082",
     "final_tally_result": {
       "yes_count": 91,
       "abstain_count": 5,
@@ -1804,6 +1939,7 @@
     "type": "IBCRelated",
     "topic": "IBC Security",
     "status": "PASSED",
+    "submit_time": "1706901366223",
     "final_tally_result": {
       "yes_count": 91,
       "abstain_count": 6,
@@ -1817,6 +1953,7 @@
     "type": "PoolIncentives",
     "topic": "Incentive Distribution",
     "status": "PASSED",
+    "submit_time": "1706810060415",
     "final_tally_result": {
       "yes_count": 87,
       "abstain_count": 7,
@@ -1830,6 +1967,7 @@
     "type": "PoolIncentives",
     "topic": "Incentive Distribution",
     "status": "PASSED",
+    "submit_time": "1706552821725",
     "final_tally_result": {
       "yes_count": 94,
       "abstain_count": 6,
@@ -1843,6 +1981,7 @@
     "type": "ParameterChange",
     "topic": "Protocol Configuration",
     "status": "PASSED",
+    "submit_time": "1706362991081",
     "final_tally_result": {
       "yes_count": 90,
       "abstain_count": 8,
@@ -1857,6 +1996,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "PASSED",
+    "submit_time": "1706104668303",
     "final_tally_result": {
       "yes_count": 84,
       "abstain_count": 11,
@@ -1870,6 +2010,7 @@
     "type": "TokenRelated",
     "topic": "Token Registration",
     "status": "PASSED",
+    "submit_time": "1705836827297",
     "final_tally_result": {
       "yes_count": 93,
       "abstain_count": 6,
@@ -1883,6 +2024,7 @@
     "type": "ParameterChange",
     "topic": "Protocol Configuration",
     "status": "PASSED",
+    "submit_time": "1705431264364",
     "final_tally_result": {
       "abstain_count": 6,
       "yes_count": 92,
@@ -1896,6 +2038,7 @@
     "type": "CommunityPoolSpend",
     "topic": "Community Support",
     "status": "PASSED",
+    "submit_time": "1705323536109",
     "final_tally_result": {
       "abstain_count": 10,
       "yes_count": 89,
@@ -1909,6 +2052,7 @@
     "type": "SoftwareUpgrade",
     "topic": "Major Release",
     "status": "PASSED",
+    "submit_time": "1705146168723",
     "final_tally_result": {
       "yes_count": 105,
       "abstain_count": 1,
@@ -1922,6 +2066,7 @@
     "type": "TokenRelated",
     "topic": "Token Registration",
     "status": "PASSED",
+    "submit_time": "1704819096970",
     "final_tally_result": {
       "yes_count": 100,
       "no_vote_count": 50
@@ -1934,6 +2079,7 @@
     "type": "CommunityPoolSpend",
     "topic": "Community Support",
     "status": "PASSED",
+    "submit_time": "1704770377612",
     "final_tally_result": {
       "yes_count": 51,
       "abstain_count": 29,
@@ -1948,6 +2094,7 @@
     "type": "CommunityPoolSpend",
     "topic": "Community Support",
     "status": "PASSED",
+    "submit_time": "1704769999927",
     "final_tally_result": {
       "yes_count": 86,
       "abstain_count": 12,
@@ -1962,6 +2109,7 @@
     "type": "Unknown",
     "topic": "Unclassified",
     "status": "PASSED",
+    "submit_time": "1704732871264",
     "final_tally_result": {
       "yes_count": 79,
       "abstain_count": 12,
@@ -1976,6 +2124,7 @@
     "type": "Unknown",
     "topic": "Unclassified",
     "status": "PASSED",
+    "submit_time": "1704732520975",
     "final_tally_result": {
       "yes_count": 84,
       "abstain_count": 5,
@@ -1990,6 +2139,7 @@
     "type": "CommunityPoolSpend",
     "topic": "Community Support",
     "status": "PASSED",
+    "submit_time": "1704463752109",
     "final_tally_result": {
       "yes_count": 82,
       "abstain_count": 12,
@@ -2004,6 +2154,7 @@
     "type": "CommunityPoolSpend",
     "topic": "Community Support",
     "status": "FAILED",
+    "submit_time": "1704310425917",
     "final_tally_result": {
       "abstain_count": 36,
       "yes_count": 19,
@@ -2019,6 +2170,7 @@
     "type": "CommunityPoolSpend",
     "topic": "Community Support",
     "status": "FAILED",
+    "submit_time": "1704305088826",
     "final_tally_result": {
       "yes_count": 43,
       "abstain_count": 30,
@@ -2033,6 +2185,7 @@
     "type": "Unknown",
     "topic": "Unclassified",
     "status": "PASSED",
+    "submit_time": "1704302059488",
     "final_tally_result": {
       "yes_count": 72,
       "abstain_count": 10,
@@ -2047,6 +2200,7 @@
     "type": "PoolIncentives",
     "topic": "Reward Adjustment",
     "status": "PASSED",
+    "submit_time": "1704194852122",
     "final_tally_result": {
       "yes_count": 77,
       "abstain_count": 4,
@@ -2060,6 +2214,7 @@
     "type": "CommunityPoolSpend",
     "topic": "Community Support",
     "status": "FAILED",
+    "submit_time": "1703974454274",
     "final_tally_result": {
       "yes_count": 74,
       "abstain_count": 20,
@@ -2074,6 +2229,7 @@
     "type": "PoolIncentives",
     "topic": "Incentive Distribution",
     "status": "PASSED",
+    "submit_time": "1703687608515",
     "final_tally_result": {
       "yes_count": 68,
       "abstain_count": 5,
@@ -2087,6 +2243,7 @@
     "type": "CommunityPoolSpend",
     "topic": "Community Support",
     "status": "PASSED",
+    "submit_time": "1703686686398",
     "final_tally_result": {
       "abstain_count": 30,
       "yes_count": 32,
@@ -2101,6 +2258,7 @@
     "type": "ParameterChange",
     "topic": "Fee Adjustment",
     "status": "PASSED",
+    "submit_time": "1703247675150",
     "final_tally_result": {
       "yes_count": 74,
       "no_count": 2,
@@ -2115,6 +2273,7 @@
     "type": "ParameterChange",
     "topic": "Protocol Configuration",
     "status": "PASSED",
+    "submit_time": "1703166925295",
     "final_tally_result": {
       "yes_count": 84,
       "abstain_count": 1,
@@ -2128,6 +2287,7 @@
     "type": "ParameterChange",
     "topic": "Protocol Configuration",
     "status": "PASSED",
+    "submit_time": "1702478721516",
     "final_tally_result": {
       "yes_count": 95,
       "abstain_count": 2,
@@ -2142,6 +2302,7 @@
     "type": "SoftwareUpgrade",
     "topic": "Major Release",
     "status": "PASSED",
+    "submit_time": "1702467665964",
     "final_tally_result": {
       "yes_count": 103,
       "no_vote_count": 47
@@ -2154,6 +2315,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "PASSED",
+    "submit_time": "1702238054615",
     "final_tally_result": {
       "yes_count": 94,
       "abstain_count": 2,
@@ -2167,6 +2329,7 @@
     "type": "CommunityPoolSpend",
     "topic": "Ecosystem Growth",
     "status": "REJECTED",
+    "submit_time": "1702122551087",
     "final_tally_result": {
       "yes_count": 45,
       "no_count": 36,
@@ -2181,6 +2344,7 @@
     "type": "SmartContract",
     "topic": "Contract Integration",
     "status": "PASSED",
+    "submit_time": "1701869818063",
     "final_tally_result": {
       "yes_count": 77,
       "abstain_count": 9,
@@ -2194,6 +2358,7 @@
     "type": "PoolIncentives",
     "topic": "Reward Adjustment",
     "status": "PASSED",
+    "submit_time": "1701691663729",
     "final_tally_result": {
       "yes_count": 93,
       "abstain_count": 6,
@@ -2207,6 +2372,7 @@
     "type": "SmartContract",
     "topic": "Contract Deployment",
     "status": "PASSED",
+    "submit_time": "1701357366820",
     "final_tally_result": {
       "yes_count": 85,
       "abstain_count": 10,
@@ -2220,6 +2386,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "PASSED",
+    "submit_time": "1701178932214",
     "final_tally_result": {
       "yes_count": 92,
       "abstain_count": 2,
@@ -2233,6 +2400,7 @@
     "type": "PoolIncentives",
     "topic": "Incentive Distribution",
     "status": "PASSED",
+    "submit_time": "1701101336548",
     "final_tally_result": {
       "yes_count": 85,
       "abstain_count": 7,
@@ -2246,6 +2414,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "PASSED",
+    "submit_time": "1700870633193",
     "final_tally_result": {
       "yes_count": 65,
       "abstain_count": 18,
@@ -2260,6 +2429,7 @@
     "type": "ParameterChange",
     "topic": "Staking Parameters",
     "status": "PASSED",
+    "submit_time": "1700577787880",
     "final_tally_result": {
       "yes_count": 78,
       "abstain_count": 17,
@@ -2274,6 +2444,7 @@
     "type": "ParameterChange",
     "topic": "Protocol Configuration",
     "status": "PASSED",
+    "submit_time": "1700499031394",
     "final_tally_result": {
       "yes_count": 86,
       "abstain_count": 10,
@@ -2287,6 +2458,7 @@
     "type": "PoolIncentives",
     "topic": "Incentive Distribution",
     "status": "PASSED",
+    "submit_time": "1700392015275",
     "final_tally_result": {
       "yes_count": 94,
       "abstain_count": 3,
@@ -2300,6 +2472,7 @@
     "type": "PoolIncentives",
     "topic": "Incentive Distribution",
     "status": "PASSED",
+    "submit_time": "1700391894813",
     "final_tally_result": {
       "yes_count": 93,
       "abstain_count": 5,
@@ -2313,6 +2486,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "PASSED",
+    "submit_time": "1699871472958",
     "final_tally_result": {
       "yes_count": 95,
       "abstain_count": 1,
@@ -2326,6 +2500,7 @@
     "type": "PoolIncentives",
     "topic": "Reward Adjustment",
     "status": "PASSED",
+    "submit_time": "1699785352293",
     "final_tally_result": {
       "yes_count": 91,
       "abstain_count": 4,
@@ -2340,6 +2515,7 @@
     "type": "ParameterChange",
     "topic": "Fee Adjustment",
     "status": "PASSED",
+    "submit_time": "1699623480724",
     "final_tally_result": {
       "yes_count": 92,
       "abstain_count": 2,
@@ -2353,6 +2529,7 @@
     "type": "ParameterChange",
     "topic": "Governance Settings",
     "status": "PASSED",
+    "submit_time": "1699544290232",
     "final_tally_result": {
       "yes_count": 78,
       "abstain_count": 12,
@@ -2367,6 +2544,7 @@
     "type": "PoolIncentives",
     "topic": "Reward Adjustment",
     "status": "PASSED",
+    "submit_time": "1699439139915",
     "final_tally_result": {
       "yes_count": 87,
       "abstain_count": 2,
@@ -2380,6 +2558,7 @@
     "type": "ParameterChange",
     "topic": "Protocol Configuration",
     "status": "PASSED",
+    "submit_time": "1699300100922",
     "final_tally_result": {
       "yes_count": 90,
       "abstain_count": 5,
@@ -2393,6 +2572,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "PASSED",
+    "submit_time": "1698959186212",
     "final_tally_result": {
       "yes_count": 102,
       "abstain_count": 3,
@@ -2406,6 +2586,7 @@
     "type": "ParameterChange",
     "topic": "Protocol Configuration",
     "status": "PASSED",
+    "submit_time": "1698838517342",
     "final_tally_result": {
       "yes_count": 93,
       "abstain_count": 7,
@@ -2420,6 +2601,7 @@
     "type": "TokenRelated",
     "topic": "Token Registration",
     "status": "PASSED",
+    "submit_time": "1698782816823",
     "final_tally_result": {
       "yes_count": 114,
       "abstain_count": 2,
@@ -2433,6 +2615,7 @@
     "type": "ChainSpecific",
     "topic": "Chain Governance",
     "status": "PASSED",
+    "submit_time": "1698782581590",
     "final_tally_result": {
       "yes_count": 110,
       "abstain_count": 2,
@@ -2446,6 +2629,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "REJECTED",
+    "submit_time": "1698698817851",
     "final_tally_result": {
       "no_with_veto_count": 88,
       "no_count": 2,
@@ -2459,6 +2643,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "PASSED",
+    "submit_time": "1698661763619",
     "final_tally_result": {
       "yes_count": 99,
       "abstain_count": 8,
@@ -2472,6 +2657,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "PASSED",
+    "submit_time": "1698660850376",
     "final_tally_result": {
       "yes_count": 100,
       "abstain_count": 5,
@@ -2485,6 +2671,7 @@
     "type": "ParameterChange",
     "topic": "Fee Adjustment",
     "status": "PASSED",
+    "submit_time": "1698399905554",
     "final_tally_result": {
       "yes_count": 94,
       "no_count": 3,
@@ -2499,6 +2686,7 @@
     "type": "ChainSpecific",
     "topic": "Chain Governance",
     "status": "PASSED",
+    "submit_time": "1698354940463",
     "final_tally_result": {
       "yes_count": 96,
       "abstain_count": 3,
@@ -2512,6 +2700,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "REJECTED",
+    "submit_time": "1698278353695",
     "final_tally_result": {
       "no_with_veto_count": 79,
       "no_count": 2,
@@ -2525,6 +2714,7 @@
     "type": "ParameterChange",
     "topic": "Protocol Configuration",
     "status": "PASSED",
+    "submit_time": "1698242257278",
     "final_tally_result": {
       "yes_count": 63,
       "abstain_count": 27,
@@ -2538,6 +2728,7 @@
     "type": "CommunityPoolSpend",
     "topic": "Community Support",
     "status": "PASSED",
+    "submit_time": "1698152226799",
     "final_tally_result": {
       "yes_count": 82,
       "abstain_count": 9,
@@ -2552,6 +2743,7 @@
     "type": "SmartContract",
     "topic": "Contract Deployment",
     "status": "PASSED",
+    "submit_time": "1698082116730",
     "final_tally_result": {
       "yes_count": 86,
       "abstain_count": 7,
@@ -2565,6 +2757,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "REJECTED",
+    "submit_time": "1698080310089",
     "final_tally_result": {
       "no_with_veto_count": 84,
       "no_count": 2,
@@ -2578,6 +2771,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "REJECTED",
+    "submit_time": "1697925323010",
     "final_tally_result": {
       "no_with_veto_count": 81,
       "no_count": 2,
@@ -2591,6 +2785,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "REJECTED",
+    "submit_time": "1697846858337",
     "final_tally_result": {
       "no_with_veto_count": 85,
       "no_count": 2,
@@ -2604,6 +2799,7 @@
     "type": "CommunityPoolSpend",
     "topic": "Community Support",
     "status": "PASSED",
+    "submit_time": "1697810381857",
     "final_tally_result": {
       "yes_count": 85,
       "abstain_count": 9,
@@ -2618,6 +2814,7 @@
     "type": "SmartContract",
     "topic": "Contract Deployment",
     "status": "PASSED",
+    "submit_time": "1697706843277",
     "final_tally_result": {
       "yes_count": 85,
       "abstain_count": 2,
@@ -2631,6 +2828,7 @@
     "type": "SoftwareUpgrade",
     "topic": "Major Release",
     "status": "PASSED",
+    "submit_time": "1697619774542",
     "final_tally_result": {
       "yes_count": 91,
       "no_vote_count": 59
@@ -2643,6 +2841,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "REJECTED",
+    "submit_time": "1697597812619",
     "final_tally_result": {
       "no_with_veto_count": 74,
       "no_count": 2,
@@ -2656,6 +2855,7 @@
     "type": "IBCRelated",
     "topic": "Client Update",
     "status": "PASSED",
+    "submit_time": "1697343292747",
     "final_tally_result": {
       "yes_count": 93,
       "abstain_count": 2,
@@ -2669,6 +2869,7 @@
     "type": "CommunityPoolSpend",
     "topic": "Community Support",
     "status": "PASSED",
+    "submit_time": "1697106790185",
     "final_tally_result": {
       "yes_count": 42,
       "abstain_count": 47,
@@ -2683,6 +2884,7 @@
     "type": "ParameterChange",
     "topic": "Protocol Configuration",
     "status": "PASSED",
+    "submit_time": "1697042109188",
     "final_tally_result": {
       "yes_count": 89,
       "abstain_count": 4,
@@ -2696,6 +2898,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "REJECTED",
+    "submit_time": "1696876015864",
     "final_tally_result": {
       "no_with_veto_count": 78,
       "no_count": 5,
@@ -2710,6 +2913,7 @@
     "type": "IBCRelated",
     "topic": "Client Update",
     "status": "PASSED",
+    "submit_time": "1696865439511",
     "final_tally_result": {
       "yes_count": 64,
       "abstain_count": 32,
@@ -2724,6 +2928,7 @@
     "type": "ParameterChange",
     "topic": "Fee Adjustment",
     "status": "PASSED",
+    "submit_time": "1696726365775",
     "final_tally_result": {
       "yes_count": 98,
       "abstain_count": 7,
@@ -2738,6 +2943,7 @@
     "type": "CommunityPoolSpend",
     "topic": "Community Support",
     "status": "REJECTED",
+    "submit_time": "1696511841917",
     "final_tally_result": {
       "yes_count": 9,
       "no_count": 43,
@@ -2752,6 +2958,7 @@
     "type": "ParameterChange",
     "topic": "Protocol Configuration",
     "status": "PASSED",
+    "submit_time": "1696431098621",
     "final_tally_result": {
       "yes_count": 84,
       "abstain_count": 9,
@@ -2766,6 +2973,7 @@
     "type": "PoolIncentives",
     "topic": "Reward Adjustment",
     "status": "PASSED",
+    "submit_time": "1696340449107",
     "final_tally_result": {
       "yes_count": 92,
       "abstain_count": 5,
@@ -2779,6 +2987,7 @@
     "type": "PoolIncentives",
     "topic": "Reward Adjustment",
     "status": "PASSED",
+    "submit_time": "1696262894504",
     "final_tally_result": {
       "yes_count": 93,
       "abstain_count": 5,
@@ -2792,6 +3001,7 @@
     "type": "ParameterChange",
     "topic": "Protocol Configuration",
     "status": "PASSED",
+    "submit_time": "1696247833119",
     "final_tally_result": {
       "yes_count": 98,
       "abstain_count": 2,
@@ -2805,6 +3015,7 @@
     "type": "ParameterChange",
     "topic": "Fee Adjustment",
     "status": "REJECTED",
+    "submit_time": "1696152993062",
     "final_tally_result": {
       "yes_count": 56,
       "no_count": 29,
@@ -2819,6 +3030,7 @@
     "type": "ParameterChange",
     "topic": "Fee Adjustment",
     "status": "REJECTED",
+    "submit_time": "1696152190005",
     "final_tally_result": {
       "no_count": 91,
       "abstain_count": 6,
@@ -2834,6 +3046,7 @@
     "type": "CommunityPoolSpend",
     "topic": "Community Support",
     "status": "PASSED",
+    "submit_time": "1696091702092",
     "final_tally_result": {
       "yes_count": 82,
       "no_count": 3,
@@ -2848,6 +3061,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "REJECTED",
+    "submit_time": "1696042436713",
     "final_tally_result": {
       "no_with_veto_count": 73,
       "no_count": 3,
@@ -2862,6 +3076,7 @@
     "type": "CommunityPoolSpend",
     "topic": "Community Support",
     "status": "PASSED",
+    "submit_time": "1695998926677",
     "final_tally_result": {
       "yes_count": 55,
       "no_count": 26,
@@ -2876,6 +3091,7 @@
     "type": "ParameterChange",
     "topic": "Protocol Configuration",
     "status": "PASSED",
+    "submit_time": "1695822886625",
     "final_tally_result": {
       "yes_count": 47,
       "no_count": 12,
@@ -2891,6 +3107,7 @@
     "type": "CommunityPoolSpend",
     "topic": "Community Support",
     "status": "PASSED",
+    "submit_time": "1695749715216",
     "final_tally_result": {
       "yes_count": 29,
       "abstain_count": 54,
@@ -2905,6 +3122,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "PASSED",
+    "submit_time": "1695688983311",
     "final_tally_result": {
       "yes_count": 76,
       "no_count": 12,
@@ -2920,6 +3138,7 @@
     "type": "ParameterChange",
     "topic": "Protocol Configuration",
     "status": "PASSED",
+    "submit_time": "1695655102767",
     "final_tally_result": {
       "abstain_count": 18,
       "yes_count": 86,
@@ -2933,6 +3152,7 @@
     "type": "ParameterChange",
     "topic": "Protocol Configuration",
     "status": "PASSED",
+    "submit_time": "1695642893915",
     "final_tally_result": {
       "yes_count": 101,
       "abstain_count": 2,
@@ -2946,6 +3166,7 @@
     "type": "TextProposal",
     "topic": "Community Decision",
     "status": "REJECTED",
+    "submit_time": "1695520810929",
     "final_tally_result": {
       "no_count": 55,
       "abstain_count": 31,
@@ -2961,6 +3182,7 @@
     "type": "ParameterChange",
     "topic": "Protocol Configuration",
     "status": "PASSED",
+    "submit_time": "1695466629216",
     "final_tally_result": {
       "yes_count": 93,
       "abstain_count": 9,
@@ -2974,6 +3196,7 @@
     "type": "SmartContract",
     "topic": "Contract Deployment",
     "status": "PASSED",
+    "submit_time": "1695310814225",
     "final_tally_result": {
       "yes_count": 93,
       "abstain_count": 2,
@@ -2987,6 +3210,7 @@
     "type": "SmartContract",
     "topic": "Contract Deployment",
     "status": "PASSED",
+    "submit_time": "1695310754970",
     "final_tally_result": {
       "yes_count": 91,
       "abstain_count": 1,
@@ -3000,6 +3224,7 @@
     "type": "SmartContract",
     "topic": "Contract Deployment",
     "status": "PASSED",
+    "submit_time": "1695310543786",
     "final_tally_result": {
       "yes_count": 93,
       "abstain_count": 1,
@@ -3013,6 +3238,7 @@
     "type": "ParameterChange",
     "topic": "Staking Parameters",
     "status": "PASSED",
+    "submit_time": "1695150355468",
     "final_tally_result": {
       "yes_count": 94,
       "abstain_count": 2,
@@ -3026,6 +3252,7 @@
     "type": "ParameterChange",
     "topic": "Staking Parameters",
     "status": "PASSED",
+    "submit_time": "1695144743798",
     "final_tally_result": {
       "yes_count": 86,
       "abstain_count": 9,
@@ -3039,6 +3266,7 @@
     "type": "ParameterChange",
     "topic": "Protocol Configuration",
     "status": "PASSED",
+    "submit_time": "1695112799732",
     "final_tally_result": {
       "yes_count": 92,
       "no_vote_count": 58
@@ -3051,6 +3279,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "PASSED",
+    "submit_time": "1695027481468",
     "final_tally_result": {
       "yes_count": 94,
       "abstain_count": 3,
@@ -3064,6 +3293,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "PASSED",
+    "submit_time": "1694765327881",
     "final_tally_result": {
       "yes_count": 88,
       "abstain_count": 5,
@@ -3078,6 +3308,7 @@
     "type": "ParameterChange",
     "topic": "Protocol Configuration",
     "status": "PASSED",
+    "submit_time": "1694621210399",
     "final_tally_result": {
       "yes_count": 93,
       "abstain_count": 2,
@@ -3091,6 +3322,7 @@
     "type": "PoolIncentives",
     "topic": "Pool Creation",
     "status": "PASSED",
+    "submit_time": "1694616290051",
     "final_tally_result": {
       "yes_count": 89,
       "no_count": 1,
@@ -3105,6 +3337,7 @@
     "type": "PoolIncentives",
     "topic": "Pool Creation",
     "status": "PASSED",
+    "submit_time": "1694510218893",
     "final_tally_result": {
       "yes_count": 85,
       "abstain_count": 5,
@@ -3119,6 +3352,7 @@
     "type": "ChainSpecific",
     "topic": "Chain Governance",
     "status": "PASSED",
+    "submit_time": "1694209971487",
     "final_tally_result": {
       "yes_count": 87,
       "abstain_count": 3,
@@ -3132,6 +3366,7 @@
     "type": "SmartContract",
     "topic": "Contract Deployment",
     "status": "REJECTED",
+    "submit_time": "1694142694369",
     "final_tally_result": {
       "no_count": 40,
       "abstain_count": 37,
@@ -3147,6 +3382,7 @@
     "type": "PoolIncentives",
     "topic": "Pool Creation",
     "status": "PASSED",
+    "submit_time": "1694017309510",
     "final_tally_result": {
       "yes_count": 75,
       "no_count": 2,
@@ -3161,6 +3397,7 @@
     "type": "PoolIncentives",
     "topic": "Pool Creation",
     "status": "PASSED",
+    "submit_time": "1694017255096",
     "final_tally_result": {
       "yes_count": 74,
       "abstain_count": 10,
@@ -3175,6 +3412,7 @@
     "type": "PoolIncentives",
     "topic": "Pool Creation",
     "status": "PASSED",
+    "submit_time": "1694017177695",
     "final_tally_result": {
       "yes_count": 78,
       "abstain_count": 8,
@@ -3189,6 +3427,7 @@
     "type": "ParameterChange",
     "topic": "Staking Parameters",
     "status": "PASSED",
+    "submit_time": "1693986691834",
     "final_tally_result": {
       "yes_count": 87,
       "abstain_count": 3,
@@ -3202,6 +3441,7 @@
     "type": "PoolIncentives",
     "topic": "Pool Creation",
     "status": "PASSED",
+    "submit_time": "1693899692848",
     "final_tally_result": {
       "yes_count": 91,
       "abstain_count": 7,
@@ -3215,6 +3455,7 @@
     "type": "PoolIncentives",
     "topic": "Reward Adjustment",
     "status": "PASSED",
+    "submit_time": "1693898663090",
     "final_tally_result": {
       "yes_count": 93,
       "abstain_count": 6,
@@ -3228,6 +3469,7 @@
     "type": "PoolIncentives",
     "topic": "Liquidity Mining",
     "status": "PASSED",
+    "submit_time": "1693862407229",
     "final_tally_result": {
       "yes_count": 94,
       "abstain_count": 5,
@@ -3241,6 +3483,7 @@
     "type": "ChainSpecific",
     "topic": "Chain Governance",
     "status": "PASSED",
+    "submit_time": "1693735545887",
     "final_tally_result": {
       "yes_count": 104,
       "abstain_count": 3,
@@ -3254,6 +3497,7 @@
     "type": "ChainSpecific",
     "topic": "Chain Governance",
     "status": "PASSED",
+    "submit_time": "1693728430907",
     "final_tally_result": {
       "yes_count": 44,
       "no_count": 47,
@@ -3268,6 +3512,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "PASSED",
+    "submit_time": "1693569889109",
     "final_tally_result": {
       "abstain_count": 12,
       "yes_count": 89,
@@ -3282,6 +3527,7 @@
     "type": "SmartContract",
     "topic": "Contract Deployment",
     "status": "PASSED",
+    "submit_time": "1693512626571",
     "final_tally_result": {
       "yes_count": 97,
       "abstain_count": 2,
@@ -3295,6 +3541,7 @@
     "type": "SmartContract",
     "topic": "Contract Deployment",
     "status": "PASSED",
+    "submit_time": "1693512355293",
     "final_tally_result": {
       "yes_count": 100,
       "abstain_count": 1,
@@ -3308,6 +3555,7 @@
     "type": "SoftwareUpgrade",
     "topic": "Major Release",
     "status": "PASSED",
+    "submit_time": "1693482009508",
     "final_tally_result": {
       "yes_count": 103,
       "abstain_count": 2,
@@ -3321,6 +3569,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "PASSED",
+    "submit_time": "1693410154295",
     "final_tally_result": {
       "yes_count": 41,
       "abstain_count": 41,
@@ -3335,6 +3584,7 @@
     "type": "SmartContract",
     "topic": "Contract Deployment",
     "status": "PASSED",
+    "submit_time": "1693406495815",
     "final_tally_result": {
       "yes_count": 88,
       "abstain_count": 6,
@@ -3348,6 +3598,7 @@
     "type": "SmartContract",
     "topic": "Contract Deployment",
     "status": "PASSED",
+    "submit_time": "1693388926888",
     "final_tally_result": {
       "yes_count": 91,
       "abstain_count": 4,
@@ -3361,6 +3612,7 @@
     "type": "ParameterChange",
     "topic": "Protocol Configuration",
     "status": "PASSED",
+    "submit_time": "1693349552644",
     "final_tally_result": {
       "yes_count": 74,
       "abstain_count": 17,
@@ -3375,6 +3627,7 @@
     "type": "CommunityPoolSpend",
     "topic": "Community Support",
     "status": "PASSED",
+    "submit_time": "1693340857571",
     "final_tally_result": {
       "yes_count": 72,
       "no_count": 3,
@@ -3389,6 +3642,7 @@
     "type": "SmartContract",
     "topic": "Contract Deployment",
     "status": "PASSED",
+    "submit_time": "1693236448646",
     "final_tally_result": {
       "yes_count": 87,
       "abstain_count": 7,
@@ -3403,6 +3657,7 @@
     "type": "IBCRelated",
     "topic": "IBC Transfer",
     "status": "PASSED",
+    "submit_time": "1693235783378",
     "final_tally_result": {
       "yes_count": 81,
       "no_vote_count": 69
@@ -3415,6 +3670,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "REJECTED",
+    "submit_time": "1693094215750",
     "final_tally_result": {
       "no_with_veto_count": 72,
       "no_count": 4,
@@ -3430,6 +3686,7 @@
     "type": "PoolIncentives",
     "topic": "Pool Creation",
     "status": "PASSED",
+    "submit_time": "1693068792073",
     "final_tally_result": {
       "yes_count": 88,
       "abstain_count": 5,
@@ -3444,6 +3701,7 @@
     "type": "CommunityPoolSpend",
     "topic": "Community Support",
     "status": "PASSED",
+    "submit_time": "1692982325038",
     "final_tally_result": {
       "yes_count": 65,
       "abstain_count": 21,
@@ -3458,6 +3716,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "PASSED",
+    "submit_time": "1692969057185",
     "final_tally_result": {
       "yes_count": 91,
       "abstain_count": 3,
@@ -3471,6 +3730,7 @@
     "type": "TextProposal",
     "topic": "Ecosystem Growth",
     "status": "PASSED",
+    "submit_time": "1692969014775",
     "final_tally_result": {
       "yes_count": 91,
       "abstain_count": 2,
@@ -3485,6 +3745,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "PASSED",
+    "submit_time": "1692968996802",
     "final_tally_result": {
       "yes_count": 91,
       "abstain_count": 2,
@@ -3498,6 +3759,7 @@
     "type": "PoolIncentives",
     "topic": "Pool Creation",
     "status": "PASSED",
+    "submit_time": "1692912544898",
     "final_tally_result": {
       "yes_count": 94,
       "abstain_count": 5,
@@ -3511,6 +3773,7 @@
     "type": "SoftwareUpgrade",
     "topic": "Major Release",
     "status": "PASSED",
+    "submit_time": "1692888472044",
     "final_tally_result": {
       "yes_count": 97,
       "no_count": 1,
@@ -3525,6 +3788,7 @@
     "type": "PoolIncentives",
     "topic": "Pool Creation",
     "status": "PASSED",
+    "submit_time": "1692614835572",
     "final_tally_result": {
       "yes_count": 90,
       "abstain_count": 5,
@@ -3539,6 +3803,7 @@
     "type": "SoftwareUpgrade",
     "topic": "Major Release",
     "status": "PASSED",
+    "submit_time": "1692356182848",
     "final_tally_result": {
       "yes_count": 94,
       "abstain_count": 1,
@@ -3552,6 +3817,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "PASSED",
+    "submit_time": "1692126769479",
     "final_tally_result": {
       "yes_count": 86,
       "abstain_count": 3,
@@ -3565,6 +3831,7 @@
     "type": "SmartContract",
     "topic": "Contract Deployment",
     "status": "PASSED",
+    "submit_time": "1692031595568",
     "final_tally_result": {
       "yes_count": 87,
       "abstain_count": 2,
@@ -3578,6 +3845,7 @@
     "type": "ParameterChange",
     "topic": "Protocol Configuration",
     "status": "PASSED",
+    "submit_time": "1691510950269",
     "final_tally_result": {
       "yes_count": 83,
       "abstain_count": 6,
@@ -3591,6 +3859,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "PASSED",
+    "submit_time": "1691433750091",
     "final_tally_result": {
       "yes_count": 93,
       "abstain_count": 4,
@@ -3604,6 +3873,7 @@
     "type": "PoolIncentives",
     "topic": "Reward Adjustment",
     "status": "PASSED",
+    "submit_time": "1691422202738",
     "final_tally_result": {
       "yes_count": 88,
       "abstain_count": 5,
@@ -3618,6 +3888,7 @@
     "type": "ParameterChange",
     "topic": "Protocol Configuration",
     "status": "PASSED",
+    "submit_time": "1691257053976",
     "final_tally_result": {
       "yes_count": 92,
       "abstain_count": 4,
@@ -3631,6 +3902,7 @@
     "type": "PoolIncentives",
     "topic": "Pool Creation",
     "status": "PASSED",
+    "submit_time": "1691256902995",
     "final_tally_result": {
       "yes_count": 90,
       "abstain_count": 4,
@@ -3644,6 +3916,7 @@
     "type": "TextProposal",
     "topic": "Community Decision",
     "status": "PASSED",
+    "submit_time": "1691124087794",
     "final_tally_result": {
       "yes_count": 77,
       "abstain_count": 11,
@@ -3658,6 +3931,7 @@
     "type": "TextProposal",
     "topic": "Community Decision",
     "status": "REJECTED",
+    "submit_time": "1690988365271",
     "final_tally_result": {
       "abstain_count": 24,
       "no_count": 58,
@@ -3672,6 +3946,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "PASSED",
+    "submit_time": "1690833681078",
     "final_tally_result": {
       "yes_count": 20,
       "no_count": 37,
@@ -3686,6 +3961,7 @@
     "type": "ParameterChange",
     "topic": "Protocol Configuration",
     "status": "PASSED",
+    "submit_time": "1690820642258",
     "final_tally_result": {
       "yes_count": 92,
       "abstain_count": 6,
@@ -3699,6 +3975,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "PASSED",
+    "submit_time": "1690819278455",
     "final_tally_result": {
       "yes_count": 90,
       "abstain_count": 7,
@@ -3713,6 +3990,7 @@
     "type": "PoolIncentives",
     "topic": "Reward Adjustment",
     "status": "PASSED",
+    "submit_time": "1690816768746",
     "final_tally_result": {
       "yes_count": 92,
       "abstain_count": 5,
@@ -3727,6 +4005,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "PASSED",
+    "submit_time": "1690799841266",
     "final_tally_result": {
       "yes_count": 71,
       "abstain_count": 16,
@@ -3741,6 +4020,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "PASSED",
+    "submit_time": "1690709908557",
     "final_tally_result": {
       "yes_count": 92,
       "abstain_count": 4,
@@ -3754,6 +4034,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "PASSED",
+    "submit_time": "1690709875565",
     "final_tally_result": {
       "yes_count": 88,
       "abstain_count": 4,
@@ -3768,6 +4049,7 @@
     "type": "TextProposal",
     "topic": "Community Decision",
     "status": "REJECTED",
+    "submit_time": "1690491047752",
     "final_tally_result": {
       "no_count": 40,
       "abstain_count": 31,
@@ -3782,6 +4064,7 @@
     "type": "PoolIncentives",
     "topic": "Pool Creation",
     "status": "REJECTED",
+    "submit_time": "1690367928055",
     "final_tally_result": {
       "abstain_count": 14,
       "no_count": 46,
@@ -3796,6 +4079,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "REJECTED",
+    "submit_time": "1690213820692",
     "final_tally_result": {
       "no_count": 31,
       "abstain_count": 32,
@@ -3810,6 +4094,7 @@
     "type": "PoolIncentives",
     "topic": "Reward Adjustment",
     "status": "PASSED",
+    "submit_time": "1690212000166",
     "final_tally_result": {
       "yes_count": 83,
       "abstain_count": 3,
@@ -3824,6 +4109,7 @@
     "type": "PoolIncentives",
     "topic": "Reward Adjustment",
     "status": "PASSED",
+    "submit_time": "1689607288326",
     "final_tally_result": {
       "yes_count": 87,
       "abstain_count": 3,
@@ -3838,6 +4124,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "PASSED",
+    "submit_time": "1689588239953",
     "final_tally_result": {
       "yes_count": 36,
       "abstain_count": 48,
@@ -3852,6 +4139,7 @@
     "type": "ParameterChange",
     "topic": "Fee Adjustment",
     "status": "PASSED",
+    "submit_time": "1689359179401",
     "final_tally_result": {
       "yes_count": 94,
       "abstain_count": 2,
@@ -3865,6 +4153,7 @@
     "type": "ParameterChange",
     "topic": "Protocol Configuration",
     "status": "PASSED",
+    "submit_time": "1689346742347",
     "final_tally_result": {
       "yes_count": 82,
       "abstain_count": 12,
@@ -3879,6 +4168,7 @@
     "type": "TextProposal",
     "topic": "Ecosystem Growth",
     "status": "PASSED",
+    "submit_time": "1689343519745",
     "final_tally_result": {
       "yes_count": 63,
       "abstain_count": 28,
@@ -3893,6 +4183,7 @@
     "type": "TokenRelated",
     "topic": "Token Registration",
     "status": "PASSED",
+    "submit_time": "1689270157876",
     "final_tally_result": {
       "yes_count": 87,
       "abstain_count": 2,
@@ -3906,6 +4197,7 @@
     "type": "TextProposal",
     "topic": "Community Decision",
     "status": "PASSED",
+    "submit_time": "1689072429990",
     "final_tally_result": {
       "yes_count": 71,
       "abstain_count": 11,
@@ -3920,6 +4212,7 @@
     "type": "PoolIncentives",
     "topic": "Reward Adjustment",
     "status": "PASSED",
+    "submit_time": "1689002470835",
     "final_tally_result": {
       "yes_count": 82,
       "abstain_count": 6,
@@ -3934,6 +4227,7 @@
     "type": "ParameterChange",
     "topic": "Protocol Configuration",
     "status": "PASSED",
+    "submit_time": "1688849570948",
     "final_tally_result": {
       "yes_count": 79,
       "abstain_count": 13,
@@ -3949,6 +4243,7 @@
     "type": "SoftwareUpgrade",
     "topic": "Major Release",
     "status": "PASSED",
+    "submit_time": "1688784229637",
     "final_tally_result": {
       "yes_count": 100,
       "abstain_count": 1,
@@ -3962,6 +4257,7 @@
     "type": "ParameterChange",
     "topic": "Protocol Configuration",
     "status": "PASSED",
+    "submit_time": "1688670417191",
     "final_tally_result": {
       "yes_count": 87,
       "abstain_count": 7,
@@ -3976,6 +4272,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "PASSED",
+    "submit_time": "1688537337105",
     "final_tally_result": {
       "yes_count": 82,
       "abstain_count": 12,
@@ -3989,6 +4286,7 @@
     "type": "ParameterChange",
     "topic": "Protocol Configuration",
     "status": "PASSED",
+    "submit_time": "1688469261126",
     "final_tally_result": {
       "yes_count": 67,
       "abstain_count": 21,
@@ -4003,6 +4301,7 @@
     "type": "ParameterChange",
     "topic": "Protocol Configuration",
     "status": "PASSED",
+    "submit_time": "1688404020607",
     "final_tally_result": {
       "yes_count": 91,
       "abstain_count": 3,
@@ -4016,6 +4315,7 @@
     "type": "CommunityPoolSpend",
     "topic": "Community Support",
     "status": "PASSED",
+    "submit_time": "1688403529570",
     "final_tally_result": {
       "yes_count": 88,
       "abstain_count": 5,
@@ -4030,6 +4330,7 @@
     "type": "PoolIncentives",
     "topic": "Reward Adjustment",
     "status": "PASSED",
+    "submit_time": "1688397619608",
     "final_tally_result": {
       "yes_count": 87,
       "abstain_count": 6,
@@ -4044,6 +4345,7 @@
     "type": "TextProposal",
     "topic": "Network Policy",
     "status": "PASSED",
+    "submit_time": "1688269693535",
     "final_tally_result": {
       "yes_count": 87,
       "abstain_count": 1,
@@ -4058,6 +4360,7 @@
     "type": "ParameterChange",
     "topic": "Protocol Configuration",
     "status": "PASSED",
+    "submit_time": "1687967815098",
     "final_tally_result": {
       "no_count": 11,
       "yes_count": 48,
@@ -4072,6 +4375,7 @@
     "type": "PoolIncentives",
     "topic": "Reward Adjustment",
     "status": "PASSED",
+    "submit_time": "1687792821725",
     "final_tally_result": {
       "yes_count": 85,
       "abstain_count": 5,
@@ -4086,6 +4390,7 @@
     "type": "ChainSpecific",
     "topic": "Chain Governance",
     "status": "PASSED",
+    "submit_time": "1687791641072",
     "final_tally_result": {
       "abstain_count": 6,
       "yes_count": 83,
@@ -4100,6 +4405,7 @@
     "type": "ChainSpecific",
     "topic": "Chain Governance",
     "status": "PASSED",
+    "submit_time": "1687791200455",
     "final_tally_result": {
       "abstain_count": 14,
       "yes_count": 77,
@@ -4113,6 +4419,7 @@
     "type": "CommunityPoolSpend",
     "topic": "Community Support",
     "status": "REJECTED",
+    "submit_time": "1687726379042",
     "final_tally_result": {
       "no_count": 50,
       "yes_count": 4,
@@ -4127,6 +4434,7 @@
     "type": "TextProposal",
     "topic": "Community Decision",
     "status": "PASSED",
+    "submit_time": "1687435224294",
     "final_tally_result": {
       "yes_count": 71,
       "abstain_count": 15,
@@ -4141,6 +4449,7 @@
     "type": "ChainSpecific",
     "topic": "Chain Governance",
     "status": "PASSED",
+    "submit_time": "1687430698266",
     "final_tally_result": {
       "yes_count": 88,
       "abstain_count": 4,
@@ -4154,6 +4463,7 @@
     "type": "ChainSpecific",
     "topic": "Chain Governance",
     "status": "PASSED",
+    "submit_time": "1687291160108",
     "final_tally_result": {
       "yes_count": 86,
       "abstain_count": 5,
@@ -4168,6 +4478,7 @@
     "type": "ChainSpecific",
     "topic": "Chain Governance",
     "status": "PASSED",
+    "submit_time": "1687266737662",
     "final_tally_result": {
       "yes_count": 96,
       "no_count": 1,
@@ -4182,6 +4493,7 @@
     "type": "ParameterChange",
     "topic": "Staking Parameters",
     "status": "PASSED",
+    "submit_time": "1687266631665",
     "final_tally_result": {
       "yes_count": 95,
       "abstain_count": 1,
@@ -4195,6 +4507,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "PASSED",
+    "submit_time": "1687266416541",
     "final_tally_result": {
       "yes_count": 93,
       "abstain_count": 7,
@@ -4209,6 +4522,7 @@
     "type": "PoolIncentives",
     "topic": "Reward Adjustment",
     "status": "PASSED",
+    "submit_time": "1687187942087",
     "final_tally_result": {
       "yes_count": 90,
       "abstain_count": 11,
@@ -4223,6 +4537,7 @@
     "type": "ChainSpecific",
     "topic": "Chain Governance",
     "status": "PASSED",
+    "submit_time": "1687170350250",
     "final_tally_result": {
       "yes_count": 94,
       "abstain_count": 7,
@@ -4236,6 +4551,7 @@
     "type": "ParameterChange",
     "topic": "Protocol Configuration",
     "status": "PASSED",
+    "submit_time": "1686765624258",
     "final_tally_result": {
       "yes_count": 88,
       "abstain_count": 5,
@@ -4249,6 +4565,7 @@
     "type": "ParameterChange",
     "topic": "Staking Parameters",
     "status": "PASSED",
+    "submit_time": "1686759208084",
     "final_tally_result": {
       "yes_count": 87,
       "abstain_count": 5,
@@ -4262,6 +4579,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "PASSED",
+    "submit_time": "1686743365333",
     "final_tally_result": {
       "yes_count": 86,
       "abstain_count": 5,
@@ -4275,6 +4593,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "PASSED",
+    "submit_time": "1686743332326",
     "final_tally_result": {
       "yes_count": 86,
       "abstain_count": 5,
@@ -4288,6 +4607,7 @@
     "type": "PoolIncentives",
     "topic": "Pool Creation",
     "status": "PASSED",
+    "submit_time": "1686672380241",
     "final_tally_result": {
       "yes_count": 84,
       "abstain_count": 7,
@@ -4302,6 +4622,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "PASSED",
+    "submit_time": "1686595035198",
     "final_tally_result": {
       "abstain_count": 13,
       "yes_count": 64,
@@ -4316,6 +4637,7 @@
     "type": "PoolIncentives",
     "topic": "Reward Adjustment",
     "status": "PASSED",
+    "submit_time": "1686583142478",
     "final_tally_result": {
       "yes_count": 88,
       "abstain_count": 6,
@@ -4330,6 +4652,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "REJECTED",
+    "submit_time": "1686524278399",
     "final_tally_result": {
       "no_count": 46,
       "abstain_count": 36,
@@ -4344,6 +4667,7 @@
     "type": "SmartContract",
     "topic": "Contract Deployment",
     "status": "PASSED",
+    "submit_time": "1686280619632",
     "final_tally_result": {
       "yes_count": 53,
       "abstain_count": 26,
@@ -4358,6 +4682,7 @@
     "type": "ParameterChange",
     "topic": "Protocol Configuration",
     "status": "PASSED",
+    "submit_time": "1686096519548",
     "final_tally_result": {
       "yes_count": 57,
       "abstain_count": 14,
@@ -4372,6 +4697,7 @@
     "type": "PoolIncentives",
     "topic": "Reward Adjustment",
     "status": "PASSED",
+    "submit_time": "1685978303300",
     "final_tally_result": {
       "yes_count": 80,
       "abstain_count": 7,
@@ -4386,6 +4712,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "REJECTED",
+    "submit_time": "1685787006164",
     "final_tally_result": {
       "no_with_veto_count": 62,
       "yes_count": 1,
@@ -4401,6 +4728,7 @@
     "type": "TextProposal",
     "topic": "Community Decision",
     "status": "PASSED",
+    "submit_time": "1685559649333",
     "final_tally_result": {
       "abstain_count": 39,
       "yes_count": 31,
@@ -4415,6 +4743,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "PASSED",
+    "submit_time": "1685476716004",
     "final_tally_result": {
       "yes_count": 67,
       "abstain_count": 13,
@@ -4428,6 +4757,7 @@
     "type": "PoolIncentives",
     "topic": "Reward Adjustment",
     "status": "PASSED",
+    "submit_time": "1685345894499",
     "final_tally_result": {
       "yes_count": 86,
       "abstain_count": 9,
@@ -4442,6 +4772,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "REJECTED",
+    "submit_time": "1685166047199",
     "final_tally_result": {
       "no_count": 40,
       "abstain_count": 44,
@@ -4457,6 +4788,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "REJECTED",
+    "submit_time": "1685136302616",
     "final_tally_result": {
       "no_count": 43,
       "abstain_count": 31,
@@ -4472,6 +4804,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "PASSED",
+    "submit_time": "1685098771210",
     "final_tally_result": {
       "no_count": 4,
       "abstain_count": 20,
@@ -4486,6 +4819,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "PASSED",
+    "submit_time": "1685096954273",
     "final_tally_result": {
       "abstain_count": 5,
       "yes_count": 92,
@@ -4499,6 +4833,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "REJECTED",
+    "submit_time": "1685038526469",
     "final_tally_result": {
       "no_count": 68,
       "yes_count": 7,
@@ -4513,6 +4848,7 @@
     "type": "ParameterChange",
     "topic": "Protocol Configuration",
     "status": "PASSED",
+    "submit_time": "1684878357304",
     "final_tally_result": {
       "yes_count": 64,
       "abstain_count": 13,
@@ -4527,6 +4863,7 @@
     "type": "PoolIncentives",
     "topic": "Reward Adjustment",
     "status": "PASSED",
+    "submit_time": "1684768721418",
     "final_tally_result": {
       "yes_count": 81,
       "abstain_count": 6,
@@ -4541,6 +4878,7 @@
     "type": "ParameterChange",
     "topic": "Protocol Configuration",
     "status": "PASSED",
+    "submit_time": "1684529548126",
     "final_tally_result": {
       "abstain_count": 7,
       "yes_count": 75,
@@ -4555,6 +4893,7 @@
     "type": "SmartContract",
     "topic": "Contract Deployment",
     "status": "PASSED",
+    "submit_time": "1684514522385",
     "final_tally_result": {
       "yes_count": 55,
       "abstain_count": 26,
@@ -4569,6 +4908,7 @@
     "type": "IBCRelated",
     "topic": "Client Update",
     "status": "PASSED",
+    "submit_time": "1684333384818",
     "final_tally_result": {
       "yes_count": 77,
       "abstain_count": 3,
@@ -4582,6 +4922,7 @@
     "type": "PoolIncentives",
     "topic": "Reward Adjustment",
     "status": "PASSED",
+    "submit_time": "1684163943248",
     "final_tally_result": {
       "yes_count": 77,
       "abstain_count": 10,
@@ -4596,6 +4937,7 @@
     "type": "SmartContract",
     "topic": "Contract Deployment",
     "status": "PASSED",
+    "submit_time": "1683809554019",
     "final_tally_result": {
       "yes_count": 76,
       "abstain_count": 9,
@@ -4609,6 +4951,7 @@
     "type": "SmartContract",
     "topic": "Contract Deployment",
     "status": "PASSED",
+    "submit_time": "1683808882367",
     "final_tally_result": {
       "yes_count": 74,
       "abstain_count": 10,
@@ -4622,6 +4965,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "PASSED",
+    "submit_time": "1683733697361",
     "final_tally_result": {
       "yes_count": 72,
       "abstain_count": 7,
@@ -4636,6 +4980,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "PASSED",
+    "submit_time": "1683733636109",
     "final_tally_result": {
       "yes_count": 74,
       "abstain_count": 7,
@@ -4650,6 +4995,7 @@
     "type": "PoolIncentives",
     "topic": "Liquidity Mining",
     "status": "PASSED",
+    "submit_time": "1683635753366",
     "final_tally_result": {
       "yes_count": 64,
       "abstain_count": 18,
@@ -4664,6 +5010,7 @@
     "type": "ParameterChange",
     "topic": "Protocol Configuration",
     "status": "PASSED",
+    "submit_time": "1683633398860",
     "final_tally_result": {
       "yes_count": 77,
       "abstain_count": 6,
@@ -4677,6 +5024,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "PASSED",
+    "submit_time": "1683581377021",
     "final_tally_result": {
       "yes_count": 74,
       "abstain_count": 10,
@@ -4691,6 +5039,7 @@
     "type": "TextProposal",
     "topic": "Community Decision",
     "status": "PASSED",
+    "submit_time": "1683579607765",
     "final_tally_result": {
       "yes_count": 71,
       "abstain_count": 12,
@@ -4704,6 +5053,7 @@
     "type": "PoolIncentives",
     "topic": "Reward Adjustment",
     "status": "PASSED",
+    "submit_time": "1683559132076",
     "final_tally_result": {
       "yes_count": 81,
       "abstain_count": 6,
@@ -4718,6 +5068,7 @@
     "type": "CommunityPoolSpend",
     "topic": "Community Support",
     "status": "PASSED",
+    "submit_time": "1683552243440",
     "final_tally_result": {
       "no_count": 6,
       "yes_count": 58,
@@ -4732,6 +5083,7 @@
     "type": "ChainSpecific",
     "topic": "Chain Governance",
     "status": "PASSED",
+    "submit_time": "1683398492279",
     "final_tally_result": {
       "yes_count": 85,
       "abstain_count": 9,
@@ -4745,6 +5097,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "PASSED",
+    "submit_time": "1683112232138",
     "final_tally_result": {
       "yes_count": 52,
       "abstain_count": 32,
@@ -4759,6 +5112,7 @@
     "type": "TextProposal",
     "topic": "Ecosystem Growth",
     "status": "REJECTED",
+    "submit_time": "1683017334175",
     "final_tally_result": {
       "yes_count": 17,
       "abstain_count": 40,
@@ -4773,6 +5127,7 @@
     "type": "PoolIncentives",
     "topic": "Reward Adjustment",
     "status": "PASSED",
+    "submit_time": "1682954301597",
     "final_tally_result": {
       "yes_count": 79,
       "no_count": 2,
@@ -4787,6 +5142,7 @@
     "type": "ChainSpecific",
     "topic": "Chain Governance",
     "status": "PASSED",
+    "submit_time": "1682761163898",
     "final_tally_result": {
       "abstain_count": 11,
       "yes_count": 77,
@@ -4800,6 +5156,7 @@
     "type": "ChainSpecific",
     "topic": "Chain Governance",
     "status": "PASSED",
+    "submit_time": "1682666956426",
     "final_tally_result": {
       "yes_count": 73,
       "abstain_count": 8,
@@ -4814,6 +5171,7 @@
     "type": "PoolIncentives",
     "topic": "Reward Adjustment",
     "status": "PASSED",
+    "submit_time": "1682349587205",
     "final_tally_result": {
       "yes_count": 86,
       "abstain_count": 5,
@@ -4828,6 +5186,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "PASSED",
+    "submit_time": "1682002718740",
     "final_tally_result": {
       "yes_count": 32,
       "abstain_count": 39,
@@ -4842,6 +5201,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "PASSED",
+    "submit_time": "1681999349719",
     "final_tally_result": {
       "abstain_count": 6,
       "yes_count": 86,
@@ -4856,6 +5216,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "PASSED",
+    "submit_time": "1681955004576",
     "final_tally_result": {
       "yes_count": 45,
       "abstain_count": 3,
@@ -4870,6 +5231,7 @@
     "type": "ParameterChange",
     "topic": "Protocol Configuration",
     "status": "PASSED",
+    "submit_time": "1681933766432",
     "final_tally_result": {
       "yes_count": 87,
       "abstain_count": 10,
@@ -4883,6 +5245,7 @@
     "type": "PoolIncentives",
     "topic": "Reward Adjustment",
     "status": "PASSED",
+    "submit_time": "1681744766849",
     "final_tally_result": {
       "yes_count": 91,
       "no_count": 1,
@@ -4897,6 +5260,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "PASSED",
+    "submit_time": "1681741056875",
     "final_tally_result": {
       "yes_count": 92,
       "abstain_count": 8,
@@ -4911,6 +5275,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "PASSED",
+    "submit_time": "1681741038820",
     "final_tally_result": {
       "yes_count": 93,
       "abstain_count": 7,
@@ -4925,6 +5290,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "PASSED",
+    "submit_time": "1681741020688",
     "final_tally_result": {
       "yes_count": 95,
       "abstain_count": 3,
@@ -4939,6 +5305,7 @@
     "type": "SmartContract",
     "topic": "Contract Deployment",
     "status": "PASSED",
+    "submit_time": "1681410587733",
     "final_tally_result": {
       "yes_count": 83,
       "abstain_count": 4,
@@ -4952,6 +5319,7 @@
     "type": "TextProposal",
     "topic": "Network Policy",
     "status": "PASSED",
+    "submit_time": "1681311843645",
     "final_tally_result": {
       "yes_count": 54,
       "abstain_count": 26,
@@ -4965,6 +5333,7 @@
     "type": "PoolIncentives",
     "topic": "Reward Adjustment",
     "status": "PASSED",
+    "submit_time": "1681139828671",
     "final_tally_result": {
       "yes_count": 89,
       "abstain_count": 2,
@@ -4980,6 +5349,7 @@
     "type": "TextProposal",
     "topic": "Community Decision",
     "status": "PASSED",
+    "submit_time": "1680890976037",
     "final_tally_result": {
       "yes_count": 62,
       "abstain_count": 26,
@@ -4994,6 +5364,7 @@
     "type": "SmartContract",
     "topic": "Contract Deployment",
     "status": "PASSED",
+    "submit_time": "1680690077489",
     "final_tally_result": {
       "yes_count": 83,
       "abstain_count": 2,
@@ -5007,6 +5378,7 @@
     "type": "ParameterChange",
     "topic": "Protocol Configuration",
     "status": "PASSED",
+    "submit_time": "1680603359372",
     "final_tally_result": {
       "yes_count": 81,
       "abstain_count": 3,
@@ -5020,6 +5392,7 @@
     "type": "IBCRelated",
     "topic": "IBC Transfer",
     "status": "PASSED",
+    "submit_time": "1680596153733",
     "final_tally_result": {
       "yes_count": 80,
       "abstain_count": 4,
@@ -5033,6 +5406,7 @@
     "type": "PoolIncentives",
     "topic": "Reward Adjustment",
     "status": "PASSED",
+    "submit_time": "1680536249285",
     "final_tally_result": {
       "yes_count": 80,
       "abstain_count": 6,
@@ -5047,6 +5421,7 @@
     "type": "SmartContract",
     "topic": "Contract Deployment",
     "status": "PASSED",
+    "submit_time": "1679987707140",
     "final_tally_result": {
       "abstain_count": 27,
       "yes_count": 54,
@@ -5061,6 +5436,7 @@
     "type": "SmartContract",
     "topic": "Contract Deployment",
     "status": "PASSED",
+    "submit_time": "1679987489188",
     "final_tally_result": {
       "abstain_count": 28,
       "yes_count": 51,
@@ -5075,6 +5451,7 @@
     "type": "ParameterChange",
     "topic": "Protocol Configuration",
     "status": "PASSED",
+    "submit_time": "1679938358515",
     "final_tally_result": {
       "abstain_count": 31,
       "yes_count": 58,
@@ -5089,6 +5466,7 @@
     "type": "PoolIncentives",
     "topic": "Reward Adjustment",
     "status": "PASSED",
+    "submit_time": "1679931385535",
     "final_tally_result": {
       "abstain_count": 14,
       "yes_count": 75,
@@ -5103,6 +5481,7 @@
     "type": "ChainSpecific",
     "topic": "Chain Governance",
     "status": "PASSED",
+    "submit_time": "1679911157220",
     "final_tally_result": {
       "yes_count": 89,
       "abstain_count": 1,
@@ -5116,6 +5495,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "REJECTED",
+    "submit_time": "1679738428652",
     "final_tally_result": {
       "no_with_veto_count": 58,
       "no_count": 1,
@@ -5129,6 +5509,7 @@
     "type": "TokenRelated",
     "topic": "Token Registration",
     "status": "PASSED",
+    "submit_time": "1679677329882",
     "final_tally_result": {
       "yes_count": 91,
       "abstain_count": 1,
@@ -5142,6 +5523,7 @@
     "type": "IBCRelated",
     "topic": "IBC Security",
     "status": "PASSED",
+    "submit_time": "1679669536948",
     "final_tally_result": {
       "abstain_count": 10,
       "yes_count": 57,
@@ -5155,6 +5537,7 @@
     "type": "PoolIncentives",
     "topic": "Reward Adjustment",
     "status": "PASSED",
+    "submit_time": "1679326212513",
     "final_tally_result": {
       "yes_count": 89,
       "abstain_count": 9,
@@ -5169,6 +5552,7 @@
     "type": "ParameterChange",
     "topic": "Protocol Configuration",
     "status": "PASSED",
+    "submit_time": "1679315413549",
     "final_tally_result": {
       "yes_count": 101,
       "no_with_veto_count": 2,
@@ -5182,6 +5566,7 @@
     "type": "ChainSpecific",
     "topic": "Chain Governance",
     "status": "PASSED",
+    "submit_time": "1679310919824",
     "final_tally_result": {
       "yes_count": 83,
       "abstain_count": 15,
@@ -5195,6 +5580,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "PASSED",
+    "submit_time": "1679172975408",
     "final_tally_result": {
       "yes_count": 63,
       "abstain_count": 33,
@@ -5209,6 +5595,7 @@
     "type": "ParameterChange",
     "topic": "Protocol Configuration",
     "status": "PASSED",
+    "submit_time": "1679035939840",
     "final_tally_result": {
       "yes_count": 97,
       "no_vote_count": 53
@@ -5221,6 +5608,7 @@
     "type": "CommunityPoolSpend",
     "topic": "Community Support",
     "status": "REJECTED",
+    "submit_time": "1678935333379",
     "final_tally_result": {
       "no_with_veto_count": 67,
       "no_vote_count": 83
@@ -5233,6 +5621,7 @@
     "type": "CommunityPoolSpend",
     "topic": "Community Support",
     "status": "PASSED",
+    "submit_time": "1678887954690",
     "final_tally_result": {
       "yes_count": 70,
       "abstain_count": 16,
@@ -5247,6 +5636,7 @@
     "type": "PoolIncentives",
     "topic": "Reward Adjustment",
     "status": "PASSED",
+    "submit_time": "1678720808730",
     "final_tally_result": {
       "yes_count": 85,
       "abstain_count": 9,
@@ -5261,6 +5651,7 @@
     "type": "SoftwareUpgrade",
     "topic": "Major Release",
     "status": "PASSED",
+    "submit_time": "1678483134919",
     "final_tally_result": {
       "yes_count": 100,
       "abstain_count": 3,
@@ -5274,6 +5665,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "PASSED",
+    "submit_time": "1678256504358",
     "final_tally_result": {
       "abstain_count": 45,
       "yes_count": 42,
@@ -5288,6 +5680,7 @@
     "type": "PoolIncentives",
     "topic": "Pool Creation",
     "status": "PASSED",
+    "submit_time": "1678205757251",
     "final_tally_result": {
       "yes_count": 84,
       "abstain_count": 9,
@@ -5302,6 +5695,7 @@
     "type": "SmartContract",
     "topic": "Contract Deployment",
     "status": "PASSED",
+    "submit_time": "1678119425322",
     "final_tally_result": {
       "yes_count": 85,
       "abstain_count": 7,
@@ -5315,6 +5709,7 @@
     "type": "PoolIncentives",
     "topic": "Reward Adjustment",
     "status": "PASSED",
+    "submit_time": "1678116166710",
     "final_tally_result": {
       "yes_count": 84,
       "abstain_count": 9,
@@ -5329,6 +5724,7 @@
     "type": "PoolIncentives",
     "topic": "Liquidity Mining",
     "status": "PASSED",
+    "submit_time": "1678114507594",
     "final_tally_result": {
       "yes_count": 84,
       "abstain_count": 9,
@@ -5343,6 +5739,7 @@
     "type": "ParameterChange",
     "topic": "Protocol Configuration",
     "status": "PASSED",
+    "submit_time": "1678114050568",
     "final_tally_result": {
       "yes_count": 66,
       "abstain_count": 25,
@@ -5357,6 +5754,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "PASSED",
+    "submit_time": "1678112816636",
     "final_tally_result": {
       "yes_count": 82,
       "no_count": 3,
@@ -5371,6 +5769,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "PASSED",
+    "submit_time": "1677679175331",
     "final_tally_result": {
       "yes_count": 61,
       "no_count": 1,
@@ -5385,6 +5784,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "PASSED",
+    "submit_time": "1677678525233",
     "final_tally_result": {
       "yes_count": 81,
       "abstain_count": 7,
@@ -5399,6 +5799,7 @@
     "type": "SmartContract",
     "topic": "Contract Deployment",
     "status": "PASSED",
+    "submit_time": "1677515706469",
     "final_tally_result": {
       "abstain_count": 32,
       "yes_count": 50,
@@ -5413,6 +5814,7 @@
     "type": "PoolIncentives",
     "topic": "Reward Adjustment",
     "status": "PASSED",
+    "submit_time": "1677511300884",
     "final_tally_result": {
       "yes_count": 78,
       "abstain_count": 11,
@@ -5427,6 +5829,7 @@
     "type": "ChainSpecific",
     "topic": "Chain Governance",
     "status": "PASSED",
+    "submit_time": "1677504484010",
     "final_tally_result": {
       "yes_count": 81,
       "abstain_count": 8,
@@ -5440,6 +5843,7 @@
     "type": "PoolIncentives",
     "topic": "Liquidity Mining",
     "status": "PASSED",
+    "submit_time": "1677169959204",
     "final_tally_result": {
       "yes_count": 50,
       "abstain_count": 32,
@@ -5454,6 +5858,7 @@
     "type": "ChainSpecific",
     "topic": "Chain Governance",
     "status": "PASSED",
+    "submit_time": "1677158984790",
     "final_tally_result": {
       "yes_count": 80,
       "abstain_count": 9,
@@ -5467,6 +5872,7 @@
     "type": "TextProposal",
     "topic": "Community Decision",
     "status": "PASSED",
+    "submit_time": "1677077691813",
     "final_tally_result": {
       "yes_count": 54,
       "abstain_count": 29,
@@ -5481,6 +5887,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "PASSED",
+    "submit_time": "1677009208368",
     "final_tally_result": {
       "yes_count": 85,
       "abstain_count": 6,
@@ -5494,6 +5901,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "PASSED",
+    "submit_time": "1676983909327",
     "final_tally_result": {
       "yes_count": 81,
       "abstain_count": 11,
@@ -5507,6 +5915,7 @@
     "type": "PoolIncentives",
     "topic": "Reward Adjustment",
     "status": "PASSED",
+    "submit_time": "1676906491002",
     "final_tally_result": {
       "yes_count": 86,
       "abstain_count": 9,
@@ -5521,6 +5930,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "PASSED",
+    "submit_time": "1676903727008",
     "final_tally_result": {
       "yes_count": 91,
       "abstain_count": 6,
@@ -5534,6 +5944,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "PASSED",
+    "submit_time": "1676901933669",
     "final_tally_result": {
       "abstain_count": 14,
       "yes_count": 82,
@@ -5548,6 +5959,7 @@
     "type": "ParameterChange",
     "topic": "Protocol Configuration",
     "status": "PASSED",
+    "submit_time": "1676585296024",
     "final_tally_result": {
       "abstain_count": 19,
       "yes_count": 67,
@@ -5561,6 +5973,7 @@
     "type": "PoolIncentives",
     "topic": "Liquidity Mining",
     "status": "PASSED",
+    "submit_time": "1676462552133",
     "final_tally_result": {
       "yes_count": 68,
       "abstain_count": 16,
@@ -5575,6 +5988,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "PASSED",
+    "submit_time": "1676462236421",
     "final_tally_result": {
       "yes_count": 68,
       "abstain_count": 13,
@@ -5589,6 +6003,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "PASSED",
+    "submit_time": "1676462098345",
     "final_tally_result": {
       "yes_count": 70,
       "abstain_count": 15,
@@ -5602,6 +6017,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "PASSED",
+    "submit_time": "1676330406658",
     "final_tally_result": {
       "abstain_count": 30,
       "yes_count": 35,
@@ -5617,6 +6033,7 @@
     "type": "TextProposal",
     "topic": "Network Policy",
     "status": "PASSED",
+    "submit_time": "1676328234524",
     "final_tally_result": {
       "yes_count": 41,
       "abstain_count": 28,
@@ -5632,6 +6049,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "PASSED",
+    "submit_time": "1676302503080",
     "final_tally_result": {
       "yes_count": 85,
       "abstain_count": 6,
@@ -5646,6 +6064,7 @@
     "type": "PoolIncentives",
     "topic": "Reward Adjustment",
     "status": "PASSED",
+    "submit_time": "1676301741182",
     "final_tally_result": {
       "yes_count": 82,
       "abstain_count": 8,
@@ -5660,6 +6079,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "PASSED",
+    "submit_time": "1676287740920",
     "final_tally_result": {
       "yes_count": 83,
       "abstain_count": 8,
@@ -5673,6 +6093,7 @@
     "type": "PoolIncentives",
     "topic": "Liquidity Mining",
     "status": "PASSED",
+    "submit_time": "1675773927010",
     "final_tally_result": {
       "yes_count": 71,
       "abstain_count": 17,
@@ -5687,6 +6108,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "PASSED",
+    "submit_time": "1675773779218",
     "final_tally_result": {
       "yes_count": 71,
       "abstain_count": 15,
@@ -5701,6 +6123,7 @@
     "type": "TextProposal",
     "topic": "Community Decision",
     "status": "PASSED",
+    "submit_time": "1675718434290",
     "final_tally_result": {
       "yes_count": 32,
       "abstain_count": 39,
@@ -5715,6 +6138,7 @@
     "type": "PoolIncentives",
     "topic": "Reward Adjustment",
     "status": "PASSED",
+    "submit_time": "1675696835783",
     "final_tally_result": {
       "yes_count": 85,
       "abstain_count": 4,
@@ -5729,6 +6153,7 @@
     "type": "IBCRelated",
     "topic": "IBC Security",
     "status": "PASSED",
+    "submit_time": "1675528575929",
     "final_tally_result": {
       "yes_count": 75,
       "no_count": 2,
@@ -5743,6 +6168,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "PASSED",
+    "submit_time": "1675365672627",
     "final_tally_result": {
       "yes_count": 59,
       "abstain_count": 25,
@@ -5757,6 +6183,7 @@
     "type": "CommunityPoolSpend",
     "topic": "Community Support",
     "status": "PASSED",
+    "submit_time": "1675356360671",
     "final_tally_result": {
       "yes_count": 49,
       "abstain_count": 39,
@@ -5771,6 +6198,7 @@
     "type": "ChainSpecific",
     "topic": "Chain Governance",
     "status": "PASSED",
+    "submit_time": "1675312845238",
     "final_tally_result": {
       "yes_count": 67,
       "abstain_count": 24,
@@ -5784,6 +6212,7 @@
     "type": "IBCRelated",
     "topic": "Client Update",
     "status": "PASSED",
+    "submit_time": "1675245093061",
     "final_tally_result": {
       "yes_count": 95,
       "abstain_count": 4,
@@ -5797,6 +6226,7 @@
     "type": "ParameterChange",
     "topic": "Protocol Configuration",
     "status": "PASSED",
+    "submit_time": "1675171483986",
     "final_tally_result": {
       "abstain_count": 14,
       "yes_count": 71,
@@ -5811,6 +6241,7 @@
     "type": "PoolIncentives",
     "topic": "Reward Adjustment",
     "status": "PASSED",
+    "submit_time": "1675092055805",
     "final_tally_result": {
       "yes_count": 96,
       "abstain_count": 5,
@@ -5825,6 +6256,7 @@
     "type": "CommunityPoolSpend",
     "topic": "Community Support",
     "status": "PASSED",
+    "submit_time": "1674922202862",
     "final_tally_result": {
       "yes_count": 77,
       "abstain_count": 18,
@@ -5839,6 +6271,7 @@
     "type": "ParameterChange",
     "topic": "Protocol Configuration",
     "status": "PASSED",
+    "submit_time": "1674922045116",
     "final_tally_result": {
       "yes_count": 86,
       "abstain_count": 12,
@@ -5852,6 +6285,7 @@
     "type": "IBCRelated",
     "topic": "Client Update",
     "status": "PASSED",
+    "submit_time": "1674850950230",
     "final_tally_result": {
       "yes_count": 87,
       "abstain_count": 4,
@@ -5865,6 +6299,7 @@
     "type": "IBCRelated",
     "topic": "Client Update",
     "status": "PASSED",
+    "submit_time": "1674838965535",
     "final_tally_result": {
       "yes_count": 76,
       "abstain_count": 9,
@@ -5878,6 +6313,7 @@
     "type": "SmartContract",
     "topic": "Contract Deployment",
     "status": "PASSED",
+    "submit_time": "1674663253954",
     "final_tally_result": {
       "yes_count": 77,
       "abstain_count": 9,
@@ -5891,6 +6327,7 @@
     "type": "PoolIncentives",
     "topic": "Liquidity Mining",
     "status": "PASSED",
+    "submit_time": "1674657740205",
     "final_tally_result": {
       "yes_count": 76,
       "no_count": 1,
@@ -5905,6 +6342,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "PASSED",
+    "submit_time": "1674655165231",
     "final_tally_result": {
       "yes_count": 83,
       "abstain_count": 7,
@@ -5918,6 +6356,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "PASSED",
+    "submit_time": "1674654950935",
     "final_tally_result": {
       "yes_count": 82,
       "no_count": 1,
@@ -5932,6 +6371,7 @@
     "type": "PoolIncentives",
     "topic": "Reward Adjustment",
     "status": "PASSED",
+    "submit_time": "1674488417852",
     "final_tally_result": {
       "yes_count": 79,
       "abstain_count": 10,
@@ -5946,6 +6386,7 @@
     "type": "PoolIncentives",
     "topic": "Reward Adjustment",
     "status": "REJECTED",
+    "submit_time": "1674488117706",
     "final_tally_result": {
       "yes_count": 24,
       "abstain_count": 47,
@@ -5961,6 +6402,7 @@
     "type": "ChainSpecific",
     "topic": "Chain Governance",
     "status": "PASSED",
+    "submit_time": "1674307862150",
     "final_tally_result": {
       "yes_count": 85,
       "abstain_count": 8,
@@ -5975,6 +6417,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "PASSED",
+    "submit_time": "1674051826658",
     "final_tally_result": {
       "yes_count": 88,
       "abstain_count": 15,
@@ -5989,6 +6432,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "PASSED",
+    "submit_time": "1674050845486",
     "final_tally_result": {
       "yes_count": 83,
       "abstain_count": 21,
@@ -6003,6 +6447,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "PASSED",
+    "submit_time": "1674050833232",
     "final_tally_result": {
       "yes_count": 83,
       "abstain_count": 19,
@@ -6017,6 +6462,7 @@
     "type": "SoftwareUpgrade",
     "topic": "Major Release",
     "status": "PASSED",
+    "submit_time": "1673978450407",
     "final_tally_result": {
       "yes_count": 109,
       "abstain_count": 1,
@@ -6030,6 +6476,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "PASSED",
+    "submit_time": "1673941908268",
     "final_tally_result": {
       "yes_count": 57,
       "abstain_count": 32,
@@ -6045,6 +6492,7 @@
     "type": "PoolIncentives",
     "topic": "Reward Adjustment",
     "status": "PASSED",
+    "submit_time": "1673882437191",
     "final_tally_result": {
       "yes_count": 93,
       "abstain_count": 12,
@@ -6058,6 +6506,7 @@
     "type": "ChainSpecific",
     "topic": "Chain Governance",
     "status": "PASSED",
+    "submit_time": "1673868756321",
     "final_tally_result": {
       "yes_count": 99,
       "abstain_count": 7,
@@ -6071,6 +6520,7 @@
     "type": "ChainSpecific",
     "topic": "Chain Governance",
     "status": "PASSED",
+    "submit_time": "1673868681457",
     "final_tally_result": {
       "yes_count": 97,
       "abstain_count": 7,
@@ -6085,6 +6535,7 @@
     "type": "PoolIncentives",
     "topic": "Reward Adjustment",
     "status": "PASSED",
+    "submit_time": "1673283595698",
     "final_tally_result": {
       "yes_count": 81,
       "abstain_count": 5,
@@ -6098,6 +6549,7 @@
     "type": "PoolIncentives",
     "topic": "Reward Adjustment",
     "status": "PASSED",
+    "submit_time": "1672672809377",
     "final_tally_result": {
       "yes_count": 81,
       "abstain_count": 4,
@@ -6112,6 +6564,7 @@
     "type": "ChainSpecific",
     "topic": "Chain Governance",
     "status": "PASSED",
+    "submit_time": "1672310215015",
     "final_tally_result": {
       "yes_count": 58,
       "no_count": 4,
@@ -6126,6 +6579,7 @@
     "type": "PoolIncentives",
     "topic": "Reward Adjustment",
     "status": "PASSED",
+    "submit_time": "1672071681275",
     "final_tally_result": {
       "yes_count": 77,
       "abstain_count": 6,
@@ -6140,6 +6594,7 @@
     "type": "PoolIncentives",
     "topic": "Pool Creation",
     "status": "PASSED",
+    "submit_time": "1671629309297",
     "final_tally_result": {
       "yes_count": 60,
       "abstain_count": 21,
@@ -6155,6 +6610,7 @@
     "type": "TextProposal",
     "topic": "Ecosystem Growth",
     "status": "PASSED",
+    "submit_time": "1671628016188",
     "final_tally_result": {
       "yes_count": 52,
       "abstain_count": 28,
@@ -6170,6 +6626,7 @@
     "type": "TextProposal",
     "topic": "Community Decision",
     "status": "REJECTED",
+    "submit_time": "1671565448596",
     "final_tally_result": {
       "abstain_count": 31,
       "yes_count": 23,
@@ -6185,6 +6642,7 @@
     "type": "PoolIncentives",
     "topic": "Reward Adjustment",
     "status": "PASSED",
+    "submit_time": "1671467955035",
     "final_tally_result": {
       "yes_count": 78,
       "abstain_count": 6,
@@ -6199,6 +6657,7 @@
     "type": "PoolIncentives",
     "topic": "Liquidity Mining",
     "status": "PASSED",
+    "submit_time": "1671026166079",
     "final_tally_result": {
       "abstain_count": 16,
       "yes_count": 69,
@@ -6213,6 +6672,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "PASSED",
+    "submit_time": "1671025939191",
     "final_tally_result": {
       "yes_count": 74,
       "no_count": 4,
@@ -6227,6 +6687,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "PASSED",
+    "submit_time": "1671025796218",
     "final_tally_result": {
       "abstain_count": 11,
       "yes_count": 75,
@@ -6241,6 +6702,7 @@
     "type": "SmartContract",
     "topic": "Contract Deployment",
     "status": "PASSED",
+    "submit_time": "1670936655890",
     "final_tally_result": {
       "yes_count": 78,
       "abstain_count": 5,
@@ -6255,6 +6717,7 @@
     "type": "SmartContract",
     "topic": "Contract Deployment",
     "status": "PASSED",
+    "submit_time": "1670936375052",
     "final_tally_result": {
       "yes_count": 78,
       "abstain_count": 5,
@@ -6269,6 +6732,7 @@
     "type": "SmartContract",
     "topic": "Contract Deployment",
     "status": "PASSED",
+    "submit_time": "1670934811082",
     "final_tally_result": {
       "yes_count": 77,
       "abstain_count": 5,
@@ -6283,6 +6747,7 @@
     "type": "PoolIncentives",
     "topic": "Reward Adjustment",
     "status": "PASSED",
+    "submit_time": "1670857847961",
     "final_tally_result": {
       "yes_count": 97,
       "abstain_count": 5,
@@ -6297,6 +6762,7 @@
     "type": "CommunityPoolSpend",
     "topic": "Community Support",
     "status": "PASSED",
+    "submit_time": "1670639102903",
     "final_tally_result": {
       "yes_count": 72,
       "weighted_vote_count": 1,
@@ -6313,6 +6779,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "PASSED",
+    "submit_time": "1670421292772",
     "final_tally_result": {
       "yes_count": 84,
       "abstain_count": 2,
@@ -6327,6 +6794,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "PASSED",
+    "submit_time": "1670420897984",
     "final_tally_result": {
       "yes_count": 64,
       "no_count": 9,
@@ -6341,6 +6809,7 @@
     "type": "CommunityPoolSpend",
     "topic": "Ecosystem Growth",
     "status": "PASSED",
+    "submit_time": "1670334625348",
     "final_tally_result": {
       "abstain_count": 31,
       "yes_count": 56,
@@ -6356,6 +6825,7 @@
     "type": "IBCRelated",
     "topic": "IBC Transfer",
     "status": "PASSED",
+    "submit_time": "1670301632601",
     "final_tally_result": {
       "yes_count": 85,
       "abstain_count": 11,
@@ -6371,6 +6841,7 @@
     "type": "PoolIncentives",
     "topic": "Reward Adjustment",
     "status": "PASSED",
+    "submit_time": "1670253048934",
     "final_tally_result": {
       "yes_count": 100,
       "abstain_count": 4,
@@ -6385,6 +6856,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "PASSED",
+    "submit_time": "1670122872878",
     "final_tally_result": {
       "no_count": 9,
       "yes_count": 70,
@@ -6400,6 +6872,7 @@
     "type": "SoftwareUpgrade",
     "topic": "Major Release",
     "status": "PASSED",
+    "submit_time": "1670018404539",
     "final_tally_result": {
       "yes_count": 106,
       "abstain_count": 1,
@@ -6413,6 +6886,7 @@
     "type": "TextProposal",
     "topic": "Community Decision",
     "status": "PASSED",
+    "submit_time": "1669737485069",
     "final_tally_result": {
       "yes_count": 77,
       "abstain_count": 6,
@@ -6427,6 +6901,7 @@
     "type": "PoolIncentives",
     "topic": "Reward Adjustment",
     "status": "PASSED",
+    "submit_time": "1669648254795",
     "final_tally_result": {
       "yes_count": 90,
       "abstain_count": 4,
@@ -6441,6 +6916,7 @@
     "type": "IBCRelated",
     "topic": "IBC Security",
     "status": "PASSED",
+    "submit_time": "1669238878583",
     "final_tally_result": {
       "abstain_count": 27,
       "yes_count": 49,
@@ -6455,6 +6931,7 @@
     "type": "PoolIncentives",
     "topic": "Reward Adjustment",
     "status": "PASSED",
+    "submit_time": "1669043519036",
     "final_tally_result": {
       "yes_count": 77,
       "abstain_count": 2,
@@ -6468,6 +6945,7 @@
     "type": "TextProposal",
     "topic": "Network Policy",
     "status": "PASSED",
+    "submit_time": "1668480283705",
     "final_tally_result": {
       "yes_count": 73,
       "abstain_count": 17,
@@ -6482,6 +6960,7 @@
     "type": "PoolIncentives",
     "topic": "Liquidity Mining",
     "status": "PASSED",
+    "submit_time": "1668441783432",
     "final_tally_result": {
       "yes_count": 78,
       "abstain_count": 11,
@@ -6497,6 +6976,7 @@
     "type": "PoolIncentives",
     "topic": "Reward Adjustment",
     "status": "PASSED",
+    "submit_time": "1668438779192",
     "final_tally_result": {
       "yes_count": 95,
       "abstain_count": 3,
@@ -6510,6 +6990,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "PASSED",
+    "submit_time": "1668389859559",
     "final_tally_result": {
       "yes_count": 38,
       "abstain_count": 27,
@@ -6525,6 +7006,7 @@
     "type": "ChainSpecific",
     "topic": "Chain Governance",
     "status": "PASSED",
+    "submit_time": "1668086778410",
     "final_tally_result": {
       "yes_count": 80,
       "abstain_count": 8,
@@ -6539,6 +7021,7 @@
     "type": "PoolIncentives",
     "topic": "Liquidity Mining",
     "status": "PASSED",
+    "submit_time": "1668004701677",
     "final_tally_result": {
       "yes_count": 82,
       "abstain_count": 7,
@@ -6553,6 +7036,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "PASSED",
+    "submit_time": "1668004519586",
     "final_tally_result": {
       "yes_count": 84,
       "no_count": 3,
@@ -6567,6 +7051,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "PASSED",
+    "submit_time": "1667944869238",
     "final_tally_result": {
       "abstain_count": 12,
       "yes_count": 79,
@@ -6581,6 +7066,7 @@
     "type": "IBCRelated",
     "topic": "IBC Security",
     "status": "PASSED",
+    "submit_time": "1667845856751",
     "final_tally_result": {
       "abstain_count": 12,
       "yes_count": 86,
@@ -6594,6 +7080,7 @@
     "type": "PoolIncentives",
     "topic": "Reward Adjustment",
     "status": "PASSED",
+    "submit_time": "1667833943432",
     "final_tally_result": {
       "yes_count": 97,
       "abstain_count": 4,
@@ -6607,6 +7094,7 @@
     "type": "ChainSpecific",
     "topic": "Chain Governance",
     "status": "PASSED",
+    "submit_time": "1667599009646",
     "final_tally_result": {
       "yes_count": 98,
       "abstain_count": 1,
@@ -6620,6 +7108,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "PASSED",
+    "submit_time": "1667598797536",
     "final_tally_result": {
       "yes_count": 99,
       "no_count": 1,
@@ -6633,6 +7122,7 @@
     "type": "PoolIncentives",
     "topic": "Reward Adjustment",
     "status": "PASSED",
+    "submit_time": "1667229160857",
     "final_tally_result": {
       "yes_count": 90,
       "abstain_count": 3,
@@ -6646,6 +7136,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "PASSED",
+    "submit_time": "1666682077345",
     "final_tally_result": {
       "yes_count": 34,
       "no_count": 21,
@@ -6660,6 +7151,7 @@
     "type": "PoolIncentives",
     "topic": "Reward Adjustment",
     "status": "PASSED",
+    "submit_time": "1666624703413",
     "final_tally_result": {
       "yes_count": 91,
       "abstain_count": 3,
@@ -6673,6 +7165,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "PASSED",
+    "submit_time": "1666042927278",
     "final_tally_result": {
       "no_count": 26,
       "yes_count": 29,
@@ -6687,6 +7180,7 @@
     "type": "PoolIncentives",
     "topic": "Reward Adjustment",
     "status": "PASSED",
+    "submit_time": "1666020965427",
     "final_tally_result": {
       "yes_count": 54,
       "abstain_count": 38,
@@ -6701,6 +7195,7 @@
     "type": "PoolIncentives",
     "topic": "Reward Adjustment",
     "status": "PASSED",
+    "submit_time": "1666019911455",
     "final_tally_result": {
       "yes_count": 94,
       "abstain_count": 2,
@@ -6714,6 +7209,7 @@
     "type": "CommunityPoolSpend",
     "topic": "Community Support",
     "status": "PASSED",
+    "submit_time": "1665753348506",
     "final_tally_result": {
       "yes_count": 85,
       "abstain_count": 6,
@@ -6727,6 +7223,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "PASSED",
+    "submit_time": "1665581172754",
     "final_tally_result": {
       "yes_count": 90,
       "no_count": 1,
@@ -6741,6 +7238,7 @@
     "type": "TextProposal",
     "topic": "Community Decision",
     "status": "PASSED",
+    "submit_time": "1665445477688",
     "final_tally_result": {
       "yes_count": 92,
       "abstain_count": 14,
@@ -6755,6 +7253,7 @@
     "type": "PoolIncentives",
     "topic": "Reward Adjustment",
     "status": "PASSED",
+    "submit_time": "1665417170811",
     "final_tally_result": {
       "abstain_count": 8,
       "yes_count": 92,
@@ -6768,6 +7267,7 @@
     "type": "SmartContract",
     "topic": "Contract Deployment",
     "status": "REJECTED",
+    "submit_time": "1665157272907",
     "final_tally_result": {
       "no_count": 49,
       "abstain_count": 18,
@@ -6783,6 +7283,7 @@
     "type": "SmartContract",
     "topic": "Contract Deployment",
     "status": "REJECTED",
+    "submit_time": "1665156759661",
     "final_tally_result": {
       "no_count": 50,
       "yes_count": 29,
@@ -6798,6 +7299,7 @@
     "type": "TextProposal",
     "topic": "Community Decision",
     "status": "PASSED",
+    "submit_time": "1665148709683",
     "final_tally_result": {
       "no_count": 3,
       "abstain_count": 5,
@@ -6813,6 +7315,7 @@
     "type": "PoolIncentives",
     "topic": "Reward Adjustment",
     "status": "PASSED",
+    "submit_time": "1664810192182",
     "final_tally_result": {
       "yes_count": 86,
       "abstain_count": 5,
@@ -6826,6 +7329,7 @@
     "type": "SmartContract",
     "topic": "Contract Deployment",
     "status": "PASSED",
+    "submit_time": "1664571272577",
     "final_tally_result": {
       "no_count": 14,
       "abstain_count": 37,
@@ -6841,6 +7345,7 @@
     "type": "ParameterChange",
     "topic": "Staking Parameters",
     "status": "PASSED",
+    "submit_time": "1664380269045",
     "final_tally_result": {
       "yes_count": 70,
       "abstain_count": 13,
@@ -6855,6 +7360,7 @@
     "type": "PoolIncentives",
     "topic": "Reward Adjustment",
     "status": "PASSED",
+    "submit_time": "1664205301719",
     "final_tally_result": {
       "yes_count": 84,
       "abstain_count": 4,
@@ -6868,6 +7374,7 @@
     "type": "SoftwareUpgrade",
     "topic": "Major Release",
     "status": "PASSED",
+    "submit_time": "1664040667120",
     "final_tally_result": {
       "yes_count": 97,
       "abstain_count": 1,
@@ -6881,6 +7388,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "PASSED",
+    "submit_time": "1663707637079",
     "final_tally_result": {
       "yes_count": 81,
       "abstain_count": 10,
@@ -6894,6 +7402,7 @@
     "type": "CommunityPoolSpend",
     "topic": "Community Support",
     "status": "PASSED",
+    "submit_time": "1663626083113",
     "final_tally_result": {
       "yes_count": 73,
       "abstain_count": 13,
@@ -6908,6 +7417,7 @@
     "type": "PoolIncentives",
     "topic": "Reward Adjustment",
     "status": "PASSED",
+    "submit_time": "1663600386177",
     "final_tally_result": {
       "yes_count": 85,
       "abstain_count": 5,
@@ -6921,6 +7431,7 @@
     "type": "CommunityPoolSpend",
     "topic": "Community Support",
     "status": "PASSED",
+    "submit_time": "1663370912279",
     "final_tally_result": {
       "yes_count": 73,
       "abstain_count": 14,
@@ -6935,6 +7446,7 @@
     "type": "TextProposal",
     "topic": "Community Decision",
     "status": "PASSED",
+    "submit_time": "1663123552210",
     "final_tally_result": {
       "yes_count": 72,
       "abstain_count": 5,
@@ -6949,6 +7461,7 @@
     "type": "PoolIncentives",
     "topic": "Reward Adjustment",
     "status": "PASSED",
+    "submit_time": "1662978136392",
     "final_tally_result": {
       "yes_count": 85,
       "abstain_count": 5,
@@ -6962,6 +7475,7 @@
     "type": "PoolIncentives",
     "topic": "Reward Adjustment",
     "status": "PASSED",
+    "submit_time": "1662387880739",
     "final_tally_result": {
       "yes_count": 75,
       "abstain_count": 6,
@@ -6975,6 +7489,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "PASSED",
+    "submit_time": "1662235240601",
     "final_tally_result": {
       "yes_count": 55,
       "abstain_count": 22,
@@ -6989,6 +7504,7 @@
     "type": "PoolIncentives",
     "topic": "Reward Adjustment",
     "status": "PASSED",
+    "submit_time": "1661783013536",
     "final_tally_result": {
       "yes_count": 85,
       "abstain_count": 4,
@@ -7002,6 +7518,7 @@
     "type": "CommunityPoolSpend",
     "topic": "Community Support",
     "status": "PASSED",
+    "submit_time": "1661777819191",
     "final_tally_result": {
       "yes_count": 78,
       "abstain_count": 9,
@@ -7016,6 +7533,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "PASSED",
+    "submit_time": "1661745719984",
     "final_tally_result": {
       "yes_count": 49,
       "abstain_count": 20,
@@ -7030,6 +7548,7 @@
     "type": "SmartContract",
     "topic": "Contract Deployment",
     "status": "PASSED",
+    "submit_time": "1661444095695",
     "final_tally_result": {
       "abstain_count": 11,
       "yes_count": 78,
@@ -7043,6 +7562,7 @@
     "type": "SmartContract",
     "topic": "Contract Deployment",
     "status": "REJECTED",
+    "submit_time": "1661420419466",
     "final_tally_result": {
       "no_count": 73,
       "abstain_count": 5,
@@ -7058,6 +7578,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "REJECTED",
+    "submit_time": "1661390595608",
     "final_tally_result": {
       "abstain_count": 40,
       "no_count": 32,
@@ -7073,6 +7594,7 @@
     "type": "SmartContract",
     "topic": "Contract Deployment",
     "status": "PASSED",
+    "submit_time": "1661186676586",
     "final_tally_result": {
       "yes_count": 74,
       "abstain_count": 11,
@@ -7087,6 +7609,7 @@
     "type": "PoolIncentives",
     "topic": "Reward Adjustment",
     "status": "PASSED",
+    "submit_time": "1661178049779",
     "final_tally_result": {
       "yes_count": 78,
       "abstain_count": 13,
@@ -7100,6 +7623,7 @@
     "type": "ChainSpecific",
     "topic": "Chain Governance",
     "status": "PASSED",
+    "submit_time": "1660962493987",
     "final_tally_result": {
       "abstain_count": 39,
       "yes_count": 39,
@@ -7115,6 +7639,7 @@
     "type": "SmartContract",
     "topic": "Contract Deployment",
     "status": "PASSED",
+    "submit_time": "1660888902331",
     "final_tally_result": {
       "abstain_count": 19,
       "yes_count": 60,
@@ -7129,6 +7654,7 @@
     "type": "SmartContract",
     "topic": "Contract Deployment",
     "status": "PASSED",
+    "submit_time": "1660888896030",
     "final_tally_result": {
       "abstain_count": 20,
       "yes_count": 65,
@@ -7143,6 +7669,7 @@
     "type": "PoolIncentives",
     "topic": "Reward Adjustment",
     "status": "PASSED",
+    "submit_time": "1660575602971",
     "final_tally_result": {
       "yes_count": 65,
       "abstain_count": 6,
@@ -7156,6 +7683,7 @@
     "type": "TextProposal",
     "topic": "Community Decision",
     "status": "REJECTED",
+    "submit_time": "1660056258745",
     "final_tally_result": {
       "no_count": 61,
       "abstain_count": 12,
@@ -7171,6 +7699,7 @@
     "type": "PoolIncentives",
     "topic": "Reward Adjustment",
     "status": "PASSED",
+    "submit_time": "1659976847262",
     "final_tally_result": {
       "yes_count": 77,
       "no_count": 1,
@@ -7185,6 +7714,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "REJECTED",
+    "submit_time": "1659779330717",
     "final_tally_result": {
       "abstain_count": 14,
       "no_with_veto_count": 49,
@@ -7200,6 +7730,7 @@
     "type": "SmartContract",
     "topic": "Contract Deployment",
     "status": "REJECTED",
+    "submit_time": "1659776447062",
     "final_tally_result": {
       "no_count": 45,
       "abstain_count": 11,
@@ -7214,6 +7745,7 @@
     "type": "SmartContract",
     "topic": "Contract Deployment",
     "status": "REJECTED",
+    "submit_time": "1659776440841",
     "final_tally_result": {
       "no_count": 52,
       "abstain_count": 12,
@@ -7228,6 +7760,7 @@
     "type": "ParameterChange",
     "topic": "Fee Adjustment",
     "status": "PASSED",
+    "submit_time": "1659693990546",
     "final_tally_result": {
       "yes_count": 78,
       "abstain_count": 3,
@@ -7242,6 +7775,7 @@
     "type": "SmartContract",
     "topic": "Contract Deployment",
     "status": "PASSED",
+    "submit_time": "1659486332087",
     "final_tally_result": {
       "abstain_count": 6,
       "yes_count": 50,
@@ -7255,6 +7789,7 @@
     "type": "PoolIncentives",
     "topic": "Reward Adjustment",
     "status": "PASSED",
+    "submit_time": "1659367488866",
     "final_tally_result": {
       "yes_count": 70,
       "abstain_count": 7,
@@ -7268,6 +7803,7 @@
     "type": "SoftwareUpgrade",
     "topic": "Major Release",
     "status": "PASSED",
+    "submit_time": "1659023252624",
     "final_tally_result": {
       "yes_count": 93,
       "abstain_count": 1,
@@ -7281,6 +7817,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "PASSED",
+    "submit_time": "1658915059669",
     "final_tally_result": {
       "yes_count": 58,
       "no_count": 4,
@@ -7295,6 +7832,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "PASSED",
+    "submit_time": "1658914905771",
     "final_tally_result": {
       "yes_count": 36,
       "abstain_count": 27,
@@ -7309,6 +7847,7 @@
     "type": "PoolIncentives",
     "topic": "Reward Adjustment",
     "status": "PASSED",
+    "submit_time": "1658765462080",
     "final_tally_result": {
       "yes_count": 82,
       "abstain_count": 5,
@@ -7322,6 +7861,7 @@
     "type": "PoolIncentives",
     "topic": "Liquidity Mining",
     "status": "PASSED",
+    "submit_time": "1658738920884",
     "final_tally_result": {
       "yes_count": 71,
       "abstain_count": 10,
@@ -7336,6 +7876,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "PASSED",
+    "submit_time": "1658738811160",
     "final_tally_result": {
       "yes_count": 70,
       "abstain_count": 12,
@@ -7350,6 +7891,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "PASSED",
+    "submit_time": "1658737694072",
     "final_tally_result": {
       "yes_count": 74,
       "abstain_count": 9,
@@ -7364,6 +7906,7 @@
     "type": "ChainSpecific",
     "topic": "Chain Governance",
     "status": "PASSED",
+    "submit_time": "1658307565424",
     "final_tally_result": {
       "yes_count": 60,
       "abstain_count": 11,
@@ -7378,6 +7921,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "PASSED",
+    "submit_time": "1658306872268",
     "final_tally_result": {
       "yes_count": 44,
       "abstain_count": 21,
@@ -7392,6 +7936,7 @@
     "type": "PoolIncentives",
     "topic": "Reward Adjustment",
     "status": "PASSED",
+    "submit_time": "1658157451977",
     "final_tally_result": {
       "yes_count": 74,
       "abstain_count": 5,
@@ -7405,6 +7950,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "PASSED",
+    "submit_time": "1657815097882",
     "final_tally_result": {
       "yes_count": 68,
       "abstain_count": 8,
@@ -7418,6 +7964,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "PASSED",
+    "submit_time": "1657799844258",
     "final_tally_result": {
       "yes_count": 79,
       "abstain_count": 2,
@@ -7433,6 +7980,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "REJECTED",
+    "submit_time": "1657628485393",
     "final_tally_result": {
       "no_with_veto_count": 57,
       "yes_count": 5,
@@ -7448,6 +7996,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "PASSED",
+    "submit_time": "1657571610398",
     "final_tally_result": {
       "yes_count": 35,
       "abstain_count": 24,
@@ -7462,6 +8011,7 @@
     "type": "PoolIncentives",
     "topic": "Reward Adjustment",
     "status": "PASSED",
+    "submit_time": "1657553118761",
     "final_tally_result": {
       "yes_count": 77,
       "abstain_count": 4,
@@ -7475,6 +8025,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "PASSED",
+    "submit_time": "1657029232618",
     "final_tally_result": {
       "abstain_count": 10,
       "yes_count": 64,
@@ -7489,6 +8040,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "PASSED",
+    "submit_time": "1657029108827",
     "final_tally_result": {
       "abstain_count": 26,
       "yes_count": 46,
@@ -7503,6 +8055,7 @@
     "type": "PoolIncentives",
     "topic": "Reward Adjustment",
     "status": "PASSED",
+    "submit_time": "1656948327837",
     "final_tally_result": {
       "yes_count": 79,
       "no_count": 1,
@@ -7517,6 +8070,7 @@
     "type": "PoolIncentives",
     "topic": "Reward Adjustment",
     "status": "PASSED",
+    "submit_time": "1656872854573",
     "final_tally_result": {
       "no_count": 18,
       "abstain_count": 25,
@@ -7532,6 +8086,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "PASSED",
+    "submit_time": "1656445485683",
     "final_tally_result": {
       "no_count": 25,
       "abstain_count": 35,
@@ -7546,6 +8101,7 @@
     "type": "ChainSpecific",
     "topic": "Chain Governance",
     "status": "PASSED",
+    "submit_time": "1656431404767",
     "final_tally_result": {
       "yes_count": 78,
       "abstain_count": 6,
@@ -7560,6 +8116,7 @@
     "type": "PoolIncentives",
     "topic": "Pool Creation",
     "status": "PASSED",
+    "submit_time": "1656430064151",
     "final_tally_result": {
       "yes_count": 74,
       "abstain_count": 9,
@@ -7574,6 +8131,7 @@
     "type": "PoolIncentives",
     "topic": "Reward Adjustment",
     "status": "REJECTED",
+    "submit_time": "1656429084478",
     "final_tally_result": {
       "no_count": 57,
       "abstain_count": 23,
@@ -7588,6 +8146,7 @@
     "type": "PoolIncentives",
     "topic": "Reward Adjustment",
     "status": "PASSED",
+    "submit_time": "1656343662037",
     "final_tally_result": {
       "yes_count": 81,
       "abstain_count": 3,
@@ -7601,6 +8160,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "PASSED",
+    "submit_time": "1656280437362",
     "final_tally_result": {
       "yes_count": 92,
       "no_vote_count": 58
@@ -7613,6 +8173,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "PASSED",
+    "submit_time": "1655996887306",
     "final_tally_result": {
       "yes_count": 69,
       "abstain_count": 9,
@@ -7627,6 +8188,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "REJECTED",
+    "submit_time": "1655892027247",
     "final_tally_result": {
       "abstain_count": 39,
       "no_count": 32,
@@ -7641,6 +8203,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "REJECTED",
+    "submit_time": "1655829625223",
     "final_tally_result": {
       "no_count": 53,
       "abstain_count": 19,
@@ -7655,6 +8218,7 @@
     "type": "PoolIncentives",
     "topic": "Reward Adjustment",
     "status": "PASSED",
+    "submit_time": "1655740411285",
     "final_tally_result": {
       "yes_count": 74,
       "abstain_count": 2,
@@ -7668,6 +8232,7 @@
     "type": "IBCRelated",
     "topic": "Client Update",
     "status": "PASSED",
+    "submit_time": "1655443357657",
     "final_tally_result": {
       "yes_count": 73,
       "abstain_count": 1,
@@ -7681,6 +8246,7 @@
     "type": "IBCRelated",
     "topic": "IBC Transfer",
     "status": "PASSED",
+    "submit_time": "1655372894122",
     "final_tally_result": {
       "yes_count": 79,
       "no_count": 1,
@@ -7695,6 +8261,7 @@
     "type": "IBCRelated",
     "topic": "Client Update",
     "status": "PASSED",
+    "submit_time": "1655307401669",
     "final_tally_result": {
       "yes_count": 74,
       "abstain_count": 2,
@@ -7708,6 +8275,7 @@
     "type": "IBCRelated",
     "topic": "IBC Transfer",
     "status": "FAILED",
+    "submit_time": "1655131831052",
     "final_tally_result": {
       "yes_count": 51,
       "no_count": 31,
@@ -7722,6 +8290,7 @@
     "type": "PoolIncentives",
     "topic": "Reward Adjustment",
     "status": "PASSED",
+    "submit_time": "1654528112120",
     "final_tally_result": {
       "yes_count": 34,
       "abstain_count": 1,
@@ -7735,6 +8304,7 @@
     "type": "SoftwareUpgrade",
     "topic": "Major Release",
     "status": "PASSED",
+    "submit_time": "1654115841608",
     "final_tally_result": {
       "yes_count": 92,
       "abstain_count": 1,
@@ -7748,6 +8318,7 @@
     "type": "CommunityPoolSpend",
     "topic": "Community Support",
     "status": "PASSED",
+    "submit_time": "1654066305960",
     "final_tally_result": {
       "abstain_count": 28,
       "yes_count": 56,
@@ -7762,6 +8333,7 @@
     "type": "ChainSpecific",
     "topic": "Chain Governance",
     "status": "PASSED",
+    "submit_time": "1654045184784",
     "final_tally_result": {
       "abstain_count": 10,
       "yes_count": 85,
@@ -7776,6 +8348,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "PASSED",
+    "submit_time": "1653992752707",
     "final_tally_result": {
       "yes_count": 81,
       "abstain_count": 11,
@@ -7789,6 +8362,7 @@
     "type": "PoolIncentives",
     "topic": "Reward Adjustment",
     "status": "PASSED",
+    "submit_time": "1653925436815",
     "final_tally_result": {
       "yes_count": 88,
       "abstain_count": 4,
@@ -7802,6 +8376,7 @@
     "type": "CommunityPoolSpend",
     "topic": "Community Support",
     "status": "PASSED",
+    "submit_time": "1653798728568",
     "final_tally_result": {
       "yes_count": 83,
       "abstain_count": 8,
@@ -7816,6 +8391,7 @@
     "type": "CommunityPoolSpend",
     "topic": "Community Support",
     "status": "PASSED",
+    "submit_time": "1653680062160",
     "final_tally_result": {
       "yes_count": 75,
       "abstain_count": 8,
@@ -7830,6 +8406,7 @@
     "type": "PoolIncentives",
     "topic": "Incentive Distribution",
     "status": "PASSED",
+    "submit_time": "1653641431297",
     "final_tally_result": {
       "abstain_count": 11,
       "yes_count": 71,
@@ -7843,6 +8420,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "PASSED",
+    "submit_time": "1653567640914",
     "final_tally_result": {
       "yes_count": 56,
       "abstain_count": 19,
@@ -7858,6 +8436,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "PASSED",
+    "submit_time": "1653563920116",
     "final_tally_result": {
       "yes_count": 43,
       "abstain_count": 20,
@@ -7873,6 +8452,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "PASSED",
+    "submit_time": "1653563811022",
     "final_tally_result": {
       "yes_count": 52,
       "abstain_count": 19,
@@ -7888,6 +8468,7 @@
     "type": "PoolIncentives",
     "topic": "Pool Creation",
     "status": "PASSED",
+    "submit_time": "1653557265573",
     "final_tally_result": {
       "abstain_count": 11,
       "yes_count": 74,
@@ -7901,6 +8482,7 @@
     "type": "ChainSpecific",
     "topic": "Chain Governance",
     "status": "PASSED",
+    "submit_time": "1653551767638",
     "final_tally_result": {
       "abstain_count": 3,
       "yes_count": 82,
@@ -7915,6 +8497,7 @@
     "type": "PoolIncentives",
     "topic": "Reward Adjustment",
     "status": "PASSED",
+    "submit_time": "1653278589474",
     "final_tally_result": {
       "yes_count": 82,
       "abstain_count": 3,
@@ -7928,6 +8511,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "REJECTED",
+    "submit_time": "1653275290671",
     "final_tally_result": {
       "abstain_count": 51,
       "no_count": 30,
@@ -7942,6 +8526,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "PASSED",
+    "submit_time": "1652986481697",
     "final_tally_result": {
       "yes_count": 74,
       "abstain_count": 8,
@@ -7956,6 +8541,7 @@
     "type": "ChainSpecific",
     "topic": "Chain Governance",
     "status": "PASSED",
+    "submit_time": "1652978590337",
     "final_tally_result": {
       "yes_count": 79,
       "abstain_count": 2,
@@ -7969,6 +8555,7 @@
     "type": "ChainSpecific",
     "topic": "Chain Governance",
     "status": "PASSED",
+    "submit_time": "1652953966096",
     "final_tally_result": {
       "yes_count": 88,
       "abstain_count": 3,
@@ -7982,6 +8569,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "PASSED",
+    "submit_time": "1652851482729",
     "final_tally_result": {
       "abstain_count": 11,
       "yes_count": 76,
@@ -7995,6 +8583,7 @@
     "type": "ParameterChange",
     "topic": "Governance Settings",
     "status": "REJECTED",
+    "submit_time": "1652729740928",
     "final_tally_result": {
       "no_count": 62,
       "abstain_count": 10,
@@ -8009,6 +8598,7 @@
     "type": "ChainSpecific",
     "topic": "Chain Governance",
     "status": "PASSED",
+    "submit_time": "1652718221658",
     "final_tally_result": {
       "yes_count": 84,
       "abstain_count": 7,
@@ -8022,6 +8612,7 @@
     "type": "PoolIncentives",
     "topic": "Pool Creation",
     "status": "PASSED",
+    "submit_time": "1652717812576",
     "final_tally_result": {
       "yes_count": 82,
       "abstain_count": 3,
@@ -8036,6 +8627,7 @@
     "type": "PoolIncentives",
     "topic": "Incentive Distribution",
     "status": "PASSED",
+    "submit_time": "1652717654833",
     "final_tally_result": {
       "yes_count": 71,
       "abstain_count": 12,
@@ -8049,6 +8641,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "PASSED",
+    "submit_time": "1652597486346",
     "final_tally_result": {
       "abstain_count": 1,
       "yes_count": 121,
@@ -8062,6 +8655,7 @@
     "type": "PoolIncentives",
     "topic": "Reward Adjustment",
     "status": "PASSED",
+    "submit_time": "1652545497060",
     "final_tally_result": {
       "yes_count": 94,
       "abstain_count": 5,
@@ -8075,6 +8669,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "PASSED",
+    "submit_time": "1652403138945",
     "final_tally_result": {
       "yes_count": 105,
       "abstain_count": 8,
@@ -8089,6 +8684,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "PASSED",
+    "submit_time": "1652398687128",
     "final_tally_result": {
       "yes_count": 116,
       "abstain_count": 6,
@@ -8103,6 +8699,7 @@
     "type": "PoolIncentives",
     "topic": "Liquidity Mining",
     "status": "PASSED",
+    "submit_time": "1652373653457",
     "final_tally_result": {
       "yes_count": 111,
       "abstain_count": 7,
@@ -8117,6 +8714,7 @@
     "type": "PoolIncentives",
     "topic": "Pool Creation",
     "status": "PASSED",
+    "submit_time": "1652373626614",
     "final_tally_result": {
       "yes_count": 113,
       "abstain_count": 7,
@@ -8131,6 +8729,7 @@
     "type": "PoolIncentives",
     "topic": "Liquidity Mining",
     "status": "PASSED",
+    "submit_time": "1652373522701",
     "final_tally_result": {
       "yes_count": 113,
       "abstain_count": 7,
@@ -8144,6 +8743,7 @@
     "type": "PoolIncentives",
     "topic": "Reward Adjustment",
     "status": "PASSED",
+    "submit_time": "1652079304511",
     "final_tally_result": {
       "abstain_count": 5,
       "yes_count": 93,
@@ -8158,6 +8758,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "PASSED",
+    "submit_time": "1651921029479",
     "final_tally_result": {
       "no_count": 16,
       "yes_count": 37,
@@ -8172,6 +8773,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "PASSED",
+    "submit_time": "1651753726593",
     "final_tally_result": {
       "yes_count": 77,
       "abstain_count": 4,
@@ -8186,6 +8788,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "PASSED",
+    "submit_time": "1651568815578",
     "final_tally_result": {
       "yes_count": 75,
       "abstain_count": 7,
@@ -8199,6 +8802,7 @@
     "type": "PoolIncentives",
     "topic": "Reward Adjustment",
     "status": "PASSED",
+    "submit_time": "1651438880814",
     "final_tally_result": {
       "yes_count": 88,
       "abstain_count": 2,
@@ -8212,6 +8816,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "PASSED",
+    "submit_time": "1651432968698",
     "final_tally_result": {
       "no_count": 21,
       "yes_count": 55,
@@ -8226,6 +8831,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "PASSED",
+    "submit_time": "1651258955110",
     "final_tally_result": {
       "yes_count": 83,
       "abstain_count": 5,
@@ -8239,6 +8845,7 @@
     "type": "IBCRelated",
     "topic": "Client Update",
     "status": "PASSED",
+    "submit_time": "1651114929806",
     "final_tally_result": {
       "yes_count": 93,
       "no_vote_count": 57
@@ -8251,6 +8858,7 @@
     "type": "PoolIncentives",
     "topic": "Reward Adjustment",
     "status": "PASSED",
+    "submit_time": "1650847663877",
     "final_tally_result": {
       "yes_count": 89,
       "abstain_count": 3,
@@ -8264,6 +8872,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "PASSED",
+    "submit_time": "1650823704247",
     "final_tally_result": {
       "abstain_count": 21,
       "no_count": 10,
@@ -8278,6 +8887,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "REJECTED",
+    "submit_time": "1650638285788",
     "final_tally_result": {
       "no_count": 85,
       "abstain_count": 14,
@@ -8292,6 +8902,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "REJECTED",
+    "submit_time": "1650638201175",
     "final_tally_result": {
       "abstain_count": 29,
       "no_count": 66,
@@ -8306,6 +8917,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "PASSED",
+    "submit_time": "1650638120218",
     "final_tally_result": {
       "abstain_count": 38,
       "no_count": 46,
@@ -8320,6 +8932,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "PASSED",
+    "submit_time": "1650638062172",
     "final_tally_result": {
       "yes_count": 36,
       "no_count": 41,
@@ -8334,6 +8947,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "PASSED",
+    "submit_time": "1650637766702",
     "final_tally_result": {
       "abstain_count": 21,
       "yes_count": 73,
@@ -8348,6 +8962,7 @@
     "type": "TextProposal",
     "topic": "Community Decision",
     "status": "PASSED",
+    "submit_time": "1650484674313",
     "final_tally_result": {
       "abstain_count": 2,
       "yes_count": 104,
@@ -8361,6 +8976,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "PASSED",
+    "submit_time": "1650400803288",
     "final_tally_result": {
       "yes_count": 49,
       "abstain_count": 31,
@@ -8375,6 +8991,7 @@
     "type": "ChainSpecific",
     "topic": "Chain Governance",
     "status": "PASSED",
+    "submit_time": "1650378068002",
     "final_tally_result": {
       "yes_count": 96,
       "abstain_count": 6,
@@ -8388,6 +9005,7 @@
     "type": "PoolIncentives",
     "topic": "Reward Adjustment",
     "status": "PASSED",
+    "submit_time": "1650243317042",
     "final_tally_result": {
       "yes_count": 89,
       "abstain_count": 7,
@@ -8401,6 +9019,7 @@
     "type": "ChainSpecific",
     "topic": "Chain Governance",
     "status": "PASSED",
+    "submit_time": "1649943404995",
     "final_tally_result": {
       "yes_count": 66,
       "abstain_count": 12,
@@ -8415,6 +9034,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "REJECTED",
+    "submit_time": "1649714855203",
     "final_tally_result": {
       "abstain_count": 41,
       "no_count": 43,
@@ -8429,6 +9049,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "PASSED",
+    "submit_time": "1649660209112",
     "final_tally_result": {
       "yes_count": 71,
       "no_count": 7,
@@ -8443,6 +9064,7 @@
     "type": "PoolIncentives",
     "topic": "Reward Adjustment",
     "status": "PASSED",
+    "submit_time": "1649651137209",
     "final_tally_result": {
       "yes_count": 89,
       "abstain_count": 4,
@@ -8456,6 +9078,7 @@
     "type": "ParameterChange",
     "topic": "Staking Parameters",
     "status": "PASSED",
+    "submit_time": "1649391514234",
     "final_tally_result": {
       "yes_count": 81,
       "no_count": 3,
@@ -8470,6 +9093,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "PASSED",
+    "submit_time": "1649351190201",
     "final_tally_result": {
       "yes_count": 46,
       "abstain_count": 19,
@@ -8484,6 +9108,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "PASSED",
+    "submit_time": "1649269628140",
     "final_tally_result": {
       "abstain_count": 17,
       "yes_count": 55,
@@ -8498,6 +9123,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "PASSED",
+    "submit_time": "1649173101163",
     "final_tally_result": {
       "yes_count": 76,
       "abstain_count": 9,
@@ -8512,6 +9138,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "REJECTED",
+    "submit_time": "1649162322163",
     "final_tally_result": {
       "abstain_count": 23,
       "no_count": 45,
@@ -8526,6 +9153,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "PASSED",
+    "submit_time": "1649127894169",
     "final_tally_result": {
       "yes_count": 27,
       "abstain_count": 43,
@@ -8540,6 +9168,7 @@
     "type": "PoolIncentives",
     "topic": "Reward Adjustment",
     "status": "PASSED",
+    "submit_time": "1649048569453",
     "final_tally_result": {
       "yes_count": 81,
       "abstain_count": 7,
@@ -8553,6 +9182,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "REJECTED",
+    "submit_time": "1648981476542",
     "final_tally_result": {
       "no_count": 48,
       "abstain_count": 22,
@@ -8568,6 +9198,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "PASSED",
+    "submit_time": "1648718169754",
     "final_tally_result": {
       "yes_count": 84,
       "abstain_count": 1,
@@ -8581,6 +9212,7 @@
     "type": "CommunityPoolSpend",
     "topic": "Community Support",
     "status": "PASSED",
+    "submit_time": "1648676518949",
     "final_tally_result": {
       "yes_count": 55,
       "abstain_count": 9,
@@ -8594,6 +9226,7 @@
     "type": "ChainSpecific",
     "topic": "Chain Governance",
     "status": "PASSED",
+    "submit_time": "1648459782042",
     "final_tally_result": {
       "yes_count": 71,
       "abstain_count": 5,
@@ -8607,6 +9240,7 @@
     "type": "PoolIncentives",
     "topic": "Reward Adjustment",
     "status": "PASSED",
+    "submit_time": "1648452710008",
     "final_tally_result": {
       "yes_count": 65,
       "abstain_count": 9,
@@ -8620,6 +9254,7 @@
     "type": "ParameterChange",
     "topic": "Governance Settings",
     "status": "PASSED",
+    "submit_time": "1648223285879",
     "final_tally_result": {
       "yes_count": 57,
       "no_count": 5,
@@ -8633,6 +9268,7 @@
     "type": "CommunityPoolSpend",
     "topic": "Community Support",
     "status": "PASSED",
+    "submit_time": "1648063227559",
     "final_tally_result": {
       "yes_count": 73,
       "abstain_count": 4,
@@ -8646,6 +9282,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "PASSED",
+    "submit_time": "1647861944758",
     "final_tally_result": {
       "abstain_count": 41,
       "no_count": 21,
@@ -8660,6 +9297,7 @@
     "type": "PoolIncentives",
     "topic": "Reward Adjustment",
     "status": "PASSED",
+    "submit_time": "1647843940393",
     "final_tally_result": {
       "yes_count": 73,
       "abstain_count": 5,
@@ -8673,6 +9311,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "PASSED",
+    "submit_time": "1647835973913",
     "final_tally_result": {
       "abstain_count": 38,
       "no_count": 13,
@@ -8687,6 +9326,7 @@
     "type": "CommunityPoolSpend",
     "topic": "Community Support",
     "status": "PASSED",
+    "submit_time": "1647545183978",
     "final_tally_result": {
       "yes_count": 61,
       "abstain_count": 6,
@@ -8701,6 +9341,7 @@
     "type": "PoolIncentives",
     "topic": "Reward Adjustment",
     "status": "PASSED",
+    "submit_time": "1647269319789",
     "final_tally_result": {
       "yes_count": 61,
       "abstain_count": 3,
@@ -8714,6 +9355,7 @@
     "type": "PoolIncentives",
     "topic": "Reward Adjustment",
     "status": "PASSED",
+    "submit_time": "1647227997035",
     "final_tally_result": {
       "yes_count": 60,
       "abstain_count": 5,
@@ -8727,6 +9369,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "PASSED",
+    "submit_time": "1647195396782",
     "final_tally_result": {
       "yes_count": 52,
       "abstain_count": 17,
@@ -8741,6 +9384,7 @@
     "type": "ChainSpecific",
     "topic": "Chain Governance",
     "status": "PASSED",
+    "submit_time": "1647016635752",
     "final_tally_result": {
       "yes_count": 67,
       "abstain_count": 2,
@@ -8754,6 +9398,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "PASSED",
+    "submit_time": "1646922637932",
     "final_tally_result": {
       "no_count": 4,
       "yes_count": 37,
@@ -8768,6 +9413,7 @@
     "type": "TextProposal",
     "topic": "Community Decision",
     "status": "PASSED",
+    "submit_time": "1646775263252",
     "final_tally_result": {
       "yes_count": 51,
       "no_count": 5,
@@ -8782,6 +9428,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "PASSED",
+    "submit_time": "1646737840595",
     "final_tally_result": {
       "yes_count": 59,
       "abstain_count": 15,
@@ -8796,6 +9443,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "PASSED",
+    "submit_time": "1646664115245",
     "final_tally_result": {
       "abstain_count": 23,
       "yes_count": 49,
@@ -8810,6 +9458,7 @@
     "type": "TextProposal",
     "topic": "Community Decision",
     "status": "PASSED",
+    "submit_time": "1646649419777",
     "final_tally_result": {
       "no_count": 7,
       "yes_count": 56,
@@ -8824,6 +9473,7 @@
     "type": "PoolIncentives",
     "topic": "Reward Adjustment",
     "status": "PASSED",
+    "submit_time": "1646627251894",
     "final_tally_result": {
       "yes_count": 72,
       "no_count": 1,
@@ -8838,6 +9488,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "PASSED",
+    "submit_time": "1646290777704",
     "final_tally_result": {
       "yes_count": 42,
       "abstain_count": 20,
@@ -8852,6 +9503,7 @@
     "type": "CommunityPoolSpend",
     "topic": "Community Support",
     "status": "REJECTED",
+    "submit_time": "1646235126037",
     "final_tally_result": {
       "no_count": 50,
       "abstain_count": 9,
@@ -8867,6 +9519,7 @@
     "type": "PoolIncentives",
     "topic": "Reward Adjustment",
     "status": "PASSED",
+    "submit_time": "1646035494796",
     "final_tally_result": {
       "yes_count": 74,
       "abstain_count": 5,
@@ -8880,6 +9533,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "PASSED",
+    "submit_time": "1645975832635",
     "final_tally_result": {
       "abstain_count": 39,
       "no_count": 14,
@@ -8894,6 +9548,7 @@
     "type": "SoftwareUpgrade",
     "topic": "Major Release",
     "status": "PASSED",
+    "submit_time": "1645775671516",
     "final_tally_result": {
       "yes_count": 87,
       "abstain_count": 1,
@@ -8907,6 +9562,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "PASSED",
+    "submit_time": "1645558657553",
     "final_tally_result": {
       "yes_count": 46,
       "abstain_count": 11,
@@ -8921,6 +9577,7 @@
     "type": "PoolIncentives",
     "topic": "Reward Adjustment",
     "status": "PASSED",
+    "submit_time": "1645427378655",
     "final_tally_result": {
       "yes_count": 53,
       "abstain_count": 5,
@@ -8934,6 +9591,7 @@
     "type": "TextProposal",
     "topic": "Community Decision",
     "status": "PASSED",
+    "submit_time": "1645138040538",
     "final_tally_result": {
       "yes_count": 52,
       "abstain_count": 4,
@@ -8948,6 +9606,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "PASSED",
+    "submit_time": "1645123892057",
     "final_tally_result": {
       "abstain_count": 10,
       "yes_count": 43,
@@ -8962,6 +9621,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "PASSED",
+    "submit_time": "1645121297170",
     "final_tally_result": {
       "yes_count": 25,
       "abstain_count": 27,
@@ -8976,6 +9636,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "PASSED",
+    "submit_time": "1645028098590",
     "final_tally_result": {
       "abstain_count": 35,
       "yes_count": 14,
@@ -8990,6 +9651,7 @@
     "type": "PoolIncentives",
     "topic": "Reward Adjustment",
     "status": "PASSED",
+    "submit_time": "1644856517213",
     "final_tally_result": {
       "yes_count": 70,
       "abstain_count": 3,
@@ -9003,6 +9665,7 @@
     "type": "TextProposal",
     "topic": "Community Decision",
     "status": "PASSED",
+    "submit_time": "1644822005686",
     "final_tally_result": {
       "yes_count": 38,
       "no_with_veto_count": 1,
@@ -9018,6 +9681,7 @@
     "type": "TextProposal",
     "topic": "Community Decision",
     "status": "PASSED",
+    "submit_time": "1644773675018",
     "final_tally_result": {
       "yes_count": 40,
       "abstain_count": 17,
@@ -9033,6 +9697,7 @@
     "type": "CommunityPoolSpend",
     "topic": "Community Support",
     "status": "PASSED",
+    "submit_time": "1644622693484",
     "final_tally_result": {
       "yes_count": 55,
       "abstain_count": 1,
@@ -9047,6 +9712,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "PASSED",
+    "submit_time": "1644578821066",
     "final_tally_result": {
       "abstain_count": 12,
       "yes_count": 39,
@@ -9061,6 +9727,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "PASSED",
+    "submit_time": "1644524706355",
     "final_tally_result": {
       "yes_count": 59,
       "abstain_count": 4,
@@ -9074,6 +9741,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "REJECTED",
+    "submit_time": "1644416573597",
     "final_tally_result": {
       "no_count": 20,
       "abstain_count": 35,
@@ -9089,6 +9757,7 @@
     "type": "CommunityPoolSpend",
     "topic": "Community Support",
     "status": "PASSED",
+    "submit_time": "1644251793307",
     "final_tally_result": {
       "abstain_count": 6,
       "yes_count": 58,
@@ -9103,6 +9772,7 @@
     "type": "PoolIncentives",
     "topic": "Reward Adjustment",
     "status": "PASSED",
+    "submit_time": "1644247510382",
     "final_tally_result": {
       "abstain_count": 5,
       "yes_count": 62,
@@ -9117,6 +9787,7 @@
     "type": "TextProposal",
     "topic": "Community Decision",
     "status": "PASSED",
+    "submit_time": "1644057103057",
     "final_tally_result": {
       "yes_count": 44,
       "abstain_count": 14,
@@ -9131,6 +9802,7 @@
     "type": "TextProposal",
     "topic": "Community Decision",
     "status": "PASSED",
+    "submit_time": "1644015843947",
     "final_tally_result": {
       "yes_count": 46,
       "no_count": 3,
@@ -9145,6 +9817,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "PASSED",
+    "submit_time": "1643896218229",
     "final_tally_result": {
       "yes_count": 60,
       "abstain_count": 6,
@@ -9159,6 +9832,7 @@
     "type": "TextProposal",
     "topic": "Community Decision",
     "status": "PASSED",
+    "submit_time": "1643842997914",
     "final_tally_result": {
       "yes_count": 68,
       "abstain_count": 2,
@@ -9172,6 +9846,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "PASSED",
+    "submit_time": "1643739474195",
     "final_tally_result": {
       "yes_count": 50,
       "abstain_count": 4,
@@ -9186,6 +9861,7 @@
     "type": "PoolIncentives",
     "topic": "Reward Adjustment",
     "status": "PASSED",
+    "submit_time": "1643606927291",
     "final_tally_result": {
       "yes_count": 56,
       "abstain_count": 4,
@@ -9199,6 +9875,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "PASSED",
+    "submit_time": "1643395617953",
     "final_tally_result": {
       "yes_count": 55,
       "abstain_count": 11,
@@ -9213,6 +9890,7 @@
     "type": "CommunityPoolSpend",
     "topic": "Community Support",
     "status": "REJECTED",
+    "submit_time": "1643362101834",
     "final_tally_result": {
       "abstain_count": 10,
       "no_count": 42,
@@ -9228,6 +9906,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "PASSED",
+    "submit_time": "1643308225956",
     "final_tally_result": {
       "abstain_count": 27,
       "yes_count": 41,
@@ -9241,6 +9920,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "REJECTED",
+    "submit_time": "1643242494998",
     "final_tally_result": {
       "no_count": 39,
       "yes_count": 22,
@@ -9255,6 +9935,7 @@
     "type": "PoolIncentives",
     "topic": "Reward Adjustment",
     "status": "PASSED",
+    "submit_time": "1643040797508",
     "final_tally_result": {
       "yes_count": 56,
       "abstain_count": 9,
@@ -9268,6 +9949,7 @@
     "type": "TextProposal",
     "topic": "Community Decision",
     "status": "PASSED",
+    "submit_time": "1642948852013",
     "final_tally_result": {
       "abstain_count": 22,
       "yes_count": 34,
@@ -9282,6 +9964,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "PASSED",
+    "submit_time": "1642836110063",
     "final_tally_result": {
       "abstain_count": 5,
       "yes_count": 62,
@@ -9296,6 +9979,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "PASSED",
+    "submit_time": "1642815917333",
     "final_tally_result": {
       "yes_count": 56,
       "abstain_count": 6,
@@ -9310,6 +9994,7 @@
     "type": "TextProposal",
     "topic": "Ecosystem Growth",
     "status": "PASSED",
+    "submit_time": "1642789654672",
     "final_tally_result": {
       "abstain_count": 2,
       "yes_count": 52,
@@ -9324,6 +10009,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "PASSED",
+    "submit_time": "1642554388088",
     "final_tally_result": {
       "yes_count": 55,
       "no_count": 3,
@@ -9338,6 +10024,7 @@
     "type": "TextProposal",
     "topic": "Community Decision",
     "status": "PASSED",
+    "submit_time": "1642487911508",
     "final_tally_result": {
       "yes_count": 75,
       "abstain_count": 7,
@@ -9352,6 +10039,7 @@
     "type": "PoolIncentives",
     "topic": "Reward Adjustment",
     "status": "PASSED",
+    "submit_time": "1642394434138",
     "final_tally_result": {
       "yes_count": 67,
       "abstain_count": 4,
@@ -9365,6 +10053,7 @@
     "type": "TextProposal",
     "topic": "Community Decision",
     "status": "REJECTED",
+    "submit_time": "1642344084899",
     "final_tally_result": {
       "yes_count": 9,
       "abstain_count": 18,
@@ -9379,6 +10068,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "PASSED",
+    "submit_time": "1641867292692",
     "final_tally_result": {
       "yes_count": 61,
       "abstain_count": 1,
@@ -9392,6 +10082,7 @@
     "type": "PoolIncentives",
     "topic": "Reward Adjustment",
     "status": "PASSED",
+    "submit_time": "1641781321423",
     "final_tally_result": {
       "yes_count": 67,
       "abstain_count": 2,
@@ -9405,6 +10096,7 @@
     "type": "TextProposal",
     "topic": "Project Funding",
     "status": "PASSED",
+    "submit_time": "1641596667841",
     "final_tally_result": {
       "yes_count": 49,
       "abstain_count": 19,
@@ -9419,6 +10111,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "PASSED",
+    "submit_time": "1641526084974",
     "final_tally_result": {
       "yes_count": 57,
       "abstain_count": 4,
@@ -9433,6 +10126,7 @@
     "type": "TextProposal",
     "topic": "Community Decision",
     "status": "PASSED",
+    "submit_time": "1641348541710",
     "final_tally_result": {
       "yes_count": 60,
       "abstain_count": 4,
@@ -9446,6 +10140,7 @@
     "type": "PoolIncentives",
     "topic": "Reward Adjustment",
     "status": "PASSED",
+    "submit_time": "1641274307130",
     "final_tally_result": {
       "yes_count": 64,
       "abstain_count": 3,
@@ -9459,6 +10154,7 @@
     "type": "PoolIncentives",
     "topic": "Reward Adjustment",
     "status": "PASSED",
+    "submit_time": "1641188409932",
     "final_tally_result": {
       "yes_count": 59,
       "abstain_count": 5,
@@ -9473,6 +10169,7 @@
     "type": "IBCRelated",
     "topic": "IBC Transfer",
     "status": "PASSED",
+    "submit_time": "1640962268051",
     "final_tally_result": {
       "yes_count": 58,
       "abstain_count": 1,
@@ -9486,6 +10183,7 @@
     "type": "ParameterChange",
     "topic": "Staking Parameters",
     "status": "PASSED",
+    "submit_time": "1640780876196",
     "final_tally_result": {
       "yes_count": 31,
       "no_count": 16,
@@ -9501,6 +10199,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "PASSED",
+    "submit_time": "1640611278581",
     "final_tally_result": {
       "yes_count": 42,
       "abstain_count": 4,
@@ -9515,6 +10214,7 @@
     "type": "PoolIncentives",
     "topic": "Reward Adjustment",
     "status": "PASSED",
+    "submit_time": "1640579283593",
     "final_tally_result": {
       "yes_count": 50,
       "abstain_count": 4,
@@ -9528,6 +10228,7 @@
     "type": "IBCRelated",
     "topic": "IBC Transfer",
     "status": "REJECTED",
+    "submit_time": "1640454570509",
     "final_tally_result": {
       "no_count": 36,
       "abstain_count": 11,
@@ -9542,6 +10243,7 @@
     "type": "CommunityPoolSpend",
     "topic": "Community Support",
     "status": "PASSED",
+    "submit_time": "1640197730062",
     "final_tally_result": {
       "yes_count": 38,
       "abstain_count": 1,
@@ -9556,6 +10258,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "PASSED",
+    "submit_time": "1640181587687",
     "final_tally_result": {
       "yes_count": 29,
       "abstain_count": 7,
@@ -9570,6 +10273,7 @@
     "type": "TextProposal",
     "topic": "Community Decision",
     "status": "PASSED",
+    "submit_time": "1640111478693",
     "final_tally_result": {
       "yes_count": 44,
       "abstain_count": 5,
@@ -9584,6 +10288,7 @@
     "type": "CommunityPoolSpend",
     "topic": "Community Support",
     "status": "PASSED",
+    "submit_time": "1640009023863",
     "final_tally_result": {
       "yes_count": 53,
       "no_vote_count": 97
@@ -9596,6 +10301,7 @@
     "type": "PoolIncentives",
     "topic": "Reward Adjustment",
     "status": "PASSED",
+    "submit_time": "1639981188131",
     "final_tally_result": {
       "yes_count": 41,
       "abstain_count": 4,
@@ -9609,6 +10315,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "PASSED",
+    "submit_time": "1639741118383",
     "final_tally_result": {
       "yes_count": 49,
       "no_vote_count": 101
@@ -9621,6 +10328,7 @@
     "type": "TextProposal",
     "topic": "Community Decision",
     "status": "PASSED",
+    "submit_time": "1639703879038",
     "final_tally_result": {
       "yes_count": 28,
       "no_count": 2,
@@ -9635,6 +10343,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "PASSED",
+    "submit_time": "1639542347673",
     "final_tally_result": {
       "yes_count": 39,
       "abstain_count": 1,
@@ -9648,6 +10357,7 @@
     "type": "CommunityPoolSpend",
     "topic": "Community Support",
     "status": "PASSED",
+    "submit_time": "1639439897044",
     "final_tally_result": {
       "yes_count": 38,
       "abstain_count": 2,
@@ -9661,6 +10371,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "PASSED",
+    "submit_time": "1639391609553",
     "final_tally_result": {
       "yes_count": 37,
       "abstain_count": 2,
@@ -9674,6 +10385,7 @@
     "type": "PoolIncentives",
     "topic": "Reward Adjustment",
     "status": "PASSED",
+    "submit_time": "1639371546214",
     "final_tally_result": {
       "yes_count": 33,
       "abstain_count": 7,
@@ -9687,6 +10399,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "REJECTED",
+    "submit_time": "1639215453748",
     "final_tally_result": {
       "no_count": 19,
       "no_with_veto_count": 25,
@@ -9702,6 +10415,7 @@
     "type": "SoftwareUpgrade",
     "topic": "Major Release",
     "status": "PASSED",
+    "submit_time": "1639201046265",
     "final_tally_result": {
       "yes_count": 56,
       "no_vote_count": 94
@@ -9714,6 +10428,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "PASSED",
+    "submit_time": "1639185425710",
     "final_tally_result": {
       "yes_count": 41,
       "abstain_count": 4,
@@ -9727,6 +10442,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "PASSED",
+    "submit_time": "1639144516615",
     "final_tally_result": {
       "abstain_count": 4,
       "yes_count": 33,
@@ -9741,6 +10457,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "PASSED",
+    "submit_time": "1639075944801",
     "final_tally_result": {
       "yes_count": 36,
       "abstain_count": 2,
@@ -9754,6 +10471,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "PASSED",
+    "submit_time": "1638897380053",
     "final_tally_result": {
       "yes_count": 40,
       "abstain_count": 5,
@@ -9767,6 +10485,7 @@
     "type": "PoolIncentives",
     "topic": "Reward Adjustment",
     "status": "PASSED",
+    "submit_time": "1638764241932",
     "final_tally_result": {
       "yes_count": 30,
       "abstain_count": 4,
@@ -9780,6 +10499,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "PASSED",
+    "submit_time": "1638732603296",
     "final_tally_result": {
       "yes_count": 33,
       "abstain_count": 1,
@@ -9793,6 +10513,7 @@
     "type": "TextProposal",
     "topic": "Ecosystem Growth",
     "status": "PASSED",
+    "submit_time": "1638633863545",
     "final_tally_result": {
       "yes_count": 11,
       "abstain_count": 14,
@@ -9807,6 +10528,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "PASSED",
+    "submit_time": "1638339953600",
     "final_tally_result": {
       "yes_count": 31,
       "abstain_count": 2,
@@ -9821,6 +10543,7 @@
     "type": "TextProposal",
     "topic": "Community Decision",
     "status": "PASSED",
+    "submit_time": "1638315298615",
     "final_tally_result": {
       "yes_count": 20,
       "abstain_count": 7,
@@ -9835,6 +10558,7 @@
     "type": "TextProposal",
     "topic": "Community Decision",
     "status": "PASSED",
+    "submit_time": "1638288907220",
     "final_tally_result": {
       "abstain_count": 8,
       "yes_count": 32,
@@ -9849,6 +10573,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "PASSED",
+    "submit_time": "1638254082091",
     "final_tally_result": {
       "yes_count": 22,
       "no_vote_count": 128
@@ -9861,6 +10586,7 @@
     "type": "PoolIncentives",
     "topic": "Reward Adjustment",
     "status": "PASSED",
+    "submit_time": "1638167004536",
     "final_tally_result": {
       "yes_count": 38,
       "abstain_count": 3,
@@ -9874,6 +10600,7 @@
     "type": "TextProposal",
     "topic": "Community Decision",
     "status": "PASSED",
+    "submit_time": "1637822654451",
     "final_tally_result": {
       "yes_count": 17,
       "abstain_count": 1,
@@ -9887,6 +10614,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "PASSED",
+    "submit_time": "1637606223054",
     "final_tally_result": {
       "yes_count": 34,
       "abstain_count": 4,
@@ -9900,6 +10628,7 @@
     "type": "TextProposal",
     "topic": "Community Decision",
     "status": "PASSED",
+    "submit_time": "1637592615391",
     "final_tally_result": {
       "yes_count": 11,
       "abstain_count": 7,
@@ -9914,6 +10643,7 @@
     "type": "PoolIncentives",
     "topic": "Reward Adjustment",
     "status": "PASSED",
+    "submit_time": "1637553794866",
     "final_tally_result": {
       "yes_count": 34,
       "abstain_count": 3,
@@ -9927,6 +10657,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "REJECTED",
+    "submit_time": "1637440962757",
     "final_tally_result": {
       "abstain_count": 9,
       "no_count": 13,
@@ -9942,6 +10673,7 @@
     "type": "ParameterChange",
     "topic": "Staking Parameters",
     "status": "REJECTED",
+    "submit_time": "1637313934452",
     "final_tally_result": {
       "no_count": 17,
       "abstain_count": 15,
@@ -9956,6 +10688,7 @@
     "type": "TextProposal",
     "topic": "Community Decision",
     "status": "PASSED",
+    "submit_time": "1637249344909",
     "final_tally_result": {
       "yes_count": 28,
       "abstain_count": 3,
@@ -9970,6 +10703,7 @@
     "type": "TextProposal",
     "topic": "Community Decision",
     "status": "PASSED",
+    "submit_time": "1637055300757",
     "final_tally_result": {
       "yes_count": 27,
       "abstain_count": 2,
@@ -9984,6 +10718,7 @@
     "type": "PoolIncentives",
     "topic": "Reward Adjustment",
     "status": "PASSED",
+    "submit_time": "1636991782180",
     "final_tally_result": {
       "yes_count": 30,
       "abstain_count": 2,
@@ -9997,6 +10732,7 @@
     "type": "TextProposal",
     "topic": "Community Decision",
     "status": "PASSED",
+    "submit_time": "1636649926317",
     "final_tally_result": {
       "yes_count": 29,
       "abstain_count": 1,
@@ -10010,6 +10746,7 @@
     "type": "PoolIncentives",
     "topic": "Reward Adjustment",
     "status": "PASSED",
+    "submit_time": "1636390357630",
     "final_tally_result": {
       "abstain_count": 4,
       "yes_count": 26,
@@ -10023,6 +10760,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "PASSED",
+    "submit_time": "1636168592454",
     "final_tally_result": {
       "yes_count": 30,
       "abstain_count": 1,
@@ -10036,6 +10774,7 @@
     "type": "TextProposal",
     "topic": "Community Decision",
     "status": "PASSED",
+    "submit_time": "1636157360567",
     "final_tally_result": {
       "yes_count": 33,
       "no_vote_count": 117
@@ -10048,6 +10787,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "PASSED",
+    "submit_time": "1635796305404",
     "final_tally_result": {
       "yes_count": 17,
       "abstain_count": 8,
@@ -10062,6 +10802,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "PASSED",
+    "submit_time": "1635782895435",
     "final_tally_result": {
       "yes_count": 29,
       "abstain_count": 2,
@@ -10076,6 +10817,7 @@
     "type": "PoolIncentives",
     "topic": "Reward Adjustment",
     "status": "PASSED",
+    "submit_time": "1635782577123",
     "final_tally_result": {
       "yes_count": 27,
       "abstain_count": 5,
@@ -10089,6 +10831,7 @@
     "type": "TextProposal",
     "topic": "Community Decision",
     "status": "PASSED",
+    "submit_time": "1635712173654",
     "final_tally_result": {
       "yes_count": 25,
       "no_count": 3,
@@ -10103,6 +10846,7 @@
     "type": "TextProposal",
     "topic": "Ecosystem Growth",
     "status": "PASSED",
+    "submit_time": "1635462285003",
     "final_tally_result": {
       "no_count": 3,
       "yes_count": 18,
@@ -10117,6 +10861,7 @@
     "type": "CommunityPoolSpend",
     "topic": "Community Support",
     "status": "PASSED",
+    "submit_time": "1635443043310",
     "final_tally_result": {
       "abstain_count": 5,
       "yes_count": 23,
@@ -10131,6 +10876,7 @@
     "type": "PoolIncentives",
     "topic": "Reward Adjustment",
     "status": "PASSED",
+    "submit_time": "1635178073587",
     "final_tally_result": {
       "yes_count": 22,
       "abstain_count": 3,
@@ -10144,6 +10890,7 @@
     "type": "PoolIncentives",
     "topic": "Liquidity Mining",
     "status": "REJECTED",
+    "submit_time": "1635030709143",
     "final_tally_result": {
       "no_count": 30,
       "abstain_count": 7,
@@ -10159,6 +10906,7 @@
     "type": "TextProposal",
     "topic": "Ecosystem Growth",
     "status": "PASSED",
+    "submit_time": "1634920719203",
     "final_tally_result": {
       "abstain_count": 6,
       "yes_count": 26,
@@ -10172,6 +10920,7 @@
     "type": "CommunityPoolSpend",
     "topic": "Community Support",
     "status": "PASSED",
+    "submit_time": "1634918415286",
     "final_tally_result": {
       "yes_count": 34,
       "no_with_veto_count": 1,
@@ -10186,6 +10935,7 @@
     "type": "PoolIncentives",
     "topic": "Liquidity Mining",
     "status": "PASSED",
+    "submit_time": "1634917889732",
     "final_tally_result": {
       "yes_count": 35,
       "abstain_count": 4,
@@ -10199,6 +10949,7 @@
     "type": "TextProposal",
     "topic": "Community Decision",
     "status": "PASSED",
+    "submit_time": "1634715735407",
     "final_tally_result": {
       "abstain_count": 10,
       "yes_count": 20,
@@ -10213,6 +10964,7 @@
     "type": "TextProposal",
     "topic": "Community Decision",
     "status": "PASSED",
+    "submit_time": "1634667716157",
     "final_tally_result": {
       "abstain_count": 9,
       "yes_count": 24,
@@ -10227,6 +10979,7 @@
     "type": "PoolIncentives",
     "topic": "Reward Adjustment",
     "status": "PASSED",
+    "submit_time": "1634573572237",
     "final_tally_result": {
       "yes_count": 36,
       "abstain_count": 1,
@@ -10240,6 +10993,7 @@
     "type": "PoolIncentives",
     "topic": "Reward Adjustment",
     "status": "PASSED",
+    "submit_time": "1633968898634",
     "final_tally_result": {
       "yes_count": 24,
       "abstain_count": 3,
@@ -10253,6 +11007,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "PASSED",
+    "submit_time": "1633458968703",
     "final_tally_result": {
       "yes_count": 29,
       "no_vote_count": 121
@@ -10265,6 +11020,7 @@
     "type": "PoolIncentives",
     "topic": "Reward Adjustment",
     "status": "PASSED",
+    "submit_time": "1633362483309",
     "final_tally_result": {
       "yes_count": 33,
       "abstain_count": 2,
@@ -10278,6 +11034,7 @@
     "type": "ParameterChange",
     "topic": "Fee Adjustment",
     "status": "PASSED",
+    "submit_time": "1633221777968",
     "final_tally_result": {
       "yes_count": 38,
       "no_count": 1,
@@ -10292,6 +11049,7 @@
     "type": "CommunityPoolSpend",
     "topic": "Community Support",
     "status": "PASSED",
+    "submit_time": "1633031705282",
     "final_tally_result": {
       "yes_count": 34,
       "no_vote_count": 116
@@ -10304,6 +11062,7 @@
     "type": "TextProposal",
     "topic": "Community Decision",
     "status": "PASSED",
+    "submit_time": "1632828912999",
     "final_tally_result": {
       "yes_count": 36,
       "abstain_count": 2,
@@ -10318,6 +11077,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "PASSED",
+    "submit_time": "1632828235536",
     "final_tally_result": {
       "yes_count": 36,
       "abstain_count": 2,
@@ -10332,6 +11092,7 @@
     "type": "PoolIncentives",
     "topic": "Reward Adjustment",
     "status": "PASSED",
+    "submit_time": "1632759767127",
     "final_tally_result": {
       "yes_count": 33,
       "abstain_count": 5,
@@ -10345,6 +11106,7 @@
     "type": "TextProposal",
     "topic": "Community Decision",
     "status": "PASSED",
+    "submit_time": "1632578155657",
     "final_tally_result": {
       "yes_count": 46,
       "abstain_count": 2,
@@ -10358,6 +11120,7 @@
     "type": "CommunityPoolSpend",
     "topic": "Ecosystem Growth",
     "status": "REJECTED",
+    "submit_time": "1632165593357",
     "final_tally_result": {
       "no_count": 13,
       "abstain_count": 6,
@@ -10373,6 +11136,7 @@
     "type": "SoftwareUpgrade",
     "topic": "Major Release",
     "status": "PASSED",
+    "submit_time": "1632155291290",
     "final_tally_result": {
       "yes_count": 65,
       "no_vote_count": 85
@@ -10385,6 +11149,7 @@
     "type": "PoolIncentives",
     "topic": "Reward Adjustment",
     "status": "PASSED",
+    "submit_time": "1632153599421",
     "final_tally_result": {
       "yes_count": 40,
       "abstain_count": 2,
@@ -10398,6 +11163,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "REJECTED",
+    "submit_time": "1631941843209",
     "final_tally_result": {
       "no_count": 23,
       "abstain_count": 2,
@@ -10412,6 +11178,7 @@
     "type": "PoolIncentives",
     "topic": "Reward Adjustment",
     "status": "PASSED",
+    "submit_time": "1631548177438",
     "final_tally_result": {
       "yes_count": 23,
       "abstain_count": 4,
@@ -10425,6 +11192,7 @@
     "type": "PoolIncentives",
     "topic": "Reward Adjustment",
     "status": "PASSED",
+    "submit_time": "1630942605246",
     "final_tally_result": {
       "yes_count": 26,
       "abstain_count": 2,
@@ -10438,6 +11206,7 @@
     "type": "TextProposal",
     "topic": "Community Decision",
     "status": "PASSED",
+    "submit_time": "1630905375589",
     "final_tally_result": {
       "abstain_count": 1,
       "no_count": 3,
@@ -10452,6 +11221,7 @@
     "type": "ParameterChange",
     "topic": "Protocol Configuration",
     "status": "PASSED",
+    "submit_time": "1630562789365",
     "final_tally_result": {
       "yes_count": 28,
       "no_vote_count": 122
@@ -10464,6 +11234,7 @@
     "type": "PoolIncentives",
     "topic": "Reward Adjustment",
     "status": "PASSED",
+    "submit_time": "1630337265664",
     "final_tally_result": {
       "yes_count": 31,
       "abstain_count": 2,
@@ -10477,6 +11248,7 @@
     "type": "TextProposal",
     "topic": "Ecosystem Growth",
     "status": "PASSED",
+    "submit_time": "1630288796997",
     "final_tally_result": {
       "yes_count": 26,
       "abstain_count": 5,
@@ -10491,6 +11263,7 @@
     "type": "PoolIncentives",
     "topic": "Reward Adjustment",
     "status": "PASSED",
+    "submit_time": "1629735959011",
     "final_tally_result": {
       "yes_count": 24,
       "abstain_count": 3,
@@ -10504,6 +11277,7 @@
     "type": "TextProposal",
     "topic": "Project Funding",
     "status": "PASSED",
+    "submit_time": "1629380456357",
     "final_tally_result": {
       "yes_count": 33,
       "no_vote_count": 117
@@ -10516,6 +11290,7 @@
     "type": "TextProposal",
     "topic": "Ecosystem Growth",
     "status": "PASSED",
+    "submit_time": "1629321481812",
     "final_tally_result": {
       "yes_count": 35,
       "abstain_count": 7,
@@ -10530,6 +11305,7 @@
     "type": "ParameterChange",
     "topic": "Fee Adjustment",
     "status": "PASSED",
+    "submit_time": "1629320674314",
     "final_tally_result": {
       "yes_count": 37,
       "no_vote_count": 113
@@ -10542,6 +11318,7 @@
     "type": "PoolIncentives",
     "topic": "Reward Adjustment",
     "status": "REJECTED",
+    "submit_time": "1629131028080",
     "final_tally_result": {
       "no_count": 19,
       "yes_count": 21,
@@ -10556,6 +11333,7 @@
     "type": "ParameterChange",
     "topic": "Fee Adjustment",
     "status": "REJECTED",
+    "submit_time": "1628696482776",
     "final_tally_result": {
       "no_count": 28,
       "no_with_veto_count": 2,
@@ -10570,6 +11348,7 @@
     "type": "PoolIncentives",
     "topic": "Reward Adjustment",
     "status": "PASSED",
+    "submit_time": "1627920465949",
     "final_tally_result": {
       "yes_count": 27,
       "abstain_count": 1,
@@ -10583,6 +11362,7 @@
     "type": "ParameterChange",
     "topic": "Governance Settings",
     "status": "PASSED",
+    "submit_time": "1626988079346",
     "final_tally_result": {
       "no_count": 2,
       "yes_count": 18,
@@ -10596,6 +11376,7 @@
     "type": "PoolIncentives",
     "topic": "Reward Adjustment",
     "status": "PASSED",
+    "submit_time": "1626710882725",
     "final_tally_result": {
       "yes_count": 21,
       "abstain_count": 2,
@@ -10609,6 +11390,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "PASSED",
+    "submit_time": "1626300452385",
     "final_tally_result": {
       "yes_count": 30,
       "abstain_count": 1,
@@ -10622,6 +11404,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "PASSED",
+    "submit_time": "1626033841174",
     "final_tally_result": {
       "yes_count": 21,
       "abstain_count": 2,
@@ -10636,6 +11419,7 @@
     "type": "PoolIncentives",
     "topic": "Reward Adjustment",
     "status": "PASSED",
+    "submit_time": "1625420580830",
     "final_tally_result": {
       "yes_count": 26,
       "abstain_count": 4,
@@ -10649,6 +11433,7 @@
     "type": "ParameterChange",
     "topic": "Protocol Configuration",
     "status": "REJECTED",
+    "submit_time": "1625082774861",
     "final_tally_result": {
       "no_count": 25,
       "yes_count": 6,
@@ -10664,6 +11449,7 @@
     "type": "PoolIncentives",
     "topic": "Reward Adjustment",
     "status": "PASSED",
+    "submit_time": "1624999859092",
     "final_tally_result": {
       "no_count": 4,
       "yes_count": 46,
@@ -10677,6 +11463,7 @@
     "type": "CommunityPoolSpend",
     "topic": "Community Support",
     "status": "REJECTED",
+    "submit_time": "1624873615244",
     "final_tally_result": {
       "no_count": 20,
       "yes_count": 7,
@@ -10692,6 +11479,7 @@
     "type": "ParameterChange",
     "topic": "Fee Adjustment",
     "status": "PASSED",
+    "submit_time": "1624645290667",
     "final_tally_result": {
       "yes_count": 45,
       "no_vote_count": 105
@@ -10704,6 +11492,7 @@
     "type": "TextProposal",
     "topic": "Project Funding",
     "status": "PASSED",
+    "submit_time": "1624603052839",
     "final_tally_result": {
       "yes_count": 8,
       "abstain_count": 10,
@@ -10719,6 +11508,7 @@
     "type": "PoolIncentives",
     "topic": "Liquidity Mining",
     "status": "PASSED",
+    "submit_time": "1624162590012",
     "final_tally_result": {
       "yes_count": 50,
       "no_vote_count": 100
@@ -10731,6 +11521,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "PASSED",
+    "submit_time": "1624130488486",
     "final_tally_result": {
       "no_count": 5,
       "yes_count": 28,

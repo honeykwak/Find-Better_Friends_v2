@@ -6,6 +6,7 @@
     "type": "Unknown",
     "topic": "Unclassified",
     "status": "PASSED",
+    "submit_time": "1731347133113",
     "final_tally_result": {
       "yes_count": 48,
       "abstain_count": 4,
@@ -19,6 +20,7 @@
     "type": "CommunityPoolSpend",
     "topic": "Community Support",
     "status": "PASSED",
+    "submit_time": "1730591416166",
     "final_tally_result": {
       "abstain_count": 20,
       "yes_count": 34,
@@ -33,6 +35,7 @@
     "type": "CommunityPoolSpend",
     "topic": "Community Support",
     "status": "PASSED",
+    "submit_time": "1729798315807",
     "final_tally_result": {
       "yes_count": 37,
       "abstain_count": 7,
@@ -47,6 +50,7 @@
     "type": "Unknown",
     "topic": "Unclassified",
     "status": "REJECTED",
+    "submit_time": "1729111303142",
     "final_tally_result": {
       "no_with_veto_count": 36,
       "yes_count": 4,
@@ -60,6 +64,7 @@
     "type": "ParameterChange",
     "topic": "Protocol Configuration",
     "status": "PASSED",
+    "submit_time": "1727720656205",
     "final_tally_result": {
       "yes_count": 53,
       "no_vote_count": 75
@@ -72,6 +77,7 @@
     "type": "Unknown",
     "topic": "Unclassified",
     "status": "PASSED",
+    "submit_time": "1727202537360",
     "final_tally_result": {
       "yes_count": 51,
       "abstain_count": 4,
@@ -85,6 +91,7 @@
     "type": "CommunityPoolSpend",
     "topic": "Community Support",
     "status": "PASSED",
+    "submit_time": "1726502085928",
     "final_tally_result": {
       "yes_count": 47,
       "abstain_count": 13,
@@ -98,6 +105,7 @@
     "type": "ParameterChange",
     "topic": "Protocol Configuration",
     "status": "PASSED",
+    "submit_time": "1721413934760",
     "final_tally_result": {
       "yes_count": 50,
       "abstain_count": 6,
@@ -111,6 +119,7 @@
     "type": "IBCRelated",
     "topic": "IBC Transfer",
     "status": "PASSED",
+    "submit_time": "1721230277966",
     "final_tally_result": {
       "yes_count": 51,
       "abstain_count": 1,
@@ -124,6 +133,7 @@
     "type": "ParameterChange",
     "topic": "Protocol Configuration",
     "status": "PASSED",
+    "submit_time": "1721147893144",
     "final_tally_result": {
       "yes_count": 52,
       "abstain_count": 3,
@@ -137,6 +147,7 @@
     "type": "Unknown",
     "topic": "Unclassified",
     "status": "REJECTED",
+    "submit_time": "1720730985424",
     "final_tally_result": {
       "no_with_veto_count": 39,
       "no_vote_count": 91
@@ -149,6 +160,7 @@
     "type": "ParameterChange",
     "topic": "Staking Parameters",
     "status": "PASSED",
+    "submit_time": "1720009372406",
     "final_tally_result": {
       "yes_count": 49,
       "abstain_count": 6,
@@ -163,6 +175,7 @@
     "type": "ParameterChange",
     "topic": "Protocol Configuration",
     "status": "PASSED",
+    "submit_time": "1719616712863",
     "final_tally_result": {
       "yes_count": 61,
       "abstain_count": 3,
@@ -177,6 +190,7 @@
     "type": "CommunityPoolSpend",
     "topic": "Community Support",
     "status": "PASSED",
+    "submit_time": "1719612563760",
     "final_tally_result": {
       "yes_count": 56,
       "no_count": 2,
@@ -191,6 +205,7 @@
     "type": "SoftwareUpgrade",
     "topic": "Major Release",
     "status": "PASSED",
+    "submit_time": "1719284069476",
     "final_tally_result": {
       "yes_count": 78,
       "no_vote_count": 52
@@ -203,6 +218,7 @@
     "type": "SmartContract",
     "topic": "Contract Deployment",
     "status": "PASSED",
+    "submit_time": "1719138356111",
     "final_tally_result": {
       "yes_count": 63,
       "abstain_count": 2,
@@ -216,6 +232,7 @@
     "type": "SmartContract",
     "topic": "Contract Deployment",
     "status": "PASSED",
+    "submit_time": "1719137043765",
     "final_tally_result": {
       "yes_count": 62,
       "abstain_count": 2,
@@ -229,6 +246,7 @@
     "type": "Unknown",
     "topic": "Unclassified",
     "status": "PASSED",
+    "submit_time": "1718915293117",
     "final_tally_result": {
       "abstain_count": 5,
       "yes_count": 31,
@@ -243,6 +261,7 @@
     "type": "ParameterChange",
     "topic": "Protocol Configuration",
     "status": "PASSED",
+    "submit_time": "1717682912208",
     "final_tally_result": {
       "no_count": 1,
       "abstain_count": 8,
@@ -257,6 +276,7 @@
     "type": "ParameterChange",
     "topic": "Staking Parameters",
     "status": "PASSED",
+    "submit_time": "1717110802211",
     "final_tally_result": {
       "yes_count": 34,
       "no_vote_count": 96
@@ -269,6 +289,7 @@
     "type": "SmartContract",
     "topic": "Contract Deployment",
     "status": "PASSED",
+    "submit_time": "1717110621662",
     "final_tally_result": {
       "yes_count": 32,
       "no_vote_count": 98
@@ -281,6 +302,7 @@
     "type": "CommunityPoolSpend",
     "topic": "Community Support",
     "status": "PASSED",
+    "submit_time": "1716988295233",
     "final_tally_result": {
       "abstain_count": 12,
       "yes_count": 34,
@@ -295,6 +317,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "PASSED",
+    "submit_time": "1716325199651",
     "final_tally_result": {
       "yes_count": 50,
       "abstain_count": 8,
@@ -308,6 +331,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "REJECTED",
+    "submit_time": "1716225535049",
     "final_tally_result": {
       "no_count": 45,
       "abstain_count": 9,
@@ -323,6 +347,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "PASSED",
+    "submit_time": "1715786976863",
     "final_tally_result": {
       "yes_count": 64,
       "abstain_count": 1,
@@ -336,6 +361,7 @@
     "type": "ParameterChange",
     "topic": "Economic Parameters",
     "status": "PASSED",
+    "submit_time": "1715005017151",
     "final_tally_result": {
       "yes_count": 66,
       "abstain_count": 3,
@@ -349,6 +375,7 @@
     "type": "CommunityPoolSpend",
     "topic": "Community Support",
     "status": "REJECTED",
+    "submit_time": "1712779325260",
     "final_tally_result": {
       "yes_count": 28,
       "abstain_count": 8,
@@ -364,6 +391,7 @@
     "type": "SmartContract",
     "topic": "Contract Deployment",
     "status": "PASSED",
+    "submit_time": "1712351387580",
     "final_tally_result": {
       "yes_count": 64,
       "abstain_count": 2,
@@ -377,6 +405,7 @@
     "type": "CommunityPoolSpend",
     "topic": "Community Support",
     "status": "REJECTED",
+    "submit_time": "1712094173713",
     "final_tally_result": {
       "no_count": 44,
       "abstain_count": 13,
@@ -392,6 +421,7 @@
     "type": "ParameterChange",
     "topic": "Economic Parameters",
     "status": "PASSED",
+    "submit_time": "1712004484448",
     "final_tally_result": {
       "yes_count": 74,
       "no_count": 1,
@@ -406,6 +436,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "REJECTED",
+    "submit_time": "1711923729595",
     "final_tally_result": {
       "no_with_veto_count": 49,
       "no_count": 1,
@@ -419,6 +450,7 @@
     "type": "ParameterChange",
     "topic": "Protocol Configuration",
     "status": "PASSED",
+    "submit_time": "1711637708733",
     "final_tally_result": {
       "yes_count": 59,
       "abstain_count": 4,
@@ -432,6 +464,7 @@
     "type": "CommunityPoolSpend",
     "topic": "Community Support",
     "status": "PASSED",
+    "submit_time": "1711469026465",
     "final_tally_result": {
       "abstain_count": 9,
       "yes_count": 55,
@@ -446,6 +479,7 @@
     "type": "SoftwareUpgrade",
     "topic": "Major Release",
     "status": "PASSED",
+    "submit_time": "1710733071211",
     "final_tally_result": {
       "yes_count": 83,
       "abstain_count": 1,
@@ -459,6 +493,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "PASSED",
+    "submit_time": "1710542622922",
     "final_tally_result": {
       "yes_count": 63,
       "abstain_count": 12,
@@ -473,6 +508,7 @@
     "type": "SmartContract",
     "topic": "Contract Upgrade",
     "status": "PASSED",
+    "submit_time": "1710348543819",
     "final_tally_result": {
       "yes_count": 77,
       "abstain_count": 1,
@@ -486,6 +522,7 @@
     "type": "CommunityPoolSpend",
     "topic": "Community Support",
     "status": "PASSED",
+    "submit_time": "1710242904226",
     "final_tally_result": {
       "yes_count": 64,
       "abstain_count": 12,
@@ -499,6 +536,7 @@
     "type": "SmartContract",
     "topic": "Contract Deployment",
     "status": "PASSED",
+    "submit_time": "1708705899340",
     "final_tally_result": {
       "yes_count": 69,
       "abstain_count": 2,
@@ -512,6 +550,7 @@
     "type": "SmartContract",
     "topic": "Contract Deployment",
     "status": "PASSED",
+    "submit_time": "1708704647836",
     "final_tally_result": {
       "yes_count": 72,
       "abstain_count": 2,
@@ -525,6 +564,7 @@
     "type": "SmartContract",
     "topic": "Contract Upgrade",
     "status": "PASSED",
+    "submit_time": "1708461390119",
     "final_tally_result": {
       "yes_count": 80,
       "abstain_count": 1,
@@ -538,6 +578,7 @@
     "type": "SmartContract",
     "topic": "Contract Upgrade",
     "status": "PASSED",
+    "submit_time": "1708447047712",
     "final_tally_result": {
       "yes_count": 80,
       "abstain_count": 1,
@@ -551,6 +592,7 @@
     "type": "CommunityPoolSpend",
     "topic": "Community Support",
     "status": "PASSED",
+    "submit_time": "1707836840415",
     "final_tally_result": {
       "yes_count": 64,
       "abstain_count": 15,
@@ -565,6 +607,7 @@
     "type": "SmartContract",
     "topic": "Contract Deployment",
     "status": "PASSED",
+    "submit_time": "1707164663019",
     "final_tally_result": {
       "yes_count": 70,
       "abstain_count": 5,
@@ -578,6 +621,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "PASSED",
+    "submit_time": "1706813012211",
     "final_tally_result": {
       "yes_count": 74,
       "abstain_count": 1,
@@ -591,6 +635,7 @@
     "type": "CommunityPoolSpend",
     "topic": "Community Support",
     "status": "PASSED",
+    "submit_time": "1706671450945",
     "final_tally_result": {
       "yes_count": 60,
       "abstain_count": 13,
@@ -605,6 +650,7 @@
     "type": "ParameterChange",
     "topic": "Fee Adjustment",
     "status": "PASSED",
+    "submit_time": "1706539584952",
     "final_tally_result": {
       "yes_count": 78,
       "abstain_count": 3,
@@ -619,6 +665,7 @@
     "type": "SmartContract",
     "topic": "Contract Deployment",
     "status": "PASSED",
+    "submit_time": "1706231914521",
     "final_tally_result": {
       "yes_count": 69,
       "abstain_count": 2,
@@ -632,6 +679,7 @@
     "type": "SmartContract",
     "topic": "Contract Deployment",
     "status": "PASSED",
+    "submit_time": "1706231510819",
     "final_tally_result": {
       "yes_count": 66,
       "abstain_count": 5,
@@ -645,6 +693,7 @@
     "type": "CommunityPoolSpend",
     "topic": "Ecosystem Growth",
     "status": "PASSED",
+    "submit_time": "1705994186927",
     "final_tally_result": {
       "abstain_count": 13,
       "yes_count": 65,
@@ -658,6 +707,7 @@
     "type": "CommunityPoolSpend",
     "topic": "Ecosystem Growth",
     "status": "REJECTED",
+    "submit_time": "1705991775973",
     "final_tally_result": {
       "no_count": 61,
       "abstain_count": 10,
@@ -672,6 +722,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "PASSED",
+    "submit_time": "1705080639157",
     "final_tally_result": {
       "yes_count": 76,
       "abstain_count": 1,
@@ -685,6 +736,7 @@
     "type": "CommunityPoolSpend",
     "topic": "Community Support",
     "status": "PASSED",
+    "submit_time": "1704883157700",
     "final_tally_result": {
       "abstain_count": 18,
       "no_count": 19,
@@ -699,6 +751,7 @@
     "type": "SmartContract",
     "topic": "Contract Deployment",
     "status": "PASSED",
+    "submit_time": "1704119410263",
     "final_tally_result": {
       "yes_count": 73,
       "abstain_count": 1,
@@ -712,6 +765,7 @@
     "type": "ParameterChange",
     "topic": "Staking Parameters",
     "status": "PASSED",
+    "submit_time": "1703777093927",
     "final_tally_result": {
       "yes_count": 71,
       "no_count": 2,
@@ -726,6 +780,7 @@
     "type": "CommunityPoolSpend",
     "topic": "Community Support",
     "status": "PASSED",
+    "submit_time": "1703776641629",
     "final_tally_result": {
       "yes_count": 69,
       "abstain_count": 3,
@@ -740,6 +795,7 @@
     "type": "ParameterChange",
     "topic": "Protocol Configuration",
     "status": "PASSED",
+    "submit_time": "1703609495354",
     "final_tally_result": {
       "yes_count": 72,
       "no_count": 1,
@@ -754,6 +810,7 @@
     "type": "SmartContract",
     "topic": "Contract Deployment",
     "status": "PASSED",
+    "submit_time": "1703418586911",
     "final_tally_result": {
       "yes_count": 63,
       "abstain_count": 6,
@@ -767,6 +824,7 @@
     "type": "ParameterChange",
     "topic": "Protocol Configuration",
     "status": "PASSED",
+    "submit_time": "1702503248359",
     "final_tally_result": {
       "yes_count": 68,
       "abstain_count": 2,
@@ -780,6 +838,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "PASSED",
+    "submit_time": "1701991573670",
     "final_tally_result": {
       "no_count": 4,
       "yes_count": 58,
@@ -794,6 +853,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "PASSED",
+    "submit_time": "1701179276246",
     "final_tally_result": {
       "yes_count": 73,
       "no_vote_count": 57
@@ -806,6 +866,7 @@
     "type": "CommunityPoolSpend",
     "topic": "Community Support",
     "status": "PASSED",
+    "submit_time": "1700839899522",
     "final_tally_result": {
       "yes_count": 47,
       "abstain_count": 11,
@@ -819,6 +880,7 @@
     "type": "SmartContract",
     "topic": "Security Fix",
     "status": "PASSED",
+    "submit_time": "1700837325250",
     "final_tally_result": {
       "yes_count": 64,
       "abstain_count": 2,
@@ -832,6 +894,7 @@
     "type": "SmartContract",
     "topic": "Security Fix",
     "status": "PASSED",
+    "submit_time": "1700308556182",
     "final_tally_result": {
       "yes_count": 71,
       "no_vote_count": 59
@@ -844,6 +907,7 @@
     "type": "SmartContract",
     "topic": "Security Fix",
     "status": "PASSED",
+    "submit_time": "1699723650730",
     "final_tally_result": {
       "yes_count": 66,
       "abstain_count": 4,
@@ -857,6 +921,7 @@
     "type": "SmartContract",
     "topic": "Contract Deployment",
     "status": "PASSED",
+    "submit_time": "1699392157347",
     "final_tally_result": {
       "yes_count": 67,
       "abstain_count": 2,
@@ -870,6 +935,7 @@
     "type": "SmartContract",
     "topic": "Security Fix",
     "status": "PASSED",
+    "submit_time": "1699199075198",
     "final_tally_result": {
       "yes_count": 65,
       "abstain_count": 4,
@@ -883,6 +949,7 @@
     "type": "IBCRelated",
     "topic": "IBC Transfer",
     "status": "PASSED",
+    "submit_time": "1698805146968",
     "final_tally_result": {
       "yes_count": 77,
       "abstain_count": 2,
@@ -896,6 +963,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "REJECTED",
+    "submit_time": "1696801170254",
     "final_tally_result": {
       "no_with_veto_count": 2,
       "no_count": 39,
@@ -911,6 +979,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "REJECTED",
+    "submit_time": "1696800768061",
     "final_tally_result": {
       "no_with_veto_count": 3,
       "no_count": 68,
@@ -926,6 +995,7 @@
     "type": "SmartContract",
     "topic": "Contract Deployment",
     "status": "PASSED",
+    "submit_time": "1696345803041",
     "final_tally_result": {
       "yes_count": 62,
       "abstain_count": 1,
@@ -939,6 +1009,7 @@
     "type": "CommunityPoolSpend",
     "topic": "Community Support",
     "status": "REJECTED",
+    "submit_time": "1695803105047",
     "final_tally_result": {
       "no_count": 49,
       "abstain_count": 21,
@@ -954,6 +1025,7 @@
     "type": "SmartContract",
     "topic": "Contract Deployment",
     "status": "PASSED",
+    "submit_time": "1695760621920",
     "final_tally_result": {
       "yes_count": 86,
       "abstain_count": 1,
@@ -967,6 +1039,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "PASSED",
+    "submit_time": "1695682246615",
     "final_tally_result": {
       "yes_count": 84,
       "abstain_count": 1,
@@ -980,6 +1053,7 @@
     "type": "SmartContract",
     "topic": "Contract Upgrade",
     "status": "PASSED",
+    "submit_time": "1695403862452",
     "final_tally_result": {
       "yes_count": 66,
       "no_vote_count": 64
@@ -992,6 +1066,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "PASSED",
+    "submit_time": "1695072188438",
     "final_tally_result": {
       "yes_count": 78,
       "abstain_count": 1,
@@ -1005,6 +1080,7 @@
     "type": "SmartContract",
     "topic": "Security Fix",
     "status": "PASSED",
+    "submit_time": "1695058650860",
     "final_tally_result": {
       "yes_count": 80,
       "abstain_count": 1,
@@ -1018,6 +1094,7 @@
     "type": "CommunityPoolSpend",
     "topic": "Community Support",
     "status": "PASSED",
+    "submit_time": "1694787040200",
     "final_tally_result": {
       "yes_count": 76,
       "abstain_count": 2,
@@ -1031,6 +1108,7 @@
     "type": "CommunityPoolSpend",
     "topic": "Community Support",
     "status": "REJECTED",
+    "submit_time": "1694784541849",
     "final_tally_result": {
       "no_count": 69,
       "no_with_veto_count": 3,
@@ -1046,6 +1124,7 @@
     "type": "SmartContract",
     "topic": "Contract Upgrade",
     "status": "PASSED",
+    "submit_time": "1694190268120",
     "final_tally_result": {
       "yes_count": 74,
       "abstain_count": 3,
@@ -1059,6 +1138,7 @@
     "type": "ParameterChange",
     "topic": "Protocol Configuration",
     "status": "PASSED",
+    "submit_time": "1694149724400",
     "final_tally_result": {
       "yes_count": 77,
       "no_vote_count": 53
@@ -1071,6 +1151,7 @@
     "type": "CommunityPoolSpend",
     "topic": "Community Support",
     "status": "REJECTED",
+    "submit_time": "1692999351449",
     "final_tally_result": {
       "abstain_count": 25,
       "no_count": 47,
@@ -1085,6 +1166,7 @@
     "type": "SoftwareUpgrade",
     "topic": "Major Release",
     "status": "PASSED",
+    "submit_time": "1692936195226",
     "final_tally_result": {
       "yes_count": 88,
       "abstain_count": 1,
@@ -1098,6 +1180,7 @@
     "type": "IBCRelated",
     "topic": "IBC Security",
     "status": "PASSED",
+    "submit_time": "1692911589634",
     "final_tally_result": {
       "yes_count": 83,
       "abstain_count": 3,
@@ -1111,6 +1194,7 @@
     "type": "CommunityPoolSpend",
     "topic": "Community Support",
     "status": "PASSED",
+    "submit_time": "1692892548425",
     "final_tally_result": {
       "no_count": 31,
       "yes_count": 39,
@@ -1125,6 +1209,7 @@
     "type": "ParameterChange",
     "topic": "Protocol Configuration",
     "status": "PASSED",
+    "submit_time": "1692860668222",
     "final_tally_result": {
       "yes_count": 85,
       "abstain_count": 2,
@@ -1138,6 +1223,7 @@
     "type": "SmartContract",
     "topic": "Contract Deployment",
     "status": "PASSED",
+    "submit_time": "1692816644757",
     "final_tally_result": {
       "yes_count": 79,
       "abstain_count": 5,
@@ -1151,6 +1237,7 @@
     "type": "SmartContract",
     "topic": "Contract Deployment",
     "status": "PASSED",
+    "submit_time": "1692799894350",
     "final_tally_result": {
       "yes_count": 79,
       "no_vote_count": 51
@@ -1163,6 +1250,7 @@
     "type": "SmartContract",
     "topic": "Contract Upgrade",
     "status": "PASSED",
+    "submit_time": "1692284537196",
     "final_tally_result": {
       "yes_count": 75,
       "no_vote_count": 55
@@ -1175,6 +1263,7 @@
     "type": "SmartContract",
     "topic": "Contract Deployment",
     "status": "REJECTED",
+    "submit_time": "1691204621142",
     "final_tally_result": {
       "abstain_count": 2,
       "no_count": 48,
@@ -1190,6 +1279,7 @@
     "type": "SmartContract",
     "topic": "Contract Deployment",
     "status": "PASSED",
+    "submit_time": "1691157500402",
     "final_tally_result": {
       "yes_count": 71,
       "no_vote_count": 59
@@ -1202,6 +1292,7 @@
     "type": "SmartContract",
     "topic": "Contract Deployment",
     "status": "PASSED",
+    "submit_time": "1691098651504",
     "final_tally_result": {
       "yes_count": 77,
       "abstain_count": 1,
@@ -1215,6 +1306,7 @@
     "type": "SmartContract",
     "topic": "Contract Deployment",
     "status": "PASSED",
+    "submit_time": "1691098481884",
     "final_tally_result": {
       "yes_count": 77,
       "abstain_count": 1,
@@ -1228,6 +1320,7 @@
     "type": "SmartContract",
     "topic": "Contract Deployment",
     "status": "PASSED",
+    "submit_time": "1691087109761",
     "final_tally_result": {
       "yes_count": 78,
       "abstain_count": 1,
@@ -1241,6 +1334,7 @@
     "type": "CommunityPoolSpend",
     "topic": "Community Support",
     "status": "PASSED",
+    "submit_time": "1690805936102",
     "final_tally_result": {
       "no_count": 4,
       "yes_count": 54,
@@ -1255,6 +1349,7 @@
     "type": "SmartContract",
     "topic": "Contract Deployment",
     "status": "PASSED",
+    "submit_time": "1690577653491",
     "final_tally_result": {
       "yes_count": 76,
       "no_vote_count": 54
@@ -1267,6 +1362,7 @@
     "type": "SmartContract",
     "topic": "Contract Upgrade",
     "status": "PASSED",
+    "submit_time": "1690308537337",
     "final_tally_result": {
       "yes_count": 74,
       "abstain_count": 2,
@@ -1280,6 +1376,7 @@
     "type": "SmartContract",
     "topic": "Contract Deployment",
     "status": "PASSED",
+    "submit_time": "1689942424999",
     "final_tally_result": {
       "yes_count": 68,
       "abstain_count": 1,
@@ -1293,6 +1390,7 @@
     "type": "SmartContract",
     "topic": "Contract Deployment",
     "status": "PASSED",
+    "submit_time": "1689701187562",
     "final_tally_result": {
       "yes_count": 71,
       "abstain_count": 2,
@@ -1306,6 +1404,7 @@
     "type": "SmartContract",
     "topic": "Contract Deployment",
     "status": "PASSED",
+    "submit_time": "1689699423448",
     "final_tally_result": {
       "yes_count": 71,
       "abstain_count": 3,
@@ -1319,6 +1418,7 @@
     "type": "SmartContract",
     "topic": "Contract Deployment",
     "status": "PASSED",
+    "submit_time": "1689623164282",
     "final_tally_result": {
       "yes_count": 72,
       "abstain_count": 1,
@@ -1332,6 +1432,7 @@
     "type": "SmartContract",
     "topic": "Contract Deployment",
     "status": "PASSED",
+    "submit_time": "1689622509603",
     "final_tally_result": {
       "yes_count": 73,
       "no_vote_count": 57
@@ -1344,6 +1445,7 @@
     "type": "SmartContract",
     "topic": "Contract Upgrade",
     "status": "PASSED",
+    "submit_time": "1689346790100",
     "final_tally_result": {
       "yes_count": 72,
       "no_vote_count": 58
@@ -1356,6 +1458,7 @@
     "type": "CommunityPoolSpend",
     "topic": "Development Fund",
     "status": "PASSED",
+    "submit_time": "1689210600398",
     "final_tally_result": {
       "yes_count": 66,
       "abstain_count": 1,
@@ -1369,6 +1472,7 @@
     "type": "SmartContract",
     "topic": "Contract Deployment",
     "status": "PASSED",
+    "submit_time": "1688938173079",
     "final_tally_result": {
       "yes_count": 78,
       "no_vote_count": 52
@@ -1381,6 +1485,7 @@
     "type": "SoftwareUpgrade",
     "topic": "Major Release",
     "status": "PASSED",
+    "submit_time": "1688669328256",
     "final_tally_result": {
       "yes_count": 85,
       "abstain_count": 1,
@@ -1394,6 +1499,7 @@
     "type": "SmartContract",
     "topic": "Contract Deployment",
     "status": "PASSED",
+    "submit_time": "1688151295441",
     "final_tally_result": {
       "yes_count": 66,
       "abstain_count": 2,
@@ -1407,6 +1513,7 @@
     "type": "SmartContract",
     "topic": "Contract Deployment",
     "status": "PASSED",
+    "submit_time": "1688151271570",
     "final_tally_result": {
       "yes_count": 66,
       "abstain_count": 2,
@@ -1420,6 +1527,7 @@
     "type": "SmartContract",
     "topic": "Contract Deployment",
     "status": "PASSED",
+    "submit_time": "1688151254049",
     "final_tally_result": {
       "yes_count": 66,
       "abstain_count": 2,
@@ -1433,6 +1541,7 @@
     "type": "SmartContract",
     "topic": "Contract Deployment",
     "status": "PASSED",
+    "submit_time": "1688151231022",
     "final_tally_result": {
       "yes_count": 66,
       "abstain_count": 2,
@@ -1446,6 +1555,7 @@
     "type": "SmartContract",
     "topic": "Contract Deployment",
     "status": "PASSED",
+    "submit_time": "1687982715055",
     "final_tally_result": {
       "yes_count": 72,
       "no_vote_count": 58
@@ -1458,6 +1568,7 @@
     "type": "SmartContract",
     "topic": "Contract Deployment",
     "status": "PASSED",
+    "submit_time": "1687467506474",
     "final_tally_result": {
       "yes_count": 65,
       "no_vote_count": 65
@@ -1470,6 +1581,7 @@
     "type": "SmartContract",
     "topic": "Contract Deployment",
     "status": "PASSED",
+    "submit_time": "1687467406963",
     "final_tally_result": {
       "yes_count": 66,
       "no_vote_count": 64
@@ -1482,6 +1594,7 @@
     "type": "SmartContract",
     "topic": "Contract Deployment",
     "status": "PASSED",
+    "submit_time": "1687467168728",
     "final_tally_result": {
       "yes_count": 67,
       "no_vote_count": 63
@@ -1494,6 +1607,7 @@
     "type": "SmartContract",
     "topic": "Contract Deployment",
     "status": "PASSED",
+    "submit_time": "1687204124243",
     "final_tally_result": {
       "abstain_count": 1,
       "yes_count": 75,
@@ -1507,6 +1621,7 @@
     "type": "SmartContract",
     "topic": "Contract Deployment",
     "status": "PASSED",
+    "submit_time": "1687203610618",
     "final_tally_result": {
       "abstain_count": 1,
       "yes_count": 75,
@@ -1520,6 +1635,7 @@
     "type": "SmartContract",
     "topic": "Contract Deployment",
     "status": "PASSED",
+    "submit_time": "1687203260179",
     "final_tally_result": {
       "abstain_count": 1,
       "yes_count": 75,
@@ -1533,6 +1649,7 @@
     "type": "ParameterChange",
     "topic": "Fee Adjustment",
     "status": "PASSED",
+    "submit_time": "1686880625386",
     "final_tally_result": {
       "yes_count": 56,
       "abstain_count": 1,
@@ -1546,6 +1663,7 @@
     "type": "SmartContract",
     "topic": "Contract Deployment",
     "status": "PASSED",
+    "submit_time": "1686702268690",
     "final_tally_result": {
       "abstain_count": 1,
       "yes_count": 63,
@@ -1560,6 +1678,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "REJECTED",
+    "submit_time": "1686154931934",
     "final_tally_result": {
       "no_with_veto_count": 49,
       "no_count": 1,
@@ -1573,6 +1692,7 @@
     "type": "SoftwareUpgrade",
     "topic": "Major Release",
     "status": "PASSED",
+    "submit_time": "1685980855044",
     "final_tally_result": {
       "yes_count": 88,
       "no_with_veto_count": 2,
@@ -1586,6 +1706,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "REJECTED",
+    "submit_time": "1685921882729",
     "final_tally_result": {
       "no_with_veto_count": 69,
       "no_count": 1,
@@ -1599,6 +1720,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "REJECTED",
+    "submit_time": "1685847933207",
     "final_tally_result": {
       "no_with_veto_count": 65,
       "no_count": 1,
@@ -1612,6 +1734,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "REJECTED",
+    "submit_time": "1685753855548",
     "final_tally_result": {
       "no_with_veto_count": 55,
       "no_count": 1,
@@ -1625,6 +1748,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "REJECTED",
+    "submit_time": "1685652117961",
     "final_tally_result": {
       "no_with_veto_count": 54,
       "no_vote_count": 76
@@ -1637,6 +1761,7 @@
     "type": "SmartContract",
     "topic": "Contract Deployment",
     "status": "PASSED",
+    "submit_time": "1685524261594",
     "final_tally_result": {
       "yes_count": 56,
       "abstain_count": 6,
@@ -1651,6 +1776,7 @@
     "type": "SmartContract",
     "topic": "Contract Deployment",
     "status": "PASSED",
+    "submit_time": "1685038203230",
     "final_tally_result": {
       "yes_count": 74,
       "abstain_count": 2,
@@ -1664,6 +1790,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "PASSED",
+    "submit_time": "1684946173607",
     "final_tally_result": {
       "yes_count": 83,
       "abstain_count": 3,
@@ -1677,6 +1804,7 @@
     "type": "SmartContract",
     "topic": "Contract Deployment",
     "status": "PASSED",
+    "submit_time": "1684499029436",
     "final_tally_result": {
       "yes_count": 73,
       "abstain_count": 1,
@@ -1690,6 +1818,7 @@
     "type": "SmartContract",
     "topic": "Contract Deployment",
     "status": "REJECTED",
+    "submit_time": "1683758955941",
     "final_tally_result": {
       "no_count": 64,
       "yes_count": 3,
@@ -1705,6 +1834,7 @@
     "type": "SmartContract",
     "topic": "Contract Upgrade",
     "status": "PASSED",
+    "submit_time": "1682026397152",
     "final_tally_result": {
       "yes_count": 76,
       "abstain_count": 3,
@@ -1718,6 +1848,7 @@
     "type": "SmartContract",
     "topic": "Contract Integration",
     "status": "PASSED",
+    "submit_time": "1682002251964",
     "final_tally_result": {
       "yes_count": 79,
       "abstain_count": 1,
@@ -1731,6 +1862,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "PASSED",
+    "submit_time": "1681844555389",
     "final_tally_result": {
       "abstain_count": 6,
       "yes_count": 74,
@@ -1744,6 +1876,7 @@
     "type": "SmartContract",
     "topic": "Contract Deployment",
     "status": "PASSED",
+    "submit_time": "1681226520476",
     "final_tally_result": {
       "yes_count": 72,
       "abstain_count": 2,
@@ -1757,6 +1890,7 @@
     "type": "SmartContract",
     "topic": "Contract Deployment",
     "status": "PASSED",
+    "submit_time": "1681226392976",
     "final_tally_result": {
       "yes_count": 73,
       "abstain_count": 2,
@@ -1770,6 +1904,7 @@
     "type": "SmartContract",
     "topic": "Contract Deployment",
     "status": "PASSED",
+    "submit_time": "1681221271718",
     "final_tally_result": {
       "abstain_count": 4,
       "yes_count": 72,
@@ -1783,6 +1918,7 @@
     "type": "SmartContract",
     "topic": "Contract Deployment",
     "status": "PASSED",
+    "submit_time": "1681086889176",
     "final_tally_result": {
       "yes_count": 79,
       "no_vote_count": 51
@@ -1795,6 +1931,7 @@
     "type": "SmartContract",
     "topic": "Contract Deployment",
     "status": "PASSED",
+    "submit_time": "1680663213339",
     "final_tally_result": {
       "yes_count": 70,
       "abstain_count": 5,
@@ -1809,6 +1946,7 @@
     "type": "SmartContract",
     "topic": "Contract Deployment",
     "status": "PASSED",
+    "submit_time": "1680662887052",
     "final_tally_result": {
       "yes_count": 66,
       "abstain_count": 5,
@@ -1823,6 +1961,7 @@
     "type": "SmartContract",
     "topic": "Contract Deployment",
     "status": "PASSED",
+    "submit_time": "1680662576983",
     "final_tally_result": {
       "yes_count": 70,
       "abstain_count": 5,
@@ -1837,6 +1976,7 @@
     "type": "SmartContract",
     "topic": "Contract Deployment",
     "status": "PASSED",
+    "submit_time": "1680562960235",
     "final_tally_result": {
       "yes_count": 72,
       "abstain_count": 4,
@@ -1850,6 +1990,7 @@
     "type": "CommunityPoolSpend",
     "topic": "Development Fund",
     "status": "PASSED",
+    "submit_time": "1680558303094",
     "final_tally_result": {
       "yes_count": 70,
       "abstain_count": 7,
@@ -1863,6 +2004,7 @@
     "type": "SmartContract",
     "topic": "Contract Deployment",
     "status": "PASSED",
+    "submit_time": "1680387298459",
     "final_tally_result": {
       "yes_count": 70,
       "abstain_count": 7,
@@ -1876,6 +2018,7 @@
     "type": "CommunityPoolSpend",
     "topic": "Development Fund",
     "status": "PASSED",
+    "submit_time": "1680283348569",
     "final_tally_result": {
       "yes_count": 72,
       "abstain_count": 1,
@@ -1890,6 +2033,7 @@
     "type": "CommunityPoolSpend",
     "topic": "Development Fund",
     "status": "REJECTED",
+    "submit_time": "1680281772552",
     "final_tally_result": {
       "no_with_veto_count": 2,
       "no_count": 67,
@@ -1905,6 +2049,7 @@
     "type": "CommunityPoolSpend",
     "topic": "Community Support",
     "status": "PASSED",
+    "submit_time": "1679994091413",
     "final_tally_result": {
       "abstain_count": 3,
       "yes_count": 68,
@@ -1918,6 +2063,7 @@
     "type": "CommunityPoolSpend",
     "topic": "Community Support",
     "status": "PASSED",
+    "submit_time": "1679531552558",
     "final_tally_result": {
       "no_count": 11,
       "yes_count": 40,
@@ -1933,6 +2079,7 @@
     "type": "SoftwareUpgrade",
     "topic": "Major Release",
     "status": "PASSED",
+    "submit_time": "1679372690963",
     "final_tally_result": {
       "yes_count": 84,
       "no_vote_count": 46
@@ -1945,6 +2092,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "REJECTED",
+    "submit_time": "1679257664999",
     "final_tally_result": {
       "no_count": 1,
       "no_with_veto_count": 47,
@@ -1959,6 +2107,7 @@
     "type": "SmartContract",
     "topic": "Contract Deployment",
     "status": "PASSED",
+    "submit_time": "1678994688810",
     "final_tally_result": {
       "yes_count": 80,
       "abstain_count": 1,
@@ -1972,6 +2121,7 @@
     "type": "SmartContract",
     "topic": "Contract Deployment",
     "status": "PASSED",
+    "submit_time": "1678994313724",
     "final_tally_result": {
       "yes_count": 78,
       "abstain_count": 1,
@@ -1985,6 +2135,7 @@
     "type": "SmartContract",
     "topic": "Contract Deployment",
     "status": "PASSED",
+    "submit_time": "1678994209009",
     "final_tally_result": {
       "yes_count": 79,
       "abstain_count": 1,
@@ -1998,6 +2149,7 @@
     "type": "SmartContract",
     "topic": "Contract Deployment",
     "status": "PASSED",
+    "submit_time": "1678994096766",
     "final_tally_result": {
       "yes_count": 79,
       "abstain_count": 1,
@@ -2011,6 +2163,7 @@
     "type": "SmartContract",
     "topic": "Contract Deployment",
     "status": "PASSED",
+    "submit_time": "1678993992040",
     "final_tally_result": {
       "yes_count": 79,
       "abstain_count": 1,
@@ -2024,6 +2177,7 @@
     "type": "SmartContract",
     "topic": "Contract Deployment",
     "status": "PASSED",
+    "submit_time": "1678993710951",
     "final_tally_result": {
       "yes_count": 78,
       "abstain_count": 1,
@@ -2037,6 +2191,7 @@
     "type": "SmartContract",
     "topic": "Contract Deployment",
     "status": "PASSED",
+    "submit_time": "1678992913622",
     "final_tally_result": {
       "abstain_count": 1,
       "yes_count": 78,
@@ -2050,6 +2205,7 @@
     "type": "SmartContract",
     "topic": "Contract Deployment",
     "status": "PASSED",
+    "submit_time": "1678992657466",
     "final_tally_result": {
       "abstain_count": 1,
       "yes_count": 78,
@@ -2063,6 +2219,7 @@
     "type": "CommunityPoolSpend",
     "topic": "Community Support",
     "status": "PASSED",
+    "submit_time": "1678894007612",
     "final_tally_result": {
       "yes_count": 82,
       "no_count": 3,
@@ -2077,6 +2234,7 @@
     "type": "SmartContract",
     "topic": "Contract Upgrade",
     "status": "PASSED",
+    "submit_time": "1677799553009",
     "final_tally_result": {
       "yes_count": 39,
       "abstain_count": 8,
@@ -2091,6 +2249,7 @@
     "type": "SmartContract",
     "topic": "Contract Deployment",
     "status": "PASSED",
+    "submit_time": "1677648005674",
     "final_tally_result": {
       "yes_count": 75,
       "abstain_count": 1,
@@ -2104,6 +2263,7 @@
     "type": "SmartContract",
     "topic": "Contract Deployment",
     "status": "PASSED",
+    "submit_time": "1677645475398",
     "final_tally_result": {
       "yes_count": 77,
       "abstain_count": 1,
@@ -2117,6 +2277,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "REJECTED",
+    "submit_time": "1677419088509",
     "final_tally_result": {
       "no_with_veto_count": 54,
       "no_vote_count": 76
@@ -2129,6 +2290,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "REJECTED",
+    "submit_time": "1677418454569",
     "final_tally_result": {
       "no_count": 1,
       "no_with_veto_count": 53,
@@ -2142,6 +2304,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "REJECTED",
+    "submit_time": "1677283395314",
     "final_tally_result": {
       "no_with_veto_count": 53,
       "no_count": 1,
@@ -2155,6 +2318,7 @@
     "type": "ParameterChange",
     "topic": "Governance Settings",
     "status": "PASSED",
+    "submit_time": "1677196171897",
     "final_tally_result": {
       "yes_count": 69,
       "no_vote_count": 61
@@ -2167,6 +2331,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "REJECTED",
+    "submit_time": "1677163203890",
     "final_tally_result": {
       "no_with_veto_count": 62,
       "no_count": 1,
@@ -2180,6 +2345,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "REJECTED",
+    "submit_time": "1677106276684",
     "final_tally_result": {
       "no_with_veto_count": 60,
       "no_vote_count": 70
@@ -2192,6 +2358,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "REJECTED",
+    "submit_time": "1676999254932",
     "final_tally_result": {
       "no_with_veto_count": 59,
       "no_vote_count": 71
@@ -2204,6 +2371,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "REJECTED",
+    "submit_time": "1676929371636",
     "final_tally_result": {
       "no_with_veto_count": 59,
       "abstain_count": 1,
@@ -2217,6 +2385,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "REJECTED",
+    "submit_time": "1676859464555",
     "final_tally_result": {
       "no_with_veto_count": 60,
       "abstain_count": 1,
@@ -2230,6 +2399,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "REJECTED",
+    "submit_time": "1676524156170",
     "final_tally_result": {
       "no_with_veto_count": 46,
       "no_count": 7,
@@ -2243,6 +2413,7 @@
     "type": "ParameterChange",
     "topic": "Staking Parameters",
     "status": "PASSED",
+    "submit_time": "1676487479785",
     "final_tally_result": {
       "yes_count": 68,
       "no_count": 1,
@@ -2257,6 +2428,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "REJECTED",
+    "submit_time": "1676349885069",
     "final_tally_result": {
       "no_with_veto_count": 53,
       "no_count": 7,
@@ -2271,6 +2443,7 @@
     "type": "SmartContract",
     "topic": "Contract Deployment",
     "status": "PASSED",
+    "submit_time": "1675811003413",
     "final_tally_result": {
       "yes_count": 68,
       "abstain_count": 1,
@@ -2284,6 +2457,7 @@
     "type": "CommunityPoolSpend",
     "topic": "Development Fund",
     "status": "PASSED",
+    "submit_time": "1675369633131",
     "final_tally_result": {
       "yes_count": 63,
       "abstain_count": 9,
@@ -2298,6 +2472,7 @@
     "type": "SmartContract",
     "topic": "Contract Upgrade",
     "status": "PASSED",
+    "submit_time": "1675294142085",
     "final_tally_result": {
       "yes_count": 82,
       "abstain_count": 6,
@@ -2311,6 +2486,7 @@
     "type": "CommunityPoolSpend",
     "topic": "Community Support",
     "status": "PASSED",
+    "submit_time": "1674155940624",
     "final_tally_result": {
       "yes_count": 61,
       "abstain_count": 5,
@@ -2325,6 +2501,7 @@
     "type": "SmartContract",
     "topic": "Contract Upgrade",
     "status": "PASSED",
+    "submit_time": "1674077887364",
     "final_tally_result": {
       "yes_count": 77,
       "no_vote_count": 53
@@ -2337,6 +2514,7 @@
     "type": "SmartContract",
     "topic": "Contract Upgrade",
     "status": "PASSED",
+    "submit_time": "1674042436697",
     "final_tally_result": {
       "yes_count": 86,
       "no_vote_count": 44
@@ -2349,6 +2527,7 @@
     "type": "CommunityPoolSpend",
     "topic": "Community Support",
     "status": "PASSED",
+    "submit_time": "1673114554093",
     "final_tally_result": {
       "yes_count": 29,
       "abstain_count": 21,
@@ -2363,6 +2542,7 @@
     "type": "CommunityPoolSpend",
     "topic": "Development Fund",
     "status": "PASSED",
+    "submit_time": "1670880977723",
     "final_tally_result": {
       "no_count": 10,
       "yes_count": 47,
@@ -2377,6 +2557,7 @@
     "type": "SoftwareUpgrade",
     "topic": "Major Release",
     "status": "PASSED",
+    "submit_time": "1670815469196",
     "final_tally_result": {
       "yes_count": 100,
       "abstain_count": 2,
@@ -2390,6 +2571,7 @@
     "type": "SmartContract",
     "topic": "Contract Deployment",
     "status": "PASSED",
+    "submit_time": "1670796053120",
     "final_tally_result": {
       "yes_count": 94,
       "abstain_count": 4,
@@ -2403,6 +2585,7 @@
     "type": "SmartContract",
     "topic": "Contract Deployment",
     "status": "PASSED",
+    "submit_time": "1670795869066",
     "final_tally_result": {
       "yes_count": 93,
       "abstain_count": 4,
@@ -2416,6 +2599,7 @@
     "type": "SmartContract",
     "topic": "Contract Deployment",
     "status": "PASSED",
+    "submit_time": "1670795212681",
     "final_tally_result": {
       "yes_count": 93,
       "abstain_count": 3,
@@ -2429,6 +2613,7 @@
     "type": "SmartContract",
     "topic": "Contract Deployment",
     "status": "PASSED",
+    "submit_time": "1670794282220",
     "final_tally_result": {
       "yes_count": 95,
       "abstain_count": 3,
@@ -2442,6 +2627,7 @@
     "type": "SmartContract",
     "topic": "Feature Enhancement",
     "status": "PASSED",
+    "submit_time": "1670449185498",
     "final_tally_result": {
       "yes_count": 68,
       "abstain_count": 4,
@@ -2455,6 +2641,7 @@
     "type": "SmartContract",
     "topic": "Feature Enhancement",
     "status": "PASSED",
+    "submit_time": "1670449055430",
     "final_tally_result": {
       "yes_count": 49,
       "no_count": 8,
@@ -2469,6 +2656,7 @@
     "type": "TextProposal",
     "topic": "Project Funding",
     "status": "PASSED",
+    "submit_time": "1670353725500",
     "final_tally_result": {
       "yes_count": 70,
       "abstain_count": 11,
@@ -2483,6 +2671,7 @@
     "type": "SmartContract",
     "topic": "Contract Upgrade",
     "status": "PASSED",
+    "submit_time": "1669779902970",
     "final_tally_result": {
       "yes_count": 77,
       "abstain_count": 1,
@@ -2496,6 +2685,7 @@
     "type": "SmartContract",
     "topic": "Contract Deployment",
     "status": "PASSED",
+    "submit_time": "1669438668031",
     "final_tally_result": {
       "yes_count": 88,
       "abstain_count": 2,
@@ -2509,6 +2699,7 @@
     "type": "SmartContract",
     "topic": "Contract Deployment",
     "status": "PASSED",
+    "submit_time": "1669437186047",
     "final_tally_result": {
       "yes_count": 86,
       "abstain_count": 2,
@@ -2522,6 +2713,7 @@
     "type": "SmartContract",
     "topic": "Contract Integration",
     "status": "PASSED",
+    "submit_time": "1669437086244",
     "final_tally_result": {
       "yes_count": 87,
       "abstain_count": 2,
@@ -2535,6 +2727,7 @@
     "type": "SmartContract",
     "topic": "Contract Deployment",
     "status": "PASSED",
+    "submit_time": "1669263576572",
     "final_tally_result": {
       "yes_count": 87,
       "abstain_count": 3,
@@ -2548,6 +2741,7 @@
     "type": "SmartContract",
     "topic": "Contract Deployment",
     "status": "PASSED",
+    "submit_time": "1669263535915",
     "final_tally_result": {
       "yes_count": 86,
       "abstain_count": 3,
@@ -2561,6 +2755,7 @@
     "type": "SmartContract",
     "topic": "Contract Deployment",
     "status": "PASSED",
+    "submit_time": "1669263512332",
     "final_tally_result": {
       "yes_count": 88,
       "abstain_count": 3,
@@ -2574,6 +2769,7 @@
     "type": "SmartContract",
     "topic": "Contract Deployment",
     "status": "PASSED",
+    "submit_time": "1669263405476",
     "final_tally_result": {
       "yes_count": 90,
       "abstain_count": 3,
@@ -2587,6 +2783,7 @@
     "type": "CommunityPoolSpend",
     "topic": "Community Support",
     "status": "PASSED",
+    "submit_time": "1669201034546",
     "final_tally_result": {
       "yes_count": 44,
       "abstain_count": 29,
@@ -2601,6 +2798,7 @@
     "type": "CommunityPoolSpend",
     "topic": "Community Support",
     "status": "PASSED",
+    "submit_time": "1669156230240",
     "final_tally_result": {
       "yes_count": 78,
       "abstain_count": 6,
@@ -2614,6 +2812,7 @@
     "type": "SmartContract",
     "topic": "Contract Deployment",
     "status": "PASSED",
+    "submit_time": "1669100144819",
     "final_tally_result": {
       "yes_count": 74,
       "abstain_count": 2,
@@ -2627,6 +2826,7 @@
     "type": "SmartContract",
     "topic": "Feature Enhancement",
     "status": "PASSED",
+    "submit_time": "1667878929470",
     "final_tally_result": {
       "yes_count": 72,
       "abstain_count": 3,
@@ -2640,6 +2840,7 @@
     "type": "SmartContract",
     "topic": "Contract Deployment",
     "status": "PASSED",
+    "submit_time": "1667601641299",
     "final_tally_result": {
       "yes_count": 74,
       "abstain_count": 2,
@@ -2653,6 +2854,7 @@
     "type": "SmartContract",
     "topic": "Contract Upgrade",
     "status": "PASSED",
+    "submit_time": "1667064132255",
     "final_tally_result": {
       "yes_count": 73,
       "abstain_count": 1,
@@ -2666,6 +2868,7 @@
     "type": "SmartContract",
     "topic": "Contract Upgrade",
     "status": "PASSED",
+    "submit_time": "1666578076654",
     "final_tally_result": {
       "yes_count": 78,
       "abstain_count": 5,
@@ -2679,6 +2882,7 @@
     "type": "SmartContract",
     "topic": "Contract Upgrade",
     "status": "PASSED",
+    "submit_time": "1666577959260",
     "final_tally_result": {
       "yes_count": 72,
       "abstain_count": 6,
@@ -2692,6 +2896,7 @@
     "type": "ParameterChange",
     "topic": "Fee Adjustment",
     "status": "PASSED",
+    "submit_time": "1666386448705",
     "final_tally_result": {
       "yes_count": 70,
       "no_count": 5,
@@ -2705,6 +2910,7 @@
     "type": "SmartContract",
     "topic": "Contract Deployment",
     "status": "PASSED",
+    "submit_time": "1666110245978",
     "final_tally_result": {
       "yes_count": 78,
       "abstain_count": 1,
@@ -2718,6 +2924,7 @@
     "type": "SmartContract",
     "topic": "Contract Deployment",
     "status": "PASSED",
+    "submit_time": "1665725200784",
     "final_tally_result": {
       "yes_count": 84,
       "abstain_count": 2,
@@ -2731,6 +2938,7 @@
     "type": "SmartContract",
     "topic": "Contract Deployment",
     "status": "PASSED",
+    "submit_time": "1665723896181",
     "final_tally_result": {
       "yes_count": 81,
       "abstain_count": 2,
@@ -2744,6 +2952,7 @@
     "type": "SmartContract",
     "topic": "Contract Deployment",
     "status": "PASSED",
+    "submit_time": "1665722990584",
     "final_tally_result": {
       "yes_count": 81,
       "abstain_count": 2,
@@ -2757,6 +2966,7 @@
     "type": "TextProposal",
     "topic": "Community Decision",
     "status": "PASSED",
+    "submit_time": "1665528841479",
     "final_tally_result": {
       "yes_count": 64,
       "abstain_count": 10,
@@ -2772,6 +2982,7 @@
     "type": "CommunityPoolSpend",
     "topic": "Community Support",
     "status": "REJECTED",
+    "submit_time": "1665520661637",
     "final_tally_result": {
       "abstain_count": 11,
       "no_count": 39,
@@ -2787,6 +2998,7 @@
     "type": "CommunityPoolSpend",
     "topic": "Community Support",
     "status": "PASSED",
+    "submit_time": "1665462999277",
     "final_tally_result": {
       "abstain_count": 18,
       "no_count": 17,
@@ -2801,6 +3013,7 @@
     "type": "CommunityPoolSpend",
     "topic": "Community Support",
     "status": "PASSED",
+    "submit_time": "1664481862565",
     "final_tally_result": {
       "yes_count": 61,
       "abstain_count": 3,
@@ -2814,6 +3027,7 @@
     "type": "SmartContract",
     "topic": "Contract Deployment",
     "status": "PASSED",
+    "submit_time": "1664131378670",
     "final_tally_result": {
       "yes_count": 67,
       "no_count": 2,
@@ -2828,6 +3042,7 @@
     "type": "SmartContract",
     "topic": "Contract Deployment",
     "status": "PASSED",
+    "submit_time": "1663643286266",
     "final_tally_result": {
       "yes_count": 76,
       "abstain_count": 3,
@@ -2841,6 +3056,7 @@
     "type": "SmartContract",
     "topic": "Contract Deployment",
     "status": "PASSED",
+    "submit_time": "1663643143422",
     "final_tally_result": {
       "yes_count": 76,
       "abstain_count": 3,
@@ -2854,6 +3070,7 @@
     "type": "SmartContract",
     "topic": "Contract Upgrade",
     "status": "PASSED",
+    "submit_time": "1663300587700",
     "final_tally_result": {
       "yes_count": 77,
       "no_count": 2,
@@ -2868,6 +3085,7 @@
     "type": "ParameterChange",
     "topic": "Staking Parameters",
     "status": "PASSED",
+    "submit_time": "1663214914675",
     "final_tally_result": {
       "yes_count": 43,
       "no_count": 27,
@@ -2882,6 +3100,7 @@
     "type": "SmartContract",
     "topic": "Contract Deployment",
     "status": "PASSED",
+    "submit_time": "1663102266985",
     "final_tally_result": {
       "yes_count": 88,
       "abstain_count": 2,
@@ -2895,6 +3114,7 @@
     "type": "SmartContract",
     "topic": "Contract Deployment",
     "status": "PASSED",
+    "submit_time": "1663101867143",
     "final_tally_result": {
       "yes_count": 89,
       "abstain_count": 2,
@@ -2908,6 +3128,7 @@
     "type": "SmartContract",
     "topic": "Contract Deployment",
     "status": "PASSED",
+    "submit_time": "1663101237250",
     "final_tally_result": {
       "yes_count": 87,
       "abstain_count": 3,
@@ -2921,6 +3142,7 @@
     "type": "SmartContract",
     "topic": "Contract Deployment",
     "status": "PASSED",
+    "submit_time": "1663041066190",
     "final_tally_result": {
       "yes_count": 84,
       "abstain_count": 3,
@@ -2934,6 +3156,7 @@
     "type": "SoftwareUpgrade",
     "topic": "Major Release",
     "status": "PASSED",
+    "submit_time": "1661577522276",
     "final_tally_result": {
       "yes_count": 96,
       "no_vote_count": 34
@@ -2946,6 +3169,7 @@
     "type": "SmartContract",
     "topic": "Contract Upgrade",
     "status": "PASSED",
+    "submit_time": "1660580501790",
     "final_tally_result": {
       "yes_count": 71,
       "abstain_count": 1,
@@ -2960,6 +3184,7 @@
     "type": "SmartContract",
     "topic": "Contract Deployment",
     "status": "PASSED",
+    "submit_time": "1660321187983",
     "final_tally_result": {
       "yes_count": 84,
       "abstain_count": 1,
@@ -2973,6 +3198,7 @@
     "type": "SmartContract",
     "topic": "Contract Deployment",
     "status": "REJECTED",
+    "submit_time": "1660279477701",
     "final_tally_result": {
       "no_count": 77,
       "yes_count": 4,
@@ -2986,6 +3212,7 @@
     "type": "ParameterChange",
     "topic": "Fee Adjustment",
     "status": "PASSED",
+    "submit_time": "1658329917932",
     "final_tally_result": {
       "yes_count": 72,
       "abstain_count": 3,
@@ -3000,6 +3227,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "PASSED",
+    "submit_time": "1658055614159",
     "final_tally_result": {
       "yes_count": 70,
       "abstain_count": 6,
@@ -3014,6 +3242,7 @@
     "type": "CommunityPoolSpend",
     "topic": "Community Support",
     "status": "REJECTED",
+    "submit_time": "1657720857203",
     "final_tally_result": {
       "abstain_count": 8,
       "no_count": 26,
@@ -3028,6 +3257,7 @@
     "type": "SoftwareUpgrade",
     "topic": "Major Release",
     "status": "PASSED",
+    "submit_time": "1656601767782",
     "final_tally_result": {
       "yes_count": 73,
       "abstain_count": 1,
@@ -3041,6 +3271,7 @@
     "type": "ParameterChange",
     "topic": "Fee Adjustment",
     "status": "PASSED",
+    "submit_time": "1652635925713",
     "final_tally_result": {
       "yes_count": 56,
       "no_count": 5,
@@ -3054,6 +3285,7 @@
     "type": "ParameterChange",
     "topic": "Protocol Configuration",
     "status": "PASSED",
+    "submit_time": "1652473747114",
     "final_tally_result": {
       "yes_count": 72,
       "no_vote_count": 58
@@ -3066,6 +3298,7 @@
     "type": "SmartContract",
     "topic": "Contract Upgrade",
     "status": "PASSED",
+    "submit_time": "1652469763182",
     "final_tally_result": {
       "yes_count": 73,
       "no_vote_count": 57
@@ -3078,6 +3311,7 @@
     "type": "ParameterChange",
     "topic": "Protocol Configuration",
     "status": "PASSED",
+    "submit_time": "1652468943975",
     "final_tally_result": {
       "yes_count": 72,
       "no_vote_count": 58
@@ -3090,6 +3324,7 @@
     "type": "SmartContract",
     "topic": "Contract Deployment",
     "status": "PASSED",
+    "submit_time": "1652203418221",
     "final_tally_result": {
       "yes_count": 58,
       "no_vote_count": 72
@@ -3102,6 +3337,7 @@
     "type": "SmartContract",
     "topic": "Contract Deployment",
     "status": "PASSED",
+    "submit_time": "1652202638977",
     "final_tally_result": {
       "yes_count": 58,
       "no_vote_count": 72
@@ -3114,6 +3350,7 @@
     "type": "SoftwareUpgrade",
     "topic": "Major Release",
     "status": "PASSED",
+    "submit_time": "1651289256681",
     "final_tally_result": {
       "yes_count": 74,
       "no_vote_count": 56
@@ -3126,6 +3363,7 @@
     "type": "ParameterChange",
     "topic": "Fee Adjustment",
     "status": "PASSED",
+    "submit_time": "1650935910648",
     "final_tally_result": {
       "yes_count": 62,
       "no_vote_count": 68
@@ -3138,6 +3376,7 @@
     "type": "CommunityPoolSpend",
     "topic": "Community Support",
     "status": "PASSED",
+    "submit_time": "1650323599940",
     "final_tally_result": {
       "yes_count": 58,
       "no_count": 2,
@@ -3152,6 +3391,7 @@
     "type": "SoftwareUpgrade",
     "topic": "Major Release",
     "status": "PASSED",
+    "submit_time": "1649445967406",
     "final_tally_result": {
       "yes_count": 80,
       "no_vote_count": 50
@@ -3164,6 +3404,7 @@
     "type": "CommunityPoolSpend",
     "topic": "Community Support",
     "status": "PASSED",
+    "submit_time": "1648694091848",
     "final_tally_result": {
       "abstain_count": 1,
       "yes_count": 52,
@@ -3178,6 +3419,7 @@
     "type": "ParameterChange",
     "topic": "Protocol Configuration",
     "status": "PASSED",
+    "submit_time": "1647578796422",
     "final_tally_result": {
       "yes_count": 63,
       "no_vote_count": 67
@@ -3190,6 +3432,7 @@
     "type": "SmartContract",
     "topic": "Contract Deployment",
     "status": "PASSED",
+    "submit_time": "1647319332365",
     "final_tally_result": {
       "yes_count": 69,
       "abstain_count": 2,
@@ -3203,6 +3446,7 @@
     "type": "SmartContract",
     "topic": "Contract Deployment",
     "status": "PASSED",
+    "submit_time": "1646712777507",
     "final_tally_result": {
       "yes_count": 78,
       "no_vote_count": 52
@@ -3215,6 +3459,7 @@
     "type": "SmartContract",
     "topic": "Contract Deployment",
     "status": "PASSED",
+    "submit_time": "1646712733520",
     "final_tally_result": {
       "yes_count": 78,
       "no_vote_count": 52
@@ -3227,6 +3472,7 @@
     "type": "SmartContract",
     "topic": "Contract Deployment",
     "status": "PASSED",
+    "submit_time": "1646712569889",
     "final_tally_result": {
       "yes_count": 78,
       "no_vote_count": 52
@@ -3239,6 +3485,7 @@
     "type": "SmartContract",
     "topic": "Contract Deployment",
     "status": "REJECTED",
+    "submit_time": "1646152907503",
     "final_tally_result": {
       "yes_count": 37,
       "no_count": 39,
@@ -3253,6 +3500,7 @@
     "type": "SmartContract",
     "topic": "Contract Deployment",
     "status": "REJECTED",
+    "submit_time": "1646152871548",
     "final_tally_result": {
       "yes_count": 37,
       "no_count": 39,
@@ -3267,6 +3515,7 @@
     "type": "SmartContract",
     "topic": "Contract Deployment",
     "status": "REJECTED",
+    "submit_time": "1646152583921",
     "final_tally_result": {
       "no_count": 39,
       "yes_count": 38,
@@ -3281,6 +3530,7 @@
     "type": "SoftwareUpgrade",
     "topic": "Major Release",
     "status": "PASSED",
+    "submit_time": "1645460787716",
     "final_tally_result": {
       "yes_count": 96,
       "no_vote_count": 34
@@ -3293,6 +3543,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "PASSED",
+    "submit_time": "1644848286471",
     "final_tally_result": {
       "abstain_count": 9,
       "yes_count": 60,
@@ -3306,6 +3557,7 @@
     "type": "ParameterChange",
     "topic": "Fee Adjustment",
     "status": "REJECTED",
+    "submit_time": "1644819282371",
     "final_tally_result": {
       "no_count": 63,
       "yes_count": 23,
@@ -3321,6 +3573,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "PASSED",
+    "submit_time": "1644250961222",
     "final_tally_result": {
       "yes_count": 57,
       "abstain_count": 5,
@@ -3334,6 +3587,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "PASSED",
+    "submit_time": "1643642592929",
     "final_tally_result": {
       "yes_count": 48,
       "abstain_count": 1,
@@ -3347,6 +3601,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "PASSED",
+    "submit_time": "1643208398877",
     "final_tally_result": {
       "abstain_count": 3,
       "yes_count": 64,
@@ -3360,6 +3615,7 @@
     "type": "SoftwareUpgrade",
     "topic": "Major Release",
     "status": "PASSED",
+    "submit_time": "1642829484026",
     "final_tally_result": {
       "yes_count": 86,
       "no_vote_count": 44
@@ -3372,6 +3628,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "PASSED",
+    "submit_time": "1642734979863",
     "final_tally_result": {
       "abstain_count": 2,
       "yes_count": 69,
@@ -3385,6 +3642,7 @@
     "type": "TextProposal",
     "topic": "Community Decision",
     "status": "PASSED",
+    "submit_time": "1642402535124",
     "final_tally_result": {
       "yes_count": 88,
       "no_vote_count": 42
@@ -3397,6 +3655,7 @@
     "type": "ParameterChange",
     "topic": "Protocol Configuration",
     "status": "PASSED",
+    "submit_time": "1642179653818",
     "final_tally_result": {
       "yes_count": 87,
       "no_vote_count": 43
@@ -3409,6 +3668,7 @@
     "type": "CommunityPoolSpend",
     "topic": "Community Support",
     "status": "PASSED",
+    "submit_time": "1641844627385",
     "final_tally_result": {
       "yes_count": 78,
       "no_vote_count": 52
@@ -3421,6 +3681,7 @@
     "type": "ParameterChange",
     "topic": "Economic Parameters",
     "status": "PASSED",
+    "submit_time": "1640497749612",
     "final_tally_result": {
       "yes_count": 77,
       "no_vote_count": 53
@@ -3433,6 +3694,7 @@
     "type": "CommunityPoolSpend",
     "topic": "Community Support",
     "status": "PASSED",
+    "submit_time": "1639438572744",
     "final_tally_result": {
       "yes_count": 43,
       "no_vote_count": 87

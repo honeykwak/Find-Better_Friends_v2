@@ -6,6 +6,7 @@
     "type": "SoftwareUpgrade",
     "topic": "Major Release",
     "status": "PASSED",
+    "submit_time": "1727123603650",
     "final_tally_result": {
       "yes_count": 54,
       "no_vote_count": 36
@@ -18,6 +19,7 @@
     "type": "ParameterChange",
     "topic": "Staking Parameters",
     "status": "PASSED",
+    "submit_time": "1723852296734",
     "final_tally_result": {
       "yes_count": 50,
       "no_vote_count": 41
@@ -30,6 +32,7 @@
     "type": "IBCRelated",
     "topic": "Cross-Chain Integration",
     "status": "PASSED",
+    "submit_time": "1722275582763",
     "final_tally_result": {
       "yes_count": 50,
       "no_vote_count": 41
@@ -42,6 +45,7 @@
     "type": "IBCRelated",
     "topic": "IBC Security",
     "status": "PASSED",
+    "submit_time": "1722275525171",
     "final_tally_result": {
       "yes_count": 50,
       "no_vote_count": 41
@@ -54,6 +58,7 @@
     "type": "ParameterChange",
     "topic": "Staking Parameters",
     "status": "PASSED",
+    "submit_time": "1715992794089",
     "final_tally_result": {
       "yes_count": 58,
       "abstain_count": 1,
@@ -67,6 +72,7 @@
     "type": "IBCRelated",
     "topic": "IBC Security",
     "status": "PASSED",
+    "submit_time": "1714319880275",
     "final_tally_result": {
       "yes_count": 54,
       "no_count": 1,
@@ -80,6 +86,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "REJECTED",
+    "submit_time": "1711936130842",
     "final_tally_result": {
       "no_with_veto_count": 47,
       "no_count": 2,
@@ -93,6 +100,7 @@
     "type": "CommunityPoolSpend",
     "topic": "Community Support",
     "status": "PASSED",
+    "submit_time": "1708006267389",
     "final_tally_result": {
       "yes_count": 63,
       "abstain_count": 2,
@@ -106,6 +114,7 @@
     "type": "CommunityPoolSpend",
     "topic": "Ecosystem Growth",
     "status": "PASSED",
+    "submit_time": "1706135247133",
     "final_tally_result": {
       "yes_count": 64,
       "abstain_count": 7,
@@ -119,6 +128,7 @@
     "type": "ParameterChange",
     "topic": "Economic Parameters",
     "status": "PASSED",
+    "submit_time": "1706134474251",
     "final_tally_result": {
       "yes_count": 68,
       "abstain_count": 1,
@@ -133,6 +143,7 @@
     "type": "IBCRelated",
     "topic": "IBC Security",
     "status": "PASSED",
+    "submit_time": "1705032112252",
     "final_tally_result": {
       "yes_count": 62,
       "abstain_count": 3,
@@ -146,6 +157,7 @@
     "type": "IBCRelated",
     "topic": "IBC Security",
     "status": "PASSED",
+    "submit_time": "1705003660187",
     "final_tally_result": {
       "yes_count": 66,
       "abstain_count": 3,
@@ -159,6 +171,7 @@
     "type": "IBCRelated",
     "topic": "Cross-Chain Integration",
     "status": "PASSED",
+    "submit_time": "1704634879668",
     "final_tally_result": {
       "yes_count": 71,
       "abstain_count": 2,
@@ -172,6 +185,7 @@
     "type": "IBCRelated",
     "topic": "Cross-Chain Integration",
     "status": "PASSED",
+    "submit_time": "1704451247533",
     "final_tally_result": {
       "yes_count": 73,
       "no_vote_count": 35
@@ -184,6 +198,7 @@
     "type": "ParameterChange",
     "topic": "Fee Adjustment",
     "status": "PASSED",
+    "submit_time": "1702877159547",
     "final_tally_result": {
       "yes_count": 66,
       "abstain_count": 3,
@@ -197,6 +212,7 @@
     "type": "ParameterChange",
     "topic": "Fee Adjustment",
     "status": "PASSED",
+    "submit_time": "1701705295683",
     "final_tally_result": {
       "yes_count": 66,
       "abstain_count": 1,
@@ -210,6 +226,7 @@
     "type": "ParameterChange",
     "topic": "Economic Parameters",
     "status": "PASSED",
+    "submit_time": "1701420471792",
     "final_tally_result": {
       "yes_count": 66,
       "no_count": 4,
@@ -224,6 +241,7 @@
     "type": "CommunityPoolSpend",
     "topic": "Community Support",
     "status": "PASSED",
+    "submit_time": "1701151800049",
     "final_tally_result": {
       "yes_count": 63,
       "abstain_count": 5,
@@ -237,6 +255,7 @@
     "type": "IBCRelated",
     "topic": "Cross-Chain Integration",
     "status": "PASSED",
+    "submit_time": "1700650935641",
     "final_tally_result": {
       "yes_count": 66,
       "abstain_count": 1,
@@ -250,6 +269,7 @@
     "type": "IBCRelated",
     "topic": "IBC Security",
     "status": "PASSED",
+    "submit_time": "1700593482627",
     "final_tally_result": {
       "yes_count": 68,
       "abstain_count": 1,
@@ -263,6 +283,7 @@
     "type": "IBCRelated",
     "topic": "Cross-Chain Integration",
     "status": "REJECTED",
+    "submit_time": "1700592630763",
     "final_tally_result": {
       "no_count": 42,
       "abstain_count": 3,
@@ -277,6 +298,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "REJECTED",
+    "submit_time": "1699589472796",
     "final_tally_result": {
       "no_count": 4,
       "no_with_veto_count": 53,
@@ -290,6 +312,7 @@
     "type": "SoftwareUpgrade",
     "topic": "Security Enhancement",
     "status": "PASSED",
+    "submit_time": "1699557689719",
     "final_tally_result": {
       "yes_count": 86,
       "no_vote_count": 22
@@ -302,6 +325,7 @@
     "type": "SoftwareUpgrade",
     "topic": "Security Enhancement",
     "status": "REJECTED",
+    "submit_time": "1699543118322",
     "final_tally_result": {
       "no_count": 69,
       "yes_count": 1,
@@ -317,6 +341,7 @@
     "type": "CommunityPoolSpend",
     "topic": "Ecosystem Growth",
     "status": "PASSED",
+    "submit_time": "1699432433796",
     "final_tally_result": {
       "yes_count": 72,
       "abstain_count": 5,
@@ -331,6 +356,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "REJECTED",
+    "submit_time": "1699157955888",
     "final_tally_result": {
       "no_count": 1,
       "no_with_veto_count": 57,
@@ -344,6 +370,7 @@
     "type": "ParameterChange",
     "topic": "Staking Parameters",
     "status": "PASSED",
+    "submit_time": "1697580632001",
     "final_tally_result": {
       "abstain_count": 7,
       "yes_count": 54,
@@ -358,6 +385,7 @@
     "type": "ParameterChange",
     "topic": "Economic Parameters",
     "status": "PASSED",
+    "submit_time": "1696547703713",
     "final_tally_result": {
       "yes_count": 69,
       "abstain_count": 4,
@@ -372,6 +400,7 @@
     "type": "TextProposal",
     "topic": "Community Decision",
     "status": "PASSED",
+    "submit_time": "1694798048968",
     "final_tally_result": {
       "yes_count": 84,
       "abstain_count": 1,
@@ -385,6 +414,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "PASSED",
+    "submit_time": "1694798024106",
     "final_tally_result": {
       "yes_count": 86,
       "abstain_count": 1,
@@ -398,6 +428,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "PASSED",
+    "submit_time": "1694798004972",
     "final_tally_result": {
       "yes_count": 85,
       "abstain_count": 1,
@@ -411,6 +442,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "PASSED",
+    "submit_time": "1694797979902",
     "final_tally_result": {
       "yes_count": 86,
       "abstain_count": 1,
@@ -424,6 +456,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "PASSED",
+    "submit_time": "1694797195895",
     "final_tally_result": {
       "yes_count": 84,
       "abstain_count": 1,
@@ -437,6 +470,7 @@
     "type": "ParameterChange",
     "topic": "Staking Parameters",
     "status": "PASSED",
+    "submit_time": "1693402625873",
     "final_tally_result": {
       "yes_count": 89,
       "no_count": 1,
@@ -451,6 +485,7 @@
     "type": "ParameterChange",
     "topic": "Economic Parameters",
     "status": "PASSED",
+    "submit_time": "1693369648012",
     "final_tally_result": {
       "yes_count": 89,
       "abstain_count": 5,
@@ -465,6 +500,7 @@
     "type": "TextProposal",
     "topic": "Project Funding",
     "status": "PASSED",
+    "submit_time": "1693233319987",
     "final_tally_result": {
       "yes_count": 76,
       "abstain_count": 13,
@@ -479,6 +515,7 @@
     "type": "TextProposal",
     "topic": "Network Policy",
     "status": "PASSED",
+    "submit_time": "1691528676327",
     "final_tally_result": {
       "yes_count": 78,
       "abstain_count": 2,
@@ -492,6 +529,7 @@
     "type": "TextProposal",
     "topic": "Project Funding",
     "status": "PASSED",
+    "submit_time": "1691463754868",
     "final_tally_result": {
       "yes_count": 72,
       "abstain_count": 10,
@@ -506,6 +544,7 @@
     "type": "CommunityPoolSpend",
     "topic": "Ecosystem Growth",
     "status": "PASSED",
+    "submit_time": "1691416740989",
     "final_tally_result": {
       "yes_count": 31,
       "no_count": 39,
@@ -521,6 +560,7 @@
     "type": "ParameterChange",
     "topic": "Staking Parameters",
     "status": "PASSED",
+    "submit_time": "1688060299815",
     "final_tally_result": {
       "yes_count": 87,
       "abstain_count": 1,
@@ -534,6 +574,7 @@
     "type": "ParameterChange",
     "topic": "Staking Parameters",
     "status": "PASSED",
+    "submit_time": "1687610768907",
     "final_tally_result": {
       "yes_count": 96,
       "no_vote_count": 12
@@ -546,6 +587,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "REJECTED",
+    "submit_time": "1687574729357",
     "final_tally_result": {
       "no_count": 6,
       "no_with_veto_count": 64,
@@ -559,6 +601,7 @@
     "type": "SoftwareUpgrade",
     "topic": "Major Release",
     "status": "PASSED",
+    "submit_time": "1687206279965",
     "final_tally_result": {
       "yes_count": 104,
       "no_vote_count": 4
@@ -571,6 +614,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "REJECTED",
+    "submit_time": "1686653322061",
     "final_tally_result": {
       "no_with_veto_count": 64,
       "yes_count": 5,
@@ -586,6 +630,7 @@
     "type": "CommunityPoolSpend",
     "topic": "Ecosystem Growth",
     "status": "PASSED",
+    "submit_time": "1686648923154",
     "final_tally_result": {
       "yes_count": 87,
       "abstain_count": 8,
@@ -600,6 +645,7 @@
     "type": "IBCRelated",
     "topic": "IBC Security",
     "status": "PASSED",
+    "submit_time": "1685989941692",
     "final_tally_result": {
       "yes_count": 95,
       "no_vote_count": 13
@@ -612,6 +658,7 @@
     "type": "IBCRelated",
     "topic": "Cross-Chain Integration",
     "status": "PASSED",
+    "submit_time": "1685989911160",
     "final_tally_result": {
       "yes_count": 95,
       "no_vote_count": 13
@@ -624,6 +671,7 @@
     "type": "IBCRelated",
     "topic": "Cross-Chain Integration",
     "status": "PASSED",
+    "submit_time": "1685982587422",
     "final_tally_result": {
       "yes_count": 96,
       "no_vote_count": 12
@@ -636,6 +684,7 @@
     "type": "IBCRelated",
     "topic": "Cross-Chain Integration",
     "status": "PASSED",
+    "submit_time": "1685982388585",
     "final_tally_result": {
       "yes_count": 96,
       "abstain_count": 1,
@@ -649,6 +698,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "REJECTED",
+    "submit_time": "1685676895971",
     "final_tally_result": {
       "no_with_veto_count": 53,
       "no_count": 3,
@@ -663,6 +713,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "PASSED",
+    "submit_time": "1683143992018",
     "final_tally_result": {
       "yes_count": 89,
       "no_count": 2,
@@ -677,6 +728,7 @@
     "type": "TextProposal",
     "topic": "Project Funding",
     "status": "PASSED",
+    "submit_time": "1681881125496",
     "final_tally_result": {
       "yes_count": 64,
       "abstain_count": 27,
@@ -691,6 +743,7 @@
     "type": "SoftwareUpgrade",
     "topic": "Major Release",
     "status": "PASSED",
+    "submit_time": "1681829409724",
     "final_tally_result": {
       "yes_count": 108
     }
@@ -702,6 +755,7 @@
     "type": "CommunityPoolSpend",
     "topic": "Ecosystem Growth",
     "status": "PASSED",
+    "submit_time": "1680989558331",
     "final_tally_result": {
       "yes_count": 79,
       "no_count": 3,
@@ -716,6 +770,7 @@
     "type": "ParameterChange",
     "topic": "Economic Parameters",
     "status": "PASSED",
+    "submit_time": "1680648748086",
     "final_tally_result": {
       "yes_count": 86,
       "abstain_count": 4,
@@ -730,6 +785,7 @@
     "type": "CommunityPoolSpend",
     "topic": "Community Support",
     "status": "PASSED",
+    "submit_time": "1678739701432",
     "final_tally_result": {
       "yes_count": 66,
       "no_count": 5,
@@ -744,6 +800,7 @@
     "type": "CommunityPoolSpend",
     "topic": "Ecosystem Growth",
     "status": "PASSED",
+    "submit_time": "1678738318873",
     "final_tally_result": {
       "yes_count": 78,
       "abstain_count": 14,
@@ -757,6 +814,7 @@
     "type": "ParameterChange",
     "topic": "Economic Parameters",
     "status": "PASSED",
+    "submit_time": "1678490193391",
     "final_tally_result": {
       "yes_count": 102,
       "abstain_count": 1,
@@ -771,6 +829,7 @@
     "type": "ParameterChange",
     "topic": "Economic Parameters",
     "status": "PASSED",
+    "submit_time": "1678490114470",
     "final_tally_result": {
       "yes_count": 103,
       "abstain_count": 1,
@@ -784,6 +843,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "PASSED",
+    "submit_time": "1678303255563",
     "final_tally_result": {
       "yes_count": 48,
       "abstain_count": 22,
@@ -799,6 +859,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "REJECTED",
+    "submit_time": "1677300467221",
     "final_tally_result": {
       "no_with_veto_count": 85,
       "no_count": 2,
@@ -812,6 +873,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "REJECTED",
+    "submit_time": "1677300448859",
     "final_tally_result": {
       "no_with_veto_count": 84,
       "no_count": 2,
@@ -825,6 +887,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "REJECTED",
+    "submit_time": "1677294375578",
     "final_tally_result": {
       "no_with_veto_count": 86,
       "no_count": 2,
@@ -838,6 +901,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "REJECTED",
+    "submit_time": "1677294363217",
     "final_tally_result": {
       "no_with_veto_count": 86,
       "no_count": 2,
@@ -851,6 +915,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "REJECTED",
+    "submit_time": "1677283671952",
     "final_tally_result": {
       "no_with_veto_count": 86,
       "no_count": 2,
@@ -864,6 +929,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "REJECTED",
+    "submit_time": "1677261616698",
     "final_tally_result": {
       "no_with_veto_count": 89,
       "no_count": 2,
@@ -877,6 +943,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "REJECTED",
+    "submit_time": "1677255741568",
     "final_tally_result": {
       "no_with_veto_count": 93,
       "no_count": 3,
@@ -890,6 +957,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "REJECTED",
+    "submit_time": "1677255672715",
     "final_tally_result": {
       "no_with_veto_count": 90,
       "no_count": 3,
@@ -904,6 +972,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "REJECTED",
+    "submit_time": "1677255376291",
     "final_tally_result": {
       "no_with_veto_count": 93,
       "no_count": 4,
@@ -917,6 +986,7 @@
     "type": "ParameterChange",
     "topic": "Economic Parameters",
     "status": "PASSED",
+    "submit_time": "1677247562857",
     "final_tally_result": {
       "yes_count": 99,
       "no_with_veto_count": 3,
@@ -930,6 +1000,7 @@
     "type": "IBCRelated",
     "topic": "IBC Security",
     "status": "PASSED",
+    "submit_time": "1677191054259",
     "final_tally_result": {
       "yes_count": 100,
       "no_with_veto_count": 3,
@@ -943,6 +1014,7 @@
     "type": "IBCRelated",
     "topic": "IBC Security",
     "status": "PASSED",
+    "submit_time": "1677185163980",
     "final_tally_result": {
       "yes_count": 100,
       "no_with_veto_count": 3,
@@ -956,6 +1028,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "REJECTED",
+    "submit_time": "1677174125596",
     "final_tally_result": {
       "no_with_veto_count": 91,
       "no_count": 4,
@@ -969,6 +1042,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "REJECTED",
+    "submit_time": "1677114354185",
     "final_tally_result": {
       "no_with_veto_count": 92,
       "no_count": 4,
@@ -982,6 +1056,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "REJECTED",
+    "submit_time": "1677006930823",
     "final_tally_result": {
       "no_count": 4,
       "no_with_veto_count": 96,
@@ -996,6 +1071,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "REJECTED",
+    "submit_time": "1676929103253",
     "final_tally_result": {
       "no_with_veto_count": 98,
       "no_count": 4,
@@ -1010,6 +1086,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "REJECTED",
+    "submit_time": "1676903580100",
     "final_tally_result": {
       "no_with_veto_count": 100,
       "no_count": 5,
@@ -1023,6 +1100,7 @@
     "type": "ParameterChange",
     "topic": "Staking Parameters",
     "status": "PASSED",
+    "submit_time": "1676871118379",
     "final_tally_result": {
       "yes_count": 108
     }
@@ -1034,6 +1112,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "REJECTED",
+    "submit_time": "1676862389725",
     "final_tally_result": {
       "no_with_veto_count": 100,
       "no_count": 6,
@@ -1048,6 +1127,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "REJECTED",
+    "submit_time": "1676578349380",
     "final_tally_result": {
       "no_count": 7,
       "no_with_veto_count": 97,
@@ -1062,6 +1142,7 @@
     "type": "CommunityPoolSpend",
     "topic": "Ecosystem Growth",
     "status": "PASSED",
+    "submit_time": "1676492019729",
     "final_tally_result": {
       "yes_count": 76,
       "no_count": 11,
@@ -1077,6 +1158,7 @@
     "type": "IBCRelated",
     "topic": "IBC Security",
     "status": "PASSED",
+    "submit_time": "1676278429567",
     "final_tally_result": {
       "yes_count": 98,
       "no_count": 1,
@@ -1090,6 +1172,7 @@
     "type": "IBCRelated",
     "topic": "IBC Security",
     "status": "PASSED",
+    "submit_time": "1676219590905",
     "final_tally_result": {
       "yes_count": 104,
       "abstain_count": 3,
@@ -1103,6 +1186,7 @@
     "type": "IBCRelated",
     "topic": "Cross-Chain Integration",
     "status": "PASSED",
+    "submit_time": "1676219254576",
     "final_tally_result": {
       "yes_count": 100,
       "abstain_count": 7,
@@ -1116,6 +1200,7 @@
     "type": "CommunityPoolSpend",
     "topic": "Community Support",
     "status": "PASSED",
+    "submit_time": "1675359254194",
     "final_tally_result": {
       "abstain_count": 2,
       "yes_count": 102,
@@ -1129,6 +1214,7 @@
     "type": "IBCRelated",
     "topic": "IBC Security",
     "status": "REJECTED",
+    "submit_time": "1675186557159",
     "final_tally_result": {
       "no_count": 78,
       "yes_count": 30
@@ -1141,6 +1227,7 @@
     "type": "IBCRelated",
     "topic": "Cross-Chain Integration",
     "status": "REJECTED",
+    "submit_time": "1675185467574",
     "final_tally_result": {
       "no_count": 80,
       "yes_count": 28
@@ -1153,6 +1240,7 @@
     "type": "IBCRelated",
     "topic": "Cross-Chain Integration",
     "status": "REJECTED",
+    "submit_time": "1675185256976",
     "final_tally_result": {
       "no_count": 80,
       "yes_count": 28
@@ -1165,6 +1253,7 @@
     "type": "IBCRelated",
     "topic": "IBC Security",
     "status": "PASSED",
+    "submit_time": "1674841688685",
     "final_tally_result": {
       "yes_count": 103,
       "abstain_count": 5
@@ -1177,6 +1266,7 @@
     "type": "IBCRelated",
     "topic": "Cross-Chain Integration",
     "status": "PASSED",
+    "submit_time": "1674840793601",
     "final_tally_result": {
       "yes_count": 103,
       "abstain_count": 5
@@ -1189,6 +1279,7 @@
     "type": "IBCRelated",
     "topic": "IBC Transfer",
     "status": "PASSED",
+    "submit_time": "1674749291756",
     "final_tally_result": {
       "yes_count": 104,
       "abstain_count": 2,
@@ -1202,6 +1293,7 @@
     "type": "IBCRelated",
     "topic": "IBC Security",
     "status": "PASSED",
+    "submit_time": "1674240968625",
     "final_tally_result": {
       "yes_count": 106,
       "abstain_count": 2
@@ -1214,6 +1306,7 @@
     "type": "IBCRelated",
     "topic": "IBC Security",
     "status": "PASSED",
+    "submit_time": "1674240944169",
     "final_tally_result": {
       "yes_count": 107,
       "abstain_count": 1
@@ -1226,6 +1319,7 @@
     "type": "IBCRelated",
     "topic": "IBC Security",
     "status": "PASSED",
+    "submit_time": "1674239246091",
     "final_tally_result": {
       "yes_count": 107,
       "abstain_count": 1
@@ -1238,6 +1332,7 @@
     "type": "IBCRelated",
     "topic": "IBC Transfer",
     "status": "FAILED",
+    "submit_time": "1673425825690",
     "final_tally_result": {
       "no_count": 1,
       "yes_count": 94,
@@ -1252,6 +1347,7 @@
     "type": "CommunityPoolSpend",
     "topic": "Community Support",
     "status": "PASSED",
+    "submit_time": "1672962186213",
     "final_tally_result": {
       "yes_count": 39,
       "no_count": 29,
@@ -1266,6 +1362,7 @@
     "type": "ParameterChange",
     "topic": "Economic Parameters",
     "status": "PASSED",
+    "submit_time": "1672194856005",
     "final_tally_result": {
       "yes_count": 80,
       "abstain_count": 21,
@@ -1280,6 +1377,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "PASSED",
+    "submit_time": "1672193331434",
     "final_tally_result": {
       "abstain_count": 17,
       "yes_count": 76,
@@ -1294,6 +1392,7 @@
     "type": "SoftwareUpgrade",
     "topic": "Major Release",
     "status": "PASSED",
+    "submit_time": "1672167362941",
     "final_tally_result": {
       "yes_count": 108
     }
@@ -1305,6 +1404,7 @@
     "type": "IBCRelated",
     "topic": "Client Update",
     "status": "PASSED",
+    "submit_time": "1671613504905",
     "final_tally_result": {
       "yes_count": 84,
       "abstain_count": 1,
@@ -1318,6 +1418,7 @@
     "type": "IBCRelated",
     "topic": "IBC Security",
     "status": "PASSED",
+    "submit_time": "1671072035015",
     "final_tally_result": {
       "yes_count": 77,
       "abstain_count": 19,
@@ -1332,6 +1433,7 @@
     "type": "IBCRelated",
     "topic": "Cross-Chain Integration",
     "status": "PASSED",
+    "submit_time": "1671037203022",
     "final_tally_result": {
       "yes_count": 84,
       "abstain_count": 13,
@@ -1346,6 +1448,7 @@
     "type": "IBCRelated",
     "topic": "IBC Security",
     "status": "PASSED",
+    "submit_time": "1670986304528",
     "final_tally_result": {
       "yes_count": 103,
       "abstain_count": 3,
@@ -1359,6 +1462,7 @@
     "type": "IBCRelated",
     "topic": "IBC Security",
     "status": "PASSED",
+    "submit_time": "1670798093676",
     "final_tally_result": {
       "yes_count": 98,
       "abstain_count": 7,
@@ -1372,6 +1476,7 @@
     "type": "IBCRelated",
     "topic": "IBC Security",
     "status": "REJECTED",
+    "submit_time": "1670703450828",
     "final_tally_result": {
       "no_count": 75,
       "yes_count": 28,
@@ -1385,6 +1490,7 @@
     "type": "IBCRelated",
     "topic": "IBC Security",
     "status": "REJECTED",
+    "submit_time": "1670703334376",
     "final_tally_result": {
       "no_count": 74,
       "yes_count": 28,
@@ -1398,6 +1504,7 @@
     "type": "IBCRelated",
     "topic": "IBC Security",
     "status": "PASSED",
+    "submit_time": "1670242364861",
     "final_tally_result": {
       "yes_count": 104,
       "abstain_count": 2,
@@ -1411,6 +1518,7 @@
     "type": "IBCRelated",
     "topic": "IBC Security",
     "status": "REJECTED",
+    "submit_time": "1670240262743",
     "final_tally_result": {
       "no_count": 82,
       "yes_count": 25,
@@ -1424,6 +1532,7 @@
     "type": "IBCRelated",
     "topic": "IBC Security",
     "status": "PASSED",
+    "submit_time": "1669991568727",
     "final_tally_result": {
       "yes_count": 105,
       "abstain_count": 3
@@ -1436,6 +1545,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "PASSED",
+    "submit_time": "1667356764380",
     "final_tally_result": {
       "yes_count": 108
     }
@@ -1447,6 +1557,7 @@
     "type": "IBCRelated",
     "topic": "Client Update",
     "status": "PASSED",
+    "submit_time": "1667313575205",
     "final_tally_result": {
       "yes_count": 106,
       "abstain_count": 2
@@ -1459,6 +1570,7 @@
     "type": "IBCRelated",
     "topic": "IBC Security",
     "status": "PASSED",
+    "submit_time": "1666876459356",
     "final_tally_result": {
       "yes_count": 93,
       "abstain_count": 12,
@@ -1472,6 +1584,7 @@
     "type": "IBCRelated",
     "topic": "Cross-Chain Integration",
     "status": "PASSED",
+    "submit_time": "1666876212933",
     "final_tally_result": {
       "yes_count": 94,
       "abstain_count": 11,
@@ -1485,6 +1598,7 @@
     "type": "ParameterChange",
     "topic": "Governance Settings",
     "status": "PASSED",
+    "submit_time": "1666705160155",
     "final_tally_result": {
       "yes_count": 100,
       "abstain_count": 1,
@@ -1498,6 +1612,7 @@
     "type": "IBCRelated",
     "topic": "IBC Security",
     "status": "PASSED",
+    "submit_time": "1666095195019",
     "final_tally_result": {
       "yes_count": 73,
       "abstain_count": 19,
@@ -1511,6 +1626,7 @@
     "type": "IBCRelated",
     "topic": "IBC Security",
     "status": "PASSED",
+    "submit_time": "1664383949743",
     "final_tally_result": {
       "yes_count": 80,
       "no_count": 1,
@@ -1524,6 +1640,7 @@
     "type": "CommunityPoolSpend",
     "topic": "Ecosystem Growth",
     "status": "PASSED",
+    "submit_time": "1663161476093",
     "final_tally_result": {
       "yes_count": 101,
       "no_count": 2,
@@ -1537,6 +1654,7 @@
     "type": "ParameterChange",
     "topic": "Protocol Configuration",
     "status": "PASSED",
+    "submit_time": "1662858691888",
     "final_tally_result": {
       "yes_count": 107,
       "no_count": 1
@@ -1549,6 +1667,7 @@
     "type": "ParameterChange",
     "topic": "Staking Parameters",
     "status": "PASSED",
+    "submit_time": "1662593438369",
     "final_tally_result": {
       "yes_count": 107,
       "no_count": 1
@@ -1561,6 +1680,7 @@
     "type": "IBCRelated",
     "topic": "IBC Security",
     "status": "PASSED",
+    "submit_time": "1662136139022",
     "final_tally_result": {
       "yes_count": 106,
       "no_count": 2
@@ -1573,6 +1693,7 @@
     "type": "SoftwareUpgrade",
     "topic": "Major Release",
     "status": "PASSED",
+    "submit_time": "1661892847140",
     "final_tally_result": {
       "no_count": 2,
       "yes_count": 106
@@ -1585,6 +1706,7 @@
     "type": "SoftwareUpgrade",
     "topic": "Major Release",
     "status": "REJECTED",
+    "submit_time": "1661577972638",
     "final_tally_result": {
       "no_count": 93,
       "yes_count": 15
@@ -1597,6 +1719,7 @@
     "type": "SoftwareUpgrade",
     "topic": "Major Release",
     "status": "REJECTED",
+    "submit_time": "1661577056509",
     "final_tally_result": {
       "no_count": 103,
       "yes_count": 4,
@@ -1610,6 +1733,7 @@
     "type": "CommunityPoolSpend",
     "topic": "Ecosystem Growth",
     "status": "PASSED",
+    "submit_time": "1661034878364",
     "final_tally_result": {
       "yes_count": 104,
       "abstain_count": 1,
@@ -1623,6 +1747,7 @@
     "type": "CommunityPoolSpend",
     "topic": "Development Fund",
     "status": "PASSED",
+    "submit_time": "1660161035108",
     "final_tally_result": {
       "yes_count": 105,
       "no_count": 1,
@@ -1636,6 +1761,7 @@
     "type": "IBCRelated",
     "topic": "IBC Security",
     "status": "PASSED",
+    "submit_time": "1658950287976",
     "final_tally_result": {
       "yes_count": 100,
       "abstain_count": 2,
@@ -1649,6 +1775,7 @@
     "type": "IBCRelated",
     "topic": "IBC Security",
     "status": "PASSED",
+    "submit_time": "1657632234734",
     "final_tally_result": {
       "yes_count": 97,
       "no_vote_count": 11
@@ -1661,6 +1788,7 @@
     "type": "IBCRelated",
     "topic": "IBC Security",
     "status": "PASSED",
+    "submit_time": "1657542959222",
     "final_tally_result": {
       "yes_count": 108
     }
@@ -1672,6 +1800,7 @@
     "type": "IBCRelated",
     "topic": "Cross-Chain Integration",
     "status": "PASSED",
+    "submit_time": "1657542933972",
     "final_tally_result": {
       "yes_count": 108
     }
@@ -1683,6 +1812,7 @@
     "type": "IBCRelated",
     "topic": "IBC Security",
     "status": "PASSED",
+    "submit_time": "1657367679932",
     "final_tally_result": {
       "yes_count": 106,
       "abstain_count": 2
@@ -1695,6 +1825,7 @@
     "type": "SoftwareUpgrade",
     "topic": "Major Release",
     "status": "PASSED",
+    "submit_time": "1657322482935",
     "final_tally_result": {
       "yes_count": 108
     }
@@ -1706,6 +1837,7 @@
     "type": "IBCRelated",
     "topic": "IBC Security",
     "status": "PASSED",
+    "submit_time": "1655844198277",
     "final_tally_result": {
       "yes_count": 101,
       "no_vote_count": 7
@@ -1718,6 +1850,7 @@
     "type": "ParameterChange",
     "topic": "Economic Parameters",
     "status": "PASSED",
+    "submit_time": "1655751963075",
     "final_tally_result": {
       "yes_count": 104,
       "no_count": 2,
@@ -1731,6 +1864,7 @@
     "type": "CommunityPoolSpend",
     "topic": "Ecosystem Growth",
     "status": "PASSED",
+    "submit_time": "1654629637190",
     "final_tally_result": {
       "yes_count": 87,
       "abstain_count": 3,
@@ -1745,6 +1879,7 @@
     "type": "CommunityPoolSpend",
     "topic": "Infrastructure",
     "status": "PASSED",
+    "submit_time": "1653522037932",
     "final_tally_result": {
       "yes_count": 92,
       "abstain_count": 1,
@@ -1758,6 +1893,7 @@
     "type": "CommunityPoolSpend",
     "topic": "Ecosystem Growth",
     "status": "PASSED",
+    "submit_time": "1653332860826",
     "final_tally_result": {
       "yes_count": 106,
       "no_count": 1,
@@ -1771,6 +1907,7 @@
     "type": "IBCRelated",
     "topic": "Client Update",
     "status": "PASSED",
+    "submit_time": "1652960492109",
     "final_tally_result": {
       "yes_count": 108
     }
@@ -1782,6 +1919,7 @@
     "type": "IBCRelated",
     "topic": "IBC Security",
     "status": "PASSED",
+    "submit_time": "1652192303612",
     "final_tally_result": {
       "yes_count": 104,
       "no_vote_count": 4
@@ -1794,6 +1932,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "PASSED",
+    "submit_time": "1651426841601",
     "final_tally_result": {
       "yes_count": 92,
       "abstain_count": 6,
@@ -1807,6 +1946,7 @@
     "type": "CommunityPoolSpend",
     "topic": "Ecosystem Growth",
     "status": "PASSED",
+    "submit_time": "1651300764879",
     "final_tally_result": {
       "yes_count": 104,
       "abstain_count": 3,
@@ -1820,6 +1960,7 @@
     "type": "IBCRelated",
     "topic": "IBC Security",
     "status": "PASSED",
+    "submit_time": "1651089747391",
     "final_tally_result": {
       "yes_count": 106,
       "abstain_count": 2
@@ -1832,6 +1973,7 @@
     "type": "IBCRelated",
     "topic": "IBC Security",
     "status": "PASSED",
+    "submit_time": "1651089565041",
     "final_tally_result": {
       "yes_count": 106,
       "abstain_count": 2
@@ -1844,6 +1986,7 @@
     "type": "IBCRelated",
     "topic": "IBC Security",
     "status": "PASSED",
+    "submit_time": "1651089351212",
     "final_tally_result": {
       "yes_count": 106,
       "abstain_count": 2
@@ -1856,6 +1999,7 @@
     "type": "IBCRelated",
     "topic": "IBC Security",
     "status": "PASSED",
+    "submit_time": "1651089112750",
     "final_tally_result": {
       "yes_count": 106,
       "abstain_count": 2
@@ -1868,6 +2012,7 @@
     "type": "IBCRelated",
     "topic": "IBC Security",
     "status": "PASSED",
+    "submit_time": "1651088740107",
     "final_tally_result": {
       "yes_count": 106,
       "abstain_count": 2
@@ -1880,6 +2025,7 @@
     "type": "IBCRelated",
     "topic": "IBC Security",
     "status": "PASSED",
+    "submit_time": "1651088326077",
     "final_tally_result": {
       "yes_count": 105,
       "abstain_count": 3
@@ -1892,6 +2038,7 @@
     "type": "SoftwareUpgrade",
     "topic": "Major Release",
     "status": "PASSED",
+    "submit_time": "1651039516679",
     "final_tally_result": {
       "yes_count": 107,
       "abstain_count": 1
@@ -1904,6 +2051,7 @@
     "type": "CommunityPoolSpend",
     "topic": "Community Support",
     "status": "PASSED",
+    "submit_time": "1650412594780",
     "final_tally_result": {
       "yes_count": 100,
       "abstain_count": 3,
@@ -1918,6 +2066,7 @@
     "type": "CommunityPoolSpend",
     "topic": "Community Support",
     "status": "PASSED",
+    "submit_time": "1649885372752",
     "final_tally_result": {
       "yes_count": 107,
       "abstain_count": 1
@@ -1930,6 +2079,7 @@
     "type": "TextProposal",
     "topic": "Project Funding",
     "status": "PASSED",
+    "submit_time": "1649378042665",
     "final_tally_result": {
       "yes_count": 99,
       "abstain_count": 2,
@@ -1943,6 +2093,7 @@
     "type": "TextProposal",
     "topic": "Project Funding",
     "status": "PASSED",
+    "submit_time": "1649377592246",
     "final_tally_result": {
       "yes_count": 103,
       "no_vote_count": 5
@@ -1955,6 +2106,7 @@
     "type": "CommunityPoolSpend",
     "topic": "Ecosystem Growth",
     "status": "PASSED",
+    "submit_time": "1649117709847",
     "final_tally_result": {
       "yes_count": 107,
       "abstain_count": 1
@@ -1967,6 +2119,7 @@
     "type": "IBCRelated",
     "topic": "IBC Transfer",
     "status": "PASSED",
+    "submit_time": "1648665964485",
     "final_tally_result": {
       "yes_count": 97,
       "no_vote_count": 11
@@ -1979,6 +2132,7 @@
     "type": "CommunityPoolSpend",
     "topic": "Ecosystem Growth",
     "status": "PASSED",
+    "submit_time": "1648238248183",
     "final_tally_result": {
       "yes_count": 95,
       "no_count": 6,
@@ -1993,6 +2147,7 @@
     "type": "CommunityPoolSpend",
     "topic": "Community Support",
     "status": "PASSED",
+    "submit_time": "1647999817372",
     "final_tally_result": {
       "yes_count": 85,
       "abstain_count": 2,
@@ -2007,6 +2162,7 @@
     "type": "ParameterChange",
     "topic": "Governance Settings",
     "status": "PASSED",
+    "submit_time": "1647871960502",
     "final_tally_result": {
       "yes_count": 84,
       "no_count": 7,
@@ -2021,6 +2177,7 @@
     "type": "IBCRelated",
     "topic": "IBC Transfer",
     "status": "PASSED",
+    "submit_time": "1647838327908",
     "final_tally_result": {
       "yes_count": 89,
       "abstain_count": 1,
@@ -2034,6 +2191,7 @@
     "type": "CommunityPoolSpend",
     "topic": "Community Support",
     "status": "PASSED",
+    "submit_time": "1647559604919",
     "final_tally_result": {
       "yes_count": 86,
       "no_count": 1,
@@ -2047,6 +2205,7 @@
     "type": "CommunityPoolSpend",
     "topic": "Community Support",
     "status": "PASSED",
+    "submit_time": "1647547065066",
     "final_tally_result": {
       "yes_count": 96,
       "no_vote_count": 12
@@ -2059,6 +2218,7 @@
     "type": "SoftwareUpgrade",
     "topic": "Feature Addition",
     "status": "PASSED",
+    "submit_time": "1647415525163",
     "final_tally_result": {
       "yes_count": 106,
       "no_count": 1,
@@ -2072,6 +2232,7 @@
     "type": "IBCRelated",
     "topic": "IBC Security",
     "status": "PASSED",
+    "submit_time": "1646837052009",
     "final_tally_result": {
       "yes_count": 84,
       "abstain_count": 1,
@@ -2086,6 +2247,7 @@
     "type": "CommunityPoolSpend",
     "topic": "Ecosystem Growth",
     "status": "PASSED",
+    "submit_time": "1646775621889",
     "final_tally_result": {
       "yes_count": 106,
       "no_count": 2
@@ -2098,6 +2260,7 @@
     "type": "IBCRelated",
     "topic": "IBC Transfer",
     "status": "PASSED",
+    "submit_time": "1646741290145",
     "final_tally_result": {
       "yes_count": 94,
       "abstain_count": 5,
@@ -2113,6 +2276,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "REJECTED",
+    "submit_time": "1645840648049",
     "final_tally_result": {
       "no_count": 40,
       "yes_count": 12,
@@ -2128,6 +2292,7 @@
     "type": "Unknown",
     "topic": "Miscellaneous",
     "status": "REJECTED",
+    "submit_time": "1645835525195",
     "final_tally_result": {
       "no_count": 43,
       "yes_count": 13,
@@ -2143,6 +2308,7 @@
     "type": "IBCRelated",
     "topic": "Cross-Chain Integration",
     "status": "PASSED",
+    "submit_time": "1645630198394",
     "final_tally_result": {
       "yes_count": 90,
       "abstain_count": 2,
@@ -2156,6 +2322,7 @@
     "type": "IBCRelated",
     "topic": "Cross-Chain Integration",
     "status": "REJECTED",
+    "submit_time": "1645582097662",
     "final_tally_result": {
       "abstain_count": 4,
       "no_count": 54,
@@ -2170,6 +2337,7 @@
     "type": "IBCRelated",
     "topic": "Client Update",
     "status": "PASSED",
+    "submit_time": "1645573471280",
     "final_tally_result": {
       "yes_count": 99,
       "no_count": 1,
@@ -2184,6 +2352,7 @@
     "type": "IBCRelated",
     "topic": "IBC Security",
     "status": "PASSED",
+    "submit_time": "1645518853230",
     "final_tally_result": {
       "yes_count": 106,
       "abstain_count": 2
@@ -2196,6 +2365,7 @@
     "type": "IBCRelated",
     "topic": "Cross-Chain Integration",
     "status": "PASSED",
+    "submit_time": "1645481510618",
     "final_tally_result": {
       "yes_count": 108
     }
@@ -2207,6 +2377,7 @@
     "type": "Unknown",
     "topic": "Miscellaneous",
     "status": "PASSED",
+    "submit_time": "1644253322886",
     "final_tally_result": {
       "no_count": 10,
       "yes_count": 88,
@@ -2222,6 +2393,7 @@
     "type": "Unknown",
     "topic": "Miscellaneous",
     "status": "PASSED",
+    "submit_time": "1644250621826",
     "final_tally_result": {
       "no_count": 4,
       "yes_count": 98,
@@ -2237,6 +2409,7 @@
     "type": "Unknown",
     "topic": "Miscellaneous",
     "status": "PASSED",
+    "submit_time": "1644250577880",
     "final_tally_result": {
       "no_count": 2,
       "yes_count": 99,
@@ -2252,6 +2425,7 @@
     "type": "ParameterChange",
     "topic": "Fee Adjustment",
     "status": "PASSED",
+    "submit_time": "1644013565661",
     "final_tally_result": {
       "yes_count": 90,
       "no_vote_count": 18
@@ -2264,6 +2438,7 @@
     "type": "IBCRelated",
     "topic": "IBC Security",
     "status": "PASSED",
+    "submit_time": "1643665363577",
     "final_tally_result": {
       "yes_count": 77,
       "abstain_count": 6,
@@ -2277,6 +2452,7 @@
     "type": "IBCRelated",
     "topic": "IBC Security",
     "status": "PASSED",
+    "submit_time": "1643258695988",
     "final_tally_result": {
       "yes_count": 71,
       "abstain_count": 4,
@@ -2290,6 +2466,7 @@
     "type": "IBCRelated",
     "topic": "IBC Security",
     "status": "PASSED",
+    "submit_time": "1643209454980",
     "final_tally_result": {
       "yes_count": 77,
       "abstain_count": 5,
@@ -2303,6 +2480,7 @@
     "type": "IBCRelated",
     "topic": "IBC Security",
     "status": "PASSED",
+    "submit_time": "1643109403314",
     "final_tally_result": {
       "yes_count": 80,
       "abstain_count": 2,
@@ -2316,6 +2494,7 @@
     "type": "IBCRelated",
     "topic": "Cross-Chain Integration",
     "status": "PASSED",
+    "submit_time": "1642614788535",
     "final_tally_result": {
       "yes_count": 75,
       "abstain_count": 6,
@@ -2329,6 +2508,7 @@
     "type": "IBCRelated",
     "topic": "IBC Security",
     "status": "PASSED",
+    "submit_time": "1642582544017",
     "final_tally_result": {
       "yes_count": 65,
       "abstain_count": 10,
@@ -2342,6 +2522,7 @@
     "type": "SoftwareUpgrade",
     "topic": "Feature Addition",
     "status": "PASSED",
+    "submit_time": "1642279362435",
     "final_tally_result": {
       "yes_count": 77,
       "no_vote_count": 31
@@ -2354,6 +2535,7 @@
     "type": "ParameterChange",
     "topic": "Staking Parameters",
     "status": "PASSED",
+    "submit_time": "1642090956745",
     "final_tally_result": {
       "yes_count": 70,
       "abstain_count": 1,
@@ -2367,6 +2549,7 @@
     "type": "TextProposal",
     "topic": "Community Decision",
     "status": "PASSED",
+    "submit_time": "1641501121147",
     "final_tally_result": {
       "yes_count": 75,
       "abstain_count": 1,
@@ -2381,6 +2564,7 @@
     "type": "SoftwareUpgrade",
     "topic": "Feature Addition",
     "status": "PASSED",
+    "submit_time": "1640916142175",
     "final_tally_result": {
       "yes_count": 64,
       "no_vote_count": 44
@@ -2393,6 +2577,7 @@
     "type": "ParameterChange",
     "topic": "Staking Parameters",
     "status": "PASSED",
+    "submit_time": "1639714546398",
     "final_tally_result": {
       "yes_count": 50,
       "abstain_count": 2,
@@ -2406,6 +2591,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "PASSED",
+    "submit_time": "1639702748924",
     "final_tally_result": {
       "yes_count": 56,
       "abstain_count": 2,

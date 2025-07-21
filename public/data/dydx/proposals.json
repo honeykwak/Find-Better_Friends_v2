@@ -6,6 +6,7 @@
     "type": "TextProposal",
     "topic": "Community Decision",
     "status": "PASSED",
+    "submit_time": "1731255452660",
     "final_tally_result": {
       "weighted_vote_count": 1,
       "abstain_count": 13,
@@ -21,6 +22,7 @@
     "type": "ParameterChange",
     "topic": "Economic Parameters",
     "status": "PASSED",
+    "submit_time": "1731001085658",
     "final_tally_result": {
       "yes_count": 33,
       "abstain_count": 7,
@@ -35,6 +37,7 @@
     "type": "Unknown",
     "topic": "Miscellaneous",
     "status": "PASSED",
+    "submit_time": "1730970680431",
     "final_tally_result": {
       "yes_count": 40,
       "abstain_count": 1,
@@ -48,6 +51,7 @@
     "type": "SoftwareUpgrade",
     "topic": "Major Release",
     "status": "PASSED",
+    "submit_time": "1730827762025",
     "final_tally_result": {
       "yes_count": 43,
       "abstain_count": 1,
@@ -61,6 +65,7 @@
     "type": "SoftwareUpgrade",
     "topic": "Major Release",
     "status": "REJECTED",
+    "submit_time": "1730816917227",
     "final_tally_result": {
       "no_count": 44,
       "yes_count": 2,
@@ -75,6 +80,7 @@
     "type": "MarketRelated",
     "topic": "Market Addition",
     "status": "PASSED",
+    "submit_time": "1729697798646",
     "final_tally_result": {
       "yes_count": 30,
       "abstain_count": 2,
@@ -88,6 +94,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "PASSED",
+    "submit_time": "1729267266130",
     "final_tally_result": {
       "abstain_count": 2,
       "yes_count": 35,
@@ -101,6 +108,7 @@
     "type": "MarketRelated",
     "topic": "Market Addition",
     "status": "REJECTED",
+    "submit_time": "1729168383179",
     "final_tally_result": {
       "no_count": 33,
       "no_with_veto_count": 1,
@@ -116,6 +124,7 @@
     "type": "ParameterChange",
     "topic": "Staking Parameters",
     "status": "PASSED",
+    "submit_time": "1729115370377",
     "final_tally_result": {
       "yes_count": 33,
       "abstain_count": 1,
@@ -129,6 +138,7 @@
     "type": "MarketRelated",
     "topic": "Market Addition",
     "status": "PASSED",
+    "submit_time": "1728961637802",
     "final_tally_result": {
       "yes_count": 36,
       "no_count": 1,
@@ -143,6 +153,7 @@
     "type": "MarketRelated",
     "topic": "Market Addition",
     "status": "PASSED",
+    "submit_time": "1728435902389",
     "final_tally_result": {
       "yes_count": 37,
       "abstain_count": 2,
@@ -156,6 +167,7 @@
     "type": "MarketRelated",
     "topic": "Market Addition",
     "status": "PASSED",
+    "submit_time": "1728157169525",
     "final_tally_result": {
       "abstain_count": 16,
       "yes_count": 21,
@@ -170,6 +182,7 @@
     "type": "MarketRelated",
     "topic": "Market Addition",
     "status": "REJECTED",
+    "submit_time": "1728034543487",
     "final_tally_result": {
       "no_count": 32,
       "abstain_count": 5,
@@ -184,6 +197,7 @@
     "type": "ParameterChange",
     "topic": "Fee Adjustment",
     "status": "PASSED",
+    "submit_time": "1727980274794",
     "final_tally_result": {
       "yes_count": 32,
       "abstain_count": 2,
@@ -197,6 +211,7 @@
     "type": "Unknown",
     "topic": "Miscellaneous",
     "status": "PASSED",
+    "submit_time": "1727882893869",
     "final_tally_result": {
       "yes_count": 35,
       "abstain_count": 4,
@@ -210,6 +225,7 @@
     "type": "Unknown",
     "topic": "Unclassified",
     "status": "PASSED",
+    "submit_time": "1727700523428",
     "final_tally_result": {
       "abstain_count": 7,
       "yes_count": 37,
@@ -224,6 +240,7 @@
     "type": "SoftwareUpgrade",
     "topic": "Major Release",
     "status": "PASSED",
+    "submit_time": "1727496980793",
     "final_tally_result": {
       "yes_count": 42,
       "abstain_count": 2,
@@ -237,6 +254,7 @@
     "type": "SoftwareUpgrade",
     "topic": "Major Release",
     "status": "REJECTED",
+    "submit_time": "1727454989809",
     "final_tally_result": {
       "no_count": 44,
       "abstain_count": 2,
@@ -250,6 +268,7 @@
     "type": "Unknown",
     "topic": "Unclassified",
     "status": "PASSED",
+    "submit_time": "1727115852415",
     "final_tally_result": {
       "abstain_count": 22,
       "weighted_vote_count": 1,
@@ -265,6 +284,7 @@
     "type": "Unknown",
     "topic": "Unclassified",
     "status": "PASSED",
+    "submit_time": "1727115618355",
     "final_tally_result": {
       "abstain_count": 24,
       "weighted_vote_count": 1,
@@ -280,6 +300,7 @@
     "type": "SoftwareUpgrade",
     "topic": "Major Release",
     "status": "REJECTED",
+    "submit_time": "1726754688879",
     "final_tally_result": {
       "no_count": 42,
       "yes_count": 5,
@@ -295,6 +316,7 @@
     "type": "MarketRelated",
     "topic": "Market Addition",
     "status": "PASSED",
+    "submit_time": "1726484654347",
     "final_tally_result": {
       "yes_count": 28,
       "abstain_count": 6,
@@ -309,6 +331,7 @@
     "type": "MarketRelated",
     "topic": "Market Addition",
     "status": "PASSED",
+    "submit_time": "1726243198693",
     "final_tally_result": {
       "yes_count": 36,
       "no_count": 1,
@@ -323,6 +346,7 @@
     "type": "Unknown",
     "topic": "Miscellaneous",
     "status": "PASSED",
+    "submit_time": "1725916957651",
     "final_tally_result": {
       "yes_count": 39,
       "abstain_count": 4,
@@ -336,6 +360,7 @@
     "type": "MarketRelated",
     "topic": "Market Addition",
     "status": "PASSED",
+    "submit_time": "1725639878557",
     "final_tally_result": {
       "yes_count": 39,
       "abstain_count": 1,
@@ -349,6 +374,7 @@
     "type": "MarketRelated",
     "topic": "Market Addition",
     "status": "PASSED",
+    "submit_time": "1725564246733",
     "final_tally_result": {
       "yes_count": 34,
       "no_count": 2,
@@ -363,6 +389,7 @@
     "type": "MarketRelated",
     "topic": "Market Addition",
     "status": "PASSED",
+    "submit_time": "1725168945449",
     "final_tally_result": {
       "yes_count": 36,
       "abstain_count": 1,
@@ -376,6 +403,7 @@
     "type": "Unknown",
     "topic": "Miscellaneous",
     "status": "PASSED",
+    "submit_time": "1724943629517",
     "final_tally_result": {
       "yes_count": 38,
       "abstain_count": 3,
@@ -389,6 +417,7 @@
     "type": "Unknown",
     "topic": "Miscellaneous",
     "status": "PASSED",
+    "submit_time": "1724942005574",
     "final_tally_result": {
       "yes_count": 41,
       "abstain_count": 2,
@@ -402,6 +431,7 @@
     "type": "ParameterChange",
     "topic": "Economic Parameters",
     "status": "PASSED",
+    "submit_time": "1724926981679",
     "final_tally_result": {
       "yes_count": 41,
       "abstain_count": 1,
@@ -415,6 +445,7 @@
     "type": "MarketRelated",
     "topic": "Market Addition",
     "status": "PASSED",
+    "submit_time": "1724821257952",
     "final_tally_result": {
       "yes_count": 39,
       "abstain_count": 1,
@@ -428,6 +459,7 @@
     "type": "MarketRelated",
     "topic": "Market Addition",
     "status": "PASSED",
+    "submit_time": "1724541714815",
     "final_tally_result": {
       "yes_count": 36,
       "no_count": 4,
@@ -442,6 +474,7 @@
     "type": "MarketRelated",
     "topic": "Market Addition",
     "status": "PASSED",
+    "submit_time": "1724468163513",
     "final_tally_result": {
       "yes_count": 43,
       "abstain_count": 1,
@@ -455,6 +488,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "PASSED",
+    "submit_time": "1724337031421",
     "final_tally_result": {
       "yes_count": 30,
       "abstain_count": 8,
@@ -469,6 +503,7 @@
     "type": "MarketRelated",
     "topic": "Market Addition",
     "status": "PASSED",
+    "submit_time": "1724162839002",
     "final_tally_result": {
       "yes_count": 36,
       "abstain_count": 3,
@@ -482,6 +517,7 @@
     "type": "MarketRelated",
     "topic": "Market Addition",
     "status": "PASSED",
+    "submit_time": "1724122502761",
     "final_tally_result": {
       "yes_count": 37,
       "no_count": 2,
@@ -496,6 +532,7 @@
     "type": "MarketRelated",
     "topic": "Market Addition",
     "status": "PASSED",
+    "submit_time": "1723760673699",
     "final_tally_result": {
       "yes_count": 42,
       "abstain_count": 1,
@@ -509,6 +546,7 @@
     "type": "MarketRelated",
     "topic": "Market Addition",
     "status": "PASSED",
+    "submit_time": "1723403211790",
     "final_tally_result": {
       "yes_count": 17,
       "abstain_count": 17,
@@ -523,6 +561,7 @@
     "type": "MarketRelated",
     "topic": "Market Addition",
     "status": "PASSED",
+    "submit_time": "1723317677878",
     "final_tally_result": {
       "yes_count": 40,
       "abstain_count": 1,
@@ -536,6 +575,7 @@
     "type": "MarketRelated",
     "topic": "Market Addition",
     "status": "PASSED",
+    "submit_time": "1723232733234",
     "final_tally_result": {
       "yes_count": 36,
       "no_count": 3,
@@ -549,6 +589,7 @@
     "type": "MarketRelated",
     "topic": "Market Addition",
     "status": "PASSED",
+    "submit_time": "1723165986626",
     "final_tally_result": {
       "yes_count": 37,
       "no_count": 2,
@@ -563,6 +604,7 @@
     "type": "ParameterChange",
     "topic": "Fee Adjustment",
     "status": "PASSED",
+    "submit_time": "1723137336388",
     "final_tally_result": {
       "yes_count": 44,
       "abstain_count": 1,
@@ -576,6 +618,7 @@
     "type": "MarketRelated",
     "topic": "Market Addition",
     "status": "PASSED",
+    "submit_time": "1723130193064",
     "final_tally_result": {
       "yes_count": 40,
       "no_count": 2,
@@ -590,6 +633,7 @@
     "type": "ParameterChange",
     "topic": "Fee Adjustment",
     "status": "PASSED",
+    "submit_time": "1723109797337",
     "final_tally_result": {
       "yes_count": 43,
       "abstain_count": 2,
@@ -603,6 +647,7 @@
     "type": "MarketRelated",
     "topic": "Market Addition",
     "status": "PASSED",
+    "submit_time": "1722628333589",
     "final_tally_result": {
       "yes_count": 41,
       "abstain_count": 1,
@@ -617,6 +662,7 @@
     "type": "SoftwareUpgrade",
     "topic": "Major Release",
     "status": "PASSED",
+    "submit_time": "1722488420391",
     "final_tally_result": {
       "yes_count": 42,
       "abstain_count": 1,
@@ -630,6 +676,7 @@
     "type": "ParameterChange",
     "topic": "Fee Adjustment",
     "status": "PASSED",
+    "submit_time": "1722357531878",
     "final_tally_result": {
       "yes_count": 45,
       "abstain_count": 1,
@@ -643,6 +690,7 @@
     "type": "Unknown",
     "topic": "Miscellaneous",
     "status": "PASSED",
+    "submit_time": "1722280677668",
     "final_tally_result": {
       "yes_count": 42,
       "abstain_count": 3,
@@ -656,6 +704,7 @@
     "type": "MarketRelated",
     "topic": "Market Addition",
     "status": "PASSED",
+    "submit_time": "1722138600333",
     "final_tally_result": {
       "yes_count": 34,
       "no_count": 1,
@@ -670,6 +719,7 @@
     "type": "ParameterChange",
     "topic": "Protocol Configuration",
     "status": "PASSED",
+    "submit_time": "1721498145979",
     "final_tally_result": {
       "yes_count": 38,
       "abstain_count": 1,
@@ -683,6 +733,7 @@
     "type": "SoftwareUpgrade",
     "topic": "Major Release",
     "status": "PASSED",
+    "submit_time": "1721358465185",
     "final_tally_result": {
       "yes_count": 41,
       "abstain_count": 1,
@@ -696,6 +747,7 @@
     "type": "MarketRelated",
     "topic": "Market Addition",
     "status": "PASSED",
+    "submit_time": "1721285582104",
     "final_tally_result": {
       "yes_count": 43,
       "abstain_count": 1,
@@ -709,6 +761,7 @@
     "type": "MarketRelated",
     "topic": "Market Addition",
     "status": "PASSED",
+    "submit_time": "1720627035055",
     "final_tally_result": {
       "yes_count": 37,
       "abstain_count": 2,
@@ -722,6 +775,7 @@
     "type": "MarketRelated",
     "topic": "Market Addition",
     "status": "PASSED",
+    "submit_time": "1719835414885",
     "final_tally_result": {
       "yes_count": 43,
       "abstain_count": 3,
@@ -735,6 +789,7 @@
     "type": "MarketRelated",
     "topic": "Market Addition",
     "status": "PASSED",
+    "submit_time": "1719835370227",
     "final_tally_result": {
       "yes_count": 36,
       "no_with_veto_count": 3,
@@ -750,6 +805,7 @@
     "type": "MarketRelated",
     "topic": "Market Addition",
     "status": "PASSED",
+    "submit_time": "1719835350033",
     "final_tally_result": {
       "abstain_count": 3,
       "yes_count": 38,
@@ -764,6 +820,7 @@
     "type": "MarketRelated",
     "topic": "Market Addition",
     "status": "PASSED",
+    "submit_time": "1719835317096",
     "final_tally_result": {
       "yes_count": 36,
       "no_count": 3,
@@ -778,6 +835,7 @@
     "type": "MarketRelated",
     "topic": "Market Addition",
     "status": "PASSED",
+    "submit_time": "1719835265618",
     "final_tally_result": {
       "abstain_count": 4,
       "yes_count": 40,
@@ -791,6 +849,7 @@
     "type": "MarketRelated",
     "topic": "Market Addition",
     "status": "PASSED",
+    "submit_time": "1719835221328",
     "final_tally_result": {
       "yes_count": 43,
       "abstain_count": 1,
@@ -804,6 +863,7 @@
     "type": "MarketRelated",
     "topic": "Market Addition",
     "status": "PASSED",
+    "submit_time": "1719835204420",
     "final_tally_result": {
       "yes_count": 43,
       "abstain_count": 1,
@@ -817,6 +877,7 @@
     "type": "MarketRelated",
     "topic": "Market Addition",
     "status": "PASSED",
+    "submit_time": "1719835181888",
     "final_tally_result": {
       "yes_count": 43,
       "abstain_count": 1,
@@ -830,6 +891,7 @@
     "type": "MarketRelated",
     "topic": "Market Addition",
     "status": "PASSED",
+    "submit_time": "1719835164994",
     "final_tally_result": {
       "yes_count": 41,
       "abstain_count": 3,
@@ -843,6 +905,7 @@
     "type": "MarketRelated",
     "topic": "Market Addition",
     "status": "PASSED",
+    "submit_time": "1719835136343",
     "final_tally_result": {
       "yes_count": 36,
       "no_count": 3,
@@ -857,6 +920,7 @@
     "type": "MarketRelated",
     "topic": "Market Addition",
     "status": "PASSED",
+    "submit_time": "1719834899462",
     "final_tally_result": {
       "yes_count": 40,
       "abstain_count": 4,
@@ -870,6 +934,7 @@
     "type": "MarketRelated",
     "topic": "Market Addition",
     "status": "PASSED",
+    "submit_time": "1719834795080",
     "final_tally_result": {
       "yes_count": 38,
       "abstain_count": 5,
@@ -883,6 +948,7 @@
     "type": "MarketRelated",
     "topic": "Market Addition",
     "status": "PASSED",
+    "submit_time": "1719834784540",
     "final_tally_result": {
       "yes_count": 43,
       "abstain_count": 1,
@@ -896,6 +962,7 @@
     "type": "MarketRelated",
     "topic": "Market Addition",
     "status": "PASSED",
+    "submit_time": "1719834747833",
     "final_tally_result": {
       "yes_count": 36,
       "abstain_count": 7,
@@ -910,6 +977,7 @@
     "type": "MarketRelated",
     "topic": "Market Addition",
     "status": "PASSED",
+    "submit_time": "1719834732091",
     "final_tally_result": {
       "yes_count": 36,
       "no_count": 4,
@@ -924,6 +992,7 @@
     "type": "MarketRelated",
     "topic": "Market Addition",
     "status": "PASSED",
+    "submit_time": "1719732307165",
     "final_tally_result": {
       "yes_count": 45,
       "abstain_count": 2,
@@ -937,6 +1006,7 @@
     "type": "MarketRelated",
     "topic": "Market Addition",
     "status": "PASSED",
+    "submit_time": "1719732273698",
     "final_tally_result": {
       "yes_count": 39,
       "abstain_count": 6,
@@ -951,6 +1021,7 @@
     "type": "MarketRelated",
     "topic": "Market Addition",
     "status": "PASSED",
+    "submit_time": "1719731601690",
     "final_tally_result": {
       "yes_count": 43,
       "no_count": 2,
@@ -965,6 +1036,7 @@
     "type": "MarketRelated",
     "topic": "Market Addition",
     "status": "PASSED",
+    "submit_time": "1719731572421",
     "final_tally_result": {
       "yes_count": 42,
       "no_count": 1,
@@ -979,6 +1051,7 @@
     "type": "MarketRelated",
     "topic": "Market Addition",
     "status": "FAILED",
+    "submit_time": "1719731532266",
     "final_tally_result": {
       "yes_count": 46,
       "abstain_count": 1,
@@ -992,6 +1065,7 @@
     "type": "MarketRelated",
     "topic": "Market Addition",
     "status": "PASSED",
+    "submit_time": "1719731518780",
     "final_tally_result": {
       "yes_count": 42,
       "abstain_count": 2,
@@ -1005,6 +1079,7 @@
     "type": "MarketRelated",
     "topic": "Market Addition",
     "status": "FAILED",
+    "submit_time": "1719731408841",
     "final_tally_result": {
       "yes_count": 42,
       "abstain_count": 4,
@@ -1019,6 +1094,7 @@
     "type": "MarketRelated",
     "topic": "Market Addition",
     "status": "PASSED",
+    "submit_time": "1719731395705",
     "final_tally_result": {
       "yes_count": 40,
       "no_count": 2,
@@ -1033,6 +1109,7 @@
     "type": "MarketRelated",
     "topic": "Market Addition",
     "status": "PASSED",
+    "submit_time": "1719731168368",
     "final_tally_result": {
       "yes_count": 47,
       "abstain_count": 1,
@@ -1046,6 +1123,7 @@
     "type": "MarketRelated",
     "topic": "Market Addition",
     "status": "PASSED",
+    "submit_time": "1719731121593",
     "final_tally_result": {
       "yes_count": 43,
       "abstain_count": 2,
@@ -1060,6 +1138,7 @@
     "type": "MarketRelated",
     "topic": "Market Addition",
     "status": "PASSED",
+    "submit_time": "1719731074196",
     "final_tally_result": {
       "yes_count": 45,
       "abstain_count": 1,
@@ -1074,6 +1153,7 @@
     "type": "MarketRelated",
     "topic": "Market Addition",
     "status": "PASSED",
+    "submit_time": "1719731024630",
     "final_tally_result": {
       "yes_count": 45,
       "abstain_count": 2,
@@ -1087,6 +1167,7 @@
     "type": "MarketRelated",
     "topic": "Market Addition",
     "status": "PASSED",
+    "submit_time": "1719730990028",
     "final_tally_result": {
       "yes_count": 43,
       "no_count": 2,
@@ -1101,6 +1182,7 @@
     "type": "MarketRelated",
     "topic": "Market Addition",
     "status": "PASSED",
+    "submit_time": "1719730929468",
     "final_tally_result": {
       "yes_count": 44,
       "no_count": 1,
@@ -1115,6 +1197,7 @@
     "type": "MarketRelated",
     "topic": "Market Addition",
     "status": "FAILED",
+    "submit_time": "1719730875723",
     "final_tally_result": {
       "yes_count": 44,
       "abstain_count": 4,
@@ -1128,6 +1211,7 @@
     "type": "MarketRelated",
     "topic": "Market Addition",
     "status": "PASSED",
+    "submit_time": "1719730863785",
     "final_tally_result": {
       "yes_count": 45,
       "no_count": 1,
@@ -1142,6 +1226,7 @@
     "type": "MarketRelated",
     "topic": "Market Addition",
     "status": "PASSED",
+    "submit_time": "1719730817242",
     "final_tally_result": {
       "yes_count": 43,
       "abstain_count": 3,
@@ -1155,6 +1240,7 @@
     "type": "MarketRelated",
     "topic": "Market Addition",
     "status": "PASSED",
+    "submit_time": "1719730682209",
     "final_tally_result": {
       "yes_count": 46,
       "no_count": 1,
@@ -1169,6 +1255,7 @@
     "type": "MarketRelated",
     "topic": "Market Addition",
     "status": "PASSED",
+    "submit_time": "1719730652586",
     "final_tally_result": {
       "yes_count": 46,
       "abstain_count": 1,
@@ -1182,6 +1269,7 @@
     "type": "MarketRelated",
     "topic": "Market Addition",
     "status": "PASSED",
+    "submit_time": "1719730603367",
     "final_tally_result": {
       "yes_count": 47,
       "abstain_count": 1,
@@ -1195,6 +1283,7 @@
     "type": "MarketRelated",
     "topic": "Market Addition",
     "status": "PASSED",
+    "submit_time": "1719479468430",
     "final_tally_result": {
       "yes_count": 41,
       "abstain_count": 2,
@@ -1208,6 +1297,7 @@
     "type": "MarketRelated",
     "topic": "Market Addition",
     "status": "PASSED",
+    "submit_time": "1719479377124",
     "final_tally_result": {
       "yes_count": 35,
       "abstain_count": 7,
@@ -1222,6 +1312,7 @@
     "type": "MarketRelated",
     "topic": "Market Addition",
     "status": "PASSED",
+    "submit_time": "1719479284143",
     "final_tally_result": {
       "yes_count": 40,
       "abstain_count": 3,
@@ -1235,6 +1326,7 @@
     "type": "MarketRelated",
     "topic": "Market Addition",
     "status": "PASSED",
+    "submit_time": "1719479258403",
     "final_tally_result": {
       "yes_count": 43,
       "abstain_count": 1,
@@ -1248,6 +1340,7 @@
     "type": "MarketRelated",
     "topic": "Market Addition",
     "status": "PASSED",
+    "submit_time": "1719479081510",
     "final_tally_result": {
       "yes_count": 42,
       "abstain_count": 2,
@@ -1261,6 +1354,7 @@
     "type": "MarketRelated",
     "topic": "Market Addition",
     "status": "PASSED",
+    "submit_time": "1719473982025",
     "final_tally_result": {
       "yes_count": 41,
       "abstain_count": 2,
@@ -1274,6 +1368,7 @@
     "type": "MarketRelated",
     "topic": "Market Addition",
     "status": "PASSED",
+    "submit_time": "1719473874452",
     "final_tally_result": {
       "yes_count": 42,
       "abstain_count": 2,
@@ -1287,6 +1382,7 @@
     "type": "MarketRelated",
     "topic": "Market Addition",
     "status": "PASSED",
+    "submit_time": "1719473851915",
     "final_tally_result": {
       "yes_count": 43,
       "abstain_count": 1,
@@ -1300,6 +1396,7 @@
     "type": "MarketRelated",
     "topic": "Market Addition",
     "status": "PASSED",
+    "submit_time": "1719473796647",
     "final_tally_result": {
       "yes_count": 41,
       "abstain_count": 3,
@@ -1313,6 +1410,7 @@
     "type": "MarketRelated",
     "topic": "Market Addition",
     "status": "PASSED",
+    "submit_time": "1719473764044",
     "final_tally_result": {
       "yes_count": 41,
       "abstain_count": 1,
@@ -1326,6 +1424,7 @@
     "type": "MarketRelated",
     "topic": "Market Addition",
     "status": "PASSED",
+    "submit_time": "1719451946763",
     "final_tally_result": {
       "yes_count": 34,
       "no_count": 3,
@@ -1340,6 +1439,7 @@
     "type": "MarketRelated",
     "topic": "Market Addition",
     "status": "PASSED",
+    "submit_time": "1719451872827",
     "final_tally_result": {
       "yes_count": 40,
       "abstain_count": 3,
@@ -1353,6 +1453,7 @@
     "type": "MarketRelated",
     "topic": "Market Addition",
     "status": "PASSED",
+    "submit_time": "1719451459159",
     "final_tally_result": {
       "yes_count": 41,
       "abstain_count": 1,
@@ -1366,6 +1467,7 @@
     "type": "MarketRelated",
     "topic": "Market Addition",
     "status": "PASSED",
+    "submit_time": "1719451424086",
     "final_tally_result": {
       "yes_count": 38,
       "abstain_count": 5,
@@ -1379,6 +1481,7 @@
     "type": "MarketRelated",
     "topic": "Market Addition",
     "status": "PASSED",
+    "submit_time": "1719451375684",
     "final_tally_result": {
       "yes_count": 42,
       "abstain_count": 1,
@@ -1392,6 +1495,7 @@
     "type": "MarketRelated",
     "topic": "Market Addition",
     "status": "PASSED",
+    "submit_time": "1719425615385",
     "final_tally_result": {
       "yes_count": 40,
       "abstain_count": 1,
@@ -1405,6 +1509,7 @@
     "type": "MarketRelated",
     "topic": "Market Addition",
     "status": "PASSED",
+    "submit_time": "1719414848187",
     "final_tally_result": {
       "yes_count": 41,
       "no_count": 1,
@@ -1419,6 +1524,7 @@
     "type": "MarketRelated",
     "topic": "Market Addition",
     "status": "PASSED",
+    "submit_time": "1719232866858",
     "final_tally_result": {
       "yes_count": 46,
       "abstain_count": 1,
@@ -1432,6 +1538,7 @@
     "type": "MarketRelated",
     "topic": "Market Addition",
     "status": "PASSED",
+    "submit_time": "1719232360297",
     "final_tally_result": {
       "yes_count": 47,
       "abstain_count": 1,
@@ -1445,6 +1552,7 @@
     "type": "MarketRelated",
     "topic": "Market Addition",
     "status": "PASSED",
+    "submit_time": "1719041079264",
     "final_tally_result": {
       "yes_count": 48,
       "no_count": 2,
@@ -1459,6 +1567,7 @@
     "type": "MarketRelated",
     "topic": "Market Addition",
     "status": "PASSED",
+    "submit_time": "1719041016635",
     "final_tally_result": {
       "yes_count": 47,
       "no_count": 2,
@@ -1473,6 +1582,7 @@
     "type": "MarketRelated",
     "topic": "Market Addition",
     "status": "REJECTED",
+    "submit_time": "1718970618561",
     "final_tally_result": {
       "no_count": 41,
       "no_with_veto_count": 1,
@@ -1488,6 +1598,7 @@
     "type": "MarketRelated",
     "topic": "Market Addition",
     "status": "PASSED",
+    "submit_time": "1718895354131",
     "final_tally_result": {
       "yes_count": 40,
       "no_count": 2,
@@ -1502,6 +1613,7 @@
     "type": "MarketRelated",
     "topic": "Market Addition",
     "status": "PASSED",
+    "submit_time": "1718738453279",
     "final_tally_result": {
       "yes_count": 37,
       "abstain_count": 2,
@@ -1516,6 +1628,7 @@
     "type": "ParameterChange",
     "topic": "Fee Adjustment",
     "status": "PASSED",
+    "submit_time": "1718219521517",
     "final_tally_result": {
       "yes_count": 40,
       "abstain_count": 2,
@@ -1529,6 +1642,7 @@
     "type": "ParameterChange",
     "topic": "Protocol Configuration",
     "status": "PASSED",
+    "submit_time": "1718027410129",
     "final_tally_result": {
       "yes_count": 43,
       "abstain_count": 2,
@@ -1542,6 +1656,7 @@
     "type": "Unknown",
     "topic": "Miscellaneous",
     "status": "PASSED",
+    "submit_time": "1717793632579",
     "final_tally_result": {
       "yes_count": 40,
       "abstain_count": 1,
@@ -1555,6 +1670,7 @@
     "type": "Unknown",
     "topic": "Miscellaneous",
     "status": "PASSED",
+    "submit_time": "1717444649196",
     "final_tally_result": {
       "yes_count": 43,
       "abstain_count": 2,
@@ -1568,6 +1684,7 @@
     "type": "SoftwareUpgrade",
     "topic": "Major Release",
     "status": "PASSED",
+    "submit_time": "1717102082471",
     "final_tally_result": {
       "yes_count": 48,
       "abstain_count": 1,
@@ -1581,6 +1698,7 @@
     "type": "MarketRelated",
     "topic": "Market Addition",
     "status": "PASSED",
+    "submit_time": "1716875249620",
     "final_tally_result": {
       "yes_count": 41,
       "abstain_count": 2,
@@ -1594,6 +1712,7 @@
     "type": "MarketRelated",
     "topic": "Market Addition",
     "status": "PASSED",
+    "submit_time": "1714876416688",
     "final_tally_result": {
       "yes_count": 45,
       "abstain_count": 3,
@@ -1607,6 +1726,7 @@
     "type": "MarketRelated",
     "topic": "Market Addition",
     "status": "PASSED",
+    "submit_time": "1714419049718",
     "final_tally_result": {
       "yes_count": 42,
       "abstain_count": 3,
@@ -1621,6 +1741,7 @@
     "type": "MarketRelated",
     "topic": "Market Addition",
     "status": "PASSED",
+    "submit_time": "1714073408465",
     "final_tally_result": {
       "yes_count": 45,
       "abstain_count": 2,
@@ -1634,6 +1755,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "PASSED",
+    "submit_time": "1713936085793",
     "final_tally_result": {
       "yes_count": 40,
       "abstain_count": 6,
@@ -1647,6 +1769,7 @@
     "type": "SoftwareUpgrade",
     "topic": "Major Release",
     "status": "PASSED",
+    "submit_time": "1713802172435",
     "final_tally_result": {
       "yes_count": 53,
       "abstain_count": 1,
@@ -1660,6 +1783,7 @@
     "type": "MarketRelated",
     "topic": "Market Addition",
     "status": "PASSED",
+    "submit_time": "1713727668813",
     "final_tally_result": {
       "yes_count": 52,
       "abstain_count": 3,
@@ -1673,6 +1797,7 @@
     "type": "Unknown",
     "topic": "Miscellaneous",
     "status": "PASSED",
+    "submit_time": "1713497505482",
     "final_tally_result": {
       "yes_count": 44,
       "abstain_count": 1,
@@ -1686,6 +1811,7 @@
     "type": "Unknown",
     "topic": "Miscellaneous",
     "status": "PASSED",
+    "submit_time": "1713375660543",
     "final_tally_result": {
       "yes_count": 32,
       "abstain_count": 3,
@@ -1699,6 +1825,7 @@
     "type": "Unknown",
     "topic": "Miscellaneous",
     "status": "PASSED",
+    "submit_time": "1712087767664",
     "final_tally_result": {
       "yes_count": 41,
       "abstain_count": 7,
@@ -1713,6 +1840,7 @@
     "type": "Unknown",
     "topic": "Miscellaneous",
     "status": "REJECTED",
+    "submit_time": "1712069193792",
     "final_tally_result": {
       "abstain_count": 12,
       "no_count": 32,
@@ -1727,6 +1855,7 @@
     "type": "Unknown",
     "topic": "Unclassified",
     "status": "REJECTED",
+    "submit_time": "1712052036537",
     "final_tally_result": {
       "abstain_count": 13,
       "weighted_vote_count": 1,
@@ -1742,6 +1871,7 @@
     "type": "SoftwareUpgrade",
     "topic": "Major Release",
     "status": "PASSED",
+    "submit_time": "1711983671987",
     "final_tally_result": {
       "yes_count": 57,
       "abstain_count": 1,
@@ -1755,6 +1885,7 @@
     "type": "TextProposal",
     "topic": "Project Funding",
     "status": "PASSED",
+    "submit_time": "1711528527402",
     "final_tally_result": {
       "yes_count": 42,
       "abstain_count": 6,
@@ -1768,6 +1899,7 @@
     "type": "TextProposal",
     "topic": "Community Decision",
     "status": "PASSED",
+    "submit_time": "1710865425972",
     "final_tally_result": {
       "yes_count": 43,
       "abstain_count": 9,
@@ -1782,6 +1914,7 @@
     "type": "Unknown",
     "topic": "Miscellaneous",
     "status": "PASSED",
+    "submit_time": "1710862867830",
     "final_tally_result": {
       "yes_count": 52,
       "abstain_count": 1,
@@ -1795,6 +1928,7 @@
     "type": "MarketRelated",
     "topic": "Market Addition",
     "status": "PASSED",
+    "submit_time": "1710846400068",
     "final_tally_result": {
       "yes_count": 49,
       "abstain_count": 2,
@@ -1809,6 +1943,7 @@
     "type": "MarketRelated",
     "topic": "Market Addition",
     "status": "PASSED",
+    "submit_time": "1710710980256",
     "final_tally_result": {
       "yes_count": 54,
       "abstain_count": 1,
@@ -1822,6 +1957,7 @@
     "type": "MarketRelated",
     "topic": "Market Addition",
     "status": "PASSED",
+    "submit_time": "1710521076191",
     "final_tally_result": {
       "yes_count": 47,
       "abstain_count": 3,
@@ -1835,6 +1971,7 @@
     "type": "MarketRelated",
     "topic": "Market Addition",
     "status": "PASSED",
+    "submit_time": "1710446845053",
     "final_tally_result": {
       "yes_count": 48,
       "abstain_count": 2,
@@ -1848,6 +1985,7 @@
     "type": "MarketRelated",
     "topic": "Market Addition",
     "status": "PASSED",
+    "submit_time": "1710417460703",
     "final_tally_result": {
       "yes_count": 46,
       "abstain_count": 2,
@@ -1861,6 +1999,7 @@
     "type": "MarketRelated",
     "topic": "Market Addition",
     "status": "PASSED",
+    "submit_time": "1710270998943",
     "final_tally_result": {
       "yes_count": 49,
       "abstain_count": 1,
@@ -1874,6 +2013,7 @@
     "type": "MarketRelated",
     "topic": "Market Addition",
     "status": "PASSED",
+    "submit_time": "1710089430938",
     "final_tally_result": {
       "yes_count": 54,
       "abstain_count": 1,
@@ -1887,6 +2027,7 @@
     "type": "MarketRelated",
     "topic": "Market Addition",
     "status": "PASSED",
+    "submit_time": "1710003474599",
     "final_tally_result": {
       "yes_count": 49,
       "no_count": 1,
@@ -1901,6 +2042,7 @@
     "type": "MarketRelated",
     "topic": "Market Addition",
     "status": "PASSED",
+    "submit_time": "1709735724904",
     "final_tally_result": {
       "yes_count": 47,
       "abstain_count": 1,
@@ -1914,6 +2056,7 @@
     "type": "MarketRelated",
     "topic": "Market Addition",
     "status": "PASSED",
+    "submit_time": "1709636567644",
     "final_tally_result": {
       "yes_count": 52,
       "abstain_count": 1,
@@ -1927,6 +2070,7 @@
     "type": "Unknown",
     "topic": "Miscellaneous",
     "status": "PASSED",
+    "submit_time": "1709570598769",
     "final_tally_result": {
       "yes_count": 50,
       "abstain_count": 3,
@@ -1941,6 +2085,7 @@
     "type": "MarketRelated",
     "topic": "Market Addition",
     "status": "PASSED",
+    "submit_time": "1709383202107",
     "final_tally_result": {
       "yes_count": 51,
       "abstain_count": 1,
@@ -1954,6 +2099,7 @@
     "type": "MarketRelated",
     "topic": "Market Addition",
     "status": "PASSED",
+    "submit_time": "1709201072832",
     "final_tally_result": {
       "yes_count": 40,
       "abstain_count": 3,
@@ -1967,6 +2113,7 @@
     "type": "MarketRelated",
     "topic": "Market Addition",
     "status": "PASSED",
+    "submit_time": "1709112900305",
     "final_tally_result": {
       "yes_count": 48,
       "abstain_count": 1,
@@ -1980,6 +2127,7 @@
     "type": "MarketRelated",
     "topic": "Market Addition",
     "status": "PASSED",
+    "submit_time": "1709037126720",
     "final_tally_result": {
       "yes_count": 47,
       "no_vote_count": 13
@@ -1992,6 +2140,7 @@
     "type": "MarketRelated",
     "topic": "Market Addition",
     "status": "PASSED",
+    "submit_time": "1708939640413",
     "final_tally_result": {
       "yes_count": 50,
       "abstain_count": 1,
@@ -2005,6 +2154,7 @@
     "type": "MarketRelated",
     "topic": "Market Addition",
     "status": "PASSED",
+    "submit_time": "1708657189845",
     "final_tally_result": {
       "yes_count": 54,
       "abstain_count": 2,
@@ -2018,6 +2168,7 @@
     "type": "MarketRelated",
     "topic": "Market Addition",
     "status": "PASSED",
+    "submit_time": "1708645029886",
     "final_tally_result": {
       "yes_count": 54,
       "abstain_count": 2,
@@ -2031,6 +2182,7 @@
     "type": "MarketRelated",
     "topic": "Market Addition",
     "status": "PASSED",
+    "submit_time": "1708633751378",
     "final_tally_result": {
       "yes_count": 40,
       "no_count": 10,
@@ -2045,6 +2197,7 @@
     "type": "MarketRelated",
     "topic": "Market Addition",
     "status": "PASSED",
+    "submit_time": "1708594357640",
     "final_tally_result": {
       "yes_count": 52,
       "abstain_count": 2,
@@ -2058,6 +2211,7 @@
     "type": "MarketRelated",
     "topic": "Market Addition",
     "status": "PASSED",
+    "submit_time": "1708496184014",
     "final_tally_result": {
       "yes_count": 53,
       "abstain_count": 1,
@@ -2071,6 +2225,7 @@
     "type": "MarketRelated",
     "topic": "Market Addition",
     "status": "PASSED",
+    "submit_time": "1708456792297",
     "final_tally_result": {
       "yes_count": 55,
       "abstain_count": 2,
@@ -2084,6 +2239,7 @@
     "type": "MarketRelated",
     "topic": "Market Addition",
     "status": "PASSED",
+    "submit_time": "1708381408305",
     "final_tally_result": {
       "yes_count": 54,
       "abstain_count": 2,
@@ -2097,6 +2253,7 @@
     "type": "Unknown",
     "topic": "Miscellaneous",
     "status": "PASSED",
+    "submit_time": "1708374129652",
     "final_tally_result": {
       "yes_count": 50,
       "abstain_count": 3,
@@ -2110,6 +2267,7 @@
     "type": "MarketRelated",
     "topic": "Market Addition",
     "status": "PASSED",
+    "submit_time": "1708305732858",
     "final_tally_result": {
       "yes_count": 51,
       "abstain_count": 4,
@@ -2123,6 +2281,7 @@
     "type": "MarketRelated",
     "topic": "Market Addition",
     "status": "PASSED",
+    "submit_time": "1707950756919",
     "final_tally_result": {
       "yes_count": 52,
       "abstain_count": 1,
@@ -2136,6 +2295,7 @@
     "type": "MarketRelated",
     "topic": "Market Addition",
     "status": "PASSED",
+    "submit_time": "1707880059702",
     "final_tally_result": {
       "yes_count": 52,
       "abstain_count": 1,
@@ -2149,6 +2309,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "PASSED",
+    "submit_time": "1707857060438",
     "final_tally_result": {
       "yes_count": 51,
       "abstain_count": 1,
@@ -2162,6 +2323,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "PASSED",
+    "submit_time": "1707809008416",
     "final_tally_result": {
       "yes_count": 48,
       "abstain_count": 5,
@@ -2175,6 +2337,7 @@
     "type": "MarketRelated",
     "topic": "Market Addition",
     "status": "PASSED",
+    "submit_time": "1707431575272",
     "final_tally_result": {
       "yes_count": 53,
       "abstain_count": 2,
@@ -2188,6 +2351,7 @@
     "type": "MarketRelated",
     "topic": "Market Addition",
     "status": "PASSED",
+    "submit_time": "1707431478170",
     "final_tally_result": {
       "yes_count": 53,
       "abstain_count": 2,
@@ -2201,6 +2365,7 @@
     "type": "MarketRelated",
     "topic": "Market Addition",
     "status": "PASSED",
+    "submit_time": "1706962676988",
     "final_tally_result": {
       "yes_count": 55,
       "abstain_count": 1,
@@ -2214,6 +2379,7 @@
     "type": "MarketRelated",
     "topic": "Market Addition",
     "status": "REJECTED",
+    "submit_time": "1706879053959",
     "final_tally_result": {
       "no_count": 47,
       "abstain_count": 3,
@@ -2228,6 +2394,7 @@
     "type": "Unknown",
     "topic": "Miscellaneous",
     "status": "PASSED",
+    "submit_time": "1706574002143",
     "final_tally_result": {
       "yes_count": 57,
       "abstain_count": 2,
@@ -2241,6 +2408,7 @@
     "type": "Unknown",
     "topic": "Miscellaneous",
     "status": "PASSED",
+    "submit_time": "1706562599449",
     "final_tally_result": {
       "yes_count": 57,
       "abstain_count": 2,
@@ -2254,6 +2422,7 @@
     "type": "SoftwareUpgrade",
     "topic": "Major Release",
     "status": "PASSED",
+    "submit_time": "1705909512881",
     "final_tally_result": {
       "yes_count": 59,
       "abstain_count": 1
@@ -2266,6 +2435,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "REJECTED",
+    "submit_time": "1704307246701",
     "final_tally_result": {
       "no_count": 19,
       "abstain_count": 16,
@@ -2280,6 +2450,7 @@
     "type": "MarketRelated",
     "topic": "Market Addition",
     "status": "PASSED",
+    "submit_time": "1702907393570",
     "final_tally_result": {
       "yes_count": 60
     }
@@ -2291,6 +2462,7 @@
     "type": "Unknown",
     "topic": "Miscellaneous",
     "status": "PASSED",
+    "submit_time": "1702608002933",
     "final_tally_result": {
       "weighted_vote_count": 1,
       "yes_count": 54,
@@ -2305,6 +2477,7 @@
     "type": "TextProposal",
     "topic": "Governance Process",
     "status": "PASSED",
+    "submit_time": "1701150447816",
     "final_tally_result": {
       "yes_count": 54,
       "abstain_count": 6
@@ -2317,6 +2490,7 @@
     "type": "Unknown",
     "topic": "Miscellaneous",
     "status": "PASSED",
+    "submit_time": "1700832110696",
     "final_tally_result": {
       "yes_count": 58,
       "abstain_count": 1,
@@ -2330,6 +2504,7 @@
     "type": "Unknown",
     "topic": "Miscellaneous",
     "status": "PASSED",
+    "submit_time": "1699537478893",
     "final_tally_result": {
       "yes_count": 55,
       "abstain_count": 2,
