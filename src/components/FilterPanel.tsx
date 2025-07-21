@@ -102,7 +102,10 @@ export default function FilterPanel() {
     validators,
     votingPowerFilterMode,
     votingPowerRange,
-    votingPowerDynamicRange,
+    avgVotingPowerDynamicRange,
+    participationRateRange,
+    participationRateDynamicRange,
+    countNoVoteAsParticipation,
     setSelectedCategories,
     setSelectedTopics,
     setApprovalRateRange,
@@ -114,9 +117,7 @@ export default function FilterPanel() {
     getChains,
     getFilteredCategoryHierarchy,
     proposals,
-    participationRateRange,
     setParticipationRateRange,
-    countNoVoteAsParticipation,
     setCountNoVoteAsParticipation,
   } = store;
 
@@ -129,7 +130,7 @@ export default function FilterPanel() {
   const searchRef = useRef<HTMLDivElement>(null)
 
   const yesRateDistribution = useMemo(() => getYesRateDistribution(store), [store.proposals]);
-  const votingPowerDistribution = useMemo(() => getVotingPowerDistribution(store), [store.validators]);
+  const votingPowerDistribution = useMemo(() => getVotingPowerDistribution(store), [store.validatorsWithDerivedData]);
   const participationRateDistribution = useMemo(() => getParticipationRateDistribution(store), [store.validatorsWithDerivedData, countNoVoteAsParticipation]);
 
   const resetFilters = useCallback(() => {
@@ -138,7 +139,7 @@ export default function FilterPanel() {
     setInputValue('')
     setSearchTerm('')
     setApprovalRateRange([0, 100])
-    setParticipationRateRange([0, 100]) // Reset participation rate
+    setParticipationRateRange([0, 100])
     setVotingPowerFilterMode('ratio');
   }, [setSelectedCategories, setSelectedTopics, setSearchTerm, setApprovalRateRange, setParticipationRateRange, setVotingPowerFilterMode])
 
@@ -336,8 +337,8 @@ export default function FilterPanel() {
           <div className="mb-4">
             <RangeSlider
               label="Avg. Voting Power"
-              min={votingPowerDynamicRange[0]}
-              max={votingPowerDynamicRange[1]}
+              min={votingPowerFilterMode === 'ratio' ? avgVotingPowerDynamicRange[0] * 100 : avgVotingPowerDynamicRange[0]}
+              max={votingPowerFilterMode === 'ratio' ? avgVotingPowerDynamicRange[1] * 100 : avgVotingPowerDynamicRange[1]}
               values={votingPowerRange}
               onChange={setVotingPowerRange}
               formatValue={(v) => votingPowerFilterMode === 'ratio' ? `${v.toFixed(2)}%` : `${Math.round(v)}`}
@@ -366,8 +367,8 @@ export default function FilterPanel() {
             </div>
             <RangeSlider
               label=""
-              min={0}
-              max={100}
+              min={participationRateDynamicRange[0]}
+              max={participationRateDynamicRange[1]}
               values={participationRateRange}
               onChange={setParticipationRateRange}
               formatValue={(v) => `${v.toFixed(0)}%`}

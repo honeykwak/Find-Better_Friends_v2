@@ -88,7 +88,6 @@ export default function ValidatorHeatmap() {
     setValidatorSortKey,
     votingPowerFilterMode,
     votingPowerRange,
-    setVotingPowerDynamicRange,
     setVotingPowerRange,
     participationRateRange,
     countNoVoteAsParticipation,
@@ -104,30 +103,6 @@ export default function ValidatorHeatmap() {
     recalculateValidatorMetrics();
   }, [getFilteredProposals, countNoVoteAsParticipation, recalculateValidatorMetrics]);
 
-  useEffect(() => {
-    if (!validatorsWithAvgPower.length) {
-      setVotingPowerDynamicRange([0, 100]);
-      setVotingPowerRange([0, 100]);
-      return;
-    }
-
-    if (votingPowerFilterMode === 'ratio') {
-      const powers = validatorsWithAvgPower.map(v => v.avgPower);
-      const minPower = Math.min(...powers);
-      const maxPower = Math.max(...powers);
-      const newRange: [number, number] = [
-        Math.floor(minPower * 10000) / 100, 
-        Math.ceil(maxPower * 10000) / 100
-      ];
-      setVotingPowerDynamicRange(newRange);
-      setVotingPowerRange(newRange);
-    } else { // 'rank'
-      const newRange: [number, number] = [1, validatorsWithAvgPower.length];
-      setVotingPowerDynamicRange(newRange);
-      setVotingPowerRange(newRange);
-    }
-  }, [validatorsWithAvgPower, votingPowerFilterMode, setVotingPowerDynamicRange, setVotingPowerRange]);
-
 
   const heatmapData = useMemo((): ProcessedHeatmapData => {
     const filteredProposals = getFilteredProposals();
@@ -138,7 +113,7 @@ export default function ValidatorHeatmap() {
     let currentValidators = [...validatorsWithAvgPower];
     let pinnedValidator: ValidatorWithAvgPower | undefined;
 
-    if (validatorSortKey === 'similarity' && searchTerm) {
+    if (validatorSortKey.startsWith('similarity') && searchTerm) {
       const foundValidator = currentValidators.find(v => v.moniker === searchTerm);
       if (foundValidator) {
         pinnedValidator = { ...foundValidator };
@@ -151,9 +126,9 @@ export default function ValidatorHeatmap() {
       const [minPower, maxPower] = votingPowerRange;
       const minRatio = minPower / 100;
       const maxRatio = maxPower / 100;
-      filteredByVotingPower = currentValidators.filter(v => v.avgPower >= minRatio && v.avgPower <= maxRatio);
+      filteredByVotingPower = currentValidators.filter(v => (v.avgPower || 0) >= minRatio && (v.avgPower || 0) <= maxRatio);
     } else { // 'rank'
-      const rankedValidators = [...currentValidators].sort((a, b) => b.avgPower - a.avgPower);
+      const rankedValidators = [...currentValidators].sort((a, b) => (b.avgPower || 0) - (a.avgPower || 0));
       const [minRank, maxRank] = votingPowerRange;
       filteredByVotingPower = rankedValidators.slice(minRank - 1, maxRank);
     }
@@ -206,9 +181,9 @@ export default function ValidatorHeatmap() {
 
     if (pinnedValidator) {
       const meetsVotingPower = votingPowerFilterMode === 'ratio'
-        ? (pinnedValidator.avgPower * 100 >= votingPowerRange[0] && pinnedValidator.avgPower * 100 <= votingPowerRange[1])
+        ? ((pinnedValidator.avgPower || 0) * 100 >= votingPowerRange[0] && (pinnedValidator.avgPower || 0) * 100 <= votingPowerRange[1])
         : (() => {
-            const allValidatorsSortedByPower = [...validatorsWithAvgPower, pinnedValidator].sort((a, b) => b.avgPower - a.avgPower);
+            const allValidatorsSortedByPower = [...validatorsWithAvgPower, pinnedValidator].sort((a, b) => (b.avgPower || 0) - (a.avgPower || 0));
             const pinnedIndex = allValidatorsSortedByPower.findIndex(v => v.validator_address === pinnedValidator?.validator_address);
             const pinnedRank = pinnedIndex + 1;
             return pinnedRank >= votingPowerRange[0] && pinnedRank <= votingPowerRange[1];
@@ -245,13 +220,11 @@ export default function ValidatorHeatmap() {
 
         for (const validator of sortedValidators) {
           const targetVotes = votesByValidator.get(validator.validator_address) || [];
-          // The 'selectedVotes' should be the first argument for 'base' mode calculation.
           const score = calculateSimilarity(selectedVotes, targetVotes, proposalSet, countNoVoteAsParticipation, mode);
           similarityScores.set(validator.validator_address, score);
         }
 
         sortedValidators.sort((a, b) => {
-          // Pinned validator (the one being searched for) should always be at the top.
           if (a.moniker === searchTerm) return -1;
           if (b.moniker === searchTerm) return 1;
           
@@ -263,7 +236,7 @@ export default function ValidatorHeatmap() {
     } else if (validatorSortKey === 'name') {
       sortedValidators.sort((a, b) => (a.moniker || '').localeCompare(b.moniker || ''));
     } else if (validatorSortKey === 'votingPower') {
-      sortedValidators.sort((a, b) => b.avgPower - a.avgPower);
+      sortedValidators.sort((a, b) => (b.avgPower || 0) - (a.avgPower || 0));
     } else { // Default to 'voteCount'
       const validatorVoteCounts = new Map<string, number>();
       for (const vote of rawVotes) {
@@ -279,8 +252,13 @@ export default function ValidatorHeatmap() {
     
     const validators = sortedValidators.map((v, index) => ({ address: v.validator_address, name: v.moniker || 'Unknown', index, isPinnedAndFilteredOut: v.isPinnedAndFilteredOut }))
 
+    if (filteredProposals.length > 0) {
+      console.log('--- FINAL PROPOSAL DEBUG ---');
+      console.log('Complete structure of the first proposal object:', filteredProposals[0]);
+    }
+
     const proposalsWithTally = filteredProposals
-      .sort((a, b) => new Date(b.submit_time).getTime() - new Date(a.submit_time).getTime())
+      .sort((a, b) => parseInt(a.proposal_id, 10) - parseInt(b.proposal_id, 10))
       .map((p: Proposal, index: number) => {
         const tally = p.final_tally_result || {};
         const totalVotes = Object.values(tally).reduce((sum, count) => sum + count, 0);
@@ -569,20 +547,20 @@ export default function ValidatorHeatmap() {
               Name
             </button>
             <button 
-              onClick={() => setValidatorSortKey('similarity_common')} 
-              className={`px-3 py-2 text-xs font-medium rounded-md whitespace-nowrap ${validatorSortKey === 'similarity_common' ? 'bg-white text-gray-800 shadow-sm' : 'text-gray-500'} disabled:opacity-50 disabled:cursor-not-allowed`}
-              title="Sort by similarity based on common votes"
-              disabled={!searchTerm}
-            >
-              Similarity (Common)
-            </button>
-            <button 
               onClick={() => setValidatorSortKey('similarity_base')} 
               className={`px-3 py-2 text-xs font-medium rounded-md whitespace-nowrap ${validatorSortKey === 'similarity_base' ? 'bg-white text-gray-800 shadow-sm' : 'text-gray-500'} disabled:opacity-50 disabled:cursor-not-allowed`}
               title="Sort by similarity based on the selected validator's votes"
               disabled={!searchTerm}
             >
               Similarity (Base)
+            </button>
+            <button 
+              onClick={() => setValidatorSortKey('similarity_common')} 
+              className={`px-3 py-2 text-xs font-medium rounded-md whitespace-nowrap ${validatorSortKey === 'similarity_common' ? 'bg-white text-gray-800 shadow-sm' : 'text-gray-500'} disabled:opacity-50 disabled:cursor-not-allowed`}
+              title="Sort by similarity based on common votes"
+              disabled={!searchTerm}
+            >
+              Similarity (Common)
             </button>
           </div>
           <div className="flex items-center gap-1 border border-gray-300 rounded-lg">
