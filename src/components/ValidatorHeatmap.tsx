@@ -372,6 +372,10 @@ export default function ValidatorHeatmap() {
       .attr('text-anchor', 'end')
       .style('font-size', `${Math.max(8, cellHeight * 0.7)}px`)
       .style('cursor', 'pointer')
+      .style('opacity', 0)
+      .merge(validatorLabels as any);
+      
+    mergedLabels
       .on('click', (event, d: any) => {
         if (searchTermRef.current === d.moniker) {
           setSearchTerm('');
@@ -379,10 +383,6 @@ export default function ValidatorHeatmap() {
           setSearchTerm(d.moniker);
         }
       })
-      .style('opacity', 0)
-      .merge(validatorLabels as any);
-      
-    mergedLabels
       .transition().duration(DURATION)
       .attr('y', (d: any) => d.index * cellHeight + cellHeight / 2)
       .text((d: any) => d.displayName.slice(0, 35))
@@ -397,7 +397,7 @@ export default function ValidatorHeatmap() {
       .style('opacity', 0)
       .remove();
 
-    cells.enter()
+    const mergedCells = cells.enter()
       .append('rect')
       .attr('class', 'cell')
       .attr('x', (d: any) => d.proposalIndex * cellWidth)
@@ -405,6 +405,11 @@ export default function ValidatorHeatmap() {
       .attr('width', cellWidth - 1)
       .attr('height', cellHeight - 1)
       .style('cursor', 'pointer')
+      .style('opacity', 0)
+      .attr('fill', (d: any) => getVoteColor(d.voteOption))
+      .merge(cells as any);
+
+    mergedCells
       .on('click', (event, d: any) => {
         const validator = validators[d.validatorIndex];
         if (validator && validator.moniker) {
@@ -415,9 +420,6 @@ export default function ValidatorHeatmap() {
           }
         }
       })
-      .style('opacity', 0)
-      .attr('fill', (d: any) => getVoteColor(d.voteOption))
-      .merge(cells as any)
       .transition().duration(DURATION)
       .attr('x', (d: any) => d.proposalIndex * cellWidth)
       .attr('y', (d: any) => d.validatorIndex * cellHeight)
@@ -425,7 +427,7 @@ export default function ValidatorHeatmap() {
       .attr('fill', (d: any) => getVoteColor(d.voteOption));
       
     // Tooltip logic needs to be re-attached to the merged selection
-    g.selectAll('.cell')
+    mergedCells
       .on('mouseover', function(event, d: any) {
         const validator = validators[d.validatorIndex];
         const proposal = proposals[d.proposalIndex];
