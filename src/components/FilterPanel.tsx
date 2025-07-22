@@ -129,7 +129,7 @@ export default function FilterPanel() {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false)
   const searchRef = useRef<HTMLDivElement>(null)
 
-  const yesRateDistribution = useMemo(() => getYesRateDistribution(store), [store.proposals]);
+  const yesRateDistribution = useMemo(() => getYesRateDistribution(store), [store.proposals, store.votes, categoryVisualizationMode]);
   const votingPowerDistribution = useMemo(() => getVotingPowerDistribution(store), [store.validatorsWithDerivedData]);
   const participationRateDistribution = useMemo(() => getParticipationRateDistribution(store), [store.validatorsWithDerivedData, countNoVoteAsParticipation]);
 
@@ -252,7 +252,14 @@ export default function FilterPanel() {
 
         {/* Proposal Section */}
         <div>
-          <h3 className="text-lg font-semibold text-gray-900 mb-3">Proposal</h3>
+          <div className="flex items-center justify-between mb-3">
+            <h3 className="text-lg font-semibold text-gray-900">Proposal</h3>
+            <ToggleButtonGroup
+              options={[{value: 'voteCount', label: 'Vote Count'}, {value: 'votePower', label: 'Vote Power'}]}
+              selectedValue={categoryVisualizationMode}
+              onChange={(v) => setCategoryVisualizationMode(v as 'voteCount' | 'votePower')}
+            />
+          </div>
           <div className="mb-4">
             <RangeSlider
               label="Yes Rate"
@@ -269,11 +276,6 @@ export default function FilterPanel() {
           <div>
             <div className="flex items-center justify-between mb-2">
               <h3 className="text-sm font-medium text-gray-900">Categories</h3>
-              <ToggleButtonGroup
-                options={[{value: 'voteCount', label: 'Vote Count'}, {value: 'votePower', label: 'Vote Power'}]}
-                selectedValue={categoryVisualizationMode}
-                onChange={(v) => setCategoryVisualizationMode(v as 'voteCount' | 'votePower')}
-              />
             </div>
             <div className="space-y-3">
               {filteredCategoryHierarchy.map(category => (

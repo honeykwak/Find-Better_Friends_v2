@@ -360,9 +360,37 @@ export const useGlobalStore = create<GlobalStore>((set, get) => ({
 
   // Selectors
   getProposalsFilteredByRate: () => {
-    const { proposals, approvalRateRange } = get();
+    const { proposals, approvalRateRange, votes, categoryVisualizationMode } = get();
     const [minRate, maxRate] = approvalRateRange;
 
+    if (categoryVisualizationMode === 'votePower') {
+      const votesByProposal = new Map<string, { yes: number; total: number }>();
+      for (const vote of votes) {
+        if (!votesByProposal.has(vote.proposal_id)) {
+          votesByProposal.set(vote.proposal_id, { yes: 0, total: 0 });
+        }
+        const proposalVotes = votesByProposal.get(vote.proposal_id)!;
+        const power = typeof vote.voting_power === 'string' ? parseFloat(vote.voting_power) : vote.voting_power;
+        
+        if (!isNaN(power)) {
+          if (vote.vote_option === 'YES') {
+            proposalVotes.yes += power;
+          }
+          if (vote.vote_option !== 'NO_VOTE') {
+            proposalVotes.total += power;
+          }
+        }
+      }
+
+      return proposals.filter(p => {
+        const powerVotes = votesByProposal.get(p.proposal_id);
+        if (!powerVotes || powerVotes.total === 0) return minRate === 0;
+        const approvalRate = (powerVotes.yes / powerVotes.total) * 100;
+        return approvalRate >= minRate && approvalRate <= maxRate;
+      });
+    }
+
+    // Default to 'voteCount'
     return proposals.filter(p => {
       const { yes_count = 0, no_count = 0, abstain_count = 0, no_with_veto_count = 0 } = p.final_tally_result || {};
       const totalVotes = yes_count + no_count + abstain_count + no_with_veto_count;
@@ -476,6 +504,34 @@ export const useGlobalStore = create<GlobalStore>((set, get) => ({
 
 // Standalone selectors for data distribution
 export const getYesRateDistribution = (state: GlobalStore) => {
+  const { proposals, votes, categoryVisualizationMode } = state;
+
+  if (categoryVisualizationMode === 'votePower') {
+    const votesByProposal = new Map<string, { yes: number; total: number }>();
+    for (const vote of votes) {
+      if (!votesByProposal.has(vote.proposal_id)) {
+        votesByProposal.set(vote.proposal_id, { yes: 0, total: 0 });
+      }
+      const proposalVotes = votesByProposal.get(vote.proposal_id)!;
+      const power = typeof vote.voting_power === 'string' ? parseFloat(vote.voting_power) : vote.voting_power;
+      
+      if (!isNaN(power)) {
+        if (vote.vote_option === 'YES') {
+          proposalVotes.yes += power;
+        }
+        if (vote.vote_option !== 'NO_VOTE') {
+          proposalVotes.total += power;
+        }
+      }
+    }
+    return proposals.map(p => {
+      const powerVotes = votesByProposal.get(p.proposal_id);
+      if (!powerVotes || powerVotes.total === 0) return 0;
+      return (powerVotes.yes / powerVotes.total) * 100;
+    });
+  }
+
+  // Default to 'voteCount'
   return state.proposals.map(p => {
     const { yes_count = 0, no_count = 0, abstain_count = 0, no_with_veto_count = 0 } = p.final_tally_result || {};
     const totalVotes = yes_count + no_count + abstain_count + no_with_veto_count;
