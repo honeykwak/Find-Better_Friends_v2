@@ -249,7 +249,7 @@ export default function FilterPanel() {
                   className="w-full flex items-center gap-2 px-3 py-2 text-sm text-left hover:bg-gray-50"
                 >
                   <Image src={getChainLogo(chain)} alt={chain} width={16} height={16} className="rounded-full" />
-                  <span className="capitalize">{chain}</span>
+                  <span className="capitalize text-gray-800">{chain}</span>
                 </button>
               ))}
             </div>}
