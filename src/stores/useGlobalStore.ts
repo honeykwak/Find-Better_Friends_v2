@@ -44,9 +44,11 @@ interface GlobalStore {
   // Validator filters
   participationRateRange: [number, number]
   participationRateDynamicRange: [number, number]
-  votingPowerFilterMode: 'ratio' | 'rank'
+  votingPowerMetric: 'avg' | 'total'
+  votingPowerDisplayMode: 'ratio' | 'rank'
   votingPowerRange: [number, number]
   avgVotingPowerDynamicRange: [number, number]
+  totalVotingPowerDynamicRange: [number, number]
   
   validatorSortKey: ValidatorSortKey;
   countNoVoteAsParticipation: boolean;
@@ -67,7 +69,8 @@ interface GlobalStore {
   setSearchTerm: (term: string) => void
   setApprovalRateRange: (range: [number, number]) => void
   setParticipationRateRange: (range: [number, number]) => void
-  setVotingPowerFilterMode: (mode: 'ratio' | 'rank') => void
+  setVotingPowerMetric: (metric: 'avg' | 'total') => void
+  setVotingPowerDisplayMode: (mode: 'ratio' | 'rank') => void
   setVotingPowerRange: (range: [number, number]) => void
   setCategoryVisualizationMode: (mode: 'voteCount' | 'votePower') => void
   setWindowSize: (size: { width: number; height: number }) => void
@@ -88,9 +91,11 @@ export const useGlobalStore = create<GlobalStore>((set, get) => ({
   approvalRateRange: [0, 100],
   participationRateRange: [0, 100],
   participationRateDynamicRange: [0, 100],
-  votingPowerFilterMode: 'ratio',
+  votingPowerMetric: 'total',
+  votingPowerDisplayMode: 'ratio',
   votingPowerRange: [0, 100],
   avgVotingPowerDynamicRange: [0, 100],
+  totalVotingPowerDynamicRange: [0, 100],
   categoryVisualizationMode: 'voteCount',
   validatorSortKey: 'totalVotingPower',
   countNoVoteAsParticipation: true,
@@ -115,8 +120,8 @@ export const useGlobalStore = create<GlobalStore>((set, get) => ({
         searchTerm: '',
         approvalRateRange: [0, 100],
         participationRateRange: [0, 100],
-        votingPowerFilterMode: 'ratio',
-        votingPowerRange: [0, 100],
+        votingPowerMetric: 'total',
+        votingPowerDisplayMode: 'ratio',
         validatorSortKey: 'totalVotingPower',
       });
       get().recalculateValidatorMetrics();
@@ -126,45 +131,26 @@ export const useGlobalStore = create<GlobalStore>((set, get) => ({
   },
 
   recalculateValidatorMetrics: () => {
-    console.log('--- Recalculating Validator Metrics ---');
-    const { proposals, validators, votes, getFilteredProposals, countNoVoteAsParticipation, votingPowerFilterMode } = get();
+    const { proposals, validators, votes, getFilteredProposals, countNoVoteAsParticipation } = get();
     if (!proposals.length || !validators.length) {
-      set({ validatorsWithDerivedData: [], participationRateDynamicRange: [0, 100], avgVotingPowerDynamicRange: [0, 100] });
+      set({ 
+        validatorsWithDerivedData: [], 
+        participationRateDynamicRange: [0, 100], 
+        avgVotingPowerDynamicRange: [0, 100],
+        totalVotingPowerDynamicRange: [0, 100],
+      });
       return;
     }
 
     const filteredProposals = getFilteredProposals();
+    const relevantProposalIds = new Set(filteredProposals.map(p => p.proposal_id));
     
-    const relevantProposalIds = new Set<string>();
-    if (countNoVoteAsParticipation) {
-      filteredProposals.forEach(p => relevantProposalIds.add(p.proposal_id));
-    } else {
-      const proposalsWithMeaningfulVotes = new Set<string>();
-      for (const vote of votes) {
-        if (vote.vote_option !== 'NO_VOTE') {
-          proposalsWithMeaningfulVotes.add(vote.proposal_id);
-        }
-      }
-      filteredProposals.forEach(p => {
-        if (proposalsWithMeaningfulVotes.has(p.proposal_id)) {
-          relevantProposalIds.add(p.proposal_id);
-        }
-      });
-    }
-    
-    const totalProposalsForParticipation = relevantProposalIds.size;
-    const validatorVotedProposalSets = new Map<string, Set<string>>();
     const validatorPowerSum = new Map<string, number>();
     const validatorVoteCount = new Map<string, number>();
 
     for (const vote of votes) {
       if (relevantProposalIds.has(vote.proposal_id)) {
         const address = vote.validator_address;
-        if (!validatorVotedProposalSets.has(address)) {
-          validatorVotedProposalSets.set(address, new Set());
-        }
-        validatorVotedProposalSets.get(address)!.add(vote.proposal_id);
-
         const power = typeof vote.voting_power === 'string' ? parseFloat(vote.voting_power) : vote.voting_power;
         if (power && !isNaN(power)) {
           validatorVoteCount.set(address, (validatorVoteCount.get(address) || 0) + 1);
@@ -173,60 +159,54 @@ export const useGlobalStore = create<GlobalStore>((set, get) => ({
       }
     }
 
-    const getParticipationRate = (address: string) => {
-      const count = validatorVotedProposalSets.get(address)?.size || 0;
-      return totalProposalsForParticipation > 0 ? (count / totalProposalsForParticipation) * 100 : 0;
-    };
-
-    const getAveragePower = (address: string) => {
-      const sum = validatorPowerSum.get(address) || 0;
-      const count = validatorVoteCount.get(address) || 0;
-      return count > 0 ? sum / count : 0;
-    };
-
-    const newValidatorsWithDerivedData = validators.map(v => ({
-      ...v,
-      avgPower: getAveragePower(v.validator_address),
-      totalPower: validatorPowerSum.get(v.validator_address) || 0,
-      participationRate: getParticipationRate(v.validator_address)
-    }));
-
-    let minRate = 100, maxRate = 0;
-    newValidatorsWithDerivedData.forEach(v => {
-      if (v.participationRate !== undefined) {
-        minRate = Math.min(minRate, v.participationRate);
-        maxRate = Math.max(maxRate, v.participationRate);
+    const newValidatorsWithDerivedData = validators.map(v => {
+      const sum = validatorPowerSum.get(v.validator_address) || 0;
+      const count = validatorVoteCount.get(v.validator_address) || 0;
+      const participationCount = new Set(votes.filter(vote => vote.validator_address === v.validator_address && relevantProposalIds.has(vote.proposal_id)).map(vote => vote.proposal_id)).size;
+      
+      return {
+        ...v,
+        avgPower: count > 0 ? sum / count : 0,
+        totalPower: sum,
+        participationRate: filteredProposals.length > 0 ? (participationCount / filteredProposals.length) * 100 : 0,
       }
     });
-    const newParticipationRange: [number, number] = [Math.floor(minRate), Math.ceil(maxRate)];
-    
-    let newPowerDynamicRange: [number, number];
 
-    if (votingPowerFilterMode === 'rank') {
-      const rankCount = validators.length;
-      newPowerDynamicRange = [1, Math.max(1, rankCount)];
-    } else { // ratio
-      let minPower = Infinity, maxPower = -Infinity;
-      newValidatorsWithDerivedData.forEach(v => {
-        if (v.avgPower !== undefined) {
-          minPower = Math.min(minPower, v.avgPower);
-          maxPower = Math.max(maxPower, v.avgPower);
-        }
-      });
-      newPowerDynamicRange = [minPower === Infinity ? 0 : minPower, maxPower === -Infinity ? 0 : maxPower];
-    }
-    
-    console.log('Recalculate Output:', {
-      newValidatorsCount: newValidatorsWithDerivedData.length,
-      newParticipationRange,
-      votingPowerFilterMode,
-      newPowerDynamicRange,
+    let minRate = 100, maxRate = 0;
+    let minAvgPower = Infinity, maxAvgPower = -Infinity;
+    let minTotalPower = Infinity, maxTotalPower = -Infinity;
+
+    newValidatorsWithDerivedData.forEach(v => {
+      minRate = Math.min(minRate, v.participationRate || 100);
+      maxRate = Math.max(maxRate, v.participationRate || 0);
+      minAvgPower = Math.min(minAvgPower, v.avgPower || Infinity);
+      maxAvgPower = Math.max(maxAvgPower, v.avgPower || -Infinity);
+      minTotalPower = Math.min(minTotalPower, v.totalPower || Infinity);
+      maxTotalPower = Math.max(maxTotalPower, v.totalPower || -Infinity);
     });
+
+    const newAvgPowerDynamicRange: [number, number] = [minAvgPower === Infinity ? 0 : minAvgPower, maxAvgPower === -Infinity ? 0 : maxAvgPower];
+    const newTotalPowerDynamicRange: [number, number] = [minTotalPower === Infinity ? 0 : minTotalPower, maxTotalPower === -Infinity ? 0 : maxTotalPower];
+    
+    const { votingPowerMetric, votingPowerDisplayMode } = get();
+    let newVotingPowerRange: [number, number];
+
+    if (votingPowerDisplayMode === 'rank') {
+      newVotingPowerRange = [1, newValidatorsWithDerivedData.length];
+    } else { // ratio
+      if (votingPowerMetric === 'avg') {
+        newVotingPowerRange = newAvgPowerDynamicRange;
+      } else { // total
+        newVotingPowerRange = newTotalPowerDynamicRange;
+      }
+    }
 
     set({ 
       validatorsWithDerivedData: newValidatorsWithDerivedData,
-      participationRateDynamicRange: newParticipationRange,
-      avgVotingPowerDynamicRange: newPowerDynamicRange,
+      participationRateDynamicRange: [Math.floor(minRate), Math.ceil(maxRate)],
+      avgVotingPowerDynamicRange: newAvgPowerDynamicRange,
+      totalVotingPowerDynamicRange: newTotalPowerDynamicRange,
+      votingPowerRange: newVotingPowerRange,
     });
   },
 
@@ -287,69 +267,67 @@ export const useGlobalStore = create<GlobalStore>((set, get) => ({
     get().recalculateValidatorMetrics();
   },
   setParticipationRateRange: (range: [number, number]) => set({ participationRateRange: range }),
-  setVotingPowerFilterMode: (mode) => {
-    console.log(`--- Setting Voting Power Mode to: ${mode} ---`);
-    const { validatorsWithDerivedData, votingPowerFilterMode, votingPowerRange, avgVotingPowerDynamicRange } = get();
-    if (mode === votingPowerFilterMode) return;
+  setVotingPowerMetric: (metric) => {
+    const { votingPowerMetric, avgVotingPowerDynamicRange, totalVotingPowerDynamicRange, validatorsWithDerivedData, votingPowerDisplayMode } = get();
+    if (metric === votingPowerMetric) return;
 
-    console.log('Before conversion:', {
-      currentMode: votingPowerFilterMode,
-      currentRange: votingPowerRange,
-      dynamicRange: avgVotingPowerDynamicRange,
+    let newVotingPowerRange: [number, number];
+    if (votingPowerDisplayMode === 'rank') {
+      newVotingPowerRange = [1, validatorsWithDerivedData.length];
+    } else {
+      newVotingPowerRange = metric === 'avg' ? avgVotingPowerDynamicRange : totalVotingPowerDynamicRange;
+    }
+    set({ votingPowerMetric: metric, votingPowerRange: newVotingPowerRange });
+  },
+  setVotingPowerDisplayMode: (mode) => {
+    const { validatorsWithDerivedData, votingPowerDisplayMode, votingPowerRange, votingPowerMetric, avgVotingPowerDynamicRange, totalVotingPowerDynamicRange } = get();
+    if (mode === votingPowerDisplayMode) return;
+
+    const rankedValidators = [...validatorsWithDerivedData].sort((a, b) => {
+      const powerA = votingPowerMetric === 'avg' ? (a.avgPower || 0) : (a.totalPower || 0);
+      const powerB = votingPowerMetric === 'avg' ? (b.avgPower || 0) : (b.totalPower || 0);
+      return powerB - powerA;
     });
-
-    const rankedValidators = [...validatorsWithDerivedData].sort((a, b) => (b.avgPower || 0) - (a.avgPower || 0));
     const totalValidators = rankedValidators.length;
     if (totalValidators === 0) {
-      set({ votingPowerFilterMode: mode });
-      get().recalculateValidatorMetrics();
+      set({ votingPowerDisplayMode: mode });
       return;
     }
 
     let newVotingPowerRange: [number, number];
 
-    if (mode === 'rank') {
-      // Convert from Ratio (percentage 0-100) to Rank (1-N)
-      const [minPercent, maxPercent] = votingPowerRange;
-      const [minPower, maxPower] = avgVotingPowerDynamicRange;
-      const powerRange = maxPower - minPower;
-
-      const minPowerValue = powerRange > 0 ? minPower + (minPercent / 100) * powerRange : minPower;
-      const maxPowerValue = powerRange > 0 ? minPower + (maxPercent / 100) * powerRange : maxPower;
-
-      const startRank = (rankedValidators.findIndex(v => (v.avgPower || 0) <= maxPowerValue) + 1) || 1;
-      const endRank = (rankedValidators.findLastIndex(v => (v.avgPower || 0) >= minPowerValue) + 1) || totalValidators;
-      
-      newVotingPowerRange = [startRank, endRank];
-
-    } else { // mode === 'ratio'
-      // Convert from Rank (1-N) to Ratio (percentage 0-100)
+    if (mode === 'rank') { // Convert from Ratio to Rank
+      const [minPower, maxPower] = votingPowerRange;
+      const findClosestRank = (power: number) => {
+        let closestRank = 1;
+        let minDiff = Infinity;
+        rankedValidators.forEach((v, i) => {
+          const currentPower = votingPowerMetric === 'avg' ? (v.avgPower || 0) : (v.totalPower || 0);
+          const diff = Math.abs(currentPower - power);
+          if (diff < minDiff) {
+            minDiff = diff;
+            closestRank = i + 1;
+          }
+        });
+        return closestRank;
+      };
+      const startRank = findClosestRank(maxPower);
+      const endRank = findClosestRank(minPower);
+      newVotingPowerRange = [Math.min(startRank, endRank), Math.max(startRank, endRank)];
+    } else { // Convert from Rank to Ratio
       const [minRank, maxRank] = votingPowerRange;
-      const [minPower, maxPower] = avgVotingPowerDynamicRange;
-      const powerRange = maxPower - minPower;
-
-      const topValidator = rankedValidators[Math.max(0, minRank - 1)];
-      const bottomValidator = rankedValidators[Math.min(totalValidators - 1, maxRank - 1)];
-
-      if (topValidator && bottomValidator && powerRange > 0) {
-        const maxRatio = ((topValidator.avgPower || 0) - minPower) / powerRange;
-        const minRatio = ((bottomValidator.avgPower || 0) - minPower) / powerRange;
-        newVotingPowerRange = [minRatio * 100, maxRatio * 100];
-      } else {
-        newVotingPowerRange = [0, 100];
-      }
+      const topValidator = rankedValidators[Math.max(0, Math.min(totalValidators - 1, minRank - 1))];
+      const bottomValidator = rankedValidators[Math.max(0, Math.min(totalValidators - 1, maxRank - 1))];
+      
+      const minPower = votingPowerMetric === 'avg' ? (bottomValidator?.avgPower || 0) : (bottomValidator?.totalPower || 0);
+      const maxPower = votingPowerMetric === 'avg' ? (topValidator?.avgPower || 0) : (topValidator?.totalPower || 0);
+      newVotingPowerRange = [minPower, maxPower];
     }
     
-    console.log('After conversion:', {
-      newMode: mode,
-      newRange: newVotingPowerRange,
-    });
-
     set({ 
-      votingPowerFilterMode: mode,
+      votingPowerDisplayMode: mode,
       votingPowerRange: newVotingPowerRange
     });
-    get().recalculateValidatorMetrics();
   },
   setVotingPowerRange: (range) => set({ votingPowerRange: range }),
   setCategoryVisualizationMode: (mode) => set({ categoryVisualizationMode: mode }),
@@ -541,8 +519,12 @@ export const getYesRateDistribution = (state: GlobalStore) => {
   });
 };
 
-export const getVotingPowerDistribution = (state: GlobalStore) => {
-  return state.validatorsWithDerivedData.map(v => (v.avgPower || 0) * 100);
+export const getAvgVotingPowerDistribution = (state: GlobalStore) => {
+  return state.validatorsWithDerivedData.map(v => v.avgPower || 0);
+};
+
+export const getTotalVotingPowerDistribution = (state: GlobalStore) => {
+  return state.validatorsWithDerivedData.map(v => v.totalPower || 0);
 };
 
 export const getParticipationRateDistribution = (state: GlobalStore) => {

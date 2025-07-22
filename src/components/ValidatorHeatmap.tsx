@@ -77,7 +77,7 @@ export default function ValidatorHeatmap() {
   const {
     proposals: rawProposals,
     validators: rawValidators,
-    validatorsWithDerivedData: validatorsWithAvgPower,
+    validatorsWithDerivedData,
     votes: rawVotes,
     getFilteredProposals,
     selectedTopics,
@@ -86,9 +86,9 @@ export default function ValidatorHeatmap() {
     setSearchTerm,
     validatorSortKey,
     setValidatorSortKey,
-    votingPowerFilterMode,
+    votingPowerMetric,
+    votingPowerDisplayMode,
     votingPowerRange,
-    setVotingPowerRange,
     participationRateRange,
     countNoVoteAsParticipation,
     recalculateValidatorMetrics,
@@ -106,11 +106,11 @@ export default function ValidatorHeatmap() {
 
   const heatmapData = useMemo((): ProcessedHeatmapData => {
     const filteredProposals = getFilteredProposals();
-    if (!filteredProposals.length || !validatorsWithAvgPower.length) {
+    if (!filteredProposals.length || !validatorsWithDerivedData.length) {
       return { validators: [], proposals: [], votes: [] };
     }
 
-    let currentValidators = [...validatorsWithAvgPower];
+    let currentValidators = [...validatorsWithDerivedData];
     let pinnedValidator: ValidatorWithAvgPower | undefined;
 
     if (validatorSortKey.startsWith('similarity') && searchTerm) {
@@ -121,14 +121,19 @@ export default function ValidatorHeatmap() {
       }
     }
 
-    let filteredByVotingPower: ValidatorWithAvgPower[];
-    if (votingPowerFilterMode === 'ratio') {
+    let filteredByVotingPower: ValidatorWithDerivedData[];
+    if (votingPowerDisplayMode === 'ratio') {
       const [minPower, maxPower] = votingPowerRange;
-      const minRatio = minPower / 100;
-      const maxRatio = maxPower / 100;
-      filteredByVotingPower = currentValidators.filter(v => (v.avgPower || 0) >= minRatio && (v.avgPower || 0) <= maxRatio);
+      filteredByVotingPower = currentValidators.filter(v => {
+        const power = votingPowerMetric === 'avg' ? (v.avgPower || 0) : (v.totalPower || 0);
+        return power >= minPower && power <= maxPower;
+      });
     } else { // 'rank'
-      const rankedValidators = [...currentValidators].sort((a, b) => (b.avgPower || 0) - (a.avgPower || 0));
+      const rankedValidators = [...currentValidators].sort((a, b) => {
+        const powerA = votingPowerMetric === 'avg' ? (a.avgPower || 0) : (a.totalPower || 0);
+        const powerB = votingPowerMetric === 'avg' ? (b.avgPower || 0) : (b.totalPower || 0);
+        return powerB - powerA;
+      });
       const [minRank, maxRank] = votingPowerRange;
       filteredByVotingPower = rankedValidators.slice(minRank - 1, maxRank);
     }
@@ -180,14 +185,21 @@ export default function ValidatorHeatmap() {
     });
 
     if (pinnedValidator) {
-      const meetsVotingPower = votingPowerFilterMode === 'ratio'
-        ? ((pinnedValidator.avgPower || 0) * 100 >= votingPowerRange[0] && (pinnedValidator.avgPower || 0) * 100 <= votingPowerRange[1])
-        : (() => {
-            const allValidatorsSortedByPower = [...validatorsWithAvgPower, pinnedValidator].sort((a, b) => (b.avgPower || 0) - (a.avgPower || 0));
-            const pinnedIndex = allValidatorsSortedByPower.findIndex(v => v.validator_address === pinnedValidator?.validator_address);
-            const pinnedRank = pinnedIndex + 1;
-            return pinnedRank >= votingPowerRange[0] && pinnedRank <= votingPowerRange[1];
-          })();
+      const meetsVotingPower = (() => {
+        if (votingPowerDisplayMode === 'ratio') {
+          const power = votingPowerMetric === 'avg' ? (pinnedValidator.avgPower || 0) : (pinnedValidator.totalPower || 0);
+          return power >= votingPowerRange[0] && power <= votingPowerRange[1];
+        } else { // rank
+          const allValidatorsSorted = [...validatorsWithDerivedData].sort((a, b) => {
+            const powerA = votingPowerMetric === 'avg' ? (a.avgPower || 0) : (a.totalPower || 0);
+            const powerB = votingPowerMetric === 'avg' ? (b.avgPower || 0) : (b.totalPower || 0);
+            return powerB - powerA;
+          });
+          const pinnedIndex = allValidatorsSorted.findIndex(v => v.validator_address === pinnedValidator?.validator_address);
+          const pinnedRank = pinnedIndex + 1;
+          return pinnedRank >= votingPowerRange[0] && pinnedRank <= votingPowerRange[1];
+        }
+      })();
       
       const meetsParticipationRate = (getParticipationRate(pinnedValidator.validator_address) >= participationRateRange[0] && getParticipationRate(pinnedValidator.validator_address) <= participationRateRange[1]);
 
@@ -315,7 +327,7 @@ export default function ValidatorHeatmap() {
       }))
 
     return { validators, proposals: proposalsWithTally, votes }
-  }, [getFilteredProposals, selectedTopics, validatorsWithAvgPower, rawVotes, validatorSortKey, searchTerm, rawValidators, votingPowerFilterMode, votingPowerRange, participationRateRange, countNoVoteAsParticipation])
+  }, [getFilteredProposals, selectedTopics, validatorsWithDerivedData, rawVotes, validatorSortKey, searchTerm, rawValidators, votingPowerMetric, votingPowerDisplayMode, votingPowerRange, participationRateRange, countNoVoteAsParticipation])
 
   // Main D3 rendering effect
   useEffect(() => {

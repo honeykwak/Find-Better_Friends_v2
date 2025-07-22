@@ -5,7 +5,8 @@ import { Search, RotateCcw, X } from 'lucide-react'
 import { 
   useGlobalStore, 
   getYesRateDistribution, 
-  getVotingPowerDistribution, 
+  getAvgVotingPowerDistribution,
+  getTotalVotingPowerDistribution,
   getParticipationRateDistribution,
   type CategoryHierarchyNode, 
   type TopicNode, 
@@ -100,16 +101,19 @@ export default function FilterPanel() {
     approvalRateRange,
     categoryVisualizationMode,
     validators,
-    votingPowerFilterMode,
+    votingPowerMetric,
+    votingPowerDisplayMode,
     votingPowerRange,
     avgVotingPowerDynamicRange,
+    totalVotingPowerDynamicRange,
     participationRateRange,
     participationRateDynamicRange,
     countNoVoteAsParticipation,
     setSelectedCategories,
     setSelectedTopics,
     setApprovalRateRange,
-    setVotingPowerFilterMode,
+    setVotingPowerMetric,
+    setVotingPowerDisplayMode,
     setVotingPowerRange,
     setSelectedChain,
     setSearchTerm,
@@ -130,7 +134,8 @@ export default function FilterPanel() {
   const searchRef = useRef<HTMLDivElement>(null)
 
   const yesRateDistribution = useMemo(() => getYesRateDistribution(store), [store.proposals, store.votes, categoryVisualizationMode]);
-  const votingPowerDistribution = useMemo(() => getVotingPowerDistribution(store), [store.validatorsWithDerivedData]);
+  const avgVotingPowerDistribution = useMemo(() => getAvgVotingPowerDistribution(store), [store.validatorsWithDerivedData]);
+  const totalVotingPowerDistribution = useMemo(() => getTotalVotingPowerDistribution(store), [store.validatorsWithDerivedData]);
   const participationRateDistribution = useMemo(() => getParticipationRateDistribution(store), [store.validatorsWithDerivedData, countNoVoteAsParticipation]);
 
   const resetFilters = useCallback(() => {
@@ -140,8 +145,9 @@ export default function FilterPanel() {
     setSearchTerm('')
     setApprovalRateRange([0, 100])
     setParticipationRateRange([0, 100])
-    setVotingPowerFilterMode('ratio');
-  }, [setSelectedCategories, setSelectedTopics, setSearchTerm, setApprovalRateRange, setParticipationRateRange, setVotingPowerFilterMode])
+    setVotingPowerMetric('total');
+    setVotingPowerDisplayMode('ratio');
+  }, [setSelectedCategories, setSelectedTopics, setSearchTerm, setApprovalRateRange, setParticipationRateRange, setVotingPowerMetric, setVotingPowerDisplayMode])
 
   const chains = useMemo(() => getChains(), [getChains])
   const filteredCategoryHierarchy = useMemo(() => getFilteredCategoryHierarchy(), [proposals, approvalRateRange, categoryVisualizationMode, getFilteredCategoryHierarchy]);
@@ -336,21 +342,33 @@ export default function FilterPanel() {
               )}
             </div>
           </div>
-          <div className="mb-4">
+          <div className="mb-4 space-y-3">
+            <div className="flex items-center justify-between">
+              <label className="text-sm font-medium text-gray-900">Voting Power</label>
+              <ToggleButtonGroup
+                options={[{value: 'total', label: 'Total'}, {value: 'avg', label: 'Avg'}]}
+                selectedValue={votingPowerMetric}
+                onChange={(v) => setVotingPowerMetric(v as 'total' | 'avg')}
+              />
+            </div>
             <RangeSlider
-              label="Avg. Voting Power"
-              min={votingPowerFilterMode === 'ratio' ? avgVotingPowerDynamicRange[0] * 100 : avgVotingPowerDynamicRange[0]}
-              max={votingPowerFilterMode === 'ratio' ? avgVotingPowerDynamicRange[1] * 100 : avgVotingPowerDynamicRange[1]}
+              label=""
+              min={votingPowerDisplayMode === 'ratio' ? (votingPowerMetric === 'avg' ? avgVotingPowerDynamicRange[0] : totalVotingPowerDynamicRange[0]) : 1}
+              max={votingPowerDisplayMode === 'ratio' ? (votingPowerMetric === 'avg' ? avgVotingPowerDynamicRange[1] : totalVotingPowerDynamicRange[1]) : validators.length || 1}
               values={votingPowerRange}
               onChange={setVotingPowerRange}
-              formatValue={(v) => votingPowerFilterMode === 'ratio' ? `${v.toFixed(2)}%` : `${Math.round(v)}`}
-              step={votingPowerFilterMode === 'ratio' ? 0.01 : 1}
-              distributionData={votingPowerFilterMode === 'ratio' ? votingPowerDistribution : undefined}
+              formatValue={(v) => {
+                if (votingPowerDisplayMode === 'rank') return `${Math.round(v)}`;
+                if (votingPowerMetric === 'avg') return `${(v * 100).toFixed(3)}%`;
+                return v.toLocaleString(undefined, { maximumFractionDigits: 6 });
+              }}
+              step={votingPowerDisplayMode === 'ratio' ? ((votingPowerMetric === 'avg' ? avgVotingPowerDynamicRange[1] : totalVotingPowerDynamicRange[1]) - (votingPowerMetric === 'avg' ? avgVotingPowerDynamicRange[0] : totalVotingPowerDynamicRange[0])) / 1000 : 1}
+              distributionData={votingPowerMetric === 'avg' ? avgVotingPowerDistribution : totalVotingPowerDistribution}
             >
               <ToggleButtonGroup
                 options={[{value: 'ratio', label: 'Ratio'}, {value: 'rank', label: 'Rank'}]}
-                selectedValue={votingPowerFilterMode}
-                onChange={(v) => setVotingPowerFilterMode(v as 'ratio' | 'rank')}
+                selectedValue={votingPowerDisplayMode}
+                onChange={(v) => setVotingPowerDisplayMode(v as 'ratio' | 'rank')}
               />
             </RangeSlider>
           </div>
