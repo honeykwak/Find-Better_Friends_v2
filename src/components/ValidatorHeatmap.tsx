@@ -390,11 +390,11 @@ export default function ValidatorHeatmap() {
       .style('cursor', 'pointer')
       .on('click', (event, d: any) => {
         const validator = validators[d.validatorIndex];
-        if (validator) {
-          if (searchTermRef.current === validator.name) {
+        if (validator && validator.moniker) {
+          if (searchTermRef.current === validator.moniker) {
             setSearchTerm('');
           } else {
-            setSearchTerm(validator.name);
+            setSearchTerm(validator.moniker);
           }
         }
       })
