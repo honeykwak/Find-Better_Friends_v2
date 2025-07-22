@@ -323,6 +323,7 @@ export default function ValidatorHeatmap() {
         validatorIndex: validatorAddressToIndex.get(vote.validator_address)!,
         proposalIndex: proposalIdToIndex.get(vote.proposal_id)!,
         voteOption: vote.vote_option,
+        votingPower: vote.voting_power,
       }))
 
     return { validators, proposals: proposalsWithTally, votes }
@@ -432,13 +433,22 @@ export default function ValidatorHeatmap() {
         const proposal = proposals[d.proposalIndex];
         if (!validator || !proposal) return;
 
+        const power = typeof d.votingPower === 'string' ? parseFloat(d.votingPower) : d.votingPower;
+        const formattedPower = !isNaN(power) ? power.toLocaleString(undefined, { maximumFractionDigits: 2 }) : 'N/A';
+
         d3.select('body').selectAll('.heatmap-tooltip').remove();
         const tooltip = d3.select('body').append('div').attr('class', 'heatmap-tooltip')
           .style('position', 'absolute').style('background', 'rgba(0,0,0,0.8)').style('color', 'white')
           .style('padding', '8px').style('border-radius', '4px').style('font-size', '12px')
           .style('pointer-events', 'none').style('z-index', '1000')
           .style('max-width', '300px').style('white-space', 'normal')
-          .html(`<strong>${validator.displayName}</strong><br/>${proposal.title}<br/>Vote: ${d.voteOption}`);
+          .html(`
+            <strong>${validator.moniker}</strong><br/>
+            Proposal #${d.proposalId}: ${proposal.title}<br/>
+            <hr style="margin: 4px 0; border-color: rgba(255,255,255,0.5);"/>
+            Vote: <strong>${d.voteOption}</strong><br/>
+            Voting Power: ${formattedPower}
+          `);
         tooltip.style('left', (event.pageX + 10) + 'px').style('top', (event.pageY - 10) + 'px');
         d3.select(this).attr('stroke', '#000').attr('stroke-width', 1.5);
       })
