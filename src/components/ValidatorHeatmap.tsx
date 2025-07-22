@@ -209,6 +209,7 @@ export default function ValidatorHeatmap() {
     }
 
     const sortedValidators = finalFilteredValidators.slice();
+    const validatorDisplayValues = new Map<string, string>();
 
     if (validatorSortKey.startsWith('similarity') && searchTerm) {
       const selectedValidator = rawValidators.find(v => v.moniker === searchTerm);
@@ -216,12 +217,17 @@ export default function ValidatorHeatmap() {
         const similarityScores = new Map<string, number>();
         const selectedVotes = votesByValidator.get(selectedValidator.validator_address) || [];
         
-        const mode = validatorSortKey === 'similarity_common' ? 'common' : 'base';
+        const mode = validatorSortKey === 'similarity_common'
+          ? 'common'
+          : validatorSortKey === 'similarity_base'
+          ? 'base'
+          : 'comprehensive';
 
         for (const validator of sortedValidators) {
           const targetVotes = votesByValidator.get(validator.validator_address) || [];
           const score = calculateSimilarity(selectedVotes, targetVotes, proposalSet, countNoVoteAsParticipation, mode);
           similarityScores.set(validator.validator_address, score);
+          validatorDisplayValues.set(validator.validator_address, `(${(score * 100).toFixed(0)}%)`);
         }
 
         sortedValidators.sort((a, b) => {
@@ -237,6 +243,9 @@ export default function ValidatorHeatmap() {
       sortedValidators.sort((a, b) => (a.moniker || '').localeCompare(b.moniker || ''));
     } else if (validatorSortKey === 'votingPower') {
       sortedValidators.sort((a, b) => (b.avgPower || 0) - (a.avgPower || 0));
+      for (const validator of sortedValidators) {
+        validatorDisplayValues.set(validator.validator_address, `(${( (validator.avgPower || 0) * 100).toFixed(1)}%)`);
+      }
     } else { // Default to 'voteCount'
       const validatorVoteCounts = new Map<string, number>();
       for (const vote of rawVotes) {
@@ -248,9 +257,19 @@ export default function ValidatorHeatmap() {
         }
       }
       sortedValidators.sort((a, b) => (validatorVoteCounts.get(b.validator_address) || 0) - (validatorVoteCounts.get(a.validator_address) || 0));
+      for (const validator of sortedValidators) {
+        const count = validatorVoteCounts.get(validator.validator_address) || 0;
+        validatorDisplayValues.set(validator.validator_address, `(${count})`);
+      }
     }
     
-    const validators = sortedValidators.map((v, index) => ({ address: v.validator_address, name: v.moniker || 'Unknown', index, isPinnedAndFilteredOut: v.isPinnedAndFilteredOut }))
+    const validators = sortedValidators.map((v, index) => ({ 
+      address: v.validator_address,
+      moniker: v.moniker || 'Unknown',
+      displayName: `${v.moniker || 'Unknown'} ${validatorDisplayValues.get(v.validator_address) || ''}`.trim(),
+      index, 
+      isPinnedAndFilteredOut: v.isPinnedAndFilteredOut 
+    }));
 
     const proposalsWithTally = filteredProposals
       .sort((a, b) => {
@@ -328,27 +347,28 @@ export default function ValidatorHeatmap() {
       .style('opacity', 0)
       .remove();
 
-    validatorLabels.enter()
+    const mergedLabels = validatorLabels.enter()
       .append('text')
       .attr('class', 'validator-label')
       .attr('x', -10)
-      .attr('y', (d: any) => d.index * cellHeight + cellHeight / 2)
       .attr('dy', '0.35em')
       .attr('text-anchor', 'end')
       .style('font-size', `${Math.max(8, cellHeight * 0.7)}px`)
       .style('cursor', 'pointer')
       .on('click', (event, d: any) => {
-        if (searchTermRef.current === d.name) {
+        if (searchTermRef.current === d.moniker) {
           setSearchTerm('');
         } else {
-          setSearchTerm(d.name);
+          setSearchTerm(d.moniker);
         }
       })
       .style('opacity', 0)
-      .text((d: any) => d.name.slice(0, 25))
-      .merge(validatorLabels as any)
+      .merge(validatorLabels as any);
+      
+    mergedLabels
       .transition().duration(DURATION)
       .attr('y', (d: any) => d.index * cellHeight + cellHeight / 2)
+      .text((d: any) => d.displayName.slice(0, 35))
       .style('opacity', 1);
 
     // Cells
@@ -400,7 +420,7 @@ export default function ValidatorHeatmap() {
           .style('padding', '8px').style('border-radius', '4px').style('font-size', '12px')
           .style('pointer-events', 'none').style('z-index', '1000')
           .style('max-width', '300px').style('white-space', 'normal')
-          .html(`<strong>${validator.name}</strong><br/>${proposal.title}<br/>Vote: ${d.voteOption}`);
+          .html(`<strong>${validator.displayName}</strong><br/>${proposal.title}<br/>Vote: ${d.voteOption}`);
         tooltip.style('left', (event.pageX + 10) + 'px').style('top', (event.pageY - 10) + 'px');
         d3.select(this).attr('stroke', '#000').attr('stroke-width', 1.5);
       })
@@ -484,11 +504,17 @@ export default function ValidatorHeatmap() {
     const lowercasedSearchTerm = searchTerm.toLowerCase()
 
     svg.selectAll('.validator-label')
-      .style('font-weight', d => ((d as { name: string }).name.toLowerCase() === lowercasedSearchTerm && searchTerm) ? 'bold' : 'normal')
+      .style('font-weight', d => {
+        const validator = d as any;
+        if (!validator || !validator.moniker) return 'normal';
+        return (validator.moniker.toLowerCase() === lowercasedSearchTerm && searchTerm) ? 'bold' : 'normal'
+      })
       .style('fill', d => {
-        const validator = d as ValidatorWithAvgPower;
+        const validator = d as any;
+        if (!validator || !validator.moniker) return 'black';
+        
         let fillColor = 'black';
-        if (searchTerm && validator.name.toLowerCase() === lowercasedSearchTerm) {
+        if (searchTerm && validator.moniker.toLowerCase() === lowercasedSearchTerm) {
           fillColor = validator.isPinnedAndFilteredOut ? 'orange' : 'blue';
         }
         return fillColor;
