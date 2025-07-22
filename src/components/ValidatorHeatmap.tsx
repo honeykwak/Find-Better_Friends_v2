@@ -246,6 +246,11 @@ export default function ValidatorHeatmap() {
       for (const validator of sortedValidators) {
         validatorDisplayValues.set(validator.validator_address, `(${( (validator.avgPower || 0) * 100).toFixed(1)}%)`);
       }
+    } else if (validatorSortKey === 'totalVotingPower') {
+      sortedValidators.sort((a, b) => (b.totalPower || 0) - (a.totalPower || 0));
+      for (const validator of sortedValidators) {
+        validatorDisplayValues.set(validator.validator_address, `(${(validator.totalPower || 0).toLocaleString()})`);
+      }
     } else { // Default to 'voteCount'
       const validatorVoteCounts = new Map<string, number>();
       for (const vote of rawVotes) {
@@ -551,6 +556,13 @@ export default function ValidatorHeatmap() {
         </div>
         <div className="flex items-center gap-4">
           <div className="flex items-center bg-gray-100 rounded-lg p-1">
+            <button 
+              onClick={() => setValidatorSortKey('totalVotingPower')} 
+              className={`px-3 py-2 text-xs font-medium rounded-md whitespace-nowrap ${validatorSortKey === 'totalVotingPower' ? 'bg-white text-gray-800 shadow-sm' : 'text-gray-500'}`}
+              title="Sort by total voting power"
+            >
+              Total Voting Power
+            </button>
             <button 
               onClick={() => setValidatorSortKey('votingPower')} 
               className={`px-3 py-2 text-xs font-medium rounded-md whitespace-nowrap ${validatorSortKey === 'votingPower' ? 'bg-white text-gray-800 shadow-sm' : 'text-gray-500'}`}

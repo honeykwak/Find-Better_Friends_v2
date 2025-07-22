@@ -6,6 +6,7 @@ export type { Validator };
 // Validator type with added optional properties for derived data
 export interface ValidatorWithDerivedData extends Validator {
   avgPower?: number;
+  totalPower?: number;
   participationRate?: number;
 }
 
@@ -25,7 +26,7 @@ export interface TopicNode {
   voteDistribution: Record<string, number>
 }
 
-export type ValidatorSortKey = 'voteCount' | 'name' | 'votingPower' | 'similarity_common' | 'similarity_base';
+export type ValidatorSortKey = 'voteCount' | 'name' | 'votingPower' | 'totalVotingPower' | 'similarity_common' | 'similarity_base' | 'similarity_comprehensive';
 
 // 전역 상태 인터페이스
 interface GlobalStore {
@@ -91,7 +92,7 @@ export const useGlobalStore = create<GlobalStore>((set, get) => ({
   votingPowerRange: [0, 100],
   avgVotingPowerDynamicRange: [0, 100],
   categoryVisualizationMode: 'voteCount',
-  validatorSortKey: 'votingPower',
+  validatorSortKey: 'totalVotingPower',
   countNoVoteAsParticipation: true,
   loading: true,
   error: null,
@@ -116,7 +117,7 @@ export const useGlobalStore = create<GlobalStore>((set, get) => ({
         participationRateRange: [0, 100],
         votingPowerFilterMode: 'ratio',
         votingPowerRange: [0, 100],
-        validatorSortKey: 'votingPower',
+        validatorSortKey: 'totalVotingPower',
       });
       get().recalculateValidatorMetrics();
     } catch (err: any) {
@@ -186,6 +187,7 @@ export const useGlobalStore = create<GlobalStore>((set, get) => ({
     const newValidatorsWithDerivedData = validators.map(v => ({
       ...v,
       avgPower: getAveragePower(v.validator_address),
+      totalPower: validatorPowerSum.get(v.validator_address) || 0,
       participationRate: getParticipationRate(v.validator_address)
     }));
 
