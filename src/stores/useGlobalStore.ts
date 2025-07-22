@@ -96,7 +96,7 @@ export const useGlobalStore = create<GlobalStore>((set, get) => ({
   votingPowerRange: [0, 100],
   avgVotingPowerDynamicRange: [0, 100],
   totalVotingPowerDynamicRange: [0, 100],
-  categoryVisualizationMode: 'voteCount',
+  categoryVisualizationMode: 'votePower',
   validatorSortKey: 'totalVotingPower',
   countNoVoteAsParticipation: true,
   loading: true,
@@ -381,11 +381,47 @@ export const useGlobalStore = create<GlobalStore>((set, get) => ({
   },
 
   getFilteredProposals: () => {
-    const { getProposalsFilteredByRate, selectedTopics } = get();
+    const { getProposalsFilteredByRate, selectedTopics, votes, categoryVisualizationMode } = get();
     const proposalsFilteredByRate = getProposalsFilteredByRate();
 
-    if (selectedTopics.length === 0) return proposalsFilteredByRate;
-    return proposalsFilteredByRate.filter(p => selectedTopics.includes(p.topic));
+    const proposalsWithDistribution = proposalsFilteredByRate.map(p => {
+      let voteDistribution: { [key: string]: number } = {};
+      if (categoryVisualizationMode === 'votePower') {
+        const proposalVotes = votes.filter(v => v.proposal_id === p.proposal_id);
+        for (const vote of proposalVotes) {
+          const upperVoteOption = vote.vote_option.toUpperCase();
+          let key: string;
+          if (upperVoteOption.includes('YES')) {
+            key = 'YES';
+          } else if (upperVoteOption.includes('NO_WITH_VETO')) {
+            key = 'NO_WITH_VETO';
+          } else if (upperVoteOption.includes('NO_VOTE')) {
+            key = 'NO_VOTE';
+          } else if (upperVoteOption.includes('NO')) {
+            key = 'NO';
+          } else if (upperVoteOption.includes('ABSTAIN')) {
+            key = 'ABSTAIN';
+          } else {
+            continue; // Skip unknown vote options
+          }
+          
+          const power = typeof vote.voting_power === 'string' ? parseFloat(vote.voting_power) : vote.voting_power;
+          if (!isNaN(power)) {
+            voteDistribution[key] = (voteDistribution[key] || 0) + power;
+          }
+        }
+      } else { // 'voteCount'
+        const tally = p.final_tally_result || {};
+        for (const voteOption in tally) {
+          const key = voteOption.replace('_count', '').toUpperCase();
+          voteDistribution[key] = tally[voteOption as keyof typeof tally] || 0;
+        }
+      }
+      return { ...p, voteDistribution };
+    });
+
+    if (selectedTopics.length === 0) return proposalsWithDistribution;
+    return proposalsWithDistribution.filter(p => selectedTopics.includes(p.topic));
   },
 
   getFilteredValidators: () => {

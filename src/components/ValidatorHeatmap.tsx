@@ -92,6 +92,7 @@ export default function ValidatorHeatmap() {
     participationRateRange,
     countNoVoteAsParticipation,
     recalculateValidatorMetrics,
+    categoryVisualizationMode,
   } = useGlobalStore()
 
   const searchTermRef = useRef(searchTerm);
@@ -295,12 +296,10 @@ export default function ValidatorHeatmap() {
         if (!timeA || !timeB) return 0;
         return timeA - timeB;
       })
-      .map((p: Proposal, index: number) => {
-        const tally = p.final_tally_result || {};
-        const totalVotes = Object.values(tally).reduce((sum, count) => sum + count, 0);
+      .map((p: Proposal & { voteDistribution: { [key: string]: number } }, index: number) => {
+        const totalVotes = Object.values(p.voteDistribution).reduce((sum, count) => sum + count, 0);
         const tallyRatio = VOTE_ORDER.reduce((acc, key) => {
-          const voteKey = `${key.toLowerCase()}_count` as keyof typeof tally;
-          acc[key] = totalVotes > 0 ? (tally[voteKey] || 0) / totalVotes : 0;
+          acc[key] = totalVotes > 0 ? (p.voteDistribution[key] || 0) / totalVotes : 0;
           return acc;
         }, {} as { [key: string]: number });
 
@@ -327,7 +326,7 @@ export default function ValidatorHeatmap() {
       }))
 
     return { validators, proposals: proposalsWithTally, votes }
-  }, [getFilteredProposals, selectedTopics, validatorsWithDerivedData, rawVotes, validatorSortKey, searchTerm, rawValidators, votingPowerMetric, votingPowerDisplayMode, votingPowerRange, participationRateRange, countNoVoteAsParticipation])
+  }, [getFilteredProposals, selectedTopics, validatorsWithDerivedData, rawVotes, validatorSortKey, searchTerm, rawValidators, votingPowerMetric, votingPowerDisplayMode, votingPowerRange, participationRateRange, countNoVoteAsParticipation, categoryVisualizationMode])
 
   // Main D3 rendering effect
   useEffect(() => {

@@ -261,7 +261,7 @@ export default function FilterPanel() {
           <div className="flex items-center justify-between mb-3">
             <h3 className="text-lg font-semibold text-gray-900">Proposal</h3>
             <ToggleButtonGroup
-              options={[{value: 'voteCount', label: 'Vote Count'}, {value: 'votePower', label: 'Vote Power'}]}
+              options={[{value: 'votePower', label: 'Vote Power'}, {value: 'voteCount', label: 'Vote Count'}]}
               selectedValue={categoryVisualizationMode}
               onChange={(v) => setCategoryVisualizationMode(v as 'voteCount' | 'votePower')}
             />
@@ -345,11 +345,18 @@ export default function FilterPanel() {
           <div className="mb-4 space-y-3">
             <div className="flex items-center justify-between">
               <label className="text-sm font-medium text-gray-900">Voting Power</label>
-              <ToggleButtonGroup
-                options={[{value: 'total', label: 'Total'}, {value: 'avg', label: 'Avg'}]}
-                selectedValue={votingPowerMetric}
-                onChange={(v) => setVotingPowerMetric(v as 'total' | 'avg')}
-              />
+              <div className="flex items-center space-x-1">
+                <ToggleButtonGroup
+                  options={[{value: 'total', label: 'Total'}, {value: 'avg', label: 'Avg'}]}
+                  selectedValue={votingPowerMetric}
+                  onChange={(v) => setVotingPowerMetric(v as 'total' | 'avg')}
+                />
+                <ToggleButtonGroup
+                  options={[{value: 'ratio', label: 'Ratio'}, {value: 'rank', label: 'Rank'}]}
+                  selectedValue={votingPowerDisplayMode}
+                  onChange={(v) => setVotingPowerDisplayMode(v as 'ratio' | 'rank')}
+                />
+              </div>
             </div>
             <RangeSlider
               label=""
@@ -364,13 +371,7 @@ export default function FilterPanel() {
               }}
               step={votingPowerDisplayMode === 'ratio' ? ((votingPowerMetric === 'avg' ? avgVotingPowerDynamicRange[1] : totalVotingPowerDynamicRange[1]) - (votingPowerMetric === 'avg' ? avgVotingPowerDynamicRange[0] : totalVotingPowerDynamicRange[0])) / 1000 : 1}
               distributionData={votingPowerMetric === 'avg' ? avgVotingPowerDistribution : totalVotingPowerDistribution}
-            >
-              <ToggleButtonGroup
-                options={[{value: 'ratio', label: 'Ratio'}, {value: 'rank', label: 'Rank'}]}
-                selectedValue={votingPowerDisplayMode}
-                onChange={(v) => setVotingPowerDisplayMode(v as 'ratio' | 'rank')}
-              />
-            </RangeSlider>
+            />
           </div>
           <div className="mb-4">
             <div className="flex justify-between items-center mb-2">
