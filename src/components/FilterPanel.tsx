@@ -362,10 +362,29 @@ export default function FilterPanel() {
               label=""
               min={votingPowerDisplayMode === 'ratio' ? (votingPowerMetric === 'avg' ? avgVotingPowerDynamicRange[0] : totalVotingPowerDynamicRange[0]) : 1}
               max={votingPowerDisplayMode === 'ratio' ? (votingPowerMetric === 'avg' ? avgVotingPowerDynamicRange[1] : totalVotingPowerDynamicRange[1]) : validators.length || 1}
-              values={votingPowerRange}
-              onChange={setVotingPowerRange}
+              values={
+                votingPowerDisplayMode === 'rank'
+                  ? [
+                      (validators.length || 1) - votingPowerRange[1] + 1,
+                      (validators.length || 1) - votingPowerRange[0] + 1,
+                    ]
+                  : votingPowerRange
+              }
+              onChange={(newValues) => {
+                if (votingPowerDisplayMode === 'rank') {
+                  const total = validators.length || 1;
+                  const newMinRank = total - newValues[1] + 1;
+                  const newMaxRank = total - newValues[0] + 1;
+                  setVotingPowerRange([newMinRank, newMaxRank]);
+                } else {
+                  setVotingPowerRange(newValues);
+                }
+              }}
               formatValue={(v) => {
-                if (votingPowerDisplayMode === 'rank') return `${Math.round(v)}`;
+                if (votingPowerDisplayMode === 'rank') {
+                  const total = validators.length || 1;
+                  return `${total - Math.round(v) + 1}`;
+                }
                 if (votingPowerMetric === 'avg') return `${(v * 100).toFixed(3)}%`;
                 return v.toLocaleString(undefined, { maximumFractionDigits: 6 });
               }}
