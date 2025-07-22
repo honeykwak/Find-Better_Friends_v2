@@ -10,11 +10,11 @@ import type { Vote } from './dataLoader';
  * @returns A similarity score from 0 (no matches) to 1 (all matches).
  */
 export function calculateSimilarity(
-  validatorAVotes: Vote[], // Base validator for 'base' mode
+  validatorAVotes: Vote[], // Base validator for 'base' and 'comprehensive' modes
   validatorBVotes: Vote[],
   proposalIds: Set<string>,
   countNoVoteAsParticipation: boolean,
-  mode: 'common' | 'base' = 'common'
+  mode: 'common' | 'base' | 'comprehensive' = 'common'
 ): number {
   if (proposalIds.size === 0) {
     return 0;
@@ -24,8 +24,19 @@ export function calculateSimilarity(
   const votesBByProposal = new Map(validatorBVotes.map(v => [v.proposal_id, v.vote_option]));
 
   let matchCount = 0;
-  let comparableProposalsCount = 0;
 
+  if (mode === 'comprehensive') {
+    for (const proposalId of proposalIds) {
+      const voteA = votesAByProposal.get(proposalId) || 'NOT_VOTED';
+      const voteB = votesBByProposal.get(proposalId) || 'NOT_VOTED';
+      if (voteA === voteB) {
+        matchCount++;
+      }
+    }
+    return proposalIds.size > 0 ? matchCount / proposalIds.size : 0;
+  }
+
+  let comparableProposalsCount = 0;
   for (const proposalId of proposalIds) {
     const voteA = votesAByProposal.get(proposalId);
     const voteB = votesBByProposal.get(proposalId);
@@ -35,16 +46,13 @@ export function calculateSimilarity(
 
     let shouldCompare = false;
     if (mode === 'common') {
-      // Compare only when both have voted (considering countNoVoteAsParticipation)
       shouldCompare = isAVoting && isBVoting;
     } else { // mode === 'base'
-      // Compare whenever the base validator (A) has voted
       shouldCompare = isAVoting;
     }
 
     if (shouldCompare) {
       comparableProposalsCount++;
-      // Use 'NO_VOTE' for comparison if countNoVoteAsParticipation is true and a vote is missing
       const finalVoteA = voteA || 'NO_VOTE';
       const finalVoteB = voteB || 'NO_VOTE';
       if (finalVoteA === finalVoteB) {

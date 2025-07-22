@@ -547,6 +547,14 @@ export default function ValidatorHeatmap() {
               Name
             </button>
             <button 
+              onClick={() => setValidatorSortKey('similarity_comprehensive')} 
+              className={`px-3 py-2 text-xs font-medium rounded-md whitespace-nowrap ${validatorSortKey === 'similarity_comprehensive' ? 'bg-white text-gray-800 shadow-sm' : 'text-gray-500'} disabled:opacity-50 disabled:cursor-not-allowed`}
+              title="Sort by similarity including non-participation"
+              disabled={!searchTerm}
+            >
+              Similarity (Comprehensive)
+            </button>
+            <button 
               onClick={() => setValidatorSortKey('similarity_base')} 
               className={`px-3 py-2 text-xs font-medium rounded-md whitespace-nowrap ${validatorSortKey === 'similarity_base' ? 'bg-white text-gray-800 shadow-sm' : 'text-gray-500'} disabled:opacity-50 disabled:cursor-not-allowed`}
               title="Sort by similarity based on the selected validator's votes"

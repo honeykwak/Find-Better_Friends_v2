@@ -275,7 +275,7 @@ export const useGlobalStore = create<GlobalStore>((set, get) => ({
   },
   setSearchTerm: (term: string) => {
     if (term) {
-      set({ searchTerm: term, validatorSortKey: 'similarity_base' });
+      set({ searchTerm: term, validatorSortKey: 'similarity_comprehensive' });
     } else {
       set({ searchTerm: term, validatorSortKey: 'votingPower' });
     }
