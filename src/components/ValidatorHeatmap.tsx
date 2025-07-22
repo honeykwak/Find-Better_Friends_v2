@@ -434,7 +434,9 @@ export default function ValidatorHeatmap() {
         if (!validator || !proposal) return;
 
         const power = typeof d.votingPower === 'string' ? parseFloat(d.votingPower) : d.votingPower;
-        const formattedPower = !isNaN(power) ? power.toLocaleString(undefined, { maximumFractionDigits: 2 }) : 'N/A';
+        const formattedPower = power != null && !isNaN(power) 
+          ? power.toLocaleString(undefined, { maximumFractionDigits: 2 }) 
+          : 'N/A';
 
         d3.select('body').selectAll('.heatmap-tooltip').remove();
         const tooltip = d3.select('body').append('div').attr('class', 'heatmap-tooltip')
