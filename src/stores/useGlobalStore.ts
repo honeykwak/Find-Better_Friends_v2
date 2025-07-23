@@ -160,84 +160,94 @@ export const useGlobalStore = create<GlobalStore>((set, get) => ({
     }
 
     const proposalIdToTimeMap = new Map<string, number>();
-    if (considerActivePeriodOnly) {
-      for (const p of filteredProposals) {
-        if (p.submit_time) {
-          proposalIdToTimeMap.set(p.proposal_id, new Date(Number(p.submit_time)).getTime());
-        }
+    filteredProposals.forEach(p => {
+      if (p.submit_time) {
+        proposalIdToTimeMap.set(p.proposal_id, new Date(Number(p.submit_time)).getTime());
       }
-    }
+    });
 
     const newValidatorsWithDerivedData = validators.map(v => {
-      const sum = validatorPowerSum.get(v.validator_address) || 0;
-      const count = validatorVoteCount.get(v.validator_address) || 0;
-      
-      let validatorVotesInFilter = votes.filter(vote => 
+      const validatorVotesInFilter = votes.filter(vote => 
         vote.validator_address === v.validator_address && 
         relevantProposalIds.has(vote.proposal_id)
       );
 
-      let proposalsForRate = [...filteredProposals];
-
-      if (!countNoVoteAsParticipation) {
-        const proposalsWithNoMeaningfulVotes = new Set<string>();
-        const proposalVoteOptions = new Map<string, Set<string>>();
-        
-        for (const vote of votes) {
-            if (relevantProposalIds.has(vote.proposal_id)) {
-                if (!proposalVoteOptions.has(vote.proposal_id)) {
-                    proposalVoteOptions.set(vote.proposal_id, new Set());
-                }
-                proposalVoteOptions.get(vote.proposal_id)!.add(vote.vote_option);
-            }
+      let firstVoteTime = Infinity;
+      validatorVotesInFilter.forEach(vote => {
+        const time = proposalIdToTimeMap.get(vote.proposal_id);
+        if (time && time < firstVoteTime) {
+          firstVoteTime = time;
         }
+      });
 
-        for (const proposal of proposalsForRate) {
-            const options = proposalVoteOptions.get(proposal.proposal_id);
-            if (!options || (options.size === 1 && options.has('NO_VOTE'))) {
-                proposalsWithNoMeaningfulVotes.add(proposal.proposal_id);
-            }
+      const votesInActivePeriod = firstVoteTime === Infinity 
+        ? [] 
+        : validatorVotesInFilter.filter(vote => {
+            const time = proposalIdToTimeMap.get(vote.proposal_id);
+            return time && time >= firstVoteTime;
+          });
+
+      let sumOfPower = 0;
+      let countOfVotes = 0;
+      let totalPowerAllTime = 0;
+
+      validatorVotesInFilter.forEach(vote => {
+        const power = typeof vote.voting_power === 'string' ? parseFloat(vote.voting_power) : vote.voting_power;
+        if (power && !isNaN(power)) {
+          totalPowerAllTime += power;
         }
-        
-        proposalsForRate = proposalsForRate.filter(p => !proposalsWithNoMeaningfulVotes.has(p.proposal_id));
-        validatorVotesInFilter = validatorVotesInFilter.filter(vote => vote.vote_option !== 'NO_VOTE');
-      }
-
-      const participationCount = new Set(validatorVotesInFilter.map(v => v.proposal_id)).size;
+      });
+      
+      votesInActivePeriod.forEach(vote => {
+        const power = typeof vote.voting_power === 'string' ? parseFloat(vote.voting_power) : vote.voting_power;
+        if (power && !isNaN(power)) {
+          sumOfPower += power;
+          countOfVotes++;
+        }
+      });
 
       let participationRate;
       if (considerActivePeriodOnly) {
-        const proposalsWithTime = proposalsForRate.filter(p => p.submit_time);
+        const proposalsWithTime = filteredProposals.filter(p => proposalIdToTimeMap.has(p.proposal_id));
         const proposalIdsWithTime = new Set(proposalsWithTime.map(p => p.proposal_id));
         const validatorVotesWithTime = validatorVotesInFilter.filter(vote => proposalIdsWithTime.has(vote.proposal_id));
         const timedParticipationCount = new Set(validatorVotesWithTime.map(v => v.proposal_id)).size;
 
-        let firstVoteTime = Infinity;
-        for (const vote of validatorVotesWithTime) {
-          const time = proposalIdToTimeMap.get(vote.proposal_id);
-          if (time && time < firstVoteTime) {
-            firstVoteTime = time;
-          }
-        }
-
         let relevantProposalCount = 0;
         if (firstVoteTime !== Infinity) {
           for (const p of proposalsWithTime) {
-            const time = proposalIdToTimeMap.get(p.proposal_id);
-            if (time && time >= firstVoteTime) {
+            const time = proposalIdToTimeMap.get(p.proposal_id)!;
+            if (time >= firstVoteTime) {
               relevantProposalCount++;
             }
           }
         }
         participationRate = relevantProposalCount > 0 ? (timedParticipationCount / relevantProposalCount) * 100 : 0;
       } else {
+        let proposalsForRate = [...filteredProposals];
+        if (!countNoVoteAsParticipation) {
+            const proposalsWithNoMeaningfulVotes = new Set<string>();
+            const proposalVoteOptions = new Map<string, Set<string>>();
+            for (const vote of votes) {
+                if (relevantProposalIds.has(vote.proposal_id)) {
+                    if (!proposalVoteOptions.has(vote.proposal_id)) proposalVoteOptions.set(vote.proposal_id, new Set());
+                    proposalVoteOptions.get(vote.proposal_id)!.add(vote.vote_option);
+                }
+            }
+            for (const proposal of proposalsForRate) {
+                const options = proposalVoteOptions.get(proposal.proposal_id);
+                if (!options || (options.size === 1 && options.has('NO_VOTE'))) proposalsWithNoMeaningfulVotes.add(proposal.proposal_id);
+            }
+            proposalsForRate = proposalsForRate.filter(p => !proposalsWithNoMeaningfulVotes.has(p.proposal_id));
+        }
+        const participationCount = new Set(validatorVotesInFilter.filter(v => v.vote_option !== 'NO_VOTE' || countNoVoteAsParticipation).map(v => v.proposal_id)).size;
         participationRate = proposalsForRate.length > 0 ? (participationCount / proposalsForRate.length) * 100 : 0;
       }
       
       return {
         ...v,
-        avgPower: count > 0 ? sum / count : 0,
-        totalPower: sum,
+        avgPower: countOfVotes > 0 ? sumOfPower / countOfVotes : 0,
+        totalPower: totalPowerAllTime,
         participationRate: participationRate,
       }
     });
