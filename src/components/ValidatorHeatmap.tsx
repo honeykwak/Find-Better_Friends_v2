@@ -339,6 +339,10 @@ export default function ValidatorHeatmap() {
 
     const DURATION = 500;
     const svg = d3.select(svgRef.current);
+    
+    // Clear SVG canvas completely before redrawing to prevent transition conflicts
+    svg.selectAll('*').remove();
+
     const { validators, proposals, votes } = heatmapData;
     const { cellWidth, cellHeight, margin, colors } = config;
 
@@ -660,7 +664,7 @@ export default function ValidatorHeatmap() {
         </div>
       </div>
     </div>
-      <div ref={containerRef} className="flex-1 overflow-auto">
+      <div ref={containerRef} className="flex-1 overflow-auto" key={useGlobalStore.getState().selectedChain}>
         <svg ref={svgRef} className="block"></svg>
       </div>
     </div>
