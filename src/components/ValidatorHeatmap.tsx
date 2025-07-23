@@ -126,13 +126,13 @@ export default function ValidatorHeatmap() {
     if (votingPowerDisplayMode === 'ratio') {
       const [minPower, maxPower] = votingPowerRange;
       filteredByVotingPower = currentValidators.filter(v => {
-        const power = votingPowerMetric === 'avg' ? (v.avgPower || 0) : (v.totalPower || 0);
+        const power = v.avgPower || 0;
         return power >= minPower && power <= maxPower;
       });
     } else { // 'rank'
       const rankedValidators = [...currentValidators].sort((a, b) => {
-        const powerA = votingPowerMetric === 'avg' ? (a.avgPower || 0) : (a.totalPower || 0);
-        const powerB = votingPowerMetric === 'avg' ? (b.avgPower || 0) : (b.totalPower || 0);
+        const powerA = a.avgPower || 0;
+        const powerB = b.avgPower || 0;
         return powerB - powerA;
       });
       const [minRank, maxRank] = votingPowerRange;
@@ -308,6 +308,7 @@ export default function ValidatorHeatmap() {
           title: p.title, 
           index, 
           status: p.status,
+          category: p.topic_v2_unique, // Add category here
           ...tallyRatio // Spread tallyRatio properties into the main object
         };
       });
@@ -439,7 +440,7 @@ export default function ValidatorHeatmap() {
 
         const power = typeof d.votingPower === 'string' ? parseFloat(d.votingPower) : d.votingPower;
         const formattedPower = power != null && !isNaN(power) 
-          ? power.toLocaleString(undefined, { maximumFractionDigits: 2 }) 
+          ? power.toLocaleString(undefined, { maximumFractionDigits: 6 }) 
           : 'N/A';
 
         d3.select('body').selectAll('.heatmap-tooltip').remove();
@@ -451,6 +452,7 @@ export default function ValidatorHeatmap() {
           .html(`
             <strong>${validator.moniker}</strong><br/>
             Proposal #${d.proposalId}: ${proposal.title}<br/>
+            Category: ${proposal.category}<br/>
             <hr style="margin: 4px 0; border-color: rgba(255,255,255,0.5);"/>
             Vote: <strong>${d.voteOption}</strong><br/>
             Voting Power: ${formattedPower}

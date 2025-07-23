@@ -101,19 +101,16 @@ export default function FilterPanel() {
     approvalRateRange,
     categoryVisualizationMode,
     validators,
-    votingPowerMetric,
     votingPowerDisplayMode,
     votingPowerRange,
     avgVotingPowerDynamicRange,
-    totalVotingPowerDynamicRange,
     participationRateRange,
     participationRateDynamicRange,
     countNoVoteAsParticipation,
-    excludeAbstainNoVote, // <-- Import new state
+    excludeAbstainNoVote,
     setSelectedCategories,
     setSelectedTopics,
     setApprovalRateRange,
-    setVotingPowerMetric,
     setVotingPowerDisplayMode,
     setVotingPowerRange,
     setSelectedChain,
@@ -124,7 +121,7 @@ export default function FilterPanel() {
     proposals,
     setParticipationRateRange,
     setCountNoVoteAsParticipation,
-    setExcludeAbstainNoVote, // <-- Import new action
+    setExcludeAbstainNoVote,
   } = store;
 
   const [hoveredCategory, setHoveredCategory] = useState<string | null>(null)
@@ -137,7 +134,6 @@ export default function FilterPanel() {
 
   const yesRateDistribution = useMemo(() => getYesRateDistribution(store), [store.proposals, store.votes, categoryVisualizationMode, store.excludeAbstainNoVote]);
   const avgVotingPowerDistribution = useMemo(() => getAvgVotingPowerDistribution(store), [store.validatorsWithDerivedData]);
-  const totalVotingPowerDistribution = useMemo(() => getTotalVotingPowerDistribution(store), [store.validatorsWithDerivedData]);
   const participationRateDistribution = useMemo(() => getParticipationRateDistribution(store), [store.validatorsWithDerivedData, countNoVoteAsParticipation]);
 
   const resetFilters = useCallback(() => {
@@ -147,9 +143,8 @@ export default function FilterPanel() {
     setSearchTerm('')
     setApprovalRateRange([0, 100])
     setParticipationRateRange([0, 100])
-    setVotingPowerMetric('total');
     setVotingPowerDisplayMode('ratio');
-  }, [setSelectedCategories, setSelectedTopics, setSearchTerm, setApprovalRateRange, setParticipationRateRange, setVotingPowerMetric, setVotingPowerDisplayMode])
+  }, [setSelectedCategories, setSelectedTopics, setSearchTerm, setApprovalRateRange, setParticipationRateRange, setVotingPowerDisplayMode])
 
   const chains = useMemo(() => getChains(), [getChains])
   const filteredCategoryHierarchy = useMemo(() => getFilteredCategoryHierarchy(), [proposals, approvalRateRange, categoryVisualizationMode, getFilteredCategoryHierarchy]);
@@ -358,13 +353,8 @@ export default function FilterPanel() {
           </div>
           <div className="mb-4 space-y-3">
             <div className="flex items-center justify-between">
-              <label className="text-sm font-medium text-gray-900">Voting Power</label>
+              <label className="text-sm font-medium text-gray-900">Avg. Voting Power</label>
               <div className="flex items-center space-x-1">
-                <ToggleButtonGroup
-                  options={[{value: 'total', label: 'Total'}, {value: 'avg', label: 'Avg'}]}
-                  selectedValue={votingPowerMetric}
-                  onChange={(v) => setVotingPowerMetric(v as 'total' | 'avg')}
-                />
                 <ToggleButtonGroup
                   options={[{value: 'ratio', label: 'Ratio'}, {value: 'rank', label: 'Rank'}]}
                   selectedValue={votingPowerDisplayMode}
@@ -374,8 +364,8 @@ export default function FilterPanel() {
             </div>
             <RangeSlider
               label=""
-              min={votingPowerDisplayMode === 'ratio' ? (votingPowerMetric === 'avg' ? avgVotingPowerDynamicRange[0] : totalVotingPowerDynamicRange[0]) : 1}
-              max={votingPowerDisplayMode === 'ratio' ? (votingPowerMetric === 'avg' ? avgVotingPowerDynamicRange[1] : totalVotingPowerDynamicRange[1]) : validators.length || 1}
+              min={votingPowerDisplayMode === 'ratio' ? avgVotingPowerDynamicRange[0] : 1}
+              max={votingPowerDisplayMode === 'ratio' ? avgVotingPowerDynamicRange[1] : validators.length || 1}
               values={
                 votingPowerDisplayMode === 'rank'
                   ? [
@@ -399,11 +389,10 @@ export default function FilterPanel() {
                   const total = validators.length || 1;
                   return `${total - Math.round(v) + 1}`;
                 }
-                if (votingPowerMetric === 'avg') return `${(v * 100).toFixed(3)}%`;
-                return v.toLocaleString(undefined, { maximumFractionDigits: 6 });
+                return `${(v * 100).toFixed(3)}%`;
               }}
-              step={votingPowerDisplayMode === 'ratio' ? ((votingPowerMetric === 'avg' ? avgVotingPowerDynamicRange[1] : totalVotingPowerDynamicRange[1]) - (votingPowerMetric === 'avg' ? avgVotingPowerDynamicRange[0] : totalVotingPowerDynamicRange[0])) / 1000 : 1}
-              distributionData={votingPowerMetric === 'avg' ? avgVotingPowerDistribution : totalVotingPowerDistribution}
+              step={votingPowerDisplayMode === 'ratio' ? (avgVotingPowerDynamicRange[1] - avgVotingPowerDynamicRange[0]) / 1000 : 1}
+              distributionData={avgVotingPowerDistribution}
             />
           </div>
           <div className="mb-4">
