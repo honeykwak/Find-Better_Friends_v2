@@ -398,15 +398,26 @@ export default function FilterPanel() {
           <div className="mb-4">
             <div className="flex justify-between items-center mb-2">
               <label className="block text-sm font-medium text-gray-900">Participation Rate</label>
-              <label className="flex items-center space-x-2 text-xs text-gray-500">
-                <input
-                  type="checkbox"
-                  checked={countNoVoteAsParticipation}
-                  onChange={(e) => setCountNoVoteAsParticipation(e.target.checked)}
-                  className="form-checkbox h-3 w-3 text-blue-600 rounded"
-                />
-                <span>Include 'NO_VOTE'</span>
-              </label>
+              <div className="flex flex-col space-y-1">
+                <label className="flex items-center space-x-2 text-xs text-gray-500 cursor-pointer">
+                  <input
+                    type="checkbox"
+                    checked={countNoVoteAsParticipation}
+                    onChange={(e) => setCountNoVoteAsParticipation(e.target.checked)}
+                    className="form-checkbox h-3 w-3 text-blue-600 rounded"
+                  />
+                  <span>Include 'NO_VOTE'</span>
+                </label>
+                <label className="flex items-center space-x-2 text-xs text-gray-500 cursor-pointer">
+                  <input
+                    type="checkbox"
+                    checked={store.considerActivePeriodOnly}
+                    onChange={(e) => store.setConsiderActivePeriodOnly(e.target.checked)}
+                    className="form-checkbox h-3 w-3 text-blue-600 rounded"
+                  />
+                  <span>Consider active period only</span>
+                </label>
+              </div>
             </div>
             <RangeSlider
               label=""
