@@ -109,6 +109,7 @@ export default function FilterPanel() {
     participationRateRange,
     participationRateDynamicRange,
     countNoVoteAsParticipation,
+    excludeAbstainNoVote, // <-- Import new state
     setSelectedCategories,
     setSelectedTopics,
     setApprovalRateRange,
@@ -123,6 +124,7 @@ export default function FilterPanel() {
     proposals,
     setParticipationRateRange,
     setCountNoVoteAsParticipation,
+    setExcludeAbstainNoVote, // <-- Import new action
   } = store;
 
   const [hoveredCategory, setHoveredCategory] = useState<string | null>(null)
@@ -133,7 +135,7 @@ export default function FilterPanel() {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false)
   const searchRef = useRef<HTMLDivElement>(null)
 
-  const yesRateDistribution = useMemo(() => getYesRateDistribution(store), [store.proposals, store.votes, categoryVisualizationMode]);
+  const yesRateDistribution = useMemo(() => getYesRateDistribution(store), [store.proposals, store.votes, categoryVisualizationMode, store.excludeAbstainNoVote]);
   const avgVotingPowerDistribution = useMemo(() => getAvgVotingPowerDistribution(store), [store.validatorsWithDerivedData]);
   const totalVotingPowerDistribution = useMemo(() => getTotalVotingPowerDistribution(store), [store.validatorsWithDerivedData]);
   const participationRateDistribution = useMemo(() => getParticipationRateDistribution(store), [store.validatorsWithDerivedData, countNoVoteAsParticipation]);
@@ -267,8 +269,20 @@ export default function FilterPanel() {
             />
           </div>
           <div className="mb-4">
+            <div className="flex justify-between items-center mb-2">
+              <label className="block text-sm font-medium text-gray-900">Yes Rate</label>
+              <label className="flex items-center space-x-2 text-xs text-gray-500 cursor-pointer">
+                <input
+                  type="checkbox"
+                  checked={excludeAbstainNoVote}
+                  onChange={(e) => setExcludeAbstainNoVote(e.target.checked)}
+                  className="form-checkbox h-3 w-3 text-blue-600 rounded focus:ring-blue-500"
+                />
+                <span>Exclude Abstain/No Vote</span>
+              </label>
+            </div>
             <RangeSlider
-              label="Yes Rate"
+              label=""
               min={0}
               max={100}
               values={approvalRateRange}

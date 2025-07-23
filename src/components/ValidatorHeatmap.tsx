@@ -308,7 +308,7 @@ export default function ValidatorHeatmap() {
           title: p.title, 
           index, 
           status: p.status,
-          tallyRatio
+          ...tallyRatio // Spread tallyRatio properties into the main object
         };
       });
 
@@ -464,20 +464,31 @@ export default function ValidatorHeatmap() {
     const proposalLabels = g.selectAll('.proposal-label')
       .data(proposals, (d: any) => d.id);
 
+    // EXIT: Fade out in place
     proposalLabels.exit()
       .transition().duration(DURATION)
       .style('opacity', 0)
       .remove();
 
+    // UPDATE: Slide to new position
+    proposalLabels
+      .transition().duration(DURATION)
+      .attr('x', (d: any) => d.index * cellWidth + cellWidth / 2)
+      .attr('y', proposalLabelY)
+      .attr('transform', (d: any) => `rotate(-60, ${d.index * cellWidth + cellWidth / 2}, ${proposalLabelY})`)
+      .text((d: any) => {
+        const title = d.title;
+        const truncated = title.length > 40 ? title.slice(0, 40) + '...' : title;
+        return `${truncated} ${d.status.includes('PASSED') ? '✓' : '✗'}`;
+      });
+
+    // ENTER: Appear in final place and fade in
     proposalLabels.enter()
       .append('text')
       .attr('class', 'proposal-label')
       .style('cursor', 'pointer')
       .on('click', (event, d: any) => setSelectedProposal(d.id))
       .attr('text-anchor', 'start')
-      .style('opacity', 0)
-      .merge(proposalLabels as any)
-      .transition().duration(DURATION)
       .attr('x', (d: any) => d.index * cellWidth + cellWidth / 2)
       .attr('y', proposalLabelY)
       .attr('transform', (d: any) => `rotate(-60, ${d.index * cellWidth + cellWidth / 2}, ${proposalLabelY})`)
@@ -488,6 +499,8 @@ export default function ValidatorHeatmap() {
         const truncated = title.length > 40 ? title.slice(0, 40) + '...' : title;
         return `${truncated} ${d.status.includes('PASSED') ? '✓' : '✗'}`;
       })
+      .style('opacity', 0)
+      .transition().duration(DURATION)
       .style('opacity', 1);
 
     // Summary Chart (with transition)
@@ -498,7 +511,7 @@ export default function ValidatorHeatmap() {
 
     const summaryChartYScale = d3.scaleLinear().domain([0, 1]).range([SUMMARY_CHART_HEIGHT, 0]);
     const stack = d3.stack().keys(VOTE_ORDER);
-    const stackedData = stack(proposals.map((p: any) => p.tallyRatio));
+    const stackedData = stack(proposals); // Use the modified proposals array directly
 
     summaryG.selectAll('.bar-series')
       .data(stackedData)
@@ -506,21 +519,25 @@ export default function ValidatorHeatmap() {
       .attr('class', 'bar-series')
       .attr('fill', (d: any) => getVoteColor(d.key))
       .selectAll('rect')
-      .data(d => d)
+      .data(d => d, (d: any) => d.data.id) // Use proposal ID as the key
       .join(
         enter => enter.append('rect')
-          .attr('x', (d, i) => proposals[i].index * cellWidth)
+          .attr('x', d => d.data.index * cellWidth + (cellWidth - 1) / 2)
           .attr('y', d => summaryChartYScale(d[1]))
-          .attr('height', 0)
-          .attr('width', cellWidth - 1)
+          .attr('height', d => summaryChartYScale(d[0]) - summaryChartYScale(d[1]))
+          .attr('width', 0)
           .transition().duration(DURATION)
-          .attr('height', d => summaryChartYScale(d[0]) - summaryChartYScale(d[1])),
+          .attr('x', d => d.data.index * cellWidth)
+          .attr('width', cellWidth - 1),
         update => update
           .transition().duration(DURATION)
-          .attr('x', (d, i) => proposals[i].index * cellWidth)
+          .attr('x', d => d.data.index * cellWidth)
           .attr('y', d => summaryChartYScale(d[1]))
           .attr('height', d => summaryChartYScale(d[0]) - summaryChartYScale(d[1])),
-        exit => exit.transition().duration(DURATION).attr('height', 0).remove()
+        exit => exit.transition().duration(DURATION)
+          .attr('x', d => d.data.index * cellWidth + (cellWidth - 1) / 2)
+          .attr('width', 0)
+          .remove()
       );
 
     // Set loading to false after a short delay to allow transitions to start

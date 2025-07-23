@@ -49,7 +49,8 @@ interface GlobalStore {
   votingPowerRange: [number, number]
   avgVotingPowerDynamicRange: [number, number]
   totalVotingPowerDynamicRange: [number, number]
-  
+  excludeAbstainNoVote: boolean // <--- This is the new state
+
   validatorSortKey: ValidatorSortKey;
   countNoVoteAsParticipation: boolean;
   categoryVisualizationMode: 'voteCount' | 'votePower'
@@ -76,6 +77,7 @@ interface GlobalStore {
   setWindowSize: (size: { width: number; height: number }) => void
   setValidatorSortKey: (key: ValidatorSortKey) => void;
   setCountNoVoteAsParticipation: (count: boolean) => void;
+  setExcludeAbstainNoVote: (exclude: boolean) => void; // <--- This is the new action
 }
 
 export const useGlobalStore = create<GlobalStore>((set, get) => ({
@@ -96,6 +98,7 @@ export const useGlobalStore = create<GlobalStore>((set, get) => ({
   votingPowerRange: [0, 100],
   avgVotingPowerDynamicRange: [0, 100],
   totalVotingPowerDynamicRange: [0, 100],
+  excludeAbstainNoVote: false, // <--- Initial value for the new state
   categoryVisualizationMode: 'votePower',
   validatorSortKey: 'totalVotingPower',
   countNoVoteAsParticipation: true,
@@ -337,10 +340,14 @@ export const useGlobalStore = create<GlobalStore>((set, get) => ({
     set({ countNoVoteAsParticipation: count });
     get().recalculateValidatorMetrics();
   },
+  setExcludeAbstainNoVote: (exclude: boolean) => {
+    set({ excludeAbstainNoVote: exclude });
+    get().recalculateValidatorMetrics(); // Recalculate metrics when this changes
+  },
 
   // Selectors
   getProposalsFilteredByRate: () => {
-    const { proposals, approvalRateRange, votes, categoryVisualizationMode } = get();
+    const { proposals, approvalRateRange, votes, categoryVisualizationMode, excludeAbstainNoVote } = get();
     const [minRate, maxRate] = approvalRateRange;
 
     if (categoryVisualizationMode === 'votePower') {
@@ -356,7 +363,9 @@ export const useGlobalStore = create<GlobalStore>((set, get) => ({
           if (vote.vote_option === 'YES') {
             proposalVotes.yes += power;
           }
-          if (vote.vote_option !== 'NO_VOTE') {
+          
+          const isNonVoting = vote.vote_option === 'NO_VOTE' || vote.vote_option === 'ABSTAIN';
+          if (!excludeAbstainNoVote || !isNonVoting) {
             proposalVotes.total += power;
           }
         }
@@ -373,7 +382,13 @@ export const useGlobalStore = create<GlobalStore>((set, get) => ({
     // Default to 'voteCount'
     return proposals.filter(p => {
       const { yes_count = 0, no_count = 0, abstain_count = 0, no_with_veto_count = 0 } = p.final_tally_result || {};
-      const totalVotes = yes_count + no_count + abstain_count + no_with_veto_count;
+      
+      let totalVotes = yes_count + no_count + abstain_count + no_with_veto_count;
+      if (excludeAbstainNoVote) {
+        totalVotes -= abstain_count;
+        // 'NO_VOTE' is not part of final_tally_result, so no need to subtract
+      }
+
       if (totalVotes === 0) return minRate === 0;
       const approvalRate = (yes_count / totalVotes) * 100;
       return approvalRate >= minRate && approvalRate <= maxRate;
@@ -520,7 +535,7 @@ export const useGlobalStore = create<GlobalStore>((set, get) => ({
 
 // Standalone selectors for data distribution
 export const getYesRateDistribution = (state: GlobalStore) => {
-  const { proposals, votes, categoryVisualizationMode } = state;
+  const { proposals, votes, categoryVisualizationMode, excludeAbstainNoVote } = state;
 
   if (categoryVisualizationMode === 'votePower') {
     const votesByProposal = new Map<string, { yes: number; total: number }>();
@@ -535,7 +550,9 @@ export const getYesRateDistribution = (state: GlobalStore) => {
         if (vote.vote_option === 'YES') {
           proposalVotes.yes += power;
         }
-        if (vote.vote_option !== 'NO_VOTE') {
+        
+        const isNonVoting = vote.vote_option === 'NO_VOTE' || vote.vote_option === 'ABSTAIN';
+        if (!excludeAbstainNoVote || !isNonVoting) {
           proposalVotes.total += power;
         }
       }
@@ -550,7 +567,13 @@ export const getYesRateDistribution = (state: GlobalStore) => {
   // Default to 'voteCount'
   return state.proposals.map(p => {
     const { yes_count = 0, no_count = 0, abstain_count = 0, no_with_veto_count = 0 } = p.final_tally_result || {};
-    const totalVotes = yes_count + no_count + abstain_count + no_with_veto_count;
+    
+    let totalVotes = yes_count + no_count + abstain_count + no_with_veto_count;
+    if (excludeAbstainNoVote) {
+      totalVotes -= abstain_count;
+      // 'NO_VOTE' is not part of final_tally_result
+    }
+
     return totalVotes === 0 ? 0 : (yes_count / totalVotes) * 100;
   });
 };
