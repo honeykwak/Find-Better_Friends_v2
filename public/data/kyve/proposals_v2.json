@@ -1,0 +1,772 @@
+[
+  {
+    "proposal_id": "42",
+    "chain_id": "kyve",
+    "title": "Create dYdX  add dYdX coin to whitelist",
+    "type": "PoolData",
+    "topic": "Data Protocol",
+    "status": "PASSED",
+    "submit_time": "1729685503507",
+    "final_tally_result": {
+      "yes_count": 30,
+      "abstain_count": 1,
+      "no_vote_count": 59
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "dApp Onboarding",
+    "topic_v2_display": "dApp Onboarding",
+    "topic_v2_unique": "Ecosystem - dApp Onboarding"
+  },
+  {
+    "proposal_id": "41",
+    "chain_id": "kyve",
+    "title": "Whitelist Andromeda and Source denoms",
+    "type": "ParameterChange",
+    "topic": "Protocol Configuration",
+    "status": "PASSED",
+    "submit_time": "1722523253777",
+    "final_tally_result": {
+      "yes_count": 33,
+      "abstain_count": 1,
+      "no_vote_count": 53
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Parameter Change",
+    "topic_v2_display": "Parameter Change",
+    "topic_v2_unique": "Protocol - Parameter Change"
+  },
+  {
+    "proposal_id": "40",
+    "chain_id": "kyve",
+    "title": "Parameter Change Upload Interval  Max Points",
+    "type": "ParameterChange",
+    "topic": "Protocol Configuration",
+    "status": "PASSED",
+    "submit_time": "1721925183284",
+    "final_tally_result": {
+      "yes_count": 35,
+      "abstain_count": 1,
+      "no_vote_count": 49
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Parameter Change",
+    "topic_v2_display": "Parameter Change",
+    "topic_v2_unique": "Protocol - Parameter Change"
+  },
+  {
+    "proposal_id": "39",
+    "chain_id": "kyve",
+    "title": "Data Pool Creation Source  Source  StateSync",
+    "type": "PoolData",
+    "topic": "Data Protocol",
+    "status": "PASSED",
+    "submit_time": "1721744767304",
+    "final_tally_result": {
+      "yes_count": 10,
+      "no_count": 10,
+      "abstain_count": 20,
+      "no_vote_count": 45
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Signaling",
+    "topic_v2_display": "Signaling",
+    "topic_v2_unique": "Governance - Signaling"
+  },
+  {
+    "proposal_id": "38",
+    "chain_id": "kyve",
+    "title": "Grants Application Fair AI Data Validator",
+    "type": "Unknown",
+    "topic": "Unclassified",
+    "status": "REJECTED",
+    "submit_time": "1721313831772",
+    "final_tally_result": {
+      "yes_count": 47,
+      "abstain_count": 1,
+      "no_vote_count": 33
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Signaling",
+    "topic_v2_display": "Signaling",
+    "topic_v2_unique": "Governance - Signaling"
+  },
+  {
+    "proposal_id": "37",
+    "chain_id": "kyve",
+    "title": "v150 Software Upgrade",
+    "type": "SoftwareUpgrade",
+    "topic": "Major Release",
+    "status": "PASSED",
+    "submit_time": "1721054095536",
+    "final_tally_result": {
+      "abstain_count": 19,
+      "yes_count": 16,
+      "no_count": 4,
+      "no_vote_count": 52
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Core Upgrade",
+    "topic_v2_display": "Core Upgrade",
+    "topic_v2_unique": "Protocol - Core Upgrade"
+  },
+  {
+    "proposal_id": "36",
+    "chain_id": "kyve",
+    "title": "Grants Application Blockrewardsinfo Integration with KYVE",
+    "type": "Unknown",
+    "topic": "Unclassified",
+    "status": "PASSED",
+    "submit_time": "1718957582436",
+    "final_tally_result": {
+      "abstain_count": 15,
+      "yes_count": 24,
+      "no_count": 4,
+      "no_vote_count": 57
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Signaling",
+    "topic_v2_display": "Signaling",
+    "topic_v2_unique": "Governance - Signaling"
+  },
+  {
+    "proposal_id": "35",
+    "chain_id": "kyve",
+    "title": "Grants Application MELLIFERA KYVE Restake service for protocol nodes",
+    "type": "Unknown",
+    "topic": "Unclassified",
+    "status": "PASSED",
+    "submit_time": "1718368955320",
+    "final_tally_result": {
+      "abstain_count": 24,
+      "no_count": 10,
+      "yes_count": 9,
+      "no_vote_count": 57
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Signaling",
+    "topic_v2_display": "Signaling",
+    "topic_v2_unique": "Governance - Signaling"
+  },
+  {
+    "proposal_id": "34",
+    "chain_id": "kyve",
+    "title": "Grants Application Validatrium AML bot",
+    "type": "Unknown",
+    "topic": "Unclassified",
+    "status": "REJECTED",
+    "submit_time": "1718367967822",
+    "final_tally_result": {
+      "no_with_veto_count": 1,
+      "yes_count": 19,
+      "abstain_count": 17,
+      "no_count": 8,
+      "no_vote_count": 55
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Signaling",
+    "topic_v2_display": "Signaling",
+    "topic_v2_unique": "Governance - Signaling"
+  },
+  {
+    "proposal_id": "33",
+    "chain_id": "kyve",
+    "title": "Grants Application Stakingrewardscom Ecosystem Partnership",
+    "type": "Unknown",
+    "topic": "Unclassified",
+    "status": "PASSED",
+    "submit_time": "1718110213191",
+    "final_tally_result": {
+      "abstain_count": 16,
+      "yes_count": 26,
+      "no_count": 2,
+      "no_vote_count": 56
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "Partnership",
+    "topic_v2_display": "Partnership",
+    "topic_v2_unique": "Ecosystem - Partnership"
+  },
+  {
+    "proposal_id": "32",
+    "chain_id": "kyve",
+    "title": "Grants Application Four Pillars",
+    "type": "Unknown",
+    "topic": "Unclassified",
+    "status": "PASSED",
+    "submit_time": "1717750292769",
+    "final_tally_result": {
+      "yes_count": 42,
+      "abstain_count": 10,
+      "no_vote_count": 48
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Signaling",
+    "topic_v2_display": "Signaling",
+    "topic_v2_unique": "Governance - Signaling"
+  },
+  {
+    "proposal_id": "31",
+    "chain_id": "kyve",
+    "title": "Parameter Change Storage Cost 5",
+    "type": "ParameterChange",
+    "topic": "Fee Adjustment",
+    "status": "PASSED",
+    "submit_time": "1715611046049",
+    "final_tally_result": {
+      "yes_count": 43,
+      "abstain_count": 9,
+      "no_vote_count": 48
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Parameter Change",
+    "topic_v2_display": "Parameter Change",
+    "topic_v2_unique": "Protocol - Parameter Change"
+  },
+  {
+    "proposal_id": "30",
+    "chain_id": "kyve",
+    "title": "KYVE Grants Program Phase 0",
+    "type": "Unknown",
+    "topic": "Unclassified",
+    "status": "PASSED",
+    "submit_time": "1715090926849",
+    "final_tally_result": {
+      "yes_count": 41,
+      "abstain_count": 10,
+      "no_vote_count": 49
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Signaling",
+    "topic_v2_display": "Signaling",
+    "topic_v2_unique": "Governance - Signaling"
+  },
+  {
+    "proposal_id": "29",
+    "chain_id": "kyve",
+    "title": "Slash Indemnification Program Proposal",
+    "type": "Unknown",
+    "topic": "Miscellaneous",
+    "status": "PASSED",
+    "submit_time": "1712830332776",
+    "final_tally_result": {
+      "yes_count": 58,
+      "abstain_count": 1,
+      "no_vote_count": 41
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Signaling",
+    "topic_v2_display": "Signaling",
+    "topic_v2_unique": "Governance - Signaling"
+  },
+  {
+    "proposal_id": "28",
+    "chain_id": "kyve",
+    "title": "Parameter Change Storage Cost 4",
+    "type": "ParameterChange",
+    "topic": "Fee Adjustment",
+    "status": "PASSED",
+    "submit_time": "1711644134948",
+    "final_tally_result": {
+      "yes_count": 52,
+      "abstain_count": 9,
+      "no_vote_count": 39
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Parameter Change",
+    "topic_v2_display": "Parameter Change",
+    "topic_v2_unique": "Protocol - Parameter Change"
+  },
+  {
+    "proposal_id": "27",
+    "chain_id": "kyve",
+    "title": "Runtime Upgrade v116  v117",
+    "type": "SoftwareUpgrade",
+    "topic": "Major Release",
+    "status": "PASSED",
+    "submit_time": "1711383054869",
+    "final_tally_result": {
+      "yes_count": 49,
+      "abstain_count": 8,
+      "no_vote_count": 43
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Core Upgrade",
+    "topic_v2_display": "Core Upgrade",
+    "topic_v2_unique": "Protocol - Core Upgrade"
+  },
+  {
+    "proposal_id": "26",
+    "chain_id": "kyve",
+    "title": "Data Pool Creation Celestia  Celestia  StateSync",
+    "type": "PoolData",
+    "topic": "Data Protocol",
+    "status": "PASSED",
+    "submit_time": "1709734427698",
+    "final_tally_result": {
+      "yes_count": 50,
+      "abstain_count": 10,
+      "no_vote_count": 40
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Signaling",
+    "topic_v2_display": "Signaling",
+    "topic_v2_unique": "Governance - Signaling"
+  },
+  {
+    "proposal_id": "25",
+    "chain_id": "kyve",
+    "title": "Parameter Change Storage Cost",
+    "type": "ParameterChange",
+    "topic": "Fee Adjustment",
+    "status": "PASSED",
+    "submit_time": "1709715988770",
+    "final_tally_result": {
+      "yes_count": 40,
+      "abstain_count": 11,
+      "no_vote_count": 49
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Parameter Change",
+    "topic_v2_display": "Parameter Change",
+    "topic_v2_unique": "Protocol - Parameter Change"
+  },
+  {
+    "proposal_id": "24",
+    "chain_id": "kyve",
+    "title": "Data Pool Creation Noble  Noble  StateSync",
+    "type": "PoolData",
+    "topic": "Data Protocol",
+    "status": "PASSED",
+    "submit_time": "1708525163490",
+    "final_tally_result": {
+      "yes_count": 40,
+      "abstain_count": 9,
+      "no_vote_count": 51
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Signaling",
+    "topic_v2_display": "Signaling",
+    "topic_v2_unique": "Governance - Signaling"
+  },
+  {
+    "proposal_id": "23",
+    "chain_id": "kyve",
+    "title": "Runtime Upgrade kyvejssdk110",
+    "type": "SoftwareUpgrade",
+    "topic": "Feature Addition",
+    "status": "PASSED",
+    "submit_time": "1701871584738",
+    "final_tally_result": {
+      "yes_count": 50,
+      "abstain_count": 10,
+      "no_vote_count": 40
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Core Upgrade",
+    "topic_v2_display": "Core Upgrade",
+    "topic_v2_unique": "Protocol - Core Upgrade"
+  },
+  {
+    "proposal_id": "22",
+    "chain_id": "kyve",
+    "title": "Parameter Change Storage Cost",
+    "type": "ParameterChange",
+    "topic": "Fee Adjustment",
+    "status": "PASSED",
+    "submit_time": "1701079314417",
+    "final_tally_result": {
+      "yes_count": 55,
+      "abstain_count": 7,
+      "no_vote_count": 38
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Parameter Change",
+    "topic_v2_display": "Parameter Change",
+    "topic_v2_unique": "Protocol - Parameter Change"
+  },
+  {
+    "proposal_id": "21",
+    "chain_id": "kyve",
+    "title": "v140 Software Upgrade",
+    "type": "SoftwareUpgrade",
+    "topic": "Major Release",
+    "status": "PASSED",
+    "submit_time": "1700841185924",
+    "final_tally_result": {
+      "yes_count": 40,
+      "abstain_count": 10,
+      "no_vote_count": 50
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Core Upgrade",
+    "topic_v2_display": "Core Upgrade",
+    "topic_v2_unique": "Protocol - Core Upgrade"
+  },
+  {
+    "proposal_id": "20",
+    "chain_id": "kyve",
+    "title": "Data Pool Creation Cronos  Cronos  StateSync",
+    "type": "PoolData",
+    "topic": "Data Protocol",
+    "status": "PASSED",
+    "submit_time": "1700143181624",
+    "final_tally_result": {
+      "yes_count": 33,
+      "abstain_count": 10,
+      "no_vote_count": 57
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Signaling",
+    "topic_v2_display": "Signaling",
+    "topic_v2_unique": "Governance - Signaling"
+  },
+  {
+    "proposal_id": "19",
+    "chain_id": "kyve",
+    "title": "Parameter Change Min Delegation",
+    "type": "PoolData",
+    "topic": "Data Protocol",
+    "status": "PASSED",
+    "submit_time": "1699001737146",
+    "final_tally_result": {
+      "yes_count": 46,
+      "abstain_count": 10,
+      "no_vote_count": 44
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Parameter Change",
+    "topic_v2_display": "Parameter Change",
+    "topic_v2_unique": "Protocol - Parameter Change"
+  },
+  {
+    "proposal_id": "18",
+    "chain_id": "kyve",
+    "title": "Upgrade Pool Runtimes",
+    "type": "SoftwareUpgrade",
+    "topic": "Major Release",
+    "status": "PASSED",
+    "submit_time": "1698412818246",
+    "final_tally_result": {
+      "yes_count": 46,
+      "abstain_count": 9,
+      "no_vote_count": 45
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Core Upgrade",
+    "topic_v2_display": "Core Upgrade",
+    "topic_v2_unique": "Protocol - Core Upgrade"
+  },
+  {
+    "proposal_id": "17",
+    "chain_id": "kyve",
+    "title": "Pool Creation Archway  StateSync",
+    "type": "PoolData",
+    "topic": "Data Protocol",
+    "status": "PASSED",
+    "submit_time": "1698333921569",
+    "final_tally_result": {
+      "yes_count": 43,
+      "abstain_count": 7,
+      "no_vote_count": 50
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Signaling",
+    "topic_v2_display": "Signaling",
+    "topic_v2_unique": "Governance - Signaling"
+  },
+  {
+    "proposal_id": "16",
+    "chain_id": "kyve",
+    "title": "Software Upgrade Pool binaries",
+    "type": "SoftwareUpgrade",
+    "topic": "Major Release",
+    "status": "PASSED",
+    "submit_time": "1697200110735",
+    "final_tally_result": {
+      "yes_count": 44,
+      "abstain_count": 10,
+      "no_vote_count": 46
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Core Upgrade",
+    "topic_v2_display": "Core Upgrade",
+    "topic_v2_unique": "Protocol - Core Upgrade"
+  },
+  {
+    "proposal_id": "15",
+    "chain_id": "kyve",
+    "title": "Parameter Change Storage Cost",
+    "type": "ParameterChange",
+    "topic": "Fee Adjustment",
+    "status": "PASSED",
+    "submit_time": "1695999144205",
+    "final_tally_result": {
+      "yes_count": 40,
+      "abstain_count": 13,
+      "no_vote_count": 47
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Parameter Change",
+    "topic_v2_display": "Parameter Change",
+    "topic_v2_unique": "Protocol - Parameter Change"
+  },
+  {
+    "proposal_id": "14",
+    "chain_id": "kyve",
+    "title": "Parameter Change Min Delegation",
+    "type": "PoolData",
+    "topic": "Data Protocol",
+    "status": "PASSED",
+    "submit_time": "1695211757054",
+    "final_tally_result": {
+      "yes_count": 47,
+      "abstain_count": 9,
+      "no_vote_count": 44
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Parameter Change",
+    "topic_v2_display": "Parameter Change",
+    "topic_v2_unique": "Protocol - Parameter Change"
+  },
+  {
+    "proposal_id": "13",
+    "chain_id": "kyve",
+    "title": "Data Pool Creation Axelar",
+    "type": "PoolData",
+    "topic": "Data Protocol",
+    "status": "PASSED",
+    "submit_time": "1694433904343",
+    "final_tally_result": {
+      "yes_count": 48,
+      "abstain_count": 9,
+      "weighted_vote_count": 2,
+      "no_vote_count": 41
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Signaling",
+    "topic_v2_display": "Signaling",
+    "topic_v2_unique": "Governance - Signaling"
+  },
+  {
+    "proposal_id": "12",
+    "chain_id": "kyve",
+    "title": "Data Pool Creation Archway",
+    "type": "PoolData",
+    "topic": "Data Protocol",
+    "status": "PASSED",
+    "submit_time": "1693396823545",
+    "final_tally_result": {
+      "abstain_count": 12,
+      "yes_count": 52,
+      "weighted_vote_count": 1,
+      "no_vote_count": 35
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Signaling",
+    "topic_v2_display": "Signaling",
+    "topic_v2_unique": "Governance - Signaling"
+  },
+  {
+    "proposal_id": "11",
+    "chain_id": "kyve",
+    "title": "Data Pool Creation Osmosis",
+    "type": "ParameterChange",
+    "topic": "Protocol Configuration",
+    "status": "PASSED",
+    "submit_time": "1692014746744",
+    "final_tally_result": {
+      "yes_count": 56,
+      "abstain_count": 9,
+      "no_count": 3,
+      "no_vote_count": 32
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Parameter Change",
+    "topic_v2_display": "Parameter Change",
+    "topic_v2_unique": "Protocol - Parameter Change"
+  },
+  {
+    "proposal_id": "10",
+    "chain_id": "kyve",
+    "title": "KYVE Validator Delegation Program Update",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "PASSED",
+    "submit_time": "1690897878361",
+    "final_tally_result": {
+      "yes_count": 46,
+      "no_count": 1,
+      "abstain_count": 13,
+      "no_vote_count": 40
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Signaling",
+    "topic_v2_display": "Signaling",
+    "topic_v2_unique": "Governance - Signaling"
+  },
+  {
+    "proposal_id": "9",
+    "chain_id": "kyve",
+    "title": "Pool Operating Cost Followup Proposal",
+    "type": "PoolData",
+    "topic": "Data Protocol",
+    "status": "PASSED",
+    "submit_time": "1690283834679",
+    "final_tally_result": {
+      "yes_count": 50,
+      "abstain_count": 6,
+      "no_vote_count": 44
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Signaling",
+    "topic_v2_display": "Signaling",
+    "topic_v2_unique": "Governance - Signaling"
+  },
+  {
+    "proposal_id": "8",
+    "chain_id": "kyve",
+    "title": "v130 Software Upgrade",
+    "type": "SoftwareUpgrade",
+    "topic": "Major Release",
+    "status": "PASSED",
+    "submit_time": "1689954655265",
+    "final_tally_result": {
+      "yes_count": 52,
+      "abstain_count": 10,
+      "no_count": 2,
+      "no_vote_count": 36
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Core Upgrade",
+    "topic_v2_display": "Core Upgrade",
+    "topic_v2_unique": "Protocol - Core Upgrade"
+  },
+  {
+    "proposal_id": "7",
+    "chain_id": "kyve",
+    "title": "Efficient Frontier  KYVE Market Making Proposal",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "PASSED",
+    "submit_time": "1687790872072",
+    "final_tally_result": {
+      "yes_count": 51,
+      "abstain_count": 7,
+      "no_vote_count": 42
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Signaling",
+    "topic_v2_display": "Signaling",
+    "topic_v2_unique": "Governance - Signaling"
+  },
+  {
+    "proposal_id": "6",
+    "chain_id": "kyve",
+    "title": "Parameter Change Protocol Updates",
+    "type": "ParameterChange",
+    "topic": "Staking Parameters",
+    "status": "PASSED",
+    "submit_time": "1686310024524",
+    "final_tally_result": {
+      "no_count": 2,
+      "yes_count": 67,
+      "no_vote_count": 31
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Parameter Change",
+    "topic_v2_display": "Parameter Change",
+    "topic_v2_unique": "Protocol - Parameter Change"
+  },
+  {
+    "proposal_id": "5",
+    "chain_id": "kyve",
+    "title": "Pool Creation Cosmos Hub",
+    "type": "PoolData",
+    "topic": "Data Protocol",
+    "status": "PASSED",
+    "submit_time": "1685537498788",
+    "final_tally_result": {
+      "yes_count": 66,
+      "abstain_count": 2,
+      "no_count": 1,
+      "no_vote_count": 31
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Signaling",
+    "topic_v2_display": "Signaling",
+    "topic_v2_unique": "Governance - Signaling"
+  },
+  {
+    "proposal_id": "4",
+    "chain_id": "kyve",
+    "title": "v120 Software Upgrade",
+    "type": "SoftwareUpgrade",
+    "topic": "Major Release",
+    "status": "PASSED",
+    "submit_time": "1684764947433",
+    "final_tally_result": {
+      "yes_count": 69,
+      "no_count": 2,
+      "no_vote_count": 29
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Core Upgrade",
+    "topic_v2_display": "Core Upgrade",
+    "topic_v2_unique": "Protocol - Core Upgrade"
+  },
+  {
+    "proposal_id": "3",
+    "chain_id": "kyve",
+    "title": "v110 Software Upgrade",
+    "type": "SoftwareUpgrade",
+    "topic": "Major Release",
+    "status": "PASSED",
+    "submit_time": "1682931026859",
+    "final_tally_result": {
+      "yes_count": 87,
+      "abstain_count": 2,
+      "no_with_veto_count": 1,
+      "no_count": 2,
+      "no_vote_count": 8
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Core Upgrade",
+    "topic_v2_display": "Core Upgrade",
+    "topic_v2_unique": "Protocol - Core Upgrade"
+  },
+  {
+    "proposal_id": "2",
+    "chain_id": "kyve",
+    "title": "Parameter Change Enabling Inflation",
+    "type": "ParameterChange",
+    "topic": "Economic Parameters",
+    "status": "PASSED",
+    "submit_time": "1678812147926",
+    "final_tally_result": {
+      "yes_count": 29,
+      "no_vote_count": 71
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Parameter Change",
+    "topic_v2_display": "Parameter Change",
+    "topic_v2_unique": "Protocol - Parameter Change"
+  },
+  {
+    "proposal_id": "1",
+    "chain_id": "kyve",
+    "title": "Parameter Change Enabling Validator Creation Increasing Voting Period",
+    "type": "ParameterChange",
+    "topic": "Staking Parameters",
+    "status": "PASSED",
+    "submit_time": "1678807373293",
+    "final_tally_result": {
+      "yes_count": 28,
+      "abstain_count": 5,
+      "no_vote_count": 67
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Parameter Change",
+    "topic_v2_display": "Parameter Change",
+    "topic_v2_unique": "Protocol - Parameter Change"
+  }
+]

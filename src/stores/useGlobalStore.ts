@@ -436,7 +436,8 @@ export const useGlobalStore = create<GlobalStore>((set, get) => ({
     });
 
     if (selectedTopics.length === 0) return proposalsWithDistribution;
-    return proposalsWithDistribution.filter(p => selectedTopics.includes(p.topic));
+    // Use the new unique topic field for filtering
+    return proposalsWithDistribution.filter(p => selectedTopics.includes(p.topic_v2_unique));
   },
 
   getFilteredValidators: () => {
@@ -456,7 +457,7 @@ export const useGlobalStore = create<GlobalStore>((set, get) => ({
 
     const categoryStats: { [name: string]: {
         count: number; passed: number; voteDistribution: { [key: string]: number };
-        topics: { [name: string]: { count: number; passed: number; voteDistribution: { [key: string]: number }; } };
+        topics: { [name: string]: { count: number; passed: number; voteDistribution: { [key: string]: number }; original_topic: string } };
     } } = {};
 
     const votesByProposalId = new Map<string, Vote[]>();
@@ -470,11 +471,14 @@ export const useGlobalStore = create<GlobalStore>((set, get) => ({
     }
 
     for (const p of proposalsFilteredByRate) {
-        const categoryName = p.type;
-        const topicName = p.topic;
+        const categoryName = p.type_v2; // Use new category
+        const topicName = p.topic_v2_unique; // Use new unique topic for identification
+        const topicDisplayName = p.topic_v2_display; // Use new simple topic for display
 
         if (!categoryStats[categoryName]) categoryStats[categoryName] = { count: 0, passed: 0, voteDistribution: {}, topics: {} };
-        if (!categoryStats[categoryName].topics[topicName]) categoryStats[categoryName].topics[topicName] = { count: 0, passed: 0, voteDistribution: {} };
+        if (!categoryStats[categoryName].topics[topicName]) {
+            categoryStats[categoryName].topics[topicName] = { count: 0, passed: 0, voteDistribution: {}, original_topic: topicDisplayName };
+        }
 
         categoryStats[categoryName].count++;
         categoryStats[categoryName].topics[topicName].count++;
@@ -514,7 +518,8 @@ export const useGlobalStore = create<GlobalStore>((set, get) => ({
 
     const hierarchy: CategoryHierarchyNode[] = Object.entries(categoryStats).map(([name, data]) => {
         const topicsForCategory: TopicNode[] = Object.entries(data.topics).map(([topicName, topicData]) => ({
-            name: topicName,
+            name: topicName, // Use unique name for ID
+            displayName: topicData.original_topic, // Use simple name for display
             count: topicData.count,
             passRate: topicData.count > 0 ? (topicData.passed / topicData.count) * 100 : 0,
             voteDistribution: topicData.voteDistribution,

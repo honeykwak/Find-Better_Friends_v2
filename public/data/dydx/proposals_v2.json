@@ -1,0 +1,3215 @@
+[
+  {
+    "proposal_id": "176",
+    "chain_id": "dydx",
+    "title": "Incentives Relaunch Revised Proposal",
+    "type": "TextProposal",
+    "topic": "Community Decision",
+    "status": "PASSED",
+    "submit_time": "1731255452660",
+    "final_tally_result": {
+      "weighted_vote_count": 1,
+      "abstain_count": 13,
+      "yes_count": 25,
+      "no_count": 3,
+      "no_vote_count": 18
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Signaling",
+    "topic_v2_display": "Signaling",
+    "topic_v2_unique": "Governance - Signaling"
+  },
+  {
+    "proposal_id": "175",
+    "chain_id": "dydx",
+    "title": "Reduce Trading Rewards by 44 Decrease Trading Rewards Constant from 09 to 05",
+    "type": "ParameterChange",
+    "topic": "Economic Parameters",
+    "status": "PASSED",
+    "submit_time": "1731001085658",
+    "final_tally_result": {
+      "yes_count": 33,
+      "abstain_count": 7,
+      "no_count": 2,
+      "no_vote_count": 18
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Parameter Change",
+    "topic_v2_display": "Parameter Change",
+    "topic_v2_unique": "Protocol - Parameter Change"
+  },
+  {
+    "proposal_id": "174",
+    "chain_id": "dydx",
+    "title": "dYdX Treasury SubDAO Ratification  Funding",
+    "type": "Unknown",
+    "topic": "Miscellaneous",
+    "status": "PASSED",
+    "submit_time": "1730970680431",
+    "final_tally_result": {
+      "yes_count": 40,
+      "abstain_count": 1,
+      "no_vote_count": 19
+    },
+    "type_v2": "Governance",
+    "topic_v2": "dApp & Tooling Funding",
+    "topic_v2_display": "dApp & Tooling Funding",
+    "topic_v2_unique": "Governance - dApp & Tooling Funding"
+  },
+  {
+    "proposal_id": "173",
+    "chain_id": "dydx",
+    "title": "dYdX Chain Software Upgrade v700",
+    "type": "SoftwareUpgrade",
+    "topic": "Major Release",
+    "status": "PASSED",
+    "submit_time": "1730827762025",
+    "final_tally_result": {
+      "yes_count": 43,
+      "abstain_count": 1,
+      "no_vote_count": 16
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Core Upgrade",
+    "topic_v2_display": "Core Upgrade",
+    "topic_v2_unique": "Protocol - Core Upgrade"
+  },
+  {
+    "proposal_id": "172",
+    "chain_id": "dydx",
+    "title": "dYdX Chain Software Upgrade v700",
+    "type": "SoftwareUpgrade",
+    "topic": "Major Release",
+    "status": "REJECTED",
+    "submit_time": "1730816917227",
+    "final_tally_result": {
+      "no_count": 44,
+      "yes_count": 2,
+      "abstain_count": 1,
+      "no_vote_count": 13
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Core Upgrade",
+    "topic_v2_display": "Core Upgrade",
+    "topic_v2_unique": "Protocol - Core Upgrade"
+  },
+  {
+    "proposal_id": "171",
+    "chain_id": "dydx",
+    "title": "Disable AGIXUSD FETUSD and MATICUSD in market map",
+    "type": "MarketRelated",
+    "topic": "Market Addition",
+    "status": "PASSED",
+    "submit_time": "1729697798646",
+    "final_tally_result": {
+      "yes_count": 30,
+      "abstain_count": 2,
+      "no_vote_count": 28
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Signaling",
+    "topic_v2_display": "Signaling",
+    "topic_v2_unique": "Governance - Signaling"
+  },
+  {
+    "proposal_id": "170",
+    "chain_id": "dydx",
+    "title": "dYdX VIP Affiliate Tier Proposal to be managed by Kuyen Labs",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "PASSED",
+    "submit_time": "1729267266130",
+    "final_tally_result": {
+      "abstain_count": 2,
+      "yes_count": 35,
+      "no_vote_count": 23
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Signaling",
+    "topic_v2_display": "Signaling",
+    "topic_v2_unique": "Governance - Signaling"
+  },
+  {
+    "proposal_id": "169",
+    "chain_id": "dydx",
+    "title": "Add SPXUSD perpetual market",
+    "type": "MarketRelated",
+    "topic": "Market Addition",
+    "status": "REJECTED",
+    "submit_time": "1729168383179",
+    "final_tally_result": {
+      "no_count": 33,
+      "no_with_veto_count": 1,
+      "abstain_count": 4,
+      "yes_count": 3,
+      "no_vote_count": 19
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Signaling",
+    "topic_v2_display": "Signaling",
+    "topic_v2_unique": "Governance - Signaling"
+  },
+  {
+    "proposal_id": "168",
+    "chain_id": "dydx",
+    "title": "Set Vault Quoting Params",
+    "type": "ParameterChange",
+    "topic": "Staking Parameters",
+    "status": "PASSED",
+    "submit_time": "1729115370377",
+    "final_tally_result": {
+      "yes_count": 33,
+      "abstain_count": 1,
+      "no_vote_count": 26
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Parameter Change",
+    "topic_v2_display": "Parameter Change",
+    "topic_v2_unique": "Protocol - Parameter Change"
+  },
+  {
+    "proposal_id": "167",
+    "chain_id": "dydx",
+    "title": "Add ZBCNUSD perpetual market",
+    "type": "MarketRelated",
+    "topic": "Market Addition",
+    "status": "PASSED",
+    "submit_time": "1728961637802",
+    "final_tally_result": {
+      "yes_count": 36,
+      "no_count": 1,
+      "abstain_count": 2,
+      "no_vote_count": 21
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Signaling",
+    "topic_v2_display": "Signaling",
+    "topic_v2_unique": "Governance - Signaling"
+  },
+  {
+    "proposal_id": "166",
+    "chain_id": "dydx",
+    "title": "Add CETUSUSD perpetual market",
+    "type": "MarketRelated",
+    "topic": "Market Addition",
+    "status": "PASSED",
+    "submit_time": "1728435902389",
+    "final_tally_result": {
+      "yes_count": 37,
+      "abstain_count": 2,
+      "no_vote_count": 21
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Signaling",
+    "topic_v2_display": "Signaling",
+    "topic_v2_unique": "Governance - Signaling"
+  },
+  {
+    "proposal_id": "165",
+    "chain_id": "dydx",
+    "title": "Add TRUMPWINUSD perpetual market",
+    "type": "MarketRelated",
+    "topic": "Market Addition",
+    "status": "PASSED",
+    "submit_time": "1728157169525",
+    "final_tally_result": {
+      "abstain_count": 16,
+      "yes_count": 21,
+      "no_count": 2,
+      "no_vote_count": 21
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Signaling",
+    "topic_v2_display": "Signaling",
+    "topic_v2_unique": "Governance - Signaling"
+  },
+  {
+    "proposal_id": "164",
+    "chain_id": "dydx",
+    "title": "Add CETUSUSD perpetual market",
+    "type": "MarketRelated",
+    "topic": "Market Addition",
+    "status": "REJECTED",
+    "submit_time": "1728034543487",
+    "final_tally_result": {
+      "no_count": 32,
+      "abstain_count": 5,
+      "yes_count": 6,
+      "no_vote_count": 17
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Signaling",
+    "topic_v2_display": "Signaling",
+    "topic_v2_unique": "Governance - Signaling"
+  },
+  {
+    "proposal_id": "163",
+    "chain_id": "dydx",
+    "title": "Add Skips signer as a market authority and sets 10 revenue share on new markets",
+    "type": "ParameterChange",
+    "topic": "Fee Adjustment",
+    "status": "PASSED",
+    "submit_time": "1727980274794",
+    "final_tally_result": {
+      "yes_count": 32,
+      "abstain_count": 2,
+      "no_vote_count": 26
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Parameter Change",
+    "topic_v2_display": "Parameter Change",
+    "topic_v2_unique": "Protocol - Parameter Change"
+  },
+  {
+    "proposal_id": "162",
+    "chain_id": "dydx",
+    "title": "Update largecap liquidity tier parameter",
+    "type": "Unknown",
+    "topic": "Miscellaneous",
+    "status": "PASSED",
+    "submit_time": "1727882893869",
+    "final_tally_result": {
+      "yes_count": 35,
+      "abstain_count": 4,
+      "no_vote_count": 21
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Parameter Change",
+    "topic_v2_display": "Parameter Change",
+    "topic_v2_unique": "Protocol - Parameter Change"
+  },
+  {
+    "proposal_id": "161",
+    "chain_id": "dydx",
+    "title": "dYdX Ops subDAO 30",
+    "type": "Unknown",
+    "topic": "Unclassified",
+    "status": "PASSED",
+    "submit_time": "1727700523428",
+    "final_tally_result": {
+      "abstain_count": 7,
+      "yes_count": 37,
+      "no_count": 2,
+      "no_vote_count": 14
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Signaling",
+    "topic_v2_display": "Signaling",
+    "topic_v2_unique": "Governance - Signaling"
+  },
+  {
+    "proposal_id": "160",
+    "chain_id": "dydx",
+    "title": "dYdX Chain Software Upgrade v604",
+    "type": "SoftwareUpgrade",
+    "topic": "Major Release",
+    "status": "PASSED",
+    "submit_time": "1727496980793",
+    "final_tally_result": {
+      "yes_count": 42,
+      "abstain_count": 2,
+      "no_vote_count": 16
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Core Upgrade",
+    "topic_v2_display": "Core Upgrade",
+    "topic_v2_unique": "Protocol - Core Upgrade"
+  },
+  {
+    "proposal_id": "159",
+    "chain_id": "dydx",
+    "title": "dYdX Chain Software Upgrade v604",
+    "type": "SoftwareUpgrade",
+    "topic": "Major Release",
+    "status": "REJECTED",
+    "submit_time": "1727454989809",
+    "final_tally_result": {
+      "no_count": 44,
+      "abstain_count": 2,
+      "no_vote_count": 14
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Core Upgrade",
+    "topic_v2_display": "Core Upgrade",
+    "topic_v2_unique": "Protocol - Core Upgrade"
+  },
+  {
+    "proposal_id": "157",
+    "chain_id": "dydx",
+    "title": "dYdX Treasury Subdao Proposal  Karpatkey",
+    "type": "Unknown",
+    "topic": "Unclassified",
+    "status": "PASSED",
+    "submit_time": "1727115852415",
+    "final_tally_result": {
+      "abstain_count": 22,
+      "weighted_vote_count": 1,
+      "yes_count": 17,
+      "no_count": 8,
+      "no_vote_count": 12
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Signaling",
+    "topic_v2_display": "Signaling",
+    "topic_v2_unique": "Governance - Signaling"
+  },
+  {
+    "proposal_id": "156",
+    "chain_id": "dydx",
+    "title": "dYdX Treasury Subdao Proposal  Steakhouse",
+    "type": "Unknown",
+    "topic": "Unclassified",
+    "status": "PASSED",
+    "submit_time": "1727115618355",
+    "final_tally_result": {
+      "abstain_count": 24,
+      "weighted_vote_count": 1,
+      "yes_count": 13,
+      "no_count": 9,
+      "no_vote_count": 13
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Signaling",
+    "topic_v2_display": "Signaling",
+    "topic_v2_unique": "Governance - Signaling"
+  },
+  {
+    "proposal_id": "155",
+    "chain_id": "dydx",
+    "title": "dYdX Chain Software Upgrade v603",
+    "type": "SoftwareUpgrade",
+    "topic": "Major Release",
+    "status": "REJECTED",
+    "submit_time": "1726754688879",
+    "final_tally_result": {
+      "no_count": 42,
+      "yes_count": 5,
+      "no_with_veto_count": 1,
+      "abstain_count": 1,
+      "no_vote_count": 11
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Core Upgrade",
+    "topic_v2_display": "Core Upgrade",
+    "topic_v2_unique": "Protocol - Core Upgrade"
+  },
+  {
+    "proposal_id": "154",
+    "chain_id": "dydx",
+    "title": "Add SUNDOGUSD perpetual market",
+    "type": "MarketRelated",
+    "topic": "Market Addition",
+    "status": "PASSED",
+    "submit_time": "1726484654347",
+    "final_tally_result": {
+      "yes_count": 28,
+      "abstain_count": 6,
+      "no_count": 4,
+      "no_vote_count": 22
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Signaling",
+    "topic_v2_display": "Signaling",
+    "topic_v2_unique": "Governance - Signaling"
+  },
+  {
+    "proposal_id": "153",
+    "chain_id": "dydx",
+    "title": "Add TRYUSD perpetual market",
+    "type": "MarketRelated",
+    "topic": "Market Addition",
+    "status": "PASSED",
+    "submit_time": "1726243198693",
+    "final_tally_result": {
+      "yes_count": 36,
+      "no_count": 1,
+      "abstain_count": 2,
+      "no_vote_count": 21
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Signaling",
+    "topic_v2_display": "Signaling",
+    "topic_v2_unique": "Governance - Signaling"
+  },
+  {
+    "proposal_id": "152",
+    "chain_id": "dydx",
+    "title": "Launch Incentives  Season 6 Distribution",
+    "type": "Unknown",
+    "topic": "Miscellaneous",
+    "status": "PASSED",
+    "submit_time": "1725916957651",
+    "final_tally_result": {
+      "yes_count": 39,
+      "abstain_count": 4,
+      "no_vote_count": 17
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Signaling",
+    "topic_v2_display": "Signaling",
+    "topic_v2_unique": "Governance - Signaling"
+  },
+  {
+    "proposal_id": "151",
+    "chain_id": "dydx",
+    "title": "Add HNTUSD perpetual market",
+    "type": "MarketRelated",
+    "topic": "Market Addition",
+    "status": "PASSED",
+    "submit_time": "1725639878557",
+    "final_tally_result": {
+      "yes_count": 39,
+      "abstain_count": 1,
+      "no_vote_count": 20
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Signaling",
+    "topic_v2_display": "Signaling",
+    "topic_v2_unique": "Governance - Signaling"
+  },
+  {
+    "proposal_id": "150",
+    "chain_id": "dydx",
+    "title": "Add NEIROUSD perpetual market",
+    "type": "MarketRelated",
+    "topic": "Market Addition",
+    "status": "PASSED",
+    "submit_time": "1725564246733",
+    "final_tally_result": {
+      "yes_count": 34,
+      "no_count": 2,
+      "abstain_count": 3,
+      "no_vote_count": 21
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Signaling",
+    "topic_v2_display": "Signaling",
+    "topic_v2_unique": "Governance - Signaling"
+  },
+  {
+    "proposal_id": "149",
+    "chain_id": "dydx",
+    "title": "Add OSMOUSD perpetual market",
+    "type": "MarketRelated",
+    "topic": "Market Addition",
+    "status": "PASSED",
+    "submit_time": "1725168945449",
+    "final_tally_result": {
+      "yes_count": 36,
+      "abstain_count": 1,
+      "no_vote_count": 23
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Signaling",
+    "topic_v2_display": "Signaling",
+    "topic_v2_unique": "Governance - Signaling"
+  },
+  {
+    "proposal_id": "148",
+    "chain_id": "dydx",
+    "title": "Add new liquidity tiers update liquidity tiers for SOL and for isolated markets",
+    "type": "Unknown",
+    "topic": "Miscellaneous",
+    "status": "PASSED",
+    "submit_time": "1724943629517",
+    "final_tally_result": {
+      "yes_count": 38,
+      "abstain_count": 3,
+      "no_vote_count": 19
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Signaling",
+    "topic_v2_display": "Signaling",
+    "topic_v2_unique": "Governance - Signaling"
+  },
+  {
+    "proposal_id": "147",
+    "chain_id": "dydx",
+    "title": "Wind down MATICUSD market",
+    "type": "Unknown",
+    "topic": "Miscellaneous",
+    "status": "PASSED",
+    "submit_time": "1724942005574",
+    "final_tally_result": {
+      "yes_count": 41,
+      "abstain_count": 2,
+      "no_vote_count": 17
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Signaling",
+    "topic_v2_display": "Signaling",
+    "topic_v2_unique": "Governance - Signaling"
+  },
+  {
+    "proposal_id": "146",
+    "chain_id": "dydx",
+    "title": "Update EURC exchanges to add Coinbase Pro as a source",
+    "type": "ParameterChange",
+    "topic": "Economic Parameters",
+    "status": "PASSED",
+    "submit_time": "1724926981679",
+    "final_tally_result": {
+      "yes_count": 41,
+      "abstain_count": 1,
+      "no_vote_count": 18
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Parameter Change",
+    "topic_v2_display": "Parameter Change",
+    "topic_v2_unique": "Protocol - Parameter Change"
+  },
+  {
+    "proposal_id": "145",
+    "chain_id": "dydx",
+    "title": "Add DAIUSD perpetual market",
+    "type": "MarketRelated",
+    "topic": "Market Addition",
+    "status": "PASSED",
+    "submit_time": "1724821257952",
+    "final_tally_result": {
+      "yes_count": 39,
+      "abstain_count": 1,
+      "no_vote_count": 20
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Signaling",
+    "topic_v2_display": "Signaling",
+    "topic_v2_unique": "Governance - Signaling"
+  },
+  {
+    "proposal_id": "144",
+    "chain_id": "dydx",
+    "title": "Add RETARDIOUSD perpetual market",
+    "type": "MarketRelated",
+    "topic": "Market Addition",
+    "status": "PASSED",
+    "submit_time": "1724541714815",
+    "final_tally_result": {
+      "yes_count": 36,
+      "no_count": 4,
+      "abstain_count": 6,
+      "no_vote_count": 14
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Signaling",
+    "topic_v2_display": "Signaling",
+    "topic_v2_unique": "Governance - Signaling"
+  },
+  {
+    "proposal_id": "143",
+    "chain_id": "dydx",
+    "title": "Add EURCUSD perpetual market",
+    "type": "MarketRelated",
+    "topic": "Market Addition",
+    "status": "PASSED",
+    "submit_time": "1724468163513",
+    "final_tally_result": {
+      "yes_count": 43,
+      "abstain_count": 1,
+      "no_vote_count": 16
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Signaling",
+    "topic_v2_display": "Signaling",
+    "topic_v2_unique": "Governance - Signaling"
+  },
+  {
+    "proposal_id": "142",
+    "chain_id": "dydx",
+    "title": "ReLaunch Incentives after dYdX Unlimited upgrade with 20M over 6 Months administered by Chaos Labs",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "PASSED",
+    "submit_time": "1724337031421",
+    "final_tally_result": {
+      "yes_count": 30,
+      "abstain_count": 8,
+      "no_count": 3,
+      "no_vote_count": 19
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Core Upgrade",
+    "topic_v2_display": "Core Upgrade",
+    "topic_v2_unique": "Protocol - Core Upgrade"
+  },
+  {
+    "proposal_id": "141",
+    "chain_id": "dydx",
+    "title": "Add DRIFTUSD perpetual market",
+    "type": "MarketRelated",
+    "topic": "Market Addition",
+    "status": "PASSED",
+    "submit_time": "1724162839002",
+    "final_tally_result": {
+      "yes_count": 36,
+      "abstain_count": 3,
+      "no_vote_count": 21
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Signaling",
+    "topic_v2_display": "Signaling",
+    "topic_v2_unique": "Governance - Signaling"
+  },
+  {
+    "proposal_id": "140",
+    "chain_id": "dydx",
+    "title": "Add GMEUSD perpetual market",
+    "type": "MarketRelated",
+    "topic": "Market Addition",
+    "status": "PASSED",
+    "submit_time": "1724122502761",
+    "final_tally_result": {
+      "yes_count": 37,
+      "no_count": 2,
+      "abstain_count": 5,
+      "no_vote_count": 16
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Signaling",
+    "topic_v2_display": "Signaling",
+    "topic_v2_unique": "Governance - Signaling"
+  },
+  {
+    "proposal_id": "139",
+    "chain_id": "dydx",
+    "title": "Add PAXGUSD perpetual market",
+    "type": "MarketRelated",
+    "topic": "Market Addition",
+    "status": "PASSED",
+    "submit_time": "1723760673699",
+    "final_tally_result": {
+      "yes_count": 42,
+      "abstain_count": 1,
+      "no_vote_count": 17
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Signaling",
+    "topic_v2_display": "Signaling",
+    "topic_v2_unique": "Governance - Signaling"
+  },
+  {
+    "proposal_id": "138",
+    "chain_id": "dydx",
+    "title": "Add FOXYUSD perpetual market",
+    "type": "MarketRelated",
+    "topic": "Market Addition",
+    "status": "PASSED",
+    "submit_time": "1723403211790",
+    "final_tally_result": {
+      "yes_count": 17,
+      "abstain_count": 17,
+      "no_count": 4,
+      "no_vote_count": 22
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Signaling",
+    "topic_v2_display": "Signaling",
+    "topic_v2_unique": "Governance - Signaling"
+  },
+  {
+    "proposal_id": "137",
+    "chain_id": "dydx",
+    "title": "Add AURORAUSD perpetual market",
+    "type": "MarketRelated",
+    "topic": "Market Addition",
+    "status": "PASSED",
+    "submit_time": "1723317677878",
+    "final_tally_result": {
+      "yes_count": 40,
+      "abstain_count": 1,
+      "no_vote_count": 19
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Signaling",
+    "topic_v2_display": "Signaling",
+    "topic_v2_unique": "Governance - Signaling"
+  },
+  {
+    "proposal_id": "136",
+    "chain_id": "dydx",
+    "title": "Add MICHIUSD perpetual market",
+    "type": "MarketRelated",
+    "topic": "Market Addition",
+    "status": "PASSED",
+    "submit_time": "1723232733234",
+    "final_tally_result": {
+      "yes_count": 36,
+      "no_count": 3,
+      "no_vote_count": 21
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Signaling",
+    "topic_v2_display": "Signaling",
+    "topic_v2_unique": "Governance - Signaling"
+  },
+  {
+    "proposal_id": "135",
+    "chain_id": "dydx",
+    "title": "Add VRTXUSD perpetual market",
+    "type": "MarketRelated",
+    "topic": "Market Addition",
+    "status": "PASSED",
+    "submit_time": "1723165986626",
+    "final_tally_result": {
+      "yes_count": 37,
+      "no_count": 2,
+      "abstain_count": 2,
+      "no_vote_count": 19
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Signaling",
+    "topic_v2_display": "Signaling",
+    "topic_v2_unique": "Governance - Signaling"
+  },
+  {
+    "proposal_id": "134",
+    "chain_id": "dydx",
+    "title": "Update RNDR ticker to RENDER add Bybit and Okx and increase minexchanges to 3",
+    "type": "ParameterChange",
+    "topic": "Fee Adjustment",
+    "status": "PASSED",
+    "submit_time": "1723137336388",
+    "final_tally_result": {
+      "yes_count": 44,
+      "abstain_count": 1,
+      "no_vote_count": 15
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Parameter Change",
+    "topic_v2_display": "Parameter Change",
+    "topic_v2_unique": "Protocol - Parameter Change"
+  },
+  {
+    "proposal_id": "133",
+    "chain_id": "dydx",
+    "title": "Add ZEROUSD perpetual market",
+    "type": "MarketRelated",
+    "topic": "Market Addition",
+    "status": "PASSED",
+    "submit_time": "1723130193064",
+    "final_tally_result": {
+      "yes_count": 40,
+      "no_count": 2,
+      "abstain_count": 1,
+      "no_vote_count": 17
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Signaling",
+    "topic_v2_display": "Signaling",
+    "topic_v2_unique": "Governance - Signaling"
+  },
+  {
+    "proposal_id": "132",
+    "chain_id": "dydx",
+    "title": "Update min price change ppm double rate limit",
+    "type": "ParameterChange",
+    "topic": "Fee Adjustment",
+    "status": "PASSED",
+    "submit_time": "1723109797337",
+    "final_tally_result": {
+      "yes_count": 43,
+      "abstain_count": 2,
+      "no_vote_count": 15
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Parameter Change",
+    "topic_v2_display": "Parameter Change",
+    "topic_v2_unique": "Protocol - Parameter Change"
+  },
+  {
+    "proposal_id": "131",
+    "chain_id": "dydx",
+    "title": "Add MAVIAUSD perpetual market",
+    "type": "MarketRelated",
+    "topic": "Market Addition",
+    "status": "PASSED",
+    "submit_time": "1722628333589",
+    "final_tally_result": {
+      "yes_count": 41,
+      "abstain_count": 1,
+      "no_count": 1,
+      "no_vote_count": 17
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Signaling",
+    "topic_v2_display": "Signaling",
+    "topic_v2_unique": "Governance - Signaling"
+  },
+  {
+    "proposal_id": "130",
+    "chain_id": "dydx",
+    "title": "dYdX Chain Software Upgrade v520",
+    "type": "SoftwareUpgrade",
+    "topic": "Major Release",
+    "status": "PASSED",
+    "submit_time": "1722488420391",
+    "final_tally_result": {
+      "yes_count": 42,
+      "abstain_count": 1,
+      "no_vote_count": 17
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Core Upgrade",
+    "topic_v2_display": "Core Upgrade",
+    "topic_v2_unique": "Protocol - Core Upgrade"
+  },
+  {
+    "proposal_id": "129",
+    "chain_id": "dydx",
+    "title": "Update RNDR exchanges to add Binance and Gate with ticker RENDER rename Coinbase ticker to RENDER and increase minexchanges to 2",
+    "type": "ParameterChange",
+    "topic": "Fee Adjustment",
+    "status": "PASSED",
+    "submit_time": "1722357531878",
+    "final_tally_result": {
+      "yes_count": 45,
+      "abstain_count": 1,
+      "no_vote_count": 14
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Parameter Change",
+    "topic_v2_display": "Parameter Change",
+    "topic_v2_unique": "Protocol - Parameter Change"
+  },
+  {
+    "proposal_id": "128",
+    "chain_id": "dydx",
+    "title": "Launch Incentives  Season 5 Distribution",
+    "type": "Unknown",
+    "topic": "Miscellaneous",
+    "status": "PASSED",
+    "submit_time": "1722280677668",
+    "final_tally_result": {
+      "yes_count": 42,
+      "abstain_count": 3,
+      "no_vote_count": 15
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Signaling",
+    "topic_v2_display": "Signaling",
+    "topic_v2_unique": "Governance - Signaling"
+  },
+  {
+    "proposal_id": "127",
+    "chain_id": "dydx",
+    "title": "Add DMAILUSD perpetual market",
+    "type": "MarketRelated",
+    "topic": "Market Addition",
+    "status": "PASSED",
+    "submit_time": "1722138600333",
+    "final_tally_result": {
+      "yes_count": 34,
+      "no_count": 1,
+      "abstain_count": 1,
+      "no_vote_count": 24
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Signaling",
+    "topic_v2_display": "Signaling",
+    "topic_v2_unique": "Governance - Signaling"
+  },
+  {
+    "proposal_id": "126",
+    "chain_id": "dydx",
+    "title": "Update RNDR exchanges to only coinbase pro with RNDRUSD ticker and set min exchanges to 1",
+    "type": "ParameterChange",
+    "topic": "Protocol Configuration",
+    "status": "PASSED",
+    "submit_time": "1721498145979",
+    "final_tally_result": {
+      "yes_count": 38,
+      "abstain_count": 1,
+      "no_vote_count": 21
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Parameter Change",
+    "topic_v2_display": "Parameter Change",
+    "topic_v2_unique": "Protocol - Parameter Change"
+  },
+  {
+    "proposal_id": "125",
+    "chain_id": "dydx",
+    "title": "dYdX Chain Software Upgrade v510",
+    "type": "SoftwareUpgrade",
+    "topic": "Major Release",
+    "status": "PASSED",
+    "submit_time": "1721358465185",
+    "final_tally_result": {
+      "yes_count": 41,
+      "abstain_count": 1,
+      "no_vote_count": 18
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Core Upgrade",
+    "topic_v2_display": "Core Upgrade",
+    "topic_v2_unique": "Protocol - Core Upgrade"
+  },
+  {
+    "proposal_id": "124",
+    "chain_id": "dydx",
+    "title": "Add OMUSD perpetual market",
+    "type": "MarketRelated",
+    "topic": "Market Addition",
+    "status": "PASSED",
+    "submit_time": "1721285582104",
+    "final_tally_result": {
+      "yes_count": 43,
+      "abstain_count": 1,
+      "no_vote_count": 16
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Signaling",
+    "topic_v2_display": "Signaling",
+    "topic_v2_unique": "Governance - Signaling"
+  },
+  {
+    "proposal_id": "123",
+    "chain_id": "dydx",
+    "title": "Add BICOUSD perpetual market",
+    "type": "MarketRelated",
+    "topic": "Market Addition",
+    "status": "PASSED",
+    "submit_time": "1720627035055",
+    "final_tally_result": {
+      "yes_count": 37,
+      "abstain_count": 2,
+      "no_vote_count": 21
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Signaling",
+    "topic_v2_display": "Signaling",
+    "topic_v2_unique": "Governance - Signaling"
+  },
+  {
+    "proposal_id": "122",
+    "chain_id": "dydx",
+    "title": "Add ZENUSD perpetual market",
+    "type": "MarketRelated",
+    "topic": "Market Addition",
+    "status": "PASSED",
+    "submit_time": "1719835414885",
+    "final_tally_result": {
+      "yes_count": 43,
+      "abstain_count": 3,
+      "no_vote_count": 14
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Signaling",
+    "topic_v2_display": "Signaling",
+    "topic_v2_unique": "Governance - Signaling"
+  },
+  {
+    "proposal_id": "121",
+    "chain_id": "dydx",
+    "title": "Add TRBUSD perpetual market",
+    "type": "MarketRelated",
+    "topic": "Market Addition",
+    "status": "PASSED",
+    "submit_time": "1719835370227",
+    "final_tally_result": {
+      "yes_count": 36,
+      "no_with_veto_count": 3,
+      "abstain_count": 3,
+      "no_count": 1,
+      "no_vote_count": 17
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Signaling",
+    "topic_v2_display": "Signaling",
+    "topic_v2_unique": "Governance - Signaling"
+  },
+  {
+    "proposal_id": "120",
+    "chain_id": "dydx",
+    "title": "Add BOMEUSD perpetual market",
+    "type": "MarketRelated",
+    "topic": "Market Addition",
+    "status": "PASSED",
+    "submit_time": "1719835350033",
+    "final_tally_result": {
+      "abstain_count": 3,
+      "yes_count": 38,
+      "no_count": 3,
+      "no_vote_count": 16
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Signaling",
+    "topic_v2_display": "Signaling",
+    "topic_v2_unique": "Governance - Signaling"
+  },
+  {
+    "proposal_id": "119",
+    "chain_id": "dydx",
+    "title": "Add TURBOUSD perpetual market",
+    "type": "MarketRelated",
+    "topic": "Market Addition",
+    "status": "PASSED",
+    "submit_time": "1719835317096",
+    "final_tally_result": {
+      "yes_count": 36,
+      "no_count": 3,
+      "abstain_count": 5,
+      "no_vote_count": 16
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Signaling",
+    "topic_v2_display": "Signaling",
+    "topic_v2_unique": "Governance - Signaling"
+  },
+  {
+    "proposal_id": "118",
+    "chain_id": "dydx",
+    "title": "Add PIXELUSD perpetual market",
+    "type": "MarketRelated",
+    "topic": "Market Addition",
+    "status": "PASSED",
+    "submit_time": "1719835265618",
+    "final_tally_result": {
+      "abstain_count": 4,
+      "yes_count": 40,
+      "no_vote_count": 16
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Signaling",
+    "topic_v2_display": "Signaling",
+    "topic_v2_unique": "Governance - Signaling"
+  },
+  {
+    "proposal_id": "117",
+    "chain_id": "dydx",
+    "title": "Add ALTUSD perpetual market",
+    "type": "MarketRelated",
+    "topic": "Market Addition",
+    "status": "PASSED",
+    "submit_time": "1719835221328",
+    "final_tally_result": {
+      "yes_count": 43,
+      "abstain_count": 1,
+      "no_vote_count": 16
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Signaling",
+    "topic_v2_display": "Signaling",
+    "topic_v2_unique": "Governance - Signaling"
+  },
+  {
+    "proposal_id": "116",
+    "chain_id": "dydx",
+    "title": "Add EGLDUSD perpetual market",
+    "type": "MarketRelated",
+    "topic": "Market Addition",
+    "status": "PASSED",
+    "submit_time": "1719835204420",
+    "final_tally_result": {
+      "yes_count": 43,
+      "abstain_count": 1,
+      "no_vote_count": 16
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Signaling",
+    "topic_v2_display": "Signaling",
+    "topic_v2_unique": "Governance - Signaling"
+  },
+  {
+    "proposal_id": "115",
+    "chain_id": "dydx",
+    "title": "Add NEOUSD perpetual market",
+    "type": "MarketRelated",
+    "topic": "Market Addition",
+    "status": "PASSED",
+    "submit_time": "1719835181888",
+    "final_tally_result": {
+      "yes_count": 43,
+      "abstain_count": 1,
+      "no_vote_count": 16
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Signaling",
+    "topic_v2_display": "Signaling",
+    "topic_v2_unique": "Governance - Signaling"
+  },
+  {
+    "proposal_id": "114",
+    "chain_id": "dydx",
+    "title": "Add BEAMUSD perpetual market",
+    "type": "MarketRelated",
+    "topic": "Market Addition",
+    "status": "PASSED",
+    "submit_time": "1719835164994",
+    "final_tally_result": {
+      "yes_count": 41,
+      "abstain_count": 3,
+      "no_vote_count": 16
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Signaling",
+    "topic_v2_display": "Signaling",
+    "topic_v2_unique": "Governance - Signaling"
+  },
+  {
+    "proposal_id": "113",
+    "chain_id": "dydx",
+    "title": "Add MEWUSD perpetual market",
+    "type": "MarketRelated",
+    "topic": "Market Addition",
+    "status": "PASSED",
+    "submit_time": "1719835136343",
+    "final_tally_result": {
+      "yes_count": 36,
+      "no_count": 3,
+      "abstain_count": 4,
+      "no_vote_count": 17
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Signaling",
+    "topic_v2_display": "Signaling",
+    "topic_v2_unique": "Governance - Signaling"
+  },
+  {
+    "proposal_id": "112",
+    "chain_id": "dydx",
+    "title": "Add XAIUSD perpetual market",
+    "type": "MarketRelated",
+    "topic": "Market Addition",
+    "status": "PASSED",
+    "submit_time": "1719834899462",
+    "final_tally_result": {
+      "yes_count": 40,
+      "abstain_count": 4,
+      "no_vote_count": 16
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Signaling",
+    "topic_v2_display": "Signaling",
+    "topic_v2_unique": "Governance - Signaling"
+  },
+  {
+    "proposal_id": "111",
+    "chain_id": "dydx",
+    "title": "Add AXSUSD perpetual market",
+    "type": "MarketRelated",
+    "topic": "Market Addition",
+    "status": "PASSED",
+    "submit_time": "1719834795080",
+    "final_tally_result": {
+      "yes_count": 38,
+      "abstain_count": 5,
+      "no_vote_count": 17
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Signaling",
+    "topic_v2_display": "Signaling",
+    "topic_v2_unique": "Governance - Signaling"
+  },
+  {
+    "proposal_id": "110",
+    "chain_id": "dydx",
+    "title": "Add GALAUSD perpetual market",
+    "type": "MarketRelated",
+    "topic": "Market Addition",
+    "status": "PASSED",
+    "submit_time": "1719834784540",
+    "final_tally_result": {
+      "yes_count": 43,
+      "abstain_count": 1,
+      "no_vote_count": 16
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Signaling",
+    "topic_v2_display": "Signaling",
+    "topic_v2_unique": "Governance - Signaling"
+  },
+  {
+    "proposal_id": "109",
+    "chain_id": "dydx",
+    "title": "Add PRIMEUSD perpetual market",
+    "type": "MarketRelated",
+    "topic": "Market Addition",
+    "status": "PASSED",
+    "submit_time": "1719834747833",
+    "final_tally_result": {
+      "yes_count": 36,
+      "abstain_count": 7,
+      "no_count": 1,
+      "no_vote_count": 16
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Signaling",
+    "topic_v2_display": "Signaling",
+    "topic_v2_unique": "Governance - Signaling"
+  },
+  {
+    "proposal_id": "108",
+    "chain_id": "dydx",
+    "title": "Add POPCATUSD perpetual market",
+    "type": "MarketRelated",
+    "topic": "Market Addition",
+    "status": "PASSED",
+    "submit_time": "1719834732091",
+    "final_tally_result": {
+      "yes_count": 36,
+      "no_count": 4,
+      "abstain_count": 4,
+      "no_vote_count": 16
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Signaling",
+    "topic_v2_display": "Signaling",
+    "topic_v2_unique": "Governance - Signaling"
+  },
+  {
+    "proposal_id": "107",
+    "chain_id": "dydx",
+    "title": "Add GMXUSD perpetual market",
+    "type": "MarketRelated",
+    "topic": "Market Addition",
+    "status": "PASSED",
+    "submit_time": "1719732307165",
+    "final_tally_result": {
+      "yes_count": 45,
+      "abstain_count": 2,
+      "no_vote_count": 13
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Signaling",
+    "topic_v2_display": "Signaling",
+    "topic_v2_unique": "Governance - Signaling"
+  },
+  {
+    "proposal_id": "106",
+    "chain_id": "dydx",
+    "title": "Add PEOPLEUSD perpetual market",
+    "type": "MarketRelated",
+    "topic": "Market Addition",
+    "status": "PASSED",
+    "submit_time": "1719732273698",
+    "final_tally_result": {
+      "yes_count": 39,
+      "abstain_count": 6,
+      "no_count": 1,
+      "no_vote_count": 14
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Signaling",
+    "topic_v2_display": "Signaling",
+    "topic_v2_unique": "Governance - Signaling"
+  },
+  {
+    "proposal_id": "105",
+    "chain_id": "dydx",
+    "title": "Add COREUSD perpetual market",
+    "type": "MarketRelated",
+    "topic": "Market Addition",
+    "status": "PASSED",
+    "submit_time": "1719731601690",
+    "final_tally_result": {
+      "yes_count": 43,
+      "no_count": 2,
+      "abstain_count": 1,
+      "no_vote_count": 14
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Signaling",
+    "topic_v2_display": "Signaling",
+    "topic_v2_unique": "Governance - Signaling"
+  },
+  {
+    "proposal_id": "104",
+    "chain_id": "dydx",
+    "title": "Add JASMYUSD perpetual market",
+    "type": "MarketRelated",
+    "topic": "Market Addition",
+    "status": "PASSED",
+    "submit_time": "1719731572421",
+    "final_tally_result": {
+      "yes_count": 42,
+      "no_count": 1,
+      "abstain_count": 2,
+      "no_vote_count": 15
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Signaling",
+    "topic_v2_display": "Signaling",
+    "topic_v2_unique": "Governance - Signaling"
+  },
+  {
+    "proposal_id": "103",
+    "chain_id": "dydx",
+    "title": "Add MANTAUSD perpetual market",
+    "type": "MarketRelated",
+    "topic": "Market Addition",
+    "status": "FAILED",
+    "submit_time": "1719731532266",
+    "final_tally_result": {
+      "yes_count": 46,
+      "abstain_count": 1,
+      "no_vote_count": 13
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Signaling",
+    "topic_v2_display": "Signaling",
+    "topic_v2_unique": "Governance - Signaling"
+  },
+  {
+    "proposal_id": "102",
+    "chain_id": "dydx",
+    "title": "Add MNTUSD perpetual market",
+    "type": "MarketRelated",
+    "topic": "Market Addition",
+    "status": "PASSED",
+    "submit_time": "1719731518780",
+    "final_tally_result": {
+      "yes_count": 42,
+      "abstain_count": 2,
+      "no_vote_count": 16
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Signaling",
+    "topic_v2_display": "Signaling",
+    "topic_v2_unique": "Governance - Signaling"
+  },
+  {
+    "proposal_id": "101",
+    "chain_id": "dydx",
+    "title": "Add AEROUSD perpetual market",
+    "type": "MarketRelated",
+    "topic": "Market Addition",
+    "status": "FAILED",
+    "submit_time": "1719731408841",
+    "final_tally_result": {
+      "yes_count": 42,
+      "abstain_count": 4,
+      "no_count": 1,
+      "no_vote_count": 13
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Signaling",
+    "topic_v2_display": "Signaling",
+    "topic_v2_unique": "Governance - Signaling"
+  },
+  {
+    "proposal_id": "100",
+    "chain_id": "dydx",
+    "title": "Add DEGENUSD perpetual market",
+    "type": "MarketRelated",
+    "topic": "Market Addition",
+    "status": "PASSED",
+    "submit_time": "1719731395705",
+    "final_tally_result": {
+      "yes_count": 40,
+      "no_count": 2,
+      "abstain_count": 4,
+      "no_vote_count": 14
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Signaling",
+    "topic_v2_display": "Signaling",
+    "topic_v2_unique": "Governance - Signaling"
+  },
+  {
+    "proposal_id": "99",
+    "chain_id": "dydx",
+    "title": "Add PENDLEUSD perpetual market",
+    "type": "MarketRelated",
+    "topic": "Market Addition",
+    "status": "PASSED",
+    "submit_time": "1719731168368",
+    "final_tally_result": {
+      "yes_count": 47,
+      "abstain_count": 1,
+      "no_vote_count": 12
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Signaling",
+    "topic_v2_display": "Signaling",
+    "topic_v2_unique": "Governance - Signaling"
+  },
+  {
+    "proposal_id": "98",
+    "chain_id": "dydx",
+    "title": "Add ZRXUSD perpetual market",
+    "type": "MarketRelated",
+    "topic": "Market Addition",
+    "status": "PASSED",
+    "submit_time": "1719731121593",
+    "final_tally_result": {
+      "yes_count": 43,
+      "abstain_count": 2,
+      "no_count": 1,
+      "no_vote_count": 14
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Signaling",
+    "topic_v2_display": "Signaling",
+    "topic_v2_unique": "Governance - Signaling"
+  },
+  {
+    "proposal_id": "97",
+    "chain_id": "dydx",
+    "title": "Add SUSHIUSD perpetual market",
+    "type": "MarketRelated",
+    "topic": "Market Addition",
+    "status": "PASSED",
+    "submit_time": "1719731074196",
+    "final_tally_result": {
+      "yes_count": 45,
+      "abstain_count": 1,
+      "no_count": 1,
+      "no_vote_count": 13
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Signaling",
+    "topic_v2_display": "Signaling",
+    "topic_v2_unique": "Governance - Signaling"
+  },
+  {
+    "proposal_id": "96",
+    "chain_id": "dydx",
+    "title": "Add CVXUSD perpetual market",
+    "type": "MarketRelated",
+    "topic": "Market Addition",
+    "status": "PASSED",
+    "submit_time": "1719731024630",
+    "final_tally_result": {
+      "yes_count": 45,
+      "abstain_count": 2,
+      "no_vote_count": 13
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Signaling",
+    "topic_v2_display": "Signaling",
+    "topic_v2_unique": "Governance - Signaling"
+  },
+  {
+    "proposal_id": "95",
+    "chain_id": "dydx",
+    "title": "Add UMAUSD perpetual market",
+    "type": "MarketRelated",
+    "topic": "Market Addition",
+    "status": "PASSED",
+    "submit_time": "1719730990028",
+    "final_tally_result": {
+      "yes_count": 43,
+      "no_count": 2,
+      "abstain_count": 2,
+      "no_vote_count": 13
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Signaling",
+    "topic_v2_display": "Signaling",
+    "topic_v2_unique": "Governance - Signaling"
+  },
+  {
+    "proposal_id": "94",
+    "chain_id": "dydx",
+    "title": "Add XTZUSD perpetual market",
+    "type": "MarketRelated",
+    "topic": "Market Addition",
+    "status": "PASSED",
+    "submit_time": "1719730929468",
+    "final_tally_result": {
+      "yes_count": 44,
+      "no_count": 1,
+      "abstain_count": 2,
+      "no_vote_count": 13
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Signaling",
+    "topic_v2_display": "Signaling",
+    "topic_v2_unique": "Governance - Signaling"
+  },
+  {
+    "proposal_id": "93",
+    "chain_id": "dydx",
+    "title": "Add ZECUSD perpetual market",
+    "type": "MarketRelated",
+    "topic": "Market Addition",
+    "status": "FAILED",
+    "submit_time": "1719730875723",
+    "final_tally_result": {
+      "yes_count": 44,
+      "abstain_count": 4,
+      "no_vote_count": 12
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Signaling",
+    "topic_v2_display": "Signaling",
+    "topic_v2_unique": "Governance - Signaling"
+  },
+  {
+    "proposal_id": "92",
+    "chain_id": "dydx",
+    "title": "Add 1INCHUSD perpetual market",
+    "type": "MarketRelated",
+    "topic": "Market Addition",
+    "status": "PASSED",
+    "submit_time": "1719730863785",
+    "final_tally_result": {
+      "yes_count": 45,
+      "no_count": 1,
+      "abstain_count": 1,
+      "no_vote_count": 13
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Signaling",
+    "topic_v2_display": "Signaling",
+    "topic_v2_unique": "Governance - Signaling"
+  },
+  {
+    "proposal_id": "91",
+    "chain_id": "dydx",
+    "title": "Add ENJUSD perpetual market",
+    "type": "MarketRelated",
+    "topic": "Market Addition",
+    "status": "PASSED",
+    "submit_time": "1719730817242",
+    "final_tally_result": {
+      "yes_count": 43,
+      "abstain_count": 3,
+      "no_vote_count": 14
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Signaling",
+    "topic_v2_display": "Signaling",
+    "topic_v2_unique": "Governance - Signaling"
+  },
+  {
+    "proposal_id": "90",
+    "chain_id": "dydx",
+    "title": "Add THETAUSD perpetual market",
+    "type": "MarketRelated",
+    "topic": "Market Addition",
+    "status": "PASSED",
+    "submit_time": "1719730682209",
+    "final_tally_result": {
+      "yes_count": 46,
+      "no_count": 1,
+      "abstain_count": 1,
+      "no_vote_count": 12
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Signaling",
+    "topic_v2_display": "Signaling",
+    "topic_v2_unique": "Governance - Signaling"
+  },
+  {
+    "proposal_id": "89",
+    "chain_id": "dydx",
+    "title": "Add XMRUSD perpetual market",
+    "type": "MarketRelated",
+    "topic": "Market Addition",
+    "status": "PASSED",
+    "submit_time": "1719730652586",
+    "final_tally_result": {
+      "yes_count": 46,
+      "abstain_count": 1,
+      "no_vote_count": 13
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Signaling",
+    "topic_v2_display": "Signaling",
+    "topic_v2_unique": "Governance - Signaling"
+  },
+  {
+    "proposal_id": "88",
+    "chain_id": "dydx",
+    "title": "Add BLASTUSD perpetual market",
+    "type": "MarketRelated",
+    "topic": "Market Addition",
+    "status": "PASSED",
+    "submit_time": "1719730603367",
+    "final_tally_result": {
+      "yes_count": 47,
+      "abstain_count": 1,
+      "no_vote_count": 12
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Signaling",
+    "topic_v2_display": "Signaling",
+    "topic_v2_unique": "Governance - Signaling"
+  },
+  {
+    "proposal_id": "87",
+    "chain_id": "dydx",
+    "title": "Add SATSUSD perpetual market",
+    "type": "MarketRelated",
+    "topic": "Market Addition",
+    "status": "PASSED",
+    "submit_time": "1719479468430",
+    "final_tally_result": {
+      "yes_count": 41,
+      "abstain_count": 2,
+      "no_vote_count": 17
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Signaling",
+    "topic_v2_display": "Signaling",
+    "topic_v2_unique": "Governance - Signaling"
+  },
+  {
+    "proposal_id": "86",
+    "chain_id": "dydx",
+    "title": "Add BRETTUSD perpetual market",
+    "type": "MarketRelated",
+    "topic": "Market Addition",
+    "status": "PASSED",
+    "submit_time": "1719479377124",
+    "final_tally_result": {
+      "yes_count": 35,
+      "abstain_count": 7,
+      "no_count": 1,
+      "no_vote_count": 17
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Signaling",
+    "topic_v2_display": "Signaling",
+    "topic_v2_unique": "Governance - Signaling"
+  },
+  {
+    "proposal_id": "85",
+    "chain_id": "dydx",
+    "title": "Add CAKEUSD perpetual market",
+    "type": "MarketRelated",
+    "topic": "Market Addition",
+    "status": "PASSED",
+    "submit_time": "1719479284143",
+    "final_tally_result": {
+      "yes_count": 40,
+      "abstain_count": 3,
+      "no_vote_count": 17
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Signaling",
+    "topic_v2_display": "Signaling",
+    "topic_v2_unique": "Governance - Signaling"
+  },
+  {
+    "proposal_id": "84",
+    "chain_id": "dydx",
+    "title": "Add AKTUSD perpetual market",
+    "type": "MarketRelated",
+    "topic": "Market Addition",
+    "status": "PASSED",
+    "submit_time": "1719479258403",
+    "final_tally_result": {
+      "yes_count": 43,
+      "abstain_count": 1,
+      "no_vote_count": 16
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Signaling",
+    "topic_v2_display": "Signaling",
+    "topic_v2_unique": "Governance - Signaling"
+  },
+  {
+    "proposal_id": "83",
+    "chain_id": "dydx",
+    "title": "Add TAIKOUSD perpetual market",
+    "type": "MarketRelated",
+    "topic": "Market Addition",
+    "status": "PASSED",
+    "submit_time": "1719479081510",
+    "final_tally_result": {
+      "yes_count": 42,
+      "abstain_count": 2,
+      "no_vote_count": 16
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Signaling",
+    "topic_v2_display": "Signaling",
+    "topic_v2_unique": "Governance - Signaling"
+  },
+  {
+    "proposal_id": "82",
+    "chain_id": "dydx",
+    "title": "Add SAFEUSD perpetual market",
+    "type": "MarketRelated",
+    "topic": "Market Addition",
+    "status": "PASSED",
+    "submit_time": "1719473982025",
+    "final_tally_result": {
+      "yes_count": 41,
+      "abstain_count": 2,
+      "no_vote_count": 17
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Signaling",
+    "topic_v2_display": "Signaling",
+    "topic_v2_unique": "Governance - Signaling"
+  },
+  {
+    "proposal_id": "81",
+    "chain_id": "dydx",
+    "title": "Add FTMUSD perpetual market",
+    "type": "MarketRelated",
+    "topic": "Market Addition",
+    "status": "PASSED",
+    "submit_time": "1719473874452",
+    "final_tally_result": {
+      "yes_count": 42,
+      "abstain_count": 2,
+      "no_vote_count": 16
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Signaling",
+    "topic_v2_display": "Signaling",
+    "topic_v2_unique": "Governance - Signaling"
+  },
+  {
+    "proposal_id": "80",
+    "chain_id": "dydx",
+    "title": "Add TAOUSD perpetual market",
+    "type": "MarketRelated",
+    "topic": "Market Addition",
+    "status": "PASSED",
+    "submit_time": "1719473851915",
+    "final_tally_result": {
+      "yes_count": 43,
+      "abstain_count": 1,
+      "no_vote_count": 16
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Signaling",
+    "topic_v2_display": "Signaling",
+    "topic_v2_unique": "Governance - Signaling"
+  },
+  {
+    "proposal_id": "79",
+    "chain_id": "dydx",
+    "title": "Add FLOKIUSD perpetual market",
+    "type": "MarketRelated",
+    "topic": "Market Addition",
+    "status": "PASSED",
+    "submit_time": "1719473796647",
+    "final_tally_result": {
+      "yes_count": 41,
+      "abstain_count": 3,
+      "no_vote_count": 16
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Signaling",
+    "topic_v2_display": "Signaling",
+    "topic_v2_unique": "Governance - Signaling"
+  },
+  {
+    "proposal_id": "78",
+    "chain_id": "dydx",
+    "title": "Add ENSUSD perpetual market",
+    "type": "MarketRelated",
+    "topic": "Market Addition",
+    "status": "PASSED",
+    "submit_time": "1719473764044",
+    "final_tally_result": {
+      "yes_count": 41,
+      "abstain_count": 1,
+      "no_vote_count": 18
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Signaling",
+    "topic_v2_display": "Signaling",
+    "topic_v2_unique": "Governance - Signaling"
+  },
+  {
+    "proposal_id": "77",
+    "chain_id": "dydx",
+    "title": "Add NOTUSD perpetual market",
+    "type": "MarketRelated",
+    "topic": "Market Addition",
+    "status": "PASSED",
+    "submit_time": "1719451946763",
+    "final_tally_result": {
+      "yes_count": 34,
+      "no_count": 3,
+      "abstain_count": 3,
+      "no_vote_count": 20
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Signaling",
+    "topic_v2_display": "Signaling",
+    "topic_v2_unique": "Governance - Signaling"
+  },
+  {
+    "proposal_id": "76",
+    "chain_id": "dydx",
+    "title": "Add KASUSD perpetual market",
+    "type": "MarketRelated",
+    "topic": "Market Addition",
+    "status": "PASSED",
+    "submit_time": "1719451872827",
+    "final_tally_result": {
+      "yes_count": 40,
+      "abstain_count": 3,
+      "no_vote_count": 17
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Signaling",
+    "topic_v2_display": "Signaling",
+    "topic_v2_unique": "Governance - Signaling"
+  },
+  {
+    "proposal_id": "75",
+    "chain_id": "dydx",
+    "title": "Add ARUSD perpetual market",
+    "type": "MarketRelated",
+    "topic": "Market Addition",
+    "status": "PASSED",
+    "submit_time": "1719451459159",
+    "final_tally_result": {
+      "yes_count": 41,
+      "abstain_count": 1,
+      "no_vote_count": 18
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Signaling",
+    "topic_v2_display": "Signaling",
+    "topic_v2_unique": "Governance - Signaling"
+  },
+  {
+    "proposal_id": "74",
+    "chain_id": "dydx",
+    "title": "Add IOUSD perpetual market",
+    "type": "MarketRelated",
+    "topic": "Market Addition",
+    "status": "PASSED",
+    "submit_time": "1719451424086",
+    "final_tally_result": {
+      "yes_count": 38,
+      "abstain_count": 5,
+      "no_vote_count": 17
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Signaling",
+    "topic_v2_display": "Signaling",
+    "topic_v2_unique": "Governance - Signaling"
+  },
+  {
+    "proposal_id": "73",
+    "chain_id": "dydx",
+    "title": "Add ENAUSD perpetual market",
+    "type": "MarketRelated",
+    "topic": "Market Addition",
+    "status": "PASSED",
+    "submit_time": "1719451375684",
+    "final_tally_result": {
+      "yes_count": 42,
+      "abstain_count": 1,
+      "no_vote_count": 17
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Signaling",
+    "topic_v2_display": "Signaling",
+    "topic_v2_unique": "Governance - Signaling"
+  },
+  {
+    "proposal_id": "72",
+    "chain_id": "dydx",
+    "title": "Add ONDOUSD perpetual market",
+    "type": "MarketRelated",
+    "topic": "Market Addition",
+    "status": "PASSED",
+    "submit_time": "1719425615385",
+    "final_tally_result": {
+      "yes_count": 40,
+      "abstain_count": 1,
+      "no_vote_count": 19
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Signaling",
+    "topic_v2_display": "Signaling",
+    "topic_v2_unique": "Governance - Signaling"
+  },
+  {
+    "proposal_id": "71",
+    "chain_id": "dydx",
+    "title": "Add TLOSUSD perpetual market",
+    "type": "MarketRelated",
+    "topic": "Market Addition",
+    "status": "PASSED",
+    "submit_time": "1719414848187",
+    "final_tally_result": {
+      "yes_count": 41,
+      "no_count": 1,
+      "abstain_count": 1,
+      "no_vote_count": 17
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Signaling",
+    "topic_v2_display": "Signaling",
+    "topic_v2_unique": "Governance - Signaling"
+  },
+  {
+    "proposal_id": "70",
+    "chain_id": "dydx",
+    "title": "Add ZKUSD perpetual market",
+    "type": "MarketRelated",
+    "topic": "Market Addition",
+    "status": "PASSED",
+    "submit_time": "1719232866858",
+    "final_tally_result": {
+      "yes_count": 46,
+      "abstain_count": 1,
+      "no_vote_count": 13
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Signaling",
+    "topic_v2_display": "Signaling",
+    "topic_v2_unique": "Governance - Signaling"
+  },
+  {
+    "proposal_id": "69",
+    "chain_id": "dydx",
+    "title": "Add ZROUSD perpetual market",
+    "type": "MarketRelated",
+    "topic": "Market Addition",
+    "status": "PASSED",
+    "submit_time": "1719232360297",
+    "final_tally_result": {
+      "yes_count": 47,
+      "abstain_count": 1,
+      "no_vote_count": 12
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Signaling",
+    "topic_v2_display": "Signaling",
+    "topic_v2_unique": "Governance - Signaling"
+  },
+  {
+    "proposal_id": "68",
+    "chain_id": "dydx",
+    "title": "Add BODENUSD perpetual market",
+    "type": "MarketRelated",
+    "topic": "Market Addition",
+    "status": "PASSED",
+    "submit_time": "1719041079264",
+    "final_tally_result": {
+      "yes_count": 48,
+      "no_count": 2,
+      "abstain_count": 1,
+      "no_vote_count": 9
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Signaling",
+    "topic_v2_display": "Signaling",
+    "topic_v2_unique": "Governance - Signaling"
+  },
+  {
+    "proposal_id": "67",
+    "chain_id": "dydx",
+    "title": "Add TREMPUSD perpetual market",
+    "type": "MarketRelated",
+    "topic": "Market Addition",
+    "status": "PASSED",
+    "submit_time": "1719041016635",
+    "final_tally_result": {
+      "yes_count": 47,
+      "no_count": 2,
+      "abstain_count": 1,
+      "no_vote_count": 10
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Signaling",
+    "topic_v2_display": "Signaling",
+    "topic_v2_unique": "Governance - Signaling"
+  },
+  {
+    "proposal_id": "66",
+    "chain_id": "dydx",
+    "title": "Add TRUMPUSD perpetual market",
+    "type": "MarketRelated",
+    "topic": "Market Addition",
+    "status": "REJECTED",
+    "submit_time": "1718970618561",
+    "final_tally_result": {
+      "no_count": 41,
+      "no_with_veto_count": 1,
+      "yes_count": 3,
+      "abstain_count": 3,
+      "no_vote_count": 12
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Signaling",
+    "topic_v2_display": "Signaling",
+    "topic_v2_unique": "Governance - Signaling"
+  },
+  {
+    "proposal_id": "65",
+    "chain_id": "dydx",
+    "title": "Add MOGUSD perpetual market",
+    "type": "MarketRelated",
+    "topic": "Market Addition",
+    "status": "PASSED",
+    "submit_time": "1718895354131",
+    "final_tally_result": {
+      "yes_count": 40,
+      "no_count": 2,
+      "abstain_count": 2,
+      "no_vote_count": 16
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Signaling",
+    "topic_v2_display": "Signaling",
+    "topic_v2_unique": "Governance - Signaling"
+  },
+  {
+    "proposal_id": "64",
+    "chain_id": "dydx",
+    "title": "Add MOTHERUSD perpetual market",
+    "type": "MarketRelated",
+    "topic": "Market Addition",
+    "status": "PASSED",
+    "submit_time": "1718738453279",
+    "final_tally_result": {
+      "yes_count": 37,
+      "abstain_count": 2,
+      "no_count": 1,
+      "no_vote_count": 20
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Signaling",
+    "topic_v2_display": "Signaling",
+    "topic_v2_unique": "Governance - Signaling"
+  },
+  {
+    "proposal_id": "63",
+    "chain_id": "dydx",
+    "title": "Decrease minpricechangeppm by 5x for longtail markets",
+    "type": "ParameterChange",
+    "topic": "Fee Adjustment",
+    "status": "PASSED",
+    "submit_time": "1718219521517",
+    "final_tally_result": {
+      "yes_count": 40,
+      "abstain_count": 2,
+      "no_vote_count": 18
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Parameter Change",
+    "topic_v2_display": "Parameter Change",
+    "topic_v2_unique": "Protocol - Parameter Change"
+  },
+  {
+    "proposal_id": "62",
+    "chain_id": "dydx",
+    "title": "Update Vault Spread to 30bps",
+    "type": "ParameterChange",
+    "topic": "Protocol Configuration",
+    "status": "PASSED",
+    "submit_time": "1718027410129",
+    "final_tally_result": {
+      "yes_count": 43,
+      "abstain_count": 2,
+      "no_vote_count": 15
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Parameter Change",
+    "topic_v2_display": "Parameter Change",
+    "topic_v2_unique": "Protocol - Parameter Change"
+  },
+  {
+    "proposal_id": "61",
+    "chain_id": "dydx",
+    "title": "Wind Down FETUSD and AGIXUSD Markets",
+    "type": "Unknown",
+    "topic": "Miscellaneous",
+    "status": "PASSED",
+    "submit_time": "1717793632579",
+    "final_tally_result": {
+      "yes_count": 40,
+      "abstain_count": 1,
+      "no_vote_count": 19
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Signaling",
+    "topic_v2_display": "Signaling",
+    "topic_v2_unique": "Governance - Signaling"
+  },
+  {
+    "proposal_id": "60",
+    "chain_id": "dydx",
+    "title": "Launch Incentives  Season 4 Distribution",
+    "type": "Unknown",
+    "topic": "Miscellaneous",
+    "status": "PASSED",
+    "submit_time": "1717444649196",
+    "final_tally_result": {
+      "yes_count": 43,
+      "abstain_count": 2,
+      "no_vote_count": 15
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Signaling",
+    "topic_v2_display": "Signaling",
+    "topic_v2_unique": "Governance - Signaling"
+  },
+  {
+    "proposal_id": "59",
+    "chain_id": "dydx",
+    "title": "dYdX Chain Software Upgrade v500",
+    "type": "SoftwareUpgrade",
+    "topic": "Major Release",
+    "status": "PASSED",
+    "submit_time": "1717102082471",
+    "final_tally_result": {
+      "yes_count": 48,
+      "abstain_count": 1,
+      "no_vote_count": 11
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Core Upgrade",
+    "topic_v2_display": "Core Upgrade",
+    "topic_v2_unique": "Protocol - Core Upgrade"
+  },
+  {
+    "proposal_id": "58",
+    "chain_id": "dydx",
+    "title": "Add WUSD perpetual market",
+    "type": "MarketRelated",
+    "topic": "Market Addition",
+    "status": "PASSED",
+    "submit_time": "1716875249620",
+    "final_tally_result": {
+      "yes_count": 41,
+      "abstain_count": 2,
+      "no_vote_count": 17
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Signaling",
+    "topic_v2_display": "Signaling",
+    "topic_v2_unique": "Governance - Signaling"
+  },
+  {
+    "proposal_id": "57",
+    "chain_id": "dydx",
+    "title": "Add TONUSD perpetual market",
+    "type": "MarketRelated",
+    "topic": "Market Addition",
+    "status": "PASSED",
+    "submit_time": "1714876416688",
+    "final_tally_result": {
+      "yes_count": 45,
+      "abstain_count": 3,
+      "no_vote_count": 12
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Signaling",
+    "topic_v2_display": "Signaling",
+    "topic_v2_unique": "Governance - Signaling"
+  },
+  {
+    "proposal_id": "56",
+    "chain_id": "dydx",
+    "title": "Add ETHFIUSD perpetual market",
+    "type": "MarketRelated",
+    "topic": "Market Addition",
+    "status": "PASSED",
+    "submit_time": "1714419049718",
+    "final_tally_result": {
+      "yes_count": 42,
+      "abstain_count": 3,
+      "no_count": 1,
+      "no_vote_count": 14
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Signaling",
+    "topic_v2_display": "Signaling",
+    "topic_v2_unique": "Governance - Signaling"
+  },
+  {
+    "proposal_id": "55",
+    "chain_id": "dydx",
+    "title": "Add WIFUSD perpetual market",
+    "type": "MarketRelated",
+    "topic": "Market Addition",
+    "status": "PASSED",
+    "submit_time": "1714073408465",
+    "final_tally_result": {
+      "yes_count": 45,
+      "abstain_count": 2,
+      "no_vote_count": 13
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Signaling",
+    "topic_v2_display": "Signaling",
+    "topic_v2_unique": "Governance - Signaling"
+  },
+  {
+    "proposal_id": "54",
+    "chain_id": "dydx",
+    "title": "Launch Incentives Program Extension",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "PASSED",
+    "submit_time": "1713936085793",
+    "final_tally_result": {
+      "yes_count": 40,
+      "abstain_count": 6,
+      "no_vote_count": 14
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Signaling",
+    "topic_v2_display": "Signaling",
+    "topic_v2_unique": "Governance - Signaling"
+  },
+  {
+    "proposal_id": "53",
+    "chain_id": "dydx",
+    "title": "dYdX Chain Software Upgrade v410",
+    "type": "SoftwareUpgrade",
+    "topic": "Major Release",
+    "status": "PASSED",
+    "submit_time": "1713802172435",
+    "final_tally_result": {
+      "yes_count": 53,
+      "abstain_count": 1,
+      "no_vote_count": 6
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Core Upgrade",
+    "topic_v2_display": "Core Upgrade",
+    "topic_v2_unique": "Protocol - Core Upgrade"
+  },
+  {
+    "proposal_id": "52",
+    "chain_id": "dydx",
+    "title": "Add CHZUSD perpetual market",
+    "type": "MarketRelated",
+    "topic": "Market Addition",
+    "status": "PASSED",
+    "submit_time": "1713727668813",
+    "final_tally_result": {
+      "yes_count": 52,
+      "abstain_count": 3,
+      "no_vote_count": 5
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Signaling",
+    "topic_v2_display": "Signaling",
+    "topic_v2_unique": "Governance - Signaling"
+  },
+  {
+    "proposal_id": "51",
+    "chain_id": "dydx",
+    "title": "Launch Incentives  Season 3 Distribution",
+    "type": "Unknown",
+    "topic": "Miscellaneous",
+    "status": "PASSED",
+    "submit_time": "1713497505482",
+    "final_tally_result": {
+      "yes_count": 44,
+      "abstain_count": 1,
+      "no_vote_count": 15
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Signaling",
+    "topic_v2_display": "Signaling",
+    "topic_v2_unique": "Governance - Signaling"
+  },
+  {
+    "proposal_id": "50",
+    "chain_id": "dydx",
+    "title": "Add DYDXUSD perpetual market",
+    "type": "Unknown",
+    "topic": "Miscellaneous",
+    "status": "PASSED",
+    "submit_time": "1713375660543",
+    "final_tally_result": {
+      "yes_count": 32,
+      "abstain_count": 3,
+      "no_vote_count": 25
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Signaling",
+    "topic_v2_display": "Signaling",
+    "topic_v2_unique": "Governance - Signaling"
+  },
+  {
+    "proposal_id": "49",
+    "chain_id": "dydx",
+    "title": "dYdX Executable Community Staking Proposal",
+    "type": "Unknown",
+    "topic": "Miscellaneous",
+    "status": "PASSED",
+    "submit_time": "1712087767664",
+    "final_tally_result": {
+      "yes_count": 41,
+      "abstain_count": 7,
+      "no_count": 2,
+      "no_vote_count": 10
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Signaling",
+    "topic_v2_display": "Signaling",
+    "topic_v2_unique": "Governance - Signaling"
+  },
+  {
+    "proposal_id": "48",
+    "chain_id": "dydx",
+    "title": "dYdX ShortTerm Boost Program STBP",
+    "type": "Unknown",
+    "topic": "Miscellaneous",
+    "status": "REJECTED",
+    "submit_time": "1712069193792",
+    "final_tally_result": {
+      "abstain_count": 12,
+      "no_count": 32,
+      "yes_count": 5,
+      "no_vote_count": 11
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Signaling",
+    "topic_v2_display": "Signaling",
+    "topic_v2_unique": "Governance - Signaling"
+  },
+  {
+    "proposal_id": "47",
+    "chain_id": "dydx",
+    "title": "dYdX Community Staking with pSTAKE Finance Proposal",
+    "type": "Unknown",
+    "topic": "Unclassified",
+    "status": "REJECTED",
+    "submit_time": "1712052036537",
+    "final_tally_result": {
+      "abstain_count": 13,
+      "weighted_vote_count": 1,
+      "yes_count": 29,
+      "no_count": 9,
+      "no_vote_count": 8
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Signaling",
+    "topic_v2_display": "Signaling",
+    "topic_v2_unique": "Governance - Signaling"
+  },
+  {
+    "proposal_id": "46",
+    "chain_id": "dydx",
+    "title": "dYdX Chain Software Upgrade v400",
+    "type": "SoftwareUpgrade",
+    "topic": "Major Release",
+    "status": "PASSED",
+    "submit_time": "1711983671987",
+    "final_tally_result": {
+      "yes_count": 57,
+      "abstain_count": 1,
+      "no_vote_count": 2
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Core Upgrade",
+    "topic_v2_display": "Core Upgrade",
+    "topic_v2_unique": "Protocol - Core Upgrade"
+  },
+  {
+    "proposal_id": "45",
+    "chain_id": "dydx",
+    "title": "Transition DOT to a Foundation",
+    "type": "TextProposal",
+    "topic": "Project Funding",
+    "status": "PASSED",
+    "submit_time": "1711528527402",
+    "final_tally_result": {
+      "yes_count": 42,
+      "abstain_count": 6,
+      "no_vote_count": 12
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Signaling",
+    "topic_v2_display": "Signaling",
+    "topic_v2_unique": "Governance - Signaling"
+  },
+  {
+    "proposal_id": "44",
+    "chain_id": "dydx",
+    "title": "dYdX Community Staking Proposal",
+    "type": "TextProposal",
+    "topic": "Community Decision",
+    "status": "PASSED",
+    "submit_time": "1710865425972",
+    "final_tally_result": {
+      "yes_count": 43,
+      "abstain_count": 9,
+      "no_count": 2,
+      "no_vote_count": 6
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Signaling",
+    "topic_v2_display": "Signaling",
+    "topic_v2_unique": "Governance - Signaling"
+  },
+  {
+    "proposal_id": "43",
+    "chain_id": "dydx",
+    "title": "Update Equity Tier Limits",
+    "type": "Unknown",
+    "topic": "Miscellaneous",
+    "status": "PASSED",
+    "submit_time": "1710862867830",
+    "final_tally_result": {
+      "yes_count": 52,
+      "abstain_count": 1,
+      "no_vote_count": 7
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Signaling",
+    "topic_v2_display": "Signaling",
+    "topic_v2_unique": "Governance - Signaling"
+  },
+  {
+    "proposal_id": "42",
+    "chain_id": "dydx",
+    "title": "Add ARKMUSD perpetual market",
+    "type": "MarketRelated",
+    "topic": "Market Addition",
+    "status": "PASSED",
+    "submit_time": "1710846400068",
+    "final_tally_result": {
+      "yes_count": 49,
+      "abstain_count": 2,
+      "no_count": 1,
+      "no_vote_count": 8
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Signaling",
+    "topic_v2_display": "Signaling",
+    "topic_v2_unique": "Governance - Signaling"
+  },
+  {
+    "proposal_id": "41",
+    "chain_id": "dydx",
+    "title": "Add SNXUSD perpetual market",
+    "type": "MarketRelated",
+    "topic": "Market Addition",
+    "status": "PASSED",
+    "submit_time": "1710710980256",
+    "final_tally_result": {
+      "yes_count": 54,
+      "abstain_count": 1,
+      "no_vote_count": 5
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Signaling",
+    "topic_v2_display": "Signaling",
+    "topic_v2_unique": "Governance - Signaling"
+  },
+  {
+    "proposal_id": "40",
+    "chain_id": "dydx",
+    "title": "Add ASTRUSD perpetual market",
+    "type": "MarketRelated",
+    "topic": "Market Addition",
+    "status": "PASSED",
+    "submit_time": "1710521076191",
+    "final_tally_result": {
+      "yes_count": 47,
+      "abstain_count": 3,
+      "no_vote_count": 10
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Signaling",
+    "topic_v2_display": "Signaling",
+    "topic_v2_unique": "Governance - Signaling"
+  },
+  {
+    "proposal_id": "39",
+    "chain_id": "dydx",
+    "title": "Add AEVOUSD perpetual market",
+    "type": "MarketRelated",
+    "topic": "Market Addition",
+    "status": "PASSED",
+    "submit_time": "1710446845053",
+    "final_tally_result": {
+      "yes_count": 48,
+      "abstain_count": 2,
+      "no_vote_count": 10
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Signaling",
+    "topic_v2_display": "Signaling",
+    "topic_v2_unique": "Governance - Signaling"
+  },
+  {
+    "proposal_id": "38",
+    "chain_id": "dydx",
+    "title": "Add AXLUSD perpetual market",
+    "type": "MarketRelated",
+    "topic": "Market Addition",
+    "status": "PASSED",
+    "submit_time": "1710417460703",
+    "final_tally_result": {
+      "yes_count": 46,
+      "abstain_count": 2,
+      "no_vote_count": 12
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Signaling",
+    "topic_v2_display": "Signaling",
+    "topic_v2_unique": "Governance - Signaling"
+  },
+  {
+    "proposal_id": "37",
+    "chain_id": "dydx",
+    "title": "Add RUNEUSD perpetual market",
+    "type": "MarketRelated",
+    "topic": "Market Addition",
+    "status": "PASSED",
+    "submit_time": "1710270998943",
+    "final_tally_result": {
+      "yes_count": 49,
+      "abstain_count": 1,
+      "no_vote_count": 10
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Signaling",
+    "topic_v2_display": "Signaling",
+    "topic_v2_unique": "Governance - Signaling"
+  },
+  {
+    "proposal_id": "36",
+    "chain_id": "dydx",
+    "title": "Add MANAUSD perpetual market",
+    "type": "MarketRelated",
+    "topic": "Market Addition",
+    "status": "PASSED",
+    "submit_time": "1710089430938",
+    "final_tally_result": {
+      "yes_count": 54,
+      "abstain_count": 1,
+      "no_vote_count": 5
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Signaling",
+    "topic_v2_display": "Signaling",
+    "topic_v2_unique": "Governance - Signaling"
+  },
+  {
+    "proposal_id": "35",
+    "chain_id": "dydx",
+    "title": "Add GRTUSD perpetual market",
+    "type": "MarketRelated",
+    "topic": "Market Addition",
+    "status": "PASSED",
+    "submit_time": "1710003474599",
+    "final_tally_result": {
+      "yes_count": 49,
+      "no_count": 1,
+      "abstain_count": 1,
+      "no_vote_count": 9
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Signaling",
+    "topic_v2_display": "Signaling",
+    "topic_v2_unique": "Governance - Signaling"
+  },
+  {
+    "proposal_id": "34",
+    "chain_id": "dydx",
+    "title": "Add ALGOUSD perpetual market",
+    "type": "MarketRelated",
+    "topic": "Market Addition",
+    "status": "PASSED",
+    "submit_time": "1709735724904",
+    "final_tally_result": {
+      "yes_count": 47,
+      "abstain_count": 1,
+      "no_vote_count": 12
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Signaling",
+    "topic_v2_display": "Signaling",
+    "topic_v2_unique": "Governance - Signaling"
+  },
+  {
+    "proposal_id": "33",
+    "chain_id": "dydx",
+    "title": "Add HBARUSD perpetual market",
+    "type": "MarketRelated",
+    "topic": "Market Addition",
+    "status": "PASSED",
+    "submit_time": "1709636567644",
+    "final_tally_result": {
+      "yes_count": 52,
+      "abstain_count": 1,
+      "no_vote_count": 7
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Signaling",
+    "topic_v2_display": "Signaling",
+    "topic_v2_unique": "Governance - Signaling"
+  },
+  {
+    "proposal_id": "32",
+    "chain_id": "dydx",
+    "title": "Launch Incentives  Season 2 Distribution",
+    "type": "Unknown",
+    "topic": "Miscellaneous",
+    "status": "PASSED",
+    "submit_time": "1709570598769",
+    "final_tally_result": {
+      "yes_count": 50,
+      "abstain_count": 3,
+      "no_count": 1,
+      "no_vote_count": 6
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Signaling",
+    "topic_v2_display": "Signaling",
+    "topic_v2_unique": "Governance - Signaling"
+  },
+  {
+    "proposal_id": "31",
+    "chain_id": "dydx",
+    "title": "Add IMXUSD perpetual market",
+    "type": "MarketRelated",
+    "topic": "Market Addition",
+    "status": "PASSED",
+    "submit_time": "1709383202107",
+    "final_tally_result": {
+      "yes_count": 51,
+      "abstain_count": 1,
+      "no_vote_count": 8
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Signaling",
+    "topic_v2_display": "Signaling",
+    "topic_v2_unique": "Governance - Signaling"
+  },
+  {
+    "proposal_id": "30",
+    "chain_id": "dydx",
+    "title": "Add INJUSD perpetual market",
+    "type": "MarketRelated",
+    "topic": "Market Addition",
+    "status": "PASSED",
+    "submit_time": "1709201072832",
+    "final_tally_result": {
+      "yes_count": 40,
+      "abstain_count": 3,
+      "no_vote_count": 17
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Signaling",
+    "topic_v2_display": "Signaling",
+    "topic_v2_unique": "Governance - Signaling"
+  },
+  {
+    "proposal_id": "29",
+    "chain_id": "dydx",
+    "title": "Add STXUSD perpetual market",
+    "type": "MarketRelated",
+    "topic": "Market Addition",
+    "status": "PASSED",
+    "submit_time": "1709112900305",
+    "final_tally_result": {
+      "yes_count": 48,
+      "abstain_count": 1,
+      "no_vote_count": 11
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Signaling",
+    "topic_v2_display": "Signaling",
+    "topic_v2_unique": "Governance - Signaling"
+  },
+  {
+    "proposal_id": "28",
+    "chain_id": "dydx",
+    "title": "Add RNDRUSD perpetual market",
+    "type": "MarketRelated",
+    "topic": "Market Addition",
+    "status": "PASSED",
+    "submit_time": "1709037126720",
+    "final_tally_result": {
+      "yes_count": 47,
+      "no_vote_count": 13
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Signaling",
+    "topic_v2_display": "Signaling",
+    "topic_v2_unique": "Governance - Signaling"
+  },
+  {
+    "proposal_id": "27",
+    "chain_id": "dydx",
+    "title": "Add AGIXUSD perpetual market",
+    "type": "MarketRelated",
+    "topic": "Market Addition",
+    "status": "PASSED",
+    "submit_time": "1708939640413",
+    "final_tally_result": {
+      "yes_count": 50,
+      "abstain_count": 1,
+      "no_vote_count": 9
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Signaling",
+    "topic_v2_display": "Signaling",
+    "topic_v2_unique": "Governance - Signaling"
+  },
+  {
+    "proposal_id": "26",
+    "chain_id": "dydx",
+    "title": "Add BONKUSD perpetual market",
+    "type": "MarketRelated",
+    "topic": "Market Addition",
+    "status": "PASSED",
+    "submit_time": "1708657189845",
+    "final_tally_result": {
+      "yes_count": 54,
+      "abstain_count": 2,
+      "no_vote_count": 4
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Signaling",
+    "topic_v2_display": "Signaling",
+    "topic_v2_unique": "Governance - Signaling"
+  },
+  {
+    "proposal_id": "25",
+    "chain_id": "dydx",
+    "title": "Add PYTHUSD perpetual market",
+    "type": "MarketRelated",
+    "topic": "Market Addition",
+    "status": "PASSED",
+    "submit_time": "1708645029886",
+    "final_tally_result": {
+      "yes_count": 54,
+      "abstain_count": 2,
+      "no_vote_count": 4
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Signaling",
+    "topic_v2_display": "Signaling",
+    "topic_v2_unique": "Governance - Signaling"
+  },
+  {
+    "proposal_id": "24",
+    "chain_id": "dydx",
+    "title": "Add WOOUSD perpetual market",
+    "type": "MarketRelated",
+    "topic": "Market Addition",
+    "status": "PASSED",
+    "submit_time": "1708633751378",
+    "final_tally_result": {
+      "yes_count": 40,
+      "no_count": 10,
+      "abstain_count": 2,
+      "no_vote_count": 8
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Signaling",
+    "topic_v2_display": "Signaling",
+    "topic_v2_unique": "Governance - Signaling"
+  },
+  {
+    "proposal_id": "23",
+    "chain_id": "dydx",
+    "title": "Add FETUSD perpetual market",
+    "type": "MarketRelated",
+    "topic": "Market Addition",
+    "status": "PASSED",
+    "submit_time": "1708594357640",
+    "final_tally_result": {
+      "yes_count": 52,
+      "abstain_count": 2,
+      "no_vote_count": 6
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Signaling",
+    "topic_v2_display": "Signaling",
+    "topic_v2_unique": "Governance - Signaling"
+  },
+  {
+    "proposal_id": "22",
+    "chain_id": "dydx",
+    "title": "Add STRKUSD perpetual market",
+    "type": "MarketRelated",
+    "topic": "Market Addition",
+    "status": "PASSED",
+    "submit_time": "1708496184014",
+    "final_tally_result": {
+      "yes_count": 53,
+      "abstain_count": 1,
+      "no_vote_count": 6
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Signaling",
+    "topic_v2_display": "Signaling",
+    "topic_v2_unique": "Governance - Signaling"
+  },
+  {
+    "proposal_id": "21",
+    "chain_id": "dydx",
+    "title": "Add DYMUSD perpetual market",
+    "type": "MarketRelated",
+    "topic": "Market Addition",
+    "status": "PASSED",
+    "submit_time": "1708456792297",
+    "final_tally_result": {
+      "yes_count": 55,
+      "abstain_count": 2,
+      "no_vote_count": 3
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Signaling",
+    "topic_v2_display": "Signaling",
+    "topic_v2_unique": "Governance - Signaling"
+  },
+  {
+    "proposal_id": "20",
+    "chain_id": "dydx",
+    "title": "Add ICPUSD perpetual market",
+    "type": "MarketRelated",
+    "topic": "Market Addition",
+    "status": "PASSED",
+    "submit_time": "1708381408305",
+    "final_tally_result": {
+      "yes_count": 54,
+      "abstain_count": 2,
+      "no_vote_count": 4
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Signaling",
+    "topic_v2_display": "Signaling",
+    "topic_v2_unique": "Governance - Signaling"
+  },
+  {
+    "proposal_id": "19",
+    "chain_id": "dydx",
+    "title": "dYdX Ecosystem Development Program",
+    "type": "Unknown",
+    "topic": "Miscellaneous",
+    "status": "PASSED",
+    "submit_time": "1708374129652",
+    "final_tally_result": {
+      "yes_count": 50,
+      "abstain_count": 3,
+      "no_vote_count": 7
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Signaling",
+    "topic_v2_display": "Signaling",
+    "topic_v2_unique": "Governance - Signaling"
+  },
+  {
+    "proposal_id": "18",
+    "chain_id": "dydx",
+    "title": "Add EOSUSD perpetual market",
+    "type": "MarketRelated",
+    "topic": "Market Addition",
+    "status": "PASSED",
+    "submit_time": "1708305732858",
+    "final_tally_result": {
+      "yes_count": 51,
+      "abstain_count": 4,
+      "no_vote_count": 5
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Signaling",
+    "topic_v2_display": "Signaling",
+    "topic_v2_unique": "Governance - Signaling"
+  },
+  {
+    "proposal_id": "17",
+    "chain_id": "dydx",
+    "title": "Add ORDIUSD perpetual market",
+    "type": "MarketRelated",
+    "topic": "Market Addition",
+    "status": "PASSED",
+    "submit_time": "1707950756919",
+    "final_tally_result": {
+      "yes_count": 52,
+      "abstain_count": 1,
+      "no_vote_count": 7
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Signaling",
+    "topic_v2_display": "Signaling",
+    "topic_v2_unique": "Governance - Signaling"
+  },
+  {
+    "proposal_id": "16",
+    "chain_id": "dydx",
+    "title": "Add JTOUSD perpetual market",
+    "type": "MarketRelated",
+    "topic": "Market Addition",
+    "status": "PASSED",
+    "submit_time": "1707880059702",
+    "final_tally_result": {
+      "yes_count": 52,
+      "abstain_count": 1,
+      "no_vote_count": 7
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Signaling",
+    "topic_v2_display": "Signaling",
+    "topic_v2_unique": "Governance - Signaling"
+  },
+  {
+    "proposal_id": "15",
+    "chain_id": "dydx",
+    "title": "Min Deposit and Max Deposit Period Change",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "PASSED",
+    "submit_time": "1707857060438",
+    "final_tally_result": {
+      "yes_count": 51,
+      "abstain_count": 1,
+      "no_vote_count": 8
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Signaling",
+    "topic_v2_display": "Signaling",
+    "topic_v2_unique": "Governance - Signaling"
+  },
+  {
+    "proposal_id": "14",
+    "chain_id": "dydx",
+    "title": "Addition of New Trustees to the DOT",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "PASSED",
+    "submit_time": "1707809008416",
+    "final_tally_result": {
+      "yes_count": 48,
+      "abstain_count": 5,
+      "no_vote_count": 7
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Signaling",
+    "topic_v2_display": "Signaling",
+    "topic_v2_unique": "Governance - Signaling"
+  },
+  {
+    "proposal_id": "13",
+    "chain_id": "dydx",
+    "title": "Add BNBUSD perpetual market",
+    "type": "MarketRelated",
+    "topic": "Market Addition",
+    "status": "PASSED",
+    "submit_time": "1707431575272",
+    "final_tally_result": {
+      "yes_count": 53,
+      "abstain_count": 2,
+      "no_vote_count": 5
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Signaling",
+    "topic_v2_display": "Signaling",
+    "topic_v2_unique": "Governance - Signaling"
+  },
+  {
+    "proposal_id": "12",
+    "chain_id": "dydx",
+    "title": "Add AAVEUSD perpetual market",
+    "type": "MarketRelated",
+    "topic": "Market Addition",
+    "status": "PASSED",
+    "submit_time": "1707431478170",
+    "final_tally_result": {
+      "yes_count": 53,
+      "abstain_count": 2,
+      "no_vote_count": 5
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Signaling",
+    "topic_v2_display": "Signaling",
+    "topic_v2_unique": "Governance - Signaling"
+  },
+  {
+    "proposal_id": "11",
+    "chain_id": "dydx",
+    "title": "Add JUPUSD perpetual market",
+    "type": "MarketRelated",
+    "topic": "Market Addition",
+    "status": "PASSED",
+    "submit_time": "1706962676988",
+    "final_tally_result": {
+      "yes_count": 55,
+      "abstain_count": 1,
+      "no_vote_count": 4
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Signaling",
+    "topic_v2_display": "Signaling",
+    "topic_v2_unique": "Governance - Signaling"
+  },
+  {
+    "proposal_id": "10",
+    "chain_id": "dydx",
+    "title": "Add JUPUSD perpetual market",
+    "type": "MarketRelated",
+    "topic": "Market Addition",
+    "status": "REJECTED",
+    "submit_time": "1706879053959",
+    "final_tally_result": {
+      "no_count": 47,
+      "abstain_count": 3,
+      "yes_count": 6,
+      "no_vote_count": 4
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Signaling",
+    "topic_v2_display": "Signaling",
+    "topic_v2_unique": "Governance - Signaling"
+  },
+  {
+    "proposal_id": "9",
+    "chain_id": "dydx",
+    "title": "Launch Incentives  Season 1 Distribution",
+    "type": "Unknown",
+    "topic": "Miscellaneous",
+    "status": "PASSED",
+    "submit_time": "1706574002143",
+    "final_tally_result": {
+      "yes_count": 57,
+      "abstain_count": 2,
+      "no_vote_count": 1
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Signaling",
+    "topic_v2_display": "Signaling",
+    "topic_v2_unique": "Governance - Signaling"
+  },
+  {
+    "proposal_id": "8",
+    "chain_id": "dydx",
+    "title": "dYdX Foundation 30M Fundraising",
+    "type": "Unknown",
+    "topic": "Miscellaneous",
+    "status": "PASSED",
+    "submit_time": "1706562599449",
+    "final_tally_result": {
+      "yes_count": 57,
+      "abstain_count": 2,
+      "no_vote_count": 1
+    },
+    "type_v2": "Governance",
+    "topic_v2": "dApp & Tooling Funding",
+    "topic_v2_display": "dApp & Tooling Funding",
+    "topic_v2_unique": "Governance - dApp & Tooling Funding"
+  },
+  {
+    "proposal_id": "7",
+    "chain_id": "dydx",
+    "title": "dYdX Chain Software Upgrade v300",
+    "type": "SoftwareUpgrade",
+    "topic": "Major Release",
+    "status": "PASSED",
+    "submit_time": "1705909512881",
+    "final_tally_result": {
+      "yes_count": 59,
+      "abstain_count": 1
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Core Upgrade",
+    "topic_v2_display": "Core Upgrade",
+    "topic_v2_unique": "Protocol - Core Upgrade"
+  },
+  {
+    "proposal_id": "6",
+    "chain_id": "dydx",
+    "title": "Fix the v2 emergency upgrade jailings",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "REJECTED",
+    "submit_time": "1704307246701",
+    "final_tally_result": {
+      "no_count": 19,
+      "abstain_count": 16,
+      "yes_count": 12,
+      "no_vote_count": 13
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Core Upgrade",
+    "topic_v2_display": "Core Upgrade",
+    "topic_v2_unique": "Protocol - Core Upgrade"
+  },
+  {
+    "proposal_id": "5",
+    "chain_id": "dydx",
+    "title": "Add New Market TIA",
+    "type": "MarketRelated",
+    "topic": "Market Addition",
+    "status": "PASSED",
+    "submit_time": "1702907393570",
+    "final_tally_result": {
+      "yes_count": 60
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Signaling",
+    "topic_v2_display": "Signaling",
+    "topic_v2_unique": "Governance - Signaling"
+  },
+  {
+    "proposal_id": "4",
+    "chain_id": "dydx",
+    "title": "Seed the Insurance Fund",
+    "type": "Unknown",
+    "topic": "Miscellaneous",
+    "status": "PASSED",
+    "submit_time": "1702608002933",
+    "final_tally_result": {
+      "weighted_vote_count": 1,
+      "yes_count": 54,
+      "no_count": 4,
+      "abstain_count": 1
+    },
+    "type_v2": "Governance",
+    "topic_v2": "dApp & Tooling Funding",
+    "topic_v2_display": "dApp & Tooling Funding",
+    "topic_v2_unique": "Governance - dApp & Tooling Funding"
+  },
+  {
+    "proposal_id": "3",
+    "chain_id": "dydx",
+    "title": "Launch a Social Mitigation Strategy for MEV",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "PASSED",
+    "submit_time": "1701150447816",
+    "final_tally_result": {
+      "yes_count": 54,
+      "abstain_count": 6
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Signaling",
+    "topic_v2_display": "Signaling",
+    "topic_v2_unique": "Governance - Signaling"
+  },
+  {
+    "proposal_id": "2",
+    "chain_id": "dydx",
+    "title": "Activate Trading Rewards and the 6Month Launch Incentive Program",
+    "type": "Unknown",
+    "topic": "Miscellaneous",
+    "status": "PASSED",
+    "submit_time": "1700832110696",
+    "final_tally_result": {
+      "yes_count": 58,
+      "abstain_count": 1,
+      "no_count": 1
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Signaling",
+    "topic_v2_display": "Signaling",
+    "topic_v2_unique": "Governance - Signaling"
+  },
+  {
+    "proposal_id": "1",
+    "chain_id": "dydx",
+    "title": "Enable trading on all markets",
+    "type": "Unknown",
+    "topic": "Miscellaneous",
+    "status": "PASSED",
+    "submit_time": "1699537478893",
+    "final_tally_result": {
+      "yes_count": 55,
+      "abstain_count": 2,
+      "no_count": 2,
+      "weighted_vote_count": 1
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Signaling",
+    "topic_v2_display": "Signaling",
+    "topic_v2_unique": "Governance - Signaling"
+  }
+]

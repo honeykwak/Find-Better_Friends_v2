@@ -1,0 +1,1535 @@
+[
+  {
+    "proposal_id": "96",
+    "chain_id": "iris",
+    "title": "Milestone 3 Delivery Report on FindTruman AIbased TexttoGame Creation Space for IRISnet",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "REJECTED",
+    "submit_time": "1730082771748",
+    "final_tally_result": {
+      "no_with_veto_count": 66,
+      "abstain_count": 2,
+      "no_count": 1,
+      "yes_count": 3,
+      "no_vote_count": 41
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Signaling",
+    "topic_v2_display": "Signaling",
+    "topic_v2_unique": "Governance - Signaling"
+  },
+  {
+    "proposal_id": "95",
+    "chain_id": "iris",
+    "title": "Milestone 2 Delivery Report on FindTruman AIbased TexttoGame Creation Space for IRISnet",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "PASSED",
+    "submit_time": "1725934651787",
+    "final_tally_result": {
+      "yes_count": 69,
+      "abstain_count": 9,
+      "no_vote_count": 33
+    },
+    "type_v2": "Treasury",
+    "topic_v2": "dApp & Tooling Funding",
+    "topic_v2_display": "dApp & Tooling Funding",
+    "topic_v2_unique": "Treasury - dApp & Tooling Funding"
+  },
+  {
+    "proposal_id": "94",
+    "chain_id": "iris",
+    "title": "Milestone 1 Delivery Report on FindTruman AIbased TexttoGame Creation Space for IRISnet",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "PASSED",
+    "submit_time": "1722908263834",
+    "final_tally_result": {
+      "yes_count": 71,
+      "abstain_count": 3,
+      "no_count": 1,
+      "no_vote_count": 39
+    },
+    "type_v2": "Treasury",
+    "topic_v2": "dApp & Tooling Funding",
+    "topic_v2_display": "dApp & Tooling Funding",
+    "topic_v2_unique": "Treasury - dApp & Tooling Funding"
+  },
+  {
+    "proposal_id": "93",
+    "chain_id": "iris",
+    "title": " IRIS Airdrop  ",
+    "type": "Unknown",
+    "topic": "Unclassified",
+    "status": "REJECTED",
+    "submit_time": "1720578850156",
+    "final_tally_result": {
+      "no_with_veto_count": 66,
+      "no_vote_count": 49
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Spam & Malicious",
+    "topic_v2_display": "Spam & Malicious",
+    "topic_v2_unique": "Governance - Spam & Malicious"
+  },
+  {
+    "proposal_id": "92",
+    "chain_id": "iris",
+    "title": "Discover IRIS  New Version 2024",
+    "type": "Unknown",
+    "topic": "Unclassified",
+    "status": "REJECTED",
+    "submit_time": "1718805644260",
+    "final_tally_result": {
+      "no_with_veto_count": 68,
+      "no_vote_count": 47
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Spam & Malicious",
+    "topic_v2_display": "Spam & Malicious",
+    "topic_v2_unique": "Governance - Spam & Malicious"
+  },
+  {
+    "proposal_id": "91",
+    "chain_id": "iris",
+    "title": "ATOM Airdrop  nBTC Airdrop ",
+    "type": "Unknown",
+    "topic": "Unclassified",
+    "status": "REJECTED",
+    "submit_time": "1718750288022",
+    "final_tally_result": {
+      "no_with_veto_count": 68,
+      "no_vote_count": 47
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Spam & Malicious",
+    "topic_v2_display": "Spam & Malicious",
+    "topic_v2_unique": "Governance - Spam & Malicious"
+  },
+  {
+    "proposal_id": "90",
+    "chain_id": "iris",
+    "title": "IRIS Airdrop   240000000  USDx",
+    "type": "Unknown",
+    "topic": "Unclassified",
+    "status": "REJECTED",
+    "submit_time": "1717438753153",
+    "final_tally_result": {
+      "no_with_veto_count": 79,
+      "no_count": 3,
+      "abstain_count": 1,
+      "no_vote_count": 32
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Spam & Malicious",
+    "topic_v2_display": "Spam & Malicious",
+    "topic_v2_unique": "Governance - Spam & Malicious"
+  },
+  {
+    "proposal_id": "89",
+    "chain_id": "iris",
+    "title": "FindTruman  AIbased TexttoGame Creation Space Stage II",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "PASSED",
+    "submit_time": "1717404266589",
+    "final_tally_result": {
+      "yes_count": 49,
+      "no_count": 2,
+      "abstain_count": 39,
+      "no_vote_count": 25
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Signaling",
+    "topic_v2_display": "Signaling",
+    "topic_v2_unique": "Governance - Signaling"
+  },
+  {
+    "proposal_id": "88",
+    "chain_id": "iris",
+    "title": "Deploy IRIS ERC20 Contract",
+    "type": "TokenRelated",
+    "topic": "Token Registration",
+    "status": "PASSED",
+    "submit_time": "1716257333097",
+    "final_tally_result": {
+      "yes_count": 92,
+      "no_vote_count": 23
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "dApp Onboarding",
+    "topic_v2_display": "dApp Onboarding",
+    "topic_v2_unique": "Ecosystem - dApp Onboarding"
+  },
+  {
+    "proposal_id": "86",
+    "chain_id": "iris",
+    "title": "Upgrade to irishub v30",
+    "type": "SoftwareUpgrade",
+    "topic": "Major Release",
+    "status": "PASSED",
+    "submit_time": "1715738993739",
+    "final_tally_result": {
+      "yes_count": 98,
+      "no_vote_count": 17
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Core Upgrade",
+    "topic_v2_display": "Core Upgrade",
+    "topic_v2_unique": "Protocol - Core Upgrade"
+  },
+  {
+    "proposal_id": "85",
+    "chain_id": "iris",
+    "title": "IRIS New update",
+    "type": "Unknown",
+    "topic": "Unclassified",
+    "status": "REJECTED",
+    "submit_time": "1714594561804",
+    "final_tally_result": {
+      "no_with_veto_count": 65,
+      "yes_count": 1,
+      "no_vote_count": 49
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Signaling",
+    "topic_v2_display": "Signaling",
+    "topic_v2_unique": "Governance - Signaling"
+  },
+  {
+    "proposal_id": "84",
+    "chain_id": "iris",
+    "title": "Proposal for Creating a Community Pool and Promoting IRIS in Sports Stadiums and Teams",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "REJECTED",
+    "submit_time": "1713721568027",
+    "final_tally_result": {
+      "no_with_veto_count": 13,
+      "no_count": 6,
+      "yes_count": 1,
+      "abstain_count": 3,
+      "no_vote_count": 92
+    },
+    "type_v2": "Treasury",
+    "topic_v2": "Liquidity & Incentives",
+    "topic_v2_display": "Liquidity & Incentives",
+    "topic_v2_unique": "Treasury - Liquidity & Incentives"
+  },
+  {
+    "proposal_id": "83",
+    "chain_id": "iris",
+    "title": "Milestone 3 Delivery Proposal on ChainIDE for IRISnet",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "PASSED",
+    "submit_time": "1713257599213",
+    "final_tally_result": {
+      "yes_count": 32,
+      "abstain_count": 7,
+      "no_vote_count": 76
+    },
+    "type_v2": "Treasury",
+    "topic_v2": "dApp & Tooling Funding",
+    "topic_v2_display": "dApp & Tooling Funding",
+    "topic_v2_unique": "Treasury - dApp & Tooling Funding"
+  },
+  {
+    "proposal_id": "82",
+    "chain_id": "iris",
+    "title": "IRIS Airdrop   Cosmos Hub Proposal",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "REJECTED",
+    "submit_time": "1713191592352",
+    "final_tally_result": {
+      "no_with_veto_count": 22,
+      "no_vote_count": 93
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Spam & Malicious",
+    "topic_v2_display": "Spam & Malicious",
+    "topic_v2_unique": "Governance - Spam & Malicious"
+  },
+  {
+    "proposal_id": "81",
+    "chain_id": "iris",
+    "title": "Milestone 3 Delivery Report on FindTruman for IRISnet",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "REJECTED",
+    "submit_time": "1711942598372",
+    "final_tally_result": {
+      "no_with_veto_count": 21,
+      "no_vote_count": 94
+    },
+    "type_v2": "Treasury",
+    "topic_v2": "dApp & Tooling Funding",
+    "topic_v2_display": "dApp & Tooling Funding",
+    "topic_v2_unique": "Treasury - dApp & Tooling Funding"
+  },
+  {
+    "proposal_id": "80",
+    "chain_id": "iris",
+    "title": "IRIS Airdrop ",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "REJECTED",
+    "submit_time": "1711928621083",
+    "final_tally_result": {
+      "no_with_veto_count": 22,
+      "no_vote_count": 93
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Spam & Malicious",
+    "topic_v2_display": "Spam & Malicious",
+    "topic_v2_unique": "Governance - Spam & Malicious"
+  },
+  {
+    "proposal_id": "79",
+    "chain_id": "iris",
+    "title": "Milestone 3 Delivery Report on FindTruman for IRISnet",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "PASSED",
+    "submit_time": "1708485763557",
+    "final_tally_result": {
+      "yes_count": 47,
+      "abstain_count": 26,
+      "no_vote_count": 42
+    },
+    "type_v2": "Treasury",
+    "topic_v2": "dApp & Tooling Funding",
+    "topic_v2_display": "dApp & Tooling Funding",
+    "topic_v2_unique": "Treasury - dApp & Tooling Funding"
+  },
+  {
+    "proposal_id": "78",
+    "chain_id": "iris",
+    "title": "IRISnet Persian Community Funding",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "REJECTED",
+    "submit_time": "1707299934032",
+    "final_tally_result": {
+      "no_count": 31,
+      "abstain_count": 35,
+      "no_with_veto_count": 1,
+      "yes_count": 2,
+      "no_vote_count": 46
+    },
+    "type_v2": "Treasury",
+    "topic_v2": "Community & Marketing Funding",
+    "topic_v2_display": "Community & Marketing Funding",
+    "topic_v2_unique": "Treasury - Community & Marketing Funding"
+  },
+  {
+    "proposal_id": "77",
+    "chain_id": "iris",
+    "title": "ReVote 2024 version ",
+    "type": "TextProposal",
+    "topic": "Project Funding",
+    "status": "REJECTED",
+    "submit_time": "1706565817147",
+    "final_tally_result": {
+      "no_with_veto_count": 22,
+      "yes_count": 26,
+      "abstain_count": 12,
+      "no_count": 9,
+      "no_vote_count": 46
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Signaling",
+    "topic_v2_display": "Signaling",
+    "topic_v2_unique": "Governance - Signaling"
+  },
+  {
+    "proposal_id": "76",
+    "chain_id": "iris",
+    "title": "Uptick on IRISnet Marketplace Upgrade and Joint Event with IRISnet for ICS721 Use Case",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "PASSED",
+    "submit_time": "1706527044891",
+    "final_tally_result": {
+      "yes_count": 34,
+      "no_count": 13,
+      "abstain_count": 23,
+      "no_with_veto_count": 2,
+      "no_vote_count": 43
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Core Upgrade",
+    "topic_v2_display": "Core Upgrade",
+    "topic_v2_unique": "Protocol - Core Upgrade"
+  },
+  {
+    "proposal_id": "75",
+    "chain_id": "iris",
+    "title": "ATOM Airdrop  2024 New Version ",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "REJECTED",
+    "submit_time": "1706002221834",
+    "final_tally_result": {
+      "no_with_veto_count": 54,
+      "no_count": 1,
+      "no_vote_count": 60
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Spam & Malicious",
+    "topic_v2_display": "Spam & Malicious",
+    "topic_v2_unique": "Governance - Spam & Malicious"
+  },
+  {
+    "proposal_id": "74",
+    "chain_id": "iris",
+    "title": "Updated Milestone 2 Delivery Report on FindTruman for IRISnet ",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "PASSED",
+    "submit_time": "1705387511666",
+    "final_tally_result": {
+      "yes_count": 29,
+      "abstain_count": 24,
+      "no_count": 26,
+      "no_vote_count": 36
+    },
+    "type_v2": "Treasury",
+    "topic_v2": "dApp & Tooling Funding",
+    "topic_v2_display": "dApp & Tooling Funding",
+    "topic_v2_unique": "Treasury - dApp & Tooling Funding"
+  },
+  {
+    "proposal_id": "73",
+    "chain_id": "iris",
+    "title": "Milestone 2 Delivery Report on FindTruman for IRISnet",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "REJECTED",
+    "submit_time": "1705385854953",
+    "final_tally_result": {
+      "no_count": 30,
+      "abstain_count": 28,
+      "yes_count": 17,
+      "no_vote_count": 40
+    },
+    "type_v2": "Treasury",
+    "topic_v2": "dApp & Tooling Funding",
+    "topic_v2_display": "dApp & Tooling Funding",
+    "topic_v2_unique": "Treasury - dApp & Tooling Funding"
+  },
+  {
+    "proposal_id": "72",
+    "chain_id": "iris",
+    "title": "ATOM Airdrop  2024 New Version ",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "REJECTED",
+    "submit_time": "1705333893972",
+    "final_tally_result": {
+      "no_with_veto_count": 61,
+      "no_count": 1,
+      "no_vote_count": 53
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Spam & Malicious",
+    "topic_v2_display": "Spam & Malicious",
+    "topic_v2_unique": "Governance - Spam & Malicious"
+  },
+  {
+    "proposal_id": "71",
+    "chain_id": "iris",
+    "title": "ATOM Airdrop  2024 New Version ",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "REJECTED",
+    "submit_time": "1704896281626",
+    "final_tally_result": {
+      "no_with_veto_count": 63,
+      "no_count": 1,
+      "no_vote_count": 51
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Spam & Malicious",
+    "topic_v2_display": "Spam & Malicious",
+    "topic_v2_unique": "Governance - Spam & Malicious"
+  },
+  {
+    "proposal_id": "70",
+    "chain_id": "iris",
+    "title": "Upgrade to irishub v21",
+    "type": "SoftwareUpgrade",
+    "topic": "Major Release",
+    "status": "PASSED",
+    "submit_time": "1704250205081",
+    "final_tally_result": {
+      "yes_count": 80,
+      "no_vote_count": 35
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Core Upgrade",
+    "topic_v2_display": "Core Upgrade",
+    "topic_v2_unique": "Protocol - Core Upgrade"
+  },
+  {
+    "proposal_id": "69",
+    "chain_id": "iris",
+    "title": "ATOM Airdrop ",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "REJECTED",
+    "submit_time": "1703739531425",
+    "final_tally_result": {
+      "no_with_veto_count": 61,
+      "no_vote_count": 54
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Spam & Malicious",
+    "topic_v2_display": "Spam & Malicious",
+    "topic_v2_unique": "Governance - Spam & Malicious"
+  },
+  {
+    "proposal_id": "68",
+    "chain_id": "iris",
+    "title": "ATOM Airdrop ",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "REJECTED",
+    "submit_time": "1703631673895",
+    "final_tally_result": {
+      "no_with_veto_count": 61,
+      "no_vote_count": 54
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Spam & Malicious",
+    "topic_v2_display": "Spam & Malicious",
+    "topic_v2_unique": "Governance - Spam & Malicious"
+  },
+  {
+    "proposal_id": "67",
+    "chain_id": "iris",
+    "title": "ATOM Airdrop  ",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "REJECTED",
+    "submit_time": "1703304389646",
+    "final_tally_result": {
+      "no_with_veto_count": 64,
+      "no_vote_count": 51
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Spam & Malicious",
+    "topic_v2_display": "Spam & Malicious",
+    "topic_v2_unique": "Governance - Spam & Malicious"
+  },
+  {
+    "proposal_id": "66",
+    "chain_id": "iris",
+    "title": "ATOM Airdrop ",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "REJECTED",
+    "submit_time": "1703118885382",
+    "final_tally_result": {
+      "no_with_veto_count": 70,
+      "no_vote_count": 45
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Spam & Malicious",
+    "topic_v2_display": "Spam & Malicious",
+    "topic_v2_unique": "Governance - Spam & Malicious"
+  },
+  {
+    "proposal_id": "65",
+    "chain_id": "iris",
+    "title": "Milestone 2 Delivery Report on HashKey DID for IRISnet",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "PASSED",
+    "submit_time": "1702954740992",
+    "final_tally_result": {
+      "yes_count": 74,
+      "abstain_count": 1,
+      "no_vote_count": 40
+    },
+    "type_v2": "Treasury",
+    "topic_v2": "dApp & Tooling Funding",
+    "topic_v2_display": "dApp & Tooling Funding",
+    "topic_v2_unique": "Treasury - dApp & Tooling Funding"
+  },
+  {
+    "proposal_id": "64",
+    "chain_id": "iris",
+    "title": "IRIS to to 1 by 2024 ",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "REJECTED",
+    "submit_time": "1702698785730",
+    "final_tally_result": {
+      "no_with_veto_count": 16,
+      "no_vote_count": 99
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Signaling",
+    "topic_v2_display": "Signaling",
+    "topic_v2_unique": "Governance - Signaling"
+  },
+  {
+    "proposal_id": "63",
+    "chain_id": "iris",
+    "title": "USDCaxl by IRIS Blockchain ",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "REJECTED",
+    "submit_time": "1702252645590",
+    "final_tally_result": {
+      "no_with_veto_count": 46,
+      "no_vote_count": 69
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Signaling",
+    "topic_v2_display": "Signaling",
+    "topic_v2_unique": "Governance - Signaling"
+  },
+  {
+    "proposal_id": "62",
+    "chain_id": "iris",
+    "title": "Atom Airdrop   Limited Supply ",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "REJECTED",
+    "submit_time": "1701796648968",
+    "final_tally_result": {
+      "no_with_veto_count": 62,
+      "no_vote_count": 53
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Spam & Malicious",
+    "topic_v2_display": "Spam & Malicious",
+    "topic_v2_unique": "Governance - Spam & Malicious"
+  },
+  {
+    "proposal_id": "61",
+    "chain_id": "iris",
+    "title": "New Upgrade  IRIS ",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "REJECTED",
+    "submit_time": "1701118007600",
+    "final_tally_result": {
+      "no_with_veto_count": 73,
+      "yes_count": 2,
+      "no_vote_count": 40
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Core Upgrade",
+    "topic_v2_display": "Core Upgrade",
+    "topic_v2_unique": "Protocol - Core Upgrade"
+  },
+  {
+    "proposal_id": "60",
+    "chain_id": "iris",
+    "title": "Milestone 1 Delivery Report on FindTruman for IRISnet Updated Version",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "PASSED",
+    "submit_time": "1701057193102",
+    "final_tally_result": {
+      "yes_count": 73,
+      "abstain_count": 11,
+      "no_vote_count": 31
+    },
+    "type_v2": "Treasury",
+    "topic_v2": "dApp & Tooling Funding",
+    "topic_v2_display": "dApp & Tooling Funding",
+    "topic_v2_unique": "Treasury - dApp & Tooling Funding"
+  },
+  {
+    "proposal_id": "59",
+    "chain_id": "iris",
+    "title": "The supplementary proposal for Proposal 57",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "PASSED",
+    "submit_time": "1700550443325",
+    "final_tally_result": {
+      "yes_count": 82,
+      "no_vote_count": 33
+    },
+    "type_v2": "Treasury",
+    "topic_v2": "dApp & Tooling Funding",
+    "topic_v2_display": "dApp & Tooling Funding",
+    "topic_v2_unique": "Treasury - dApp & Tooling Funding"
+  },
+  {
+    "proposal_id": "58",
+    "chain_id": "iris",
+    "title": "New IRIS Website Proposal ",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "REJECTED",
+    "submit_time": "1700242368402",
+    "final_tally_result": {
+      "no_with_veto_count": 66,
+      "abstain_count": 1,
+      "no_vote_count": 48
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Signaling",
+    "topic_v2_display": "Signaling",
+    "topic_v2_unique": "Governance - Signaling"
+  },
+  {
+    "proposal_id": "57",
+    "chain_id": "iris",
+    "title": "Milestone 1 Delivery Report on HashKey DID for IRISnet",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "PASSED",
+    "submit_time": "1699863054345",
+    "final_tally_result": {
+      "yes_count": 84,
+      "abstain_count": 2,
+      "no_vote_count": 29
+    },
+    "type_v2": "Treasury",
+    "topic_v2": "dApp & Tooling Funding",
+    "topic_v2_display": "dApp & Tooling Funding",
+    "topic_v2_unique": "Treasury - dApp & Tooling Funding"
+  },
+  {
+    "proposal_id": "56",
+    "chain_id": "iris",
+    "title": "Atom Airdrop ",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "REJECTED",
+    "submit_time": "1699659430148",
+    "final_tally_result": {
+      "no_with_veto_count": 67,
+      "no_count": 1,
+      "no_vote_count": 47
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Spam & Malicious",
+    "topic_v2_display": "Spam & Malicious",
+    "topic_v2_unique": "Governance - Spam & Malicious"
+  },
+  {
+    "proposal_id": "55",
+    "chain_id": "iris",
+    "title": "Milestone 2 Delivery Proposal on ChainIDE for IRISnet",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "PASSED",
+    "submit_time": "1699339073055",
+    "final_tally_result": {
+      "yes_count": 83,
+      "no_vote_count": 32
+    },
+    "type_v2": "Treasury",
+    "topic_v2": "dApp & Tooling Funding",
+    "topic_v2_display": "dApp & Tooling Funding",
+    "topic_v2_unique": "Treasury - dApp & Tooling Funding"
+  },
+  {
+    "proposal_id": "54",
+    "chain_id": "iris",
+    "title": "IRIS Airdrop ",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "REJECTED",
+    "submit_time": "1698683405732",
+    "final_tally_result": {
+      "no_with_veto_count": 71,
+      "no_vote_count": 44
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Spam & Malicious",
+    "topic_v2_display": "Spam & Malicious",
+    "topic_v2_unique": "Governance - Spam & Malicious"
+  },
+  {
+    "proposal_id": "52",
+    "chain_id": "iris",
+    "title": "Milestone 1 Deliverables Report on FindTruman for IRISnet",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "REJECTED",
+    "submit_time": "1698118166266",
+    "final_tally_result": {
+      "abstain_count": 32,
+      "no_count": 30,
+      "yes_count": 27,
+      "no_vote_count": 26
+    },
+    "type_v2": "Treasury",
+    "topic_v2": "dApp & Tooling Funding",
+    "topic_v2_display": "dApp & Tooling Funding",
+    "topic_v2_unique": "Treasury - dApp & Tooling Funding"
+  },
+  {
+    "proposal_id": "50",
+    "chain_id": "iris",
+    "title": "Renew Incentives for USDCIRIS WETHIRIS GRAVIRIS Pools",
+    "type": "CommunityPoolSpend",
+    "topic": "Ecosystem Growth",
+    "status": "PASSED",
+    "submit_time": "1694411033481",
+    "final_tally_result": {
+      "yes_count": 77,
+      "no_vote_count": 38
+    },
+    "type_v2": "Treasury",
+    "topic_v2": "Liquidity & Incentives",
+    "topic_v2_display": "Liquidity & Incentives",
+    "topic_v2_unique": "Treasury - Liquidity & Incentives"
+  },
+  {
+    "proposal_id": "49",
+    "chain_id": "iris",
+    "title": "IRIS Airdrop ",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "REJECTED",
+    "submit_time": "1692892357816",
+    "final_tally_result": {
+      "no_with_veto_count": 49,
+      "no_count": 2,
+      "no_vote_count": 64
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Spam & Malicious",
+    "topic_v2_display": "Spam & Malicious",
+    "topic_v2_unique": "Governance - Spam & Malicious"
+  },
+  {
+    "proposal_id": "48",
+    "chain_id": "iris",
+    "title": "FindTruman  Create a STEAMlike Storygameplay Cocreation Platform in Web3",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "PASSED",
+    "submit_time": "1692785066210",
+    "final_tally_result": {
+      "yes_count": 17,
+      "no_count": 14,
+      "abstain_count": 14,
+      "no_vote_count": 70
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Signaling",
+    "topic_v2_display": "Signaling",
+    "topic_v2_unique": "Governance - Signaling"
+  },
+  {
+    "proposal_id": "47",
+    "chain_id": "iris",
+    "title": "ATOM Airdrop ",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "REJECTED",
+    "submit_time": "1692676110713",
+    "final_tally_result": {
+      "no_with_veto_count": 30,
+      "no_count": 12,
+      "no_vote_count": 73
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Spam & Malicious",
+    "topic_v2_display": "Spam & Malicious",
+    "topic_v2_unique": "Governance - Spam & Malicious"
+  },
+  {
+    "proposal_id": "46",
+    "chain_id": "iris",
+    "title": "Integrating HashKey DID Providing a multichain identity infrastructure for the IRIS ecosystem",
+    "type": "CommunityPoolSpend",
+    "topic": "Ecosystem Growth",
+    "status": "PASSED",
+    "submit_time": "1692607815354",
+    "final_tally_result": {
+      "yes_count": 79,
+      "abstain_count": 2,
+      "no_vote_count": 34
+    },
+    "type_v2": "Treasury",
+    "topic_v2": "dApp & Tooling Funding",
+    "topic_v2_display": "dApp & Tooling Funding",
+    "topic_v2_unique": "Treasury - dApp & Tooling Funding"
+  },
+  {
+    "proposal_id": "45",
+    "chain_id": "iris",
+    "title": "Incentives for IRIS collateral on Demex",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "PASSED",
+    "submit_time": "1692607526998",
+    "final_tally_result": {
+      "yes_count": 71,
+      "abstain_count": 5,
+      "no_vote_count": 39
+    },
+    "type_v2": "Treasury",
+    "topic_v2": "Liquidity & Incentives",
+    "topic_v2_display": "Liquidity & Incentives",
+    "topic_v2_unique": "Treasury - Liquidity & Incentives"
+  },
+  {
+    "proposal_id": "44",
+    "chain_id": "iris",
+    "title": "Milestone 1 Delivery Proposal on ChainIDE for IRISnet",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "PASSED",
+    "submit_time": "1688455937395",
+    "final_tally_result": {
+      "yes_count": 50,
+      "abstain_count": 1,
+      "no_vote_count": 64
+    },
+    "type_v2": "Treasury",
+    "topic_v2": "dApp & Tooling Funding",
+    "topic_v2_display": "dApp & Tooling Funding",
+    "topic_v2_unique": "Treasury - dApp & Tooling Funding"
+  },
+  {
+    "proposal_id": "43",
+    "chain_id": "iris",
+    "title": "Integrating ChainIDE Empowering IRIS Developers with a WebBased Multichain Tooling Platform",
+    "type": "CommunityPoolSpend",
+    "topic": "Ecosystem Growth",
+    "status": "PASSED",
+    "submit_time": "1686109736008",
+    "final_tally_result": {
+      "yes_count": 51,
+      "abstain_count": 2,
+      "no_vote_count": 62
+    },
+    "type_v2": "Treasury",
+    "topic_v2": "dApp & Tooling Funding",
+    "topic_v2_display": "dApp & Tooling Funding",
+    "topic_v2_unique": "Treasury - dApp & Tooling Funding"
+  },
+  {
+    "proposal_id": "42",
+    "chain_id": "iris",
+    "title": "Renew Incentives for BNBIRIS BUSDIRIS ATOMIRIS Pools",
+    "type": "CommunityPoolSpend",
+    "topic": "Ecosystem Growth",
+    "status": "PASSED",
+    "submit_time": "1684821266311",
+    "final_tally_result": {
+      "yes_count": 72,
+      "no_vote_count": 43
+    },
+    "type_v2": "Treasury",
+    "topic_v2": "Liquidity & Incentives",
+    "topic_v2_display": "Liquidity & Incentives",
+    "topic_v2_unique": "Treasury - Liquidity & Incentives"
+  },
+  {
+    "proposal_id": "41",
+    "chain_id": "iris",
+    "title": "SUI Airdrop for COSMOS holders ",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "REJECTED",
+    "submit_time": "1682026829570",
+    "final_tally_result": {
+      "no_with_veto_count": 13,
+      "no_count": 9,
+      "no_vote_count": 93
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Spam & Malicious",
+    "topic_v2_display": "Spam & Malicious",
+    "topic_v2_unique": "Governance - Spam & Malicious"
+  },
+  {
+    "proposal_id": "40",
+    "chain_id": "iris",
+    "title": "Update to uptick1171 Client Required",
+    "type": "IBCRelated",
+    "topic": "Client Update",
+    "status": "PASSED",
+    "submit_time": "1681970489084",
+    "final_tally_result": {
+      "yes_count": 57,
+      "no_vote_count": 58
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "IBC Management",
+    "topic_v2_display": "IBC Management",
+    "topic_v2_unique": "Ecosystem - IBC Management"
+  },
+  {
+    "proposal_id": "39",
+    "chain_id": "iris",
+    "title": "Upgrade to irishub v20",
+    "type": "SoftwareUpgrade",
+    "topic": "Major Release",
+    "status": "PASSED",
+    "submit_time": "1681229594623",
+    "final_tally_result": {
+      "yes_count": 105,
+      "no_vote_count": 10
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Core Upgrade",
+    "topic_v2_display": "Core Upgrade",
+    "topic_v2_unique": "Protocol - Core Upgrade"
+  },
+  {
+    "proposal_id": "31",
+    "chain_id": "iris",
+    "title": "ARBITRUM Airdrop",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "REJECTED",
+    "submit_time": "1679258018764",
+    "final_tally_result": {
+      "no_with_veto_count": 26,
+      "no_count": 5,
+      "no_vote_count": 84
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Spam & Malicious",
+    "topic_v2_display": "Spam & Malicious",
+    "topic_v2_unique": "Governance - Spam & Malicious"
+  },
+  {
+    "proposal_id": "30",
+    "chain_id": "iris",
+    "title": "Proposal 30 Renew Incentives for GRAVIRIS USDCIRIS WETHIRIS Pools",
+    "type": "CommunityPoolSpend",
+    "topic": "Ecosystem Growth",
+    "status": "PASSED",
+    "submit_time": "1679053711024",
+    "final_tally_result": {
+      "yes_count": 68,
+      "abstain_count": 1,
+      "no_vote_count": 46
+    },
+    "type_v2": "Treasury",
+    "topic_v2": "Liquidity & Incentives",
+    "topic_v2_display": "Liquidity & Incentives",
+    "topic_v2_unique": "Treasury - Liquidity & Incentives"
+  },
+  {
+    "proposal_id": "29",
+    "chain_id": "iris",
+    "title": "Parameter Change Increase Deposit Amount for IRISnet Governance",
+    "type": "ParameterChange",
+    "topic": "Protocol Configuration",
+    "status": "PASSED",
+    "submit_time": "1678681564215",
+    "final_tally_result": {
+      "yes_count": 83,
+      "no_vote_count": 32
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Parameter Change",
+    "topic_v2_display": "Parameter Change",
+    "topic_v2_unique": "Protocol - Parameter Change"
+  },
+  {
+    "proposal_id": "28",
+    "chain_id": "iris",
+    "title": "Get ATOM Airdrop ",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "REJECTED",
+    "submit_time": "1678330538190",
+    "final_tally_result": {
+      "no_with_veto_count": 20,
+      "abstain_count": 1,
+      "no_count": 6,
+      "no_vote_count": 88
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Spam & Malicious",
+    "topic_v2_display": "Spam & Malicious",
+    "topic_v2_unique": "Governance - Spam & Malicious"
+  },
+  {
+    "proposal_id": "27",
+    "chain_id": "iris",
+    "title": "Make IRISnet the Sponsor of the Game of NFTs Phase 2 Hackathon",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "PASSED",
+    "submit_time": "1678095530582",
+    "final_tally_result": {
+      "yes_count": 50,
+      "no_count": 4,
+      "abstain_count": 4,
+      "no_vote_count": 57
+    },
+    "type_v2": "Treasury",
+    "topic_v2": "Community & Marketing Funding",
+    "topic_v2_display": "Community & Marketing Funding",
+    "topic_v2_unique": "Treasury - Community & Marketing Funding"
+  },
+  {
+    "proposal_id": "26",
+    "chain_id": "iris",
+    "title": "YEAH ATOM Airdrop ",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "REJECTED",
+    "submit_time": "1677815798795",
+    "final_tally_result": {
+      "no_count": 17,
+      "abstain_count": 3,
+      "no_with_veto_count": 17,
+      "yes_count": 7,
+      "no_vote_count": 71
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Spam & Malicious",
+    "topic_v2_display": "Spam & Malicious",
+    "topic_v2_unique": "Governance - Spam & Malicious"
+  },
+  {
+    "proposal_id": "25",
+    "chain_id": "iris",
+    "title": "ATOM Airdrop ",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "REJECTED",
+    "submit_time": "1677299489347",
+    "final_tally_result": {
+      "no_count": 9,
+      "no_with_veto_count": 17,
+      "yes_count": 1,
+      "no_vote_count": 88
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Spam & Malicious",
+    "topic_v2_display": "Spam & Malicious",
+    "topic_v2_unique": "Governance - Spam & Malicious"
+  },
+  {
+    "proposal_id": "24",
+    "chain_id": "iris",
+    "title": "ATOM Airdrop for COSMOS stakers",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "REJECTED",
+    "submit_time": "1677192875121",
+    "final_tally_result": {
+      "no_with_veto_count": 15,
+      "no_count": 6,
+      "yes_count": 1,
+      "no_vote_count": 93
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Spam & Malicious",
+    "topic_v2_display": "Spam & Malicious",
+    "topic_v2_unique": "Governance - Spam & Malicious"
+  },
+  {
+    "proposal_id": "22",
+    "chain_id": "iris",
+    "title": "Renew Incentives for IOVIRIS Pools",
+    "type": "CommunityPoolSpend",
+    "topic": "Ecosystem Growth",
+    "status": "PASSED",
+    "submit_time": "1673592728352",
+    "final_tally_result": {
+      "yes_count": 49,
+      "abstain_count": 3,
+      "no_vote_count": 63
+    },
+    "type_v2": "Treasury",
+    "topic_v2": "Liquidity & Incentives",
+    "topic_v2_display": "Liquidity & Incentives",
+    "topic_v2_unique": "Treasury - Liquidity & Incentives"
+  },
+  {
+    "proposal_id": "21",
+    "chain_id": "iris",
+    "title": "Uptick on IRISnet Marketplace Upgrade",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "PASSED",
+    "submit_time": "1673249852483",
+    "final_tally_result": {
+      "yes_count": 74,
+      "abstain_count": 2,
+      "no_vote_count": 39
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Core Upgrade",
+    "topic_v2_display": "Core Upgrade",
+    "topic_v2_unique": "Protocol - Core Upgrade"
+  },
+  {
+    "proposal_id": "20",
+    "chain_id": "iris",
+    "title": "Renew Incentives for BNBIRIS BUSDIRIS ATOMIRIS Pools",
+    "type": "CommunityPoolSpend",
+    "topic": "Ecosystem Growth",
+    "status": "REJECTED",
+    "submit_time": "1669980305886",
+    "final_tally_result": {
+      "yes_count": 79,
+      "abstain_count": 1,
+      "no_vote_count": 35
+    },
+    "type_v2": "Treasury",
+    "topic_v2": "Liquidity & Incentives",
+    "topic_v2_display": "Liquidity & Incentives",
+    "topic_v2_unique": "Treasury - Liquidity & Incentives"
+  },
+  {
+    "proposal_id": "19",
+    "chain_id": "iris",
+    "title": "Upgrade to irishub v14",
+    "type": "SoftwareUpgrade",
+    "topic": "Major Release",
+    "status": "PASSED",
+    "submit_time": "1669772179258",
+    "final_tally_result": {
+      "yes_count": 100,
+      "no_vote_count": 15
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Core Upgrade",
+    "topic_v2_display": "Core Upgrade",
+    "topic_v2_unique": "Protocol - Core Upgrade"
+  },
+  {
+    "proposal_id": "18",
+    "chain_id": "iris",
+    "title": "Renew Incentives for GRAVIRIS USDCIRIS WETHIRIS Pools",
+    "type": "CommunityPoolSpend",
+    "topic": "Ecosystem Growth",
+    "status": "PASSED",
+    "submit_time": "1663899158799",
+    "final_tally_result": {
+      "yes_count": 86,
+      "abstain_count": 1,
+      "no_vote_count": 28
+    },
+    "type_v2": "Treasury",
+    "topic_v2": "Liquidity & Incentives",
+    "topic_v2_display": "Liquidity & Incentives",
+    "topic_v2_unique": "Treasury - Liquidity & Incentives"
+  },
+  {
+    "proposal_id": "17",
+    "chain_id": "iris",
+    "title": "Uptick  IRISnet NFT Collection Launchpad Event",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "PASSED",
+    "submit_time": "1661572892247",
+    "final_tally_result": {
+      "yes_count": 93,
+      "abstain_count": 2,
+      "no_vote_count": 20
+    },
+    "type_v2": "Treasury",
+    "topic_v2": "dApp & Tooling Funding",
+    "topic_v2_display": "dApp & Tooling Funding",
+    "topic_v2_unique": "Treasury - dApp & Tooling Funding"
+  },
+  {
+    "proposal_id": "16",
+    "chain_id": "iris",
+    "title": "rIRIS integration with StaFi Hub",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "PASSED",
+    "submit_time": "1660884155253",
+    "final_tally_result": {
+      "yes_count": 94,
+      "no_count": 1,
+      "abstain_count": 1,
+      "no_vote_count": 19
+    },
+    "type_v2": "Treasury",
+    "topic_v2": "dApp & Tooling Funding",
+    "topic_v2_display": "dApp & Tooling Funding",
+    "topic_v2_unique": "Treasury - dApp & Tooling Funding"
+  },
+  {
+    "proposal_id": "15",
+    "chain_id": "iris",
+    "title": "Incentives for IOVIRIS pool",
+    "type": "CommunityPoolSpend",
+    "topic": "Ecosystem Growth",
+    "status": "PASSED",
+    "submit_time": "1658471574208",
+    "final_tally_result": {
+      "yes_count": 77,
+      "abstain_count": 6,
+      "no_count": 2,
+      "no_vote_count": 30
+    },
+    "type_v2": "Treasury",
+    "topic_v2": "Liquidity & Incentives",
+    "topic_v2_display": "Liquidity & Incentives",
+    "topic_v2_unique": "Treasury - Liquidity & Incentives"
+  },
+  {
+    "proposal_id": "14",
+    "chain_id": "iris",
+    "title": "Support IRISnetresided IBC Tokens in Uptick Marketplace",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "PASSED",
+    "submit_time": "1656501214709",
+    "final_tally_result": {
+      "yes_count": 82,
+      "abstain_count": 1,
+      "no_vote_count": 32
+    },
+    "type_v2": "Treasury",
+    "topic_v2": "dApp & Tooling Funding",
+    "topic_v2_display": "dApp & Tooling Funding",
+    "topic_v2_unique": "Treasury - dApp & Tooling Funding"
+  },
+  {
+    "proposal_id": "13",
+    "chain_id": "iris",
+    "title": "Reduce Voting Period To 5 Days",
+    "type": "ParameterChange",
+    "topic": "Governance Settings",
+    "status": "PASSED",
+    "submit_time": "1648220604912",
+    "final_tally_result": {
+      "no_count": 6,
+      "yes_count": 78,
+      "abstain_count": 2,
+      "no_with_veto_count": 2,
+      "no_vote_count": 27
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Parameter Change",
+    "topic_v2_display": "Parameter Change",
+    "topic_v2_unique": "Protocol - Parameter Change"
+  },
+  {
+    "proposal_id": "12",
+    "chain_id": "iris",
+    "title": "Incentives for GRAVIRIS gUSDCIRIS gETHIRIS Pools",
+    "type": "CommunityPoolSpend",
+    "topic": "Ecosystem Growth",
+    "status": "PASSED",
+    "submit_time": "1648211106866",
+    "final_tally_result": {
+      "yes_count": 73,
+      "no_count": 1,
+      "abstain_count": 6,
+      "no_vote_count": 35
+    },
+    "type_v2": "Treasury",
+    "topic_v2": "Liquidity & Incentives",
+    "topic_v2_display": "Liquidity & Incentives",
+    "topic_v2_unique": "Treasury - Liquidity & Incentives"
+  },
+  {
+    "proposal_id": "11",
+    "chain_id": "iris",
+    "title": "Upgrade to irishub v130",
+    "type": "SoftwareUpgrade",
+    "topic": "Major Release",
+    "status": "PASSED",
+    "submit_time": "1647654304142",
+    "final_tally_result": {
+      "yes_count": 79,
+      "abstain_count": 1,
+      "no_vote_count": 35
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Core Upgrade",
+    "topic_v2_display": "Core Upgrade",
+    "topic_v2_unique": "Protocol - Core Upgrade"
+  },
+  {
+    "proposal_id": "10",
+    "chain_id": "iris",
+    "title": "Uptick  IRISnet NFT Photography Competition Expenditure",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "PASSED",
+    "submit_time": "1645187488925",
+    "final_tally_result": {
+      "yes_count": 62,
+      "no_count": 14,
+      "abstain_count": 1,
+      "no_vote_count": 38
+    },
+    "type_v2": "Treasury",
+    "topic_v2": "dApp & Tooling Funding",
+    "topic_v2_display": "dApp & Tooling Funding",
+    "topic_v2_unique": "Treasury - dApp & Tooling Funding"
+  },
+  {
+    "proposal_id": "9",
+    "chain_id": "iris",
+    "title": "Uptick  IRISnet Original Works Creation Contest Expenditure",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "PASSED",
+    "submit_time": "1637658140518",
+    "final_tally_result": {
+      "yes_count": 74,
+      "no_count": 2,
+      "abstain_count": 1,
+      "no_vote_count": 38
+    },
+    "type_v2": "Treasury",
+    "topic_v2": "dApp & Tooling Funding",
+    "topic_v2_display": "dApp & Tooling Funding",
+    "topic_v2_unique": "Treasury - dApp & Tooling Funding"
+  },
+  {
+    "proposal_id": "8",
+    "chain_id": "iris",
+    "title": "Upgrade to irishub v120",
+    "type": "SoftwareUpgrade",
+    "topic": "Major Release",
+    "status": "PASSED",
+    "submit_time": "1635949144696",
+    "final_tally_result": {
+      "yes_count": 40,
+      "no_vote_count": 75
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Core Upgrade",
+    "topic_v2_display": "Core Upgrade",
+    "topic_v2_unique": "Protocol - Core Upgrade"
+  },
+  {
+    "proposal_id": "7",
+    "chain_id": "iris",
+    "title": "Slashing Param Change",
+    "type": "ParameterChange",
+    "topic": "Staking Parameters",
+    "status": "REJECTED",
+    "submit_time": "1629803686575",
+    "final_tally_result": {
+      "yes_count": 33,
+      "no_count": 8,
+      "no_with_veto_count": 1,
+      "no_vote_count": 73
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Parameter Change",
+    "topic_v2_display": "Parameter Change",
+    "topic_v2_unique": "Protocol - Parameter Change"
+  },
+  {
+    "proposal_id": "6",
+    "chain_id": "iris",
+    "title": "Video Content Creation and Promotion",
+    "type": "CommunityPoolSpend",
+    "topic": "Development Fund",
+    "status": "PASSED",
+    "submit_time": "1625195752243",
+    "final_tally_result": {
+      "yes_count": 44,
+      "abstain_count": 3,
+      "no_with_veto_count": 1,
+      "no_count": 3,
+      "no_vote_count": 64
+    },
+    "type_v2": "Treasury",
+    "topic_v2": "dApp & Tooling Funding",
+    "topic_v2_display": "dApp & Tooling Funding",
+    "topic_v2_unique": "Treasury - dApp & Tooling Funding"
+  },
+  {
+    "proposal_id": "5",
+    "chain_id": "iris",
+    "title": "Reduce the token issuance fee on the IRIS chain",
+    "type": "ParameterChange",
+    "topic": "Fee Adjustment",
+    "status": "PASSED",
+    "submit_time": "1625037179913",
+    "final_tally_result": {
+      "yes_count": 58,
+      "abstain_count": 1,
+      "no_vote_count": 56
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Parameter Change",
+    "topic_v2_display": "Parameter Change",
+    "topic_v2_unique": "Protocol - Parameter Change"
+  },
+  {
+    "proposal_id": "4",
+    "chain_id": "iris",
+    "title": "Governance Efficiency",
+    "type": "ParameterChange",
+    "topic": "Governance Settings",
+    "status": "PASSED",
+    "submit_time": "1619426213496",
+    "final_tally_result": {
+      "yes_count": 42,
+      "no_vote_count": 73
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Parameter Change",
+    "topic_v2_display": "Parameter Change",
+    "topic_v2_unique": "Protocol - Parameter Change"
+  },
+  {
+    "proposal_id": "3",
+    "chain_id": "iris",
+    "title": "Increase MaxValidators to 108",
+    "type": "ParameterChange",
+    "topic": "Fee Adjustment",
+    "status": "REJECTED",
+    "submit_time": "1617885365415",
+    "final_tally_result": {
+      "yes_count": 50,
+      "no_vote_count": 65
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Parameter Change",
+    "topic_v2_display": "Parameter Change",
+    "topic_v2_unique": "Protocol - Parameter Change"
+  },
+  {
+    "proposal_id": "2",
+    "chain_id": "iris",
+    "title": "Enable IBC transfers",
+    "type": "ParameterChange",
+    "topic": "Protocol Configuration",
+    "status": "PASSED",
+    "submit_time": "1616850208808",
+    "final_tally_result": {
+      "yes_count": 60,
+      "no_vote_count": 55
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Parameter Change",
+    "topic_v2_display": "Parameter Change",
+    "topic_v2_unique": "Protocol - Parameter Change"
+  },
+  {
+    "proposal_id": "1",
+    "chain_id": "iris",
+    "title": "Upgrade to irishub v110",
+    "type": "SoftwareUpgrade",
+    "topic": "Major Release",
+    "status": "PASSED",
+    "submit_time": "1616765489430",
+    "final_tally_result": {
+      "yes_count": 61,
+      "no_vote_count": 54
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Core Upgrade",
+    "topic_v2_display": "Core Upgrade",
+    "topic_v2_unique": "Protocol - Core Upgrade"
+  }
+]

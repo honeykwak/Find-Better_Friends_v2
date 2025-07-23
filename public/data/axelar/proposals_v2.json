@@ -1,0 +1,2180 @@
+[
+  {
+    "proposal_id": "253",
+    "chain_id": "axelar",
+    "title": "Lava  Fast  Reliable Public RPC",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "PASSED",
+    "submit_time": "1730752195281",
+    "final_tally_result": {
+      "yes_count": 42,
+      "abstain_count": 4,
+      "no_vote_count": 29
+    },
+    "type_v2": "Treasury",
+    "topic_v2": "dApp & Tooling Funding",
+    "topic_v2_display": "dApp & Tooling Funding",
+    "topic_v2_unique": "Treasury - dApp & Tooling Funding"
+  },
+  {
+    "proposal_id": "251",
+    "chain_id": "axelar",
+    "title": "Migrate rewards contract to v11",
+    "type": "SmartContract",
+    "topic": "Contract Upgrade",
+    "status": "PASSED",
+    "submit_time": "1730297808457",
+    "final_tally_result": {
+      "yes_count": 34,
+      "no_vote_count": 41
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "dApp Onboarding",
+    "topic_v2_display": "dApp Onboarding",
+    "topic_v2_unique": "Ecosystem - dApp Onboarding"
+  },
+  {
+    "proposal_id": "250",
+    "chain_id": "axelar",
+    "title": "Add replacement verifier addresses for QuantNode",
+    "type": "SmartContract",
+    "topic": "Contract Integration",
+    "status": "PASSED",
+    "submit_time": "1729343486233",
+    "final_tally_result": {
+      "yes_count": 40,
+      "abstain_count": 1,
+      "no_vote_count": 34
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "dApp Onboarding",
+    "topic_v2_display": "dApp Onboarding",
+    "topic_v2_unique": "Ecosystem - dApp Onboarding"
+  },
+  {
+    "proposal_id": "249",
+    "chain_id": "axelar",
+    "title": "Remove verifier addresses for QuantNode",
+    "type": "SmartContract",
+    "topic": "Feature Enhancement",
+    "status": "PASSED",
+    "submit_time": "1729343451416",
+    "final_tally_result": {
+      "yes_count": 42,
+      "no_vote_count": 33
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "dApp Onboarding",
+    "topic_v2_display": "dApp Onboarding",
+    "topic_v2_unique": "Ecosystem - dApp Onboarding"
+  },
+  {
+    "proposal_id": "248",
+    "chain_id": "axelar",
+    "title": "Add replacement verifier addresses for Whispernode Encapsulate Cosmostation",
+    "type": "SmartContract",
+    "topic": "Contract Integration",
+    "status": "PASSED",
+    "submit_time": "1729173448815",
+    "final_tally_result": {
+      "yes_count": 39,
+      "abstain_count": 1,
+      "no_vote_count": 35
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "dApp Onboarding",
+    "topic_v2_display": "dApp Onboarding",
+    "topic_v2_unique": "Ecosystem - dApp Onboarding"
+  },
+  {
+    "proposal_id": "247",
+    "chain_id": "axelar",
+    "title": "Remove verifier addresses for Whispernode Encapsulate Cosmostation",
+    "type": "SmartContract",
+    "topic": "Feature Enhancement",
+    "status": "PASSED",
+    "submit_time": "1729173378389",
+    "final_tally_result": {
+      "yes_count": 40,
+      "no_vote_count": 35
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "dApp Onboarding",
+    "topic_v2_display": "dApp Onboarding",
+    "topic_v2_unique": "Ecosystem - dApp Onboarding"
+  },
+  {
+    "proposal_id": "246",
+    "chain_id": "axelar",
+    "title": "Store Amplifier Rewards v110",
+    "type": "SmartContract",
+    "topic": "Contract Integration",
+    "status": "PASSED",
+    "submit_time": "1729107367152",
+    "final_tally_result": {
+      "yes_count": 41,
+      "abstain_count": 1,
+      "no_vote_count": 33
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "dApp Onboarding",
+    "topic_v2_display": "dApp Onboarding",
+    "topic_v2_unique": "Ecosystem - dApp Onboarding"
+  },
+  {
+    "proposal_id": "245",
+    "chain_id": "axelar",
+    "title": "Register Multisig Prover for flow",
+    "type": "SmartContract",
+    "topic": "Contract Integration",
+    "status": "PASSED",
+    "submit_time": "1728656748321",
+    "final_tally_result": {
+      "yes_count": 40,
+      "no_vote_count": 35
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "dApp Onboarding",
+    "topic_v2_display": "dApp Onboarding",
+    "topic_v2_unique": "Ecosystem - dApp Onboarding"
+  },
+  {
+    "proposal_id": "244",
+    "chain_id": "axelar",
+    "title": "Authorize Multisig Prover for flow",
+    "type": "SmartContract",
+    "topic": "Contract Integration",
+    "status": "PASSED",
+    "submit_time": "1728571487444",
+    "final_tally_result": {
+      "yes_count": 43,
+      "abstain_count": 2,
+      "no_count": 1,
+      "no_vote_count": 29
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "dApp Onboarding",
+    "topic_v2_display": "dApp Onboarding",
+    "topic_v2_unique": "Ecosystem - dApp Onboarding"
+  },
+  {
+    "proposal_id": "243",
+    "chain_id": "axelar",
+    "title": "Authorize Multisig Prover for flow",
+    "type": "SmartContract",
+    "topic": "Contract Integration",
+    "status": "PASSED",
+    "submit_time": "1728571434451",
+    "final_tally_result": {
+      "yes_count": 44,
+      "abstain_count": 2,
+      "no_vote_count": 29
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "dApp Onboarding",
+    "topic_v2_display": "dApp Onboarding",
+    "topic_v2_unique": "Ecosystem - dApp Onboarding"
+  },
+  {
+    "proposal_id": "242",
+    "chain_id": "axelar",
+    "title": "Register Gateway for flow",
+    "type": "SmartContract",
+    "topic": "Contract Integration",
+    "status": "PASSED",
+    "submit_time": "1728571369170",
+    "final_tally_result": {
+      "yes_count": 44,
+      "abstain_count": 1,
+      "no_vote_count": 30
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "dApp Onboarding",
+    "topic_v2_display": "dApp Onboarding",
+    "topic_v2_unique": "Ecosystem - dApp Onboarding"
+  },
+  {
+    "proposal_id": "241",
+    "chain_id": "axelar",
+    "title": "Regional Moderators Proposal  Axelar Brazilian Portuguese Community October 2024  March 2025",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "REJECTED",
+    "submit_time": "1727982534435",
+    "final_tally_result": {
+      "abstain_count": 17,
+      "no_count": 17,
+      "yes_count": 7,
+      "no_vote_count": 34
+    },
+    "type_v2": "Treasury",
+    "topic_v2": "Community & Marketing Funding",
+    "topic_v2_display": "Community & Marketing Funding",
+    "topic_v2_unique": "Treasury - Community & Marketing Funding"
+  },
+  {
+    "proposal_id": "240",
+    "chain_id": "axelar",
+    "title": "Axelarate Series for Axelar Ecosystem",
+    "type": "CommunityPoolSpend",
+    "topic": "Ecosystem Growth",
+    "status": "PASSED",
+    "submit_time": "1727869056759",
+    "final_tally_result": {
+      "yes_count": 36,
+      "abstain_count": 10,
+      "no_vote_count": 29
+    },
+    "type_v2": "Treasury",
+    "topic_v2": "dApp & Tooling Funding",
+    "topic_v2_display": "dApp & Tooling Funding",
+    "topic_v2_unique": "Treasury - dApp & Tooling Funding"
+  },
+  {
+    "proposal_id": "239",
+    "chain_id": "axelar",
+    "title": "Regional Moderators Proposal  Axelar Spanish Community October 2024  March 2025",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "PASSED",
+    "submit_time": "1726863208799",
+    "final_tally_result": {
+      "yes_count": 19,
+      "abstain_count": 16,
+      "no_count": 5,
+      "no_vote_count": 35
+    },
+    "type_v2": "Treasury",
+    "topic_v2": "Community & Marketing Funding",
+    "topic_v2_display": "Community & Marketing Funding",
+    "topic_v2_unique": "Treasury - Community & Marketing Funding"
+  },
+  {
+    "proposal_id": "238",
+    "chain_id": "axelar",
+    "title": "Add 32 new verifiers to approved amplifier verifier set",
+    "type": "SmartContract",
+    "topic": "Feature Enhancement",
+    "status": "PASSED",
+    "submit_time": "1726208836023",
+    "final_tally_result": {
+      "yes_count": 44,
+      "abstain_count": 1,
+      "no_vote_count": 30
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "dApp Onboarding",
+    "topic_v2_display": "dApp Onboarding",
+    "topic_v2_unique": "Ecosystem - dApp Onboarding"
+  },
+  {
+    "proposal_id": "237",
+    "chain_id": "axelar",
+    "title": "Registering Amplifier Service at ServiceRegistry",
+    "type": "SmartContract",
+    "topic": "Contract Integration",
+    "status": "PASSED",
+    "submit_time": "1725914371443",
+    "final_tally_result": {
+      "yes_count": 44,
+      "no_vote_count": 31
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "dApp Onboarding",
+    "topic_v2_display": "dApp Onboarding",
+    "topic_v2_unique": "Ecosystem - dApp Onboarding"
+  },
+  {
+    "proposal_id": "236",
+    "chain_id": "axelar",
+    "title": "Set Amplifier Nexus Gateway in the Nexus module",
+    "type": "ParameterChange",
+    "topic": "Protocol Configuration",
+    "status": "PASSED",
+    "submit_time": "1725914238063",
+    "final_tally_result": {
+      "yes_count": 43,
+      "no_vote_count": 32
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Parameter Change",
+    "topic_v2_display": "Parameter Change",
+    "topic_v2_unique": "Protocol - Parameter Change"
+  },
+  {
+    "proposal_id": "235",
+    "chain_id": "axelar",
+    "title": "Store Amplifier MultisigProver v100",
+    "type": "SmartContract",
+    "topic": "Contract Integration",
+    "status": "PASSED",
+    "submit_time": "1725390182302",
+    "final_tally_result": {
+      "yes_count": 42,
+      "abstain_count": 1,
+      "no_vote_count": 32
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "dApp Onboarding",
+    "topic_v2_display": "dApp Onboarding",
+    "topic_v2_unique": "Ecosystem - dApp Onboarding"
+  },
+  {
+    "proposal_id": "234",
+    "chain_id": "axelar",
+    "title": "Store Amplifier Router v100",
+    "type": "SmartContract",
+    "topic": "Contract Integration",
+    "status": "PASSED",
+    "submit_time": "1725390110811",
+    "final_tally_result": {
+      "yes_count": 43,
+      "abstain_count": 1,
+      "no_vote_count": 31
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "dApp Onboarding",
+    "topic_v2_display": "dApp Onboarding",
+    "topic_v2_unique": "Ecosystem - dApp Onboarding"
+  },
+  {
+    "proposal_id": "233",
+    "chain_id": "axelar",
+    "title": "Store Amplifier MultisigProver v101",
+    "type": "SmartContract",
+    "topic": "Contract Integration",
+    "status": "PASSED",
+    "submit_time": "1724949854199",
+    "final_tally_result": {
+      "yes_count": 45,
+      "no_vote_count": 30
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "dApp Onboarding",
+    "topic_v2_display": "dApp Onboarding",
+    "topic_v2_unique": "Ecosystem - dApp Onboarding"
+  },
+  {
+    "proposal_id": "232",
+    "chain_id": "axelar",
+    "title": "Store Amplifier Gateway v100",
+    "type": "SmartContract",
+    "topic": "Contract Integration",
+    "status": "PASSED",
+    "submit_time": "1724949812923",
+    "final_tally_result": {
+      "yes_count": 45,
+      "no_vote_count": 30
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "dApp Onboarding",
+    "topic_v2_display": "dApp Onboarding",
+    "topic_v2_unique": "Ecosystem - dApp Onboarding"
+  },
+  {
+    "proposal_id": "231",
+    "chain_id": "axelar",
+    "title": "Store Amplifier Voting Verifier v100",
+    "type": "SmartContract",
+    "topic": "Contract Integration",
+    "status": "PASSED",
+    "submit_time": "1724949788593",
+    "final_tally_result": {
+      "yes_count": 45,
+      "no_vote_count": 30
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "dApp Onboarding",
+    "topic_v2_display": "dApp Onboarding",
+    "topic_v2_unique": "Ecosystem - dApp Onboarding"
+  },
+  {
+    "proposal_id": "230",
+    "chain_id": "axelar",
+    "title": "Store Amplifier Multisig v100",
+    "type": "SmartContract",
+    "topic": "Contract Integration",
+    "status": "PASSED",
+    "submit_time": "1724949754126",
+    "final_tally_result": {
+      "yes_count": 45,
+      "no_vote_count": 30
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "dApp Onboarding",
+    "topic_v2_display": "dApp Onboarding",
+    "topic_v2_unique": "Ecosystem - dApp Onboarding"
+  },
+  {
+    "proposal_id": "229",
+    "chain_id": "axelar",
+    "title": "Store Amplifier Coordinator v100",
+    "type": "SmartContract",
+    "topic": "Contract Integration",
+    "status": "PASSED",
+    "submit_time": "1724949736365",
+    "final_tally_result": {
+      "yes_count": 45,
+      "no_vote_count": 30
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "dApp Onboarding",
+    "topic_v2_display": "dApp Onboarding",
+    "topic_v2_unique": "Ecosystem - dApp Onboarding"
+  },
+  {
+    "proposal_id": "228",
+    "chain_id": "axelar",
+    "title": "Store Amplifier Rewards v100",
+    "type": "SmartContract",
+    "topic": "Contract Integration",
+    "status": "PASSED",
+    "submit_time": "1724949712722",
+    "final_tally_result": {
+      "yes_count": 45,
+      "no_vote_count": 30
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "dApp Onboarding",
+    "topic_v2_display": "dApp Onboarding",
+    "topic_v2_unique": "Ecosystem - dApp Onboarding"
+  },
+  {
+    "proposal_id": "227",
+    "chain_id": "axelar",
+    "title": "Store Amplifier Service Registry v100",
+    "type": "SmartContract",
+    "topic": "Contract Integration",
+    "status": "PASSED",
+    "submit_time": "1724949689461",
+    "final_tally_result": {
+      "yes_count": 45,
+      "no_vote_count": 30
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "dApp Onboarding",
+    "topic_v2_display": "dApp Onboarding",
+    "topic_v2_unique": "Ecosystem - dApp Onboarding"
+  },
+  {
+    "proposal_id": "226",
+    "chain_id": "axelar",
+    "title": "Store Amplifier Nexus Gateway v100",
+    "type": "SmartContract",
+    "topic": "Contract Integration",
+    "status": "PASSED",
+    "submit_time": "1724949608107",
+    "final_tally_result": {
+      "yes_count": 45,
+      "no_vote_count": 30
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "dApp Onboarding",
+    "topic_v2_display": "dApp Onboarding",
+    "topic_v2_unique": "Ecosystem - dApp Onboarding"
+  },
+  {
+    "proposal_id": "225",
+    "chain_id": "axelar",
+    "title": "Store Amplifier Router v101",
+    "type": "SmartContract",
+    "topic": "Contract Integration",
+    "status": "PASSED",
+    "submit_time": "1724949556471",
+    "final_tally_result": {
+      "yes_count": 45,
+      "no_vote_count": 30
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "dApp Onboarding",
+    "topic_v2_display": "dApp Onboarding",
+    "topic_v2_unique": "Ecosystem - dApp Onboarding"
+  },
+  {
+    "proposal_id": "224",
+    "chain_id": "axelar",
+    "title": "Adjust Block Parameters",
+    "type": "ParameterChange",
+    "topic": "Fee Adjustment",
+    "status": "PASSED",
+    "submit_time": "1724878512377",
+    "final_tally_result": {
+      "yes_count": 46,
+      "no_vote_count": 29
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Parameter Change",
+    "topic_v2_display": "Parameter Change",
+    "topic_v2_unique": "Protocol - Parameter Change"
+  },
+  {
+    "proposal_id": "223",
+    "chain_id": "axelar",
+    "title": "Axelar road to Blockchaincon Onboarding  Hackathon",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "PASSED",
+    "submit_time": "1724820993302",
+    "final_tally_result": {
+      "yes_count": 22,
+      "no_count": 12,
+      "abstain_count": 14,
+      "no_vote_count": 27
+    },
+    "type_v2": "Treasury",
+    "topic_v2": "Community & Marketing Funding",
+    "topic_v2_display": "Community & Marketing Funding",
+    "topic_v2_unique": "Treasury - Community & Marketing Funding"
+  },
+  {
+    "proposal_id": "222",
+    "chain_id": "axelar",
+    "title": "Revised Axelar Brazilian and Spanish Community  6 Month Continuity and Expansion Plan",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "REJECTED",
+    "submit_time": "1724800691068",
+    "final_tally_result": {
+      "yes_count": 11,
+      "no_count": 21,
+      "abstain_count": 10,
+      "no_with_veto_count": 1,
+      "no_vote_count": 32
+    },
+    "type_v2": "Treasury",
+    "topic_v2": "Community & Marketing Funding",
+    "topic_v2_display": "Community & Marketing Funding",
+    "topic_v2_unique": "Treasury - Community & Marketing Funding"
+  },
+  {
+    "proposal_id": "221",
+    "chain_id": "axelar",
+    "title": "Axelar v10 Upgrade Proposal",
+    "type": "SoftwareUpgrade",
+    "topic": "Major Release",
+    "status": "PASSED",
+    "submit_time": "1724272665260",
+    "final_tally_result": {
+      "yes_count": 49,
+      "no_vote_count": 26
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Core Upgrade",
+    "topic_v2_display": "Core Upgrade",
+    "topic_v2_unique": "Protocol - Core Upgrade"
+  },
+  {
+    "proposal_id": "220",
+    "chain_id": "axelar",
+    "title": "Building Organic Buzz for Axelar via CipherClout PR",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "PASSED",
+    "submit_time": "1724169601778",
+    "final_tally_result": {
+      "abstain_count": 19,
+      "no_count": 9,
+      "yes_count": 19,
+      "no_vote_count": 28
+    },
+    "type_v2": "Treasury",
+    "topic_v2": "dApp & Tooling Funding",
+    "topic_v2_display": "dApp & Tooling Funding",
+    "topic_v2_unique": "Treasury - dApp & Tooling Funding"
+  },
+  {
+    "proposal_id": "219",
+    "chain_id": "axelar",
+    "title": "Axelar regional communities Aug24Jan25",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "PASSED",
+    "submit_time": "1723657113300",
+    "final_tally_result": {
+      "yes_count": 24,
+      "abstain_count": 6,
+      "no_count": 1,
+      "no_vote_count": 44
+    },
+    "type_v2": "Treasury",
+    "topic_v2": "dApp & Tooling Funding",
+    "topic_v2_display": "dApp & Tooling Funding",
+    "topic_v2_unique": "Treasury - dApp & Tooling Funding"
+  },
+  {
+    "proposal_id": "218",
+    "chain_id": "axelar",
+    "title": "Final  Revised Proposal to Revamp and Improve Axelar Network Documentation",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "REJECTED",
+    "submit_time": "1723449905173",
+    "final_tally_result": {
+      "no_count": 21,
+      "yes_count": 11,
+      "abstain_count": 17,
+      "no_vote_count": 26
+    },
+    "type_v2": "Treasury",
+    "topic_v2": "dApp & Tooling Funding",
+    "topic_v2_display": "dApp & Tooling Funding",
+    "topic_v2_unique": "Treasury - dApp & Tooling Funding"
+  },
+  {
+    "proposal_id": "217",
+    "chain_id": "axelar",
+    "title": "Axelar Brazilian and Spanish Community  1 Year Continuity and Expansion Plan",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "REJECTED",
+    "submit_time": "1723237092538",
+    "final_tally_result": {
+      "no_count": 20,
+      "yes_count": 8,
+      "abstain_count": 7,
+      "no_vote_count": 40
+    },
+    "type_v2": "Treasury",
+    "topic_v2": "Community & Marketing Funding",
+    "topic_v2_display": "Community & Marketing Funding",
+    "topic_v2_unique": "Treasury - Community & Marketing Funding"
+  },
+  {
+    "proposal_id": "216",
+    "chain_id": "axelar",
+    "title": "Axelarators Telegram Group and Ecosystem X Account 6Month Program Renewal Proposal",
+    "type": "CommunityPoolSpend",
+    "topic": "Ecosystem Growth",
+    "status": "PASSED",
+    "submit_time": "1723023681909",
+    "final_tally_result": {
+      "yes_count": 25,
+      "abstain_count": 15,
+      "no_count": 5,
+      "no_vote_count": 30
+    },
+    "type_v2": "Treasury",
+    "topic_v2": "dApp & Tooling Funding",
+    "topic_v2_display": "dApp & Tooling Funding",
+    "topic_v2_unique": "Treasury - dApp & Tooling Funding"
+  },
+  {
+    "proposal_id": "215",
+    "chain_id": "axelar",
+    "title": "Multichain Nation Podcast Grant Proposal",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "PASSED",
+    "submit_time": "1722979221547",
+    "final_tally_result": {
+      "abstain_count": 18,
+      "yes_count": 21,
+      "no_count": 11,
+      "no_vote_count": 25
+    },
+    "type_v2": "Treasury",
+    "topic_v2": "dApp & Tooling Funding",
+    "topic_v2_display": "dApp & Tooling Funding",
+    "topic_v2_unique": "Treasury - dApp & Tooling Funding"
+  },
+  {
+    "proposal_id": "214",
+    "chain_id": "axelar",
+    "title": "Update filecoin EVM chain confirmation height",
+    "type": "ParameterChange",
+    "topic": "Fee Adjustment",
+    "status": "PASSED",
+    "submit_time": "1721740639833",
+    "final_tally_result": {
+      "yes_count": 44,
+      "abstain_count": 1,
+      "no_vote_count": 30
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Parameter Change",
+    "topic_v2_display": "Parameter Change",
+    "topic_v2_unique": "Protocol - Parameter Change"
+  },
+  {
+    "proposal_id": "213",
+    "chain_id": "axelar",
+    "title": "Axelar Ai Bot  The way to onboarding more users and developers",
+    "type": "CommunityPoolSpend",
+    "topic": "Development Fund",
+    "status": "REJECTED",
+    "submit_time": "1721396699454",
+    "final_tally_result": {
+      "no_count": 25,
+      "yes_count": 1,
+      "abstain_count": 7,
+      "no_vote_count": 42
+    },
+    "type_v2": "Treasury",
+    "topic_v2": "dApp & Tooling Funding",
+    "topic_v2_display": "dApp & Tooling Funding",
+    "topic_v2_unique": "Treasury - dApp & Tooling Funding"
+  },
+  {
+    "proposal_id": "212",
+    "chain_id": "axelar",
+    "title": "KYVE Network Public Good Funding",
+    "type": "TextProposal",
+    "topic": "Project Funding",
+    "status": "PASSED",
+    "submit_time": "1721311284085",
+    "final_tally_result": {
+      "yes_count": 27,
+      "abstain_count": 9,
+      "no_count": 4,
+      "no_vote_count": 35
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Signaling",
+    "topic_v2_display": "Signaling",
+    "topic_v2_unique": "Governance - Signaling"
+  },
+  {
+    "proposal_id": "211",
+    "chain_id": "axelar",
+    "title": "Axelarators Telegram Group and Ecosystem X Account 6Month Program Renewal Proposal",
+    "type": "CommunityPoolSpend",
+    "topic": "Ecosystem Growth",
+    "status": "PASSED",
+    "submit_time": "1721061769020",
+    "final_tally_result": {
+      "abstain_count": 13,
+      "yes_count": 32,
+      "no_count": 2,
+      "no_vote_count": 28
+    },
+    "type_v2": "Treasury",
+    "topic_v2": "dApp & Tooling Funding",
+    "topic_v2_display": "dApp & Tooling Funding",
+    "topic_v2_unique": "Treasury - dApp & Tooling Funding"
+  },
+  {
+    "proposal_id": "210",
+    "chain_id": "axelar",
+    "title": "Increase multisig keygen and signing grace periods",
+    "type": "ParameterChange",
+    "topic": "Protocol Configuration",
+    "status": "PASSED",
+    "submit_time": "1721052111244",
+    "final_tally_result": {
+      "yes_count": 48,
+      "no_vote_count": 27
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Parameter Change",
+    "topic_v2_display": "Parameter Change",
+    "topic_v2_unique": "Protocol - Parameter Change"
+  },
+  {
+    "proposal_id": "209",
+    "chain_id": "axelar",
+    "title": "Proposal to Revamp and Improve Axelar Network Documentation",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "REJECTED",
+    "submit_time": "1718633276024",
+    "final_tally_result": {
+      "no_count": 29,
+      "abstain_count": 4,
+      "yes_count": 5,
+      "no_vote_count": 37
+    },
+    "type_v2": "Treasury",
+    "topic_v2": "dApp & Tooling Funding",
+    "topic_v2_display": "dApp & Tooling Funding",
+    "topic_v2_unique": "Treasury - dApp & Tooling Funding"
+  },
+  {
+    "proposal_id": "208",
+    "chain_id": "axelar",
+    "title": "Axelar Latam Community  Continuity Plan",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "PASSED",
+    "submit_time": "1718210222115",
+    "final_tally_result": {
+      "yes_count": 32,
+      "abstain_count": 2,
+      "no_vote_count": 41
+    },
+    "type_v2": "Treasury",
+    "topic_v2": "Community & Marketing Funding",
+    "topic_v2_display": "Community & Marketing Funding",
+    "topic_v2_unique": "Treasury - Community & Marketing Funding"
+  },
+  {
+    "proposal_id": "207",
+    "chain_id": "axelar",
+    "title": "BonusBlock Axelar Explorers Program Grant Proposal",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "PASSED",
+    "submit_time": "1717000045559",
+    "final_tally_result": {
+      "yes_count": 37,
+      "abstain_count": 6,
+      "no_vote_count": 32
+    },
+    "type_v2": "Treasury",
+    "topic_v2": "dApp & Tooling Funding",
+    "topic_v2_display": "dApp & Tooling Funding",
+    "topic_v2_unique": "Treasury - dApp & Tooling Funding"
+  },
+  {
+    "proposal_id": "206",
+    "chain_id": "axelar",
+    "title": "Interlinked DAO Ecosystem X Proposal",
+    "type": "CommunityPoolSpend",
+    "topic": "Ecosystem Growth",
+    "status": "PASSED",
+    "submit_time": "1715093736742",
+    "final_tally_result": {
+      "yes_count": 27,
+      "abstain_count": 9,
+      "no_count": 7,
+      "no_vote_count": 32
+    },
+    "type_v2": "Treasury",
+    "topic_v2": "dApp & Tooling Funding",
+    "topic_v2_display": "dApp & Tooling Funding",
+    "topic_v2_unique": "Treasury - dApp & Tooling Funding"
+  },
+  {
+    "proposal_id": "204",
+    "chain_id": "axelar",
+    "title": "Reliable and scalable public RPC  powered by Lava",
+    "type": "CommunityPoolSpend",
+    "topic": "Infrastructure",
+    "status": "PASSED",
+    "submit_time": "1714392593655",
+    "final_tally_result": {
+      "yes_count": 45,
+      "abstain_count": 1,
+      "no_vote_count": 29
+    },
+    "type_v2": "Treasury",
+    "topic_v2": "dApp & Tooling Funding",
+    "topic_v2_display": "dApp & Tooling Funding",
+    "topic_v2_unique": "Treasury - dApp & Tooling Funding"
+  },
+  {
+    "proposal_id": "203",
+    "chain_id": "axelar",
+    "title": "Update min deposit for governance proposals",
+    "type": "ParameterChange",
+    "topic": "Staking Parameters",
+    "status": "PASSED",
+    "submit_time": "1713803633997",
+    "final_tally_result": {
+      "yes_count": 50,
+      "no_vote_count": 25
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Parameter Change",
+    "topic_v2_display": "Parameter Change",
+    "topic_v2_unique": "Protocol - Parameter Change"
+  },
+  {
+    "proposal_id": "201",
+    "chain_id": "axelar",
+    "title": "Interop Insights Podcast Proposal",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "REJECTED",
+    "submit_time": "1712277547701",
+    "final_tally_result": {
+      "yes_count": 18,
+      "no_count": 20,
+      "abstain_count": 8,
+      "no_vote_count": 29
+    },
+    "type_v2": "Treasury",
+    "topic_v2": "dApp & Tooling Funding",
+    "topic_v2_display": "dApp & Tooling Funding",
+    "topic_v2_unique": "Treasury - dApp & Tooling Funding"
+  },
+  {
+    "proposal_id": "200",
+    "chain_id": "axelar",
+    "title": "Axelar Developer Group Proposal",
+    "type": "CommunityPoolSpend",
+    "topic": "Development Fund",
+    "status": "REJECTED",
+    "submit_time": "1712077217050",
+    "final_tally_result": {
+      "no_count": 23,
+      "abstain_count": 16,
+      "yes_count": 9,
+      "no_vote_count": 27
+    },
+    "type_v2": "Treasury",
+    "topic_v2": "dApp & Tooling Funding",
+    "topic_v2_display": "dApp & Tooling Funding",
+    "topic_v2_unique": "Treasury - dApp & Tooling Funding"
+  },
+  {
+    "proposal_id": "199",
+    "chain_id": "axelar",
+    "title": "Highlighting the Axelar robot NFT",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "PASSED",
+    "submit_time": "1712073045562",
+    "final_tally_result": {
+      "yes_count": 32,
+      "abstain_count": 13,
+      "no_vote_count": 30
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Signaling",
+    "topic_v2_display": "Signaling",
+    "topic_v2_unique": "Governance - Signaling"
+  },
+  {
+    "proposal_id": "198",
+    "chain_id": "axelar",
+    "title": "Update inflation rate for maintaining EVM chains",
+    "type": "ParameterChange",
+    "topic": "Economic Parameters",
+    "status": "PASSED",
+    "submit_time": "1711379143961",
+    "final_tally_result": {
+      "yes_count": 56,
+      "no_vote_count": 19
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Parameter Change",
+    "topic_v2_display": "Parameter Change",
+    "topic_v2_unique": "Protocol - Parameter Change"
+  },
+  {
+    "proposal_id": "197",
+    "chain_id": "axelar",
+    "title": "Test cosmwasm contract deployment",
+    "type": "SmartContract",
+    "topic": "Contract Integration",
+    "status": "PASSED",
+    "submit_time": "1710454934026",
+    "final_tally_result": {
+      "yes_count": 44,
+      "abstain_count": 1,
+      "no_count": 1,
+      "no_vote_count": 29
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "dApp Onboarding",
+    "topic_v2_display": "dApp Onboarding",
+    "topic_v2_unique": "Ecosystem - dApp Onboarding"
+  },
+  {
+    "proposal_id": "196",
+    "chain_id": "axelar",
+    "title": "Axelarators Community Owned Telegram Group and X Twitter Account Proposal",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "PASSED",
+    "submit_time": "1710292475099",
+    "final_tally_result": {
+      "yes_count": 29,
+      "no_count": 11,
+      "abstain_count": 20,
+      "no_vote_count": 15
+    },
+    "type_v2": "Treasury",
+    "topic_v2": "Community & Marketing Funding",
+    "topic_v2_display": "Community & Marketing Funding",
+    "topic_v2_unique": "Treasury - Community & Marketing Funding"
+  },
+  {
+    "proposal_id": "195",
+    "chain_id": "axelar",
+    "title": "Axelar v035 Upgrade Proposal",
+    "type": "SoftwareUpgrade",
+    "topic": "Major Release",
+    "status": "PASSED",
+    "submit_time": "1709685276441",
+    "final_tally_result": {
+      "yes_count": 49,
+      "no_vote_count": 26
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Core Upgrade",
+    "topic_v2_display": "Core Upgrade",
+    "topic_v2_unique": "Protocol - Core Upgrade"
+  },
+  {
+    "proposal_id": "194",
+    "chain_id": "axelar",
+    "title": "Axelar Latam in ETH LATAM",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "PASSED",
+    "submit_time": "1709233933888",
+    "final_tally_result": {
+      "yes_count": 42,
+      "abstain_count": 1,
+      "no_vote_count": 32
+    },
+    "type_v2": "Treasury",
+    "topic_v2": "dApp & Tooling Funding",
+    "topic_v2_display": "dApp & Tooling Funding",
+    "topic_v2_unique": "Treasury - dApp & Tooling Funding"
+  },
+  {
+    "proposal_id": "193",
+    "chain_id": "axelar",
+    "title": "Axelar regional communities Feb24Jul24",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "PASSED",
+    "submit_time": "1709056828559",
+    "final_tally_result": {
+      "yes_count": 51,
+      "abstain_count": 2,
+      "no_vote_count": 22
+    },
+    "type_v2": "Treasury",
+    "topic_v2": "dApp & Tooling Funding",
+    "topic_v2_display": "dApp & Tooling Funding",
+    "topic_v2_unique": "Treasury - dApp & Tooling Funding"
+  },
+  {
+    "proposal_id": "192",
+    "chain_id": "axelar",
+    "title": "Axelar regional communities Dec23Jan24",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "PASSED",
+    "submit_time": "1705679084947",
+    "final_tally_result": {
+      "abstain_count": 3,
+      "yes_count": 46,
+      "no_vote_count": 26
+    },
+    "type_v2": "Treasury",
+    "topic_v2": "dApp & Tooling Funding",
+    "topic_v2_display": "dApp & Tooling Funding",
+    "topic_v2_unique": "Treasury - dApp & Tooling Funding"
+  },
+  {
+    "proposal_id": "191",
+    "chain_id": "axelar",
+    "title": "Axelar India Launch  202324  Phase 2",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "PASSED",
+    "submit_time": "1705523000078",
+    "final_tally_result": {
+      "yes_count": 53,
+      "abstain_count": 1,
+      "no_vote_count": 21
+    },
+    "type_v2": "Treasury",
+    "topic_v2": "dApp & Tooling Funding",
+    "topic_v2_display": "dApp & Tooling Funding",
+    "topic_v2_unique": "Treasury - dApp & Tooling Funding"
+  },
+  {
+    "proposal_id": "190",
+    "chain_id": "axelar",
+    "title": "Axelar regional communities",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "PASSED",
+    "submit_time": "1702391851506",
+    "final_tally_result": {
+      "yes_count": 47,
+      "abstain_count": 2,
+      "no_vote_count": 26
+    },
+    "type_v2": "Treasury",
+    "topic_v2": "dApp & Tooling Funding",
+    "topic_v2_display": "dApp & Tooling Funding",
+    "topic_v2_unique": "Treasury - dApp & Tooling Funding"
+  },
+  {
+    "proposal_id": "189",
+    "chain_id": "axelar",
+    "title": "Update inflation rate for maintaining EVM chains",
+    "type": "ParameterChange",
+    "topic": "Economic Parameters",
+    "status": "PASSED",
+    "submit_time": "1701797576846",
+    "final_tally_result": {
+      "yes_count": 49,
+      "abstain_count": 2,
+      "no_vote_count": 24
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Parameter Change",
+    "topic_v2_display": "Parameter Change",
+    "topic_v2_unique": "Protocol - Parameter Change"
+  },
+  {
+    "proposal_id": "188",
+    "chain_id": "axelar",
+    "title": "Locking up CAKE as veCAKE to incentivize axlUSDC pairs on PancakeSwap",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "PASSED",
+    "submit_time": "1701460079945",
+    "final_tally_result": {
+      "yes_count": 47,
+      "no_vote_count": 28
+    },
+    "type_v2": "Treasury",
+    "topic_v2": "dApp & Tooling Funding",
+    "topic_v2_display": "dApp & Tooling Funding",
+    "topic_v2_unique": "Treasury - dApp & Tooling Funding"
+  },
+  {
+    "proposal_id": "187",
+    "chain_id": "axelar",
+    "title": "Increase voting period for governance proposal",
+    "type": "ParameterChange",
+    "topic": "Governance Settings",
+    "status": "PASSED",
+    "submit_time": "1698971273804",
+    "final_tally_result": {
+      "yes_count": 53,
+      "abstain_count": 1,
+      "no_vote_count": 21
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Parameter Change",
+    "topic_v2_display": "Parameter Change",
+    "topic_v2_unique": "Protocol - Parameter Change"
+  },
+  {
+    "proposal_id": "186",
+    "chain_id": "axelar",
+    "title": "Update min deposit for governance proposals",
+    "type": "ParameterChange",
+    "topic": "Staking Parameters",
+    "status": "PASSED",
+    "submit_time": "1698971074128",
+    "final_tally_result": {
+      "yes_count": 51,
+      "no_count": 1,
+      "no_vote_count": 23
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Parameter Change",
+    "topic_v2_display": "Parameter Change",
+    "topic_v2_unique": "Protocol - Parameter Change"
+  },
+  {
+    "proposal_id": "185",
+    "chain_id": "axelar",
+    "title": "Update Mantle EVM chain confirmation height",
+    "type": "ParameterChange",
+    "topic": "Staking Parameters",
+    "status": "PASSED",
+    "submit_time": "1698970920563",
+    "final_tally_result": {
+      "yes_count": 51,
+      "abstain_count": 1,
+      "no_vote_count": 23
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Parameter Change",
+    "topic_v2_display": "Parameter Change",
+    "topic_v2_unique": "Protocol - Parameter Change"
+  },
+  {
+    "proposal_id": "184",
+    "chain_id": "axelar",
+    "title": "Update inflation rate for maintaining EVM chains",
+    "type": "ParameterChange",
+    "topic": "Economic Parameters",
+    "status": "PASSED",
+    "submit_time": "1698970740244",
+    "final_tally_result": {
+      "yes_count": 51,
+      "abstain_count": 1,
+      "no_vote_count": 23
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Parameter Change",
+    "topic_v2_display": "Parameter Change",
+    "topic_v2_unique": "Protocol - Parameter Change"
+  },
+  {
+    "proposal_id": "183",
+    "chain_id": "axelar",
+    "title": "Activate 7day timelock for Axelar Gateway Governance",
+    "type": "SmartContract",
+    "topic": "Contract Upgrade",
+    "status": "PASSED",
+    "submit_time": "1698400430000",
+    "final_tally_result": {
+      "yes_count": 44,
+      "abstain_count": 1,
+      "no_vote_count": 30
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "dApp Onboarding",
+    "topic_v2_display": "dApp Onboarding",
+    "topic_v2_unique": "Ecosystem - dApp Onboarding"
+  },
+  {
+    "proposal_id": "182",
+    "chain_id": "axelar",
+    "title": "Test Interchain Governance Proposal",
+    "type": "SmartContract",
+    "topic": "Security Fix",
+    "status": "PASSED",
+    "submit_time": "1697800395942",
+    "final_tally_result": {
+      "yes_count": 41,
+      "weighted_vote_count": 1,
+      "abstain_count": 2,
+      "no_vote_count": 31
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "dApp Onboarding",
+    "topic_v2_display": "dApp Onboarding",
+    "topic_v2_unique": "Ecosystem - dApp Onboarding"
+  },
+  {
+    "proposal_id": "179",
+    "chain_id": "axelar",
+    "title": "Axelar v034 Upgrade Proposal",
+    "type": "SoftwareUpgrade",
+    "topic": "Major Release",
+    "status": "PASSED",
+    "submit_time": "1694451709594",
+    "final_tally_result": {
+      "yes_count": 48,
+      "abstain_count": 1,
+      "no_vote_count": 26
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Core Upgrade",
+    "topic_v2_display": "Core Upgrade",
+    "topic_v2_unique": "Protocol - Core Upgrade"
+  },
+  {
+    "proposal_id": "178",
+    "chain_id": "axelar",
+    "title": "Liquidity Incentives for Kyberswap axlUSDC and axlwstETH pools",
+    "type": "CommunityPoolSpend",
+    "topic": "Ecosystem Growth",
+    "status": "PASSED",
+    "submit_time": "1694238697797",
+    "final_tally_result": {
+      "yes_count": 28,
+      "abstain_count": 3,
+      "no_vote_count": 44
+    },
+    "type_v2": "Treasury",
+    "topic_v2": "Liquidity & Incentives",
+    "topic_v2_display": "Liquidity & Incentives",
+    "topic_v2_unique": "Treasury - Liquidity & Incentives"
+  },
+  {
+    "proposal_id": "174",
+    "chain_id": "axelar",
+    "title": "Axelar Latam Community",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "PASSED",
+    "submit_time": "1693242526244",
+    "final_tally_result": {
+      "abstain_count": 5,
+      "yes_count": 32,
+      "no_vote_count": 38
+    },
+    "type_v2": "Treasury",
+    "topic_v2": "Community & Marketing Funding",
+    "topic_v2_display": "Community & Marketing Funding",
+    "topic_v2_unique": "Treasury - Community & Marketing Funding"
+  },
+  {
+    "proposal_id": "172",
+    "chain_id": "axelar",
+    "title": "Liquidity Incentives for axlUSDCUSDT on BNB Chain PancakeSwap",
+    "type": "CommunityPoolSpend",
+    "topic": "Ecosystem Growth",
+    "status": "PASSED",
+    "submit_time": "1692894543679",
+    "final_tally_result": {
+      "yes_count": 43,
+      "no_vote_count": 32
+    },
+    "type_v2": "Treasury",
+    "topic_v2": "Liquidity & Incentives",
+    "topic_v2_display": "Liquidity & Incentives",
+    "topic_v2_unique": "Treasury - Liquidity & Incentives"
+  },
+  {
+    "proposal_id": "171",
+    "chain_id": "axelar",
+    "title": "Lava Network  Decentralized Public RPC for Axelar",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "PASSED",
+    "submit_time": "1691606084997",
+    "final_tally_result": {
+      "yes_count": 48,
+      "abstain_count": 1,
+      "no_vote_count": 26
+    },
+    "type_v2": "Treasury",
+    "topic_v2": "dApp & Tooling Funding",
+    "topic_v2_display": "dApp & Tooling Funding",
+    "topic_v2_unique": "Treasury - dApp & Tooling Funding"
+  },
+  {
+    "proposal_id": "170",
+    "chain_id": "axelar",
+    "title": "Axelar India Launch  2023",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "PASSED",
+    "submit_time": "1688585213000",
+    "final_tally_result": {
+      "yes_count": 41,
+      "no_vote_count": 34
+    },
+    "type_v2": "Treasury",
+    "topic_v2": "dApp & Tooling Funding",
+    "topic_v2_display": "dApp & Tooling Funding",
+    "topic_v2_unique": "Treasury - dApp & Tooling Funding"
+  },
+  {
+    "proposal_id": "169",
+    "chain_id": "axelar",
+    "title": "Bringing MetaMask to Axelar  The Rest of the Cosmos",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "REJECTED",
+    "submit_time": "1687211935791",
+    "final_tally_result": {
+      "no_count": 20,
+      "yes_count": 19,
+      "no_vote_count": 36
+    },
+    "type_v2": "Treasury",
+    "topic_v2": "dApp & Tooling Funding",
+    "topic_v2_display": "dApp & Tooling Funding",
+    "topic_v2_unique": "Treasury - dApp & Tooling Funding"
+  },
+  {
+    "proposal_id": "168",
+    "chain_id": "axelar",
+    "title": "Incentives for axlUSDC pools",
+    "type": "CommunityPoolSpend",
+    "topic": "Ecosystem Growth",
+    "status": "PASSED",
+    "submit_time": "1686092257440",
+    "final_tally_result": {
+      "yes_count": 29,
+      "no_vote_count": 46
+    },
+    "type_v2": "Treasury",
+    "topic_v2": "Liquidity & Incentives",
+    "topic_v2_display": "Liquidity & Incentives",
+    "topic_v2_unique": "Treasury - Liquidity & Incentives"
+  },
+  {
+    "proposal_id": "167",
+    "chain_id": "axelar",
+    "title": "Liquidity Incentives for axlUSDCUSDT and AXLUSDT on BSC PancakeSwap",
+    "type": "CommunityPoolSpend",
+    "topic": "Ecosystem Growth",
+    "status": "PASSED",
+    "submit_time": "1686046206179",
+    "final_tally_result": {
+      "yes_count": 37,
+      "no_vote_count": 38
+    },
+    "type_v2": "Treasury",
+    "topic_v2": "Liquidity & Incentives",
+    "topic_v2_display": "Liquidity & Incentives",
+    "topic_v2_unique": "Treasury - Liquidity & Incentives"
+  },
+  {
+    "proposal_id": "166",
+    "chain_id": "axelar",
+    "title": "Liquidity Incentives for axlUSDCUSDT and AXLUSDT on BSC PancakeSwap",
+    "type": "CommunityPoolSpend",
+    "topic": "Ecosystem Growth",
+    "status": "REJECTED",
+    "submit_time": "1685719746398",
+    "final_tally_result": {
+      "yes_count": 24,
+      "no_vote_count": 51
+    },
+    "type_v2": "Treasury",
+    "topic_v2": "Liquidity & Incentives",
+    "topic_v2_display": "Liquidity & Incentives",
+    "topic_v2_unique": "Treasury - Liquidity & Incentives"
+  },
+  {
+    "proposal_id": "165",
+    "chain_id": "axelar",
+    "title": "Increase Avalanche block gas limit",
+    "type": "ParameterChange",
+    "topic": "Fee Adjustment",
+    "status": "PASSED",
+    "submit_time": "1685645192815",
+    "final_tally_result": {
+      "yes_count": 48,
+      "no_vote_count": 27
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Parameter Change",
+    "topic_v2_display": "Parameter Change",
+    "topic_v2_unique": "Protocol - Parameter Change"
+  },
+  {
+    "proposal_id": "164",
+    "chain_id": "axelar",
+    "title": "Increase validator active set to 75",
+    "type": "ParameterChange",
+    "topic": "Staking Parameters",
+    "status": "PASSED",
+    "submit_time": "1685640349729",
+    "final_tally_result": {
+      "yes_count": 47,
+      "no_count": 1,
+      "no_vote_count": 27
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Parameter Change",
+    "topic_v2_display": "Parameter Change",
+    "topic_v2_unique": "Protocol - Parameter Change"
+  },
+  {
+    "proposal_id": "163",
+    "chain_id": "axelar",
+    "title": "Update Filecoin confirmation height",
+    "type": "ParameterChange",
+    "topic": "Staking Parameters",
+    "status": "PASSED",
+    "submit_time": "1682013697234",
+    "final_tally_result": {
+      "yes_count": 47,
+      "no_vote_count": 28
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Parameter Change",
+    "topic_v2_display": "Parameter Change",
+    "topic_v2_unique": "Protocol - Parameter Change"
+  },
+  {
+    "proposal_id": "162",
+    "chain_id": "axelar",
+    "title": "Axelar v033 Upgrade Proposal",
+    "type": "SoftwareUpgrade",
+    "topic": "Major Release",
+    "status": "PASSED",
+    "submit_time": "1680805407449",
+    "final_tally_result": {
+      "yes_count": 50,
+      "no_vote_count": 25
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Core Upgrade",
+    "topic_v2_display": "Core Upgrade",
+    "topic_v2_unique": "Protocol - Core Upgrade"
+  },
+  {
+    "proposal_id": "43",
+    "chain_id": "axelar",
+    "title": "ATOM Airdrop for COSMOS holders ",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "REJECTED",
+    "submit_time": "1675789700294",
+    "final_tally_result": {
+      "no_with_veto_count": 23,
+      "no_vote_count": 52
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Spam & Malicious",
+    "topic_v2_display": "Spam & Malicious",
+    "topic_v2_unique": "Governance - Spam & Malicious"
+  },
+  {
+    "proposal_id": "42",
+    "chain_id": "axelar",
+    "title": "USDC Airdrop Proposal ",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "REJECTED",
+    "submit_time": "1675781397262",
+    "final_tally_result": {
+      "no_with_veto_count": 21,
+      "no_count": 1,
+      "yes_count": 1,
+      "no_vote_count": 52
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Spam & Malicious",
+    "topic_v2_display": "Spam & Malicious",
+    "topic_v2_unique": "Governance - Spam & Malicious"
+  },
+  {
+    "proposal_id": "41",
+    "chain_id": "axelar",
+    "title": "Increase Minimum Deposit for Governance Proposals",
+    "type": "ParameterChange",
+    "topic": "Governance Settings",
+    "status": "PASSED",
+    "submit_time": "1675707367105",
+    "final_tally_result": {
+      "yes_count": 50,
+      "no_vote_count": 25
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Parameter Change",
+    "topic_v2_display": "Parameter Change",
+    "topic_v2_unique": "Protocol - Parameter Change"
+  },
+  {
+    "proposal_id": "40",
+    "chain_id": "axelar",
+    "title": "ATOM  USDC Airdrop ",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "REJECTED",
+    "submit_time": "1675630084893",
+    "final_tally_result": {
+      "no_with_veto_count": 26,
+      "no_count": 1,
+      "no_vote_count": 48
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Spam & Malicious",
+    "topic_v2_display": "Spam & Malicious",
+    "topic_v2_unique": "Governance - Spam & Malicious"
+  },
+  {
+    "proposal_id": "39",
+    "chain_id": "axelar",
+    "title": "ATOM Airdrop for COSMOS holders ",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "REJECTED",
+    "submit_time": "1675542245859",
+    "final_tally_result": {
+      "no_with_veto_count": 20,
+      "no_vote_count": 55
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Spam & Malicious",
+    "topic_v2_display": "Spam & Malicious",
+    "topic_v2_unique": "Governance - Spam & Malicious"
+  },
+  {
+    "proposal_id": "38",
+    "chain_id": "axelar",
+    "title": "ATOM  USDC Airdrop ",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "REJECTED",
+    "submit_time": "1675538950762",
+    "final_tally_result": {
+      "no_with_veto_count": 19,
+      "no_vote_count": 56
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Spam & Malicious",
+    "topic_v2_display": "Spam & Malicious",
+    "topic_v2_unique": "Governance - Spam & Malicious"
+  },
+  {
+    "proposal_id": "37",
+    "chain_id": "axelar",
+    "title": "Axelar New Features ",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "REJECTED",
+    "submit_time": "1675477586604",
+    "final_tally_result": {
+      "no_count": 2,
+      "no_with_veto_count": 15,
+      "no_vote_count": 58
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Signaling",
+    "topic_v2_display": "Signaling",
+    "topic_v2_unique": "Governance - Signaling"
+  },
+  {
+    "proposal_id": "36",
+    "chain_id": "axelar",
+    "title": "MARS Airdrop for COSMOS holders ",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "REJECTED",
+    "submit_time": "1675465013946",
+    "final_tally_result": {
+      "no_with_veto_count": 17,
+      "no_count": 1,
+      "no_vote_count": 57
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Spam & Malicious",
+    "topic_v2_display": "Spam & Malicious",
+    "topic_v2_unique": "Governance - Spam & Malicious"
+  },
+  {
+    "proposal_id": "34",
+    "chain_id": "axelar",
+    "title": "Axelar Airdrop ",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "REJECTED",
+    "submit_time": "1675207966142",
+    "final_tally_result": {
+      "no_with_veto_count": 31,
+      "no_count": 1,
+      "no_vote_count": 43
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Spam & Malicious",
+    "topic_v2_display": "Spam & Malicious",
+    "topic_v2_unique": "Governance - Spam & Malicious"
+  },
+  {
+    "proposal_id": "32",
+    "chain_id": "axelar",
+    "title": "APTOS Airdrop for COSMOS holders ",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "REJECTED",
+    "submit_time": "1675187881139",
+    "final_tally_result": {
+      "no_with_veto_count": 31,
+      "no_count": 1,
+      "no_vote_count": 43
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Spam & Malicious",
+    "topic_v2_display": "Spam & Malicious",
+    "topic_v2_unique": "Governance - Spam & Malicious"
+  },
+  {
+    "proposal_id": "31",
+    "chain_id": "axelar",
+    "title": "Axelar v031 Upgrade Proposal",
+    "type": "SoftwareUpgrade",
+    "topic": "Major Release",
+    "status": "PASSED",
+    "submit_time": "1675000162850",
+    "final_tally_result": {
+      "yes_count": 49,
+      "no_vote_count": 26
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Core Upgrade",
+    "topic_v2_display": "Core Upgrade",
+    "topic_v2_unique": "Protocol - Core Upgrade"
+  },
+  {
+    "proposal_id": "30",
+    "chain_id": "axelar",
+    "title": "Increase validator active set to 70",
+    "type": "ParameterChange",
+    "topic": "Staking Parameters",
+    "status": "PASSED",
+    "submit_time": "1674744677418",
+    "final_tally_result": {
+      "yes_count": 48,
+      "no_vote_count": 27
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Parameter Change",
+    "topic_v2_display": "Parameter Change",
+    "topic_v2_unique": "Protocol - Parameter Change"
+  },
+  {
+    "proposal_id": "29",
+    "chain_id": "axelar",
+    "title": "Fund MapOfZones to support operations",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "PASSED",
+    "submit_time": "1674160011491",
+    "final_tally_result": {
+      "yes_count": 44,
+      "no_vote_count": 31
+    },
+    "type_v2": "Treasury",
+    "topic_v2": "dApp & Tooling Funding",
+    "topic_v2_display": "dApp & Tooling Funding",
+    "topic_v2_unique": "Treasury - dApp & Tooling Funding"
+  },
+  {
+    "proposal_id": "28",
+    "chain_id": "axelar",
+    "title": "Increase validator active set to 65",
+    "type": "ParameterChange",
+    "topic": "Staking Parameters",
+    "status": "PASSED",
+    "submit_time": "1674058563474",
+    "final_tally_result": {
+      "yes_count": 46,
+      "no_vote_count": 29
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Parameter Change",
+    "topic_v2_display": "Parameter Change",
+    "topic_v2_unique": "Protocol - Parameter Change"
+  },
+  {
+    "proposal_id": "27",
+    "chain_id": "axelar",
+    "title": "Increase validator active set to 60",
+    "type": "ParameterChange",
+    "topic": "Staking Parameters",
+    "status": "PASSED",
+    "submit_time": "1670854555503",
+    "final_tally_result": {
+      "yes_count": 47,
+      "no_vote_count": 28
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Parameter Change",
+    "topic_v2_display": "Parameter Change",
+    "topic_v2_unique": "Protocol - Parameter Change"
+  },
+  {
+    "proposal_id": "26",
+    "chain_id": "axelar",
+    "title": "Update inflation rate on the network",
+    "type": "ParameterChange",
+    "topic": "Economic Parameters",
+    "status": "PASSED",
+    "submit_time": "1670854247980",
+    "final_tally_result": {
+      "yes_count": 44,
+      "no_vote_count": 31
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Parameter Change",
+    "topic_v2_display": "Parameter Change",
+    "topic_v2_unique": "Protocol - Parameter Change"
+  },
+  {
+    "proposal_id": "25",
+    "chain_id": "axelar",
+    "title": "Axelar v029 Upgrade Proposal",
+    "type": "SoftwareUpgrade",
+    "topic": "Major Release",
+    "status": "PASSED",
+    "submit_time": "1669922005568",
+    "final_tally_result": {
+      "yes_count": 45,
+      "no_vote_count": 30
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Core Upgrade",
+    "topic_v2_display": "Core Upgrade",
+    "topic_v2_unique": "Protocol - Core Upgrade"
+  },
+  {
+    "proposal_id": "24",
+    "chain_id": "axelar",
+    "title": "Axelar v029 Upgrade Proposal",
+    "type": "SoftwareUpgrade",
+    "topic": "Major Release",
+    "status": "REJECTED",
+    "submit_time": "1669920564853",
+    "final_tally_result": {
+      "no_count": 38,
+      "yes_count": 5,
+      "no_vote_count": 32
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Core Upgrade",
+    "topic_v2_display": "Core Upgrade",
+    "topic_v2_unique": "Protocol - Core Upgrade"
+  },
+  {
+    "proposal_id": "23",
+    "chain_id": "axelar",
+    "title": "Increase validator active set to 55",
+    "type": "ParameterChange",
+    "topic": "Staking Parameters",
+    "status": "PASSED",
+    "submit_time": "1669737106172",
+    "final_tally_result": {
+      "yes_count": 37,
+      "no_vote_count": 38
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Parameter Change",
+    "topic_v2_display": "Parameter Change",
+    "topic_v2_unique": "Protocol - Parameter Change"
+  },
+  {
+    "proposal_id": "22",
+    "chain_id": "axelar",
+    "title": "Axelar v028 Upgrade Proposal",
+    "type": "SoftwareUpgrade",
+    "topic": "Major Release",
+    "status": "PASSED",
+    "submit_time": "1669586849636",
+    "final_tally_result": {
+      "yes_count": 41,
+      "no_vote_count": 34
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Core Upgrade",
+    "topic_v2_display": "Core Upgrade",
+    "topic_v2_unique": "Protocol - Core Upgrade"
+  },
+  {
+    "proposal_id": "21",
+    "chain_id": "axelar",
+    "title": "Revive IBC Client to Terra Classic",
+    "type": "IBCRelated",
+    "topic": "Client Update",
+    "status": "PASSED",
+    "submit_time": "1669198118448",
+    "final_tally_result": {
+      "yes_count": 36,
+      "abstain_count": 2,
+      "no_count": 1,
+      "no_vote_count": 36
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "IBC Management",
+    "topic_v2_display": "IBC Management",
+    "topic_v2_unique": "Ecosystem - IBC Management"
+  },
+  {
+    "proposal_id": "19",
+    "chain_id": "axelar",
+    "title": "Update inflation rate on the network",
+    "type": "ParameterChange",
+    "topic": "Economic Parameters",
+    "status": "PASSED",
+    "submit_time": "1667852409292",
+    "final_tally_result": {
+      "yes_count": 36,
+      "no_vote_count": 39
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Parameter Change",
+    "topic_v2_display": "Parameter Change",
+    "topic_v2_unique": "Protocol - Parameter Change"
+  },
+  {
+    "proposal_id": "18",
+    "chain_id": "axelar",
+    "title": "Staking Param Change",
+    "type": "ParameterChange",
+    "topic": "Staking Parameters",
+    "status": "REJECTED",
+    "submit_time": "1664657305302",
+    "final_tally_result": {
+      "no_count": 26,
+      "abstain_count": 1,
+      "yes_count": 5,
+      "no_vote_count": 43
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Parameter Change",
+    "topic_v2_display": "Parameter Change",
+    "topic_v2_unique": "Protocol - Parameter Change"
+  },
+  {
+    "proposal_id": "17",
+    "chain_id": "axelar",
+    "title": "Enabling rewards on the network",
+    "type": "ParameterChange",
+    "topic": "Protocol Configuration",
+    "status": "PASSED",
+    "submit_time": "1663872780557",
+    "final_tally_result": {
+      "yes_count": 36,
+      "no_vote_count": 39
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Parameter Change",
+    "topic_v2_display": "Parameter Change",
+    "topic_v2_unique": "Protocol - Parameter Change"
+  },
+  {
+    "proposal_id": "16",
+    "chain_id": "axelar",
+    "title": "Update governance voting period and Ethereum confirmation height",
+    "type": "ParameterChange",
+    "topic": "Governance Settings",
+    "status": "PASSED",
+    "submit_time": "1663689302573",
+    "final_tally_result": {
+      "yes_count": 20,
+      "no_vote_count": 55
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Parameter Change",
+    "topic_v2_display": "Parameter Change",
+    "topic_v2_unique": "Protocol - Parameter Change"
+  },
+  {
+    "proposal_id": "15",
+    "chain_id": "axelar",
+    "title": "Update network params",
+    "type": "ParameterChange",
+    "topic": "Staking Parameters",
+    "status": "PASSED",
+    "submit_time": "1663684165863",
+    "final_tally_result": {
+      "yes_count": 22,
+      "no_vote_count": 53
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Parameter Change",
+    "topic_v2_display": "Parameter Change",
+    "topic_v2_unique": "Protocol - Parameter Change"
+  },
+  {
+    "proposal_id": "14",
+    "chain_id": "axelar",
+    "title": "Axelar v026 Upgrade Proposal",
+    "type": "SoftwareUpgrade",
+    "topic": "Major Release",
+    "status": "PASSED",
+    "submit_time": "1662987966623",
+    "final_tally_result": {
+      "yes_count": 30,
+      "no_vote_count": 45
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Core Upgrade",
+    "topic_v2_display": "Core Upgrade",
+    "topic_v2_unique": "Protocol - Core Upgrade"
+  },
+  {
+    "proposal_id": "13",
+    "chain_id": "axelar",
+    "title": "Axelar v024 Upgrade Proposal",
+    "type": "SoftwareUpgrade",
+    "topic": "Major Release",
+    "status": "PASSED",
+    "submit_time": "1661783083125",
+    "final_tally_result": {
+      "yes_count": 26,
+      "no_vote_count": 49
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Core Upgrade",
+    "topic_v2_display": "Core Upgrade",
+    "topic_v2_unique": "Protocol - Core Upgrade"
+  },
+  {
+    "proposal_id": "12",
+    "chain_id": "axelar",
+    "title": "Axelar v021 Upgrade Proposal",
+    "type": "SoftwareUpgrade",
+    "topic": "Major Release",
+    "status": "PASSED",
+    "submit_time": "1661533337211",
+    "final_tally_result": {
+      "yes_count": 20,
+      "no_vote_count": 55
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Core Upgrade",
+    "topic_v2_display": "Core Upgrade",
+    "topic_v2_unique": "Protocol - Core Upgrade"
+  },
+  {
+    "proposal_id": "11",
+    "chain_id": "axelar",
+    "title": "Axelar v020 Upgrade Proposal",
+    "type": "SoftwareUpgrade",
+    "topic": "Major Release",
+    "status": "PASSED",
+    "submit_time": "1659966121871",
+    "final_tally_result": {
+      "yes_count": 29,
+      "no_vote_count": 46
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Core Upgrade",
+    "topic_v2_display": "Core Upgrade",
+    "topic_v2_unique": "Protocol - Core Upgrade"
+  },
+  {
+    "proposal_id": "10",
+    "chain_id": "axelar",
+    "title": "Axelar v019 Upgrade Proposal",
+    "type": "SoftwareUpgrade",
+    "topic": "Major Release",
+    "status": "PASSED",
+    "submit_time": "1654699361384",
+    "final_tally_result": {
+      "yes_count": 27,
+      "no_vote_count": 48
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Core Upgrade",
+    "topic_v2_display": "Core Upgrade",
+    "topic_v2_unique": "Protocol - Core Upgrade"
+  },
+  {
+    "proposal_id": "9",
+    "chain_id": "axelar",
+    "title": "Axelar v018 Upgrade Proposal",
+    "type": "SoftwareUpgrade",
+    "topic": "Major Release",
+    "status": "PASSED",
+    "submit_time": "1654692950588",
+    "final_tally_result": {
+      "yes_count": 29,
+      "no_vote_count": 46
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Core Upgrade",
+    "topic_v2_display": "Core Upgrade",
+    "topic_v2_unique": "Protocol - Core Upgrade"
+  },
+  {
+    "proposal_id": "8",
+    "chain_id": "axelar",
+    "title": "Decrease gov voting period temporarily",
+    "type": "ParameterChange",
+    "topic": "Governance Settings",
+    "status": "PASSED",
+    "submit_time": "1654528588151",
+    "final_tally_result": {
+      "yes_count": 29,
+      "no_vote_count": 46
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Parameter Change",
+    "topic_v2_display": "Parameter Change",
+    "topic_v2_unique": "Protocol - Parameter Change"
+  },
+  {
+    "proposal_id": "7",
+    "chain_id": "axelar",
+    "title": "Axelar v017 Upgrade Proposal",
+    "type": "SoftwareUpgrade",
+    "topic": "Major Release",
+    "status": "PASSED",
+    "submit_time": "1651037994492",
+    "final_tally_result": {
+      "yes_count": 26,
+      "no_vote_count": 49
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Core Upgrade",
+    "topic_v2_display": "Core Upgrade",
+    "topic_v2_unique": "Protocol - Core Upgrade"
+  },
+  {
+    "proposal_id": "6",
+    "chain_id": "axelar",
+    "title": "Axelar v016 Upgrade Proposal",
+    "type": "SoftwareUpgrade",
+    "topic": "Major Release",
+    "status": "PASSED",
+    "submit_time": "1647733532295",
+    "final_tally_result": {
+      "yes_count": 23,
+      "no_vote_count": 52
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Core Upgrade",
+    "topic_v2_display": "Core Upgrade",
+    "topic_v2_unique": "Protocol - Core Upgrade"
+  },
+  {
+    "proposal_id": "5",
+    "chain_id": "axelar",
+    "title": "Axelar v015 Upgrade Proposal",
+    "type": "SoftwareUpgrade",
+    "topic": "Major Release",
+    "status": "PASSED",
+    "submit_time": "1647308310947",
+    "final_tally_result": {
+      "yes_count": 30,
+      "no_vote_count": 45
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Core Upgrade",
+    "topic_v2_display": "Core Upgrade",
+    "topic_v2_unique": "Protocol - Core Upgrade"
+  },
+  {
+    "proposal_id": "4",
+    "chain_id": "axelar",
+    "title": "Axelar v014 Upgrade Proposal",
+    "type": "SoftwareUpgrade",
+    "topic": "Major Release",
+    "status": "PASSED",
+    "submit_time": "1646080837247",
+    "final_tally_result": {
+      "yes_count": 25,
+      "no_vote_count": 50
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Core Upgrade",
+    "topic_v2_display": "Core Upgrade",
+    "topic_v2_unique": "Protocol - Core Upgrade"
+  },
+  {
+    "proposal_id": "3",
+    "chain_id": "axelar",
+    "title": "Increase multisig timeout duration",
+    "type": "ParameterChange",
+    "topic": "Governance Settings",
+    "status": "PASSED",
+    "submit_time": "1644126580896",
+    "final_tally_result": {
+      "yes_count": 24,
+      "no_vote_count": 51
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Parameter Change",
+    "topic_v2_display": "Parameter Change",
+    "topic_v2_unique": "Protocol - Parameter Change"
+  },
+  {
+    "proposal_id": "2",
+    "chain_id": "axelar",
+    "title": "Reduce TSS suspend duration",
+    "type": "ParameterChange",
+    "topic": "Governance Settings",
+    "status": "PASSED",
+    "submit_time": "1643995169064",
+    "final_tally_result": {
+      "yes_count": 20,
+      "no_vote_count": 55
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Parameter Change",
+    "topic_v2_display": "Parameter Change",
+    "topic_v2_unique": "Protocol - Parameter Change"
+  },
+  {
+    "proposal_id": "1",
+    "chain_id": "axelar",
+    "title": "Axelar v013 Upgrade Proposal",
+    "type": "SoftwareUpgrade",
+    "topic": "Major Release",
+    "status": "PASSED",
+    "submit_time": "1642177468058",
+    "final_tally_result": {
+      "yes_count": 16,
+      "no_vote_count": 59
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Core Upgrade",
+    "topic_v2_display": "Core Upgrade",
+    "topic_v2_unique": "Protocol - Core Upgrade"
+  }
+]

@@ -79,13 +79,13 @@ const CategoryItem = React.memo(({ category, isHovered, isCategorySelected, sele
   )
 })
 
-const TopicItem = React.memo(({ topic, isSelected, categoryName, onToggle }: { topic: TopicNode; isSelected: boolean; categoryName: string; onToggle: (topicName: string, categoryName: string) => void; }) => {
+const TopicItem = React.memo(({ topic, isSelected, categoryName, onToggle }: { topic: TopicNode & { displayName?: string }; isSelected: boolean; categoryName: string; onToggle: (topicName: string, categoryName: string) => void; }) => {
   return (
     <label className="flex items-center gap-2 p-2 hover:bg-white rounded cursor-pointer relative">
       <VoteCountBackground voteDistribution={topic.voteDistribution} />
       <input type="checkbox" checked={isSelected} onChange={() => onToggle(topic.name, categoryName)} className="w-3 h-3 text-blue-600 border-gray-300 rounded focus:ring-blue-500 relative z-10" />
       <div className="flex items-center justify-between flex-1 relative z-10">
-        <span className="text-xs text-gray-600">{`${topic.name} (${topic.count})`}</span>
+        <span className="text-xs text-gray-600">{`${topic.displayName || topic.name} (${topic.count})`}</span>
       </div>
     </label>
   )

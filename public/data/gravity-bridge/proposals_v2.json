@@ -1,0 +1,3346 @@
+[
+  {
+    "proposal_id": "236",
+    "chain_id": "gravity-bridge",
+    "title": "Neutrino Upgrade",
+    "type": "SoftwareUpgrade",
+    "topic": "Major Release",
+    "status": "PASSED",
+    "submit_time": "1727123603650",
+    "final_tally_result": {
+      "yes_count": 54,
+      "no_vote_count": 36
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Core Upgrade",
+    "topic_v2_display": "Core Upgrade",
+    "topic_v2_unique": "Protocol - Core Upgrade"
+  },
+  {
+    "proposal_id": "234",
+    "chain_id": "gravity-bridge",
+    "title": "Gravity Bridge Chain Fee Increase",
+    "type": "ParameterChange",
+    "topic": "Staking Parameters",
+    "status": "PASSED",
+    "submit_time": "1723852296734",
+    "final_tally_result": {
+      "yes_count": 50,
+      "no_vote_count": 41
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Parameter Change",
+    "topic_v2_display": "Parameter Change",
+    "topic_v2_unique": "Protocol - Parameter Change"
+  },
+  {
+    "proposal_id": "233",
+    "chain_id": "gravity-bridge",
+    "title": "Add Althea L1 Metadata to Gravity Bridge",
+    "type": "IBCRelated",
+    "topic": "Cross-Chain Integration",
+    "status": "PASSED",
+    "submit_time": "1722275582763",
+    "final_tally_result": {
+      "yes_count": 50,
+      "no_vote_count": 41
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "IBC Management",
+    "topic_v2_display": "IBC Management",
+    "topic_v2_unique": "Ecosystem - IBC Management"
+  },
+  {
+    "proposal_id": "232",
+    "chain_id": "gravity-bridge",
+    "title": "Setup Althea L1 IBC AutoForwarding",
+    "type": "IBCRelated",
+    "topic": "IBC Security",
+    "status": "PASSED",
+    "submit_time": "1722275525171",
+    "final_tally_result": {
+      "yes_count": 50,
+      "no_vote_count": 41
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "IBC Management",
+    "topic_v2_display": "IBC Management",
+    "topic_v2_unique": "Ecosystem - IBC Management"
+  },
+  {
+    "proposal_id": "230",
+    "chain_id": "gravity-bridge",
+    "title": "Increase Gravity Bridge chain fee ",
+    "type": "ParameterChange",
+    "topic": "Staking Parameters",
+    "status": "PASSED",
+    "submit_time": "1715992794089",
+    "final_tally_result": {
+      "yes_count": 58,
+      "abstain_count": 1,
+      "no_vote_count": 44
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Parameter Change",
+    "topic_v2_display": "Parameter Change",
+    "topic_v2_unique": "Protocol - Parameter Change"
+  },
+  {
+    "proposal_id": "229",
+    "chain_id": "gravity-bridge",
+    "title": "Add AQLA Metadata to Gravity Bridge",
+    "type": "IBCRelated",
+    "topic": "IBC Security",
+    "status": "PASSED",
+    "submit_time": "1714319880275",
+    "final_tally_result": {
+      "yes_count": 54,
+      "no_count": 1,
+      "no_vote_count": 53
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "IBC Management",
+    "topic_v2_display": "IBC Management",
+    "topic_v2_unique": "Ecosystem - IBC Management"
+  },
+  {
+    "proposal_id": "228",
+    "chain_id": "gravity-bridge",
+    "title": "Explore DeFi on Cosmos",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "REJECTED",
+    "submit_time": "1711936130842",
+    "final_tally_result": {
+      "no_with_veto_count": 47,
+      "no_count": 2,
+      "no_vote_count": 59
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Signaling",
+    "topic_v2_display": "Signaling",
+    "topic_v2_unique": "Governance - Signaling"
+  },
+  {
+    "proposal_id": "227",
+    "chain_id": "gravity-bridge",
+    "title": "Recover user funds stuck in community pool",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "PASSED",
+    "submit_time": "1708006267389",
+    "final_tally_result": {
+      "yes_count": 63,
+      "abstain_count": 2,
+      "no_vote_count": 43
+    },
+    "type_v2": "Treasury",
+    "topic_v2": "Liquidity & Incentives",
+    "topic_v2_display": "Liquidity & Incentives",
+    "topic_v2_unique": "Treasury - Liquidity & Incentives"
+  },
+  {
+    "proposal_id": "226",
+    "chain_id": "gravity-bridge",
+    "title": "Round2 Gravity Growth and Sustainability Grant",
+    "type": "CommunityPoolSpend",
+    "topic": "Ecosystem Growth",
+    "status": "PASSED",
+    "submit_time": "1706135247133",
+    "final_tally_result": {
+      "yes_count": 64,
+      "abstain_count": 7,
+      "no_vote_count": 37
+    },
+    "type_v2": "Treasury",
+    "topic_v2": "dApp & Tooling Funding",
+    "topic_v2_display": "dApp & Tooling Funding",
+    "topic_v2_unique": "Treasury - dApp & Tooling Funding"
+  },
+  {
+    "proposal_id": "225",
+    "chain_id": "gravity-bridge",
+    "title": "Reduce inflation from 55 to 4",
+    "type": "ParameterChange",
+    "topic": "Economic Parameters",
+    "status": "PASSED",
+    "submit_time": "1706134474251",
+    "final_tally_result": {
+      "yes_count": 68,
+      "abstain_count": 1,
+      "no_count": 1,
+      "no_vote_count": 38
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Parameter Change",
+    "topic_v2_display": "Parameter Change",
+    "topic_v2_unique": "Protocol - Parameter Change"
+  },
+  {
+    "proposal_id": "224",
+    "chain_id": "gravity-bridge",
+    "title": "Setup MEME IBC AutoForwarding",
+    "type": "IBCRelated",
+    "topic": "IBC Security",
+    "status": "PASSED",
+    "submit_time": "1705032112252",
+    "final_tally_result": {
+      "yes_count": 62,
+      "abstain_count": 3,
+      "no_vote_count": 43
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "IBC Management",
+    "topic_v2_display": "IBC Management",
+    "topic_v2_unique": "Ecosystem - IBC Management"
+  },
+  {
+    "proposal_id": "223",
+    "chain_id": "gravity-bridge",
+    "title": "Setup Neutaro IBC AutoForwarding",
+    "type": "IBCRelated",
+    "topic": "IBC Security",
+    "status": "PASSED",
+    "submit_time": "1705003660187",
+    "final_tally_result": {
+      "yes_count": 66,
+      "abstain_count": 3,
+      "no_vote_count": 39
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "IBC Management",
+    "topic_v2_display": "IBC Management",
+    "topic_v2_unique": "Ecosystem - IBC Management"
+  },
+  {
+    "proposal_id": "222",
+    "chain_id": "gravity-bridge",
+    "title": "Add Neutaro Metadata to Gravity Bridge",
+    "type": "IBCRelated",
+    "topic": "Cross-Chain Integration",
+    "status": "PASSED",
+    "submit_time": "1704634879668",
+    "final_tally_result": {
+      "yes_count": 71,
+      "abstain_count": 2,
+      "no_vote_count": 35
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "IBC Management",
+    "topic_v2_display": "IBC Management",
+    "topic_v2_unique": "Ecosystem - IBC Management"
+  },
+  {
+    "proposal_id": "221",
+    "chain_id": "gravity-bridge",
+    "title": "Add MEME Metadata to Gravity Bridge",
+    "type": "IBCRelated",
+    "topic": "Cross-Chain Integration",
+    "status": "PASSED",
+    "submit_time": "1704451247533",
+    "final_tally_result": {
+      "yes_count": 73,
+      "no_vote_count": 35
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "IBC Management",
+    "topic_v2_display": "IBC Management",
+    "topic_v2_unique": "Ecosystem - IBC Management"
+  },
+  {
+    "proposal_id": "220",
+    "chain_id": "gravity-bridge",
+    "title": "Auction Module MinBidFee Update",
+    "type": "ParameterChange",
+    "topic": "Fee Adjustment",
+    "status": "PASSED",
+    "submit_time": "1702877159547",
+    "final_tally_result": {
+      "yes_count": 66,
+      "abstain_count": 3,
+      "no_vote_count": 39
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Parameter Change",
+    "topic_v2_display": "Parameter Change",
+    "topic_v2_unique": "Protocol - Parameter Change"
+  },
+  {
+    "proposal_id": "219",
+    "chain_id": "gravity-bridge",
+    "title": "Auction Module MinBidFee Update",
+    "type": "ParameterChange",
+    "topic": "Fee Adjustment",
+    "status": "PASSED",
+    "submit_time": "1701705295683",
+    "final_tally_result": {
+      "yes_count": 66,
+      "abstain_count": 1,
+      "no_vote_count": 41
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Parameter Change",
+    "topic_v2_display": "Parameter Change",
+    "topic_v2_unique": "Protocol - Parameter Change"
+  },
+  {
+    "proposal_id": "218",
+    "chain_id": "gravity-bridge",
+    "title": "Reduce inflation from 7 to 55",
+    "type": "ParameterChange",
+    "topic": "Economic Parameters",
+    "status": "PASSED",
+    "submit_time": "1701420471792",
+    "final_tally_result": {
+      "yes_count": 66,
+      "no_count": 4,
+      "abstain_count": 5,
+      "no_vote_count": 33
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Parameter Change",
+    "topic_v2_display": "Parameter Change",
+    "topic_v2_unique": "Protocol - Parameter Change"
+  },
+  {
+    "proposal_id": "217",
+    "chain_id": "gravity-bridge",
+    "title": "COMMUNITY SPEND BOUNTY and INCENTIVES",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "PASSED",
+    "submit_time": "1701151800049",
+    "final_tally_result": {
+      "yes_count": 63,
+      "abstain_count": 5,
+      "no_vote_count": 40
+    },
+    "type_v2": "Treasury",
+    "topic_v2": "Liquidity & Incentives",
+    "topic_v2_display": "Liquidity & Incentives",
+    "topic_v2_unique": "Treasury - Liquidity & Incentives"
+  },
+  {
+    "proposal_id": "216",
+    "chain_id": "gravity-bridge",
+    "title": "Add ARCH token to Gravity Bridge",
+    "type": "IBCRelated",
+    "topic": "Cross-Chain Integration",
+    "status": "PASSED",
+    "submit_time": "1700650935641",
+    "final_tally_result": {
+      "yes_count": 66,
+      "abstain_count": 1,
+      "no_vote_count": 41
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "IBC Management",
+    "topic_v2_display": "IBC Management",
+    "topic_v2_unique": "Ecosystem - IBC Management"
+  },
+  {
+    "proposal_id": "215",
+    "chain_id": "gravity-bridge",
+    "title": "Setup Archway IBC AutoForwarding",
+    "type": "IBCRelated",
+    "topic": "IBC Security",
+    "status": "PASSED",
+    "submit_time": "1700593482627",
+    "final_tally_result": {
+      "yes_count": 68,
+      "abstain_count": 1,
+      "no_vote_count": 39
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "IBC Management",
+    "topic_v2_display": "IBC Management",
+    "topic_v2_unique": "Ecosystem - IBC Management"
+  },
+  {
+    "proposal_id": "214",
+    "chain_id": "gravity-bridge",
+    "title": "Add ARCH token to Gravity Bridge",
+    "type": "IBCRelated",
+    "topic": "Cross-Chain Integration",
+    "status": "REJECTED",
+    "submit_time": "1700592630763",
+    "final_tally_result": {
+      "no_count": 42,
+      "abstain_count": 3,
+      "yes_count": 27,
+      "no_vote_count": 36
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "IBC Management",
+    "topic_v2_display": "IBC Management",
+    "topic_v2_unique": "Ecosystem - IBC Management"
+  },
+  {
+    "proposal_id": "213",
+    "chain_id": "gravity-bridge",
+    "title": "Atom Airdrop   New Lightning Network",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "REJECTED",
+    "submit_time": "1699589472796",
+    "final_tally_result": {
+      "no_count": 4,
+      "no_with_veto_count": 53,
+      "no_vote_count": 51
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Spam & Malicious",
+    "topic_v2_display": "Spam & Malicious",
+    "topic_v2_unique": "Governance - Spam & Malicious"
+  },
+  {
+    "proposal_id": "212",
+    "chain_id": "gravity-bridge",
+    "title": "The Apollo Upgrade",
+    "type": "SoftwareUpgrade",
+    "topic": "Security Enhancement",
+    "status": "PASSED",
+    "submit_time": "1699557689719",
+    "final_tally_result": {
+      "yes_count": 86,
+      "no_vote_count": 22
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Core Upgrade",
+    "topic_v2_display": "Core Upgrade",
+    "topic_v2_unique": "Protocol - Core Upgrade"
+  },
+  {
+    "proposal_id": "211",
+    "chain_id": "gravity-bridge",
+    "title": "The Apollo Upgrade",
+    "type": "SoftwareUpgrade",
+    "topic": "Security Enhancement",
+    "status": "REJECTED",
+    "submit_time": "1699543118322",
+    "final_tally_result": {
+      "no_count": 69,
+      "yes_count": 1,
+      "abstain_count": 1,
+      "no_with_veto_count": 1,
+      "no_vote_count": 36
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Core Upgrade",
+    "topic_v2_display": "Core Upgrade",
+    "topic_v2_unique": "Protocol - Core Upgrade"
+  },
+  {
+    "proposal_id": "210",
+    "chain_id": "gravity-bridge",
+    "title": "Gravity Bridge Bug Bounty 1",
+    "type": "CommunityPoolSpend",
+    "topic": "Ecosystem Growth",
+    "status": "PASSED",
+    "submit_time": "1699432433796",
+    "final_tally_result": {
+      "yes_count": 72,
+      "abstain_count": 5,
+      "no_count": 2,
+      "no_vote_count": 29
+    },
+    "type_v2": "Treasury",
+    "topic_v2": "dApp & Tooling Funding",
+    "topic_v2_display": "dApp & Tooling Funding",
+    "topic_v2_unique": "Treasury - dApp & Tooling Funding"
+  },
+  {
+    "proposal_id": "209",
+    "chain_id": "gravity-bridge",
+    "title": " Gravity Airdrop  ",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "REJECTED",
+    "submit_time": "1699157955888",
+    "final_tally_result": {
+      "no_count": 1,
+      "no_with_veto_count": 57,
+      "no_vote_count": 50
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Spam & Malicious",
+    "topic_v2_display": "Spam & Malicious",
+    "topic_v2_unique": "Governance - Spam & Malicious"
+  },
+  {
+    "proposal_id": "208",
+    "chain_id": "gravity-bridge",
+    "title": "Decrease Gravity Bridge fees to 1 basis point",
+    "type": "ParameterChange",
+    "topic": "Staking Parameters",
+    "status": "PASSED",
+    "submit_time": "1697580632001",
+    "final_tally_result": {
+      "abstain_count": 7,
+      "yes_count": 54,
+      "no_count": 3,
+      "no_vote_count": 44
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Parameter Change",
+    "topic_v2_display": "Parameter Change",
+    "topic_v2_unique": "Protocol - Parameter Change"
+  },
+  {
+    "proposal_id": "205",
+    "chain_id": "gravity-bridge",
+    "title": "Reduce inflation from 85 to 7",
+    "type": "ParameterChange",
+    "topic": "Economic Parameters",
+    "status": "PASSED",
+    "submit_time": "1696547703713",
+    "final_tally_result": {
+      "yes_count": 69,
+      "abstain_count": 4,
+      "no_count": 2,
+      "no_vote_count": 33
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Parameter Change",
+    "topic_v2_display": "Parameter Change",
+    "topic_v2_unique": "Protocol - Parameter Change"
+  },
+  {
+    "proposal_id": "204",
+    "chain_id": "gravity-bridge",
+    "title": "Send 50 of Send To Eth fees to the Community Pool",
+    "type": "TextProposal",
+    "topic": "Community Decision",
+    "status": "PASSED",
+    "submit_time": "1694798048968",
+    "final_tally_result": {
+      "yes_count": 84,
+      "abstain_count": 1,
+      "no_vote_count": 23
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Signaling",
+    "topic_v2_display": "Signaling",
+    "topic_v2_unique": "Governance - Signaling"
+  },
+  {
+    "proposal_id": "203",
+    "chain_id": "gravity-bridge",
+    "title": "Set Minimum Bid Fee parameter to 3110 GRAV",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "PASSED",
+    "submit_time": "1694798024106",
+    "final_tally_result": {
+      "yes_count": 86,
+      "abstain_count": 1,
+      "no_vote_count": 21
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Parameter Change",
+    "topic_v2_display": "Parameter Change",
+    "topic_v2_unique": "Protocol - Parameter Change"
+  },
+  {
+    "proposal_id": "202",
+    "chain_id": "gravity-bridge",
+    "title": "Set Burn Winning Bids parameter to true",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "PASSED",
+    "submit_time": "1694798004972",
+    "final_tally_result": {
+      "yes_count": 85,
+      "abstain_count": 1,
+      "no_vote_count": 22
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Parameter Change",
+    "topic_v2_display": "Parameter Change",
+    "topic_v2_unique": "Protocol - Parameter Change"
+  },
+  {
+    "proposal_id": "201",
+    "chain_id": "gravity-bridge",
+    "title": "Set Auction Length parameter to 85600",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "PASSED",
+    "submit_time": "1694797979902",
+    "final_tally_result": {
+      "yes_count": 86,
+      "abstain_count": 1,
+      "no_vote_count": 21
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Parameter Change",
+    "topic_v2_display": "Parameter Change",
+    "topic_v2_unique": "Protocol - Parameter Change"
+  },
+  {
+    "proposal_id": "200",
+    "chain_id": "gravity-bridge",
+    "title": "Set NonAuctionable Tokens to ugraviton",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "PASSED",
+    "submit_time": "1694797195895",
+    "final_tally_result": {
+      "yes_count": 84,
+      "abstain_count": 1,
+      "no_vote_count": 23
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "Token Management",
+    "topic_v2_display": "Token Management",
+    "topic_v2_unique": "Ecosystem - Token Management"
+  },
+  {
+    "proposal_id": "199",
+    "chain_id": "gravity-bridge",
+    "title": "Increase Gravity Bridge fees to 4 basis points",
+    "type": "ParameterChange",
+    "topic": "Staking Parameters",
+    "status": "PASSED",
+    "submit_time": "1693402625873",
+    "final_tally_result": {
+      "yes_count": 89,
+      "no_count": 1,
+      "abstain_count": 4,
+      "no_vote_count": 14
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Parameter Change",
+    "topic_v2_display": "Parameter Change",
+    "topic_v2_unique": "Protocol - Parameter Change"
+  },
+  {
+    "proposal_id": "198",
+    "chain_id": "gravity-bridge",
+    "title": "Reduce inflation from 10 to 85",
+    "type": "ParameterChange",
+    "topic": "Economic Parameters",
+    "status": "PASSED",
+    "submit_time": "1693369648012",
+    "final_tally_result": {
+      "yes_count": 89,
+      "abstain_count": 5,
+      "no_count": 2,
+      "no_vote_count": 12
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Parameter Change",
+    "topic_v2_display": "Parameter Change",
+    "topic_v2_unique": "Protocol - Parameter Change"
+  },
+  {
+    "proposal_id": "197",
+    "chain_id": "gravity-bridge",
+    "title": "Add member to Hatsfinance Bug Bounty Committee",
+    "type": "TextProposal",
+    "topic": "Project Funding",
+    "status": "PASSED",
+    "submit_time": "1693233319987",
+    "final_tally_result": {
+      "yes_count": 76,
+      "abstain_count": 13,
+      "no_count": 1,
+      "no_vote_count": 18
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Process & Policy",
+    "topic_v2_display": "Process & Policy",
+    "topic_v2_unique": "Governance - Process & Policy"
+  },
+  {
+    "proposal_id": "195",
+    "chain_id": "gravity-bridge",
+    "title": "Integrating NFT Bridging Module in a future network upgrade",
+    "type": "TextProposal",
+    "topic": "Network Policy",
+    "status": "PASSED",
+    "submit_time": "1691528676327",
+    "final_tally_result": {
+      "yes_count": 78,
+      "abstain_count": 2,
+      "no_vote_count": 28
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Core Upgrade",
+    "topic_v2_display": "Core Upgrade",
+    "topic_v2_unique": "Protocol - Core Upgrade"
+  },
+  {
+    "proposal_id": "194",
+    "chain_id": "gravity-bridge",
+    "title": "Hatsfinance Bug Bounty Committee",
+    "type": "TextProposal",
+    "topic": "Project Funding",
+    "status": "PASSED",
+    "submit_time": "1691463754868",
+    "final_tally_result": {
+      "yes_count": 72,
+      "abstain_count": 10,
+      "no_count": 1,
+      "no_vote_count": 25
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Process & Policy",
+    "topic_v2_display": "Process & Policy",
+    "topic_v2_unique": "Governance - Process & Policy"
+  },
+  {
+    "proposal_id": "193",
+    "chain_id": "gravity-bridge",
+    "title": "Enhancing Gravity Bridge through AlphaGrowth BD",
+    "type": "CommunityPoolSpend",
+    "topic": "Ecosystem Growth",
+    "status": "PASSED",
+    "submit_time": "1691416740989",
+    "final_tally_result": {
+      "yes_count": 31,
+      "no_count": 39,
+      "abstain_count": 19,
+      "weighted_vote_count": 1,
+      "no_vote_count": 18
+    },
+    "type_v2": "Treasury",
+    "topic_v2": "dApp & Tooling Funding",
+    "topic_v2_display": "dApp & Tooling Funding",
+    "topic_v2_unique": "Treasury - dApp & Tooling Funding"
+  },
+  {
+    "proposal_id": "187",
+    "chain_id": "gravity-bridge",
+    "title": "Enable Interchain Accounts Host module",
+    "type": "ParameterChange",
+    "topic": "Staking Parameters",
+    "status": "PASSED",
+    "submit_time": "1688060299815",
+    "final_tally_result": {
+      "yes_count": 87,
+      "abstain_count": 1,
+      "no_vote_count": 20
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Parameter Change",
+    "topic_v2_display": "Parameter Change",
+    "topic_v2_unique": "Protocol - Parameter Change"
+  },
+  {
+    "proposal_id": "185",
+    "chain_id": "gravity-bridge",
+    "title": "Increase minimum deposit for proposals",
+    "type": "ParameterChange",
+    "topic": "Staking Parameters",
+    "status": "PASSED",
+    "submit_time": "1687610768907",
+    "final_tally_result": {
+      "yes_count": 96,
+      "no_vote_count": 12
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Parameter Change",
+    "topic_v2_display": "Parameter Change",
+    "topic_v2_unique": "Protocol - Parameter Change"
+  },
+  {
+    "proposal_id": "184",
+    "chain_id": "gravity-bridge",
+    "title": "USDC Airdrop ",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "REJECTED",
+    "submit_time": "1687574729357",
+    "final_tally_result": {
+      "no_count": 6,
+      "no_with_veto_count": 64,
+      "no_vote_count": 38
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Spam & Malicious",
+    "topic_v2_display": "Spam & Malicious",
+    "topic_v2_unique": "Governance - Spam & Malicious"
+  },
+  {
+    "proposal_id": "183",
+    "chain_id": "gravity-bridge",
+    "title": "Antares Upgrade",
+    "type": "SoftwareUpgrade",
+    "topic": "Major Release",
+    "status": "PASSED",
+    "submit_time": "1687206279965",
+    "final_tally_result": {
+      "yes_count": 104,
+      "no_vote_count": 4
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Core Upgrade",
+    "topic_v2_display": "Core Upgrade",
+    "topic_v2_unique": "Protocol - Core Upgrade"
+  },
+  {
+    "proposal_id": "181",
+    "chain_id": "gravity-bridge",
+    "title": "Compensation to cosmos holders",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "REJECTED",
+    "submit_time": "1686653322061",
+    "final_tally_result": {
+      "no_with_veto_count": 64,
+      "yes_count": 5,
+      "no_count": 5,
+      "abstain_count": 2,
+      "no_vote_count": 32
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Signaling",
+    "topic_v2_display": "Signaling",
+    "topic_v2_unique": "Governance - Signaling"
+  },
+  {
+    "proposal_id": "180",
+    "chain_id": "gravity-bridge",
+    "title": "Fund development of auction module",
+    "type": "CommunityPoolSpend",
+    "topic": "Ecosystem Growth",
+    "status": "PASSED",
+    "submit_time": "1686648923154",
+    "final_tally_result": {
+      "yes_count": 87,
+      "abstain_count": 8,
+      "no_count": 1,
+      "no_vote_count": 12
+    },
+    "type_v2": "Treasury",
+    "topic_v2": "dApp & Tooling Funding",
+    "topic_v2_display": "dApp & Tooling Funding",
+    "topic_v2_unique": "Treasury - dApp & Tooling Funding"
+  },
+  {
+    "proposal_id": "179",
+    "chain_id": "gravity-bridge",
+    "title": "Add stOsmo Metadata to Gravity Bridge",
+    "type": "IBCRelated",
+    "topic": "IBC Security",
+    "status": "PASSED",
+    "submit_time": "1685989941692",
+    "final_tally_result": {
+      "yes_count": 95,
+      "no_vote_count": 13
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "IBC Management",
+    "topic_v2_display": "IBC Management",
+    "topic_v2_unique": "Ecosystem - IBC Management"
+  },
+  {
+    "proposal_id": "178",
+    "chain_id": "gravity-bridge",
+    "title": "Add stAtom Metadata to Gravity Bridge",
+    "type": "IBCRelated",
+    "topic": "Cross-Chain Integration",
+    "status": "PASSED",
+    "submit_time": "1685989911160",
+    "final_tally_result": {
+      "yes_count": 95,
+      "no_vote_count": 13
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "IBC Management",
+    "topic_v2_display": "IBC Management",
+    "topic_v2_unique": "Ecosystem - IBC Management"
+  },
+  {
+    "proposal_id": "177",
+    "chain_id": "gravity-bridge",
+    "title": "Add CANTO Metadata to Gravity Bridge",
+    "type": "IBCRelated",
+    "topic": "Cross-Chain Integration",
+    "status": "PASSED",
+    "submit_time": "1685982587422",
+    "final_tally_result": {
+      "yes_count": 96,
+      "no_vote_count": 12
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "IBC Management",
+    "topic_v2_display": "IBC Management",
+    "topic_v2_unique": "Ecosystem - IBC Management"
+  },
+  {
+    "proposal_id": "176",
+    "chain_id": "gravity-bridge",
+    "title": "Add STRD Metadata to Gravity Bridge",
+    "type": "IBCRelated",
+    "topic": "Cross-Chain Integration",
+    "status": "PASSED",
+    "submit_time": "1685982388585",
+    "final_tally_result": {
+      "yes_count": 96,
+      "abstain_count": 1,
+      "no_vote_count": 11
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "IBC Management",
+    "topic_v2_display": "IBC Management",
+    "topic_v2_unique": "Ecosystem - IBC Management"
+  },
+  {
+    "proposal_id": "175",
+    "chain_id": "gravity-bridge",
+    "title": "Gravity Airdrop ",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "REJECTED",
+    "submit_time": "1685676895971",
+    "final_tally_result": {
+      "no_with_veto_count": 53,
+      "no_count": 3,
+      "yes_count": 2,
+      "no_vote_count": 50
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Spam & Malicious",
+    "topic_v2_display": "Spam & Malicious",
+    "topic_v2_unique": "Governance - Spam & Malicious"
+  },
+  {
+    "proposal_id": "174",
+    "chain_id": "gravity-bridge",
+    "title": "Proposal to Create New USDCgrvUSDTgrv Stableswap LP on Crescent DEX and add external incentives",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "PASSED",
+    "submit_time": "1683143992018",
+    "final_tally_result": {
+      "yes_count": 89,
+      "no_count": 2,
+      "abstain_count": 4,
+      "no_vote_count": 13
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Signaling",
+    "topic_v2_display": "Signaling",
+    "topic_v2_unique": "Governance - Signaling"
+  },
+  {
+    "proposal_id": "173",
+    "chain_id": "gravity-bridge",
+    "title": "Bug Bounty Vault Proposal by Hats Finance",
+    "type": "TextProposal",
+    "topic": "Project Funding",
+    "status": "PASSED",
+    "submit_time": "1681881125496",
+    "final_tally_result": {
+      "yes_count": 64,
+      "abstain_count": 27,
+      "weighted_vote_count": 1,
+      "no_vote_count": 16
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Signaling",
+    "topic_v2_display": "Signaling",
+    "topic_v2_unique": "Governance - Signaling"
+  },
+  {
+    "proposal_id": "172",
+    "chain_id": "gravity-bridge",
+    "title": "Orion Upgrade",
+    "type": "SoftwareUpgrade",
+    "topic": "Major Release",
+    "status": "PASSED",
+    "submit_time": "1681829409724",
+    "final_tally_result": {
+      "yes_count": 108
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Core Upgrade",
+    "topic_v2_display": "Core Upgrade",
+    "topic_v2_unique": "Protocol - Core Upgrade"
+  },
+  {
+    "proposal_id": "170",
+    "chain_id": "gravity-bridge",
+    "title": "Gravity Growth and Sustainability Grant",
+    "type": "CommunityPoolSpend",
+    "topic": "Ecosystem Growth",
+    "status": "PASSED",
+    "submit_time": "1680989558331",
+    "final_tally_result": {
+      "yes_count": 79,
+      "no_count": 3,
+      "abstain_count": 8,
+      "no_vote_count": 18
+    },
+    "type_v2": "Treasury",
+    "topic_v2": "dApp & Tooling Funding",
+    "topic_v2_display": "dApp & Tooling Funding",
+    "topic_v2_unique": "Treasury - dApp & Tooling Funding"
+  },
+  {
+    "proposal_id": "166",
+    "chain_id": "gravity-bridge",
+    "title": "Inflation Adjustment  Set InflationMin to 10 and InflationMax to 20",
+    "type": "ParameterChange",
+    "topic": "Economic Parameters",
+    "status": "PASSED",
+    "submit_time": "1680648748086",
+    "final_tally_result": {
+      "yes_count": 86,
+      "abstain_count": 4,
+      "no_count": 1,
+      "no_vote_count": 17
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Parameter Change",
+    "topic_v2_display": "Parameter Change",
+    "topic_v2_unique": "Protocol - Parameter Change"
+  },
+  {
+    "proposal_id": "157",
+    "chain_id": "gravity-bridge",
+    "title": "Proposal for external incentives to Cresecent DEX new LP SHIBgrvbCRE",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "PASSED",
+    "submit_time": "1678739701432",
+    "final_tally_result": {
+      "yes_count": 66,
+      "no_count": 5,
+      "abstain_count": 20,
+      "no_vote_count": 17
+    },
+    "type_v2": "Treasury",
+    "topic_v2": "Liquidity & Incentives",
+    "topic_v2_display": "Liquidity & Incentives",
+    "topic_v2_unique": "Treasury - Liquidity & Incentives"
+  },
+  {
+    "proposal_id": "156",
+    "chain_id": "gravity-bridge",
+    "title": "Proposal for external incentives to Cresecent DEX LP bCREGRAV",
+    "type": "CommunityPoolSpend",
+    "topic": "Ecosystem Growth",
+    "status": "PASSED",
+    "submit_time": "1678738318873",
+    "final_tally_result": {
+      "yes_count": 78,
+      "abstain_count": 14,
+      "no_vote_count": 16
+    },
+    "type_v2": "Treasury",
+    "topic_v2": "Liquidity & Incentives",
+    "topic_v2_display": "Liquidity & Incentives",
+    "topic_v2_unique": "Treasury - Liquidity & Incentives"
+  },
+  {
+    "proposal_id": "155",
+    "chain_id": "gravity-bridge",
+    "title": "Curb Inflation Part 2  Set InflationMax back to 7",
+    "type": "ParameterChange",
+    "topic": "Economic Parameters",
+    "status": "PASSED",
+    "submit_time": "1678490193391",
+    "final_tally_result": {
+      "yes_count": 102,
+      "abstain_count": 1,
+      "no_count": 1,
+      "no_vote_count": 4
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Parameter Change",
+    "topic_v2_display": "Parameter Change",
+    "topic_v2_unique": "Protocol - Parameter Change"
+  },
+  {
+    "proposal_id": "154",
+    "chain_id": "gravity-bridge",
+    "title": "Curb Inflation Part 1  Set InflationMax to 1",
+    "type": "ParameterChange",
+    "topic": "Economic Parameters",
+    "status": "PASSED",
+    "submit_time": "1678490114470",
+    "final_tally_result": {
+      "yes_count": 103,
+      "abstain_count": 1,
+      "no_vote_count": 4
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Parameter Change",
+    "topic_v2_display": "Parameter Change",
+    "topic_v2_unique": "Protocol - Parameter Change"
+  },
+  {
+    "proposal_id": "153",
+    "chain_id": "gravity-bridge",
+    "title": "Gravity Bridge to go Carbon Neutral CosmosZERO Followon to Proposal 108",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "PASSED",
+    "submit_time": "1678303255563",
+    "final_tally_result": {
+      "yes_count": 48,
+      "abstain_count": 22,
+      "no_count": 23,
+      "no_with_veto_count": 2,
+      "no_vote_count": 13
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Signaling",
+    "topic_v2_display": "Signaling",
+    "topic_v2_unique": "Governance - Signaling"
+  },
+  {
+    "proposal_id": "151",
+    "chain_id": "gravity-bridge",
+    "title": "ATOM Airdrop ",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "REJECTED",
+    "submit_time": "1677300467221",
+    "final_tally_result": {
+      "no_with_veto_count": 85,
+      "no_count": 2,
+      "no_vote_count": 21
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Spam & Malicious",
+    "topic_v2_display": "Spam & Malicious",
+    "topic_v2_unique": "Governance - Spam & Malicious"
+  },
+  {
+    "proposal_id": "150",
+    "chain_id": "gravity-bridge",
+    "title": "ATOM Airdrop ",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "REJECTED",
+    "submit_time": "1677300448859",
+    "final_tally_result": {
+      "no_with_veto_count": 84,
+      "no_count": 2,
+      "no_vote_count": 22
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Spam & Malicious",
+    "topic_v2_display": "Spam & Malicious",
+    "topic_v2_unique": "Governance - Spam & Malicious"
+  },
+  {
+    "proposal_id": "149",
+    "chain_id": "gravity-bridge",
+    "title": "ATOM Airdrop ",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "REJECTED",
+    "submit_time": "1677294375578",
+    "final_tally_result": {
+      "no_with_veto_count": 86,
+      "no_count": 2,
+      "no_vote_count": 20
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Spam & Malicious",
+    "topic_v2_display": "Spam & Malicious",
+    "topic_v2_unique": "Governance - Spam & Malicious"
+  },
+  {
+    "proposal_id": "148",
+    "chain_id": "gravity-bridge",
+    "title": "ATOM Airdrop ",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "REJECTED",
+    "submit_time": "1677294363217",
+    "final_tally_result": {
+      "no_with_veto_count": 86,
+      "no_count": 2,
+      "no_vote_count": 20
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Spam & Malicious",
+    "topic_v2_display": "Spam & Malicious",
+    "topic_v2_unique": "Governance - Spam & Malicious"
+  },
+  {
+    "proposal_id": "147",
+    "chain_id": "gravity-bridge",
+    "title": "ATOM Airdrop for COSMOS stakers",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "REJECTED",
+    "submit_time": "1677283671952",
+    "final_tally_result": {
+      "no_with_veto_count": 86,
+      "no_count": 2,
+      "no_vote_count": 20
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Spam & Malicious",
+    "topic_v2_display": "Spam & Malicious",
+    "topic_v2_unique": "Governance - Spam & Malicious"
+  },
+  {
+    "proposal_id": "146",
+    "chain_id": "gravity-bridge",
+    "title": "ATOM Airdrop ",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "REJECTED",
+    "submit_time": "1677261616698",
+    "final_tally_result": {
+      "no_with_veto_count": 89,
+      "no_count": 2,
+      "no_vote_count": 17
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Spam & Malicious",
+    "topic_v2_display": "Spam & Malicious",
+    "topic_v2_unique": "Governance - Spam & Malicious"
+  },
+  {
+    "proposal_id": "145",
+    "chain_id": "gravity-bridge",
+    "title": "USDC Airdrop ",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "REJECTED",
+    "submit_time": "1677255741568",
+    "final_tally_result": {
+      "no_with_veto_count": 93,
+      "no_count": 3,
+      "no_vote_count": 12
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Spam & Malicious",
+    "topic_v2_display": "Spam & Malicious",
+    "topic_v2_unique": "Governance - Spam & Malicious"
+  },
+  {
+    "proposal_id": "144",
+    "chain_id": "gravity-bridge",
+    "title": "decrease minimum proposal deposit to 900 GRAV ",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "REJECTED",
+    "submit_time": "1677255672715",
+    "final_tally_result": {
+      "no_with_veto_count": 90,
+      "no_count": 3,
+      "yes_count": 1,
+      "no_vote_count": 14
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Signaling",
+    "topic_v2_display": "Signaling",
+    "topic_v2_unique": "Governance - Signaling"
+  },
+  {
+    "proposal_id": "143",
+    "chain_id": "gravity-bridge",
+    "title": "ATOM Airdrop ",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "REJECTED",
+    "submit_time": "1677255376291",
+    "final_tally_result": {
+      "no_with_veto_count": 93,
+      "no_count": 4,
+      "no_vote_count": 11
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Spam & Malicious",
+    "topic_v2_display": "Spam & Malicious",
+    "topic_v2_unique": "Governance - Spam & Malicious"
+  },
+  {
+    "proposal_id": "142",
+    "chain_id": "gravity-bridge",
+    "title": "Reduce minimum inflation and tune inflation parameters",
+    "type": "ParameterChange",
+    "topic": "Economic Parameters",
+    "status": "PASSED",
+    "submit_time": "1677247562857",
+    "final_tally_result": {
+      "yes_count": 99,
+      "no_with_veto_count": 3,
+      "no_vote_count": 6
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Parameter Change",
+    "topic_v2_display": "Parameter Change",
+    "topic_v2_unique": "Protocol - Parameter Change"
+  },
+  {
+    "proposal_id": "141",
+    "chain_id": "gravity-bridge",
+    "title": "Add JUNO Metadata to Gravity Bridge",
+    "type": "IBCRelated",
+    "topic": "IBC Security",
+    "status": "PASSED",
+    "submit_time": "1677191054259",
+    "final_tally_result": {
+      "yes_count": 100,
+      "no_with_veto_count": 3,
+      "no_vote_count": 5
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "IBC Management",
+    "topic_v2_display": "IBC Management",
+    "topic_v2_unique": "Ecosystem - IBC Management"
+  },
+  {
+    "proposal_id": "140",
+    "chain_id": "gravity-bridge",
+    "title": "Setup Juno IBC AutoForwarding",
+    "type": "IBCRelated",
+    "topic": "IBC Security",
+    "status": "PASSED",
+    "submit_time": "1677185163980",
+    "final_tally_result": {
+      "yes_count": 100,
+      "no_with_veto_count": 3,
+      "no_vote_count": 5
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "IBC Management",
+    "topic_v2_display": "IBC Management",
+    "topic_v2_unique": "Ecosystem - IBC Management"
+  },
+  {
+    "proposal_id": "138",
+    "chain_id": "gravity-bridge",
+    "title": "ATOM Airdrop for COSMOS stakers",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "REJECTED",
+    "submit_time": "1677174125596",
+    "final_tally_result": {
+      "no_with_veto_count": 91,
+      "no_count": 4,
+      "no_vote_count": 13
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Spam & Malicious",
+    "topic_v2_display": "Spam & Malicious",
+    "topic_v2_unique": "Governance - Spam & Malicious"
+  },
+  {
+    "proposal_id": "137",
+    "chain_id": "gravity-bridge",
+    "title": "Atom Airdrop ",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "REJECTED",
+    "submit_time": "1677114354185",
+    "final_tally_result": {
+      "no_with_veto_count": 92,
+      "no_count": 4,
+      "no_vote_count": 12
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Spam & Malicious",
+    "topic_v2_display": "Spam & Malicious",
+    "topic_v2_unique": "Governance - Spam & Malicious"
+  },
+  {
+    "proposal_id": "136",
+    "chain_id": "gravity-bridge",
+    "title": "Gravity Bridge 20  VOTE YES ",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "REJECTED",
+    "submit_time": "1677006930823",
+    "final_tally_result": {
+      "no_count": 4,
+      "no_with_veto_count": 96,
+      "yes_count": 2,
+      "no_vote_count": 6
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Signaling",
+    "topic_v2_display": "Signaling",
+    "topic_v2_unique": "Governance - Signaling"
+  },
+  {
+    "proposal_id": "135",
+    "chain_id": "gravity-bridge",
+    "title": "APTOS Airdrop for COSMOS stakers",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "REJECTED",
+    "submit_time": "1676929103253",
+    "final_tally_result": {
+      "no_with_veto_count": 98,
+      "no_count": 4,
+      "yes_count": 1,
+      "no_vote_count": 5
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Spam & Malicious",
+    "topic_v2_display": "Spam & Malicious",
+    "topic_v2_unique": "Governance - Spam & Malicious"
+  },
+  {
+    "proposal_id": "132",
+    "chain_id": "gravity-bridge",
+    "title": "USDC Airdrop ",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "REJECTED",
+    "submit_time": "1676903580100",
+    "final_tally_result": {
+      "no_with_veto_count": 100,
+      "no_count": 5,
+      "yes_count": 3
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Spam & Malicious",
+    "topic_v2_display": "Spam & Malicious",
+    "topic_v2_unique": "Governance - Spam & Malicious"
+  },
+  {
+    "proposal_id": "131",
+    "chain_id": "gravity-bridge",
+    "title": "Increase minimum proposal deposit",
+    "type": "ParameterChange",
+    "topic": "Staking Parameters",
+    "status": "PASSED",
+    "submit_time": "1676871118379",
+    "final_tally_result": {
+      "yes_count": 108
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Parameter Change",
+    "topic_v2_display": "Parameter Change",
+    "topic_v2_unique": "Protocol - Parameter Change"
+  },
+  {
+    "proposal_id": "130",
+    "chain_id": "gravity-bridge",
+    "title": "USDC Airdrop ",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "REJECTED",
+    "submit_time": "1676862389725",
+    "final_tally_result": {
+      "no_with_veto_count": 100,
+      "no_count": 6,
+      "yes_count": 1,
+      "no_vote_count": 1
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Spam & Malicious",
+    "topic_v2_display": "Spam & Malicious",
+    "topic_v2_unique": "Governance - Spam & Malicious"
+  },
+  {
+    "proposal_id": "127",
+    "chain_id": "gravity-bridge",
+    "title": "USDC Airdrop ",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "REJECTED",
+    "submit_time": "1676578349380",
+    "final_tally_result": {
+      "no_count": 7,
+      "no_with_veto_count": 97,
+      "yes_count": 2,
+      "no_vote_count": 2
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Spam & Malicious",
+    "topic_v2_display": "Spam & Malicious",
+    "topic_v2_unique": "Governance - Spam & Malicious"
+  },
+  {
+    "proposal_id": "126",
+    "chain_id": "gravity-bridge",
+    "title": "Pool Incentives for GRAVUSK on Kujira",
+    "type": "CommunityPoolSpend",
+    "topic": "Ecosystem Growth",
+    "status": "PASSED",
+    "submit_time": "1676492019729",
+    "final_tally_result": {
+      "yes_count": 76,
+      "no_count": 11,
+      "abstain_count": 19,
+      "no_with_veto_count": 1,
+      "no_vote_count": 1
+    },
+    "type_v2": "Treasury",
+    "topic_v2": "Liquidity & Incentives",
+    "topic_v2_display": "Liquidity & Incentives",
+    "topic_v2_unique": "Treasury - Liquidity & Incentives"
+  },
+  {
+    "proposal_id": "124",
+    "chain_id": "gravity-bridge",
+    "title": "Unfreeze IBC Client for HAQQ TestEdge2",
+    "type": "IBCRelated",
+    "topic": "IBC Security",
+    "status": "PASSED",
+    "submit_time": "1676278429567",
+    "final_tally_result": {
+      "yes_count": 98,
+      "no_count": 1,
+      "abstain_count": 9
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "IBC Management",
+    "topic_v2_display": "IBC Management",
+    "topic_v2_unique": "Ecosystem - IBC Management"
+  },
+  {
+    "proposal_id": "123",
+    "chain_id": "gravity-bridge",
+    "title": "Setup Comdex IBC AutoForwarding",
+    "type": "IBCRelated",
+    "topic": "IBC Security",
+    "status": "PASSED",
+    "submit_time": "1676219590905",
+    "final_tally_result": {
+      "yes_count": 104,
+      "abstain_count": 3,
+      "no_count": 1
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "IBC Management",
+    "topic_v2_display": "IBC Management",
+    "topic_v2_unique": "Ecosystem - IBC Management"
+  },
+  {
+    "proposal_id": "122",
+    "chain_id": "gravity-bridge",
+    "title": "Add CMST Metadata to Gravity Bridge",
+    "type": "IBCRelated",
+    "topic": "Cross-Chain Integration",
+    "status": "PASSED",
+    "submit_time": "1676219254576",
+    "final_tally_result": {
+      "yes_count": 100,
+      "abstain_count": 7,
+      "no_count": 1
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "IBC Management",
+    "topic_v2_display": "IBC Management",
+    "topic_v2_unique": "Ecosystem - IBC Management"
+  },
+  {
+    "proposal_id": "121",
+    "chain_id": "gravity-bridge",
+    "title": "Recover user funds stuck in community pool",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "PASSED",
+    "submit_time": "1675359254194",
+    "final_tally_result": {
+      "abstain_count": 2,
+      "yes_count": 102,
+      "no_vote_count": 4
+    },
+    "type_v2": "Treasury",
+    "topic_v2": "Liquidity & Incentives",
+    "topic_v2_display": "Liquidity & Incentives",
+    "topic_v2_unique": "Treasury - Liquidity & Incentives"
+  },
+  {
+    "proposal_id": "120",
+    "chain_id": "gravity-bridge",
+    "title": "Setup Comdex IBC AutoForwarding",
+    "type": "IBCRelated",
+    "topic": "IBC Security",
+    "status": "REJECTED",
+    "submit_time": "1675186557159",
+    "final_tally_result": {
+      "no_count": 78,
+      "yes_count": 30
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "IBC Management",
+    "topic_v2_display": "IBC Management",
+    "topic_v2_unique": "Ecosystem - IBC Management"
+  },
+  {
+    "proposal_id": "119",
+    "chain_id": "gravity-bridge",
+    "title": "Add CMST Metadata to Gravity Bridge",
+    "type": "IBCRelated",
+    "topic": "Cross-Chain Integration",
+    "status": "REJECTED",
+    "submit_time": "1675185467574",
+    "final_tally_result": {
+      "no_count": 80,
+      "yes_count": 28
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "IBC Management",
+    "topic_v2_display": "IBC Management",
+    "topic_v2_unique": "Ecosystem - IBC Management"
+  },
+  {
+    "proposal_id": "118",
+    "chain_id": "gravity-bridge",
+    "title": "Add CMDX Metadata to Gravity Bridge",
+    "type": "IBCRelated",
+    "topic": "Cross-Chain Integration",
+    "status": "REJECTED",
+    "submit_time": "1675185256976",
+    "final_tally_result": {
+      "no_count": 80,
+      "yes_count": 28
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "IBC Management",
+    "topic_v2_display": "IBC Management",
+    "topic_v2_unique": "Ecosystem - IBC Management"
+  },
+  {
+    "proposal_id": "116",
+    "chain_id": "gravity-bridge",
+    "title": "Setup Planq IBC AutoForwarding",
+    "type": "IBCRelated",
+    "topic": "IBC Security",
+    "status": "PASSED",
+    "submit_time": "1674841688685",
+    "final_tally_result": {
+      "yes_count": 103,
+      "abstain_count": 5
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "IBC Management",
+    "topic_v2_display": "IBC Management",
+    "topic_v2_unique": "Ecosystem - IBC Management"
+  },
+  {
+    "proposal_id": "115",
+    "chain_id": "gravity-bridge",
+    "title": "Add PLQ Metadata to Gravity Bridge",
+    "type": "IBCRelated",
+    "topic": "Cross-Chain Integration",
+    "status": "PASSED",
+    "submit_time": "1674840793601",
+    "final_tally_result": {
+      "yes_count": 103,
+      "abstain_count": 5
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "IBC Management",
+    "topic_v2_display": "IBC Management",
+    "topic_v2_unique": "Ecosystem - IBC Management"
+  },
+  {
+    "proposal_id": "114",
+    "chain_id": "gravity-bridge",
+    "title": "Unfreeze IBC transfers between HAQQ TestEdge2 and Gravity Bridge",
+    "type": "IBCRelated",
+    "topic": "IBC Transfer",
+    "status": "PASSED",
+    "submit_time": "1674749291756",
+    "final_tally_result": {
+      "yes_count": 104,
+      "abstain_count": 2,
+      "no_count": 2
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "IBC Management",
+    "topic_v2_display": "IBC Management",
+    "topic_v2_unique": "Ecosystem - IBC Management"
+  },
+  {
+    "proposal_id": "113",
+    "chain_id": "gravity-bridge",
+    "title": "Add USK Metadata to Gravity Bridge",
+    "type": "IBCRelated",
+    "topic": "IBC Security",
+    "status": "PASSED",
+    "submit_time": "1674240968625",
+    "final_tally_result": {
+      "yes_count": 106,
+      "abstain_count": 2
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "IBC Management",
+    "topic_v2_display": "IBC Management",
+    "topic_v2_unique": "Ecosystem - IBC Management"
+  },
+  {
+    "proposal_id": "112",
+    "chain_id": "gravity-bridge",
+    "title": "Add KUJI Metadata to Gravity Bridge",
+    "type": "IBCRelated",
+    "topic": "IBC Security",
+    "status": "PASSED",
+    "submit_time": "1674240944169",
+    "final_tally_result": {
+      "yes_count": 107,
+      "abstain_count": 1
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "IBC Management",
+    "topic_v2_display": "IBC Management",
+    "topic_v2_unique": "Ecosystem - IBC Management"
+  },
+  {
+    "proposal_id": "111",
+    "chain_id": "gravity-bridge",
+    "title": "Setup Kujira IBC AutoForwarding",
+    "type": "IBCRelated",
+    "topic": "IBC Security",
+    "status": "PASSED",
+    "submit_time": "1674239246091",
+    "final_tally_result": {
+      "yes_count": 107,
+      "abstain_count": 1
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "IBC Management",
+    "topic_v2_display": "IBC Management",
+    "topic_v2_unique": "Ecosystem - IBC Management"
+  },
+  {
+    "proposal_id": "110",
+    "chain_id": "gravity-bridge",
+    "title": "Unfreeze IBC transfers between HAQQ TestEdge2 and Gravity Bridge",
+    "type": "IBCRelated",
+    "topic": "IBC Transfer",
+    "status": "FAILED",
+    "submit_time": "1673425825690",
+    "final_tally_result": {
+      "no_count": 1,
+      "yes_count": 94,
+      "abstain_count": 3,
+      "no_vote_count": 10
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "IBC Management",
+    "topic_v2_display": "IBC Management",
+    "topic_v2_unique": "Ecosystem - IBC Management"
+  },
+  {
+    "proposal_id": "108",
+    "chain_id": "gravity-bridge",
+    "title": "Gravity Bridge to go Carbon Neutral",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "PASSED",
+    "submit_time": "1672962186213",
+    "final_tally_result": {
+      "yes_count": 39,
+      "no_count": 29,
+      "abstain_count": 36,
+      "no_vote_count": 4
+    },
+    "type_v2": "Treasury",
+    "topic_v2": "dApp & Tooling Funding",
+    "topic_v2_display": "dApp & Tooling Funding",
+    "topic_v2_unique": "Treasury - dApp & Tooling Funding"
+  },
+  {
+    "proposal_id": "107",
+    "chain_id": "gravity-bridge",
+    "title": "Reduce Inflation",
+    "type": "ParameterChange",
+    "topic": "Economic Parameters",
+    "status": "PASSED",
+    "submit_time": "1672194856005",
+    "final_tally_result": {
+      "yes_count": 80,
+      "abstain_count": 21,
+      "no_count": 4,
+      "no_vote_count": 3
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Parameter Change",
+    "topic_v2_display": "Parameter Change",
+    "topic_v2_unique": "Protocol - Parameter Change"
+  },
+  {
+    "proposal_id": "106",
+    "chain_id": "gravity-bridge",
+    "title": "Increase minimum commission to 10",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "PASSED",
+    "submit_time": "1672193331434",
+    "final_tally_result": {
+      "abstain_count": 17,
+      "yes_count": 76,
+      "no_count": 12,
+      "no_vote_count": 3
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Signaling",
+    "topic_v2_display": "Signaling",
+    "topic_v2_unique": "Governance - Signaling"
+  },
+  {
+    "proposal_id": "105",
+    "chain_id": "gravity-bridge",
+    "title": "Pleiades Upgrade  Phase II",
+    "type": "SoftwareUpgrade",
+    "topic": "Major Release",
+    "status": "PASSED",
+    "submit_time": "1672167362941",
+    "final_tally_result": {
+      "yes_count": 108
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Core Upgrade",
+    "topic_v2_display": "Core Upgrade",
+    "topic_v2_unique": "Protocol - Core Upgrade"
+  },
+  {
+    "proposal_id": "104",
+    "chain_id": "gravity-bridge",
+    "title": "Updating frozenexpired client for gravitybridge3  comdex1",
+    "type": "IBCRelated",
+    "topic": "Client Update",
+    "status": "PASSED",
+    "submit_time": "1671613504905",
+    "final_tally_result": {
+      "yes_count": 84,
+      "abstain_count": 1,
+      "no_vote_count": 23
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "IBC Management",
+    "topic_v2_display": "IBC Management",
+    "topic_v2_unique": "Ecosystem - IBC Management"
+  },
+  {
+    "proposal_id": "102",
+    "chain_id": "gravity-bridge",
+    "title": "Add USTC Metadata to Gravity Bridge",
+    "type": "IBCRelated",
+    "topic": "IBC Security",
+    "status": "PASSED",
+    "submit_time": "1671072035015",
+    "final_tally_result": {
+      "yes_count": 77,
+      "abstain_count": 19,
+      "no_count": 4,
+      "no_vote_count": 8
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "IBC Management",
+    "topic_v2_display": "IBC Management",
+    "topic_v2_unique": "Ecosystem - IBC Management"
+  },
+  {
+    "proposal_id": "101",
+    "chain_id": "gravity-bridge",
+    "title": "Add LUNC Metadata to Gravity Bridge",
+    "type": "IBCRelated",
+    "topic": "Cross-Chain Integration",
+    "status": "PASSED",
+    "submit_time": "1671037203022",
+    "final_tally_result": {
+      "yes_count": 84,
+      "abstain_count": 13,
+      "no_count": 3,
+      "no_vote_count": 8
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "IBC Management",
+    "topic_v2_display": "IBC Management",
+    "topic_v2_unique": "Ecosystem - IBC Management"
+  },
+  {
+    "proposal_id": "100",
+    "chain_id": "gravity-bridge",
+    "title": "Setup Acrechain IBC AutoForwarding",
+    "type": "IBCRelated",
+    "topic": "IBC Security",
+    "status": "PASSED",
+    "submit_time": "1670986304528",
+    "final_tally_result": {
+      "yes_count": 103,
+      "abstain_count": 3,
+      "no_vote_count": 2
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "IBC Management",
+    "topic_v2_display": "IBC Management",
+    "topic_v2_unique": "Ecosystem - IBC Management"
+  },
+  {
+    "proposal_id": "99",
+    "chain_id": "gravity-bridge",
+    "title": "Setup Terra Classic IBC AutoForwarding",
+    "type": "IBCRelated",
+    "topic": "IBC Security",
+    "status": "PASSED",
+    "submit_time": "1670798093676",
+    "final_tally_result": {
+      "yes_count": 98,
+      "abstain_count": 7,
+      "no_count": 3
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "IBC Management",
+    "topic_v2_display": "IBC Management",
+    "topic_v2_unique": "Ecosystem - IBC Management"
+  },
+  {
+    "proposal_id": "98",
+    "chain_id": "gravity-bridge",
+    "title": "Setup LUNC IBC AutoForwarding",
+    "type": "IBCRelated",
+    "topic": "IBC Security",
+    "status": "REJECTED",
+    "submit_time": "1670703450828",
+    "final_tally_result": {
+      "no_count": 75,
+      "yes_count": 28,
+      "abstain_count": 5
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "IBC Management",
+    "topic_v2_display": "IBC Management",
+    "topic_v2_unique": "Ecosystem - IBC Management"
+  },
+  {
+    "proposal_id": "97",
+    "chain_id": "gravity-bridge",
+    "title": "Setup USTC IBC AutoForwarding",
+    "type": "IBCRelated",
+    "topic": "IBC Security",
+    "status": "REJECTED",
+    "submit_time": "1670703334376",
+    "final_tally_result": {
+      "no_count": 74,
+      "yes_count": 28,
+      "abstain_count": 6
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "IBC Management",
+    "topic_v2_display": "IBC Management",
+    "topic_v2_unique": "Ecosystem - IBC Management"
+  },
+  {
+    "proposal_id": "95",
+    "chain_id": "gravity-bridge",
+    "title": "Setup ISLM IBC AutoForwarding correct",
+    "type": "IBCRelated",
+    "topic": "IBC Security",
+    "status": "PASSED",
+    "submit_time": "1670242364861",
+    "final_tally_result": {
+      "yes_count": 104,
+      "abstain_count": 2,
+      "no_vote_count": 2
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "IBC Management",
+    "topic_v2_display": "IBC Management",
+    "topic_v2_unique": "Ecosystem - IBC Management"
+  },
+  {
+    "proposal_id": "94",
+    "chain_id": "gravity-bridge",
+    "title": "Setup ISLM IBC AutoForwarding",
+    "type": "IBCRelated",
+    "topic": "IBC Security",
+    "status": "REJECTED",
+    "submit_time": "1670240262743",
+    "final_tally_result": {
+      "no_count": 82,
+      "yes_count": 25,
+      "abstain_count": 1
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "IBC Management",
+    "topic_v2_display": "IBC Management",
+    "topic_v2_unique": "Ecosystem - IBC Management"
+  },
+  {
+    "proposal_id": "92",
+    "chain_id": "gravity-bridge",
+    "title": "Add ISLM Metadata to Gravity Bridge",
+    "type": "IBCRelated",
+    "topic": "IBC Security",
+    "status": "PASSED",
+    "submit_time": "1669991568727",
+    "final_tally_result": {
+      "yes_count": 105,
+      "abstain_count": 3
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "IBC Management",
+    "topic_v2_display": "IBC Management",
+    "topic_v2_unique": "Ecosystem - IBC Management"
+  },
+  {
+    "proposal_id": "86",
+    "chain_id": "gravity-bridge",
+    "title": "Implement Gravity Bridge Fees",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "PASSED",
+    "submit_time": "1667356764380",
+    "final_tally_result": {
+      "yes_count": 108
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Signaling",
+    "topic_v2_display": "Signaling",
+    "topic_v2_unique": "Governance - Signaling"
+  },
+  {
+    "proposal_id": "84",
+    "chain_id": "gravity-bridge",
+    "title": "Reactivate expired IBC client 07tendermint190 for FUND",
+    "type": "IBCRelated",
+    "topic": "Client Update",
+    "status": "PASSED",
+    "submit_time": "1667313575205",
+    "final_tally_result": {
+      "yes_count": 106,
+      "abstain_count": 2
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "IBC Management",
+    "topic_v2_display": "IBC Management",
+    "topic_v2_unique": "Ecosystem - IBC Management"
+  },
+  {
+    "proposal_id": "83",
+    "chain_id": "gravity-bridge",
+    "title": "Setup FUND IBC AutoForwarding",
+    "type": "IBCRelated",
+    "topic": "IBC Security",
+    "status": "PASSED",
+    "submit_time": "1666876459356",
+    "final_tally_result": {
+      "yes_count": 93,
+      "abstain_count": 12,
+      "no_vote_count": 3
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "IBC Management",
+    "topic_v2_display": "IBC Management",
+    "topic_v2_unique": "Ecosystem - IBC Management"
+  },
+  {
+    "proposal_id": "82",
+    "chain_id": "gravity-bridge",
+    "title": "Add FUND Metadata to Gravity Bridge",
+    "type": "IBCRelated",
+    "topic": "Cross-Chain Integration",
+    "status": "PASSED",
+    "submit_time": "1666876212933",
+    "final_tally_result": {
+      "yes_count": 94,
+      "abstain_count": 11,
+      "no_vote_count": 3
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "IBC Management",
+    "topic_v2_display": "IBC Management",
+    "topic_v2_unique": "Ecosystem - IBC Management"
+  },
+  {
+    "proposal_id": "81",
+    "chain_id": "gravity-bridge",
+    "title": "Reduce batch timeouts and update timeout parameters",
+    "type": "ParameterChange",
+    "topic": "Governance Settings",
+    "status": "PASSED",
+    "submit_time": "1666705160155",
+    "final_tally_result": {
+      "yes_count": 100,
+      "abstain_count": 1,
+      "no_vote_count": 7
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Parameter Change",
+    "topic_v2_display": "Parameter Change",
+    "topic_v2_unique": "Protocol - Parameter Change"
+  },
+  {
+    "proposal_id": "80",
+    "chain_id": "gravity-bridge",
+    "title": "HAQQ testnet token ISLMT  metadata",
+    "type": "IBCRelated",
+    "topic": "IBC Security",
+    "status": "PASSED",
+    "submit_time": "1666095195019",
+    "final_tally_result": {
+      "yes_count": 73,
+      "abstain_count": 19,
+      "no_count": 16
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "IBC Management",
+    "topic_v2_display": "IBC Management",
+    "topic_v2_unique": "Ecosystem - IBC Management"
+  },
+  {
+    "proposal_id": "79",
+    "chain_id": "gravity-bridge",
+    "title": "Setup Agoric IBC AutoForwarding",
+    "type": "IBCRelated",
+    "topic": "IBC Security",
+    "status": "PASSED",
+    "submit_time": "1664383949743",
+    "final_tally_result": {
+      "yes_count": 80,
+      "no_count": 1,
+      "no_vote_count": 27
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "IBC Management",
+    "topic_v2_display": "IBC Management",
+    "topic_v2_unique": "Ecosystem - IBC Management"
+  },
+  {
+    "proposal_id": "78",
+    "chain_id": "gravity-bridge",
+    "title": "Proposal for external incentives to Cresecent DEX LPs bCREGRAV and AtomUSDCgrv",
+    "type": "CommunityPoolSpend",
+    "topic": "Ecosystem Growth",
+    "status": "PASSED",
+    "submit_time": "1663161476093",
+    "final_tally_result": {
+      "yes_count": 101,
+      "no_count": 2,
+      "abstain_count": 5
+    },
+    "type_v2": "Treasury",
+    "topic_v2": "Liquidity & Incentives",
+    "topic_v2_display": "Liquidity & Incentives",
+    "topic_v2_unique": "Treasury - Liquidity & Incentives"
+  },
+  {
+    "proposal_id": "77",
+    "chain_id": "gravity-bridge",
+    "title": "Resume bridge operations starting 24 hours after the ETH merge",
+    "type": "ParameterChange",
+    "topic": "Protocol Configuration",
+    "status": "PASSED",
+    "submit_time": "1662858691888",
+    "final_tally_result": {
+      "yes_count": 107,
+      "no_count": 1
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Parameter Change",
+    "topic_v2_display": "Parameter Change",
+    "topic_v2_unique": "Protocol - Parameter Change"
+  },
+  {
+    "proposal_id": "76",
+    "chain_id": "gravity-bridge",
+    "title": "Pause bridge operations starting 48 hours before ETH merge",
+    "type": "ParameterChange",
+    "topic": "Staking Parameters",
+    "status": "PASSED",
+    "submit_time": "1662593438369",
+    "final_tally_result": {
+      "yes_count": 107,
+      "no_count": 1
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Parameter Change",
+    "topic_v2_display": "Parameter Change",
+    "topic_v2_unique": "Protocol - Parameter Change"
+  },
+  {
+    "proposal_id": "75",
+    "chain_id": "gravity-bridge",
+    "title": "Setup Regen Network IBC AutoForwarding",
+    "type": "IBCRelated",
+    "topic": "IBC Security",
+    "status": "PASSED",
+    "submit_time": "1662136139022",
+    "final_tally_result": {
+      "yes_count": 106,
+      "no_count": 2
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "IBC Management",
+    "topic_v2_display": "IBC Management",
+    "topic_v2_unique": "Ecosystem - IBC Management"
+  },
+  {
+    "proposal_id": "74",
+    "chain_id": "gravity-bridge",
+    "title": "Pleiades Upgrade  Phase I",
+    "type": "SoftwareUpgrade",
+    "topic": "Major Release",
+    "status": "PASSED",
+    "submit_time": "1661892847140",
+    "final_tally_result": {
+      "no_count": 2,
+      "yes_count": 106
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Core Upgrade",
+    "topic_v2_display": "Core Upgrade",
+    "topic_v2_unique": "Protocol - Core Upgrade"
+  },
+  {
+    "proposal_id": "70",
+    "chain_id": "gravity-bridge",
+    "title": "Pleiades Upgrade  Phase I",
+    "type": "SoftwareUpgrade",
+    "topic": "Major Release",
+    "status": "REJECTED",
+    "submit_time": "1661577972638",
+    "final_tally_result": {
+      "no_count": 93,
+      "yes_count": 15
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Core Upgrade",
+    "topic_v2_display": "Core Upgrade",
+    "topic_v2_unique": "Protocol - Core Upgrade"
+  },
+  {
+    "proposal_id": "69",
+    "chain_id": "gravity-bridge",
+    "title": "Pleiades Upgrade  Phase I",
+    "type": "SoftwareUpgrade",
+    "topic": "Major Release",
+    "status": "REJECTED",
+    "submit_time": "1661577056509",
+    "final_tally_result": {
+      "no_count": 103,
+      "yes_count": 4,
+      "abstain_count": 1
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Core Upgrade",
+    "topic_v2_display": "Core Upgrade",
+    "topic_v2_unique": "Protocol - Core Upgrade"
+  },
+  {
+    "proposal_id": "67",
+    "chain_id": "gravity-bridge",
+    "title": "Gravity Growth Grant 3 Cross Dex Yield Finder",
+    "type": "CommunityPoolSpend",
+    "topic": "Ecosystem Growth",
+    "status": "PASSED",
+    "submit_time": "1661034878364",
+    "final_tally_result": {
+      "yes_count": 104,
+      "abstain_count": 1,
+      "no_vote_count": 3
+    },
+    "type_v2": "Treasury",
+    "topic_v2": "dApp & Tooling Funding",
+    "topic_v2_display": "dApp & Tooling Funding",
+    "topic_v2_unique": "Treasury - dApp & Tooling Funding"
+  },
+  {
+    "proposal_id": "64",
+    "chain_id": "gravity-bridge",
+    "title": "Advancing Ethermint GTM and Engineering Plan for the Ethermint Chain",
+    "type": "CommunityPoolSpend",
+    "topic": "Development Fund",
+    "status": "PASSED",
+    "submit_time": "1660161035108",
+    "final_tally_result": {
+      "yes_count": 105,
+      "no_count": 1,
+      "abstain_count": 2
+    },
+    "type_v2": "Treasury",
+    "topic_v2": "dApp & Tooling Funding",
+    "topic_v2_display": "dApp & Tooling Funding",
+    "topic_v2_unique": "Treasury - dApp & Tooling Funding"
+  },
+  {
+    "proposal_id": "63",
+    "chain_id": "gravity-bridge",
+    "title": "Update Canto IBC AutoForwarding Channel",
+    "type": "IBCRelated",
+    "topic": "IBC Security",
+    "status": "PASSED",
+    "submit_time": "1658950287976",
+    "final_tally_result": {
+      "yes_count": 100,
+      "abstain_count": 2,
+      "no_vote_count": 6
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "IBC Management",
+    "topic_v2_display": "IBC Management",
+    "topic_v2_unique": "Ecosystem - IBC Management"
+  },
+  {
+    "proposal_id": "62",
+    "chain_id": "gravity-bridge",
+    "title": "Setup Evmos IBC AutoForwarding",
+    "type": "IBCRelated",
+    "topic": "IBC Security",
+    "status": "PASSED",
+    "submit_time": "1657632234734",
+    "final_tally_result": {
+      "yes_count": 97,
+      "no_vote_count": 11
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "IBC Management",
+    "topic_v2_display": "IBC Management",
+    "topic_v2_unique": "Ecosystem - IBC Management"
+  },
+  {
+    "proposal_id": "61",
+    "chain_id": "gravity-bridge",
+    "title": "Setup MNTL IBC AutoForwarding",
+    "type": "IBCRelated",
+    "topic": "IBC Security",
+    "status": "PASSED",
+    "submit_time": "1657542959222",
+    "final_tally_result": {
+      "yes_count": 108
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "IBC Management",
+    "topic_v2_display": "IBC Management",
+    "topic_v2_unique": "Ecosystem - IBC Management"
+  },
+  {
+    "proposal_id": "60",
+    "chain_id": "gravity-bridge",
+    "title": "Register MNTL token metadata",
+    "type": "IBCRelated",
+    "topic": "Cross-Chain Integration",
+    "status": "PASSED",
+    "submit_time": "1657542933972",
+    "final_tally_result": {
+      "yes_count": 108
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "IBC Management",
+    "topic_v2_display": "IBC Management",
+    "topic_v2_unique": "Ecosystem - IBC Management"
+  },
+  {
+    "proposal_id": "59",
+    "chain_id": "gravity-bridge",
+    "title": "Setup Canto IBC AutoForwarding",
+    "type": "IBCRelated",
+    "topic": "IBC Security",
+    "status": "PASSED",
+    "submit_time": "1657367679932",
+    "final_tally_result": {
+      "yes_count": 106,
+      "abstain_count": 2
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "IBC Management",
+    "topic_v2_display": "IBC Management",
+    "topic_v2_unique": "Ecosystem - IBC Management"
+  },
+  {
+    "proposal_id": "58",
+    "chain_id": "gravity-bridge",
+    "title": "Polaris Upgrade",
+    "type": "SoftwareUpgrade",
+    "topic": "Major Release",
+    "status": "PASSED",
+    "submit_time": "1657322482935",
+    "final_tally_result": {
+      "yes_count": 108
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Core Upgrade",
+    "topic_v2_display": "Core Upgrade",
+    "topic_v2_unique": "Protocol - Core Upgrade"
+  },
+  {
+    "proposal_id": "56",
+    "chain_id": "gravity-bridge",
+    "title": "Setup SCRT Network IBC AutoForwarding",
+    "type": "IBCRelated",
+    "topic": "IBC Security",
+    "status": "PASSED",
+    "submit_time": "1655844198277",
+    "final_tally_result": {
+      "yes_count": 101,
+      "no_vote_count": 7
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "IBC Management",
+    "topic_v2_display": "IBC Management",
+    "topic_v2_unique": "Ecosystem - IBC Management"
+  },
+  {
+    "proposal_id": "55",
+    "chain_id": "gravity-bridge",
+    "title": "Reduce inflation bonding target",
+    "type": "ParameterChange",
+    "topic": "Economic Parameters",
+    "status": "PASSED",
+    "submit_time": "1655751963075",
+    "final_tally_result": {
+      "yes_count": 104,
+      "no_count": 2,
+      "no_vote_count": 2
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Parameter Change",
+    "topic_v2_display": "Parameter Change",
+    "topic_v2_unique": "Protocol - Parameter Change"
+  },
+  {
+    "proposal_id": "54",
+    "chain_id": "gravity-bridge",
+    "title": "5M Grav spend for GRAVbCRE LP incentives",
+    "type": "CommunityPoolSpend",
+    "topic": "Ecosystem Growth",
+    "status": "PASSED",
+    "submit_time": "1654629637190",
+    "final_tally_result": {
+      "yes_count": 87,
+      "abstain_count": 3,
+      "no_count": 1,
+      "no_vote_count": 17
+    },
+    "type_v2": "Treasury",
+    "topic_v2": "Liquidity & Incentives",
+    "topic_v2_display": "Liquidity & Incentives",
+    "topic_v2_unique": "Treasury - Liquidity & Incentives"
+  },
+  {
+    "proposal_id": "53",
+    "chain_id": "gravity-bridge",
+    "title": "Formation of ICS 721  NFT workgroup",
+    "type": "CommunityPoolSpend",
+    "topic": "Infrastructure",
+    "status": "PASSED",
+    "submit_time": "1653522037932",
+    "final_tally_result": {
+      "yes_count": 92,
+      "abstain_count": 1,
+      "no_vote_count": 15
+    },
+    "type_v2": "Treasury",
+    "topic_v2": "dApp & Tooling Funding",
+    "topic_v2_display": "dApp & Tooling Funding",
+    "topic_v2_unique": "Treasury - dApp & Tooling Funding"
+  },
+  {
+    "proposal_id": "52",
+    "chain_id": "gravity-bridge",
+    "title": "GRAV incentives for ATOM and OSMO gUSDC liquidity pools",
+    "type": "CommunityPoolSpend",
+    "topic": "Ecosystem Growth",
+    "status": "PASSED",
+    "submit_time": "1653332860826",
+    "final_tally_result": {
+      "yes_count": 106,
+      "no_count": 1,
+      "no_vote_count": 1
+    },
+    "type_v2": "Treasury",
+    "topic_v2": "Liquidity & Incentives",
+    "topic_v2_display": "Liquidity & Incentives",
+    "topic_v2_unique": "Treasury - Liquidity & Incentives"
+  },
+  {
+    "proposal_id": "51",
+    "chain_id": "gravity-bridge",
+    "title": "Update expired client between Gravity Bridge and Cheqd",
+    "type": "IBCRelated",
+    "topic": "Client Update",
+    "status": "PASSED",
+    "submit_time": "1652960492109",
+    "final_tally_result": {
+      "yes_count": 108
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "IBC Management",
+    "topic_v2_display": "IBC Management",
+    "topic_v2_unique": "Ecosystem - IBC Management"
+  },
+  {
+    "proposal_id": "50",
+    "chain_id": "gravity-bridge",
+    "title": "Setup Nyx IBC AutoForwarding",
+    "type": "IBCRelated",
+    "topic": "IBC Security",
+    "status": "PASSED",
+    "submit_time": "1652192303612",
+    "final_tally_result": {
+      "yes_count": 104,
+      "no_vote_count": 4
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "IBC Management",
+    "topic_v2_display": "IBC Management",
+    "topic_v2_unique": "Ecosystem - IBC Management"
+  },
+  {
+    "proposal_id": "49",
+    "chain_id": "gravity-bridge",
+    "title": "Add GRAV Liquidity to Sifchain DEX Incentivized Pool and Provide GRAVROWN IBC Relayer Grant ",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "PASSED",
+    "submit_time": "1651426841601",
+    "final_tally_result": {
+      "yes_count": 92,
+      "abstain_count": 6,
+      "no_count": 10
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "IBC Management",
+    "topic_v2_display": "IBC Management",
+    "topic_v2_unique": "Ecosystem - IBC Management"
+  },
+  {
+    "proposal_id": "47",
+    "chain_id": "gravity-bridge",
+    "title": "Kinesis AMM shared incentivesCommunity Spend to provide liquidity incentives",
+    "type": "CommunityPoolSpend",
+    "topic": "Ecosystem Growth",
+    "status": "PASSED",
+    "submit_time": "1651300764879",
+    "final_tally_result": {
+      "yes_count": 104,
+      "abstain_count": 3,
+      "no_count": 1
+    },
+    "type_v2": "Treasury",
+    "topic_v2": "Liquidity & Incentives",
+    "topic_v2_display": "Liquidity & Incentives",
+    "topic_v2_unique": "Treasury - Liquidity & Incentives"
+  },
+  {
+    "proposal_id": "46",
+    "chain_id": "gravity-bridge",
+    "title": "Setup Cosmos Hub IBC AutoForwarding",
+    "type": "IBCRelated",
+    "topic": "IBC Security",
+    "status": "PASSED",
+    "submit_time": "1651089747391",
+    "final_tally_result": {
+      "yes_count": 106,
+      "abstain_count": 2
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "IBC Management",
+    "topic_v2_display": "IBC Management",
+    "topic_v2_unique": "Ecosystem - IBC Management"
+  },
+  {
+    "proposal_id": "45",
+    "chain_id": "gravity-bridge",
+    "title": "Setup Osmosis IBC AutoForwarding",
+    "type": "IBCRelated",
+    "topic": "IBC Security",
+    "status": "PASSED",
+    "submit_time": "1651089565041",
+    "final_tally_result": {
+      "yes_count": 106,
+      "abstain_count": 2
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "IBC Management",
+    "topic_v2_display": "IBC Management",
+    "topic_v2_unique": "Ecosystem - IBC Management"
+  },
+  {
+    "proposal_id": "44",
+    "chain_id": "gravity-bridge",
+    "title": "Setup Iris IBC AutoForwarding",
+    "type": "IBCRelated",
+    "topic": "IBC Security",
+    "status": "PASSED",
+    "submit_time": "1651089351212",
+    "final_tally_result": {
+      "yes_count": 106,
+      "abstain_count": 2
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "IBC Management",
+    "topic_v2_display": "IBC Management",
+    "topic_v2_unique": "Ecosystem - IBC Management"
+  },
+  {
+    "proposal_id": "43",
+    "chain_id": "gravity-bridge",
+    "title": "Setup Crescent IBC AutoForwarding",
+    "type": "IBCRelated",
+    "topic": "IBC Security",
+    "status": "PASSED",
+    "submit_time": "1651089112750",
+    "final_tally_result": {
+      "yes_count": 106,
+      "abstain_count": 2
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "IBC Management",
+    "topic_v2_display": "IBC Management",
+    "topic_v2_unique": "Ecosystem - IBC Management"
+  },
+  {
+    "proposal_id": "42",
+    "chain_id": "gravity-bridge",
+    "title": "Setup Chihuahua IBC AutoForwarding",
+    "type": "IBCRelated",
+    "topic": "IBC Security",
+    "status": "PASSED",
+    "submit_time": "1651088740107",
+    "final_tally_result": {
+      "yes_count": 106,
+      "abstain_count": 2
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "IBC Management",
+    "topic_v2_display": "IBC Management",
+    "topic_v2_unique": "Ecosystem - IBC Management"
+  },
+  {
+    "proposal_id": "41",
+    "chain_id": "gravity-bridge",
+    "title": "Setup Stargaze IBC AutoForwarding",
+    "type": "IBCRelated",
+    "topic": "IBC Security",
+    "status": "PASSED",
+    "submit_time": "1651088326077",
+    "final_tally_result": {
+      "yes_count": 105,
+      "abstain_count": 3
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "IBC Management",
+    "topic_v2_display": "IBC Management",
+    "topic_v2_unique": "Ecosystem - IBC Management"
+  },
+  {
+    "proposal_id": "40",
+    "chain_id": "gravity-bridge",
+    "title": "Gravity Bridge Upgrade to fix IBC AutoForwarding",
+    "type": "SoftwareUpgrade",
+    "topic": "Major Release",
+    "status": "PASSED",
+    "submit_time": "1651039516679",
+    "final_tally_result": {
+      "yes_count": 107,
+      "abstain_count": 1
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Core Upgrade",
+    "topic_v2_display": "Core Upgrade",
+    "topic_v2_unique": "Protocol - Core Upgrade"
+  },
+  {
+    "proposal_id": "39",
+    "chain_id": "gravity-bridge",
+    "title": "PROPOSAL to fund Gravity Group 1 Community Management",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "PASSED",
+    "submit_time": "1650412594780",
+    "final_tally_result": {
+      "yes_count": 100,
+      "abstain_count": 3,
+      "no_count": 1,
+      "no_vote_count": 4
+    },
+    "type_v2": "Treasury",
+    "topic_v2": "Community & Marketing Funding",
+    "topic_v2_display": "Community & Marketing Funding",
+    "topic_v2_unique": "Treasury - Community & Marketing Funding"
+  },
+  {
+    "proposal_id": "38",
+    "chain_id": "gravity-bridge",
+    "title": "Renew Gravity liquidity incentives to GRAVOSMO Osmosis pool 625",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "PASSED",
+    "submit_time": "1649885372752",
+    "final_tally_result": {
+      "yes_count": 107,
+      "abstain_count": 1
+    },
+    "type_v2": "Treasury",
+    "topic_v2": "Liquidity & Incentives",
+    "topic_v2_display": "Liquidity & Incentives",
+    "topic_v2_unique": "Treasury - Liquidity & Incentives"
+  },
+  {
+    "proposal_id": "37",
+    "chain_id": "gravity-bridge",
+    "title": "Gravity Grants 2 awardee selected RFP for Snapshot",
+    "type": "TextProposal",
+    "topic": "Project Funding",
+    "status": "PASSED",
+    "submit_time": "1649378042665",
+    "final_tally_result": {
+      "yes_count": 99,
+      "abstain_count": 2,
+      "no_vote_count": 7
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Signaling",
+    "topic_v2_display": "Signaling",
+    "topic_v2_unique": "Governance - Signaling"
+  },
+  {
+    "proposal_id": "36",
+    "chain_id": "gravity-bridge",
+    "title": "Gravity Grants 1 awardee selected GUI",
+    "type": "TextProposal",
+    "topic": "Project Funding",
+    "status": "PASSED",
+    "submit_time": "1649377592246",
+    "final_tally_result": {
+      "yes_count": 103,
+      "no_vote_count": 5
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Signaling",
+    "topic_v2_display": "Signaling",
+    "topic_v2_unique": "Governance - Signaling"
+  },
+  {
+    "proposal_id": "35",
+    "chain_id": "gravity-bridge",
+    "title": "GRAV incentives for ATOM and OSMO gUSDC liquidity pools",
+    "type": "CommunityPoolSpend",
+    "topic": "Ecosystem Growth",
+    "status": "PASSED",
+    "submit_time": "1649117709847",
+    "final_tally_result": {
+      "yes_count": 107,
+      "abstain_count": 1
+    },
+    "type_v2": "Treasury",
+    "topic_v2": "Liquidity & Incentives",
+    "topic_v2_display": "Liquidity & Incentives",
+    "topic_v2_unique": "Treasury - Liquidity & Incentives"
+  },
+  {
+    "proposal_id": "34",
+    "chain_id": "gravity-bridge",
+    "title": "Unfreeze IBC client",
+    "type": "IBCRelated",
+    "topic": "IBC Transfer",
+    "status": "PASSED",
+    "submit_time": "1648665964485",
+    "final_tally_result": {
+      "yes_count": 97,
+      "no_vote_count": 11
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "IBC Management",
+    "topic_v2_display": "IBC Management",
+    "topic_v2_unique": "Ecosystem - IBC Management"
+  },
+  {
+    "proposal_id": "33",
+    "chain_id": "gravity-bridge",
+    "title": "Matching GRAVIRIS incentives for Liquidity Pools on Coinswap",
+    "type": "CommunityPoolSpend",
+    "topic": "Ecosystem Growth",
+    "status": "PASSED",
+    "submit_time": "1648238248183",
+    "final_tally_result": {
+      "yes_count": 95,
+      "no_count": 6,
+      "abstain_count": 4,
+      "no_vote_count": 3
+    },
+    "type_v2": "Treasury",
+    "topic_v2": "Liquidity & Incentives",
+    "topic_v2_display": "Liquidity & Incentives",
+    "topic_v2_unique": "Treasury - Liquidity & Incentives"
+  },
+  {
+    "proposal_id": "32",
+    "chain_id": "gravity-bridge",
+    "title": "Proposal for Gravity Grant RFP 1 UIGUI",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "PASSED",
+    "submit_time": "1647999817372",
+    "final_tally_result": {
+      "yes_count": 85,
+      "abstain_count": 2,
+      "no_count": 2,
+      "no_vote_count": 19
+    },
+    "type_v2": "Treasury",
+    "topic_v2": "dApp & Tooling Funding",
+    "topic_v2_display": "dApp & Tooling Funding",
+    "topic_v2_unique": "Treasury - dApp & Tooling Funding"
+  },
+  {
+    "proposal_id": "31",
+    "chain_id": "gravity-bridge",
+    "title": "Increase length of voting period and minimum deposit",
+    "type": "ParameterChange",
+    "topic": "Governance Settings",
+    "status": "PASSED",
+    "submit_time": "1647871960502",
+    "final_tally_result": {
+      "yes_count": 84,
+      "no_count": 7,
+      "abstain_count": 4,
+      "no_vote_count": 13
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Parameter Change",
+    "topic_v2_display": "Parameter Change",
+    "topic_v2_unique": "Protocol - Parameter Change"
+  },
+  {
+    "proposal_id": "30",
+    "chain_id": "gravity-bridge",
+    "title": "Add Persistence to hrpibcrecord for ibcforwarding",
+    "type": "IBCRelated",
+    "topic": "IBC Transfer",
+    "status": "PASSED",
+    "submit_time": "1647838327908",
+    "final_tally_result": {
+      "yes_count": 89,
+      "abstain_count": 1,
+      "no_vote_count": 18
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "IBC Management",
+    "topic_v2_display": "IBC Management",
+    "topic_v2_unique": "Ecosystem - IBC Management"
+  },
+  {
+    "proposal_id": "29",
+    "chain_id": "gravity-bridge",
+    "title": "Proposal for Gravity Grant RFP 1 UIGUI",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "PASSED",
+    "submit_time": "1647559604919",
+    "final_tally_result": {
+      "yes_count": 86,
+      "no_count": 1,
+      "no_vote_count": 21
+    },
+    "type_v2": "Treasury",
+    "topic_v2": "dApp & Tooling Funding",
+    "topic_v2_display": "dApp & Tooling Funding",
+    "topic_v2_unique": "Treasury - dApp & Tooling Funding"
+  },
+  {
+    "proposal_id": "28",
+    "chain_id": "gravity-bridge",
+    "title": "Proposal for Gravity Grant RFP 1 UIGUI",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "PASSED",
+    "submit_time": "1647547065066",
+    "final_tally_result": {
+      "yes_count": 96,
+      "no_vote_count": 12
+    },
+    "type_v2": "Treasury",
+    "topic_v2": "dApp & Tooling Funding",
+    "topic_v2_display": "dApp & Tooling Funding",
+    "topic_v2_unique": "Treasury - dApp & Tooling Funding"
+  },
+  {
+    "proposal_id": "27",
+    "chain_id": "gravity-bridge",
+    "title": "Gravity Bridge Mercury Upgrade",
+    "type": "SoftwareUpgrade",
+    "topic": "Feature Addition",
+    "status": "PASSED",
+    "submit_time": "1647415525163",
+    "final_tally_result": {
+      "yes_count": 106,
+      "no_count": 1,
+      "no_vote_count": 1
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Core Upgrade",
+    "topic_v2_display": "Core Upgrade",
+    "topic_v2_unique": "Protocol - Core Upgrade"
+  },
+  {
+    "proposal_id": "26",
+    "chain_id": "gravity-bridge",
+    "title": "Register CHEQ token metadata on Gravity Bridge",
+    "type": "IBCRelated",
+    "topic": "IBC Security",
+    "status": "PASSED",
+    "submit_time": "1646837052009",
+    "final_tally_result": {
+      "yes_count": 84,
+      "abstain_count": 1,
+      "no_count": 2,
+      "no_vote_count": 21
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "IBC Management",
+    "topic_v2_display": "IBC Management",
+    "topic_v2_unique": "Ecosystem - IBC Management"
+  },
+  {
+    "proposal_id": "25",
+    "chain_id": "gravity-bridge",
+    "title": "Proposal for external incentives for GRAV liquidity providers",
+    "type": "CommunityPoolSpend",
+    "topic": "Ecosystem Growth",
+    "status": "PASSED",
+    "submit_time": "1646775621889",
+    "final_tally_result": {
+      "yes_count": 106,
+      "no_count": 2
+    },
+    "type_v2": "Treasury",
+    "topic_v2": "Liquidity & Incentives",
+    "topic_v2_display": "Liquidity & Incentives",
+    "topic_v2_unique": "Treasury - Liquidity & Incentives"
+  },
+  {
+    "proposal_id": "24",
+    "chain_id": "gravity-bridge",
+    "title": "Governance proposal to recover IBC connection with BitCanna chain",
+    "type": "IBCRelated",
+    "topic": "IBC Transfer",
+    "status": "PASSED",
+    "submit_time": "1646741290145",
+    "final_tally_result": {
+      "yes_count": 94,
+      "abstain_count": 5,
+      "no_with_veto_count": 1,
+      "no_count": 3,
+      "no_vote_count": 5
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "IBC Management",
+    "topic_v2_display": "IBC Management",
+    "topic_v2_unique": "Ecosystem - IBC Management"
+  },
+  {
+    "proposal_id": "23",
+    "chain_id": "gravity-bridge",
+    "title": "Provide Liqudity",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "REJECTED",
+    "submit_time": "1645840648049",
+    "final_tally_result": {
+      "no_count": 40,
+      "yes_count": 12,
+      "no_with_veto_count": 19,
+      "abstain_count": 4,
+      "no_vote_count": 33
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Signaling",
+    "topic_v2_display": "Signaling",
+    "topic_v2_unique": "Governance - Signaling"
+  },
+  {
+    "proposal_id": "22",
+    "chain_id": "gravity-bridge",
+    "title": "Balance out new validators helping the network",
+    "type": "Unknown",
+    "topic": "Miscellaneous",
+    "status": "REJECTED",
+    "submit_time": "1645835525195",
+    "final_tally_result": {
+      "no_count": 43,
+      "yes_count": 13,
+      "no_with_veto_count": 23,
+      "abstain_count": 1,
+      "no_vote_count": 28
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Signaling",
+    "topic_v2_display": "Signaling",
+    "topic_v2_unique": "Governance - Signaling"
+  },
+  {
+    "proposal_id": "21",
+    "chain_id": "gravity-bridge",
+    "title": "Correct denom for HUAHUA token metadata",
+    "type": "IBCRelated",
+    "topic": "Cross-Chain Integration",
+    "status": "PASSED",
+    "submit_time": "1645630198394",
+    "final_tally_result": {
+      "yes_count": 90,
+      "abstain_count": 2,
+      "no_vote_count": 16
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "IBC Management",
+    "topic_v2_display": "IBC Management",
+    "topic_v2_unique": "Ecosystem - IBC Management"
+  },
+  {
+    "proposal_id": "20",
+    "chain_id": "gravity-bridge",
+    "title": "register HUAHUA token metadata",
+    "type": "IBCRelated",
+    "topic": "Cross-Chain Integration",
+    "status": "REJECTED",
+    "submit_time": "1645582097662",
+    "final_tally_result": {
+      "abstain_count": 4,
+      "no_count": 54,
+      "yes_count": 40,
+      "no_vote_count": 10
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "IBC Management",
+    "topic_v2_display": "IBC Management",
+    "topic_v2_unique": "Ecosystem - IBC Management"
+  },
+  {
+    "proposal_id": "19",
+    "chain_id": "gravity-bridge",
+    "title": "Stargaze Gravity Denom Proposal",
+    "type": "IBCRelated",
+    "topic": "Client Update",
+    "status": "PASSED",
+    "submit_time": "1645573471280",
+    "final_tally_result": {
+      "yes_count": 99,
+      "no_count": 1,
+      "abstain_count": 1,
+      "no_vote_count": 7
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "IBC Management",
+    "topic_v2_display": "IBC Management",
+    "topic_v2_unique": "Ecosystem - IBC Management"
+  },
+  {
+    "proposal_id": "18",
+    "chain_id": "gravity-bridge",
+    "title": "register CMDX token metadata",
+    "type": "IBCRelated",
+    "topic": "IBC Security",
+    "status": "PASSED",
+    "submit_time": "1645518853230",
+    "final_tally_result": {
+      "yes_count": 106,
+      "abstain_count": 2
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "IBC Management",
+    "topic_v2_display": "IBC Management",
+    "topic_v2_unique": "Ecosystem - IBC Management"
+  },
+  {
+    "proposal_id": "17",
+    "chain_id": "gravity-bridge",
+    "title": "Add ATOM metadata on Gravity Bridge",
+    "type": "IBCRelated",
+    "topic": "Cross-Chain Integration",
+    "status": "PASSED",
+    "submit_time": "1645481510618",
+    "final_tally_result": {
+      "yes_count": 108
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "IBC Management",
+    "topic_v2_display": "IBC Management",
+    "topic_v2_unique": "Ecosystem - IBC Management"
+  },
+  {
+    "proposal_id": "16",
+    "chain_id": "gravity-bridge",
+    "title": "GRAV Airdrop Osmosis and ION holders",
+    "type": "Unknown",
+    "topic": "Miscellaneous",
+    "status": "PASSED",
+    "submit_time": "1644253322886",
+    "final_tally_result": {
+      "no_count": 10,
+      "yes_count": 88,
+      "abstain_count": 5,
+      "no_with_veto_count": 1,
+      "no_vote_count": 4
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Spam & Malicious",
+    "topic_v2_display": "Spam & Malicious",
+    "topic_v2_unique": "Governance - Spam & Malicious"
+  },
+  {
+    "proposal_id": "15",
+    "chain_id": "gravity-bridge",
+    "title": "Part 2  ATOM Airdrop",
+    "type": "Unknown",
+    "topic": "Miscellaneous",
+    "status": "PASSED",
+    "submit_time": "1644250621826",
+    "final_tally_result": {
+      "no_count": 4,
+      "yes_count": 98,
+      "abstain_count": 4,
+      "no_with_veto_count": 1,
+      "no_vote_count": 1
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Spam & Malicious",
+    "topic_v2_display": "Spam & Malicious",
+    "topic_v2_unique": "Governance - Spam & Malicious"
+  },
+  {
+    "proposal_id": "14",
+    "chain_id": "gravity-bridge",
+    "title": "Part 1  ATOM Airdrop",
+    "type": "Unknown",
+    "topic": "Miscellaneous",
+    "status": "PASSED",
+    "submit_time": "1644250577880",
+    "final_tally_result": {
+      "no_count": 2,
+      "yes_count": 99,
+      "abstain_count": 4,
+      "no_with_veto_count": 1,
+      "no_vote_count": 2
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Spam & Malicious",
+    "topic_v2_display": "Spam & Malicious",
+    "topic_v2_unique": "Governance - Spam & Malicious"
+  },
+  {
+    "proposal_id": "13",
+    "chain_id": "gravity-bridge",
+    "title": "Increase max transaction gas and block size",
+    "type": "ParameterChange",
+    "topic": "Fee Adjustment",
+    "status": "PASSED",
+    "submit_time": "1644013565661",
+    "final_tally_result": {
+      "yes_count": 90,
+      "no_vote_count": 18
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Parameter Change",
+    "topic_v2_display": "Parameter Change",
+    "topic_v2_unique": "Protocol - Parameter Change"
+  },
+  {
+    "proposal_id": "12",
+    "chain_id": "gravity-bridge",
+    "title": "NYM token metadata v3",
+    "type": "IBCRelated",
+    "topic": "IBC Security",
+    "status": "PASSED",
+    "submit_time": "1643665363577",
+    "final_tally_result": {
+      "yes_count": 77,
+      "abstain_count": 6,
+      "no_vote_count": 25
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "IBC Management",
+    "topic_v2_display": "IBC Management",
+    "topic_v2_unique": "Ecosystem - IBC Management"
+  },
+  {
+    "proposal_id": "11",
+    "chain_id": "gravity-bridge",
+    "title": "Add CTK Metadata in Gravity Bridge",
+    "type": "IBCRelated",
+    "topic": "IBC Security",
+    "status": "PASSED",
+    "submit_time": "1643258695988",
+    "final_tally_result": {
+      "yes_count": 71,
+      "abstain_count": 4,
+      "no_vote_count": 33
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "IBC Management",
+    "topic_v2_display": "IBC Management",
+    "topic_v2_unique": "Ecosystem - IBC Management"
+  },
+  {
+    "proposal_id": "10",
+    "chain_id": "gravity-bridge",
+    "title": "NYM testnet token metadata v2",
+    "type": "IBCRelated",
+    "topic": "IBC Security",
+    "status": "PASSED",
+    "submit_time": "1643209454980",
+    "final_tally_result": {
+      "yes_count": 77,
+      "abstain_count": 5,
+      "no_vote_count": 26
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "IBC Management",
+    "topic_v2_display": "IBC Management",
+    "topic_v2_unique": "Ecosystem - IBC Management"
+  },
+  {
+    "proposal_id": "9",
+    "chain_id": "gravity-bridge",
+    "title": "NYM token metadata v2",
+    "type": "IBCRelated",
+    "topic": "IBC Security",
+    "status": "PASSED",
+    "submit_time": "1643109403314",
+    "final_tally_result": {
+      "yes_count": 80,
+      "abstain_count": 2,
+      "no_vote_count": 26
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "IBC Management",
+    "topic_v2_display": "IBC Management",
+    "topic_v2_unique": "Ecosystem - IBC Management"
+  },
+  {
+    "proposal_id": "8",
+    "chain_id": "gravity-bridge",
+    "title": "NYM token metadata",
+    "type": "IBCRelated",
+    "topic": "Cross-Chain Integration",
+    "status": "PASSED",
+    "submit_time": "1642614788535",
+    "final_tally_result": {
+      "yes_count": 75,
+      "abstain_count": 6,
+      "no_vote_count": 27
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "IBC Management",
+    "topic_v2_display": "IBC Management",
+    "topic_v2_unique": "Ecosystem - IBC Management"
+  },
+  {
+    "proposal_id": "7",
+    "chain_id": "gravity-bridge",
+    "title": "NYMT testnet token metadata",
+    "type": "IBCRelated",
+    "topic": "IBC Security",
+    "status": "PASSED",
+    "submit_time": "1642582544017",
+    "final_tally_result": {
+      "yes_count": 65,
+      "abstain_count": 10,
+      "no_vote_count": 33
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "IBC Management",
+    "topic_v2_display": "IBC Management",
+    "topic_v2_unique": "Ecosystem - IBC Management"
+  },
+  {
+    "proposal_id": "6",
+    "chain_id": "gravity-bridge",
+    "title": "Gravity Bridge v130 Upgrade",
+    "type": "SoftwareUpgrade",
+    "topic": "Feature Addition",
+    "status": "PASSED",
+    "submit_time": "1642279362435",
+    "final_tally_result": {
+      "yes_count": 77,
+      "no_vote_count": 31
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Core Upgrade",
+    "topic_v2_display": "Core Upgrade",
+    "topic_v2_unique": "Protocol - Core Upgrade"
+  },
+  {
+    "proposal_id": "5",
+    "chain_id": "gravity-bridge",
+    "title": "Set bridgeethereumaddress",
+    "type": "ParameterChange",
+    "topic": "Staking Parameters",
+    "status": "PASSED",
+    "submit_time": "1642090956745",
+    "final_tally_result": {
+      "yes_count": 70,
+      "abstain_count": 1,
+      "no_vote_count": 37
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Parameter Change",
+    "topic_v2_display": "Parameter Change",
+    "topic_v2_unique": "Protocol - Parameter Change"
+  },
+  {
+    "proposal_id": "4",
+    "chain_id": "gravity-bridge",
+    "title": "Signaling Proposal for upgrade to gravitybridge3",
+    "type": "TextProposal",
+    "topic": "Community Decision",
+    "status": "PASSED",
+    "submit_time": "1641501121147",
+    "final_tally_result": {
+      "yes_count": 75,
+      "abstain_count": 1,
+      "no_count": 4,
+      "no_vote_count": 28
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Core Upgrade",
+    "topic_v2_display": "Core Upgrade",
+    "topic_v2_unique": "Protocol - Core Upgrade"
+  },
+  {
+    "proposal_id": "3",
+    "chain_id": "gravity-bridge",
+    "title": "Gravity Bridge v120 Upgrade",
+    "type": "SoftwareUpgrade",
+    "topic": "Feature Addition",
+    "status": "PASSED",
+    "submit_time": "1640916142175",
+    "final_tally_result": {
+      "yes_count": 64,
+      "no_vote_count": 44
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Core Upgrade",
+    "topic_v2_display": "Core Upgrade",
+    "topic_v2_unique": "Protocol - Core Upgrade"
+  },
+  {
+    "proposal_id": "2",
+    "chain_id": "gravity-bridge",
+    "title": "Softer SlashingJailing Bug Fix",
+    "type": "ParameterChange",
+    "topic": "Staking Parameters",
+    "status": "PASSED",
+    "submit_time": "1639714546398",
+    "final_tally_result": {
+      "yes_count": 50,
+      "abstain_count": 2,
+      "no_vote_count": 56
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Parameter Change",
+    "topic_v2_display": "Parameter Change",
+    "topic_v2_unique": "Protocol - Parameter Change"
+  },
+  {
+    "proposal_id": "1",
+    "chain_id": "gravity-bridge",
+    "title": "Set a minimum validator commission rate of 5",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "PASSED",
+    "submit_time": "1639702748924",
+    "final_tally_result": {
+      "yes_count": 56,
+      "abstain_count": 2,
+      "no_count": 1,
+      "no_vote_count": 49
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Signaling",
+    "topic_v2_display": "Signaling",
+    "topic_v2_unique": "Governance - Signaling"
+  }
+]

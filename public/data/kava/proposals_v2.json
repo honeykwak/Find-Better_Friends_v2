@@ -1,0 +1,3333 @@
+[
+  {
+    "proposal_id": "192",
+    "chain_id": "kava",
+    "title": "Adds HARD token to the Kava EVM CoChain",
+    "type": "ParameterChange",
+    "topic": "Economic Parameters",
+    "status": "PASSED",
+    "submit_time": "1730781285579",
+    "final_tally_result": {
+      "yes_count": 26,
+      "abstain_count": 5,
+      "no_vote_count": 61
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Parameter Change",
+    "topic_v2_display": "Parameter Change",
+    "topic_v2_unique": "Protocol - Parameter Change"
+  },
+  {
+    "proposal_id": "191",
+    "chain_id": "kava",
+    "title": "Adds MerlinBTC to Kava Lend",
+    "type": "ParameterChange",
+    "topic": "Economic Parameters",
+    "status": "PASSED",
+    "submit_time": "1728586321600",
+    "final_tally_result": {
+      "yes_count": 18,
+      "abstain_count": 15,
+      "no_vote_count": 58
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Parameter Change",
+    "topic_v2_display": "Parameter Change",
+    "topic_v2_unique": "Protocol - Parameter Change"
+  },
+  {
+    "proposal_id": "190",
+    "chain_id": "kava",
+    "title": "Kava Rise Payouts September 2024",
+    "type": "Unknown",
+    "topic": "Miscellaneous",
+    "status": "PASSED",
+    "submit_time": "1728324775533",
+    "final_tally_result": {
+      "yes_count": 25,
+      "abstain_count": 8,
+      "no_vote_count": 58
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Signaling",
+    "topic_v2_display": "Signaling",
+    "topic_v2_unique": "Governance - Signaling"
+  },
+  {
+    "proposal_id": "189",
+    "chain_id": "kava",
+    "title": "Extend incentive reward periods for Kava Earn and Kava Lend",
+    "type": "ParameterChange",
+    "topic": "Economic Parameters",
+    "status": "PASSED",
+    "submit_time": "1728323522374",
+    "final_tally_result": {
+      "yes_count": 22,
+      "abstain_count": 10,
+      "no_vote_count": 59
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Parameter Change",
+    "topic_v2_display": "Parameter Change",
+    "topic_v2_unique": "Protocol - Parameter Change"
+  },
+  {
+    "proposal_id": "188",
+    "chain_id": "kava",
+    "title": "Kava Rise Payouts August 2024",
+    "type": "Unknown",
+    "topic": "Miscellaneous",
+    "status": "PASSED",
+    "submit_time": "1725398037442",
+    "final_tally_result": {
+      "yes_count": 26,
+      "abstain_count": 7,
+      "no_vote_count": 60
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Signaling",
+    "topic_v2_display": "Signaling",
+    "topic_v2_unique": "Governance - Signaling"
+  },
+  {
+    "proposal_id": "187",
+    "chain_id": "kava",
+    "title": "Enable Committee MsgVote for EIP712",
+    "type": "ParameterChange",
+    "topic": "Economic Parameters",
+    "status": "PASSED",
+    "submit_time": "1723840600057",
+    "final_tally_result": {
+      "yes_count": 24,
+      "abstain_count": 11,
+      "no_vote_count": 61
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Parameter Change",
+    "topic_v2_display": "Parameter Change",
+    "topic_v2_unique": "Protocol - Parameter Change"
+  },
+  {
+    "proposal_id": "186",
+    "chain_id": "kava",
+    "title": "Kava Rise Payouts July 2024",
+    "type": "Unknown",
+    "topic": "Miscellaneous",
+    "status": "PASSED",
+    "submit_time": "1723141104410",
+    "final_tally_result": {
+      "yes_count": 25,
+      "abstain_count": 9,
+      "no_vote_count": 61
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Signaling",
+    "topic_v2_display": "Signaling",
+    "topic_v2_unique": "Governance - Signaling"
+  },
+  {
+    "proposal_id": "185",
+    "chain_id": "kava",
+    "title": "Extend USDT deposit incentives for Kava Lend",
+    "type": "ParameterChange",
+    "topic": "Economic Parameters",
+    "status": "PASSED",
+    "submit_time": "1721238794957",
+    "final_tally_result": {
+      "yes_count": 30,
+      "abstain_count": 8,
+      "no_count": 1,
+      "no_vote_count": 61
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Parameter Change",
+    "topic_v2_display": "Parameter Change",
+    "topic_v2_unique": "Protocol - Parameter Change"
+  },
+  {
+    "proposal_id": "184",
+    "chain_id": "kava",
+    "title": " Kava New Version  USDX Airdrop ",
+    "type": "Unknown",
+    "topic": "Unclassified",
+    "status": "REJECTED",
+    "submit_time": "1720578344717",
+    "final_tally_result": {
+      "no_with_veto_count": 26,
+      "abstain_count": 1,
+      "no_vote_count": 73
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Spam & Malicious",
+    "topic_v2_display": "Spam & Malicious",
+    "topic_v2_unique": "Governance - Spam & Malicious"
+  },
+  {
+    "proposal_id": "183",
+    "chain_id": "kava",
+    "title": "Kava Rise Payouts June 2024",
+    "type": "Unknown",
+    "topic": "Miscellaneous",
+    "status": "PASSED",
+    "submit_time": "1720499112147",
+    "final_tally_result": {
+      "yes_count": 27,
+      "abstain_count": 9,
+      "no_vote_count": 64
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Signaling",
+    "topic_v2_display": "Signaling",
+    "topic_v2_unique": "Governance - Signaling"
+  },
+  {
+    "proposal_id": "182",
+    "chain_id": "kava",
+    "title": "Adds WBTC to Kava Lend and adjusts incentives",
+    "type": "ParameterChange",
+    "topic": "Economic Parameters",
+    "status": "PASSED",
+    "submit_time": "1718815147017",
+    "final_tally_result": {
+      "yes_count": 27,
+      "no_count": 1,
+      "abstain_count": 4,
+      "no_vote_count": 68
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Parameter Change",
+    "topic_v2_display": "Parameter Change",
+    "topic_v2_unique": "Protocol - Parameter Change"
+  },
+  {
+    "proposal_id": "181",
+    "chain_id": "kava",
+    "title": "Revive expired IBC client for Aura Network",
+    "type": "IBCRelated",
+    "topic": "IBC Security",
+    "status": "PASSED",
+    "submit_time": "1718100194057",
+    "final_tally_result": {
+      "yes_count": 34,
+      "abstain_count": 5,
+      "no_vote_count": 61
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "IBC Management",
+    "topic_v2_display": "IBC Management",
+    "topic_v2_unique": "Ecosystem - IBC Management"
+  },
+  {
+    "proposal_id": "180",
+    "chain_id": "kava",
+    "title": "Kava Rise payouts for May 2024",
+    "type": "Unknown",
+    "topic": "Miscellaneous",
+    "status": "PASSED",
+    "submit_time": "1717791817031",
+    "final_tally_result": {
+      "yes_count": 26,
+      "abstain_count": 10,
+      "no_vote_count": 63
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Signaling",
+    "topic_v2_display": "Signaling",
+    "topic_v2_unique": "Governance - Signaling"
+  },
+  {
+    "proposal_id": "179",
+    "chain_id": "kava",
+    "title": "Kava Rise payouts for April 2024",
+    "type": "Unknown",
+    "topic": "Miscellaneous",
+    "status": "PASSED",
+    "submit_time": "1715372887021",
+    "final_tally_result": {
+      "yes_count": 30,
+      "abstain_count": 8,
+      "no_vote_count": 61
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Signaling",
+    "topic_v2_display": "Signaling",
+    "topic_v2_unique": "Governance - Signaling"
+  },
+  {
+    "proposal_id": "178",
+    "chain_id": "kava",
+    "title": "Kava 16 Mainnet Upgrade",
+    "type": "SoftwareUpgrade",
+    "topic": "Feature Addition",
+    "status": "PASSED",
+    "submit_time": "1713224174950",
+    "final_tally_result": {
+      "yes_count": 46,
+      "no_vote_count": 53
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Core Upgrade",
+    "topic_v2_display": "Core Upgrade",
+    "topic_v2_unique": "Protocol - Core Upgrade"
+  },
+  {
+    "proposal_id": "177",
+    "chain_id": "kava",
+    "title": "Kava Rise payouts for March 2024",
+    "type": "Unknown",
+    "topic": "Miscellaneous",
+    "status": "PASSED",
+    "submit_time": "1712593756512",
+    "final_tally_result": {
+      "yes_count": 33,
+      "abstain_count": 6,
+      "no_vote_count": 60
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Signaling",
+    "topic_v2_display": "Signaling",
+    "topic_v2_unique": "Governance - Signaling"
+  },
+  {
+    "proposal_id": "176",
+    "chain_id": "kava",
+    "title": "Kava Rise payouts for February 2024",
+    "type": "Unknown",
+    "topic": "Miscellaneous",
+    "status": "PASSED",
+    "submit_time": "1709924018751",
+    "final_tally_result": {
+      "yes_count": 32,
+      "abstain_count": 15,
+      "no_vote_count": 52
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Signaling",
+    "topic_v2_display": "Signaling",
+    "topic_v2_unique": "Governance - Signaling"
+  },
+  {
+    "proposal_id": "175",
+    "chain_id": "kava",
+    "title": "WAGMIwKAVA LP Authorization",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "PASSED",
+    "submit_time": "1709593867774",
+    "final_tally_result": {
+      "yes_count": 32,
+      "abstain_count": 13,
+      "no_count": 1,
+      "no_vote_count": 53
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Signaling",
+    "topic_v2_display": "Signaling",
+    "topic_v2_unique": "Governance - Signaling"
+  },
+  {
+    "proposal_id": "174",
+    "chain_id": "kava",
+    "title": " USD Airdrop   New Atom Liquidity ",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "REJECTED",
+    "submit_time": "1708186844237",
+    "final_tally_result": {
+      "no_with_veto_count": 28,
+      "yes_count": 1,
+      "no_count": 5,
+      "abstain_count": 1,
+      "no_vote_count": 64
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Spam & Malicious",
+    "topic_v2_display": "Spam & Malicious",
+    "topic_v2_unique": "Governance - Spam & Malicious"
+  },
+  {
+    "proposal_id": "173",
+    "chain_id": "kava",
+    "title": "Kava Rise payouts for January 2024",
+    "type": "Unknown",
+    "topic": "Miscellaneous",
+    "status": "PASSED",
+    "submit_time": "1707432030575",
+    "final_tally_result": {
+      "yes_count": 39,
+      "abstain_count": 6,
+      "no_vote_count": 54
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Signaling",
+    "topic_v2_display": "Signaling",
+    "topic_v2_unique": "Governance - Signaling"
+  },
+  {
+    "proposal_id": "172",
+    "chain_id": "kava",
+    "title": "WAGMI Pool Creation on Kinetix",
+    "type": "Unknown",
+    "topic": "Miscellaneous",
+    "status": "PASSED",
+    "submit_time": "1705459711376",
+    "final_tally_result": {
+      "yes_count": 21,
+      "abstain_count": 18,
+      "no_vote_count": 60
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Signaling",
+    "topic_v2_display": "Signaling",
+    "topic_v2_unique": "Governance - Signaling"
+  },
+  {
+    "proposal_id": "171",
+    "chain_id": "kava",
+    "title": "cosmosauthzv1beta1MsgExec",
+    "type": "Unknown",
+    "topic": "Miscellaneous",
+    "status": "PASSED",
+    "submit_time": "1704851117165",
+    "final_tally_result": {
+      "abstain_count": 18,
+      "yes_count": 28,
+      "no_count": 3,
+      "no_vote_count": 50
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Signaling",
+    "topic_v2_display": "Signaling",
+    "topic_v2_unique": "Governance - Signaling"
+  },
+  {
+    "proposal_id": "170",
+    "chain_id": "kava",
+    "title": "Kava Rise payouts for November 2023",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "PASSED",
+    "submit_time": "1701989621434",
+    "final_tally_result": {
+      "abstain_count": 8,
+      "yes_count": 39,
+      "no_vote_count": 52
+    },
+    "type_v2": "Treasury",
+    "topic_v2": "dApp & Tooling Funding",
+    "topic_v2_display": "dApp & Tooling Funding",
+    "topic_v2_unique": "Treasury - dApp & Tooling Funding"
+  },
+  {
+    "proposal_id": "169",
+    "chain_id": "kava",
+    "title": "WAGMI Token Transfer",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "PASSED",
+    "submit_time": "1701718866143",
+    "final_tally_result": {
+      "abstain_count": 16,
+      "yes_count": 12,
+      "no_count": 20,
+      "no_vote_count": 51
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "Token Management",
+    "topic_v2_display": "Token Management",
+    "topic_v2_unique": "Ecosystem - Token Management"
+  },
+  {
+    "proposal_id": "168",
+    "chain_id": "kava",
+    "title": "Kava 15 Mainnet Upgrade",
+    "type": "SoftwareUpgrade",
+    "topic": "Feature Addition",
+    "status": "PASSED",
+    "submit_time": "1700862067581",
+    "final_tally_result": {
+      "yes_count": 53,
+      "abstain_count": 1,
+      "no_vote_count": 45
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Core Upgrade",
+    "topic_v2_display": "Core Upgrade",
+    "topic_v2_unique": "Protocol - Core Upgrade"
+  },
+  {
+    "proposal_id": "167",
+    "chain_id": "kava",
+    "title": "Kava Rise payouts for October 2023",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "PASSED",
+    "submit_time": "1699570145281",
+    "final_tally_result": {
+      "yes_count": 46,
+      "abstain_count": 6,
+      "no_count": 1,
+      "no_vote_count": 46
+    },
+    "type_v2": "Treasury",
+    "topic_v2": "dApp & Tooling Funding",
+    "topic_v2_display": "dApp & Tooling Funding",
+    "topic_v2_unique": "Treasury - dApp & Tooling Funding"
+  },
+  {
+    "proposal_id": "166",
+    "chain_id": "kava",
+    "title": "Supply Funds into Kava Mint",
+    "type": "ParameterChange",
+    "topic": "Economic Parameters",
+    "status": "REJECTED",
+    "submit_time": "1697825414122",
+    "final_tally_result": {
+      "abstain_count": 14,
+      "no_count": 19,
+      "yes_count": 9,
+      "no_with_veto_count": 1,
+      "no_vote_count": 56
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Parameter Change",
+    "topic_v2_display": "Parameter Change",
+    "topic_v2_unique": "Protocol - Parameter Change"
+  },
+  {
+    "proposal_id": "165",
+    "chain_id": "kava",
+    "title": "Injective USDt Adoption",
+    "type": "CommunityPoolSpend",
+    "topic": "Ecosystem Growth",
+    "status": "PASSED",
+    "submit_time": "1697704509159",
+    "final_tally_result": {
+      "yes_count": 45,
+      "abstain_count": 5,
+      "no_vote_count": 49
+    },
+    "type_v2": "Treasury",
+    "topic_v2": "dApp & Tooling Funding",
+    "topic_v2_display": "dApp & Tooling Funding",
+    "topic_v2_unique": "Treasury - dApp & Tooling Funding"
+  },
+  {
+    "proposal_id": "164",
+    "chain_id": "kava",
+    "title": "Kava Rise payouts for September 2023",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "PASSED",
+    "submit_time": "1696614991250",
+    "final_tally_result": {
+      "yes_count": 46,
+      "abstain_count": 3,
+      "no_count": 1,
+      "no_vote_count": 49
+    },
+    "type_v2": "Treasury",
+    "topic_v2": "dApp & Tooling Funding",
+    "topic_v2_display": "dApp & Tooling Funding",
+    "topic_v2_unique": "Treasury - dApp & Tooling Funding"
+  },
+  {
+    "proposal_id": "163",
+    "chain_id": "kava",
+    "title": "WAGMI Deploys on Kava",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "PASSED",
+    "submit_time": "1696432548847",
+    "final_tally_result": {
+      "yes_count": 37,
+      "abstain_count": 6,
+      "no_count": 3,
+      "no_vote_count": 53
+    },
+    "type_v2": "Treasury",
+    "topic_v2": "dApp & Tooling Funding",
+    "topic_v2_display": "dApp & Tooling Funding",
+    "topic_v2_unique": "Treasury - dApp & Tooling Funding"
+  },
+  {
+    "proposal_id": "162",
+    "chain_id": "kava",
+    "title": "Kava Rise payouts for August 2023",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "PASSED",
+    "submit_time": "1694130972995",
+    "final_tally_result": {
+      "yes_count": 40,
+      "no_count": 1,
+      "abstain_count": 2,
+      "no_vote_count": 56
+    },
+    "type_v2": "Treasury",
+    "topic_v2": "dApp & Tooling Funding",
+    "topic_v2_display": "dApp & Tooling Funding",
+    "topic_v2_unique": "Treasury - dApp & Tooling Funding"
+  },
+  {
+    "proposal_id": "161",
+    "chain_id": "kava",
+    "title": "Supply Funds into Kava Mint",
+    "type": "ParameterChange",
+    "topic": "Economic Parameters",
+    "status": "PASSED",
+    "submit_time": "1694046887642",
+    "final_tally_result": {
+      "yes_count": 38,
+      "no_count": 1,
+      "abstain_count": 1,
+      "no_vote_count": 59
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Parameter Change",
+    "topic_v2_display": "Parameter Change",
+    "topic_v2_unique": "Protocol - Parameter Change"
+  },
+  {
+    "proposal_id": "160",
+    "chain_id": "kava",
+    "title": "Abracadabra Joins Kava Ignition",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "PASSED",
+    "submit_time": "1693418317896",
+    "final_tally_result": {
+      "abstain_count": 4,
+      "yes_count": 39,
+      "no_count": 3,
+      "no_vote_count": 53
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Signaling",
+    "topic_v2_display": "Signaling",
+    "topic_v2_unique": "Governance - Signaling"
+  },
+  {
+    "proposal_id": "159",
+    "chain_id": "kava",
+    "title": "Kinetix Joins Kava Ignition",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "PASSED",
+    "submit_time": "1693418097261",
+    "final_tally_result": {
+      "abstain_count": 3,
+      "yes_count": 39,
+      "no_count": 3,
+      "no_vote_count": 54
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Signaling",
+    "topic_v2_display": "Signaling",
+    "topic_v2_unique": "Governance - Signaling"
+  },
+  {
+    "proposal_id": "158",
+    "chain_id": "kava",
+    "title": "Deposit Additional Funds into Kava Mint",
+    "type": "ParameterChange",
+    "topic": "Economic Parameters",
+    "status": "PASSED",
+    "submit_time": "1691776197686",
+    "final_tally_result": {
+      "no_count": 6,
+      "yes_count": 26,
+      "abstain_count": 4,
+      "no_vote_count": 63
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Parameter Change",
+    "topic_v2_display": "Parameter Change",
+    "topic_v2_unique": "Protocol - Parameter Change"
+  },
+  {
+    "proposal_id": "157",
+    "chain_id": "kava",
+    "title": "Kava Ignition Program",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "PASSED",
+    "submit_time": "1691694953090",
+    "final_tally_result": {
+      "yes_count": 39,
+      "abstain_count": 4,
+      "no_count": 1,
+      "no_vote_count": 55
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Signaling",
+    "topic_v2_display": "Signaling",
+    "topic_v2_unique": "Governance - Signaling"
+  },
+  {
+    "proposal_id": "156",
+    "chain_id": "kava",
+    "title": "Update Stability Committee Permissions to Include USDt in Lend and Mint",
+    "type": "Unknown",
+    "topic": "Miscellaneous",
+    "status": "PASSED",
+    "submit_time": "1691621496834",
+    "final_tally_result": {
+      "yes_count": 40,
+      "no_count": 1,
+      "abstain_count": 5,
+      "no_vote_count": 53
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Signaling",
+    "topic_v2_display": "Signaling",
+    "topic_v2_unique": "Governance - Signaling"
+  },
+  {
+    "proposal_id": "155",
+    "chain_id": "kava",
+    "title": "Kava Rise payouts for July 2023",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "PASSED",
+    "submit_time": "1691442340424",
+    "final_tally_result": {
+      "yes_count": 41,
+      "abstain_count": 7,
+      "no_count": 1,
+      "no_vote_count": 50
+    },
+    "type_v2": "Treasury",
+    "topic_v2": "dApp & Tooling Funding",
+    "topic_v2_display": "dApp & Tooling Funding",
+    "topic_v2_unique": "Treasury - dApp & Tooling Funding"
+  },
+  {
+    "proposal_id": "154",
+    "chain_id": "kava",
+    "title": "Kava Rise payouts for July 2023",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "REJECTED",
+    "submit_time": "1691430862887",
+    "final_tally_result": {
+      "no_count": 20,
+      "yes_count": 17,
+      "abstain_count": 11,
+      "no_vote_count": 51
+    },
+    "type_v2": "Treasury",
+    "topic_v2": "dApp & Tooling Funding",
+    "topic_v2_display": "dApp & Tooling Funding",
+    "topic_v2_unique": "Treasury - dApp & Tooling Funding"
+  },
+  {
+    "proposal_id": "153",
+    "chain_id": "kava",
+    "title": "Increases USDt incentives removes various asset incentives in Kava Lend",
+    "type": "ParameterChange",
+    "topic": "Economic Parameters",
+    "status": "PASSED",
+    "submit_time": "1690561774989",
+    "final_tally_result": {
+      "yes_count": 37,
+      "abstain_count": 10,
+      "no_count": 2,
+      "no_vote_count": 50
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Parameter Change",
+    "topic_v2_display": "Parameter Change",
+    "topic_v2_unique": "Protocol - Parameter Change"
+  },
+  {
+    "proposal_id": "152",
+    "chain_id": "kava",
+    "title": "Adds Tether USDt to Mint",
+    "type": "ParameterChange",
+    "topic": "Protocol Configuration",
+    "status": "PASSED",
+    "submit_time": "1690392982487",
+    "final_tally_result": {
+      "yes_count": 40,
+      "abstain_count": 4,
+      "no_count": 1,
+      "no_vote_count": 54
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Parameter Change",
+    "topic_v2_display": "Parameter Change",
+    "topic_v2_unique": "Protocol - Parameter Change"
+  },
+  {
+    "proposal_id": "151",
+    "chain_id": "kava",
+    "title": "Supply Funds into Kava Mint",
+    "type": "ParameterChange",
+    "topic": "Economic Parameters",
+    "status": "PASSED",
+    "submit_time": "1689454487009",
+    "final_tally_result": {
+      "yes_count": 34,
+      "abstain_count": 10,
+      "no_count": 3,
+      "no_vote_count": 52
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Parameter Change",
+    "topic_v2_display": "Parameter Change",
+    "topic_v2_unique": "Protocol - Parameter Change"
+  },
+  {
+    "proposal_id": "150",
+    "chain_id": "kava",
+    "title": "Adds EIP712 allowed messages",
+    "type": "ParameterChange",
+    "topic": "Protocol Configuration",
+    "status": "PASSED",
+    "submit_time": "1689375522201",
+    "final_tally_result": {
+      "yes_count": 48,
+      "no_count": 1,
+      "abstain_count": 4,
+      "no_vote_count": 46
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Parameter Change",
+    "topic_v2_display": "Parameter Change",
+    "topic_v2_unique": "Protocol - Parameter Change"
+  },
+  {
+    "proposal_id": "149",
+    "chain_id": "kava",
+    "title": "Adds EIP712 allowed messages",
+    "type": "ParameterChange",
+    "topic": "Protocol Configuration",
+    "status": "REJECTED",
+    "submit_time": "1689349058528",
+    "final_tally_result": {
+      "no_count": 28,
+      "abstain_count": 5,
+      "yes_count": 22,
+      "no_vote_count": 44
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Parameter Change",
+    "topic_v2_display": "Parameter Change",
+    "topic_v2_unique": "Protocol - Parameter Change"
+  },
+  {
+    "proposal_id": "148",
+    "chain_id": "kava",
+    "title": "Kava Rise payouts for June 2023",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "PASSED",
+    "submit_time": "1688779009484",
+    "final_tally_result": {
+      "yes_count": 42,
+      "abstain_count": 10,
+      "no_count": 1,
+      "no_vote_count": 46
+    },
+    "type_v2": "Treasury",
+    "topic_v2": "dApp & Tooling Funding",
+    "topic_v2_display": "dApp & Tooling Funding",
+    "topic_v2_unique": "Treasury - dApp & Tooling Funding"
+  },
+  {
+    "proposal_id": "147",
+    "chain_id": "kava",
+    "title": "Adds Tether USDt to kava lend and adjusts incentives",
+    "type": "ParameterChange",
+    "topic": "Economic Parameters",
+    "status": "PASSED",
+    "submit_time": "1688671060977",
+    "final_tally_result": {
+      "yes_count": 45,
+      "abstain_count": 4,
+      "no_count": 3,
+      "no_vote_count": 47
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Parameter Change",
+    "topic_v2_display": "Parameter Change",
+    "topic_v2_unique": "Protocol - Parameter Change"
+  },
+  {
+    "proposal_id": "146",
+    "chain_id": "kava",
+    "title": "Kava 14 Mainnet Upgrade",
+    "type": "SoftwareUpgrade",
+    "topic": "Feature Addition",
+    "status": "PASSED",
+    "submit_time": "1688169158972",
+    "final_tally_result": {
+      "yes_count": 55,
+      "no_vote_count": 44
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Core Upgrade",
+    "topic_v2_display": "Core Upgrade",
+    "topic_v2_unique": "Protocol - Core Upgrade"
+  },
+  {
+    "proposal_id": "145",
+    "chain_id": "kava",
+    "title": "Increases ATOM incentives reduces multichain asset incentives in Kava Lend",
+    "type": "ParameterChange",
+    "topic": "Economic Parameters",
+    "status": "PASSED",
+    "submit_time": "1686956100399",
+    "final_tally_result": {
+      "abstain_count": 6,
+      "yes_count": 38,
+      "no_count": 1,
+      "no_vote_count": 54
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Parameter Change",
+    "topic_v2_display": "Parameter Change",
+    "topic_v2_unique": "Protocol - Parameter Change"
+  },
+  {
+    "proposal_id": "144",
+    "chain_id": "kava",
+    "title": "Kava Rise payouts for May 2023",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "PASSED",
+    "submit_time": "1686258086777",
+    "final_tally_result": {
+      "abstain_count": 6,
+      "yes_count": 40,
+      "no_vote_count": 53
+    },
+    "type_v2": "Treasury",
+    "topic_v2": "dApp & Tooling Funding",
+    "topic_v2_display": "dApp & Tooling Funding",
+    "topic_v2_unique": "Treasury - dApp & Tooling Funding"
+  },
+  {
+    "proposal_id": "143",
+    "chain_id": "kava",
+    "title": "Adds Axelar WBTC to kava Lend and adjusts incentives",
+    "type": "ParameterChange",
+    "topic": "Economic Parameters",
+    "status": "PASSED",
+    "submit_time": "1686006411818",
+    "final_tally_result": {
+      "yes_count": 38,
+      "abstain_count": 6,
+      "no_count": 1,
+      "no_vote_count": 54
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Parameter Change",
+    "topic_v2_display": "Parameter Change",
+    "topic_v2_unique": "Protocol - Parameter Change"
+  },
+  {
+    "proposal_id": "142",
+    "chain_id": "kava",
+    "title": "Deposit Funds into Kava Lend",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "PASSED",
+    "submit_time": "1685745008010",
+    "final_tally_result": {
+      "yes_count": 31,
+      "abstain_count": 10,
+      "no_count": 1,
+      "no_vote_count": 57
+    },
+    "type_v2": "Treasury",
+    "topic_v2": "dApp & Tooling Funding",
+    "topic_v2_display": "dApp & Tooling Funding",
+    "topic_v2_unique": "Treasury - dApp & Tooling Funding"
+  },
+  {
+    "proposal_id": "141",
+    "chain_id": "kava",
+    "title": "Kava Horizon signaling proposal",
+    "type": "ParameterChange",
+    "topic": "Economic Parameters",
+    "status": "PASSED",
+    "submit_time": "1683924893371",
+    "final_tally_result": {
+      "abstain_count": 12,
+      "no_count": 9,
+      "yes_count": 32,
+      "no_vote_count": 46
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Parameter Change",
+    "topic_v2_display": "Parameter Change",
+    "topic_v2_unique": "Protocol - Parameter Change"
+  },
+  {
+    "proposal_id": "140",
+    "chain_id": "kava",
+    "title": "Kava Rise payouts for April 2023",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "PASSED",
+    "submit_time": "1683665999839",
+    "final_tally_result": {
+      "yes_count": 47,
+      "abstain_count": 7,
+      "no_vote_count": 45
+    },
+    "type_v2": "Treasury",
+    "topic_v2": "dApp & Tooling Funding",
+    "topic_v2_display": "dApp & Tooling Funding",
+    "topic_v2_unique": "Treasury - dApp & Tooling Funding"
+  },
+  {
+    "proposal_id": "139",
+    "chain_id": "kava",
+    "title": "Kava 13 Mainnet Upgrade",
+    "type": "SoftwareUpgrade",
+    "topic": "Feature Addition",
+    "status": "PASSED",
+    "submit_time": "1683644363631",
+    "final_tally_result": {
+      "yes_count": 59,
+      "no_vote_count": 40
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Core Upgrade",
+    "topic_v2_display": "Core Upgrade",
+    "topic_v2_unique": "Protocol - Core Upgrade"
+  },
+  {
+    "proposal_id": "138",
+    "chain_id": "kava",
+    "title": "Deposit Funds into Kava Lend",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "PASSED",
+    "submit_time": "1683141362719",
+    "final_tally_result": {
+      "yes_count": 45,
+      "no_count": 3,
+      "abstain_count": 3,
+      "no_vote_count": 48
+    },
+    "type_v2": "Treasury",
+    "topic_v2": "dApp & Tooling Funding",
+    "topic_v2_display": "dApp & Tooling Funding",
+    "topic_v2_unique": "Treasury - dApp & Tooling Funding"
+  },
+  {
+    "proposal_id": "137",
+    "chain_id": "kava",
+    "title": "Add Kava Origin to Kava Infrastructure and Security Rewards",
+    "type": "ParameterChange",
+    "topic": "Economic Parameters",
+    "status": "PASSED",
+    "submit_time": "1682638562590",
+    "final_tally_result": {
+      "abstain_count": 10,
+      "yes_count": 30,
+      "no_count": 9,
+      "no_vote_count": 50
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Parameter Change",
+    "topic_v2_display": "Parameter Change",
+    "topic_v2_unique": "Protocol - Parameter Change"
+  },
+  {
+    "proposal_id": "136",
+    "chain_id": "kava",
+    "title": "Addition of Multichain USDCwBTCUSDT to Kava Lend",
+    "type": "ParameterChange",
+    "topic": "Economic Parameters",
+    "status": "PASSED",
+    "submit_time": "1681836906941",
+    "final_tally_result": {
+      "yes_count": 49,
+      "abstain_count": 2,
+      "no_vote_count": 48
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Parameter Change",
+    "topic_v2_display": "Parameter Change",
+    "topic_v2_unique": "Protocol - Parameter Change"
+  },
+  {
+    "proposal_id": "135",
+    "chain_id": "kava",
+    "title": "Establish Kava Origin foundation",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "PASSED",
+    "submit_time": "1680819999232",
+    "final_tally_result": {
+      "abstain_count": 18,
+      "no_count": 8,
+      "yes_count": 12,
+      "no_with_veto_count": 6,
+      "no_vote_count": 55
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Signaling",
+    "topic_v2_display": "Signaling",
+    "topic_v2_unique": "Governance - Signaling"
+  },
+  {
+    "proposal_id": "134",
+    "chain_id": "kava",
+    "title": "Kava Rise payouts for March 2023",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "PASSED",
+    "submit_time": "1680669150998",
+    "final_tally_result": {
+      "yes_count": 41,
+      "abstain_count": 5,
+      "no_vote_count": 53
+    },
+    "type_v2": "Treasury",
+    "topic_v2": "dApp & Tooling Funding",
+    "topic_v2_display": "dApp & Tooling Funding",
+    "topic_v2_unique": "Treasury - dApp & Tooling Funding"
+  },
+  {
+    "proposal_id": "133",
+    "chain_id": "kava",
+    "title": "Update stability committee permissions to include USDC Kava Lend market",
+    "type": "Unknown",
+    "topic": "Miscellaneous",
+    "status": "PASSED",
+    "submit_time": "1680626872496",
+    "final_tally_result": {
+      "yes_count": 44,
+      "abstain_count": 2,
+      "no_vote_count": 53
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Signaling",
+    "topic_v2_display": "Signaling",
+    "topic_v2_unique": "Governance - Signaling"
+  },
+  {
+    "proposal_id": "132",
+    "chain_id": "kava",
+    "title": "Deposit Funds into Kava Lend",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "PASSED",
+    "submit_time": "1679508581941",
+    "final_tally_result": {
+      "yes_count": 40,
+      "abstain_count": 5,
+      "no_count": 1,
+      "no_vote_count": 53
+    },
+    "type_v2": "Treasury",
+    "topic_v2": "dApp & Tooling Funding",
+    "topic_v2_display": "dApp & Tooling Funding",
+    "topic_v2_unique": "Treasury - dApp & Tooling Funding"
+  },
+  {
+    "proposal_id": "131",
+    "chain_id": "kava",
+    "title": "Adds Axlear USDC erc20axelarusdc to Kava Lend and updates incentives allocation to include axlUSDC incentives in Kava Lend",
+    "type": "ParameterChange",
+    "topic": "Economic Parameters",
+    "status": "PASSED",
+    "submit_time": "1678896086210",
+    "final_tally_result": {
+      "yes_count": 45,
+      "abstain_count": 1,
+      "no_vote_count": 53
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Parameter Change",
+    "topic_v2_display": "Parameter Change",
+    "topic_v2_unique": "Protocol - Parameter Change"
+  },
+  {
+    "proposal_id": "130",
+    "chain_id": "kava",
+    "title": "Addition of ETH price feed ",
+    "type": "ParameterChange",
+    "topic": "Fee Adjustment",
+    "status": "PASSED",
+    "submit_time": "1678156759724",
+    "final_tally_result": {
+      "yes_count": 42,
+      "abstain_count": 2,
+      "no_vote_count": 55
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Parameter Change",
+    "topic_v2_display": "Parameter Change",
+    "topic_v2_unique": "Protocol - Parameter Change"
+  },
+  {
+    "proposal_id": "129",
+    "chain_id": "kava",
+    "title": "Kava Rise payouts for February 2023",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "PASSED",
+    "submit_time": "1677720506821",
+    "final_tally_result": {
+      "yes_count": 37,
+      "abstain_count": 4,
+      "no_count": 1,
+      "no_vote_count": 57
+    },
+    "type_v2": "Treasury",
+    "topic_v2": "dApp & Tooling Funding",
+    "topic_v2_display": "dApp & Tooling Funding",
+    "topic_v2_unique": "Treasury - dApp & Tooling Funding"
+  },
+  {
+    "proposal_id": "128",
+    "chain_id": "kava",
+    "title": "Support Decentralization and Security on the Kava Network",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "PASSED",
+    "submit_time": "1677621099326",
+    "final_tally_result": {
+      "yes_count": 32,
+      "weighted_vote_count": 1,
+      "no_count": 4,
+      "abstain_count": 5,
+      "no_vote_count": 57
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Security",
+    "topic_v2_display": "Security",
+    "topic_v2_unique": "Protocol - Security"
+  },
+  {
+    "proposal_id": "127",
+    "chain_id": "kava",
+    "title": "Deposit Funds into Kava Lend",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "PASSED",
+    "submit_time": "1677021890425",
+    "final_tally_result": {
+      "yes_count": 38,
+      "abstain_count": 5,
+      "no_vote_count": 56
+    },
+    "type_v2": "Treasury",
+    "topic_v2": "dApp & Tooling Funding",
+    "topic_v2_display": "dApp & Tooling Funding",
+    "topic_v2_unique": "Treasury - dApp & Tooling Funding"
+  },
+  {
+    "proposal_id": "126",
+    "chain_id": "kava",
+    "title": "Adjust incentive rewards and staking incentives",
+    "type": "ParameterChange",
+    "topic": "Staking Parameters",
+    "status": "PASSED",
+    "submit_time": "1677003426642",
+    "final_tally_result": {
+      "yes_count": 35,
+      "abstain_count": 7,
+      "no_count": 3,
+      "no_with_veto_count": 1,
+      "no_vote_count": 53
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Parameter Change",
+    "topic_v2_display": "Parameter Change",
+    "topic_v2_unique": "Protocol - Parameter Change"
+  },
+  {
+    "proposal_id": "125",
+    "chain_id": "kava",
+    "title": "Launch the 1000000 AKT Akash Open Cloud Kava Validator Campaign",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "PASSED",
+    "submit_time": "1676968951886",
+    "final_tally_result": {
+      "yes_count": 34,
+      "abstain_count": 11,
+      "no_vote_count": 54
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Signaling",
+    "topic_v2_display": "Signaling",
+    "topic_v2_unique": "Governance - Signaling"
+  },
+  {
+    "proposal_id": "124",
+    "chain_id": "kava",
+    "title": "Kava 12 Mainnet Upgrade",
+    "type": "SoftwareUpgrade",
+    "topic": "Feature Addition",
+    "status": "PASSED",
+    "submit_time": "1675826227661",
+    "final_tally_result": {
+      "yes_count": 46,
+      "no_vote_count": 53
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Core Upgrade",
+    "topic_v2_display": "Core Upgrade",
+    "topic_v2_unique": "Protocol - Core Upgrade"
+  },
+  {
+    "proposal_id": "123",
+    "chain_id": "kava",
+    "title": "Kava Rise payouts for January 2023",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "PASSED",
+    "submit_time": "1675813761580",
+    "final_tally_result": {
+      "yes_count": 39,
+      "no_count": 1,
+      "abstain_count": 4,
+      "no_vote_count": 55
+    },
+    "type_v2": "Treasury",
+    "topic_v2": "dApp & Tooling Funding",
+    "topic_v2_display": "dApp & Tooling Funding",
+    "topic_v2_unique": "Treasury - dApp & Tooling Funding"
+  },
+  {
+    "proposal_id": "122",
+    "chain_id": "kava",
+    "title": "Kava Rise payouts for Dec 2022",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "PASSED",
+    "submit_time": "1674146777190",
+    "final_tally_result": {
+      "yes_count": 44,
+      "abstain_count": 3,
+      "no_vote_count": 52
+    },
+    "type_v2": "Treasury",
+    "topic_v2": "dApp & Tooling Funding",
+    "topic_v2_display": "dApp & Tooling Funding",
+    "topic_v2_unique": "Treasury - dApp & Tooling Funding"
+  },
+  {
+    "proposal_id": "121",
+    "chain_id": "kava",
+    "title": "Kava 12 Software Upgrade Proposal",
+    "type": "SoftwareUpgrade",
+    "topic": "Feature Addition",
+    "status": "REJECTED",
+    "submit_time": "1674019194908",
+    "final_tally_result": {
+      "no_count": 22,
+      "yes_count": 24,
+      "no_vote_count": 53
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Core Upgrade",
+    "topic_v2_display": "Core Upgrade",
+    "topic_v2_unique": "Protocol - Core Upgrade"
+  },
+  {
+    "proposal_id": "120",
+    "chain_id": "kava",
+    "title": "Kava 12 Software Upgrade Proposal",
+    "type": "SoftwareUpgrade",
+    "topic": "Feature Addition",
+    "status": "REJECTED",
+    "submit_time": "1673404864894",
+    "final_tally_result": {
+      "no_count": 29,
+      "yes_count": 24,
+      "no_vote_count": 46
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Core Upgrade",
+    "topic_v2_display": "Core Upgrade",
+    "topic_v2_unique": "Protocol - Core Upgrade"
+  },
+  {
+    "proposal_id": "119",
+    "chain_id": "kava",
+    "title": "BNB Earn Surge",
+    "type": "ParameterChange",
+    "topic": "Protocol Configuration",
+    "status": "PASSED",
+    "submit_time": "1671747528109",
+    "final_tally_result": {
+      "yes_count": 35,
+      "no_vote_count": 64
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Parameter Change",
+    "topic_v2_display": "Parameter Change",
+    "topic_v2_unique": "Protocol - Parameter Change"
+  },
+  {
+    "proposal_id": "118",
+    "chain_id": "kava",
+    "title": "Remove Community Pool Funds From Earn Vault",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "PASSED",
+    "submit_time": "1671733518082",
+    "final_tally_result": {
+      "yes_count": 32,
+      "abstain_count": 2,
+      "no_count": 1,
+      "no_vote_count": 64
+    },
+    "type_v2": "Treasury",
+    "topic_v2": "Liquidity & Incentives",
+    "topic_v2_display": "Liquidity & Incentives",
+    "topic_v2_unique": "Treasury - Liquidity & Incentives"
+  },
+  {
+    "proposal_id": "117",
+    "chain_id": "kava",
+    "title": "Revised Kava Rise payouts for November 2022",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "PASSED",
+    "submit_time": "1671733179477",
+    "final_tally_result": {
+      "yes_count": 33,
+      "abstain_count": 2,
+      "no_vote_count": 64
+    },
+    "type_v2": "Treasury",
+    "topic_v2": "dApp & Tooling Funding",
+    "topic_v2_display": "dApp & Tooling Funding",
+    "topic_v2_unique": "Treasury - dApp & Tooling Funding"
+  },
+  {
+    "proposal_id": "116",
+    "chain_id": "kava",
+    "title": "Remove Community Pool Funds From Earn Vault",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "REJECTED",
+    "submit_time": "1670899770064",
+    "final_tally_result": {
+      "yes_count": 28,
+      "abstain_count": 8,
+      "no_count": 2,
+      "no_vote_count": 61
+    },
+    "type_v2": "Treasury",
+    "topic_v2": "Liquidity & Incentives",
+    "topic_v2_display": "Liquidity & Incentives",
+    "topic_v2_unique": "Treasury - Liquidity & Incentives"
+  },
+  {
+    "proposal_id": "115",
+    "chain_id": "kava",
+    "title": "Kava Rise payouts for November 2022",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "REJECTED",
+    "submit_time": "1670890380621",
+    "final_tally_result": {
+      "yes_count": 33,
+      "abstain_count": 5,
+      "no_vote_count": 61
+    },
+    "type_v2": "Treasury",
+    "topic_v2": "dApp & Tooling Funding",
+    "topic_v2_display": "dApp & Tooling Funding",
+    "topic_v2_unique": "Treasury - dApp & Tooling Funding"
+  },
+  {
+    "proposal_id": "114",
+    "chain_id": "kava",
+    "title": "Adjust AKT and HARD lend markets",
+    "type": "ParameterChange",
+    "topic": "Economic Parameters",
+    "status": "PASSED",
+    "submit_time": "1670551012996",
+    "final_tally_result": {
+      "yes_count": 39,
+      "abstain_count": 3,
+      "no_vote_count": 57
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Parameter Change",
+    "topic_v2_display": "Parameter Change",
+    "topic_v2_unique": "Protocol - Parameter Change"
+  },
+  {
+    "proposal_id": "113",
+    "chain_id": "kava",
+    "title": "Adjust incentive claim multipliers",
+    "type": "ParameterChange",
+    "topic": "Protocol Configuration",
+    "status": "PASSED",
+    "submit_time": "1669824661156",
+    "final_tally_result": {
+      "yes_count": 34,
+      "abstain_count": 5,
+      "no_vote_count": 60
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Parameter Change",
+    "topic_v2_display": "Parameter Change",
+    "topic_v2_unique": "Protocol - Parameter Change"
+  },
+  {
+    "proposal_id": "112",
+    "chain_id": "kava",
+    "title": "Incentive adjustments for bKAVA Kava Mint and Kava Swap",
+    "type": "ParameterChange",
+    "topic": "Economic Parameters",
+    "status": "PASSED",
+    "submit_time": "1669776993151",
+    "final_tally_result": {
+      "yes_count": 30,
+      "abstain_count": 5,
+      "no_count": 2,
+      "no_vote_count": 62
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Parameter Change",
+    "topic_v2_display": "Parameter Change",
+    "topic_v2_unique": "Protocol - Parameter Change"
+  },
+  {
+    "proposal_id": "111",
+    "chain_id": "kava",
+    "title": "Adds BNB earn vault and adjusts incentives",
+    "type": "ParameterChange",
+    "topic": "Protocol Configuration",
+    "status": "PASSED",
+    "submit_time": "1668723036586",
+    "final_tally_result": {
+      "yes_count": 45,
+      "abstain_count": 2,
+      "no_count": 1,
+      "no_vote_count": 51
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Parameter Change",
+    "topic_v2_display": "Parameter Change",
+    "topic_v2_unique": "Protocol - Parameter Change"
+  },
+  {
+    "proposal_id": "110",
+    "chain_id": "kava",
+    "title": "Revive IBC Client to Oppy Chain",
+    "type": "IBCRelated",
+    "topic": "IBC Transfer",
+    "status": "REJECTED",
+    "submit_time": "1668396965402",
+    "final_tally_result": {
+      "yes_count": 41,
+      "abstain_count": 4,
+      "no_vote_count": 54
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "IBC Management",
+    "topic_v2_display": "IBC Management",
+    "topic_v2_unique": "Ecosystem - IBC Management"
+  },
+  {
+    "proposal_id": "109",
+    "chain_id": "kava",
+    "title": "Revive IBC Client to Terra",
+    "type": "IBCRelated",
+    "topic": "IBC Transfer",
+    "status": "PASSED",
+    "submit_time": "1667678825485",
+    "final_tally_result": {
+      "yes_count": 43,
+      "abstain_count": 4,
+      "no_count": 1,
+      "no_vote_count": 51
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "IBC Management",
+    "topic_v2_display": "IBC Management",
+    "topic_v2_unique": "Ecosystem - IBC Management"
+  },
+  {
+    "proposal_id": "108",
+    "chain_id": "kava",
+    "title": "Kava 11 Testnet Competition Winners Part 2",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "PASSED",
+    "submit_time": "1667606068596",
+    "final_tally_result": {
+      "yes_count": 44,
+      "abstain_count": 2,
+      "no_count": 2,
+      "no_vote_count": 51
+    },
+    "type_v2": "Treasury",
+    "topic_v2": "dApp & Tooling Funding",
+    "topic_v2_display": "dApp & Tooling Funding",
+    "topic_v2_unique": "Treasury - dApp & Tooling Funding"
+  },
+  {
+    "proposal_id": "107",
+    "chain_id": "kava",
+    "title": "Kava 11 Testnet Competition Winners",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "PASSED",
+    "submit_time": "1667605951015",
+    "final_tally_result": {
+      "yes_count": 44,
+      "abstain_count": 2,
+      "no_count": 2,
+      "no_vote_count": 51
+    },
+    "type_v2": "Treasury",
+    "topic_v2": "dApp & Tooling Funding",
+    "topic_v2_display": "dApp & Tooling Funding",
+    "topic_v2_unique": "Treasury - dApp & Tooling Funding"
+  },
+  {
+    "proposal_id": "106",
+    "chain_id": "kava",
+    "title": "Kava Rise October Payouts",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "PASSED",
+    "submit_time": "1667605841628",
+    "final_tally_result": {
+      "yes_count": 39,
+      "abstain_count": 5,
+      "no_count": 4,
+      "no_vote_count": 51
+    },
+    "type_v2": "Treasury",
+    "topic_v2": "dApp & Tooling Funding",
+    "topic_v2_display": "dApp & Tooling Funding",
+    "topic_v2_unique": "Treasury - dApp & Tooling Funding"
+  },
+  {
+    "proposal_id": "105",
+    "chain_id": "kava",
+    "title": "Kava Rise September Payouts",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "PASSED",
+    "submit_time": "1667605731595",
+    "final_tally_result": {
+      "yes_count": 39,
+      "abstain_count": 5,
+      "no_count": 4,
+      "no_vote_count": 51
+    },
+    "type_v2": "Treasury",
+    "topic_v2": "dApp & Tooling Funding",
+    "topic_v2_display": "dApp & Tooling Funding",
+    "topic_v2_unique": "Treasury - dApp & Tooling Funding"
+  },
+  {
+    "proposal_id": "104",
+    "chain_id": "kava",
+    "title": "Adjusts Kava incentive rewards for Swap Lend and Boost and KAVA stakers Adds parameters for Multichain Dai USDT to earn module ",
+    "type": "ParameterChange",
+    "topic": "Economic Parameters",
+    "status": "PASSED",
+    "submit_time": "1667605582325",
+    "final_tally_result": {
+      "yes_count": 39,
+      "no_count": 6,
+      "abstain_count": 4,
+      "no_with_veto_count": 1,
+      "no_vote_count": 49
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Parameter Change",
+    "topic_v2_display": "Parameter Change",
+    "topic_v2_unique": "Protocol - Parameter Change"
+  },
+  {
+    "proposal_id": "103",
+    "chain_id": "kava",
+    "title": "Community pool deposit to Earn",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "PASSED",
+    "submit_time": "1667237653344",
+    "final_tally_result": {
+      "yes_count": 40,
+      "abstain_count": 1,
+      "no_count": 2,
+      "no_vote_count": 56
+    },
+    "type_v2": "Treasury",
+    "topic_v2": "Liquidity & Incentives",
+    "topic_v2_display": "Liquidity & Incentives",
+    "topic_v2_unique": "Treasury - Liquidity & Incentives"
+  },
+  {
+    "proposal_id": "102",
+    "chain_id": "kava",
+    "title": "Kava 11 Software Upgrade Proposal",
+    "type": "SoftwareUpgrade",
+    "topic": "Feature Addition",
+    "status": "PASSED",
+    "submit_time": "1666134444171",
+    "final_tally_result": {
+      "yes_count": 50,
+      "no_count": 1,
+      "abstain_count": 1,
+      "no_vote_count": 47
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Core Upgrade",
+    "topic_v2_display": "Core Upgrade",
+    "topic_v2_unique": "Protocol - Core Upgrade"
+  },
+  {
+    "proposal_id": "101",
+    "chain_id": "kava",
+    "title": "Ethermint Funding Proposal For Past Development Addressed from The Evmos Community to The Kava Community",
+    "type": "CommunityPoolSpend",
+    "topic": "Ecosystem Growth",
+    "status": "REJECTED",
+    "submit_time": "1665506177982",
+    "final_tally_result": {
+      "abstain_count": 19,
+      "yes_count": 5,
+      "no_count": 20,
+      "no_vote_count": 55
+    },
+    "type_v2": "Treasury",
+    "topic_v2": "Community & Marketing Funding",
+    "topic_v2_display": "Community & Marketing Funding",
+    "topic_v2_unique": "Treasury - Community & Marketing Funding"
+  },
+  {
+    "proposal_id": "100",
+    "chain_id": "kava",
+    "title": "Kava 11 Software Upgrade Proposal",
+    "type": "SoftwareUpgrade",
+    "topic": "Feature Addition",
+    "status": "REJECTED",
+    "submit_time": "1664947471415",
+    "final_tally_result": {
+      "no_count": 30,
+      "yes_count": 20,
+      "no_vote_count": 49
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Core Upgrade",
+    "topic_v2_display": "Core Upgrade",
+    "topic_v2_unique": "Protocol - Core Upgrade"
+  },
+  {
+    "proposal_id": "99",
+    "chain_id": "kava",
+    "title": "Kava Pioneer Group 2 Payouts",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "PASSED",
+    "submit_time": "1664289348353",
+    "final_tally_result": {
+      "yes_count": 34,
+      "abstain_count": 1,
+      "no_count": 1,
+      "no_vote_count": 63
+    },
+    "type_v2": "Treasury",
+    "topic_v2": "dApp & Tooling Funding",
+    "topic_v2_display": "dApp & Tooling Funding",
+    "topic_v2_unique": "Treasury - dApp & Tooling Funding"
+  },
+  {
+    "proposal_id": "98",
+    "chain_id": "kava",
+    "title": "Kava Rise August Payouts",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "PASSED",
+    "submit_time": "1664122166991",
+    "final_tally_result": {
+      "yes_count": 35,
+      "abstain_count": 2,
+      "no_count": 2,
+      "no_vote_count": 60
+    },
+    "type_v2": "Treasury",
+    "topic_v2": "dApp & Tooling Funding",
+    "topic_v2_display": "dApp & Tooling Funding",
+    "topic_v2_unique": "Treasury - dApp & Tooling Funding"
+  },
+  {
+    "proposal_id": "97",
+    "chain_id": "kava",
+    "title": "Kava Infrastructure and Security Rewards Signaling Proposal",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "PASSED",
+    "submit_time": "1661472359052",
+    "final_tally_result": {
+      "yes_count": 35,
+      "no_count": 3,
+      "abstain_count": 2,
+      "no_vote_count": 59
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Security",
+    "topic_v2_display": "Security",
+    "topic_v2_unique": "Protocol - Security"
+  },
+  {
+    "proposal_id": "96",
+    "chain_id": "kava",
+    "title": "EVM Infrastructure Funding Proposal",
+    "type": "CommunityPoolSpend",
+    "topic": "Ecosystem Growth",
+    "status": "REJECTED",
+    "submit_time": "1661176078400",
+    "final_tally_result": {
+      "yes_count": 39,
+      "no_count": 4,
+      "abstain_count": 4,
+      "no_vote_count": 52
+    },
+    "type_v2": "Treasury",
+    "topic_v2": "dApp & Tooling Funding",
+    "topic_v2_display": "dApp & Tooling Funding",
+    "topic_v2_unique": "Treasury - dApp & Tooling Funding"
+  },
+  {
+    "proposal_id": "95",
+    "chain_id": "kava",
+    "title": "Kava Pioneer Group 1 Payouts",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "PASSED",
+    "submit_time": "1659960855001",
+    "final_tally_result": {
+      "abstain_count": 5,
+      "yes_count": 36,
+      "no_vote_count": 58
+    },
+    "type_v2": "Treasury",
+    "topic_v2": "dApp & Tooling Funding",
+    "topic_v2_display": "dApp & Tooling Funding",
+    "topic_v2_unique": "Treasury - dApp & Tooling Funding"
+  },
+  {
+    "proposal_id": "94",
+    "chain_id": "kava",
+    "title": "Kava Rise July Payouts",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "PASSED",
+    "submit_time": "1659960810781",
+    "final_tally_result": {
+      "abstain_count": 5,
+      "yes_count": 34,
+      "no_count": 1,
+      "no_vote_count": 59
+    },
+    "type_v2": "Treasury",
+    "topic_v2": "dApp & Tooling Funding",
+    "topic_v2_display": "dApp & Tooling Funding",
+    "topic_v2_unique": "Treasury - dApp & Tooling Funding"
+  },
+  {
+    "proposal_id": "93",
+    "chain_id": "kava",
+    "title": "Kava Rise June Payouts",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "PASSED",
+    "submit_time": "1659960753307",
+    "final_tally_result": {
+      "abstain_count": 4,
+      "yes_count": 35,
+      "no_count": 1,
+      "no_vote_count": 59
+    },
+    "type_v2": "Treasury",
+    "topic_v2": "dApp & Tooling Funding",
+    "topic_v2_display": "dApp & Tooling Funding",
+    "topic_v2_unique": "Treasury - dApp & Tooling Funding"
+  },
+  {
+    "proposal_id": "92",
+    "chain_id": "kava",
+    "title": "Set validator minimum commission rate to 5",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "REJECTED",
+    "submit_time": "1658330010866",
+    "final_tally_result": {
+      "yes_count": 37,
+      "no_count": 5,
+      "abstain_count": 2,
+      "no_vote_count": 55
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Signaling",
+    "topic_v2_display": "Signaling",
+    "topic_v2_unique": "Governance - Signaling"
+  },
+  {
+    "proposal_id": "91",
+    "chain_id": "kava",
+    "title": "Adjust annual inflation for Kava stakers from 135 to 10",
+    "type": "ParameterChange",
+    "topic": "Fee Adjustment",
+    "status": "PASSED",
+    "submit_time": "1658162531437",
+    "final_tally_result": {
+      "yes_count": 38,
+      "no_count": 1,
+      "abstain_count": 2,
+      "no_with_veto_count": 1,
+      "no_vote_count": 57
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Parameter Change",
+    "topic_v2_display": "Parameter Change",
+    "topic_v2_unique": "Protocol - Parameter Change"
+  },
+  {
+    "proposal_id": "90",
+    "chain_id": "kava",
+    "title": "WKAVA competition payouts",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "PASSED",
+    "submit_time": "1656527513429",
+    "final_tally_result": {
+      "yes_count": 44,
+      "no_vote_count": 55
+    },
+    "type_v2": "Treasury",
+    "topic_v2": "dApp & Tooling Funding",
+    "topic_v2_display": "dApp & Tooling Funding",
+    "topic_v2_unique": "Treasury - dApp & Tooling Funding"
+  },
+  {
+    "proposal_id": "89",
+    "chain_id": "kava",
+    "title": "Adjust annual inflation for Kava stakers from 17 to 135",
+    "type": "ParameterChange",
+    "topic": "Fee Adjustment",
+    "status": "PASSED",
+    "submit_time": "1655234665269",
+    "final_tally_result": {
+      "abstain_count": 4,
+      "yes_count": 24,
+      "no_count": 4,
+      "no_with_veto_count": 1,
+      "no_vote_count": 66
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Parameter Change",
+    "topic_v2_display": "Parameter Change",
+    "topic_v2_unique": "Protocol - Parameter Change"
+  },
+  {
+    "proposal_id": "88",
+    "chain_id": "kava",
+    "title": "Adjust annual inflation for Kava stakers from 20 to 17",
+    "type": "ParameterChange",
+    "topic": "Fee Adjustment",
+    "status": "REJECTED",
+    "submit_time": "1655233623687",
+    "final_tally_result": {
+      "no_count": 23,
+      "yes_count": 9,
+      "abstain_count": 2,
+      "no_vote_count": 65
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Parameter Change",
+    "topic_v2_display": "Parameter Change",
+    "topic_v2_unique": "Protocol - Parameter Change"
+  },
+  {
+    "proposal_id": "87",
+    "chain_id": "kava",
+    "title": "Kava Rise  Phase 1 incentives signaling proposal",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "PASSED",
+    "submit_time": "1653933420073",
+    "final_tally_result": {
+      "yes_count": 37,
+      "abstain_count": 2,
+      "no_count": 2,
+      "no_vote_count": 58
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Signaling",
+    "topic_v2_display": "Signaling",
+    "topic_v2_unique": "Governance - Signaling"
+  },
+  {
+    "proposal_id": "86",
+    "chain_id": "kava",
+    "title": "Adjust liquidation penalty in Kava Mint to 25",
+    "type": "ParameterChange",
+    "topic": "Economic Parameters",
+    "status": "PASSED",
+    "submit_time": "1653918656657",
+    "final_tally_result": {
+      "yes_count": 39,
+      "abstain_count": 2,
+      "no_count": 1,
+      "no_vote_count": 57
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Parameter Change",
+    "topic_v2_display": "Parameter Change",
+    "topic_v2_unique": "Protocol - Parameter Change"
+  },
+  {
+    "proposal_id": "85",
+    "chain_id": "kava",
+    "title": "Adjust annual inflation for Kava stakers from 20 to 17",
+    "type": "ParameterChange",
+    "topic": "Fee Adjustment",
+    "status": "PASSED",
+    "submit_time": "1653918570562",
+    "final_tally_result": {
+      "yes_count": 36,
+      "abstain_count": 4,
+      "no_count": 2,
+      "no_vote_count": 57
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Parameter Change",
+    "topic_v2_display": "Parameter Change",
+    "topic_v2_unique": "Protocol - Parameter Change"
+  },
+  {
+    "proposal_id": "84",
+    "chain_id": "kava",
+    "title": "Kava 10 Software Upgrade Proposal",
+    "type": "SoftwareUpgrade",
+    "topic": "Feature Addition",
+    "status": "PASSED",
+    "submit_time": "1652845648210",
+    "final_tally_result": {
+      "yes_count": 58,
+      "no_vote_count": 41
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Core Upgrade",
+    "topic_v2_display": "Core Upgrade",
+    "topic_v2_unique": "Protocol - Core Upgrade"
+  },
+  {
+    "proposal_id": "83",
+    "chain_id": "kava",
+    "title": "Remove UST from Kava Mint",
+    "type": "ParameterChange",
+    "topic": "Economic Parameters",
+    "status": "PASSED",
+    "submit_time": "1652420677269",
+    "final_tally_result": {
+      "yes_count": 44,
+      "no_count": 2,
+      "abstain_count": 3,
+      "no_vote_count": 50
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Parameter Change",
+    "topic_v2_display": "Parameter Change",
+    "topic_v2_unique": "Protocol - Parameter Change"
+  },
+  {
+    "proposal_id": "82",
+    "chain_id": "kava",
+    "title": "Adjust UST in Kava Mint",
+    "type": "ParameterChange",
+    "topic": "Economic Parameters",
+    "status": "REJECTED",
+    "submit_time": "1652420631720",
+    "final_tally_result": {
+      "yes_count": 29,
+      "abstain_count": 7,
+      "no_count": 6,
+      "no_with_veto_count": 1,
+      "no_vote_count": 56
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Parameter Change",
+    "topic_v2_display": "Parameter Change",
+    "topic_v2_unique": "Protocol - Parameter Change"
+  },
+  {
+    "proposal_id": "81",
+    "chain_id": "kava",
+    "title": "Adjust UST in Kava Mint",
+    "type": "ParameterChange",
+    "topic": "Economic Parameters",
+    "status": "PASSED",
+    "submit_time": "1652206407846",
+    "final_tally_result": {
+      "yes_count": 29,
+      "abstain_count": 4,
+      "no_count": 1,
+      "no_vote_count": 65
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Parameter Change",
+    "topic_v2_display": "Parameter Change",
+    "topic_v2_unique": "Protocol - Parameter Change"
+  },
+  {
+    "proposal_id": "80",
+    "chain_id": "kava",
+    "title": "Kava 10 Software Upgrade Proposal",
+    "type": "SoftwareUpgrade",
+    "topic": "Feature Addition",
+    "status": "REJECTED",
+    "submit_time": "1651529942184",
+    "final_tally_result": {
+      "yes_count": 19,
+      "no_count": 35,
+      "abstain_count": 1,
+      "no_vote_count": 44
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Core Upgrade",
+    "topic_v2_display": "Core Upgrade",
+    "topic_v2_unique": "Protocol - Core Upgrade"
+  },
+  {
+    "proposal_id": "79",
+    "chain_id": "kava",
+    "title": "Enable delegators to withdraw to a different address",
+    "type": "ParameterChange",
+    "topic": "Staking Parameters",
+    "status": "PASSED",
+    "submit_time": "1648693487504",
+    "final_tally_result": {
+      "yes_count": 37,
+      "abstain_count": 2,
+      "no_vote_count": 60
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Parameter Change",
+    "topic_v2_display": "Parameter Change",
+    "topic_v2_unique": "Protocol - Parameter Change"
+  },
+  {
+    "proposal_id": "78",
+    "chain_id": "kava",
+    "title": "Create Developer Incentives Fund via the community pool",
+    "type": "ParameterChange",
+    "topic": "Protocol Configuration",
+    "status": "PASSED",
+    "submit_time": "1645656295619",
+    "final_tally_result": {
+      "yes_count": 38,
+      "no_count": 6,
+      "abstain_count": 4,
+      "no_vote_count": 51
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Parameter Change",
+    "topic_v2_display": "Parameter Change",
+    "topic_v2_unique": "Protocol - Parameter Change"
+  },
+  {
+    "proposal_id": "77",
+    "chain_id": "kava",
+    "title": "Increase BUSD debt limit to 200M USDX",
+    "type": "ParameterChange",
+    "topic": "Fee Adjustment",
+    "status": "PASSED",
+    "submit_time": "1645582669390",
+    "final_tally_result": {
+      "yes_count": 40,
+      "abstain_count": 6,
+      "no_count": 1,
+      "no_vote_count": 52
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Parameter Change",
+    "topic_v2_display": "Parameter Change",
+    "topic_v2_unique": "Protocol - Parameter Change"
+  },
+  {
+    "proposal_id": "76",
+    "chain_id": "kava",
+    "title": "Add AKT to Kava Lend",
+    "type": "ParameterChange",
+    "topic": "Economic Parameters",
+    "status": "PASSED",
+    "submit_time": "1645236120842",
+    "final_tally_result": {
+      "yes_count": 45,
+      "abstain_count": 4,
+      "no_vote_count": 50
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Parameter Change",
+    "topic_v2_display": "Parameter Change",
+    "topic_v2_unique": "Protocol - Parameter Change"
+  },
+  {
+    "proposal_id": "75",
+    "chain_id": "kava",
+    "title": "Turn off AKT Stake drop",
+    "type": "ParameterChange",
+    "topic": "Economic Parameters",
+    "status": "PASSED",
+    "submit_time": "1645234374701",
+    "final_tally_result": {
+      "yes_count": 22,
+      "abstain_count": 13,
+      "no_count": 13,
+      "no_vote_count": 51
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Parameter Change",
+    "topic_v2_display": "Parameter Change",
+    "topic_v2_unique": "Protocol - Parameter Change"
+  },
+  {
+    "proposal_id": "74",
+    "chain_id": "kava",
+    "title": "Proposal for 100000 AKT Stake drop",
+    "type": "ParameterChange",
+    "topic": "Economic Parameters",
+    "status": "PASSED",
+    "submit_time": "1645148109445",
+    "final_tally_result": {
+      "yes_count": 45,
+      "abstain_count": 2,
+      "no_count": 1,
+      "no_vote_count": 51
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Parameter Change",
+    "topic_v2_display": "Parameter Change",
+    "topic_v2_unique": "Protocol - Parameter Change"
+  },
+  {
+    "proposal_id": "73",
+    "chain_id": "kava",
+    "title": "Kava LoanWars Payouts",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "PASSED",
+    "submit_time": "1643943248214",
+    "final_tally_result": {
+      "yes_count": 30,
+      "abstain_count": 9,
+      "no_count": 5,
+      "no_vote_count": 55
+    },
+    "type_v2": "Treasury",
+    "topic_v2": "dApp & Tooling Funding",
+    "topic_v2_display": "dApp & Tooling Funding",
+    "topic_v2_unique": "Treasury - dApp & Tooling Funding"
+  },
+  {
+    "proposal_id": "72",
+    "chain_id": "kava",
+    "title": "Kava Swap SZN payouts",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "PASSED",
+    "submit_time": "1643931038301",
+    "final_tally_result": {
+      "yes_count": 34,
+      "abstain_count": 6,
+      "no_count": 1,
+      "no_vote_count": 58
+    },
+    "type_v2": "Treasury",
+    "topic_v2": "dApp & Tooling Funding",
+    "topic_v2_display": "dApp & Tooling Funding",
+    "topic_v2_unique": "Treasury - dApp & Tooling Funding"
+  },
+  {
+    "proposal_id": "71",
+    "chain_id": "kava",
+    "title": "Kava Swap incentivized testnet winner payouts",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "REJECTED",
+    "submit_time": "1643930660454",
+    "final_tally_result": {
+      "no_count": 19,
+      "abstain_count": 13,
+      "yes_count": 4,
+      "no_vote_count": 63
+    },
+    "type_v2": "Treasury",
+    "topic_v2": "dApp & Tooling Funding",
+    "topic_v2_display": "dApp & Tooling Funding",
+    "topic_v2_unique": "Treasury - dApp & Tooling Funding"
+  },
+  {
+    "proposal_id": "70",
+    "chain_id": "kava",
+    "title": "Add UST to Kava Mint",
+    "type": "ParameterChange",
+    "topic": "Economic Parameters",
+    "status": "PASSED",
+    "submit_time": "1643315238787",
+    "final_tally_result": {
+      "yes_count": 32,
+      "abstain_count": 1,
+      "no_vote_count": 66
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Parameter Change",
+    "topic_v2_display": "Parameter Change",
+    "topic_v2_unique": "Protocol - Parameter Change"
+  },
+  {
+    "proposal_id": "69",
+    "chain_id": "kava",
+    "title": "Kava Anniversary Trading Competition winner payouts",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "PASSED",
+    "submit_time": "1641961311493",
+    "final_tally_result": {
+      "no_vote_count": 99
+    },
+    "type_v2": "Treasury",
+    "topic_v2": "dApp & Tooling Funding",
+    "topic_v2_display": "dApp & Tooling Funding",
+    "topic_v2_unique": "Treasury - dApp & Tooling Funding"
+  },
+  {
+    "proposal_id": "68",
+    "chain_id": "kava",
+    "title": "Kava9 Software Upgrade Proposal",
+    "type": "SoftwareUpgrade",
+    "topic": "Feature Addition",
+    "status": "PASSED",
+    "submit_time": "1641868073353",
+    "final_tally_result": {
+      "no_vote_count": 99
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Core Upgrade",
+    "topic_v2_display": "Core Upgrade",
+    "topic_v2_unique": "Protocol - Core Upgrade"
+  },
+  {
+    "proposal_id": "67",
+    "chain_id": "kava",
+    "title": "Increase Kava Lend debt limit for XRPB collateral",
+    "type": "ParameterChange",
+    "topic": "Economic Parameters",
+    "status": "REJECTED",
+    "submit_time": "1637336550897",
+    "final_tally_result": {
+      "no_vote_count": 99
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Parameter Change",
+    "topic_v2_display": "Parameter Change",
+    "topic_v2_unique": "Protocol - Parameter Change"
+  },
+  {
+    "proposal_id": "66",
+    "chain_id": "kava",
+    "title": "Add SWP as a collateral for Kava Mint",
+    "type": "ParameterChange",
+    "topic": "Economic Parameters",
+    "status": "PASSED",
+    "submit_time": "1635437313101",
+    "final_tally_result": {
+      "no_vote_count": 99
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Parameter Change",
+    "topic_v2_display": "Parameter Change",
+    "topic_v2_unique": "Protocol - Parameter Change"
+  },
+  {
+    "proposal_id": "65",
+    "chain_id": "kava",
+    "title": "Add swpusdx TWAPS to pricefeed",
+    "type": "ParameterChange",
+    "topic": "Economic Parameters",
+    "status": "PASSED",
+    "submit_time": "1633385864432",
+    "final_tally_result": {
+      "no_vote_count": 99
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Parameter Change",
+    "topic_v2_display": "Parameter Change",
+    "topic_v2_unique": "Protocol - Parameter Change"
+  },
+  {
+    "proposal_id": "64",
+    "chain_id": "kava",
+    "title": "Kava Swap Trading Competition winner payouts",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "PASSED",
+    "submit_time": "1633035538226",
+    "final_tally_result": {
+      "no_vote_count": 99
+    },
+    "type_v2": "Treasury",
+    "topic_v2": "dApp & Tooling Funding",
+    "topic_v2_display": "dApp & Tooling Funding",
+    "topic_v2_unique": "Treasury - dApp & Tooling Funding"
+  },
+  {
+    "proposal_id": "63",
+    "chain_id": "kava",
+    "title": "Kava Swap incentivized testnet winner payouts",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "REJECTED",
+    "submit_time": "1632752166431",
+    "final_tally_result": {
+      "no_vote_count": 99
+    },
+    "type_v2": "Treasury",
+    "topic_v2": "dApp & Tooling Funding",
+    "topic_v2_display": "dApp & Tooling Funding",
+    "topic_v2_unique": "Treasury - dApp & Tooling Funding"
+  },
+  {
+    "proposal_id": "62",
+    "chain_id": "kava",
+    "title": "Kava Swap incentivized testnet winner payouts",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "PASSED",
+    "submit_time": "1631652737898",
+    "final_tally_result": {
+      "no_vote_count": 99
+    },
+    "type_v2": "Treasury",
+    "topic_v2": "dApp & Tooling Funding",
+    "topic_v2_display": "dApp & Tooling Funding",
+    "topic_v2_unique": "Treasury - dApp & Tooling Funding"
+  },
+  {
+    "proposal_id": "61",
+    "chain_id": "kava",
+    "title": "Kava Swap SWP 100000 Trading Competition",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "PASSED",
+    "submit_time": "1629979601431",
+    "final_tally_result": {
+      "no_vote_count": 99
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Signaling",
+    "topic_v2_display": "Signaling",
+    "topic_v2_unique": "Governance - Signaling"
+  },
+  {
+    "proposal_id": "60",
+    "chain_id": "kava",
+    "title": "Kava8 Software Upgrade Proposal",
+    "type": "SoftwareUpgrade",
+    "topic": "Feature Addition",
+    "status": "PASSED",
+    "submit_time": "1629438131649",
+    "final_tally_result": {
+      "no_vote_count": 99
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Core Upgrade",
+    "topic_v2_display": "Core Upgrade",
+    "topic_v2_unique": "Protocol - Core Upgrade"
+  },
+  {
+    "proposal_id": "59",
+    "chain_id": "kava",
+    "title": "Kava 8 Upgrade Signaling Proposal",
+    "type": "TextProposal",
+    "topic": "Community Decision",
+    "status": "PASSED",
+    "submit_time": "1628738000495",
+    "final_tally_result": {
+      "no_vote_count": 99
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Core Upgrade",
+    "topic_v2_display": "Core Upgrade",
+    "topic_v2_unique": "Protocol - Core Upgrade"
+  },
+  {
+    "proposal_id": "58",
+    "chain_id": "kava",
+    "title": "SAFU Fund Payouts for Missing Rewards from Kava7 Migration Part 4 of 4",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "PASSED",
+    "submit_time": "1626981544928",
+    "final_tally_result": {
+      "no_vote_count": 99
+    },
+    "type_v2": "Treasury",
+    "topic_v2": "dApp & Tooling Funding",
+    "topic_v2_display": "dApp & Tooling Funding",
+    "topic_v2_unique": "Treasury - dApp & Tooling Funding"
+  },
+  {
+    "proposal_id": "57",
+    "chain_id": "kava",
+    "title": "SAFU Fund Payouts for Missing Rewards from Kava7 Migration Part 3 of 4",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "PASSED",
+    "submit_time": "1626981006005",
+    "final_tally_result": {
+      "no_vote_count": 99
+    },
+    "type_v2": "Treasury",
+    "topic_v2": "dApp & Tooling Funding",
+    "topic_v2_display": "dApp & Tooling Funding",
+    "topic_v2_unique": "Treasury - dApp & Tooling Funding"
+  },
+  {
+    "proposal_id": "56",
+    "chain_id": "kava",
+    "title": "SAFU Fund Payouts for Missing Rewards from Kava7 Migration Part 2 of 4",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "PASSED",
+    "submit_time": "1626980739310",
+    "final_tally_result": {
+      "no_vote_count": 99
+    },
+    "type_v2": "Treasury",
+    "topic_v2": "dApp & Tooling Funding",
+    "topic_v2_display": "dApp & Tooling Funding",
+    "topic_v2_unique": "Treasury - dApp & Tooling Funding"
+  },
+  {
+    "proposal_id": "55",
+    "chain_id": "kava",
+    "title": "SAFU Fund Payouts for Missing Rewards from Kava7 Migration Part 1 of 4",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "PASSED",
+    "submit_time": "1626980572859",
+    "final_tally_result": {
+      "no_vote_count": 99
+    },
+    "type_v2": "Treasury",
+    "topic_v2": "dApp & Tooling Funding",
+    "topic_v2_display": "dApp & Tooling Funding",
+    "topic_v2_unique": "Treasury - dApp & Tooling Funding"
+  },
+  {
+    "proposal_id": "54",
+    "chain_id": "kava",
+    "title": "Decrease BUSDA CDP APY to 0",
+    "type": "ParameterChange",
+    "topic": "Protocol Configuration",
+    "status": "PASSED",
+    "submit_time": "1626455802224",
+    "final_tally_result": {
+      "no_vote_count": 99
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Parameter Change",
+    "topic_v2_display": "Parameter Change",
+    "topic_v2_unique": "Protocol - Parameter Change"
+  },
+  {
+    "proposal_id": "53",
+    "chain_id": "kava",
+    "title": "Add 30 minute TWAP pricefeed for USDX",
+    "type": "ParameterChange",
+    "topic": "Fee Adjustment",
+    "status": "PASSED",
+    "submit_time": "1626366527868",
+    "final_tally_result": {
+      "no_vote_count": 99
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Parameter Change",
+    "topic_v2_display": "Parameter Change",
+    "topic_v2_unique": "Protocol - Parameter Change"
+  },
+  {
+    "proposal_id": "52",
+    "chain_id": "kava",
+    "title": "Adjust HARD protocol supply and borrow rewards",
+    "type": "ParameterChange",
+    "topic": "Protocol Configuration",
+    "status": "PASSED",
+    "submit_time": "1625079818566",
+    "final_tally_result": {
+      "no_vote_count": 99
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Parameter Change",
+    "topic_v2_display": "Parameter Change",
+    "topic_v2_unique": "Protocol - Parameter Change"
+  },
+  {
+    "proposal_id": "51",
+    "chain_id": "kava",
+    "title": "Decrease APYs for CDPS from 5 to 25",
+    "type": "ParameterChange",
+    "topic": "Protocol Configuration",
+    "status": "PASSED",
+    "submit_time": "1625079174907",
+    "final_tally_result": {
+      "no_vote_count": 99
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Parameter Change",
+    "topic_v2_display": "Parameter Change",
+    "topic_v2_unique": "Protocol - Parameter Change"
+  },
+  {
+    "proposal_id": "50",
+    "chain_id": "kava",
+    "title": "Migrates Hard protocol to 30min TWAP pricefeeds",
+    "type": "ParameterChange",
+    "topic": "Protocol Configuration",
+    "status": "PASSED",
+    "submit_time": "1624541437828",
+    "final_tally_result": {
+      "no_vote_count": 99
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Parameter Change",
+    "topic_v2_display": "Parameter Change",
+    "topic_v2_unique": "Protocol - Parameter Change"
+  },
+  {
+    "proposal_id": "49",
+    "chain_id": "kava",
+    "title": "SAFU Fund Payouts for May 19th Liquidations",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "PASSED",
+    "submit_time": "1624541104475",
+    "final_tally_result": {
+      "no_vote_count": 99
+    },
+    "type_v2": "Treasury",
+    "topic_v2": "dApp & Tooling Funding",
+    "topic_v2_display": "dApp & Tooling Funding",
+    "topic_v2_unique": "Treasury - dApp & Tooling Funding"
+  },
+  {
+    "proposal_id": "48",
+    "chain_id": "kava",
+    "title": "Complete SAFU fund funding by reducing community pool and inflation",
+    "type": "ParameterChange",
+    "topic": "Fee Adjustment",
+    "status": "PASSED",
+    "submit_time": "1623631363808",
+    "final_tally_result": {
+      "no_vote_count": 99
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Parameter Change",
+    "topic_v2_display": "Parameter Change",
+    "topic_v2_unique": "Protocol - Parameter Change"
+  },
+  {
+    "proposal_id": "47",
+    "chain_id": "kava",
+    "title": "Removes KAVA rewards for USDX minters and redirects those rewards to Hard protocol",
+    "type": "ParameterChange",
+    "topic": "Economic Parameters",
+    "status": "PASSED",
+    "submit_time": "1622738589783",
+    "final_tally_result": {
+      "no_vote_count": 99
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Parameter Change",
+    "topic_v2_display": "Parameter Change",
+    "topic_v2_unique": "Protocol - Parameter Change"
+  },
+  {
+    "proposal_id": "46",
+    "chain_id": "kava",
+    "title": "Halves KAVA rewards for USDX minters and redirects those rewards to Hard protocol",
+    "type": "ParameterChange",
+    "topic": "Economic Parameters",
+    "status": "PASSED",
+    "submit_time": "1621868357893",
+    "final_tally_result": {
+      "no_vote_count": 99
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Parameter Change",
+    "topic_v2_display": "Parameter Change",
+    "topic_v2_unique": "Protocol - Parameter Change"
+  },
+  {
+    "proposal_id": "45",
+    "chain_id": "kava",
+    "title": "Create SAFU fund via the community pool",
+    "type": "ParameterChange",
+    "topic": "Protocol Configuration",
+    "status": "PASSED",
+    "submit_time": "1620256334631",
+    "final_tally_result": {
+      "no_vote_count": 99
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Parameter Change",
+    "topic_v2_display": "Parameter Change",
+    "topic_v2_unique": "Protocol - Parameter Change"
+  },
+  {
+    "proposal_id": "44",
+    "chain_id": "kava",
+    "title": "Add KAVA rewards for USDX suppliers to Hard protocol",
+    "type": "ParameterChange",
+    "topic": "Economic Parameters",
+    "status": "PASSED",
+    "submit_time": "1618934845297",
+    "final_tally_result": {
+      "no_vote_count": 99
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Parameter Change",
+    "topic_v2_display": "Parameter Change",
+    "topic_v2_unique": "Protocol - Parameter Change"
+  },
+  {
+    "proposal_id": "43",
+    "chain_id": "kava",
+    "title": "Decrease HARD rewards for KAVA delegators",
+    "type": "ParameterChange",
+    "topic": "Economic Parameters",
+    "status": "PASSED",
+    "submit_time": "1618333535826",
+    "final_tally_result": {
+      "no_vote_count": 99
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Parameter Change",
+    "topic_v2_display": "Parameter Change",
+    "topic_v2_unique": "Protocol - Parameter Change"
+  },
+  {
+    "proposal_id": "42",
+    "chain_id": "kava",
+    "title": "Increase Minimum Staking Inflation Param",
+    "type": "ParameterChange",
+    "topic": "Economic Parameters",
+    "status": "PASSED",
+    "submit_time": "1618332983840",
+    "final_tally_result": {
+      "no_vote_count": 99
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Parameter Change",
+    "topic_v2_display": "Parameter Change",
+    "topic_v2_unique": "Protocol - Parameter Change"
+  },
+  {
+    "proposal_id": "41",
+    "chain_id": "kava",
+    "title": "Kava 7 Upgrade Proposal",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "PASSED",
+    "submit_time": "1617214625836",
+    "final_tally_result": {
+      "no_vote_count": 99
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Core Upgrade",
+    "topic_v2_display": "Core Upgrade",
+    "topic_v2_unique": "Protocol - Core Upgrade"
+  },
+  {
+    "proposal_id": "40",
+    "chain_id": "kava",
+    "title": "Kava 51 Upgrade Proposal",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "REJECTED",
+    "submit_time": "1616557352912",
+    "final_tally_result": {
+      "no_vote_count": 99
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Core Upgrade",
+    "topic_v2_display": "Core Upgrade",
+    "topic_v2_unique": "Protocol - Core Upgrade"
+  },
+  {
+    "proposal_id": "39",
+    "chain_id": "kava",
+    "title": "Kava 51 Upgrade Proposal",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "REJECTED",
+    "submit_time": "1615918851198",
+    "final_tally_result": {
+      "no_vote_count": 99
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Core Upgrade",
+    "topic_v2_display": "Core Upgrade",
+    "topic_v2_unique": "Protocol - Core Upgrade"
+  },
+  {
+    "proposal_id": "38",
+    "chain_id": "kava",
+    "title": "Add USDX incentives for HBTC update BTCB incentives",
+    "type": "ParameterChange",
+    "topic": "Protocol Configuration",
+    "status": "PASSED",
+    "submit_time": "1615252126714",
+    "final_tally_result": {
+      "no_vote_count": 99
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Parameter Change",
+    "topic_v2_display": "Parameter Change",
+    "topic_v2_unique": "Protocol - Parameter Change"
+  },
+  {
+    "proposal_id": "37",
+    "chain_id": "kava",
+    "title": "Kava 5 Upgrade Proposal",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "PASSED",
+    "submit_time": "1614114622693",
+    "final_tally_result": {
+      "no_vote_count": 99
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Core Upgrade",
+    "topic_v2_display": "Core Upgrade",
+    "topic_v2_unique": "Protocol - Core Upgrade"
+  },
+  {
+    "proposal_id": "36",
+    "chain_id": "kava",
+    "title": "Increase Minimum Staking Inflation Param",
+    "type": "ParameterChange",
+    "topic": "Economic Parameters",
+    "status": "PASSED",
+    "submit_time": "1613496601186",
+    "final_tally_result": {
+      "no_vote_count": 99
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Parameter Change",
+    "topic_v2_display": "Parameter Change",
+    "topic_v2_unique": "Protocol - Parameter Change"
+  },
+  {
+    "proposal_id": "35",
+    "chain_id": "kava",
+    "title": "Increase USDX debt limits",
+    "type": "ParameterChange",
+    "topic": "Fee Adjustment",
+    "status": "PASSED",
+    "submit_time": "1613496241683",
+    "final_tally_result": {
+      "no_vote_count": 99
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Parameter Change",
+    "topic_v2_display": "Parameter Change",
+    "topic_v2_unique": "Protocol - Parameter Change"
+  },
+  {
+    "proposal_id": "34",
+    "chain_id": "kava",
+    "title": "Add HBTC to the list of allowed CDP collaterals",
+    "type": "ParameterChange",
+    "topic": "Protocol Configuration",
+    "status": "PASSED",
+    "submit_time": "1612926256938",
+    "final_tally_result": {
+      "no_vote_count": 99
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Parameter Change",
+    "topic_v2_display": "Parameter Change",
+    "topic_v2_unique": "Protocol - Parameter Change"
+  },
+  {
+    "proposal_id": "33",
+    "chain_id": "kava",
+    "title": "Add HBTC to Kava",
+    "type": "ParameterChange",
+    "topic": "Economic Parameters",
+    "status": "PASSED",
+    "submit_time": "1612222773320",
+    "final_tally_result": {
+      "no_vote_count": 99
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Parameter Change",
+    "topic_v2_display": "Parameter Change",
+    "topic_v2_unique": "Protocol - Parameter Change"
+  },
+  {
+    "proposal_id": "32",
+    "chain_id": "kava",
+    "title": "Update USDX minting incentives",
+    "type": "ParameterChange",
+    "topic": "Economic Parameters",
+    "status": "PASSED",
+    "submit_time": "1610145434431",
+    "final_tally_result": {
+      "no_vote_count": 99
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Parameter Change",
+    "topic_v2_display": "Parameter Change",
+    "topic_v2_unique": "Protocol - Parameter Change"
+  },
+  {
+    "proposal_id": "31",
+    "chain_id": "kava",
+    "title": "Adjust HARD incentives for liquidity providers",
+    "type": "ParameterChange",
+    "topic": "Fee Adjustment",
+    "status": "PASSED",
+    "submit_time": "1610145308635",
+    "final_tally_result": {
+      "no_vote_count": 99
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Parameter Change",
+    "topic_v2_display": "Parameter Change",
+    "topic_v2_unique": "Protocol - Parameter Change"
+  },
+  {
+    "proposal_id": "30",
+    "chain_id": "kava",
+    "title": "Reduce BUSD incentives by 50",
+    "type": "ParameterChange",
+    "topic": "Protocol Configuration",
+    "status": "PASSED",
+    "submit_time": "1608231233581",
+    "final_tally_result": {
+      "no_vote_count": 99
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Parameter Change",
+    "topic_v2_display": "Parameter Change",
+    "topic_v2_unique": "Protocol - Parameter Change"
+  },
+  {
+    "proposal_id": "29",
+    "chain_id": "kava",
+    "title": "Add HARD to the list of allowed CDP collaterals",
+    "type": "ParameterChange",
+    "topic": "Protocol Configuration",
+    "status": "PASSED",
+    "submit_time": "1608231120530",
+    "final_tally_result": {
+      "no_vote_count": 99
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Parameter Change",
+    "topic_v2_display": "Parameter Change",
+    "topic_v2_unique": "Protocol - Parameter Change"
+  },
+  {
+    "proposal_id": "28",
+    "chain_id": "kava",
+    "title": "Add HARD to the pricefeed",
+    "type": "ParameterChange",
+    "topic": "Fee Adjustment",
+    "status": "PASSED",
+    "submit_time": "1607402306964",
+    "final_tally_result": {
+      "no_vote_count": 99
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Parameter Change",
+    "topic_v2_display": "Parameter Change",
+    "topic_v2_unique": "Protocol - Parameter Change"
+  },
+  {
+    "proposal_id": "27",
+    "chain_id": "kava",
+    "title": "Add USDX Incentives for KAVA",
+    "type": "ParameterChange",
+    "topic": "Economic Parameters",
+    "status": "PASSED",
+    "submit_time": "1607360447155",
+    "final_tally_result": {
+      "no_vote_count": 99
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Parameter Change",
+    "topic_v2_display": "Parameter Change",
+    "topic_v2_unique": "Protocol - Parameter Change"
+  },
+  {
+    "proposal_id": "26",
+    "chain_id": "kava",
+    "title": "Set BUSD interest rate to 5 APY",
+    "type": "ParameterChange",
+    "topic": "Fee Adjustment",
+    "status": "PASSED",
+    "submit_time": "1607359420947",
+    "final_tally_result": {
+      "no_vote_count": 99
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Parameter Change",
+    "topic_v2_display": "Parameter Change",
+    "topic_v2_unique": "Protocol - Parameter Change"
+  },
+  {
+    "proposal_id": "25",
+    "chain_id": "kava",
+    "title": "Add KAVA to the list of allowed CDP collaterals",
+    "type": "ParameterChange",
+    "topic": "Economic Parameters",
+    "status": "PASSED",
+    "submit_time": "1606330414815",
+    "final_tally_result": {
+      "no_vote_count": 99
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Parameter Change",
+    "topic_v2_display": "Parameter Change",
+    "topic_v2_unique": "Protocol - Parameter Change"
+  },
+  {
+    "proposal_id": "24",
+    "chain_id": "kava",
+    "title": "A USDX Incentives for XRP",
+    "type": "ParameterChange",
+    "topic": "Economic Parameters",
+    "status": "PASSED",
+    "submit_time": "1606328974529",
+    "final_tally_result": {
+      "no_vote_count": 99
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Parameter Change",
+    "topic_v2_display": "Parameter Change",
+    "topic_v2_unique": "Protocol - Parameter Change"
+  },
+  {
+    "proposal_id": "23",
+    "chain_id": "kava",
+    "title": "Add assets to hard protocol distribution",
+    "type": "ParameterChange",
+    "topic": "Protocol Configuration",
+    "status": "PASSED",
+    "submit_time": "1605150717570",
+    "final_tally_result": {
+      "no_vote_count": 99
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Parameter Change",
+    "topic_v2_display": "Parameter Change",
+    "topic_v2_unique": "Protocol - Parameter Change"
+  },
+  {
+    "proposal_id": "22",
+    "chain_id": "kava",
+    "title": "Update CDP debt limits",
+    "type": "ParameterChange",
+    "topic": "Protocol Configuration",
+    "status": "PASSED",
+    "submit_time": "1604979426778",
+    "final_tally_result": {
+      "no_vote_count": 99
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Parameter Change",
+    "topic_v2_display": "Parameter Change",
+    "topic_v2_unique": "Protocol - Parameter Change"
+  },
+  {
+    "proposal_id": "21",
+    "chain_id": "kava",
+    "title": "A USDX Incentives for BTC",
+    "type": "ParameterChange",
+    "topic": "Fee Adjustment",
+    "status": "PASSED",
+    "submit_time": "1604932098663",
+    "final_tally_result": {
+      "no_vote_count": 99
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Parameter Change",
+    "topic_v2_display": "Parameter Change",
+    "topic_v2_unique": "Protocol - Parameter Change"
+  },
+  {
+    "proposal_id": "20",
+    "chain_id": "kava",
+    "title": "A USDX Incentives for BUSD",
+    "type": "ParameterChange",
+    "topic": "Fee Adjustment",
+    "status": "PASSED",
+    "submit_time": "1604325460332",
+    "final_tally_result": {
+      "no_vote_count": 99
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Parameter Change",
+    "topic_v2_display": "Parameter Change",
+    "topic_v2_unique": "Protocol - Parameter Change"
+  },
+  {
+    "proposal_id": "19",
+    "chain_id": "kava",
+    "title": "A USDX Incentives for BUSD",
+    "type": "ParameterChange",
+    "topic": "Fee Adjustment",
+    "status": "REJECTED",
+    "submit_time": "1603548684087",
+    "final_tally_result": {
+      "no_vote_count": 99
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Parameter Change",
+    "topic_v2_display": "Parameter Change",
+    "topic_v2_unique": "Protocol - Parameter Change"
+  },
+  {
+    "proposal_id": "18",
+    "chain_id": "kava",
+    "title": "A USDX Incentives for BUSD",
+    "type": "ParameterChange",
+    "topic": "Fee Adjustment",
+    "status": "REJECTED",
+    "submit_time": "1602943515541",
+    "final_tally_result": {
+      "no_vote_count": 99
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Parameter Change",
+    "topic_v2_display": "Parameter Change",
+    "topic_v2_unique": "Protocol - Parameter Change"
+  },
+  {
+    "proposal_id": "17",
+    "chain_id": "kava",
+    "title": "Kava 4 Upgrade Proposal",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "PASSED",
+    "submit_time": "1601526022581",
+    "final_tally_result": {
+      "no_vote_count": 99
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Core Upgrade",
+    "topic_v2_display": "Core Upgrade",
+    "topic_v2_unique": "Protocol - Core Upgrade"
+  },
+  {
+    "proposal_id": "16",
+    "chain_id": "kava",
+    "title": "Harvest Proposal",
+    "type": "TextProposal",
+    "topic": "Project Funding",
+    "status": "PASSED",
+    "submit_time": "1600739622631",
+    "final_tally_result": {
+      "no_vote_count": 99
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Signaling",
+    "topic_v2_display": "Signaling",
+    "topic_v2_unique": "Governance - Signaling"
+  },
+  {
+    "proposal_id": "15",
+    "chain_id": "kava",
+    "title": "Activate usdx incentive rewards",
+    "type": "ParameterChange",
+    "topic": "Protocol Configuration",
+    "status": "PASSED",
+    "submit_time": "1594821602207",
+    "final_tally_result": {
+      "no_vote_count": 99
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Parameter Change",
+    "topic_v2_display": "Parameter Change",
+    "topic_v2_unique": "Protocol - Parameter Change"
+  },
+  {
+    "proposal_id": "11",
+    "chain_id": "kava",
+    "title": "Activate usdx incentive rewards",
+    "type": "ParameterChange",
+    "topic": "Protocol Configuration",
+    "status": "REJECTED",
+    "submit_time": "1593616127061",
+    "final_tally_result": {
+      "no_vote_count": 99
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Parameter Change",
+    "topic_v2_display": "Parameter Change",
+    "topic_v2_unique": "Protocol - Parameter Change"
+  },
+  {
+    "proposal_id": "10",
+    "chain_id": "kava",
+    "title": "Activate usdx incentive rewards",
+    "type": "ParameterChange",
+    "topic": "Protocol Configuration",
+    "status": "REJECTED",
+    "submit_time": "1592401805887",
+    "final_tally_result": {
+      "no_vote_count": 99
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Parameter Change",
+    "topic_v2_display": "Parameter Change",
+    "topic_v2_unique": "Protocol - Parameter Change"
+  },
+  {
+    "proposal_id": "8",
+    "chain_id": "kava",
+    "title": "Kava 3 Upgrade Proposal B",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "PASSED",
+    "submit_time": "1590551869001",
+    "final_tally_result": {
+      "no_vote_count": 99
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Core Upgrade",
+    "topic_v2_display": "Core Upgrade",
+    "topic_v2_unique": "Protocol - Core Upgrade"
+  },
+  {
+    "proposal_id": "7",
+    "chain_id": "kava",
+    "title": "Kava 3 Upgrade Proposal",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "REJECTED",
+    "submit_time": "1589744965511",
+    "final_tally_result": {
+      "no_vote_count": 99
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Core Upgrade",
+    "topic_v2_display": "Core Upgrade",
+    "topic_v2_unique": "Protocol - Core Upgrade"
+  },
+  {
+    "proposal_id": "6",
+    "chain_id": "kava",
+    "title": "Nominate Kava Safety Committee",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "PASSED",
+    "submit_time": "1589328625092",
+    "final_tally_result": {
+      "no_vote_count": 99
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Process & Policy",
+    "topic_v2_display": "Process & Policy",
+    "topic_v2_unique": "Governance - Process & Policy"
+  },
+  {
+    "proposal_id": "5",
+    "chain_id": "kava",
+    "title": "Nominate Kava Stability Committee",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "PASSED",
+    "submit_time": "1589328228610",
+    "final_tally_result": {
+      "no_vote_count": 99
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Process & Policy",
+    "topic_v2_display": "Process & Policy",
+    "topic_v2_unique": "Governance - Process & Policy"
+  },
+  {
+    "proposal_id": "4",
+    "chain_id": "kava",
+    "title": "BNB Collateral and USDX Minting Rewards",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "PASSED",
+    "submit_time": "1589327742006",
+    "final_tally_result": {
+      "no_vote_count": 99
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Signaling",
+    "topic_v2_display": "Signaling",
+    "topic_v2_unique": "Governance - Signaling"
+  },
+  {
+    "proposal_id": "3",
+    "chain_id": "kava",
+    "title": "Nominate Kava Oracle Providers",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "PASSED",
+    "submit_time": "1589327283536",
+    "final_tally_result": {
+      "no_vote_count": 99
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Signaling",
+    "topic_v2_display": "Signaling",
+    "topic_v2_unique": "Governance - Signaling"
+  },
+  {
+    "proposal_id": "2",
+    "chain_id": "kava",
+    "title": "Kava Incentives Proposal",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "PASSED",
+    "submit_time": "1584727427344",
+    "final_tally_result": {
+      "no_vote_count": 99
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Signaling",
+    "topic_v2_display": "Signaling",
+    "topic_v2_unique": "Governance - Signaling"
+  },
+  {
+    "proposal_id": "1",
+    "chain_id": "kava",
+    "title": "Enable Transactions Param Change",
+    "type": "ParameterChange",
+    "topic": "Fee Adjustment",
+    "status": "PASSED",
+    "submit_time": "1573929075707",
+    "final_tally_result": {
+      "no_vote_count": 99
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Parameter Change",
+    "topic_v2_display": "Parameter Change",
+    "topic_v2_unique": "Protocol - Parameter Change"
+  }
+]

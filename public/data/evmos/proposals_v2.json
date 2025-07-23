@@ -1,0 +1,4155 @@
+[
+  {
+    "proposal_id": "318",
+    "chain_id": "evmos",
+    "title": "Ethereum Airdrop ",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "REJECTED",
+    "submit_time": "1730081540181",
+    "final_tally_result": {
+      "no_with_veto_count": 20
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Spam & Malicious",
+    "topic_v2_display": "Spam & Malicious",
+    "topic_v2_unique": "Governance - Spam & Malicious"
+  },
+  {
+    "proposal_id": "317",
+    "chain_id": "evmos",
+    "title": "Evmos Mainnet v2010 Upgrade",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "REJECTED",
+    "submit_time": "1730081206015",
+    "final_tally_result": {
+      "no_with_veto_count": 20
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Core Upgrade",
+    "topic_v2_display": "Core Upgrade",
+    "topic_v2_unique": "Protocol - Core Upgrade"
+  },
+  {
+    "proposal_id": "316",
+    "chain_id": "evmos",
+    "title": "Evmos Mainnet v2000 Upgrade",
+    "type": "SoftwareUpgrade",
+    "topic": "Major Release",
+    "status": "PASSED",
+    "submit_time": "1729692262470",
+    "final_tally_result": {
+      "yes_count": 19,
+      "abstain_count": 1
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Core Upgrade",
+    "topic_v2_display": "Core Upgrade",
+    "topic_v2_unique": "Protocol - Core Upgrade"
+  },
+  {
+    "proposal_id": "315",
+    "chain_id": "evmos",
+    "title": "Get Evmos Credit Card ",
+    "type": "Unknown",
+    "topic": "Unclassified",
+    "status": "REJECTED",
+    "submit_time": "1729111730020",
+    "final_tally_result": {
+      "no_with_veto_count": 19,
+      "no_count": 1
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Signaling",
+    "topic_v2_display": "Signaling",
+    "topic_v2_unique": "Governance - Signaling"
+  },
+  {
+    "proposal_id": "314",
+    "chain_id": "evmos",
+    "title": "ECP3 Renewal of the Evmos DAO Governance Workstream  2024",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "PASSED",
+    "submit_time": "1728673137644",
+    "final_tally_result": {
+      "yes_count": 10,
+      "abstain_count": 9,
+      "no_count": 1
+    },
+    "type_v2": "Treasury",
+    "topic_v2": "dApp & Tooling Funding",
+    "topic_v2_display": "dApp & Tooling Funding",
+    "topic_v2_unique": "Treasury - dApp & Tooling Funding"
+  },
+  {
+    "proposal_id": "313",
+    "chain_id": "evmos",
+    "title": "Fast and reliable public RPC  powered by Lava",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "PASSED",
+    "submit_time": "1727697303507",
+    "final_tally_result": {
+      "abstain_count": 6,
+      "yes_count": 8,
+      "no_count": 6
+    },
+    "type_v2": "Treasury",
+    "topic_v2": "dApp & Tooling Funding",
+    "topic_v2_display": "dApp & Tooling Funding",
+    "topic_v2_unique": "Treasury - dApp & Tooling Funding"
+  },
+  {
+    "proposal_id": "312",
+    "chain_id": "evmos",
+    "title": "USDC Airdrop   Evmos Airdrop ",
+    "type": "Unknown",
+    "topic": "Unclassified",
+    "status": "REJECTED",
+    "submit_time": "1726455746858",
+    "final_tally_result": {
+      "no_with_veto_count": 20
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Spam & Malicious",
+    "topic_v2_display": "Spam & Malicious",
+    "topic_v2_unique": "Governance - Spam & Malicious"
+  },
+  {
+    "proposal_id": "311",
+    "chain_id": "evmos",
+    "title": "Layerzero x Cosmos airdrop",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "REJECTED",
+    "submit_time": "1726309081186",
+    "final_tally_result": {
+      "no_with_veto_count": 20
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Spam & Malicious",
+    "topic_v2_display": "Spam & Malicious",
+    "topic_v2_unique": "Governance - Spam & Malicious"
+  },
+  {
+    "proposal_id": "309",
+    "chain_id": "evmos",
+    "title": "Evmos Mainnet v1920 Upgrade",
+    "type": "SoftwareUpgrade",
+    "topic": "Major Release",
+    "status": "PASSED",
+    "submit_time": "1724319579333",
+    "final_tally_result": {
+      "yes_count": 19,
+      "weighted_vote_count": 1
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Core Upgrade",
+    "topic_v2_display": "Core Upgrade",
+    "topic_v2_unique": "Protocol - Core Upgrade"
+  },
+  {
+    "proposal_id": "308",
+    "chain_id": "evmos",
+    "title": "EVMOS Airdrop   Drop Liquid Staking ",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "REJECTED",
+    "submit_time": "1724087947869",
+    "final_tally_result": {
+      "no_with_veto_count": 19,
+      "weighted_vote_count": 1
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Spam & Malicious",
+    "topic_v2_display": "Spam & Malicious",
+    "topic_v2_unique": "Governance - Spam & Malicious"
+  },
+  {
+    "proposal_id": "307",
+    "chain_id": "evmos",
+    "title": "Chain Regenesis Signaling Proposal",
+    "type": "TextProposal",
+    "topic": "Community Decision",
+    "status": "PASSED",
+    "submit_time": "1724060657977",
+    "final_tally_result": {
+      "yes_count": 56,
+      "no_count": 7,
+      "abstain_count": 11,
+      "weighted_vote_count": 1,
+      "no_with_veto_count": 1,
+      "no_vote_count": 39
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Signaling",
+    "topic_v2_display": "Signaling",
+    "topic_v2_unique": "Governance - Signaling"
+  },
+  {
+    "proposal_id": "306",
+    "chain_id": "evmos",
+    "title": "Reduce Max Validators to 20",
+    "type": "ParameterChange",
+    "topic": "Staking Parameters",
+    "status": "PASSED",
+    "submit_time": "1724060500623",
+    "final_tally_result": {
+      "weighted_vote_count": 1,
+      "yes_count": 23,
+      "no_count": 43,
+      "abstain_count": 9,
+      "no_with_veto_count": 2,
+      "no_vote_count": 37
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Parameter Change",
+    "topic_v2_display": "Parameter Change",
+    "topic_v2_unique": "Protocol - Parameter Change"
+  },
+  {
+    "proposal_id": "305",
+    "chain_id": "evmos",
+    "title": "Inferno 60  Continuation of Forge Incentives",
+    "type": "CommunityPoolSpend",
+    "topic": "Ecosystem Growth",
+    "status": "REJECTED",
+    "submit_time": "1723865907554",
+    "final_tally_result": {
+      "no_count": 38,
+      "abstain_count": 22,
+      "weighted_vote_count": 1,
+      "yes_count": 10,
+      "no_with_veto_count": 1,
+      "no_vote_count": 44
+    },
+    "type_v2": "Treasury",
+    "topic_v2": "Liquidity & Incentives",
+    "topic_v2_display": "Liquidity & Incentives",
+    "topic_v2_unique": "Treasury - Liquidity & Incentives"
+  },
+  {
+    "proposal_id": "304",
+    "chain_id": "evmos",
+    "title": "Reduce Inflation from 5 to 1",
+    "type": "ParameterChange",
+    "topic": "Economic Parameters",
+    "status": "PASSED",
+    "submit_time": "1722927434052",
+    "final_tally_result": {
+      "yes_count": 39,
+      "abstain_count": 18,
+      "no_count": 14,
+      "weighted_vote_count": 1,
+      "no_vote_count": 49
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Parameter Change",
+    "topic_v2_display": "Parameter Change",
+    "topic_v2_unique": "Protocol - Parameter Change"
+  },
+  {
+    "proposal_id": "303",
+    "chain_id": "evmos",
+    "title": "Evmos Mainnet v1910 Upgrade",
+    "type": "SoftwareUpgrade",
+    "topic": "Major Release",
+    "status": "PASSED",
+    "submit_time": "1722871065895",
+    "final_tally_result": {
+      "yes_count": 68,
+      "abstain_count": 2,
+      "weighted_vote_count": 1,
+      "no_vote_count": 50
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Core Upgrade",
+    "topic_v2_display": "Core Upgrade",
+    "topic_v2_unique": "Protocol - Core Upgrade"
+  },
+  {
+    "proposal_id": "302",
+    "chain_id": "evmos",
+    "title": "ATOM Airdrop   FREE Airdrop ",
+    "type": "Unknown",
+    "topic": "Unclassified",
+    "status": "REJECTED",
+    "submit_time": "1720731294825",
+    "final_tally_result": {
+      "no_with_veto_count": 53,
+      "no_count": 1,
+      "weighted_vote_count": 1,
+      "yes_count": 1,
+      "no_vote_count": 69
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Spam & Malicious",
+    "topic_v2_display": "Spam & Malicious",
+    "topic_v2_unique": "Governance - Spam & Malicious"
+  },
+  {
+    "proposal_id": "301",
+    "chain_id": "evmos",
+    "title": "EVMOS Airdrop  Last Chance ",
+    "type": "Unknown",
+    "topic": "Unclassified",
+    "status": "REJECTED",
+    "submit_time": "1720578586196",
+    "final_tally_result": {
+      "no_with_veto_count": 60,
+      "no_count": 2,
+      "weighted_vote_count": 1,
+      "no_vote_count": 63
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Spam & Malicious",
+    "topic_v2_display": "Spam & Malicious",
+    "topic_v2_unique": "Governance - Spam & Malicious"
+  },
+  {
+    "proposal_id": "300",
+    "chain_id": "evmos",
+    "title": "Evmos Collapse ",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "REJECTED",
+    "submit_time": "1720057298578",
+    "final_tally_result": {
+      "no_with_veto_count": 55,
+      "no_count": 1,
+      "weighted_vote_count": 1,
+      "no_vote_count": 72
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Signaling",
+    "topic_v2_display": "Signaling",
+    "topic_v2_unique": "Governance - Signaling"
+  },
+  {
+    "proposal_id": "299",
+    "chain_id": "evmos",
+    "title": "Discover New Version EVMOS",
+    "type": "Unknown",
+    "topic": "Unclassified",
+    "status": "REJECTED",
+    "submit_time": "1718805295369",
+    "final_tally_result": {
+      "no_with_veto_count": 62,
+      "no_count": 1,
+      "weighted_vote_count": 1,
+      "no_vote_count": 68
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Spam & Malicious",
+    "topic_v2_display": "Spam & Malicious",
+    "topic_v2_unique": "Governance - Spam & Malicious"
+  },
+  {
+    "proposal_id": "298",
+    "chain_id": "evmos",
+    "title": "nBTC Airdrop",
+    "type": "Unknown",
+    "topic": "Unclassified",
+    "status": "REJECTED",
+    "submit_time": "1718749816408",
+    "final_tally_result": {
+      "no_with_veto_count": 58,
+      "no_count": 2,
+      "weighted_vote_count": 1,
+      "no_vote_count": 71
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Spam & Malicious",
+    "topic_v2_display": "Spam & Malicious",
+    "topic_v2_unique": "Governance - Spam & Malicious"
+  },
+  {
+    "proposal_id": "297",
+    "chain_id": "evmos",
+    "title": "Update EVM params",
+    "type": "ParameterChange",
+    "topic": "Fee Adjustment",
+    "status": "PASSED",
+    "submit_time": "1718127368385",
+    "final_tally_result": {
+      "yes_count": 81,
+      "abstain_count": 3,
+      "weighted_vote_count": 1,
+      "no_vote_count": 46
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Parameter Change",
+    "topic_v2_display": "Parameter Change",
+    "topic_v2_unique": "Protocol - Parameter Change"
+  },
+  {
+    "proposal_id": "295",
+    "chain_id": "evmos",
+    "title": "Combined Proposal for Leveraging Liquidity and Continuation of Liquidity Mining Incentives",
+    "type": "CommunityPoolSpend",
+    "topic": "Ecosystem Growth",
+    "status": "REJECTED",
+    "submit_time": "1718050669017",
+    "final_tally_result": {
+      "no_count": 43,
+      "abstain_count": 33,
+      "no_with_veto_count": 1,
+      "yes_count": 5,
+      "weighted_vote_count": 1,
+      "no_vote_count": 49
+    },
+    "type_v2": "Treasury",
+    "topic_v2": "Liquidity & Incentives",
+    "topic_v2_display": "Liquidity & Incentives",
+    "topic_v2_unique": "Treasury - Liquidity & Incentives"
+  },
+  {
+    "proposal_id": "294",
+    "chain_id": "evmos",
+    "title": "120000000 Evmos Airdrop ",
+    "type": "Unknown",
+    "topic": "Unclassified",
+    "status": "REJECTED",
+    "submit_time": "1717438460918",
+    "final_tally_result": {
+      "no_with_veto_count": 68,
+      "no_count": 2,
+      "weighted_vote_count": 1,
+      "no_vote_count": 60
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Spam & Malicious",
+    "topic_v2_display": "Spam & Malicious",
+    "topic_v2_unique": "Governance - Spam & Malicious"
+  },
+  {
+    "proposal_id": "293",
+    "chain_id": "evmos",
+    "title": "ATOM Airdrop    Get 3000 Today",
+    "type": "Unknown",
+    "topic": "Unclassified",
+    "status": "REJECTED",
+    "submit_time": "1717095716631",
+    "final_tally_result": {
+      "no_with_veto_count": 66,
+      "weighted_vote_count": 1,
+      "no_count": 1,
+      "no_vote_count": 65
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Spam & Malicious",
+    "topic_v2_display": "Spam & Malicious",
+    "topic_v2_unique": "Governance - Spam & Malicious"
+  },
+  {
+    "proposal_id": "292",
+    "chain_id": "evmos",
+    "title": " Pandora Airdrop   Evmos 20 Version",
+    "type": "Unknown",
+    "topic": "Unclassified",
+    "status": "REJECTED",
+    "submit_time": "1716566039917",
+    "final_tally_result": {
+      "no_with_veto_count": 65,
+      "weighted_vote_count": 1,
+      "no_count": 1,
+      "yes_count": 1,
+      "no_vote_count": 75
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Spam & Malicious",
+    "topic_v2_display": "Spam & Malicious",
+    "topic_v2_unique": "Governance - Spam & Malicious"
+  },
+  {
+    "proposal_id": "291",
+    "chain_id": "evmos",
+    "title": "Pandora Evmos  ",
+    "type": "Unknown",
+    "topic": "Unclassified",
+    "status": "REJECTED",
+    "submit_time": "1715958853149",
+    "final_tally_result": {
+      "no_with_veto_count": 62,
+      "weighted_vote_count": 1,
+      "no_count": 2,
+      "abstain_count": 1,
+      "no_vote_count": 78
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Signaling",
+    "topic_v2_display": "Signaling",
+    "topic_v2_unique": "Governance - Signaling"
+  },
+  {
+    "proposal_id": "290",
+    "chain_id": "evmos",
+    "title": "Inferno 50  Continuing Forge LP Incentives",
+    "type": "CommunityPoolSpend",
+    "topic": "Ecosystem Growth",
+    "status": "PASSED",
+    "submit_time": "1715742521496",
+    "final_tally_result": {
+      "abstain_count": 30,
+      "yes_count": 44,
+      "no_count": 2,
+      "weighted_vote_count": 1,
+      "no_vote_count": 67
+    },
+    "type_v2": "Treasury",
+    "topic_v2": "Liquidity & Incentives",
+    "topic_v2_display": "Liquidity & Incentives",
+    "topic_v2_unique": "Treasury - Liquidity & Incentives"
+  },
+  {
+    "proposal_id": "289",
+    "chain_id": "evmos",
+    "title": "Evmos Airdrop   Cosmos Hub Proposal ",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "REJECTED",
+    "submit_time": "1714747069864",
+    "final_tally_result": {
+      "no_with_veto_count": 69,
+      "no_count": 2,
+      "weighted_vote_count": 1,
+      "no_vote_count": 72
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Spam & Malicious",
+    "topic_v2_display": "Spam & Malicious",
+    "topic_v2_unique": "Governance - Spam & Malicious"
+  },
+  {
+    "proposal_id": "288",
+    "chain_id": "evmos",
+    "title": "VOTE YES and GET 100 ATOM ",
+    "type": "Unknown",
+    "topic": "Unclassified",
+    "status": "REJECTED",
+    "submit_time": "1714741912538",
+    "final_tally_result": {
+      "no_with_veto_count": 69,
+      "no_count": 3,
+      "weighted_vote_count": 1,
+      "no_vote_count": 71
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Signaling",
+    "topic_v2_display": "Signaling",
+    "topic_v2_unique": "Governance - Signaling"
+  },
+  {
+    "proposal_id": "287",
+    "chain_id": "evmos",
+    "title": "ATOM Airdrop  ",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "REJECTED",
+    "submit_time": "1714594351597",
+    "final_tally_result": {
+      "no_with_veto_count": 63,
+      "weighted_vote_count": 1,
+      "no_count": 1,
+      "no_vote_count": 79
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Spam & Malicious",
+    "topic_v2_display": "Spam & Malicious",
+    "topic_v2_unique": "Governance - Spam & Malicious"
+  },
+  {
+    "proposal_id": "286",
+    "chain_id": "evmos",
+    "title": "Repurpose Dormant Funds as Protocol Owned Liquidity",
+    "type": "Unknown",
+    "topic": "Unclassified",
+    "status": "PASSED",
+    "submit_time": "1713925450678",
+    "final_tally_result": {
+      "yes_count": 56,
+      "abstain_count": 21,
+      "weighted_vote_count": 1,
+      "no_vote_count": 66
+    },
+    "type_v2": "Governance",
+    "topic_v2": "dApp & Tooling Funding",
+    "topic_v2_display": "dApp & Tooling Funding",
+    "topic_v2_unique": "Governance - dApp & Tooling Funding"
+  },
+  {
+    "proposal_id": "285",
+    "chain_id": "evmos",
+    "title": "New Validator",
+    "type": "Unknown",
+    "topic": "Unclassified",
+    "status": "REJECTED",
+    "submit_time": "1713820019554",
+    "final_tally_result": {
+      "no_with_veto_count": 69,
+      "yes_count": 2,
+      "no_count": 2,
+      "weighted_vote_count": 1,
+      "no_vote_count": 70
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Signaling",
+    "topic_v2_display": "Signaling",
+    "topic_v2_unique": "Governance - Signaling"
+  },
+  {
+    "proposal_id": "284",
+    "chain_id": "evmos",
+    "title": "New Evmos Version ",
+    "type": "Unknown",
+    "topic": "Unclassified",
+    "status": "REJECTED",
+    "submit_time": "1713736774441",
+    "final_tally_result": {
+      "no_with_veto_count": 71,
+      "no_count": 4,
+      "weighted_vote_count": 1,
+      "yes_count": 1,
+      "no_vote_count": 67
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Signaling",
+    "topic_v2_display": "Signaling",
+    "topic_v2_unique": "Governance - Signaling"
+  },
+  {
+    "proposal_id": "283",
+    "chain_id": "evmos",
+    "title": "Utilizing Community Owned TASHI",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "PASSED",
+    "submit_time": "1713459841975",
+    "final_tally_result": {
+      "abstain_count": 44,
+      "yes_count": 34,
+      "no_count": 1,
+      "no_with_veto_count": 1,
+      "weighted_vote_count": 1,
+      "no_vote_count": 63
+    },
+    "type_v2": "Treasury",
+    "topic_v2": "Community & Marketing Funding",
+    "topic_v2_display": "Community & Marketing Funding",
+    "topic_v2_unique": "Treasury - Community & Marketing Funding"
+  },
+  {
+    "proposal_id": "282",
+    "chain_id": "evmos",
+    "title": " Evmos  Airdrop   Cosmos Hub Proposal ",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "REJECTED",
+    "submit_time": "1713192044682",
+    "final_tally_result": {
+      "no_with_veto_count": 68,
+      "weighted_vote_count": 1,
+      "no_count": 2,
+      "no_vote_count": 73
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Spam & Malicious",
+    "topic_v2_display": "Spam & Malicious",
+    "topic_v2_unique": "Governance - Spam & Malicious"
+  },
+  {
+    "proposal_id": "281",
+    "chain_id": "evmos",
+    "title": "Namada x Cosmos airdrop",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "REJECTED",
+    "submit_time": "1712913316028",
+    "final_tally_result": {
+      "no_with_veto_count": 65,
+      "no_count": 2,
+      "weighted_vote_count": 1,
+      "no_vote_count": 76
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Spam & Malicious",
+    "topic_v2_display": "Spam & Malicious",
+    "topic_v2_unique": "Governance - Spam & Malicious"
+  },
+  {
+    "proposal_id": "280",
+    "chain_id": "evmos",
+    "title": "Namada x Cosmos airdrop",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "REJECTED",
+    "submit_time": "1712867150260",
+    "final_tally_result": {
+      "no_count": 2,
+      "no_with_veto_count": 66,
+      "weighted_vote_count": 1,
+      "no_vote_count": 75
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Spam & Malicious",
+    "topic_v2_display": "Spam & Malicious",
+    "topic_v2_unique": "Governance - Spam & Malicious"
+  },
+  {
+    "proposal_id": "279",
+    "chain_id": "evmos",
+    "title": "Namada x Cosmos airdrop",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "REJECTED",
+    "submit_time": "1712749136063",
+    "final_tally_result": {
+      "no_with_veto_count": 70,
+      "no_count": 2,
+      "weighted_vote_count": 1,
+      "no_vote_count": 71
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Spam & Malicious",
+    "topic_v2_display": "Spam & Malicious",
+    "topic_v2_unique": "Governance - Spam & Malicious"
+  },
+  {
+    "proposal_id": "278",
+    "chain_id": "evmos",
+    "title": "Evmos Airdrop   Cosmos Hub Proposal ",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "REJECTED",
+    "submit_time": "1712674076090",
+    "final_tally_result": {
+      "no_with_veto_count": 72,
+      "no_count": 2,
+      "weighted_vote_count": 1,
+      "no_vote_count": 69
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Spam & Malicious",
+    "topic_v2_display": "Spam & Malicious",
+    "topic_v2_unique": "Governance - Spam & Malicious"
+  },
+  {
+    "proposal_id": "277",
+    "chain_id": "evmos",
+    "title": "Reliable and scalable public RPC  powered by Lava ",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "PASSED",
+    "submit_time": "1712243070477",
+    "final_tally_result": {
+      "yes_count": 75,
+      "abstain_count": 14,
+      "weighted_vote_count": 1,
+      "no_with_veto_count": 1,
+      "no_count": 3,
+      "no_vote_count": 50
+    },
+    "type_v2": "Treasury",
+    "topic_v2": "dApp & Tooling Funding",
+    "topic_v2_display": "dApp & Tooling Funding",
+    "topic_v2_unique": "Treasury - dApp & Tooling Funding"
+  },
+  {
+    "proposal_id": "275",
+    "chain_id": "evmos",
+    "title": "ECP3 Renewal of the Evmos DAO Governance Workstream",
+    "type": "CommunityPoolSpend",
+    "topic": "Ecosystem Growth",
+    "status": "PASSED",
+    "submit_time": "1712158982381",
+    "final_tally_result": {
+      "yes_count": 78,
+      "abstain_count": 15,
+      "weighted_vote_count": 1,
+      "no_vote_count": 50
+    },
+    "type_v2": "Treasury",
+    "topic_v2": "dApp & Tooling Funding",
+    "topic_v2_display": "dApp & Tooling Funding",
+    "topic_v2_unique": "Treasury - dApp & Tooling Funding"
+  },
+  {
+    "proposal_id": "274",
+    "chain_id": "evmos",
+    "title": "Evmos Airdrop ",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "REJECTED",
+    "submit_time": "1711934333968",
+    "final_tally_result": {
+      "no_with_veto_count": 73,
+      "abstain_count": 1,
+      "no_count": 5,
+      "weighted_vote_count": 1,
+      "yes_count": 1,
+      "no_vote_count": 63
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Spam & Malicious",
+    "topic_v2_display": "Spam & Malicious",
+    "topic_v2_unique": "Governance - Spam & Malicious"
+  },
+  {
+    "proposal_id": "273",
+    "chain_id": "evmos",
+    "title": "Leveraging Liquidity for Evmos Assets Tashis Strategic Initiative for Vault Expansion",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "PASSED",
+    "submit_time": "1711479524943",
+    "final_tally_result": {
+      "yes_count": 75,
+      "abstain_count": 16,
+      "weighted_vote_count": 1,
+      "no_count": 1,
+      "no_vote_count": 51
+    },
+    "type_v2": "Treasury",
+    "topic_v2": "Liquidity & Incentives",
+    "topic_v2_display": "Liquidity & Incentives",
+    "topic_v2_unique": "Treasury - Liquidity & Incentives"
+  },
+  {
+    "proposal_id": "272",
+    "chain_id": "evmos",
+    "title": "Proposal for Continuation of Liquidity Mining Incentives Phase 4",
+    "type": "CommunityPoolSpend",
+    "topic": "Ecosystem Growth",
+    "status": "PASSED",
+    "submit_time": "1710853357780",
+    "final_tally_result": {
+      "yes_count": 73,
+      "abstain_count": 11,
+      "no_count": 1,
+      "weighted_vote_count": 1,
+      "no_vote_count": 58
+    },
+    "type_v2": "Treasury",
+    "topic_v2": "Liquidity & Incentives",
+    "topic_v2_display": "Liquidity & Incentives",
+    "topic_v2_unique": "Treasury - Liquidity & Incentives"
+  },
+  {
+    "proposal_id": "271",
+    "chain_id": "evmos",
+    "title": "Update Active Precompiles",
+    "type": "ParameterChange",
+    "topic": "Economic Parameters",
+    "status": "PASSED",
+    "submit_time": "1708696702005",
+    "final_tally_result": {
+      "yes_count": 95,
+      "weighted_vote_count": 1,
+      "no_vote_count": 48
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Parameter Change",
+    "topic_v2_display": "Parameter Change",
+    "topic_v2_unique": "Protocol - Parameter Change"
+  },
+  {
+    "proposal_id": "270",
+    "chain_id": "evmos",
+    "title": "Inferno 40  Continuing Forge LP Incentives",
+    "type": "CommunityPoolSpend",
+    "topic": "Ecosystem Growth",
+    "status": "PASSED",
+    "submit_time": "1707930265680",
+    "final_tally_result": {
+      "yes_count": 89,
+      "abstain_count": 8,
+      "weighted_vote_count": 1,
+      "no_vote_count": 46
+    },
+    "type_v2": "Treasury",
+    "topic_v2": "Liquidity & Incentives",
+    "topic_v2_display": "Liquidity & Incentives",
+    "topic_v2_unique": "Treasury - Liquidity & Incentives"
+  },
+  {
+    "proposal_id": "269",
+    "chain_id": "evmos",
+    "title": "Register CROWDP Token as an IBC Coin",
+    "type": "TokenRelated",
+    "topic": "Token Registration",
+    "status": "PASSED",
+    "submit_time": "1706024659644",
+    "final_tally_result": {
+      "yes_count": 89,
+      "abstain_count": 3,
+      "no_count": 1,
+      "weighted_vote_count": 1,
+      "no_vote_count": 50
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "IBC Management",
+    "topic_v2_display": "IBC Management",
+    "topic_v2_unique": "Ecosystem - IBC Management"
+  },
+  {
+    "proposal_id": "268",
+    "chain_id": "evmos",
+    "title": "Register BERLIN Token as an IBC Coin",
+    "type": "TokenRelated",
+    "topic": "Token Registration",
+    "status": "PASSED",
+    "submit_time": "1706024161582",
+    "final_tally_result": {
+      "yes_count": 92,
+      "abstain_count": 3,
+      "no_count": 1,
+      "weighted_vote_count": 1,
+      "no_vote_count": 47
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "IBC Management",
+    "topic_v2_display": "IBC Management",
+    "topic_v2_unique": "Ecosystem - IBC Management"
+  },
+  {
+    "proposal_id": "267",
+    "chain_id": "evmos",
+    "title": "Align Inflation Distribution Between Staking Rewards And Community Pool",
+    "type": "ParameterChange",
+    "topic": "Economic Parameters",
+    "status": "PASSED",
+    "submit_time": "1705406079632",
+    "final_tally_result": {
+      "abstain_count": 33,
+      "yes_count": 42,
+      "no_count": 19,
+      "weighted_vote_count": 1,
+      "no_vote_count": 49
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Parameter Change",
+    "topic_v2_display": "Parameter Change",
+    "topic_v2_unique": "Protocol - Parameter Change"
+  },
+  {
+    "proposal_id": "266",
+    "chain_id": "evmos",
+    "title": "Generate USDC Revenue by Lending Part of EVMOS Treasury through Covered Calls",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "PASSED",
+    "submit_time": "1704797607445",
+    "final_tally_result": {
+      "yes_count": 66,
+      "no_count": 9,
+      "abstain_count": 18,
+      "weighted_vote_count": 1,
+      "no_vote_count": 50
+    },
+    "type_v2": "Treasury",
+    "topic_v2": "dApp & Tooling Funding",
+    "topic_v2_display": "dApp & Tooling Funding",
+    "topic_v2_unique": "Treasury - dApp & Tooling Funding"
+  },
+  {
+    "proposal_id": "265",
+    "chain_id": "evmos",
+    "title": "Evmos Mainnet v1600 Upgrade",
+    "type": "SoftwareUpgrade",
+    "topic": "Major Release",
+    "status": "PASSED",
+    "submit_time": "1704471238624",
+    "final_tally_result": {
+      "yes_count": 111,
+      "weighted_vote_count": 1,
+      "no_vote_count": 32
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Core Upgrade",
+    "topic_v2_display": "Core Upgrade",
+    "topic_v2_unique": "Protocol - Core Upgrade"
+  },
+  {
+    "proposal_id": "264",
+    "chain_id": "evmos",
+    "title": "Community Owned Liquidity on UniDex 500k Evmos",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "PASSED",
+    "submit_time": "1704213560713",
+    "final_tally_result": {
+      "abstain_count": 38,
+      "yes_count": 67,
+      "weighted_vote_count": 1,
+      "no_vote_count": 38
+    },
+    "type_v2": "Treasury",
+    "topic_v2": "Liquidity & Incentives",
+    "topic_v2_display": "Liquidity & Incentives",
+    "topic_v2_unique": "Treasury - Liquidity & Incentives"
+  },
+  {
+    "proposal_id": "263",
+    "chain_id": "evmos",
+    "title": "Proposal B Transfer 136M EVMOS from the Usage Incentives Pool to the Community Pool",
+    "type": "TextProposal",
+    "topic": "Ecosystem Growth",
+    "status": "REJECTED",
+    "submit_time": "1704207379534",
+    "final_tally_result": {
+      "abstain_count": 16,
+      "no_count": 72,
+      "yes_count": 18,
+      "weighted_vote_count": 1,
+      "no_with_veto_count": 1,
+      "no_vote_count": 36
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Signaling",
+    "topic_v2_display": "Signaling",
+    "topic_v2_unique": "Governance - Signaling"
+  },
+  {
+    "proposal_id": "262",
+    "chain_id": "evmos",
+    "title": "Proposal A Burn 136M EVMOS from the Usage Incentives Pool",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "PASSED",
+    "submit_time": "1704207235132",
+    "final_tally_result": {
+      "yes_count": 88,
+      "abstain_count": 10,
+      "no_count": 9,
+      "weighted_vote_count": 1,
+      "no_vote_count": 36
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Signaling",
+    "topic_v2_display": "Signaling",
+    "topic_v2_unique": "Governance - Signaling"
+  },
+  {
+    "proposal_id": "261",
+    "chain_id": "evmos",
+    "title": "Enhancing Liquidity for TASHI Token and Ecosystem Growth ICHI Vaults on Tashi and Steer Incentives",
+    "type": "CommunityPoolSpend",
+    "topic": "Ecosystem Growth",
+    "status": "PASSED",
+    "submit_time": "1703865633997",
+    "final_tally_result": {
+      "abstain_count": 42,
+      "yes_count": 38,
+      "no_count": 14,
+      "weighted_vote_count": 1,
+      "no_vote_count": 49
+    },
+    "type_v2": "Treasury",
+    "topic_v2": "Liquidity & Incentives",
+    "topic_v2_display": "Liquidity & Incentives",
+    "topic_v2_unique": "Treasury - Liquidity & Incentives"
+  },
+  {
+    "proposal_id": "260",
+    "chain_id": "evmos",
+    "title": "Continuation of USDT Incentives",
+    "type": "CommunityPoolSpend",
+    "topic": "Ecosystem Growth",
+    "status": "PASSED",
+    "submit_time": "1703834295561",
+    "final_tally_result": {
+      "yes_count": 87,
+      "abstain_count": 7,
+      "no_count": 2,
+      "weighted_vote_count": 1,
+      "no_vote_count": 47
+    },
+    "type_v2": "Treasury",
+    "topic_v2": "Liquidity & Incentives",
+    "topic_v2_display": "Liquidity & Incentives",
+    "topic_v2_unique": "Treasury - Liquidity & Incentives"
+  },
+  {
+    "proposal_id": "259",
+    "chain_id": "evmos",
+    "title": "Proposal for Extending Liquidity Mining for Tashi on Evmos A 3Month Plan",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "PASSED",
+    "submit_time": "1703103170901",
+    "final_tally_result": {
+      "yes_count": 48,
+      "no_count": 2,
+      "abstain_count": 37,
+      "weighted_vote_count": 1,
+      "no_with_veto_count": 1,
+      "no_vote_count": 55
+    },
+    "type_v2": "Treasury",
+    "topic_v2": "Liquidity & Incentives",
+    "topic_v2_display": "Liquidity & Incentives",
+    "topic_v2_unique": "Treasury - Liquidity & Incentives"
+  },
+  {
+    "proposal_id": "258",
+    "chain_id": "evmos",
+    "title": "Burning Mechanism",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "PASSED",
+    "submit_time": "1702045256710",
+    "final_tally_result": {
+      "yes_count": 104,
+      "abstain_count": 3,
+      "weighted_vote_count": 1,
+      "no_vote_count": 36
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Signaling",
+    "topic_v2_display": "Signaling",
+    "topic_v2_unique": "Governance - Signaling"
+  },
+  {
+    "proposal_id": "256",
+    "chain_id": "evmos",
+    "title": "Catalyst  UniDex Perpetual Options Trading Incentives Program",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "PASSED",
+    "submit_time": "1702039193623",
+    "final_tally_result": {
+      "yes_count": 62,
+      "abstain_count": 37,
+      "no_with_veto_count": 1,
+      "no_count": 2,
+      "weighted_vote_count": 1,
+      "no_vote_count": 41
+    },
+    "type_v2": "Treasury",
+    "topic_v2": "Liquidity & Incentives",
+    "topic_v2_display": "Liquidity & Incentives",
+    "topic_v2_unique": "Treasury - Liquidity & Incentives"
+  },
+  {
+    "proposal_id": "255",
+    "chain_id": "evmos",
+    "title": "Atom Airdrop   Limited Supply ",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "REJECTED",
+    "submit_time": "1701796534384",
+    "final_tally_result": {
+      "no_with_veto_count": 77,
+      "no_count": 4,
+      "yes_count": 1,
+      "abstain_count": 1,
+      "weighted_vote_count": 1,
+      "no_vote_count": 60
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Spam & Malicious",
+    "topic_v2_display": "Spam & Malicious",
+    "topic_v2_unique": "Governance - Spam & Malicious"
+  },
+  {
+    "proposal_id": "254",
+    "chain_id": "evmos",
+    "title": "Phase 3 Lunar Launch",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "PASSED",
+    "submit_time": "1701708369097",
+    "final_tally_result": {
+      "abstain_count": 10,
+      "yes_count": 85,
+      "no_count": 7,
+      "weighted_vote_count": 1,
+      "no_with_veto_count": 1,
+      "no_vote_count": 40
+    },
+    "type_v2": "Treasury",
+    "topic_v2": "dApp & Tooling Funding",
+    "topic_v2_display": "dApp & Tooling Funding",
+    "topic_v2_unique": "Treasury - dApp & Tooling Funding"
+  },
+  {
+    "proposal_id": "252",
+    "chain_id": "evmos",
+    "title": "Next Evmos Halving  Set the max Inflation Rate to 0",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "REJECTED",
+    "submit_time": "1701379796046",
+    "final_tally_result": {
+      "no_with_veto_count": 80,
+      "no_count": 5,
+      "yes_count": 1,
+      "weighted_vote_count": 1,
+      "no_vote_count": 57
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Signaling",
+    "topic_v2_display": "Signaling",
+    "topic_v2_unique": "Governance - Signaling"
+  },
+  {
+    "proposal_id": "250",
+    "chain_id": "evmos",
+    "title": "EVMOS inflation   URGENT",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "REJECTED",
+    "submit_time": "1700850626998",
+    "final_tally_result": {
+      "no_with_veto_count": 74,
+      "no_count": 5,
+      "weighted_vote_count": 1,
+      "no_vote_count": 64
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Signaling",
+    "topic_v2_display": "Signaling",
+    "topic_v2_unique": "Governance - Signaling"
+  },
+  {
+    "proposal_id": "249",
+    "chain_id": "evmos",
+    "title": "Atom Airdrop  ",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "REJECTED",
+    "submit_time": "1700607649547",
+    "final_tally_result": {
+      "no_with_veto_count": 80,
+      "no_count": 5,
+      "weighted_vote_count": 1,
+      "no_vote_count": 58
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Spam & Malicious",
+    "topic_v2_display": "Spam & Malicious",
+    "topic_v2_unique": "Governance - Spam & Malicious"
+  },
+  {
+    "proposal_id": "248",
+    "chain_id": "evmos",
+    "title": "Celestia Airdrop on Evmos ",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "REJECTED",
+    "submit_time": "1700338438121",
+    "final_tally_result": {
+      "no_with_veto_count": 80,
+      "no_count": 2,
+      "weighted_vote_count": 1,
+      "no_vote_count": 61
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Spam & Malicious",
+    "topic_v2_display": "Spam & Malicious",
+    "topic_v2_unique": "Governance - Spam & Malicious"
+  },
+  {
+    "proposal_id": "247",
+    "chain_id": "evmos",
+    "title": "Evmos Airdrop  New Website available ",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "REJECTED",
+    "submit_time": "1700062106722",
+    "final_tally_result": {
+      "no_with_veto_count": 80,
+      "weighted_vote_count": 1,
+      "no_count": 1,
+      "no_vote_count": 62
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Spam & Malicious",
+    "topic_v2_display": "Spam & Malicious",
+    "topic_v2_unique": "Governance - Spam & Malicious"
+  },
+  {
+    "proposal_id": "246",
+    "chain_id": "evmos",
+    "title": "Inferno 30  Continuing Forge LP Incentives",
+    "type": "CommunityPoolSpend",
+    "topic": "Ecosystem Growth",
+    "status": "PASSED",
+    "submit_time": "1700023117555",
+    "final_tally_result": {
+      "yes_count": 66,
+      "abstain_count": 24,
+      "no_count": 1,
+      "weighted_vote_count": 1,
+      "no_vote_count": 52
+    },
+    "type_v2": "Treasury",
+    "topic_v2": "Liquidity & Incentives",
+    "topic_v2_display": "Liquidity & Incentives",
+    "topic_v2_unique": "Treasury - Liquidity & Incentives"
+  },
+  {
+    "proposal_id": "245",
+    "chain_id": "evmos",
+    "title": "Lunar Launch  Tashi Launch Liquidity Incentives Phase 2",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "PASSED",
+    "submit_time": "1699887347476",
+    "final_tally_result": {
+      "yes_count": 61,
+      "abstain_count": 29,
+      "no_count": 1,
+      "no_with_veto_count": 1,
+      "weighted_vote_count": 1,
+      "no_vote_count": 51
+    },
+    "type_v2": "Treasury",
+    "topic_v2": "Liquidity & Incentives",
+    "topic_v2_display": "Liquidity & Incentives",
+    "topic_v2_unique": "Treasury - Liquidity & Incentives"
+  },
+  {
+    "proposal_id": "244",
+    "chain_id": "evmos",
+    "title": "The New Lightning Network",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "REJECTED",
+    "submit_time": "1699631121096",
+    "final_tally_result": {
+      "no_with_veto_count": 79,
+      "no_count": 4,
+      "abstain_count": 2,
+      "weighted_vote_count": 1,
+      "no_vote_count": 58
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Signaling",
+    "topic_v2_display": "Signaling",
+    "topic_v2_unique": "Governance - Signaling"
+  },
+  {
+    "proposal_id": "243",
+    "chain_id": "evmos",
+    "title": "Lunar Launch  Tashi Launch Liquidity Incentives Phase 2",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "FAILED",
+    "submit_time": "1699389458338",
+    "final_tally_result": {
+      "yes_count": 55,
+      "abstain_count": 36,
+      "no_with_veto_count": 1,
+      "weighted_vote_count": 1,
+      "no_count": 4,
+      "no_vote_count": 47
+    },
+    "type_v2": "Treasury",
+    "topic_v2": "Liquidity & Incentives",
+    "topic_v2_display": "Liquidity & Incentives",
+    "topic_v2_unique": "Treasury - Liquidity & Incentives"
+  },
+  {
+    "proposal_id": "242",
+    "chain_id": "evmos",
+    "title": "Evmos Airdrop",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "REJECTED",
+    "submit_time": "1699134205465",
+    "final_tally_result": {
+      "no_with_veto_count": 81,
+      "no_count": 4,
+      "weighted_vote_count": 1,
+      "yes_count": 1,
+      "no_vote_count": 57
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Spam & Malicious",
+    "topic_v2_display": "Spam & Malicious",
+    "topic_v2_unique": "Governance - Spam & Malicious"
+  },
+  {
+    "proposal_id": "241",
+    "chain_id": "evmos",
+    "title": " Evmos Airdrop   DYDX Migration",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "REJECTED",
+    "submit_time": "1698977743312",
+    "final_tally_result": {
+      "no_with_veto_count": 76,
+      "no_count": 3,
+      "weighted_vote_count": 1,
+      "no_vote_count": 64
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Spam & Malicious",
+    "topic_v2_display": "Spam & Malicious",
+    "topic_v2_unique": "Governance - Spam & Malicious"
+  },
+  {
+    "proposal_id": "240",
+    "chain_id": "evmos",
+    "title": "Evmos Testnet v1500 Upgrade",
+    "type": "SoftwareUpgrade",
+    "topic": "Major Release",
+    "status": "PASSED",
+    "submit_time": "1698831244353",
+    "final_tally_result": {
+      "yes_count": 104,
+      "abstain_count": 4,
+      "weighted_vote_count": 1,
+      "no_count": 1,
+      "no_vote_count": 34
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Core Upgrade",
+    "topic_v2_display": "Core Upgrade",
+    "topic_v2_unique": "Protocol - Core Upgrade"
+  },
+  {
+    "proposal_id": "239",
+    "chain_id": "evmos",
+    "title": "USDC Airdrop   New Feature",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "REJECTED",
+    "submit_time": "1698681788749",
+    "final_tally_result": {
+      "no_with_veto_count": 77,
+      "no_count": 4,
+      "weighted_vote_count": 1,
+      "no_vote_count": 62
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Spam & Malicious",
+    "topic_v2_display": "Spam & Malicious",
+    "topic_v2_unique": "Governance - Spam & Malicious"
+  },
+  {
+    "proposal_id": "238",
+    "chain_id": "evmos",
+    "title": "Extend USDT Liquidity Incentives by 2 Months",
+    "type": "CommunityPoolSpend",
+    "topic": "Ecosystem Growth",
+    "status": "PASSED",
+    "submit_time": "1698419222815",
+    "final_tally_result": {
+      "yes_count": 91,
+      "abstain_count": 5,
+      "no_count": 3,
+      "weighted_vote_count": 1,
+      "no_vote_count": 44
+    },
+    "type_v2": "Treasury",
+    "topic_v2": "Liquidity & Incentives",
+    "topic_v2_display": "Liquidity & Incentives",
+    "topic_v2_unique": "Treasury - Liquidity & Incentives"
+  },
+  {
+    "proposal_id": "237",
+    "chain_id": "evmos",
+    "title": "Evmos Airdrop   New Feature",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "REJECTED",
+    "submit_time": "1698375952796",
+    "final_tally_result": {
+      "no_with_veto_count": 70,
+      "no_count": 6,
+      "weighted_vote_count": 1,
+      "no_vote_count": 67
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Spam & Malicious",
+    "topic_v2_display": "Spam & Malicious",
+    "topic_v2_unique": "Governance - Spam & Malicious"
+  },
+  {
+    "proposal_id": "236",
+    "chain_id": "evmos",
+    "title": "Evmos DAO Participation in Tashi Genesis Pools Phase 2",
+    "type": "Unknown",
+    "topic": "Unclassified",
+    "status": "PASSED",
+    "submit_time": "1698241432141",
+    "final_tally_result": {
+      "yes_count": 39,
+      "abstain_count": 33,
+      "no_count": 2,
+      "weighted_vote_count": 1,
+      "no_vote_count": 69
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Signaling",
+    "topic_v2_display": "Signaling",
+    "topic_v2_unique": "Governance - Signaling"
+  },
+  {
+    "proposal_id": "228",
+    "chain_id": "evmos",
+    "title": "ERC20 registration for native USDC and Kava",
+    "type": "TokenRelated",
+    "topic": "Token Registration",
+    "status": "PASSED",
+    "submit_time": "1698047885703",
+    "final_tally_result": {
+      "yes_count": 92,
+      "weighted_vote_count": 1,
+      "abstain_count": 1,
+      "no_vote_count": 50
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "Token Management",
+    "topic_v2_display": "Token Management",
+    "topic_v2_unique": "Ecosystem - Token Management"
+  },
+  {
+    "proposal_id": "227",
+    "chain_id": "evmos",
+    "title": "Evmos Airdrop ",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "REJECTED",
+    "submit_time": "1697673984162",
+    "final_tally_result": {
+      "no_count": 2,
+      "no_with_veto_count": 69,
+      "weighted_vote_count": 1,
+      "no_vote_count": 72
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Spam & Malicious",
+    "topic_v2_display": "Spam & Malicious",
+    "topic_v2_unique": "Governance - Spam & Malicious"
+  },
+  {
+    "proposal_id": "226",
+    "chain_id": "evmos",
+    "title": "Increase Deposit Amount for Evmos Governance Proposals",
+    "type": "ParameterChange",
+    "topic": "Fee Adjustment",
+    "status": "REJECTED",
+    "submit_time": "1697144639323",
+    "final_tally_result": {
+      "no_with_veto_count": 79,
+      "no_count": 5,
+      "abstain_count": 1,
+      "weighted_vote_count": 1,
+      "yes_count": 1,
+      "no_vote_count": 57
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Parameter Change",
+    "topic_v2_display": "Parameter Change",
+    "topic_v2_unique": "Protocol - Parameter Change"
+  },
+  {
+    "proposal_id": "225",
+    "chain_id": "evmos",
+    "title": "Increase Deposit Amount for Evmos Governance Proposals",
+    "type": "ParameterChange",
+    "topic": "Fee Adjustment",
+    "status": "PASSED",
+    "submit_time": "1697129732220",
+    "final_tally_result": {
+      "yes_count": 99,
+      "no_count": 1,
+      "weighted_vote_count": 1,
+      "no_vote_count": 43
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Parameter Change",
+    "topic_v2_display": "Parameter Change",
+    "topic_v2_unique": "Protocol - Parameter Change"
+  },
+  {
+    "proposal_id": "224",
+    "chain_id": "evmos",
+    "title": "Evmos Airdrop ",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "REJECTED",
+    "submit_time": "1696987694895",
+    "final_tally_result": {
+      "no_count": 2,
+      "no_with_veto_count": 79,
+      "weighted_vote_count": 1,
+      "no_vote_count": 62
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Spam & Malicious",
+    "topic_v2_display": "Spam & Malicious",
+    "topic_v2_unique": "Governance - Spam & Malicious"
+  },
+  {
+    "proposal_id": "223",
+    "chain_id": "evmos",
+    "title": "Additional Treasury stEVMOSEVMOS Liquidity on Forge",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "PASSED",
+    "submit_time": "1696949455590",
+    "final_tally_result": {
+      "yes_count": 71,
+      "abstain_count": 21,
+      "weighted_vote_count": 1,
+      "no_count": 4,
+      "no_vote_count": 47
+    },
+    "type_v2": "Treasury",
+    "topic_v2": "Liquidity & Incentives",
+    "topic_v2_display": "Liquidity & Incentives",
+    "topic_v2_unique": "Treasury - Liquidity & Incentives"
+  },
+  {
+    "proposal_id": "216",
+    "chain_id": "evmos",
+    "title": "Cosmos x Celestia Airdrop ",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "REJECTED",
+    "submit_time": "1696858248548",
+    "final_tally_result": {
+      "weighted_vote_count": 1,
+      "no_with_veto_count": 82,
+      "no_count": 3,
+      "no_vote_count": 58
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Spam & Malicious",
+    "topic_v2_display": "Spam & Malicious",
+    "topic_v2_unique": "Governance - Spam & Malicious"
+  },
+  {
+    "proposal_id": "215",
+    "chain_id": "evmos",
+    "title": "Evmos Airdrop ",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "REJECTED",
+    "submit_time": "1696694507743",
+    "final_tally_result": {
+      "no_with_veto_count": 80,
+      "no_count": 8,
+      "weighted_vote_count": 1,
+      "no_vote_count": 55
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Spam & Malicious",
+    "topic_v2_display": "Spam & Malicious",
+    "topic_v2_unique": "Governance - Spam & Malicious"
+  },
+  {
+    "proposal_id": "214",
+    "chain_id": "evmos",
+    "title": "Proposal for Evmos Incentives Forge Dex and Tashi Collaboration",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "PASSED",
+    "submit_time": "1696615962925",
+    "final_tally_result": {
+      "yes_count": 43,
+      "abstain_count": 48,
+      "no_with_veto_count": 1,
+      "no_count": 4,
+      "weighted_vote_count": 2,
+      "no_vote_count": 46
+    },
+    "type_v2": "Treasury",
+    "topic_v2": "Liquidity & Incentives",
+    "topic_v2_display": "Liquidity & Incentives",
+    "topic_v2_unique": "Treasury - Liquidity & Incentives"
+  },
+  {
+    "proposal_id": "210",
+    "chain_id": "evmos",
+    "title": "Evmos Airdrop ",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "REJECTED",
+    "submit_time": "1695861376872",
+    "final_tally_result": {
+      "no_with_veto_count": 65,
+      "no_count": 4,
+      "weighted_vote_count": 1,
+      "abstain_count": 1,
+      "no_vote_count": 73
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Spam & Malicious",
+    "topic_v2_display": "Spam & Malicious",
+    "topic_v2_unique": "Governance - Spam & Malicious"
+  },
+  {
+    "proposal_id": "208",
+    "chain_id": "evmos",
+    "title": "Evmos Airdrop ",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "REJECTED",
+    "submit_time": "1695699921566",
+    "final_tally_result": {
+      "no_with_veto_count": 72,
+      "no_count": 4,
+      "weighted_vote_count": 1,
+      "no_vote_count": 67
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Spam & Malicious",
+    "topic_v2_display": "Spam & Malicious",
+    "topic_v2_unique": "Governance - Spam & Malicious"
+  },
+  {
+    "proposal_id": "207",
+    "chain_id": "evmos",
+    "title": "Recover expired IBC client for Noble",
+    "type": "IBCRelated",
+    "topic": "IBC Security",
+    "status": "PASSED",
+    "submit_time": "1695694353127",
+    "final_tally_result": {
+      "yes_count": 95,
+      "no_count": 1,
+      "weighted_vote_count": 1,
+      "no_vote_count": 47
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "IBC Management",
+    "topic_v2_display": "IBC Management",
+    "topic_v2_unique": "Ecosystem - IBC Management"
+  },
+  {
+    "proposal_id": "206",
+    "chain_id": "evmos",
+    "title": "Community to Sponsor Development of LSDFI on EVMOS",
+    "type": "CommunityPoolSpend",
+    "topic": "Development Fund",
+    "status": "REJECTED",
+    "submit_time": "1695423402181",
+    "final_tally_result": {
+      "no_count": 59,
+      "abstain_count": 26,
+      "weighted_vote_count": 1,
+      "yes_count": 9,
+      "no_vote_count": 49
+    },
+    "type_v2": "Treasury",
+    "topic_v2": "Community & Marketing Funding",
+    "topic_v2_display": "Community & Marketing Funding",
+    "topic_v2_unique": "Treasury - Community & Marketing Funding"
+  },
+  {
+    "proposal_id": "196",
+    "chain_id": "evmos",
+    "title": "Evmos Mainnet v1400 Upgrade",
+    "type": "SoftwareUpgrade",
+    "topic": "Major Release",
+    "status": "PASSED",
+    "submit_time": "1695149201420",
+    "final_tally_result": {
+      "yes_count": 110,
+      "no_count": 1,
+      "weighted_vote_count": 1,
+      "no_vote_count": 32
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Core Upgrade",
+    "topic_v2_display": "Core Upgrade",
+    "topic_v2_unique": "Protocol - Core Upgrade"
+  },
+  {
+    "proposal_id": "194",
+    "chain_id": "evmos",
+    "title": "ERC20 Registration Wormhole Assets",
+    "type": "TokenRelated",
+    "topic": "Token Registration",
+    "status": "PASSED",
+    "submit_time": "1695131004602",
+    "final_tally_result": {
+      "yes_count": 107,
+      "no_count": 1,
+      "weighted_vote_count": 1,
+      "no_vote_count": 35
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "Token Management",
+    "topic_v2_display": "Token Management",
+    "topic_v2_unique": "Ecosystem - Token Management"
+  },
+  {
+    "proposal_id": "179",
+    "chain_id": "evmos",
+    "title": "Native USDt liquidity incentives",
+    "type": "CommunityPoolSpend",
+    "topic": "Ecosystem Growth",
+    "status": "PASSED",
+    "submit_time": "1694178445938",
+    "final_tally_result": {
+      "yes_count": 79,
+      "abstain_count": 16,
+      "no_count": 4,
+      "weighted_vote_count": 1,
+      "no_vote_count": 44
+    },
+    "type_v2": "Treasury",
+    "topic_v2": "Liquidity & Incentives",
+    "topic_v2_display": "Liquidity & Incentives",
+    "topic_v2_unique": "Treasury - Liquidity & Incentives"
+  },
+  {
+    "proposal_id": "174",
+    "chain_id": "evmos",
+    "title": "IBC Registration for TASHI",
+    "type": "TokenRelated",
+    "topic": "Token Registration",
+    "status": "PASSED",
+    "submit_time": "1693920826094",
+    "final_tally_result": {
+      "yes_count": 97,
+      "no_count": 2,
+      "weighted_vote_count": 1,
+      "no_vote_count": 44
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "IBC Management",
+    "topic_v2_display": "IBC Management",
+    "topic_v2_unique": "Ecosystem - IBC Management"
+  },
+  {
+    "proposal_id": "166",
+    "chain_id": "evmos",
+    "title": "Inferno 2  Continuing Forge LP incentives with Revert Finance",
+    "type": "CommunityPoolSpend",
+    "topic": "Ecosystem Growth",
+    "status": "PASSED",
+    "submit_time": "1692849957268",
+    "final_tally_result": {
+      "yes_count": 60,
+      "no_count": 7,
+      "abstain_count": 27,
+      "no_vote_count": 50
+    },
+    "type_v2": "Treasury",
+    "topic_v2": "Liquidity & Incentives",
+    "topic_v2_display": "Liquidity & Incentives",
+    "topic_v2_unique": "Treasury - Liquidity & Incentives"
+  },
+  {
+    "proposal_id": "165",
+    "chain_id": "evmos",
+    "title": "Lunar Launch  Tashi Launch Liquidity Incentives",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "PASSED",
+    "submit_time": "1692820281318",
+    "final_tally_result": {
+      "yes_count": 48,
+      "abstain_count": 36,
+      "no_count": 16,
+      "weighted_vote_count": 1,
+      "no_vote_count": 43
+    },
+    "type_v2": "Treasury",
+    "topic_v2": "Liquidity & Incentives",
+    "topic_v2_display": "Liquidity & Incentives",
+    "topic_v2_unique": "Treasury - Liquidity & Incentives"
+  },
+  {
+    "proposal_id": "159",
+    "chain_id": "evmos",
+    "title": "Incentive Program for Steers capitalefficient trading strategies",
+    "type": "CommunityPoolSpend",
+    "topic": "Ecosystem Growth",
+    "status": "PASSED",
+    "submit_time": "1692245620085",
+    "final_tally_result": {
+      "yes_count": 76,
+      "abstain_count": 12,
+      "no_count": 2,
+      "no_vote_count": 54
+    },
+    "type_v2": "Treasury",
+    "topic_v2": "dApp & Tooling Funding",
+    "topic_v2_display": "dApp & Tooling Funding",
+    "topic_v2_unique": "Treasury - dApp & Tooling Funding"
+  },
+  {
+    "proposal_id": "157",
+    "chain_id": "evmos",
+    "title": "ERC20 registration for native USDT issued on Kava",
+    "type": "TokenRelated",
+    "topic": "Token Registration",
+    "status": "PASSED",
+    "submit_time": "1692023614778",
+    "final_tally_result": {
+      "yes_count": 90,
+      "abstain_count": 2,
+      "no_count": 1,
+      "no_vote_count": 51
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "Token Management",
+    "topic_v2_display": "Token Management",
+    "topic_v2_unique": "Ecosystem - Token Management"
+  },
+  {
+    "proposal_id": "155",
+    "chain_id": "evmos",
+    "title": "ECP3 Renewal of the Evmos DAO Governance Workstream",
+    "type": "CommunityPoolSpend",
+    "topic": "Ecosystem Growth",
+    "status": "PASSED",
+    "submit_time": "1690572445707",
+    "final_tally_result": {
+      "yes_count": 77,
+      "abstain_count": 24,
+      "no_count": 3,
+      "weighted_vote_count": 2,
+      "no_with_veto_count": 1,
+      "no_vote_count": 37
+    },
+    "type_v2": "Treasury",
+    "topic_v2": "dApp & Tooling Funding",
+    "topic_v2_display": "dApp & Tooling Funding",
+    "topic_v2_unique": "Treasury - dApp & Tooling Funding"
+  },
+  {
+    "proposal_id": "153",
+    "chain_id": "evmos",
+    "title": "Register ERC20 for Crescent Network",
+    "type": "TokenRelated",
+    "topic": "Token Registration",
+    "status": "PASSED",
+    "submit_time": "1690190319636",
+    "final_tally_result": {
+      "yes_count": 101,
+      "no_count": 1,
+      "abstain_count": 3,
+      "no_vote_count": 39
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "Token Management",
+    "topic_v2_display": "Token Management",
+    "topic_v2_unique": "Ecosystem - Token Management"
+  },
+  {
+    "proposal_id": "151",
+    "chain_id": "evmos",
+    "title": "Participation in Genesis Pools on Tashi An Opportunity for Evmos Community",
+    "type": "CommunityPoolSpend",
+    "topic": "Ecosystem Growth",
+    "status": "PASSED",
+    "submit_time": "1689354912623",
+    "final_tally_result": {
+      "no_count": 18,
+      "yes_count": 34,
+      "abstain_count": 45,
+      "no_vote_count": 47
+    },
+    "type_v2": "Treasury",
+    "topic_v2": "Liquidity & Incentives",
+    "topic_v2_display": "Liquidity & Incentives",
+    "topic_v2_unique": "Treasury - Liquidity & Incentives"
+  },
+  {
+    "proposal_id": "149",
+    "chain_id": "evmos",
+    "title": "Evmos Mainnet v1302 Apeiron Upgrade",
+    "type": "SoftwareUpgrade",
+    "topic": "Major Release",
+    "status": "PASSED",
+    "submit_time": "1688632577204",
+    "final_tally_result": {
+      "yes_count": 107,
+      "no_count": 1,
+      "no_vote_count": 36
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Core Upgrade",
+    "topic_v2_display": "Core Upgrade",
+    "topic_v2_unique": "Protocol - Core Upgrade"
+  },
+  {
+    "proposal_id": "147",
+    "chain_id": "evmos",
+    "title": "Build a Decentralized Derivatives Exchange on EVMOS",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "REJECTED",
+    "submit_time": "1685813474131",
+    "final_tally_result": {
+      "yes_count": 13,
+      "abstain_count": 27,
+      "no_count": 63,
+      "no_vote_count": 41
+    },
+    "type_v2": "Treasury",
+    "topic_v2": "dApp & Tooling Funding",
+    "topic_v2_display": "dApp & Tooling Funding",
+    "topic_v2_unique": "Treasury - dApp & Tooling Funding"
+  },
+  {
+    "proposal_id": "146",
+    "chain_id": "evmos",
+    "title": "Inferno  An incentive program to bootstrap liquidity in Forge",
+    "type": "CommunityPoolSpend",
+    "topic": "Ecosystem Growth",
+    "status": "PASSED",
+    "submit_time": "1683697353491",
+    "final_tally_result": {
+      "yes_count": 89,
+      "no_count": 2,
+      "abstain_count": 4,
+      "no_vote_count": 49
+    },
+    "type_v2": "Treasury",
+    "topic_v2": "Liquidity & Incentives",
+    "topic_v2_display": "Liquidity & Incentives",
+    "topic_v2_unique": "Treasury - Liquidity & Incentives"
+  },
+  {
+    "proposal_id": "145",
+    "chain_id": "evmos",
+    "title": "ERC20 registration for rETH wstETH Pepe stINJ QCK qATOM qOSMO SCRT AXL",
+    "type": "TokenRelated",
+    "topic": "Token Registration",
+    "status": "PASSED",
+    "submit_time": "1683566697962",
+    "final_tally_result": {
+      "yes_count": 97,
+      "no_count": 2,
+      "abstain_count": 2,
+      "no_vote_count": 43
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "Token Management",
+    "topic_v2_display": "Token Management",
+    "topic_v2_unique": "Ecosystem - Token Management"
+  },
+  {
+    "proposal_id": "144",
+    "chain_id": "evmos",
+    "title": "Register NEOK Token as an IBC Coin",
+    "type": "TokenRelated",
+    "topic": "Token Registration",
+    "status": "PASSED",
+    "submit_time": "1683063381858",
+    "final_tally_result": {
+      "yes_count": 87,
+      "abstain_count": 13,
+      "no_count": 1,
+      "no_vote_count": 43
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "IBC Management",
+    "topic_v2_display": "IBC Management",
+    "topic_v2_unique": "Ecosystem - IBC Management"
+  },
+  {
+    "proposal_id": "143",
+    "chain_id": "evmos",
+    "title": "Actionable analytics management and Incentives tools for liquidity providers by Revert Finance",
+    "type": "CommunityPoolSpend",
+    "topic": "Ecosystem Growth",
+    "status": "PASSED",
+    "submit_time": "1681821480239",
+    "final_tally_result": {
+      "yes_count": 95,
+      "no_count": 2,
+      "abstain_count": 15,
+      "no_vote_count": 32
+    },
+    "type_v2": "Treasury",
+    "topic_v2": "Liquidity & Incentives",
+    "topic_v2_display": "Liquidity & Incentives",
+    "topic_v2_unique": "Treasury - Liquidity & Incentives"
+  },
+  {
+    "proposal_id": "142",
+    "chain_id": "evmos",
+    "title": "Treasury stEVMOSEVMOS Liquidity Pool on Forge",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "PASSED",
+    "submit_time": "1681230447345",
+    "final_tally_result": {
+      "yes_count": 93,
+      "abstain_count": 10,
+      "no_count": 1,
+      "no_vote_count": 40
+    },
+    "type_v2": "Treasury",
+    "topic_v2": "Liquidity & Incentives",
+    "topic_v2_display": "Liquidity & Incentives",
+    "topic_v2_unique": "Treasury - Liquidity & Incentives"
+  },
+  {
+    "proposal_id": "137",
+    "chain_id": "evmos",
+    "title": "Evmos Mainnet v1210 Upgrade",
+    "type": "SoftwareUpgrade",
+    "topic": "Major Release",
+    "status": "PASSED",
+    "submit_time": "1679725939471",
+    "final_tally_result": {
+      "yes_count": 114,
+      "no_count": 3,
+      "abstain_count": 2,
+      "no_vote_count": 25
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Core Upgrade",
+    "topic_v2_display": "Core Upgrade",
+    "topic_v2_unique": "Protocol - Core Upgrade"
+  },
+  {
+    "proposal_id": "136",
+    "chain_id": "evmos",
+    "title": "Evmos Testnet v1200 Upgrade",
+    "type": "SoftwareUpgrade",
+    "topic": "Major Release",
+    "status": "REJECTED",
+    "submit_time": "1679628322268",
+    "final_tally_result": {
+      "no_count": 100,
+      "yes_count": 19,
+      "no_vote_count": 25
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Core Upgrade",
+    "topic_v2_display": "Core Upgrade",
+    "topic_v2_unique": "Protocol - Core Upgrade"
+  },
+  {
+    "proposal_id": "135",
+    "chain_id": "evmos",
+    "title": "Disable conversion for previously registered USK",
+    "type": "TokenRelated",
+    "topic": "Token Registration",
+    "status": "PASSED",
+    "submit_time": "1678445243386",
+    "final_tally_result": {
+      "yes_count": 92,
+      "no_count": 1,
+      "abstain_count": 8,
+      "no_vote_count": 43
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "Token Management",
+    "topic_v2_display": "Token Management",
+    "topic_v2_unique": "Ecosystem - Token Management"
+  },
+  {
+    "proposal_id": "134",
+    "chain_id": "evmos",
+    "title": "ECP2B Formalizing and Funding of the Community Mod  Support Workstream",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "REJECTED",
+    "submit_time": "1677692679162",
+    "final_tally_result": {
+      "no_count": 41,
+      "weighted_vote_count": 1,
+      "abstain_count": 37,
+      "yes_count": 21,
+      "no_vote_count": 44
+    },
+    "type_v2": "Treasury",
+    "topic_v2": "Community & Marketing Funding",
+    "topic_v2_display": "Community & Marketing Funding",
+    "topic_v2_unique": "Treasury - Community & Marketing Funding"
+  },
+  {
+    "proposal_id": "133",
+    "chain_id": "evmos",
+    "title": "Kick off ReFi on Evmos offset Evmoss carbon emission for 2022",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "PASSED",
+    "submit_time": "1677613721179",
+    "final_tally_result": {
+      "abstain_count": 26,
+      "yes_count": 45,
+      "no_count": 33,
+      "weighted_vote_count": 2,
+      "no_vote_count": 38
+    },
+    "type_v2": "Treasury",
+    "topic_v2": "dApp & Tooling Funding",
+    "topic_v2_display": "dApp & Tooling Funding",
+    "topic_v2_unique": "Treasury - dApp & Tooling Funding"
+  },
+  {
+    "proposal_id": "128",
+    "chain_id": "evmos",
+    "title": "Build A Community Owned DEX UniV3",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "PASSED",
+    "submit_time": "1677518854584",
+    "final_tally_result": {
+      "yes_count": 70,
+      "abstain_count": 36,
+      "no_count": 5,
+      "no_vote_count": 33
+    },
+    "type_v2": "Treasury",
+    "topic_v2": "Community & Marketing Funding",
+    "topic_v2_display": "Community & Marketing Funding",
+    "topic_v2_unique": "Treasury - Community & Marketing Funding"
+  },
+  {
+    "proposal_id": "122",
+    "chain_id": "evmos",
+    "title": "Register Celer Assets USDC USDT WETH DAI WBTC as IBC Tokens",
+    "type": "TokenRelated",
+    "topic": "Token Registration",
+    "status": "PASSED",
+    "submit_time": "1677144030381",
+    "final_tally_result": {
+      "yes_count": 99,
+      "no_vote_count": 45
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "IBC Management",
+    "topic_v2_display": "IBC Management",
+    "topic_v2_unique": "Ecosystem - IBC Management"
+  },
+  {
+    "proposal_id": "121",
+    "chain_id": "evmos",
+    "title": "Crescent External Incentives",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "REJECTED",
+    "submit_time": "1676880242068",
+    "final_tally_result": {
+      "no_count": 50,
+      "yes_count": 31,
+      "abstain_count": 35,
+      "no_vote_count": 28
+    },
+    "type_v2": "Treasury",
+    "topic_v2": "Liquidity & Incentives",
+    "topic_v2_display": "Liquidity & Incentives",
+    "topic_v2_unique": "Treasury - Liquidity & Incentives"
+  },
+  {
+    "proposal_id": "118",
+    "chain_id": "evmos",
+    "title": "ERC20 registration for Stride Staked Assets stATOM stEVMOS stOSMO stJUNO stSTARS and Stride",
+    "type": "TokenRelated",
+    "topic": "Token Registration",
+    "status": "PASSED",
+    "submit_time": "1676575556469",
+    "final_tally_result": {
+      "yes_count": 105,
+      "abstain_count": 2,
+      "no_vote_count": 37
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "Token Management",
+    "topic_v2_display": "Token Management",
+    "topic_v2_unique": "Ecosystem - Token Management"
+  },
+  {
+    "proposal_id": "116",
+    "chain_id": "evmos",
+    "title": "Disable conversion for previously registered EEUR",
+    "type": "TokenRelated",
+    "topic": "Token Registration",
+    "status": "PASSED",
+    "submit_time": "1675844476699",
+    "final_tally_result": {
+      "yes_count": 100,
+      "abstain_count": 3,
+      "no_count": 1,
+      "no_vote_count": 40
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "Token Management",
+    "topic_v2_display": "Token Management",
+    "topic_v2_unique": "Ecosystem - Token Management"
+  },
+  {
+    "proposal_id": "115",
+    "chain_id": "evmos",
+    "title": "DoraHacks Hackathon Proposal with Evmos",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "PASSED",
+    "submit_time": "1675815164494",
+    "final_tally_result": {
+      "yes_count": 84,
+      "abstain_count": 21,
+      "no_count": 1,
+      "no_vote_count": 38
+    },
+    "type_v2": "Treasury",
+    "topic_v2": "Community & Marketing Funding",
+    "topic_v2_display": "Community & Marketing Funding",
+    "topic_v2_unique": "Treasury - Community & Marketing Funding"
+  },
+  {
+    "proposal_id": "114",
+    "chain_id": "evmos",
+    "title": "Register ERC20 for yEVMOS Liquid Staking Token",
+    "type": "TokenRelated",
+    "topic": "Token Registration",
+    "status": "REJECTED",
+    "submit_time": "1675617368077",
+    "final_tally_result": {
+      "no_count": 49,
+      "yes_count": 44,
+      "abstain_count": 21,
+      "no_vote_count": 30
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "Token Management",
+    "topic_v2_display": "Token Management",
+    "topic_v2_unique": "Ecosystem - Token Management"
+  },
+  {
+    "proposal_id": "113",
+    "chain_id": "evmos",
+    "title": "ECP2A Formalizing and Funding the Governance Council Workstream Rev 2",
+    "type": "CommunityPoolSpend",
+    "topic": "Development Fund",
+    "status": "PASSED",
+    "submit_time": "1675095951456",
+    "final_tally_result": {
+      "abstain_count": 58,
+      "yes_count": 49,
+      "no_count": 11,
+      "weighted_vote_count": 1,
+      "no_vote_count": 25
+    },
+    "type_v2": "Treasury",
+    "topic_v2": "dApp & Tooling Funding",
+    "topic_v2_display": "dApp & Tooling Funding",
+    "topic_v2_unique": "Treasury - dApp & Tooling Funding"
+  },
+  {
+    "proposal_id": "112",
+    "chain_id": "evmos",
+    "title": "Evmos Mainnet v1100 Upgrade",
+    "type": "SoftwareUpgrade",
+    "topic": "Major Release",
+    "status": "PASSED",
+    "submit_time": "1674864423302",
+    "final_tally_result": {
+      "yes_count": 136,
+      "abstain_count": 1,
+      "no_vote_count": 7
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Core Upgrade",
+    "topic_v2_display": "Core Upgrade",
+    "topic_v2_unique": "Protocol - Core Upgrade"
+  },
+  {
+    "proposal_id": "111",
+    "chain_id": "evmos",
+    "title": "Evmos x Covalent Hackathon Participant Rewards ReAdjustment",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "PASSED",
+    "submit_time": "1674681836972",
+    "final_tally_result": {
+      "yes_count": 117,
+      "abstain_count": 15,
+      "no_count": 1,
+      "no_vote_count": 11
+    },
+    "type_v2": "Treasury",
+    "topic_v2": "Community & Marketing Funding",
+    "topic_v2_display": "Community & Marketing Funding",
+    "topic_v2_unique": "Treasury - Community & Marketing Funding"
+  },
+  {
+    "proposal_id": "110",
+    "chain_id": "evmos",
+    "title": "Encode Clubs Evmos Grant Proposal",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "PASSED",
+    "submit_time": "1674680783952",
+    "final_tally_result": {
+      "yes_count": 113,
+      "abstain_count": 16,
+      "no_count": 3,
+      "no_with_veto_count": 1,
+      "no_vote_count": 11
+    },
+    "type_v2": "Treasury",
+    "topic_v2": "dApp & Tooling Funding",
+    "topic_v2_display": "dApp & Tooling Funding",
+    "topic_v2_unique": "Treasury - dApp & Tooling Funding"
+  },
+  {
+    "proposal_id": "109",
+    "chain_id": "evmos",
+    "title": "New Evmos Liquidity Incentive and SpaceFi Whole Launching",
+    "type": "CommunityPoolSpend",
+    "topic": "Ecosystem Growth",
+    "status": "PASSED",
+    "submit_time": "1674230271742",
+    "final_tally_result": {
+      "yes_count": 44,
+      "abstain_count": 34,
+      "no_count": 24,
+      "no_vote_count": 42
+    },
+    "type_v2": "Treasury",
+    "topic_v2": "Liquidity & Incentives",
+    "topic_v2_display": "Liquidity & Incentives",
+    "topic_v2_unique": "Treasury - Liquidity & Incentives"
+  },
+  {
+    "proposal_id": "107",
+    "chain_id": "evmos",
+    "title": "Cancellation of Prop 45 Clarification of Laurel Project Role",
+    "type": "TextProposal",
+    "topic": "Project Funding",
+    "status": "PASSED",
+    "submit_time": "1673202931470",
+    "final_tally_result": {
+      "abstain_count": 29,
+      "yes_count": 90,
+      "no_count": 1,
+      "no_vote_count": 24
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Signaling",
+    "topic_v2_display": "Signaling",
+    "topic_v2_unique": "Governance - Signaling"
+  },
+  {
+    "proposal_id": "106",
+    "chain_id": "evmos",
+    "title": "Consensus Test",
+    "type": "TextProposal",
+    "topic": "Community Decision",
+    "status": "REJECTED",
+    "submit_time": "1673197402286",
+    "final_tally_result": {
+      "no_count": 11,
+      "no_with_veto_count": 86,
+      "abstain_count": 24,
+      "yes_count": 3,
+      "no_vote_count": 20
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Signaling",
+    "topic_v2_display": "Signaling",
+    "topic_v2_unique": "Governance - Signaling"
+  },
+  {
+    "proposal_id": "105",
+    "chain_id": "evmos",
+    "title": "Governance Consensus Governance Immunity",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "REJECTED",
+    "submit_time": "1673122573458",
+    "final_tally_result": {
+      "no_with_veto_count": 61,
+      "no_count": 18,
+      "abstain_count": 40,
+      "yes_count": 9,
+      "no_vote_count": 16
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Signaling",
+    "topic_v2_display": "Signaling",
+    "topic_v2_unique": "Governance - Signaling"
+  },
+  {
+    "proposal_id": "104",
+    "chain_id": "evmos",
+    "title": "Increase Developer Revenue from 50 to 95",
+    "type": "ParameterChange",
+    "topic": "Protocol Configuration",
+    "status": "PASSED",
+    "submit_time": "1673119547308",
+    "final_tally_result": {
+      "yes_count": 113,
+      "abstain_count": 14,
+      "no_count": 1,
+      "no_with_veto_count": 1,
+      "no_vote_count": 15
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Parameter Change",
+    "topic_v2_display": "Parameter Change",
+    "topic_v2_unique": "Protocol - Parameter Change"
+  },
+  {
+    "proposal_id": "103",
+    "chain_id": "evmos",
+    "title": "Ratify GovernanceOfficial Meanings for Yes No Abstain and NoWithVeto",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "PASSED",
+    "submit_time": "1673073412008",
+    "final_tally_result": {
+      "yes_count": 105,
+      "abstain_count": 16,
+      "no_with_veto_count": 3,
+      "no_count": 2,
+      "no_vote_count": 18
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Signaling",
+    "topic_v2_display": "Signaling",
+    "topic_v2_unique": "Governance - Signaling"
+  },
+  {
+    "proposal_id": "100",
+    "chain_id": "evmos",
+    "title": "Retroactive Payment for Public Goods Evmos Development for 2022",
+    "type": "CommunityPoolSpend",
+    "topic": "Development Fund",
+    "status": "REJECTED",
+    "submit_time": "1673043063369",
+    "final_tally_result": {
+      "no_with_veto_count": 59,
+      "no_count": 53,
+      "abstain_count": 12,
+      "yes_count": 1,
+      "weighted_vote_count": 1,
+      "no_vote_count": 18
+    },
+    "type_v2": "Treasury",
+    "topic_v2": "dApp & Tooling Funding",
+    "topic_v2_display": "dApp & Tooling Funding",
+    "topic_v2_unique": "Treasury - dApp & Tooling Funding"
+  },
+  {
+    "proposal_id": "99",
+    "chain_id": "evmos",
+    "title": "Governance Consensus No Criminal Decisions",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "REJECTED",
+    "submit_time": "1672939012306",
+    "final_tally_result": {
+      "no_with_veto_count": 62,
+      "abstain_count": 31,
+      "no_count": 31,
+      "yes_count": 3,
+      "no_vote_count": 17
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Signaling",
+    "topic_v2_display": "Signaling",
+    "topic_v2_unique": "Governance - Signaling"
+  },
+  {
+    "proposal_id": "98",
+    "chain_id": "evmos",
+    "title": "Governance Consensus Only Elected Officers May Represent the Will of the Chain",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "REJECTED",
+    "submit_time": "1672862746735",
+    "final_tally_result": {
+      "no_with_veto_count": 59,
+      "no_count": 47,
+      "abstain_count": 15,
+      "weighted_vote_count": 1,
+      "yes_count": 5,
+      "no_vote_count": 17
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Signaling",
+    "topic_v2_display": "Signaling",
+    "topic_v2_unique": "Governance - Signaling"
+  },
+  {
+    "proposal_id": "97",
+    "chain_id": "evmos",
+    "title": "Increase Deposit Amount for Evmos Proposals",
+    "type": "ParameterChange",
+    "topic": "Fee Adjustment",
+    "status": "PASSED",
+    "submit_time": "1672789227897",
+    "final_tally_result": {
+      "yes_count": 121,
+      "weighted_vote_count": 1,
+      "no_count": 2,
+      "abstain_count": 2,
+      "no_vote_count": 18
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Parameter Change",
+    "topic_v2_display": "Parameter Change",
+    "topic_v2_unique": "Protocol - Parameter Change"
+  },
+  {
+    "proposal_id": "95",
+    "chain_id": "evmos",
+    "title": "Retroactive Payment for Public Goods Evmos Development for March 2022",
+    "type": "CommunityPoolSpend",
+    "topic": "Development Fund",
+    "status": "REJECTED",
+    "submit_time": "1672518504375",
+    "final_tally_result": {
+      "no_with_veto_count": 41,
+      "no_count": 55,
+      "abstain_count": 20,
+      "weighted_vote_count": 1,
+      "yes_count": 1,
+      "no_vote_count": 26
+    },
+    "type_v2": "Treasury",
+    "topic_v2": "dApp & Tooling Funding",
+    "topic_v2_display": "dApp & Tooling Funding",
+    "topic_v2_unique": "Treasury - dApp & Tooling Funding"
+  },
+  {
+    "proposal_id": "94",
+    "chain_id": "evmos",
+    "title": "Evmos Mainnet v1000 Upgrade",
+    "type": "SoftwareUpgrade",
+    "topic": "Major Release",
+    "status": "PASSED",
+    "submit_time": "1672270412839",
+    "final_tally_result": {
+      "yes_count": 128,
+      "no_vote_count": 16
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Core Upgrade",
+    "topic_v2_display": "Core Upgrade",
+    "topic_v2_unique": "Protocol - Core Upgrade"
+  },
+  {
+    "proposal_id": "93",
+    "chain_id": "evmos",
+    "title": "Governance Consensus The Governance Language is English",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "REJECTED",
+    "submit_time": "1672058796599",
+    "final_tally_result": {
+      "abstain_count": 47,
+      "no_count": 44,
+      "no_with_veto_count": 8,
+      "yes_count": 20,
+      "no_vote_count": 25
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Signaling",
+    "topic_v2_display": "Signaling",
+    "topic_v2_unique": "Governance - Signaling"
+  },
+  {
+    "proposal_id": "92",
+    "chain_id": "evmos",
+    "title": "Funding Request  MetaTank",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "PASSED",
+    "submit_time": "1671804943980",
+    "final_tally_result": {
+      "yes_count": 61,
+      "abstain_count": 30,
+      "no_count": 16,
+      "no_vote_count": 37
+    },
+    "type_v2": "Treasury",
+    "topic_v2": "dApp & Tooling Funding",
+    "topic_v2_display": "dApp & Tooling Funding",
+    "topic_v2_unique": "Treasury - dApp & Tooling Funding"
+  },
+  {
+    "proposal_id": "91",
+    "chain_id": "evmos",
+    "title": "Register ERC20 for COMPOSITE CMST Stablecoin of Harbor Protocol",
+    "type": "TokenRelated",
+    "topic": "Token Registration",
+    "status": "PASSED",
+    "submit_time": "1671190874723",
+    "final_tally_result": {
+      "yes_count": 99,
+      "abstain_count": 11,
+      "no_vote_count": 34
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "Token Management",
+    "topic_v2_display": "Token Management",
+    "topic_v2_unique": "Ecosystem - Token Management"
+  },
+  {
+    "proposal_id": "89",
+    "chain_id": "evmos",
+    "title": "Register ERC20 for COMDEX CMDX",
+    "type": "TokenRelated",
+    "topic": "Token Registration",
+    "status": "PASSED",
+    "submit_time": "1671190310552",
+    "final_tally_result": {
+      "yes_count": 104,
+      "abstain_count": 7,
+      "no_vote_count": 33
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "Token Management",
+    "topic_v2_display": "Token Management",
+    "topic_v2_unique": "Ecosystem - Token Management"
+  },
+  {
+    "proposal_id": "88",
+    "chain_id": "evmos",
+    "title": "Common Sense Setting No Payment For Unsolicited Services",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "REJECTED",
+    "submit_time": "1671138512426",
+    "final_tally_result": {
+      "no_count": 48,
+      "yes_count": 19,
+      "abstain_count": 34,
+      "no_with_veto_count": 1,
+      "no_vote_count": 42
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Signaling",
+    "topic_v2_display": "Signaling",
+    "topic_v2_unique": "Governance - Signaling"
+  },
+  {
+    "proposal_id": "87",
+    "chain_id": "evmos",
+    "title": "Disable conversion for previously registered stATOM",
+    "type": "TokenRelated",
+    "topic": "Token Registration",
+    "status": "PASSED",
+    "submit_time": "1670824721608",
+    "final_tally_result": {
+      "yes_count": 116,
+      "abstain_count": 5,
+      "no_vote_count": 23
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "Token Management",
+    "topic_v2_display": "Token Management",
+    "topic_v2_unique": "Ecosystem - Token Management"
+  },
+  {
+    "proposal_id": "86",
+    "chain_id": "evmos",
+    "title": "ECP2A Formalizing and Funding the Governance Council Workstream",
+    "type": "CommunityPoolSpend",
+    "topic": "Development Fund",
+    "status": "REJECTED",
+    "submit_time": "1670543569870",
+    "final_tally_result": {
+      "abstain_count": 36,
+      "yes_count": 24,
+      "no_count": 55,
+      "no_with_veto_count": 1,
+      "no_vote_count": 28
+    },
+    "type_v2": "Treasury",
+    "topic_v2": "dApp & Tooling Funding",
+    "topic_v2_display": "dApp & Tooling Funding",
+    "topic_v2_unique": "Treasury - dApp & Tooling Funding"
+  },
+  {
+    "proposal_id": "84",
+    "chain_id": "evmos",
+    "title": "The Alternative An Honest DAO and an Independent Evmos Chain",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "REJECTED",
+    "submit_time": "1669721347857",
+    "final_tally_result": {
+      "abstain_count": 48,
+      "no_count": 51,
+      "yes_count": 11,
+      "no_vote_count": 34
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Signaling",
+    "topic_v2_display": "Signaling",
+    "topic_v2_unique": "Governance - Signaling"
+  },
+  {
+    "proposal_id": "83",
+    "chain_id": "evmos",
+    "title": "ECP1 Formalizing the Foundational Layer of Evmos DAO Governance",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "PASSED",
+    "submit_time": "1669679591457",
+    "final_tally_result": {
+      "yes_count": 93,
+      "abstain_count": 16,
+      "no_count": 4,
+      "no_with_veto_count": 1,
+      "no_vote_count": 30
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Signaling",
+    "topic_v2_display": "Signaling",
+    "topic_v2_unique": "Governance - Signaling"
+  },
+  {
+    "proposal_id": "82",
+    "chain_id": "evmos",
+    "title": "Evmos Ecosystem Campaign by Galxe",
+    "type": "CommunityPoolSpend",
+    "topic": "Ecosystem Growth",
+    "status": "REJECTED",
+    "submit_time": "1669067076063",
+    "final_tally_result": {
+      "yes_count": 42,
+      "abstain_count": 39,
+      "no_count": 45,
+      "no_with_veto_count": 1,
+      "no_vote_count": 17
+    },
+    "type_v2": "Treasury",
+    "topic_v2": "dApp & Tooling Funding",
+    "topic_v2_display": "dApp & Tooling Funding",
+    "topic_v2_unique": "Treasury - dApp & Tooling Funding"
+  },
+  {
+    "proposal_id": "80",
+    "chain_id": "evmos",
+    "title": "Dystopia Labs  Evmos Developer Acquisition Grant Request",
+    "type": "CommunityPoolSpend",
+    "topic": "Development Fund",
+    "status": "PASSED",
+    "submit_time": "1668526355459",
+    "final_tally_result": {
+      "no_count": 7,
+      "abstain_count": 34,
+      "yes_count": 76,
+      "no_with_veto_count": 1,
+      "no_vote_count": 26
+    },
+    "type_v2": "Treasury",
+    "topic_v2": "dApp & Tooling Funding",
+    "topic_v2_display": "dApp & Tooling Funding",
+    "topic_v2_unique": "Treasury - dApp & Tooling Funding"
+  },
+  {
+    "proposal_id": "79",
+    "chain_id": "evmos",
+    "title": "Register ERC20 for Tgrade TGD",
+    "type": "TokenRelated",
+    "topic": "Token Registration",
+    "status": "PASSED",
+    "submit_time": "1668280528705",
+    "final_tally_result": {
+      "yes_count": 122,
+      "abstain_count": 2,
+      "no_vote_count": 20
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "Token Management",
+    "topic_v2_display": "Token Management",
+    "topic_v2_unique": "Ecosystem - Token Management"
+  },
+  {
+    "proposal_id": "78",
+    "chain_id": "evmos",
+    "title": "Register ERC20 for Injective INJ",
+    "type": "TokenRelated",
+    "topic": "Token Registration",
+    "status": "PASSED",
+    "submit_time": "1667634395878",
+    "final_tally_result": {
+      "yes_count": 126,
+      "abstain_count": 3,
+      "no_vote_count": 15
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "Token Management",
+    "topic_v2_display": "Token Management",
+    "topic_v2_unique": "Ecosystem - Token Management"
+  },
+  {
+    "proposal_id": "77",
+    "chain_id": "evmos",
+    "title": "FootieSZN initial funding proposal",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "REJECTED",
+    "submit_time": "1667079030118",
+    "final_tally_result": {
+      "abstain_count": 37,
+      "yes_count": 28,
+      "no_count": 61,
+      "no_vote_count": 18
+    },
+    "type_v2": "Treasury",
+    "topic_v2": "dApp & Tooling Funding",
+    "topic_v2_display": "dApp & Tooling Funding",
+    "topic_v2_unique": "Treasury - dApp & Tooling Funding"
+  },
+  {
+    "proposal_id": "76",
+    "chain_id": "evmos",
+    "title": "Evmos Mainnet v910 Upgrade",
+    "type": "SoftwareUpgrade",
+    "topic": "Major Release",
+    "status": "PASSED",
+    "submit_time": "1666989828394",
+    "final_tally_result": {
+      "yes_count": 137,
+      "no_vote_count": 7
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Core Upgrade",
+    "topic_v2_display": "Core Upgrade",
+    "topic_v2_unique": "Protocol - Core Upgrade"
+  },
+  {
+    "proposal_id": "75",
+    "chain_id": "evmos",
+    "title": "Register ERC20 for Tether USD on Axelar axlUSDT",
+    "type": "TokenRelated",
+    "topic": "Token Registration",
+    "status": "PASSED",
+    "submit_time": "1666687090403",
+    "final_tally_result": {
+      "yes_count": 130,
+      "no_vote_count": 14
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "Token Management",
+    "topic_v2_display": "Token Management",
+    "topic_v2_unique": "Ecosystem - Token Management"
+  },
+  {
+    "proposal_id": "74",
+    "chain_id": "evmos",
+    "title": "Register ERC20 for axlDAI Dai Stablecoin on Axelar",
+    "type": "TokenRelated",
+    "topic": "Token Registration",
+    "status": "PASSED",
+    "submit_time": "1666511878454",
+    "final_tally_result": {
+      "yes_count": 134,
+      "abstain_count": 1,
+      "no_vote_count": 9
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "Token Management",
+    "topic_v2_display": "Token Management",
+    "topic_v2_unique": "Ecosystem - Token Management"
+  },
+  {
+    "proposal_id": "73",
+    "chain_id": "evmos",
+    "title": "Register ERC20 for Teritori Tori",
+    "type": "TokenRelated",
+    "topic": "Token Registration",
+    "status": "PASSED",
+    "submit_time": "1666349173332",
+    "final_tally_result": {
+      "yes_count": 130,
+      "abstain_count": 4,
+      "no_vote_count": 10
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "Token Management",
+    "topic_v2_display": "Token Management",
+    "topic_v2_unique": "Ecosystem - Token Management"
+  },
+  {
+    "proposal_id": "71",
+    "chain_id": "evmos",
+    "title": "Evmos Faucet for DeFi Kickoff",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "PASSED",
+    "submit_time": "1665684863329",
+    "final_tally_result": {
+      "yes_count": 131,
+      "abstain_count": 2,
+      "no_vote_count": 11
+    },
+    "type_v2": "Treasury",
+    "topic_v2": "dApp & Tooling Funding",
+    "topic_v2_display": "dApp & Tooling Funding",
+    "topic_v2_unique": "Treasury - dApp & Tooling Funding"
+  },
+  {
+    "proposal_id": "70",
+    "chain_id": "evmos",
+    "title": "Extending Osmosis External Incentives",
+    "type": "CommunityPoolSpend",
+    "topic": "Ecosystem Growth",
+    "status": "PASSED",
+    "submit_time": "1665521702540",
+    "final_tally_result": {
+      "yes_count": 136,
+      "abstain_count": 5,
+      "no_count": 2,
+      "no_vote_count": 1
+    },
+    "type_v2": "Treasury",
+    "topic_v2": "Liquidity & Incentives",
+    "topic_v2_display": "Liquidity & Incentives",
+    "topic_v2_unique": "Treasury - Liquidity & Incentives"
+  },
+  {
+    "proposal_id": "69",
+    "chain_id": "evmos",
+    "title": "Incubation Proposal from Chainhub",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "REJECTED",
+    "submit_time": "1665097050442",
+    "final_tally_result": {
+      "abstain_count": 29,
+      "yes_count": 14,
+      "no_count": 73,
+      "no_with_veto_count": 2,
+      "no_vote_count": 26
+    },
+    "type_v2": "Treasury",
+    "topic_v2": "dApp & Tooling Funding",
+    "topic_v2_display": "dApp & Tooling Funding",
+    "topic_v2_unique": "Treasury - dApp & Tooling Funding"
+  },
+  {
+    "proposal_id": "68",
+    "chain_id": "evmos",
+    "title": "Register ERC20 for USK Stablecoin of Kujira",
+    "type": "TokenRelated",
+    "topic": "Token Registration",
+    "status": "PASSED",
+    "submit_time": "1664988107828",
+    "final_tally_result": {
+      "yes_count": 126,
+      "abstain_count": 4,
+      "no_count": 1,
+      "no_vote_count": 13
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "Token Management",
+    "topic_v2_display": "Token Management",
+    "topic_v2_unique": "Ecosystem - Token Management"
+  },
+  {
+    "proposal_id": "67",
+    "chain_id": "evmos",
+    "title": "Liquidity Mining Proposal for Axelar Network Celer Network and Gravity Bridge on Kinesis",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "PASSED",
+    "submit_time": "1664926696326",
+    "final_tally_result": {
+      "yes_count": 122,
+      "no_count": 2,
+      "abstain_count": 6,
+      "no_vote_count": 14
+    },
+    "type_v2": "Treasury",
+    "topic_v2": "Liquidity & Incentives",
+    "topic_v2_display": "Liquidity & Incentives",
+    "topic_v2_unique": "Treasury - Liquidity & Incentives"
+  },
+  {
+    "proposal_id": "66",
+    "chain_id": "evmos",
+    "title": "Community Pool Spend Recover IBC tokens from Airdrop",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "PASSED",
+    "submit_time": "1664911867376",
+    "final_tally_result": {
+      "yes_count": 136,
+      "no_count": 1,
+      "no_vote_count": 7
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Spam & Malicious",
+    "topic_v2_display": "Spam & Malicious",
+    "topic_v2_unique": "Governance - Spam & Malicious"
+  },
+  {
+    "proposal_id": "65",
+    "chain_id": "evmos",
+    "title": "Register ERC20 for stATOM Stride Staked Atom",
+    "type": "TokenRelated",
+    "topic": "Token Registration",
+    "status": "PASSED",
+    "submit_time": "1664519245496",
+    "final_tally_result": {
+      "yes_count": 125,
+      "no_count": 2,
+      "abstain_count": 1,
+      "no_vote_count": 16
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "Token Management",
+    "topic_v2_display": "Token Management",
+    "topic_v2_unique": "Ecosystem - Token Management"
+  },
+  {
+    "proposal_id": "64",
+    "chain_id": "evmos",
+    "title": "Launching the Evmos Liquidity Incentives Program",
+    "type": "CommunityPoolSpend",
+    "topic": "Ecosystem Growth",
+    "status": "PASSED",
+    "submit_time": "1664299154612",
+    "final_tally_result": {
+      "yes_count": 128,
+      "abstain_count": 6,
+      "no_vote_count": 10
+    },
+    "type_v2": "Treasury",
+    "topic_v2": "Liquidity & Incentives",
+    "topic_v2_display": "Liquidity & Incentives",
+    "topic_v2_unique": "Treasury - Liquidity & Incentives"
+  },
+  {
+    "proposal_id": "62",
+    "chain_id": "evmos",
+    "title": "Ethermint Funding Proposal For Past Development Addressed from The Evmos Community to The Kava Community",
+    "type": "CommunityPoolSpend",
+    "topic": "Ecosystem Growth",
+    "status": "PASSED",
+    "submit_time": "1663444336584",
+    "final_tally_result": {
+      "yes_count": 108,
+      "abstain_count": 32,
+      "no_count": 4
+    },
+    "type_v2": "Treasury",
+    "topic_v2": "Community & Marketing Funding",
+    "topic_v2_display": "Community & Marketing Funding",
+    "topic_v2_unique": "Treasury - Community & Marketing Funding"
+  },
+  {
+    "proposal_id": "61",
+    "chain_id": "evmos",
+    "title": "Register ERC20 for axlWETH Axelar wETH",
+    "type": "TokenRelated",
+    "topic": "Token Registration",
+    "status": "PASSED",
+    "submit_time": "1663330647929",
+    "final_tally_result": {
+      "yes_count": 140,
+      "abstain_count": 4
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "Token Management",
+    "topic_v2_display": "Token Management",
+    "topic_v2_unique": "Ecosystem - Token Management"
+  },
+  {
+    "proposal_id": "60",
+    "chain_id": "evmos",
+    "title": "Register ERC20 for axlWBTC Axelar wBTC",
+    "type": "TokenRelated",
+    "topic": "Token Registration",
+    "status": "PASSED",
+    "submit_time": "1663330205147",
+    "final_tally_result": {
+      "yes_count": 142,
+      "abstain_count": 2
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "Token Management",
+    "topic_v2_display": "Token Management",
+    "topic_v2_unique": "Ecosystem - Token Management"
+  },
+  {
+    "proposal_id": "59",
+    "chain_id": "evmos",
+    "title": "Evmos Mainnet v810 Upgrade",
+    "type": "SoftwareUpgrade",
+    "topic": "Major Release",
+    "status": "PASSED",
+    "submit_time": "1663232507577",
+    "final_tally_result": {
+      "yes_count": 144
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Core Upgrade",
+    "topic_v2_display": "Core Upgrade",
+    "topic_v2_unique": "Protocol - Core Upgrade"
+  },
+  {
+    "proposal_id": "58",
+    "chain_id": "evmos",
+    "title": "Register ERC20 for axlUSDC Axelar USDC",
+    "type": "TokenRelated",
+    "topic": "Token Registration",
+    "status": "PASSED",
+    "submit_time": "1663007542850",
+    "final_tally_result": {
+      "yes_count": 143,
+      "no_count": 1
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "Token Management",
+    "topic_v2_display": "Token Management",
+    "topic_v2_unique": "Ecosystem - Token Management"
+  },
+  {
+    "proposal_id": "57",
+    "chain_id": "evmos",
+    "title": "Incubation Proposal ChainHubTexas Blockchain Projects for Evmos",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "REJECTED",
+    "submit_time": "1662840716526",
+    "final_tally_result": {
+      "abstain_count": 28,
+      "no_count": 104,
+      "yes_count": 10,
+      "no_vote_count": 2
+    },
+    "type_v2": "Treasury",
+    "topic_v2": "dApp & Tooling Funding",
+    "topic_v2_display": "dApp & Tooling Funding",
+    "topic_v2_unique": "Treasury - dApp & Tooling Funding"
+  },
+  {
+    "proposal_id": "56",
+    "chain_id": "evmos",
+    "title": "Register ERC20 for EEUR eMoney Euro",
+    "type": "TokenRelated",
+    "topic": "Token Registration",
+    "status": "PASSED",
+    "submit_time": "1662802357713",
+    "final_tally_result": {
+      "yes_count": 144
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "Token Management",
+    "topic_v2_display": "Token Management",
+    "topic_v2_unique": "Ecosystem - Token Management"
+  },
+  {
+    "proposal_id": "55",
+    "chain_id": "evmos",
+    "title": "Cora Protocol Lending without liquidations",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "REJECTED",
+    "submit_time": "1662018220442",
+    "final_tally_result": {
+      "no_count": 89,
+      "yes_count": 4,
+      "abstain_count": 32,
+      "no_vote_count": 19
+    },
+    "type_v2": "Treasury",
+    "topic_v2": "dApp & Tooling Funding",
+    "topic_v2_display": "dApp & Tooling Funding",
+    "topic_v2_unique": "Treasury - dApp & Tooling Funding"
+  },
+  {
+    "proposal_id": "54",
+    "chain_id": "evmos",
+    "title": "Covalent APIs Integration of Evmos and the OneMillionWallets Hackathon",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "PASSED",
+    "submit_time": "1661894021741",
+    "final_tally_result": {
+      "yes_count": 129,
+      "abstain_count": 7,
+      "no_count": 1,
+      "no_vote_count": 7
+    },
+    "type_v2": "Treasury",
+    "topic_v2": "Community & Marketing Funding",
+    "topic_v2_display": "Community & Marketing Funding",
+    "topic_v2_unique": "Treasury - Community & Marketing Funding"
+  },
+  {
+    "proposal_id": "53",
+    "chain_id": "evmos",
+    "title": "Register ERC20 for Juno",
+    "type": "TokenRelated",
+    "topic": "Token Registration",
+    "status": "PASSED",
+    "submit_time": "1661675818722",
+    "final_tally_result": {
+      "yes_count": 144
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "Token Management",
+    "topic_v2_display": "Token Management",
+    "topic_v2_unique": "Ecosystem - Token Management"
+  },
+  {
+    "proposal_id": "52",
+    "chain_id": "evmos",
+    "title": "Fund DIA Randomness Oracle Gas Fees for 1 Year",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "PASSED",
+    "submit_time": "1661533572331",
+    "final_tally_result": {
+      "yes_count": 107,
+      "abstain_count": 18,
+      "no_count": 4,
+      "no_with_veto_count": 1,
+      "no_vote_count": 14
+    },
+    "type_v2": "Treasury",
+    "topic_v2": "dApp & Tooling Funding",
+    "topic_v2_display": "dApp & Tooling Funding",
+    "topic_v2_unique": "Treasury - dApp & Tooling Funding"
+  },
+  {
+    "proposal_id": "51",
+    "chain_id": "evmos",
+    "title": "The Interim Constitution of Evmos DAO",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "PASSED",
+    "submit_time": "1661440151206",
+    "final_tally_result": {
+      "yes_count": 124,
+      "abstain_count": 3,
+      "no_vote_count": 17
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Signaling",
+    "topic_v2_display": "Signaling",
+    "topic_v2_unique": "Governance - Signaling"
+  },
+  {
+    "proposal_id": "50",
+    "chain_id": "evmos",
+    "title": "Evmos Mainnet v800 Upgrade",
+    "type": "SoftwareUpgrade",
+    "topic": "Major Release",
+    "status": "REJECTED",
+    "submit_time": "1661162916925",
+    "final_tally_result": {
+      "no_count": 124,
+      "yes_count": 20
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Core Upgrade",
+    "topic_v2_display": "Core Upgrade",
+    "topic_v2_unique": "Protocol - Core Upgrade"
+  },
+  {
+    "proposal_id": "49",
+    "chain_id": "evmos",
+    "title": "Register ERC20 for Regen Network REGEN",
+    "type": "TokenRelated",
+    "topic": "Token Registration",
+    "status": "PASSED",
+    "submit_time": "1660989936631",
+    "final_tally_result": {
+      "yes_count": 144
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "Token Management",
+    "topic_v2_display": "Token Management",
+    "topic_v2_unique": "Ecosystem - Token Management"
+  },
+  {
+    "proposal_id": "48",
+    "chain_id": "evmos",
+    "title": "Register ERC20 for Stargaze STARS",
+    "type": "TokenRelated",
+    "topic": "Token Registration",
+    "status": "PASSED",
+    "submit_time": "1660989175534",
+    "final_tally_result": {
+      "yes_count": 144
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "Token Management",
+    "topic_v2_display": "Token Management",
+    "topic_v2_unique": "Ecosystem - Token Management"
+  },
+  {
+    "proposal_id": "47",
+    "chain_id": "evmos",
+    "title": "Revive Sifchain IBC client",
+    "type": "IBCRelated",
+    "topic": "IBC Security",
+    "status": "PASSED",
+    "submit_time": "1660606396858",
+    "final_tally_result": {
+      "yes_count": 126,
+      "abstain_count": 1,
+      "no_vote_count": 17
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "IBC Management",
+    "topic_v2_display": "IBC Management",
+    "topic_v2_unique": "Ecosystem - IBC Management"
+  },
+  {
+    "proposal_id": "46",
+    "chain_id": "evmos",
+    "title": "Revive Juno IBC client",
+    "type": "IBCRelated",
+    "topic": "IBC Security",
+    "status": "PASSED",
+    "submit_time": "1660317208154",
+    "final_tally_result": {
+      "yes_count": 130,
+      "abstain_count": 1,
+      "no_vote_count": 13
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "IBC Management",
+    "topic_v2_display": "IBC Management",
+    "topic_v2_unique": "Ecosystem - IBC Management"
+  },
+  {
+    "proposal_id": "45",
+    "chain_id": "evmos",
+    "title": "Sponsor volunteer researcher for EVMInterChain lobby for Evmos",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "PASSED",
+    "submit_time": "1660290253564",
+    "final_tally_result": {
+      "yes_count": 106,
+      "abstain_count": 22,
+      "no_count": 1,
+      "no_vote_count": 15
+    },
+    "type_v2": "Treasury",
+    "topic_v2": "dApp & Tooling Funding",
+    "topic_v2_display": "dApp & Tooling Funding",
+    "topic_v2_unique": "Treasury - dApp & Tooling Funding"
+  },
+  {
+    "proposal_id": "44",
+    "chain_id": "evmos",
+    "title": "Parameter change maximum deposit time minimum deposit amount",
+    "type": "ParameterChange",
+    "topic": "Fee Adjustment",
+    "status": "PASSED",
+    "submit_time": "1659250816393",
+    "final_tally_result": {
+      "yes_count": 121,
+      "abstain_count": 1,
+      "no_count": 3,
+      "no_vote_count": 19
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Parameter Change",
+    "topic_v2_display": "Parameter Change",
+    "topic_v2_unique": "Protocol - Parameter Change"
+  },
+  {
+    "proposal_id": "43",
+    "chain_id": "evmos",
+    "title": "Airdrop claim courtesy proposal",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "PASSED",
+    "submit_time": "1659154180865",
+    "final_tally_result": {
+      "abstain_count": 78,
+      "yes_count": 36,
+      "no_count": 8,
+      "no_with_veto_count": 1,
+      "no_vote_count": 21
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Spam & Malicious",
+    "topic_v2_display": "Spam & Malicious",
+    "topic_v2_unique": "Governance - Spam & Malicious"
+  },
+  {
+    "proposal_id": "42",
+    "chain_id": "evmos",
+    "title": "Evmos Sponsorship of HackAtom Seoul 2022 and Participation in Korea Blockchain Week",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "PASSED",
+    "submit_time": "1657946897695",
+    "final_tally_result": {
+      "yes_count": 122,
+      "abstain_count": 13,
+      "no_vote_count": 9
+    },
+    "type_v2": "Treasury",
+    "topic_v2": "dApp & Tooling Funding",
+    "topic_v2_display": "dApp & Tooling Funding",
+    "topic_v2_unique": "Treasury - dApp & Tooling Funding"
+  },
+  {
+    "proposal_id": "40",
+    "chain_id": "evmos",
+    "title": "Evmos Developer Acquisition with Dystopia Labs",
+    "type": "CommunityPoolSpend",
+    "topic": "Ecosystem Growth",
+    "status": "PASSED",
+    "submit_time": "1657889148520",
+    "final_tally_result": {
+      "yes_count": 103,
+      "abstain_count": 23,
+      "no_count": 5,
+      "no_vote_count": 13
+    },
+    "type_v2": "Treasury",
+    "topic_v2": "dApp & Tooling Funding",
+    "topic_v2_display": "dApp & Tooling Funding",
+    "topic_v2_unique": "Treasury - dApp & Tooling Funding"
+  },
+  {
+    "proposal_id": "39",
+    "chain_id": "evmos",
+    "title": "Evmos external incentives on Osmosis",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "PASSED",
+    "submit_time": "1657743539459",
+    "final_tally_result": {
+      "yes_count": 111,
+      "abstain_count": 18,
+      "no_count": 14,
+      "no_with_veto_count": 1
+    },
+    "type_v2": "Treasury",
+    "topic_v2": "Liquidity & Incentives",
+    "topic_v2_display": "Liquidity & Incentives",
+    "topic_v2_unique": "Treasury - Liquidity & Incentives"
+  },
+  {
+    "proposal_id": "38",
+    "chain_id": "evmos",
+    "title": "Gift to Ethereum stakeholders",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "REJECTED",
+    "submit_time": "1657629353227",
+    "final_tally_result": {
+      "no_count": 36,
+      "no_with_veto_count": 96,
+      "abstain_count": 10,
+      "yes_count": 2
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Signaling",
+    "topic_v2_display": "Signaling",
+    "topic_v2_unique": "Governance - Signaling"
+  },
+  {
+    "proposal_id": "37",
+    "chain_id": "evmos",
+    "title": "Register ERC20 for ATOM Cosmos Hub",
+    "type": "TokenRelated",
+    "topic": "Token Registration",
+    "status": "PASSED",
+    "submit_time": "1657554052919",
+    "final_tally_result": {
+      "yes_count": 143,
+      "abstain_count": 1
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "Token Management",
+    "topic_v2_display": "Token Management",
+    "topic_v2_unique": "Ecosystem - Token Management"
+  },
+  {
+    "proposal_id": "36",
+    "chain_id": "evmos",
+    "title": "Recover JUNO channel by upgrading to new client",
+    "type": "IBCRelated",
+    "topic": "Client Update",
+    "status": "PASSED",
+    "submit_time": "1657438842662",
+    "final_tally_result": {
+      "yes_count": 144
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "IBC Management",
+    "topic_v2_display": "IBC Management",
+    "topic_v2_unique": "Ecosystem - IBC Management"
+  },
+  {
+    "proposal_id": "35",
+    "chain_id": "evmos",
+    "title": "Register ERC20 for Osmosis",
+    "type": "TokenRelated",
+    "topic": "Token Registration",
+    "status": "PASSED",
+    "submit_time": "1657171091640",
+    "final_tally_result": {
+      "yes_count": 140,
+      "no_vote_count": 4
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "Token Management",
+    "topic_v2_display": "Token Management",
+    "topic_v2_unique": "Ecosystem - Token Management"
+  },
+  {
+    "proposal_id": "34",
+    "chain_id": "evmos",
+    "title": "Extend Rektdrop Claims Period by 21 days",
+    "type": "ParameterChange",
+    "topic": "Governance Settings",
+    "status": "PASSED",
+    "submit_time": "1656755693548",
+    "final_tally_result": {
+      "yes_count": 118,
+      "no_count": 17,
+      "abstain_count": 6,
+      "no_vote_count": 3
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Parameter Change",
+    "topic_v2_display": "Parameter Change",
+    "topic_v2_unique": "Protocol - Parameter Change"
+  },
+  {
+    "proposal_id": "33",
+    "chain_id": "evmos",
+    "title": "Evmos Mainnet v601 Upgrade",
+    "type": "SoftwareUpgrade",
+    "topic": "Major Release",
+    "status": "PASSED",
+    "submit_time": "1656508044977",
+    "final_tally_result": {
+      "yes_count": 144
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Core Upgrade",
+    "topic_v2_display": "Core Upgrade",
+    "topic_v2_unique": "Protocol - Core Upgrade"
+  },
+  {
+    "proposal_id": "32",
+    "chain_id": "evmos",
+    "title": "Bootstrap liquidity on Evmos dapps",
+    "type": "CommunityPoolSpend",
+    "topic": "Ecosystem Growth",
+    "status": "REJECTED",
+    "submit_time": "1656389526233",
+    "final_tally_result": {
+      "abstain_count": 29,
+      "yes_count": 29,
+      "no_count": 86
+    },
+    "type_v2": "Treasury",
+    "topic_v2": "Liquidity & Incentives",
+    "topic_v2_display": "Liquidity & Incentives",
+    "topic_v2_unique": "Treasury - Liquidity & Incentives"
+  },
+  {
+    "proposal_id": "31",
+    "chain_id": "evmos",
+    "title": "Grant Request to Sponsor EVMOS Public RPC by Pocket Network",
+    "type": "CommunityPoolSpend",
+    "topic": "Ecosystem Growth",
+    "status": "PASSED",
+    "submit_time": "1656086300130",
+    "final_tally_result": {
+      "yes_count": 115,
+      "abstain_count": 19,
+      "no_count": 3,
+      "no_vote_count": 7
+    },
+    "type_v2": "Treasury",
+    "topic_v2": "dApp & Tooling Funding",
+    "topic_v2_display": "dApp & Tooling Funding",
+    "topic_v2_unique": "Treasury - dApp & Tooling Funding"
+  },
+  {
+    "proposal_id": "30",
+    "chain_id": "evmos",
+    "title": "Exswap Bootstrap Proposal ",
+    "type": "CommunityPoolSpend",
+    "topic": "Ecosystem Growth",
+    "status": "REJECTED",
+    "submit_time": "1655481531178",
+    "final_tally_result": {
+      "no_count": 76,
+      "yes_count": 29,
+      "abstain_count": 30,
+      "no_vote_count": 9
+    },
+    "type_v2": "Treasury",
+    "topic_v2": "dApp & Tooling Funding",
+    "topic_v2_display": "dApp & Tooling Funding",
+    "topic_v2_unique": "Treasury - dApp & Tooling Funding"
+  },
+  {
+    "proposal_id": "29",
+    "chain_id": "evmos",
+    "title": "Evmos Mainnet v500 Upgrade",
+    "type": "SoftwareUpgrade",
+    "topic": "Major Release",
+    "status": "REJECTED",
+    "submit_time": "1655287060121",
+    "final_tally_result": {
+      "no_count": 110,
+      "yes_count": 28,
+      "abstain_count": 6
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Core Upgrade",
+    "topic_v2_display": "Core Upgrade",
+    "topic_v2_unique": "Protocol - Core Upgrade"
+  },
+  {
+    "proposal_id": "28",
+    "chain_id": "evmos",
+    "title": "EVMOS GRANT  Airdrop Calculator built by Cryptech",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "REJECTED",
+    "submit_time": "1654579935472",
+    "final_tally_result": {
+      "no_count": 45,
+      "yes_count": 15,
+      "abstain_count": 60,
+      "no_vote_count": 24
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Spam & Malicious",
+    "topic_v2_display": "Spam & Malicious",
+    "topic_v2_unique": "Governance - Spam & Malicious"
+  },
+  {
+    "proposal_id": "27",
+    "chain_id": "evmos",
+    "title": "Evmos Get Momentum  1m Evmos Developer Incentive Program Proposal",
+    "type": "CommunityPoolSpend",
+    "topic": "Ecosystem Growth",
+    "status": "PASSED",
+    "submit_time": "1654264798598",
+    "final_tally_result": {
+      "yes_count": 120,
+      "abstain_count": 13,
+      "no_count": 4,
+      "no_vote_count": 7
+    },
+    "type_v2": "Treasury",
+    "topic_v2": "dApp & Tooling Funding",
+    "topic_v2_display": "dApp & Tooling Funding",
+    "topic_v2_unique": "Treasury - dApp & Tooling Funding"
+  },
+  {
+    "proposal_id": "25",
+    "chain_id": "evmos",
+    "title": "Recover expired IBC client for Cosmos hub",
+    "type": "IBCRelated",
+    "topic": "IBC Security",
+    "status": "PASSED",
+    "submit_time": "1653948940497",
+    "final_tally_result": {
+      "yes_count": 139,
+      "abstain_count": 1,
+      "no_vote_count": 4
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "IBC Management",
+    "topic_v2_display": "IBC Management",
+    "topic_v2_unique": "Ecosystem - IBC Management"
+  },
+  {
+    "proposal_id": "23",
+    "chain_id": "evmos",
+    "title": "Grant proposal for Flux Protocol an oracle solution live on Evmos",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "PASSED",
+    "submit_time": "1653661307819",
+    "final_tally_result": {
+      "yes_count": 123,
+      "abstain_count": 9,
+      "no_count": 2,
+      "no_vote_count": 10
+    },
+    "type_v2": "Treasury",
+    "topic_v2": "dApp & Tooling Funding",
+    "topic_v2_display": "dApp & Tooling Funding",
+    "topic_v2_unique": "Treasury - dApp & Tooling Funding"
+  },
+  {
+    "proposal_id": "22",
+    "chain_id": "evmos",
+    "title": "Parameter change Enable the inflation module",
+    "type": "ParameterChange",
+    "topic": "Fee Adjustment",
+    "status": "PASSED",
+    "submit_time": "1653312930552",
+    "final_tally_result": {
+      "yes_count": 141,
+      "abstain_count": 2,
+      "no_count": 1
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Parameter Change",
+    "topic_v2_display": "Parameter Change",
+    "topic_v2_unique": "Protocol - Parameter Change"
+  },
+  {
+    "proposal_id": "21",
+    "chain_id": "evmos",
+    "title": "Sponsor Nebular Summit during Paris EthCC week in July",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "PASSED",
+    "submit_time": "1653286513695",
+    "final_tally_result": {
+      "abstain_count": 38,
+      "yes_count": 102,
+      "no_count": 1,
+      "no_vote_count": 3
+    },
+    "type_v2": "Treasury",
+    "topic_v2": "dApp & Tooling Funding",
+    "topic_v2_display": "dApp & Tooling Funding",
+    "topic_v2_unique": "Treasury - dApp & Tooling Funding"
+  },
+  {
+    "proposal_id": "20",
+    "chain_id": "evmos",
+    "title": "Register ERC20 for GWETH",
+    "type": "TokenRelated",
+    "topic": "Token Registration",
+    "status": "PASSED",
+    "submit_time": "1652921957444",
+    "final_tally_result": {
+      "abstain_count": 22,
+      "yes_count": 103,
+      "no_count": 6,
+      "no_vote_count": 13
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "Token Management",
+    "topic_v2_display": "Token Management",
+    "topic_v2_unique": "Ecosystem - Token Management"
+  },
+  {
+    "proposal_id": "19",
+    "chain_id": "evmos",
+    "title": "Register ERC20 for GWBTC",
+    "type": "TokenRelated",
+    "topic": "Token Registration",
+    "status": "PASSED",
+    "submit_time": "1652921102578",
+    "final_tally_result": {
+      "abstain_count": 21,
+      "yes_count": 102,
+      "no_count": 6,
+      "no_vote_count": 15
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "Token Management",
+    "topic_v2_display": "Token Management",
+    "topic_v2_unique": "Ecosystem - Token Management"
+  },
+  {
+    "proposal_id": "18",
+    "chain_id": "evmos",
+    "title": "Register ERC20 for GUSDT",
+    "type": "TokenRelated",
+    "topic": "Token Registration",
+    "status": "PASSED",
+    "submit_time": "1652920725184",
+    "final_tally_result": {
+      "abstain_count": 21,
+      "yes_count": 105,
+      "no_count": 5,
+      "no_vote_count": 13
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "Token Management",
+    "topic_v2_display": "Token Management",
+    "topic_v2_unique": "Ecosystem - Token Management"
+  },
+  {
+    "proposal_id": "17",
+    "chain_id": "evmos",
+    "title": "Register ERC20 for GUSDC",
+    "type": "TokenRelated",
+    "topic": "Token Registration",
+    "status": "PASSED",
+    "submit_time": "1652920604583",
+    "final_tally_result": {
+      "abstain_count": 22,
+      "yes_count": 104,
+      "no_count": 5,
+      "no_vote_count": 13
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "Token Management",
+    "topic_v2_display": "Token Management",
+    "topic_v2_unique": "Ecosystem - Token Management"
+  },
+  {
+    "proposal_id": "16",
+    "chain_id": "evmos",
+    "title": "Register ERC20 for GDAI",
+    "type": "TokenRelated",
+    "topic": "Token Registration",
+    "status": "PASSED",
+    "submit_time": "1652920569217",
+    "final_tally_result": {
+      "abstain_count": 21,
+      "yes_count": 104,
+      "no_count": 5,
+      "no_vote_count": 14
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "Token Management",
+    "topic_v2_display": "Token Management",
+    "topic_v2_unique": "Ecosystem - Token Management"
+  },
+  {
+    "proposal_id": "15",
+    "chain_id": "evmos",
+    "title": "Register ERC20 for GRAV",
+    "type": "TokenRelated",
+    "topic": "Token Registration",
+    "status": "PASSED",
+    "submit_time": "1652918374608",
+    "final_tally_result": {
+      "yes_count": 105,
+      "abstain_count": 22,
+      "no_count": 6,
+      "no_vote_count": 11
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "Token Management",
+    "topic_v2_display": "Token Management",
+    "topic_v2_unique": "Ecosystem - Token Management"
+  },
+  {
+    "proposal_id": "13",
+    "chain_id": "evmos",
+    "title": "Parameter change Enable the erc20 module",
+    "type": "ParameterChange",
+    "topic": "Fee Adjustment",
+    "status": "PASSED",
+    "submit_time": "1652438172687",
+    "final_tally_result": {
+      "yes_count": 98,
+      "abstain_count": 18,
+      "no_count": 2,
+      "no_vote_count": 26
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Parameter Change",
+    "topic_v2_display": "Parameter Change",
+    "topic_v2_unique": "Protocol - Parameter Change"
+  },
+  {
+    "proposal_id": "12",
+    "chain_id": "evmos",
+    "title": "Parameter change Enable the erc20 module",
+    "type": "ParameterChange",
+    "topic": "Fee Adjustment",
+    "status": "PASSED",
+    "submit_time": "1652437915827",
+    "final_tally_result": {
+      "yes_count": 126,
+      "abstain_count": 2,
+      "no_vote_count": 16
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Parameter Change",
+    "topic_v2_display": "Parameter Change",
+    "topic_v2_unique": "Protocol - Parameter Change"
+  },
+  {
+    "proposal_id": "11",
+    "chain_id": "evmos",
+    "title": "Amend PrematurelyInitiated Decay Period for Claims",
+    "type": "ParameterChange",
+    "topic": "Governance Settings",
+    "status": "PASSED",
+    "submit_time": "1652397727956",
+    "final_tally_result": {
+      "yes_count": 124,
+      "abstain_count": 2,
+      "no_vote_count": 18
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Parameter Change",
+    "topic_v2_display": "Parameter Change",
+    "topic_v2_unique": "Protocol - Parameter Change"
+  },
+  {
+    "proposal_id": "10",
+    "chain_id": "evmos",
+    "title": "Recover Cosmoshub channel by upgrading to new client",
+    "type": "IBCRelated",
+    "topic": "Client Update",
+    "status": "FAILED",
+    "submit_time": "1652311481887",
+    "final_tally_result": {
+      "yes_count": 133,
+      "abstain_count": 2,
+      "no_vote_count": 9
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "IBC Management",
+    "topic_v2_display": "IBC Management",
+    "topic_v2_unique": "Ecosystem - IBC Management"
+  },
+  {
+    "proposal_id": "9",
+    "chain_id": "evmos",
+    "title": "Extend Rektdrop Claims Period by 21 days",
+    "type": "ParameterChange",
+    "topic": "Governance Settings",
+    "status": "PASSED",
+    "submit_time": "1651892510666",
+    "final_tally_result": {
+      "yes_count": 119,
+      "no_count": 1,
+      "no_vote_count": 24
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Parameter Change",
+    "topic_v2_display": "Parameter Change",
+    "topic_v2_unique": "Protocol - Parameter Change"
+  },
+  {
+    "proposal_id": "8",
+    "chain_id": "evmos",
+    "title": "Reset BaseFee to Default and Increase ElasticityMultiplier",
+    "type": "ParameterChange",
+    "topic": "Protocol Configuration",
+    "status": "PASSED",
+    "submit_time": "1651825029048",
+    "final_tally_result": {
+      "yes_count": 120,
+      "abstain_count": 1,
+      "no_vote_count": 23
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Parameter Change",
+    "topic_v2_display": "Parameter Change",
+    "topic_v2_unique": "Protocol - Parameter Change"
+  },
+  {
+    "proposal_id": "7",
+    "chain_id": "evmos",
+    "title": "Increase the minimum deposit for governance proposals",
+    "type": "ParameterChange",
+    "topic": "Governance Settings",
+    "status": "PASSED",
+    "submit_time": "1651736355832",
+    "final_tally_result": {
+      "yes_count": 122,
+      "abstain_count": 3,
+      "no_vote_count": 19
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Parameter Change",
+    "topic_v2_display": "Parameter Change",
+    "topic_v2_unique": "Protocol - Parameter Change"
+  },
+  {
+    "proposal_id": "6",
+    "chain_id": "evmos",
+    "title": "Transfer Expandingspace validator to another wallet",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "REJECTED",
+    "submit_time": "1651614755740",
+    "final_tally_result": {
+      "no_count": 65,
+      "yes_count": 18,
+      "abstain_count": 31,
+      "no_vote_count": 30
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Signaling",
+    "topic_v2_display": "Signaling",
+    "topic_v2_unique": "Governance - Signaling"
+  },
+  {
+    "proposal_id": "4",
+    "chain_id": "evmos",
+    "title": "Turn on inflation rewards",
+    "type": "ParameterChange",
+    "topic": "Economic Parameters",
+    "status": "REJECTED",
+    "submit_time": "1651250276994",
+    "final_tally_result": {
+      "no_count": 96,
+      "yes_count": 30,
+      "abstain_count": 5,
+      "no_with_veto_count": 1,
+      "no_vote_count": 12
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Parameter Change",
+    "topic_v2_display": "Parameter Change",
+    "topic_v2_unique": "Protocol - Parameter Change"
+  },
+  {
+    "proposal_id": "3",
+    "chain_id": "evmos",
+    "title": "Evmos",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "PASSED",
+    "submit_time": "1651249350876",
+    "final_tally_result": {
+      "yes_count": 83,
+      "abstain_count": 35,
+      "no_count": 1,
+      "no_vote_count": 25
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Signaling",
+    "topic_v2_display": "Signaling",
+    "topic_v2_unique": "Governance - Signaling"
+  },
+  {
+    "proposal_id": "2",
+    "chain_id": "evmos",
+    "title": "Governance Proposal Mission",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "PASSED",
+    "submit_time": "1651248704657",
+    "final_tally_result": {
+      "yes_count": 90,
+      "abstain_count": 30,
+      "no_vote_count": 24
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Signaling",
+    "topic_v2_display": "Signaling",
+    "topic_v2_unique": "Governance - Signaling"
+  },
+  {
+    "proposal_id": "1",
+    "chain_id": "evmos",
+    "title": "Airdrop Claim Mission",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "PASSED",
+    "submit_time": "1646335101382",
+    "final_tally_result": {
+      "yes_count": 140,
+      "abstain_count": 3,
+      "no_with_veto_count": 1
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Spam & Malicious",
+    "topic_v2_display": "Spam & Malicious",
+    "topic_v2_unique": "Governance - Spam & Malicious"
+  }
+]

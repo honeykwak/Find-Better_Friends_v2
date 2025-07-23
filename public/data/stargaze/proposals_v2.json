@@ -1,0 +1,4751 @@
+[
+  {
+    "proposal_id": "293",
+    "chain_id": "stargaze",
+    "title": "Proposal Reallocate Marketplace Fees for Platform Growth and Development",
+    "type": "Unknown",
+    "topic": "Unclassified",
+    "status": "PASSED",
+    "submit_time": "1731347133113",
+    "final_tally_result": {
+      "yes_count": 48,
+      "abstain_count": 4,
+      "no_vote_count": 74
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Signaling",
+    "topic_v2_display": "Signaling",
+    "topic_v2_unique": "Governance - Signaling"
+  },
+  {
+    "proposal_id": "292",
+    "chain_id": "stargaze",
+    "title": "LimitedTime Token Exchange Between Stargaze and GATA HUB to Boost Decentralization and Liquidity for StarDex",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "PASSED",
+    "submit_time": "1730591416166",
+    "final_tally_result": {
+      "abstain_count": 20,
+      "yes_count": 34,
+      "no_count": 3,
+      "no_vote_count": 70
+    },
+    "type_v2": "Treasury",
+    "topic_v2": "Liquidity & Incentives",
+    "topic_v2_display": "Liquidity & Incentives",
+    "topic_v2_unique": "Treasury - Liquidity & Incentives"
+  },
+  {
+    "proposal_id": "291",
+    "chain_id": "stargaze",
+    "title": "Incentivize STARS  USDC Pool on Stardex",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "PASSED",
+    "submit_time": "1729798315807",
+    "final_tally_result": {
+      "yes_count": 37,
+      "abstain_count": 7,
+      "no_count": 2,
+      "no_vote_count": 83
+    },
+    "type_v2": "Treasury",
+    "topic_v2": "Liquidity & Incentives",
+    "topic_v2_display": "Liquidity & Incentives",
+    "topic_v2_unique": "Treasury - Liquidity & Incentives"
+  },
+  {
+    "proposal_id": "290",
+    "chain_id": "stargaze",
+    "title": "Stargaze Credit Card ",
+    "type": "Unknown",
+    "topic": "Unclassified",
+    "status": "REJECTED",
+    "submit_time": "1729111303142",
+    "final_tally_result": {
+      "no_with_veto_count": 36,
+      "yes_count": 4,
+      "no_vote_count": 89
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Signaling",
+    "topic_v2_display": "Signaling",
+    "topic_v2_unique": "Governance - Signaling"
+  },
+  {
+    "proposal_id": "289",
+    "chain_id": "stargaze",
+    "title": "Whitelist Deployment Address for Skip",
+    "type": "ParameterChange",
+    "topic": "Protocol Configuration",
+    "status": "PASSED",
+    "submit_time": "1727720656205",
+    "final_tally_result": {
+      "yes_count": 53,
+      "no_vote_count": 75
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Parameter Change",
+    "topic_v2_display": "Parameter Change",
+    "topic_v2_unique": "Protocol - Parameter Change"
+  },
+  {
+    "proposal_id": "288",
+    "chain_id": "stargaze",
+    "title": "Mint Revenue Distribution",
+    "type": "Unknown",
+    "topic": "Unclassified",
+    "status": "PASSED",
+    "submit_time": "1727202537360",
+    "final_tally_result": {
+      "yes_count": 51,
+      "abstain_count": 4,
+      "no_vote_count": 73
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Signaling",
+    "topic_v2_display": "Signaling",
+    "topic_v2_unique": "Governance - Signaling"
+  },
+  {
+    "proposal_id": "287",
+    "chain_id": "stargaze",
+    "title": "Filling GopLend liquidity with community pooling",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "PASSED",
+    "submit_time": "1726502085928",
+    "final_tally_result": {
+      "yes_count": 47,
+      "abstain_count": 13,
+      "no_vote_count": 70
+    },
+    "type_v2": "Treasury",
+    "topic_v2": "Liquidity & Incentives",
+    "topic_v2_display": "Liquidity & Incentives",
+    "topic_v2_unique": "Treasury - Liquidity & Incentives"
+  },
+  {
+    "proposal_id": "286",
+    "chain_id": "stargaze",
+    "title": "Correction Add cosmwasmwasmv1MsgExecuteContract to allowed ICA Messages",
+    "type": "ParameterChange",
+    "topic": "Protocol Configuration",
+    "status": "PASSED",
+    "submit_time": "1721413934760",
+    "final_tally_result": {
+      "yes_count": 50,
+      "abstain_count": 6,
+      "no_vote_count": 74
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Parameter Change",
+    "topic_v2_display": "Parameter Change",
+    "topic_v2_unique": "Protocol - Parameter Change"
+  },
+  {
+    "proposal_id": "285",
+    "chain_id": "stargaze",
+    "title": "Recover Carbon IBC transfer channel",
+    "type": "IBCRelated",
+    "topic": "IBC Transfer",
+    "status": "PASSED",
+    "submit_time": "1721230277966",
+    "final_tally_result": {
+      "yes_count": 51,
+      "abstain_count": 1,
+      "no_vote_count": 78
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "IBC Management",
+    "topic_v2_display": "IBC Management",
+    "topic_v2_unique": "Ecosystem - IBC Management"
+  },
+  {
+    "proposal_id": "284",
+    "chain_id": "stargaze",
+    "title": "Add cosmwasmwasmv1beta1MsgExecuteContract to allowed ICA Messages",
+    "type": "ParameterChange",
+    "topic": "Protocol Configuration",
+    "status": "PASSED",
+    "submit_time": "1721147893144",
+    "final_tally_result": {
+      "yes_count": 52,
+      "abstain_count": 3,
+      "no_vote_count": 75
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Parameter Change",
+    "topic_v2_display": "Parameter Change",
+    "topic_v2_unique": "Protocol - Parameter Change"
+  },
+  {
+    "proposal_id": "283",
+    "chain_id": "stargaze",
+    "title": "Bad Kids Airdrop   StarGaze Airdrop ",
+    "type": "Unknown",
+    "topic": "Unclassified",
+    "status": "REJECTED",
+    "submit_time": "1720730985424",
+    "final_tally_result": {
+      "no_with_veto_count": 39,
+      "no_vote_count": 91
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Spam & Malicious",
+    "topic_v2_display": "Spam & Malicious",
+    "topic_v2_unique": "Governance - Spam & Malicious"
+  },
+  {
+    "proposal_id": "282",
+    "chain_id": "stargaze",
+    "title": "Adding the CryptoGopniks team address to load contracts WL",
+    "type": "ParameterChange",
+    "topic": "Staking Parameters",
+    "status": "PASSED",
+    "submit_time": "1720009372406",
+    "final_tally_result": {
+      "yes_count": 49,
+      "abstain_count": 6,
+      "no_count": 1,
+      "no_vote_count": 74
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Parameter Change",
+    "topic_v2_display": "Parameter Change",
+    "topic_v2_unique": "Protocol - Parameter Change"
+  },
+  {
+    "proposal_id": "281",
+    "chain_id": "stargaze",
+    "title": "Whitelist Deploydon Dev Wallet",
+    "type": "ParameterChange",
+    "topic": "Protocol Configuration",
+    "status": "PASSED",
+    "submit_time": "1719616712863",
+    "final_tally_result": {
+      "yes_count": 61,
+      "abstain_count": 3,
+      "no_count": 1,
+      "no_vote_count": 65
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Parameter Change",
+    "topic_v2_display": "Parameter Change",
+    "topic_v2_unique": "Protocol - Parameter Change"
+  },
+  {
+    "proposal_id": "280",
+    "chain_id": "stargaze",
+    "title": "Community Pool separation for Interchain NFT incentives",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "PASSED",
+    "submit_time": "1719612563760",
+    "final_tally_result": {
+      "yes_count": 56,
+      "no_count": 2,
+      "abstain_count": 5,
+      "no_vote_count": 67
+    },
+    "type_v2": "Treasury",
+    "topic_v2": "Liquidity & Incentives",
+    "topic_v2_display": "Liquidity & Incentives",
+    "topic_v2_unique": "Treasury - Liquidity & Incentives"
+  },
+  {
+    "proposal_id": "279",
+    "chain_id": "stargaze",
+    "title": "v14 Upgrade",
+    "type": "SoftwareUpgrade",
+    "topic": "Major Release",
+    "status": "PASSED",
+    "submit_time": "1719284069476",
+    "final_tally_result": {
+      "yes_count": 78,
+      "no_vote_count": 52
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Core Upgrade",
+    "topic_v2_display": "Core Upgrade",
+    "topic_v2_unique": "Protocol - Core Upgrade"
+  },
+  {
+    "proposal_id": "278",
+    "chain_id": "stargaze",
+    "title": "Punks NFT Cases Platform Store Treasure Contract",
+    "type": "SmartContract",
+    "topic": "Contract Deployment",
+    "status": "PASSED",
+    "submit_time": "1719138356111",
+    "final_tally_result": {
+      "yes_count": 63,
+      "abstain_count": 2,
+      "no_vote_count": 65
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "dApp Onboarding",
+    "topic_v2_display": "dApp Onboarding",
+    "topic_v2_unique": "Ecosystem - dApp Onboarding"
+  },
+  {
+    "proposal_id": "277",
+    "chain_id": "stargaze",
+    "title": "Punks NFT Cases Platform Store Platform Contract",
+    "type": "SmartContract",
+    "topic": "Contract Deployment",
+    "status": "PASSED",
+    "submit_time": "1719137043765",
+    "final_tally_result": {
+      "yes_count": 62,
+      "abstain_count": 2,
+      "no_vote_count": 66
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "dApp Onboarding",
+    "topic_v2_display": "dApp Onboarding",
+    "topic_v2_unique": "Ecosystem - dApp Onboarding"
+  },
+  {
+    "proposal_id": "276",
+    "chain_id": "stargaze",
+    "title": "Implement CopyStaking for Strides Stargaze Delegations",
+    "type": "Unknown",
+    "topic": "Unclassified",
+    "status": "PASSED",
+    "submit_time": "1718915293117",
+    "final_tally_result": {
+      "abstain_count": 5,
+      "yes_count": 31,
+      "no_count": 1,
+      "no_vote_count": 93
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Signaling",
+    "topic_v2_display": "Signaling",
+    "topic_v2_unique": "Governance - Signaling"
+  },
+  {
+    "proposal_id": "275",
+    "chain_id": "stargaze",
+    "title": "Whitelist address for Andromeda Protocol Deployment",
+    "type": "ParameterChange",
+    "topic": "Protocol Configuration",
+    "status": "PASSED",
+    "submit_time": "1717682912208",
+    "final_tally_result": {
+      "no_count": 1,
+      "abstain_count": 8,
+      "yes_count": 45,
+      "no_vote_count": 76
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Parameter Change",
+    "topic_v2_display": "Parameter Change",
+    "topic_v2_unique": "Protocol - Parameter Change"
+  },
+  {
+    "proposal_id": "274",
+    "chain_id": "stargaze",
+    "title": "Update Consensus Params",
+    "type": "ParameterChange",
+    "topic": "Staking Parameters",
+    "status": "PASSED",
+    "submit_time": "1717110802211",
+    "final_tally_result": {
+      "yes_count": 34,
+      "no_vote_count": 96
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Parameter Change",
+    "topic_v2_display": "Parameter Change",
+    "topic_v2_unique": "Protocol - Parameter Change"
+  },
+  {
+    "proposal_id": "273",
+    "chain_id": "stargaze",
+    "title": "Pin and Migrate  Marketplace Contract",
+    "type": "SmartContract",
+    "topic": "Contract Deployment",
+    "status": "PASSED",
+    "submit_time": "1717110621662",
+    "final_tally_result": {
+      "yes_count": 32,
+      "no_vote_count": 98
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "dApp Onboarding",
+    "topic_v2_display": "dApp Onboarding",
+    "topic_v2_unique": "Ecosystem - dApp Onboarding"
+  },
+  {
+    "proposal_id": "272",
+    "chain_id": "stargaze",
+    "title": "Joint liquidity provisioning for the STARS and NTRN tokens on Astroport on Neutron",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "PASSED",
+    "submit_time": "1716988295233",
+    "final_tally_result": {
+      "abstain_count": 12,
+      "yes_count": 34,
+      "no_count": 6,
+      "no_vote_count": 78
+    },
+    "type_v2": "Treasury",
+    "topic_v2": "Liquidity & Incentives",
+    "topic_v2_display": "Liquidity & Incentives",
+    "topic_v2_unique": "Treasury - Liquidity & Incentives"
+  },
+  {
+    "proposal_id": "271",
+    "chain_id": "stargaze",
+    "title": "Signaling Prop Upload PreMint Auction Contract",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "PASSED",
+    "submit_time": "1716325199651",
+    "final_tally_result": {
+      "yes_count": 50,
+      "abstain_count": 8,
+      "no_vote_count": 72
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "dApp Onboarding",
+    "topic_v2_display": "dApp Onboarding",
+    "topic_v2_unique": "Ecosystem - dApp Onboarding"
+  },
+  {
+    "proposal_id": "270",
+    "chain_id": "stargaze",
+    "title": "Lottery Game Smart Contract",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "REJECTED",
+    "submit_time": "1716225535049",
+    "final_tally_result": {
+      "no_count": 45,
+      "abstain_count": 9,
+      "yes_count": 6,
+      "no_with_veto_count": 2,
+      "no_vote_count": 68
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "dApp Onboarding",
+    "topic_v2_display": "dApp Onboarding",
+    "topic_v2_unique": "Ecosystem - dApp Onboarding"
+  },
+  {
+    "proposal_id": "269",
+    "chain_id": "stargaze",
+    "title": "Collection Creation Fee in USDC",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "PASSED",
+    "submit_time": "1715786976863",
+    "final_tally_result": {
+      "yes_count": 64,
+      "abstain_count": 1,
+      "no_vote_count": 65
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Signaling",
+    "topic_v2_display": "Signaling",
+    "topic_v2_unique": "Governance - Signaling"
+  },
+  {
+    "proposal_id": "268",
+    "chain_id": "stargaze",
+    "title": "WL Racoon Supply dev address for contract uploads",
+    "type": "ParameterChange",
+    "topic": "Economic Parameters",
+    "status": "PASSED",
+    "submit_time": "1715005017151",
+    "final_tally_result": {
+      "yes_count": 66,
+      "abstain_count": 3,
+      "no_vote_count": 61
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Parameter Change",
+    "topic_v2_display": "Parameter Change",
+    "topic_v2_unique": "Protocol - Parameter Change"
+  },
+  {
+    "proposal_id": "267",
+    "chain_id": "stargaze",
+    "title": "stSTARS  STARS POL for Cosmos DeFi Applications",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "REJECTED",
+    "submit_time": "1712779325260",
+    "final_tally_result": {
+      "yes_count": 28,
+      "abstain_count": 8,
+      "no_count": 37,
+      "no_with_veto_count": 3,
+      "no_vote_count": 54
+    },
+    "type_v2": "Treasury",
+    "topic_v2": "dApp & Tooling Funding",
+    "topic_v2_display": "dApp & Tooling Funding",
+    "topic_v2_unique": "Treasury - dApp & Tooling Funding"
+  },
+  {
+    "proposal_id": "266",
+    "chain_id": "stargaze",
+    "title": "Create Stargazes GovernanceControlled Polytone Proxy Account on Neutron",
+    "type": "SmartContract",
+    "topic": "Contract Deployment",
+    "status": "PASSED",
+    "submit_time": "1712351387580",
+    "final_tally_result": {
+      "yes_count": 64,
+      "abstain_count": 2,
+      "no_vote_count": 64
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "dApp Onboarding",
+    "topic_v2_display": "dApp Onboarding",
+    "topic_v2_unique": "Ecosystem - dApp Onboarding"
+  },
+  {
+    "proposal_id": "265",
+    "chain_id": "stargaze",
+    "title": "Stargaze Community Owned Liquid Staking with pSTAKE Finance",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "REJECTED",
+    "submit_time": "1712094173713",
+    "final_tally_result": {
+      "no_count": 44,
+      "abstain_count": 13,
+      "yes_count": 17,
+      "no_with_veto_count": 1,
+      "no_vote_count": 55
+    },
+    "type_v2": "Treasury",
+    "topic_v2": "Community & Marketing Funding",
+    "topic_v2_display": "Community & Marketing Funding",
+    "topic_v2_unique": "Treasury - Community & Marketing Funding"
+  },
+  {
+    "proposal_id": "264",
+    "chain_id": "stargaze",
+    "title": "Update Stargaze Uploader Address",
+    "type": "ParameterChange",
+    "topic": "Economic Parameters",
+    "status": "PASSED",
+    "submit_time": "1712004484448",
+    "final_tally_result": {
+      "yes_count": 74,
+      "no_count": 1,
+      "abstain_count": 1,
+      "no_vote_count": 54
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Parameter Change",
+    "topic_v2_display": "Parameter Change",
+    "topic_v2_unique": "Protocol - Parameter Change"
+  },
+  {
+    "proposal_id": "263",
+    "chain_id": "stargaze",
+    "title": "STARGAZE Airdrop ",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "REJECTED",
+    "submit_time": "1711923729595",
+    "final_tally_result": {
+      "no_with_veto_count": 49,
+      "no_count": 1,
+      "no_vote_count": 80
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Spam & Malicious",
+    "topic_v2_display": "Spam & Malicious",
+    "topic_v2_unique": "Governance - Spam & Malicious"
+  },
+  {
+    "proposal_id": "262",
+    "chain_id": "stargaze",
+    "title": "Add Atlas DAO to Uploader Addresses",
+    "type": "ParameterChange",
+    "topic": "Protocol Configuration",
+    "status": "PASSED",
+    "submit_time": "1711637708733",
+    "final_tally_result": {
+      "yes_count": 59,
+      "abstain_count": 4,
+      "no_vote_count": 67
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Parameter Change",
+    "topic_v2_display": "Parameter Change",
+    "topic_v2_unique": "Protocol - Parameter Change"
+  },
+  {
+    "proposal_id": "261",
+    "chain_id": "stargaze",
+    "title": "Move POL liquidity position in OSMO pool 604 to PCL pool",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "PASSED",
+    "submit_time": "1711469026465",
+    "final_tally_result": {
+      "abstain_count": 9,
+      "yes_count": 55,
+      "no_count": 1,
+      "no_vote_count": 65
+    },
+    "type_v2": "Treasury",
+    "topic_v2": "Liquidity & Incentives",
+    "topic_v2_display": "Liquidity & Incentives",
+    "topic_v2_unique": "Treasury - Liquidity & Incentives"
+  },
+  {
+    "proposal_id": "260",
+    "chain_id": "stargaze",
+    "title": "Stargaze v13 Upgrade",
+    "type": "SoftwareUpgrade",
+    "topic": "Major Release",
+    "status": "PASSED",
+    "submit_time": "1710733071211",
+    "final_tally_result": {
+      "yes_count": 83,
+      "abstain_count": 1,
+      "no_vote_count": 46
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Core Upgrade",
+    "topic_v2_display": "Core Upgrade",
+    "topic_v2_unique": "Protocol - Core Upgrade"
+  },
+  {
+    "proposal_id": "259",
+    "chain_id": "stargaze",
+    "title": "Token Allocation for NFT Minters focused on Hedgies holders",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "PASSED",
+    "submit_time": "1710542622922",
+    "final_tally_result": {
+      "yes_count": 63,
+      "abstain_count": 12,
+      "no_count": 1,
+      "no_vote_count": 54
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "Token Management",
+    "topic_v2_display": "Token Management",
+    "topic_v2_unique": "Ecosystem - Token Management"
+  },
+  {
+    "proposal_id": "258",
+    "chain_id": "stargaze",
+    "title": "Live Auctions Whitelist Denoms",
+    "type": "SmartContract",
+    "topic": "Contract Upgrade",
+    "status": "PASSED",
+    "submit_time": "1710348543819",
+    "final_tally_result": {
+      "yes_count": 77,
+      "abstain_count": 1,
+      "no_vote_count": 52
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "dApp Onboarding",
+    "topic_v2_display": "dApp Onboarding",
+    "topic_v2_unique": "Ecosystem - dApp Onboarding"
+  },
+  {
+    "proposal_id": "257",
+    "chain_id": "stargaze",
+    "title": "Stargaze Liquidity DAO  Request for stOSMO from Community Pool",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "PASSED",
+    "submit_time": "1710242904226",
+    "final_tally_result": {
+      "yes_count": 64,
+      "abstain_count": 12,
+      "no_vote_count": 54
+    },
+    "type_v2": "Treasury",
+    "topic_v2": "Liquidity & Incentives",
+    "topic_v2_display": "Liquidity & Incentives",
+    "topic_v2_unique": "Treasury - Liquidity & Incentives"
+  },
+  {
+    "proposal_id": "256",
+    "chain_id": "stargaze",
+    "title": "Store Wasm Code NonCustodial NFT Loans",
+    "type": "SmartContract",
+    "topic": "Contract Deployment",
+    "status": "PASSED",
+    "submit_time": "1708705899340",
+    "final_tally_result": {
+      "yes_count": 69,
+      "abstain_count": 2,
+      "no_vote_count": 59
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "dApp Onboarding",
+    "topic_v2_display": "dApp Onboarding",
+    "topic_v2_unique": "Ecosystem - dApp Onboarding"
+  },
+  {
+    "proposal_id": "255",
+    "chain_id": "stargaze",
+    "title": "Store Wasm Code OnChain Raffles",
+    "type": "SmartContract",
+    "topic": "Contract Deployment",
+    "status": "PASSED",
+    "submit_time": "1708704647836",
+    "final_tally_result": {
+      "yes_count": 72,
+      "abstain_count": 2,
+      "no_vote_count": 56
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "dApp Onboarding",
+    "topic_v2_display": "dApp Onboarding",
+    "topic_v2_unique": "Ecosystem - dApp Onboarding"
+  },
+  {
+    "proposal_id": "254",
+    "chain_id": "stargaze",
+    "title": "Stargaze Fair Burn v110",
+    "type": "SmartContract",
+    "topic": "Contract Upgrade",
+    "status": "PASSED",
+    "submit_time": "1708461390119",
+    "final_tally_result": {
+      "yes_count": 80,
+      "abstain_count": 1,
+      "no_vote_count": 49
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "dApp Onboarding",
+    "topic_v2_display": "dApp Onboarding",
+    "topic_v2_unique": "Ecosystem - dApp Onboarding"
+  },
+  {
+    "proposal_id": "253",
+    "chain_id": "stargaze",
+    "title": "Stargaze Live Auction v102",
+    "type": "SmartContract",
+    "topic": "Contract Upgrade",
+    "status": "PASSED",
+    "submit_time": "1708447047712",
+    "final_tally_result": {
+      "yes_count": 80,
+      "abstain_count": 1,
+      "no_vote_count": 49
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "dApp Onboarding",
+    "topic_v2_display": "dApp Onboarding",
+    "topic_v2_unique": "Ecosystem - dApp Onboarding"
+  },
+  {
+    "proposal_id": "252",
+    "chain_id": "stargaze",
+    "title": "A new public RPC experience for Stargaze",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "PASSED",
+    "submit_time": "1707836840415",
+    "final_tally_result": {
+      "yes_count": 64,
+      "abstain_count": 15,
+      "no_count": 4,
+      "no_vote_count": 47
+    },
+    "type_v2": "Treasury",
+    "topic_v2": "dApp & Tooling Funding",
+    "topic_v2_display": "dApp & Tooling Funding",
+    "topic_v2_unique": "Treasury - dApp & Tooling Funding"
+  },
+  {
+    "proposal_id": "251",
+    "chain_id": "stargaze",
+    "title": "Upload Cosmos Coin Flip update contract",
+    "type": "SmartContract",
+    "topic": "Contract Deployment",
+    "status": "PASSED",
+    "submit_time": "1707164663019",
+    "final_tally_result": {
+      "yes_count": 70,
+      "abstain_count": 5,
+      "no_vote_count": 55
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "dApp Onboarding",
+    "topic_v2_display": "dApp Onboarding",
+    "topic_v2_unique": "Ecosystem - dApp Onboarding"
+  },
+  {
+    "proposal_id": "250",
+    "chain_id": "stargaze",
+    "title": "Collection Creation Fee Update",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "PASSED",
+    "submit_time": "1706813012211",
+    "final_tally_result": {
+      "yes_count": 74,
+      "abstain_count": 1,
+      "no_vote_count": 55
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Signaling",
+    "topic_v2_display": "Signaling",
+    "topic_v2_unique": "Governance - Signaling"
+  },
+  {
+    "proposal_id": "249",
+    "chain_id": "stargaze",
+    "title": "Stargaze LiquidityDAO Proposal",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "PASSED",
+    "submit_time": "1706671450945",
+    "final_tally_result": {
+      "yes_count": 60,
+      "abstain_count": 13,
+      "no_count": 1,
+      "no_vote_count": 56
+    },
+    "type_v2": "Treasury",
+    "topic_v2": "Liquidity & Incentives",
+    "topic_v2_display": "Liquidity & Incentives",
+    "topic_v2_unique": "Treasury - Liquidity & Incentives"
+  },
+  {
+    "proposal_id": "248",
+    "chain_id": "stargaze",
+    "title": "Governance Fee Update",
+    "type": "ParameterChange",
+    "topic": "Fee Adjustment",
+    "status": "PASSED",
+    "submit_time": "1706539584952",
+    "final_tally_result": {
+      "yes_count": 78,
+      "abstain_count": 3,
+      "no_count": 3,
+      "no_vote_count": 46
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Parameter Change",
+    "topic_v2_display": "Parameter Change",
+    "topic_v2_unique": "Protocol - Parameter Change"
+  },
+  {
+    "proposal_id": "247",
+    "chain_id": "stargaze",
+    "title": "Publicworksart generative NFT Minter v020",
+    "type": "SmartContract",
+    "topic": "Contract Deployment",
+    "status": "PASSED",
+    "submit_time": "1706231914521",
+    "final_tally_result": {
+      "yes_count": 69,
+      "abstain_count": 2,
+      "no_vote_count": 59
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "dApp Onboarding",
+    "topic_v2_display": "dApp Onboarding",
+    "topic_v2_unique": "Ecosystem - dApp Onboarding"
+  },
+  {
+    "proposal_id": "246",
+    "chain_id": "stargaze",
+    "title": "Publicworksart generative NFT SG721 v020",
+    "type": "SmartContract",
+    "topic": "Contract Deployment",
+    "status": "PASSED",
+    "submit_time": "1706231510819",
+    "final_tally_result": {
+      "yes_count": 66,
+      "abstain_count": 5,
+      "no_vote_count": 59
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "dApp Onboarding",
+    "topic_v2_display": "dApp Onboarding",
+    "topic_v2_unique": "Ecosystem - dApp Onboarding"
+  },
+  {
+    "proposal_id": "245",
+    "chain_id": "stargaze",
+    "title": "Funding Proposal for PLStaking A SoftStaking Platform",
+    "type": "CommunityPoolSpend",
+    "topic": "Ecosystem Growth",
+    "status": "PASSED",
+    "submit_time": "1705994186927",
+    "final_tally_result": {
+      "abstain_count": 13,
+      "yes_count": 65,
+      "no_vote_count": 52
+    },
+    "type_v2": "Treasury",
+    "topic_v2": "dApp & Tooling Funding",
+    "topic_v2_display": "dApp & Tooling Funding",
+    "topic_v2_unique": "Treasury - dApp & Tooling Funding"
+  },
+  {
+    "proposal_id": "244",
+    "chain_id": "stargaze",
+    "title": "Funding Proposal for PLStaking A SoftStaking Platform",
+    "type": "CommunityPoolSpend",
+    "topic": "Ecosystem Growth",
+    "status": "REJECTED",
+    "submit_time": "1705991775973",
+    "final_tally_result": {
+      "no_count": 61,
+      "abstain_count": 10,
+      "yes_count": 8,
+      "no_vote_count": 51
+    },
+    "type_v2": "Treasury",
+    "topic_v2": "dApp & Tooling Funding",
+    "topic_v2_display": "dApp & Tooling Funding",
+    "topic_v2_unique": "Treasury - dApp & Tooling Funding"
+  },
+  {
+    "proposal_id": "243",
+    "chain_id": "stargaze",
+    "title": "Stargaze Names Renewal Update",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "PASSED",
+    "submit_time": "1705080639157",
+    "final_tally_result": {
+      "yes_count": 76,
+      "abstain_count": 1,
+      "no_vote_count": 53
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Signaling",
+    "topic_v2_display": "Signaling",
+    "topic_v2_unique": "Governance - Signaling"
+  },
+  {
+    "proposal_id": "242",
+    "chain_id": "stargaze",
+    "title": "STARS Incentives to bootstrap stSTARS Lending And Collateral on Demex",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "PASSED",
+    "submit_time": "1704883157700",
+    "final_tally_result": {
+      "abstain_count": 18,
+      "no_count": 19,
+      "yes_count": 39,
+      "no_vote_count": 54
+    },
+    "type_v2": "Treasury",
+    "topic_v2": "Liquidity & Incentives",
+    "topic_v2_display": "Liquidity & Incentives",
+    "topic_v2_unique": "Treasury - Liquidity & Incentives"
+  },
+  {
+    "proposal_id": "241",
+    "chain_id": "stargaze",
+    "title": "CryptoGopniks NFT Staking Platform Minter Contract v111",
+    "type": "SmartContract",
+    "topic": "Contract Deployment",
+    "status": "PASSED",
+    "submit_time": "1704119410263",
+    "final_tally_result": {
+      "yes_count": 73,
+      "abstain_count": 1,
+      "no_vote_count": 56
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "dApp Onboarding",
+    "topic_v2_display": "dApp Onboarding",
+    "topic_v2_unique": "Ecosystem - dApp Onboarding"
+  },
+  {
+    "proposal_id": "240",
+    "chain_id": "stargaze",
+    "title": "Stargaze Thirdening Param Change Staking Supplement Amount",
+    "type": "ParameterChange",
+    "topic": "Staking Parameters",
+    "status": "PASSED",
+    "submit_time": "1703777093927",
+    "final_tally_result": {
+      "yes_count": 71,
+      "no_count": 2,
+      "abstain_count": 1,
+      "no_vote_count": 56
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Parameter Change",
+    "topic_v2_display": "Parameter Change",
+    "topic_v2_unique": "Protocol - Parameter Change"
+  },
+  {
+    "proposal_id": "239",
+    "chain_id": "stargaze",
+    "title": "Stargaze Thirdening Staking Supplement Funding",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "PASSED",
+    "submit_time": "1703776641629",
+    "final_tally_result": {
+      "yes_count": 69,
+      "abstain_count": 3,
+      "no_count": 2,
+      "no_vote_count": 56
+    },
+    "type_v2": "Treasury",
+    "topic_v2": "dApp & Tooling Funding",
+    "topic_v2_display": "dApp & Tooling Funding",
+    "topic_v2_unique": "Treasury - dApp & Tooling Funding"
+  },
+  {
+    "proposal_id": "238",
+    "chain_id": "stargaze",
+    "title": "Add Gelotto developer wallet to the uploaders list",
+    "type": "ParameterChange",
+    "topic": "Protocol Configuration",
+    "status": "PASSED",
+    "submit_time": "1703609495354",
+    "final_tally_result": {
+      "yes_count": 72,
+      "no_count": 1,
+      "abstain_count": 1,
+      "no_vote_count": 56
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Parameter Change",
+    "topic_v2_display": "Parameter Change",
+    "topic_v2_unique": "Protocol - Parameter Change"
+  },
+  {
+    "proposal_id": "237",
+    "chain_id": "stargaze",
+    "title": "CryptoGopniks NFT Staking Platform Staking Platform Contract v131",
+    "type": "SmartContract",
+    "topic": "Contract Deployment",
+    "status": "PASSED",
+    "submit_time": "1703418586911",
+    "final_tally_result": {
+      "yes_count": 63,
+      "abstain_count": 6,
+      "no_vote_count": 61
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "dApp Onboarding",
+    "topic_v2_display": "dApp Onboarding",
+    "topic_v2_unique": "Ecosystem - dApp Onboarding"
+  },
+  {
+    "proposal_id": "236",
+    "chain_id": "stargaze",
+    "title": "Whitelist the Enterprise App",
+    "type": "ParameterChange",
+    "topic": "Protocol Configuration",
+    "status": "PASSED",
+    "submit_time": "1702503248359",
+    "final_tally_result": {
+      "yes_count": 68,
+      "abstain_count": 2,
+      "no_vote_count": 60
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Parameter Change",
+    "topic_v2_display": "Parameter Change",
+    "topic_v2_unique": "Protocol - Parameter Change"
+  },
+  {
+    "proposal_id": "235",
+    "chain_id": "stargaze",
+    "title": "Proposal for Introducing the InterChain Gift Card Minter on Stargaze",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "PASSED",
+    "submit_time": "1701991573670",
+    "final_tally_result": {
+      "no_count": 4,
+      "yes_count": 58,
+      "abstain_count": 8,
+      "no_vote_count": 60
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Signaling",
+    "topic_v2_display": "Signaling",
+    "topic_v2_unique": "Governance - Signaling"
+  },
+  {
+    "proposal_id": "234",
+    "chain_id": "stargaze",
+    "title": "Discontinue the Pablo Dex Incentives",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "PASSED",
+    "submit_time": "1701179276246",
+    "final_tally_result": {
+      "yes_count": 73,
+      "no_vote_count": 57
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Signaling",
+    "topic_v2_display": "Signaling",
+    "topic_v2_unique": "Governance - Signaling"
+  },
+  {
+    "proposal_id": "233",
+    "chain_id": "stargaze",
+    "title": "Rewarding reports of stolen collections",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "PASSED",
+    "submit_time": "1700839899522",
+    "final_tally_result": {
+      "yes_count": 47,
+      "abstain_count": 11,
+      "no_vote_count": 72
+    },
+    "type_v2": "Treasury",
+    "topic_v2": "dApp & Tooling Funding",
+    "topic_v2_display": "dApp & Tooling Funding",
+    "topic_v2_unique": "Treasury - dApp & Tooling Funding"
+  },
+  {
+    "proposal_id": "232",
+    "chain_id": "stargaze",
+    "title": "BugFix OnceUpon to v0142",
+    "type": "SmartContract",
+    "topic": "Security Fix",
+    "status": "PASSED",
+    "submit_time": "1700837325250",
+    "final_tally_result": {
+      "yes_count": 64,
+      "abstain_count": 2,
+      "no_vote_count": 64
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "dApp Onboarding",
+    "topic_v2_display": "dApp Onboarding",
+    "topic_v2_unique": "Ecosystem - dApp Onboarding"
+  },
+  {
+    "proposal_id": "231",
+    "chain_id": "stargaze",
+    "title": "BugFix OnceUpon to v0134",
+    "type": "SmartContract",
+    "topic": "Security Fix",
+    "status": "PASSED",
+    "submit_time": "1700308556182",
+    "final_tally_result": {
+      "yes_count": 71,
+      "no_vote_count": 59
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "dApp Onboarding",
+    "topic_v2_display": "dApp Onboarding",
+    "topic_v2_unique": "Ecosystem - dApp Onboarding"
+  },
+  {
+    "proposal_id": "230",
+    "chain_id": "stargaze",
+    "title": "BugFix OnceUpon to v0133",
+    "type": "SmartContract",
+    "topic": "Security Fix",
+    "status": "PASSED",
+    "submit_time": "1699723650730",
+    "final_tally_result": {
+      "yes_count": 66,
+      "abstain_count": 4,
+      "no_vote_count": 60
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "dApp Onboarding",
+    "topic_v2_display": "dApp Onboarding",
+    "topic_v2_unique": "Ecosystem - dApp Onboarding"
+  },
+  {
+    "proposal_id": "229",
+    "chain_id": "stargaze",
+    "title": "Nois  Store the Randdrop Contract",
+    "type": "SmartContract",
+    "topic": "Contract Deployment",
+    "status": "PASSED",
+    "submit_time": "1699392157347",
+    "final_tally_result": {
+      "yes_count": 67,
+      "abstain_count": 2,
+      "no_vote_count": 61
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "dApp Onboarding",
+    "topic_v2_display": "dApp Onboarding",
+    "topic_v2_unique": "Ecosystem - dApp Onboarding"
+  },
+  {
+    "proposal_id": "228",
+    "chain_id": "stargaze",
+    "title": "BugFix OnceUpon to v0132",
+    "type": "SmartContract",
+    "topic": "Security Fix",
+    "status": "PASSED",
+    "submit_time": "1699199075198",
+    "final_tally_result": {
+      "yes_count": 65,
+      "abstain_count": 4,
+      "no_vote_count": 61
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "dApp Onboarding",
+    "topic_v2_display": "dApp Onboarding",
+    "topic_v2_unique": "Ecosystem - dApp Onboarding"
+  },
+  {
+    "proposal_id": "227",
+    "chain_id": "stargaze",
+    "title": "Recover IBC Expired Client from Terra",
+    "type": "IBCRelated",
+    "topic": "IBC Transfer",
+    "status": "PASSED",
+    "submit_time": "1698805146968",
+    "final_tally_result": {
+      "yes_count": 77,
+      "abstain_count": 2,
+      "no_vote_count": 51
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "IBC Management",
+    "topic_v2_display": "IBC Management",
+    "topic_v2_unique": "Ecosystem - IBC Management"
+  },
+  {
+    "proposal_id": "226",
+    "chain_id": "stargaze",
+    "title": "Permissionless Smart Contract Deployment",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "REJECTED",
+    "submit_time": "1696801170254",
+    "final_tally_result": {
+      "no_with_veto_count": 2,
+      "no_count": 39,
+      "abstain_count": 15,
+      "yes_count": 26,
+      "no_vote_count": 48
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "dApp Onboarding",
+    "topic_v2_display": "dApp Onboarding",
+    "topic_v2_unique": "Ecosystem - dApp Onboarding"
+  },
+  {
+    "proposal_id": "225",
+    "chain_id": "stargaze",
+    "title": "Permissionless Smart Contract Deployment",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "REJECTED",
+    "submit_time": "1696800768061",
+    "final_tally_result": {
+      "no_with_veto_count": 3,
+      "no_count": 68,
+      "yes_count": 3,
+      "abstain_count": 1,
+      "no_vote_count": 55
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "dApp Onboarding",
+    "topic_v2_display": "dApp Onboarding",
+    "topic_v2_unique": "Ecosystem - dApp Onboarding"
+  },
+  {
+    "proposal_id": "224",
+    "chain_id": "stargaze",
+    "title": "Upload a free to use smartcontract to distribute native tokens to NFT owners of an NFT collection",
+    "type": "SmartContract",
+    "topic": "Contract Deployment",
+    "status": "PASSED",
+    "submit_time": "1696345803041",
+    "final_tally_result": {
+      "yes_count": 62,
+      "abstain_count": 1,
+      "no_vote_count": 67
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "dApp Onboarding",
+    "topic_v2_display": "dApp Onboarding",
+    "topic_v2_unique": "Ecosystem - dApp Onboarding"
+  },
+  {
+    "proposal_id": "223",
+    "chain_id": "stargaze",
+    "title": "Bootstrapping the STARS pool on Cosmos Millions",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "REJECTED",
+    "submit_time": "1695803105047",
+    "final_tally_result": {
+      "no_count": 49,
+      "abstain_count": 21,
+      "yes_count": 21,
+      "no_with_veto_count": 5,
+      "no_vote_count": 34
+    },
+    "type_v2": "Treasury",
+    "topic_v2": "Liquidity & Incentives",
+    "topic_v2_display": "Liquidity & Incentives",
+    "topic_v2_unique": "Treasury - Liquidity & Incentives"
+  },
+  {
+    "proposal_id": "222",
+    "chain_id": "stargaze",
+    "title": "Marketplace Post Sale Hook Removal",
+    "type": "SmartContract",
+    "topic": "Contract Deployment",
+    "status": "PASSED",
+    "submit_time": "1695760621920",
+    "final_tally_result": {
+      "yes_count": 86,
+      "abstain_count": 1,
+      "no_vote_count": 43
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "dApp Onboarding",
+    "topic_v2_display": "dApp Onboarding",
+    "topic_v2_unique": "Ecosystem - dApp Onboarding"
+  },
+  {
+    "proposal_id": "221",
+    "chain_id": "stargaze",
+    "title": "Stargaze Proposal Deploying Interchain NFT Contracts aka Outgoing Proxy and ICS721 Contracts",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "PASSED",
+    "submit_time": "1695682246615",
+    "final_tally_result": {
+      "yes_count": 84,
+      "abstain_count": 1,
+      "no_vote_count": 45
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "dApp Onboarding",
+    "topic_v2_display": "dApp Onboarding",
+    "topic_v2_unique": "Ecosystem - dApp Onboarding"
+  },
+  {
+    "proposal_id": "220",
+    "chain_id": "stargaze",
+    "title": "Reduce Auctions Extend Duration",
+    "type": "SmartContract",
+    "topic": "Contract Upgrade",
+    "status": "PASSED",
+    "submit_time": "1695403862452",
+    "final_tally_result": {
+      "yes_count": 66,
+      "no_vote_count": 64
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "dApp Onboarding",
+    "topic_v2_display": "dApp Onboarding",
+    "topic_v2_unique": "Ecosystem - dApp Onboarding"
+  },
+  {
+    "proposal_id": "219",
+    "chain_id": "stargaze",
+    "title": "IBC Minter Fees",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "PASSED",
+    "submit_time": "1695072188438",
+    "final_tally_result": {
+      "yes_count": 78,
+      "abstain_count": 1,
+      "no_vote_count": 51
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "IBC Management",
+    "topic_v2_display": "IBC Management",
+    "topic_v2_unique": "Ecosystem - IBC Management"
+  },
+  {
+    "proposal_id": "218",
+    "chain_id": "stargaze",
+    "title": "BugFix OnceUpon to v0131",
+    "type": "SmartContract",
+    "topic": "Security Fix",
+    "status": "PASSED",
+    "submit_time": "1695058650860",
+    "final_tally_result": {
+      "yes_count": 80,
+      "abstain_count": 1,
+      "no_vote_count": 49
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "dApp Onboarding",
+    "topic_v2_display": "dApp Onboarding",
+    "topic_v2_unique": "Ecosystem - dApp Onboarding"
+  },
+  {
+    "proposal_id": "217",
+    "chain_id": "stargaze",
+    "title": "Liquid Stake the OSMO in the Community Pool",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "PASSED",
+    "submit_time": "1694787040200",
+    "final_tally_result": {
+      "yes_count": 76,
+      "abstain_count": 2,
+      "no_vote_count": 52
+    },
+    "type_v2": "Treasury",
+    "topic_v2": "Liquidity & Incentives",
+    "topic_v2_display": "Liquidity & Incentives",
+    "topic_v2_unique": "Treasury - Liquidity & Incentives"
+  },
+  {
+    "proposal_id": "216",
+    "chain_id": "stargaze",
+    "title": "Liquid Stake the OSMO in the Community Pool",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "REJECTED",
+    "submit_time": "1694784541849",
+    "final_tally_result": {
+      "no_count": 69,
+      "no_with_veto_count": 3,
+      "abstain_count": 1,
+      "yes_count": 3,
+      "no_vote_count": 54
+    },
+    "type_v2": "Treasury",
+    "topic_v2": "Liquidity & Incentives",
+    "topic_v2_display": "Liquidity & Incentives",
+    "topic_v2_unique": "Treasury - Liquidity & Incentives"
+  },
+  {
+    "proposal_id": "215",
+    "chain_id": "stargaze",
+    "title": "Upgrade OnceUpon to v0130",
+    "type": "SmartContract",
+    "topic": "Contract Upgrade",
+    "status": "PASSED",
+    "submit_time": "1694190268120",
+    "final_tally_result": {
+      "yes_count": 74,
+      "abstain_count": 3,
+      "no_vote_count": 53
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Core Upgrade",
+    "topic_v2_display": "Core Upgrade",
+    "topic_v2_unique": "Protocol - Core Upgrade"
+  },
+  {
+    "proposal_id": "214",
+    "chain_id": "stargaze",
+    "title": "Add Stargaze team to the uploaders list",
+    "type": "ParameterChange",
+    "topic": "Protocol Configuration",
+    "status": "PASSED",
+    "submit_time": "1694149724400",
+    "final_tally_result": {
+      "yes_count": 77,
+      "no_vote_count": 53
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Parameter Change",
+    "topic_v2_display": "Parameter Change",
+    "topic_v2_unique": "Protocol - Parameter Change"
+  },
+  {
+    "proposal_id": "213",
+    "chain_id": "stargaze",
+    "title": "Stargaze integration with Huddle01",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "REJECTED",
+    "submit_time": "1692999351449",
+    "final_tally_result": {
+      "abstain_count": 25,
+      "no_count": 47,
+      "yes_count": 5,
+      "no_vote_count": 53
+    },
+    "type_v2": "Treasury",
+    "topic_v2": "dApp & Tooling Funding",
+    "topic_v2_display": "dApp & Tooling Funding",
+    "topic_v2_unique": "Treasury - dApp & Tooling Funding"
+  },
+  {
+    "proposal_id": "212",
+    "chain_id": "stargaze",
+    "title": "Stargaze v12 Upgrade",
+    "type": "SoftwareUpgrade",
+    "topic": "Major Release",
+    "status": "PASSED",
+    "submit_time": "1692936195226",
+    "final_tally_result": {
+      "yes_count": 88,
+      "abstain_count": 1,
+      "no_vote_count": 41
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Core Upgrade",
+    "topic_v2_display": "Core Upgrade",
+    "topic_v2_unique": "Protocol - Core Upgrade"
+  },
+  {
+    "proposal_id": "211",
+    "chain_id": "stargaze",
+    "title": "Recover NOIS IBC Expired Client",
+    "type": "IBCRelated",
+    "topic": "IBC Security",
+    "status": "PASSED",
+    "submit_time": "1692911589634",
+    "final_tally_result": {
+      "yes_count": 83,
+      "abstain_count": 3,
+      "no_vote_count": 44
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "IBC Management",
+    "topic_v2_display": "IBC Management",
+    "topic_v2_unique": "Ecosystem - IBC Management"
+  },
+  {
+    "proposal_id": "210",
+    "chain_id": "stargaze",
+    "title": "Incentivizing DOTSTARS Pools on the Pablo DEX",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "PASSED",
+    "submit_time": "1692892548425",
+    "final_tally_result": {
+      "no_count": 31,
+      "yes_count": 39,
+      "abstain_count": 16,
+      "no_vote_count": 44
+    },
+    "type_v2": "Treasury",
+    "topic_v2": "Liquidity & Incentives",
+    "topic_v2_display": "Liquidity & Incentives",
+    "topic_v2_unique": "Treasury - Liquidity & Incentives"
+  },
+  {
+    "proposal_id": "209",
+    "chain_id": "stargaze",
+    "title": "Allow DAO DAO and Polytone contract upload",
+    "type": "ParameterChange",
+    "topic": "Protocol Configuration",
+    "status": "PASSED",
+    "submit_time": "1692860668222",
+    "final_tally_result": {
+      "yes_count": 85,
+      "abstain_count": 2,
+      "no_vote_count": 43
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Parameter Change",
+    "topic_v2_display": "Parameter Change",
+    "topic_v2_unique": "Protocol - Parameter Change"
+  },
+  {
+    "proposal_id": "208",
+    "chain_id": "stargaze",
+    "title": "Store Ojo Oracle Contract Wasm Code",
+    "type": "SmartContract",
+    "topic": "Contract Deployment",
+    "status": "PASSED",
+    "submit_time": "1692816644757",
+    "final_tally_result": {
+      "yes_count": 79,
+      "abstain_count": 5,
+      "no_vote_count": 46
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "dApp Onboarding",
+    "topic_v2_display": "dApp Onboarding",
+    "topic_v2_unique": "Ecosystem - dApp Onboarding"
+  },
+  {
+    "proposal_id": "207",
+    "chain_id": "stargaze",
+    "title": "Launchpad v311  SG721 Updatable",
+    "type": "SmartContract",
+    "topic": "Contract Deployment",
+    "status": "PASSED",
+    "submit_time": "1692799894350",
+    "final_tally_result": {
+      "yes_count": 79,
+      "no_vote_count": 51
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "dApp Onboarding",
+    "topic_v2_display": "dApp Onboarding",
+    "topic_v2_unique": "Ecosystem - dApp Onboarding"
+  },
+  {
+    "proposal_id": "206",
+    "chain_id": "stargaze",
+    "title": "Marketplace v16 Migration",
+    "type": "SmartContract",
+    "topic": "Contract Upgrade",
+    "status": "PASSED",
+    "submit_time": "1692284537196",
+    "final_tally_result": {
+      "yes_count": 75,
+      "no_vote_count": 55
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "dApp Onboarding",
+    "topic_v2_display": "dApp Onboarding",
+    "topic_v2_unique": "Ecosystem - dApp Onboarding"
+  },
+  {
+    "proposal_id": "205",
+    "chain_id": "stargaze",
+    "title": "NFTHopxyz V1",
+    "type": "SmartContract",
+    "topic": "Contract Deployment",
+    "status": "REJECTED",
+    "submit_time": "1691204621142",
+    "final_tally_result": {
+      "abstain_count": 2,
+      "no_count": 48,
+      "no_with_veto_count": 9,
+      "yes_count": 9,
+      "no_vote_count": 62
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "dApp Onboarding",
+    "topic_v2_display": "dApp Onboarding",
+    "topic_v2_unique": "Ecosystem - dApp Onboarding"
+  },
+  {
+    "proposal_id": "204",
+    "chain_id": "stargaze",
+    "title": "Stargaze Live Auction v101",
+    "type": "SmartContract",
+    "topic": "Contract Deployment",
+    "status": "PASSED",
+    "submit_time": "1691157500402",
+    "final_tally_result": {
+      "yes_count": 71,
+      "no_vote_count": 59
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "dApp Onboarding",
+    "topic_v2_display": "dApp Onboarding",
+    "topic_v2_unique": "Ecosystem - dApp Onboarding"
+  },
+  {
+    "proposal_id": "203",
+    "chain_id": "stargaze",
+    "title": "Launchpad v31  SG721 Updatable",
+    "type": "SmartContract",
+    "topic": "Contract Deployment",
+    "status": "PASSED",
+    "submit_time": "1691098651504",
+    "final_tally_result": {
+      "yes_count": 77,
+      "abstain_count": 1,
+      "no_vote_count": 52
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "dApp Onboarding",
+    "topic_v2_display": "dApp Onboarding",
+    "topic_v2_unique": "Ecosystem - dApp Onboarding"
+  },
+  {
+    "proposal_id": "202",
+    "chain_id": "stargaze",
+    "title": "Launchpad v31  SG721",
+    "type": "SmartContract",
+    "topic": "Contract Deployment",
+    "status": "PASSED",
+    "submit_time": "1691098481884",
+    "final_tally_result": {
+      "yes_count": 77,
+      "abstain_count": 1,
+      "no_vote_count": 52
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "dApp Onboarding",
+    "topic_v2_display": "dApp Onboarding",
+    "topic_v2_unique": "Ecosystem - dApp Onboarding"
+  },
+  {
+    "proposal_id": "201",
+    "chain_id": "stargaze",
+    "title": "Marketplace v160 Contract",
+    "type": "SmartContract",
+    "topic": "Contract Deployment",
+    "status": "PASSED",
+    "submit_time": "1691087109761",
+    "final_tally_result": {
+      "yes_count": 78,
+      "abstain_count": 1,
+      "no_vote_count": 51
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "dApp Onboarding",
+    "topic_v2_display": "dApp Onboarding",
+    "topic_v2_unique": "Ecosystem - dApp Onboarding"
+  },
+  {
+    "proposal_id": "200",
+    "chain_id": "stargaze",
+    "title": "MantaDAO  Stargaze token swap",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "PASSED",
+    "submit_time": "1690805936102",
+    "final_tally_result": {
+      "no_count": 4,
+      "yes_count": 54,
+      "abstain_count": 15,
+      "no_vote_count": 57
+    },
+    "type_v2": "Treasury",
+    "topic_v2": "dApp & Tooling Funding",
+    "topic_v2_display": "dApp & Tooling Funding",
+    "topic_v2_unique": "Treasury - dApp & Tooling Funding"
+  },
+  {
+    "proposal_id": "199",
+    "chain_id": "stargaze",
+    "title": "Stargaze Live Auction v101",
+    "type": "SmartContract",
+    "topic": "Contract Deployment",
+    "status": "PASSED",
+    "submit_time": "1690577653491",
+    "final_tally_result": {
+      "yes_count": 76,
+      "no_vote_count": 54
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "dApp Onboarding",
+    "topic_v2_display": "dApp Onboarding",
+    "topic_v2_unique": "Ecosystem - dApp Onboarding"
+  },
+  {
+    "proposal_id": "198",
+    "chain_id": "stargaze",
+    "title": "Cron Promote Live Auctions Contract",
+    "type": "SmartContract",
+    "topic": "Contract Upgrade",
+    "status": "PASSED",
+    "submit_time": "1690308537337",
+    "final_tally_result": {
+      "yes_count": 74,
+      "abstain_count": 2,
+      "no_vote_count": 54
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "dApp Onboarding",
+    "topic_v2_display": "dApp Onboarding",
+    "topic_v2_unique": "Ecosystem - dApp Onboarding"
+  },
+  {
+    "proposal_id": "197",
+    "chain_id": "stargaze",
+    "title": "Nois  Store the noisproxy contract",
+    "type": "SmartContract",
+    "topic": "Contract Deployment",
+    "status": "PASSED",
+    "submit_time": "1689942424999",
+    "final_tally_result": {
+      "yes_count": 68,
+      "abstain_count": 1,
+      "no_vote_count": 61
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "dApp Onboarding",
+    "topic_v2_display": "dApp Onboarding",
+    "topic_v2_unique": "Ecosystem - dApp Onboarding"
+  },
+  {
+    "proposal_id": "196",
+    "chain_id": "stargaze",
+    "title": "Stargaze Live Auction v100",
+    "type": "SmartContract",
+    "topic": "Contract Deployment",
+    "status": "PASSED",
+    "submit_time": "1689701187562",
+    "final_tally_result": {
+      "yes_count": 71,
+      "abstain_count": 2,
+      "no_vote_count": 57
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "dApp Onboarding",
+    "topic_v2_display": "dApp Onboarding",
+    "topic_v2_unique": "Ecosystem - dApp Onboarding"
+  },
+  {
+    "proposal_id": "195",
+    "chain_id": "stargaze",
+    "title": "Stargaze Fair Burn v104",
+    "type": "SmartContract",
+    "topic": "Contract Deployment",
+    "status": "PASSED",
+    "submit_time": "1689699423448",
+    "final_tally_result": {
+      "yes_count": 71,
+      "abstain_count": 3,
+      "no_vote_count": 56
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "dApp Onboarding",
+    "topic_v2_display": "dApp Onboarding",
+    "topic_v2_unique": "Ecosystem - dApp Onboarding"
+  },
+  {
+    "proposal_id": "194",
+    "chain_id": "stargaze",
+    "title": "Upload Generic Multicaller Contract",
+    "type": "SmartContract",
+    "topic": "Contract Deployment",
+    "status": "PASSED",
+    "submit_time": "1689623164282",
+    "final_tally_result": {
+      "yes_count": 72,
+      "abstain_count": 1,
+      "no_vote_count": 57
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "dApp Onboarding",
+    "topic_v2_display": "dApp Onboarding",
+    "topic_v2_unique": "Ecosystem - dApp Onboarding"
+  },
+  {
+    "proposal_id": "193",
+    "chain_id": "stargaze",
+    "title": "NoPixels v2",
+    "type": "SmartContract",
+    "topic": "Contract Deployment",
+    "status": "PASSED",
+    "submit_time": "1689622509603",
+    "final_tally_result": {
+      "yes_count": 73,
+      "no_vote_count": 57
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "dApp Onboarding",
+    "topic_v2_display": "dApp Onboarding",
+    "topic_v2_unique": "Ecosystem - dApp Onboarding"
+  },
+  {
+    "proposal_id": "192",
+    "chain_id": "stargaze",
+    "title": "Marketplace v15 Migration",
+    "type": "SmartContract",
+    "topic": "Contract Upgrade",
+    "status": "PASSED",
+    "submit_time": "1689346790100",
+    "final_tally_result": {
+      "yes_count": 72,
+      "no_vote_count": 58
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "dApp Onboarding",
+    "topic_v2_display": "dApp Onboarding",
+    "topic_v2_unique": "Ecosystem - dApp Onboarding"
+  },
+  {
+    "proposal_id": "191",
+    "chain_id": "stargaze",
+    "title": "ICS721 Super Team",
+    "type": "CommunityPoolSpend",
+    "topic": "Development Fund",
+    "status": "PASSED",
+    "submit_time": "1689210600398",
+    "final_tally_result": {
+      "yes_count": 66,
+      "abstain_count": 1,
+      "no_vote_count": 63
+    },
+    "type_v2": "Treasury",
+    "topic_v2": "dApp & Tooling Funding",
+    "topic_v2_display": "dApp & Tooling Funding",
+    "topic_v2_unique": "Treasury - dApp & Tooling Funding"
+  },
+  {
+    "proposal_id": "189",
+    "chain_id": "stargaze",
+    "title": "Launchpad V2  SG721 Updatable 240",
+    "type": "SmartContract",
+    "topic": "Contract Deployment",
+    "status": "PASSED",
+    "submit_time": "1688938173079",
+    "final_tally_result": {
+      "yes_count": 78,
+      "no_vote_count": 52
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "dApp Onboarding",
+    "topic_v2_display": "dApp Onboarding",
+    "topic_v2_unique": "Ecosystem - dApp Onboarding"
+  },
+  {
+    "proposal_id": "188",
+    "chain_id": "stargaze",
+    "title": "Stargaze v11 Upgrade  Tokenomics update",
+    "type": "SoftwareUpgrade",
+    "topic": "Major Release",
+    "status": "PASSED",
+    "submit_time": "1688669328256",
+    "final_tally_result": {
+      "yes_count": 85,
+      "abstain_count": 1,
+      "no_vote_count": 44
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Core Upgrade",
+    "topic_v2_display": "Core Upgrade",
+    "topic_v2_unique": "Protocol - Core Upgrade"
+  },
+  {
+    "proposal_id": "187",
+    "chain_id": "stargaze",
+    "title": "CronCat Mod NFT",
+    "type": "SmartContract",
+    "topic": "Contract Deployment",
+    "status": "PASSED",
+    "submit_time": "1688151295441",
+    "final_tally_result": {
+      "yes_count": 66,
+      "abstain_count": 2,
+      "no_vote_count": 62
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "dApp Onboarding",
+    "topic_v2_display": "dApp Onboarding",
+    "topic_v2_unique": "Ecosystem - dApp Onboarding"
+  },
+  {
+    "proposal_id": "186",
+    "chain_id": "stargaze",
+    "title": "CronCat Mod Generic",
+    "type": "SmartContract",
+    "topic": "Contract Deployment",
+    "status": "PASSED",
+    "submit_time": "1688151271570",
+    "final_tally_result": {
+      "yes_count": 66,
+      "abstain_count": 2,
+      "no_vote_count": 62
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "dApp Onboarding",
+    "topic_v2_display": "dApp Onboarding",
+    "topic_v2_unique": "Ecosystem - dApp Onboarding"
+  },
+  {
+    "proposal_id": "185",
+    "chain_id": "stargaze",
+    "title": "CronCat Mod DAO",
+    "type": "SmartContract",
+    "topic": "Contract Deployment",
+    "status": "PASSED",
+    "submit_time": "1688151254049",
+    "final_tally_result": {
+      "yes_count": 66,
+      "abstain_count": 2,
+      "no_vote_count": 62
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "dApp Onboarding",
+    "topic_v2_display": "dApp Onboarding",
+    "topic_v2_unique": "Ecosystem - dApp Onboarding"
+  },
+  {
+    "proposal_id": "184",
+    "chain_id": "stargaze",
+    "title": "CronCat Mod Balances",
+    "type": "SmartContract",
+    "topic": "Contract Deployment",
+    "status": "PASSED",
+    "submit_time": "1688151231022",
+    "final_tally_result": {
+      "yes_count": 66,
+      "abstain_count": 2,
+      "no_vote_count": 62
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "dApp Onboarding",
+    "topic_v2_display": "dApp Onboarding",
+    "topic_v2_unique": "Ecosystem - dApp Onboarding"
+  },
+  {
+    "proposal_id": "183",
+    "chain_id": "stargaze",
+    "title": "Marketplace v150 Contract",
+    "type": "SmartContract",
+    "topic": "Contract Deployment",
+    "status": "PASSED",
+    "submit_time": "1687982715055",
+    "final_tally_result": {
+      "yes_count": 72,
+      "no_vote_count": 58
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "dApp Onboarding",
+    "topic_v2_display": "dApp Onboarding",
+    "topic_v2_unique": "Ecosystem - dApp Onboarding"
+  },
+  {
+    "proposal_id": "182",
+    "chain_id": "stargaze",
+    "title": "CronCat Agents",
+    "type": "SmartContract",
+    "topic": "Contract Deployment",
+    "status": "PASSED",
+    "submit_time": "1687467506474",
+    "final_tally_result": {
+      "yes_count": 65,
+      "no_vote_count": 65
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "dApp Onboarding",
+    "topic_v2_display": "dApp Onboarding",
+    "topic_v2_unique": "Ecosystem - dApp Onboarding"
+  },
+  {
+    "proposal_id": "181",
+    "chain_id": "stargaze",
+    "title": "CronCat Tasks",
+    "type": "SmartContract",
+    "topic": "Contract Deployment",
+    "status": "PASSED",
+    "submit_time": "1687467406963",
+    "final_tally_result": {
+      "yes_count": 66,
+      "no_vote_count": 64
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "dApp Onboarding",
+    "topic_v2_display": "dApp Onboarding",
+    "topic_v2_unique": "Ecosystem - dApp Onboarding"
+  },
+  {
+    "proposal_id": "180",
+    "chain_id": "stargaze",
+    "title": "CronCat Manager",
+    "type": "SmartContract",
+    "topic": "Contract Deployment",
+    "status": "PASSED",
+    "submit_time": "1687467168728",
+    "final_tally_result": {
+      "yes_count": 67,
+      "no_vote_count": 63
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "dApp Onboarding",
+    "topic_v2_display": "dApp Onboarding",
+    "topic_v2_unique": "Ecosystem - dApp Onboarding"
+  },
+  {
+    "proposal_id": "179",
+    "chain_id": "stargaze",
+    "title": "Launchpad v3  SG721",
+    "type": "SmartContract",
+    "topic": "Contract Deployment",
+    "status": "PASSED",
+    "submit_time": "1687204124243",
+    "final_tally_result": {
+      "abstain_count": 1,
+      "yes_count": 75,
+      "no_vote_count": 54
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "dApp Onboarding",
+    "topic_v2_display": "dApp Onboarding",
+    "topic_v2_unique": "Ecosystem - dApp Onboarding"
+  },
+  {
+    "proposal_id": "178",
+    "chain_id": "stargaze",
+    "title": "Launchpad v3  Open Edition Minter",
+    "type": "SmartContract",
+    "topic": "Contract Deployment",
+    "status": "PASSED",
+    "submit_time": "1687203610618",
+    "final_tally_result": {
+      "abstain_count": 1,
+      "yes_count": 75,
+      "no_vote_count": 54
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "dApp Onboarding",
+    "topic_v2_display": "dApp Onboarding",
+    "topic_v2_unique": "Ecosystem - dApp Onboarding"
+  },
+  {
+    "proposal_id": "177",
+    "chain_id": "stargaze",
+    "title": "Launchpad v3  Open Edition Factory",
+    "type": "SmartContract",
+    "topic": "Contract Deployment",
+    "status": "PASSED",
+    "submit_time": "1687203260179",
+    "final_tally_result": {
+      "abstain_count": 1,
+      "yes_count": 75,
+      "no_vote_count": 54
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "dApp Onboarding",
+    "topic_v2_display": "dApp Onboarding",
+    "topic_v2_unique": "Ecosystem - dApp Onboarding"
+  },
+  {
+    "proposal_id": "176",
+    "chain_id": "stargaze",
+    "title": "Increase Deposit for Proposals to 50000 STARS",
+    "type": "ParameterChange",
+    "topic": "Fee Adjustment",
+    "status": "PASSED",
+    "submit_time": "1686880625386",
+    "final_tally_result": {
+      "yes_count": 56,
+      "abstain_count": 1,
+      "no_vote_count": 73
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Parameter Change",
+    "topic_v2_display": "Parameter Change",
+    "topic_v2_unique": "Protocol - Parameter Change"
+  },
+  {
+    "proposal_id": "174",
+    "chain_id": "stargaze",
+    "title": "CronCat Factory",
+    "type": "SmartContract",
+    "topic": "Contract Deployment",
+    "status": "PASSED",
+    "submit_time": "1686702268690",
+    "final_tally_result": {
+      "abstain_count": 1,
+      "yes_count": 63,
+      "no_count": 1,
+      "no_vote_count": 65
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "dApp Onboarding",
+    "topic_v2_display": "dApp Onboarding",
+    "topic_v2_unique": "Ecosystem - dApp Onboarding"
+  },
+  {
+    "proposal_id": "173",
+    "chain_id": "stargaze",
+    "title": "Stargaze NFT Airdrop ",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "REJECTED",
+    "submit_time": "1686154931934",
+    "final_tally_result": {
+      "no_with_veto_count": 49,
+      "no_count": 1,
+      "no_vote_count": 80
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Spam & Malicious",
+    "topic_v2_display": "Spam & Malicious",
+    "topic_v2_unique": "Governance - Spam & Malicious"
+  },
+  {
+    "proposal_id": "172",
+    "chain_id": "stargaze",
+    "title": "Stargaze v10 upgrade",
+    "type": "SoftwareUpgrade",
+    "topic": "Major Release",
+    "status": "PASSED",
+    "submit_time": "1685980855044",
+    "final_tally_result": {
+      "yes_count": 88,
+      "no_with_veto_count": 2,
+      "no_vote_count": 40
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Core Upgrade",
+    "topic_v2_display": "Core Upgrade",
+    "topic_v2_unique": "Protocol - Core Upgrade"
+  },
+  {
+    "proposal_id": "171",
+    "chain_id": "stargaze",
+    "title": "Layerzero x Cosmos airdrop",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "REJECTED",
+    "submit_time": "1685921882729",
+    "final_tally_result": {
+      "no_with_veto_count": 69,
+      "no_count": 1,
+      "no_vote_count": 60
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Spam & Malicious",
+    "topic_v2_display": "Spam & Malicious",
+    "topic_v2_unique": "Governance - Spam & Malicious"
+  },
+  {
+    "proposal_id": "170",
+    "chain_id": "stargaze",
+    "title": "Stargaze Airdrop ",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "REJECTED",
+    "submit_time": "1685847933207",
+    "final_tally_result": {
+      "no_with_veto_count": 65,
+      "no_count": 1,
+      "no_vote_count": 64
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Spam & Malicious",
+    "topic_v2_display": "Spam & Malicious",
+    "topic_v2_unique": "Governance - Spam & Malicious"
+  },
+  {
+    "proposal_id": "169",
+    "chain_id": "stargaze",
+    "title": "Layerzero airdrop",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "REJECTED",
+    "submit_time": "1685753855548",
+    "final_tally_result": {
+      "no_with_veto_count": 55,
+      "no_count": 1,
+      "no_vote_count": 74
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Spam & Malicious",
+    "topic_v2_display": "Spam & Malicious",
+    "topic_v2_unique": "Governance - Spam & Malicious"
+  },
+  {
+    "proposal_id": "168",
+    "chain_id": "stargaze",
+    "title": "Stargaze Airdrop ",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "REJECTED",
+    "submit_time": "1685652117961",
+    "final_tally_result": {
+      "no_with_veto_count": 54,
+      "no_vote_count": 76
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Spam & Malicious",
+    "topic_v2_display": "Spam & Malicious",
+    "topic_v2_unique": "Governance - Spam & Malicious"
+  },
+  {
+    "proposal_id": "167",
+    "chain_id": "stargaze",
+    "title": "OnceUpon",
+    "type": "SmartContract",
+    "topic": "Contract Deployment",
+    "status": "PASSED",
+    "submit_time": "1685524261594",
+    "final_tally_result": {
+      "yes_count": 56,
+      "abstain_count": 6,
+      "no_count": 2,
+      "no_vote_count": 66
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "dApp Onboarding",
+    "topic_v2_display": "dApp Onboarding",
+    "topic_v2_unique": "Ecosystem - dApp Onboarding"
+  },
+  {
+    "proposal_id": "166",
+    "chain_id": "stargaze",
+    "title": "Sg721 Updatable Contract v231",
+    "type": "SmartContract",
+    "topic": "Contract Deployment",
+    "status": "PASSED",
+    "submit_time": "1685038203230",
+    "final_tally_result": {
+      "yes_count": 74,
+      "abstain_count": 2,
+      "no_vote_count": 54
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "dApp Onboarding",
+    "topic_v2_display": "dApp Onboarding",
+    "topic_v2_unique": "Ecosystem - dApp Onboarding"
+  },
+  {
+    "proposal_id": "165",
+    "chain_id": "stargaze",
+    "title": "Stargaze Tokenomics Update 20",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "PASSED",
+    "submit_time": "1684946173607",
+    "final_tally_result": {
+      "yes_count": 83,
+      "abstain_count": 3,
+      "no_vote_count": 44
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "Token Management",
+    "topic_v2_display": "Token Management",
+    "topic_v2_unique": "Ecosystem - Token Management"
+  },
+  {
+    "proposal_id": "164",
+    "chain_id": "stargaze",
+    "title": "Deploy PixelWizards cwwager contract",
+    "type": "SmartContract",
+    "topic": "Contract Deployment",
+    "status": "PASSED",
+    "submit_time": "1684499029436",
+    "final_tally_result": {
+      "yes_count": 73,
+      "abstain_count": 1,
+      "no_vote_count": 56
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "dApp Onboarding",
+    "topic_v2_display": "dApp Onboarding",
+    "topic_v2_unique": "Ecosystem - dApp Onboarding"
+  },
+  {
+    "proposal_id": "163",
+    "chain_id": "stargaze",
+    "title": "CronCat Factory",
+    "type": "SmartContract",
+    "topic": "Contract Deployment",
+    "status": "REJECTED",
+    "submit_time": "1683758955941",
+    "final_tally_result": {
+      "no_count": 64,
+      "yes_count": 3,
+      "abstain_count": 1,
+      "no_with_veto_count": 2,
+      "no_vote_count": 60
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "dApp Onboarding",
+    "topic_v2_display": "dApp Onboarding",
+    "topic_v2_unique": "Ecosystem - dApp Onboarding"
+  },
+  {
+    "proposal_id": "161",
+    "chain_id": "stargaze",
+    "title": "Marketplace v13 Migration",
+    "type": "SmartContract",
+    "topic": "Contract Upgrade",
+    "status": "PASSED",
+    "submit_time": "1682026397152",
+    "final_tally_result": {
+      "yes_count": 76,
+      "abstain_count": 3,
+      "no_vote_count": 51
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "dApp Onboarding",
+    "topic_v2_display": "dApp Onboarding",
+    "topic_v2_unique": "Ecosystem - dApp Onboarding"
+  },
+  {
+    "proposal_id": "160",
+    "chain_id": "stargaze",
+    "title": "CosmWasm Fixed Multisig Contract v101",
+    "type": "SmartContract",
+    "topic": "Contract Integration",
+    "status": "PASSED",
+    "submit_time": "1682002251964",
+    "final_tally_result": {
+      "yes_count": 79,
+      "abstain_count": 1,
+      "no_vote_count": 50
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "dApp Onboarding",
+    "topic_v2_display": "dApp Onboarding",
+    "topic_v2_unique": "Ecosystem - dApp Onboarding"
+  },
+  {
+    "proposal_id": "159",
+    "chain_id": "stargaze",
+    "title": "Developer Royalties Update",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "PASSED",
+    "submit_time": "1681844555389",
+    "final_tally_result": {
+      "abstain_count": 6,
+      "yes_count": 74,
+      "no_vote_count": 50
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Signaling",
+    "topic_v2_display": "Signaling",
+    "topic_v2_unique": "Governance - Signaling"
+  },
+  {
+    "proposal_id": "158",
+    "chain_id": "stargaze",
+    "title": "Launchpad V2  Vending Minter Flex Contract 230",
+    "type": "SmartContract",
+    "topic": "Contract Deployment",
+    "status": "PASSED",
+    "submit_time": "1681226520476",
+    "final_tally_result": {
+      "yes_count": 72,
+      "abstain_count": 2,
+      "no_vote_count": 56
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "dApp Onboarding",
+    "topic_v2_display": "dApp Onboarding",
+    "topic_v2_unique": "Ecosystem - dApp Onboarding"
+  },
+  {
+    "proposal_id": "157",
+    "chain_id": "stargaze",
+    "title": "Launchpad V2  Whitelist Flex Contract 230",
+    "type": "SmartContract",
+    "topic": "Contract Deployment",
+    "status": "PASSED",
+    "submit_time": "1681226392976",
+    "final_tally_result": {
+      "yes_count": 73,
+      "abstain_count": 2,
+      "no_vote_count": 55
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "dApp Onboarding",
+    "topic_v2_display": "dApp Onboarding",
+    "topic_v2_unique": "Ecosystem - dApp Onboarding"
+  },
+  {
+    "proposal_id": "156",
+    "chain_id": "stargaze",
+    "title": "Launchpad V2  Whitelist Flex Contract",
+    "type": "SmartContract",
+    "topic": "Contract Deployment",
+    "status": "PASSED",
+    "submit_time": "1681221271718",
+    "final_tally_result": {
+      "abstain_count": 4,
+      "yes_count": 72,
+      "no_vote_count": 54
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "dApp Onboarding",
+    "topic_v2_display": "dApp Onboarding",
+    "topic_v2_unique": "Ecosystem - dApp Onboarding"
+  },
+  {
+    "proposal_id": "155",
+    "chain_id": "stargaze",
+    "title": "Marketplace v130 Contract",
+    "type": "SmartContract",
+    "topic": "Contract Deployment",
+    "status": "PASSED",
+    "submit_time": "1681086889176",
+    "final_tally_result": {
+      "yes_count": 79,
+      "no_vote_count": 51
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "dApp Onboarding",
+    "topic_v2_display": "dApp Onboarding",
+    "topic_v2_unique": "Ecosystem - dApp Onboarding"
+  },
+  {
+    "proposal_id": "154",
+    "chain_id": "stargaze",
+    "title": "Launchpad Whitelist Contract v210",
+    "type": "SmartContract",
+    "topic": "Contract Deployment",
+    "status": "PASSED",
+    "submit_time": "1680663213339",
+    "final_tally_result": {
+      "yes_count": 70,
+      "abstain_count": 5,
+      "no_count": 1,
+      "no_vote_count": 54
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "dApp Onboarding",
+    "topic_v2_display": "dApp Onboarding",
+    "topic_v2_unique": "Ecosystem - dApp Onboarding"
+  },
+  {
+    "proposal_id": "153",
+    "chain_id": "stargaze",
+    "title": "Launchpad Vending Minter Contract v210",
+    "type": "SmartContract",
+    "topic": "Contract Deployment",
+    "status": "PASSED",
+    "submit_time": "1680662887052",
+    "final_tally_result": {
+      "yes_count": 66,
+      "abstain_count": 5,
+      "no_count": 1,
+      "no_vote_count": 58
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "dApp Onboarding",
+    "topic_v2_display": "dApp Onboarding",
+    "topic_v2_unique": "Ecosystem - dApp Onboarding"
+  },
+  {
+    "proposal_id": "152",
+    "chain_id": "stargaze",
+    "title": "Launchpad Vending Factory Contract v210",
+    "type": "SmartContract",
+    "topic": "Contract Deployment",
+    "status": "PASSED",
+    "submit_time": "1680662576983",
+    "final_tally_result": {
+      "yes_count": 70,
+      "abstain_count": 5,
+      "no_count": 1,
+      "no_vote_count": 54
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "dApp Onboarding",
+    "topic_v2_display": "dApp Onboarding",
+    "topic_v2_unique": "Ecosystem - dApp Onboarding"
+  },
+  {
+    "proposal_id": "151",
+    "chain_id": "stargaze",
+    "title": "Launchpad V1 sg721 Updatable Contract",
+    "type": "SmartContract",
+    "topic": "Contract Deployment",
+    "status": "PASSED",
+    "submit_time": "1680562960235",
+    "final_tally_result": {
+      "yes_count": 72,
+      "abstain_count": 4,
+      "no_vote_count": 54
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "dApp Onboarding",
+    "topic_v2_display": "dApp Onboarding",
+    "topic_v2_unique": "Ecosystem - dApp Onboarding"
+  },
+  {
+    "proposal_id": "150",
+    "chain_id": "stargaze",
+    "title": "Funding Request for Open Edition Minter Development",
+    "type": "CommunityPoolSpend",
+    "topic": "Development Fund",
+    "status": "PASSED",
+    "submit_time": "1680558303094",
+    "final_tally_result": {
+      "yes_count": 70,
+      "abstain_count": 7,
+      "no_vote_count": 53
+    },
+    "type_v2": "Treasury",
+    "topic_v2": "dApp & Tooling Funding",
+    "topic_v2_display": "dApp & Tooling Funding",
+    "topic_v2_unique": "Treasury - dApp & Tooling Funding"
+  },
+  {
+    "proposal_id": "149",
+    "chain_id": "stargaze",
+    "title": "Upload Cosmos Coin Flip game smart contract",
+    "type": "SmartContract",
+    "topic": "Contract Deployment",
+    "status": "PASSED",
+    "submit_time": "1680387298459",
+    "final_tally_result": {
+      "yes_count": 70,
+      "abstain_count": 7,
+      "no_vote_count": 53
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "dApp Onboarding",
+    "topic_v2_display": "dApp Onboarding",
+    "topic_v2_unique": "Ecosystem - dApp Onboarding"
+  },
+  {
+    "proposal_id": "148",
+    "chain_id": "stargaze",
+    "title": "Funding for Confio developers of CosmWasm",
+    "type": "CommunityPoolSpend",
+    "topic": "Development Fund",
+    "status": "PASSED",
+    "submit_time": "1680283348569",
+    "final_tally_result": {
+      "yes_count": 72,
+      "abstain_count": 1,
+      "no_count": 1,
+      "no_vote_count": 56
+    },
+    "type_v2": "Treasury",
+    "topic_v2": "dApp & Tooling Funding",
+    "topic_v2_display": "dApp & Tooling Funding",
+    "topic_v2_unique": "Treasury - dApp & Tooling Funding"
+  },
+  {
+    "proposal_id": "147",
+    "chain_id": "stargaze",
+    "title": "Funding for Confio developers of CosmWasm",
+    "type": "CommunityPoolSpend",
+    "topic": "Development Fund",
+    "status": "REJECTED",
+    "submit_time": "1680281772552",
+    "final_tally_result": {
+      "no_with_veto_count": 2,
+      "no_count": 67,
+      "abstain_count": 1,
+      "yes_count": 1,
+      "no_vote_count": 59
+    },
+    "type_v2": "Treasury",
+    "topic_v2": "dApp & Tooling Funding",
+    "topic_v2_display": "dApp & Tooling Funding",
+    "topic_v2_unique": "Treasury - dApp & Tooling Funding"
+  },
+  {
+    "proposal_id": "146",
+    "chain_id": "stargaze",
+    "title": "Make Stargaze the Sponsor of Game of NFTs Phase 2 Hackathon",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "PASSED",
+    "submit_time": "1679994091413",
+    "final_tally_result": {
+      "abstain_count": 3,
+      "yes_count": 68,
+      "no_vote_count": 59
+    },
+    "type_v2": "Treasury",
+    "topic_v2": "Community & Marketing Funding",
+    "topic_v2_display": "Community & Marketing Funding",
+    "topic_v2_unique": "Treasury - Community & Marketing Funding"
+  },
+  {
+    "proposal_id": "144",
+    "chain_id": "stargaze",
+    "title": "Stargaze Carbon Neutral Proposal",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "PASSED",
+    "submit_time": "1679531552558",
+    "final_tally_result": {
+      "no_count": 11,
+      "yes_count": 40,
+      "abstain_count": 18,
+      "no_with_veto_count": 2,
+      "no_vote_count": 59
+    },
+    "type_v2": "Treasury",
+    "topic_v2": "dApp & Tooling Funding",
+    "topic_v2_display": "dApp & Tooling Funding",
+    "topic_v2_unique": "Treasury - dApp & Tooling Funding"
+  },
+  {
+    "proposal_id": "143",
+    "chain_id": "stargaze",
+    "title": "Stargaze v9 upgrade",
+    "type": "SoftwareUpgrade",
+    "topic": "Major Release",
+    "status": "PASSED",
+    "submit_time": "1679372690963",
+    "final_tally_result": {
+      "yes_count": 84,
+      "no_vote_count": 46
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Core Upgrade",
+    "topic_v2_display": "Core Upgrade",
+    "topic_v2_unique": "Protocol - Core Upgrade"
+  },
+  {
+    "proposal_id": "142",
+    "chain_id": "stargaze",
+    "title": "Ethereum Airdrop",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "REJECTED",
+    "submit_time": "1679257664999",
+    "final_tally_result": {
+      "no_count": 1,
+      "no_with_veto_count": 47,
+      "yes_count": 2,
+      "no_vote_count": 80
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Spam & Malicious",
+    "topic_v2_display": "Spam & Malicious",
+    "topic_v2_unique": "Governance - Spam & Malicious"
+  },
+  {
+    "proposal_id": "140",
+    "chain_id": "stargaze",
+    "title": "Ethereum Airdrop Contract v0250",
+    "type": "SmartContract",
+    "topic": "Contract Deployment",
+    "status": "PASSED",
+    "submit_time": "1678994688810",
+    "final_tally_result": {
+      "yes_count": 80,
+      "abstain_count": 1,
+      "no_vote_count": 49
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Spam & Malicious",
+    "topic_v2_display": "Spam & Malicious",
+    "topic_v2_unique": "Governance - Spam & Malicious"
+  },
+  {
+    "proposal_id": "139",
+    "chain_id": "stargaze",
+    "title": "Immutable Whitelist Contract v0250",
+    "type": "SmartContract",
+    "topic": "Contract Deployment",
+    "status": "PASSED",
+    "submit_time": "1678994313724",
+    "final_tally_result": {
+      "yes_count": 78,
+      "abstain_count": 1,
+      "no_vote_count": 51
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "dApp Onboarding",
+    "topic_v2_display": "dApp Onboarding",
+    "topic_v2_unique": "Ecosystem - dApp Onboarding"
+  },
+  {
+    "proposal_id": "138",
+    "chain_id": "stargaze",
+    "title": "Whitelist Contract v0250",
+    "type": "SmartContract",
+    "topic": "Contract Deployment",
+    "status": "PASSED",
+    "submit_time": "1678994209009",
+    "final_tally_result": {
+      "yes_count": 79,
+      "abstain_count": 1,
+      "no_vote_count": 50
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "dApp Onboarding",
+    "topic_v2_display": "dApp Onboarding",
+    "topic_v2_unique": "Ecosystem - dApp Onboarding"
+  },
+  {
+    "proposal_id": "137",
+    "chain_id": "stargaze",
+    "title": "SG721 Updatable Contract v0250",
+    "type": "SmartContract",
+    "topic": "Contract Deployment",
+    "status": "PASSED",
+    "submit_time": "1678994096766",
+    "final_tally_result": {
+      "yes_count": 79,
+      "abstain_count": 1,
+      "no_vote_count": 50
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "dApp Onboarding",
+    "topic_v2_display": "dApp Onboarding",
+    "topic_v2_unique": "Ecosystem - dApp Onboarding"
+  },
+  {
+    "proposal_id": "136",
+    "chain_id": "stargaze",
+    "title": "SG721 Base Contract v0250",
+    "type": "SmartContract",
+    "topic": "Contract Deployment",
+    "status": "PASSED",
+    "submit_time": "1678993992040",
+    "final_tally_result": {
+      "yes_count": 79,
+      "abstain_count": 1,
+      "no_vote_count": 50
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "dApp Onboarding",
+    "topic_v2_display": "dApp Onboarding",
+    "topic_v2_unique": "Ecosystem - dApp Onboarding"
+  },
+  {
+    "proposal_id": "135",
+    "chain_id": "stargaze",
+    "title": "Base Minter Contract v0250",
+    "type": "SmartContract",
+    "topic": "Contract Deployment",
+    "status": "PASSED",
+    "submit_time": "1678993710951",
+    "final_tally_result": {
+      "yes_count": 78,
+      "abstain_count": 1,
+      "no_vote_count": 51
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "dApp Onboarding",
+    "topic_v2_display": "dApp Onboarding",
+    "topic_v2_unique": "Ecosystem - dApp Onboarding"
+  },
+  {
+    "proposal_id": "134",
+    "chain_id": "stargaze",
+    "title": "Vending Factory Contract v0250",
+    "type": "SmartContract",
+    "topic": "Contract Deployment",
+    "status": "PASSED",
+    "submit_time": "1678992913622",
+    "final_tally_result": {
+      "abstain_count": 1,
+      "yes_count": 78,
+      "no_vote_count": 51
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "dApp Onboarding",
+    "topic_v2_display": "dApp Onboarding",
+    "topic_v2_unique": "Ecosystem - dApp Onboarding"
+  },
+  {
+    "proposal_id": "133",
+    "chain_id": "stargaze",
+    "title": "Base Factory Contract v0250",
+    "type": "SmartContract",
+    "topic": "Contract Deployment",
+    "status": "PASSED",
+    "submit_time": "1678992657466",
+    "final_tally_result": {
+      "abstain_count": 1,
+      "yes_count": 78,
+      "no_vote_count": 51
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "dApp Onboarding",
+    "topic_v2_display": "dApp Onboarding",
+    "topic_v2_unique": "Ecosystem - dApp Onboarding"
+  },
+  {
+    "proposal_id": "132",
+    "chain_id": "stargaze",
+    "title": "Extend Osmosis Pool Incentives",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "PASSED",
+    "submit_time": "1678894007612",
+    "final_tally_result": {
+      "yes_count": 82,
+      "no_count": 3,
+      "abstain_count": 3,
+      "no_vote_count": 42
+    },
+    "type_v2": "Treasury",
+    "topic_v2": "Liquidity & Incentives",
+    "topic_v2_display": "Liquidity & Incentives",
+    "topic_v2_unique": "Treasury - Liquidity & Incentives"
+  },
+  {
+    "proposal_id": "128",
+    "chain_id": "stargaze",
+    "title": "Reduce Launchpad Fee to 5",
+    "type": "SmartContract",
+    "topic": "Contract Upgrade",
+    "status": "PASSED",
+    "submit_time": "1677799553009",
+    "final_tally_result": {
+      "yes_count": 39,
+      "abstain_count": 8,
+      "no_count": 19,
+      "no_vote_count": 64
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "dApp Onboarding",
+    "topic_v2_display": "dApp Onboarding",
+    "topic_v2_unique": "Ecosystem - dApp Onboarding"
+  },
+  {
+    "proposal_id": "127",
+    "chain_id": "stargaze",
+    "title": "Launchpad v21  Vending Minter",
+    "type": "SmartContract",
+    "topic": "Contract Deployment",
+    "status": "PASSED",
+    "submit_time": "1677648005674",
+    "final_tally_result": {
+      "yes_count": 75,
+      "abstain_count": 1,
+      "no_vote_count": 54
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "dApp Onboarding",
+    "topic_v2_display": "dApp Onboarding",
+    "topic_v2_unique": "Ecosystem - dApp Onboarding"
+  },
+  {
+    "proposal_id": "126",
+    "chain_id": "stargaze",
+    "title": "Launchpad v21  SG721 Contract",
+    "type": "SmartContract",
+    "topic": "Contract Deployment",
+    "status": "PASSED",
+    "submit_time": "1677645475398",
+    "final_tally_result": {
+      "yes_count": 77,
+      "abstain_count": 1,
+      "no_vote_count": 52
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "dApp Onboarding",
+    "topic_v2_display": "dApp Onboarding",
+    "topic_v2_unique": "Ecosystem - dApp Onboarding"
+  },
+  {
+    "proposal_id": "125",
+    "chain_id": "stargaze",
+    "title": " Stargaze Airdrop ",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "REJECTED",
+    "submit_time": "1677419088509",
+    "final_tally_result": {
+      "no_with_veto_count": 54,
+      "no_vote_count": 76
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Spam & Malicious",
+    "topic_v2_display": "Spam & Malicious",
+    "topic_v2_unique": "Governance - Spam & Malicious"
+  },
+  {
+    "proposal_id": "124",
+    "chain_id": "stargaze",
+    "title": "Stargaze Airdrop ",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "REJECTED",
+    "submit_time": "1677418454569",
+    "final_tally_result": {
+      "no_count": 1,
+      "no_with_veto_count": 53,
+      "no_vote_count": 76
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Spam & Malicious",
+    "topic_v2_display": "Spam & Malicious",
+    "topic_v2_unique": "Governance - Spam & Malicious"
+  },
+  {
+    "proposal_id": "123",
+    "chain_id": "stargaze",
+    "title": "ATOM Airdrop for COSMOS stakers",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "REJECTED",
+    "submit_time": "1677283395314",
+    "final_tally_result": {
+      "no_with_veto_count": 53,
+      "no_count": 1,
+      "no_vote_count": 76
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Spam & Malicious",
+    "topic_v2_display": "Spam & Malicious",
+    "topic_v2_unique": "Governance - Spam & Malicious"
+  },
+  {
+    "proposal_id": "122",
+    "chain_id": "stargaze",
+    "title": "Increase Minimum Deposit for Governance Proposals",
+    "type": "ParameterChange",
+    "topic": "Governance Settings",
+    "status": "PASSED",
+    "submit_time": "1677196171897",
+    "final_tally_result": {
+      "yes_count": 69,
+      "no_vote_count": 61
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Parameter Change",
+    "topic_v2_display": "Parameter Change",
+    "topic_v2_unique": "Protocol - Parameter Change"
+  },
+  {
+    "proposal_id": "121",
+    "chain_id": "stargaze",
+    "title": "Atom Airdrop ",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "REJECTED",
+    "submit_time": "1677163203890",
+    "final_tally_result": {
+      "no_with_veto_count": 62,
+      "no_count": 1,
+      "no_vote_count": 67
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Spam & Malicious",
+    "topic_v2_display": "Spam & Malicious",
+    "topic_v2_unique": "Governance - Spam & Malicious"
+  },
+  {
+    "proposal_id": "120",
+    "chain_id": "stargaze",
+    "title": "APTOS Airdrop for COSMOS stakers",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "REJECTED",
+    "submit_time": "1677106276684",
+    "final_tally_result": {
+      "no_with_veto_count": 60,
+      "no_vote_count": 70
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Spam & Malicious",
+    "topic_v2_display": "Spam & Malicious",
+    "topic_v2_unique": "Governance - Spam & Malicious"
+  },
+  {
+    "proposal_id": "119",
+    "chain_id": "stargaze",
+    "title": "Stargaze 20  VOTE YES ",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "REJECTED",
+    "submit_time": "1676999254932",
+    "final_tally_result": {
+      "no_with_veto_count": 59,
+      "no_vote_count": 71
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Signaling",
+    "topic_v2_display": "Signaling",
+    "topic_v2_unique": "Governance - Signaling"
+  },
+  {
+    "proposal_id": "118",
+    "chain_id": "stargaze",
+    "title": "APTOS Airdrop for COSMOS stakers",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "REJECTED",
+    "submit_time": "1676929371636",
+    "final_tally_result": {
+      "no_with_veto_count": 59,
+      "abstain_count": 1,
+      "no_vote_count": 70
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Spam & Malicious",
+    "topic_v2_display": "Spam & Malicious",
+    "topic_v2_unique": "Governance - Spam & Malicious"
+  },
+  {
+    "proposal_id": "117",
+    "chain_id": "stargaze",
+    "title": "Stargaze Airdrop ",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "REJECTED",
+    "submit_time": "1676859464555",
+    "final_tally_result": {
+      "no_with_veto_count": 60,
+      "abstain_count": 1,
+      "no_vote_count": 69
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Spam & Malicious",
+    "topic_v2_display": "Spam & Malicious",
+    "topic_v2_unique": "Governance - Spam & Malicious"
+  },
+  {
+    "proposal_id": "116",
+    "chain_id": "stargaze",
+    "title": "Stargaze Airdrop ",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "REJECTED",
+    "submit_time": "1676524156170",
+    "final_tally_result": {
+      "no_with_veto_count": 46,
+      "no_count": 7,
+      "no_vote_count": 77
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Spam & Malicious",
+    "topic_v2_display": "Spam & Malicious",
+    "topic_v2_unique": "Governance - Spam & Malicious"
+  },
+  {
+    "proposal_id": "115",
+    "chain_id": "stargaze",
+    "title": "Dev Fund Update Use Splits for Weighted Developer Rewards",
+    "type": "ParameterChange",
+    "topic": "Staking Parameters",
+    "status": "PASSED",
+    "submit_time": "1676487479785",
+    "final_tally_result": {
+      "yes_count": 68,
+      "no_count": 1,
+      "abstain_count": 4,
+      "no_vote_count": 57
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Parameter Change",
+    "topic_v2_display": "Parameter Change",
+    "topic_v2_unique": "Protocol - Parameter Change"
+  },
+  {
+    "proposal_id": "113",
+    "chain_id": "stargaze",
+    "title": "Stargaze Airdrop ",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "REJECTED",
+    "submit_time": "1676349885069",
+    "final_tally_result": {
+      "no_with_veto_count": 53,
+      "no_count": 7,
+      "yes_count": 1,
+      "no_vote_count": 69
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Spam & Malicious",
+    "topic_v2_display": "Spam & Malicious",
+    "topic_v2_unique": "Governance - Spam & Malicious"
+  },
+  {
+    "proposal_id": "112",
+    "chain_id": "stargaze",
+    "title": "Splits Contract v0229",
+    "type": "SmartContract",
+    "topic": "Contract Deployment",
+    "status": "PASSED",
+    "submit_time": "1675811003413",
+    "final_tally_result": {
+      "yes_count": 68,
+      "abstain_count": 1,
+      "no_vote_count": 61
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "dApp Onboarding",
+    "topic_v2_display": "dApp Onboarding",
+    "topic_v2_unique": "Ecosystem - dApp Onboarding"
+  },
+  {
+    "proposal_id": "110",
+    "chain_id": "stargaze",
+    "title": "Services for a Governed ICS721 Infrastructure and Operations",
+    "type": "CommunityPoolSpend",
+    "topic": "Development Fund",
+    "status": "PASSED",
+    "submit_time": "1675369633131",
+    "final_tally_result": {
+      "yes_count": 63,
+      "abstain_count": 9,
+      "no_count": 2,
+      "no_vote_count": 56
+    },
+    "type_v2": "Treasury",
+    "topic_v2": "dApp & Tooling Funding",
+    "topic_v2_display": "dApp & Tooling Funding",
+    "topic_v2_unique": "Treasury - dApp & Tooling Funding"
+  },
+  {
+    "proposal_id": "109",
+    "chain_id": "stargaze",
+    "title": "Marketplace Listing Fee Update",
+    "type": "SmartContract",
+    "topic": "Contract Upgrade",
+    "status": "PASSED",
+    "submit_time": "1675294142085",
+    "final_tally_result": {
+      "yes_count": 82,
+      "abstain_count": 6,
+      "no_vote_count": 42
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "dApp Onboarding",
+    "topic_v2_display": "dApp Onboarding",
+    "topic_v2_unique": "Ecosystem - dApp Onboarding"
+  },
+  {
+    "proposal_id": "108",
+    "chain_id": "stargaze",
+    "title": "Extend Osmosis Pool Incentives",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "PASSED",
+    "submit_time": "1674155940624",
+    "final_tally_result": {
+      "yes_count": 61,
+      "abstain_count": 5,
+      "no_count": 1,
+      "no_vote_count": 63
+    },
+    "type_v2": "Treasury",
+    "topic_v2": "Liquidity & Incentives",
+    "topic_v2_display": "Liquidity & Incentives",
+    "topic_v2_unique": "Treasury - Liquidity & Incentives"
+  },
+  {
+    "proposal_id": "107",
+    "chain_id": "stargaze",
+    "title": "Update Marketplace Listing Fee",
+    "type": "SmartContract",
+    "topic": "Contract Upgrade",
+    "status": "PASSED",
+    "submit_time": "1674077887364",
+    "final_tally_result": {
+      "yes_count": 77,
+      "no_vote_count": 53
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "dApp Onboarding",
+    "topic_v2_display": "dApp Onboarding",
+    "topic_v2_unique": "Ecosystem - dApp Onboarding"
+  },
+  {
+    "proposal_id": "106",
+    "chain_id": "stargaze",
+    "title": "Update Collection Creation Fee",
+    "type": "SmartContract",
+    "topic": "Contract Upgrade",
+    "status": "PASSED",
+    "submit_time": "1674042436697",
+    "final_tally_result": {
+      "yes_count": 86,
+      "no_vote_count": 44
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "dApp Onboarding",
+    "topic_v2_display": "dApp Onboarding",
+    "topic_v2_unique": "Ecosystem - dApp Onboarding"
+  },
+  {
+    "proposal_id": "104",
+    "chain_id": "stargaze",
+    "title": "Incentivize STARSUSK farm on BOW for 3 months",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "PASSED",
+    "submit_time": "1673114554093",
+    "final_tally_result": {
+      "yes_count": 29,
+      "abstain_count": 21,
+      "no_count": 24,
+      "no_vote_count": 56
+    },
+    "type_v2": "Treasury",
+    "topic_v2": "dApp & Tooling Funding",
+    "topic_v2_display": "dApp & Tooling Funding",
+    "topic_v2_unique": "Treasury - dApp & Tooling Funding"
+  },
+  {
+    "proposal_id": "101",
+    "chain_id": "stargaze",
+    "title": "Appendable NFT Collection",
+    "type": "CommunityPoolSpend",
+    "topic": "Development Fund",
+    "status": "PASSED",
+    "submit_time": "1670880977723",
+    "final_tally_result": {
+      "no_count": 10,
+      "yes_count": 47,
+      "abstain_count": 16,
+      "no_vote_count": 57
+    },
+    "type_v2": "Treasury",
+    "topic_v2": "dApp & Tooling Funding",
+    "topic_v2_display": "dApp & Tooling Funding",
+    "topic_v2_unique": "Treasury - dApp & Tooling Funding"
+  },
+  {
+    "proposal_id": "100",
+    "chain_id": "stargaze",
+    "title": "Stargaze v8 upgrade",
+    "type": "SoftwareUpgrade",
+    "topic": "Major Release",
+    "status": "PASSED",
+    "submit_time": "1670815469196",
+    "final_tally_result": {
+      "yes_count": 100,
+      "abstain_count": 2,
+      "no_vote_count": 28
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Core Upgrade",
+    "topic_v2_display": "Core Upgrade",
+    "topic_v2_unique": "Protocol - Core Upgrade"
+  },
+  {
+    "proposal_id": "99",
+    "chain_id": "stargaze",
+    "title": "Stargaze Names Name Marketplace Contract v111",
+    "type": "SmartContract",
+    "topic": "Contract Deployment",
+    "status": "PASSED",
+    "submit_time": "1670796053120",
+    "final_tally_result": {
+      "yes_count": 94,
+      "abstain_count": 4,
+      "no_vote_count": 32
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "dApp Onboarding",
+    "topic_v2_display": "dApp Onboarding",
+    "topic_v2_unique": "Ecosystem - dApp Onboarding"
+  },
+  {
+    "proposal_id": "98",
+    "chain_id": "stargaze",
+    "title": "Stargaze Names Name Minter Contract v111",
+    "type": "SmartContract",
+    "topic": "Contract Deployment",
+    "status": "PASSED",
+    "submit_time": "1670795869066",
+    "final_tally_result": {
+      "yes_count": 93,
+      "abstain_count": 4,
+      "no_vote_count": 33
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "dApp Onboarding",
+    "topic_v2_display": "dApp Onboarding",
+    "topic_v2_unique": "Ecosystem - dApp Onboarding"
+  },
+  {
+    "proposal_id": "97",
+    "chain_id": "stargaze",
+    "title": "Stargaze Names Name Collection Contract v111",
+    "type": "SmartContract",
+    "topic": "Contract Deployment",
+    "status": "PASSED",
+    "submit_time": "1670795212681",
+    "final_tally_result": {
+      "yes_count": 93,
+      "abstain_count": 3,
+      "no_vote_count": 34
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "dApp Onboarding",
+    "topic_v2_display": "dApp Onboarding",
+    "topic_v2_unique": "Ecosystem - dApp Onboarding"
+  },
+  {
+    "proposal_id": "96",
+    "chain_id": "stargaze",
+    "title": "Stargaze Names Updatable Whitelist Contract v111",
+    "type": "SmartContract",
+    "topic": "Contract Deployment",
+    "status": "PASSED",
+    "submit_time": "1670794282220",
+    "final_tally_result": {
+      "yes_count": 95,
+      "abstain_count": 3,
+      "no_vote_count": 32
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "dApp Onboarding",
+    "topic_v2_display": "dApp Onboarding",
+    "topic_v2_unique": "Ecosystem - dApp Onboarding"
+  },
+  {
+    "proposal_id": "95",
+    "chain_id": "stargaze",
+    "title": "Badges v11 Update  Badge Nft",
+    "type": "SmartContract",
+    "topic": "Feature Enhancement",
+    "status": "PASSED",
+    "submit_time": "1670449185498",
+    "final_tally_result": {
+      "yes_count": 68,
+      "abstain_count": 4,
+      "no_vote_count": 58
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "dApp Onboarding",
+    "topic_v2_display": "dApp Onboarding",
+    "topic_v2_unique": "Ecosystem - dApp Onboarding"
+  },
+  {
+    "proposal_id": "94",
+    "chain_id": "stargaze",
+    "title": "Badges v11 Update  Badge Hub",
+    "type": "SmartContract",
+    "topic": "Feature Enhancement",
+    "status": "PASSED",
+    "submit_time": "1670449055430",
+    "final_tally_result": {
+      "yes_count": 49,
+      "no_count": 8,
+      "abstain_count": 15,
+      "no_vote_count": 58
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "dApp Onboarding",
+    "topic_v2_display": "dApp Onboarding",
+    "topic_v2_unique": "Ecosystem - dApp Onboarding"
+  },
+  {
+    "proposal_id": "93",
+    "chain_id": "stargaze",
+    "title": "Prop 57 Funds Reallocation",
+    "type": "TextProposal",
+    "topic": "Project Funding",
+    "status": "PASSED",
+    "submit_time": "1670353725500",
+    "final_tally_result": {
+      "yes_count": 70,
+      "abstain_count": 11,
+      "no_count": 1,
+      "no_vote_count": 48
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Signaling",
+    "topic_v2_display": "Signaling",
+    "topic_v2_unique": "Governance - Signaling"
+  },
+  {
+    "proposal_id": "91",
+    "chain_id": "stargaze",
+    "title": "Marketplace v12 Migration",
+    "type": "SmartContract",
+    "topic": "Contract Upgrade",
+    "status": "PASSED",
+    "submit_time": "1669779902970",
+    "final_tally_result": {
+      "yes_count": 77,
+      "abstain_count": 1,
+      "no_vote_count": 52
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "dApp Onboarding",
+    "topic_v2_display": "dApp Onboarding",
+    "topic_v2_unique": "Ecosystem - dApp Onboarding"
+  },
+  {
+    "proposal_id": "89",
+    "chain_id": "stargaze",
+    "title": "Marketplace Marketplace Contract v120",
+    "type": "SmartContract",
+    "topic": "Contract Deployment",
+    "status": "PASSED",
+    "submit_time": "1669438668031",
+    "final_tally_result": {
+      "yes_count": 88,
+      "abstain_count": 2,
+      "no_vote_count": 40
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "dApp Onboarding",
+    "topic_v2_display": "dApp Onboarding",
+    "topic_v2_unique": "Ecosystem - dApp Onboarding"
+  },
+  {
+    "proposal_id": "88",
+    "chain_id": "stargaze",
+    "title": "Splits Contract v0211",
+    "type": "SmartContract",
+    "topic": "Contract Deployment",
+    "status": "PASSED",
+    "submit_time": "1669437186047",
+    "final_tally_result": {
+      "yes_count": 86,
+      "abstain_count": 2,
+      "no_vote_count": 42
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "dApp Onboarding",
+    "topic_v2_display": "dApp Onboarding",
+    "topic_v2_unique": "Ecosystem - dApp Onboarding"
+  },
+  {
+    "proposal_id": "87",
+    "chain_id": "stargaze",
+    "title": "CosmWasm cw4group Contract v0160",
+    "type": "SmartContract",
+    "topic": "Contract Integration",
+    "status": "PASSED",
+    "submit_time": "1669437086244",
+    "final_tally_result": {
+      "yes_count": 87,
+      "abstain_count": 2,
+      "no_vote_count": 41
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "dApp Onboarding",
+    "topic_v2_display": "dApp Onboarding",
+    "topic_v2_unique": "Ecosystem - dApp Onboarding"
+  },
+  {
+    "proposal_id": "85",
+    "chain_id": "stargaze",
+    "title": "Stargaze Names Updatable Whitelist Contract v0200",
+    "type": "SmartContract",
+    "topic": "Contract Deployment",
+    "status": "PASSED",
+    "submit_time": "1669263576572",
+    "final_tally_result": {
+      "yes_count": 87,
+      "abstain_count": 3,
+      "no_vote_count": 40
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "dApp Onboarding",
+    "topic_v2_display": "dApp Onboarding",
+    "topic_v2_unique": "Ecosystem - dApp Onboarding"
+  },
+  {
+    "proposal_id": "84",
+    "chain_id": "stargaze",
+    "title": "Stargaze Names Name Collection Contract v0200",
+    "type": "SmartContract",
+    "topic": "Contract Deployment",
+    "status": "PASSED",
+    "submit_time": "1669263535915",
+    "final_tally_result": {
+      "yes_count": 86,
+      "abstain_count": 3,
+      "no_vote_count": 41
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "dApp Onboarding",
+    "topic_v2_display": "dApp Onboarding",
+    "topic_v2_unique": "Ecosystem - dApp Onboarding"
+  },
+  {
+    "proposal_id": "83",
+    "chain_id": "stargaze",
+    "title": "Stargaze Names Name Minter Contract v0200",
+    "type": "SmartContract",
+    "topic": "Contract Deployment",
+    "status": "PASSED",
+    "submit_time": "1669263512332",
+    "final_tally_result": {
+      "yes_count": 88,
+      "abstain_count": 3,
+      "no_vote_count": 39
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "dApp Onboarding",
+    "topic_v2_display": "dApp Onboarding",
+    "topic_v2_unique": "Ecosystem - dApp Onboarding"
+  },
+  {
+    "proposal_id": "82",
+    "chain_id": "stargaze",
+    "title": "Stargaze Names Name Marketplace Contract v0200",
+    "type": "SmartContract",
+    "topic": "Contract Deployment",
+    "status": "PASSED",
+    "submit_time": "1669263405476",
+    "final_tally_result": {
+      "yes_count": 90,
+      "abstain_count": 3,
+      "no_vote_count": 37
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "dApp Onboarding",
+    "topic_v2_display": "dApp Onboarding",
+    "topic_v2_unique": "Ecosystem - dApp Onboarding"
+  },
+  {
+    "proposal_id": "81",
+    "chain_id": "stargaze",
+    "title": "Fund Deployment of Lunar Assistant",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "PASSED",
+    "submit_time": "1669201034546",
+    "final_tally_result": {
+      "yes_count": 44,
+      "abstain_count": 29,
+      "no_count": 5,
+      "no_vote_count": 52
+    },
+    "type_v2": "Treasury",
+    "topic_v2": "dApp & Tooling Funding",
+    "topic_v2_display": "dApp & Tooling Funding",
+    "topic_v2_unique": "Treasury - dApp & Tooling Funding"
+  },
+  {
+    "proposal_id": "80",
+    "chain_id": "stargaze",
+    "title": "Extend Osmosis Pool Incentives",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "PASSED",
+    "submit_time": "1669156230240",
+    "final_tally_result": {
+      "yes_count": 78,
+      "abstain_count": 6,
+      "no_vote_count": 46
+    },
+    "type_v2": "Treasury",
+    "topic_v2": "Liquidity & Incentives",
+    "topic_v2_display": "Liquidity & Incentives",
+    "topic_v2_unique": "Treasury - Liquidity & Incentives"
+  },
+  {
+    "proposal_id": "79",
+    "chain_id": "stargaze",
+    "title": "Launchpad v1  Minter Update",
+    "type": "SmartContract",
+    "topic": "Contract Deployment",
+    "status": "PASSED",
+    "submit_time": "1669100144819",
+    "final_tally_result": {
+      "yes_count": 74,
+      "abstain_count": 2,
+      "no_vote_count": 54
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "dApp Onboarding",
+    "topic_v2_display": "dApp Onboarding",
+    "topic_v2_unique": "Ecosystem - dApp Onboarding"
+  },
+  {
+    "proposal_id": "77",
+    "chain_id": "stargaze",
+    "title": "Badges v11 Update",
+    "type": "SmartContract",
+    "topic": "Feature Enhancement",
+    "status": "PASSED",
+    "submit_time": "1667878929470",
+    "final_tally_result": {
+      "yes_count": 72,
+      "abstain_count": 3,
+      "no_vote_count": 55
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "dApp Onboarding",
+    "topic_v2_display": "dApp Onboarding",
+    "topic_v2_unique": "Ecosystem - dApp Onboarding"
+  },
+  {
+    "proposal_id": "75",
+    "chain_id": "stargaze",
+    "title": "Deploy the Stargaze Multi Snapshot Contract",
+    "type": "SmartContract",
+    "topic": "Contract Deployment",
+    "status": "PASSED",
+    "submit_time": "1667601641299",
+    "final_tally_result": {
+      "yes_count": 74,
+      "abstain_count": 2,
+      "no_vote_count": 54
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "dApp Onboarding",
+    "topic_v2_display": "dApp Onboarding",
+    "topic_v2_unique": "Ecosystem - dApp Onboarding"
+  },
+  {
+    "proposal_id": "72",
+    "chain_id": "stargaze",
+    "title": "Deprecate Launchpad v1 Contracts",
+    "type": "SmartContract",
+    "topic": "Contract Upgrade",
+    "status": "PASSED",
+    "submit_time": "1667064132255",
+    "final_tally_result": {
+      "yes_count": 73,
+      "abstain_count": 1,
+      "no_vote_count": 56
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "dApp Onboarding",
+    "topic_v2_display": "dApp Onboarding",
+    "topic_v2_unique": "Ecosystem - dApp Onboarding"
+  },
+  {
+    "proposal_id": "71",
+    "chain_id": "stargaze",
+    "title": "Badges Make the Badge NFT contract upgradable",
+    "type": "SmartContract",
+    "topic": "Contract Upgrade",
+    "status": "PASSED",
+    "submit_time": "1666578076654",
+    "final_tally_result": {
+      "yes_count": 78,
+      "abstain_count": 5,
+      "no_vote_count": 47
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "dApp Onboarding",
+    "topic_v2_display": "dApp Onboarding",
+    "topic_v2_unique": "Ecosystem - dApp Onboarding"
+  },
+  {
+    "proposal_id": "70",
+    "chain_id": "stargaze",
+    "title": "Badges Make the Badge Hub contract upgradable",
+    "type": "SmartContract",
+    "topic": "Contract Upgrade",
+    "status": "PASSED",
+    "submit_time": "1666577959260",
+    "final_tally_result": {
+      "yes_count": 72,
+      "abstain_count": 6,
+      "no_vote_count": 52
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "dApp Onboarding",
+    "topic_v2_display": "dApp Onboarding",
+    "topic_v2_unique": "Ecosystem - dApp Onboarding"
+  },
+  {
+    "proposal_id": "69",
+    "chain_id": "stargaze",
+    "title": "Increase Deposit for Proposals to 5000 STARS",
+    "type": "ParameterChange",
+    "topic": "Fee Adjustment",
+    "status": "PASSED",
+    "submit_time": "1666386448705",
+    "final_tally_result": {
+      "yes_count": 70,
+      "no_count": 5,
+      "no_vote_count": 55
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Parameter Change",
+    "topic_v2_display": "Parameter Change",
+    "topic_v2_unique": "Protocol - Parameter Change"
+  },
+  {
+    "proposal_id": "67",
+    "chain_id": "stargaze",
+    "title": "Launchpad v2  Whitelist Contract",
+    "type": "SmartContract",
+    "topic": "Contract Deployment",
+    "status": "PASSED",
+    "submit_time": "1666110245978",
+    "final_tally_result": {
+      "yes_count": 78,
+      "abstain_count": 1,
+      "no_vote_count": 51
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "dApp Onboarding",
+    "topic_v2_display": "dApp Onboarding",
+    "topic_v2_unique": "Ecosystem - dApp Onboarding"
+  },
+  {
+    "proposal_id": "66",
+    "chain_id": "stargaze",
+    "title": "Launchpad v2  Vending Factory",
+    "type": "SmartContract",
+    "topic": "Contract Deployment",
+    "status": "PASSED",
+    "submit_time": "1665725200784",
+    "final_tally_result": {
+      "yes_count": 84,
+      "abstain_count": 2,
+      "no_vote_count": 44
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "dApp Onboarding",
+    "topic_v2_display": "dApp Onboarding",
+    "topic_v2_unique": "Ecosystem - dApp Onboarding"
+  },
+  {
+    "proposal_id": "63",
+    "chain_id": "stargaze",
+    "title": "Launchpad v2  Vending Minter",
+    "type": "SmartContract",
+    "topic": "Contract Deployment",
+    "status": "PASSED",
+    "submit_time": "1665723896181",
+    "final_tally_result": {
+      "yes_count": 81,
+      "abstain_count": 2,
+      "no_vote_count": 47
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "dApp Onboarding",
+    "topic_v2_display": "dApp Onboarding",
+    "topic_v2_unique": "Ecosystem - dApp Onboarding"
+  },
+  {
+    "proposal_id": "62",
+    "chain_id": "stargaze",
+    "title": "Launchpad v2  NFT Contract",
+    "type": "SmartContract",
+    "topic": "Contract Deployment",
+    "status": "PASSED",
+    "submit_time": "1665722990584",
+    "final_tally_result": {
+      "yes_count": 81,
+      "abstain_count": 2,
+      "no_vote_count": 47
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "dApp Onboarding",
+    "topic_v2_display": "dApp Onboarding",
+    "topic_v2_unique": "Ecosystem - dApp Onboarding"
+  },
+  {
+    "proposal_id": "59",
+    "chain_id": "stargaze",
+    "title": "Raise voting deposit requirement in STARS to 50K",
+    "type": "TextProposal",
+    "topic": "Community Decision",
+    "status": "PASSED",
+    "submit_time": "1665528841479",
+    "final_tally_result": {
+      "yes_count": 64,
+      "abstain_count": 10,
+      "no_count": 21,
+      "no_with_veto_count": 1,
+      "no_vote_count": 34
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Signaling",
+    "topic_v2_display": "Signaling",
+    "topic_v2_unique": "Governance - Signaling"
+  },
+  {
+    "proposal_id": "58",
+    "chain_id": "stargaze",
+    "title": "Ethereum Onboarding Platform",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "REJECTED",
+    "submit_time": "1665520661637",
+    "final_tally_result": {
+      "abstain_count": 11,
+      "no_count": 39,
+      "yes_count": 17,
+      "no_with_veto_count": 23,
+      "no_vote_count": 40
+    },
+    "type_v2": "Treasury",
+    "topic_v2": "dApp & Tooling Funding",
+    "topic_v2_display": "dApp & Tooling Funding",
+    "topic_v2_unique": "Treasury - dApp & Tooling Funding"
+  },
+  {
+    "proposal_id": "57",
+    "chain_id": "stargaze",
+    "title": "Levana Rekt Dragons Aidrop Proposal",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "PASSED",
+    "submit_time": "1665462999277",
+    "final_tally_result": {
+      "abstain_count": 18,
+      "no_count": 17,
+      "yes_count": 38,
+      "no_vote_count": 57
+    },
+    "type_v2": "Treasury",
+    "topic_v2": "dApp & Tooling Funding",
+    "topic_v2_display": "dApp & Tooling Funding",
+    "topic_v2_unique": "Treasury - dApp & Tooling Funding"
+  },
+  {
+    "proposal_id": "56",
+    "chain_id": "stargaze",
+    "title": "Extending Osmosis Pool Incentives",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "PASSED",
+    "submit_time": "1664481862565",
+    "final_tally_result": {
+      "yes_count": 61,
+      "abstain_count": 3,
+      "no_vote_count": 66
+    },
+    "type_v2": "Treasury",
+    "topic_v2": "Liquidity & Incentives",
+    "topic_v2_display": "Liquidity & Incentives",
+    "topic_v2_unique": "Treasury - Liquidity & Incentives"
+  },
+  {
+    "proposal_id": "54",
+    "chain_id": "stargaze",
+    "title": "Pegasus P2P NFT trading contract",
+    "type": "SmartContract",
+    "topic": "Contract Deployment",
+    "status": "PASSED",
+    "submit_time": "1664131378670",
+    "final_tally_result": {
+      "yes_count": 67,
+      "no_count": 2,
+      "abstain_count": 3,
+      "no_vote_count": 58
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "dApp Onboarding",
+    "topic_v2_display": "dApp Onboarding",
+    "topic_v2_unique": "Ecosystem - dApp Onboarding"
+  },
+  {
+    "proposal_id": "53",
+    "chain_id": "stargaze",
+    "title": "Badges  NFT contract",
+    "type": "SmartContract",
+    "topic": "Contract Deployment",
+    "status": "PASSED",
+    "submit_time": "1663643286266",
+    "final_tally_result": {
+      "yes_count": 76,
+      "abstain_count": 3,
+      "no_vote_count": 51
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "dApp Onboarding",
+    "topic_v2_display": "dApp Onboarding",
+    "topic_v2_unique": "Ecosystem - dApp Onboarding"
+  },
+  {
+    "proposal_id": "52",
+    "chain_id": "stargaze",
+    "title": "Badges  Hub contract",
+    "type": "SmartContract",
+    "topic": "Contract Deployment",
+    "status": "PASSED",
+    "submit_time": "1663643143422",
+    "final_tally_result": {
+      "yes_count": 76,
+      "abstain_count": 3,
+      "no_vote_count": 51
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "dApp Onboarding",
+    "topic_v2_display": "dApp Onboarding",
+    "topic_v2_unique": "Ecosystem - dApp Onboarding"
+  },
+  {
+    "proposal_id": "51",
+    "chain_id": "stargaze",
+    "title": "Marketplace v11 Migration",
+    "type": "SmartContract",
+    "topic": "Contract Upgrade",
+    "status": "PASSED",
+    "submit_time": "1663300587700",
+    "final_tally_result": {
+      "yes_count": 77,
+      "no_count": 2,
+      "abstain_count": 1,
+      "no_vote_count": 50
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "dApp Onboarding",
+    "topic_v2_display": "dApp Onboarding",
+    "topic_v2_unique": "Ecosystem - dApp Onboarding"
+  },
+  {
+    "proposal_id": "50",
+    "chain_id": "stargaze",
+    "title": "Increase the Stargaze active validator set from 120 to 130",
+    "type": "ParameterChange",
+    "topic": "Staking Parameters",
+    "status": "PASSED",
+    "submit_time": "1663214914675",
+    "final_tally_result": {
+      "yes_count": 43,
+      "no_count": 27,
+      "abstain_count": 19,
+      "no_vote_count": 41
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Parameter Change",
+    "topic_v2_display": "Parameter Change",
+    "topic_v2_unique": "Protocol - Parameter Change"
+  },
+  {
+    "proposal_id": "49",
+    "chain_id": "stargaze",
+    "title": "Imago  Finalizer Contract",
+    "type": "SmartContract",
+    "topic": "Contract Deployment",
+    "status": "PASSED",
+    "submit_time": "1663102266985",
+    "final_tally_result": {
+      "yes_count": 88,
+      "abstain_count": 2,
+      "no_vote_count": 40
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "dApp Onboarding",
+    "topic_v2_display": "dApp Onboarding",
+    "topic_v2_unique": "Ecosystem - dApp Onboarding"
+  },
+  {
+    "proposal_id": "48",
+    "chain_id": "stargaze",
+    "title": "Imago  Minter Contract",
+    "type": "SmartContract",
+    "topic": "Contract Deployment",
+    "status": "PASSED",
+    "submit_time": "1663101867143",
+    "final_tally_result": {
+      "yes_count": 89,
+      "abstain_count": 2,
+      "no_vote_count": 39
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "dApp Onboarding",
+    "topic_v2_display": "dApp Onboarding",
+    "topic_v2_unique": "Ecosystem - dApp Onboarding"
+  },
+  {
+    "proposal_id": "47",
+    "chain_id": "stargaze",
+    "title": "Imago  SG721 Contract",
+    "type": "SmartContract",
+    "topic": "Contract Deployment",
+    "status": "PASSED",
+    "submit_time": "1663101237250",
+    "final_tally_result": {
+      "yes_count": 87,
+      "abstain_count": 3,
+      "no_vote_count": 40
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "dApp Onboarding",
+    "topic_v2_display": "dApp Onboarding",
+    "topic_v2_unique": "Ecosystem - dApp Onboarding"
+  },
+  {
+    "proposal_id": "46",
+    "chain_id": "stargaze",
+    "title": "Marketplace Contract v11",
+    "type": "SmartContract",
+    "topic": "Contract Deployment",
+    "status": "PASSED",
+    "submit_time": "1663041066190",
+    "final_tally_result": {
+      "yes_count": 84,
+      "abstain_count": 3,
+      "no_vote_count": 43
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "dApp Onboarding",
+    "topic_v2_display": "dApp Onboarding",
+    "topic_v2_unique": "Ecosystem - dApp Onboarding"
+  },
+  {
+    "proposal_id": "44",
+    "chain_id": "stargaze",
+    "title": "Stargaze V7 Upgrade",
+    "type": "SoftwareUpgrade",
+    "topic": "Major Release",
+    "status": "PASSED",
+    "submit_time": "1661577522276",
+    "final_tally_result": {
+      "yes_count": 96,
+      "no_vote_count": 34
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Core Upgrade",
+    "topic_v2_display": "Core Upgrade",
+    "topic_v2_unique": "Protocol - Core Upgrade"
+  },
+  {
+    "proposal_id": "41",
+    "chain_id": "stargaze",
+    "title": "Marketplace V1 Migration",
+    "type": "SmartContract",
+    "topic": "Contract Upgrade",
+    "status": "PASSED",
+    "submit_time": "1660580501790",
+    "final_tally_result": {
+      "yes_count": 71,
+      "abstain_count": 1,
+      "no_count": 4,
+      "no_vote_count": 54
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "dApp Onboarding",
+    "topic_v2_display": "dApp Onboarding",
+    "topic_v2_unique": "Ecosystem - dApp Onboarding"
+  },
+  {
+    "proposal_id": "40",
+    "chain_id": "stargaze",
+    "title": "Marketplace Contract v1",
+    "type": "SmartContract",
+    "topic": "Contract Deployment",
+    "status": "PASSED",
+    "submit_time": "1660321187983",
+    "final_tally_result": {
+      "yes_count": 84,
+      "abstain_count": 1,
+      "no_vote_count": 45
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "dApp Onboarding",
+    "topic_v2_display": "dApp Onboarding",
+    "topic_v2_unique": "Ecosystem - dApp Onboarding"
+  },
+  {
+    "proposal_id": "39",
+    "chain_id": "stargaze",
+    "title": "Marketplace Contract v1",
+    "type": "SmartContract",
+    "topic": "Contract Deployment",
+    "status": "REJECTED",
+    "submit_time": "1660279477701",
+    "final_tally_result": {
+      "no_count": 77,
+      "yes_count": 4,
+      "no_vote_count": 49
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "dApp Onboarding",
+    "topic_v2_display": "dApp Onboarding",
+    "topic_v2_unique": "Ecosystem - dApp Onboarding"
+  },
+  {
+    "proposal_id": "37",
+    "chain_id": "stargaze",
+    "title": "Parameter Change Proposal Increase MaxValidators from 110  120",
+    "type": "ParameterChange",
+    "topic": "Fee Adjustment",
+    "status": "PASSED",
+    "submit_time": "1658329917932",
+    "final_tally_result": {
+      "yes_count": 72,
+      "abstain_count": 3,
+      "no_count": 3,
+      "no_vote_count": 52
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Parameter Change",
+    "topic_v2_display": "Parameter Change",
+    "topic_v2_unique": "Protocol - Parameter Change"
+  },
+  {
+    "proposal_id": "36",
+    "chain_id": "stargaze",
+    "title": "Increase MaxValidators110 to MaxValidators120",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "PASSED",
+    "submit_time": "1658055614159",
+    "final_tally_result": {
+      "yes_count": 70,
+      "abstain_count": 6,
+      "no_count": 3,
+      "no_vote_count": 51
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Signaling",
+    "topic_v2_display": "Signaling",
+    "topic_v2_unique": "Governance - Signaling"
+  },
+  {
+    "proposal_id": "35",
+    "chain_id": "stargaze",
+    "title": "Development Proposal",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "REJECTED",
+    "submit_time": "1657720857203",
+    "final_tally_result": {
+      "abstain_count": 8,
+      "no_count": 26,
+      "yes_count": 31,
+      "no_vote_count": 65
+    },
+    "type_v2": "Treasury",
+    "topic_v2": "dApp & Tooling Funding",
+    "topic_v2_display": "dApp & Tooling Funding",
+    "topic_v2_unique": "Treasury - dApp & Tooling Funding"
+  },
+  {
+    "proposal_id": "34",
+    "chain_id": "stargaze",
+    "title": "Stargaze V6 Upgrade",
+    "type": "SoftwareUpgrade",
+    "topic": "Major Release",
+    "status": "PASSED",
+    "submit_time": "1656601767782",
+    "final_tally_result": {
+      "yes_count": 73,
+      "abstain_count": 1,
+      "no_vote_count": 56
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Core Upgrade",
+    "topic_v2_display": "Core Upgrade",
+    "topic_v2_unique": "Protocol - Core Upgrade"
+  },
+  {
+    "proposal_id": "33",
+    "chain_id": "stargaze",
+    "title": "Increase MaxValidators100 to MaxValidators110",
+    "type": "ParameterChange",
+    "topic": "Fee Adjustment",
+    "status": "PASSED",
+    "submit_time": "1652635925713",
+    "final_tally_result": {
+      "yes_count": 56,
+      "no_count": 5,
+      "no_vote_count": 69
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Parameter Change",
+    "topic_v2_display": "Parameter Change",
+    "topic_v2_unique": "Protocol - Parameter Change"
+  },
+  {
+    "proposal_id": "32",
+    "chain_id": "stargaze",
+    "title": "Extend Airdrop Decay Start Time",
+    "type": "ParameterChange",
+    "topic": "Protocol Configuration",
+    "status": "PASSED",
+    "submit_time": "1652473747114",
+    "final_tally_result": {
+      "yes_count": 72,
+      "no_vote_count": 58
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Spam & Malicious",
+    "topic_v2_display": "Spam & Malicious",
+    "topic_v2_unique": "Governance - Spam & Malicious"
+  },
+  {
+    "proposal_id": "31",
+    "chain_id": "stargaze",
+    "title": "Stargaze Marketplace V1 Instantiation",
+    "type": "SmartContract",
+    "topic": "Contract Upgrade",
+    "status": "PASSED",
+    "submit_time": "1652469763182",
+    "final_tally_result": {
+      "yes_count": 73,
+      "no_vote_count": 57
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "dApp Onboarding",
+    "topic_v2_display": "dApp Onboarding",
+    "topic_v2_unique": "Ecosystem - dApp Onboarding"
+  },
+  {
+    "proposal_id": "30",
+    "chain_id": "stargaze",
+    "title": "Allow Claim Contract Instance",
+    "type": "ParameterChange",
+    "topic": "Protocol Configuration",
+    "status": "PASSED",
+    "submit_time": "1652468943975",
+    "final_tally_result": {
+      "yes_count": 72,
+      "no_vote_count": 58
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Parameter Change",
+    "topic_v2_display": "Parameter Change",
+    "topic_v2_unique": "Protocol - Parameter Change"
+  },
+  {
+    "proposal_id": "29",
+    "chain_id": "stargaze",
+    "title": "Stargaze Marketplace V1 Smart Contract Upload",
+    "type": "SmartContract",
+    "topic": "Contract Deployment",
+    "status": "PASSED",
+    "submit_time": "1652203418221",
+    "final_tally_result": {
+      "yes_count": 58,
+      "no_vote_count": 72
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "dApp Onboarding",
+    "topic_v2_display": "dApp Onboarding",
+    "topic_v2_unique": "Ecosystem - dApp Onboarding"
+  },
+  {
+    "proposal_id": "28",
+    "chain_id": "stargaze",
+    "title": "Stargaze Claim Smart Contract v0150 Upload",
+    "type": "SmartContract",
+    "topic": "Contract Deployment",
+    "status": "PASSED",
+    "submit_time": "1652202638977",
+    "final_tally_result": {
+      "yes_count": 58,
+      "no_vote_count": 72
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "dApp Onboarding",
+    "topic_v2_display": "dApp Onboarding",
+    "topic_v2_unique": "Ecosystem - dApp Onboarding"
+  },
+  {
+    "proposal_id": "27",
+    "chain_id": "stargaze",
+    "title": "Stargaze V5 Upgrade",
+    "type": "SoftwareUpgrade",
+    "topic": "Major Release",
+    "status": "PASSED",
+    "submit_time": "1651289256681",
+    "final_tally_result": {
+      "yes_count": 74,
+      "no_vote_count": 56
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Core Upgrade",
+    "topic_v2_display": "Core Upgrade",
+    "topic_v2_unique": "Protocol - Core Upgrade"
+  },
+  {
+    "proposal_id": "26",
+    "chain_id": "stargaze",
+    "title": "Adjust blocks per year parameter to match block times",
+    "type": "ParameterChange",
+    "topic": "Fee Adjustment",
+    "status": "PASSED",
+    "submit_time": "1650935910648",
+    "final_tally_result": {
+      "yes_count": 62,
+      "no_vote_count": 68
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Parameter Change",
+    "topic_v2_display": "Parameter Change",
+    "topic_v2_unique": "Protocol - Parameter Change"
+  },
+  {
+    "proposal_id": "25",
+    "chain_id": "stargaze",
+    "title": "Stargaze Carbon Neutrality through Purchasing and Retiring NCT",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "PASSED",
+    "submit_time": "1650323599940",
+    "final_tally_result": {
+      "yes_count": 58,
+      "no_count": 2,
+      "abstain_count": 2,
+      "no_vote_count": 68
+    },
+    "type_v2": "Treasury",
+    "topic_v2": "dApp & Tooling Funding",
+    "topic_v2_display": "dApp & Tooling Funding",
+    "topic_v2_unique": "Treasury - dApp & Tooling Funding"
+  },
+  {
+    "proposal_id": "24",
+    "chain_id": "stargaze",
+    "title": "Stargaze V4 Upgrade",
+    "type": "SoftwareUpgrade",
+    "topic": "Major Release",
+    "status": "PASSED",
+    "submit_time": "1649445967406",
+    "final_tally_result": {
+      "yes_count": 80,
+      "no_vote_count": 50
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Core Upgrade",
+    "topic_v2_display": "Core Upgrade",
+    "topic_v2_unique": "Protocol - Core Upgrade"
+  },
+  {
+    "proposal_id": "23",
+    "chain_id": "stargaze",
+    "title": "Extend Osmosis STARS incentives to boost liquidity and mitigate slippage",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "PASSED",
+    "submit_time": "1648694091848",
+    "final_tally_result": {
+      "abstain_count": 1,
+      "yes_count": 52,
+      "no_count": 1,
+      "no_vote_count": 76
+    },
+    "type_v2": "Treasury",
+    "topic_v2": "Liquidity & Incentives",
+    "topic_v2_display": "Liquidity & Incentives",
+    "topic_v2_unique": "Treasury - Liquidity & Incentives"
+  },
+  {
+    "proposal_id": "22",
+    "chain_id": "stargaze",
+    "title": "Allow Claim Contract Instance",
+    "type": "ParameterChange",
+    "topic": "Protocol Configuration",
+    "status": "PASSED",
+    "submit_time": "1647578796422",
+    "final_tally_result": {
+      "yes_count": 63,
+      "no_vote_count": 67
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Parameter Change",
+    "topic_v2_display": "Parameter Change",
+    "topic_v2_unique": "Protocol - Parameter Change"
+  },
+  {
+    "proposal_id": "21",
+    "chain_id": "stargaze",
+    "title": "Claim MintNFT Airdrop Contract",
+    "type": "SmartContract",
+    "topic": "Contract Deployment",
+    "status": "PASSED",
+    "submit_time": "1647319332365",
+    "final_tally_result": {
+      "yes_count": 69,
+      "abstain_count": 2,
+      "no_vote_count": 59
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Spam & Malicious",
+    "topic_v2_display": "Spam & Malicious",
+    "topic_v2_unique": "Governance - Spam & Malicious"
+  },
+  {
+    "proposal_id": "20",
+    "chain_id": "stargaze",
+    "title": "Whitelist Contract v080",
+    "type": "SmartContract",
+    "topic": "Contract Deployment",
+    "status": "PASSED",
+    "submit_time": "1646712777507",
+    "final_tally_result": {
+      "yes_count": 78,
+      "no_vote_count": 52
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "dApp Onboarding",
+    "topic_v2_display": "dApp Onboarding",
+    "topic_v2_unique": "Ecosystem - dApp Onboarding"
+  },
+  {
+    "proposal_id": "19",
+    "chain_id": "stargaze",
+    "title": "Minter Contract v080",
+    "type": "SmartContract",
+    "topic": "Contract Deployment",
+    "status": "PASSED",
+    "submit_time": "1646712733520",
+    "final_tally_result": {
+      "yes_count": 78,
+      "no_vote_count": 52
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "dApp Onboarding",
+    "topic_v2_display": "dApp Onboarding",
+    "topic_v2_unique": "Ecosystem - dApp Onboarding"
+  },
+  {
+    "proposal_id": "18",
+    "chain_id": "stargaze",
+    "title": "SG721 Contract v080",
+    "type": "SmartContract",
+    "topic": "Contract Deployment",
+    "status": "PASSED",
+    "submit_time": "1646712569889",
+    "final_tally_result": {
+      "yes_count": 78,
+      "no_vote_count": 52
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "dApp Onboarding",
+    "topic_v2_display": "dApp Onboarding",
+    "topic_v2_unique": "Ecosystem - dApp Onboarding"
+  },
+  {
+    "proposal_id": "17",
+    "chain_id": "stargaze",
+    "title": "Whitelist Contract",
+    "type": "SmartContract",
+    "topic": "Contract Deployment",
+    "status": "REJECTED",
+    "submit_time": "1646152907503",
+    "final_tally_result": {
+      "yes_count": 37,
+      "no_count": 39,
+      "abstain_count": 1,
+      "no_vote_count": 53
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "dApp Onboarding",
+    "topic_v2_display": "dApp Onboarding",
+    "topic_v2_unique": "Ecosystem - dApp Onboarding"
+  },
+  {
+    "proposal_id": "16",
+    "chain_id": "stargaze",
+    "title": "Minter Contract",
+    "type": "SmartContract",
+    "topic": "Contract Deployment",
+    "status": "REJECTED",
+    "submit_time": "1646152871548",
+    "final_tally_result": {
+      "yes_count": 37,
+      "no_count": 39,
+      "abstain_count": 1,
+      "no_vote_count": 53
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "dApp Onboarding",
+    "topic_v2_display": "dApp Onboarding",
+    "topic_v2_unique": "Ecosystem - dApp Onboarding"
+  },
+  {
+    "proposal_id": "15",
+    "chain_id": "stargaze",
+    "title": "SG721 Contract",
+    "type": "SmartContract",
+    "topic": "Contract Deployment",
+    "status": "REJECTED",
+    "submit_time": "1646152583921",
+    "final_tally_result": {
+      "no_count": 39,
+      "yes_count": 38,
+      "abstain_count": 1,
+      "no_vote_count": 52
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "dApp Onboarding",
+    "topic_v2_display": "dApp Onboarding",
+    "topic_v2_unique": "Ecosystem - dApp Onboarding"
+  },
+  {
+    "proposal_id": "13",
+    "chain_id": "stargaze",
+    "title": "Stargaze V3 CosmWasm Upgrade",
+    "type": "SoftwareUpgrade",
+    "topic": "Major Release",
+    "status": "PASSED",
+    "submit_time": "1645460787716",
+    "final_tally_result": {
+      "yes_count": 96,
+      "no_vote_count": 34
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Core Upgrade",
+    "topic_v2_display": "Core Upgrade",
+    "topic_v2_unique": "Protocol - Core Upgrade"
+  },
+  {
+    "proposal_id": "12",
+    "chain_id": "stargaze",
+    "title": "Claim Airdrop Mission 3",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "PASSED",
+    "submit_time": "1644848286471",
+    "final_tally_result": {
+      "abstain_count": 9,
+      "yes_count": 60,
+      "no_vote_count": 61
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Spam & Malicious",
+    "topic_v2_display": "Spam & Malicious",
+    "topic_v2_unique": "Governance - Spam & Malicious"
+  },
+  {
+    "proposal_id": "11",
+    "chain_id": "stargaze",
+    "title": "Increase MaxValidators100 to MaxValidators125",
+    "type": "ParameterChange",
+    "topic": "Fee Adjustment",
+    "status": "REJECTED",
+    "submit_time": "1644819282371",
+    "final_tally_result": {
+      "no_count": 63,
+      "yes_count": 23,
+      "abstain_count": 6,
+      "no_with_veto_count": 1,
+      "no_vote_count": 37
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Parameter Change",
+    "topic_v2_display": "Parameter Change",
+    "topic_v2_unique": "Protocol - Parameter Change"
+  },
+  {
+    "proposal_id": "10",
+    "chain_id": "stargaze",
+    "title": "Claim Airdrop Mission 3",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "PASSED",
+    "submit_time": "1644250961222",
+    "final_tally_result": {
+      "yes_count": 57,
+      "abstain_count": 5,
+      "no_vote_count": 68
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Spam & Malicious",
+    "topic_v2_display": "Spam & Malicious",
+    "topic_v2_unique": "Governance - Spam & Malicious"
+  },
+  {
+    "proposal_id": "9",
+    "chain_id": "stargaze",
+    "title": "Claim Airdrop Mission 3",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "PASSED",
+    "submit_time": "1643642592929",
+    "final_tally_result": {
+      "yes_count": 48,
+      "abstain_count": 1,
+      "no_vote_count": 81
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Spam & Malicious",
+    "topic_v2_display": "Spam & Malicious",
+    "topic_v2_unique": "Governance - Spam & Malicious"
+  },
+  {
+    "proposal_id": "8",
+    "chain_id": "stargaze",
+    "title": "Claim Airdrop Mission 3",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "PASSED",
+    "submit_time": "1643208398877",
+    "final_tally_result": {
+      "abstain_count": 3,
+      "yes_count": 64,
+      "no_vote_count": 63
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Spam & Malicious",
+    "topic_v2_display": "Spam & Malicious",
+    "topic_v2_unique": "Governance - Spam & Malicious"
+  },
+  {
+    "proposal_id": "7",
+    "chain_id": "stargaze",
+    "title": "Stargaze v2 Upgrade",
+    "type": "SoftwareUpgrade",
+    "topic": "Major Release",
+    "status": "PASSED",
+    "submit_time": "1642829484026",
+    "final_tally_result": {
+      "yes_count": 86,
+      "no_vote_count": 44
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Core Upgrade",
+    "topic_v2_display": "Core Upgrade",
+    "topic_v2_unique": "Protocol - Core Upgrade"
+  },
+  {
+    "proposal_id": "6",
+    "chain_id": "stargaze",
+    "title": "Claim Airdrop Mission 3",
+    "type": "TextProposal",
+    "topic": "Governance Process",
+    "status": "PASSED",
+    "submit_time": "1642734979863",
+    "final_tally_result": {
+      "abstain_count": 2,
+      "yes_count": 69,
+      "no_vote_count": 59
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Spam & Malicious",
+    "topic_v2_display": "Spam & Malicious",
+    "topic_v2_unique": "Governance - Spam & Malicious"
+  },
+  {
+    "proposal_id": "5",
+    "chain_id": "stargaze",
+    "title": "Transfer Protocolowned Osmosis LP Tokens to Community Pool",
+    "type": "TextProposal",
+    "topic": "Community Decision",
+    "status": "PASSED",
+    "submit_time": "1642402535124",
+    "final_tally_result": {
+      "yes_count": 88,
+      "no_vote_count": 42
+    },
+    "type_v2": "Ecosystem",
+    "topic_v2": "Token Management",
+    "topic_v2_display": "Token Management",
+    "topic_v2_unique": "Ecosystem - Token Management"
+  },
+  {
+    "proposal_id": "4",
+    "chain_id": "stargaze",
+    "title": "Enable Airdrop",
+    "type": "ParameterChange",
+    "topic": "Protocol Configuration",
+    "status": "PASSED",
+    "submit_time": "1642179653818",
+    "final_tally_result": {
+      "yes_count": 87,
+      "no_vote_count": 43
+    },
+    "type_v2": "Governance",
+    "topic_v2": "Spam & Malicious",
+    "topic_v2_display": "Spam & Malicious",
+    "topic_v2_unique": "Governance - Spam & Malicious"
+  },
+  {
+    "proposal_id": "3",
+    "chain_id": "stargaze",
+    "title": "STARS on Osmosis Pool incentives to boost liquidity and mitigate slippage",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "PASSED",
+    "submit_time": "1641844627385",
+    "final_tally_result": {
+      "yes_count": 78,
+      "no_vote_count": 52
+    },
+    "type_v2": "Treasury",
+    "topic_v2": "Liquidity & Incentives",
+    "topic_v2_display": "Liquidity & Incentives",
+    "topic_v2_unique": "Treasury - Liquidity & Incentives"
+  },
+  {
+    "proposal_id": "2",
+    "chain_id": "stargaze",
+    "title": "Enable Inflation",
+    "type": "ParameterChange",
+    "topic": "Economic Parameters",
+    "status": "PASSED",
+    "submit_time": "1640497749612",
+    "final_tally_result": {
+      "yes_count": 77,
+      "no_vote_count": 53
+    },
+    "type_v2": "Protocol",
+    "topic_v2": "Parameter Change",
+    "topic_v2_display": "Parameter Change",
+    "topic_v2_unique": "Protocol - Parameter Change"
+  },
+  {
+    "proposal_id": "1",
+    "chain_id": "stargaze",
+    "title": "Osmosis Community Loan",
+    "type": "CommunityPoolSpend",
+    "topic": "Community Support",
+    "status": "PASSED",
+    "submit_time": "1639438572744",
+    "final_tally_result": {
+      "yes_count": 43,
+      "no_vote_count": 87
+    },
+    "type_v2": "Treasury",
+    "topic_v2": "Community & Marketing Funding",
+    "topic_v2_display": "Community & Marketing Funding",
+    "topic_v2_unique": "Treasury - Community & Marketing Funding"
+  }
+]

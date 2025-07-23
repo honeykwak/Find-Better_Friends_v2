@@ -6,6 +6,10 @@ export interface Proposal {
   title: string;
   type: string;
   topic: string;
+  type_v2: string;
+  topic_v2: string; // This will be the display name now
+  topic_v2_display: string;
+  topic_v2_unique: string;
   status: string;
   submit_time: string;
   final_tally_result: Record<string, number>;
@@ -40,7 +44,7 @@ export async function loadChainData(chainName: string): Promise<ProcessedData> {
   try {
     console.log(`dataLoader: Loading data for chain: ${chainName} from optimized APIs`);
 
-    const proposalsPromise = fetch(`/data/${chainName}/proposals.json`).then(res => res.json());
+    const proposalsPromise = fetch(`/data/${chainName}/proposals_v2.json`).then(res => res.json());
     const validatorsPromise = fetch(`/data/${chainName}/validators.json`).then(res => res.json());
     const votesPromise = fetch(`/data/${chainName}/votes.json`).then(res => res.json());
 
