@@ -4,11 +4,13 @@ import { useEffect, Suspense } from 'react'
 import dynamic from 'next/dynamic'
 import { useGlobalStore, type Proposal, type Vote, type Validator } from '@/stores/useGlobalStore'
 import { Loader2 } from 'lucide-react'
+import { Allotment } from "allotment";
+import "allotment/dist/style.css";
 
 // Dynamic imports for heavy components
 const FilterPanel = dynamic(() => import('@/components/FilterPanel'), {
   loading: () => (
-    <div className="w-80 h-full bg-white border-r border-gray-200 flex items-center justify-center">
+    <div className="w-full h-full bg-white flex items-center justify-center">
       <div className="text-center">
         <Loader2 className="w-6 h-6 animate-spin mx-auto mb-2 text-blue-600" />
         <p className="text-sm text-gray-600">Loading filters...</p>
@@ -67,26 +69,35 @@ export default function ResearchClient({ initialData }: ResearchClientProps) {
 
   return (
     <div className="flex-1 flex overflow-hidden">
-      {/* Left Filter Panel */}
-      {!isMobileScreen && (
-        <Suspense fallback={
-          <div className="w-80 h-full bg-white border-r border-gray-200 flex items-center justify-center">
-            <div className="text-center">
-              <Loader2 className="w-6 h-6 animate-spin mx-auto mb-2 text-blue-600" />
-              <p className="text-sm text-gray-600">Loading filters...</p>
+      {!isMobileScreen ? (
+        <Allotment>
+          <Allotment.Pane minSize={160} preferredSize="25%">
+            <Suspense fallback={
+              <div className="w-full h-full bg-white flex items-center justify-center">
+                <div className="text-center">
+                  <Loader2 className="w-6 h-6 animate-spin mx-auto mb-2 text-blue-600" />
+                  <p className="text-sm text-gray-600">Loading filters...</p>
+                </div>
+              </div>
+            }>
+              <FilterPanel />
+            </Suspense>
+          </Allotment.Pane>
+          <Allotment.Pane>
+            <div className="flex-1 flex flex-col overflow-hidden bg-white h-full">
+              <div className="flex-1 overflow-hidden">
+                <ValidatorHeatmap />
+              </div>
             </div>
+          </Allotment.Pane>
+        </Allotment>
+      ) : (
+        <div className="flex-1 flex flex-col overflow-hidden bg-white">
+          <div className="flex-1 overflow-hidden">
+            <ValidatorHeatmap />
           </div>
-        }>
-          <FilterPanel />
-        </Suspense>
-      )}
-
-      {/* Right Main Area */}
-      <div className="flex-1 flex flex-col overflow-hidden bg-white">
-        <div className="flex-1 overflow-hidden">
-          <ValidatorHeatmap />
         </div>
-      </div>
+      )}
     </div>
   )
 }
