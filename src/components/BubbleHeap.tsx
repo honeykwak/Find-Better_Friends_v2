@@ -3,7 +3,7 @@
 import { useEffect, useRef, useMemo } from 'react'
 import * as d3 from 'd3'
 import { useGlobalStore } from '@/stores/useGlobalStore'
-import { calculateSimilarity } from '@/lib/similarity'
+import { motion, AnimatePresence } from 'framer-motion'
 
 type SimulationNode = d3.SimulationNodeDatum & {
   id: string
@@ -17,21 +17,21 @@ type SimulationNode = d3.SimulationNodeDatum & {
 export default function BubbleHeap() {
   const svgRef = useRef<SVGSVGElement>(null)
   const containerRef = useRef<HTMLDivElement>(null)
+  
   const simulationRef = useRef<d3.Simulation<SimulationNode, undefined>>()
-
-  const margin = useMemo(() => ({ top: 20, right: 20, bottom: 20, left: 50 }), [])
-  const simSize = useMemo(() => ({ width: 800, height: 1600 }), []) // Adjusted height to 2x
-  const boundedWidth = useMemo(() => simSize.width - margin.left - margin.right, [simSize, margin])
-  const boundedHeight = useMemo(() => simSize.height - margin.top - margin.bottom, [simSize, margin])
+  const zoomGRef = useRef<d3.Selection<SVGGElement, unknown, null, undefined>>()
+  const scalesRef = useRef<{
+    radius: d3.ScaleSqrt<number, number>
+    y: d3.ScaleLinear<number, number>
+  }>()
 
   const {
     searchTerm,
     setSearchTerm,
     setHighlightedValidator,
     highlightedValidator,
+    filteredValidators,
   } = useGlobalStore()
-
-  const filteredValidators = useGlobalStore(state => state.filteredValidators);
 
   const simulationData = useMemo((): SimulationNode[] => {
     if (!searchTerm || filteredValidators.length === 0) return []
@@ -41,48 +41,75 @@ export default function BubbleHeap() {
     const nodes = filteredValidators
       .filter(v => typeof v.similarity === 'number')
       .map((validator) => ({
-        id: validator.moniker,
+        id: validator.operator_address,
         moniker: validator.moniker,
         similarity: validator.similarity!,
         avgPower: validator.avgPower || 0,
       }))
 
-    if (baseValidator && !nodes.find(n => n.id === baseValidator.moniker)) {
+    if (baseValidator && !nodes.find(n => n.id === baseValidator.operator_address)) {
       nodes.push({
-        id: baseValidator.moniker,
+        id: baseValidator.operator_address,
         moniker: baseValidator.moniker,
         similarity: 1,
         avgPower: baseValidator.avgPower || 0,
       })
     }
     
-    return nodes
+    return nodes.sort((a, b) => b.similarity - a.similarity);
   }, [searchTerm, filteredValidators])
 
   useEffect(() => {
     if (!svgRef.current || !containerRef.current) return
 
+    const simSize = { width: 800, height: 1600 }
+    const margin = { top: 20, right: 20, bottom: 20, left: 50 }
+    const boundedWidth = simSize.width - margin.left - margin.right
+    const boundedHeight = simSize.height - margin.top - margin.bottom
+
+    scalesRef.current = {
+      radius: d3.scaleSqrt().range([5, 45]),
+      y: d3.scaleLinear().domain([0, 1]).range([boundedHeight, 0]),
+    }
+
     const svg = d3.select(svgRef.current)
       .attr('viewBox', `0 0 ${simSize.width} ${simSize.height}`)
-      .style('width', '100%')
-      .style('height', '100%');
+      .style('width', '100%').style('height', '100%')
 
-    svg.selectAll('g').remove() // Clear previous elements
+    svg.selectAll('g').remove()
 
     const g = svg.append('g').attr('transform', `translate(${margin.left},${margin.top})`)
-    
-    const zoomG = g.append('g').attr('class', 'zoom-group')
-    
-    // The axis is now INSIDE the zoom group
-    const axisG = zoomG.append('g')
-      .attr('class', 'y-axis')
-      .attr('transform', `translate(${boundedWidth / 2}, 0)`) // Center the axis
+    zoomGRef.current = g.append('g').attr('class', 'zoom-group')
 
-    const zoom = d3.zoom<SVGSVGElement, unknown>()
-      .scaleExtent([0.5, 10])
-      .on('zoom', (event) => zoomG.attr('transform', event.transform))
+    const axisG = zoomGRef.current.append('g').attr('class', 'y-axis')
+      .attr('transform', `translate(${boundedWidth / 2}, 0)`)
     
+    const yAxis = d3.axisLeft(scalesRef.current.y).ticks(5).tickFormat(d3.format('.0%'))
+    axisG.call(yAxis).selectAll('text').style('font-size', '12px')
+    axisG.select('.domain').attr('stroke-width', 1.5)
+
+    const zoom = d3.zoom<SVGSVGElement, unknown>().scaleExtent([0.5, 10])
+      .on('zoom', (event) => zoomGRef.current?.attr('transform', event.transform))
     svg.call(zoom as any)
+
+    simulationRef.current = d3.forceSimulation<SimulationNode>()
+      .force('y', d3.forceY((d: any) => scalesRef.current!.y(d.similarity)).strength(1))
+      .force('x', d3.forceX(boundedWidth / 2).strength(0.05))
+      .on('tick', () => {
+        zoomGRef.current?.selectAll<SVGCircleElement, SimulationNode>('circle')
+          .attr('cx', d => d.x!).attr('cy', d => d.y!)
+      })
+
+    return () => simulationRef.current?.stop()
+  }, [])
+
+  useEffect(() => {
+    if (!zoomGRef.current || !scalesRef.current || !simulationRef.current) return
+
+    const { radius: radiusScale, y: yScale } = scalesRef.current
+    
+    const maxPower = d3.max(simulationData, d => d.avgPower) || 0
+    radiusScale.domain([0, maxPower])
 
     d3.select('body').selectAll('.d3-tooltip').remove()
     const tooltip = d3.select('body').append('div')
@@ -91,27 +118,38 @@ export default function BubbleHeap() {
       .style('background', 'rgba(0,0,0,0.7)').style('color', '#fff')
       .style('padding', '8px').style('border-radius', '4px').style('font-size', '12px')
 
-    const radiusScale = d3.scaleSqrt()
-      .domain([0, d3.max(simulationData, (d) => d.avgPower) || 0])
-      .range([4, 40]) // Reduced max radius from 60 to 40 for better balance
+    const oldNodeMap = new Map(simulationRef.current.nodes().map(d => [d.id, d]));
+    simulationData.forEach(node => {
+      const oldNode = oldNodeMap.get(node.id);
+      if (oldNode) {
+        node.x = oldNode.x;
+        node.y = oldNode.y;
+      }
+    });
 
-    const yScale = d3.scaleLinear().domain([0, 1]).range([boundedHeight, 0])
-    
-    const yAxis = d3.axisLeft(yScale).ticks(5).tickFormat(d3.format('.0%'))
-    axisG.call(yAxis)
-      .selectAll('text')
-      .style('font-size', '12px')
-    axisG.select('.domain').attr('stroke-width', 1.5)
+    // --- REVISED D3 DATA JOIN ---
+    const circles = zoomGRef.current
+      .selectAll<SVGCircleElement, SimulationNode>('circle')
+      .data(simulationData, d => d.id);
 
-
-    const circles = zoomG.selectAll<SVGCircleElement, SimulationNode>('circle')
-      .data(simulationData, (d) => d.id)
-
-    circles.exit().transition().duration(300).attr('r', 0).remove()
-
-    const enterCircles = circles.enter().append('circle')
+    // EXIT - Remove old elements
+    circles.exit()
+      .transition().duration(300)
       .attr('r', 0)
+      .remove();
+
+    // ENTER - Add new elements
+    const enterCircles = circles.enter().append('circle')
       .style('cursor', 'pointer')
+      .attr('r', 0)
+      .attr('cx', d => d.x || (800 - 50 - 20) / 2)
+      .attr('cy', d => d.y || yScale(d.similarity));
+
+    // MERGE - Combine enter and update selections
+    const allCircles = enterCircles.merge(circles);
+
+    // Apply event handlers and transitions to all circles (new and existing)
+    allCircles
       .on('click', (event, d) => {
         if (d.similarity < 1) setSearchTerm(d.moniker)
       })
@@ -124,43 +162,31 @@ export default function BubbleHeap() {
       .on('mouseout', () => {
         setHighlightedValidator(null)
         tooltip.style('visibility', 'hidden')
-      })
+      });
 
-    const allCircles = enterCircles.merge(circles)
-    
-    allCircles.transition().duration(500).attr('r', (d) => radiusScale(d.avgPower))
+    // UPDATE - Animate radius for all circles. New circles transition from 0.
+    // Existing circles transition from their current radius to a new one if it changed.
+    allCircles.transition().duration(750)
+      .attr('r', d => radiusScale(d.avgPower));
+    // --- END REVISED D3 DATA JOIN ---
 
-    if (simulationRef.current) {
-      simulationRef.current.stop()
-    }
-    
-    simulationRef.current = d3.forceSimulation(simulationData as SimulationNode[])
-      .force('y', d3.forceY((d: any) => yScale(d.similarity)).strength(1))
-      .force('x', d3.forceX(boundedWidth / 2).strength(0.05))
-      .force('collide', d3.forceCollide((d: any) => radiusScale(d.avgPower)))
-      .on('tick', () => {
-        allCircles
-          .attr('cx', (d) => d.x!)
-          .attr('cy', (d) => d.y!)
-      })
+    simulationRef.current.nodes(simulationData);
+    simulationRef.current.force('collide', d3.forceCollide((d: any) => radiusScale(d.avgPower) + 1));
+    simulationRef.current.alpha(0.4).restart();
 
-  }, [simulationData, simSize, margin, boundedWidth, boundedHeight, setSearchTerm, setHighlightedValidator])
+  }, [simulationData, setSearchTerm, setHighlightedValidator]);
 
   useEffect(() => {
-    if (!svgRef.current) return
-    d3.select(svgRef.current).selectAll('circle')
+    if (!zoomGRef.current) return
+    zoomGRef.current.selectAll('circle')
       .transition().duration(200)
       .attr('fill', (d: any) => {
-        if (d.similarity === 1) return 'rgba(234, 179, 8, 0.8)' // Base validator color
-        return highlightedValidator === d.moniker 
-          ? 'rgba(234, 179, 8, 0.8)' // Highlight color
-          : 'rgba(29, 78, 216, 0.6)' // Default color
+        if (d.similarity === 1) return 'rgba(234, 179, 8, 0.8)'
+        return highlightedValidator === d.moniker ? 'rgba(234, 179, 8, 0.8)' : 'rgba(29, 78, 216, 0.6)'
       })
       .attr('stroke', (d: any) => {
         if (d.similarity === 1) return 'rgba(202, 138, 4, 1)'
-        return highlightedValidator === d.moniker
-          ? 'rgba(202, 138, 4, 1)'
-          : 'rgba(29, 78, 216, 1)'
+        return highlightedValidator === d.moniker ? 'rgba(202, 138, 4, 1)' : 'rgba(29, 78, 216, 1)'
       })
   }, [highlightedValidator])
 
@@ -173,11 +199,18 @@ export default function BubbleHeap() {
       </div>
       <div ref={containerRef} className="flex-1 relative overflow-hidden">
         <svg ref={svgRef}></svg>
-        {simulationData.length <= 1 && searchTerm && (
-           <div className="absolute inset-0 flex items-center justify-center">
-             <p className="text-gray-500">No other validators to compare.</p>
-           </div>
-        )}
+        <AnimatePresence>
+          {simulationData.length <= 1 && searchTerm && (
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -20 }}
+              className="absolute inset-0 flex items-center justify-center"
+            >
+              <p className="text-gray-500 bg-white p-4 rounded-lg shadow-md">No other validators to compare.</p>
+            </motion.div>
+          )}
+        </AnimatePresence>
       </div>
     </div>
   )
