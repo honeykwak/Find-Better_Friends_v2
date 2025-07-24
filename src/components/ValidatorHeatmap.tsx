@@ -264,6 +264,31 @@ export default function ValidatorHeatmap() {
       for (const validator of sortedValidators) {
         validatorDisplayValues.set(validator.validator_address, `(${(validator.totalPower || 0).toLocaleString()})`);
       }
+    } else if (validatorSortKey === 'recentVotingPower') {
+      const sortedProposalsByDate = [...filteredProposals].sort((a, b) => {
+        const timeA = a.submit_time ? new Date(Number(a.submit_time)).getTime() : 0;
+        const timeB = b.submit_time ? new Date(Number(b.submit_time)).getTime() : 0;
+        return timeB - timeA; // Sort by most recent first
+      });
+
+      const votesMap = new Map<string, number>();
+      for (const vote of rawVotes) {
+        const power = typeof vote.voting_power === 'string' ? parseFloat(vote.voting_power) : vote.voting_power;
+        if (power && !isNaN(power)) {
+          votesMap.set(`${vote.proposal_id}-${vote.validator_address}`, power);
+        }
+      }
+
+      sortedValidators.sort((a, b) => {
+        for (const proposal of sortedProposalsByDate) {
+          const powerA = votesMap.get(`${proposal.proposal_id}-${a.validator_address}`) || 0;
+          const powerB = votesMap.get(`${proposal.proposal_id}-${b.validator_address}`) || 0;
+          if (powerA !== powerB) {
+            return powerB - powerA;
+          }
+        }
+        return 0;
+      });
     } else { // Default to 'voteCount'
       const validatorVoteCounts = new Map<string, number>();
       for (const vote of rawVotes) {
@@ -607,54 +632,61 @@ export default function ValidatorHeatmap() {
             <button 
               onClick={() => setValidatorSortKey('totalVotingPower')} 
               className={`px-3 py-2 text-xs font-medium rounded-md whitespace-nowrap ${validatorSortKey === 'totalVotingPower' ? 'bg-white text-gray-800 shadow-sm' : 'text-gray-500'}`}
-              title="Sort by total voting power"
+              title="Sort by Total Voting Power"
             >
-              Total Voting Power
+              Total VP
             </button>
             <button 
               onClick={() => setValidatorSortKey('votingPower')} 
               className={`px-3 py-2 text-xs font-medium rounded-md whitespace-nowrap ${validatorSortKey === 'votingPower' ? 'bg-white text-gray-800 shadow-sm' : 'text-gray-500'}`}
-              title="Sort by voting power"
+              title="Sort by Average Voting Power"
             >
-              Avg. Voting Power
+              Avg. VP
+            </button>
+            <button 
+              onClick={() => setValidatorSortKey('recentVotingPower')} 
+              className={`px-3 py-2 text-xs font-medium rounded-md whitespace-nowrap ${validatorSortKey === 'recentVotingPower' ? 'bg-white text-gray-800 shadow-sm' : 'text-gray-500'}`}
+              title="Sort by Recent Voting Power"
+            >
+              Recent VP
             </button>
             <button 
               onClick={() => setValidatorSortKey('voteCount')} 
               className={`px-3 py-2 text-xs font-medium rounded-md whitespace-nowrap ${validatorSortKey === 'voteCount' ? 'bg-white text-gray-800 shadow-sm' : 'text-gray-500'}`}
-              title="Sort by vote participation"
+              title="Sort by Vote Count"
             >
               Vote Count
             </button>
             <button 
               onClick={() => setValidatorSortKey('name')} 
               className={`px-3 py-2 text-xs font-medium rounded-md whitespace-nowrap ${validatorSortKey === 'name' ? 'bg-white text-gray-800 shadow-sm' : 'text-gray-500'}`}
-              title="Sort by name"
+              title="Sort by Name"
             >
               Name
             </button>
             <button 
               onClick={() => setValidatorSortKey('similarity_comprehensive')} 
               className={`px-3 py-2 text-xs font-medium rounded-md whitespace-nowrap ${validatorSortKey === 'similarity_comprehensive' ? 'bg-white text-gray-800 shadow-sm' : 'text-gray-500'} disabled:opacity-50 disabled:cursor-not-allowed`}
-              title="Sort by similarity including non-participation"
+              title="Sort by Similarity (Comprehensive)"
               disabled={!searchTerm}
             >
-              Similarity (Comprehensive)
+              Sim (Comp)
             </button>
             <button 
               onClick={() => setValidatorSortKey('similarity_base')} 
               className={`px-3 py-2 text-xs font-medium rounded-md whitespace-nowrap ${validatorSortKey === 'similarity_base' ? 'bg-white text-gray-800 shadow-sm' : 'text-gray-500'} disabled:opacity-50 disabled:cursor-not-allowed`}
-              title="Sort by similarity based on the selected validator's votes"
+              title="Sort by Similarity (Base)"
               disabled={!searchTerm}
             >
-              Similarity (Base)
+              Sim (Base)
             </button>
             <button 
               onClick={() => setValidatorSortKey('similarity_common')} 
               className={`px-3 py-2 text-xs font-medium rounded-md whitespace-nowrap ${validatorSortKey === 'similarity_common' ? 'bg-white text-gray-800 shadow-sm' : 'text-gray-500'} disabled:opacity-50 disabled:cursor-not-allowed`}
-              title="Sort by similarity based on common votes"
+              title="Sort by Similarity (Common)"
               disabled={!searchTerm}
             >
-              Similarity (Common)
+              Sim (Common)
             </button>
           </div>
           <div className="flex items-center gap-1 border border-gray-300 rounded-lg">
