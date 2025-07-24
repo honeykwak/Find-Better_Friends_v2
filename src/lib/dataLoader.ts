@@ -33,7 +33,24 @@ export interface ProcessedData {
   votes: Vote[];
 }
 
-const API_BASE_URL = '/api';
+/**
+ * Constructs an absolute URL for a given path, handling server-side and client-side environments.
+ * @param {string} path - The relative path (e.g., /api/data).
+ * @returns {string} The full URL.
+ */
+function getAbsoluteUrl(path: string): string {
+  // If we're on the client, relative paths are fine
+  if (typeof window !== 'undefined') {
+    return path;
+  }
+  // If we're on the server, we need to build the full URL
+  // Vercel provides the VERCEL_URL environment variable
+  if (process.env.VERCEL_URL) {
+    return `https://${process.env.VERCEL_URL}${path}`;
+  }
+  // For local development, we assume localhost
+  return `http://localhost:3000${path}`;
+}
 
 /**
  * Loads all necessary data for a given chain from the new, optimized API endpoints.
@@ -44,9 +61,9 @@ export async function loadChainData(chainName: string): Promise<ProcessedData> {
   try {
     console.log(`dataLoader: Loading data for chain: ${chainName} from optimized APIs`);
 
-    const proposalsPromise = fetch(`/data/${chainName}/proposals_v2.json`).then(res => res.json());
-    const validatorsPromise = fetch(`/data/${chainName}/validators.json`).then(res => res.json());
-    const votesPromise = fetch(`/data/${chainName}/votes.json`).then(res => res.json());
+    const proposalsPromise = fetch(getAbsoluteUrl(`/data/${chainName}/proposals_v2.json`)).then(res => res.json());
+    const validatorsPromise = fetch(getAbsoluteUrl(`/data/${chainName}/validators.json`)).then(res => res.json());
+    const votesPromise = fetch(getAbsoluteUrl(`/data/${chainName}/votes.json`)).then(res => res.json());
 
     const [proposals, validators, votes] = await Promise.all([
       proposalsPromise,

@@ -48,8 +48,8 @@ interface GlobalStore {
   votingPowerDisplayMode: 'percentile' | 'rank';
   votingPowerRange: [number, number];
   avgVotingPowerDynamicRange: [number, number];
-  excludeAbstainNoVote: boolean; // <--- This is the new state
-  considerActivePeriodOnly: boolean; // New state for participation rate calculation
+  excludeAbstainNoVote: boolean;
+  considerActivePeriodOnly: boolean;
 
   validatorSortKey: ValidatorSortKey;
   countNoVoteAsParticipation: boolean;
@@ -60,6 +60,7 @@ interface GlobalStore {
   windowSize: { width: number; height: number }
   
   // Actions
+  setInitialData: (data: { proposals: Proposal[], validators: Validator[], votes: Vote[] }) => void;
   loadData: (chainName: string) => Promise<void>
   recalculateValidatorMetrics: () => void;
   setSelectedChain: (chain: string) => void
@@ -77,8 +78,9 @@ interface GlobalStore {
   setWindowSize: (size: { width: number; height: number }) => void;
   setValidatorSortKey: (key: ValidatorSortKey) => void;
   setCountNoVoteAsParticipation: (count: boolean) => void;
-  setExcludeAbstainNoVote: (exclude: boolean) => void; // <--- This is the new action
-  setConsiderActivePeriodOnly: (activeOnly: boolean) => void; // New action
+  setExcludeAbstainNoVote: (exclude: boolean) => void;
+  setConsiderActivePeriodOnly: (activeOnly: boolean) => void;
+  getFilteredProposals: () => (Proposal & { voteDistribution?: { [key: string]: number } })[];
 }
 
 export const useGlobalStore = create<GlobalStore>((set, get) => ({
@@ -97,10 +99,10 @@ export const useGlobalStore = create<GlobalStore>((set, get) => ({
   participationRateRange: [0, 100],
   participationRateDynamicRange: [0, 100],
   votingPowerDisplayMode: 'percentile',
-  votingPowerRange: [0, 100], // Default to full percentile range
+  votingPowerRange: [0, 100],
   avgVotingPowerDynamicRange: [0, 1],
-  excludeAbstainNoVote: false, // <--- Initial value for the new state
-  considerActivePeriodOnly: false, // Initial value for new state
+  excludeAbstainNoVote: false,
+  considerActivePeriodOnly: false,
   categoryVisualizationMode: 'votePower',
   validatorSortKey: 'votingPower',
   countNoVoteAsParticipation: true,
@@ -109,12 +111,38 @@ export const useGlobalStore = create<GlobalStore>((set, get) => ({
   windowSize: { width: 0, height: 0 },
 
   // Actions
+  setInitialData: ({ proposals, validators, votes }) => {
+    let minTime = Infinity;
+    let maxTime = -Infinity;
+    if (proposals.length > 0) {
+      proposals.forEach(p => {
+        if (p.submit_time) {
+          const time = new Date(Number(p.submit_time)).getTime();
+          if (time < minTime) minTime = time;
+          if (time > maxTime) maxTime = time;
+        }
+      });
+    }
+    const dynamicRange: [number, number] = [
+        minTime === Infinity ? 0 : minTime,
+        maxTime === -Infinity ? 0 : maxTime
+    ];
+
+    set({
+      proposals,
+      validators,
+      votes,
+      loading: false,
+      submitTimeRange: dynamicRange,
+      submitTimeDynamicRange: dynamicRange,
+    });
+    get().recalculateValidatorMetrics();
+  },
   loadData: async (chainName: string) => {
     try {
       set({ loading: true, error: null });
       const { proposals, validators, votes } = await loadChainData(chainName);
       
-      // Calculate submitTimeDynamicRange
       let minTime = Infinity;
       let maxTime = -Infinity;
       if (proposals.length > 0) {
@@ -136,7 +164,6 @@ export const useGlobalStore = create<GlobalStore>((set, get) => ({
         validators,
         votes,
         loading: false,
-        // Reset filters on new chain load
         selectedCategories: [],
         selectedTopics: [],
         searchTerm: '',
@@ -147,7 +174,7 @@ export const useGlobalStore = create<GlobalStore>((set, get) => ({
         votingPowerDisplayMode: 'percentile',
         votingPowerRange: [0, 100],
         validatorSortKey: 'votingPower',
-        considerActivePeriodOnly: false, // Reset on new chain
+        considerActivePeriodOnly: false,
       });
       get().recalculateValidatorMetrics();
     } catch (err: any) {
@@ -169,20 +196,6 @@ export const useGlobalStore = create<GlobalStore>((set, get) => ({
     const filteredProposals = getFilteredProposals();
     const relevantProposalIds = new Set(filteredProposals.map(p => p.proposal_id));
     
-    const validatorPowerSum = new Map<string, number>();
-    const validatorVoteCount = new Map<string, number>();
-
-    for (const vote of votes) {
-      if (relevantProposalIds.has(vote.proposal_id)) {
-        const address = vote.validator_address;
-        const power = typeof vote.voting_power === 'string' ? parseFloat(vote.voting_power) : vote.voting_power;
-        if (power && !isNaN(power)) {
-          validatorVoteCount.set(address, (validatorVoteCount.get(address) || 0) + 1);
-          validatorPowerSum.set(address, (validatorPowerSum.get(address) || 0) + power);
-        }
-      }
-    }
-
     const proposalIdToTimeMap = new Map<string, number>();
     filteredProposals.forEach(p => {
       if (p.submit_time) {
@@ -225,9 +238,7 @@ export const useGlobalStore = create<GlobalStore>((set, get) => ({
       let participationRate;
       if (considerActivePeriodOnly) {
         const proposalsWithTime = filteredProposals.filter(p => proposalIdToTimeMap.has(p.proposal_id));
-        const proposalIdsWithTime = new Set(proposalsWithTime.map(p => p.proposal_id));
-        const validatorVotesWithTime = validatorVotesInFilter.filter(vote => proposalIdsWithTime.has(vote.proposal_id));
-        const timedParticipationCount = new Set(validatorVotesWithTime.map(v => v.proposal_id)).size;
+        const timedParticipationCount = new Set(validatorVotesInFilter.map(v => v.proposal_id)).size;
 
         let relevantProposalCount = 0;
         if (firstVoteTime !== Infinity) {
@@ -381,7 +392,7 @@ export const useGlobalStore = create<GlobalStore>((set, get) => ({
   },
   setExcludeAbstainNoVote: (exclude: boolean) => {
     set({ excludeAbstainNoVote: exclude });
-    get().recalculateValidatorMetrics(); // Recalculate metrics when this changes
+    get().recalculateValidatorMetrics();
   },
   setConsiderActivePeriodOnly: (activeOnly: boolean) => {
     set({ considerActivePeriodOnly: activeOnly });
@@ -392,7 +403,7 @@ export const useGlobalStore = create<GlobalStore>((set, get) => ({
   getProposalsFilteredByTime: () => {
     const { proposals, submitTimeRange } = get();
     const [minTime, maxTime] = submitTimeRange;
-    if (!minTime || !maxTime) return proposals; // Don't filter if range is not properly set
+    if (!minTime || !maxTime) return proposals;
 
     return proposals.filter(p => {
         if (!p.submit_time) return false;
@@ -435,14 +446,12 @@ export const useGlobalStore = create<GlobalStore>((set, get) => ({
       });
     }
 
-    // Default to 'voteCount'
     return proposals.filter(p => {
       const { yes_count = 0, no_count = 0, abstain_count = 0, no_with_veto_count = 0 } = p.final_tally_result || {};
       
       let totalVotes = yes_count + no_count + abstain_count + no_with_veto_count;
       if (excludeAbstainNoVote) {
         totalVotes -= abstain_count;
-        // 'NO_VOTE' is not part of final_tally_result, so no need to subtract
       }
 
       if (totalVotes === 0) return minRate === 0;
@@ -473,7 +482,7 @@ export const useGlobalStore = create<GlobalStore>((set, get) => ({
           } else if (upperVoteOption.includes('ABSTAIN')) {
             key = 'ABSTAIN';
           } else {
-            continue; // Skip unknown vote options
+            continue;
           }
           
           const power = typeof vote.voting_power === 'string' ? parseFloat(vote.voting_power) : vote.voting_power;
@@ -492,7 +501,6 @@ export const useGlobalStore = create<GlobalStore>((set, get) => ({
     });
 
     if (selectedTopics.length === 0) return proposalsWithDistribution;
-    // Use the new unique topic field for filtering
     return proposalsWithDistribution.filter(p => selectedTopics.includes(p.topic_v2_unique));
   },
 
@@ -527,9 +535,9 @@ export const useGlobalStore = create<GlobalStore>((set, get) => ({
     }
 
     for (const p of proposalsFilteredByRate) {
-        const categoryName = p.type_v2; // Use new category
-        const topicName = p.topic_v2_unique; // Use new unique topic for identification
-        const topicDisplayName = p.topic_v2_display; // Use new simple topic for display
+        const categoryName = p.type_v2;
+        const topicName = p.topic_v2_unique;
+        const topicDisplayName = p.topic_v2_display;
 
         if (!categoryStats[categoryName]) categoryStats[categoryName] = { count: 0, passed: 0, voteDistribution: {}, topics: {} };
         if (!categoryStats[categoryName].topics[topicName]) {
@@ -560,7 +568,7 @@ export const useGlobalStore = create<GlobalStore>((set, get) => ({
                     categoryStats[categoryName].topics[topicName].voteDistribution[key] = (categoryStats[categoryName].topics[topicName].voteDistribution[key] || 0) + power;
                 }
             }
-        } else { // 'voteCount' mode
+        } else {
             const tally = p.final_tally_result || {};
             for (const voteOption in tally) {
                 const key = voteOption.replace('_count', '').toUpperCase();
@@ -574,8 +582,8 @@ export const useGlobalStore = create<GlobalStore>((set, get) => ({
 
     const hierarchy: CategoryHierarchyNode[] = Object.entries(categoryStats).map(([name, data]) => {
         const topicsForCategory: TopicNode[] = Object.entries(data.topics).map(([topicName, topicData]) => ({
-            name: topicName, // Use unique name for ID
-            displayName: topicData.original_topic, // Use simple name for display
+            name: topicName,
+            displayName: topicData.original_topic,
             count: topicData.count,
             passRate: topicData.count > 0 ? (topicData.passed / topicData.count) * 100 : 0,
             voteDistribution: topicData.voteDistribution,
@@ -626,14 +634,12 @@ export const getYesRateDistribution = (state: GlobalStore) => {
     });
   }
 
-  // Default to 'voteCount'
   return proposals.map(p => {
     const { yes_count = 0, no_count = 0, abstain_count = 0, no_with_veto_count = 0 } = p.final_tally_result || {};
     
     let totalVotes = yes_count + no_count + abstain_count + no_with_veto_count;
     if (excludeAbstainNoVote) {
       totalVotes -= abstain_count;
-      // 'NO_VOTE' is not part of final_tally_result
     }
 
     return totalVotes === 0 ? 0 : (yes_count / totalVotes) * 100;
@@ -651,16 +657,3 @@ export const getAvgVotingPowerDistribution = (state: GlobalStore) => {
 export const getParticipationRateDistribution = (state: GlobalStore) => {
   return state.validatorsWithDerivedData.map(v => v.participationRate || 0);
 };
-
-
-// Initial data load
-useGlobalStore.getState().loadData('cosmos').catch(console.error);
-
-// Update window size on resize
-if (typeof window !== 'undefined') {
-  window.addEventListener('resize', () => {
-    useGlobalStore.getState().setWindowSize({ width: window.innerWidth, height: window.innerHeight });
-  });
-  // Set initial size
-  useGlobalStore.getState().setWindowSize({ width: window.innerWidth, height: window.innerHeight });
-}

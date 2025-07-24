@@ -363,10 +363,11 @@ export default function ValidatorHeatmap() {
         if (!timeA || !timeB) return 0;
         return timeA - timeB;
       })
-      .map((p: Proposal & { voteDistribution: { [key: string]: number } }, index: number) => {
-        const totalVotes = Object.values(p.voteDistribution).reduce((sum, count) => sum + count, 0);
+      .map((p: Proposal & { voteDistribution?: { [key: string]: number } }, index: number) => {
+        const voteDistribution = p.voteDistribution || {}; // Add a fallback for safety
+        const totalVotes = Object.values(voteDistribution).reduce((sum, count) => sum + count, 0);
         const tallyRatio = VOTE_ORDER.reduce((acc, key) => {
-          acc[key] = totalVotes > 0 ? (p.voteDistribution[key] || 0) / totalVotes : 0;
+          acc[key] = totalVotes > 0 ? (voteDistribution[key] || 0) / totalVotes : 0;
           return acc;
         }, {} as { [key: string]: number });
 
@@ -408,9 +409,6 @@ export default function ValidatorHeatmap() {
     const DURATION = 500;
     const svg = d3.select(svgRef.current);
     
-    // Clear SVG canvas completely before redrawing to prevent transition conflicts
-    svg.selectAll('*').remove();
-
     const { validators, proposals, votes } = heatmapData;
     const { cellWidth, cellHeight, margin, colors } = config;
 
