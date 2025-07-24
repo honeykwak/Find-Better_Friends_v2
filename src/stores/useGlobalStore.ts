@@ -1,5 +1,6 @@
 import { create } from 'zustand'
 import { loadChainData, type Proposal, type Vote, type Validator } from '@/lib/dataLoader'
+import { calculateSimilarity } from '@/lib/similarity'
 
 export type { Validator };
 
@@ -7,6 +8,10 @@ export type { Validator };
 export interface ValidatorWithDerivedData extends Validator {
   avgPower?: number;
   participationRate?: number;
+  similarity?: number;
+  recentVotingPower?: number;
+  voteCount?: number;
+  isPinnedAndFilteredOut?: boolean;
 }
 
 // 카테고리 계층 구조 타입 (FilterPanel에서 사용)
@@ -32,7 +37,9 @@ interface GlobalStore {
   proposals: Proposal[]
   validators: Validator[] // Raw validator data
   validatorsWithDerivedData: ValidatorWithDerivedData[] // Validators with calculated metrics
+  filteredValidators: ValidatorWithDerivedData[] // Validators after filtering, for display
   votes: Vote[]
+  similarityScores: Map<string, number>;
   
   selectedChain: string
   selectedCategories: string[]
@@ -58,8 +65,10 @@ interface GlobalStore {
   loading: boolean
   error: string | null
   windowSize: { width: number; height: number }
+  highlightedValidator: string | null;
   
   // Actions
+  _recalculateFilteredValidators: () => void; // Internal action
   setInitialData: (data: { proposals: Proposal[], validators: Validator[], votes: Vote[] }) => void;
   loadData: (chainName: string) => Promise<void>
   recalculateValidatorMetrics: () => void;
@@ -76,6 +85,7 @@ interface GlobalStore {
   setVotingPowerRange: (range: [number, number]) => void;
   setCategoryVisualizationMode: (mode: 'voteCount' | 'votePower') => void;
   setWindowSize: (size: { width: number; height: number }) => void;
+  setHighlightedValidator: (moniker: string | null) => void;
   setValidatorSortKey: (key: ValidatorSortKey) => void;
   setCountNoVoteAsParticipation: (count: boolean) => void;
   setExcludeAbstainNoVote: (exclude: boolean) => void;
@@ -83,12 +93,42 @@ interface GlobalStore {
   getFilteredProposals: () => (Proposal & { voteDistribution?: { [key: string]: number } })[];
 }
 
+// Helper function for percentile calculation using linear interpolation
+const getPercentilePower = (percentile: number, sortedValidators: { avgPower?: any }[]): number => {
+  const sortedPowers = sortedValidators.map(v => {
+    const power = Number(v.avgPower || 0);
+    return isFinite(power) ? power : 0;
+  });
+
+  const count = sortedPowers.length;
+  if (count === 0) return 0;
+
+  if (percentile <= 0) return sortedPowers[0];
+  if (percentile >= 100) return sortedPowers[count - 1];
+
+  const index = (percentile / 100) * (count - 1);
+  const lowerIndex = Math.floor(index);
+  const upperIndex = Math.ceil(index);
+
+  if (lowerIndex === upperIndex) {
+    return sortedPowers[lowerIndex];
+  }
+
+  const lowerValue = sortedPowers[lowerIndex];
+  const upperValue = sortedPowers[upperIndex];
+  const fraction = index - lowerIndex;
+
+  return lowerValue + fraction * (upperValue - lowerValue);
+};
+
 export const useGlobalStore = create<GlobalStore>((set, get) => ({
   // Initial State
   proposals: [],
   validators: [],
   validatorsWithDerivedData: [],
+  filteredValidators: [],
   votes: [],
+  similarityScores: new Map(),
   selectedChain: 'cosmos',
   selectedCategories: [],
   selectedTopics: [],
@@ -109,6 +149,63 @@ export const useGlobalStore = create<GlobalStore>((set, get) => ({
   loading: true,
   error: null,
   windowSize: { width: 0, height: 0 },
+  highlightedValidator: null,
+
+  // Internal action to update filteredValidators
+  _recalculateFilteredValidators: () => {
+    const { 
+      validatorsWithDerivedData, 
+      votingPowerDisplayMode, 
+      votingPowerRange, 
+      participationRateRange,
+      searchTerm 
+    } = get();
+
+    if (!validatorsWithDerivedData.length) {
+      set({ filteredValidators: [] });
+      return;
+    }
+
+    let currentValidators = [...validatorsWithDerivedData];
+    let pinnedValidator: ValidatorWithDerivedData | null = null;
+
+    if (searchTerm) {
+      const foundIndex = currentValidators.findIndex(v => v.moniker === searchTerm);
+      if (foundIndex !== -1) {
+        pinnedValidator = { ...currentValidators[foundIndex] };
+        currentValidators.splice(foundIndex, 1);
+      }
+    }
+
+    let filteredByVotingPower: ValidatorWithDerivedData[];
+    if (votingPowerDisplayMode === 'percentile') {
+      const [minPercentile, maxPercentile] = votingPowerRange;
+      const sortedForPercentile = [...currentValidators].sort((a, b) => (a.avgPower || 0) - (b.avgPower || 0));
+      const minPower = getPercentilePower(minPercentile, sortedForPercentile);
+      const maxPower = getPercentilePower(maxPercentile, sortedForPercentile);
+      filteredByVotingPower = currentValidators.filter(v => (v.avgPower || 0) >= minPower && (v.avgPower || 0) <= maxPower);
+    } else { // 'rank'
+      const ranked = [...currentValidators].sort((a, b) => (b.avgPower || 0) - (a.avgPower || 0));
+      const [minRank, maxRank] = votingPowerRange;
+      const safeMinRank = Math.max(1, minRank);
+      const safeMaxRank = Math.min(ranked.length, maxRank);
+      filteredByVotingPower = ranked.slice(safeMinRank - 1, safeMaxRank);
+    }
+
+    const [minParticipation, maxParticipation] = participationRateRange;
+    let finalValidators = filteredByVotingPower.filter(v => 
+      (v.participationRate || 0) >= minParticipation && 
+      (v.participationRate || 0) <= maxParticipation
+    );
+
+    if (pinnedValidator) {
+      const isPinnedFilteredOut = !finalValidators.some(v => v.moniker === pinnedValidator!.moniker);
+      pinnedValidator.isPinnedAndFilteredOut = isPinnedFilteredOut;
+      finalValidators.unshift(pinnedValidator);
+    }
+    
+    set({ filteredValidators: finalValidators });
+  },
 
   // Actions
   setInitialData: ({ proposals, validators, votes }) => {
@@ -183,12 +280,14 @@ export const useGlobalStore = create<GlobalStore>((set, get) => ({
   },
 
   recalculateValidatorMetrics: () => {
-    const { proposals, validators, votes, getFilteredProposals, countNoVoteAsParticipation, considerActivePeriodOnly } = get();
+    const { proposals, validators, votes, getFilteredProposals, countNoVoteAsParticipation, considerActivePeriodOnly, searchTerm, validatorSortKey } = get();
     if (!proposals.length || !validators.length) {
       set({ 
         validatorsWithDerivedData: [], 
+        filteredValidators: [],
         participationRateDynamicRange: [0, 100], 
         avgVotingPowerDynamicRange: [0, 1],
+        similarityScores: new Map(),
       });
       return;
     }
@@ -203,7 +302,7 @@ export const useGlobalStore = create<GlobalStore>((set, get) => ({
       }
     });
 
-    const newValidatorsWithDerivedData = validators.map(v => {
+    let newValidatorsWithDerivedData = validators.map(v => {
       const validatorVotesInFilter = votes.filter(vote => 
         vote.validator_address === v.validator_address && 
         relevantProposalIds.has(vote.proposal_id)
@@ -234,6 +333,8 @@ export const useGlobalStore = create<GlobalStore>((set, get) => ({
           countOfVotes++;
         }
       });
+
+      const voteCount = new Set(validatorVotesInFilter.filter(v => v.vote_option !== 'NO_VOTE' || countNoVoteAsParticipation).map(v => v.proposal_id)).size;
 
       let participationRate;
       if (considerActivePeriodOnly) {
@@ -275,8 +376,57 @@ export const useGlobalStore = create<GlobalStore>((set, get) => ({
         ...v,
         avgPower: countOfVotes > 0 ? sumOfPower / countOfVotes : 0,
         participationRate: participationRate,
+        voteCount: voteCount,
       }
     });
+
+    // Calculate recent voting power based on the single most recent proposal
+    const sortedProposalsByDate = [...filteredProposals].sort((a, b) => {
+      const timeA = a.submit_time ? new Date(Number(a.submit_time)).getTime() : 0;
+      const timeB = b.submit_time ? new Date(Number(b.submit_time)).getTime() : 0;
+      return timeB - timeA;
+    });
+
+    const votesMap = new Map<string, number>();
+    for (const vote of votes) {
+      const power = typeof vote.voting_power === 'string' ? parseFloat(vote.voting_power) : vote.voting_power;
+      if (power && !isNaN(power)) {
+        votesMap.set(`${vote.proposal_id}-${vote.validator_address}`, power);
+      }
+    }
+
+    if (sortedProposalsByDate.length > 0) {
+      const mostRecentProposalId = sortedProposalsByDate[0].proposal_id;
+      newValidatorsWithDerivedData.forEach(v => {
+        const power = votesMap.get(`${mostRecentProposalId}-${v.validator_address}`);
+        v.recentVotingPower = power || 0;
+      });
+    } else {
+      newValidatorsWithDerivedData.forEach(v => {
+        v.recentVotingPower = 0;
+      });
+    }
+
+    const newSimilarityScores = new Map<string, number>();
+    if (searchTerm && validatorSortKey.startsWith('similarity')) {
+      const baseValidator = newValidatorsWithDerivedData.find(v => v.moniker === searchTerm);
+      if (baseValidator) {
+        const baseValidatorVotes = votes.filter(v => v.validator_address === baseValidator.validator_address);
+        const mode = validatorSortKey.split('_')[1] as 'common' | 'base' | 'comprehensive';
+
+        newValidatorsWithDerivedData.forEach(v => {
+          if (v.moniker === searchTerm) {
+            v.similarity = 1;
+            newSimilarityScores.set(v.moniker, 1);
+          } else {
+            const validatorVotes = votes.filter(vote => vote.validator_address === v.validator_address);
+            const similarity = calculateSimilarity(baseValidatorVotes, validatorVotes, relevantProposalIds, countNoVoteAsParticipation, mode);
+            v.similarity = similarity;
+            newSimilarityScores.set(v.moniker, similarity);
+          }
+        });
+      }
+    }
 
     let minRate = 100, maxRate = 0;
     let minAvgPower = Infinity, maxAvgPower = -Infinity;
@@ -294,25 +444,25 @@ export const useGlobalStore = create<GlobalStore>((set, get) => ({
     if (votingPowerDisplayMode === 'rank') {
       set({ 
         validatorsWithDerivedData: newValidatorsWithDerivedData,
+        similarityScores: newSimilarityScores,
         participationRateDynamicRange: [Math.floor(minRate), Math.ceil(maxRate)],
         avgVotingPowerDynamicRange: newAvgPowerDynamicRange,
         votingPowerRange: [1, newValidatorsWithDerivedData.length || 1],
       });
-    } else { // percentile
+    } else {
       set({ 
         validatorsWithDerivedData: newValidatorsWithDerivedData,
+        similarityScores: newSimilarityScores,
         participationRateDynamicRange: [Math.floor(minRate), Math.ceil(maxRate)],
         avgVotingPowerDynamicRange: newAvgPowerDynamicRange,
       });
     }
+    get()._recalculateFilteredValidators();
   },
 
   setSelectedChain: (chain: string) => {
     if (get().selectedChain === chain) return
-    
-    set({ 
-      selectedChain: chain, 
-    })
+    set({ selectedChain: chain })
     get().loadData(chain).catch(console.error)
   },
 
@@ -358,6 +508,7 @@ export const useGlobalStore = create<GlobalStore>((set, get) => ({
     } else {
       set({ searchTerm: term, validatorSortKey: 'votingPower' });
     }
+    get().recalculateValidatorMetrics();
   },
   setApprovalRateRange: (range: [number, number]) => {
     set({ approvalRateRange: range });
@@ -367,7 +518,10 @@ export const useGlobalStore = create<GlobalStore>((set, get) => ({
     set({ submitTimeRange: range });
     get().recalculateValidatorMetrics();
   },
-  setParticipationRateRange: (range: [number, number]) => set({ participationRateRange: range }),
+  setParticipationRateRange: (range: [number, number]) => {
+    set({ participationRateRange: range });
+    get()._recalculateFilteredValidators();
+  },
   setVotingPowerDisplayMode: (mode) => {
     const { validatorsWithDerivedData } = get();
     if (mode === 'rank') {
@@ -375,17 +529,25 @@ export const useGlobalStore = create<GlobalStore>((set, get) => ({
         votingPowerDisplayMode: 'rank',
         votingPowerRange: [1, validatorsWithDerivedData.length || 1]
       });
-    } else { // percentile
+    } else {
       set({
         votingPowerDisplayMode: 'percentile',
         votingPowerRange: [0, 100]
       });
     }
+    get()._recalculateFilteredValidators();
   },
-  setVotingPowerRange: (range) => set({ votingPowerRange: range }),
+  setVotingPowerRange: (range) => {
+    set({ votingPowerRange: range });
+    get()._recalculateFilteredValidators();
+  },
   setCategoryVisualizationMode: (mode) => set({ categoryVisualizationMode: mode }),
   setWindowSize: (size) => set({ windowSize: size }),
-  setValidatorSortKey: (key: ValidatorSortKey) => set({ validatorSortKey: key }),
+  setHighlightedValidator: (moniker) => set({ highlightedValidator: moniker }),
+  setValidatorSortKey: (key: ValidatorSortKey) => {
+    set({ validatorSortKey: key });
+    get().recalculateValidatorMetrics();
+  },
   setCountNoVoteAsParticipation: (count: boolean) => {
     set({ countNoVoteAsParticipation: count });
     get().recalculateValidatorMetrics();
@@ -413,8 +575,8 @@ export const useGlobalStore = create<GlobalStore>((set, get) => ({
   },
 
   getProposalsFilteredByRate: () => {
-    const { getProposalsFilteredByTime, approvalRateRange, votes, categoryVisualizationMode, excludeAbstainNoVote } = get();
-    const proposals = getProposalsFilteredByTime();
+    const { approvalRateRange, votes, categoryVisualizationMode, excludeAbstainNoVote } = get();
+    const proposals = get().getProposalsFilteredByTime();
     const [minRate, maxRate] = approvalRateRange;
 
     if (categoryVisualizationMode === 'votePower') {
@@ -461,8 +623,8 @@ export const useGlobalStore = create<GlobalStore>((set, get) => ({
   },
 
   getFilteredProposals: () => {
-    const { getProposalsFilteredByRate, selectedTopics, votes, categoryVisualizationMode } = get();
-    const proposalsFilteredByRate = getProposalsFilteredByRate();
+    const { selectedTopics, votes, categoryVisualizationMode } = get();
+    const proposalsFilteredByRate = get().getProposalsFilteredByRate();
 
     const proposalsWithDistribution = proposalsFilteredByRate.map(p => {
       let voteDistribution: { [key: string]: number } = {};
@@ -504,11 +666,6 @@ export const useGlobalStore = create<GlobalStore>((set, get) => ({
     return proposalsWithDistribution.filter(p => selectedTopics.includes(p.topic_v2_unique));
   },
 
-  getFilteredValidators: () => {
-    const { validators } = get()
-    return validators
-  },
-
   getChains: () => [
     'akash', 'axelar', 'cosmos', 'dydx', 'evmos', 'finschia', 
     'gravity-bridge', 'injective', 'iris', 'juno', 'kava', 'kyve', 
@@ -516,8 +673,8 @@ export const useGlobalStore = create<GlobalStore>((set, get) => ({
   ],
 
   getFilteredCategoryHierarchy: () => {
-    const { getProposalsFilteredByRate, votes, categoryVisualizationMode } = get();
-    const proposalsFilteredByRate = getProposalsFilteredByRate();
+    const { votes, categoryVisualizationMode } = get();
+    const proposalsFilteredByRate = get().getProposalsFilteredByRate();
 
     const categoryStats: { [name: string]: {
         count: number; passed: number; voteDistribution: { [key: string]: number };

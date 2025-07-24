@@ -54,7 +54,7 @@ interface ResearchClientProps {
 }
 
 export default function ResearchClient({ initialData }: ResearchClientProps) {
-  const { setInitialData, windowSize, setWindowSize } = useGlobalStore()
+  const { setInitialData, windowSize, setWindowSize, searchTerm } = useGlobalStore()
 
   // Set initial data from server into the global store
   useEffect(() => {
@@ -97,16 +97,18 @@ export default function ResearchClient({ initialData }: ResearchClientProps) {
           </Allotment.Pane>
           <Allotment.Pane>
             <Allotment>
-              <Allotment.Pane preferredSize="75%">
+              <Allotment.Pane>
                 <div className="flex-1 flex flex-col overflow-hidden bg-white h-full">
                   <div className="flex-1 overflow-hidden">
                     <ValidatorHeatmap />
                   </div>
                 </div>
               </Allotment.Pane>
-              <Allotment.Pane preferredSize="25%">
-                <BubbleHeap />
-              </Allotment.Pane>
+              {searchTerm && (
+                <Allotment.Pane preferredSize="30%">
+                  <BubbleHeap />
+                </Allotment.Pane>
+              )}
             </Allotment>
           </Allotment.Pane>
         </Allotment>
