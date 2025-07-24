@@ -5,6 +5,7 @@ import { Search, RotateCcw, X } from 'lucide-react'
 import { 
   useGlobalStore, 
   getYesRateDistribution, 
+  getSubmitTimeDistribution,
   getAvgVotingPowerDistribution,
   getTotalVotingPowerDistribution,
   getParticipationRateDistribution,
@@ -132,7 +133,8 @@ export default function FilterPanel() {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false)
   const searchRef = useRef<HTMLDivElement>(null)
 
-  const yesRateDistribution = useMemo(() => getYesRateDistribution(store), [store.proposals, store.votes, categoryVisualizationMode, store.excludeAbstainNoVote]);
+  const yesRateDistribution = useMemo(() => getYesRateDistribution(store), [store.proposals, store.votes, categoryVisualizationMode, store.excludeAbstainNoVote, store.submitTimeRange]);
+  const submitTimeDistribution = useMemo(() => getSubmitTimeDistribution(store), [store.proposals]);
   const avgVotingPowerDistribution = useMemo(() => getAvgVotingPowerDistribution(store), [store.validatorsWithDerivedData]);
   const participationRateDistribution = useMemo(() => getParticipationRateDistribution(store), [store.validatorsWithDerivedData, countNoVoteAsParticipation]);
 
@@ -142,12 +144,13 @@ export default function FilterPanel() {
     setInputValue('')
     setSearchTerm('')
     setApprovalRateRange([0, 100])
+    store.setSubmitTimeRange(store.submitTimeDynamicRange);
     setParticipationRateRange([0, 100])
     setVotingPowerDisplayMode('ratio');
-  }, [setSelectedCategories, setSelectedTopics, setSearchTerm, setApprovalRateRange, setParticipationRateRange, setVotingPowerDisplayMode])
+  }, [setSelectedCategories, setSelectedTopics, setSearchTerm, setApprovalRateRange, setParticipationRateRange, setVotingPowerDisplayMode, store])
 
   const chains = useMemo(() => getChains(), [getChains])
-  const filteredCategoryHierarchy = useMemo(() => getFilteredCategoryHierarchy(), [proposals, approvalRateRange, categoryVisualizationMode, getFilteredCategoryHierarchy]);
+  const filteredCategoryHierarchy = useMemo(() => getFilteredCategoryHierarchy(), [proposals, approvalRateRange, categoryVisualizationMode, getFilteredCategoryHierarchy, store.submitTimeRange]);
 
   const handleCategoryMouseEnter = useCallback((categoryName: string) => setHoveredCategory(categoryName), [])
   const handleCategoryMouseLeave = useCallback(() => setHoveredCategory(null), [])
@@ -261,6 +264,19 @@ export default function FilterPanel() {
               options={[{value: 'votePower', label: 'Vote Power'}, {value: 'voteCount', label: 'Vote Count'}]}
               selectedValue={categoryVisualizationMode}
               onChange={(v) => setCategoryVisualizationMode(v as 'voteCount' | 'votePower')}
+            />
+          </div>
+          <div className="mb-4">
+            <label className="block text-sm font-medium text-gray-900 mb-2">Submit Time</label>
+            <RangeSlider
+              label=""
+              min={store.submitTimeDynamicRange[0]}
+              max={store.submitTimeDynamicRange[1]}
+              values={store.submitTimeRange}
+              onChange={store.setSubmitTimeRange}
+              formatValue={(v) => new Date(v).toISOString().split('T')[0]}
+              step={86400000} // 1 day in milliseconds
+              distributionData={submitTimeDistribution}
             />
           </div>
           <div className="mb-4">

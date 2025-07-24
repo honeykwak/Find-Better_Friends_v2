@@ -38,17 +38,19 @@ interface GlobalStore {
   selectedChain: string
   selectedCategories: string[]
   selectedTopics: string[]
-  searchTerm: string
-  approvalRateRange: [number, number]
+  searchTerm: string;
+  approvalRateRange: [number, number];
+  submitTimeRange: [number, number];
+  submitTimeDynamicRange: [number, number];
   
   // Validator filters
-  participationRateRange: [number, number]
-  participationRateDynamicRange: [number, number]
-  votingPowerDisplayMode: 'ratio' | 'rank'
-  votingPowerRange: [number, number]
-  avgVotingPowerDynamicRange: [number, number]
-  excludeAbstainNoVote: boolean // <--- This is the new state
-  considerActivePeriodOnly: boolean // New state for participation rate calculation
+  participationRateRange: [number, number];
+  participationRateDynamicRange: [number, number];
+  votingPowerDisplayMode: 'ratio' | 'rank';
+  votingPowerRange: [number, number];
+  avgVotingPowerDynamicRange: [number, number];
+  excludeAbstainNoVote: boolean; // <--- This is the new state
+  considerActivePeriodOnly: boolean; // New state for participation rate calculation
 
   validatorSortKey: ValidatorSortKey;
   countNoVoteAsParticipation: boolean;
@@ -67,12 +69,13 @@ interface GlobalStore {
   toggleCategory: (category: string) => void
   toggleTopic: (topic: string) => void
   setSearchTerm: (term: string) => void
-  setApprovalRateRange: (range: [number, number]) => void
-  setParticipationRateRange: (range: [number, number]) => void
-  setVotingPowerDisplayMode: (mode: 'ratio' | 'rank') => void
-  setVotingPowerRange: (range: [number, number]) => void
-  setCategoryVisualizationMode: (mode: 'voteCount' | 'votePower') => void
-  setWindowSize: (size: { width: number; height: number }) => void
+  setApprovalRateRange: (range: [number, number]) => void;
+  setSubmitTimeRange: (range: [number, number]) => void;
+  setParticipationRateRange: (range: [number, number]) => void;
+  setVotingPowerDisplayMode: (mode: 'ratio' | 'rank') => void;
+  setVotingPowerRange: (range: [number, number]) => void;
+  setCategoryVisualizationMode: (mode: 'voteCount' | 'votePower') => void;
+  setWindowSize: (size: { width: number; height: number }) => void;
   setValidatorSortKey: (key: ValidatorSortKey) => void;
   setCountNoVoteAsParticipation: (count: boolean) => void;
   setExcludeAbstainNoVote: (exclude: boolean) => void; // <--- This is the new action
@@ -90,6 +93,8 @@ export const useGlobalStore = create<GlobalStore>((set, get) => ({
   selectedTopics: [],
   searchTerm: '',
   approvalRateRange: [0, 100],
+  submitTimeRange: [0, 0],
+  submitTimeDynamicRange: [0, 0],
   participationRateRange: [0, 100],
   participationRateDynamicRange: [0, 100],
   votingPowerDisplayMode: 'ratio',
@@ -110,6 +115,23 @@ export const useGlobalStore = create<GlobalStore>((set, get) => ({
       set({ loading: true, error: null });
       const { proposals, validators, votes } = await loadChainData(chainName);
       
+      // Calculate submitTimeDynamicRange
+      let minTime = Infinity;
+      let maxTime = -Infinity;
+      if (proposals.length > 0) {
+        proposals.forEach(p => {
+          if (p.submit_time) {
+            const time = new Date(Number(p.submit_time)).getTime();
+            if (time < minTime) minTime = time;
+            if (time > maxTime) maxTime = time;
+          }
+        });
+      }
+      const dynamicRange: [number, number] = [
+          minTime === Infinity ? 0 : minTime,
+          maxTime === -Infinity ? 0 : maxTime
+      ];
+      
       set({
         proposals,
         validators,
@@ -120,6 +142,8 @@ export const useGlobalStore = create<GlobalStore>((set, get) => ({
         selectedTopics: [],
         searchTerm: '',
         approvalRateRange: [0, 100],
+        submitTimeRange: dynamicRange,
+        submitTimeDynamicRange: dynamicRange,
         participationRateRange: [0, 100],
         votingPowerDisplayMode: 'ratio',
         validatorSortKey: 'totalVotingPower',
@@ -337,6 +361,10 @@ export const useGlobalStore = create<GlobalStore>((set, get) => ({
     set({ approvalRateRange: range });
     get().recalculateValidatorMetrics();
   },
+  setSubmitTimeRange: (range: [number, number]) => {
+    set({ submitTimeRange: range });
+    get().recalculateValidatorMetrics();
+  },
   setParticipationRateRange: (range: [number, number]) => set({ participationRateRange: range }),
   setVotingPowerDisplayMode: (mode) => {
     const { validatorsWithDerivedData, votingPowerDisplayMode, votingPowerRange, avgVotingPowerDynamicRange } = get();
@@ -402,8 +430,21 @@ export const useGlobalStore = create<GlobalStore>((set, get) => ({
   },
 
   // Selectors
+  getProposalsFilteredByTime: () => {
+    const { proposals, submitTimeRange } = get();
+    const [minTime, maxTime] = submitTimeRange;
+    if (!minTime || !maxTime) return proposals; // Don't filter if range is not properly set
+
+    return proposals.filter(p => {
+        if (!p.submit_time) return false;
+        const time = new Date(Number(p.submit_time)).getTime();
+        return time >= minTime && time <= maxTime;
+    });
+  },
+
   getProposalsFilteredByRate: () => {
-    const { proposals, approvalRateRange, votes, categoryVisualizationMode, excludeAbstainNoVote } = get();
+    const { getProposalsFilteredByTime, approvalRateRange, votes, categoryVisualizationMode, excludeAbstainNoVote } = get();
+    const proposals = getProposalsFilteredByTime();
     const [minRate, maxRate] = approvalRateRange;
 
     if (categoryVisualizationMode === 'votePower') {
@@ -596,7 +637,8 @@ export const useGlobalStore = create<GlobalStore>((set, get) => ({
 
 // Standalone selectors for data distribution
 export const getYesRateDistribution = (state: GlobalStore) => {
-  const { proposals, votes, categoryVisualizationMode, excludeAbstainNoVote } = state;
+  const { getProposalsFilteredByTime, votes, categoryVisualizationMode, excludeAbstainNoVote } = state;
+  const proposals = getProposalsFilteredByTime();
 
   if (categoryVisualizationMode === 'votePower') {
     const votesByProposal = new Map<string, { yes: number; total: number }>();
@@ -626,7 +668,7 @@ export const getYesRateDistribution = (state: GlobalStore) => {
   }
 
   // Default to 'voteCount'
-  return state.proposals.map(p => {
+  return proposals.map(p => {
     const { yes_count = 0, no_count = 0, abstain_count = 0, no_with_veto_count = 0 } = p.final_tally_result || {};
     
     let totalVotes = yes_count + no_count + abstain_count + no_with_veto_count;
@@ -637,6 +679,10 @@ export const getYesRateDistribution = (state: GlobalStore) => {
 
     return totalVotes === 0 ? 0 : (yes_count / totalVotes) * 100;
   });
+};
+
+export const getSubmitTimeDistribution = (state: GlobalStore) => {
+  return state.proposals.map(p => p.submit_time ? new Date(Number(p.submit_time)).getTime() : 0).filter(t => t > 0);
 };
 
 export const getAvgVotingPowerDistribution = (state: GlobalStore) => {
@@ -650,3 +696,16 @@ export const getTotalVotingPowerDistribution = (state: GlobalStore) => {
 export const getParticipationRateDistribution = (state: GlobalStore) => {
   return state.validatorsWithDerivedData.map(v => v.participationRate || 0);
 };
+
+
+// Initial data load
+useGlobalStore.getState().loadData('cosmos').catch(console.error);
+
+// Update window size on resize
+if (typeof window !== 'undefined') {
+  window.addEventListener('resize', () => {
+    useGlobalStore.getState().setWindowSize({ width: window.innerWidth, height: window.innerHeight });
+  });
+  // Set initial size
+  useGlobalStore.getState().setWindowSize({ width: window.innerWidth, height: window.innerHeight });
+}
