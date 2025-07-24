@@ -33,6 +33,18 @@ const ValidatorHeatmap = dynamic(() => import('@/components/ValidatorHeatmap'), 
   ssr: false
 })
 
+const BubbleHeap = dynamic(() => import('@/components/BubbleHeap'), {
+  loading: () => (
+    <div className="h-full bg-white flex items-center justify-center">
+      <div className="text-center">
+        <Loader2 className="w-8 h-8 animate-spin mx-auto mb-4 text-blue-600" />
+        <p className="text-lg font-medium text-gray-900 mb-2">Loading Bubble Heap...</p>
+      </div>
+    </div>
+  ),
+  ssr: false
+})
+
 interface ResearchClientProps {
   initialData: {
     proposals: Proposal[];
@@ -71,7 +83,7 @@ export default function ResearchClient({ initialData }: ResearchClientProps) {
     <div className="flex-1 flex overflow-hidden">
       {!isMobileScreen ? (
         <Allotment>
-          <Allotment.Pane minSize={160} preferredSize="25%">
+          <Allotment.Pane minSize={160} preferredSize="20%">
             <Suspense fallback={
               <div className="w-full h-full bg-white flex items-center justify-center">
                 <div className="text-center">
@@ -84,11 +96,18 @@ export default function ResearchClient({ initialData }: ResearchClientProps) {
             </Suspense>
           </Allotment.Pane>
           <Allotment.Pane>
-            <div className="flex-1 flex flex-col overflow-hidden bg-white h-full">
-              <div className="flex-1 overflow-hidden">
-                <ValidatorHeatmap />
-              </div>
-            </div>
+            <Allotment>
+              <Allotment.Pane preferredSize="75%">
+                <div className="flex-1 flex flex-col overflow-hidden bg-white h-full">
+                  <div className="flex-1 overflow-hidden">
+                    <ValidatorHeatmap />
+                  </div>
+                </div>
+              </Allotment.Pane>
+              <Allotment.Pane preferredSize="25%">
+                <BubbleHeap />
+              </Allotment.Pane>
+            </Allotment>
           </Allotment.Pane>
         </Allotment>
       ) : (
