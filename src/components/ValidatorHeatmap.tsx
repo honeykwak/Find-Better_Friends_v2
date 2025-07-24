@@ -8,6 +8,39 @@ import { Loader2, ZoomIn, ZoomOut, RotateCcw } from 'lucide-react'
 import { calculateSimilarity } from '@/lib/similarity'
 import type { Vote, Validator, Proposal } from '@/lib/dataLoader'
 
+// Helper function for percentile calculation using linear interpolation
+const getPercentilePower = (percentile: number, sortedValidators: { avgPower?: any }[]): number => {
+  // Robustly convert avgPower to a finite number, defaulting to 0 if invalid.
+  // This ensures consistency with the sorting and filtering logic.
+  const sortedPowers = sortedValidators.map(v => {
+    const power = Number(v.avgPower || 0);
+    return isFinite(power) ? power : 0;
+  });
+
+  const count = sortedPowers.length;
+  if (count === 0) return 0;
+
+  // The `sortedPowers` array is already in the correct order because it's derived from
+  // the pre-sorted `sortedValidators` array.
+
+  if (percentile <= 0) return sortedPowers[0];
+  if (percentile >= 100) return sortedPowers[count - 1];
+
+  const index = (percentile / 100) * (count - 1);
+  const lowerIndex = Math.floor(index);
+  const upperIndex = Math.ceil(index);
+
+  if (lowerIndex === upperIndex) {
+    return sortedPowers[lowerIndex];
+  }
+
+  const lowerValue = sortedPowers[lowerIndex];
+  const upperValue = sortedPowers[upperIndex];
+  const fraction = index - lowerIndex;
+
+  return lowerValue + fraction * (upperValue - lowerValue);
+};
+
 // Define layout constants
 const PROPOSAL_LABEL_HEIGHT = 240;
 const SUMMARY_CHART_HEIGHT = 120;
@@ -123,12 +156,26 @@ export default function ValidatorHeatmap() {
     }
 
     let filteredByVotingPower: ValidatorWithDerivedData[];
-    if (votingPowerDisplayMode === 'ratio') {
-      const [minPower, maxPower] = votingPowerRange;
-      filteredByVotingPower = currentValidators.filter(v => {
-        const power = v.avgPower || 0;
-        return power >= minPower && power <= maxPower;
-      });
+    if (votingPowerDisplayMode === 'percentile') {
+      const [minPercentile, maxPercentile] = votingPowerRange;
+      
+      if (minPercentile === 0 && maxPercentile === 100) {
+        filteredByVotingPower = currentValidators;
+      } else {
+        const sortedForPercentile = [...currentValidators].sort((a, b) => (a.avgPower || 0) - (b.avgPower || 0));
+        
+        if (sortedForPercentile.length > 0) {
+          const minPower = getPercentilePower(minPercentile, sortedForPercentile);
+          const maxPower = getPercentilePower(maxPercentile, sortedForPercentile);
+
+          filteredByVotingPower = currentValidators.filter(v => {
+            const power = v.avgPower || 0;
+            return power >= minPower && power <= maxPower;
+          });
+        } else {
+          filteredByVotingPower = [];
+        }
+      }
     } else { // 'rank'
       const rankedValidators = [...currentValidators].sort((a, b) => {
         const powerA = a.avgPower || 0;
@@ -258,11 +305,6 @@ export default function ValidatorHeatmap() {
       sortedValidators.sort((a, b) => (b.avgPower || 0) - (a.avgPower || 0));
       for (const validator of sortedValidators) {
         validatorDisplayValues.set(validator.validator_address, `(${( (validator.avgPower || 0) * 100).toFixed(1)}%)`);
-      }
-    } else if (validatorSortKey === 'totalVotingPower') {
-      sortedValidators.sort((a, b) => (b.totalPower || 0) - (a.totalPower || 0));
-      for (const validator of sortedValidators) {
-        validatorDisplayValues.set(validator.validator_address, `(${(validator.totalPower || 0).toLocaleString()})`);
       }
     } else if (validatorSortKey === 'recentVotingPower') {
       const sortedProposalsByDate = [...filteredProposals].sort((a, b) => {
@@ -629,13 +671,6 @@ export default function ValidatorHeatmap() {
         </div>
         <div className="flex items-center gap-4">
           <div className="flex items-center bg-gray-100 rounded-lg p-1">
-            <button 
-              onClick={() => setValidatorSortKey('totalVotingPower')} 
-              className={`px-3 py-2 text-xs font-medium rounded-md whitespace-nowrap ${validatorSortKey === 'totalVotingPower' ? 'bg-white text-gray-800 shadow-sm' : 'text-gray-500'}`}
-              title="Sort by Total Voting Power"
-            >
-              Total VP
-            </button>
             <button 
               onClick={() => setValidatorSortKey('votingPower')} 
               className={`px-3 py-2 text-xs font-medium rounded-md whitespace-nowrap ${validatorSortKey === 'votingPower' ? 'bg-white text-gray-800 shadow-sm' : 'text-gray-500'}`}

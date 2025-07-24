@@ -7,7 +7,6 @@ import {
   getYesRateDistribution, 
   getSubmitTimeDistribution,
   getAvgVotingPowerDistribution,
-  getTotalVotingPowerDistribution,
   getParticipationRateDistribution,
   type CategoryHierarchyNode, 
   type TopicNode, 
@@ -372,43 +371,26 @@ export default function FilterPanel() {
               <label className="text-sm font-medium text-gray-900">Avg. Voting Power</label>
               <div className="flex items-center space-x-1">
                 <ToggleButtonGroup
-                  options={[{value: 'ratio', label: 'Ratio'}, {value: 'rank', label: 'Rank'}]}
+                  options={[{value: 'percentile', label: 'Percentile'}, {value: 'rank', label: 'Rank'}]}
                   selectedValue={votingPowerDisplayMode}
-                  onChange={(v) => setVotingPowerDisplayMode(v as 'ratio' | 'rank')}
+                  onChange={(v) => setVotingPowerDisplayMode(v as 'percentile' | 'rank')}
                 />
               </div>
             </div>
             <RangeSlider
               label=""
-              min={votingPowerDisplayMode === 'ratio' ? avgVotingPowerDynamicRange[0] : 1}
-              max={votingPowerDisplayMode === 'ratio' ? avgVotingPowerDynamicRange[1] : validators.length || 1}
-              values={
-                votingPowerDisplayMode === 'rank'
-                  ? [
-                      (validators.length || 1) - votingPowerRange[1] + 1,
-                      (validators.length || 1) - votingPowerRange[0] + 1,
-                    ]
-                  : votingPowerRange
-              }
-              onChange={(newValues) => {
-                if (votingPowerDisplayMode === 'rank') {
-                  const total = validators.length || 1;
-                  const newMinRank = total - newValues[1] + 1;
-                  const newMaxRank = total - newValues[0] + 1;
-                  setVotingPowerRange([newMinRank, newMaxRank]);
-                } else {
-                  setVotingPowerRange(newValues);
-                }
-              }}
+              min={votingPowerDisplayMode === 'rank' ? 1 : 0}
+              max={votingPowerDisplayMode === 'rank' ? validators.length || 1 : 100}
+              values={votingPowerRange}
+              onChange={setVotingPowerRange}
               formatValue={(v) => {
                 if (votingPowerDisplayMode === 'rank') {
-                  const total = validators.length || 1;
-                  return `${total - Math.round(v) + 1}`;
+                  return `${v}`;
                 }
-                return `${(v * 100).toFixed(3)}%`;
+                return `${v}%`;
               }}
-              step={votingPowerDisplayMode === 'ratio' ? (avgVotingPowerDynamicRange[1] - avgVotingPowerDynamicRange[0]) / 1000 : 1}
-              distributionData={avgVotingPowerDistribution}
+              step={1}
+              distributionData={[]}
             />
           </div>
           <div className="mb-4">

@@ -6,7 +6,6 @@ export type { Validator };
 // Validator type with added optional properties for derived data
 export interface ValidatorWithDerivedData extends Validator {
   avgPower?: number;
-  totalPower?: number;
   participationRate?: number;
 }
 
@@ -26,7 +25,7 @@ export interface TopicNode {
   voteDistribution: Record<string, number>
 }
 
-export type ValidatorSortKey = 'voteCount' | 'name' | 'votingPower' | 'totalVotingPower' | 'recentVotingPower' | 'similarity_common' | 'similarity_base' | 'similarity_comprehensive';
+export type ValidatorSortKey = 'voteCount' | 'name' | 'votingPower' | 'recentVotingPower' | 'similarity_common' | 'similarity_base' | 'similarity_comprehensive';
 
 // 전역 상태 인터페이스
 interface GlobalStore {
@@ -46,7 +45,7 @@ interface GlobalStore {
   // Validator filters
   participationRateRange: [number, number];
   participationRateDynamicRange: [number, number];
-  votingPowerDisplayMode: 'ratio' | 'rank';
+  votingPowerDisplayMode: 'percentile' | 'rank';
   votingPowerRange: [number, number];
   avgVotingPowerDynamicRange: [number, number];
   excludeAbstainNoVote: boolean; // <--- This is the new state
@@ -72,7 +71,7 @@ interface GlobalStore {
   setApprovalRateRange: (range: [number, number]) => void;
   setSubmitTimeRange: (range: [number, number]) => void;
   setParticipationRateRange: (range: [number, number]) => void;
-  setVotingPowerDisplayMode: (mode: 'ratio' | 'rank') => void;
+  setVotingPowerDisplayMode: (mode: 'percentile' | 'rank') => void;
   setVotingPowerRange: (range: [number, number]) => void;
   setCategoryVisualizationMode: (mode: 'voteCount' | 'votePower') => void;
   setWindowSize: (size: { width: number; height: number }) => void;
@@ -97,13 +96,13 @@ export const useGlobalStore = create<GlobalStore>((set, get) => ({
   submitTimeDynamicRange: [0, 0],
   participationRateRange: [0, 100],
   participationRateDynamicRange: [0, 100],
-  votingPowerDisplayMode: 'ratio',
-  votingPowerRange: [0, 1], // Default to full range for ratio
+  votingPowerDisplayMode: 'percentile',
+  votingPowerRange: [0, 100], // Default to full percentile range
   avgVotingPowerDynamicRange: [0, 1],
   excludeAbstainNoVote: false, // <--- Initial value for the new state
   considerActivePeriodOnly: false, // Initial value for new state
   categoryVisualizationMode: 'votePower',
-  validatorSortKey: 'totalVotingPower',
+  validatorSortKey: 'votingPower',
   countNoVoteAsParticipation: true,
   loading: true,
   error: null,
@@ -145,8 +144,9 @@ export const useGlobalStore = create<GlobalStore>((set, get) => ({
         submitTimeRange: dynamicRange,
         submitTimeDynamicRange: dynamicRange,
         participationRateRange: [0, 100],
-        votingPowerDisplayMode: 'ratio',
-        validatorSortKey: 'totalVotingPower',
+        votingPowerDisplayMode: 'percentile',
+        votingPowerRange: [0, 100],
+        validatorSortKey: 'votingPower',
         considerActivePeriodOnly: false, // Reset on new chain
       });
       get().recalculateValidatorMetrics();
@@ -213,14 +213,6 @@ export const useGlobalStore = create<GlobalStore>((set, get) => ({
 
       let sumOfPower = 0;
       let countOfVotes = 0;
-      let totalPowerAllTime = 0;
-
-      validatorVotesInFilter.forEach(vote => {
-        const power = typeof vote.voting_power === 'string' ? parseFloat(vote.voting_power) : vote.voting_power;
-        if (power && !isNaN(power)) {
-          totalPowerAllTime += power;
-        }
-      });
       
       votesInActivePeriod.forEach(vote => {
         const power = typeof vote.voting_power === 'string' ? parseFloat(vote.voting_power) : vote.voting_power;
@@ -271,7 +263,6 @@ export const useGlobalStore = create<GlobalStore>((set, get) => ({
       return {
         ...v,
         avgPower: countOfVotes > 0 ? sumOfPower / countOfVotes : 0,
-        totalPower: totalPowerAllTime,
         participationRate: participationRate,
       }
     });
@@ -289,20 +280,20 @@ export const useGlobalStore = create<GlobalStore>((set, get) => ({
     const newAvgPowerDynamicRange: [number, number] = [minAvgPower === Infinity ? 0 : minAvgPower, maxAvgPower === -Infinity ? 0 : maxAvgPower];
     
     const { votingPowerDisplayMode } = get();
-    let newVotingPowerRange: [number, number];
-
     if (votingPowerDisplayMode === 'rank') {
-      newVotingPowerRange = [1, newValidatorsWithDerivedData.length || 1];
-    } else { // ratio
-      newVotingPowerRange = newAvgPowerDynamicRange;
+      set({ 
+        validatorsWithDerivedData: newValidatorsWithDerivedData,
+        participationRateDynamicRange: [Math.floor(minRate), Math.ceil(maxRate)],
+        avgVotingPowerDynamicRange: newAvgPowerDynamicRange,
+        votingPowerRange: [1, newValidatorsWithDerivedData.length || 1],
+      });
+    } else { // percentile
+      set({ 
+        validatorsWithDerivedData: newValidatorsWithDerivedData,
+        participationRateDynamicRange: [Math.floor(minRate), Math.ceil(maxRate)],
+        avgVotingPowerDynamicRange: newAvgPowerDynamicRange,
+      });
     }
-
-    set({ 
-      validatorsWithDerivedData: newValidatorsWithDerivedData,
-      participationRateDynamicRange: [Math.floor(minRate), Math.ceil(maxRate)],
-      avgVotingPowerDynamicRange: newAvgPowerDynamicRange,
-      votingPowerRange: newVotingPowerRange,
-    });
   },
 
   setSelectedChain: (chain: string) => {
@@ -367,50 +358,18 @@ export const useGlobalStore = create<GlobalStore>((set, get) => ({
   },
   setParticipationRateRange: (range: [number, number]) => set({ participationRateRange: range }),
   setVotingPowerDisplayMode: (mode) => {
-    const { validatorsWithDerivedData, votingPowerDisplayMode, votingPowerRange, avgVotingPowerDynamicRange } = get();
-    if (mode === votingPowerDisplayMode) return;
-
-    const rankedValidators = [...validatorsWithDerivedData].sort((a, b) => (b.avgPower || 0) - (a.avgPower || 0));
-    const totalValidators = rankedValidators.length;
-    if (totalValidators === 0) {
-      set({ votingPowerDisplayMode: mode });
-      return;
+    const { validatorsWithDerivedData } = get();
+    if (mode === 'rank') {
+      set({
+        votingPowerDisplayMode: 'rank',
+        votingPowerRange: [1, validatorsWithDerivedData.length || 1]
+      });
+    } else { // percentile
+      set({
+        votingPowerDisplayMode: 'percentile',
+        votingPowerRange: [0, 100]
+      });
     }
-
-    let newVotingPowerRange: [number, number];
-
-    if (mode === 'rank') { // Convert from Ratio to Rank
-      const [minPower, maxPower] = votingPowerRange;
-      const findClosestRank = (power: number) => {
-        let closestRank = 1;
-        let minDiff = Infinity;
-        rankedValidators.forEach((v, i) => {
-          const currentPower = v.avgPower || 0;
-          const diff = Math.abs(currentPower - power);
-          if (diff < minDiff) {
-            minDiff = diff;
-            closestRank = i + 1;
-          }
-        });
-        return closestRank;
-      };
-      const startRank = findClosestRank(maxPower);
-      const endRank = findClosestRank(minPower);
-      newVotingPowerRange = [Math.min(startRank, endRank), Math.max(startRank, endRank)];
-    } else { // Convert from Rank to Ratio
-      const [minRank, maxRank] = votingPowerRange;
-      const topValidator = rankedValidators[Math.max(0, Math.min(totalValidators - 1, minRank - 1))];
-      const bottomValidator = rankedValidators[Math.max(0, Math.min(totalValidators - 1, maxRank - 1))];
-      
-      const minPower = bottomValidator?.avgPower || 0;
-      const maxPower = topValidator?.avgPower || 0;
-      newVotingPowerRange = [minPower, maxPower];
-    }
-    
-    set({ 
-      votingPowerDisplayMode: mode,
-      votingPowerRange: newVotingPowerRange
-    });
   },
   setVotingPowerRange: (range) => set({ votingPowerRange: range }),
   setCategoryVisualizationMode: (mode) => set({ categoryVisualizationMode: mode }),
@@ -687,10 +646,6 @@ export const getSubmitTimeDistribution = (state: GlobalStore) => {
 
 export const getAvgVotingPowerDistribution = (state: GlobalStore) => {
   return state.validatorsWithDerivedData.map(v => v.avgPower || 0);
-};
-
-export const getTotalVotingPowerDistribution = (state: GlobalStore) => {
-  return state.validatorsWithDerivedData.map(v => v.totalPower || 0);
 };
 
 export const getParticipationRateDistribution = (state: GlobalStore) => {
