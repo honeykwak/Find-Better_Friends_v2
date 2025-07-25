@@ -383,6 +383,31 @@ export default function FilterPanel() {
           </div>
           <div className="mb-4">
             <div className="flex justify-between items-center mb-2">
+              <label className="block text-sm font-medium text-gray-900">Similarity Options</label>
+            </div>
+            <div className="space-y-2">
+              <label className="flex items-center space-x-2 text-xs text-gray-600 cursor-pointer">
+                <input
+                  type="checkbox"
+                  checked={store.applyRecencyWeight}
+                  onChange={(e) => store.setApplyRecencyWeight(e.target.checked)}
+                  className="form-checkbox h-3 w-3 text-blue-600 rounded"
+                />
+                <span>Apply recency weighting to similarity</span>
+              </label>
+              <label className="flex items-center space-x-2 text-xs text-gray-600 cursor-pointer">
+                <input
+                  type="checkbox"
+                  checked={store.matchAbstainInSimilarity}
+                  onChange={(e) => store.setMatchAbstainInSimilarity(e.target.checked)}
+                  className="form-checkbox h-3 w-3 text-blue-600 rounded"
+                />
+                <span>Count matching abstentions in similarity</span>
+              </label>
+            </div>
+          </div>
+          <div className="mb-4">
+            <div className="flex justify-between items-center mb-2">
               <label className="block text-sm font-medium text-gray-900">Participation Rate</label>
               <div className="flex flex-col space-y-1">
                 <label className="flex items-center space-x-2 text-xs text-gray-500 cursor-pointer">

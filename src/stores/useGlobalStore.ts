@@ -58,6 +58,10 @@ interface GlobalStore {
   avgVotingPowerDynamicRange: [number, number];
   considerActivePeriodOnly: boolean;
 
+  // Similarity options
+  applyRecencyWeight: boolean;
+  matchAbstainInSimilarity: boolean;
+
   validatorSortKey: ValidatorSortKey;
   countNoVoteAsParticipation: boolean;
   categoryVisualizationMode: 'voteCount' | 'votePower'
@@ -89,6 +93,8 @@ interface GlobalStore {
   setValidatorSortKey: (key: ValidatorSortKey) => void;
   setCountNoVoteAsParticipation: (count: boolean) => void;
   setConsiderActivePeriodOnly: (activeOnly: boolean) => void;
+  setApplyRecencyWeight: (value: boolean) => void;
+  setMatchAbstainInSimilarity: (value: boolean) => void;
   getFilteredProposals: () => (Proposal & { voteDistribution?: { [key: string]: number } })[];
 }
 
@@ -149,6 +155,8 @@ export const useGlobalStore = create<GlobalStore>((set, get) => ({
   votingPowerRange: [0, 100],
   avgVotingPowerDynamicRange: [0, 1],
   considerActivePeriodOnly: false,
+  applyRecencyWeight: false,
+  matchAbstainInSimilarity: false,
   categoryVisualizationMode: 'votePower',
   validatorSortKey: 'votingPower',
   countNoVoteAsParticipation: true,
@@ -286,7 +294,7 @@ export const useGlobalStore = create<GlobalStore>((set, get) => ({
   },
 
   recalculateValidatorMetrics: () => {
-    const { proposals, validators, votes, getFilteredProposals, countNoVoteAsParticipation, considerActivePeriodOnly, searchTerm, validatorSortKey } = get();
+    const { proposals, validators, votes, getFilteredProposals, countNoVoteAsParticipation, considerActivePeriodOnly, searchTerm, validatorSortKey, applyRecencyWeight, matchAbstainInSimilarity } = get();
     if (!proposals.length || !validators.length) {
       set({ 
         validatorsWithDerivedData: [], 
@@ -426,7 +434,17 @@ export const useGlobalStore = create<GlobalStore>((set, get) => ({
             newSimilarityScores.set(v.moniker, 1);
           } else {
             const validatorVotes = votes.filter(vote => vote.validator_address === v.validator_address);
-            const similarity = calculateSimilarity(baseValidatorVotes, validatorVotes, relevantProposalIds, countNoVoteAsParticipation, mode);
+            const similarity = calculateSimilarity(
+              baseValidatorVotes, 
+              validatorVotes, 
+              filteredProposals,
+              relevantProposalIds, 
+              getPowerBasedTally(get()),
+              countNoVoteAsParticipation, 
+              applyRecencyWeight,
+              matchAbstainInSimilarity,
+              mode
+            );
             v.similarity = similarity;
             newSimilarityScores.set(v.moniker, similarity);
           }
@@ -560,6 +578,14 @@ export const useGlobalStore = create<GlobalStore>((set, get) => ({
   },
   setConsiderActivePeriodOnly: (activeOnly: boolean) => {
     set({ considerActivePeriodOnly: activeOnly });
+    get().recalculateValidatorMetrics();
+  },
+  setApplyRecencyWeight: (value: boolean) => {
+    set({ applyRecencyWeight: value });
+    get().recalculateValidatorMetrics();
+  },
+  setMatchAbstainInSimilarity: (value: boolean) => {
+    set({ matchAbstainInSimilarity: value });
     get().recalculateValidatorMetrics();
   },
 
