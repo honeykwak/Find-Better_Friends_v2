@@ -1,23 +1,48 @@
 import type { Proposal, Vote } from './dataLoader';
 
+const EPSILON = 0.01; // Minimum weight to prevent division by zero and ignore disagreements
+
 /**
  * Calculates the Opinion Dispersion Index (ODi) for a proposal.
- * A score of 1 indicates maximum dispersion, 0 indicates perfect consensus.
+ * A minimum weight (EPSILON) is added to ensure no proposal has zero weight.
  */
 function calculateOpinionDispersion(yes: number, no: number, veto: number, abstain: number): number {
   const totalPower = yes + no + veto + abstain;
-  if (totalPower === 0) return 0;
+  if (totalPower === 0) return EPSILON;
 
   const k = 4; // YES, NO, VETO, ABSTAIN
   const shares = [yes / totalPower, no / totalPower, veto / totalPower, abstain / totalPower];
   const hhi = shares.reduce((sum, share) => sum + share ** 2, 0);
   const odi = (1 - hhi) / (1 - 1 / k);
   
-  return odi;
+  return odi + EPSILON;
 }
 
 /**
- * Calculates similarity between two validators, with special handling for 'ABSTAIN' votes.
+ * Calculates a partial agreement score (Ai) between two votes.
+ * This allows for nuanced scoring beyond simple match/mismatch.
+ */
+function getAgreementScore(voteA: string, voteB: string, matchAbstainInSimilarity: boolean): number {
+  if (voteA === voteB) {
+    // Matching votes are a full agreement, unless it's an uncounted abstain match
+    if (voteA === 'ABSTAIN' && !matchAbstainInSimilarity) {
+      return 0; // Explicitly not counting matching abstains
+    }
+    return 1.0; // Perfect match
+  }
+
+  // Handle cases involving Abstain as partial disagreement
+  if (voteA === 'ABSTAIN' || voteB === 'ABSTAIN') {
+    return 0.25; // Partial disagreement score for any non-matching abstain case
+  }
+
+  // All other non-matching votes are a full disagreement
+  return 0.0;
+}
+
+
+/**
+ * Calculates similarity between two validators, with nuanced scoring and bug fixes.
  *
  * @param baseValidatorVotes - Votes from the base validator.
  * @param targetValidatorVotes - Votes from the target validator.
@@ -42,7 +67,6 @@ export function calculateSimilarity(
 
   let comparisonUniverseProposals: Proposal[];
 
-  // Define the set of proposals to compare based on the mode
   if (mode === 'common') {
     comparisonUniverseProposals = proposals.filter(p => 
       baseVotesMap.has(p.proposal_id) && targetVotesMap.has(p.proposal_id)
@@ -76,28 +100,20 @@ export function calculateSimilarity(
     const voteA = baseVotesMap.get(proposalId) || 'NOT_VOTED';
     const voteB = targetVotesMap.get(proposalId) || 'NOT_VOTED';
 
-    // --- Abstain Exception Rule ---
-    // If the "match abstain" option is OFF, exclude any proposal where at least one validator abstained.
-    if (!matchAbstainInSimilarity && (voteA === 'ABSTAIN' || voteB === 'ABSTAIN')) {
-      return; // Skip this proposal entirely
-    }
-    // If the "match abstain" option is ON, but votes don't match and one is ABSTAIN, exclude.
-    if (matchAbstainInSimilarity && voteA !== voteB && (voteA === 'ABSTAIN' || voteB === 'ABSTAIN')) {
-      return; // Skip this proposal
+    // Skip proposals where neither voted
+    if (voteA === 'NOT_VOTED' && voteB === 'NOT_VOTED') {
+      return;
     }
 
-    // 1. Opinion Dispersion Index (ODi)
+    // 1. Opinion Dispersion Index (ODi) with Epsilon
     const tally = powerTallies.get(proposalId) || { yes: 0, no: 0, veto: 0, abstain: 0 };
     const ODi = calculateOpinionDispersion(tally.yes, tally.no, tally.veto, tally.abstain);
 
     // 2. Recency Weight (Ti)
     const Ti = applyRecencyWeight ? ri / n : 1;
 
-    // 3. Agreement (Ai)
-    let Ai = 0;
-    if (voteA === voteB && voteA !== 'NOT_VOTED') {
-      Ai = 1;
-    }
+    // 3. Partial Agreement Score (Ai)
+    const Ai = getAgreementScore(voteA, voteB, matchAbstainInSimilarity);
 
     const weight = ODi * Ti;
     weightedAgreementSum += Ai * weight;
