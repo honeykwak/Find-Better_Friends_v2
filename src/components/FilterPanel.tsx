@@ -385,25 +385,39 @@ export default function FilterPanel() {
             <div className="flex justify-between items-center mb-2">
               <label className="block text-sm font-medium text-gray-900">Similarity Options</label>
             </div>
-            <div className="space-y-2">
-              <label className="flex items-center space-x-2 text-xs text-gray-600 cursor-pointer">
-                <input
-                  type="checkbox"
-                  checked={store.applyRecencyWeight}
-                  onChange={(e) => store.setApplyRecencyWeight(e.target.checked)}
-                  className="form-checkbox h-3 w-3 text-blue-600 rounded"
+            <div className="space-y-3 p-3 bg-gray-50 rounded-lg">
+              <div>
+                <label className="block text-xs font-medium text-gray-700 mb-2">Comparison Scope</label>
+                <ToggleButtonGroup
+                  options={[
+                    { value: 'common', label: 'Common' },
+                    { value: 'base', label: 'Base' },
+                    { value: 'comprehensive', label: 'Comprehensive' },
+                  ]}
+                  selectedValue={store.comparisonScope}
+                  onChange={(v) => store.setComparisonScope(v as 'common' | 'base' | 'comprehensive')}
                 />
-                <span>Apply recency weighting to similarity</span>
-              </label>
-              <label className="flex items-center space-x-2 text-xs text-gray-600 cursor-pointer">
-                <input
-                  type="checkbox"
-                  checked={store.matchAbstainInSimilarity}
-                  onChange={(e) => store.setMatchAbstainInSimilarity(e.target.checked)}
-                  className="form-checkbox h-3 w-3 text-blue-600 rounded"
-                />
-                <span>Count matching abstentions in similarity</span>
-              </label>
+              </div>
+              <div className="pt-2 space-y-2">
+                <label className="flex items-center space-x-2 text-xs text-gray-600 cursor-pointer">
+                  <input
+                    type="checkbox"
+                    checked={store.applyRecencyWeight}
+                    onChange={(e) => store.setApplyRecencyWeight(e.target.checked)}
+                    className="form-checkbox h-3 w-3 text-blue-600 rounded"
+                  />
+                  <span>Apply recency weighting</span>
+                </label>
+                <label className="flex items-center space-x-2 text-xs text-gray-600 cursor-pointer">
+                  <input
+                    type="checkbox"
+                    checked={store.matchAbstainInSimilarity}
+                    onChange={(e) => store.setMatchAbstainInSimilarity(e.target.checked)}
+                    className="form-checkbox h-3 w-3 text-blue-600 rounded"
+                  />
+                  <span>Count matching abstentions</span>
+                </label>
+              </div>
             </div>
           </div>
           <div className="mb-4">

@@ -31,7 +31,8 @@ export interface TopicNode {
   voteDistribution: Record<string, number>
 }
 
-export type ValidatorSortKey = 'voteCount' | 'name' | 'votingPower' | 'recentVotingPower' | 'similarity_common' | 'similarity_base' | 'similarity_comprehensive';
+export type ValidatorSortKey = 'voteCount' | 'name' | 'votingPower' | 'recentVotingPower' | 'similarity';
+export type ComparisonScope = 'common' | 'base' | 'comprehensive';
 
 // 전역 상태 인터페이스
 interface GlobalStore {
@@ -61,6 +62,7 @@ interface GlobalStore {
   // Similarity options
   applyRecencyWeight: boolean;
   matchAbstainInSimilarity: boolean;
+  comparisonScope: ComparisonScope;
 
   validatorSortKey: ValidatorSortKey;
   countNoVoteAsParticipation: boolean;
@@ -95,6 +97,7 @@ interface GlobalStore {
   setConsiderActivePeriodOnly: (activeOnly: boolean) => void;
   setApplyRecencyWeight: (value: boolean) => void;
   setMatchAbstainInSimilarity: (value: boolean) => void;
+  setComparisonScope: (scope: ComparisonScope) => void;
   getFilteredProposals: () => (Proposal & { voteDistribution?: { [key: string]: number } })[];
 }
 
@@ -157,6 +160,7 @@ export const useGlobalStore = create<GlobalStore>((set, get) => ({
   considerActivePeriodOnly: false,
   applyRecencyWeight: false,
   matchAbstainInSimilarity: false,
+  comparisonScope: 'comprehensive',
   categoryVisualizationMode: 'votePower',
   validatorSortKey: 'votingPower',
   countNoVoteAsParticipation: true,
@@ -294,7 +298,7 @@ export const useGlobalStore = create<GlobalStore>((set, get) => ({
   },
 
   recalculateValidatorMetrics: () => {
-    const { proposals, validators, votes, getFilteredProposals, countNoVoteAsParticipation, considerActivePeriodOnly, searchTerm, validatorSortKey, applyRecencyWeight, matchAbstainInSimilarity } = get();
+    const { proposals, validators, votes, getFilteredProposals, countNoVoteAsParticipation, considerActivePeriodOnly, searchTerm, validatorSortKey, applyRecencyWeight, matchAbstainInSimilarity, comparisonScope } = get();
     if (!proposals.length || !validators.length) {
       set({ 
         validatorsWithDerivedData: [], 
@@ -307,7 +311,6 @@ export const useGlobalStore = create<GlobalStore>((set, get) => ({
     }
 
     const filteredProposals = getFilteredProposals();
-    const relevantProposalIds = new Set(filteredProposals.map(p => p.proposal_id));
     
     const proposalIdToTimeMap = new Map<string, number>();
     filteredProposals.forEach(p => {
@@ -319,7 +322,7 @@ export const useGlobalStore = create<GlobalStore>((set, get) => ({
     let newValidatorsWithDerivedData = validators.map(v => {
       const validatorVotesInFilter = votes.filter(vote => 
         vote.validator_address === v.validator_address && 
-        relevantProposalIds.has(vote.proposal_id)
+        new Set(filteredProposals.map(p => p.proposal_id)).has(vote.proposal_id)
       );
 
       let firstVoteTime = Infinity;
@@ -371,7 +374,7 @@ export const useGlobalStore = create<GlobalStore>((set, get) => ({
             const proposalsWithNoMeaningfulVotes = new Set<string>();
             const proposalVoteOptions = new Map<string, Set<string>>();
             for (const vote of votes) {
-                if (relevantProposalIds.has(vote.proposal_id)) {
+                if (new Set(filteredProposals.map(p => p.proposal_id)).has(vote.proposal_id)) {
                     if (!proposalVoteOptions.has(vote.proposal_id)) proposalVoteOptions.set(vote.proposal_id, new Set());
                     proposalVoteOptions.get(vote.proposal_id)!.add(vote.vote_option);
                 }
@@ -422,12 +425,11 @@ export const useGlobalStore = create<GlobalStore>((set, get) => ({
     }
 
     const newSimilarityScores = new Map<string, number>();
-    if (searchTerm && validatorSortKey.startsWith('similarity')) {
+    if (searchTerm && validatorSortKey === 'similarity') {
       const baseValidator = newValidatorsWithDerivedData.find(v => v.moniker === searchTerm);
       if (baseValidator) {
         const baseValidatorVotes = votes.filter(v => v.validator_address === baseValidator.validator_address);
-        const mode = validatorSortKey.split('_')[1] as 'common' | 'base' | 'comprehensive';
-
+        
         newValidatorsWithDerivedData.forEach(v => {
           if (v.moniker === searchTerm) {
             v.similarity = 1;
@@ -441,7 +443,7 @@ export const useGlobalStore = create<GlobalStore>((set, get) => ({
               getPowerBasedTally(get()),
               applyRecencyWeight,
               matchAbstainInSimilarity,
-              mode
+              comparisonScope
             );
             v.similarity = similarity;
             newSimilarityScores.set(v.moniker, similarity);
@@ -526,7 +528,7 @@ export const useGlobalStore = create<GlobalStore>((set, get) => ({
   },
   setSearchTerm: (term: string) => {
     if (term) {
-      set({ searchTerm: term, validatorSortKey: 'similarity_comprehensive' });
+      set({ searchTerm: term, validatorSortKey: 'similarity' });
     } else {
       set({ searchTerm: term, validatorSortKey: 'votingPower' });
     }
@@ -584,6 +586,10 @@ export const useGlobalStore = create<GlobalStore>((set, get) => ({
   },
   setMatchAbstainInSimilarity: (value: boolean) => {
     set({ matchAbstainInSimilarity: value });
+    get().recalculateValidatorMetrics();
+  },
+  setComparisonScope: (scope: ComparisonScope) => {
+    set({ comparisonScope: scope });
     get().recalculateValidatorMetrics();
   },
 

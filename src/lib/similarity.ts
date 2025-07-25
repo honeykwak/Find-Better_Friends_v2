@@ -69,7 +69,7 @@ export function calculateSimilarity(
   powerTallies: Map<string, { yes: number; no: number; veto: number; abstain: number }>,
   applyRecencyWeight: boolean,
   matchAbstainInSimilarity: boolean,
-  mode: 'common' | 'base' | 'comprehensive' = 'comprehensive'
+  comparisonScope: 'common' | 'base' | 'comprehensive' = 'comprehensive'
 ): number {
   const baseVotesMap = new Map(baseValidatorVotes.map(v => [v.proposal_id, v.vote_option]));
   const targetVotesMap = new Map(targetValidatorVotes.map(v => [v.proposal_id, v.vote_option]));
