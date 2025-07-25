@@ -1,118 +1,102 @@
 import type { Proposal, Vote } from './dataLoader';
 
 /**
- * Calculates the similarity between two validators based on their voting history,
- * with options for applying recency and polarization weighting.
+ * Calculates the Opinion Dispersion Index (ODi) for a proposal.
+ * A score of 1 indicates maximum dispersion, 0 indicates perfect consensus.
+ */
+function calculateOpinionDispersion(yes: number, no: number, veto: number, abstain: number): number {
+  const totalPower = yes + no + veto + abstain;
+  if (totalPower === 0) return 0;
+
+  const k = 4; // YES, NO, VETO, ABSTAIN
+  const shares = [yes / totalPower, no / totalPower, veto / totalPower, abstain / totalPower];
+  const hhi = shares.reduce((sum, share) => sum + share ** 2, 0);
+  const odi = (1 - hhi) / (1 - 1 / k);
+  
+  return odi;
+}
+
+/**
+ * Calculates similarity between two validators based on voting history, with different modes.
  *
- * @param validatorAVotes - An array of votes from the first (base) validator.
- * @param validatorBVotes - An array of votes from the second validator.
- * @param proposals - An array of all relevant proposals for calculating weights.
- * @param proposalIds - A set of proposal IDs to consider for the calculation.
- * @param powerTallies - A map of proposal_id to its power-based tally for polarization scores.
- * @param countNoVoteAsParticipation - Whether to count 'NO_VOTE' as participation.
- * @param applyRecencyWeight - Whether to apply a time-based weight to recent proposals.
- * @param matchAbstainInSimilarity - Whether to count matching 'ABSTAIN' votes as an agreement.
+ * @param baseValidatorVotes - Votes from the base validator.
+ * @param targetValidatorVotes - Votes from the target validator.
+ * @param proposals - All relevant proposals.
+ * @param powerTallies - A map of proposal_id to its power-based tally.
+ * @param applyRecencyWeight - Whether to apply time-based weight.
+ * @param matchAbstainInSimilarity - Whether to count matching 'ABSTAIN' as agreement.
  * @param mode - The calculation mode: 'common', 'base', or 'comprehensive'.
  * @returns A similarity score from 0 to 1.
  */
 export function calculateSimilarity(
-  validatorAVotes: Vote[],
-  validatorBVotes: Vote[],
+  baseValidatorVotes: Vote[],
+  targetValidatorVotes: Vote[],
   proposals: Proposal[],
-  proposalIds: Set<string>,
-  powerTallies: Map<string, { yes: number; no: number; veto: number }>,
-  countNoVoteAsParticipation: boolean,
+  powerTallies: Map<string, { yes: number; no: number; veto: number; abstain: number }>,
   applyRecencyWeight: boolean,
   matchAbstainInSimilarity: boolean,
-  mode: 'common' | 'base' | 'comprehensive' = 'common'
+  mode: 'common' | 'base' | 'comprehensive' = 'comprehensive'
 ): number {
-  if (proposalIds.size === 0) {
+  const baseVotesMap = new Map(baseValidatorVotes.map(v => [v.proposal_id, v.vote_option]));
+  const targetVotesMap = new Map(targetValidatorVotes.map(v => [v.proposal_id, v.vote_option]));
+
+  let comparisonUniverseProposals: Proposal[];
+
+  // Define the set of proposals to compare based on the mode
+  if (mode === 'common') {
+    comparisonUniverseProposals = proposals.filter(p => 
+      baseVotesMap.has(p.proposal_id) && targetVotesMap.has(p.proposal_id)
+    );
+  } else if (mode === 'base') {
+    comparisonUniverseProposals = proposals.filter(p => 
+      baseVotesMap.has(p.proposal_id)
+    );
+  } else { // 'comprehensive'
+    comparisonUniverseProposals = proposals.filter(p => 
+      baseVotesMap.has(p.proposal_id) || targetVotesMap.has(p.proposal_id)
+    );
+  }
+
+  if (comparisonUniverseProposals.length === 0) {
     return 0;
   }
 
-  const votesAByProposal = new Map(validatorAVotes.map(v => [v.proposal_id, v.vote_option]));
-  const votesBByProposal = new Map(validatorBVotes.map(v => [v.proposal_id, v.vote_option]));
+  const sortedProposals = [...proposals].sort(
+    (a, b) => new Date(Number(a.submit_time)).getTime() - new Date(Number(b.submit_time)).getTime()
+  );
+  const n = sortedProposals.length;
 
-  // Comprehensive mode with advanced weighting
-  if (mode === 'comprehensive') {
-    const sortedProposals = [...proposals]
-      .filter(p => proposalIds.has(p.proposal_id))
-      .sort((a, b) => new Date(Number(a.submit_time)).getTime() - new Date(Number(b.submit_time)).getTime());
+  let weightedAgreementSum = 0;
+  let totalWeightSum = 0;
+
+  comparisonUniverseProposals.forEach(proposal => {
+    const ri = sortedProposals.findIndex(p => p.proposal_id === proposal.proposal_id) + 1;
+    const proposalId = proposal.proposal_id;
+
+    // 1. Opinion Dispersion Index (ODi)
+    const tally = powerTallies.get(proposalId) || { yes: 0, no: 0, veto: 0, abstain: 0 };
+    const ODi = calculateOpinionDispersion(tally.yes, tally.no, tally.veto, tally.abstain);
+
+    // 2. Recency Weight (Ti)
+    const Ti = applyRecencyWeight ? ri / n : 1;
+
+    // 3. Agreement (Ai)
+    const voteA = baseVotesMap.get(proposalId) || 'NOT_VOTED';
+    const voteB = targetVotesMap.get(proposalId) || 'NOT_VOTED';
     
-    const n = sortedProposals.length;
-    if (n === 0) return 0;
-
-    let weightedAgreementSum = 0;
-    let totalWeightSum = 0;
-
-    sortedProposals.forEach((proposal, index) => {
-      const ri = index + 1; // Rank (1-based)
-      const proposalId = proposal.proposal_id;
-
-      // 1. Polarization Score (Pi)
-      const tally = powerTallies.get(proposalId);
-      const yes = tally?.yes ?? 0;
-      const no = tally?.no ?? 0;
-      const veto = tally?.veto ?? 0;
-      const totalVotes = yes + no + veto;
-      const Pi = totalVotes > 0 ? 1 - Math.abs((yes / totalVotes) - ((no + veto) / totalVotes)) : 0;
-
-      // 2. Recency Weight (Ti)
-      const Ti = applyRecencyWeight ? ri / n : 1;
-
-      // 3. Agreement (Ai)
-      const voteA = votesAByProposal.get(proposalId) || 'NOT_VOTED';
-      const voteB = votesBByProposal.get(proposalId) || 'NOT_VOTED';
-      
-      let Ai = 0;
-      if (voteA === voteB) {
-        if (voteA === 'ABSTAIN' && !matchAbstainInSimilarity) {
-          Ai = 0; // Don't count matching abstains if option is off
-        } else {
-          Ai = 1; // Count all other matches
-        }
-      }
-
-      const weight = Pi * Ti;
-      weightedAgreementSum += Ai * weight;
-      totalWeightSum += weight;
-    });
-
-    return totalWeightSum > 0 ? weightedAgreementSum / totalWeightSum : 0;
-  }
-
-  // --- Legacy modes: 'common' and 'base' ---
-  let matchCount = 0;
-  let comparableProposalsCount = 0;
-
-  for (const proposalId of proposalIds) {
-    const voteA = votesAByProposal.get(proposalId);
-    const voteB = votesBByProposal.get(proposalId);
-
-    const isAVoting = voteA && (countNoVoteAsParticipation || voteA !== 'NO_VOTE');
-    const isBVoting = voteB && (countNoVoteAsParticipation || voteB !== 'NO_VOTE');
-
-    let shouldCompare = false;
-    if (mode === 'common') {
-      shouldCompare = isAVoting && isBVoting;
-    } else { // mode === 'base'
-      shouldCompare = isAVoting;
-    }
-
-    if (shouldCompare) {
-      comparableProposalsCount++;
-      const finalVoteA = voteA || 'NO_VOTE';
-      const finalVoteB = voteB || 'NO_VOTE';
-      if (finalVoteA === finalVoteB) {
-        if (finalVoteA === 'ABSTAIN' && !matchAbstainInSimilarity) {
-          // In legacy modes, we don't count matching abstains as a match
-          // but it's still part of the comparable set.
-        } else {
-          matchCount++;
-        }
+    let Ai = 0;
+    if (voteA === voteB) {
+      if (voteA === 'ABSTAIN' && !matchAbstainInSimilarity) {
+        Ai = 0;
+      } else if (voteA !== 'NOT_VOTED') {
+        Ai = 1;
       }
     }
-  }
 
-  return comparableProposalsCount > 0 ? matchCount / comparableProposalsCount : 0;
+    const weight = ODi * Ti;
+    weightedAgreementSum += Ai * weight;
+    totalWeightSum += weight;
+  });
+
+  return totalWeightSum > 0 ? weightedAgreementSum / totalWeightSum : 0;
 }

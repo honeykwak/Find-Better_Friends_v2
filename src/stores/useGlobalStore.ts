@@ -438,9 +438,7 @@ export const useGlobalStore = create<GlobalStore>((set, get) => ({
               baseValidatorVotes, 
               validatorVotes, 
               filteredProposals,
-              relevantProposalIds, 
               getPowerBasedTally(get()),
-              countNoVoteAsParticipation, 
               applyRecencyWeight,
               matchAbstainInSimilarity,
               mode
@@ -764,10 +762,10 @@ export const useGlobalStore = create<GlobalStore>((set, get) => ({
 const getPowerBasedTally = createSelector(
   (state: GlobalStore) => state.votes,
   (votes) => {
-    const tallies = new Map<string, { yes: number; no: number; veto: number }>();
+    const tallies = new Map<string, { yes: number; no: number; veto: number; abstain: number }>();
     for (const vote of votes) {
       if (!tallies.has(vote.proposal_id)) {
-        tallies.set(vote.proposal_id, { yes: 0, no: 0, veto: 0 });
+        tallies.set(vote.proposal_id, { yes: 0, no: 0, veto: 0, abstain: 0 });
       }
       const tally = tallies.get(vote.proposal_id)!;
       const power = typeof vote.voting_power === 'string' ? parseFloat(vote.voting_power) : vote.voting_power;
@@ -776,6 +774,7 @@ const getPowerBasedTally = createSelector(
       if (vote.vote_option === 'YES') tally.yes += power;
       else if (vote.vote_option === 'NO') tally.no += power;
       else if (vote.vote_option === 'NO_WITH_VETO') tally.veto += power;
+      else if (vote.vote_option === 'ABSTAIN') tally.abstain += power;
     }
     return tallies;
   }
