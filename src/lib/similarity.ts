@@ -17,7 +17,7 @@ function calculateOpinionDispersion(yes: number, no: number, veto: number, absta
 }
 
 /**
- * Calculates similarity between two validators based on voting history, with different modes.
+ * Calculates similarity between two validators, with special handling for 'ABSTAIN' votes.
  *
  * @param baseValidatorVotes - Votes from the base validator.
  * @param targetValidatorVotes - Votes from the target validator.
@@ -72,6 +72,19 @@ export function calculateSimilarity(
   comparisonUniverseProposals.forEach(proposal => {
     const ri = sortedProposals.findIndex(p => p.proposal_id === proposal.proposal_id) + 1;
     const proposalId = proposal.proposal_id;
+    
+    const voteA = baseVotesMap.get(proposalId) || 'NOT_VOTED';
+    const voteB = targetVotesMap.get(proposalId) || 'NOT_VOTED';
+
+    // --- Abstain Exception Rule ---
+    // If the "match abstain" option is OFF, exclude any proposal where at least one validator abstained.
+    if (!matchAbstainInSimilarity && (voteA === 'ABSTAIN' || voteB === 'ABSTAIN')) {
+      return; // Skip this proposal entirely
+    }
+    // If the "match abstain" option is ON, but votes don't match and one is ABSTAIN, exclude.
+    if (matchAbstainInSimilarity && voteA !== voteB && (voteA === 'ABSTAIN' || voteB === 'ABSTAIN')) {
+      return; // Skip this proposal
+    }
 
     // 1. Opinion Dispersion Index (ODi)
     const tally = powerTallies.get(proposalId) || { yes: 0, no: 0, veto: 0, abstain: 0 };
@@ -81,16 +94,9 @@ export function calculateSimilarity(
     const Ti = applyRecencyWeight ? ri / n : 1;
 
     // 3. Agreement (Ai)
-    const voteA = baseVotesMap.get(proposalId) || 'NOT_VOTED';
-    const voteB = targetVotesMap.get(proposalId) || 'NOT_VOTED';
-    
     let Ai = 0;
-    if (voteA === voteB) {
-      if (voteA === 'ABSTAIN' && !matchAbstainInSimilarity) {
-        Ai = 0;
-      } else if (voteA !== 'NOT_VOTED') {
-        Ai = 1;
-      }
+    if (voteA === voteB && voteA !== 'NOT_VOTED') {
+      Ai = 1;
     }
 
     const weight = ODi * Ti;
