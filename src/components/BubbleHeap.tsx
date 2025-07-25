@@ -23,6 +23,7 @@ export default function BubbleHeap() {
   const scalesRef = useRef<{
     radius: d3.ScaleSqrt<number, number>
     y: d3.ScaleLinear<number, number>
+    boundedWidth: number
   }>()
 
   const {
@@ -70,6 +71,7 @@ export default function BubbleHeap() {
     scalesRef.current = {
       radius: d3.scaleSqrt().range([5, 45]),
       y: d3.scaleLinear().domain([0, 1]).range([boundedHeight, 0]),
+      boundedWidth: boundedWidth,
     }
 
     const svg = d3.select(svgRef.current)
@@ -106,7 +108,7 @@ export default function BubbleHeap() {
   useEffect(() => {
     if (!zoomGRef.current || !scalesRef.current || !simulationRef.current) return
 
-    const { radius: radiusScale, y: yScale } = scalesRef.current
+    const { radius: radiusScale, y: yScale, boundedWidth } = scalesRef.current
     
     const maxPower = d3.max(simulationData, d => d.avgPower) || 0
     radiusScale.domain([0, maxPower])
@@ -127,28 +129,29 @@ export default function BubbleHeap() {
       }
     });
 
-    // --- REVISED D3 DATA JOIN ---
+    // --- REVISED D3 DATA JOIN WITH SEPARATE TRANSITIONS ---
     const circles = zoomGRef.current
       .selectAll<SVGCircleElement, SimulationNode>('circle')
       .data(simulationData, d => d.id);
 
-    // EXIT - Remove old elements
+    // EXIT: Animate and remove circles that are no longer in the data
     circles.exit()
-      .transition().duration(300)
+      .transition('exit_transition')
+      .duration(300)
       .attr('r', 0)
       .remove();
 
-    // ENTER - Add new elements
-    const enterCircles = circles.enter().append('circle')
+    // ENTER: Create new circles, starting with radius 0
+    const enterSelection = circles.enter().append('circle')
       .style('cursor', 'pointer')
       .attr('r', 0)
-      .attr('cx', d => d.x || (800 - 50 - 20) / 2)
+      .attr('cx', d => d.x || boundedWidth / 2)
       .attr('cy', d => d.y || yScale(d.similarity));
 
-    // MERGE - Combine enter and update selections
-    const allCircles = enterCircles.merge(circles);
+    // MERGE: Combine new (enter) and existing (update) circles
+    const allCircles = enterSelection.merge(circles);
 
-    // Apply event handlers and transitions to all circles (new and existing)
+    // Apply event handlers to ALL circles
     allCircles
       .on('click', (event, d) => {
         if (d.similarity < 1) setSearchTerm(d.moniker)
@@ -164,9 +167,16 @@ export default function BubbleHeap() {
         tooltip.style('visibility', 'hidden')
       });
 
-    // UPDATE - Animate radius for all circles. New circles transition from 0.
-    // Existing circles transition from their current radius to a new one if it changed.
-    allCircles.transition().duration(750)
+    // UPDATE TRANSITION: Animate radius for existing circles
+    circles
+      .transition('update_radius_transition')
+      .duration(750)
+      .attr('r', d => radiusScale(d.avgPower));
+
+    // ENTER TRANSITION: Animate radius for new circles from 0 to final size
+    enterSelection
+      .transition('enter_radius_transition')
+      .duration(750)
       .attr('r', d => radiusScale(d.avgPower));
     // --- END REVISED D3 DATA JOIN ---
 

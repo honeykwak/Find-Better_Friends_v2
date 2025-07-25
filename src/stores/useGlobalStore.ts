@@ -1,6 +1,7 @@
 import { create } from 'zustand'
 import { loadChainData, type Proposal, type Vote, type Validator } from '@/lib/dataLoader'
 import { calculateSimilarity } from '@/lib/similarity'
+import { createSelector } from 'reselect'
 
 export type { Validator };
 
@@ -45,7 +46,7 @@ interface GlobalStore {
   selectedCategories: string[]
   selectedTopics: string[]
   searchTerm: string;
-  approvalRateRange: [number, number];
+  polarizationScoreRange: [number, number];
   submitTimeRange: [number, number];
   submitTimeDynamicRange: [number, number];
   
@@ -55,7 +56,6 @@ interface GlobalStore {
   votingPowerDisplayMode: 'percentile' | 'rank';
   votingPowerRange: [number, number];
   avgVotingPowerDynamicRange: [number, number];
-  excludeAbstainNoVote: boolean;
   considerActivePeriodOnly: boolean;
 
   validatorSortKey: ValidatorSortKey;
@@ -78,7 +78,7 @@ interface GlobalStore {
   toggleCategory: (category: string) => void
   toggleTopic: (topic: string) => void
   setSearchTerm: (term: string) => void
-  setApprovalRateRange: (range: [number, number]) => void;
+  setPolarizationScoreRange: (range: [number, number]) => void;
   setSubmitTimeRange: (range: [number, number]) => void;
   setParticipationRateRange: (range: [number, number]) => void;
   setVotingPowerDisplayMode: (mode: 'percentile' | 'rank') => void;
@@ -88,10 +88,17 @@ interface GlobalStore {
   setHighlightedValidator: (moniker: string | null) => void;
   setValidatorSortKey: (key: ValidatorSortKey) => void;
   setCountNoVoteAsParticipation: (count: boolean) => void;
-  setExcludeAbstainNoVote: (exclude: boolean) => void;
   setConsiderActivePeriodOnly: (activeOnly: boolean) => void;
   getFilteredProposals: () => (Proposal & { voteDistribution?: { [key: string]: number } })[];
 }
+
+const calculatePolarizationFromCounts = (yes: number, no: number, veto: number): number => {
+  const total = yes + no + veto;
+  if (total === 0) return 0;
+  const yesRatio = yes / total;
+  const otherRatio = (no + veto) / total;
+  return 1 - Math.abs(yesRatio - otherRatio);
+};
 
 // Helper function for percentile calculation using linear interpolation
 const getPercentilePower = (percentile: number, sortedValidators: { avgPower?: any }[]): number => {
@@ -133,7 +140,7 @@ export const useGlobalStore = create<GlobalStore>((set, get) => ({
   selectedCategories: [],
   selectedTopics: [],
   searchTerm: '',
-  approvalRateRange: [0, 100],
+  polarizationScoreRange: [0, 1],
   submitTimeRange: [0, 0],
   submitTimeDynamicRange: [0, 0],
   participationRateRange: [0, 100],
@@ -141,7 +148,6 @@ export const useGlobalStore = create<GlobalStore>((set, get) => ({
   votingPowerDisplayMode: 'percentile',
   votingPowerRange: [0, 100],
   avgVotingPowerDynamicRange: [0, 1],
-  excludeAbstainNoVote: false,
   considerActivePeriodOnly: false,
   categoryVisualizationMode: 'votePower',
   validatorSortKey: 'votingPower',
@@ -264,7 +270,7 @@ export const useGlobalStore = create<GlobalStore>((set, get) => ({
         selectedCategories: [],
         selectedTopics: [],
         searchTerm: '',
-        approvalRateRange: [0, 100],
+        polarizationScoreRange: [0, 1],
         submitTimeRange: dynamicRange,
         submitTimeDynamicRange: dynamicRange,
         participationRateRange: [0, 100],
@@ -510,8 +516,8 @@ export const useGlobalStore = create<GlobalStore>((set, get) => ({
     }
     get().recalculateValidatorMetrics();
   },
-  setApprovalRateRange: (range: [number, number]) => {
-    set({ approvalRateRange: range });
+  setPolarizationScoreRange: (range: [number, number]) => {
+    set({ polarizationScoreRange: range });
     get().recalculateValidatorMetrics();
   },
   setSubmitTimeRange: (range: [number, number]) => {
@@ -552,10 +558,6 @@ export const useGlobalStore = create<GlobalStore>((set, get) => ({
     set({ countNoVoteAsParticipation: count });
     get().recalculateValidatorMetrics();
   },
-  setExcludeAbstainNoVote: (exclude: boolean) => {
-    set({ excludeAbstainNoVote: exclude });
-    get().recalculateValidatorMetrics();
-  },
   setConsiderActivePeriodOnly: (activeOnly: boolean) => {
     set({ considerActivePeriodOnly: activeOnly });
     get().recalculateValidatorMetrics();
@@ -574,59 +576,33 @@ export const useGlobalStore = create<GlobalStore>((set, get) => ({
     });
   },
 
-  getProposalsFilteredByRate: () => {
-    const { approvalRateRange, votes, categoryVisualizationMode, excludeAbstainNoVote } = get();
+  getProposalsFilteredByPolarization: () => {
+    const { polarizationScoreRange, votes, categoryVisualizationMode } = get();
     const proposals = get().getProposalsFilteredByTime();
-    const [minRate, maxRate] = approvalRateRange;
+    const [minScore, maxScore] = polarizationScoreRange;
 
-    if (categoryVisualizationMode === 'votePower') {
-      const votesByProposal = new Map<string, { yes: number; total: number }>();
-      for (const vote of votes) {
-        if (!votesByProposal.has(vote.proposal_id)) {
-          votesByProposal.set(vote.proposal_id, { yes: 0, total: 0 });
-        }
-        const proposalVotes = votesByProposal.get(vote.proposal_id)!;
-        const power = typeof vote.voting_power === 'string' ? parseFloat(vote.voting_power) : vote.voting_power;
-        
-        if (!isNaN(power)) {
-          if (vote.vote_option === 'YES') {
-            proposalVotes.yes += power;
-          }
-          
-          const isNonVoting = vote.vote_option === 'NO_VOTE' || vote.vote_option === 'ABSTAIN';
-          if (!excludeAbstainNoVote || !isNonVoting) {
-            proposalVotes.total += power;
-          }
-        }
-      }
-
-      return proposals.filter(p => {
-        const powerVotes = votesByProposal.get(p.proposal_id);
-        if (!powerVotes || powerVotes.total === 0) return minRate === 0;
-        const approvalRate = (powerVotes.yes / powerVotes.total) * 100;
-        return approvalRate >= minRate && approvalRate <= maxRate;
-      });
-    }
+    const powerTallies = getPowerBasedTally(get());
 
     return proposals.filter(p => {
-      const { yes_count = 0, no_count = 0, abstain_count = 0, no_with_veto_count = 0 } = p.final_tally_result || {};
-      
-      let totalVotes = yes_count + no_count + abstain_count + no_with_veto_count;
-      if (excludeAbstainNoVote) {
-        totalVotes -= abstain_count;
+      let score = 0;
+      if (categoryVisualizationMode === 'voteCount') {
+        const { yes_count = 0, no_count = 0, no_with_veto_count = 0 } = p.final_tally_result || {};
+        score = calculatePolarizationFromCounts(yes_count, no_count, no_with_veto_count);
+      } else { // 'votePower'
+        const tally = powerTallies.get(p.proposal_id);
+        if (tally) {
+          score = calculatePolarizationFromCounts(tally.yes, tally.no, tally.veto);
+        }
       }
-
-      if (totalVotes === 0) return minRate === 0;
-      const approvalRate = (yes_count / totalVotes) * 100;
-      return approvalRate >= minRate && approvalRate <= maxRate;
+      return score >= minScore && score <= maxScore;
     });
   },
 
   getFilteredProposals: () => {
     const { selectedTopics, votes, categoryVisualizationMode } = get();
-    const proposalsFilteredByRate = get().getProposalsFilteredByRate();
+    const proposalsFilteredByScore = get().getProposalsFilteredByPolarization();
 
-    const proposalsWithDistribution = proposalsFilteredByRate.map(p => {
+    const proposalsWithDistribution = proposalsFilteredByScore.map(p => {
       let voteDistribution: { [key: string]: number } = {};
       if (categoryVisualizationMode === 'votePower') {
         const proposalVotes = votes.filter(v => v.proposal_id === p.proposal_id);
@@ -674,7 +650,7 @@ export const useGlobalStore = create<GlobalStore>((set, get) => ({
 
   getFilteredCategoryHierarchy: () => {
     const { votes, categoryVisualizationMode } = get();
-    const proposalsFilteredByRate = get().getProposalsFilteredByRate();
+    const proposalsFilteredByScore = get().getProposalsFilteredByPolarization();
 
     const categoryStats: { [name: string]: {
         count: number; passed: number; voteDistribution: { [key: string]: number };
@@ -691,7 +667,7 @@ export const useGlobalStore = create<GlobalStore>((set, get) => ({
         }
     }
 
-    for (const p of proposalsFilteredByRate) {
+    for (const p of proposalsFilteredByScore) {
         const categoryName = p.type_v2;
         const topicName = p.topic_v2_unique;
         const topicDisplayName = p.topic_v2_display;
@@ -759,47 +735,41 @@ export const useGlobalStore = create<GlobalStore>((set, get) => ({
   },
 }));
 
-// Standalone selectors for data distribution
-export const getYesRateDistribution = (state: GlobalStore) => {
-  const { getProposalsFilteredByTime, votes, categoryVisualizationMode, excludeAbstainNoVote } = state;
-  const proposals = getProposalsFilteredByTime();
-
-  if (categoryVisualizationMode === 'votePower') {
-    const votesByProposal = new Map<string, { yes: number; total: number }>();
+const getPowerBasedTally = createSelector(
+  (state: GlobalStore) => state.votes,
+  (votes) => {
+    const tallies = new Map<string, { yes: number; no: number; veto: number }>();
     for (const vote of votes) {
-      if (!votesByProposal.has(vote.proposal_id)) {
-        votesByProposal.set(vote.proposal_id, { yes: 0, total: 0 });
+      if (!tallies.has(vote.proposal_id)) {
+        tallies.set(vote.proposal_id, { yes: 0, no: 0, veto: 0 });
       }
-      const proposalVotes = votesByProposal.get(vote.proposal_id)!;
+      const tally = tallies.get(vote.proposal_id)!;
       const power = typeof vote.voting_power === 'string' ? parseFloat(vote.voting_power) : vote.voting_power;
-      
-      if (!isNaN(power)) {
-        if (vote.vote_option === 'YES') {
-          proposalVotes.yes += power;
-        }
-        
-        const isNonVoting = vote.vote_option === 'NO_VOTE' || vote.vote_option === 'ABSTAIN';
-        if (!excludeAbstainNoVote || !isNonVoting) {
-          proposalVotes.total += power;
-        }
-      }
+      if (isNaN(power)) continue;
+
+      if (vote.vote_option === 'YES') tally.yes += power;
+      else if (vote.vote_option === 'NO') tally.no += power;
+      else if (vote.vote_option === 'NO_WITH_VETO') tally.veto += power;
     }
-    return proposals.map(p => {
-      const powerVotes = votesByProposal.get(p.proposal_id);
-      if (!powerVotes || powerVotes.total === 0) return 0;
-      return (powerVotes.yes / powerVotes.total) * 100;
-    });
+    return tallies;
   }
+);
+
+// Standalone selectors for data distribution
+export const getPolarizationScoreDistribution = (state: GlobalStore) => {
+  const { getProposalsFilteredByTime, categoryVisualizationMode } = state;
+  const proposals = getProposalsFilteredByTime();
+  const powerTallies = getPowerBasedTally(state);
 
   return proposals.map(p => {
-    const { yes_count = 0, no_count = 0, abstain_count = 0, no_with_veto_count = 0 } = p.final_tally_result || {};
-    
-    let totalVotes = yes_count + no_count + abstain_count + no_with_veto_count;
-    if (excludeAbstainNoVote) {
-      totalVotes -= abstain_count;
+    if (categoryVisualizationMode === 'voteCount') {
+      const { yes_count = 0, no_count = 0, no_with_veto_count = 0 } = p.final_tally_result || {};
+      return calculatePolarizationFromCounts(yes_count, no_count, no_with_veto_count);
+    } else { // 'votePower'
+      const tally = powerTallies.get(p.proposal_id);
+      if (!tally) return 0;
+      return calculatePolarizationFromCounts(tally.yes, tally.no, tally.veto);
     }
-
-    return totalVotes === 0 ? 0 : (yes_count / totalVotes) * 100;
   });
 };
 
@@ -814,3 +784,8 @@ export const getAvgVotingPowerDistribution = (state: GlobalStore) => {
 export const getParticipationRateDistribution = (state: GlobalStore) => {
   return state.validatorsWithDerivedData.map(v => v.participationRate || 0);
 };
+
+// Initialize data on first load
+if (typeof window !== 'undefined') {
+  useGlobalStore.getState().loadData('cosmos').catch(console.error);
+}

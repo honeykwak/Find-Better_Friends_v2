@@ -4,7 +4,7 @@ import { useState, useRef, useEffect, useMemo, useCallback } from 'react'
 import { Search, RotateCcw, X } from 'lucide-react'
 import { 
   useGlobalStore, 
-  getYesRateDistribution, 
+  getPolarizationScoreDistribution, 
   getSubmitTimeDistribution,
   getAvgVotingPowerDistribution,
   getParticipationRateDistribution,
@@ -98,7 +98,7 @@ export default function FilterPanel() {
     selectedTopics,
     selectedChain,
     searchTerm,
-    approvalRateRange,
+    polarizationScoreRange,
     categoryVisualizationMode,
     validators,
     votingPowerDisplayMode,
@@ -107,10 +107,9 @@ export default function FilterPanel() {
     participationRateRange,
     participationRateDynamicRange,
     countNoVoteAsParticipation,
-    excludeAbstainNoVote,
     setSelectedCategories,
     setSelectedTopics,
-    setApprovalRateRange,
+    setPolarizationScoreRange,
     setVotingPowerDisplayMode,
     setVotingPowerRange,
     setSelectedChain,
@@ -121,7 +120,6 @@ export default function FilterPanel() {
     proposals,
     setParticipationRateRange,
     setCountNoVoteAsParticipation,
-    setExcludeAbstainNoVote,
   } = store;
 
   const [hoveredCategory, setHoveredCategory] = useState<string | null>(null)
@@ -132,7 +130,7 @@ export default function FilterPanel() {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false)
   const searchRef = useRef<HTMLDivElement>(null)
 
-  const yesRateDistribution = useMemo(() => getYesRateDistribution(store), [store.proposals, store.votes, categoryVisualizationMode, store.excludeAbstainNoVote, store.submitTimeRange]);
+  const polarizationScoreDistribution = useMemo(() => getPolarizationScoreDistribution(store), [store.proposals, store.submitTimeRange, categoryVisualizationMode, store.votes]);
   const submitTimeDistribution = useMemo(() => getSubmitTimeDistribution(store), [store.proposals]);
   const avgVotingPowerDistribution = useMemo(() => getAvgVotingPowerDistribution(store), [store.validatorsWithDerivedData]);
   const participationRateDistribution = useMemo(() => getParticipationRateDistribution(store), [store.validatorsWithDerivedData, countNoVoteAsParticipation]);
@@ -142,14 +140,14 @@ export default function FilterPanel() {
     setSelectedTopics([])
     setInputValue('')
     setSearchTerm('')
-    setApprovalRateRange([0, 100])
+    setPolarizationScoreRange([0, 1])
     store.setSubmitTimeRange(store.submitTimeDynamicRange);
     setParticipationRateRange([0, 100])
     setVotingPowerDisplayMode('ratio');
-  }, [setSelectedCategories, setSelectedTopics, setSearchTerm, setApprovalRateRange, setParticipationRateRange, setVotingPowerDisplayMode, store])
+  }, [setSelectedCategories, setSelectedTopics, setSearchTerm, setPolarizationScoreRange, setParticipationRateRange, setVotingPowerDisplayMode, store])
 
   const chains = useMemo(() => getChains(), [getChains])
-  const filteredCategoryHierarchy = useMemo(() => getFilteredCategoryHierarchy(), [proposals, approvalRateRange, categoryVisualizationMode, getFilteredCategoryHierarchy, store.submitTimeRange]);
+  const filteredCategoryHierarchy = useMemo(() => getFilteredCategoryHierarchy(), [proposals, polarizationScoreRange, categoryVisualizationMode, getFilteredCategoryHierarchy, store.submitTimeRange, store.votes]);
 
   const handleCategoryMouseEnter = useCallback((categoryName: string) => setHoveredCategory(categoryName), [])
   const handleCategoryMouseLeave = useCallback(() => setHoveredCategory(null), [])
@@ -280,27 +278,17 @@ export default function FilterPanel() {
           </div>
           <div className="mb-4">
             <div className="flex justify-between items-center mb-2">
-              <label className="block text-sm font-medium text-gray-900">Yes Rate</label>
-              <label className="flex items-center space-x-2 text-xs text-gray-500 cursor-pointer">
-                <input
-                  type="checkbox"
-                  checked={excludeAbstainNoVote}
-                  onChange={(e) => setExcludeAbstainNoVote(e.target.checked)}
-                  className="form-checkbox h-3 w-3 text-blue-600 rounded focus:ring-blue-500"
-                />
-                <span>Exclude Abstain/No Vote</span>
-              </label>
+              <label className="block text-sm font-medium text-gray-900">Polarization Score</label>
             </div>
             <RangeSlider
               label=""
               min={0}
-              max={100}
-              values={approvalRateRange}
-              onChange={setApprovalRateRange}
-              formatValue={(v) => `${v}%`}
-              step={1}
-              color={VOTE_COLORS.YES}
-              distributionData={yesRateDistribution}
+              max={1}
+              values={polarizationScoreRange}
+              onChange={setPolarizationScoreRange}
+              formatValue={(v) => v.toFixed(2)}
+              step={0.01}
+              distributionData={polarizationScoreDistribution}
             />
           </div>
           <div>

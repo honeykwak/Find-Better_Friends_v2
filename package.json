@@ -12,6 +12,7 @@
     "@types/d3": "^7.4.3",
     "@types/papaparse": "^5.3.16",
     "@types/plotly.js": "^3.0.0",
+    "@types/reselect": "^2.0.27",
     "allotment": "^1.20.4",
     "d3": "^7.9.0",
     "framer-motion": "^12.23.9",
@@ -23,6 +24,7 @@
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-plotly.js": "^2.6.0",
+    "reselect": "^5.1.1",
     "zustand": "^5.0.5"
   },
   "devDependencies": {

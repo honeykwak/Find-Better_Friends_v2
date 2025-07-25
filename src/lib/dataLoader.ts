@@ -13,6 +13,7 @@ export interface Proposal {
   status: string;
   submit_time: string;
   final_tally_result: Record<string, number>;
+  polarizationScore?: number;
 }
 
 export interface Validator {
