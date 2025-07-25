@@ -20,38 +20,47 @@ function calculateOpinionDispersion(yes: number, no: number, veto: number, absta
 
 /**
  * Calculates a partial agreement score (Ai) between two votes.
- * This allows for nuanced scoring beyond simple match/mismatch.
  */
 function getAgreementScore(voteA: string, voteB: string, matchAbstainInSimilarity: boolean): number {
   if (voteA === voteB) {
-    // Matching votes are a full agreement, unless it's an uncounted abstain match
-    if (voteA === 'ABSTAIN' && !matchAbstainInSimilarity) {
-      return 0; // Explicitly not counting matching abstains
-    }
-    return 1.0; // Perfect match
+    if (voteA === 'ABSTAIN' && !matchAbstainInSimilarity) return 0.0;
+    return 1.0;
   }
-
-  // Handle cases involving Abstain as partial disagreement
-  if (voteA === 'ABSTAIN' || voteB === 'ABSTAIN') {
-    return 0.25; // Partial disagreement score for any non-matching abstain case
-  }
-
-  // All other non-matching votes are a full disagreement
+  if (voteA === 'ABSTAIN' || voteB === 'ABSTAIN') return 0.25;
   return 0.0;
+}
+
+/**
+ * Calculates a "Contrarian Bonus" if an agreement was on a minority opinion.
+ */
+function calculateContrarianBonus(voteOption: string, tally: { yes: number; no: number; veto: number; abstain: number }): number {
+  const MINORITY_THRESHOLD = 0.3; // Vote share must be below 30% to be a minority
+
+  const totalPower = tally.yes + tally.no + tally.veto + tally.abstain;
+  if (totalPower === 0) return 0;
+
+  let votePower = 0;
+  switch (voteOption) {
+    case 'YES': votePower = tally.yes; break;
+    case 'NO': votePower = tally.no; break;
+    case 'NO_WITH_VETO': votePower = tally.veto; break;
+    case 'ABSTAIN': votePower = tally.abstain; break;
+    default: return 0;
+  }
+
+  const voteShare = votePower / totalPower;
+
+  if (voteShare < MINORITY_THRESHOLD) {
+    // The rarer the vote, the higher the bonus
+    return (1 - voteShare);
+  }
+
+  return 0;
 }
 
 
 /**
- * Calculates similarity between two validators, with nuanced scoring and bug fixes.
- *
- * @param baseValidatorVotes - Votes from the base validator.
- * @param targetValidatorVotes - Votes from the target validator.
- * @param proposals - All relevant proposals.
- * @param powerTallies - A map of proposal_id to its power-based tally.
- * @param applyRecencyWeight - Whether to apply time-based weight.
- * @param matchAbstainInSimilarity - Whether to count matching 'ABSTAIN' as agreement.
- * @param mode - The calculation mode: 'common', 'base', or 'comprehensive'.
- * @returns A similarity score from 0 to 1.
+ * Calculates similarity between two validators, with nuanced scoring and contrarian bonus.
  */
 export function calculateSimilarity(
   baseValidatorVotes: Vote[],
@@ -81,9 +90,7 @@ export function calculateSimilarity(
     );
   }
 
-  if (comparisonUniverseProposals.length === 0) {
-    return 0;
-  }
+  if (comparisonUniverseProposals.length === 0) return 0;
 
   const sortedProposals = [...proposals].sort(
     (a, b) => new Date(Number(a.submit_time)).getTime() - new Date(Number(b.submit_time)).getTime()
@@ -100,13 +107,11 @@ export function calculateSimilarity(
     const voteA = baseVotesMap.get(proposalId) || 'NOT_VOTED';
     const voteB = targetVotesMap.get(proposalId) || 'NOT_VOTED';
 
-    // Skip proposals where neither voted
-    if (voteA === 'NOT_VOTED' && voteB === 'NOT_VOTED') {
-      return;
-    }
+    if (voteA === 'NOT_VOTED' && voteB === 'NOT_VOTED') return;
 
-    // 1. Opinion Dispersion Index (ODi) with Epsilon
     const tally = powerTallies.get(proposalId) || { yes: 0, no: 0, veto: 0, abstain: 0 };
+
+    // 1. Opinion Dispersion Index (ODi)
     const ODi = calculateOpinionDispersion(tally.yes, tally.no, tally.veto, tally.abstain);
 
     // 2. Recency Weight (Ti)
@@ -115,7 +120,14 @@ export function calculateSimilarity(
     // 3. Partial Agreement Score (Ai)
     const Ai = getAgreementScore(voteA, voteB, matchAbstainInSimilarity);
 
-    const weight = ODi * Ti;
+    // 4. Contrarian Bonus (Ci)
+    let Ci = 0;
+    if (Ai === 1.0) { // Bonus only applies on perfect agreement
+        Ci = calculateContrarianBonus(voteA, tally);
+    }
+
+    // 5. Final Weight Calculation
+    const weight = (ODi + Ci) * Ti;
     weightedAgreementSum += Ai * weight;
     totalWeightSum += weight;
   });
