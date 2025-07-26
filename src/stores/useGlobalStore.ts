@@ -206,25 +206,28 @@ export const useGlobalStore = create<GlobalStore>((set, get) => ({
         const sortedByPower = [...currentValidators].sort((a, b) => (b.avgPower || 0) - (a.avgPower || 0));
         
         let cumulativePower = 0;
-        const minRange = minPercentile / 100;
-        const maxRange = maxPercentile / 100;
+        const minRange = (100 - maxPercentile) / 100;
+        const maxRange = (100 - minPercentile) / 100;
 
         filteredByVotingPower = sortedByPower.filter(v => {
           const validatorPower = v.avgPower || 0;
           const startRatio = cumulativePower / totalPower;
           cumulativePower += validatorPower;
           const endRatio = cumulativePower / totalPower;
-
-          // The validator's power slice [startRatio, endRatio] must overlap with the selection [minRange, maxRange].
-          // Overlap exists if startRatio < maxRange AND endRatio > minRange.
           return startRatio < maxRange && endRatio > minRange;
         });
       }
     } else { // 'rank'
       const ranked = [...currentValidators].sort((a, b) => (b.avgPower || 0) - (a.avgPower || 0));
       const [minRank, maxRank] = votingPowerRange;
-      const safeMinRank = Math.max(1, minRank);
-      const safeMaxRank = Math.min(ranked.length, maxRank);
+      
+      const totalValidators = ranked.length;
+      const invertedMinRank = totalValidators - maxRank + 1;
+      const invertedMaxRank = totalValidators - minRank + 1;
+
+      const safeMinRank = Math.max(1, invertedMinRank);
+      const safeMaxRank = Math.min(totalValidators, invertedMaxRank);
+      
       filteredByVotingPower = ranked.slice(safeMinRank - 1, safeMaxRank);
     }
 

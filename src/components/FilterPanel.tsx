@@ -373,9 +373,11 @@ export default function FilterPanel() {
               onChange={setVotingPowerRange}
               formatValue={(v) => {
                 if (votingPowerDisplayMode === 'rank') {
-                  return `${v}`;
+                  const totalValidators = validators.length || 1;
+                  const displayRank = totalValidators - v + 1;
+                  return `${displayRank}`;
                 }
-                return `${v}%`;
+                return `${100 - v}%`;
               }}
               step={1}
               distributionData={[]}
