@@ -258,13 +258,13 @@ export default function FilterPanel() {
           <div className="flex items-center justify-between mb-3">
             <h3 className="text-lg font-semibold text-gray-900">Proposal</h3>
             <ToggleButtonGroup
-              options={[{value: 'votePower', label: 'Vote Power'}, {value: 'voteCount', label: 'Vote Count'}]}
+              options={[{value: 'votePower', label: 'Voting Power'}, {value: 'voteCount', label: 'Vote Count'}]}
               selectedValue={categoryVisualizationMode}
               onChange={(v) => setCategoryVisualizationMode(v as 'voteCount' | 'votePower')}
             />
           </div>
           <div className="mb-4">
-            <label className="block text-sm font-medium text-gray-900 mb-2">Submit Time</label>
+            <label className="block text-sm font-medium text-gray-900 mb-2">Submission Time</label>
             <RangeSlider
               label=""
               min={store.submitTimeDynamicRange[0]}
@@ -293,7 +293,7 @@ export default function FilterPanel() {
           </div>
           <div>
             <div className="flex items-center justify-between mb-2">
-              <h3 className="text-sm font-medium text-gray-900">Categories</h3>
+              <h3 className="text-sm font-medium text-gray-900">Proposal Type</h3>
             </div>
             <div className="space-y-3">
               {filteredCategoryHierarchy.map(category => (
@@ -417,7 +417,7 @@ export default function FilterPanel() {
                     onChange={(e) => store.setMatchAbstainInSimilarity(e.target.checked)}
                     className="form-checkbox h-3 w-3 text-blue-600 rounded"
                   />
-                  <span>Count matching abstentions</span>
+                  <span>Include abstentions in the similarity calculation</span>
                 </label>
               </div>
             </div>
