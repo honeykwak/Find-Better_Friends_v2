@@ -99,6 +99,7 @@ export default function FilterPanel() {
     selectedChain,
     searchTerm,
     polarizationScoreRange,
+    proposalAbstainRateRange,
     categoryVisualizationMode,
     validators,
     votingPowerDisplayMode,
@@ -110,6 +111,7 @@ export default function FilterPanel() {
     setSelectedCategories,
     setSelectedTopics,
     setPolarizationScoreRange,
+    setProposalAbstainRateRange,
     setVotingPowerDisplayMode,
     setVotingPowerRange,
     setSelectedChain,
@@ -289,6 +291,21 @@ export default function FilterPanel() {
               formatValue={(v) => v.toFixed(2)}
               step={0.01}
               distributionData={polarizationScoreDistribution}
+            />
+          </div>
+          <div className="mb-4">
+            <div className="flex justify-between items-center mb-2">
+              <label className="block text-sm font-medium text-gray-900">Abstain Rate</label>
+            </div>
+            <RangeSlider
+              label=""
+              min={0}
+              max={100}
+              values={proposalAbstainRateRange}
+              onChange={setProposalAbstainRateRange}
+              formatValue={(v) => v.toFixed(0) + '%'}
+              step={1}
+              distributionData={[]} // We will add distribution data later
             />
           </div>
           <div>

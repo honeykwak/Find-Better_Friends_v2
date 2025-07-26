@@ -48,6 +48,7 @@ interface GlobalStore {
   selectedTopics: string[]
   searchTerm: string;
   polarizationScoreRange: [number, number];
+  proposalAbstainRateRange: [number, number];
   submitTimeRange: [number, number];
   submitTimeDynamicRange: [number, number];
   
@@ -85,6 +86,7 @@ interface GlobalStore {
   toggleTopic: (topic: string) => void
   setSearchTerm: (term: string) => void
   setPolarizationScoreRange: (range: [number, number]) => void;
+  setProposalAbstainRateRange: (range: [number, number]) => void;
   setSubmitTimeRange: (range: [number, number]) => void;
   setParticipationRateRange: (range: [number, number]) => void;
   setVotingPowerDisplayMode: (mode: 'percentile' | 'rank') => void;
@@ -150,6 +152,7 @@ export const useGlobalStore = create<GlobalStore>((set, get) => ({
   selectedTopics: [],
   searchTerm: '',
   polarizationScoreRange: [0, 1],
+  proposalAbstainRateRange: [0, 100],
   submitTimeRange: [0, 0],
   submitTimeDynamicRange: [0, 0],
   participationRateRange: [0, 100],
@@ -559,6 +562,10 @@ export const useGlobalStore = create<GlobalStore>((set, get) => ({
     set({ polarizationScoreRange: range });
     get().recalculateValidatorMetrics();
   },
+  setProposalAbstainRateRange: (range: [number, number]) => {
+    set({ proposalAbstainRateRange: range });
+    get().recalculateValidatorMetrics();
+  },
   setSubmitTimeRange: (range: [number, number]) => {
     set({ submitTimeRange: range });
     get().recalculateValidatorMetrics();
@@ -650,7 +657,7 @@ export const useGlobalStore = create<GlobalStore>((set, get) => ({
   },
 
   getFilteredProposals: () => {
-    const { selectedTopics, votes, categoryVisualizationMode } = get();
+    const { selectedTopics, votes, categoryVisualizationMode, proposalAbstainRateRange } = get();
     const proposalsFilteredByScore = get().getProposalsFilteredByPolarization();
 
     const proposalsWithDistribution = proposalsFilteredByScore.map(p => {
@@ -686,11 +693,31 @@ export const useGlobalStore = create<GlobalStore>((set, get) => ({
           voteDistribution[key] = tally[voteOption as keyof typeof tally] || 0;
         }
       }
-      return { ...p, voteDistribution };
+
+      let abstainRate = 0;
+      if (categoryVisualizationMode === 'voteCount') {
+        const totalVotes = Object.values(voteDistribution).reduce((s, c) => s + c, 0);
+        if (totalVotes > 0) {
+          abstainRate = ((voteDistribution['ABSTAIN'] || 0) / totalVotes) * 100;
+        }
+      } else { // 'votePower'
+        const totalPower = Object.values(voteDistribution).reduce((sum, power) => sum + power, 0);
+        if (totalPower > 0) {
+          const abstainPower = voteDistribution['ABSTAIN'] || 0;
+          abstainRate = (abstainPower / totalPower) * 100;
+        }
+      }
+
+      return { ...p, voteDistribution, abstainRate };
     });
 
-    if (selectedTopics.length === 0) return proposalsWithDistribution;
-    return proposalsWithDistribution.filter(p => selectedTopics.includes(p.topic_v2_unique));
+    const filteredByAbstainRate = proposalsWithDistribution.filter(p => {
+        const rate = p.abstainRate;
+        return rate >= proposalAbstainRateRange[0] && rate <= proposalAbstainRateRange[1];
+    });
+
+    if (selectedTopics.length === 0) return filteredByAbstainRate;
+    return filteredByAbstainRate.filter(p => selectedTopics.includes(p.topic_v2_unique));
   },
 
   getChains: () => [
