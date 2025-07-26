@@ -108,6 +108,7 @@ export default function ValidatorHeatmap() {
     setValidatorSortKey,
     recalculateValidatorMetrics,
     highlightedValidator,
+    categoryVisualizationMode,
   } = useGlobalStore()
   
   const filteredValidators = useGlobalStore(state => state.filteredValidators);
@@ -199,7 +200,7 @@ export default function ValidatorHeatmap() {
       }));
 
     return { validators, proposals, votes };
-  }, [filteredValidators, getFilteredProposals, rawVotes, validatorSortKey, searchTerm]);
+  }, [filteredValidators, getFilteredProposals, rawVotes, validatorSortKey, searchTerm, categoryVisualizationMode]);
 
   // Main D3 rendering effect
   useEffect(() => {
@@ -302,7 +303,7 @@ export default function ValidatorHeatmap() {
       );
 
     setTimeout(() => setIsLoading(false), DURATION);
-  }, [heatmapData, config, zoom, loading, setSearchTerm, highlightedValidator]);
+  }, [heatmapData, config, zoom, loading, setSearchTerm, highlightedValidator, categoryVisualizationMode]);
 
   const handleZoomIn = () => setZoom(prev => Math.min(prev * 1.2, 5));
   const handleZoomOut = () => setZoom(prev => Math.max(prev / 1.2, 0.2));
