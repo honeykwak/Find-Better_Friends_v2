@@ -198,10 +198,28 @@ export const useGlobalStore = create<GlobalStore>((set, get) => ({
     let filteredByVotingPower: ValidatorWithDerivedData[];
     if (votingPowerDisplayMode === 'percentile') {
       const [minPercentile, maxPercentile] = votingPowerRange;
-      const sortedForPercentile = [...currentValidators].sort((a, b) => (a.avgPower || 0) - (b.avgPower || 0));
-      const minPower = getPercentilePower(minPercentile, sortedForPercentile);
-      const maxPower = getPercentilePower(maxPercentile, sortedForPercentile);
-      filteredByVotingPower = currentValidators.filter(v => (v.avgPower || 0) >= minPower && (v.avgPower || 0) <= maxPower);
+      const totalPower = currentValidators.reduce((sum, v) => sum + (v.avgPower || 0), 0);
+
+      if (totalPower === 0) {
+        filteredByVotingPower = currentValidators;
+      } else {
+        const sortedByPower = [...currentValidators].sort((a, b) => (b.avgPower || 0) - (a.avgPower || 0));
+        
+        let cumulativePower = 0;
+        const minRange = minPercentile / 100;
+        const maxRange = maxPercentile / 100;
+
+        filteredByVotingPower = sortedByPower.filter(v => {
+          const validatorPower = v.avgPower || 0;
+          const startRatio = cumulativePower / totalPower;
+          cumulativePower += validatorPower;
+          const endRatio = cumulativePower / totalPower;
+
+          // The validator's power slice [startRatio, endRatio] must overlap with the selection [minRange, maxRange].
+          // Overlap exists if startRatio < maxRange AND endRatio > minRange.
+          return startRatio < maxRange && endRatio > minRange;
+        });
+      }
     } else { // 'rank'
       const ranked = [...currentValidators].sort((a, b) => (b.avgPower || 0) - (a.avgPower || 0));
       const [minRank, maxRank] = votingPowerRange;
