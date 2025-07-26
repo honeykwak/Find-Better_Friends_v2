@@ -47,7 +47,7 @@ interface GlobalStore {
   selectedCategories: string[]
   selectedTopics: string[]
   searchTerm: string;
-  polarizationScoreRange: [number, number];
+  conflictIndexRange: [number, number];
   proposalAbstainRateRange: [number, number];
   submitTimeRange: [number, number];
   submitTimeDynamicRange: [number, number];
@@ -82,7 +82,7 @@ interface GlobalStore {
   toggleCategory: (category: string) => void
   toggleTopic: (topic: string) => void
   setSearchTerm: (term: string) => void
-  setPolarizationScoreRange: (range: [number, number]) => void;
+  setConflictIndexRange: (range: [number, number]) => void;
   setProposalAbstainRateRange: (range: [number, number]) => void;
   setSubmitTimeRange: (range: [number, number]) => void;
   setParticipationRateRange: (range: [number, number]) => void;
@@ -98,7 +98,7 @@ interface GlobalStore {
   getFilteredProposals: () => (Proposal & { voteDistribution?: { [key: string]: number } })[];
 }
 
-const calculatePolarizationFromCounts = (yes: number, no: number, veto: number): number => {
+const calculateConflictIndexFromCounts = (yes: number, no: number, veto: number): number => {
   const total = yes + no + veto;
   if (total === 0) return 0;
   const yesRatio = yes / total;
@@ -146,7 +146,7 @@ export const useGlobalStore = create<GlobalStore>((set, get) => ({
   selectedCategories: [],
   selectedTopics: [],
   searchTerm: '',
-  polarizationScoreRange: [0, 1],
+  conflictIndexRange: [0, 1],
   proposalAbstainRateRange: [0, 100],
   submitTimeRange: [0, 0],
   submitTimeDynamicRange: [0, 0],
@@ -298,7 +298,7 @@ export const useGlobalStore = create<GlobalStore>((set, get) => ({
         selectedCategories: [],
         selectedTopics: [],
         searchTerm: '',
-        polarizationScoreRange: [0, 1],
+        conflictIndexRange: [0, 1],
         submitTimeRange: dynamicRange,
         submitTimeDynamicRange: dynamicRange,
         participationRateRange: [0, 100],
@@ -563,8 +563,8 @@ export const useGlobalStore = create<GlobalStore>((set, get) => ({
     }
     get().recalculateValidatorMetrics();
   },
-  setPolarizationScoreRange: (range: [number, number]) => {
-    set({ polarizationScoreRange: range });
+  setConflictIndexRange: (range: [number, number]) => {
+    set({ conflictIndexRange: range });
     get().recalculateValidatorMetrics();
   },
   setProposalAbstainRateRange: (range: [number, number]) => {
@@ -632,7 +632,7 @@ export const useGlobalStore = create<GlobalStore>((set, get) => ({
       selectedCategories: [],
       selectedTopics: [],
       searchTerm: '',
-      polarizationScoreRange: [0, 1],
+      conflictIndexRange: [0, 1],
       proposalAbstainRateRange: [0, 100],
       submitTimeRange: submitTimeDynamicRange,
       participationRateRange: [0, 100],
@@ -659,10 +659,10 @@ export const useGlobalStore = create<GlobalStore>((set, get) => ({
     });
   },
 
-  getProposalsFilteredByPolarization: () => {
-    const { polarizationScoreRange, votes, categoryVisualizationMode } = get();
+  getProposalsFilteredByConflictIndex: () => {
+    const { conflictIndexRange, votes, categoryVisualizationMode } = get();
     const proposals = get().getProposalsFilteredByTime();
-    const [minScore, maxScore] = polarizationScoreRange;
+    const [minScore, maxScore] = conflictIndexRange;
 
     const powerTallies = getPowerBasedTally(get());
 
@@ -670,11 +670,11 @@ export const useGlobalStore = create<GlobalStore>((set, get) => ({
       let score = 0;
       if (categoryVisualizationMode === 'voteCount') {
         const { yes_count = 0, no_count = 0, no_with_veto_count = 0 } = p.final_tally_result || {};
-        score = calculatePolarizationFromCounts(yes_count, no_count, no_with_veto_count);
+        score = calculateConflictIndexFromCounts(yes_count, no_count, no_with_veto_count);
       } else { // 'votePower'
         const tally = powerTallies.get(p.proposal_id);
         if (tally) {
-          score = calculatePolarizationFromCounts(tally.yes, tally.no, tally.veto);
+          score = calculateConflictIndexFromCounts(tally.yes, tally.no, tally.veto);
         }
       }
       return score >= minScore && score <= maxScore;
@@ -683,7 +683,7 @@ export const useGlobalStore = create<GlobalStore>((set, get) => ({
 
   getFilteredProposals: () => {
     const { selectedTopics, votes, categoryVisualizationMode, proposalAbstainRateRange } = get();
-    const proposalsFilteredByScore = get().getProposalsFilteredByPolarization();
+    const proposalsFilteredByScore = get().getProposalsFilteredByConflictIndex();
 
     const proposalsWithDistribution = proposalsFilteredByScore.map(p => {
       let voteDistribution: { [key: string]: number } = {};
@@ -828,7 +828,7 @@ const getPowerBasedTally = createSelector(
 );
 
 // Standalone selectors for data distribution
-export const getPolarizationScoreDistribution = (state: GlobalStore) => {
+export const getConflictIndexDistribution = (state: GlobalStore) => {
   const { getProposalsFilteredByTime, categoryVisualizationMode } = state;
   const proposals = getProposalsFilteredByTime();
   const powerTallies = getPowerBasedTally(state);
@@ -836,11 +836,11 @@ export const getPolarizationScoreDistribution = (state: GlobalStore) => {
   return proposals.map(p => {
     if (categoryVisualizationMode === 'voteCount') {
       const { yes_count = 0, no_count = 0, no_with_veto_count = 0 } = p.final_tally_result || {};
-      return calculatePolarizationFromCounts(yes_count, no_count, no_with_veto_count);
+      return calculateConflictIndexFromCounts(yes_count, no_count, no_with_veto_count);
     } else { // 'votePower'
       const tally = powerTallies.get(p.proposal_id);
       if (!tally) return 0;
-      return calculatePolarizationFromCounts(tally.yes, tally.no, tally.veto);
+      return calculateConflictIndexFromCounts(tally.yes, tally.no, tally.veto);
     }
   });
 };

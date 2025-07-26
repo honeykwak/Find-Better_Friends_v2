@@ -4,7 +4,7 @@ import { useState, useRef, useEffect, useMemo, useCallback } from 'react'
 import { Search, RotateCcw, X } from 'lucide-react'
 import { 
   useGlobalStore, 
-  getPolarizationScoreDistribution, 
+  getConflictIndexDistribution, 
   getSubmitTimeDistribution,
   getAvgVotingPowerDistribution,
   getParticipationRateDistribution,
@@ -98,7 +98,7 @@ export default function FilterPanel() {
     selectedTopics,
     selectedChain,
     searchTerm,
-    polarizationScoreRange,
+    conflictIndexRange,
     proposalAbstainRateRange,
     categoryVisualizationMode,
     validators,
@@ -109,7 +109,7 @@ export default function FilterPanel() {
     participationRateDynamicRange,
     setSelectedCategories,
     setSelectedTopics,
-    setPolarizationScoreRange,
+    setConflictIndexRange,
     setProposalAbstainRateRange,
     setVotingPowerDisplayMode,
     setVotingPowerRange,
@@ -130,7 +130,7 @@ export default function FilterPanel() {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false)
   const searchRef = useRef<HTMLDivElement>(null)
 
-  const polarizationScoreDistribution = useMemo(() => getPolarizationScoreDistribution(store), [store.proposals, store.submitTimeRange, categoryVisualizationMode, store.votes]);
+  const conflictIndexDistribution = useMemo(() => getConflictIndexDistribution(store), [store.proposals, store.submitTimeRange, categoryVisualizationMode, store.votes]);
   const submitTimeDistribution = useMemo(() => getSubmitTimeDistribution(store), [store.proposals]);
   const avgVotingPowerDistribution = useMemo(() => getAvgVotingPowerDistribution(store), [store.validatorsWithDerivedData]);
   const participationRateDistribution = useMemo(() => getParticipationRateDistribution(store), [store.validatorsWithDerivedData]);
@@ -141,7 +141,7 @@ export default function FilterPanel() {
   }, [store])
 
   const chains = useMemo(() => getChains(), [getChains])
-  const filteredCategoryHierarchy = useMemo(() => getFilteredCategoryHierarchy(), [proposals, polarizationScoreRange, proposalAbstainRateRange, categoryVisualizationMode, getFilteredCategoryHierarchy, store.submitTimeRange, store.votes]);
+  const filteredCategoryHierarchy = useMemo(() => getFilteredCategoryHierarchy(), [proposals, conflictIndexRange, proposalAbstainRateRange, categoryVisualizationMode, getFilteredCategoryHierarchy, store.submitTimeRange, store.votes]);
 
   const handleCategoryMouseEnter = useCallback((categoryName: string) => setHoveredCategory(categoryName), [])
   const handleCategoryMouseLeave = useCallback(() => setHoveredCategory(null), [])
@@ -272,17 +272,17 @@ export default function FilterPanel() {
           </div>
           <div className="mb-4">
             <div className="flex justify-between items-center mb-2">
-              <label className="block text-sm font-medium text-gray-900">Polarization Score</label>
+              <label className="block text-sm font-medium text-gray-900">Conflict Index</label>
             </div>
             <RangeSlider
               label=""
               min={0}
               max={1}
-              values={polarizationScoreRange}
-              onChange={setPolarizationScoreRange}
+              values={conflictIndexRange}
+              onChange={setConflictIndexRange}
               formatValue={(v) => v.toFixed(2)}
               step={0.01}
-              distributionData={polarizationScoreDistribution}
+              distributionData={conflictIndexDistribution}
             />
           </div>
           <div className="mb-4">
