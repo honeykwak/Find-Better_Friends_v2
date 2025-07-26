@@ -752,25 +752,14 @@ export const useGlobalStore = create<GlobalStore>((set, get) => ({
   ],
 
   getFilteredCategoryHierarchy: () => {
-    const { votes, categoryVisualizationMode } = get();
-    const proposalsFilteredByScore = get().getProposalsFilteredByPolarization();
+    const filteredProposals = get().getFilteredProposals();
 
     const categoryStats: { [name: string]: {
         count: number; passed: number; voteDistribution: { [key: string]: number };
         topics: { [name: string]: { count: number; passed: number; voteDistribution: { [key: string]: number }; original_topic: string } };
     } } = {};
 
-    const votesByProposalId = new Map<string, Vote[]>();
-    if (categoryVisualizationMode === 'votePower') {
-        for (const vote of votes) {
-            if (!votesByProposalId.has(vote.proposal_id)) {
-                votesByProposalId.set(vote.proposal_id, []);
-            }
-            votesByProposalId.get(vote.proposal_id)!.push(vote);
-        }
-    }
-
-    for (const p of proposalsFilteredByScore) {
+    for (const p of filteredProposals) {
         const categoryName = p.type_v2;
         const topicName = p.topic_v2_unique;
         const topicDisplayName = p.topic_v2_display;
@@ -786,33 +775,12 @@ export const useGlobalStore = create<GlobalStore>((set, get) => ({
             categoryStats[categoryName].passed++;
             categoryStats[categoryName].topics[topicName].passed++;
         }
-
-        if (categoryVisualizationMode === 'votePower') {
-            const proposalVotes = votesByProposalId.get(p.proposal_id) || [];
-            for (const vote of proposalVotes) {
-                let key = vote.vote_option.toUpperCase();
-                if (key.includes('YES')) key = 'YES';
-                else if (key.includes('NO_WITH_VETO')) key = 'NO_WITH_VETO';
-                else if (key.includes('NO_VOTE')) key = 'NO_VOTE';
-                else if (key.includes('NO')) key = 'NO';
-                else if (key.includes('ABSTAIN')) key = 'ABSTAIN';
-                else continue;
-
-                const power = typeof vote.voting_power === 'string' ? parseFloat(vote.voting_power) : vote.voting_power;
-                if (!isNaN(power)) {
-                    categoryStats[categoryName].voteDistribution[key] = (categoryStats[categoryName].voteDistribution[key] || 0) + power;
-                    categoryStats[categoryName].topics[topicName].voteDistribution[key] = (categoryStats[categoryName].topics[topicName].voteDistribution[key] || 0) + power;
-                }
-            }
-        } else {
-            const tally = p.final_tally_result || {};
-            for (const voteOption in tally) {
-                const key = voteOption.replace('_count', '').toUpperCase();
-                const voteCount = tally[voteOption as keyof typeof tally] || 0;
-                
-                categoryStats[categoryName].voteDistribution[key] = (categoryStats[categoryName].voteDistribution[key] || 0) + voteCount;
-                categoryStats[categoryName].topics[topicName].voteDistribution[key] = (categoryStats[categoryName].topics[topicName].voteDistribution[key] || 0) + voteCount;
-            }
+        
+        const voteDistribution = (p as any).voteDistribution || {};
+        for (const key in voteDistribution) {
+            const value = voteDistribution[key];
+            categoryStats[categoryName].voteDistribution[key] = (categoryStats[categoryName].voteDistribution[key] || 0) + value;
+            categoryStats[categoryName].topics[topicName].voteDistribution[key] = (categoryStats[categoryName].topics[topicName].voteDistribution[key] || 0) + value;
         }
     }
 
