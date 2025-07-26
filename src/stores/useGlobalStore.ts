@@ -327,6 +327,34 @@ export const useGlobalStore = create<GlobalStore>((set, get) => ({
 
     const filteredProposals = getFilteredProposals();
     
+    // --- OPTIMIZATION ---
+    // Pre-calculate the denominator for the case when 'considerActivePeriodOnly' is OFF.
+    // This avoids re-calculating the same list for every validator inside the loop.
+    let proposalsForRate: Proposal[] = [];
+    if (!considerActivePeriodOnly) {
+      const proposalVoteOptions = new Map<string, Set<string>>();
+      const filteredProposalIds = new Set(filteredProposals.map(p => p.proposal_id));
+
+      for (const vote of votes) {
+        if (filteredProposalIds.has(vote.proposal_id)) {
+          if (!proposalVoteOptions.has(vote.proposal_id)) {
+            proposalVoteOptions.set(vote.proposal_id, new Set());
+          }
+          proposalVoteOptions.get(vote.proposal_id)!.add(vote.vote_option);
+        }
+      }
+
+      const proposalsWithNoMeaningfulVotes = new Set<string>();
+      for (const proposal of filteredProposals) {
+        const options = proposalVoteOptions.get(proposal.proposal_id);
+        if (!options || (options.size === 1 && options.has('NO_VOTE'))) {
+          proposalsWithNoMeaningfulVotes.add(proposal.proposal_id);
+        }
+      }
+      proposalsForRate = filteredProposals.filter(p => !proposalsWithNoMeaningfulVotes.has(p.proposal_id));
+    }
+    // --- END OPTIMIZATION ---
+
     const proposalIdToTimeMap = new Map<string, number>();
     filteredProposals.forEach(p => {
       if (p.submit_time) {
@@ -382,10 +410,13 @@ export const useGlobalStore = create<GlobalStore>((set, get) => ({
             }
           }
         }
-        participationRate = relevantProposalCount > 0 ? (timedParticipationCount / relevantProposalCount) * 100 : 0;
+        const rate = relevantProposalCount > 0 ? (timedParticipationCount / relevantProposalCount) * 100 : 0;
+        participationRate = Math.min(100, rate);
       } else {
         const participationCount = new Set(validatorVotesInFilter.filter(v => v.vote_option !== 'NO_VOTE').map(v => v.proposal_id)).size;
-        participationRate = filteredProposals.length > 0 ? (participationCount / filteredProposals.length) * 100 : 0;
+        // Use the pre-calculated 'proposalsForRate' which is much more efficient.
+        const rate = proposalsForRate.length > 0 ? (participationCount / proposalsForRate.length) * 100 : 0;
+        participationRate = Math.min(100, rate);
       }
       
       return {
