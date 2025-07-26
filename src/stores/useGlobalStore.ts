@@ -491,6 +491,12 @@ export const useGlobalStore = create<GlobalStore>((set, get) => ({
       maxAvgPower = Math.max(maxAvgPower, v.avgPower || -Infinity);
     });
 
+    // In edge cases where no validators match, minRate can be > maxRate. Reset to a safe default.
+    if (minRate > maxRate) {
+      minRate = 0;
+      maxRate = 100;
+    }
+
     const newAvgPowerDynamicRange: [number, number] = [minAvgPower === Infinity ? 0 : minAvgPower, maxAvgPower === -Infinity ? 0 : maxAvgPower];
     
     const { votingPowerDisplayMode } = get();
