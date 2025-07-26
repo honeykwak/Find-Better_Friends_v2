@@ -66,7 +66,6 @@ interface GlobalStore {
   comparisonScope: ComparisonScope;
 
   validatorSortKey: ValidatorSortKey;
-  countNoVoteAsParticipation: boolean;
   categoryVisualizationMode: 'voteCount' | 'votePower'
   
   loading: boolean
@@ -95,7 +94,6 @@ interface GlobalStore {
   setWindowSize: (size: { width: number; height: number }) => void;
   setHighlightedValidator: (moniker: string | null) => void;
   setValidatorSortKey: (key: ValidatorSortKey) => void;
-  setCountNoVoteAsParticipation: (count: boolean) => void;
   setConsiderActivePeriodOnly: (activeOnly: boolean) => void;
   setApplyRecencyWeight: (value: boolean) => void;
   setMatchAbstainInSimilarity: (value: boolean) => void;
@@ -166,7 +164,6 @@ export const useGlobalStore = create<GlobalStore>((set, get) => ({
   comparisonScope: 'comprehensive',
   categoryVisualizationMode: 'votePower',
   validatorSortKey: 'votingPower',
-  countNoVoteAsParticipation: true,
   loading: true,
   error: null,
   windowSize: { width: 0, height: 0 },
@@ -322,7 +319,7 @@ export const useGlobalStore = create<GlobalStore>((set, get) => ({
   },
 
   recalculateValidatorMetrics: () => {
-    const { proposals, validators, votes, getFilteredProposals, countNoVoteAsParticipation, considerActivePeriodOnly, searchTerm, validatorSortKey, applyRecencyWeight, matchAbstainInSimilarity, comparisonScope } = get();
+    const { proposals, validators, votes, getFilteredProposals, considerActivePeriodOnly, searchTerm, validatorSortKey, applyRecencyWeight, matchAbstainInSimilarity, comparisonScope } = get();
     if (!proposals.length || !validators.length) {
       set({ 
         validatorsWithDerivedData: [], 
@@ -375,12 +372,12 @@ export const useGlobalStore = create<GlobalStore>((set, get) => ({
         }
       });
 
-      const voteCount = new Set(validatorVotesInFilter.filter(v => v.vote_option !== 'NO_VOTE' || countNoVoteAsParticipation).map(v => v.proposal_id)).size;
+      const voteCount = new Set(validatorVotesInFilter.filter(v => v.vote_option !== 'NO_VOTE').map(v => v.proposal_id)).size;
 
       let participationRate;
       if (considerActivePeriodOnly) {
         const proposalsWithTime = filteredProposals.filter(p => proposalIdToTimeMap.has(p.proposal_id));
-        const timedParticipationCount = new Set(validatorVotesInFilter.map(v => v.proposal_id)).size;
+        const timedParticipationCount = new Set(validatorVotesInFilter.filter(v => v.vote_option !== 'NO_VOTE').map(v => v.proposal_id)).size;
 
         let relevantProposalCount = 0;
         if (firstVoteTime !== Infinity) {
@@ -393,24 +390,8 @@ export const useGlobalStore = create<GlobalStore>((set, get) => ({
         }
         participationRate = relevantProposalCount > 0 ? (timedParticipationCount / relevantProposalCount) * 100 : 0;
       } else {
-        let proposalsForRate = [...filteredProposals];
-        if (!countNoVoteAsParticipation) {
-            const proposalsWithNoMeaningfulVotes = new Set<string>();
-            const proposalVoteOptions = new Map<string, Set<string>>();
-            for (const vote of votes) {
-                if (new Set(filteredProposals.map(p => p.proposal_id)).has(vote.proposal_id)) {
-                    if (!proposalVoteOptions.has(vote.proposal_id)) proposalVoteOptions.set(vote.proposal_id, new Set());
-                    proposalVoteOptions.get(vote.proposal_id)!.add(vote.vote_option);
-                }
-            }
-            for (const proposal of proposalsForRate) {
-                const options = proposalVoteOptions.get(proposal.proposal_id);
-                if (!options || (options.size === 1 && options.has('NO_VOTE'))) proposalsWithNoMeaningfulVotes.add(proposal.proposal_id);
-            }
-            proposalsForRate = proposalsForRate.filter(p => !proposalsWithNoMeaningfulVotes.has(p.proposal_id));
-        }
-        const participationCount = new Set(validatorVotesInFilter.filter(v => v.vote_option !== 'NO_VOTE' || countNoVoteAsParticipation).map(v => v.proposal_id)).size;
-        participationRate = proposalsForRate.length > 0 ? (participationCount / proposalsForRate.length) * 100 : 0;
+        const participationCount = new Set(validatorVotesInFilter.filter(v => v.vote_option !== 'NO_VOTE').map(v => v.proposal_id)).size;
+        participationRate = filteredProposals.length > 0 ? (participationCount / filteredProposals.length) * 100 : 0;
       }
       
       return {

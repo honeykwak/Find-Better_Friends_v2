@@ -107,7 +107,6 @@ export default function FilterPanel() {
     avgVotingPowerDynamicRange,
     participationRateRange,
     participationRateDynamicRange,
-    countNoVoteAsParticipation,
     setSelectedCategories,
     setSelectedTopics,
     setPolarizationScoreRange,
@@ -121,7 +120,6 @@ export default function FilterPanel() {
     getFilteredCategoryHierarchy,
     proposals,
     setParticipationRateRange,
-    setCountNoVoteAsParticipation,
   } = store;
 
   const [hoveredCategory, setHoveredCategory] = useState<string | null>(null)
@@ -135,7 +133,7 @@ export default function FilterPanel() {
   const polarizationScoreDistribution = useMemo(() => getPolarizationScoreDistribution(store), [store.proposals, store.submitTimeRange, categoryVisualizationMode, store.votes]);
   const submitTimeDistribution = useMemo(() => getSubmitTimeDistribution(store), [store.proposals]);
   const avgVotingPowerDistribution = useMemo(() => getAvgVotingPowerDistribution(store), [store.validatorsWithDerivedData]);
-  const participationRateDistribution = useMemo(() => getParticipationRateDistribution(store), [store.validatorsWithDerivedData, countNoVoteAsParticipation]);
+  const participationRateDistribution = useMemo(() => getParticipationRateDistribution(store), [store.validatorsWithDerivedData]);
 
   const resetFilters = useCallback(() => {
     setSelectedCategories([])
@@ -443,15 +441,6 @@ export default function FilterPanel() {
             <div className="flex justify-between items-center mb-2">
               <label className="block text-sm font-medium text-gray-900">Participation Rate</label>
               <div className="flex flex-col space-y-1">
-                <label className="flex items-center space-x-2 text-xs text-gray-500 cursor-pointer">
-                  <input
-                    type="checkbox"
-                    checked={countNoVoteAsParticipation}
-                    onChange={(e) => setCountNoVoteAsParticipation(e.target.checked)}
-                    className="form-checkbox h-3 w-3 text-blue-600 rounded"
-                  />
-                  <span>Include 'NO_VOTE'</span>
-                </label>
                 <label className="flex items-center space-x-2 text-xs text-gray-500 cursor-pointer">
                   <input
                     type="checkbox"
