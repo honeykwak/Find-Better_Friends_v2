@@ -136,15 +136,9 @@ export default function FilterPanel() {
   const participationRateDistribution = useMemo(() => getParticipationRateDistribution(store), [store.validatorsWithDerivedData]);
 
   const resetFilters = useCallback(() => {
-    setSelectedCategories([])
-    setSelectedTopics([])
-    setInputValue('')
-    setSearchTerm('')
-    setPolarizationScoreRange([0, 1])
-    store.setSubmitTimeRange(store.submitTimeDynamicRange);
-    setParticipationRateRange([0, 100])
-    setVotingPowerDisplayMode('ratio');
-  }, [setSelectedCategories, setSelectedTopics, setSearchTerm, setPolarizationScoreRange, setParticipationRateRange, setVotingPowerDisplayMode, store])
+    store.resetFilters();
+    setInputValue('');
+  }, [store])
 
   const chains = useMemo(() => getChains(), [getChains])
   const filteredCategoryHierarchy = useMemo(() => getFilteredCategoryHierarchy(), [proposals, polarizationScoreRange, categoryVisualizationMode, getFilteredCategoryHierarchy, store.submitTimeRange, store.votes]);

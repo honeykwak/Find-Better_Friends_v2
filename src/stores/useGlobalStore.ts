@@ -94,6 +94,7 @@ interface GlobalStore {
   setValidatorSortKey: (key: ValidatorSortKey) => void;
   setConsiderActivePeriodOnly: (activeOnly: boolean) => void;
   setMatchAbstainInSimilarity: (value: boolean) => void;
+  resetFilters: () => void;
   getFilteredProposals: () => (Proposal & { voteDistribution?: { [key: string]: number } })[];
 }
 
@@ -622,6 +623,26 @@ export const useGlobalStore = create<GlobalStore>((set, get) => ({
   },
   setComparisonScope: (scope: ComparisonScope) => {
     set({ comparisonScope: scope });
+    get().recalculateValidatorMetrics();
+  },
+
+  resetFilters: () => {
+    const { submitTimeDynamicRange, validatorsWithDerivedData } = get();
+    set({
+      selectedCategories: [],
+      selectedTopics: [],
+      searchTerm: '',
+      polarizationScoreRange: [0, 1],
+      proposalAbstainRateRange: [0, 100],
+      submitTimeRange: submitTimeDynamicRange,
+      participationRateRange: [0, 100],
+      votingPowerDisplayMode: 'percentile',
+      votingPowerRange: [0, 100],
+      considerActivePeriodOnly: false,
+      matchAbstainInSimilarity: false,
+      categoryVisualizationMode: 'votePower',
+      validatorSortKey: 'votingPower',
+    });
     get().recalculateValidatorMetrics();
   },
 
