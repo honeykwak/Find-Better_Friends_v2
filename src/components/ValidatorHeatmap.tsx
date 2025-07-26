@@ -244,7 +244,10 @@ export default function ValidatorHeatmap() {
 
     const mergedValidatorGroups = validatorGroupsEnter.merge(validatorGroups as any);
     mergedValidatorGroups.transition().duration(DURATION).attr('transform', (d: any) => `translate(0, ${d.index * cellHeight})`).style('opacity', 1);
-    mergedValidatorGroups.select('.validator-row-bg').transition().duration(DURATION).attr('fill', (d: any) => d.moniker === highlightedValidator ? 'rgba(252, 211, 77, 0.3)' : 'transparent');
+    
+    // Set initial background color without transition
+    mergedValidatorGroups.select('.validator-row-bg').attr('fill', (d: any) => d.moniker === highlightedValidator ? 'rgba(252, 211, 77, 0.3)' : 'transparent');
+
     mergedValidatorGroups.select('.validator-label').text((d: any) => d.displayName.slice(0, 35)).style('font-weight', (d: any) => (searchTerm && d.moniker === searchTerm) ? 'bold' : 'normal')
       .style('fill', (d: any) => {
         if (searchTerm && d.moniker === searchTerm) return d.isPinnedAndFilteredOut ? 'orange' : 'blue';
@@ -303,7 +306,18 @@ export default function ValidatorHeatmap() {
       );
 
     setTimeout(() => setIsLoading(false), DURATION);
-  }, [heatmapData, config, zoom, loading, setSearchTerm, highlightedValidator, categoryVisualizationMode]);
+  }, [heatmapData, config, zoom, loading, setSearchTerm, categoryVisualizationMode]);
+
+  // Effect for handling validator highlighting separately for performance
+  useEffect(() => {
+    if (!svgRef.current) return;
+    const DURATION = 200;
+    const svg = d3.select(svgRef.current);
+
+    svg.selectAll('.validator-row-bg')
+      .transition().duration(DURATION)
+      .attr('fill', (d: any) => d.moniker === highlightedValidator ? 'rgba(252, 211, 77, 0.3)' : 'transparent');
+  }, [highlightedValidator]);
 
   const handleZoomIn = () => setZoom(prev => Math.min(prev * 1.2, 5));
   const handleZoomOut = () => setZoom(prev => Math.max(prev / 1.2, 0.2));
