@@ -104,11 +104,9 @@ export default function ResearchClient({ initialData }: ResearchClientProps) {
                   </div>
                 </div>
               </Allotment.Pane>
-              {searchTerm && (
-                <Allotment.Pane preferredSize="30%">
-                  <BubbleHeap />
-                </Allotment.Pane>
-              )}
+              <Allotment.Pane preferredSize="30%">
+                <BubbleHeap />
+              </Allotment.Pane>
             </Allotment>
           </Allotment.Pane>
         </Allotment>

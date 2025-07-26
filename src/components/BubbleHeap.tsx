@@ -204,21 +204,40 @@ export default function BubbleHeap() {
     <div className="w-full h-full bg-white border-l border-gray-200 flex flex-col">
       <div className="p-4 border-b border-gray-200 bg-gray-50">
         <h3 className="text-lg font-semibold text-gray-800">
-          Similarity with: <span className="text-blue-600">{searchTerm}</span>
+          {searchTerm ? (
+            <>Similarity with: <span className="text-blue-600">{searchTerm}</span></>
+          ) : (
+            "Validator Overview"
+          )}
         </h3>
       </div>
       <div ref={containerRef} className="flex-1 relative overflow-hidden">
         <svg ref={svgRef}></svg>
         <AnimatePresence>
-          {simulationData.length <= 1 && searchTerm && (
+          {!searchTerm ? (
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -20 }}
               className="absolute inset-0 flex items-center justify-center"
             >
-              <p className="text-gray-500 bg-white p-4 rounded-lg shadow-md">No other validators to compare.</p>
+              <div className="text-center p-4">
+                <p className="text-gray-500 bg-gray-50 p-4 rounded-lg shadow-sm">
+                  Select a validator from the heatmap or filter panel<br/>to see their similarity with others.
+                </p>
+              </div>
             </motion.div>
+          ) : (
+            simulationData.length <= 1 && (
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, y: -20 }}
+                className="absolute inset-0 flex items-center justify-center"
+              >
+                <p className="text-gray-500 bg-white p-4 rounded-lg shadow-md">No other validators to compare.</p>
+              </motion.div>
+            )
           )}
         </AnimatePresence>
       </div>
