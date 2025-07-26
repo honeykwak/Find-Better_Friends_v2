@@ -61,9 +61,7 @@ interface GlobalStore {
   considerActivePeriodOnly: boolean;
 
   // Similarity options
-  applyRecencyWeight: boolean;
   matchAbstainInSimilarity: boolean;
-  comparisonScope: ComparisonScope;
 
   validatorSortKey: ValidatorSortKey;
   categoryVisualizationMode: 'voteCount' | 'votePower'
@@ -95,9 +93,7 @@ interface GlobalStore {
   setHighlightedValidator: (moniker: string | null) => void;
   setValidatorSortKey: (key: ValidatorSortKey) => void;
   setConsiderActivePeriodOnly: (activeOnly: boolean) => void;
-  setApplyRecencyWeight: (value: boolean) => void;
   setMatchAbstainInSimilarity: (value: boolean) => void;
-  setComparisonScope: (scope: ComparisonScope) => void;
   getFilteredProposals: () => (Proposal & { voteDistribution?: { [key: string]: number } })[];
 }
 
@@ -159,9 +155,7 @@ export const useGlobalStore = create<GlobalStore>((set, get) => ({
   votingPowerRange: [0, 100],
   avgVotingPowerDynamicRange: [0, 1],
   considerActivePeriodOnly: false,
-  applyRecencyWeight: false,
   matchAbstainInSimilarity: false,
-  comparisonScope: 'comprehensive',
   categoryVisualizationMode: 'votePower',
   validatorSortKey: 'votingPower',
   loading: true,
@@ -319,7 +313,7 @@ export const useGlobalStore = create<GlobalStore>((set, get) => ({
   },
 
   recalculateValidatorMetrics: () => {
-    const { proposals, validators, votes, getFilteredProposals, considerActivePeriodOnly, searchTerm, validatorSortKey, applyRecencyWeight, matchAbstainInSimilarity, comparisonScope } = get();
+    const { proposals, validators, votes, getFilteredProposals, considerActivePeriodOnly, searchTerm, validatorSortKey, matchAbstainInSimilarity } = get();
     if (!proposals.length || !validators.length) {
       set({ 
         validatorsWithDerivedData: [], 
@@ -446,9 +440,7 @@ export const useGlobalStore = create<GlobalStore>((set, get) => ({
               validatorVotes, 
               filteredProposals,
               getPowerBasedTally(get()),
-              applyRecencyWeight,
-              matchAbstainInSimilarity,
-              comparisonScope
+              matchAbstainInSimilarity
             );
             v.similarity = similarity;
             newSimilarityScores.set(v.moniker, similarity);

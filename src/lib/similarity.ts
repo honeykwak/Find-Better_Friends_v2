@@ -67,28 +67,15 @@ export function calculateSimilarity(
   targetValidatorVotes: Vote[],
   proposals: Proposal[],
   powerTallies: Map<string, { yes: number; no: number; veto: number; abstain: number }>,
-  applyRecencyWeight: boolean,
-  matchAbstainInSimilarity: boolean,
-  comparisonScope: 'common' | 'base' | 'comprehensive' = 'comprehensive'
+  matchAbstainInSimilarity: boolean
 ): number {
   const baseVotesMap = new Map(baseValidatorVotes.map(v => [v.proposal_id, v.vote_option]));
   const targetVotesMap = new Map(targetValidatorVotes.map(v => [v.proposal_id, v.vote_option]));
 
-  let comparisonUniverseProposals: Proposal[];
-
-  if (mode === 'common') {
-    comparisonUniverseProposals = proposals.filter(p => 
-      baseVotesMap.has(p.proposal_id) && targetVotesMap.has(p.proposal_id)
-    );
-  } else if (mode === 'base') {
-    comparisonUniverseProposals = proposals.filter(p => 
-      baseVotesMap.has(p.proposal_id)
-    );
-  } else { // 'comprehensive'
-    comparisonUniverseProposals = proposals.filter(p => 
-      baseVotesMap.has(p.proposal_id) || targetVotesMap.has(p.proposal_id)
-    );
-  }
+  // Always use 'comprehensive' scope
+  const comparisonUniverseProposals = proposals.filter(p => 
+    baseVotesMap.has(p.proposal_id) || targetVotesMap.has(p.proposal_id)
+  );
 
   if (comparisonUniverseProposals.length === 0) return 0;
 
@@ -114,8 +101,8 @@ export function calculateSimilarity(
     // 1. Opinion Dispersion Index (ODi)
     const ODi = calculateOpinionDispersion(tally.yes, tally.no, tally.veto, tally.abstain);
 
-    // 2. Recency Weight (Ti)
-    const Ti = applyRecencyWeight ? ri / n : 1;
+    // 2. Recency Weight (Ti) is always 1 (no recency weighting)
+    const Ti = 1;
 
     // 3. Partial Agreement Score (Ai)
     const Ai = getAgreementScore(voteA, voteB, matchAbstainInSimilarity);
