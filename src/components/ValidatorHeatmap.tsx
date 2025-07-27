@@ -234,16 +234,35 @@ export default function ValidatorHeatmap() {
 
     validatorGroups.exit().transition().duration(DURATION).style('opacity', 0).remove();
 
-    const validatorGroupsEnter = validatorGroups.enter().append('g').attr('class', 'validator-row').style('opacity', 0);
-    validatorGroupsEnter.append('rect').attr('class', 'validator-row-bg').attr('x', -margin.left).attr('width', totalWidth).attr('height', cellHeight);
-    validatorGroupsEnter.append('text').attr('class', 'validator-label').attr('x', -10).attr('y', cellHeight / 2).attr('dy', '0.35em').attr('text-anchor', 'end').style('font-size', `${Math.max(8, cellHeight * 0.7)}px`).style('cursor', 'pointer')
+    const validatorGroupsEnter = validatorGroups.enter().append('g')
+      .attr('class', 'validator-row')
+      .attr('transform', (d: any) => `translate(0, ${d.index * cellHeight})`)
+      .style('opacity', 0);
+
+    validatorGroupsEnter.append('rect')
+      .attr('class', 'validator-row-bg')
+      .attr('x', -margin.left)
+      .attr('width', totalWidth)
+      .attr('height', cellHeight);
+
+    validatorGroupsEnter.append('text')
+      .attr('class', 'validator-label')
+      .attr('x', -10)
+      .attr('y', cellHeight / 2)
+      .attr('dy', '0.35em')
+      .attr('text-anchor', 'end')
+      .style('font-size', `${Math.max(8, cellHeight * 0.7)}px`)
+      .style('cursor', 'pointer')
       .on('click', (event, d: any) => {
         if (searchTermRef.current === d.moniker) setSearchTerm('');
         else setSearchTerm(d.moniker);
       });
 
     const mergedValidatorGroups = validatorGroupsEnter.merge(validatorGroups as any);
-    mergedValidatorGroups.transition().duration(DURATION).attr('transform', (d: any) => `translate(0, ${d.index * cellHeight})`).style('opacity', 1);
+
+    mergedValidatorGroups.transition().duration(DURATION)
+      .attr('transform', (d: any) => `translate(0, ${d.index * cellHeight})`)
+      .style('opacity', 1);
     
     // Set initial background color without transition
     mergedValidatorGroups.select('.validator-row-bg').attr('fill', (d: any) => d.moniker === highlightedValidator ? 'rgba(252, 211, 77, 0.3)' : 'transparent');
@@ -259,7 +278,17 @@ export default function ValidatorHeatmap() {
 
     cells.exit().transition().duration(DURATION).style('opacity', 0).remove();
 
-    const mergedCells = cells.enter().append('rect').attr('class', 'cell').attr('y', 0).attr('width', cellWidth - 1).attr('height', cellHeight - 1).style('cursor', 'pointer').style('opacity', 0).merge(cells as any);
+    const cellsEnter = cells.enter().append('rect')
+      .attr('class', 'cell')
+      .attr('y', 0)
+      .attr('width', cellWidth - 1)
+      .attr('height', cellHeight - 1)
+      .style('cursor', 'pointer')
+      .attr('x', (d: any) => proposals.find(p => p.id === d.proposalId)!.index * cellWidth)
+      .style('opacity', 0);
+
+    const mergedCells = cellsEnter.merge(cells as any);
+    
     mergedCells.on('click', (event, d: any) => {
         const validator = validators.find(v => v.address === d.validatorAddress);
         if (validator) {
@@ -282,12 +311,35 @@ export default function ValidatorHeatmap() {
         d3.selectAll('.heatmap-tooltip').remove();
         d3.select(this).attr('stroke', 'none');
       });
-    mergedCells.transition().duration(DURATION).attr('x', (d: any) => proposals.find(p => p.id === d.proposalId)!.index * cellWidth).style('opacity', 1).attr('fill', (d: any) => getVoteColor(d.voteOption));
+
+    mergedCells.transition().duration(DURATION)
+      .attr('x', (d: any) => proposals.find(p => p.id === d.proposalId)!.index * cellWidth)
+      .style('opacity', 1)
+      .attr('fill', (d: any) => getVoteColor(d.voteOption));
       
     const proposalLabels = g.selectAll('.proposal-label').data(proposals, (d: any) => d.id);
+    
     proposalLabels.exit().transition().duration(DURATION).style('opacity', 0).remove();
-    proposalLabels.enter().append('text').attr('class', 'proposal-label').style('cursor', 'pointer').on('click', (event, d: any) => setSelectedProposal(d.id)).attr('text-anchor', 'start').style('font-size', `${Math.max(8, cellWidth * 0.7)}px`).style('opacity', 0)
-      .merge(proposalLabels as any).transition().duration(DURATION).attr('x', (d: any) => d.index * cellWidth + cellWidth / 2).attr('y', -SUMMARY_CHART_HEIGHT - CHART_SPACING - 10).attr('transform', (d: any) => `rotate(-60, ${d.index * cellWidth + cellWidth / 2}, ${-SUMMARY_CHART_HEIGHT - CHART_SPACING - 10})`).style('fill', (d: any) => d.status.includes('PASSED') ? colors.YES : colors.NO).text((d: any) => `${d.title.slice(0, 40)}${d.title.length > 40 ? '...' : ''} ${d.status.includes('PASSED') ? '✓' : '✗'}`).style('opacity', 1);
+
+    const proposalLabelsEnter = proposalLabels.enter().append('text')
+      .attr('class', 'proposal-label')
+      .style('cursor', 'pointer')
+      .on('click', (event, d: any) => setSelectedProposal(d.id))
+      .attr('text-anchor', 'start')
+      .style('font-size', `${Math.max(8, cellWidth * 0.7)}px`)
+      .style('opacity', 0)
+      .attr('x', (d: any) => d.index * cellWidth + cellWidth / 2)
+      .attr('y', -SUMMARY_CHART_HEIGHT - CHART_SPACING - 10)
+      .attr('transform', (d: any) => `rotate(-60, ${d.index * cellWidth + cellWidth / 2}, ${-SUMMARY_CHART_HEIGHT - CHART_SPACING - 10})`)
+      .style('fill', (d: any) => d.status.includes('PASSED') ? colors.YES : colors.NO)
+      .text((d: any) => `${d.title.slice(0, 40)}${d.title.length > 40 ? '...' : ''} ${d.status.includes('PASSED') ? '✓' : '✗'}`);
+
+    proposalLabels.merge(proposalLabelsEnter)
+      .transition().duration(DURATION)
+      .attr('x', (d: any) => d.index * cellWidth + cellWidth / 2)
+      .attr('y', -SUMMARY_CHART_HEIGHT - CHART_SPACING - 10)
+      .attr('transform', (d: any) => `rotate(-60, ${d.index * cellWidth + cellWidth / 2}, ${-SUMMARY_CHART_HEIGHT - CHART_SPACING - 10})`)
+      .style('opacity', 1);
 
     const summaryG = g.selectAll('.summary-chart').data([null]).join('g').attr('class', 'summary-chart').attr('transform', `translate(0, ${-SUMMARY_CHART_HEIGHT - CHART_SPACING})`);
     const summaryChartYScale = d3.scaleLinear().domain([0, 1]).range([SUMMARY_CHART_HEIGHT, 0]);
