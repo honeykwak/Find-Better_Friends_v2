@@ -671,23 +671,16 @@ export const useGlobalStore = create<GlobalStore>((set, get) => ({
   },
 
   getProposalsFilteredByConflictIndex: () => {
-    const { conflictIndexRange, votes, categoryVisualizationMode } = get();
+    const { conflictIndexRange } = get();
     const proposals = get().getProposalsFilteredByTime();
     const [minScore, maxScore] = conflictIndexRange;
 
+    // Always use power-based tallies for Conflict Index calculation, as agreed.
     const powerTallies = getPowerBasedTally(get());
 
     return proposals.filter(p => {
-      let score = 0;
-      if (categoryVisualizationMode === 'voteCount') {
-        const { yes_count = 0, no_count = 0, no_with_veto_count = 0 } = p.final_tally_result || {};
-        score = calculateConflictIndexFromCounts(yes_count, no_count, no_with_veto_count);
-      } else { // 'votePower'
-        const tally = powerTallies.get(p.proposal_id);
-        if (tally) {
-          score = calculateConflictIndexFromCounts(tally.yes, tally.no, tally.veto);
-        }
-      }
+      const tally = powerTallies.get(p.proposal_id);
+      const score = tally ? calculateConflictIndexFromCounts(tally.yes, tally.no, tally.veto) : 0;
       return score >= minScore && score <= maxScore;
     });
   },
