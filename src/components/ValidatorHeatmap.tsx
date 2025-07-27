@@ -344,8 +344,7 @@ export default function ValidatorHeatmap() {
           </div>
           <div className="flex items-center gap-4">
             <div className="flex items-center bg-gray-100 rounded-lg p-1">
-              <button onClick={() => setValidatorSortKey('votingPower')} className={`px-3 py-2 text-xs font-medium rounded-md whitespace-nowrap ${validatorSortKey === 'votingPower' ? 'bg-white text-gray-800 shadow-sm' : 'text-gray-500'}`}>Avg. VP</button>
-              <button onClick={() => setValidatorSortKey('recentVotingPower')} className={`px-3 py-2 text-xs font-medium rounded-md whitespace-nowrap ${validatorSortKey === 'recentVotingPower' ? 'bg-white text-gray-800 shadow-sm' : 'text-gray-500'}`}>Recent VP</button>
+              <button onClick={() => setValidatorSortKey('votingPower')} className={`px-3 py-2 text-xs font-medium rounded-md whitespace-nowrap ${['votingPower', 'recentVotingPower'].includes(validatorSortKey) ? 'bg-white text-gray-800 shadow-sm' : 'text-gray-500'}`}>Voting Power</button>
               <button onClick={() => setValidatorSortKey('voteCount')} className={`px-3 py-2 text-xs font-medium rounded-md whitespace-nowrap ${validatorSortKey === 'voteCount' ? 'bg-white text-gray-800 shadow-sm' : 'text-gray-500'}`}>Vote Count</button>
               <button onClick={() => setValidatorSortKey('name')} className={`px-3 py-2 text-xs font-medium rounded-md whitespace-nowrap ${validatorSortKey === 'name' ? 'bg-white text-gray-800 shadow-sm' : 'text-gray-500'}`}>Name</button>
               <button onClick={() => setValidatorSortKey('similarity')} className={`px-3 py-2 text-xs font-medium rounded-md whitespace-nowrap ${validatorSortKey === 'similarity' ? 'bg-white text-gray-800 shadow-sm' : 'text-gray-500'} disabled:opacity-50`} disabled={!searchTerm}>Similarity</button>

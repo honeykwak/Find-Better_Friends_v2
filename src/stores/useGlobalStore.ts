@@ -31,8 +31,9 @@ export interface TopicNode {
   voteDistribution: Record<string, number>
 }
 
-export type ValidatorSortKey = 'voteCount' | 'name' | 'votingPower' | 'recentVotingPower' | 'similarity';
+export type ValidatorSortKey = 'voteCount' | 'name' | 'votingPower' | 'similarity';
 export type ComparisonScope = 'common' | 'base' | 'comprehensive';
+export type VotingPowerSortType = 'average' | 'recent';
 
 // 전역 상태 인터페이스
 interface GlobalStore {
@@ -58,6 +59,8 @@ interface GlobalStore {
   votingPowerDisplayMode: 'percentile' | 'rank';
   votingPowerRange: [number, number];
   avgVotingPowerDynamicRange: [number, number];
+  recentVotingPowerRange: [number, number]; // New
+  recentVotingPowerDynamicRange: [number, number]; // New
   considerActivePeriodOnly: boolean;
 
   // Similarity options
@@ -88,6 +91,7 @@ interface GlobalStore {
   setParticipationRateRange: (range: [number, number]) => void;
   setVotingPowerDisplayMode: (mode: 'percentile' | 'rank') => void;
   setVotingPowerRange: (range: [number, number]) => void;
+  setRecentVotingPowerRange: (range: [number, number]) => void; // New
   setCategoryVisualizationMode: (mode: 'voteCount' | 'votePower') => void;
   setWindowSize: (size: { width: number; height: number }) => void;
   setHighlightedValidator: (moniker: string | null) => void;
@@ -155,6 +159,8 @@ export const useGlobalStore = create<GlobalStore>((set, get) => ({
   votingPowerDisplayMode: 'percentile',
   votingPowerRange: [0, 100],
   avgVotingPowerDynamicRange: [0, 1],
+  recentVotingPowerRange: [0, 100],
+  recentVotingPowerDynamicRange: [0, 1],
   considerActivePeriodOnly: false,
   matchAbstainInSimilarity: false,
   categoryVisualizationMode: 'votePower',
@@ -170,8 +176,10 @@ export const useGlobalStore = create<GlobalStore>((set, get) => ({
       validatorsWithDerivedData, 
       votingPowerDisplayMode, 
       votingPowerRange, 
+      recentVotingPowerRange,
       participationRateRange,
-      searchTerm 
+      searchTerm,
+      validatorSortKey
     } = get();
 
     if (!validatorsWithDerivedData.length) {
@@ -191,21 +199,25 @@ export const useGlobalStore = create<GlobalStore>((set, get) => ({
     }
 
     let filteredByVotingPower: ValidatorWithDerivedData[];
+    const isRecent = validatorSortKey === 'recentVotingPower';
+    const powerKey = isRecent ? 'recentVotingPower' : 'avgPower';
+    const range = isRecent ? recentVotingPowerRange : votingPowerRange;
+
     if (votingPowerDisplayMode === 'percentile') {
-      const [minPercentile, maxPercentile] = votingPowerRange;
-      const totalPower = currentValidators.reduce((sum, v) => sum + (v.avgPower || 0), 0);
+      const [minPercentile, maxPercentile] = range;
+      const totalPower = currentValidators.reduce((sum, v) => sum + (v[powerKey] || 0), 0);
 
       if (totalPower === 0) {
         filteredByVotingPower = currentValidators;
       } else {
-        const sortedByPower = [...currentValidators].sort((a, b) => (b.avgPower || 0) - (a.avgPower || 0));
+        const sortedByPower = [...currentValidators].sort((a, b) => (b[powerKey] || 0) - (a[powerKey] || 0));
         
         let cumulativePower = 0;
         const minRange = (100 - maxPercentile) / 100;
         const maxRange = (100 - minPercentile) / 100;
 
         filteredByVotingPower = sortedByPower.filter(v => {
-          const validatorPower = v.avgPower || 0;
+          const validatorPower = v[powerKey] || 0;
           const startRatio = cumulativePower / totalPower;
           cumulativePower += validatorPower;
           const endRatio = cumulativePower / totalPower;
@@ -213,8 +225,8 @@ export const useGlobalStore = create<GlobalStore>((set, get) => ({
         });
       }
     } else { // 'rank'
-      const ranked = [...currentValidators].sort((a, b) => (b.avgPower || 0) - (a.avgPower || 0));
-      const [minRank, maxRank] = votingPowerRange;
+      const ranked = [...currentValidators].sort((a, b) => (b[powerKey] || 0) - (a[powerKey] || 0));
+      const [minRank, maxRank] = range;
       
       const totalValidators = ranked.length;
       const invertedMinRank = totalValidators - maxRank + 1;
@@ -488,12 +500,15 @@ export const useGlobalStore = create<GlobalStore>((set, get) => ({
 
     let minRate = 100, maxRate = 0;
     let minAvgPower = Infinity, maxAvgPower = -Infinity;
+    let minRecentPower = Infinity, maxRecentPower = -Infinity;
 
     newValidatorsWithDerivedData.forEach(v => {
       minRate = Math.min(minRate, v.participationRate || 100);
       maxRate = Math.max(maxRate, v.participationRate || 0);
       minAvgPower = Math.min(minAvgPower, v.avgPower || Infinity);
       maxAvgPower = Math.max(maxAvgPower, v.avgPower || -Infinity);
+      minRecentPower = Math.min(minRecentPower, v.recentVotingPower || Infinity);
+      maxRecentPower = Math.max(maxRecentPower, v.recentVotingPower || -Infinity);
     });
 
     // In edge cases where no validators match, minRate can be > maxRate. Reset to a safe default.
@@ -503,6 +518,7 @@ export const useGlobalStore = create<GlobalStore>((set, get) => ({
     }
 
     const newAvgPowerDynamicRange: [number, number] = [minAvgPower === Infinity ? 0 : minAvgPower, maxAvgPower === -Infinity ? 0 : maxAvgPower];
+    const newRecentPowerDynamicRange: [number, number] = [minRecentPower === Infinity ? 0 : minRecentPower, maxRecentPower === -Infinity ? 0 : maxRecentPower];
     
     const { votingPowerDisplayMode } = get();
     if (votingPowerDisplayMode === 'rank') {
@@ -511,7 +527,9 @@ export const useGlobalStore = create<GlobalStore>((set, get) => ({
         similarityScores: newSimilarityScores,
         participationRateDynamicRange: [Math.floor(minRate), Math.ceil(maxRate)],
         avgVotingPowerDynamicRange: newAvgPowerDynamicRange,
+        recentVotingPowerDynamicRange: newRecentPowerDynamicRange,
         votingPowerRange: [1, newValidatorsWithDerivedData.length || 1],
+        recentVotingPowerRange: [1, newValidatorsWithDerivedData.length || 1],
       });
     } else {
       set({ 
@@ -519,6 +537,7 @@ export const useGlobalStore = create<GlobalStore>((set, get) => ({
         similarityScores: newSimilarityScores,
         participationRateDynamicRange: [Math.floor(minRate), Math.ceil(maxRate)],
         avgVotingPowerDynamicRange: newAvgPowerDynamicRange,
+        recentVotingPowerDynamicRange: newRecentPowerDynamicRange,
       });
     }
     get()._recalculateFilteredValidators();
@@ -595,12 +614,14 @@ export const useGlobalStore = create<GlobalStore>((set, get) => ({
     if (mode === 'rank') {
       set({
         votingPowerDisplayMode: 'rank',
-        votingPowerRange: [1, validatorsWithDerivedData.length || 1]
+        votingPowerRange: [1, validatorsWithDerivedData.length || 1],
+        recentVotingPowerRange: [1, validatorsWithDerivedData.length || 1],
       });
     } else {
       set({
         votingPowerDisplayMode: 'percentile',
-        votingPowerRange: [0, 100]
+        votingPowerRange: [0, 100],
+        recentVotingPowerRange: [0, 100],
       });
     }
     get()._recalculateFilteredValidators();
@@ -609,36 +630,28 @@ export const useGlobalStore = create<GlobalStore>((set, get) => ({
     set({ votingPowerRange: range });
     get()._recalculateFilteredValidators();
   },
+  setRecentVotingPowerRange: (range) => {
+    set({ recentVotingPowerRange: range });
+    get()._recalculateFilteredValidators();
+  },
   setCategoryVisualizationMode: (mode) => set({ categoryVisualizationMode: mode }),
   setWindowSize: (size) => set({ windowSize: size }),
   setHighlightedValidator: (moniker) => set({ highlightedValidator: moniker }),
   setValidatorSortKey: (key: ValidatorSortKey) => {
     set({ validatorSortKey: key });
-    get().recalculateValidatorMetrics();
-  },
-  setCountNoVoteAsParticipation: (count: boolean) => {
-    set({ countNoVoteAsParticipation: count });
-    get().recalculateValidatorMetrics();
+    get()._recalculateFilteredValidators();
   },
   setConsiderActivePeriodOnly: (activeOnly: boolean) => {
     set({ considerActivePeriodOnly: activeOnly });
-    get().recalculateValidatorMetrics();
-  },
-  setApplyRecencyWeight: (value: boolean) => {
-    set({ applyRecencyWeight: value });
     get().recalculateValidatorMetrics();
   },
   setMatchAbstainInSimilarity: (value: boolean) => {
     set({ matchAbstainInSimilarity: value });
     get().recalculateValidatorMetrics();
   },
-  setComparisonScope: (scope: ComparisonScope) => {
-    set({ comparisonScope: scope });
-    get().recalculateValidatorMetrics();
-  },
 
   resetFilters: () => {
-    const { submitTimeDynamicRange, validatorsWithDerivedData } = get();
+    const { submitTimeDynamicRange } = get();
     set({
       selectedCategories: [],
       selectedTopics: [],
@@ -649,6 +662,7 @@ export const useGlobalStore = create<GlobalStore>((set, get) => ({
       participationRateRange: [0, 100],
       votingPowerDisplayMode: 'percentile',
       votingPowerRange: [0, 100],
+      recentVotingPowerRange: [0, 100],
       considerActivePeriodOnly: false,
       matchAbstainInSimilarity: false,
       categoryVisualizationMode: 'votePower',
