@@ -460,19 +460,24 @@ export const useGlobalStore = create<GlobalStore>((set, get) => ({
       const baseValidator = newValidatorsWithDerivedData.find(v => v.moniker === searchTerm);
       if (baseValidator) {
         const baseValidatorVotes = votes.filter(v => v.validator_address === baseValidator.validator_address);
-        
+        const baseParticipation = baseValidator.participationRate || 0;
+
         newValidatorsWithDerivedData.forEach(v => {
           if (v.moniker === searchTerm) {
             v.similarity = 1;
             newSimilarityScores.set(v.moniker, 1);
           } else {
-            const validatorVotes = votes.filter(vote => vote.validator_address === v.validator_address);
+            const targetValidatorVotes = votes.filter(vote => vote.validator_address === v.validator_address);
+            const targetParticipation = v.participationRate || 0;
+            
             const similarity = calculateSimilarity(
-              baseValidatorVotes, 
-              validatorVotes, 
+              baseValidatorVotes,
+              targetValidatorVotes,
               filteredProposals,
               getPowerBasedTally(get()),
-              matchAbstainInSimilarity
+              matchAbstainInSimilarity,
+              baseParticipation / 100, // Convert from 0-100 scale to 0-1
+              targetParticipation / 100 // Convert from 0-100 scale to 0-1
             );
             v.similarity = similarity;
             newSimilarityScores.set(v.moniker, similarity);
