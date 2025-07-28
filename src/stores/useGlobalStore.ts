@@ -634,7 +634,7 @@ export const useGlobalStore = create<GlobalStore>((set, get) => ({
   },
   setVotingPowerSortType: (type: VotingPowerSortType) => {
     set({ votingPowerSortType: type });
-    get()._recalculateFilteredValidators();
+    get().recalculateValidatorMetrics();
   },
   setConsiderActivePeriodOnly: (activeOnly: boolean) => {
     set({ considerActivePeriodOnly: activeOnly });
