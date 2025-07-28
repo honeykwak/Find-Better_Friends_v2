@@ -204,7 +204,7 @@ export default function RangeSlider({
   }, [currentValues, minPercent, maxPercent, measurementRefs.combined, measurementRefs.min, measurementRefs.max, sliderRef]);
 
   return (
-    <div>
+    <div className="select-none">
       {/* Measurement Layer (Invisible) */}
       <div style={{ position: 'absolute', visibility: 'hidden', zIndex: -1 }}>
         <span ref={measurementRefs.combined} className="text-xs font-medium whitespace-nowrap">{rangeText.combined}</span>
