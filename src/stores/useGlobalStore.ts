@@ -162,7 +162,7 @@ export const useGlobalStore = create<GlobalStore>((set, get) => ({
   recentVotingPowerRange: [0, 100],
   recentVotingPowerDynamicRange: [0, 1],
   considerActivePeriodOnly: false,
-  matchAbstainInSimilarity: false,
+  matchAbstainInSimilarity: true,
   categoryVisualizationMode: 'votePower',
   validatorSortKey: 'votingPower',
   loading: true,
@@ -664,7 +664,7 @@ export const useGlobalStore = create<GlobalStore>((set, get) => ({
       votingPowerRange: [0, 100],
       recentVotingPowerRange: [0, 100],
       considerActivePeriodOnly: false,
-      matchAbstainInSimilarity: false,
+      matchAbstainInSimilarity: true,
       categoryVisualizationMode: 'votePower',
       validatorSortKey: 'votingPower',
     });

@@ -3,8 +3,8 @@ import type { Proposal, Vote } from './dataLoader';
 type Tally = { yes: number; no: number; veto: number; abstain: number };
 
 /**
- * 1. 부분 일치 점수 (Ai)
- * Calculates a partial agreement score between two votes, including nuanced handling of abstentions and non-votes.
+ * 1. Partial Alignment Score (Ai)
+ * Calculates a partial agreement score between two votes.
  */
 function getAgreementScore(
   voteA: string,
@@ -47,29 +47,29 @@ function getAgreementScore(
 }
 
 /**
- * 2. 대립 지표 (Ci)
- * Calculates the Conflict Index for a proposal, measuring how balanced the conflict is between 'For' and 'Against' camps.
- * Ignores abstain votes for this calculation.
+ * 2.1. Conflict Weight (Ci)
+ * Calculates the Conflict Weight for a proposal.
+ * Ci = 2 - |2 * pY - 1|, where pY is the ratio of 'Yes' votes.
+ * Range: [1, 2]
  */
-function calculateConflictIndex(tally: Tally): number {
+function calculateConflictWeight(tally: Tally): number {
   const yesPower = tally.yes;
   const noPower = tally.no + tally.veto;
   const totalPower = yesPower + noPower;
 
-  if (totalPower === 0) return 0;
+  if (totalPower === 0) return 1.0; // No conflict, neutral weight
 
   const pY = yesPower / totalPower;
-  // const pN = noPower / totalPower; // pN is just 1 - pY
+  const conflictWeight = 2 - Math.abs(2 * pY - 1);
   
-  // Ci = 1 - |pY - pN| = 1 - |pY - (1 - pY)| = 1 - |2pY - 1|
-  const conflictIndex = 1 - Math.abs(2 * pY - 1);
-  
-  return conflictIndex;
+  return conflictWeight;
 }
 
 /**
- * 3. 소수 의견 보정 가중치 (Wi)
+ * 2.2. Minority Weight (Mi)
  * Calculates a weight based on whether the agreement was on a minority opinion.
+ * Mi = 0.7 + 1.2 * (0.5 - ri), where ri is the minority ratio.
+ * Range: [0.7, 1.3]
  */
 function calculateMinorityWeight(voteOption: string, tally: Tally): number {
   const yesPower = tally.yes;
@@ -87,29 +87,24 @@ function calculateMinorityWeight(voteOption: string, tally: Tally): number {
     return 1.0; // Neutral weight for non-conflict votes (Abstain, Not Voted)
   }
 
-  // Wi = 0.75 + 0.5 * (1 - ri)
-  // This formula maps a ratio `ri` from [0, 1] to a weight `Wi` in [0.75, 1.25]
-  // If you're in a 10% minority (ri=0.1), weight is 0.75 + 0.5 * 0.9 = 1.2
-  // If you're in a 90% majority (ri=0.9), weight is 0.75 + 0.5 * 0.1 = 0.8
-  const weight = 0.75 + 0.5 * (1 - groupRatio);
+  const minorityRatio = Math.min(groupRatio, 1 - groupRatio);
+  const weight = 0.7 + 1.2 * (0.5 - minorityRatio);
   return weight;
 }
 
 /**
- * 4. 최신성 점수 (Ri)
+ * 2.3. Recency Weight (Ri)
  * Calculates a recency weight for a proposal.
- * Adjusted to scale from 0.75 (oldest) to 1.25 (newest) for balanced influence.
+ * Ri = 0.9 + 0.2 * ( (pi - 1) / (n - 1) )
+ * Range: [0.9, 1.1]
  */
 function calculateRecencyWeight(proposalIndex: number, totalProposals: number): number {
   if (totalProposals <= 1) return 1.0; // Neutral weight if only one proposal
-  // Ri = 0.75 + 0.5 * ( (pi - 1) / (n - 1) )
-  // This scales the weight from 0.75 to 1.25
-  return 0.75 + 0.5 * ((proposalIndex - 1) / (totalProposals - 1));
+  return 0.9 + 0.2 * ((proposalIndex - 1) / (totalProposals - 1));
 }
 
-
 /**
- * Calculates similarity between two validators based on the new Conflict Index model.
+ * Calculates the Contextual Alliance Index between two validators.
  */
 export function calculateSimilarity(
   baseValidatorVotes: Vote[],
@@ -117,7 +112,6 @@ export function calculateSimilarity(
   proposals: Proposal[],
   powerTallies: Map<string, Tally>,
   matchAbstainInSimilarity: boolean,
-  // Assuming participation rates are passed in. This needs to be connected in the calling component.
   baseValidatorParticipation: number,
   targetValidatorParticipation: number
 ): number {
@@ -136,6 +130,7 @@ export function calculateSimilarity(
   const n = sortedProposals.length;
 
   const proposalScores: number[] = [];
+  const contextualWeights: number[] = [];
 
   comparisonUniverseProposals.forEach(proposal => {
     const proposalId = proposal.proposal_id;
@@ -144,29 +139,33 @@ export function calculateSimilarity(
 
     const tally = powerTallies.get(proposalId) || { yes: 0, no: 0, veto: 0, abstain: 0 };
     
-    // 1. 부분 일치 점수 (Ai)
+    // 1. Partial Alignment Score (Ai)
     const Ai = getAgreementScore(voteA, voteB, matchAbstainInSimilarity, baseValidatorParticipation, targetValidatorParticipation);
 
-    // 2. 대립 지표 (Ci) - Scaled from 1.0 to 2.0
-    const Ci_raw = calculateConflictIndex(tally);
-    const Ci_scaled = 1.0 + Ci_raw; // Scale to [1, 2]
-
-    // 3. 소수 의견 보정 가중치 (Wi)
-    // Only calculate if there was some form of agreement
-    const Wi = (Ai > 0 && voteA !== 'NOT_VOTED') ? calculateMinorityWeight(voteA, tally) : 1.0;
-
-    // 4. 최신성 점수 (Ri)
+    // 2. Contextual Weights
+    const Ci = calculateConflictWeight(tally);
+    const Mi = calculateMinorityWeight(voteA, tally);
     const proposalIndex = sortedProposals.findIndex(p => p.proposal_id === proposal.proposal_id) + 1;
     const Ri = calculateRecencyWeight(proposalIndex, n);
 
+    const Wi = (Ci + Mi + Ri) / 3;
+    contextualWeights.push(Wi);
+
     // Final score for this single proposal
-    const proposalScore = Ai * Ci_scaled * Wi * Ri;
+    const proposalScore = Ai * Wi;
     proposalScores.push(proposalScore);
   });
 
   if (proposalScores.length === 0) return 0;
 
-  // Return the average of all proposal scores
+  // 3. Scaling Factor (alpha)
+  const totalContextualWeight = contextualWeights.reduce((sum, weight) => sum + weight, 0);
+  const avgContextualWeight = totalContextualWeight / contextualWeights.length;
+  const alpha = avgContextualWeight > 0 ? 1 / avgContextualWeight : 1;
+
+  // Final Index Calculation
   const totalScore = proposalScores.reduce((sum, score) => sum + score, 0);
-  return totalScore / proposalScores.length;
+  const avgScore = totalScore / proposalScores.length;
+  
+  return alpha * avgScore;
 }
