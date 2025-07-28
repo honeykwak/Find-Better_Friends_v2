@@ -336,16 +336,6 @@ export default function FilterPanel() {
               onChange={(v) => store.setValidatorSortKey(v as 'votingPower' | 'recentVotingPower')}
             />
           </div>
-          <div className="flex items-center justify-between mb-3">
-            {searchTerm && (
-              <div className="text-sm text-gray-700 bg-blue-100 px-2 py-1 rounded-md flex items-center gap-2">
-                <span className="font-medium truncate max-w-32">{searchTerm}</span>
-                <button onClick={() => setSearchTerm('')} className="text-blue-600 hover:text-blue-800">
-                  <X size={16} />
-                </button>
-              </div>
-            )}
-          </div>
           <div className="mb-4" ref={searchRef}>
             <div className="relative">
               <Search className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-500 w-4 h-4" />
