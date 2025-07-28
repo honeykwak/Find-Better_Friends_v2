@@ -66,6 +66,7 @@ interface GlobalStore {
   matchAbstainInSimilarity: boolean;
 
   validatorSortKey: ValidatorSortKey;
+  votingPowerSortType: VotingPowerSortType; // New
   categoryVisualizationMode: 'voteCount' | 'votePower'
   
   loading: boolean
@@ -95,6 +96,7 @@ interface GlobalStore {
   setWindowSize: (size: { width: number; height: number }) => void;
   setHighlightedValidator: (moniker: string | null) => void;
   setValidatorSortKey: (key: ValidatorSortKey) => void;
+  setVotingPowerSortType: (type: VotingPowerSortType) => void; // New
   setConsiderActivePeriodOnly: (activeOnly: boolean) => void;
   setMatchAbstainInSimilarity: (value: boolean) => void;
   resetFilters: () => void;
@@ -162,7 +164,8 @@ export const useGlobalStore = create<GlobalStore>((set, get) => ({
   considerActivePeriodOnly: false,
   matchAbstainInSimilarity: true,
   categoryVisualizationMode: 'votePower',
-  validatorSortKey: 'votingPower',
+  validatorSortKey: 'recentVotingPower',
+  votingPowerSortType: 'recent', // New
   loading: true,
   error: null,
   windowSize: { width: 0, height: 0 },
@@ -177,7 +180,8 @@ export const useGlobalStore = create<GlobalStore>((set, get) => ({
       recentVotingPowerRange,
       participationRateRange,
       searchTerm,
-      validatorSortKey
+      validatorSortKey,
+      votingPowerSortType // New
     } = get();
 
     if (!validatorsWithDerivedData.length) {
@@ -197,7 +201,7 @@ export const useGlobalStore = create<GlobalStore>((set, get) => ({
     }
 
     let filteredByVotingPower: ValidatorWithDerivedData[];
-    const isRecent = validatorSortKey === 'recentVotingPower';
+    const isRecent = votingPowerSortType === 'recent'; // Changed from validatorSortKey
     const powerKey = isRecent ? 'recentVotingPower' : 'avgPower';
     const range = isRecent ? recentVotingPowerRange : votingPowerRange;
 
@@ -315,6 +319,7 @@ export const useGlobalStore = create<GlobalStore>((set, get) => ({
         votingPowerDisplayMode: 'percentile',
         votingPowerRange: [0, 100],
         validatorSortKey: 'votingPower',
+        votingPowerSortType: 'recent',
         considerActivePeriodOnly: false,
       });
       get().recalculateValidatorMetrics();
@@ -627,6 +632,10 @@ export const useGlobalStore = create<GlobalStore>((set, get) => ({
     set({ validatorSortKey: key });
     get()._recalculateFilteredValidators();
   },
+  setVotingPowerSortType: (type: VotingPowerSortType) => {
+    set({ votingPowerSortType: type });
+    get()._recalculateFilteredValidators();
+  },
   setConsiderActivePeriodOnly: (activeOnly: boolean) => {
     set({ considerActivePeriodOnly: activeOnly });
     get().recalculateValidatorMetrics();
@@ -653,6 +662,7 @@ export const useGlobalStore = create<GlobalStore>((set, get) => ({
       matchAbstainInSimilarity: true,
       categoryVisualizationMode: 'votePower',
       validatorSortKey: 'votingPower',
+      votingPowerSortType: 'recent',
     });
     get().recalculateValidatorMetrics();
   },

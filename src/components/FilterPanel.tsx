@@ -329,11 +329,11 @@ export default function FilterPanel() {
             <h3 className="text-lg font-semibold text-gray-900">Validator</h3>
             <ToggleButtonGroup
               options={[
-                { value: 'votingPower', label: 'Avg. VP' },
-                { value: 'recentVotingPower', label: 'Recent VP' },
+                { value: 'recent', label: 'Recent VP' },
+                { value: 'average', label: 'Avg. VP' },
               ]}
-              selectedValue={store.validatorSortKey}
-              onChange={(v) => store.setValidatorSortKey(v as 'votingPower' | 'recentVotingPower')}
+              selectedValue={store.votingPowerSortType}
+              onChange={(v) => store.setVotingPowerSortType(v as 'average' | 'recent')}
             />
           </div>
           <div className="mb-4" ref={searchRef}>
@@ -363,55 +363,43 @@ export default function FilterPanel() {
             </div>
           </div>
           <div className="mb-4 space-y-3">
+            <div className="flex items-center justify-between">
+              <label className="text-sm font-medium text-gray-900">Voting Power</label>
+              <ToggleButtonGroup
+                options={[{value: 'percentile', label: 'Percentile'}, {value: 'rank', label: 'Rank'}]}
+                selectedValue={votingPowerDisplayMode}
+                onChange={(v) => setVotingPowerDisplayMode(v as 'percentile' | 'rank')}
+              />
+            </div>
             {store.validatorSortKey === 'recentVotingPower' ? (
-              <>
-                <div className="flex items-center justify-between">
-                  <label className="text-sm font-medium text-gray-900">Recent Voting Power</label>
-                  <ToggleButtonGroup
-                    options={[{value: 'percentile', label: 'Percentile'}, {value: 'rank', label: 'Rank'}]}
-                    selectedValue={votingPowerDisplayMode}
-                    onChange={(v) => setVotingPowerDisplayMode(v as 'percentile' | 'rank')}
-                  />
-                </div>
-                <RangeSlider
-                  label=""
-                  min={votingPowerDisplayMode === 'rank' ? 1 : 0}
-                  max={votingPowerDisplayMode === 'rank' ? validators.length || 1 : 100}
-                  values={store.recentVotingPowerRange}
-                  onChange={store.setRecentVotingPowerRange}
-                  formatValue={(v) => votingPowerDisplayMode === 'rank' ? `${validators.length - v + 1}` : `${100 - v}%`}
-                  step={1}
-                  distributionData={[]} // Add distribution if available
-                />
-              </>
+              <RangeSlider
+                label=""
+                min={votingPowerDisplayMode === 'rank' ? 1 : 0}
+                max={votingPowerDisplayMode === 'rank' ? validators.length || 1 : 100}
+                values={store.recentVotingPowerRange}
+                onChange={store.setRecentVotingPowerRange}
+                formatValue={(v) => votingPowerDisplayMode === 'rank' ? `${validators.length - v + 1}` : `${100 - v}%`}
+                step={1}
+                distributionData={[]} // Add distribution if available
+              />
             ) : (
-              <>
-                <div className="flex items-center justify-between">
-                  <label className="text-sm font-medium text-gray-900">Avg. Voting Power</label>
-                  <ToggleButtonGroup
-                    options={[{value: 'percentile', label: 'Percentile'}, {value: 'rank', label: 'Rank'}]}
-                    selectedValue={votingPowerDisplayMode}
-                    onChange={(v) => setVotingPowerDisplayMode(v as 'percentile' | 'rank')}
-                  />
-                </div>
-                <RangeSlider
-                  label=""
-                  min={votingPowerDisplayMode === 'rank' ? 1 : 0}
-                  max={votingPowerDisplayMode === 'rank' ? validators.length || 1 : 100}
-                  values={votingPowerRange}
-                  onChange={setVotingPowerRange}
-                  formatValue={(v) => {
-                    if (votingPowerDisplayMode === 'rank') {
-                      const totalValidators = validators.length || 1;
-                      const displayRank = totalValidators - v + 1;
-                      return `${displayRank}`;
-                    }
-                    return `${100 - v}%`;
-                  }}
-                  step={1}
-                  distributionData={[]}
-                />
-              </>
+              <RangeSlider
+                label=""
+                min={votingPowerDisplayMode === 'rank' ? 1 : 0}
+                max={votingPowerDisplayMode === 'rank' ? validators.length || 1 : 100}
+                values={votingPowerRange}
+                onChange={setVotingPowerRange}
+                formatValue={(v) => {
+                  if (votingPowerDisplayMode === 'rank') {
+                    const totalValidators = validators.length || 1;
+                    const displayRank = totalValidators - v + 1;
+                    return `${displayRank}`;
+                  }
+                  return `${100 - v}%`;
+                }}
+                step={1}
+                distributionData={[]}
+              />
             )}
           </div>
           <div className="mb-4">
