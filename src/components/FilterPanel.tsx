@@ -106,7 +106,6 @@ export default function FilterPanel() {
     votingPowerRange,
     avgVotingPowerDynamicRange,
     participationRateRange,
-    participationRateDynamicRange,
     setSelectedCategories,
     setSelectedTopics,
     setConflictIndexRange,
@@ -460,8 +459,8 @@ export default function FilterPanel() {
             </div>
             <RangeSlider
               label=""
-              min={participationRateDynamicRange[0]}
-              max={participationRateDynamicRange[1]}
+              min={0}
+              max={100}
               values={participationRateRange}
               onChange={setParticipationRateRange}
               formatValue={(v) => `${v.toFixed(0)}%`}

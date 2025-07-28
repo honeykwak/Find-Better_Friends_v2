@@ -55,7 +55,6 @@ interface GlobalStore {
   
   // Validator filters
   participationRateRange: [number, number];
-  participationRateDynamicRange: [number, number];
   votingPowerDisplayMode: 'percentile' | 'rank';
   votingPowerRange: [number, number];
   avgVotingPowerDynamicRange: [number, number];
@@ -155,7 +154,6 @@ export const useGlobalStore = create<GlobalStore>((set, get) => ({
   submitTimeRange: [0, 0],
   submitTimeDynamicRange: [0, 0],
   participationRateRange: [0, 100],
-  participationRateDynamicRange: [0, 100],
   votingPowerDisplayMode: 'percentile',
   votingPowerRange: [0, 100],
   avgVotingPowerDynamicRange: [0, 1],
@@ -331,7 +329,6 @@ export const useGlobalStore = create<GlobalStore>((set, get) => ({
       set({ 
         validatorsWithDerivedData: [], 
         filteredValidators: [],
-        participationRateDynamicRange: [0, 100], 
         avgVotingPowerDynamicRange: [0, 1],
         similarityScores: new Map(),
       });
@@ -498,24 +495,15 @@ export const useGlobalStore = create<GlobalStore>((set, get) => ({
       }
     }
 
-    let minRate = 100, maxRate = 0;
     let minAvgPower = Infinity, maxAvgPower = -Infinity;
     let minRecentPower = Infinity, maxRecentPower = -Infinity;
 
     newValidatorsWithDerivedData.forEach(v => {
-      minRate = Math.min(minRate, v.participationRate || 100);
-      maxRate = Math.max(maxRate, v.participationRate || 0);
       minAvgPower = Math.min(minAvgPower, v.avgPower || Infinity);
       maxAvgPower = Math.max(maxAvgPower, v.avgPower || -Infinity);
       minRecentPower = Math.min(minRecentPower, v.recentVotingPower || Infinity);
       maxRecentPower = Math.max(maxRecentPower, v.recentVotingPower || -Infinity);
     });
-
-    // In edge cases where no validators match, minRate can be > maxRate. Reset to a safe default.
-    if (minRate > maxRate) {
-      minRate = 0;
-      maxRate = 100;
-    }
 
     const newAvgPowerDynamicRange: [number, number] = [minAvgPower === Infinity ? 0 : minAvgPower, maxAvgPower === -Infinity ? 0 : maxAvgPower];
     const newRecentPowerDynamicRange: [number, number] = [minRecentPower === Infinity ? 0 : minRecentPower, maxRecentPower === -Infinity ? 0 : maxRecentPower];
@@ -525,7 +513,6 @@ export const useGlobalStore = create<GlobalStore>((set, get) => ({
       set({ 
         validatorsWithDerivedData: newValidatorsWithDerivedData,
         similarityScores: newSimilarityScores,
-        participationRateDynamicRange: [Math.floor(minRate), Math.ceil(maxRate)],
         avgVotingPowerDynamicRange: newAvgPowerDynamicRange,
         recentVotingPowerDynamicRange: newRecentPowerDynamicRange,
         votingPowerRange: [1, newValidatorsWithDerivedData.length || 1],
@@ -535,7 +522,6 @@ export const useGlobalStore = create<GlobalStore>((set, get) => ({
       set({ 
         validatorsWithDerivedData: newValidatorsWithDerivedData,
         similarityScores: newSimilarityScores,
-        participationRateDynamicRange: [Math.floor(minRate), Math.ceil(maxRate)],
         avgVotingPowerDynamicRange: newAvgPowerDynamicRange,
         recentVotingPowerDynamicRange: newRecentPowerDynamicRange,
       });
