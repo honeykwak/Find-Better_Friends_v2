@@ -5,6 +5,7 @@ type Tally = { yes: number; no: number; veto: number; abstain: number };
 /**
  * 1. Partial Alignment Score (Ai)
  * Calculates a partial agreement score between two votes.
+ * Returns null if the vote should be excluded from calculations (e.g. matching abstains when excluded).
  */
 function getAgreementScore(
   voteA: string,
@@ -12,7 +13,7 @@ function getAgreementScore(
   matchAbstainInSimilarity: boolean,
   participationA: number,
   participationB: number
-): number {
+): number | null {
   // Handle NO VOTE cases first
   if (voteA === 'NOT_VOTED' && voteB === 'NOT_VOTED') {
     const pA = participationA;
@@ -30,7 +31,8 @@ function getAgreementScore(
   // Standard vote comparisons
   if (voteA === voteB) {
     if (voteA === 'ABSTAIN') {
-      return matchAbstainInSimilarity ? 1.0 : 0.0;
+      // If we include abstains, it's a match. If not, we exclude this proposal entirely.
+      return matchAbstainInSimilarity ? 1.0 : null;
     }
     return 1.0;
   }
@@ -136,11 +138,16 @@ export function calculateSimilarity(
     const proposalId = proposal.proposal_id;
     const voteA = baseVotesMap.get(proposalId) || 'NOT_VOTED';
     const voteB = targetVotesMap.get(proposalId) || 'NOT_VOTED';
-
-    const tally = powerTallies.get(proposalId) || { yes: 0, no: 0, veto: 0, abstain: 0 };
     
     // 1. Partial Alignment Score (Ai)
     const Ai = getAgreementScore(voteA, voteB, matchAbstainInSimilarity, baseValidatorParticipation, targetValidatorParticipation);
+
+    // If Ai is null, it means this proposal should be skipped (e.g., matching abstains when excluded)
+    if (Ai === null) {
+      return; // continue to next proposal
+    }
+
+    const tally = powerTallies.get(proposalId) || { yes: 0, no: 0, veto: 0, abstain: 0 };
 
     // 2. Contextual Weights
     const Ci = calculateConflictWeight(tally);
