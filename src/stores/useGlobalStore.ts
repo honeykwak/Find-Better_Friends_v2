@@ -29,6 +29,7 @@ export interface TopicNode {
   count: number
   passRate: number
   voteDistribution: Record<string, number>
+  displayName?: string
 }
 
 export type ValidatorSortKey = 'voteCount' | 'name' | 'votingPower' | 'similarity';
@@ -756,7 +757,7 @@ export const useGlobalStore = create<GlobalStore>((set, get) => ({
     });
 
     if (selectedTopics.length === 0) return filteredByAbstainRate;
-    return filteredByAbstainRate.filter(p => selectedTopics.includes(p.topic_v3_unique));
+    return filteredByAbstainRate.filter(p => selectedTopics.includes(`${p.type} - ${p.topic}`));
   },
 
   getChains: () => [
@@ -774,27 +775,30 @@ export const useGlobalStore = create<GlobalStore>((set, get) => ({
     } } = {};
 
     for (const p of filteredProposals) {
-        const categoryName = p.type_v3;
-        const topicName = p.topic_v3_unique;
-        const topicDisplayName = p.topic_v3_display;
+        const categoryName = p.type;
+        const topicName = p.topic;
+
+        if (!categoryName || !topicName) continue; // Skip proposals with missing type/topic
+
+        const uniqueTopicName = `${categoryName} - ${topicName}`;
 
         if (!categoryStats[categoryName]) categoryStats[categoryName] = { count: 0, passed: 0, voteDistribution: {}, topics: {} };
-        if (!categoryStats[categoryName].topics[topicName]) {
-            categoryStats[categoryName].topics[topicName] = { count: 0, passed: 0, voteDistribution: {}, original_topic: topicDisplayName };
+        if (!categoryStats[categoryName].topics[uniqueTopicName]) {
+            categoryStats[categoryName].topics[uniqueTopicName] = { count: 0, passed: 0, voteDistribution: {}, original_topic: topicName };
         }
 
         categoryStats[categoryName].count++;
-        categoryStats[categoryName].topics[topicName].count++;
+        categoryStats[categoryName].topics[uniqueTopicName].count++;
         if (p.status === 'PASSED') {
             categoryStats[categoryName].passed++;
-            categoryStats[categoryName].topics[topicName].passed++;
+            categoryStats[categoryName].topics[uniqueTopicName].passed++;
         }
         
         const voteDistribution = (p as any).voteDistribution || {};
         for (const key in voteDistribution) {
             const value = voteDistribution[key];
             categoryStats[categoryName].voteDistribution[key] = (categoryStats[categoryName].voteDistribution[key] || 0) + value;
-            categoryStats[categoryName].topics[topicName].voteDistribution[key] = (categoryStats[categoryName].topics[topicName].voteDistribution[key] || 0) + value;
+            categoryStats[categoryName].topics[uniqueTopicName].voteDistribution[key] = (categoryStats[categoryName].topics[uniqueTopicName].voteDistribution[key] || 0) + value;
         }
     }
 

@@ -3,127 +3,106 @@
     "proposal_id": "192",
     "chain_id": "kava",
     "title": "Adds HARD token to the Kava EVM CoChain",
-    "type": "ParameterChange",
-    "topic": "Economic Parameters",
+    "type": "Chain Administration",
+    "topic": "Parameter Change",
     "status": "PASSED",
     "submit_time": "1730781285579",
     "final_tally_result": {
       "yes_count": 26,
       "abstain_count": 5,
       "no_vote_count": 61
-    },
-    "type_v3": "Chain Administration",
-    "topic_v3": "Parameter Change",
-    "topic_v3_unique": "Chain Administration - Parameter Change"
+    }
   },
   {
     "proposal_id": "191",
     "chain_id": "kava",
     "title": "Adds MerlinBTC to Kava Lend",
-    "type": "ParameterChange",
-    "topic": "Economic Parameters",
+    "type": "Chain Administration",
+    "topic": "Parameter Change",
     "status": "PASSED",
     "submit_time": "1728586321600",
     "final_tally_result": {
       "yes_count": 18,
       "abstain_count": 15,
       "no_vote_count": 58
-    },
-    "type_v3": "Chain Administration",
-    "topic_v3": "Parameter Change",
-    "topic_v3_unique": "Chain Administration - Parameter Change"
+    }
   },
   {
     "proposal_id": "190",
     "chain_id": "kava",
     "title": "Kava Rise Payouts September 2024",
-    "type": "Unknown",
-    "topic": "Miscellaneous",
+    "type": "Treasury & Funding",
+    "topic": "Ecosystem Growth Funding",
     "status": "PASSED",
     "submit_time": "1728324775533",
     "final_tally_result": {
       "yes_count": 25,
       "abstain_count": 8,
       "no_vote_count": 58
-    },
-    "type_v3": "Treasury & Funding",
-    "topic_v3": "Ecosystem Growth Funding",
-    "topic_v3_unique": "Treasury & Funding - Ecosystem Growth Funding"
+    }
   },
   {
     "proposal_id": "189",
     "chain_id": "kava",
     "title": "Extend incentive reward periods for Kava Earn and Kava Lend",
-    "type": "ParameterChange",
-    "topic": "Economic Parameters",
+    "type": "Chain Administration",
+    "topic": "Parameter Change",
     "status": "PASSED",
     "submit_time": "1728323522374",
     "final_tally_result": {
       "yes_count": 22,
       "abstain_count": 10,
       "no_vote_count": 59
-    },
-    "type_v3": "Chain Administration",
-    "topic_v3": "Parameter Change",
-    "topic_v3_unique": "Chain Administration - Parameter Change"
+    }
   },
   {
     "proposal_id": "188",
     "chain_id": "kava",
     "title": "Kava Rise Payouts August 2024",
-    "type": "Unknown",
-    "topic": "Miscellaneous",
+    "type": "Treasury & Funding",
+    "topic": "Ecosystem Growth Funding",
     "status": "PASSED",
     "submit_time": "1725398037442",
     "final_tally_result": {
       "yes_count": 26,
       "abstain_count": 7,
       "no_vote_count": 60
-    },
-    "type_v3": "Treasury & Funding",
-    "topic_v3": "Ecosystem Growth Funding",
-    "topic_v3_unique": "Treasury & Funding - Ecosystem Growth Funding"
+    }
   },
   {
     "proposal_id": "187",
     "chain_id": "kava",
     "title": "Enable Committee MsgVote for EIP712",
-    "type": "ParameterChange",
-    "topic": "Economic Parameters",
+    "type": "Chain Administration",
+    "topic": "Parameter Change",
     "status": "PASSED",
     "submit_time": "1723840600057",
     "final_tally_result": {
       "yes_count": 24,
       "abstain_count": 11,
       "no_vote_count": 61
-    },
-    "type_v3": "Chain Administration",
-    "topic_v3": "Parameter Change",
-    "topic_v3_unique": "Chain Administration - Parameter Change"
+    }
   },
   {
     "proposal_id": "186",
     "chain_id": "kava",
     "title": "Kava Rise Payouts July 2024",
-    "type": "Unknown",
-    "topic": "Miscellaneous",
+    "type": "Treasury & Funding",
+    "topic": "Ecosystem Growth Funding",
     "status": "PASSED",
     "submit_time": "1723141104410",
     "final_tally_result": {
       "yes_count": 25,
       "abstain_count": 9,
       "no_vote_count": 61
-    },
-    "type_v3": "Treasury & Funding",
-    "topic_v3": "Ecosystem Growth Funding",
-    "topic_v3_unique": "Treasury & Funding - Ecosystem Growth Funding"
+    }
   },
   {
     "proposal_id": "185",
     "chain_id": "kava",
     "title": "Extend USDT deposit incentives for Kava Lend",
-    "type": "ParameterChange",
-    "topic": "Economic Parameters",
+    "type": "Chain Administration",
+    "topic": "Parameter Change",
     "status": "PASSED",
     "submit_time": "1721238794957",
     "final_tally_result": {
@@ -131,51 +110,42 @@
       "abstain_count": 8,
       "no_count": 1,
       "no_vote_count": 61
-    },
-    "type_v3": "Chain Administration",
-    "topic_v3": "Parameter Change",
-    "topic_v3_unique": "Chain Administration - Parameter Change"
+    }
   },
   {
     "proposal_id": "184",
     "chain_id": "kava",
     "title": " Kava New Version  USDX Airdrop ",
-    "type": "Unknown",
-    "topic": "Unclassified",
+    "type": "Governance & Community",
+    "topic": "Spam/Malicious",
     "status": "REJECTED",
     "submit_time": "1720578344717",
     "final_tally_result": {
       "no_with_veto_count": 26,
       "abstain_count": 1,
       "no_vote_count": 73
-    },
-    "type_v3": "Governance & Community",
-    "topic_v3": "Spam/Malicious",
-    "topic_v3_unique": "Governance & Community - Spam/Malicious"
+    }
   },
   {
     "proposal_id": "183",
     "chain_id": "kava",
     "title": "Kava Rise Payouts June 2024",
-    "type": "Unknown",
-    "topic": "Miscellaneous",
+    "type": "Treasury & Funding",
+    "topic": "Ecosystem Growth Funding",
     "status": "PASSED",
     "submit_time": "1720499112147",
     "final_tally_result": {
       "yes_count": 27,
       "abstain_count": 9,
       "no_vote_count": 64
-    },
-    "type_v3": "Treasury & Funding",
-    "topic_v3": "Ecosystem Growth Funding",
-    "topic_v3_unique": "Treasury & Funding - Ecosystem Growth Funding"
+    }
   },
   {
     "proposal_id": "182",
     "chain_id": "kava",
     "title": "Adds WBTC to Kava Lend and adjusts incentives",
-    "type": "ParameterChange",
-    "topic": "Economic Parameters",
+    "type": "Chain Administration",
+    "topic": "Parameter Change",
     "status": "PASSED",
     "submit_time": "1718815147017",
     "final_tally_result": {
@@ -183,118 +153,97 @@
       "no_count": 1,
       "abstain_count": 4,
       "no_vote_count": 68
-    },
-    "type_v3": "Chain Administration",
-    "topic_v3": "Parameter Change",
-    "topic_v3_unique": "Chain Administration - Parameter Change"
+    }
   },
   {
     "proposal_id": "181",
     "chain_id": "kava",
     "title": "Revive expired IBC client for Aura Network",
-    "type": "IBCRelated",
-    "topic": "IBC Security",
+    "type": "Ecosystem & Interchain",
+    "topic": "IBC Management",
     "status": "PASSED",
     "submit_time": "1718100194057",
     "final_tally_result": {
       "yes_count": 34,
       "abstain_count": 5,
       "no_vote_count": 61
-    },
-    "type_v3": "Ecosystem & Interchain",
-    "topic_v3": "IBC Management",
-    "topic_v3_unique": "Ecosystem & Interchain - IBC Management"
+    }
   },
   {
     "proposal_id": "180",
     "chain_id": "kava",
     "title": "Kava Rise payouts for May 2024",
-    "type": "Unknown",
-    "topic": "Miscellaneous",
+    "type": "Treasury & Funding",
+    "topic": "Ecosystem Growth Funding",
     "status": "PASSED",
     "submit_time": "1717791817031",
     "final_tally_result": {
       "yes_count": 26,
       "abstain_count": 10,
       "no_vote_count": 63
-    },
-    "type_v3": "Treasury & Funding",
-    "topic_v3": "Ecosystem Growth Funding",
-    "topic_v3_unique": "Treasury & Funding - Ecosystem Growth Funding"
+    }
   },
   {
     "proposal_id": "179",
     "chain_id": "kava",
     "title": "Kava Rise payouts for April 2024",
-    "type": "Unknown",
-    "topic": "Miscellaneous",
+    "type": "Treasury & Funding",
+    "topic": "Ecosystem Growth Funding",
     "status": "PASSED",
     "submit_time": "1715372887021",
     "final_tally_result": {
       "yes_count": 30,
       "abstain_count": 8,
       "no_vote_count": 61
-    },
-    "type_v3": "Treasury & Funding",
-    "topic_v3": "Ecosystem Growth Funding",
-    "topic_v3_unique": "Treasury & Funding - Ecosystem Growth Funding"
+    }
   },
   {
     "proposal_id": "178",
     "chain_id": "kava",
     "title": "Kava 16 Mainnet Upgrade",
-    "type": "SoftwareUpgrade",
-    "topic": "Feature Addition",
+    "type": "Chain Administration",
+    "topic": "Software Upgrade",
     "status": "PASSED",
     "submit_time": "1713224174950",
     "final_tally_result": {
       "yes_count": 46,
       "no_vote_count": 53
-    },
-    "type_v3": "Chain Administration",
-    "topic_v3": "Software Upgrade",
-    "topic_v3_unique": "Chain Administration - Software Upgrade"
+    }
   },
   {
     "proposal_id": "177",
     "chain_id": "kava",
     "title": "Kava Rise payouts for March 2024",
-    "type": "Unknown",
-    "topic": "Miscellaneous",
+    "type": "Treasury & Funding",
+    "topic": "Ecosystem Growth Funding",
     "status": "PASSED",
     "submit_time": "1712593756512",
     "final_tally_result": {
       "yes_count": 33,
       "abstain_count": 6,
       "no_vote_count": 60
-    },
-    "type_v3": "Treasury & Funding",
-    "topic_v3": "Ecosystem Growth Funding",
-    "topic_v3_unique": "Treasury & Funding - Ecosystem Growth Funding"
+    }
   },
   {
     "proposal_id": "176",
     "chain_id": "kava",
     "title": "Kava Rise payouts for February 2024",
-    "type": "Unknown",
-    "topic": "Miscellaneous",
+    "type": "Treasury & Funding",
+    "topic": "Ecosystem Growth Funding",
     "status": "PASSED",
     "submit_time": "1709924018751",
     "final_tally_result": {
       "yes_count": 32,
       "abstain_count": 15,
       "no_vote_count": 52
-    },
-    "type_v3": "Treasury & Funding",
-    "topic_v3": "Ecosystem Growth Funding",
-    "topic_v3_unique": "Treasury & Funding - Ecosystem Growth Funding"
+    }
   },
   {
     "proposal_id": "175",
     "chain_id": "kava",
     "title": "WAGMIwKAVA LP Authorization",
-    "type": "TextProposal",
-    "topic": "Governance Process",
+    "type": "Ecosystem & Interchain",
+    "topic": "Partnership",
     "status": "PASSED",
     "submit_time": "1709593867774",
     "final_tally_result": {
@@ -302,17 +251,14 @@
       "abstain_count": 13,
       "no_count": 1,
       "no_vote_count": 53
-    },
-    "type_v3": "Ecosystem & Interchain",
-    "topic_v3": "Partnership",
-    "topic_v3_unique": "Ecosystem & Interchain - Partnership"
+    }
   },
   {
     "proposal_id": "174",
     "chain_id": "kava",
     "title": " USD Airdrop   New Atom Liquidity ",
-    "type": "TextProposal",
-    "topic": "Governance Process",
+    "type": "Governance & Community",
+    "topic": "Spam/Malicious",
     "status": "REJECTED",
     "submit_time": "1708186844237",
     "final_tally_result": {
@@ -321,51 +267,42 @@
       "no_count": 5,
       "abstain_count": 1,
       "no_vote_count": 64
-    },
-    "type_v3": "Governance & Community",
-    "topic_v3": "Spam/Malicious",
-    "topic_v3_unique": "Governance & Community - Spam/Malicious"
+    }
   },
   {
     "proposal_id": "173",
     "chain_id": "kava",
     "title": "Kava Rise payouts for January 2024",
-    "type": "Unknown",
-    "topic": "Miscellaneous",
+    "type": "Treasury & Funding",
+    "topic": "Ecosystem Growth Funding",
     "status": "PASSED",
     "submit_time": "1707432030575",
     "final_tally_result": {
       "yes_count": 39,
       "abstain_count": 6,
       "no_vote_count": 54
-    },
-    "type_v3": "Treasury & Funding",
-    "topic_v3": "Ecosystem Growth Funding",
-    "topic_v3_unique": "Treasury & Funding - Ecosystem Growth Funding"
+    }
   },
   {
     "proposal_id": "172",
     "chain_id": "kava",
     "title": "WAGMI Pool Creation on Kinetix",
-    "type": "Unknown",
-    "topic": "Miscellaneous",
+    "type": "Ecosystem & Interchain",
+    "topic": "Smart Contract Management",
     "status": "PASSED",
     "submit_time": "1705459711376",
     "final_tally_result": {
       "yes_count": 21,
       "abstain_count": 18,
       "no_vote_count": 60
-    },
-    "type_v3": "Ecosystem & Interchain",
-    "topic_v3": "Smart Contract Management",
-    "topic_v3_unique": "Ecosystem & Interchain - Smart Contract Management"
+    }
   },
   {
     "proposal_id": "171",
     "chain_id": "kava",
     "title": "cosmosauthzv1beta1MsgExec",
-    "type": "Unknown",
-    "topic": "Miscellaneous",
+    "type": "Chain Administration",
+    "topic": "Permissioning",
     "status": "PASSED",
     "submit_time": "1704851117165",
     "final_tally_result": {
@@ -373,34 +310,28 @@
       "yes_count": 28,
       "no_count": 3,
       "no_vote_count": 50
-    },
-    "type_v3": "Chain Administration",
-    "topic_v3": "Permissioning",
-    "topic_v3_unique": "Chain Administration - Permissioning"
+    }
   },
   {
     "proposal_id": "170",
     "chain_id": "kava",
     "title": "Kava Rise payouts for November 2023",
-    "type": "CommunityPoolSpend",
-    "topic": "Community Support",
+    "type": "Treasury & Funding",
+    "topic": "Ecosystem Growth Funding",
     "status": "PASSED",
     "submit_time": "1701989621434",
     "final_tally_result": {
       "abstain_count": 8,
       "yes_count": 39,
       "no_vote_count": 52
-    },
-    "type_v3": "Treasury & Funding",
-    "topic_v3": "Ecosystem Growth Funding",
-    "topic_v3_unique": "Treasury & Funding - Ecosystem Growth Funding"
+    }
   },
   {
     "proposal_id": "169",
     "chain_id": "kava",
     "title": "WAGMI Token Transfer",
-    "type": "TextProposal",
-    "topic": "Governance Process",
+    "type": "Ecosystem & Interchain",
+    "topic": "Token Management",
     "status": "PASSED",
     "submit_time": "1701718866143",
     "final_tally_result": {
@@ -408,34 +339,28 @@
       "yes_count": 12,
       "no_count": 20,
       "no_vote_count": 51
-    },
-    "type_v3": "Ecosystem & Interchain",
-    "topic_v3": "Token Management",
-    "topic_v3_unique": "Ecosystem & Interchain - Token Management"
+    }
   },
   {
     "proposal_id": "168",
     "chain_id": "kava",
     "title": "Kava 15 Mainnet Upgrade",
-    "type": "SoftwareUpgrade",
-    "topic": "Feature Addition",
+    "type": "Chain Administration",
+    "topic": "Software Upgrade",
     "status": "PASSED",
     "submit_time": "1700862067581",
     "final_tally_result": {
       "yes_count": 53,
       "abstain_count": 1,
       "no_vote_count": 45
-    },
-    "type_v3": "Chain Administration",
-    "topic_v3": "Software Upgrade",
-    "topic_v3_unique": "Chain Administration - Software Upgrade"
+    }
   },
   {
     "proposal_id": "167",
     "chain_id": "kava",
     "title": "Kava Rise payouts for October 2023",
-    "type": "CommunityPoolSpend",
-    "topic": "Community Support",
+    "type": "Treasury & Funding",
+    "topic": "Ecosystem Growth Funding",
     "status": "PASSED",
     "submit_time": "1699570145281",
     "final_tally_result": {
@@ -443,17 +368,14 @@
       "abstain_count": 6,
       "no_count": 1,
       "no_vote_count": 46
-    },
-    "type_v3": "Treasury & Funding",
-    "topic_v3": "Ecosystem Growth Funding",
-    "topic_v3_unique": "Treasury & Funding - Ecosystem Growth Funding"
+    }
   },
   {
     "proposal_id": "166",
     "chain_id": "kava",
     "title": "Supply Funds into Kava Mint",
-    "type": "ParameterChange",
-    "topic": "Economic Parameters",
+    "type": "Chain Administration",
+    "topic": "Parameter Change",
     "status": "REJECTED",
     "submit_time": "1697825414122",
     "final_tally_result": {
@@ -462,34 +384,28 @@
       "yes_count": 9,
       "no_with_veto_count": 1,
       "no_vote_count": 56
-    },
-    "type_v3": "Chain Administration",
-    "topic_v3": "Parameter Change",
-    "topic_v3_unique": "Chain Administration - Parameter Change"
+    }
   },
   {
     "proposal_id": "165",
     "chain_id": "kava",
     "title": "Injective USDt Adoption",
-    "type": "CommunityPoolSpend",
-    "topic": "Ecosystem Growth",
+    "type": "Ecosystem & Interchain",
+    "topic": "Partnership",
     "status": "PASSED",
     "submit_time": "1697704509159",
     "final_tally_result": {
       "yes_count": 45,
       "abstain_count": 5,
       "no_vote_count": 49
-    },
-    "type_v3": "Ecosystem & Interchain",
-    "topic_v3": "Partnership",
-    "topic_v3_unique": "Ecosystem & Interchain - Partnership"
+    }
   },
   {
     "proposal_id": "164",
     "chain_id": "kava",
     "title": "Kava Rise payouts for September 2023",
-    "type": "CommunityPoolSpend",
-    "topic": "Community Support",
+    "type": "Treasury & Funding",
+    "topic": "Community Spend",
     "status": "PASSED",
     "submit_time": "1696614991250",
     "final_tally_result": {
@@ -497,17 +413,14 @@
       "abstain_count": 3,
       "no_count": 1,
       "no_vote_count": 49
-    },
-    "type_v3": "Treasury & Funding",
-    "topic_v3": "Community Spend",
-    "topic_v3_unique": "Treasury & Funding - Community Spend"
+    }
   },
   {
     "proposal_id": "163",
     "chain_id": "kava",
     "title": "WAGMI Deploys on Kava",
-    "type": "CommunityPoolSpend",
-    "topic": "Community Support",
+    "type": "Ecosystem & Interchain",
+    "topic": "Partnership",
     "status": "PASSED",
     "submit_time": "1696432548847",
     "final_tally_result": {
@@ -515,17 +428,14 @@
       "abstain_count": 6,
       "no_count": 3,
       "no_vote_count": 53
-    },
-    "type_v3": "Ecosystem & Interchain",
-    "topic_v3": "Partnership",
-    "topic_v3_unique": "Ecosystem & Interchain - Partnership"
+    }
   },
   {
     "proposal_id": "162",
     "chain_id": "kava",
     "title": "Kava Rise payouts for August 2023",
-    "type": "CommunityPoolSpend",
-    "topic": "Community Support",
+    "type": "Treasury & Funding",
+    "topic": "Ecosystem Growth Funding",
     "status": "PASSED",
     "submit_time": "1694130972995",
     "final_tally_result": {
@@ -533,17 +443,14 @@
       "no_count": 1,
       "abstain_count": 2,
       "no_vote_count": 56
-    },
-    "type_v3": "Treasury & Funding",
-    "topic_v3": "Ecosystem Growth Funding",
-    "topic_v3_unique": "Treasury & Funding - Ecosystem Growth Funding"
+    }
   },
   {
     "proposal_id": "161",
     "chain_id": "kava",
     "title": "Supply Funds into Kava Mint",
-    "type": "ParameterChange",
-    "topic": "Economic Parameters",
+    "type": "Chain Administration",
+    "topic": "Parameter Change",
     "status": "PASSED",
     "submit_time": "1694046887642",
     "final_tally_result": {
@@ -551,17 +458,14 @@
       "no_count": 1,
       "abstain_count": 1,
       "no_vote_count": 59
-    },
-    "type_v3": "Chain Administration",
-    "topic_v3": "Parameter Change",
-    "topic_v3_unique": "Chain Administration - Parameter Change"
+    }
   },
   {
     "proposal_id": "160",
     "chain_id": "kava",
     "title": "Abracadabra Joins Kava Ignition",
-    "type": "TextProposal",
-    "topic": "Governance Process",
+    "type": "Ecosystem & Interchain",
+    "topic": "Partnership",
     "status": "PASSED",
     "submit_time": "1693418317896",
     "final_tally_result": {
@@ -569,17 +473,14 @@
       "yes_count": 39,
       "no_count": 3,
       "no_vote_count": 53
-    },
-    "type_v3": "Ecosystem & Interchain",
-    "topic_v3": "Partnership",
-    "topic_v3_unique": "Ecosystem & Interchain - Partnership"
+    }
   },
   {
     "proposal_id": "159",
     "chain_id": "kava",
     "title": "Kinetix Joins Kava Ignition",
-    "type": "TextProposal",
-    "topic": "Governance Process",
+    "type": "Ecosystem & Interchain",
+    "topic": "Partnership",
     "status": "PASSED",
     "submit_time": "1693418097261",
     "final_tally_result": {
@@ -587,17 +488,14 @@
       "yes_count": 39,
       "no_count": 3,
       "no_vote_count": 54
-    },
-    "type_v3": "Ecosystem & Interchain",
-    "topic_v3": "Partnership",
-    "topic_v3_unique": "Ecosystem & Interchain - Partnership"
+    }
   },
   {
     "proposal_id": "158",
     "chain_id": "kava",
     "title": "Deposit Additional Funds into Kava Mint",
-    "type": "ParameterChange",
-    "topic": "Economic Parameters",
+    "type": "Chain Administration",
+    "topic": "Parameter Change",
     "status": "PASSED",
     "submit_time": "1691776197686",
     "final_tally_result": {
@@ -605,17 +503,14 @@
       "yes_count": 26,
       "abstain_count": 4,
       "no_vote_count": 63
-    },
-    "type_v3": "Chain Administration",
-    "topic_v3": "Parameter Change",
-    "topic_v3_unique": "Chain Administration - Parameter Change"
+    }
   },
   {
     "proposal_id": "157",
     "chain_id": "kava",
     "title": "Kava Ignition Program",
-    "type": "TextProposal",
-    "topic": "Governance Process",
+    "type": "Treasury & Funding",
+    "topic": "Ecosystem Growth Funding",
     "status": "PASSED",
     "submit_time": "1691694953090",
     "final_tally_result": {
@@ -623,17 +518,14 @@
       "abstain_count": 4,
       "no_count": 1,
       "no_vote_count": 55
-    },
-    "type_v3": "Treasury & Funding",
-    "topic_v3": "Ecosystem Growth Funding",
-    "topic_v3_unique": "Treasury & Funding - Ecosystem Growth Funding"
+    }
   },
   {
     "proposal_id": "156",
     "chain_id": "kava",
     "title": "Update Stability Committee Permissions to Include USDt in Lend and Mint",
-    "type": "Unknown",
-    "topic": "Miscellaneous",
+    "type": "Governance & Community",
+    "topic": "Process & Policy",
     "status": "PASSED",
     "submit_time": "1691621496834",
     "final_tally_result": {
@@ -641,17 +533,14 @@
       "no_count": 1,
       "abstain_count": 5,
       "no_vote_count": 53
-    },
-    "type_v3": "Governance & Community",
-    "topic_v3": "Process & Policy",
-    "topic_v3_unique": "Governance & Community - Process & Policy"
+    }
   },
   {
     "proposal_id": "155",
     "chain_id": "kava",
     "title": "Kava Rise payouts for July 2023",
-    "type": "CommunityPoolSpend",
-    "topic": "Community Support",
+    "type": "Treasury & Funding",
+    "topic": "Ecosystem Growth Funding",
     "status": "PASSED",
     "submit_time": "1691442340424",
     "final_tally_result": {
@@ -659,17 +548,14 @@
       "abstain_count": 7,
       "no_count": 1,
       "no_vote_count": 50
-    },
-    "type_v3": "Treasury & Funding",
-    "topic_v3": "Ecosystem Growth Funding",
-    "topic_v3_unique": "Treasury & Funding - Ecosystem Growth Funding"
+    }
   },
   {
     "proposal_id": "154",
     "chain_id": "kava",
     "title": "Kava Rise payouts for July 2023",
-    "type": "CommunityPoolSpend",
-    "topic": "Community Support",
+    "type": "Treasury & Funding",
+    "topic": "Ecosystem Growth Funding",
     "status": "REJECTED",
     "submit_time": "1691430862887",
     "final_tally_result": {
@@ -677,17 +563,14 @@
       "yes_count": 17,
       "abstain_count": 11,
       "no_vote_count": 51
-    },
-    "type_v3": "Treasury & Funding",
-    "topic_v3": "Ecosystem Growth Funding",
-    "topic_v3_unique": "Treasury & Funding - Ecosystem Growth Funding"
+    }
   },
   {
     "proposal_id": "153",
     "chain_id": "kava",
     "title": "Increases USDt incentives removes various asset incentives in Kava Lend",
-    "type": "ParameterChange",
-    "topic": "Economic Parameters",
+    "type": "Chain Administration",
+    "topic": "Parameter Change",
     "status": "PASSED",
     "submit_time": "1690561774989",
     "final_tally_result": {
@@ -695,17 +578,14 @@
       "abstain_count": 10,
       "no_count": 2,
       "no_vote_count": 50
-    },
-    "type_v3": "Chain Administration",
-    "topic_v3": "Parameter Change",
-    "topic_v3_unique": "Chain Administration - Parameter Change"
+    }
   },
   {
     "proposal_id": "152",
     "chain_id": "kava",
     "title": "Adds Tether USDt to Mint",
-    "type": "ParameterChange",
-    "topic": "Protocol Configuration",
+    "type": "Chain Administration",
+    "topic": "Parameter Change",
     "status": "PASSED",
     "submit_time": "1690392982487",
     "final_tally_result": {
@@ -713,17 +593,14 @@
       "abstain_count": 4,
       "no_count": 1,
       "no_vote_count": 54
-    },
-    "type_v3": "Chain Administration",
-    "topic_v3": "Parameter Change",
-    "topic_v3_unique": "Chain Administration - Parameter Change"
+    }
   },
   {
     "proposal_id": "151",
     "chain_id": "kava",
     "title": "Supply Funds into Kava Mint",
-    "type": "ParameterChange",
-    "topic": "Economic Parameters",
+    "type": "Chain Administration",
+    "topic": "Parameter Change",
     "status": "PASSED",
     "submit_time": "1689454487009",
     "final_tally_result": {
@@ -731,17 +608,14 @@
       "abstain_count": 10,
       "no_count": 3,
       "no_vote_count": 52
-    },
-    "type_v3": "Chain Administration",
-    "topic_v3": "Parameter Change",
-    "topic_v3_unique": "Chain Administration - Parameter Change"
+    }
   },
   {
     "proposal_id": "150",
     "chain_id": "kava",
     "title": "Adds EIP712 allowed messages",
-    "type": "ParameterChange",
-    "topic": "Protocol Configuration",
+    "type": "Chain Administration",
+    "topic": "Parameter Change",
     "status": "PASSED",
     "submit_time": "1689375522201",
     "final_tally_result": {
@@ -749,17 +623,14 @@
       "no_count": 1,
       "abstain_count": 4,
       "no_vote_count": 46
-    },
-    "type_v3": "Chain Administration",
-    "topic_v3": "Parameter Change",
-    "topic_v3_unique": "Chain Administration - Parameter Change"
+    }
   },
   {
     "proposal_id": "149",
     "chain_id": "kava",
     "title": "Adds EIP712 allowed messages",
-    "type": "ParameterChange",
-    "topic": "Protocol Configuration",
+    "type": "Chain Administration",
+    "topic": "Parameter Change",
     "status": "REJECTED",
     "submit_time": "1689349058528",
     "final_tally_result": {
@@ -767,17 +638,14 @@
       "abstain_count": 5,
       "yes_count": 22,
       "no_vote_count": 44
-    },
-    "type_v3": "Chain Administration",
-    "topic_v3": "Parameter Change",
-    "topic_v3_unique": "Chain Administration - Parameter Change"
+    }
   },
   {
     "proposal_id": "148",
     "chain_id": "kava",
     "title": "Kava Rise payouts for June 2023",
-    "type": "CommunityPoolSpend",
-    "topic": "Community Support",
+    "type": "Treasury & Funding",
+    "topic": "Ecosystem Growth Funding",
     "status": "PASSED",
     "submit_time": "1688779009484",
     "final_tally_result": {
@@ -785,17 +653,14 @@
       "abstain_count": 10,
       "no_count": 1,
       "no_vote_count": 46
-    },
-    "type_v3": "Treasury & Funding",
-    "topic_v3": "Ecosystem Growth Funding",
-    "topic_v3_unique": "Treasury & Funding - Ecosystem Growth Funding"
+    }
   },
   {
     "proposal_id": "147",
     "chain_id": "kava",
     "title": "Adds Tether USDt to kava lend and adjusts incentives",
-    "type": "ParameterChange",
-    "topic": "Economic Parameters",
+    "type": "Chain Administration",
+    "topic": "Parameter Change",
     "status": "PASSED",
     "submit_time": "1688671060977",
     "final_tally_result": {
@@ -803,33 +668,27 @@
       "abstain_count": 4,
       "no_count": 3,
       "no_vote_count": 47
-    },
-    "type_v3": "Chain Administration",
-    "topic_v3": "Parameter Change",
-    "topic_v3_unique": "Chain Administration - Parameter Change"
+    }
   },
   {
     "proposal_id": "146",
     "chain_id": "kava",
     "title": "Kava 14 Mainnet Upgrade",
-    "type": "SoftwareUpgrade",
-    "topic": "Feature Addition",
+    "type": "Chain Administration",
+    "topic": "Software Upgrade",
     "status": "PASSED",
     "submit_time": "1688169158972",
     "final_tally_result": {
       "yes_count": 55,
       "no_vote_count": 44
-    },
-    "type_v3": "Chain Administration",
-    "topic_v3": "Software Upgrade",
-    "topic_v3_unique": "Chain Administration - Software Upgrade"
+    }
   },
   {
     "proposal_id": "145",
     "chain_id": "kava",
     "title": "Increases ATOM incentives reduces multichain asset incentives in Kava Lend",
-    "type": "ParameterChange",
-    "topic": "Economic Parameters",
+    "type": "Chain Administration",
+    "topic": "Parameter Change",
     "status": "PASSED",
     "submit_time": "1686956100399",
     "final_tally_result": {
@@ -837,34 +696,28 @@
       "yes_count": 38,
       "no_count": 1,
       "no_vote_count": 54
-    },
-    "type_v3": "Chain Administration",
-    "topic_v3": "Parameter Change",
-    "topic_v3_unique": "Chain Administration - Parameter Change"
+    }
   },
   {
     "proposal_id": "144",
     "chain_id": "kava",
     "title": "Kava Rise payouts for May 2023",
-    "type": "CommunityPoolSpend",
-    "topic": "Community Support",
+    "type": "Treasury & Funding",
+    "topic": "Ecosystem Growth Funding",
     "status": "PASSED",
     "submit_time": "1686258086777",
     "final_tally_result": {
       "abstain_count": 6,
       "yes_count": 40,
       "no_vote_count": 53
-    },
-    "type_v3": "Treasury & Funding",
-    "topic_v3": "Ecosystem Growth Funding",
-    "topic_v3_unique": "Treasury & Funding - Ecosystem Growth Funding"
+    }
   },
   {
     "proposal_id": "143",
     "chain_id": "kava",
     "title": "Adds Axelar WBTC to kava Lend and adjusts incentives",
-    "type": "ParameterChange",
-    "topic": "Economic Parameters",
+    "type": "Chain Administration",
+    "topic": "Parameter Change",
     "status": "PASSED",
     "submit_time": "1686006411818",
     "final_tally_result": {
@@ -872,17 +725,14 @@
       "abstain_count": 6,
       "no_count": 1,
       "no_vote_count": 54
-    },
-    "type_v3": "Chain Administration",
-    "topic_v3": "Parameter Change",
-    "topic_v3_unique": "Chain Administration - Parameter Change"
+    }
   },
   {
     "proposal_id": "142",
     "chain_id": "kava",
     "title": "Deposit Funds into Kava Lend",
-    "type": "CommunityPoolSpend",
-    "topic": "Community Support",
+    "type": "Treasury & Funding",
+    "topic": "Community Spend",
     "status": "PASSED",
     "submit_time": "1685745008010",
     "final_tally_result": {
@@ -890,17 +740,14 @@
       "abstain_count": 10,
       "no_count": 1,
       "no_vote_count": 57
-    },
-    "type_v3": "Treasury & Funding",
-    "topic_v3": "Community Spend",
-    "topic_v3_unique": "Treasury & Funding - Community Spend"
+    }
   },
   {
     "proposal_id": "141",
     "chain_id": "kava",
     "title": "Kava Horizon signaling proposal",
-    "type": "ParameterChange",
-    "topic": "Economic Parameters",
+    "type": "Chain Administration",
+    "topic": "Parameter Change",
     "status": "PASSED",
     "submit_time": "1683924893371",
     "final_tally_result": {
@@ -908,50 +755,41 @@
       "no_count": 9,
       "yes_count": 32,
       "no_vote_count": 46
-    },
-    "type_v3": "Chain Administration",
-    "topic_v3": "Parameter Change",
-    "topic_v3_unique": "Chain Administration - Parameter Change"
+    }
   },
   {
     "proposal_id": "140",
     "chain_id": "kava",
     "title": "Kava Rise payouts for April 2023",
-    "type": "CommunityPoolSpend",
-    "topic": "Community Support",
+    "type": "Treasury & Funding",
+    "topic": "Ecosystem Growth Funding",
     "status": "PASSED",
     "submit_time": "1683665999839",
     "final_tally_result": {
       "yes_count": 47,
       "abstain_count": 7,
       "no_vote_count": 45
-    },
-    "type_v3": "Treasury & Funding",
-    "topic_v3": "Ecosystem Growth Funding",
-    "topic_v3_unique": "Treasury & Funding - Ecosystem Growth Funding"
+    }
   },
   {
     "proposal_id": "139",
     "chain_id": "kava",
     "title": "Kava 13 Mainnet Upgrade",
-    "type": "SoftwareUpgrade",
-    "topic": "Feature Addition",
+    "type": "Chain Administration",
+    "topic": "Software Upgrade",
     "status": "PASSED",
     "submit_time": "1683644363631",
     "final_tally_result": {
       "yes_count": 59,
       "no_vote_count": 40
-    },
-    "type_v3": "Chain Administration",
-    "topic_v3": "Software Upgrade",
-    "topic_v3_unique": "Chain Administration - Software Upgrade"
+    }
   },
   {
     "proposal_id": "138",
     "chain_id": "kava",
     "title": "Deposit Funds into Kava Lend",
-    "type": "CommunityPoolSpend",
-    "topic": "Community Support",
+    "type": "Treasury & Funding",
+    "topic": "Community Spend",
     "status": "PASSED",
     "submit_time": "1683141362719",
     "final_tally_result": {
@@ -959,17 +797,14 @@
       "no_count": 3,
       "abstain_count": 3,
       "no_vote_count": 48
-    },
-    "type_v3": "Treasury & Funding",
-    "topic_v3": "Community Spend",
-    "topic_v3_unique": "Treasury & Funding - Community Spend"
+    }
   },
   {
     "proposal_id": "137",
     "chain_id": "kava",
     "title": "Add Kava Origin to Kava Infrastructure and Security Rewards",
-    "type": "ParameterChange",
-    "topic": "Economic Parameters",
+    "type": "Chain Administration",
+    "topic": "Parameter Change",
     "status": "PASSED",
     "submit_time": "1682638562590",
     "final_tally_result": {
@@ -977,34 +812,28 @@
       "yes_count": 30,
       "no_count": 9,
       "no_vote_count": 50
-    },
-    "type_v3": "Chain Administration",
-    "topic_v3": "Parameter Change",
-    "topic_v3_unique": "Chain Administration - Parameter Change"
+    }
   },
   {
     "proposal_id": "136",
     "chain_id": "kava",
     "title": "Addition of Multichain USDCwBTCUSDT to Kava Lend",
-    "type": "ParameterChange",
-    "topic": "Economic Parameters",
+    "type": "Chain Administration",
+    "topic": "Parameter Change",
     "status": "PASSED",
     "submit_time": "1681836906941",
     "final_tally_result": {
       "yes_count": 49,
       "abstain_count": 2,
       "no_vote_count": 48
-    },
-    "type_v3": "Chain Administration",
-    "topic_v3": "Parameter Change",
-    "topic_v3_unique": "Chain Administration - Parameter Change"
+    }
   },
   {
     "proposal_id": "135",
     "chain_id": "kava",
     "title": "Establish Kava Origin foundation",
-    "type": "TextProposal",
-    "topic": "Governance Process",
+    "type": "Governance & Community",
+    "topic": "Process & Policy",
     "status": "PASSED",
     "submit_time": "1680819999232",
     "final_tally_result": {
@@ -1013,51 +842,42 @@
       "yes_count": 12,
       "no_with_veto_count": 6,
       "no_vote_count": 55
-    },
-    "type_v3": "Governance & Community",
-    "topic_v3": "Process & Policy",
-    "topic_v3_unique": "Governance & Community - Process & Policy"
+    }
   },
   {
     "proposal_id": "134",
     "chain_id": "kava",
     "title": "Kava Rise payouts for March 2023",
-    "type": "CommunityPoolSpend",
-    "topic": "Community Support",
+    "type": "Treasury & Funding",
+    "topic": "Ecosystem Growth Funding",
     "status": "PASSED",
     "submit_time": "1680669150998",
     "final_tally_result": {
       "yes_count": 41,
       "abstain_count": 5,
       "no_vote_count": 53
-    },
-    "type_v3": "Treasury & Funding",
-    "topic_v3": "Ecosystem Growth Funding",
-    "topic_v3_unique": "Treasury & Funding - Ecosystem Growth Funding"
+    }
   },
   {
     "proposal_id": "133",
     "chain_id": "kava",
     "title": "Update stability committee permissions to include USDC Kava Lend market",
-    "type": "Unknown",
-    "topic": "Miscellaneous",
+    "type": "Governance & Community",
+    "topic": "Process & Policy",
     "status": "PASSED",
     "submit_time": "1680626872496",
     "final_tally_result": {
       "yes_count": 44,
       "abstain_count": 2,
       "no_vote_count": 53
-    },
-    "type_v3": "Governance & Community",
-    "topic_v3": "Process & Policy",
-    "topic_v3_unique": "Governance & Community - Process & Policy"
+    }
   },
   {
     "proposal_id": "132",
     "chain_id": "kava",
     "title": "Deposit Funds into Kava Lend",
-    "type": "CommunityPoolSpend",
-    "topic": "Community Support",
+    "type": "Treasury & Funding",
+    "topic": "Community Spend",
     "status": "PASSED",
     "submit_time": "1679508581941",
     "final_tally_result": {
@@ -1065,51 +885,42 @@
       "abstain_count": 5,
       "no_count": 1,
       "no_vote_count": 53
-    },
-    "type_v3": "Treasury & Funding",
-    "topic_v3": "Community Spend",
-    "topic_v3_unique": "Treasury & Funding - Community Spend"
+    }
   },
   {
     "proposal_id": "131",
     "chain_id": "kava",
     "title": "Adds Axlear USDC erc20axelarusdc to Kava Lend and updates incentives allocation to include axlUSDC incentives in Kava Lend",
-    "type": "ParameterChange",
-    "topic": "Economic Parameters",
+    "type": "Chain Administration",
+    "topic": "Parameter Change",
     "status": "PASSED",
     "submit_time": "1678896086210",
     "final_tally_result": {
       "yes_count": 45,
       "abstain_count": 1,
       "no_vote_count": 53
-    },
-    "type_v3": "Chain Administration",
-    "topic_v3": "Parameter Change",
-    "topic_v3_unique": "Chain Administration - Parameter Change"
+    }
   },
   {
     "proposal_id": "130",
     "chain_id": "kava",
     "title": "Addition of ETH price feed ",
-    "type": "ParameterChange",
-    "topic": "Fee Adjustment",
+    "type": "Chain Administration",
+    "topic": "Parameter Change",
     "status": "PASSED",
     "submit_time": "1678156759724",
     "final_tally_result": {
       "yes_count": 42,
       "abstain_count": 2,
       "no_vote_count": 55
-    },
-    "type_v3": "Chain Administration",
-    "topic_v3": "Parameter Change",
-    "topic_v3_unique": "Chain Administration - Parameter Change"
+    }
   },
   {
     "proposal_id": "129",
     "chain_id": "kava",
     "title": "Kava Rise payouts for February 2023",
-    "type": "CommunityPoolSpend",
-    "topic": "Community Support",
+    "type": "Treasury & Funding",
+    "topic": "Ecosystem Growth Funding",
     "status": "PASSED",
     "submit_time": "1677720506821",
     "final_tally_result": {
@@ -1117,17 +928,14 @@
       "abstain_count": 4,
       "no_count": 1,
       "no_vote_count": 57
-    },
-    "type_v3": "Treasury & Funding",
-    "topic_v3": "Ecosystem Growth Funding",
-    "topic_v3_unique": "Treasury & Funding - Ecosystem Growth Funding"
+    }
   },
   {
     "proposal_id": "128",
     "chain_id": "kava",
     "title": "Support Decentralization and Security on the Kava Network",
-    "type": "TextProposal",
-    "topic": "Governance Process",
+    "type": "Chain Administration",
+    "topic": "Security",
     "status": "PASSED",
     "submit_time": "1677621099326",
     "final_tally_result": {
@@ -1136,34 +944,28 @@
       "no_count": 4,
       "abstain_count": 5,
       "no_vote_count": 57
-    },
-    "type_v3": "Chain Administration",
-    "topic_v3": "Security",
-    "topic_v3_unique": "Chain Administration - Security"
+    }
   },
   {
     "proposal_id": "127",
     "chain_id": "kava",
     "title": "Deposit Funds into Kava Lend",
-    "type": "CommunityPoolSpend",
-    "topic": "Community Support",
+    "type": "Treasury & Funding",
+    "topic": "Community Spend",
     "status": "PASSED",
     "submit_time": "1677021890425",
     "final_tally_result": {
       "yes_count": 38,
       "abstain_count": 5,
       "no_vote_count": 56
-    },
-    "type_v3": "Treasury & Funding",
-    "topic_v3": "Community Spend",
-    "topic_v3_unique": "Treasury & Funding - Community Spend"
+    }
   },
   {
     "proposal_id": "126",
     "chain_id": "kava",
     "title": "Adjust incentive rewards and staking incentives",
-    "type": "ParameterChange",
-    "topic": "Staking Parameters",
+    "type": "Chain Administration",
+    "topic": "Parameter Change",
     "status": "PASSED",
     "submit_time": "1677003426642",
     "final_tally_result": {
@@ -1172,50 +974,41 @@
       "no_count": 3,
       "no_with_veto_count": 1,
       "no_vote_count": 53
-    },
-    "type_v3": "Chain Administration",
-    "topic_v3": "Parameter Change",
-    "topic_v3_unique": "Chain Administration - Parameter Change"
+    }
   },
   {
     "proposal_id": "125",
     "chain_id": "kava",
     "title": "Launch the 1000000 AKT Akash Open Cloud Kava Validator Campaign",
-    "type": "TextProposal",
-    "topic": "Governance Process",
+    "type": "Ecosystem & Interchain",
+    "topic": "Partnership",
     "status": "PASSED",
     "submit_time": "1676968951886",
     "final_tally_result": {
       "yes_count": 34,
       "abstain_count": 11,
       "no_vote_count": 54
-    },
-    "type_v3": "Ecosystem & Interchain",
-    "topic_v3": "Partnership",
-    "topic_v3_unique": "Ecosystem & Interchain - Partnership"
+    }
   },
   {
     "proposal_id": "124",
     "chain_id": "kava",
     "title": "Kava 12 Mainnet Upgrade",
-    "type": "SoftwareUpgrade",
-    "topic": "Feature Addition",
+    "type": "Chain Administration",
+    "topic": "Software Upgrade",
     "status": "PASSED",
     "submit_time": "1675826227661",
     "final_tally_result": {
       "yes_count": 46,
       "no_vote_count": 53
-    },
-    "type_v3": "Chain Administration",
-    "topic_v3": "Software Upgrade",
-    "topic_v3_unique": "Chain Administration - Software Upgrade"
+    }
   },
   {
     "proposal_id": "123",
     "chain_id": "kava",
     "title": "Kava Rise payouts for January 2023",
-    "type": "CommunityPoolSpend",
-    "topic": "Community Support",
+    "type": "Treasury & Funding",
+    "topic": "Ecosystem Growth Funding",
     "status": "PASSED",
     "submit_time": "1675813761580",
     "final_tally_result": {
@@ -1223,84 +1016,69 @@
       "no_count": 1,
       "abstain_count": 4,
       "no_vote_count": 55
-    },
-    "type_v3": "Treasury & Funding",
-    "topic_v3": "Ecosystem Growth Funding",
-    "topic_v3_unique": "Treasury & Funding - Ecosystem Growth Funding"
+    }
   },
   {
     "proposal_id": "122",
     "chain_id": "kava",
     "title": "Kava Rise payouts for Dec 2022",
-    "type": "CommunityPoolSpend",
-    "topic": "Community Support",
+    "type": "Treasury & Funding",
+    "topic": "Ecosystem Growth Funding",
     "status": "PASSED",
     "submit_time": "1674146777190",
     "final_tally_result": {
       "yes_count": 44,
       "abstain_count": 3,
       "no_vote_count": 52
-    },
-    "type_v3": "Treasury & Funding",
-    "topic_v3": "Ecosystem Growth Funding",
-    "topic_v3_unique": "Treasury & Funding - Ecosystem Growth Funding"
+    }
   },
   {
     "proposal_id": "121",
     "chain_id": "kava",
     "title": "Kava 12 Software Upgrade Proposal",
-    "type": "SoftwareUpgrade",
-    "topic": "Feature Addition",
+    "type": "Chain Administration",
+    "topic": "Software Upgrade",
     "status": "REJECTED",
     "submit_time": "1674019194908",
     "final_tally_result": {
       "no_count": 22,
       "yes_count": 24,
       "no_vote_count": 53
-    },
-    "type_v3": "Chain Administration",
-    "topic_v3": "Software Upgrade",
-    "topic_v3_unique": "Chain Administration - Software Upgrade"
+    }
   },
   {
     "proposal_id": "120",
     "chain_id": "kava",
     "title": "Kava 12 Software Upgrade Proposal",
-    "type": "SoftwareUpgrade",
-    "topic": "Feature Addition",
+    "type": "Chain Administration",
+    "topic": "Software Upgrade",
     "status": "REJECTED",
     "submit_time": "1673404864894",
     "final_tally_result": {
       "no_count": 29,
       "yes_count": 24,
       "no_vote_count": 46
-    },
-    "type_v3": "Chain Administration",
-    "topic_v3": "Software Upgrade",
-    "topic_v3_unique": "Chain Administration - Software Upgrade"
+    }
   },
   {
     "proposal_id": "119",
     "chain_id": "kava",
     "title": "BNB Earn Surge",
-    "type": "ParameterChange",
-    "topic": "Protocol Configuration",
+    "type": "Chain Administration",
+    "topic": "Parameter Change",
     "status": "PASSED",
     "submit_time": "1671747528109",
     "final_tally_result": {
       "yes_count": 35,
       "no_vote_count": 64
-    },
-    "type_v3": "Chain Administration",
-    "topic_v3": "Parameter Change",
-    "topic_v3_unique": "Chain Administration - Parameter Change"
+    }
   },
   {
     "proposal_id": "118",
     "chain_id": "kava",
     "title": "Remove Community Pool Funds From Earn Vault",
-    "type": "CommunityPoolSpend",
-    "topic": "Community Support",
+    "type": "Treasury & Funding",
+    "topic": "Community Spend",
     "status": "PASSED",
     "submit_time": "1671733518082",
     "final_tally_result": {
@@ -1308,34 +1086,28 @@
       "abstain_count": 2,
       "no_count": 1,
       "no_vote_count": 64
-    },
-    "type_v3": "Treasury & Funding",
-    "topic_v3": "Community Spend",
-    "topic_v3_unique": "Treasury & Funding - Community Spend"
+    }
   },
   {
     "proposal_id": "117",
     "chain_id": "kava",
     "title": "Revised Kava Rise payouts for November 2022",
-    "type": "CommunityPoolSpend",
-    "topic": "Community Support",
+    "type": "Treasury & Funding",
+    "topic": "Ecosystem Growth Funding",
     "status": "PASSED",
     "submit_time": "1671733179477",
     "final_tally_result": {
       "yes_count": 33,
       "abstain_count": 2,
       "no_vote_count": 64
-    },
-    "type_v3": "Treasury & Funding",
-    "topic_v3": "Ecosystem Growth Funding",
-    "topic_v3_unique": "Treasury & Funding - Ecosystem Growth Funding"
+    }
   },
   {
     "proposal_id": "116",
     "chain_id": "kava",
     "title": "Remove Community Pool Funds From Earn Vault",
-    "type": "CommunityPoolSpend",
-    "topic": "Community Support",
+    "type": "Treasury & Funding",
+    "topic": "Community Spend",
     "status": "REJECTED",
     "submit_time": "1670899770064",
     "final_tally_result": {
@@ -1343,68 +1115,56 @@
       "abstain_count": 8,
       "no_count": 2,
       "no_vote_count": 61
-    },
-    "type_v3": "Treasury & Funding",
-    "topic_v3": "Community Spend",
-    "topic_v3_unique": "Treasury & Funding - Community Spend"
+    }
   },
   {
     "proposal_id": "115",
     "chain_id": "kava",
     "title": "Kava Rise payouts for November 2022",
-    "type": "CommunityPoolSpend",
-    "topic": "Community Support",
+    "type": "Treasury & Funding",
+    "topic": "Community Spend",
     "status": "REJECTED",
     "submit_time": "1670890380621",
     "final_tally_result": {
       "yes_count": 33,
       "abstain_count": 5,
       "no_vote_count": 61
-    },
-    "type_v3": "Treasury & Funding",
-    "topic_v3": "Community Spend",
-    "topic_v3_unique": "Treasury & Funding - Community Spend"
+    }
   },
   {
     "proposal_id": "114",
     "chain_id": "kava",
     "title": "Adjust AKT and HARD lend markets",
-    "type": "ParameterChange",
-    "topic": "Economic Parameters",
+    "type": "Chain Administration",
+    "topic": "Parameter Change",
     "status": "PASSED",
     "submit_time": "1670551012996",
     "final_tally_result": {
       "yes_count": 39,
       "abstain_count": 3,
       "no_vote_count": 57
-    },
-    "type_v3": "Chain Administration",
-    "topic_v3": "Parameter Change",
-    "topic_v3_unique": "Chain Administration - Parameter Change"
+    }
   },
   {
     "proposal_id": "113",
     "chain_id": "kava",
     "title": "Adjust incentive claim multipliers",
-    "type": "ParameterChange",
-    "topic": "Protocol Configuration",
+    "type": "Chain Administration",
+    "topic": "Parameter Change",
     "status": "PASSED",
     "submit_time": "1669824661156",
     "final_tally_result": {
       "yes_count": 34,
       "abstain_count": 5,
       "no_vote_count": 60
-    },
-    "type_v3": "Chain Administration",
-    "topic_v3": "Parameter Change",
-    "topic_v3_unique": "Chain Administration - Parameter Change"
+    }
   },
   {
     "proposal_id": "112",
     "chain_id": "kava",
     "title": "Incentive adjustments for bKAVA Kava Mint and Kava Swap",
-    "type": "ParameterChange",
-    "topic": "Economic Parameters",
+    "type": "Chain Administration",
+    "topic": "Parameter Change",
     "status": "PASSED",
     "submit_time": "1669776993151",
     "final_tally_result": {
@@ -1412,17 +1172,14 @@
       "abstain_count": 5,
       "no_count": 2,
       "no_vote_count": 62
-    },
-    "type_v3": "Chain Administration",
-    "topic_v3": "Parameter Change",
-    "topic_v3_unique": "Chain Administration - Parameter Change"
+    }
   },
   {
     "proposal_id": "111",
     "chain_id": "kava",
     "title": "Adds BNB earn vault and adjusts incentives",
-    "type": "ParameterChange",
-    "topic": "Protocol Configuration",
+    "type": "Chain Administration",
+    "topic": "Parameter Change",
     "status": "PASSED",
     "submit_time": "1668723036586",
     "final_tally_result": {
@@ -1430,34 +1187,28 @@
       "abstain_count": 2,
       "no_count": 1,
       "no_vote_count": 51
-    },
-    "type_v3": "Chain Administration",
-    "topic_v3": "Parameter Change",
-    "topic_v3_unique": "Chain Administration - Parameter Change"
+    }
   },
   {
     "proposal_id": "110",
     "chain_id": "kava",
     "title": "Revive IBC Client to Oppy Chain",
-    "type": "IBCRelated",
-    "topic": "IBC Transfer",
+    "type": "Ecosystem & Interchain",
+    "topic": "IBC Management",
     "status": "REJECTED",
     "submit_time": "1668396965402",
     "final_tally_result": {
       "yes_count": 41,
       "abstain_count": 4,
       "no_vote_count": 54
-    },
-    "type_v3": "Ecosystem & Interchain",
-    "topic_v3": "IBC Management",
-    "topic_v3_unique": "Ecosystem & Interchain - IBC Management"
+    }
   },
   {
     "proposal_id": "109",
     "chain_id": "kava",
     "title": "Revive IBC Client to Terra",
-    "type": "IBCRelated",
-    "topic": "IBC Transfer",
+    "type": "Ecosystem & Interchain",
+    "topic": "IBC Management",
     "status": "PASSED",
     "submit_time": "1667678825485",
     "final_tally_result": {
@@ -1465,17 +1216,14 @@
       "abstain_count": 4,
       "no_count": 1,
       "no_vote_count": 51
-    },
-    "type_v3": "Ecosystem & Interchain",
-    "topic_v3": "IBC Management",
-    "topic_v3_unique": "Ecosystem & Interchain - IBC Management"
+    }
   },
   {
     "proposal_id": "108",
     "chain_id": "kava",
     "title": "Kava 11 Testnet Competition Winners Part 2",
-    "type": "CommunityPoolSpend",
-    "topic": "Community Support",
+    "type": "Treasury & Funding",
+    "topic": "Ecosystem Growth Funding",
     "status": "PASSED",
     "submit_time": "1667606068596",
     "final_tally_result": {
@@ -1483,17 +1231,14 @@
       "abstain_count": 2,
       "no_count": 2,
       "no_vote_count": 51
-    },
-    "type_v3": "Treasury & Funding",
-    "topic_v3": "Ecosystem Growth Funding",
-    "topic_v3_unique": "Treasury & Funding - Ecosystem Growth Funding"
+    }
   },
   {
     "proposal_id": "107",
     "chain_id": "kava",
     "title": "Kava 11 Testnet Competition Winners",
-    "type": "CommunityPoolSpend",
-    "topic": "Community Support",
+    "type": "Treasury & Funding",
+    "topic": "Ecosystem Growth Funding",
     "status": "PASSED",
     "submit_time": "1667605951015",
     "final_tally_result": {
@@ -1501,17 +1246,14 @@
       "abstain_count": 2,
       "no_count": 2,
       "no_vote_count": 51
-    },
-    "type_v3": "Treasury & Funding",
-    "topic_v3": "Ecosystem Growth Funding",
-    "topic_v3_unique": "Treasury & Funding - Ecosystem Growth Funding"
+    }
   },
   {
     "proposal_id": "106",
     "chain_id": "kava",
     "title": "Kava Rise October Payouts",
-    "type": "CommunityPoolSpend",
-    "topic": "Community Support",
+    "type": "Treasury & Funding",
+    "topic": "Ecosystem Growth Funding",
     "status": "PASSED",
     "submit_time": "1667605841628",
     "final_tally_result": {
@@ -1519,17 +1261,14 @@
       "abstain_count": 5,
       "no_count": 4,
       "no_vote_count": 51
-    },
-    "type_v3": "Treasury & Funding",
-    "topic_v3": "Ecosystem Growth Funding",
-    "topic_v3_unique": "Treasury & Funding - Ecosystem Growth Funding"
+    }
   },
   {
     "proposal_id": "105",
     "chain_id": "kava",
     "title": "Kava Rise September Payouts",
-    "type": "CommunityPoolSpend",
-    "topic": "Community Support",
+    "type": "Treasury & Funding",
+    "topic": "Ecosystem Growth Funding",
     "status": "PASSED",
     "submit_time": "1667605731595",
     "final_tally_result": {
@@ -1537,17 +1276,14 @@
       "abstain_count": 5,
       "no_count": 4,
       "no_vote_count": 51
-    },
-    "type_v3": "Treasury & Funding",
-    "topic_v3": "Ecosystem Growth Funding",
-    "topic_v3_unique": "Treasury & Funding - Ecosystem Growth Funding"
+    }
   },
   {
     "proposal_id": "104",
     "chain_id": "kava",
     "title": "Adjusts Kava incentive rewards for Swap Lend and Boost and KAVA stakers Adds parameters for Multichain Dai USDT to earn module ",
-    "type": "ParameterChange",
-    "topic": "Economic Parameters",
+    "type": "Chain Administration",
+    "topic": "Parameter Change",
     "status": "PASSED",
     "submit_time": "1667605582325",
     "final_tally_result": {
@@ -1556,17 +1292,14 @@
       "abstain_count": 4,
       "no_with_veto_count": 1,
       "no_vote_count": 49
-    },
-    "type_v3": "Chain Administration",
-    "topic_v3": "Parameter Change",
-    "topic_v3_unique": "Chain Administration - Parameter Change"
+    }
   },
   {
     "proposal_id": "103",
     "chain_id": "kava",
     "title": "Community pool deposit to Earn",
-    "type": "CommunityPoolSpend",
-    "topic": "Community Support",
+    "type": "Treasury & Funding",
+    "topic": "Community Spend",
     "status": "PASSED",
     "submit_time": "1667237653344",
     "final_tally_result": {
@@ -1574,17 +1307,14 @@
       "abstain_count": 1,
       "no_count": 2,
       "no_vote_count": 56
-    },
-    "type_v3": "Treasury & Funding",
-    "topic_v3": "Community Spend",
-    "topic_v3_unique": "Treasury & Funding - Community Spend"
+    }
   },
   {
     "proposal_id": "102",
     "chain_id": "kava",
     "title": "Kava 11 Software Upgrade Proposal",
-    "type": "SoftwareUpgrade",
-    "topic": "Feature Addition",
+    "type": "Chain Administration",
+    "topic": "Software Upgrade",
     "status": "PASSED",
     "submit_time": "1666134444171",
     "final_tally_result": {
@@ -1592,17 +1322,14 @@
       "no_count": 1,
       "abstain_count": 1,
       "no_vote_count": 47
-    },
-    "type_v3": "Chain Administration",
-    "topic_v3": "Software Upgrade",
-    "topic_v3_unique": "Chain Administration - Software Upgrade"
+    }
   },
   {
     "proposal_id": "101",
     "chain_id": "kava",
     "title": "Ethermint Funding Proposal For Past Development Addressed from The Evmos Community to The Kava Community",
-    "type": "CommunityPoolSpend",
-    "topic": "Ecosystem Growth",
+    "type": "Treasury & Funding",
+    "topic": "Development Funding",
     "status": "REJECTED",
     "submit_time": "1665506177982",
     "final_tally_result": {
@@ -1610,34 +1337,28 @@
       "yes_count": 5,
       "no_count": 20,
       "no_vote_count": 55
-    },
-    "type_v3": "Treasury & Funding",
-    "topic_v3": "Development Funding",
-    "topic_v3_unique": "Treasury & Funding - Development Funding"
+    }
   },
   {
     "proposal_id": "100",
     "chain_id": "kava",
     "title": "Kava 11 Software Upgrade Proposal",
-    "type": "SoftwareUpgrade",
-    "topic": "Feature Addition",
+    "type": "Chain Administration",
+    "topic": "Software Upgrade",
     "status": "REJECTED",
     "submit_time": "1664947471415",
     "final_tally_result": {
       "no_count": 30,
       "yes_count": 20,
       "no_vote_count": 49
-    },
-    "type_v3": "Chain Administration",
-    "topic_v3": "Software Upgrade",
-    "topic_v3_unique": "Chain Administration - Software Upgrade"
+    }
   },
   {
     "proposal_id": "99",
     "chain_id": "kava",
     "title": "Kava Pioneer Group 2 Payouts",
-    "type": "CommunityPoolSpend",
-    "topic": "Community Support",
+    "type": "Treasury & Funding",
+    "topic": "Community Spend",
     "status": "PASSED",
     "submit_time": "1664289348353",
     "final_tally_result": {
@@ -1645,17 +1366,14 @@
       "abstain_count": 1,
       "no_count": 1,
       "no_vote_count": 63
-    },
-    "type_v3": "Treasury & Funding",
-    "topic_v3": "Community Spend",
-    "topic_v3_unique": "Treasury & Funding - Community Spend"
+    }
   },
   {
     "proposal_id": "98",
     "chain_id": "kava",
     "title": "Kava Rise August Payouts",
-    "type": "CommunityPoolSpend",
-    "topic": "Community Support",
+    "type": "Treasury & Funding",
+    "topic": "Community Spend",
     "status": "PASSED",
     "submit_time": "1664122166991",
     "final_tally_result": {
@@ -1663,17 +1381,14 @@
       "abstain_count": 2,
       "no_count": 2,
       "no_vote_count": 60
-    },
-    "type_v3": "Treasury & Funding",
-    "topic_v3": "Community Spend",
-    "topic_v3_unique": "Treasury & Funding - Community Spend"
+    }
   },
   {
     "proposal_id": "97",
     "chain_id": "kava",
     "title": "Kava Infrastructure and Security Rewards Signaling Proposal",
-    "type": "TextProposal",
-    "topic": "Governance Process",
+    "type": "Governance & Community",
+    "topic": "Signaling",
     "status": "PASSED",
     "submit_time": "1661472359052",
     "final_tally_result": {
@@ -1681,17 +1396,14 @@
       "no_count": 3,
       "abstain_count": 2,
       "no_vote_count": 59
-    },
-    "type_v3": "Governance & Community",
-    "topic_v3": "Signaling",
-    "topic_v3_unique": "Governance & Community - Signaling"
+    }
   },
   {
     "proposal_id": "96",
     "chain_id": "kava",
     "title": "EVM Infrastructure Funding Proposal",
-    "type": "CommunityPoolSpend",
-    "topic": "Ecosystem Growth",
+    "type": "Treasury & Funding",
+    "topic": "Infrastructure Funding",
     "status": "REJECTED",
     "submit_time": "1661176078400",
     "final_tally_result": {
@@ -1699,34 +1411,28 @@
       "no_count": 4,
       "abstain_count": 4,
       "no_vote_count": 52
-    },
-    "type_v3": "Treasury & Funding",
-    "topic_v3": "Infrastructure Funding",
-    "topic_v3_unique": "Treasury & Funding - Infrastructure Funding"
+    }
   },
   {
     "proposal_id": "95",
     "chain_id": "kava",
     "title": "Kava Pioneer Group 1 Payouts",
-    "type": "CommunityPoolSpend",
-    "topic": "Community Support",
+    "type": "Treasury & Funding",
+    "topic": "Community Spend",
     "status": "PASSED",
     "submit_time": "1659960855001",
     "final_tally_result": {
       "abstain_count": 5,
       "yes_count": 36,
       "no_vote_count": 58
-    },
-    "type_v3": "Treasury & Funding",
-    "topic_v3": "Community Spend",
-    "topic_v3_unique": "Treasury & Funding - Community Spend"
+    }
   },
   {
     "proposal_id": "94",
     "chain_id": "kava",
     "title": "Kava Rise July Payouts",
-    "type": "CommunityPoolSpend",
-    "topic": "Community Support",
+    "type": "Treasury & Funding",
+    "topic": "Community Spend",
     "status": "PASSED",
     "submit_time": "1659960810781",
     "final_tally_result": {
@@ -1734,17 +1440,14 @@
       "yes_count": 34,
       "no_count": 1,
       "no_vote_count": 59
-    },
-    "type_v3": "Treasury & Funding",
-    "topic_v3": "Community Spend",
-    "topic_v3_unique": "Treasury & Funding - Community Spend"
+    }
   },
   {
     "proposal_id": "93",
     "chain_id": "kava",
     "title": "Kava Rise June Payouts",
-    "type": "CommunityPoolSpend",
-    "topic": "Community Support",
+    "type": "Treasury & Funding",
+    "topic": "Community Spend",
     "status": "PASSED",
     "submit_time": "1659960753307",
     "final_tally_result": {
@@ -1752,17 +1455,14 @@
       "yes_count": 35,
       "no_count": 1,
       "no_vote_count": 59
-    },
-    "type_v3": "Treasury & Funding",
-    "topic_v3": "Community Spend",
-    "topic_v3_unique": "Treasury & Funding - Community Spend"
+    }
   },
   {
     "proposal_id": "92",
     "chain_id": "kava",
     "title": "Set validator minimum commission rate to 5",
-    "type": "TextProposal",
-    "topic": "Governance Process",
+    "type": "Chain Administration",
+    "topic": "Parameter Change",
     "status": "REJECTED",
     "submit_time": "1658330010866",
     "final_tally_result": {
@@ -1770,17 +1470,14 @@
       "no_count": 5,
       "abstain_count": 2,
       "no_vote_count": 55
-    },
-    "type_v3": "Chain Administration",
-    "topic_v3": "Parameter Change",
-    "topic_v3_unique": "Chain Administration - Parameter Change"
+    }
   },
   {
     "proposal_id": "91",
     "chain_id": "kava",
     "title": "Adjust annual inflation for Kava stakers from 135 to 10",
-    "type": "ParameterChange",
-    "topic": "Fee Adjustment",
+    "type": "Chain Administration",
+    "topic": "Parameter Change",
     "status": "PASSED",
     "submit_time": "1658162531437",
     "final_tally_result": {
@@ -1789,33 +1486,27 @@
       "abstain_count": 2,
       "no_with_veto_count": 1,
       "no_vote_count": 57
-    },
-    "type_v3": "Chain Administration",
-    "topic_v3": "Parameter Change",
-    "topic_v3_unique": "Chain Administration - Parameter Change"
+    }
   },
   {
     "proposal_id": "90",
     "chain_id": "kava",
     "title": "WKAVA competition payouts",
-    "type": "CommunityPoolSpend",
-    "topic": "Community Support",
+    "type": "Treasury & Funding",
+    "topic": "Community Spend",
     "status": "PASSED",
     "submit_time": "1656527513429",
     "final_tally_result": {
       "yes_count": 44,
       "no_vote_count": 55
-    },
-    "type_v3": "Treasury & Funding",
-    "topic_v3": "Community Spend",
-    "topic_v3_unique": "Treasury & Funding - Community Spend"
+    }
   },
   {
     "proposal_id": "89",
     "chain_id": "kava",
     "title": "Adjust annual inflation for Kava stakers from 17 to 135",
-    "type": "ParameterChange",
-    "topic": "Fee Adjustment",
+    "type": "Chain Administration",
+    "topic": "Parameter Change",
     "status": "PASSED",
     "submit_time": "1655234665269",
     "final_tally_result": {
@@ -1824,17 +1515,14 @@
       "no_count": 4,
       "no_with_veto_count": 1,
       "no_vote_count": 66
-    },
-    "type_v3": "Chain Administration",
-    "topic_v3": "Parameter Change",
-    "topic_v3_unique": "Chain Administration - Parameter Change"
+    }
   },
   {
     "proposal_id": "88",
     "chain_id": "kava",
     "title": "Adjust annual inflation for Kava stakers from 20 to 17",
-    "type": "ParameterChange",
-    "topic": "Fee Adjustment",
+    "type": "Chain Administration",
+    "topic": "Parameter Change",
     "status": "REJECTED",
     "submit_time": "1655233623687",
     "final_tally_result": {
@@ -1842,17 +1530,14 @@
       "yes_count": 9,
       "abstain_count": 2,
       "no_vote_count": 65
-    },
-    "type_v3": "Chain Administration",
-    "topic_v3": "Parameter Change",
-    "topic_v3_unique": "Chain Administration - Parameter Change"
+    }
   },
   {
     "proposal_id": "87",
     "chain_id": "kava",
     "title": "Kava Rise  Phase 1 incentives signaling proposal",
-    "type": "TextProposal",
-    "topic": "Governance Process",
+    "type": "Governance & Community",
+    "topic": "Signaling",
     "status": "PASSED",
     "submit_time": "1653933420073",
     "final_tally_result": {
@@ -1860,17 +1545,14 @@
       "abstain_count": 2,
       "no_count": 2,
       "no_vote_count": 58
-    },
-    "type_v3": "Governance & Community",
-    "topic_v3": "Signaling",
-    "topic_v3_unique": "Governance & Community - Signaling"
+    }
   },
   {
     "proposal_id": "86",
     "chain_id": "kava",
     "title": "Adjust liquidation penalty in Kava Mint to 25",
-    "type": "ParameterChange",
-    "topic": "Economic Parameters",
+    "type": "Chain Administration",
+    "topic": "Parameter Change",
     "status": "PASSED",
     "submit_time": "1653918656657",
     "final_tally_result": {
@@ -1878,17 +1560,14 @@
       "abstain_count": 2,
       "no_count": 1,
       "no_vote_count": 57
-    },
-    "type_v3": "Chain Administration",
-    "topic_v3": "Parameter Change",
-    "topic_v3_unique": "Chain Administration - Parameter Change"
+    }
   },
   {
     "proposal_id": "85",
     "chain_id": "kava",
     "title": "Adjust annual inflation for Kava stakers from 20 to 17",
-    "type": "ParameterChange",
-    "topic": "Fee Adjustment",
+    "type": "Chain Administration",
+    "topic": "Parameter Change",
     "status": "PASSED",
     "submit_time": "1653918570562",
     "final_tally_result": {
@@ -1896,33 +1575,27 @@
       "abstain_count": 4,
       "no_count": 2,
       "no_vote_count": 57
-    },
-    "type_v3": "Chain Administration",
-    "topic_v3": "Parameter Change",
-    "topic_v3_unique": "Chain Administration - Parameter Change"
+    }
   },
   {
     "proposal_id": "84",
     "chain_id": "kava",
     "title": "Kava 10 Software Upgrade Proposal",
-    "type": "SoftwareUpgrade",
-    "topic": "Feature Addition",
+    "type": "Chain Administration",
+    "topic": "Software Upgrade",
     "status": "PASSED",
     "submit_time": "1652845648210",
     "final_tally_result": {
       "yes_count": 58,
       "no_vote_count": 41
-    },
-    "type_v3": "Chain Administration",
-    "topic_v3": "Software Upgrade",
-    "topic_v3_unique": "Chain Administration - Software Upgrade"
+    }
   },
   {
     "proposal_id": "83",
     "chain_id": "kava",
     "title": "Remove UST from Kava Mint",
-    "type": "ParameterChange",
-    "topic": "Economic Parameters",
+    "type": "Chain Administration",
+    "topic": "Parameter Change",
     "status": "PASSED",
     "submit_time": "1652420677269",
     "final_tally_result": {
@@ -1930,17 +1603,14 @@
       "no_count": 2,
       "abstain_count": 3,
       "no_vote_count": 50
-    },
-    "type_v3": "Chain Administration",
-    "topic_v3": "Parameter Change",
-    "topic_v3_unique": "Chain Administration - Parameter Change"
+    }
   },
   {
     "proposal_id": "82",
     "chain_id": "kava",
     "title": "Adjust UST in Kava Mint",
-    "type": "ParameterChange",
-    "topic": "Economic Parameters",
+    "type": "Chain Administration",
+    "topic": "Parameter Change",
     "status": "REJECTED",
     "submit_time": "1652420631720",
     "final_tally_result": {
@@ -1949,17 +1619,14 @@
       "no_count": 6,
       "no_with_veto_count": 1,
       "no_vote_count": 56
-    },
-    "type_v3": "Chain Administration",
-    "topic_v3": "Parameter Change",
-    "topic_v3_unique": "Chain Administration - Parameter Change"
+    }
   },
   {
     "proposal_id": "81",
     "chain_id": "kava",
     "title": "Adjust UST in Kava Mint",
-    "type": "ParameterChange",
-    "topic": "Economic Parameters",
+    "type": "Chain Administration",
+    "topic": "Parameter Change",
     "status": "PASSED",
     "submit_time": "1652206407846",
     "final_tally_result": {
@@ -1967,17 +1634,14 @@
       "abstain_count": 4,
       "no_count": 1,
       "no_vote_count": 65
-    },
-    "type_v3": "Chain Administration",
-    "topic_v3": "Parameter Change",
-    "topic_v3_unique": "Chain Administration - Parameter Change"
+    }
   },
   {
     "proposal_id": "80",
     "chain_id": "kava",
     "title": "Kava 10 Software Upgrade Proposal",
-    "type": "SoftwareUpgrade",
-    "topic": "Feature Addition",
+    "type": "Chain Administration",
+    "topic": "Software Upgrade",
     "status": "REJECTED",
     "submit_time": "1651529942184",
     "final_tally_result": {
@@ -1985,26 +1649,20 @@
       "no_count": 35,
       "abstain_count": 1,
       "no_vote_count": 44
-    },
-    "type_v3": "Chain Administration",
-    "topic_v3": "Software Upgrade",
-    "topic_v3_unique": "Chain Administration - Software Upgrade"
+    }
   },
   {
     "proposal_id": "79",
     "chain_id": "kava",
     "title": "Enable delegators to withdraw to a different address",
-    "type": "ParameterChange",
-    "topic": "Staking Parameters",
+    "type": "Chain Administration",
+    "topic": "Parameter Change",
     "status": "PASSED",
     "submit_time": "1648693487504",
     "final_tally_result": {
       "yes_count": 42,
       "abstain_count": 1,
       "no_vote_count": 56
-    },
-    "type_v3": "Chain Administration",
-    "topic_v3": "Parameter Change",
-    "topic_v3_unique": "Chain Administration - Parameter Change"
+    }
   }
 ]
