@@ -62,7 +62,7 @@ export async function loadChainData(chainName: string): Promise<ProcessedData> {
   try {
     console.log(`dataLoader: Loading data for chain: ${chainName} from optimized APIs`);
 
-    const proposalsPromise = fetch(getAbsoluteUrl(`/data/${chainName}/proposals_v2.json`)).then(res => res.json());
+    const proposalsPromise = fetch(getAbsoluteUrl(`/data/${chainName}/proposals_v3.json`)).then(res => res.json());
     const validatorsPromise = fetch(getAbsoluteUrl(`/data/${chainName}/validators.json`)).then(res => res.json());
     const votesPromise = fetch(getAbsoluteUrl(`/data/${chainName}/votes.json`)).then(res => res.json());
 

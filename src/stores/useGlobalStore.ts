@@ -756,7 +756,7 @@ export const useGlobalStore = create<GlobalStore>((set, get) => ({
     });
 
     if (selectedTopics.length === 0) return filteredByAbstainRate;
-    return filteredByAbstainRate.filter(p => selectedTopics.includes(p.topic_v2_unique));
+    return filteredByAbstainRate.filter(p => selectedTopics.includes(p.topic_v3_unique));
   },
 
   getChains: () => [
@@ -774,9 +774,9 @@ export const useGlobalStore = create<GlobalStore>((set, get) => ({
     } } = {};
 
     for (const p of filteredProposals) {
-        const categoryName = p.type_v2;
-        const topicName = p.topic_v2_unique;
-        const topicDisplayName = p.topic_v2_display;
+        const categoryName = p.type_v3;
+        const topicName = p.topic_v3_unique;
+        const topicDisplayName = p.topic_v3_display;
 
         if (!categoryStats[categoryName]) categoryStats[categoryName] = { count: 0, passed: 0, voteDistribution: {}, topics: {} };
         if (!categoryStats[categoryName].topics[topicName]) {
