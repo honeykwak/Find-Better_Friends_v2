@@ -84,10 +84,10 @@ export default function BubbleHeap() {
     zoomGRef.current = g.append('g').attr('class', 'zoom-group')
 
     const axisG = zoomGRef.current.append('g').attr('class', 'y-axis')
-      .attr('transform', `translate(${boundedWidth / 2}, 0)`)
+      .attr('transform', `translate(${boundedWidth}, 0)`)
     
     const yAxis = d3.axisLeft(scalesRef.current.y).ticks(5).tickFormat(d3.format('.0%'))
-    axisG.call(yAxis).selectAll('text').style('font-size', '12px')
+    axisG.call(yAxis).selectAll('text').style('font-size', '24px')
     axisG.select('.domain').attr('stroke-width', 1.5)
 
     const zoom = d3.zoom<SVGSVGElement, unknown>().scaleExtent([0.5, 10])
