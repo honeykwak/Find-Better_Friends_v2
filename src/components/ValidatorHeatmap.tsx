@@ -2,7 +2,7 @@
 
 import { useEffect, useRef, useState, useMemo } from 'react'
 import * as d3 from 'd3'
-import { useGlobalStore, type ValidatorSortKey } from '@/stores/useGlobalStore'
+import { useGlobalStore, type ValidatorSortKey, type ProposalForHeatmap } from '@/stores/useGlobalStore'
 import { VOTE_COLORS, VOTE_ORDER } from '@/constants/voteColors'
 import { Loader2, ZoomIn, ZoomOut, RotateCcw } from 'lucide-react'
 import type { Vote, Validator, Proposal } from '@/lib/dataLoader'
@@ -79,6 +79,8 @@ interface ProcessedHeatmapData {
     index: number
     status: string
     category: string
+    isFilteredIn: boolean
+    voteDistribution: { [key: string]: number }
   }>
   votes: Array<{
     validatorAddress: string
@@ -100,7 +102,7 @@ export default function ValidatorHeatmap() {
 
   const {
     votes: rawVotes,
-    getFilteredProposals,
+    getProposalsForHeatmap,
     loading,
     searchTerm,
     setSearchTerm,
@@ -123,13 +125,13 @@ export default function ValidatorHeatmap() {
 
   useEffect(() => {
     recalculateValidatorMetrics();
-  }, [getFilteredProposals, recalculateValidatorMetrics]);
+  }, [getProposalsForHeatmap, recalculateValidatorMetrics]);
 
 
   const heatmapData = useMemo((): ProcessedHeatmapData => {
-    const filteredProposals = getFilteredProposals();
+    const proposalsForHeatmap = getProposalsForHeatmap();
     
-    if (!filteredProposals.length || !filteredValidators.length) {
+    if (!proposalsForHeatmap.length || !filteredValidators.length) {
       return { validators: [], proposals: [], votes: [] };
     }
     
@@ -172,15 +174,15 @@ export default function ValidatorHeatmap() {
       isPinnedAndFilteredOut: v.isPinnedAndFilteredOut
     }));
 
-    const proposals = filteredProposals
-      .sort((a, b) => (new Date(Number(a.submit_time)).getTime()) - (new Date(Number(b.submit_time)).getTime()))
+    const proposals = proposalsForHeatmap
       .map((p, index) => ({
         id: p.proposal_id,
         title: p.title,
         index,
         status: p.status,
         category: p.topic_v2_unique,
-        voteDistribution: p.voteDistribution || {}
+        voteDistribution: p.voteDistribution || {},
+        isFilteredIn: p.isFilteredIn,
       }));
 
     const validatorAddressToIndex = new Map(validators.map(v => [v.address, v.index]));
@@ -198,7 +200,7 @@ export default function ValidatorHeatmap() {
       }));
 
     return { validators, proposals, votes };
-  }, [filteredValidators, getFilteredProposals, rawVotes, validatorSortKey, searchTerm, votingPowerSortType, categoryVisualizationMode]);
+  }, [filteredValidators, getProposalsForHeatmap, rawVotes, validatorSortKey, searchTerm, votingPowerSortType, categoryVisualizationMode]);
 
   // Main D3 rendering effect
   useEffect(() => {
@@ -326,8 +328,11 @@ export default function ValidatorHeatmap() {
 
     mergedCells.transition().duration(DURATION)
       .attr('x', (d: any) => proposals.find(p => p.id === d.proposalId)!.index * cellWidth)
-      .style('opacity', 1)
-      .attr('fill', (d: any) => getVoteColor(d.voteOption));
+      .attr('fill', (d: any) => getVoteColor(d.voteOption))
+      .style('opacity', (d: any) => {
+        const proposal = proposals.find(p => p.id === d.proposalId);
+        return proposal?.isFilteredIn ? 1 : 0.3;
+      });
       
     const proposalLabels = g.selectAll('.proposal-label').data(proposals, (d: any) => d.id);
     
@@ -354,21 +359,32 @@ export default function ValidatorHeatmap() {
       .attr('x', (d: any) => d.index * cellWidth + cellWidth / 2)
       .attr('y', -SUMMARY_CHART_HEIGHT - CHART_SPACING - 10)
       .attr('transform', (d: any) => `rotate(-60, ${d.index * cellWidth + cellWidth / 2}, ${-SUMMARY_CHART_HEIGHT - CHART_SPACING - 10})`)
-      .style('opacity', 1);
+      .style('opacity', (d: any) => d.isFilteredIn ? 1 : 0.3);
 
     const summaryG = g.selectAll('.summary-chart').data([null]).join('g').attr('class', 'summary-chart').attr('transform', `translate(0, ${-SUMMARY_CHART_HEIGHT - CHART_SPACING})`);
     const summaryChartYScale = d3.scaleLinear().domain([0, 1]).range([SUMMARY_CHART_HEIGHT, 0]);
     const stack = d3.stack().keys(VOTE_ORDER);
     const stackedData = stack(proposals.map(p => {
       const total = Object.values(p.voteDistribution).reduce((s, c) => s + c, 0);
-      const ratios = { id: p.id, index: p.index } as any;
+      const ratios = { id: p.id, index: p.index, isFilteredIn: p.isFilteredIn } as any;
       VOTE_ORDER.forEach(key => ratios[key] = total > 0 ? (p.voteDistribution[key] || 0) / total : 0);
       return ratios;
     }));
     summaryG.selectAll('.bar-series').data(stackedData).join('g').attr('class', 'bar-series').attr('fill', (d: any) => getVoteColor(d.key)).selectAll('rect').data(d => d, (d: any) => d.data.id)
       .join(
-        enter => enter.append('rect').attr('x', d => d.data.index * cellWidth).attr('y', d => summaryChartYScale(d[1])).attr('height', d => summaryChartYScale(d[0]) - summaryChartYScale(d[1])).attr('width', cellWidth - 1).style('opacity', 0).transition().duration(DURATION).style('opacity', 1),
-        update => update.transition().duration(DURATION).attr('x', d => d.data.index * cellWidth).attr('y', d => summaryChartYScale(d[1])).attr('height', d => summaryChartYScale(d[0]) - summaryChartYScale(d[1])),
+        enter => enter.append('rect')
+          .attr('x', d => d.data.index * cellWidth)
+          .attr('y', d => summaryChartYScale(d[1]))
+          .attr('height', d => summaryChartYScale(d[0]) - summaryChartYScale(d[1]))
+          .attr('width', cellWidth - 1)
+          .style('opacity', 0)
+          .transition().duration(DURATION)
+          .style('opacity', (d: any) => d.data.isFilteredIn ? 1 : 0.3),
+        update => update.transition().duration(DURATION)
+          .attr('x', d => d.data.index * cellWidth)
+          .attr('y', d => summaryChartYScale(d[1]))
+          .attr('height', d => summaryChartYScale(d[0]) - summaryChartYScale(d[1]))
+          .style('opacity', (d: any) => d.data.isFilteredIn ? 1 : 0.3),
         exit => exit.transition().duration(DURATION).attr('width', 0).style('opacity', 0).remove()
       );
 

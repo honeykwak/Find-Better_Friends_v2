@@ -5,6 +5,11 @@ import { createSelector } from 'reselect'
 
 export type { Validator };
 
+export interface ProposalForHeatmap extends Proposal {
+  voteDistribution?: { [key: string]: number };
+  isFilteredIn: boolean;
+}
+
 // Validator type with added optional properties for derived data
 export interface ValidatorWithDerivedData extends Validator {
   avgPower?: number;
@@ -102,6 +107,7 @@ interface GlobalStore {
   setMatchAbstainInSimilarity: (value: boolean) => void;
   resetFilters: () => void;
   getFilteredProposals: () => (Proposal & { voteDistribution?: { [key: string]: number } })[];
+  getProposalsForHeatmap: () => ProposalForHeatmap[];
   getProposalsForCategoryListing: () => (Proposal & { voteDistribution?: { [key: string]: number } })[];
 }
 
@@ -725,6 +731,69 @@ export const useGlobalStore = create<GlobalStore>((set, get) => ({
     return proposals.filter(p => selectedTopics.includes(`${p.type} - ${p.topic}`));
   },
 
+  getProposalsForHeatmap: () => {
+    const { proposals, votes, categoryVisualizationMode, selectedTopics, submitTimeRange, conflictIndexRange, proposalAbstainRateRange } = get();
+    
+    const powerTallies = getPowerBasedTally(get());
+
+    const proposalsWithFullData = proposals.map(p => {
+      let voteDistribution: { [key: string]: number } = {};
+      if (categoryVisualizationMode === 'votePower') {
+        const proposalVotes = votes.filter(v => v.proposal_id === p.proposal_id);
+        for (const vote of proposalVotes) {
+          const upperVoteOption = vote.vote_option.toUpperCase();
+          let key: string;
+          if (upperVoteOption.includes('YES')) key = 'YES';
+          else if (upperVoteOption.includes('NO_WITH_VETO')) key = 'NO_WITH_VETO';
+          else if (upperVoteOption.includes('NO_VOTE')) key = 'NO_VOTE';
+          else if (upperVoteOption.includes('NO')) key = 'NO';
+          else if (upperVoteOption.includes('ABSTAIN')) key = 'ABSTAIN';
+          else continue;
+          
+          const power = typeof vote.voting_power === 'string' ? parseFloat(vote.voting_power) : vote.voting_power;
+          if (!isNaN(power)) {
+            voteDistribution[key] = (voteDistribution[key] || 0) + power;
+          }
+        }
+      } else { // 'voteCount'
+        const tally = p.final_tally_result || {};
+        for (const voteOption in tally) {
+          const key = voteOption.replace('_count', '').toUpperCase();
+          voteDistribution[key] = tally[voteOption as keyof typeof tally] || 0;
+        }
+      }
+
+      let abstainRate = 0;
+      const total = Object.values(voteDistribution).reduce((s, c) => s + c, 0);
+      if (total > 0) {
+        abstainRate = ((voteDistribution['ABSTAIN'] || 0) / total) * 100;
+      }
+      
+      const conflictTally = powerTallies.get(p.proposal_id);
+      const conflictScore = conflictTally ? calculateConflictIndexFromCounts(conflictTally.yes, conflictTally.no, conflictTally.veto) : 0;
+      
+      const time = p.submit_time ? new Date(Number(p.submit_time)).getTime() : 0;
+
+      const isFilteredIn = (
+        time >= submitTimeRange[0] && time <= submitTimeRange[1] &&
+        conflictScore >= conflictIndexRange[0] && conflictScore <= conflictIndexRange[1] &&
+        abstainRate >= proposalAbstainRateRange[0] && abstainRate <= proposalAbstainRateRange[1] &&
+        (selectedTopics.length === 0 || selectedTopics.includes(`${p.type} - ${p.topic}`))
+      );
+
+      return { ...p, voteDistribution, isFilteredIn };
+    });
+
+    const chronologicallySortedProposals = proposalsWithFullData.sort((a, b) => 
+        (new Date(Number(a.submit_time)).getTime()) - (new Date(Number(b.submit_time)).getTime())
+    );
+
+    const filteredInProposals = chronologicallySortedProposals.filter(p => p.isFilteredIn);
+    const filteredOutProposals = chronologicallySortedProposals.filter(p => !p.isFilteredIn);
+    
+    return [...filteredInProposals, ...filteredOutProposals];
+  },
+
   getChains: () => [
     'akash', 'axelar', 'cosmos', 'dydx', 'evmos', 'finschia', 
     'gravity-bridge', 'injective', 'iris', 'juno', 'kava', 'kyve', 
@@ -840,3 +909,5 @@ export const getAvgVotingPowerDistribution = (state: GlobalStore) => {
 if (typeof window !== 'undefined') {
   useGlobalStore.getState().loadData('cosmos').catch(console.error);
 }
+
+export { getPercentilePower };
