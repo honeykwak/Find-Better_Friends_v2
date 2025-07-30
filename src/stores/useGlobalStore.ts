@@ -32,7 +32,7 @@ export interface TopicNode {
   displayName?: string
 }
 
-export type ValidatorSortKey = 'voteCount' | 'name' | 'votingPower' | 'similarity';
+export type ValidatorSortKey = 'votingPower' | 'similarity';
 export type ComparisonScope = 'common' | 'base' | 'comprehensive';
 export type VotingPowerSortType = 'average' | 'recent';
 
@@ -61,6 +61,7 @@ interface GlobalStore {
   avgVotingPowerDynamicRange: [number, number];
   recentVotingPowerRange: [number, number]; // New
   recentVotingPowerDynamicRange: [number, number]; // New
+  recentVotingPowerValidatorCount: number;
   participationRateDistribution: number[];
 
   // Similarity options
@@ -161,10 +162,11 @@ export const useGlobalStore = create<GlobalStore>((set, get) => ({
   avgVotingPowerDynamicRange: [0, 1],
   recentVotingPowerRange: [0, 100],
   recentVotingPowerDynamicRange: [0, 1],
+  recentVotingPowerValidatorCount: 0,
   participationRateDistribution: [],
   matchAbstainInSimilarity: true,
   categoryVisualizationMode: 'votePower',
-  validatorSortKey: 'recentVotingPower',
+  validatorSortKey: 'votingPower',
   votingPowerSortType: 'recent', // New
   loading: true,
   error: null,
@@ -180,8 +182,7 @@ export const useGlobalStore = create<GlobalStore>((set, get) => ({
       recentVotingPowerRange,
       participationRateRange,
       searchTerm,
-      validatorSortKey,
-      votingPowerSortType // New
+      votingPowerSortType
     } = get();
 
     if (!validatorsWithDerivedData.length) {
@@ -189,30 +190,34 @@ export const useGlobalStore = create<GlobalStore>((set, get) => ({
       return;
     }
 
-    let currentValidators = [...validatorsWithDerivedData];
+    let sourceValidators = [...validatorsWithDerivedData];
     let pinnedValidator: ValidatorWithDerivedData | null = null;
 
     if (searchTerm) {
-      const foundIndex = currentValidators.findIndex(v => v.moniker === searchTerm);
+      const foundIndex = sourceValidators.findIndex(v => v.moniker === searchTerm);
       if (foundIndex !== -1) {
-        pinnedValidator = { ...currentValidators[foundIndex] };
-        currentValidators.splice(foundIndex, 1);
+        pinnedValidator = { ...sourceValidators[foundIndex] };
+        sourceValidators.splice(foundIndex, 1);
       }
+    }
+    
+    const isRecent = votingPowerSortType === 'recent';
+    if (isRecent) {
+      sourceValidators = sourceValidators.filter(v => (v.recentVotingPower || 0) > 0);
     }
 
     let filteredByVotingPower: ValidatorWithDerivedData[];
-    const isRecent = votingPowerSortType === 'recent'; // Changed from validatorSortKey
     const powerKey = isRecent ? 'recentVotingPower' : 'avgPower';
     const range = isRecent ? recentVotingPowerRange : votingPowerRange;
 
     if (votingPowerDisplayMode === 'percentile') {
       const [minPercentile, maxPercentile] = range;
-      const totalPower = currentValidators.reduce((sum, v) => sum + (v[powerKey] || 0), 0);
+      const totalPower = sourceValidators.reduce((sum, v) => sum + (v[powerKey] || 0), 0);
 
       if (totalPower === 0) {
-        filteredByVotingPower = currentValidators;
+        filteredByVotingPower = sourceValidators;
       } else {
-        const sortedByPower = [...currentValidators].sort((a, b) => (b[powerKey] || 0) - (a[powerKey] || 0));
+        const sortedByPower = [...sourceValidators].sort((a, b) => (b[powerKey] || 0) - (a[powerKey] || 0));
         
         let cumulativePower = 0;
         const minRange = (100 - maxPercentile) / 100;
@@ -223,11 +228,12 @@ export const useGlobalStore = create<GlobalStore>((set, get) => ({
           const startRatio = cumulativePower / totalPower;
           cumulativePower += validatorPower;
           const endRatio = cumulativePower / totalPower;
-          return startRatio < maxRange && endRatio > minRange;
+          // Use >= for minRange to correctly include validators at the 0% boundary
+          return startRatio < maxRange && endRatio >= minRange;
         });
       }
     } else { // 'rank'
-      const ranked = [...currentValidators].sort((a, b) => (b[powerKey] || 0) - (a[powerKey] || 0));
+      const ranked = [...sourceValidators].sort((a, b) => (b[powerKey] || 0) - (a[powerKey] || 0));
       const [minRank, maxRank] = range;
       
       const totalValidators = ranked.length;
@@ -425,6 +431,8 @@ export const useGlobalStore = create<GlobalStore>((set, get) => ({
       });
     }
 
+    const recentVotingPowerValidatorCount = newValidatorsWithDerivedData.filter(v => (v.recentVotingPower || 0) > 0).length;
+
     const newSimilarityScores = new Map<string, number>();
     if (searchTerm && validatorSortKey === 'similarity') {
       const baseValidator = newValidatorsWithDerivedData.find(v => v.moniker === searchTerm);
@@ -478,6 +486,7 @@ export const useGlobalStore = create<GlobalStore>((set, get) => ({
         recentVotingPowerDynamicRange: newRecentPowerDynamicRange,
         votingPowerRange: [1, newValidatorsWithDerivedData.length || 1],
         recentVotingPowerRange: [1, newValidatorsWithDerivedData.length || 1],
+        recentVotingPowerValidatorCount,
       });
     } else {
       set({ 
@@ -485,6 +494,7 @@ export const useGlobalStore = create<GlobalStore>((set, get) => ({
         similarityScores: newSimilarityScores,
         avgVotingPowerDynamicRange: newAvgPowerDynamicRange,
         recentVotingPowerDynamicRange: newRecentPowerDynamicRange,
+        recentVotingPowerValidatorCount,
       });
     }
     get()._recalculateFilteredValidators();
@@ -557,12 +567,12 @@ export const useGlobalStore = create<GlobalStore>((set, get) => ({
     get()._recalculateFilteredValidators();
   },
   setVotingPowerDisplayMode: (mode) => {
-    const { validatorsWithDerivedData } = get();
+    const { validatorsWithDerivedData, recentVotingPowerValidatorCount } = get();
     if (mode === 'rank') {
       set({
         votingPowerDisplayMode: 'rank',
         votingPowerRange: [1, validatorsWithDerivedData.length || 1],
-        recentVotingPowerRange: [1, validatorsWithDerivedData.length || 1],
+        recentVotingPowerRange: [1, recentVotingPowerValidatorCount || 1],
       });
     } else {
       set({

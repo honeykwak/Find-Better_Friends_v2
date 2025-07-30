@@ -109,6 +109,9 @@ export default function ValidatorHeatmap() {
     recalculateValidatorMetrics,
     highlightedValidator,
     categoryVisualizationMode,
+    votingPowerSortType,
+    matchAbstainInSimilarity,
+    setMatchAbstainInSimilarity,
   } = useGlobalStore()
   
   const filteredValidators = useGlobalStore(state => state.filteredValidators);
@@ -134,7 +137,7 @@ export default function ValidatorHeatmap() {
     const validatorDisplayValues = new Map<string, string>();
 
     // Sorting logic remains here as it's a presentation concern
-    if (validatorSortKey.startsWith('similarity') && searchTerm) {
+    if (validatorSortKey === 'similarity' && searchTerm) {
       sortedValidators.sort((a, b) => {
         if (a.moniker === searchTerm) return -1;
         if (b.moniker === searchTerm) return 1;
@@ -145,24 +148,19 @@ export default function ValidatorHeatmap() {
           validatorDisplayValues.set(validator.validator_address, `(${(validator.similarity * 100).toFixed(0)}%)`);
         }
       }
-    } else if (validatorSortKey === 'name') {
-      sortedValidators.sort((a, b) => (a.moniker || '').localeCompare(b.moniker || ''));
-    } else if (validatorSortKey === 'votingPower') {
-      sortedValidators.sort((a, b) => (b.avgPower || 0) - (a.avgPower || 0));
-      for (const validator of sortedValidators) {
-        validatorDisplayValues.set(validator.validator_address, `(${( (validator.avgPower || 0) * 100).toFixed(1)}%)`);
-      }
-    } else if (validatorSortKey === 'recentVotingPower') {
+    } else { // Default to 'votingPower'
+      if (votingPowerSortType === 'recent') {
         sortedValidators.sort((a, b) => (b.recentVotingPower || 0) - (a.recentVotingPower || 0));
         for (const validator of sortedValidators) {
             if (typeof validator.recentVotingPower === 'number') {
                 validatorDisplayValues.set(validator.validator_address, `(${(validator.recentVotingPower * 100).toFixed(1)}%)`);
             }
         }
-    } else { // Default to 'voteCount'
-      sortedValidators.sort((a, b) => (b.voteCount || 0) - (a.voteCount || 0));
-      for (const validator of sortedValidators) {
-        validatorDisplayValues.set(validator.validator_address, `(${validator.voteCount || 0})`);
+      } else { // 'average'
+        sortedValidators.sort((a, b) => (b.avgPower || 0) - (a.avgPower || 0));
+        for (const validator of sortedValidators) {
+          validatorDisplayValues.set(validator.validator_address, `(${( (validator.avgPower || 0) * 100).toFixed(1)}%)`);
+        }
       }
     }
     
@@ -200,7 +198,7 @@ export default function ValidatorHeatmap() {
       }));
 
     return { validators, proposals, votes };
-  }, [filteredValidators, getFilteredProposals, rawVotes, validatorSortKey, searchTerm, categoryVisualizationMode]);
+  }, [filteredValidators, getFilteredProposals, rawVotes, validatorSortKey, searchTerm, votingPowerSortType, categoryVisualizationMode]);
 
   // Main D3 rendering effect
   useEffect(() => {
@@ -396,11 +394,20 @@ export default function ValidatorHeatmap() {
           </div>
           <div className="flex items-center gap-4">
             <div className="flex items-center bg-gray-100 rounded-lg p-1">
-              <button onClick={() => setValidatorSortKey('votingPower')} className={`px-3 py-2 text-xs font-medium rounded-md whitespace-nowrap ${['votingPower', 'recentVotingPower'].includes(validatorSortKey) ? 'bg-white text-gray-800 shadow-sm' : 'text-gray-500'}`}>Voting Power</button>
-              <button onClick={() => setValidatorSortKey('voteCount')} className={`px-3 py-2 text-xs font-medium rounded-md whitespace-nowrap ${validatorSortKey === 'voteCount' ? 'bg-white text-gray-800 shadow-sm' : 'text-gray-500'}`}>Vote Count</button>
-              <button onClick={() => setValidatorSortKey('name')} className={`px-3 py-2 text-xs font-medium rounded-md whitespace-nowrap ${validatorSortKey === 'name' ? 'bg-white text-gray-800 shadow-sm' : 'text-gray-500'}`}>Name</button>
+              <button onClick={() => setValidatorSortKey('votingPower')} className={`px-3 py-2 text-xs font-medium rounded-md whitespace-nowrap ${validatorSortKey === 'votingPower' ? 'bg-white text-gray-800 shadow-sm' : 'text-gray-500'}`}>Voting Power</button>
               <button onClick={() => setValidatorSortKey('similarity')} className={`px-3 py-2 text-xs font-medium rounded-md whitespace-nowrap ${validatorSortKey === 'similarity' ? 'bg-white text-gray-800 shadow-sm' : 'text-gray-500'} disabled:opacity-50`} disabled={!searchTerm}>Similarity</button>
             </div>
+            {validatorSortKey === 'similarity' && (
+              <label className="flex items-center space-x-2 text-xs text-gray-600 cursor-pointer">
+                <input
+                  type="checkbox"
+                  checked={matchAbstainInSimilarity}
+                  onChange={(e) => setMatchAbstainInSimilarity(e.target.checked)}
+                  className="form-checkbox h-3 w-3 text-blue-600 rounded focus:ring-blue-500"
+                />
+                <span>Include abstentions</span>
+              </label>
+            )}
             <div className="flex items-center gap-1 border border-gray-300 rounded-lg">
               <button onClick={handleZoomOut} className="p-2 hover:bg-gray-100"><ZoomOut className="w-4 h-4 text-gray-500" /></button>
               <span className="px-3 py-2 text-sm font-mono border-x text-gray-800">{Math.round(zoom * 100)}%</span>

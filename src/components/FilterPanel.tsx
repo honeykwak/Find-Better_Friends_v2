@@ -106,6 +106,7 @@ export default function FilterPanel() {
     avgVotingPowerDynamicRange,
     participationRateRange,
     participationRateDistribution,
+    recentVotingPowerValidatorCount,
     setSelectedCategories,
     setSelectedTopics,
     setConflictIndexRange,
@@ -375,10 +376,10 @@ export default function FilterPanel() {
               <RangeSlider
                 label=""
                 min={votingPowerDisplayMode === 'rank' ? 1 : 0}
-                max={votingPowerDisplayMode === 'rank' ? validators.length || 1 : 100}
+                max={votingPowerDisplayMode === 'rank' ? recentVotingPowerValidatorCount || 1 : 100}
                 values={store.recentVotingPowerRange}
                 onChange={store.setRecentVotingPowerRange}
-                formatValue={(v) => votingPowerDisplayMode === 'rank' ? `${validators.length - v + 1}` : `${100 - v}%`}
+                formatValue={(v) => votingPowerDisplayMode === 'rank' ? `${recentVotingPowerValidatorCount - v + 1}` : `${100 - v}%`}
                 step={1}
                 distributionData={[]} // Add distribution if available
               />
@@ -402,24 +403,7 @@ export default function FilterPanel() {
               />
             )}
           </div>
-          <div className="mb-4">
-            <div className="flex justify-between items-center mb-2">
-              <label className="block text-sm font-medium text-gray-900">Similarity Options</label>
-            </div>
-            <div className="space-y-3 p-3 bg-gray-50 rounded-lg">
-              <div className="pt-2 space-y-2">
-                <label className="flex items-center space-x-2 text-xs text-gray-600 cursor-pointer">
-                  <input
-                    type="checkbox"
-                    checked={store.matchAbstainInSimilarity}
-                    onChange={(e) => store.setMatchAbstainInSimilarity(e.target.checked)}
-                    className="form-checkbox h-3 w-3 text-blue-600 rounded"
-                  />
-                  <span>Include abstentions in the similarity calculation</span>
-                </label>
-              </div>
-            </div>
-          </div>
+          
           <div className="mb-4">
             <div className="flex justify-between items-center mb-2">
               <label className="block text-sm font-medium text-gray-900">Participation Rate</label>
