@@ -344,7 +344,10 @@ export default function ValidatorHeatmap() {
       .attr('y', -SUMMARY_CHART_HEIGHT - CHART_SPACING - 10)
       .attr('transform', (d: any) => `rotate(-60, ${d.index * cellWidth + cellWidth / 2}, ${-SUMMARY_CHART_HEIGHT - CHART_SPACING - 10})`)
       .style('fill', (d: any) => d.status.includes('PASSED') ? colors.YES : colors.NO)
-      .text((d: any) => `${d.title.slice(0, 40)}${d.title.length > 40 ? '...' : ''} ${d.status.includes('PASSED') ? '✓' : '✗'}`);
+      .text((d: any) => {
+        const title = `#${d.id} ${d.title}`;
+        return `${title.slice(0, 40)}${title.length > 40 ? '...' : ''} ${d.status.includes('PASSED') ? '✓' : '✗'}`
+      });
 
     proposalLabels.merge(proposalLabelsEnter)
       .transition().duration(DURATION)
