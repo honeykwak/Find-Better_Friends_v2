@@ -102,6 +102,7 @@ interface GlobalStore {
   setMatchAbstainInSimilarity: (value: boolean) => void;
   resetFilters: () => void;
   getFilteredProposals: () => (Proposal & { voteDistribution?: { [key: string]: number } })[];
+  getProposalsForCategoryListing: () => (Proposal & { voteDistribution?: { [key: string]: number } })[];
 }
 
 const calculateConflictIndexFromCounts = (yes: number, no: number, veto: number): number => {
@@ -656,8 +657,8 @@ export const useGlobalStore = create<GlobalStore>((set, get) => ({
     });
   },
 
-  getFilteredProposals: () => {
-    const { selectedTopics, votes, categoryVisualizationMode, proposalAbstainRateRange } = get();
+  getProposalsForCategoryListing: () => {
+    const { votes, categoryVisualizationMode, proposalAbstainRateRange } = get();
     const proposalsFilteredByScore = get().getProposalsFilteredByConflictIndex();
 
     const proposalsWithDistribution = proposalsFilteredByScore.map(p => {
@@ -711,13 +712,17 @@ export const useGlobalStore = create<GlobalStore>((set, get) => ({
       return { ...p, voteDistribution, abstainRate };
     });
 
-    const filteredByAbstainRate = proposalsWithDistribution.filter(p => {
+    return proposalsWithDistribution.filter(p => {
         const rate = p.abstainRate;
         return rate >= proposalAbstainRateRange[0] && rate <= proposalAbstainRateRange[1];
     });
+  },
 
-    if (selectedTopics.length === 0) return filteredByAbstainRate;
-    return filteredByAbstainRate.filter(p => selectedTopics.includes(`${p.type} - ${p.topic}`));
+  getFilteredProposals: () => {
+    const { selectedTopics } = get();
+    const proposals = get().getProposalsForCategoryListing();
+    if (selectedTopics.length === 0) return proposals;
+    return proposals.filter(p => selectedTopics.includes(`${p.type} - ${p.topic}`));
   },
 
   getChains: () => [
@@ -727,7 +732,7 @@ export const useGlobalStore = create<GlobalStore>((set, get) => ({
   ],
 
   getFilteredCategoryHierarchy: () => {
-    const filteredProposals = get().getFilteredProposals();
+    const filteredProposals = get().getProposalsForCategoryListing();
 
     const categoryStats: { [name: string]: {
         count: number; passed: number; voteDistribution: { [key: string]: number };
