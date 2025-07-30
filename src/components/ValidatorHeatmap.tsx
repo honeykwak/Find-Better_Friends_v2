@@ -388,7 +388,25 @@ export default function ValidatorHeatmap() {
 
   const handleZoomIn = () => setZoom(prev => Math.min(prev * 1.2, 5));
   const handleZoomOut = () => setZoom(prev => Math.max(prev / 1.2, 0.2));
-  const handleResetZoom = () => setZoom(1);
+
+  useEffect(() => {
+    const container = containerRef.current;
+    if (!container) return;
+
+    const handleWheel = (event: WheelEvent) => {
+      if (event.ctrlKey || event.metaKey) {
+        event.preventDefault();
+        if (event.deltaY < 0) {
+          handleZoomIn();
+        } else {
+          handleZoomOut();
+        }
+      }
+    };
+
+    container.addEventListener('wheel', handleWheel);
+    return () => container.removeEventListener('wheel', handleWheel);
+  }, [handleZoomIn, handleZoomOut]);
 
   if (loading && !heatmapData.validators.length) {
     return (
@@ -425,11 +443,8 @@ export default function ValidatorHeatmap() {
                 <span>Include abstentions</span>
               </label>
             )}
-            <div className="flex items-center gap-1 border border-gray-300 rounded-lg">
-              <button onClick={handleZoomOut} className="p-2 hover:bg-gray-100"><ZoomOut className="w-4 h-4 text-gray-500" /></button>
-              <span className="px-3 py-2 text-sm font-mono border-x text-gray-800">{Math.round(zoom * 100)}%</span>
-              <button onClick={handleZoomIn} className="p-2 hover:bg-gray-100"><ZoomIn className="w-4 h-4 text-gray-500" /></button>
-              <button onClick={handleResetZoom} className="p-2 hover:bg-gray-100 border-l"><RotateCcw className="w-4 h-4 text-gray-500" /></button>
+            <div className="text-xs text-gray-500">
+              Scroll to pan, Ctrl/Cmd + Scroll to zoom
             </div>
           </div>
         </div>
