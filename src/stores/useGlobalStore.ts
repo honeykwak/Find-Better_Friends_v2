@@ -61,7 +61,7 @@ interface GlobalStore {
   avgVotingPowerDynamicRange: [number, number];
   recentVotingPowerRange: [number, number]; // New
   recentVotingPowerDynamicRange: [number, number]; // New
-  considerActivePeriodOnly: boolean;
+  participationRateDistribution: number[];
 
   // Similarity options
   matchAbstainInSimilarity: boolean;
@@ -98,7 +98,6 @@ interface GlobalStore {
   setHighlightedValidator: (moniker: string | null) => void;
   setValidatorSortKey: (key: ValidatorSortKey) => void;
   setVotingPowerSortType: (type: VotingPowerSortType) => void; // New
-  setConsiderActivePeriodOnly: (activeOnly: boolean) => void;
   setMatchAbstainInSimilarity: (value: boolean) => void;
   resetFilters: () => void;
   getFilteredProposals: () => (Proposal & { voteDistribution?: { [key: string]: number } })[];
@@ -162,7 +161,7 @@ export const useGlobalStore = create<GlobalStore>((set, get) => ({
   avgVotingPowerDynamicRange: [0, 1],
   recentVotingPowerRange: [0, 100],
   recentVotingPowerDynamicRange: [0, 1],
-  considerActivePeriodOnly: false,
+  participationRateDistribution: [],
   matchAbstainInSimilarity: true,
   categoryVisualizationMode: 'votePower',
   validatorSortKey: 'recentVotingPower',
@@ -240,6 +239,9 @@ export const useGlobalStore = create<GlobalStore>((set, get) => ({
       
       filteredByVotingPower = ranked.slice(safeMinRank - 1, safeMaxRank);
     }
+
+    const newDistribution = filteredByVotingPower.map(v => v.participationRate || 0);
+    set({ participationRateDistribution: newDistribution });
 
     const [minParticipation, maxParticipation] = participationRateRange;
     let finalValidators = filteredByVotingPower.filter(v => 
@@ -321,7 +323,6 @@ export const useGlobalStore = create<GlobalStore>((set, get) => ({
         votingPowerRange: [0, 100],
         validatorSortKey: 'votingPower',
         votingPowerSortType: 'recent',
-        considerActivePeriodOnly: false,
       });
       get().recalculateValidatorMetrics();
     } catch (err: any) {
@@ -330,7 +331,7 @@ export const useGlobalStore = create<GlobalStore>((set, get) => ({
   },
 
   recalculateValidatorMetrics: () => {
-    const { proposals, validators, votes, getFilteredProposals, considerActivePeriodOnly, searchTerm, validatorSortKey, matchAbstainInSimilarity } = get();
+    const { proposals, validators, votes, getFilteredProposals, searchTerm, validatorSortKey, matchAbstainInSimilarity } = get();
     if (!proposals.length || !validators.length) {
       set({ 
         validatorsWithDerivedData: [], 
@@ -343,34 +344,6 @@ export const useGlobalStore = create<GlobalStore>((set, get) => ({
 
     const filteredProposals = getFilteredProposals();
     
-    // --- OPTIMIZATION ---
-    // Pre-calculate the denominator for the case when 'considerActivePeriodOnly' is OFF.
-    // This avoids re-calculating the same list for every validator inside the loop.
-    let proposalsForRate: Proposal[] = [];
-    if (!considerActivePeriodOnly) {
-      const proposalVoteOptions = new Map<string, Set<string>>();
-      const filteredProposalIds = new Set(filteredProposals.map(p => p.proposal_id));
-
-      for (const vote of votes) {
-        if (filteredProposalIds.has(vote.proposal_id)) {
-          if (!proposalVoteOptions.has(vote.proposal_id)) {
-            proposalVoteOptions.set(vote.proposal_id, new Set());
-          }
-          proposalVoteOptions.get(vote.proposal_id)!.add(vote.vote_option);
-        }
-      }
-
-      const proposalsWithNoMeaningfulVotes = new Set<string>();
-      for (const proposal of filteredProposals) {
-        const options = proposalVoteOptions.get(proposal.proposal_id);
-        if (!options || (options.size === 1 && options.has('NO_VOTE'))) {
-          proposalsWithNoMeaningfulVotes.add(proposal.proposal_id);
-        }
-      }
-      proposalsForRate = filteredProposals.filter(p => !proposalsWithNoMeaningfulVotes.has(p.proposal_id));
-    }
-    // --- END OPTIMIZATION ---
-
     const proposalIdToTimeMap = new Map<string, number>();
     filteredProposals.forEach(p => {
       if (p.submit_time) {
@@ -412,28 +385,10 @@ export const useGlobalStore = create<GlobalStore>((set, get) => ({
 
       const voteCount = new Set(validatorVotesInFilter.filter(v => v.vote_option !== 'NO_VOTE').map(v => v.proposal_id)).size;
 
-      let participationRate;
-      if (considerActivePeriodOnly) {
-        const proposalsWithTime = filteredProposals.filter(p => proposalIdToTimeMap.has(p.proposal_id));
-        const timedParticipationCount = new Set(validatorVotesInFilter.filter(v => v.vote_option !== 'NO_VOTE').map(v => v.proposal_id)).size;
-
-        let relevantProposalCount = 0;
-        if (firstVoteTime !== Infinity) {
-          for (const p of proposalsWithTime) {
-            const time = proposalIdToTimeMap.get(p.proposal_id)!;
-            if (time >= firstVoteTime) {
-              relevantProposalCount++;
-            }
-          }
-        }
-        const rate = relevantProposalCount > 0 ? (timedParticipationCount / relevantProposalCount) * 100 : 0;
-        participationRate = Math.min(100, rate);
-      } else {
-        const participationCount = new Set(validatorVotesInFilter.filter(v => v.vote_option !== 'NO_VOTE').map(v => v.proposal_id)).size;
-        // Use the pre-calculated 'proposalsForRate' which is much more efficient.
-        const rate = proposalsForRate.length > 0 ? (participationCount / proposalsForRate.length) * 100 : 0;
-        participationRate = Math.min(100, rate);
-      }
+      const allValidatorVotes = votes.filter(vote => vote.validator_address === v.validator_address);
+      const participatedVotesCount = allValidatorVotes.filter(vote => vote.vote_option !== 'NO_VOTE').length;
+      const totalVotesCount = allValidatorVotes.length;
+      const participationRate = totalVotesCount > 0 ? (participatedVotesCount / totalVotesCount) * 100 : 0;
       
       return {
         ...v,
@@ -637,10 +592,6 @@ export const useGlobalStore = create<GlobalStore>((set, get) => ({
     set({ votingPowerSortType: type });
     get().recalculateValidatorMetrics();
   },
-  setConsiderActivePeriodOnly: (activeOnly: boolean) => {
-    set({ considerActivePeriodOnly: activeOnly });
-    get().recalculateValidatorMetrics();
-  },
   setMatchAbstainInSimilarity: (value: boolean) => {
     set({ matchAbstainInSimilarity: value });
     get().recalculateValidatorMetrics();
@@ -659,7 +610,6 @@ export const useGlobalStore = create<GlobalStore>((set, get) => ({
       votingPowerDisplayMode: 'percentile',
       votingPowerRange: [0, 100],
       recentVotingPowerRange: [0, 100],
-      considerActivePeriodOnly: false,
       matchAbstainInSimilarity: true,
       categoryVisualizationMode: 'votePower',
       validatorSortKey: 'votingPower',
@@ -869,10 +819,6 @@ export const getSubmitTimeDistribution = (state: GlobalStore) => {
 
 export const getAvgVotingPowerDistribution = (state: GlobalStore) => {
   return state.validatorsWithDerivedData.map(v => v.avgPower || 0);
-};
-
-export const getParticipationRateDistribution = (state: GlobalStore) => {
-  return state.validatorsWithDerivedData.map(v => v.participationRate || 0);
 };
 
 // Initialize data on first load

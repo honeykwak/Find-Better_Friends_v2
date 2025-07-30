@@ -7,7 +7,6 @@ import {
   getConflictIndexDistribution, 
   getSubmitTimeDistribution,
   getAvgVotingPowerDistribution,
-  getParticipationRateDistribution,
   type CategoryHierarchyNode, 
   type TopicNode, 
   type Validator 
@@ -106,6 +105,7 @@ export default function FilterPanel() {
     votingPowerRange,
     avgVotingPowerDynamicRange,
     participationRateRange,
+    participationRateDistribution,
     setSelectedCategories,
     setSelectedTopics,
     setConflictIndexRange,
@@ -132,7 +132,6 @@ export default function FilterPanel() {
   const conflictIndexDistribution = useMemo(() => getConflictIndexDistribution(store), [store.proposals, store.submitTimeRange, categoryVisualizationMode, store.votes]);
   const submitTimeDistribution = useMemo(() => getSubmitTimeDistribution(store), [store.proposals]);
   const avgVotingPowerDistribution = useMemo(() => getAvgVotingPowerDistribution(store), [store.validatorsWithDerivedData]);
-  const participationRateDistribution = useMemo(() => getParticipationRateDistribution(store), [store.validatorsWithDerivedData]);
 
   const resetFilters = useCallback(() => {
     store.resetFilters();
@@ -141,6 +140,7 @@ export default function FilterPanel() {
 
   const chains = useMemo(() => getChains(), [getChains])
   const filteredCategoryHierarchy = useMemo(() => getFilteredCategoryHierarchy(), [proposals, conflictIndexRange, proposalAbstainRateRange, categoryVisualizationMode, getFilteredCategoryHierarchy, store.submitTimeRange, store.votes]);
+
 
   const handleCategoryMouseEnter = useCallback((categoryName: string) => setHoveredCategory(categoryName), [])
   const handleCategoryMouseLeave = useCallback(() => setHoveredCategory(null), [])
@@ -371,7 +371,7 @@ export default function FilterPanel() {
                 onChange={(v) => setVotingPowerDisplayMode(v as 'percentile' | 'rank')}
               />
             </div>
-            {store.validatorSortKey === 'recentVotingPower' ? (
+            {store.votingPowerSortType === 'recent' ? (
               <RangeSlider
                 label=""
                 min={votingPowerDisplayMode === 'rank' ? 1 : 0}
@@ -398,7 +398,7 @@ export default function FilterPanel() {
                   return `${100 - v}%`;
                 }}
                 step={1}
-                distributionData={[]}
+                distributionData={avgVotingPowerDistribution}
               />
             )}
           </div>
@@ -423,17 +423,6 @@ export default function FilterPanel() {
           <div className="mb-4">
             <div className="flex justify-between items-center mb-2">
               <label className="block text-sm font-medium text-gray-900">Participation Rate</label>
-              <div className="flex flex-col space-y-1">
-                <label className="flex items-center space-x-2 text-xs text-gray-500 cursor-pointer">
-                  <input
-                    type="checkbox"
-                    checked={store.considerActivePeriodOnly}
-                    onChange={(e) => store.setConsiderActivePeriodOnly(e.target.checked)}
-                    className="form-checkbox h-3 w-3 text-blue-600 rounded"
-                  />
-                  <span>Consider active period only</span>
-                </label>
-              </div>
             </div>
             <RangeSlider
               label=""
