@@ -164,12 +164,12 @@ export default function ValidatorHeatmap() {
       }
     }
     
-    const validators = sortedValidators.map((v, index) => ({ 
+    const validators = sortedValidators.map((v, index) => ({
       address: v.validator_address,
       moniker: v.moniker || 'Unknown',
-      displayName: `${v.moniker || 'Unknown'} ${validatorDisplayValues.get(v.validator_address) || ''}`.trim(),
-      index, 
-      isPinnedAndFilteredOut: v.isPinnedAndFilteredOut 
+      displayValue: validatorDisplayValues.get(v.validator_address) || '',
+      index,
+      isPinnedAndFilteredOut: v.isPinnedAndFilteredOut
     }));
 
     const proposals = filteredProposals
@@ -265,7 +265,21 @@ export default function ValidatorHeatmap() {
     // Set initial background color without transition
     mergedValidatorGroups.select('.validator-row-bg').attr('fill', (d: any) => d.moniker === highlightedValidator ? 'rgba(252, 211, 77, 0.3)' : 'transparent');
 
-    mergedValidatorGroups.select('.validator-label').text((d: any) => d.displayName.slice(0, 35)).style('font-weight', (d: any) => (searchTerm && d.moniker === searchTerm) ? 'bold' : 'normal')
+    mergedValidatorGroups.select('.validator-label')
+      .text((d: any) => {
+        const MAX_LENGTH = 35;
+        const value = d.displayValue || '';
+        const valueLength = value.length;
+        const maxMonikerLength = MAX_LENGTH - valueLength - (valueLength > 0 ? 1 : 0);
+
+        let moniker = d.moniker;
+        if (moniker.length > maxMonikerLength) {
+          moniker = moniker.slice(0, maxMonikerLength - 3) + '...';
+        }
+        
+        return `${moniker} ${value}`.trim();
+      })
+      .style('font-weight', (d: any) => (searchTerm && d.moniker === searchTerm) ? 'bold' : 'normal')
       .style('fill', (d: any) => {
         if (searchTerm && d.moniker === searchTerm) return d.isPinnedAndFilteredOut ? 'orange' : 'blue';
         return 'black';
