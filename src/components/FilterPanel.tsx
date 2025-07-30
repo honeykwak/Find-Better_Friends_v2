@@ -258,6 +258,28 @@ export default function FilterPanel() {
             />
           </div>
           <div className="mb-4">
+            <div className="flex items-center justify-between mb-2">
+              <h3 className="text-sm font-medium text-gray-900">Proposal Type</h3>
+            </div>
+            <div className="space-y-3">
+              {filteredCategoryHierarchy.map(category => (
+                <CategoryItem 
+                  key={category.name} 
+                  category={category} 
+                  isHovered={hoveredCategory === category.name} 
+                  isCategorySelected={selectedCategories.includes(category.name)} 
+                  selectedTopicsInCategory={selectedTopics.filter(topic => category.topics.some(t => t.name === topic))} 
+                  hasSelectedTopics={selectedTopics.filter(topic => category.topics.some(t => t.name === topic)).length > 0} 
+                  allTopicsSelected={category.topics.every(t => selectedTopics.includes(t.name))} 
+                  onCategoryMouseEnter={handleCategoryMouseEnter} 
+                  onCategoryMouseLeave={handleCategoryMouseLeave} 
+                  onToggleCategoryWithTopics={toggleCategoryWithTopics} 
+                  onTopicToggle={handleTopicToggle} 
+                />
+              ))}
+            </div>
+          </div>
+          <div className="mb-4">
             <label className="block text-sm font-medium text-gray-900 mb-2">Submission Time</label>
             <RangeSlider
               label=""
@@ -299,28 +321,6 @@ export default function FilterPanel() {
               step={1}
               distributionData={[]} // We will add distribution data later
             />
-          </div>
-          <div>
-            <div className="flex items-center justify-between mb-2">
-              <h3 className="text-sm font-medium text-gray-900">Proposal Type</h3>
-            </div>
-            <div className="space-y-3">
-              {filteredCategoryHierarchy.map(category => (
-                <CategoryItem 
-                  key={category.name} 
-                  category={category} 
-                  isHovered={hoveredCategory === category.name} 
-                  isCategorySelected={selectedCategories.includes(category.name)} 
-                  selectedTopicsInCategory={selectedTopics.filter(topic => category.topics.some(t => t.name === topic))} 
-                  hasSelectedTopics={selectedTopics.filter(topic => category.topics.some(t => t.name === topic)).length > 0} 
-                  allTopicsSelected={category.topics.every(t => selectedTopics.includes(t.name))} 
-                  onCategoryMouseEnter={handleCategoryMouseEnter} 
-                  onCategoryMouseLeave={handleCategoryMouseLeave} 
-                  onToggleCategoryWithTopics={toggleCategoryWithTopics} 
-                  onTopicToggle={handleTopicToggle} 
-                />
-              ))}
-            </div>
           </div>
         </div>
 
