@@ -263,25 +263,28 @@ export default function FilterPanel() {
             <h3 className="h2-subtitle text-gray-900">Chain</h3>
             <button onClick={resetFilters} className="flex items-center gap-1 px-2 py-1 content-text text-gray-600 hover:text-gray-900 hover:bg-gray-100 rounded"><RotateCcw className="w-3 h-3" />Reset</button>
           </div>
-          <div className="relative mb-4" ref={chainDropdownRef}>
-            <button onClick={() => setShowChainDropdown(!showChainDropdown)} className="w-full flex items-center justify-between px-3 h-7 bg-white border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
-              <div className="flex items-center gap-2">
-                {selectedChain !== 'all' && <Image src={getChainLogo(selectedChain)} alt={selectedChain} width={16} height={16} className="rounded-full" />}
-                <span className="capitalize h3-small-title text-gray-800">{selectedChain}</span>
+          <div className="relative" ref={chainDropdownRef}>
+            <div className="w-full bg-white border border-gray-300 rounded-md overflow-hidden transition-all duration-150">
+              <button onClick={() => setShowChainDropdown(!showChainDropdown)} className="w-full flex items-center justify-between px-3 h-7 focus:outline-none hover:bg-gray-50 transition-colors duration-150">
+                <div className="flex items-center gap-2">
+                  {selectedChain !== 'all' && <Image src={getChainLogo(selectedChain)} alt={selectedChain} width={16} height={16} className="rounded-full" />}
+                  <span className="capitalize h3-small-title text-gray-800">{selectedChain}</span>
+                </div>
+                <ChevronDown className={`w-4 h-4 text-gray-500 transition-transform duration-200 ${showChainDropdown ? 'transform rotate-180' : ''}`} />
+              </button>
+              <div className={`max-h-0 overflow-y-auto transition-all duration-300 ease-in-out ${showChainDropdown ? 'max-h-48 border-t border-gray-200' : ''}`}>
+                {chains.map(chain => (
+                  <button 
+                    key={chain} 
+                    onClick={() => { setSelectedChain(chain); setShowChainDropdown(false); }} 
+                    className="w-full flex items-center gap-2 px-3 py-2 text-left hover:bg-gray-50"
+                  >
+                    <Image src={getChainLogo(chain)} alt={chain} width={16} height={16} className="rounded-full" />
+                    <span className="capitalize h3-small-title text-gray-800">{chain}</span>
+                  </button>
+                ))}
               </div>
-            </button>
-            {showChainDropdown && <div className="absolute top-full left-0 right-0 mt-1 bg-white border rounded-md shadow-lg z-50 max-h-48 overflow-y-auto">
-              {chains.map(chain => (
-                <button 
-                  key={chain} 
-                  onClick={() => { setSelectedChain(chain); setShowChainDropdown(false); }} 
-                  className="w-full flex items-center gap-2 px-3 py-2 text-left hover:bg-gray-50"
-                >
-                  <Image src={getChainLogo(chain)} alt={chain} width={16} height={16} className="rounded-full" />
-                  <span className="capitalize h3-small-title text-gray-800">{chain}</span>
-                </button>
-              ))}
-            </div>}
+            </div>
           </div>
         </div>
 
@@ -376,30 +379,30 @@ export default function FilterPanel() {
               onChange={(v) => store.setVotingPowerSortType(v as 'average' | 'recent')}
             />
           </div>
-          <div className="mb-4" ref={searchRef}>
-            <div className="relative">
-              <Search className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-500 w-4 h-4" />
-              <input 
-                type="text" 
-                placeholder="Type validator name..." 
-                value={inputValue} 
-                onChange={handleSearchChange}
-                onFocus={handleSearchFocus}
-                className="w-full pl-10 pr-4 h-7 h3-small-title border border-gray-300 rounded-md text-gray-800 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-blue-500" 
-              />
-              {isDropdownOpen && suggestions.length > 0 && (
-                <div className="absolute top-full left-0 right-0 mt-1 bg-white border rounded-md shadow-lg z-50 max-h-60 overflow-y-auto">
-                  {suggestions.map((validator, index) => (
-                    <button
-                      key={`${validator.operator_address}-${index}`}
-                      onClick={() => handleSuggestionClick(validator.moniker || '')}
-                      className="w-full text-left px-4 py-2 h3-small-title text-gray-700 hover:bg-gray-100"
-                    >
-                      {validator.moniker}
-                    </button>
-                  ))}
-                </div>
-              )}
+          <div className="relative" ref={searchRef}>
+            <div className="w-full bg-white border border-gray-300 rounded-md overflow-hidden transition-all duration-150">
+              <div className="relative hover:bg-gray-50 transition-colors duration-150">
+                <Search className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-500 w-4 h-4 pointer-events-none" />
+                <input 
+                  type="text" 
+                  placeholder="Type validator name..." 
+                  value={inputValue} 
+                  onChange={handleSearchChange}
+                  onFocus={handleSearchFocus}
+                  className="w-full pl-10 pr-4 h-7 h3-small-title bg-transparent text-gray-800 placeholder-gray-500 focus:outline-none" 
+                />
+              </div>
+              <div className={`max-h-0 overflow-y-auto transition-all duration-300 ease-in-out ${isDropdownOpen && suggestions.length > 0 ? 'max-h-60 border-t border-gray-200' : ''}`}>
+                {suggestions.map((validator, index) => (
+                  <button
+                    key={`${validator.operator_address}-${index}`}
+                    onClick={() => handleSuggestionClick(validator.moniker || '')}
+                    className="w-full text-left px-4 py-2 h3-small-title text-gray-700 hover:bg-gray-50"
+                  >
+                    {validator.moniker}
+                  </button>
+                ))}
+              </div>
             </div>
           </div>
           <div className="mb-4 space-y-3">
