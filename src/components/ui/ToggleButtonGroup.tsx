@@ -15,18 +15,26 @@ interface ToggleButtonGroupProps {
 
 export default function ToggleButtonGroup({ options, selectedValue, onChange }: ToggleButtonGroupProps) {
   return (
-    <div className="flex items-center bg-gray-100 rounded-lg p-1">
+    <div className="flex items-center bg-gray-100 rounded p-[2px] gap-[2px]">
       {options.map((option) => (
         <button
           key={option.value}
           onClick={() => onChange(option.value)}
-          className={`px-2 py-1 content-text font-medium rounded-md whitespace-nowrap ${
+          className={`flex justify-center items-center px-3 py-1 rounded transition-colors duration-200 ease-in-out ${
             selectedValue === option.value
-              ? 'bg-white text-gray-800 shadow-sm'
-              : 'text-gray-500 hover:bg-gray-200'
+              ? 'bg-white shadow-sm'
+              : 'bg-transparent'
           }`}
         >
-          {option.label}
+          <span
+            className={`content-text whitespace-nowrap ${
+              selectedValue === option.value
+                ? 'text-gray-900'
+                : 'text-gray-500'
+            }`}
+          >
+            {option.label}
+          </span>
         </button>
       ))}
     </div>

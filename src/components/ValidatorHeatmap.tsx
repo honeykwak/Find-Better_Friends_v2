@@ -4,6 +4,7 @@ import { useEffect, useRef, useState, useMemo } from 'react'
 import * as d3 from 'd3'
 import { useGlobalStore, type ValidatorSortKey, type ProposalForHeatmap } from '@/stores/useGlobalStore'
 import { VOTE_COLORS, VOTE_ORDER } from '@/constants/voteColors'
+import ToggleButtonGroup from './ui/ToggleButtonGroup'
 import { Loader2, ZoomIn, ZoomOut, RotateCcw } from 'lucide-react'
 import type { Vote, Validator, Proposal } from '@/lib/dataLoader'
 
@@ -444,10 +445,17 @@ export default function ValidatorHeatmap() {
             {isLoading && <Loader2 className="w-4 h-4 animate-spin text-blue-600" />}
           </div>
           <div className="flex items-center gap-4">
-            <div className="flex items-center bg-gray-100 rounded-lg p-1">
-              <button onClick={() => setValidatorSortKey('votingPower')} className={`px-3 py-2 content-text font-medium rounded-md whitespace-nowrap ${validatorSortKey === 'votingPower' ? 'bg-white text-gray-800 shadow-sm' : 'text-gray-500'}`}>Voting Power</button>
-              <button onClick={() => setValidatorSortKey('similarity')} className={`px-3 py-2 content-text font-medium rounded-md whitespace-nowrap ${validatorSortKey === 'similarity' ? 'bg-white text-gray-800 shadow-sm' : 'text-gray-500'} disabled:opacity-50`} disabled={!searchTerm}>Similarity</button>
-            </div>
+            <ToggleButtonGroup
+              options={[
+                { value: 'votingPower', label: 'Voting Power' },
+                { value: 'similarity', label: 'Similarity' }
+              ]}
+              selectedValue={validatorSortKey}
+              onChange={(value) => {
+                if (value === 'similarity' && !searchTerm) return;
+                setValidatorSortKey(value as ValidatorSortKey);
+              }}
+            />
             {validatorSortKey === 'similarity' && (
               <label className="flex items-center space-x-2 content-text text-gray-600 cursor-pointer">
                 <input
