@@ -20,15 +20,15 @@ export const VOTE_COLORS = {
 export type VoteOption = keyof typeof VOTE_COLORS
 
 // Vote option order (stack order in visualization) - Temperature-based spectrum with neutral grouping
-export const VOTE_ORDER: VoteOption[] = ['YES', 'ABSTAIN', 'NO_VOTE', 'NO', 'NO_WITH_VETO']
+export const VOTE_ORDER: VoteOption[] = ['YES', 'NO', 'NO_WITH_VETO', 'ABSTAIN', 'NO_VOTE']
 
 // Vote option descriptions
 export const VOTE_DESCRIPTIONS = {
   YES: 'YES',
   NO: 'NO', 
   ABSTAIN: 'ABSTAIN',
-  NO_WITH_VETO: 'NO_WITH_VETO',
-  NO_VOTE: 'NO_VOTE'
+  NO_WITH_VETO: 'VETO',
+  NO_VOTE: 'DID NOT VOTE'
 } as const
 
 // Vote option meaning descriptions
