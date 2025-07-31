@@ -212,11 +212,20 @@ export default function FilterPanel() {
 
   const handleSearchChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const value = e.target.value
+    const lowercasedValue = value.toLowerCase()
     setInputValue(value)
+
     if (value) {
       const filteredSuggestions = validators
-        .filter(v => v.moniker?.toLowerCase().includes(value.toLowerCase()))
-        .slice(0, 10)
+        .filter(v => v.moniker?.toLowerCase().startsWith(lowercasedValue))
+        .sort((a, b) => {
+          const aName = a.moniker?.toLowerCase() || ''
+          const bName = b.moniker?.toLowerCase() || ''
+          if (aName < bName) return -1
+          if (aName > bName) return 1
+          return 0
+        })
+      
       setSuggestions(filteredSuggestions)
       setIsDropdownOpen(true)
     } else {
@@ -227,8 +236,7 @@ export default function FilterPanel() {
 
   const handleSearchFocus = () => {
     if (!inputValue) {
-      const initialSuggestions = validators.slice(0, 10);
-      setSuggestions(initialSuggestions);
+      setSuggestions(validators);
     }
     setIsDropdownOpen(true);
   };
