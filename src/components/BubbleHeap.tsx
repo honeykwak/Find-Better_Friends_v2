@@ -14,6 +14,20 @@ type SimulationNode = d3.SimulationNodeDatum & {
   y?: number
 }
 
+const getFillColor = (d: SimulationNode, highlighted: string | null) => {
+  if (d.similarity === 1 || highlighted === d.moniker) return 'rgba(234, 179, 8, 0.8)'; // Highlight color (yellow)
+  if (d.similarity >= 0.7) return '#404040'; // neutral-700
+  if (d.similarity >= 0.4) return '#a3a3a3'; // neutral-400
+  return '#d4d4d4'; // neutral-300
+};
+
+const getStrokeColor = (d: SimulationNode, highlighted: string | null) => {
+  if (d.similarity === 1 || highlighted === d.moniker) return 'rgba(202, 138, 4, 1)'; // Highlight stroke color
+  if (d.similarity >= 0.7) return '#262626'; // neutral-800
+  if (d.similarity >= 0.4) return '#737373'; // neutral-500
+  return '#a3a3a3'; // neutral-400
+};
+
 export default function BubbleHeap() {
   const svgRef = useRef<SVGSVGElement>(null)
   const containerRef = useRef<HTMLDivElement>(null)
@@ -129,29 +143,24 @@ export default function BubbleHeap() {
       }
     });
 
-    // --- REVISED D3 DATA JOIN WITH SEPARATE TRANSITIONS ---
     const circles = zoomGRef.current
       .selectAll<SVGCircleElement, SimulationNode>('circle')
       .data(simulationData, d => d.id);
 
-    // EXIT: Animate and remove circles that are no longer in the data
     circles.exit()
       .transition('exit_transition')
       .duration(300)
       .attr('r', 0)
       .remove();
 
-    // ENTER: Create new circles, starting with radius 0
     const enterSelection = circles.enter().append('circle')
       .style('cursor', 'pointer')
       .attr('r', 0)
       .attr('cx', d => d.x || boundedWidth / 2)
       .attr('cy', d => d.y || yScale(d.similarity));
 
-    // MERGE: Combine new (enter) and existing (update) circles
     const allCircles = enterSelection.merge(circles);
 
-    // Apply event handlers to ALL circles
     allCircles
       .on('click', (event, d) => {
         if (d.similarity < 1) setSearchTerm(d.moniker)
@@ -167,18 +176,9 @@ export default function BubbleHeap() {
         tooltip.style('visibility', 'hidden')
       });
 
-    // UPDATE TRANSITION: Animate radius for existing circles
-    circles
-      .transition('update_radius_transition')
+    allCircles.transition('update_radius_transition')
       .duration(750)
       .attr('r', d => radiusScale(d.avgPower));
-
-    // ENTER TRANSITION: Animate radius for new circles from 0 to final size
-    enterSelection
-      .transition('enter_radius_transition')
-      .duration(750)
-      .attr('r', d => radiusScale(d.avgPower));
-    // --- END REVISED D3 DATA JOIN ---
 
     simulationRef.current.nodes(simulationData);
     simulationRef.current.force('collide', d3.forceCollide((d: any) => radiusScale(d.avgPower) + 1));
@@ -190,15 +190,9 @@ export default function BubbleHeap() {
     if (!zoomGRef.current) return
     zoomGRef.current.selectAll('circle')
       .transition().duration(200)
-      .attr('fill', (d: any) => {
-        if (d.similarity === 1) return 'rgba(234, 179, 8, 0.8)'
-        return highlightedValidator === d.moniker ? 'rgba(234, 179, 8, 0.8)' : 'rgba(29, 78, 216, 0.6)'
-      })
-      .attr('stroke', (d: any) => {
-        if (d.similarity === 1) return 'rgba(202, 138, 4, 1)'
-        return highlightedValidator === d.moniker ? 'rgba(202, 138, 4, 1)' : 'rgba(29, 78, 216, 1)'
-      })
-  }, [highlightedValidator])
+      .attr('fill', d => getFillColor(d as SimulationNode, highlightedValidator))
+      .attr('stroke', d => getStrokeColor(d as SimulationNode, highlightedValidator))
+  }, [highlightedValidator, simulationData])
 
   return (
     <div className="w-full h-full bg-white border-l border-gray-200 flex flex-col">
