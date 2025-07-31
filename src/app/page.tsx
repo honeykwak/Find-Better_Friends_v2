@@ -20,10 +20,10 @@ export default async function HomePage() {
       <Suspense fallback={
         <div className="h-full bg-gray-50 flex items-center justify-center">
           <div className="text-center">
-            <Loader2 className="w-12 h-12 animate-spin mx-auto mb-4 text-blue-600" />
-            <h2 className="text-xl font-semibold text-gray-900 mb-2">Loading Governance Data</h2>
-            <p className="text-gray-600">Preparing validator analysis...</p>
-          </div>
+        <Loader2 className="w-12 h-12 animate-spin mx-auto mb-4 text-blue-600" />
+        <h2 className="h2-subtitle text-gray-900 mb-2">Loading Governance Data</h2>
+        <p className="h3-small-title text-gray-600">Preparing validator analysis...</p>
+      </div>
         </div>
       }>
         {/* 2. Pass the fetched data to the client component */}

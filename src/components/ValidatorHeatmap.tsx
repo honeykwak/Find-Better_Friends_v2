@@ -317,7 +317,7 @@ export default function ValidatorHeatmap() {
         const power = typeof d.votingPower === 'string' ? parseFloat(d.votingPower) : d.votingPower;
         const formattedPower = !isNaN(power) ? power.toLocaleString(undefined, { maximumFractionDigits: 6 }) : 'N/A';
         d3.select('body').selectAll('.heatmap-tooltip').remove();
-        const tooltip = d3.select('body').append('div').attr('class', 'heatmap-tooltip').style('position', 'absolute').style('background', 'rgba(0,0,0,0.8)').style('color', 'white').style('padding', '8px').style('border-radius', '4px').style('font-size', '12px').style('pointer-events', 'none').style('z-index', '1000').style('max-width', '300px').html(`<strong>${validator.moniker}</strong><br/>Proposal #${d.proposalId}: ${proposal.title}<br/>Category: ${proposal.category}<br/><hr style="margin: 4px 0; border-color: rgba(255,255,255,0.5);"/>Vote: <strong>${d.voteOption}</strong><br/>Voting Power: ${formattedPower}`);
+        const tooltip = d3.select('body').append('div').attr('class', 'heatmap-tooltip').style('position', 'absolute').style('background', 'rgba(0,0,0,0.8)').style('color', 'white').style('padding', '8px').style('border-radius', '4px').style('font-size', '12px').style('pointer-events', 'none').style('z-index', '1000').style('max-width', '300px').html(`<strong>${validator.moniker}</strong><br/>Proposal #${d.proposalId}: ${proposal.title}<br/>Category: ${proposal.category}<br/><hr style="margin: 4px 0; border-color: rgba(255,255,255,0.5);"/>Vote: <strong style="font-weight: 500;">${d.voteOption}</strong><br/>Voting Power: ${formattedPower}`);
         tooltip.style('left', (event.pageX + 10) + 'px').style('top', (event.pageY - 10) + 'px');
         d3.select(this).attr('stroke', '#000').attr('stroke-width', 1.5);
       })
@@ -429,7 +429,7 @@ export default function ValidatorHeatmap() {
       <div className="h-full flex items-center justify-center">
         <div className="text-center">
           <Loader2 className="w-8 h-8 animate-spin mx-auto mb-4 text-blue-600" />
-          <p className="text-gray-500">Loading chain data...</p>
+          <p className="h3-small-title text-gray-500">Loading chain data...</p>
         </div>
       </div>
     )
@@ -440,16 +440,16 @@ export default function ValidatorHeatmap() {
       <div className="p-4 border-b border-gray-200 bg-gray-50">
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-4">
-            <h3 className="text-lg font-semibold text-gray-800">Heatmap</h3>
+            <h3 className="h2-subtitle text-gray-800">Heatmap</h3>
             {isLoading && <Loader2 className="w-4 h-4 animate-spin text-blue-600" />}
           </div>
           <div className="flex items-center gap-4">
             <div className="flex items-center bg-gray-100 rounded-lg p-1">
-              <button onClick={() => setValidatorSortKey('votingPower')} className={`px-3 py-2 text-xs font-medium rounded-md whitespace-nowrap ${validatorSortKey === 'votingPower' ? 'bg-white text-gray-800 shadow-sm' : 'text-gray-500'}`}>Voting Power</button>
-              <button onClick={() => setValidatorSortKey('similarity')} className={`px-3 py-2 text-xs font-medium rounded-md whitespace-nowrap ${validatorSortKey === 'similarity' ? 'bg-white text-gray-800 shadow-sm' : 'text-gray-500'} disabled:opacity-50`} disabled={!searchTerm}>Similarity</button>
+              <button onClick={() => setValidatorSortKey('votingPower')} className={`px-3 py-2 content-text font-medium rounded-md whitespace-nowrap ${validatorSortKey === 'votingPower' ? 'bg-white text-gray-800 shadow-sm' : 'text-gray-500'}`}>Voting Power</button>
+              <button onClick={() => setValidatorSortKey('similarity')} className={`px-3 py-2 content-text font-medium rounded-md whitespace-nowrap ${validatorSortKey === 'similarity' ? 'bg-white text-gray-800 shadow-sm' : 'text-gray-500'} disabled:opacity-50`} disabled={!searchTerm}>Similarity</button>
             </div>
             {validatorSortKey === 'similarity' && (
-              <label className="flex items-center space-x-2 text-xs text-gray-600 cursor-pointer">
+              <label className="flex items-center space-x-2 content-text text-gray-600 cursor-pointer">
                 <input
                   type="checkbox"
                   checked={matchAbstainInSimilarity}
@@ -459,7 +459,7 @@ export default function ValidatorHeatmap() {
                 <span>Include abstentions</span>
               </label>
             )}
-            <div className="text-xs text-gray-500">
+            <div className="content-text text-gray-500">
               Scroll to pan, Ctrl/Cmd + Scroll to zoom
             </div>
           </div>

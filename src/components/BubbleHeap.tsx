@@ -87,7 +87,7 @@ export default function BubbleHeap() {
       .attr('transform', `translate(${boundedWidth}, 0)`)
     
     const yAxis = d3.axisLeft(scalesRef.current.y).ticks(5).tickFormat(d3.format('.0%'))
-    axisG.call(yAxis).selectAll('text').style('font-size', '24px')
+    axisG.call(yAxis).selectAll('text').style('font-size', '12px').style('font-weight', '500');
     axisG.select('.domain').attr('stroke-width', 1.5)
 
     const zoom = d3.zoom<SVGSVGElement, unknown>().scaleExtent([0.5, 10])
@@ -203,11 +203,11 @@ export default function BubbleHeap() {
   return (
     <div className="w-full h-full bg-white border-l border-gray-200 flex flex-col">
       <div className="p-4 border-b border-gray-200 bg-gray-50">
-        <h3 className="text-lg font-semibold text-gray-800">
+        <h3 className="h2-subtitle text-gray-800">
           {searchTerm ? (
             <>Similarity with: <span className="text-blue-600">{searchTerm}</span></>
           ) : (
-            "Validator Overview"
+            "Bubble Heap"
           )}
         </h3>
       </div>
@@ -222,7 +222,7 @@ export default function BubbleHeap() {
               className="absolute inset-0 flex items-center justify-center"
             >
               <div className="text-center p-4">
-                <p className="text-gray-500 bg-gray-50 p-4 rounded-lg shadow-sm">
+                <p className="content-text text-gray-500 bg-gray-50 p-4 rounded-lg shadow-sm">
                   Select a validator from the heatmap or filter panel<br/>to see their similarity with others.
                 </p>
               </div>
@@ -235,7 +235,7 @@ export default function BubbleHeap() {
                 exit={{ opacity: 0, y: -20 }}
                 className="absolute inset-0 flex items-center justify-center"
               >
-                <p className="text-gray-500 bg-white p-4 rounded-lg shadow-md">No other validators to compare.</p>
+                <p className="content-text text-gray-500 bg-white p-4 rounded-lg shadow-md">No other validators to compare.</p>
               </motion.div>
             )
           )}

@@ -13,7 +13,7 @@ const FilterPanel = dynamic(() => import('@/components/FilterPanel'), {
     <div className="w-full h-full bg-white flex items-center justify-center">
       <div className="text-center">
         <Loader2 className="w-6 h-6 animate-spin mx-auto mb-2 text-blue-600" />
-        <p className="text-sm text-gray-600">Loading filters...</p>
+        <p className="h3-small-title text-gray-600">Loading filters...</p>
       </div>
     </div>
   ),
@@ -25,8 +25,8 @@ const ValidatorHeatmap = dynamic(() => import('@/components/ValidatorHeatmap'), 
     <div className="h-full bg-white flex items-center justify-center">
       <div className="text-center">
         <Loader2 className="w-8 h-8 animate-spin mx-auto mb-4 text-blue-600" />
-        <p className="text-lg font-medium text-gray-900 mb-2">Loading Heatmap Visualization...</p>
-        <p className="text-sm text-gray-600">Preparing D3.js chart...</p>
+        <p className="h2-subtitle text-gray-900 mb-2">Loading Heatmap Visualization...</p>
+        <p className="h3-small-title text-gray-600">Preparing D3.js chart...</p>
       </div>
     </div>
   ),
@@ -38,7 +38,7 @@ const BubbleHeap = dynamic(() => import('@/components/BubbleHeap'), {
     <div className="h-full bg-white flex items-center justify-center">
       <div className="text-center">
         <Loader2 className="w-8 h-8 animate-spin mx-auto mb-4 text-blue-600" />
-        <p className="text-lg font-medium text-gray-900 mb-2">Loading Bubble Heap...</p>
+        <p className="h2-subtitle text-gray-900 mb-2">Loading Bubble Heap...</p>
       </div>
     </div>
   ),
@@ -88,7 +88,7 @@ export default function ResearchClient({ initialData }: ResearchClientProps) {
               <div className="w-full h-full bg-white flex items-center justify-center">
                 <div className="text-center">
                   <Loader2 className="w-6 h-6 animate-spin mx-auto mb-2 text-blue-600" />
-                  <p className="text-sm text-gray-600">Loading filters...</p>
+                  <p className="h3-small-title text-gray-600">Loading filters...</p>
                 </div>
               </div>
             }>

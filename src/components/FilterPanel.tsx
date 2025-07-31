@@ -66,7 +66,7 @@ const CategoryItem = React.memo(({ category, isHovered, isCategorySelected, sele
         <VoteCountBackground voteDistribution={category.voteDistribution} />
         <input type="checkbox" checked={checkboxState === 'checked'} ref={el => el && (el.indeterminate = checkboxState === 'indeterminate')} onChange={() => onToggleCategoryWithTopics(category.name, category.topics.map(t => t.name))} className="w-4 h-4 text-blue-600 border-gray-300 rounded focus:ring-blue-500 relative z-10 mr-2" />
         <div className="flex items-center justify-between flex-1 relative z-10">
-          <span className="text-sm font-medium text-gray-700">{`${category.name} (${category.count})`}</span>
+          <span className="h3-small-title text-gray-700">{`${category.name} (${category.count})`}</span>
         </div>
       </div>
       <div className={`border-t border-gray-200 bg-gray-50 overflow-hidden transition-all duration-300 ease-in-out ${shouldExpand ? 'max-h-48 opacity-100' : 'max-h-0 opacity-0'}`}>
@@ -84,7 +84,7 @@ const TopicItem = React.memo(({ topic, isSelected, categoryName, onToggle }: { t
       <VoteCountBackground voteDistribution={topic.voteDistribution} />
       <input type="checkbox" checked={isSelected} onChange={() => onToggle(topic.name, categoryName)} className="w-3 h-3 text-blue-600 border-gray-300 rounded focus:ring-blue-500 relative z-10" />
       <div className="flex items-center justify-between flex-1 relative z-10">
-        <span className="text-xs text-gray-600">{`${topic.displayName || topic.name} (${topic.count})`}</span>
+        <span className="content-text text-gray-600">{`${topic.displayName || topic.name} (${topic.count})`}</span>
       </div>
     </label>
   )
@@ -222,14 +222,14 @@ export default function FilterPanel() {
         {/* Chain Section */}
         <div>
           <div className="flex items-center justify-between mb-3">
-            <h3 className="text-lg font-semibold text-gray-900">Chain</h3>
-            <button onClick={resetFilters} className="flex items-center gap-1 px-2 py-1 text-xs text-gray-600 hover:text-gray-900 hover:bg-gray-100 rounded"><RotateCcw className="w-3 h-3" />Reset</button>
+            <h3 className="h2-subtitle text-gray-900">Chain</h3>
+            <button onClick={resetFilters} className="flex items-center gap-1 px-2 py-1 content-text text-gray-600 hover:text-gray-900 hover:bg-gray-100 rounded"><RotateCcw className="w-3 h-3" />Reset</button>
           </div>
           <div className="relative mb-4" ref={chainDropdownRef}>
-            <button onClick={() => setShowChainDropdown(!showChainDropdown)} className="w-full flex items-center justify-between px-3 py-2 text-sm bg-white border border-gray-300 rounded-md">
+            <button onClick={() => setShowChainDropdown(!showChainDropdown)} className="w-full flex items-center justify-between px-3 py-2 content-text bg-white border border-gray-300 rounded-md">
               <div className="flex items-center gap-2">
                 {selectedChain !== 'all' && <Image src={getChainLogo(selectedChain)} alt={selectedChain} width={16} height={16} className="rounded-full" />}
-                <span className="capitalize font-medium text-gray-800">{selectedChain}</span>
+                <span className="capitalize h3-small-title text-gray-800">{selectedChain}</span>
               </div>
             </button>
             {showChainDropdown && <div className="absolute top-full left-0 right-0 mt-1 bg-white border rounded-md shadow-lg z-50 max-h-48 overflow-y-auto">
@@ -237,7 +237,7 @@ export default function FilterPanel() {
                 <button 
                   key={chain} 
                   onClick={() => { setSelectedChain(chain); setShowChainDropdown(false); }} 
-                  className="w-full flex items-center gap-2 px-3 py-2 text-sm text-left hover:bg-gray-50"
+                  className="w-full flex items-center gap-2 px-3 py-2 content-text text-left hover:bg-gray-50"
                 >
                   <Image src={getChainLogo(chain)} alt={chain} width={16} height={16} className="rounded-full" />
                   <span className="capitalize text-gray-800">{chain}</span>
@@ -250,7 +250,7 @@ export default function FilterPanel() {
         {/* Proposal Section */}
         <div>
           <div className="flex items-center justify-between mb-3">
-            <h3 className="text-lg font-semibold text-gray-900">Proposal</h3>
+            <h3 className="h2-subtitle text-gray-900">Proposal</h3>
             <ToggleButtonGroup
               options={[{value: 'votePower', label: 'Voting Power'}, {value: 'voteCount', label: 'Vote Count'}]}
               selectedValue={categoryVisualizationMode}
@@ -259,7 +259,7 @@ export default function FilterPanel() {
           </div>
           <div className="mb-4">
             <div className="flex items-center justify-between mb-2">
-              <h3 className="text-sm font-medium text-gray-900">Proposal Type</h3>
+              <h3 className="h3-small-title text-gray-900">Proposal Type</h3>
             </div>
             <div className="space-y-3">
               {filteredCategoryHierarchy.map(category => (
@@ -280,7 +280,7 @@ export default function FilterPanel() {
             </div>
           </div>
           <div className="mb-4">
-            <label className="block text-sm font-medium text-gray-900 mb-2">Submission Time</label>
+            <label className="block h3-small-title text-gray-900 mb-2">Submission Time</label>
             <RangeSlider
               label=""
               min={store.submitTimeDynamicRange[0]}
@@ -294,7 +294,7 @@ export default function FilterPanel() {
           </div>
           <div className="mb-4">
             <div className="flex justify-between items-center mb-2">
-              <label className="block text-sm font-medium text-gray-900">Conflict Index</label>
+              <label className="block h3-small-title text-gray-900">Conflict Index</label>
             </div>
             <RangeSlider
               label=""
@@ -309,7 +309,7 @@ export default function FilterPanel() {
           </div>
           <div className="mb-4">
             <div className="flex justify-between items-center mb-2">
-              <label className="block text-sm font-medium text-gray-900">Abstain Rate</label>
+              <label className="block h3-small-title text-gray-900">Abstain Rate</label>
             </div>
             <RangeSlider
               label=""
@@ -327,7 +327,7 @@ export default function FilterPanel() {
         {/* Validator Section */}
         <div>
           <div className="flex items-center justify-between mb-3">
-            <h3 className="text-lg font-semibold text-gray-900">Validator</h3>
+            <h3 className="h2-subtitle text-gray-900">Validator</h3>
             <ToggleButtonGroup
               options={[
                 { value: 'recent', label: 'Recent VP' },
@@ -346,7 +346,7 @@ export default function FilterPanel() {
                 value={inputValue} 
                 onChange={handleSearchChange}
                 onFocus={handleSearchFocus}
-                className="w-full pl-10 pr-4 py-2 text-sm border border-gray-300 rounded-md text-gray-800 placeholder-gray-500" 
+                className="w-full pl-10 pr-4 py-2 content-text border border-gray-300 rounded-md text-gray-800 placeholder-gray-500" 
               />
               {isDropdownOpen && suggestions.length > 0 && (
                 <div className="absolute top-full left-0 right-0 mt-1 bg-white border rounded-md shadow-lg z-50 max-h-60 overflow-y-auto">
@@ -354,7 +354,7 @@ export default function FilterPanel() {
                     <button
                       key={`${validator.operator_address}-${index}`}
                       onClick={() => handleSuggestionClick(validator.moniker || '')}
-                      className="w-full text-left px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                      className="w-full text-left px-4 py-2 content-text text-gray-700 hover:bg-gray-100"
                     >
                       {validator.moniker}
                     </button>
@@ -365,7 +365,7 @@ export default function FilterPanel() {
           </div>
           <div className="mb-4 space-y-3">
             <div className="flex items-center justify-between">
-              <label className="text-sm font-medium text-gray-900">Voting Power</label>
+              <label className="h3-small-title text-gray-900">Voting Power</label>
               <ToggleButtonGroup
                 options={[{value: 'percentile', label: 'Percentile'}, {value: 'rank', label: 'Rank'}]}
                 selectedValue={votingPowerDisplayMode}
@@ -406,7 +406,7 @@ export default function FilterPanel() {
           
           <div className="mb-4">
             <div className="flex justify-between items-center mb-2">
-              <label className="block text-sm font-medium text-gray-900">Participation Rate</label>
+              <label className="block h3-small-title text-gray-900">Participation Rate</label>
             </div>
             <RangeSlider
               label=""

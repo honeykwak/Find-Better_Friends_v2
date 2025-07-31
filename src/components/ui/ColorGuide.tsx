@@ -5,7 +5,7 @@ import { LEGEND_ITEMS } from '@/constants/voteColors'
 
 export default function ColorGuide() {
   return (
-    <div className="flex items-center gap-4 text-xs">
+    <div className="flex items-center gap-4 content-text">
       {LEGEND_ITEMS.map(item => (
         <span key={item.option} className="flex items-center gap-1.5" title={item.description}>
           <div className="w-3 h-3 rounded-sm" style={{ backgroundColor: item.color }}></div>

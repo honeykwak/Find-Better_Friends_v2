@@ -79,12 +79,33 @@
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: var(--font-sans), system-ui, -apple-system, sans-serif;
-  font-size: var(--font-size-base);
-  line-height: var(--line-height-normal);
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
 }
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+  .h1-title {
+    @apply text-[20px] font-bold;
+  }
+  .h2-subtitle {
+    @apply text-[16px] font-bold;
+  }
+  .h3-small-title {
+    @apply text-[12px] font-medium;
+  }
+  .content-text {
+    @apply text-[8px] font-medium;
+  }
+}
+
 
 /* Typography Utility Classes - 의미론적 클래스 */
 .text-caption {

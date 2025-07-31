@@ -207,13 +207,13 @@ export default function RangeSlider({
     <div className="select-none">
       {/* Measurement Layer (Invisible) */}
       <div style={{ position: 'absolute', visibility: 'hidden', zIndex: -1 }}>
-        <span ref={measurementRefs.combined} className="text-xs font-medium whitespace-nowrap">{rangeText.combined}</span>
-        <span ref={measurementRefs.min} className="text-xs font-medium whitespace-nowrap">{rangeText.min}</span>
-        <span ref={measurementRefs.max} className="text-xs font-medium whitespace-nowrap">{rangeText.max}</span>
+        <span ref={measurementRefs.combined} className="content-text whitespace-nowrap">{rangeText.combined}</span>
+        <span ref={measurementRefs.min} className="content-text whitespace-nowrap">{rangeText.min}</span>
+        <span ref={measurementRefs.max} className="content-text whitespace-nowrap">{rangeText.max}</span>
       </div>
 
       <div className="flex justify-between items-center mb-2">
-        <label className="block text-sm font-medium" style={{ color: '#111827' }}>{label}</label>
+        <label className="block h3-small-title" style={{ color: '#111827' }}>{label}</label>
         {children}
       </div>
       <div 
@@ -268,7 +268,7 @@ export default function RangeSlider({
                   width: `${minPercent}%`,
                 }}
               >
-                <span className="pr-4 text-xs font-medium whitespace-nowrap" style={{ color: '#111827' }}>
+                <span className="pr-4 content-text whitespace-nowrap" style={{ color: '#111827' }}>
                   {rangeText.min}
                 </span>
               </div>
@@ -280,7 +280,7 @@ export default function RangeSlider({
                   right: `0%`,
                 }}
               >
-                <span className="pl-4 text-xs font-medium whitespace-nowrap" style={{ color: '#111827' }}>
+                <span className="pl-4 content-text whitespace-nowrap" style={{ color: '#111827' }}>
                   {rangeText.max}
                 </span>
               </div>
@@ -296,7 +296,7 @@ export default function RangeSlider({
                 width: `${minPercent}%`,
               }}
             >
-              <span className="pr-4 text-xs font-medium whitespace-nowrap" style={{ color: '#111827' }}>
+              <span className="pr-4 content-text whitespace-nowrap" style={{ color: '#111827' }}>
                 {rangeText.combined}
               </span>
             </div>
@@ -311,7 +311,7 @@ export default function RangeSlider({
                 right: `0%`,
               }}
             >
-              <span className="pl-4 text-xs font-medium whitespace-nowrap" style={{ color: '#111827' }}>
+              <span className="pl-4 content-text whitespace-nowrap" style={{ color: '#111827' }}>
                 {rangeText.combined}
               </span>
             </div>
