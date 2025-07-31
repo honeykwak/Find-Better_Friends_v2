@@ -202,7 +202,7 @@ export default function BubbleHeap() {
 
   return (
     <div className="w-full h-full bg-white border-l border-gray-200 flex flex-col">
-      <div className="p-4 border-b border-gray-200 bg-gray-50">
+      <div className="px-4 py-2 border-b border-gray-200 bg-gray-50">
         <h3 className="h2-subtitle text-gray-800">
           {searchTerm ? (
             <>Similarity with: <span className="text-blue-600">{searchTerm}</span></>
