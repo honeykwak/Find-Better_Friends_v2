@@ -12,6 +12,7 @@ import {
   type Validator 
 } from '@/stores/useGlobalStore'
 import { VOTE_COLORS, VOTE_ORDER } from '@/constants/voteColors'
+import { CATEGORY_COLORS } from '@/constants/categoryColors'
 import Image from 'next/image'
 import React from 'react'
 import DistributionSlider from './ui/DistributionSlider'
@@ -60,14 +61,23 @@ const VoteCountBackground = React.memo(({ voteDistribution }: { voteDistribution
 const CategoryItem = React.memo(({ category, isHovered, isCategorySelected, selectedTopicsInCategory, hasSelectedTopics, allTopicsSelected, onCategoryMouseEnter, onCategoryMouseLeave, onToggleCategoryWithTopics, onTopicToggle }: { category: CategoryHierarchyNode; isHovered: boolean; isCategorySelected: boolean; selectedTopicsInCategory: string[]; hasSelectedTopics: boolean; allTopicsSelected: boolean; onCategoryMouseEnter: (name: string) => void; onCategoryMouseLeave: () => void; onToggleCategoryWithTopics: (categoryName: string, topicNames: string[]) => void; onTopicToggle: (topicName: string, categoryName: string) => void; }) => {
   const shouldExpand = isHovered || hasSelectedTopics
   const checkboxState = allTopicsSelected && isCategorySelected ? 'checked' : hasSelectedTopics ? 'indeterminate' : 'unchecked'
+  const categoryColor = CATEGORY_COLORS[category.name] || '#6B7280' // Default to gray
 
   return (
     <div className="border border-gray-200 rounded-lg" onMouseEnter={() => onCategoryMouseEnter(category.name)} onMouseLeave={onCategoryMouseLeave}>
-      <div className="flex items-center px-3 py-2 hover:bg-gray-50 relative">
-        <VoteCountBackground voteDistribution={category.voteDistribution} />
-        <input type="checkbox" checked={checkboxState === 'checked'} ref={el => el && (el.indeterminate = checkboxState === 'indeterminate')} onChange={() => onToggleCategoryWithTopics(category.name, category.topics.map(t => t.name))} className="w-4 h-4 text-blue-600 border-gray-300 rounded focus:ring-blue-500 relative z-10 mr-2" />
+      <div 
+        className="flex items-center px-3 py-2 relative rounded-t-lg"
+        style={{ backgroundColor: categoryColor }}
+      >
+        <input 
+          type="checkbox" 
+          checked={checkboxState === 'checked'} 
+          ref={el => el && (el.indeterminate = checkboxState === 'indeterminate')} 
+          onChange={() => onToggleCategoryWithTopics(category.name, category.topics.map(t => t.name))} 
+          className="w-4 h-4 text-blue-600 bg-white border-gray-300 rounded focus:ring-blue-500 relative z-10 mr-2"
+        />
         <div className="flex items-center justify-between flex-1 relative z-10">
-          <span className="h3-small-title text-gray-700">{`${category.name} (${category.count})`}</span>
+          <span className="h3-small-title text-white">{`${category.name} (${category.count})`}</span>
         </div>
       </div>
       <div className={`border-t border-gray-200 bg-gray-50 overflow-hidden transition-all duration-300 ease-in-out ${shouldExpand ? 'max-h-48 opacity-100' : 'max-h-0 opacity-0'}`}>
