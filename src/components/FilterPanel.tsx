@@ -137,7 +137,7 @@ export default function FilterPanel() {
     setParticipationRateRange,
   } = store;
 
-  const [openCategory, setOpenCategory] = useState<string | null>(null)
+  const [openCategories, setOpenCategories] = useState<string[]>([])
   const [showChainDropdown, setShowChainDropdown] = useState(false)
   const chainDropdownRef = useRef<HTMLDivElement>(null)
   const [inputValue, setInputValue] = useState('')
@@ -169,7 +169,11 @@ export default function FilterPanel() {
   const filteredCategoryHierarchy = useMemo(() => getFilteredCategoryHierarchy(), [proposals, conflictIndexRange, proposalAbstainRateRange, categoryVisualizationMode, getFilteredCategoryHierarchy, store.submitTimeRange, store.votes]);
 
   const handleCategoryClick = useCallback((categoryName: string) => {
-    setOpenCategory(prev => prev === categoryName ? null : categoryName)
+    setOpenCategories(prev => 
+      prev.includes(categoryName) 
+        ? prev.filter(cn => cn !== categoryName) 
+        : [...prev, categoryName]
+    )
   }, [])
 
   const handleTopicToggle = useCallback((topicName: string, categoryName: string) => {
@@ -292,7 +296,7 @@ export default function FilterPanel() {
                 <CategoryItem 
                   key={category.name} 
                   category={category}
-                  isOpen={openCategory === category.name}
+                  isOpen={openCategories.includes(category.name)}
                   onCategoryClick={handleCategoryClick}
                   isCategorySelected={selectedCategories.includes(category.name)} 
                   selectedTopicsInCategory={selectedTopics.filter(topic => category.topics.some(t => t.name === topic))} 
