@@ -272,7 +272,7 @@ export default function FilterPanel() {
                 </div>
                 <ChevronDown className={`w-4 h-4 text-gray-500 transition-transform duration-200 ${showChainDropdown ? 'transform rotate-180' : ''}`} />
               </button>
-              <div className={`max-h-0 overflow-y-auto transition-all duration-300 ease-in-out ${showChainDropdown ? 'max-h-48 border-t border-gray-200' : ''}`}>
+              <div className={`max-h-0 overflow-y-auto transition-all duration-300 ease-in-out border-t ${showChainDropdown ? 'max-h-48 border-gray-200' : 'border-transparent'}`}>
                 {chains.map(chain => (
                   <button 
                     key={chain} 
@@ -392,7 +392,7 @@ export default function FilterPanel() {
                   className="w-full pl-10 pr-4 h-7 h3-small-title bg-transparent text-gray-800 placeholder-gray-500 focus:outline-none" 
                 />
               </div>
-              <div className={`max-h-0 overflow-y-auto transition-all duration-300 ease-in-out ${isDropdownOpen && suggestions.length > 0 ? 'max-h-60 border-t border-gray-200' : ''}`}>
+              <div className={`max-h-0 overflow-y-auto transition-all duration-300 ease-in-out border-t ${isDropdownOpen && suggestions.length > 0 ? 'max-h-60 border-gray-200' : 'border-transparent'}`}>
                 {suggestions.map((validator, index) => (
                   <button
                     key={`${validator.operator_address}-${index}`}
