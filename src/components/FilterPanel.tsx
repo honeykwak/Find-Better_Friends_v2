@@ -248,7 +248,7 @@ export default function FilterPanel() {
             <button onClick={resetFilters} className="flex items-center gap-1 px-2 py-1 content-text text-gray-600 hover:text-gray-900 hover:bg-gray-100 rounded"><RotateCcw className="w-3 h-3" />Reset</button>
           </div>
           <div className="relative mb-4" ref={chainDropdownRef}>
-            <button onClick={() => setShowChainDropdown(!showChainDropdown)} className="w-full flex items-center justify-between px-3 py-2 content-text bg-white border border-gray-300 rounded-md">
+            <button onClick={() => setShowChainDropdown(!showChainDropdown)} className="w-full flex items-center justify-between px-3 h-7 bg-white border border-gray-300 rounded-md">
               <div className="flex items-center gap-2">
                 {selectedChain !== 'all' && <Image src={getChainLogo(selectedChain)} alt={selectedChain} width={16} height={16} className="rounded-full" />}
                 <span className="capitalize h3-small-title text-gray-800">{selectedChain}</span>
@@ -259,10 +259,10 @@ export default function FilterPanel() {
                 <button 
                   key={chain} 
                   onClick={() => { setSelectedChain(chain); setShowChainDropdown(false); }} 
-                  className="w-full flex items-center gap-2 px-3 py-2 content-text text-left hover:bg-gray-50"
+                  className="w-full flex items-center gap-2 px-3 py-2 text-left hover:bg-gray-50"
                 >
                   <Image src={getChainLogo(chain)} alt={chain} width={16} height={16} className="rounded-full" />
-                  <span className="capitalize text-gray-800">{chain}</span>
+                  <span className="capitalize h3-small-title text-gray-800">{chain}</span>
                 </button>
               ))}
             </div>}
@@ -370,7 +370,7 @@ export default function FilterPanel() {
                 value={inputValue} 
                 onChange={handleSearchChange}
                 onFocus={handleSearchFocus}
-                className="w-full pl-10 pr-4 py-2 content-text border border-gray-300 rounded-md text-gray-800 placeholder-gray-500" 
+                className="w-full pl-10 pr-4 h-7 h3-small-title border border-gray-300 rounded-md text-gray-800 placeholder-gray-500" 
               />
               {isDropdownOpen && suggestions.length > 0 && (
                 <div className="absolute top-full left-0 right-0 mt-1 bg-white border rounded-md shadow-lg z-50 max-h-60 overflow-y-auto">
@@ -378,7 +378,7 @@ export default function FilterPanel() {
                     <button
                       key={`${validator.operator_address}-${index}`}
                       onClick={() => handleSuggestionClick(validator.moniker || '')}
-                      className="w-full text-left px-4 py-2 content-text text-gray-700 hover:bg-gray-100"
+                      className="w-full text-left px-4 py-2 h3-small-title text-gray-700 hover:bg-gray-100"
                     >
                       {validator.moniker}
                     </button>
