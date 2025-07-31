@@ -1,7 +1,7 @@
 'use client'
 
 import { useState, useRef, useEffect, useMemo, useCallback } from 'react'
-import { Search, RotateCcw, X } from 'lucide-react'
+import { Search, RotateCcw, ChevronDown } from 'lucide-react'
 import { 
   useGlobalStore, 
   getConflictIndexDistribution, 
@@ -24,31 +24,28 @@ const getChainLogo = (chainName: string) => {
   return `/chain-logos/${logoName}.png`
 }
 
-const VoteCountBackground = React.memo(({ voteDistribution }: { voteDistribution: { [key: string]: number } }) => {
+const MiniVoteBar = React.memo(({ voteDistribution }: { voteDistribution: { [key: string]: number } }) => {
   const segments = useMemo(() => {
     if (!voteDistribution || typeof voteDistribution !== 'object') return []
     const totalVotes = Object.values(voteDistribution).reduce((sum, count) => sum + count, 0)
     if (totalVotes === 0) return []
 
-    let currentPosition = 0
     return VOTE_ORDER.map(voteType => {
       const count = voteDistribution[voteType] || 0
       const percentage = (count / totalVotes) * 100
-      const segment = { voteType, startPosition: currentPosition, percentage, color: VOTE_COLORS[voteType] }
-      currentPosition += percentage
-      return segment
+      return { voteType, percentage, color: VOTE_COLORS[voteType] }
     }).filter(segment => segment.percentage > 0)
   }, [voteDistribution])
 
-  if (segments.length === 0) return null
+  if (segments.length === 0) return <div className="h-1.5 bg-gray-200 rounded-full" />;
+  
   return (
-    <div className="absolute left-0 top-0 h-full w-full rounded-lg overflow-hidden">
+    <div className="w-full flex h-1.5 rounded-full overflow-hidden bg-gray-200">
       {segments.map((s, i) => (
         <div 
           key={`${s.voteType}-${i}`} 
-          className="absolute h-full transition-all duration-300 ease-in-out"
+          className="h-full"
           style={{ 
-            left: `${s.startPosition}%`, 
             width: `${s.percentage}%`, 
             backgroundColor: s.color 
           }} 
@@ -58,30 +55,35 @@ const VoteCountBackground = React.memo(({ voteDistribution }: { voteDistribution
   )
 })
 
-const CategoryItem = React.memo(({ category, isHovered, isCategorySelected, selectedTopicsInCategory, hasSelectedTopics, allTopicsSelected, onCategoryMouseEnter, onCategoryMouseLeave, onToggleCategoryWithTopics, onTopicToggle }: { category: CategoryHierarchyNode; isHovered: boolean; isCategorySelected: boolean; selectedTopicsInCategory: string[]; hasSelectedTopics: boolean; allTopicsSelected: boolean; onCategoryMouseEnter: (name: string) => void; onCategoryMouseLeave: () => void; onToggleCategoryWithTopics: (categoryName: string, topicNames: string[]) => void; onTopicToggle: (topicName: string, categoryName: string) => void; }) => {
-  const shouldExpand = isHovered || hasSelectedTopics
+const CategoryItem = React.memo(({ category, isOpen, onCategoryClick, isCategorySelected, selectedTopicsInCategory, hasSelectedTopics, allTopicsSelected, onToggleCategoryWithTopics, onTopicToggle }: { category: CategoryHierarchyNode; isOpen: boolean; onCategoryClick: (name: string) => void; isCategorySelected: boolean; selectedTopicsInCategory: string[]; hasSelectedTopics: boolean; allTopicsSelected: boolean; onToggleCategoryWithTopics: (categoryName: string, topicNames: string[]) => void; onTopicToggle: (topicName: string, categoryName: string) => void; }) => {
   const checkboxState = allTopicsSelected && isCategorySelected ? 'checked' : hasSelectedTopics ? 'indeterminate' : 'unchecked'
-  const categoryColor = CATEGORY_COLORS[category.name] || '#6B7280' // Default to gray
+  const categoryColor = CATEGORY_COLORS[category.name] || '#6B7280'
 
   return (
-    <div className="border border-gray-200 rounded-lg" onMouseEnter={() => onCategoryMouseEnter(category.name)} onMouseLeave={onCategoryMouseLeave}>
+    <div className="border-b border-gray-200">
       <div 
-        className="flex items-center px-3 py-2 relative rounded-t-lg"
-        style={{ backgroundColor: categoryColor }}
+        className="flex items-center p-2 cursor-pointer hover:bg-gray-50"
+        onClick={() => onCategoryClick(category.name)}
+        style={{ borderLeft: `4px solid ${categoryColor}`, paddingLeft: '8px' }}
       >
         <input 
           type="checkbox" 
           checked={checkboxState === 'checked'} 
           ref={el => el && (el.indeterminate = checkboxState === 'indeterminate')} 
-          onChange={() => onToggleCategoryWithTopics(category.name, category.topics.map(t => t.name))} 
-          className="w-4 h-4 text-blue-600 bg-white border-gray-300 rounded focus:ring-blue-500 relative z-10 mr-2"
+          onChange={(e) => {
+            e.stopPropagation();
+            onToggleCategoryWithTopics(category.name, category.topics.map(t => t.name));
+          }}
+          onClick={(e) => e.stopPropagation()}
+          className="w-4 h-4 text-blue-600 bg-white border-gray-300 rounded focus:ring-blue-500 mr-3"
         />
-        <div className="flex items-center justify-between flex-1 relative z-10">
-          <span className="h3-small-title text-white">{`${category.name} (${category.count})`}</span>
+        <div className="flex items-center justify-between flex-1">
+          <span className="h3-small-title text-gray-800">{`${category.name} (${category.count})`}</span>
         </div>
+        <ChevronDown className={`w-4 h-4 text-gray-500 transition-transform duration-200 ${isOpen ? 'transform rotate-180' : ''}`} />
       </div>
-      <div className={`border-t border-gray-200 bg-gray-50 overflow-hidden transition-all duration-300 ease-in-out ${shouldExpand ? 'max-h-48 opacity-100' : 'max-h-0 opacity-0'}`}>
-        <div className="p-2 space-y-1 overflow-y-auto">
+      <div className={`bg-gray-50 overflow-hidden transition-all duration-300 ease-in-out ${isOpen ? 'max-h-96' : 'max-h-0'}`}>
+        <div className="p-2 space-y-1 border-t border-gray-200">
           {category.topics.map(topic => <TopicItem key={topic.name} topic={topic} isSelected={selectedTopicsInCategory.includes(topic.name)} categoryName={category.name} onToggle={onTopicToggle} />)}
         </div>
       </div>
@@ -91,11 +93,13 @@ const CategoryItem = React.memo(({ category, isHovered, isCategorySelected, sele
 
 const TopicItem = React.memo(({ topic, isSelected, categoryName, onToggle }: { topic: TopicNode & { displayName?: string }; isSelected: boolean; categoryName: string; onToggle: (topicName: string, categoryName: string) => void; }) => {
   return (
-    <label className="flex items-center gap-2 p-2 hover:bg-white rounded cursor-pointer relative">
-      <VoteCountBackground voteDistribution={topic.voteDistribution} />
-      <input type="checkbox" checked={isSelected} onChange={() => onToggle(topic.name, categoryName)} className="w-3 h-3 text-blue-600 border-gray-300 rounded focus:ring-blue-500 relative z-10" />
-      <div className="flex items-center justify-between flex-1 relative z-10">
-        <span className="content-text text-gray-600">{`${topic.displayName || topic.name} (${topic.count})`}</span>
+    <label className="flex items-center gap-3 p-2 hover:bg-white rounded cursor-pointer">
+      <input type="checkbox" checked={isSelected} onChange={() => onToggle(topic.name, categoryName)} className="w-3 h-3 text-blue-600 border-gray-300 rounded focus:ring-blue-500" />
+      <div className="flex-1 space-y-1.5">
+        <div className="flex items-center justify-between">
+          <span className="content-text text-gray-600">{`${topic.displayName || topic.name} (${topic.count})`}</span>
+        </div>
+        <MiniVoteBar voteDistribution={topic.voteDistribution} />
       </div>
     </label>
   )
@@ -133,7 +137,7 @@ export default function FilterPanel() {
     setParticipationRateRange,
   } = store;
 
-  const [hoveredCategory, setHoveredCategory] = useState<string | null>(null)
+  const [openCategory, setOpenCategory] = useState<string | null>(null)
   const [showChainDropdown, setShowChainDropdown] = useState(false)
   const chainDropdownRef = useRef<HTMLDivElement>(null)
   const [inputValue, setInputValue] = useState('')
@@ -164,9 +168,9 @@ export default function FilterPanel() {
   const chains = useMemo(() => getChains(), [getChains])
   const filteredCategoryHierarchy = useMemo(() => getFilteredCategoryHierarchy(), [proposals, conflictIndexRange, proposalAbstainRateRange, categoryVisualizationMode, getFilteredCategoryHierarchy, store.submitTimeRange, store.votes]);
 
-
-  const handleCategoryMouseEnter = useCallback((categoryName: string) => setHoveredCategory(categoryName), [])
-  const handleCategoryMouseLeave = useCallback(() => setHoveredCategory(null), [])
+  const handleCategoryClick = useCallback((categoryName: string) => {
+    setOpenCategory(prev => prev === categoryName ? null : categoryName)
+  }, [])
 
   const handleTopicToggle = useCallback((topicName: string, categoryName: string) => {
     const store = useGlobalStore.getState();
@@ -283,18 +287,17 @@ export default function FilterPanel() {
             <div className="flex items-center justify-between mb-2">
               <h3 className="h3-small-title text-gray-900">Proposal Type</h3>
             </div>
-            <div className="space-y-3">
+            <div className="border border-gray-200 rounded-lg">
               {filteredCategoryHierarchy.map(category => (
                 <CategoryItem 
                   key={category.name} 
-                  category={category} 
-                  isHovered={hoveredCategory === category.name} 
+                  category={category}
+                  isOpen={openCategory === category.name}
+                  onCategoryClick={handleCategoryClick}
                   isCategorySelected={selectedCategories.includes(category.name)} 
                   selectedTopicsInCategory={selectedTopics.filter(topic => category.topics.some(t => t.name === topic))} 
                   hasSelectedTopics={selectedTopics.filter(topic => category.topics.some(t => t.name === topic)).length > 0} 
                   allTopicsSelected={category.topics.every(t => selectedTopics.includes(t.name))} 
-                  onCategoryMouseEnter={handleCategoryMouseEnter} 
-                  onCategoryMouseLeave={handleCategoryMouseLeave} 
                   onToggleCategoryWithTopics={toggleCategoryWithTopics} 
                   onTopicToggle={handleTopicToggle} 
                 />
