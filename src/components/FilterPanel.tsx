@@ -1,7 +1,7 @@
 'use client'
 
 import { useState, useRef, useEffect, useMemo, useCallback } from 'react'
-import { Search, RotateCcw, ChevronDown } from 'lucide-react'
+import { Search, RotateCcw, ChevronDown, ChevronRight } from 'lucide-react'
 import { 
   useGlobalStore, 
   getConflictIndexDistribution, 
@@ -86,7 +86,7 @@ const CategoryItem = React.memo(({ category, isOpen, onCategoryClick, isCategory
           />
           <span className="h3-small-title text-gray-800 flex-1">{`${category.name} (${category.count})`}</span>
         </div>
-        <ChevronDown className={`w-4 h-4 text-gray-500 transition-transform duration-200 ${isOpen ? 'transform rotate-180' : ''}`} />
+        {isOpen ? <ChevronDown className="w-4 h-4 text-gray-500" /> : <ChevronRight className="w-4 h-4 text-gray-500" />}
       </div>
 
       {/* Expandable Topics */}
@@ -278,7 +278,7 @@ export default function FilterPanel() {
                   {selectedChain !== 'all' && <Image src={getChainLogo(selectedChain)} alt={selectedChain} width={16} height={16} className="rounded-full" />}
                   <span className="capitalize h3-small-title text-gray-800">{selectedChain}</span>
                 </div>
-                <ChevronDown className={`w-4 h-4 text-gray-500 transition-transform duration-200 ${showChainDropdown ? 'transform rotate-180' : ''}`} />
+                {showChainDropdown ? <ChevronDown className="w-4 h-4 text-gray-500" /> : <ChevronRight className="w-4 h-4 text-gray-500" />}
               </button>
               <div className={`max-h-0 overflow-y-auto transition-all duration-300 ease-in-out border-t ${showChainDropdown ? 'max-h-48 border-gray-200' : 'border-transparent'}`}>
                 {chains.map(chain => (
