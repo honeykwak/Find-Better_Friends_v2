@@ -202,14 +202,13 @@ export default function BubbleHeap() {
 
   return (
     <div className="w-full h-full bg-white border-l border-gray-200 flex flex-col">
-      <div className="px-4 py-2 border-b border-gray-200 bg-gray-50">
-        <h3 className="h2-subtitle text-gray-800">
-          {searchTerm ? (
-            <>Similarity with: <span className="text-blue-600">{searchTerm}</span></>
-          ) : (
-            "Bubble Heap"
-          )}
-        </h3>
+      <div className="px-4 py-2 border-b border-gray-200 bg-gray-50 flex items-center justify-between gap-4">
+        <h3 className="h2-subtitle text-gray-800 flex-shrink-0">Bubble Heap</h3>
+        {searchTerm && (
+          <p className="content-text text-gray-600 text-right">
+            Similarity with: <span className="text-blue-600">{searchTerm}</span>
+          </p>
+        )}
       </div>
       <div ref={containerRef} className="flex-1 relative overflow-hidden">
         <svg ref={svgRef}></svg>
