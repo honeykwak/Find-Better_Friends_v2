@@ -102,7 +102,7 @@ body {
     @apply text-[12px] font-medium;
   }
   .content-text {
-    @apply text-[10px] font-medium;
+    @apply text-[8px] font-medium;
   }
 }
 

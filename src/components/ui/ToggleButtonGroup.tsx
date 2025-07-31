@@ -20,7 +20,7 @@ export default function ToggleButtonGroup({ options, selectedValue, onChange }: 
         <button
           key={option.value}
           onClick={() => onChange(option.value)}
-          className={`flex justify-center items-center px-3 py-1 rounded transition-colors duration-200 ease-in-out ${
+          className={`flex justify-center items-center px-3 h-4 rounded transition-colors duration-200 ease-in-out ${
             selectedValue === option.value
               ? 'bg-white shadow-sm'
               : 'bg-transparent'
