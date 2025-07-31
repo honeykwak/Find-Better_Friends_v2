@@ -60,11 +60,17 @@ const CategoryItem = React.memo(({ category, isOpen, onCategoryClick, isCategory
   const categoryColor = CATEGORY_COLORS[category.name] || '#6B7280'
 
   return (
-    <div className="border-b border-gray-200">
+    <div className="relative border-b border-gray-200 last:border-b-0">
+      {/* Color Band */}
       <div 
-        className="flex items-center h-7 pr-2 cursor-pointer hover:bg-gray-50"
+        className="absolute top-0 left-0 h-full w-1 transition-colors duration-200"
+        style={{ backgroundColor: categoryColor }} 
+      />
+      
+      {/* Header */}
+      <div 
+        className="flex items-center h-7 pl-3 pr-2 cursor-pointer hover:bg-gray-100"
         onClick={() => onCategoryClick(category.name)}
-        style={{ borderLeft: `4px solid ${categoryColor}`, paddingLeft: '8px' }}
       >
         <input 
           type="checkbox" 
@@ -82,8 +88,10 @@ const CategoryItem = React.memo(({ category, isOpen, onCategoryClick, isCategory
         </div>
         <ChevronDown className={`w-4 h-4 text-gray-500 transition-transform duration-200 ${isOpen ? 'transform rotate-180' : ''}`} />
       </div>
+
+      {/* Expandable Topics */}
       <div className={`bg-gray-50 overflow-hidden transition-all duration-300 ease-in-out ${isOpen ? 'max-h-96' : 'max-h-0'}`}>
-        <div className="p-2 space-y-1 border-t border-gray-200">
+        <div className="pl-3 pr-2 py-2 space-y-1 border-t border-gray-200">
           {category.topics.map(topic => <TopicItem key={topic.name} topic={topic} isSelected={selectedTopicsInCategory.includes(topic.name)} categoryName={category.name} onToggle={onTopicToggle} />)}
         </div>
       </div>
@@ -291,7 +299,7 @@ export default function FilterPanel() {
             <div className="flex items-center justify-between mb-2">
               <h3 className="h3-small-title text-gray-900">Proposal Type</h3>
             </div>
-            <div className="border border-gray-200 rounded-lg">
+            <div className="border border-gray-200 rounded-lg overflow-hidden">
               {filteredCategoryHierarchy.map(category => (
                 <CategoryItem 
                   key={category.name} 
