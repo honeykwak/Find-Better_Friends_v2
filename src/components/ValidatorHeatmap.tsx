@@ -4,6 +4,7 @@ import { useEffect, useRef, useState, useMemo } from 'react'
 import * as d3 from 'd3'
 import { useGlobalStore, type ValidatorSortKey, type ProposalForHeatmap } from '@/stores/useGlobalStore'
 import { VOTE_COLORS, VOTE_ORDER } from '@/constants/voteColors'
+import { CATEGORY_COLORS } from '@/constants/categoryColors'
 import ToggleButtonGroup from './ui/ToggleButtonGroup'
 import { Loader2, ZoomIn, ZoomOut, RotateCcw } from 'lucide-react'
 import type { Vote, Validator, Proposal } from '@/lib/dataLoader'
@@ -39,8 +40,9 @@ const getPercentilePower = (percentile: number, sortedValidators: { avgPower?: a
 // Define layout constants
 const PROPOSAL_LABEL_HEIGHT = 240;
 const SUMMARY_CHART_HEIGHT = 120;
+const CATEGORY_ROW_HEIGHT = 12; // Same as default cellHeight
 const CHART_SPACING = 20;
-const TOP_MARGIN = PROPOSAL_LABEL_HEIGHT + SUMMARY_CHART_HEIGHT + CHART_SPACING;
+const TOP_MARGIN = PROPOSAL_LABEL_HEIGHT + SUMMARY_CHART_HEIGHT + CATEGORY_ROW_HEIGHT + CHART_SPACING * 2;
 
 interface HeatmapConfig {
   cellWidth: number
@@ -181,7 +183,7 @@ export default function ValidatorHeatmap() {
         title: p.title,
         index,
         status: p.status,
-        category: p.topic_v2_unique,
+        category: p.type, // Use `type` for the main category
         voteDistribution: p.voteDistribution || {},
         isFilteredIn: p.isFilteredIn,
       }));
@@ -347,22 +349,69 @@ export default function ValidatorHeatmap() {
       .style('font-size', `${Math.max(8, cellWidth * 0.7)}px`)
       .style('opacity', 0)
       .attr('x', (d: any) => d.index * cellWidth + cellWidth / 2)
-      .attr('y', -SUMMARY_CHART_HEIGHT - CHART_SPACING - 10)
-      .attr('transform', (d: any) => `rotate(-60, ${d.index * cellWidth + cellWidth / 2}, ${-SUMMARY_CHART_HEIGHT - CHART_SPACING - 10})`)
-      .style('fill', (d: any) => d.status.includes('PASSED') ? colors.YES : colors.NO)
+      .attr('y', -SUMMARY_CHART_HEIGHT - (2 * cellHeight) - CATEGORY_ROW_HEIGHT - 5) // Tighter spacing
+      .attr('transform', (d: any) => `rotate(-60, ${d.index * cellWidth + cellWidth / 2}, ${-SUMMARY_CHART_HEIGHT - (2 * cellHeight) - CATEGORY_ROW_HEIGHT - 5})`)
+      .style('fill', (d: any) => CATEGORY_COLORS[d.category] || '#1F2937') // Use category color
       .text((d: any) => {
         const title = `#${d.id} ${d.title}`;
-        return `${title.slice(0, 40)}${title.length > 40 ? '...' : ''} ${d.status.includes('PASSED') ? '✓' : '✗'}`
+        return `${title.slice(0, 40)}${title.length > 40 ? '...' : ''}` // Removed status icon
       });
 
     proposalLabels.merge(proposalLabelsEnter)
       .transition().duration(DURATION)
       .attr('x', (d: any) => d.index * cellWidth + cellWidth / 2)
-      .attr('y', -SUMMARY_CHART_HEIGHT - CHART_SPACING - 10)
-      .attr('transform', (d: any) => `rotate(-60, ${d.index * cellWidth + cellWidth / 2}, ${-SUMMARY_CHART_HEIGHT - CHART_SPACING - 10})`)
+      .attr('y', -SUMMARY_CHART_HEIGHT - (2 * cellHeight) - CATEGORY_ROW_HEIGHT - 5) // Tighter spacing
+      .attr('transform', (d: any) => `rotate(-60, ${d.index * cellWidth + cellWidth / 2}, ${-SUMMARY_CHART_HEIGHT - (2 * cellHeight) - CATEGORY_ROW_HEIGHT - 5})`)
       .style('opacity', (d: any) => d.isFilteredIn ? 1 : 0.3);
 
-    const summaryG = g.selectAll('.summary-chart').data([null]).join('g').attr('class', 'summary-chart').attr('transform', `translate(0, ${-SUMMARY_CHART_HEIGHT - CHART_SPACING})`);
+    // Category color indicators
+    const categoryIndicators = g.selectAll('.category-indicator-group').data(proposals, (d: any) => d.id);
+    categoryIndicators.exit().transition().duration(DURATION).style('opacity', 0).remove();
+    
+    const categoryIndicatorsEnter = categoryIndicators.enter().append('g')
+      .attr('class', 'category-indicator-group')
+      .style('cursor', 'pointer')
+      .attr('transform', (d: any) => `translate(${d.index * cellWidth}, ${-SUMMARY_CHART_HEIGHT - (2 * cellHeight) - CATEGORY_ROW_HEIGHT})`); // Position above summary chart
+
+    categoryIndicatorsEnter.append('rect')
+      .attr('width', cellWidth - 1)
+      .attr('height', CATEGORY_ROW_HEIGHT - 1);
+
+    categoryIndicatorsEnter.append('text')
+      .attr('class', 'status-checkmark')
+      .attr('x', (cellWidth - 1) / 2)
+      .attr('y', (CATEGORY_ROW_HEIGHT - 1) / 2)
+      .attr('dy', '0.35em')
+      .attr('text-anchor', 'middle')
+      .style('font-size', `${Math.max(8, cellWidth * 0.8)}px`)
+      .style('fill', 'white')
+      .style('pointer-events', 'none');
+
+    const mergedIndicators = categoryIndicators.merge(categoryIndicatorsEnter);
+
+    mergedIndicators
+      .on('mouseover', function(event, d: any) {
+        d3.select('body').selectAll('.heatmap-tooltip').remove();
+        const tooltip = d3.select('body').append('div').attr('class', 'heatmap-tooltip').style('position', 'absolute').style('background', 'rgba(0,0,0,0.8)').style('color', 'white').style('padding', '8px').style('border-radius', '4px').style('font-size', '12px').style('pointer-events', 'none').style('z-index', '1000');
+        tooltip.html(`Category: <strong>${d.category}</strong>`);
+        tooltip.style('left', (event.pageX + 10) + 'px').style('top', (event.pageY - 10) + 'px');
+      })
+      .on('mouseout', function() {
+        d3.selectAll('.heatmap-tooltip').remove();
+      });
+
+    mergedIndicators.transition().duration(DURATION)
+      .attr('transform', (d: any) => `translate(${d.index * cellWidth}, ${-SUMMARY_CHART_HEIGHT - (2 * cellHeight) - CATEGORY_ROW_HEIGHT})`) // Position above summary chart
+      .style('opacity', (d: any) => d.isFilteredIn ? 1 : 0.3);
+
+    mergedIndicators.select('rect')
+      .transition().duration(DURATION)
+      .attr('fill', (d: any) => CATEGORY_COLORS[d.category] || '#E5E7EB');
+      
+    mergedIndicators.select('.status-checkmark')
+      .text((d: any) => d.status.includes('PASSED') ? '✓' : '');
+
+    const summaryG = g.selectAll('.summary-chart').data([null]).join('g').attr('class', 'summary-chart').attr('transform', `translate(0, ${-SUMMARY_CHART_HEIGHT - (2 * cellHeight)})`); // 2-cell gap
     const summaryChartYScale = d3.scaleLinear().domain([0, 1]).range([SUMMARY_CHART_HEIGHT, 0]);
     const stack = d3.stack().keys(VOTE_ORDER);
     const stackedData = stack(proposals.map(p => {
