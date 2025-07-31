@@ -255,7 +255,7 @@ export default function FilterPanel() {
 
   return (
     <div className="w-full h-full bg-white border-r border-gray-200 flex flex-col">
-      <div className="flex-1 overflow-y-auto p-4 space-y-6">
+      <div className="flex-1 overflow-y-auto px-4 py-2 space-y-6">
 
         {/* Chain Section */}
         <div>
