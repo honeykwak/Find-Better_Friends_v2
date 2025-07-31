@@ -248,7 +248,7 @@ export default function FilterPanel() {
             <button onClick={resetFilters} className="flex items-center gap-1 px-2 py-1 content-text text-gray-600 hover:text-gray-900 hover:bg-gray-100 rounded"><RotateCcw className="w-3 h-3" />Reset</button>
           </div>
           <div className="relative mb-4" ref={chainDropdownRef}>
-            <button onClick={() => setShowChainDropdown(!showChainDropdown)} className="w-full flex items-center justify-between px-3 h-7 bg-white border border-gray-300 rounded-md">
+            <button onClick={() => setShowChainDropdown(!showChainDropdown)} className="w-full flex items-center justify-between px-3 h-7 bg-white border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
               <div className="flex items-center gap-2">
                 {selectedChain !== 'all' && <Image src={getChainLogo(selectedChain)} alt={selectedChain} width={16} height={16} className="rounded-full" />}
                 <span className="capitalize h3-small-title text-gray-800">{selectedChain}</span>
@@ -370,7 +370,7 @@ export default function FilterPanel() {
                 value={inputValue} 
                 onChange={handleSearchChange}
                 onFocus={handleSearchFocus}
-                className="w-full pl-10 pr-4 h-7 h3-small-title border border-gray-300 rounded-md text-gray-800 placeholder-gray-500" 
+                className="w-full pl-10 pr-4 h-7 h3-small-title border border-gray-300 rounded-md text-gray-800 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-blue-500" 
               />
               {isDropdownOpen && suggestions.length > 0 && (
                 <div className="absolute top-full left-0 right-0 mt-1 bg-white border rounded-md shadow-lg z-50 max-h-60 overflow-y-auto">
