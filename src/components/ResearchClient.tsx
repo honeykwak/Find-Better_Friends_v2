@@ -83,7 +83,7 @@ export default function ResearchClient({ initialData }: ResearchClientProps) {
     <div className="flex-1 flex overflow-hidden">
       {!isMobileScreen ? (
         <Allotment>
-          <Allotment.Pane minSize={160} preferredSize="20%">
+          <Allotment.Pane minSize={160} preferredSize={320}>
             <Suspense fallback={
               <div className="w-full h-full bg-white flex items-center justify-center">
                 <div className="text-center">
@@ -104,7 +104,7 @@ export default function ResearchClient({ initialData }: ResearchClientProps) {
                   </div>
                 </div>
               </Allotment.Pane>
-              <Allotment.Pane preferredSize="30%">
+              <Allotment.Pane minSize={160} preferredSize={320}>
                 <BubbleHeap />
               </Allotment.Pane>
             </Allotment>
