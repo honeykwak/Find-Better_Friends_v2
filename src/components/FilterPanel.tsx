@@ -14,7 +14,8 @@ import {
 import { VOTE_COLORS, VOTE_ORDER } from '@/constants/voteColors'
 import Image from 'next/image'
 import React from 'react'
-import RangeSlider from './ui/RangeSlider'
+import DistributionSlider from './ui/DistributionSlider'
+import SimpleRangeSlider from './ui/SimpleRangeSlider'
 import ToggleButtonGroup from './ui/ToggleButtonGroup'
 
 const getChainLogo = (chainName: string) => {
@@ -129,6 +130,17 @@ export default function FilterPanel() {
   const [suggestions, setSuggestions] = useState<Validator[]>([])
   const [isDropdownOpen, setIsDropdownOpen] = useState(false)
   const searchRef = useRef<HTMLDivElement>(null)
+
+  const [localAbstainRateRange, setLocalAbstainRateRange] = useState(proposalAbstainRateRange)
+  const [localRecentVotingPowerRange, setLocalRecentVotingPowerRange] = useState(store.recentVotingPowerRange)
+
+  useEffect(() => {
+    setLocalAbstainRateRange(proposalAbstainRateRange)
+  }, [proposalAbstainRateRange])
+
+  useEffect(() => {
+    setLocalRecentVotingPowerRange(store.recentVotingPowerRange)
+  }, [store.recentVotingPowerRange])
 
   const conflictIndexDistribution = useMemo(() => getConflictIndexDistribution(store), [store.proposals, store.submitTimeRange, categoryVisualizationMode, store.votes]);
   const submitTimeDistribution = useMemo(() => getSubmitTimeDistribution(store), [store.proposals]);
@@ -281,8 +293,7 @@ export default function FilterPanel() {
           </div>
           <div className="mb-4">
             <label className="block h3-small-title text-gray-900 mb-2">Submission Time</label>
-            <RangeSlider
-              label=""
+            <DistributionSlider
               min={store.submitTimeDynamicRange[0]}
               max={store.submitTimeDynamicRange[1]}
               values={store.submitTimeRange}
@@ -296,8 +307,7 @@ export default function FilterPanel() {
             <div className="flex justify-between items-center mb-2">
               <label className="block h3-small-title text-gray-900">Conflict Index</label>
             </div>
-            <RangeSlider
-              label=""
+            <DistributionSlider
               min={0}
               max={1}
               values={conflictIndexRange}
@@ -311,16 +321,20 @@ export default function FilterPanel() {
             <div className="flex justify-between items-center mb-2">
               <label className="block h3-small-title text-gray-900">Abstain Rate</label>
             </div>
-            <RangeSlider
-              label=""
-              min={0}
-              max={100}
-              values={proposalAbstainRateRange}
-              onChange={setProposalAbstainRateRange}
-              formatValue={(v) => v.toFixed(0) + '%'}
-              step={1}
-              distributionData={[]} // We will add distribution data later
-            />
+            <div className="px-1">
+              <SimpleRangeSlider
+                min={0}
+                max={100}
+                values={localAbstainRateRange}
+                onValuesChange={setLocalAbstainRateRange}
+                onChange={setProposalAbstainRateRange}
+                step={1}
+              />
+            </div>
+            <div className="flex justify-between items-end text-xs text-gray-600 mt-1">
+              <span className="content-text">{localAbstainRateRange[0].toFixed(0)}%</span>
+              <span className="content-text">{localAbstainRateRange[1].toFixed(0)}%</span>
+            </div>
           </div>
         </div>
 
@@ -373,19 +387,22 @@ export default function FilterPanel() {
               />
             </div>
             {store.votingPowerSortType === 'recent' ? (
-              <RangeSlider
-                label=""
-                min={votingPowerDisplayMode === 'rank' ? 1 : 0}
-                max={votingPowerDisplayMode === 'rank' ? recentVotingPowerValidatorCount || 1 : 100}
-                values={store.recentVotingPowerRange}
-                onChange={store.setRecentVotingPowerRange}
-                formatValue={(v) => votingPowerDisplayMode === 'rank' ? `${recentVotingPowerValidatorCount - v + 1}` : `${100 - v}%`}
-                step={1}
-                distributionData={[]} // Add distribution if available
-              />
+              <div className="px-1">
+                <SimpleRangeSlider
+                  min={votingPowerDisplayMode === 'rank' ? 1 : 0}
+                  max={votingPowerDisplayMode === 'rank' ? recentVotingPowerValidatorCount || 1 : 100}
+                  values={localRecentVotingPowerRange}
+                  onValuesChange={setLocalRecentVotingPowerRange}
+                  onChange={store.setRecentVotingPowerRange}
+                  step={1}
+                />
+                <div className="flex justify-between items-end text-xs text-gray-600 mt-1">
+                  <span className="content-text">{votingPowerDisplayMode === 'rank' ? `${recentVotingPowerValidatorCount - localRecentVotingPowerRange[0] + 1}` : `${(100 - localRecentVotingPowerRange[0]).toFixed(0)}%`}</span>
+                  <span className="content-text">{votingPowerDisplayMode === 'rank' ? `${recentVotingPowerValidatorCount - localRecentVotingPowerRange[1] + 1}` : `${(100 - localRecentVotingPowerRange[1]).toFixed(0)}%`}</span>
+                </div>
+              </div>
             ) : (
-              <RangeSlider
-                label=""
+              <DistributionSlider
                 min={votingPowerDisplayMode === 'rank' ? 1 : 0}
                 max={votingPowerDisplayMode === 'rank' ? validators.length || 1 : 100}
                 values={votingPowerRange}
@@ -408,8 +425,7 @@ export default function FilterPanel() {
             <div className="flex justify-between items-center mb-2">
               <label className="block h3-small-title text-gray-900">Participation Rate</label>
             </div>
-            <RangeSlider
-              label=""
+            <DistributionSlider
               min={0}
               max={100}
               values={participationRateRange}
