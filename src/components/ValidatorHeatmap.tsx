@@ -10,7 +10,7 @@ import { Loader2, ZoomIn, ZoomOut, RotateCcw } from 'lucide-react'
 import type { Vote, Validator, Proposal } from '@/lib/dataLoader'
 
 const VoteLegend = () => (
-  <div className="absolute top-4 left-4 flex items-center gap-4 bg-white/70 backdrop-blur-sm p-2 rounded-lg shadow-sm pointer-events-none z-10">
+  <div className="absolute top-4 left-4 flex flex-col items-start gap-2 bg-white/70 backdrop-blur-sm p-2 rounded-lg shadow-sm pointer-events-none z-10">
     {VOTE_ORDER.map(voteType => (
       <div key={voteType} className="flex items-center gap-1.5">
         <div 
