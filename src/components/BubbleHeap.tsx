@@ -15,10 +15,13 @@ type SimulationNode = d3.SimulationNodeDatum & {
 }
 
 const getFillColor = (d: SimulationNode, highlighted: string | null) => {
-  if (d.similarity === 1 || highlighted === d.moniker) return '#EECF8C';
-  if (d.similarity >= 0.7) return '#404040'; // neutral-700
-  if (d.similarity >= 0.4) return '#a3a3a3'; // neutral-400
-  return '#d4d4d4'; // neutral-300
+  const baseColor = '#EECF8C';
+
+  if (d.similarity === 1 || highlighted === d.moniker) return baseColor;
+
+  if (d.similarity >= 0.7) return '#6b7280'; // neutral-500
+  if (d.similarity >= 0.4) return '#9ca3af'; // neutral-400
+  return '#e5e7eb'; // neutral-200
 };
 
 export default function BubbleHeap() {

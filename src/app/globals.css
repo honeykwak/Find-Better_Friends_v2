@@ -20,7 +20,7 @@
   --color-destructive: #dc2626; /* red-600 */
   --color-destructive-foreground: #ffffff;
 
-  --primary-accent: #3b82f6; /* blue-500 */
+  --primary-accent: #6b7280; /* gray-500 */
 }
 
 @theme inline {
