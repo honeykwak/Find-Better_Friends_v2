@@ -476,7 +476,7 @@ export default function ValidatorHeatmap() {
     return (
       <div className="h-full flex items-center justify-center">
         <div className="text-center">
-          <Loader2 className="w-8 h-8 animate-spin mx-auto mb-4 text-blue-600" />
+          <Loader2 className="w-8 h-8 animate-spin mx-auto mb-4 text-primary-accent" />
           <p className="h3-small-title text-gray-500">Loading chain data...</p>
         </div>
       </div>
@@ -489,7 +489,7 @@ export default function ValidatorHeatmap() {
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-4">
             <h3 className="h2-subtitle text-gray-800">Heatmap</h3>
-            {isLoading && <Loader2 className="w-4 h-4 animate-spin text-blue-600" />}
+            {isLoading && <Loader2 className="w-4 h-4 animate-spin text-primary-accent" />}
           </div>
           <div className="flex items-center gap-4">
             <ToggleButtonGroup
@@ -509,7 +509,7 @@ export default function ValidatorHeatmap() {
                   type="checkbox"
                   checked={matchAbstainInSimilarity}
                   onChange={(e) => setMatchAbstainInSimilarity(e.target.checked)}
-                  className="form-checkbox h-3 w-3 text-blue-600 rounded focus:ring-blue-500"
+                  className="form-checkbox h-3 w-3 text-primary-accent rounded focus:ring-primary-accent"
                 />
                 <span>Include abstentions</span>
               </label>

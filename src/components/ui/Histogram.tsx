@@ -19,7 +19,7 @@ export default function Histogram({
   min,
   max,
   values,
-  color = '#3b82f6',
+  color = 'var(--primary-accent)',
   height = 40,
   barCount = 50,
 }: HistogramProps) {

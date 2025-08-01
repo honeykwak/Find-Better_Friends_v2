@@ -192,7 +192,7 @@ export default function BubbleHeap() {
         <h3 className="h2-subtitle text-gray-800 flex-shrink-0">Bubble Heap</h3>
         {searchTerm && (
           <p className="content-text text-gray-600 text-right">
-            Similarity with: <span className="text-blue-600">{searchTerm}</span>
+            Similarity with: <span className="text-primary-accent">{searchTerm}</span>
           </p>
         )}
       </div>

@@ -92,7 +92,7 @@ export default function SimpleRangeSlider({
   onChange,
   onValuesChange,
   step = 1,
-  color = '#3b82f6',
+  color = 'var(--primary-accent)',
 }: SimpleRangeSliderProps) {
   const { sliderRef, minPercent, maxPercent, handleInteractionStart } = useRangeSlider(
     min, max, values, onChange, onValuesChange, step
