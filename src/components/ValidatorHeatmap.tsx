@@ -74,7 +74,6 @@ interface ProcessedHeatmapData {
     moniker: string
     displayName: string
     index: number
-    isPinnedAndFilteredOut?: boolean
   }>
   proposals: Array<{
     id: string
@@ -173,8 +172,7 @@ export default function ValidatorHeatmap() {
       address: v.validator_address,
       moniker: v.moniker || 'Unknown',
       displayValue: validatorDisplayValues.get(v.validator_address) || '',
-      index,
-      isPinnedAndFilteredOut: v.isPinnedAndFilteredOut
+      index
     }));
 
     const proposals = proposalsForHeatmap
@@ -286,7 +284,7 @@ export default function ValidatorHeatmap() {
       })
       .style('font-weight', (d: any) => (searchTerm && d.moniker === searchTerm) ? 'bold' : 'normal')
       .style('fill', (d: any) => {
-        if (searchTerm && d.moniker === searchTerm) return d.isPinnedAndFilteredOut ? 'orange' : 'blue';
+        if (searchTerm && d.moniker === searchTerm) return '#EECF8C';
         return 'black';
       });
 
@@ -449,7 +447,7 @@ export default function ValidatorHeatmap() {
 
     svg.selectAll('.validator-row-bg')
       .transition().duration(DURATION)
-      .attr('fill', (d: any) => d.moniker === highlightedValidator ? 'rgba(252, 211, 77, 0.3)' : 'transparent');
+      .attr('fill', (d: any) => d.moniker === highlightedValidator ? 'rgba(238, 207, 140, 0.3)' : 'transparent');
   }, [highlightedValidator]);
 
   const handleZoomIn = () => setZoom(prev => Math.min(prev * 1.2, 5));

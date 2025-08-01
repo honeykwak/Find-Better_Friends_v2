@@ -17,7 +17,6 @@ export interface ValidatorWithDerivedData extends Validator {
   similarity?: number;
   recentVotingPower?: number;
   voteCount?: number;
-  isPinnedAndFilteredOut?: boolean;
 }
 
 // 카테고리 계층 구조 타입 (FilterPanel에서 사용)
@@ -263,8 +262,6 @@ export const useGlobalStore = create<GlobalStore>((set, get) => ({
     );
 
     if (pinnedValidator) {
-      const isPinnedFilteredOut = !finalValidators.some(v => v.moniker === pinnedValidator!.moniker);
-      pinnedValidator.isPinnedAndFilteredOut = isPinnedFilteredOut;
       finalValidators.unshift(pinnedValidator);
     }
     

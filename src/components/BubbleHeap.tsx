@@ -15,17 +15,10 @@ type SimulationNode = d3.SimulationNodeDatum & {
 }
 
 const getFillColor = (d: SimulationNode, highlighted: string | null) => {
-  if (d.similarity === 1 || highlighted === d.moniker) return 'rgba(234, 179, 8, 0.8)'; // Highlight color (yellow)
+  if (d.similarity === 1 || highlighted === d.moniker) return '#EECF8C';
   if (d.similarity >= 0.7) return '#404040'; // neutral-700
   if (d.similarity >= 0.4) return '#a3a3a3'; // neutral-400
   return '#d4d4d4'; // neutral-300
-};
-
-const getStrokeColor = (d: SimulationNode, highlighted: string | null) => {
-  if (d.similarity === 1 || highlighted === d.moniker) return 'rgba(202, 138, 4, 1)'; // Highlight stroke color
-  if (d.similarity >= 0.7) return '#262626'; // neutral-800
-  if (d.similarity >= 0.4) return '#737373'; // neutral-500
-  return '#a3a3a3'; // neutral-400
 };
 
 export default function BubbleHeap() {
@@ -191,7 +184,6 @@ export default function BubbleHeap() {
     zoomGRef.current.selectAll('circle')
       .transition().duration(200)
       .attr('fill', d => getFillColor(d as SimulationNode, highlightedValidator))
-      .attr('stroke', d => getStrokeColor(d as SimulationNode, highlightedValidator))
   }, [highlightedValidator, simulationData])
 
   return (
@@ -237,4 +229,3 @@ export default function BubbleHeap() {
     </div>
   )
 }
-
