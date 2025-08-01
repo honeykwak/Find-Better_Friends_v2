@@ -74,7 +74,7 @@ export default function BubbleHeap() {
     if (!svgRef.current || !containerRef.current) return
 
     const simSize = { width: 800, height: 1600 }
-    const margin = { top: 20, right: 20, bottom: 20, left: 50 }
+    const margin = { top: 20, right: 50, bottom: 20, left: 50 }
     const boundedWidth = simSize.width - margin.left - margin.right
     const boundedHeight = simSize.height - margin.top - margin.bottom
 
@@ -136,6 +136,10 @@ export default function BubbleHeap() {
       if (oldNode) {
         node.x = oldNode.x;
         node.y = oldNode.y;
+      } else {
+        // Set initial position for new nodes to prevent "fly-in" effect
+        node.x = boundedWidth / 2;
+        node.y = yScale(node.similarity);
       }
     });
 
