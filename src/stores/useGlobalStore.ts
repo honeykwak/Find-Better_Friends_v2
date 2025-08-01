@@ -408,8 +408,8 @@ export const useGlobalStore = create<GlobalStore>((set, get) => ({
       }
     });
 
-    // Calculate recent voting power based on the single most recent proposal
-    const sortedProposalsByDate = [...filteredProposals].sort((a, b) => {
+    // Calculate recent voting power based on the single most recent proposal from the whole chain
+    const sortedProposalsByDate = [...proposals].sort((a, b) => {
       const timeA = a.submit_time ? new Date(Number(a.submit_time)).getTime() : 0;
       const timeB = b.submit_time ? new Date(Number(b.submit_time)).getTime() : 0;
       return timeB - timeA;
