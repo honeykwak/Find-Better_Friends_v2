@@ -95,16 +95,19 @@ body {
     text-wrap: balance;
   }
   .h1-title {
-    @apply text-[20px] font-bold;
+    @apply text-[24px] font-bold;
   }
   .h2-subtitle {
+    @apply text-[20px] font-bold;
+  }
+  .h3-subtitle {
     @apply text-[16px] font-bold;
   }
   .h3-small-title {
     @apply text-[12px] font-medium;
   }
   .content-text {
-    @apply text-[8px] font-medium;
+    @apply text-[10px] font-medium;
   }
 }
 

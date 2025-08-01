@@ -272,7 +272,7 @@ export default function FilterPanel() {
         {/* Chain Section */}
         <div>
           <div className="flex items-center justify-between mb-3">
-            <h3 className="h2-subtitle text-gray-900">Chain</h3>
+            <h3 className="h3-subtitle text-gray-900">Chain</h3>
           </div>
           <div className="relative" ref={chainDropdownRef}>
             <div className="w-full bg-white border border-gray-300 rounded-md overflow-hidden transition-all duration-150">
@@ -302,7 +302,7 @@ export default function FilterPanel() {
         {/* Proposal Section */}
         <div>
           <div className="flex items-center justify-between mb-3">
-            <h3 className="h2-subtitle text-gray-900">Proposal</h3>
+            <h3 className="h3-subtitle text-gray-900">Proposal</h3>
             <ToggleButtonGroup
               options={[{value: 'votePower', label: 'Voting Power'}, {value: 'voteCount', label: 'Vote Count'}]}
               selectedValue={categoryVisualizationMode}
@@ -380,7 +380,7 @@ export default function FilterPanel() {
         {/* Validator Section */}
         <div>
           <div className="flex items-center justify-between mb-3">
-            <h3 className="h2-subtitle text-gray-900">Validator</h3>
+            <h3 className="h3-subtitle text-gray-900">Validator</h3>
             <ToggleButtonGroup
               options={[
                 { value: 'recent', label: 'Recent VP' },
