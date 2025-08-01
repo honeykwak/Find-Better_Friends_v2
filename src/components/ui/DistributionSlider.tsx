@@ -111,9 +111,9 @@ const DistributionSlider: React.FC<DistributionSliderProps> = ({
   }
 
   return (
-    <div ref={containerRef} className="w-full pb-4">
-      <svg ref={svgRef}></svg>
-      <div className="h-4 flex justify-center items-center">
+    <div ref={containerRef} className="w-full">
+      <svg ref={svgRef} className="mb-1"></svg>
+      <div className="h-8 flex justify-center items-center relative">
         <Range
           step={step}
           min={min}
@@ -137,7 +137,7 @@ const DistributionSlider: React.FC<DistributionSliderProps> = ({
               {children}
             </div>
           )}
-          renderThumb={({ props: { key, ...restProps }, index, isDragged }) => (
+          renderThumb={({ props: { key, ...restProps }, isDragged }) => (
             <div
               key={key}
               {...restProps}
@@ -146,19 +146,45 @@ const DistributionSlider: React.FC<DistributionSliderProps> = ({
               <div
                 className={`h-full w-full rounded-full transition-colors ${isDragged ? 'bg-primary-accent' : 'bg-white'}`}
               />
-              <div 
-                className="absolute content-text text-gray-600 whitespace-nowrap"
-                style={{
-                  transform: getThumbValuePosition(index),
-                  top: '100%',
-                  left: '50%',
-                }}
-              >
-                {formatValue(localValues[index])}
-              </div>
             </div>
           )}
         />
+      </div>
+      <div className="relative h-4 -mt-2">
+        {localValues.map((value, index) => {
+          const percent = max > min ? ((value - min) / (max - min)) * 100 : 0;
+          const label = formatValue(value);
+          const labelWidth = label.length * 6; // Approximate width
+
+          let leftPosition = `calc(${percent}% - ${labelWidth/2}px)`;
+          if (percent < 5) leftPosition = `${percent}%`;
+          if (percent > 95) leftPosition = `calc(${percent}% - ${labelWidth}px)`;
+          
+          // Overlap handling
+          if (localValues.length === 2) {
+            const distance = Math.abs(localValues[0] - localValues[1]) / (max - min) * 100;
+            if (distance < 10) {
+              if (index === 0) {
+                leftPosition = `calc(${percent}% - ${labelWidth}px - 5px)`;
+              } else {
+                leftPosition = `calc(${percent}% + 5px)`;
+              }
+            }
+          }
+
+          return (
+            <div
+              key={index}
+              className="absolute content-text text-gray-600 whitespace-nowrap"
+              style={{
+                left: leftPosition,
+                top: 0,
+              }}
+            >
+              {label}
+            </div>
+          )
+        })}
       </div>
     </div>
   )

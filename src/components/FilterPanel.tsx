@@ -152,16 +152,20 @@ export default function FilterPanel() {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false)
   const searchRef = useRef<HTMLDivElement>(null)
 
-  const [localAbstainRateRange, setLocalAbstainRateRange] = useState(proposalAbstainRateRange)
-  const [localRecentVotingPowerRange, setLocalRecentVotingPowerRange] = useState(store.recentVotingPowerRange)
+
 
   useEffect(() => {
-    setLocalAbstainRateRange(proposalAbstainRateRange)
-  }, [proposalAbstainRateRange])
-
-  useEffect(() => {
-    setLocalRecentVotingPowerRange(store.recentVotingPowerRange)
-  }, [store.recentVotingPowerRange])
+    const handleClickOutside = (event: MouseEvent) => {
+      if (chainDropdownRef.current && !chainDropdownRef.current.contains(event.target as Node)) {
+        setShowChainDropdown(false)
+      }
+      if (searchRef.current && !searchRef.current.contains(event.target as Node)) {
+        setIsDropdownOpen(false)
+      }
+    }
+    document.addEventListener('mousedown', handleClickOutside)
+    return () => document.removeEventListener('mousedown', handleClickOutside)
+  }, [])
 
   const conflictIndexDistribution = useMemo(() => getConflictIndexDistribution(store), [store.proposals, store.submitTimeRange, categoryVisualizationMode, store.votes]);
   const submitTimeDistribution = useMemo(() => getSubmitTimeDistribution(store), [store.proposals]);
