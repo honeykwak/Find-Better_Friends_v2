@@ -202,10 +202,10 @@ export default function BubbleHeap() {
               initial={{ opacity: 0, y: -10 }}
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -10 }}
-              className="absolute top-4 left-4 pointer-events-none"
+              className="absolute top-4 left-4 pointer-events-none bg-white/70 backdrop-blur-sm p-2 rounded-lg shadow-sm"
             >
-              <p className="h3-small-title text-gray-600">
-                Similarity with: <span style={{ color: '#EECF8C', fontWeight: '700' }}>{searchTerm}</span>
+              <p className="h3-small-title text-gray-700">
+                Similarity with: <span className="font-bold" style={{ color: '#EECF8C' }}>{searchTerm}</span>
               </p>
             </motion.div>
           )}
