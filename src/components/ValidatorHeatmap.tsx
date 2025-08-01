@@ -9,6 +9,22 @@ import ToggleButtonGroup from './ui/ToggleButtonGroup'
 import { Loader2, ZoomIn, ZoomOut, RotateCcw } from 'lucide-react'
 import type { Vote, Validator, Proposal } from '@/lib/dataLoader'
 
+const VoteLegend = () => (
+  <div className="absolute top-4 left-4 flex items-center gap-4 bg-white/70 backdrop-blur-sm p-2 rounded-lg shadow-sm pointer-events-none z-10">
+    {VOTE_ORDER.map(voteType => (
+      <div key={voteType} className="flex items-center gap-1.5">
+        <div 
+          className="w-3 h-3 rounded-full" 
+          style={{ backgroundColor: VOTE_COLORS[voteType] }}
+        />
+        <span className="content-text text-gray-700 capitalize">
+          {voteType.replace(/_/g, ' ').toLowerCase()}
+        </span>
+      </div>
+    ))}
+  </div>
+);
+
 // Helper function for percentile calculation using linear interpolation
 const getPercentilePower = (percentile: number, sortedValidators: { avgPower?: any }[]): number => {
   const sortedPowers = sortedValidators.map(v => {
@@ -520,8 +536,11 @@ export default function ValidatorHeatmap() {
           </div>
         </div>
       </div>
-      <div ref={containerRef} className="flex-1 overflow-auto" key={useGlobalStore.getState().selectedChain}>
-        <svg ref={svgRef} className="block"></svg>
+      <div className="flex-1 relative">
+        <div ref={containerRef} className="absolute inset-0 overflow-auto" key={useGlobalStore.getState().selectedChain}>
+          <svg ref={svgRef} className="block"></svg>
+        </div>
+        <VoteLegend />
       </div>
     </div>
   )

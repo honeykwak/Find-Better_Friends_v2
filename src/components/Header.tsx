@@ -10,7 +10,6 @@ export default function Header() {
           <h1 className="h1-title text-gray-900">
             ContextualAllianceVIS
           </h1>
-          <ColorGuide />
         </div>
       </div>
     </div>
