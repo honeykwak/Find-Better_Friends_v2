@@ -437,7 +437,7 @@ export default function FilterPanel() {
                 max={100}
                 values={store.recentVotingPowerRange}
                 onChange={store.setRecentVotingPowerRange}
-                formatValue={(v) => `${v.toFixed(0)}%`}
+                formatValue={(v) => `${(100 - v).toFixed(0)}%`}
                 step={1}
                 distributionData={recentVotingPowerDistribution}
               />
