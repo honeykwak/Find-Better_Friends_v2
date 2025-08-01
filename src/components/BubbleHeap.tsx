@@ -97,7 +97,7 @@ export default function BubbleHeap() {
       .attr('transform', `translate(${boundedWidth}, 0)`)
     
     const yAxis = d3.axisLeft(scalesRef.current.y).ticks(5).tickFormat(d3.format('.0%'))
-    axisG.call(yAxis).selectAll('text').style('font-size', '12px').style('font-weight', '500');
+    axisG.call(yAxis).selectAll('text').style('font-size', '32px').style('font-weight', '500');
     axisG.select('.domain').attr('stroke-width', 1.5)
 
     const zoom = d3.zoom<SVGSVGElement, unknown>().scaleExtent([0.5, 10])
