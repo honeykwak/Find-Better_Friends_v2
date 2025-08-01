@@ -22,7 +22,7 @@ const DistributionSlider: React.FC<DistributionSliderProps> = ({
   values: propValues,
   onValuesChange,
   onChange,
-  formatValue,
+  formatValue = (v) => v.toString(),
   step,
   distributionData,
 }) => {
@@ -70,13 +70,12 @@ const DistributionSlider: React.FC<DistributionSliderProps> = ({
           return binCenter >= localValues[0] && binCenter <= localValues[1] ? '#9CA3AF' : '#E5E7EB'
         })
 
-    // Add bottom axis line
     svg.append('line')
       .attr('x1', margin.left)
       .attr('x2', width - margin.right)
       .attr('y1', height - margin.bottom)
       .attr('y2', height - margin.bottom)
-      .attr('stroke', '#E5E7EB') // gray-200
+      .attr('stroke', '#E5E7EB')
       .attr('stroke-width', 1)
 
   }, [distributionData, min, max, containerWidth, localValues])
@@ -89,8 +88,30 @@ const DistributionSlider: React.FC<DistributionSliderProps> = ({
     }
   }
 
+  const getThumbValuePosition = (index: number) => {
+    const range = max - min
+    if (range === 0) return 'translate(-50%, 8px)'
+
+    const percent = ((localValues[index] - min) / range) * 100
+    const distance = Math.abs(localValues[0] - localValues[1]) / range * 100
+
+    // Priority 1: Handle edges to prevent labels from going off-screen.
+    if (percent < 5) return 'translate(0, 8px)'
+    if (percent > 95) return 'translate(-100%, 8px)'
+
+    // Priority 2: Handle overlap for non-edge cases.
+    if (distance < 15) {
+      return index === 0 
+        ? 'translate(-100%, 8px)' // Push left thumb's label left
+        : 'translate(0%, 8px)'   // Push right thumb's label right
+    }
+    
+    // Default: Center the label.
+    return 'translate(-50%, 8px)'
+  }
+
   return (
-    <div ref={containerRef} className="w-full">
+    <div ref={containerRef} className="w-full pb-4">
       <svg ref={svgRef}></svg>
       <div className="h-4 flex justify-center items-center">
         <Range
@@ -105,7 +126,6 @@ const DistributionSlider: React.FC<DistributionSliderProps> = ({
               {...props}
               className="h-1 w-full rounded-full"
               style={{
-                ...props.style,
                 background: getTrackBackground({
                   values: localValues,
                   colors: ['#E5E7EB', '#6B7280', '#E5E7EB'],
@@ -117,7 +137,7 @@ const DistributionSlider: React.FC<DistributionSliderProps> = ({
               {children}
             </div>
           )}
-          renderThumb={({ props: { key, ...restProps }, isDragged }) => (
+          renderThumb={({ props: { key, ...restProps }, index, isDragged }) => (
             <div
               key={key}
               {...restProps}
@@ -126,16 +146,20 @@ const DistributionSlider: React.FC<DistributionSliderProps> = ({
               <div
                 className={`h-full w-full rounded-full transition-colors ${isDragged ? 'bg-primary-accent' : 'bg-white'}`}
               />
+              <div 
+                className="absolute content-text text-gray-600 whitespace-nowrap"
+                style={{
+                  transform: getThumbValuePosition(index),
+                  top: '100%',
+                  left: '50%',
+                }}
+              >
+                {formatValue(localValues[index])}
+              </div>
             </div>
           )}
         />
       </div>
-      {formatValue && (
-        <div className="flex justify-between text-xs text-gray-600 mt-1">
-          <span className="content-text">{formatValue(localValues[0])}</span>
-          <span className="content-text">{formatValue(localValues[1])}</span>
-        </div>
-      )}
     </div>
   )
 }
