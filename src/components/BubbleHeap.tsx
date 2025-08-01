@@ -192,10 +192,10 @@ export default function BubbleHeap() {
   return (
     <div className="w-full h-full bg-white border-l border-gray-200 flex flex-col">
       <div className="px-4 py-2 border-b border-gray-200 bg-gray-50 flex items-center justify-between gap-4">
-        <h3 className="h2-subtitle text-gray-800 flex-shrink-0">Bubble Heap</h3>
+        <h3 className="h2-subtitle text-gray-800 flex-shrink-0">Bubble Heap View</h3>
         {searchTerm && (
-          <p className="content-text text-gray-600 text-right">
-            Similarity with: <span className="text-primary-accent">{searchTerm}</span>
+          <p className="h3-small-title text-gray-600 text-right">
+            Similarity with: <span style={{ color: '#EECF8C' }}>{searchTerm}</span>
           </p>
         )}
       </div>

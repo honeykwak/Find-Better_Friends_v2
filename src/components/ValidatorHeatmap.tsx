@@ -488,7 +488,7 @@ export default function ValidatorHeatmap() {
       <div className="px-4 py-2 border-b border-gray-200 bg-gray-50">
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-4">
-            <h3 className="h2-subtitle text-gray-800">Heatmap</h3>
+            <h3 className="h2-subtitle text-gray-800">Heatmap View</h3>
             {isLoading && <Loader2 className="w-4 h-4 animate-spin text-primary-accent" />}
           </div>
           <div className="flex items-center gap-4">
