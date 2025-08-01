@@ -44,9 +44,9 @@ const DistributionSlider: React.FC<DistributionSliderProps> = ({
       return
     }
 
-    const height = 40
+    const height = 28
     const width = containerWidth
-    const margin = { top: 5, right: 0, bottom: 0, left: 0 }
+    const margin = { top: 5, right: 0, bottom: 4, left: 0 }
 
     const x = d3.scaleLinear().domain([min, max]).range([margin.left, width - margin.right])
     
