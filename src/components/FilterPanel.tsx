@@ -16,7 +16,6 @@ import { CATEGORY_COLORS } from '@/constants/categoryColors'
 import Image from 'next/image'
 import React from 'react'
 import DistributionSlider from './ui/DistributionSlider'
-import SimpleRangeSlider from './ui/SimpleRangeSlider'
 import ToggleButtonGroup from './ui/ToggleButtonGroup'
 
 const getChainLogo = (chainName: string) => {
@@ -167,6 +166,14 @@ export default function FilterPanel() {
   const conflictIndexDistribution = useMemo(() => getConflictIndexDistribution(store), [store.proposals, store.submitTimeRange, categoryVisualizationMode, store.votes]);
   const submitTimeDistribution = useMemo(() => getSubmitTimeDistribution(store), [store.proposals]);
   const avgVotingPowerDistribution = useMemo(() => getAvgVotingPowerDistribution(store), [store.validatorsWithDerivedData]);
+  
+  const abstainRateDistribution = useMemo(() => {
+    return store.getProposalsForCategoryListing().map(p => (p as any).abstainRate || 0);
+  }, [store.proposals, store.votes, store.submitTimeRange, store.conflictIndexRange, store.categoryVisualizationMode]);
+
+  const recentVotingPowerDistribution = useMemo(() => {
+    return store.validatorsWithDerivedData.map(v => (v.recentVotingPower || 0) * 100).filter(p => p > 0);
+  }, [store.validatorsWithDerivedData]);
 
   const resetFilters = useCallback(() => {
     store.resetFilters();
@@ -360,20 +367,15 @@ export default function FilterPanel() {
             <div className="flex justify-between items-center mb-2">
               <label className="block h3-small-title text-gray-900">Abstain Rate</label>
             </div>
-            <div className="px-1">
-              <SimpleRangeSlider
-                min={0}
-                max={100}
-                values={localAbstainRateRange}
-                onValuesChange={setLocalAbstainRateRange}
-                onChange={setProposalAbstainRateRange}
-                step={1}
-              />
-            </div>
-            <div className="flex justify-between items-end text-xs text-gray-600 mt-1">
-              <span className="content-text">{localAbstainRateRange[0].toFixed(0)}%</span>
-              <span className="content-text">{localAbstainRateRange[1].toFixed(0)}%</span>
-            </div>
+            <DistributionSlider
+              min={0}
+              max={100}
+              values={proposalAbstainRateRange}
+              onChange={setProposalAbstainRateRange}
+              formatValue={(v) => `${v.toFixed(0)}%`}
+              step={1}
+              distributionData={abstainRateDistribution}
+            />
           </div>
         </div>
 
@@ -426,20 +428,15 @@ export default function FilterPanel() {
               />
             </div>
             {store.votingPowerSortType === 'recent' ? (
-              <div className="px-1">
-                <SimpleRangeSlider
-                  min={votingPowerDisplayMode === 'rank' ? 1 : 0}
-                  max={votingPowerDisplayMode === 'rank' ? recentVotingPowerValidatorCount || 1 : 100}
-                  values={localRecentVotingPowerRange}
-                  onValuesChange={setLocalRecentVotingPowerRange}
-                  onChange={store.setRecentVotingPowerRange}
-                  step={1}
-                />
-                <div className="flex justify-between items-end text-xs text-gray-600 mt-1">
-                  <span className="content-text">{votingPowerDisplayMode === 'rank' ? `${recentVotingPowerValidatorCount - localRecentVotingPowerRange[0] + 1}` : `${(100 - localRecentVotingPowerRange[0]).toFixed(0)}%`}</span>
-                  <span className="content-text">{votingPowerDisplayMode === 'rank' ? `${recentVotingPowerValidatorCount - localRecentVotingPowerRange[1] + 1}` : `${(100 - localRecentVotingPowerRange[1]).toFixed(0)}%`}</span>
-                </div>
-              </div>
+              <DistributionSlider
+                min={0}
+                max={100}
+                values={store.recentVotingPowerRange}
+                onChange={store.setRecentVotingPowerRange}
+                formatValue={(v) => `${v.toFixed(0)}%`}
+                step={1}
+                distributionData={recentVotingPowerDistribution}
+              />
             ) : (
               <DistributionSlider
                 min={votingPowerDisplayMode === 'rank' ? 1 : 0}

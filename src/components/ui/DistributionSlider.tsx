@@ -1,56 +1,143 @@
 'use client'
 
-import { useState, useEffect } from 'react'
-import Histogram from './Histogram'
-import SimpleRangeSlider from './SimpleRangeSlider'
+import { useEffect, useRef, useState } from 'react'
+import * as d3 from 'd3'
+import { Range, getTrackBackground } from 'react-range'
+import useResizeObserver from '@/hooks/useResizeObserver'
 
 interface DistributionSliderProps {
   min: number
   max: number
   values: [number, number]
+  onValuesChange?: (values: [number, number]) => void
   onChange: (values: [number, number]) => void
-  step?: number
-  formatValue: (value: number) => string
+  formatValue?: (value: number) => string
+  step: number
   distributionData?: number[]
 }
 
-export default function DistributionSlider({
+const DistributionSlider: React.FC<DistributionSliderProps> = ({
   min,
   max,
-  values: initialValues,
-  onChange: onChangeComplete,
-  step,
+  values: propValues,
+  onValuesChange,
+  onChange,
   formatValue,
+  step,
   distributionData,
-}: DistributionSliderProps) {
-  const [values, setValues] = useState(initialValues)
+}) => {
+  const svgRef = useRef<SVGSVGElement>(null)
+  const containerRef = useRef<HTMLDivElement>(null)
+  const { width: containerWidth } = useResizeObserver(containerRef)
+  const [localValues, setLocalValues] = useState(propValues)
 
   useEffect(() => {
-    setValues(initialValues)
-  }, [initialValues[0], initialValues[1]])
+    setLocalValues(propValues)
+  }, [propValues])
+
+  useEffect(() => {
+    const svg = d3.select(svgRef.current)
+    svg.selectAll('*').remove()
+
+    if (!svgRef.current || !distributionData || distributionData.length === 0 || containerWidth === 0) {
+      svg.attr('viewBox', null).style('height', '0px')
+      return
+    }
+
+    const height = 40
+    const width = containerWidth
+    const margin = { top: 5, right: 0, bottom: 5, left: 0 }
+
+    const x = d3.scaleLinear().domain([min, max]).range([margin.left, width - margin.right])
+    
+    const histogram = d3.bin().domain(x.domain() as [number, number]).thresholds(x.ticks(40))
+    const bins = histogram(distributionData)
+
+    const y = d3.scaleLinear().domain([0, d3.max(bins, d => d.length) as number]).range([height - margin.bottom, margin.top])
+
+    svg.attr('viewBox', `0 0 ${width} ${height}`).style('width', '100%').style('height', `${height}px`)
+
+    svg.append('g')
+      .selectAll('rect')
+      .data(bins)
+      .join('rect')
+        .attr('x', d => x(d.x0!))
+        .attr('width', d => Math.max(0, x(d.x1!) - x(d.x0!) - 1))
+        .attr('y', d => y(d.length))
+        .attr('height', d => y(0) - y(d.length))
+        .style('fill', d => {
+          const binCenter = (d.x0! + d.x1!) / 2
+          return binCenter >= localValues[0] && binCenter <= localValues[1] ? '#9CA3AF' : '#E5E7EB'
+        })
+
+    // Add bottom axis line
+    svg.append('line')
+      .attr('x1', margin.left)
+      .attr('x2', width - margin.right)
+      .attr('y1', height - margin.bottom)
+      .attr('y2', height - margin.bottom)
+      .attr('stroke', '#E5E7EB') // gray-200
+      .attr('stroke-width', 1)
+
+  }, [distributionData, min, max, containerWidth, localValues])
+
+  const handleValuesChange = (newValues: number[]) => {
+    const typedValues = newValues as [number, number]
+    setLocalValues(typedValues)
+    if (onValuesChange) {
+      onValuesChange(typedValues)
+    }
+  }
 
   return (
-    <div className="w-full">
-      <Histogram
-        distributionData={distributionData}
-        min={min}
-        max={max}
-        values={values}
-      />
-      <div className="mt-1">
-        <SimpleRangeSlider
+    <div ref={containerRef} className="w-full">
+      <svg ref={svgRef} className="mb-1"></svg>
+      <div className="h-8 flex justify-center items-center">
+        <Range
+          step={step}
           min={min}
           max={max}
-          values={values}
-          onValuesChange={setValues}
-          onChange={onChangeComplete}
-          step={step}
+          values={localValues}
+          onChange={handleValuesChange}
+          onFinalChange={(vals) => onChange(vals as [number, number])}
+          renderTrack={({ props, children }) => (
+            <div
+              {...props}
+              className="h-1 w-full rounded-full"
+              style={{
+                ...props.style,
+                background: getTrackBackground({
+                  values: localValues,
+                  colors: ['#E5E7EB', '#6B7280', '#E5E7EB'],
+                  min: min,
+                  max: max,
+                }),
+              }}
+            >
+              {children}
+            </div>
+          )}
+          renderThumb={({ props: { key, ...restProps }, isDragged }) => (
+            <div
+              key={key}
+              {...restProps}
+              className="h-4 w-4 bg-white rounded-full shadow border-2 border-gray-400 focus:outline-none"
+            >
+              <div
+                className={`h-full w-full rounded-full transition-colors ${isDragged ? 'bg-primary-accent' : 'bg-white'}`}
+              />
+            </div>
+          )}
         />
       </div>
-      <div className="flex justify-between items-end text-xs text-gray-600 mt-1">
-        <span className="content-text">{formatValue(values[0])}</span>
-        <span className="content-text">{formatValue(values[1])}</span>
-      </div>
+      {formatValue && (
+        <div className="flex justify-between text-xs text-gray-600 mt-1">
+          <span className="content-text">{formatValue(localValues[0])}</span>
+          <span className="content-text">{formatValue(localValues[1])}</span>
+        </div>
+      )}
     </div>
   )
 }
+
+export default DistributionSlider
