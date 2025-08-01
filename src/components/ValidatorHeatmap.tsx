@@ -13,15 +13,25 @@ const VoteLegend = () => (
   <div className="absolute top-4 left-4 flex flex-col items-start gap-2 bg-white/70 backdrop-blur-sm p-2 rounded-lg shadow-sm pointer-events-none z-10">
     {VOTE_ORDER.map(voteType => (
       <div key={voteType} className="flex items-center gap-1.5">
-        <div 
-          className="w-3 h-3 rounded-full" 
+        <div
+          className="w-2.5 h-2.5 rounded-[2px]"
           style={{ backgroundColor: VOTE_COLORS[voteType] }}
         />
-        <span className="content-text text-gray-700 capitalize">
+        <span className="h3-small-title text-gray-600 capitalize">
           {voteType.replace(/_/g, ' ').toLowerCase()}
         </span>
       </div>
     ))}
+    <div className="flex items-center gap-1.5">
+      <div className="w-2.5 h-2.5 rounded-[2px] bg-[#4C4C4C] flex items-center justify-center">
+        <svg width="7" height="5" viewBox="0 0 7 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M1 2.5L2.75 4L6 1" stroke="white" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round"/>
+        </svg>
+      </div>
+      <span className="h3-small-title text-gray-600">
+        Proposal Pass
+      </span>
+    </div>
   </div>
 );
 
