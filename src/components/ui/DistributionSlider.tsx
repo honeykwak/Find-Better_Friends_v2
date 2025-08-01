@@ -46,7 +46,7 @@ const DistributionSlider: React.FC<DistributionSliderProps> = ({
 
     const height = 40
     const width = containerWidth
-    const margin = { top: 5, right: 0, bottom: 5, left: 0 }
+    const margin = { top: 5, right: 0, bottom: 0, left: 0 }
 
     const x = d3.scaleLinear().domain([min, max]).range([margin.left, width - margin.right])
     
@@ -91,8 +91,8 @@ const DistributionSlider: React.FC<DistributionSliderProps> = ({
 
   return (
     <div ref={containerRef} className="w-full">
-      <svg ref={svgRef} className="mb-1"></svg>
-      <div className="h-8 flex justify-center items-center">
+      <svg ref={svgRef}></svg>
+      <div className="h-4 flex justify-center items-center">
         <Range
           step={step}
           min={min}
