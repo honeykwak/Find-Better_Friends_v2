@@ -31,17 +31,13 @@ export default function DistributionSlider({
 
   return (
     <div className="w-full">
-      <div className="flex justify-between items-end text-xs text-gray-600 mb-1">
-        <span className="content-text">{formatValue(values[0])}</span>
-        <span className="content-text">{formatValue(values[1])}</span>
-      </div>
       <Histogram
         distributionData={distributionData}
         min={min}
         max={max}
         values={values}
       />
-      <div className="mt-2">
+      <div className="mt-1">
         <SimpleRangeSlider
           min={min}
           max={max}
@@ -50,6 +46,10 @@ export default function DistributionSlider({
           onChange={onChangeComplete}
           step={step}
         />
+      </div>
+      <div className="flex justify-between items-end text-xs text-gray-600 mt-1">
+        <span className="content-text">{formatValue(values[0])}</span>
+        <span className="content-text">{formatValue(values[1])}</span>
       </div>
     </div>
   )
