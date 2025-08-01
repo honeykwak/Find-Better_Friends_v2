@@ -71,6 +71,14 @@ export default function Histogram({
             )
           })}
         </g>
+        <line
+          x1="0"
+          y1={height}
+          x2={width}
+          y2={height}
+          stroke="#e5e7eb" // gray-200
+          strokeWidth="1"
+        />
       </svg>
     </div>
   )
