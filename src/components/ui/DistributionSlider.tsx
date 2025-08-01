@@ -44,7 +44,7 @@ const DistributionSlider: React.FC<DistributionSliderProps> = ({
       return
     }
 
-    const height = 28
+    const height = 24
     const width = containerWidth
     const margin = { top: 5, right: 0, bottom: 4, left: 0 }
 
@@ -112,8 +112,8 @@ const DistributionSlider: React.FC<DistributionSliderProps> = ({
 
   return (
     <div ref={containerRef} className="w-full">
-      <svg ref={svgRef} className="mb-1"></svg>
-      <div className="h-8 flex justify-center items-center relative">
+      <svg ref={svgRef}></svg>
+      <div className="h-4 flex justify-center items-center relative">
         <Range
           step={step}
           min={min}
@@ -150,7 +150,7 @@ const DistributionSlider: React.FC<DistributionSliderProps> = ({
           )}
         />
       </div>
-      <div className="relative h-4 -mt-2">
+      <div className="relative h-4">
         {localValues.map((value, index) => {
           const percent = max > min ? ((value - min) / (max - min)) * 100 : 0;
           const label = formatValue(value);
