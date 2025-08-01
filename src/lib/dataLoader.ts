@@ -66,16 +66,23 @@ export async function loadChainData(chainName: string): Promise<ProcessedData> {
     const validatorsPromise = fetch(getAbsoluteUrl(`/data/${chainName}/validators.json`)).then(res => res.json());
     const votesPromise = fetch(getAbsoluteUrl(`/data/${chainName}/votes.json`)).then(res => res.json());
 
-    const [proposals, validators, votes] = await Promise.all([
+    const [rawProposals, validators, votes] = await Promise.all([
       proposalsPromise,
       validatorsPromise,
       votesPromise,
     ]);
 
+    // Filter out proposals with no votes at all
+    const proposals = rawProposals.filter((p: Proposal) => {
+      const { yes_count = 0, no_count = 0, no_with_veto_count = 0, abstain_count = 0 } = p.final_tally_result || {};
+      const totalVotes = yes_count + no_count + no_with_veto_count + abstain_count;
+      return totalVotes > 0;
+    });
+
     // Handle cases where an API might fail gracefully
-    if (!proposals || proposals.message) throw new Error(`Failed to load proposals: ${proposals.message || 'Unknown error'}`);
-    if (!validators || validators.message) throw new Error(`Failed to load validators: ${validators.message || 'Unknown error'}`);
-    if (!votes || votes.message) throw new Error(`Failed to load votes: ${votes.message || 'Unknown error'}`);
+    if (!proposals || (rawProposals as any).message) throw new Error(`Failed to load proposals: ${(rawProposals as any).message || 'Unknown error'}`);
+    if (!validators || (validators as any).message) throw new Error(`Failed to load validators: ${(validators as any).message || 'Unknown error'}`);
+    if (!votes || (votes as any).message) throw new Error(`Failed to load votes: ${(votes as any).message || 'Unknown error'}`);
 
     console.log(`dataLoader: Chain data loaded for ${chainName} from API:`, {
       proposals: proposals.length,
