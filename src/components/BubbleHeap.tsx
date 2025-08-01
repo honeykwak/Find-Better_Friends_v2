@@ -193,14 +193,23 @@ export default function BubbleHeap() {
     <div className="w-full h-full bg-white border-l border-gray-200 flex flex-col">
       <div className="px-4 py-2 border-b border-gray-200 bg-gray-50 flex items-center justify-between gap-4">
         <h3 className="h2-subtitle text-gray-800 flex-shrink-0">Bubble Heap View</h3>
-        {searchTerm && (
-          <p className="h3-small-title text-gray-600 text-right">
-            Similarity with: <span style={{ color: '#EECF8C' }}>{searchTerm}</span>
-          </p>
-        )}
       </div>
       <div ref={containerRef} className="flex-1 relative overflow-hidden">
         <svg ref={svgRef}></svg>
+        <AnimatePresence>
+          {searchTerm && (
+            <motion.div
+              initial={{ opacity: 0, y: -10 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -10 }}
+              className="absolute top-4 left-4 pointer-events-none"
+            >
+              <p className="h3-small-title text-gray-600">
+                Similarity with: <span style={{ color: '#EECF8C', fontWeight: '700' }}>{searchTerm}</span>
+              </p>
+            </motion.div>
+          )}
+        </AnimatePresence>
         <AnimatePresence>
           {!searchTerm ? (
             <motion.div
