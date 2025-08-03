@@ -482,14 +482,17 @@ export const useGlobalStore = create<GlobalStore>((set, get) => ({
     const newRecentPowerDynamicRange: [number, number] = [minRecentPower === Infinity ? 0 : minRecentPower, maxRecentPower === -Infinity ? 0 : maxRecentPower];
     
     const { votingPowerDisplayMode } = get();
+    const newAvgRankCount = newValidatorsWithDerivedData.length || 1;
+    const newRecentRankCount = recentVotingPowerValidatorCount || 1;
+
     if (votingPowerDisplayMode === 'rank') {
       set({ 
         validatorsWithDerivedData: newValidatorsWithDerivedData,
         similarityScores: newSimilarityScores,
         avgVotingPowerDynamicRange: newAvgPowerDynamicRange,
         recentVotingPowerDynamicRange: newRecentPowerDynamicRange,
-        votingPowerRange: [1, newValidatorsWithDerivedData.length || 1],
-        recentVotingPowerRange: [1, newValidatorsWithDerivedData.length || 1],
+        votingPowerRange: [1, newAvgRankCount],
+        recentVotingPowerRange: [1, newRecentRankCount],
         recentVotingPowerValidatorCount,
       });
     } else {
@@ -498,6 +501,8 @@ export const useGlobalStore = create<GlobalStore>((set, get) => ({
         similarityScores: newSimilarityScores,
         avgVotingPowerDynamicRange: newAvgPowerDynamicRange,
         recentVotingPowerDynamicRange: newRecentPowerDynamicRange,
+        votingPowerRange: [0, 100],
+        recentVotingPowerRange: [0, 100],
         recentVotingPowerValidatorCount,
       });
     }
@@ -571,21 +576,9 @@ export const useGlobalStore = create<GlobalStore>((set, get) => ({
     get()._recalculateFilteredValidators();
   },
   setVotingPowerDisplayMode: (mode) => {
-    const { validatorsWithDerivedData, recentVotingPowerValidatorCount } = get();
-    if (mode === 'rank') {
-      set({
-        votingPowerDisplayMode: 'rank',
-        votingPowerRange: [1, validatorsWithDerivedData.length || 1],
-        recentVotingPowerRange: [1, recentVotingPowerValidatorCount || 1],
-      });
-    } else {
-      set({
-        votingPowerDisplayMode: 'percentile',
-        votingPowerRange: [0, 100],
-        recentVotingPowerRange: [0, 100],
-      });
-    }
-    get()._recalculateFilteredValidators();
+    if (get().votingPowerDisplayMode === mode) return;
+    set({ votingPowerDisplayMode: mode });
+    get().recalculateValidatorMetrics();
   },
   setVotingPowerRange: (range) => {
     set({ votingPowerRange: range });
@@ -603,6 +596,7 @@ export const useGlobalStore = create<GlobalStore>((set, get) => ({
     get()._recalculateFilteredValidators();
   },
   setVotingPowerSortType: (type: VotingPowerSortType) => {
+    if (get().votingPowerSortType === type) return;
     set({ votingPowerSortType: type });
     get().recalculateValidatorMetrics();
   },

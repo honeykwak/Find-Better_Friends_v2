@@ -431,34 +431,26 @@ export default function FilterPanel() {
                 onChange={(v) => setVotingPowerDisplayMode(v as 'percentile' | 'rank')}
               />
             </div>
-            {store.votingPowerSortType === 'recent' ? (
-              <DistributionSlider
-                min={0}
-                max={100}
-                values={store.recentVotingPowerRange}
-                onChange={store.setRecentVotingPowerRange}
-                formatValue={(v) => `${(100 - v).toFixed(0)}%`}
-                step={1}
-                distributionData={recentVotingPowerDistribution}
-              />
-            ) : (
-              <DistributionSlider
-                min={votingPowerDisplayMode === 'rank' ? 1 : 0}
-                max={votingPowerDisplayMode === 'rank' ? validators.length || 1 : 100}
-                values={votingPowerRange}
-                onChange={setVotingPowerRange}
-                formatValue={(v) => {
-                  if (votingPowerDisplayMode === 'rank') {
-                    const totalValidators = validators.length || 1;
-                    const displayRank = totalValidators - v + 1;
-                    return `${displayRank}`;
-                  }
-                  return `${100 - v}%`;
-                }}
-                step={1}
-                distributionData={avgVotingPowerDistribution}
-              />
-            )}
+            <DistributionSlider
+              min={votingPowerDisplayMode === 'rank' ? 1 : 0}
+              max={votingPowerDisplayMode === 'rank' ? (store.votingPowerSortType === 'recent' ? recentVotingPowerValidatorCount : validators.length || 1) : 100}
+              values={store.votingPowerSortType === 'recent' ? store.recentVotingPowerRange : votingPowerRange}
+              onChange={store.votingPowerSortType === 'recent' ? store.setRecentVotingPowerRange : setVotingPowerRange}
+              formatValue={(v) => {
+                if (votingPowerDisplayMode === 'rank') {
+                  const totalValidators = store.votingPowerSortType === 'recent' ? recentVotingPowerValidatorCount : validators.length || 1;
+                  const displayRank = totalValidators - v + 1;
+                  return `${displayRank}`;
+                }
+                return `${(100 - v).toFixed(0)}%`;
+              }}
+              step={1}
+              distributionData={
+                votingPowerDisplayMode === 'rank'
+                  ? []
+                  : (store.votingPowerSortType === 'recent' ? recentVotingPowerDistribution : avgVotingPowerDistribution)
+              }
+            />
           </div>
           
           <div className="mb-4">
